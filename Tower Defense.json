@@ -1,0 +1,735 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 283,
+    "major": 5,
+    "minor": 6,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": true,
+    "orientation": "landscape",
+    "packageName": "com.example.gamename",
+    "pixelsRounding": false,
+    "projectUuid": "71fd7410-ec41-4bc5-a83e-45fbde75d88a",
+    "scaleMode": "linear",
+    "sizeOnStartupMode": "",
+    "templateSlug": "starting-tile-placement",
+    "version": "1.0.0",
+    "name": "Tower Defense",
+    "description": "",
+    "author": "",
+    "windowWidth": 1280,
+    "windowHeight": 720,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {
+      "android-icon-144": "",
+      "android-icon-192": "",
+      "android-icon-36": "",
+      "android-icon-48": "",
+      "android-icon-72": "",
+      "android-icon-96": "",
+      "android-windowSplashScreenAnimatedIcon": "",
+      "desktop-icon-512": "",
+      "ios-icon-100": "",
+      "ios-icon-1024": "",
+      "ios-icon-114": "",
+      "ios-icon-120": "",
+      "ios-icon-144": "",
+      "ios-icon-152": "",
+      "ios-icon-167": "",
+      "ios-icon-180": "",
+      "ios-icon-20": "",
+      "ios-icon-29": "",
+      "ios-icon-40": "",
+      "ios-icon-50": "",
+      "ios-icon-57": "",
+      "ios-icon-58": "",
+      "ios-icon-60": "",
+      "ios-icon-72": "",
+      "ios-icon-76": "",
+      "ios-icon-80": "",
+      "ios-icon-87": ""
+    },
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [],
+    "authorUsernames": [],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "file": "assets/StartingUnit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\StartingUnit.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/StartingTower.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\StartingTower.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/StartingTree.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\StartingTree.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/StartingButtonUnit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\StartingButtonUnit.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/StartingButtonTower.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\StartingButtonTower.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/StartingButtonTree.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\StartingButtonTree.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/StartingGroundTilemap.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\StartingGroundTilemap.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "file": "assets/starting_woodthump.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/starting_woodthump.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/starter_switch.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/starter_switch.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Slime_Hit_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slime_Hit_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/f710d2ea22cbf9c9efecc52d26c2e2056c9698752df30e6247dd486394bd800a_Slime_Hit_1.png",
+          "name": "Slime_Hit_1.png"
+        }
+      },
+      {
+        "file": "assets/Slime_Hit_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slime_Hit_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/f710d2ea22cbf9c9efecc52d26c2e2056c9698752df30e6247dd486394bd800a_Slime_Hit_2.png",
+          "name": "Slime_Hit_2.png"
+        }
+      },
+      {
+        "file": "assets/Slime_Hit_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slime_Hit_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/ab666ab362393347c83a5c28798fcf6e8326b94a0172caeb1e73936e43a16e6f_Slime_Hit_3.png",
+          "name": "Slime_Hit_3.png"
+        }
+      },
+      {
+        "file": "assets/Slime_Hit_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slime_Hit_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/f776e3ad6f5c12b8a3ef4a28bae3e817395ce2b1dbc39ef952afa5fe12a44ffa_Slime_Hit_4.png",
+          "name": "Slime_Hit_4.png"
+        }
+      },
+      {
+        "file": "assets/Slime_Hit_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slime_Hit_5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/b31d36f6cc3b914b94e6d910306975b46c74835e9fa1765f5c64a36416052edb_Slime_Hit_5.png",
+          "name": "Slime_Hit_5.png"
+        }
+      },
+      {
+        "file": "assets/Slime_Idle Run_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slime_Idle Run_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/d50d4e0c4add1c6faf64a05230304d51b4a756efb161f5ec4b53e0746112c020_Slime_Idle Run_1.png",
+          "name": "Slime_Idle Run_1.png"
+        }
+      },
+      {
+        "file": "assets/Slime_Idle Run_10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slime_Idle Run_10.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/3241cb25901f9aa5f8ca57fad62d75ea9028038c1bc610213e122f6059b78801_Slime_Idle Run_10.png",
+          "name": "Slime_Idle Run_10.png"
+        }
+      },
+      {
+        "file": "assets/Slime_Idle Run_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slime_Idle Run_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/f7206921b4916aea9b3ca1b4ac330a058feea7c721b1995324bd8582583c4cb1_Slime_Idle Run_2.png",
+          "name": "Slime_Idle Run_2.png"
+        }
+      },
+      {
+        "file": "assets/Slime_Idle Run_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slime_Idle Run_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/053cb03fda71da9cf198e56e00566acbe4c4acc32c3a025c3c0858acf785539c_Slime_Idle Run_3.png",
+          "name": "Slime_Idle Run_3.png"
+        }
+      },
+      {
+        "file": "assets/Slime_Idle Run_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slime_Idle Run_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/053cb03fda71da9cf198e56e00566acbe4c4acc32c3a025c3c0858acf785539c_Slime_Idle Run_4.png",
+          "name": "Slime_Idle Run_4.png"
+        }
+      },
+      {
+        "file": "assets/Slime_Idle Run_5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slime_Idle Run_5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/6ec5793ffe7470c8fb63cdbbd274673ff88fc8318d99bebcf50d1f39239fe198_Slime_Idle Run_5.png",
+          "name": "Slime_Idle Run_5.png"
+        }
+      },
+      {
+        "file": "assets/Slime_Idle Run_6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slime_Idle Run_6.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/d50d4e0c4add1c6faf64a05230304d51b4a756efb161f5ec4b53e0746112c020_Slime_Idle Run_6.png",
+          "name": "Slime_Idle Run_6.png"
+        }
+      },
+      {
+        "file": "assets/Slime_Idle Run_7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slime_Idle Run_7.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/3241cb25901f9aa5f8ca57fad62d75ea9028038c1bc610213e122f6059b78801_Slime_Idle Run_7.png",
+          "name": "Slime_Idle Run_7.png"
+        }
+      },
+      {
+        "file": "assets/Slime_Idle Run_8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slime_Idle Run_8.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/cc6a1e7cac875cafa2f8b43ca7718f7beb76c3e445845d98671ecce8c3e5b3d9_Slime_Idle Run_8.png",
+          "name": "Slime_Idle Run_8.png"
+        }
+      },
+      {
+        "file": "assets/Slime_Idle Run_9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Slime_Idle Run_9.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/cc6a1e7cac875cafa2f8b43ca7718f7beb76c3e445845d98671ecce8c3e5b3d9_Slime_Idle Run_9.png",
+          "name": "Slime_Idle Run_9.png"
+        }
+      },
+      {
+        "file": "assets/Bullet 5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bullet 5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Western FPS 2D/Weapon/Projectile/Ball/f8c97f4f344ceda06e1b53c65b15e33b24c6256e0991bc881eb7f2317b89ba57_Bullet 5.png",
+          "name": "Bullet 5.png"
+        }
+      },
+      {
+        "file": "assets/Shotgun Vertical_Aiming.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Shotgun Vertical_Aiming.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Western FPS 2D/Weapon/bd63ea37ab03d04d6f31313cc0142b7a0f097d29a82d95f0486acd40dbc18c77_Shotgun Vertical_Aiming.png",
+          "name": "Shotgun Vertical_Aiming.png"
+        }
+      },
+      {
+        "file": "assets/Shotgun Vertical_Firing.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Shotgun Vertical_Firing.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Western FPS 2D/Weapon/6b09ce20a6835016653d3042d061b7ad69331b81231a7169ef818b56423d85da_Shotgun Vertical_Firing.png",
+          "name": "Shotgun Vertical_Firing.png"
+        }
+      },
+      {
+        "file": "assets/Missile.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Missile.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 2/Projectile/feeb5237642bae469494e9b4f54f3e41a4a12d9e608b585b72f4c9d0cc451cf9_Missile.png",
+          "name": "Missile.png"
+        }
+      },
+      {
+        "file": "assets/Nairan Rocket_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Nairan Rocket_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Nairan Fleet/Projectiles/3de053d1238b473ecf98a7c5e8c140c88b3818dbd7057fd391c6ab310b23ba30_Nairan Rocket_1.png",
+          "name": "Nairan Rocket_1.png"
+        }
+      },
+      {
+        "file": "assets/Nairan Rocket_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Nairan Rocket_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Nairan Fleet/Projectiles/33f0e57a5a2249021e6755fc4feeeeea5bed9aeb7cba3ca9e504fd36820ba63e_Nairan Rocket_2.png",
+          "name": "Nairan Rocket_2.png"
+        }
+      },
+      {
+        "file": "assets/Nairan Rocket_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Nairan Rocket_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Nairan Fleet/Projectiles/8523af1e88d1450f66938933641a6f6414d7a535bf2f868eb3f3bb1e2fba29c5_Nairan Rocket_3.png",
+          "name": "Nairan Rocket_3.png"
+        }
+      },
+      {
+        "file": "assets/Nairan Rocket_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Nairan Rocket_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Nairan Fleet/Projectiles/5243cb3452e0d8fb8581d45645c988c3d989cdad7bfcd96ebb23ac50f81dbd33_Nairan Rocket_4.png",
+          "name": "Nairan Rocket_4.png"
+        }
+      },
+      {
+        "file": "assets/tiled_Grass2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "tiled_Grass2.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Tileable Ground Textures/56c74486b789657d72777e8c74bc5f720923d43f41a598636cc34c1bec5046b0_tiled_Grass2.png",
+          "name": "tiled_Grass2.png"
+        }
+      },
+      {
+        "file": "assets/Default-panel (31).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default-panel (31).png",
+        "smoothed": true,
+        "userAdded": true,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Fantasy UI Borders/Default Size/Panels/4530207f9820c0990ac1354b1c323ac80c2df8a9280996d4e00f0c34e378e0d3_Default-panel (31).png",
+          "name": "Default-panel (31).png"
+        }
+      }
+    ]
+  },
+  "objects": [],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT"
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/game-scene"
+    }
+  ],
+  "externalEvents": [],
+  "tests": [
+    {
+      "description": "Picking a tile type in the toolbar shows what is about to be placed, and picking it again stops placing.",
+      "name": "Picking a tile type",
+      "type": "gameplay",
+      "source": [
+        "// Picking a tile type in the toolbar shows what is about to be placed.",
+        "await harness.goToScene('Game Scene');",
+        "harness.watch('TilePlacement_Indicator');",
+        "",
+        "const getIndicator = () => harness.getObjects('TilePlacement_Indicator')[0];",
+        "await harness.stepFrames(5);",
+        "",
+        "harness.assert(",
+        "  getIndicator().hidden === true,",
+        "  'Nothing is about to be placed before a tile type is picked.'",
+        ");",
+        "",
+        "const buttons = harness.getObjects('TileType_Button');",
+        "harness.assert(buttons.length > 0, 'The toolbar has tile types to pick from.');",
+        "const button = buttons[0];",
+        "console.log(",
+        "  'buttons=' + JSON.stringify(buttons.map((one) => one.animation)) +",
+        "    ' layer=' + JSON.stringify(button.layer)",
+        ");",
+        "",
+        "/** Click on a position of a layer. */",
+        "const clickAt = async (x, y, layerName) => {",
+        "  harness.setMousePosition(x, y, layerName);",
+        "  await harness.stepFrames(2);",
+        "  harness.setMouseButtonPressed(true);",
+        "  await harness.stepFrames(2);",
+        "  harness.setMouseButtonPressed(false);",
+        "  await harness.stepFrames(3);",
+        "};",
+        "",
+        "await clickAt(button.centerX, button.centerY, button.layer);",
+        "const selected = getIndicator();",
+        "console.log(",
+        "  'afterPicking: hidden=' + selected.hidden + ' animation=' + JSON.stringify(selected.animation)",
+        ");",
+        "harness.assert(",
+        "  selected.hidden === false,",
+        "  'Picking a tile type shows what is about to be placed.'",
+        ");",
+        "harness.assert(",
+        "  selected.animation === button.animation,",
+        "  'What is about to be placed is the tile type that was picked (the indicator shows \"' +",
+        "    selected.animation + '\", the button is \"' + button.animation + '\").'",
+        ");",
+        "",
+        "// Picking it again turns it off.",
+        "await clickAt(button.centerX, button.centerY, button.layer);",
+        "console.log('afterPickingAgain: hidden=' + getIndicator().hidden);",
+        "harness.assert(",
+        "  getIndicator().hidden === true,",
+        "  'Picking the same tile type again stops placing.'",
+        ");"
+      ]
+    },
+    {
+      "description": "With a tile type picked, clicking a buildable cell places that tile on the grid, and clicking it again does not stack a second one.",
+      "name": "Placing a tile on the board",
+      "type": "gameplay",
+      "source": [
+        "// The core of the game: with a tile type picked, clicking a free cell of the",
+        "// board places that tile there — and only once per cell.",
+        "await harness.goToScene('Game Scene');",
+        "harness.watch('TilePlacement_Indicator');",
+        "",
+        "const getIndicator = () => harness.getObjects('TilePlacement_Indicator')[0];",
+        "const placedTiles = () =>",
+        "  ['Unit', 'Tower', 'Tree'].reduce(",
+        "    (total, name) => total + harness.getObjects(name).length,",
+        "    0",
+        "  );",
+        "",
+        "await harness.stepFrames(5);",
+        "const button = harness.getObjects('TileType_Button')[0];",
+        "const tileType = button.animation;",
+        "harness.assert(placedTiles() === 0, 'The board starts empty.');",
+        "",
+        "const clickAt = async (x, y, layerName) => {",
+        "  harness.setMousePosition(x, y, layerName);",
+        "  await harness.stepFrames(2);",
+        "  harness.setMouseButtonPressed(true);",
+        "  await harness.stepFrames(2);",
+        "  harness.setMouseButtonPressed(false);",
+        "  await harness.stepFrames(3);",
+        "};",
+        "",
+        "// Pick a tile type.",
+        "await clickAt(button.centerX, button.centerY, button.layer);",
+        "harness.assert(",
+        "  getIndicator().hidden === false,",
+        "  'A tile type is picked (' + tileType + ').'",
+        ");",
+        "",
+        "// Find a cell of the board where the game accepts to place it. Only some",
+        "// cells are buildable, and which ones is decided by the tilemap: the test",
+        "// tries a few until one is accepted (this is setup, the checks come after).",
+        "let placedAtX = null;",
+        "let placedAtY = null;",
+        "for (let x = 320; x <= 960 && placedAtX === null; x += 64) {",
+        "  for (let y = 192; y <= 448 && placedAtX === null; y += 64) {",
+        "    await clickAt(x, y, '');",
+        "    if (placedTiles() > 0) {",
+        "      placedAtX = x;",
+        "      placedAtY = y;",
+        "    }",
+        "  }",
+        "}",
+        "console.log(",
+        "  'placedAt=' + placedAtX + ',' + placedAtY + ' tiles=' + placedTiles()",
+        ");",
+        "harness.assert(",
+        "  placedAtX !== null,",
+        "  'Clicking a buildable cell of the board places the picked tile there.'",
+        ");",
+        "harness.assert(",
+        "  harness.getObjects(tileType).length === 1,",
+        "  'The tile that was placed is the type that was picked (there is ' +",
+        "    harness.getObjects(tileType).length + ' \"' + tileType + '\" on the board).'",
+        ");",
+        "",
+        "const placed = harness.getObjects(tileType)[0];",
+        "harness.assert(",
+        "  placed.x % 64 === 0 && placed.y % 64 === 0,",
+        "  'The tile is placed on the grid (it is at ' +",
+        "    Math.round(placed.x) + ',' + Math.round(placed.y) + ').'",
+        ");",
+        "",
+        "// Clicking the same cell again must not stack a second tile on it.",
+        "await clickAt(placedAtX, placedAtY, '');",
+        "console.log('afterSecondClick: tiles=' + placedTiles());",
+        "harness.assert(",
+        "  placedTiles() === 1,",
+        "  'Clicking a cell that already holds a tile does not place another one (' +",
+        "    placedTiles() + ' tiles on the board).'",
+        ");"
+      ]
+    },
+    {
+      "description": "Place a basic tower, start wave 1, verify towers auto-shoot and kill all enemies.",
+      "lastRunAt": 1791299335871,
+      "lastRunDurationMs": 947,
+      "lastRunFramesExecuted": 1681,
+      "lastRunStatus": "passed",
+      "name": "TowerDefenseCore",
+      "type": "gameplay",
+      "source": [
+        "await harness.goToScene('Game Scene');",
+        "// Buttons: (966,69)=Shotgun, (1054,69)=Tower, (967,155)=Rocket; click centers +32",
+        "harness.setMousePosition(1086, 101);",
+        "harness.setMouseButtonPressed(true, 'left');",
+        "await harness.stepFrames(2);",
+        "harness.setMouseButtonPressed(false, 'left');",
+        "await harness.stepFrames(2);",
+        "const ind = harness.getObjects('TilePlacement_Indicator');",
+        "harness.assert(ind.length === 1 && !ind[0].hidden, 'Indicator visible after button click');",
+        "harness.setMousePosition(400, 340);",
+        "harness.setMouseButtonPressed(true, 'left');",
+        "await harness.stepFrames(2);",
+        "harness.setMouseButtonPressed(false, 'left');",
+        "await harness.stepFrames(2);",
+        "harness.assert(harness.getObjects('Tower').length === 1, 'Tower placed on map click');",
+        "harness.setKeyPressed('Space', true);",
+        "await harness.stepFrames(2);",
+        "harness.setKeyPressed('Space', false);",
+        "await harness.stepFrames(2);",
+        "harness.assert(harness.getSceneVariable('Wave')?.value === 1, 'Wave 1 started');",
+        "const killed = await harness.stepUntil(() => harness.getObjects('Enemy').length === 0 && harness.getSceneVariable('EnemiesToSpawn')?.value === 0, { maxFrames: 2400 });",
+        "harness.assert(killed, 'Wave 1 enemies all killed by towers');",
+        "harness.assert(harness.getSceneVariable('Money')?.value > 250, 'Money increased from kills');",
+        "harness.assert(harness.getSceneVariable('WaveActive')?.value === false, 'Wave ended');"
+      ]
+    },
+    {
+      "description": "Shotgun placement and cost, rocket cost gate, S-path movement, wave cleared by shotgun.",
+      "lastRunAt": 1791299353662,
+      "lastRunDurationMs": 1061,
+      "lastRunFramesExecuted": 1521,
+      "lastRunStatus": "passed",
+      "name": "TowerTypesAndSPath",
+      "type": "gameplay",
+      "source": [
+        "await harness.goToScene('Game Scene');",
+        "// Buttons: (966,69)=ShotgunTower, (1054,69)=Tower, (967,155)=RocketTower; centers +32",
+        "harness.setMousePosition(998, 101);",
+        "harness.setMouseButtonPressed(true, 'left');",
+        "await harness.stepFrames(2);",
+        "harness.setMouseButtonPressed(false, 'left');",
+        "await harness.stepFrames(2);",
+        "let ind = harness.getObjects('TilePlacement_Indicator');",
+        "harness.assert(ind.length === 1 && !ind[0].hidden, 'Indicator visible');",
+        "harness.setMousePosition(600, 180);",
+        "harness.setMouseButtonPressed(true, 'left');",
+        "await harness.stepFrames(2);",
+        "harness.setMouseButtonPressed(false, 'left');",
+        "await harness.stepFrames(2);",
+        "harness.assert(harness.getObjects('ShotgunTower').length === 1, 'ShotgunTower placed');",
+        "harness.assert(harness.getSceneVariable('Money')?.value === 100, 'Money 250-150=100 after shotgun');",
+        "// Rocket button",
+        "harness.setMousePosition(999, 187);",
+        "harness.setMouseButtonPressed(true, 'left');",
+        "await harness.stepFrames(2);",
+        "harness.setMouseButtonPressed(false, 'left');",
+        "await harness.stepFrames(2);",
+        "harness.setMousePosition(300, 380);",
+        "harness.setMouseButtonPressed(true, 'left');",
+        "await harness.stepFrames(2);",
+        "harness.setMouseButtonPressed(false, 'left');",
+        "await harness.stepFrames(2);",
+        "harness.assert(harness.getObjects('RocketTower').length === 0, 'Rocket too expensive with 100g');",
+        "// Start wave, verify S path",
+        "harness.setKeyPressed('Space', true);",
+        "await harness.stepFrames(2);",
+        "harness.setKeyPressed('Space', false);",
+        "await harness.stepFrames(2);",
+        "await harness.stepFrames(80);",
+        "const enemies = harness.getObjects('Enemy');",
+        "harness.assert(enemies.length > 0, 'Enemies spawned');",
+        "const e = enemies[0];",
+        "harness.assert(e.y < 160, 'Enemy on top path segment (S path start), y=' + e.y);",
+        "harness.assert(e.x > -40, 'Enemy moving right, x=' + e.x);",
+        "const cleared = await harness.stepUntil(() => harness.getObjects('Enemy').length === 0 && harness.getSceneVariable('EnemiesToSpawn')?.value === 0, { maxFrames: 2000 });",
+        "harness.assert(cleared, 'Wave cleared by shotgun tower');",
+        "harness.assert(harness.getSceneVariable('Lives')?.value === 10, 'No lives lost');"
+      ]
+    }
+  ],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/buttonstates"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/snaptogrid"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/health"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/firebullet"
+    }
+  ],
+  "externalLayouts": []
+}
