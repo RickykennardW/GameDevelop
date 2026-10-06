@@ -1,0 +1,4055 @@
+{
+  "b": 255,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Game_32Scene",
+  "name": "Game Scene",
+  "r": 255,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 255,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridDepth": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridOffsetZ": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.5468750000000044,
+    "windowMask": false,
+    "selectedLayer": "",
+    "gameEditorMode": "instances-editor"
+  },
+  "objectsGroups": [
+    {
+      "name": "PlaceableTile",
+      "objects": [
+        {
+          "name": "Tower"
+        },
+        {
+          "name": "ShotgunTower"
+        },
+        {
+          "name": "RocketTower"
+        }
+      ]
+    }
+  ],
+  "variables": [
+    {
+      "name": "GameOver",
+      "persistentUuid": "acaf60d0-29f6-49de-a9e4-cd9f81c2bd48",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "KillReward",
+      "persistentUuid": "865e7744-2073-48ef-961a-a08a97593f37",
+      "type": "number",
+      "value": 25
+    },
+    {
+      "name": "TowerCost",
+      "persistentUuid": "2639e11a-1448-4981-be25-2e5f8c6e18e1",
+      "type": "number",
+      "value": 100
+    },
+    {
+      "name": "WaveActive",
+      "persistentUuid": "358fe2a7-4c93-4fa8-a331-280a17f770f8",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "EnemySpeed",
+      "persistentUuid": "f56ca296-3105-4ba6-8cc3-00990b7cd1ea",
+      "type": "number",
+      "value": 90
+    },
+    {
+      "name": "EnemyHP",
+      "persistentUuid": "64fd5b6a-c81b-4563-ba9c-5ce76262ba40",
+      "type": "number",
+      "value": 30
+    },
+    {
+      "name": "EnemiesToSpawn",
+      "persistentUuid": "9b78af11-70a4-4c21-8289-aad3a78359e0",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Wave",
+      "persistentUuid": "d6ad08b5-313c-491c-bdb2-a607ff290000",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Lives",
+      "persistentUuid": "76562b1a-5854-440d-8aa3-aa30f49e8aa2",
+      "type": "number",
+      "value": 10
+    },
+    {
+      "name": "Money",
+      "persistentUuid": "9d1ef647-9b52-4a52-bc0a-50d44fa641a7",
+      "type": "number",
+      "value": 250
+    }
+  ],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "TilePlacement_Indicator",
+      "opacity": 128,
+      "persistentUuid": "bf696ef6-4dda-4e27-a4f3-274db97dd0ca",
+      "width": 0,
+      "x": 1344,
+      "y": 0,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 34,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "TileType_Button",
+      "persistentUuid": "c68085e2-ea50-4b1b-bb18-b8e5af9ce807",
+      "width": 36,
+      "x": 1167,
+      "y": 135,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 37,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "TileType_Button",
+      "persistentUuid": "7f84d899-b9b0-4371-a885-dd5e0bb9d3fb",
+      "width": 39,
+      "x": 1218,
+      "y": 82,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 38,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "TileType_Button",
+      "persistentUuid": "91364a9a-21e9-4931-a120-fd7db3f09407",
+      "width": 40,
+      "x": 1166,
+      "y": 81,
+      "zOrder": 2,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "locked": true,
+      "name": "Ground_Tilemap",
+      "persistentUuid": "738bc12b-5841-410a-af96-cf38874461dd",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [
+        {
+          "name": "tilemap",
+          "value": "{\"tileWidth\":64,\"tileHeight\":64,\"dimX\":20,\"dimY\":12,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4],[4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4],[4,4,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,4,4],[4,4,0,0,0,0,2,0,0,0,0,0,0,0,0,0,2,0,4,4],[4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4],[4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,4,4],[4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4],[4,4,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4],[4,4,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4]]}]}"
+        }
+      ],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "MoneyText",
+      "persistentUuid": "de2a8787-c51e-487d-9754-46bed3e40ebd",
+      "width": 0,
+      "x": 20,
+      "y": 20,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "LivesText",
+      "persistentUuid": "557b7130-6363-4194-9410-bbdfe6b05420",
+      "width": 0,
+      "x": 20,
+      "y": 55,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "WaveText",
+      "persistentUuid": "6eae470a-3f4a-40d0-bbd0-a306dcf67d7a",
+      "width": 0,
+      "x": 20,
+      "y": 90,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "MessageText",
+      "persistentUuid": "b687f609-da8d-4694-9d6a-a354d00b8d96",
+      "width": 0,
+      "x": 400,
+      "y": 300,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "HelpText",
+      "persistentUuid": "40b3db81-b164-470e-ade9-f8708c055c32",
+      "width": 0,
+      "x": 20,
+      "y": 650,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 600,
+      "keepRatio": true,
+      "layer": "",
+      "name": "GrassGround",
+      "persistentUuid": "918c1dc3-e672-4305-bf41-accecbd93f3d",
+      "width": 1120,
+      "x": 80,
+      "y": 40,
+      "zOrder": -10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 578,
+      "keepRatio": true,
+      "layer": "UI",
+      "name": "TowerShopBox",
+      "persistentUuid": "39857ce2-5137-48b7-b436-c751024dffbb",
+      "width": 120,
+      "x": 1152,
+      "y": 63,
+      "zOrder": -1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "TilePlacement_Indicator",
+      "persistentUuid": "3fa0e824-2a26-4249-a8de-d5039013998b",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "ShotgunTower",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Shotgun Vertical_Aiming.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 17,
+                        "y": 5
+                      },
+                      {
+                        "x": 47,
+                        "y": 5
+                      },
+                      {
+                        "x": 47,
+                        "y": 59
+                      },
+                      {
+                        "x": 17,
+                        "y": 59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tower",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\StartingTower.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 17,
+                        "y": 5
+                      },
+                      {
+                        "x": 47,
+                        "y": 5
+                      },
+                      {
+                        "x": 47,
+                        "y": 59
+                      },
+                      {
+                        "x": 17,
+                        "y": 59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "RocketTower",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Missile.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 17,
+                        "y": 5
+                      },
+                      {
+                        "x": 47,
+                        "y": 5
+                      },
+                      {
+                        "x": 47,
+                        "y": 59
+                      },
+                      {
+                        "x": 17,
+                        "y": 59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "TileType_Button",
+      "persistentUuid": "8f724aaa-a290-4af1-bcd0-a965da77a256",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Outline",
+          "doubleParameters": {
+            "padding": 4,
+            "thickness": 4
+          },
+          "stringParameters": {
+            "color": "255;235;0"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "ButtonFSM",
+          "type": "ButtonStates::ButtonFSM",
+          "ShouldCheckHovering": true,
+          "State": "Idle",
+          "TouchId": 0,
+          "TouchIsInside": false,
+          "MouseIsInside": false,
+          "Index": 2.0247e-320
+        },
+        {
+          "name": "ButtonScaleTween",
+          "type": "ButtonStates::ButtonScaleTween",
+          "Scale": "Scale",
+          "ButtonFSM": "ButtonFSM",
+          "Tween": "Tween",
+          "IdleScale": 1,
+          "FocusedScale": 1,
+          "FadeInDuration": 0.1,
+          "FadeOutDuration": 0.2,
+          "PressedScale": 0.95,
+          "FadeInEasing": "easeInOutQuad",
+          "FadeOutEasing": "easeInOutQuad",
+          "PreviousState": "Idle"
+        },
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "ShotgunTower",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Shotgun Vertical_Aiming.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tower",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\StartingTower.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "RocketTower",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Missile.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Ground_Tilemap",
+      "persistentUuid": "ea82e313-8f46-46a2-b577-09000b2fa212",
+      "type": "TileMap::SimpleTileMap",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "atlasImage": "assets\\StartingGroundTilemap.png",
+        "rowCount": 3,
+        "columnCount": 3,
+        "tileSize": 64,
+        "tilesWithHitBox": "3,4,5,6,7,8"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Tower",
+      "persistentUuid": "23985d8b-db74-4b04-8d28-9694a29851b9",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 0.6,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 45,
+          "BulletQuantity": 1,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\StartingTower.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 12,
+                        "y": 6
+                      },
+                      {
+                        "x": 52,
+                        "y": 6
+                      },
+                      {
+                        "x": 52,
+                        "y": 59
+                      },
+                      {
+                        "x": 12,
+                        "y": 59
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "d4b9086084c7ad8ca9c380e35c78ba31a6267091f539f0d20a1d46f8a4ed1f67",
+      "name": "Enemy",
+      "persistentUuid": "2d78bd9f-f5c5-49b9-9c98-07b74aa8fac3",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "Waypoint",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Health",
+          "type": "Health::Health",
+          "Health": 30,
+          "CurrentHealth": 0,
+          "MaxHealth": 30,
+          "DamageCooldown": 0,
+          "AllowOverHealing": false,
+          "IsHealthJustDamaged": false,
+          "DamageToBeApplied": 0,
+          "HitAtLeastOnce": false,
+          "ChanceToDodge": 0,
+          "IsJustDodged": false,
+          "HealToBeApplied": 0,
+          "HealthRegenRate": 0,
+          "HealthRegenDelay": 0,
+          "IsJustHealed": false,
+          "CurrentShieldPoints": 0,
+          "MaxShieldPoints": 0,
+          "ShieldDuration": 5,
+          "ShieldRegenRate": 0,
+          "BlockExcessDamage": false,
+          "ShieldRegenDelay": 0,
+          "IsShieldJustDamaged": false,
+          "ShieldDamageTaken": 0,
+          "FlatDamageReduction": 0,
+          "PercentDamageReduction": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "Hit",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.2,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Hit_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Hit_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Hit_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Hit_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Hit_5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Idle Run",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Idle Run_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Idle Run_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Idle Run_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Idle Run_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Idle Run_5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Idle Run_6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Idle Run_7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Idle Run_8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Idle Run_9.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Idle Run_10.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "b9c7dea224a0b7ecf6d781229de6dc63e728a91488a2035afa17e737aa51a4c6",
+      "name": "Bullet",
+      "persistentUuid": "1630fbdf-d066-45e5-a003-94e616eca9cb",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bullet 5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 20,
+                        "y": 0
+                      },
+                      {
+                        "x": 20,
+                        "y": 19
+                      },
+                      {
+                        "x": 0,
+                        "y": 19
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "MoneyText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 22,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 22,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "LivesText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 22,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 22,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "WaveText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Text",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 22,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Text",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 22,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "MessageText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 48,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 48,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "HelpText",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Pick a tower on the right, click map to place. Tower 100g, Shotgun 150g, Rocket 250g. SPACE = next wave.",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 22,
+      "color": {
+        "b": 0,
+        "g": 0,
+        "r": 0
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Pick a tower on the right, click map to place. Tower 100g, Shotgun 150g, Rocket 250g. SPACE = next wave.",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 22,
+        "lineHeight": 0,
+        "color": "0;0;0"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "9657e1e903147a4841f5fe372992a5d475b9c2c33255a7905bbe2065aadf3a9d",
+      "name": "ShotgunTower",
+      "persistentUuid": "01ac2fa2-83fe-46d0-a22d-69f86c547ea6",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 1,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 45,
+          "BulletQuantity": 1,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "Aiming",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Shotgun Vertical_Aiming.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 24
+                      },
+                      {
+                        "x": 58,
+                        "y": 24
+                      },
+                      {
+                        "x": 58,
+                        "y": 99
+                      },
+                      {
+                        "x": 1,
+                        "y": 99
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Firing",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Shotgun Vertical_Firing.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 24
+                      },
+                      {
+                        "x": 58,
+                        "y": 24
+                      },
+                      {
+                        "x": 58,
+                        "y": 99
+                      },
+                      {
+                        "x": 1,
+                        "y": 99
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "5479e8047828e9989c99893094edeead38e7846790dcd7435e2449a03b5eebaa",
+      "name": "RocketTower",
+      "persistentUuid": "d0f34a85-27b0-4f7a-a8fa-df68e6230be5",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 2,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 45,
+          "BulletQuantity": 1,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Missile.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 0
+                      },
+                      {
+                        "x": 14,
+                        "y": 0
+                      },
+                      {
+                        "x": 14,
+                        "y": 8
+                      },
+                      {
+                        "x": 2,
+                        "y": 8
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "aba580f4115320ab8bdc9738ee0bc6471403289e63d900001667c289eedbfdb8",
+      "name": "RocketBullet",
+      "persistentUuid": "1a4a93d0-e337-42ca-b3b0-b1f4d9fc5e04",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.125,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Nairan Rocket_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 1
+                      },
+                      {
+                        "x": 12,
+                        "y": 1
+                      },
+                      {
+                        "x": 12,
+                        "y": 8
+                      },
+                      {
+                        "x": 2,
+                        "y": 8
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Nairan Rocket_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 1
+                      },
+                      {
+                        "x": 12,
+                        "y": 1
+                      },
+                      {
+                        "x": 12,
+                        "y": 8
+                      },
+                      {
+                        "x": 2,
+                        "y": 8
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Nairan Rocket_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 1
+                      },
+                      {
+                        "x": 12,
+                        "y": 1
+                      },
+                      {
+                        "x": 12,
+                        "y": 8
+                      },
+                      {
+                        "x": 2,
+                        "y": 8
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Nairan Rocket_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 2,
+                        "y": 1
+                      },
+                      {
+                        "x": 12,
+                        "y": 1
+                      },
+                      {
+                        "x": 12,
+                        "y": 8
+                      },
+                      {
+                        "x": 2,
+                        "y": 8
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "0bcc429b6cb259a7297640eae9bfc91fe0c6ea9defd96db32868844b6868cd8e",
+      "height": 512,
+      "name": "GrassGround",
+      "persistentUuid": "daa61cc0-5c1f-410d-9c3a-0317cef359ce",
+      "texture": "tiled_Grass2.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 512,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "9f3730c55c8073fc715b8c5cb0147617c70d9b602d24e7b908af7147952ad16d",
+      "bottomMargin": 16,
+      "height": 48,
+      "leftMargin": 16,
+      "name": "TowerShopBox",
+      "persistentUuid": "94d2f2b3-aac5-4e2e-ba22-0061344da7d8",
+      "rightMargin": 16,
+      "texture": "Default-panel (31).png",
+      "tiled": false,
+      "topMargin": 16,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 48,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "TilePlacement_Indicator"
+      },
+      {
+        "objectName": "TileType_Button"
+      },
+      {
+        "objectName": "Ground_Tilemap"
+      },
+      {
+        "objectName": "Tower"
+      },
+      {
+        "objectName": "Enemy"
+      },
+      {
+        "objectName": "Bullet"
+      },
+      {
+        "objectName": "MoneyText"
+      },
+      {
+        "objectName": "LivesText"
+      },
+      {
+        "objectName": "WaveText"
+      },
+      {
+        "objectName": "MessageText"
+      },
+      {
+        "objectName": "HelpText"
+      },
+      {
+        "objectName": "ShotgunTower"
+      },
+      {
+        "objectName": "RocketTower"
+      },
+      {
+        "objectName": "RocketBullet"
+      },
+      {
+        "objectName": "GrassGround"
+      },
+      {
+        "objectName": "TowerShopBox"
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "SceneJustBegins"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "EffectCapability::EffectBehavior::EnableEffect"
+          },
+          "parameters": [
+            "TileType_Button",
+            "Effect",
+            "\"Outline\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Hide"
+          },
+          "parameters": [
+            "TilePlacement_Indicator"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "ButtonStates::ButtonFSM::IsClicked"
+          },
+          "parameters": [
+            "TileType_Button",
+            "ButtonFSM",
+            ""
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+              },
+              "parameters": [
+                "TileType_Button",
+                "Effect",
+                "\"Outline\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "TileType_Button",
+                "Effect",
+                "\"Outline\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "TilePlacement_Indicator",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "TilePlacement_Indicator",
+                "Animation",
+                "=",
+                "TileType_Button.Animation::Name()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "ButtonChanged",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/starter_switch.wav",
+                "",
+                "60",
+                "RandomWithStep(0.9,1.1,0.05)"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PickAllInstances"
+                  },
+                  "parameters": [
+                    "",
+                    "TileType_Button"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "TileType_Button",
+                    "Effect",
+                    "\"Outline\"",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "TileType_Button",
+                    "Effect",
+                    "\"Outline\"",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+              },
+              "parameters": [
+                "TileType_Button",
+                "Effect",
+                "\"Outline\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "ButtonChanged",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "TileType_Button",
+                "Effect",
+                "\"Outline\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "TilePlacement_Indicator"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets/starter_switch.wav",
+                "",
+                "30",
+                "RandomWithStep(0.7,0.8,0.05)"
+              ]
+            }
+          ]
+        }
+      ],
+      "variables": [
+        {
+          "name": "ButtonChanged",
+          "type": "boolean",
+          "value": false
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SetXY"
+          },
+          "parameters": [
+            "TilePlacement_Indicator",
+            "=",
+            "CursorX() - (TilePlacement_Indicator.Width() / 2)",
+            "=",
+            "CursorY() - (TilePlacement_Indicator.Height() / 2)"
+          ]
+        },
+        {
+          "type": {
+            "value": "SnapToGrid::SnapObjectToVirtualGrid"
+          },
+          "parameters": [
+            "",
+            "TilePlacement_Indicator",
+            "64",
+            "64",
+            "0",
+            "0",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "aiGeneratedEventId": "01M48VWVCAWVAC837GVWAXG07Z",
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "Visible"
+          },
+          "parameters": [
+            "TilePlacement_Indicator"
+          ]
+        }
+      ],
+      "actions": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "TilePlacement_Indicator",
+                "Animation",
+                "=",
+                "\"Tower\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "TowerCost",
+                "=",
+                "100"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "TilePlacement_Indicator",
+                "Animation",
+                "=",
+                "\"ShotgunTower\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "TowerCost",
+                "=",
+                "150"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "TilePlacement_Indicator",
+                "Animation",
+                "=",
+                "\"RocketTower\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "TowerCost",
+                "=",
+                "250"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Place unit"
+    },
+    {
+      "aiGeneratedEventId": "01M48VWVCAWVAC837GVWAXG07Z",
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "MouseButtonFromTextPressed"
+          },
+          "parameters": [
+            "",
+            "\"Left\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Visible"
+          },
+          "parameters": [
+            "TilePlacement_Indicator"
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "IsCursorOnObject"
+          },
+          "parameters": [
+            "TileType_Button",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "TilePlacement_Indicator",
+            "PlaceableTile",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "TilePlacement_Indicator",
+            "Ground_Tilemap",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "Money",
+            ">=",
+            "TowerCost"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "CreateByName"
+          },
+          "parameters": [
+            "",
+            "PlaceableTile",
+            "TilePlacement_Indicator.Animation::Name()",
+            "TilePlacement_Indicator.X()",
+            "TilePlacement_Indicator.Y()",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "Money",
+            "-",
+            "TowerCost"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets/starting_woodthump.wav",
+            "no",
+            "50",
+            "RandomWithStep(1, 1, 2.05)"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "aiGeneratedEventId": "01M48W34XHZ8QFW418BZFNMTKF",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "TilePlacement_Indicator",
+                "Animation",
+                "=",
+                "\"ShotgunTower\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "ShotgunTower",
+                "Scale",
+                "=",
+                "0.65"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "ShotgunTower",
+                "\"shoot\""
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01M48W34XHZ8QFW418BZFNMTKF",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "TilePlacement_Indicator",
+                "Animation",
+                "=",
+                "\"RocketTower\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ScalableCapability::ScalableBehavior::SetValue"
+              },
+              "parameters": [
+                "RocketTower",
+                "Scale",
+                "=",
+                "4"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "RocketTower",
+                "\"shoot\""
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "aiGeneratedEventId": "01M48VA6THSQAY4WPAXQ0DD0A5",
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Tower Defense",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneJustBegins"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "MessageText"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"SpawnTimer\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "",
+                "\"Space\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "WaveActive",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Wave",
+                "<",
+                "5"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "GameOver",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Wave",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "EnemiesToSpawn",
+                "=",
+                "4 + Wave * 2"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "EnemySpeed",
+                "=",
+                "90 + (Wave - 1) * 12"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "WaveActive",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"SpawnTimer\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "MessageText"
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01M48VWVCAWVAC837GVWAXG07Z",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "WaveActive",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "EnemiesToSpawn",
+                ">",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"SpawnTimer\"",
+                ">",
+                "0.8"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Enemy",
+                "-50",
+                "100",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "EnemiesToSpawn",
+                "-",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetTimer"
+              },
+              "parameters": [
+                "",
+                "\"SpawnTimer\""
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01M48W34XHZ8QFW418BZFNMTKF",
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Enemy",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "Enemy",
+                "Waypoint",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetXY"
+              },
+              "parameters": [
+                "Enemy",
+                "=",
+                "Enemy.X() + (1150 - Enemy.X()) / sqrt(pow(1150 - Enemy.X(), 2) + pow(100 - Enemy.Y(), 2)) * EnemySpeed * TimeDelta()",
+                "=",
+                "Enemy.Y() + (100 - Enemy.Y()) / sqrt(pow(1150 - Enemy.X(), 2) + pow(100 - Enemy.Y(), 2)) * EnemySpeed * TimeDelta()"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "sqrt(pow(Enemy.X() - 1150, 2) + pow(Enemy.Y() - 100, 2))",
+                    "<",
+                    "6"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Enemy",
+                    "Waypoint",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01M48W34XHZ8QFW418BZFNMTKF",
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Enemy",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "Enemy",
+                "Waypoint",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetXY"
+              },
+              "parameters": [
+                "Enemy",
+                "=",
+                "Enemy.X() + (1150 - Enemy.X()) / sqrt(pow(1150 - Enemy.X(), 2) + pow(300 - Enemy.Y(), 2)) * EnemySpeed * TimeDelta()",
+                "=",
+                "Enemy.Y() + (300 - Enemy.Y()) / sqrt(pow(1150 - Enemy.X(), 2) + pow(300 - Enemy.Y(), 2)) * EnemySpeed * TimeDelta()"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "sqrt(pow(Enemy.X() - 1150, 2) + pow(Enemy.Y() - 300, 2))",
+                    "<",
+                    "6"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Enemy",
+                    "Waypoint",
+                    "=",
+                    "2"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01M48W34XHZ8QFW418BZFNMTKF",
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Enemy",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "Enemy",
+                "Waypoint",
+                "=",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetXY"
+              },
+              "parameters": [
+                "Enemy",
+                "=",
+                "Enemy.X() + (130 - Enemy.X()) / sqrt(pow(130 - Enemy.X(), 2) + pow(300 - Enemy.Y(), 2)) * EnemySpeed * TimeDelta()",
+                "=",
+                "Enemy.Y() + (300 - Enemy.Y()) / sqrt(pow(130 - Enemy.X(), 2) + pow(300 - Enemy.Y(), 2)) * EnemySpeed * TimeDelta()"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "sqrt(pow(Enemy.X() - 130, 2) + pow(Enemy.Y() - 300, 2))",
+                    "<",
+                    "6"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Enemy",
+                    "Waypoint",
+                    "=",
+                    "3"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01M48W34XHZ8QFW418BZFNMTKF",
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Enemy",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "Enemy",
+                "Waypoint",
+                "=",
+                "3"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetXY"
+              },
+              "parameters": [
+                "Enemy",
+                "=",
+                "Enemy.X() + (130 - Enemy.X()) / sqrt(pow(130 - Enemy.X(), 2) + pow(500 - Enemy.Y(), 2)) * EnemySpeed * TimeDelta()",
+                "=",
+                "Enemy.Y() + (500 - Enemy.Y()) / sqrt(pow(130 - Enemy.X(), 2) + pow(500 - Enemy.Y(), 2)) * EnemySpeed * TimeDelta()"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "sqrt(pow(Enemy.X() - 130, 2) + pow(Enemy.Y() - 500, 2))",
+                    "<",
+                    "6"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Enemy",
+                    "Waypoint",
+                    "=",
+                    "4"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01M48W34XHZ8QFW418BZFNMTKF",
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Enemy",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "Enemy",
+                "Waypoint",
+                "=",
+                "4"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetXY"
+              },
+              "parameters": [
+                "Enemy",
+                "=",
+                "Enemy.X() + (1250 - Enemy.X()) / sqrt(pow(1250 - Enemy.X(), 2) + pow(500 - Enemy.Y(), 2)) * EnemySpeed * TimeDelta()",
+                "=",
+                "Enemy.Y() + (500 - Enemy.Y()) / sqrt(pow(1250 - Enemy.X(), 2) + pow(500 - Enemy.Y(), 2)) * EnemySpeed * TimeDelta()"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "sqrt(pow(Enemy.X() - 1250, 2) + pow(Enemy.Y() - 500, 2))",
+                    "<",
+                    "6"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Enemy",
+                    "Waypoint",
+                    "=",
+                    "5"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01M48W34XHZ8QFW418BZFNMTKF",
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Enemy",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "Enemy",
+                "Waypoint",
+                "=",
+                "5"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetX"
+              },
+              "parameters": [
+                "Enemy",
+                "+",
+                "EnemySpeed * TimeDelta()"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PosX"
+              },
+              "parameters": [
+                "Enemy",
+                ">",
+                "1300"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Enemy",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Lives",
+                "-",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01M48VWVCAWVAC837GVWAXG07Z",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "Tower",
+                "Enemy",
+                "280",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "GameOver",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PickNearest"
+              },
+              "parameters": [
+                "Enemy",
+                "Tower.CenterX()",
+                "Tower.CenterY()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetAngle"
+              },
+              "parameters": [
+                "Tower",
+                "=",
+                "Tower.AngleToPosition(Enemy.CenterX(), Enemy.CenterY())"
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::FireTowardObject"
+              },
+              "parameters": [
+                "Tower",
+                "FireBullet",
+                "Tower.CenterX()",
+                "Tower.CenterY()",
+                "Bullet",
+                "Enemy",
+                "400",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01M48W4SDTS9HYT03SCTZ92EY2",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "ShotgunTower",
+                "Enemy",
+                "220",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "GameOver",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "ShotgunTower",
+                "\"shoot\"",
+                ">",
+                "0.7"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PickNearest"
+              },
+              "parameters": [
+                "Enemy",
+                "ShotgunTower.CenterX()",
+                "ShotgunTower.CenterY()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetAngle"
+              },
+              "parameters": [
+                "ShotgunTower",
+                "=",
+                "ShotgunTower.AngleToPosition(Enemy.CenterX(), Enemy.CenterY())"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "ShotgunTower",
+                "\"shoot\""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::FireTowardObject"
+              },
+              "parameters": [
+                "ShotgunTower",
+                "FireBullet",
+                "ShotgunTower.CenterX()",
+                "ShotgunTower.CenterY()",
+                "Bullet",
+                "Enemy",
+                "450",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "ShotgunTower",
+                "FireBullet",
+                "ShotgunTower.CenterX()",
+                "ShotgunTower.CenterY()",
+                "Bullet",
+                "ShotgunTower.Angle() + 8",
+                "450",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "ShotgunTower",
+                "FireBullet",
+                "ShotgunTower.CenterX()",
+                "ShotgunTower.CenterY()",
+                "Bullet",
+                "ShotgunTower.Angle() - 8",
+                "450",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "ShotgunTower",
+                "FireBullet",
+                "ShotgunTower.CenterX()",
+                "ShotgunTower.CenterY()",
+                "Bullet",
+                "ShotgunTower.Angle() + 16",
+                "450",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::Fire"
+              },
+              "parameters": [
+                "ShotgunTower",
+                "FireBullet",
+                "ShotgunTower.CenterX()",
+                "ShotgunTower.CenterY()",
+                "Bullet",
+                "ShotgunTower.Angle() - 16",
+                "450",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01M48VWVCAWVAC837GVWAXG07Z",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "RocketTower",
+                "Enemy",
+                "350",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "GameOver",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "CompareObjectTimer"
+              },
+              "parameters": [
+                "RocketTower",
+                "\"shoot\"",
+                ">",
+                "2"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PickNearest"
+              },
+              "parameters": [
+                "Enemy",
+                "RocketTower.CenterX()",
+                "RocketTower.CenterY()"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetAngle"
+              },
+              "parameters": [
+                "RocketTower",
+                "=",
+                "RocketTower.AngleToPosition(Enemy.CenterX(), Enemy.CenterY())"
+              ]
+            },
+            {
+              "type": {
+                "value": "ResetObjectTimer"
+              },
+              "parameters": [
+                "RocketTower",
+                "\"shoot\""
+              ]
+            },
+            {
+              "type": {
+                "value": "FireBullet::FireBullet::FireTowardObject"
+              },
+              "parameters": [
+                "RocketTower",
+                "FireBullet",
+                "RocketTower.CenterX()",
+                "RocketTower.CenterY()",
+                "RocketBullet",
+                "Enemy",
+                "250",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Bullet",
+                "Enemy",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Enemy",
+                "Health",
+                "10",
+                "no",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Bullet",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "aiGeneratedEventId": "01M48VWVCAWVAC837GVWAXG07Z",
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "RocketBullet",
+                "Enemy",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Health::Health::Hit"
+              },
+              "parameters": [
+                "Enemy",
+                "Health",
+                "40",
+                "no",
+                "no",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "RocketBullet",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "Enemy",
+                "Health",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "Enemy",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Money",
+                "+",
+                "KillReward"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "WaveActive",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "EnemiesToSpawn",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SceneInstancesCount"
+              },
+              "parameters": [
+                "",
+                "Enemy",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "WaveActive",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Wave",
+                    ">=",
+                    "5"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "GameOver",
+                    "True",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "MessageText",
+                    "Text",
+                    "=",
+                    "\"YOU WIN!\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Show"
+                  },
+                  "parameters": [
+                    "MessageText",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Else",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "MessageText",
+                    "Text",
+                    "=",
+                    "\"Wave cleared! Press SPACE\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Show"
+                  },
+                  "parameters": [
+                    "MessageText",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Lives",
+                "<=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "GameOver",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "GameOver",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "MessageText",
+                "Text",
+                "=",
+                "\"GAME OVER\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "MessageText",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "MoneyText",
+                "Text",
+                "=",
+                "\"Money: \" + ToString(Money)"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "LivesText",
+                "Text",
+                "=",
+                "\"Lives: \" + ToString(Lives)"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "WaveText",
+                "Text",
+                "=",
+                "\"Wave: \" + ToString(Wave) + \"/5\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "UI",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "ButtonFSM",
+      "type": "ButtonStates::ButtonFSM"
+    },
+    {
+      "name": "ButtonScaleTween",
+      "type": "ButtonStates::ButtonScaleTween"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "FireBullet",
+      "type": "FireBullet::FireBullet"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Health",
+      "type": "Health::Health"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "TileMap",
+      "type": "TileMap::TileMapBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
+    }
+  ]
+}
