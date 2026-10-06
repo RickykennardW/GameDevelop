@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5468750000000044,
+    "zoomFactor": 0.5468750000000047,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -37,6 +37,91 @@
         },
         {
           "name": "RocketTower"
+        }
+      ]
+    },
+    {
+      "name": "TowerShopContent",
+      "objects": [
+        {
+          "name": "TileType_Button"
+        },
+        {
+          "name": "AssetCardPanel"
+        },
+        {
+          "name": "AssetPanelTitle"
+        },
+        {
+          "name": "AssetPanelSubtitle"
+        },
+        {
+          "name": "AssetTowerLabel"
+        },
+        {
+          "name": "AssetTowerPrice"
+        },
+        {
+          "name": "AssetShotgunTowerLabel"
+        },
+        {
+          "name": "AssetShotgunTowerPrice"
+        },
+        {
+          "name": "AssetRocketTowerLabel"
+        },
+        {
+          "name": "AssetRocketTowerPrice"
+        },
+        {
+          "name": "AssetPanelHint"
+        },
+        {
+          "name": "AssetCardSeparator"
+        }
+      ]
+    },
+    {
+      "name": "TowerInfoUI",
+      "objects": [
+        {
+          "name": "TowerInfoName"
+        },
+        {
+          "name": "TowerInfoDamageLabel"
+        },
+        {
+          "name": "TowerInfoDamage"
+        },
+        {
+          "name": "TowerInfoRateLabel"
+        },
+        {
+          "name": "TowerInfoRate"
+        },
+        {
+          "name": "TowerInfoRangeLabel"
+        },
+        {
+          "name": "TowerInfoRange"
+        },
+        {
+          "name": "TowerInfoDealtLabel"
+        },
+        {
+          "name": "TowerInfoDealt"
+        },
+        {
+          "name": "TowerSellButton"
+        },
+        {
+          "name": "TowerSellLabel"
+        },
+        {
+          "name": "TowerSellValue"
+        },
+        {
+          "name": "TowerInfoCloseHint"
         }
       ]
     }
@@ -107,6 +192,42 @@
       "persistentUuid": "9d1ef647-9b52-4a52-bc0a-50d44fa641a7",
       "type": "number",
       "value": 200
+    },
+    {
+      "name": "SelectedTower",
+      "persistentUuid": "b9f0211c-2fc9-4eb3-94dc-ffa07294878b",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "NextTowerId",
+      "persistentUuid": "03553525-245c-4407-a077-44a9c948c74f",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "SellRefundRate",
+      "persistentUuid": "f791a161-eb6a-4591-866b-d31a73e385e7",
+      "type": "number",
+      "value": 0.7
+    },
+    {
+      "name": "TowerPointerWasDown",
+      "persistentUuid": "81b31a31-a262-43fe-8404-8091b0a1951c",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "SelectedTowerFound",
+      "persistentUuid": "149419b5-8724-4ab4-9fc6-393085f414a5",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "TowerUIConsumesClick",
+      "persistentUuid": "87a326e5-74f0-43f7-a794-4f30a6ab276e",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -114,14 +235,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 34,
+      "height": 22,
       "keepRatio": true,
       "layer": "UI",
       "name": "TileType_Button",
       "persistentUuid": "c68085e2-ea50-4b1b-bb18-b8e5af9ce807",
-      "width": 36,
-      "x": 1167,
-      "y": 135,
+      "width": 44,
+      "x": 1190,
+      "y": 383,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -136,14 +257,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 37,
+      "height": 44,
       "keepRatio": true,
       "layer": "UI",
       "name": "TileType_Button",
       "persistentUuid": "7f84d899-b9b0-4371-a885-dd5e0bb9d3fb",
-      "width": 39,
-      "x": 1218,
-      "y": 82,
+      "width": 25.77777777777778,
+      "x": 1199.111111111111,
+      "y": 264,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -153,14 +274,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 38,
+      "height": 44,
       "keepRatio": true,
       "layer": "UI",
       "name": "TileType_Button",
       "persistentUuid": "91364a9a-21e9-4931-a120-fd7db3f09407",
-      "width": 40,
-      "x": 1166,
-      "y": 81,
+      "width": 44,
+      "x": 1190,
+      "y": 156,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -277,14 +398,13 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 578,
-      "keepRatio": true,
+      "height": 420,
       "layer": "UI",
       "name": "TowerShopBox",
       "persistentUuid": "39857ce2-5137-48b7-b436-c751024dffbb",
       "width": 120,
       "x": 1152,
-      "y": 63,
+      "y": 64,
       "zOrder": -1,
       "numberProperties": [],
       "stringProperties": [],
@@ -1153,6 +1273,454 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 100,
+      "layer": "UI",
+      "name": "AssetCardPanel",
+      "persistentUuid": "f1abf032-392a-4adc-a0d4-d78b4d10a757",
+      "width": 96,
+      "x": 1164,
+      "y": 128,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 100,
+      "layer": "UI",
+      "name": "AssetCardPanel",
+      "persistentUuid": "f5266ff8-04d5-470d-a134-f024c2498a5a",
+      "width": 96,
+      "x": 1164,
+      "y": 236,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 100,
+      "layer": "UI",
+      "name": "AssetCardPanel",
+      "persistentUuid": "e64dce8b-8ba7-4fa6-8a48-65cf0880adbf",
+      "width": 96,
+      "x": 1164,
+      "y": 344,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 23,
+      "layer": "UI",
+      "name": "AssetPanelTitle",
+      "persistentUuid": "e2bae964-8a36-4646-b124-4a8355e2f0c2",
+      "width": 96,
+      "x": 1164,
+      "y": 80,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 16,
+      "layer": "UI",
+      "name": "AssetPanelSubtitle",
+      "persistentUuid": "58315c75-3aa2-4b10-8eca-60a83bf34191",
+      "width": 96,
+      "x": 1164,
+      "y": 105,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 20,
+      "layer": "UI",
+      "name": "AssetTowerLabel",
+      "persistentUuid": "4bee1f6e-c693-4d71-8e05-8e32708fd485",
+      "width": 84,
+      "x": 1170,
+      "y": 136,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 18,
+      "layer": "UI",
+      "name": "AssetTowerPrice",
+      "persistentUuid": "57ee778a-5850-48b7-9575-9b1c48b7ad42",
+      "width": 84,
+      "x": 1170,
+      "y": 205,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 20,
+      "layer": "UI",
+      "name": "AssetShotgunTowerLabel",
+      "persistentUuid": "86304c53-6f60-4a70-a7b4-06d90b504a37",
+      "width": 84,
+      "x": 1170,
+      "y": 244,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 18,
+      "layer": "UI",
+      "name": "AssetShotgunTowerPrice",
+      "persistentUuid": "3be488b2-b4ce-4e37-b8ec-ebeea1c93da8",
+      "width": 84,
+      "x": 1170,
+      "y": 313,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 20,
+      "layer": "UI",
+      "name": "AssetRocketTowerLabel",
+      "persistentUuid": "82bc6b93-7e99-4f53-a0c3-5cd15c177538",
+      "width": 84,
+      "x": 1170,
+      "y": 352,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 18,
+      "layer": "UI",
+      "name": "AssetRocketTowerPrice",
+      "persistentUuid": "9f70016e-741b-4df7-b2f3-35ffafef5aeb",
+      "width": 84,
+      "x": 1170,
+      "y": 421,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 18,
+      "layer": "UI",
+      "name": "AssetPanelHint",
+      "persistentUuid": "bb8b15d3-dbd1-4579-bb92-507cd90ab7d4",
+      "width": 96,
+      "x": 1164,
+      "y": 452,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1,
+      "layer": "UI",
+      "name": "AssetCardSeparator",
+      "persistentUuid": "6c7a4af5-592e-409b-a06d-5d3260e4b849",
+      "width": 80,
+      "x": 1172,
+      "y": 232,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 1,
+      "layer": "UI",
+      "name": "AssetCardSeparator",
+      "persistentUuid": "1ea59f56-80b9-4980-95eb-6122b520a6c1",
+      "width": 80,
+      "x": 1172,
+      "y": 340,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 30,
+      "layer": "UI",
+      "name": "TowerInfoName",
+      "persistentUuid": "45bcee5e-92bd-4797-9a96-d9757469247e",
+      "width": 100,
+      "x": 1162,
+      "y": 82,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 18,
+      "layer": "UI",
+      "name": "TowerInfoDamageLabel",
+      "persistentUuid": "23f9ec56-facf-4d5c-b234-9c8700f99083",
+      "width": 100,
+      "x": 1162,
+      "y": 126,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 25,
+      "layer": "UI",
+      "name": "TowerInfoDamage",
+      "persistentUuid": "3953c7cc-4feb-4096-bb6f-80d964178f3a",
+      "width": 100,
+      "x": 1162,
+      "y": 144,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 18,
+      "layer": "UI",
+      "name": "TowerInfoRateLabel",
+      "persistentUuid": "00c9f55f-1f7b-4359-9c64-c89a09a7432a",
+      "width": 100,
+      "x": 1162,
+      "y": 180,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 25,
+      "layer": "UI",
+      "name": "TowerInfoRate",
+      "persistentUuid": "e2100be3-205e-439b-bee9-8808cd0fa858",
+      "width": 100,
+      "x": 1162,
+      "y": 198,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 18,
+      "layer": "UI",
+      "name": "TowerInfoRangeLabel",
+      "persistentUuid": "47eacd72-a4f2-487a-9364-d9df2b22adf0",
+      "width": 100,
+      "x": 1162,
+      "y": 234,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 25,
+      "layer": "UI",
+      "name": "TowerInfoRange",
+      "persistentUuid": "39961c1f-ba14-4f55-a90f-fd340bc0b4df",
+      "width": 100,
+      "x": 1162,
+      "y": 252,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 18,
+      "layer": "UI",
+      "name": "TowerInfoDealtLabel",
+      "persistentUuid": "60905634-1e60-4ad0-9b05-180cf4e06358",
+      "width": 100,
+      "x": 1162,
+      "y": 288,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 25,
+      "layer": "UI",
+      "name": "TowerInfoDealt",
+      "persistentUuid": "791e826c-a2c8-464d-aa40-fb21f8025e6e",
+      "width": 100,
+      "x": 1162,
+      "y": 306,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "layer": "UI",
+      "name": "TowerSellButton",
+      "persistentUuid": "eb66f9ce-b063-4a7f-bc80-3d4396646442",
+      "width": 96,
+      "x": 1164,
+      "y": 346,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 24,
+      "layer": "UI",
+      "name": "TowerSellLabel",
+      "persistentUuid": "f900ea7e-2270-46ea-8efb-dbdf942e8429",
+      "width": 96,
+      "x": 1164,
+      "y": 356,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 22,
+      "layer": "UI",
+      "name": "TowerSellValue",
+      "persistentUuid": "8e8f974d-ee65-4d71-baf3-af89807a33fe",
+      "width": 96,
+      "x": 1164,
+      "y": 382,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 18,
+      "layer": "UI",
+      "name": "TowerInfoCloseHint",
+      "persistentUuid": "b7b1af58-b383-4bc0-aa26-50449df47871",
+      "width": 100,
+      "x": 1162,
+      "y": 448,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 400,
+      "layer": "",
+      "name": "RangeIndicator",
+      "persistentUuid": "c65dceae-e97e-48eb-af63-b2ee7ae7c951",
+      "width": 400,
+      "x": 0,
+      "y": 0,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -1193,20 +1761,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 17,
-                        "y": 5
+                        "x": 15.40625,
+                        "y": 7.734375
                       },
                       {
-                        "x": 47,
-                        "y": 5
+                        "x": 42.59375,
+                        "y": 7.734375
                       },
                       {
-                        "x": 47,
-                        "y": 59
+                        "x": 42.59375,
+                        "y": 91.265625
                       },
                       {
-                        "x": 17,
-                        "y": 59
+                        "x": 15.40625,
+                        "y": 91.265625
                       }
                     ]
                   ]
@@ -1289,20 +1857,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 17,
-                        "y": 5
+                        "x": 4.25,
+                        "y": 0.625
                       },
                       {
-                        "x": 47,
-                        "y": 5
+                        "x": 11.75,
+                        "y": 0.625
                       },
                       {
-                        "x": 47,
-                        "y": 59
+                        "x": 11.75,
+                        "y": 7.375
                       },
                       {
-                        "x": 17,
-                        "y": 59
+                        "x": 4.25,
+                        "y": 7.375
                       }
                     ]
                   ]
@@ -1326,11 +1894,11 @@
           "effectType": "Outline",
           "name": "Outline",
           "doubleParameters": {
-            "padding": 4,
-            "thickness": 4
+            "padding": 3,
+            "thickness": 2
           },
           "stringParameters": {
-            "color": "255;235;0"
+            "color": "224;177;61"
           },
           "booleanParameters": {}
         }
@@ -1397,16 +1965,16 @@
                         "y": 0
                       },
                       {
-                        "x": 64,
+                        "x": 58,
                         "y": 0
                       },
                       {
-                        "x": 64,
-                        "y": 64
+                        "x": 58,
+                        "y": 99
                       },
                       {
                         "x": 0,
-                        "y": 64
+                        "y": 99
                       }
                     ]
                   ]
@@ -1493,16 +2061,16 @@
                         "y": 0
                       },
                       {
-                        "x": 64,
+                        "x": 16,
                         "y": 0
                       },
                       {
-                        "x": 64,
-                        "y": 64
+                        "x": 16,
+                        "y": 8
                       },
                       {
                         "x": 0,
-                        "y": 64
+                        "y": 8
                       }
                     ]
                   ]
@@ -1536,7 +2104,48 @@
       "persistentUuid": "23985d8b-db74-4b04-8d28-9694a29851b9",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "TowerId",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "PurchasePrice",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "DamageDealt",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Damage",
+          "type": "number",
+          "value": 15
+        },
+        {
+          "name": "AttackRange",
+          "type": "number",
+          "value": 200
+        },
+        {
+          "name": "AttackInterval",
+          "type": "number",
+          "value": 0.6
+        },
+        {
+          "name": "SellValue",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "TowerName",
+          "type": "string",
+          "value": "Basic Tower"
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -2240,7 +2849,28 @@
       "persistentUuid": "1630fbdf-d066-45e5-a003-94e616eca9cb",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "OwnerTowerId",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Damage",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "HitHealthBefore",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "ActualDamage",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "effects": [],
       "behaviors": [],
       "animations": [
@@ -2471,6 +3101,7 @@
       "bold": false,
       "italic": false,
       "name": "HelpText",
+      "persistentUuid": "9e6f2f82-4400-440a-b8c1-c1297edb0ac9",
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
@@ -2516,7 +3147,48 @@
       "persistentUuid": "01ac2fa2-83fe-46d0-a22d-69f86c547ea6",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "TowerId",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "PurchasePrice",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "DamageDealt",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Damage",
+          "type": "number",
+          "value": 15
+        },
+        {
+          "name": "AttackRange",
+          "type": "number",
+          "value": 140
+        },
+        {
+          "name": "AttackInterval",
+          "type": "number",
+          "value": 1.2
+        },
+        {
+          "name": "SellValue",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "TowerName",
+          "type": "string",
+          "value": "Shotgun"
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -2656,7 +3328,48 @@
       "persistentUuid": "d0f34a85-27b0-4f7a-a8fa-df68e6230be5",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "TowerId",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "PurchasePrice",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "DamageDealt",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Damage",
+          "type": "number",
+          "value": 40
+        },
+        {
+          "name": "AttackRange",
+          "type": "number",
+          "value": 300
+        },
+        {
+          "name": "AttackInterval",
+          "type": "number",
+          "value": 2
+        },
+        {
+          "name": "SellValue",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "TowerName",
+          "type": "string",
+          "value": "Rocket"
+        }
+      ],
       "effects": [],
       "behaviors": [
         {
@@ -2748,7 +3461,28 @@
       "persistentUuid": "1a4a93d0-e337-42ca-b3b0-b1f4d9fc5e04",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "OwnerTowerId",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Damage",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "HitHealthBefore",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "ActualDamage",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "effects": [],
       "behaviors": [],
       "animations": [
@@ -3047,6 +3781,1048 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "9f3730c55c8073fc715b8c5cb0147617c70d9b602d24e7b908af7147952ad16d",
+      "bottomMargin": 16,
+      "height": 48,
+      "leftMargin": 16,
+      "name": "AssetCardPanel",
+      "persistentUuid": "1a259e48-6782-436b-a142-3bae7a2c4b43",
+      "rightMargin": 16,
+      "texture": "Default-panel (31).png",
+      "tiled": false,
+      "topMargin": 16,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 48,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "AssetPanelTitle",
+      "persistentUuid": "74b75fa4-56af-4780-a2eb-77095236744a",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "TOWERS",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 18,
+      "color": {
+        "b": 48,
+        "g": 52,
+        "r": 39
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "TOWERS",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 18,
+        "lineHeight": 0,
+        "color": "39;52;48"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "AssetPanelSubtitle",
+      "persistentUuid": "d49ff168-adbf-46bf-a265-16d6dc16fc44",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "BUILD DEFENSE",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 10,
+      "color": {
+        "b": 95,
+        "g": 103,
+        "r": 92
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "BUILD DEFENSE",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 10,
+        "lineHeight": 0,
+        "color": "92;103;95"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "AssetTowerLabel",
+      "persistentUuid": "352bcbae-7253-4b8c-b794-dec1ee362f64",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Tower",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 15,
+      "color": {
+        "b": 48,
+        "g": 52,
+        "r": 39
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Tower",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 15,
+        "lineHeight": 0,
+        "color": "39;52;48"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "AssetTowerPrice",
+      "persistentUuid": "fa337051-bc0c-4425-96b4-3f70e66992a1",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "100 g",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 13,
+      "color": {
+        "b": 31,
+        "g": 82,
+        "r": 111
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "100 g",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 13,
+        "lineHeight": 0,
+        "color": "111;82;31"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "AssetShotgunTowerLabel",
+      "persistentUuid": "14b8c85b-b063-41f0-a1e9-b894258c5451",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Shotgun",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 15,
+      "color": {
+        "b": 48,
+        "g": 52,
+        "r": 39
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Shotgun",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 15,
+        "lineHeight": 0,
+        "color": "39;52;48"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "AssetShotgunTowerPrice",
+      "persistentUuid": "2e8fcfa9-f92f-47a1-b347-77711a44544d",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "150 g",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 13,
+      "color": {
+        "b": 31,
+        "g": 82,
+        "r": 111
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "150 g",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 13,
+        "lineHeight": 0,
+        "color": "111;82;31"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "AssetRocketTowerLabel",
+      "persistentUuid": "917bb975-86d7-481e-bb83-f9d66fd9ec33",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Rocket",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 15,
+      "color": {
+        "b": 48,
+        "g": 52,
+        "r": 39
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Rocket",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 15,
+        "lineHeight": 0,
+        "color": "39;52;48"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "AssetRocketTowerPrice",
+      "persistentUuid": "2b367b4b-b7d5-43fe-b6da-22a8405d4c32",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "250 g",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 13,
+      "color": {
+        "b": 31,
+        "g": 82,
+        "r": 111
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "250 g",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 13,
+        "lineHeight": 0,
+        "color": "111;82;31"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "AssetPanelHint",
+      "persistentUuid": "d29e09f7-c2cf-44d0-ba98-56d8bab84fa7",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Pick an icon",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 12,
+      "color": {
+        "b": 95,
+        "g": 103,
+        "r": 92
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Pick an icon",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 12,
+        "lineHeight": 0,
+        "color": "92;103;95"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "AssetCardSeparator",
+      "persistentUuid": "641b19dc-1106-4be8-b5da-cd11b5a89321",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/shop-separator.svg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "TowerInfoName",
+      "persistentUuid": "6e3c8ab3-ab2a-435d-a642-9eb716322482",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "Tower",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 14,
+      "color": {
+        "b": 48,
+        "g": 52,
+        "r": 39
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "Tower",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 14,
+        "lineHeight": 0,
+        "color": "39;52;48"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "TowerInfoDamageLabel",
+      "persistentUuid": "90d56ee3-b788-477f-92b4-a87b3446ba77",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "DAMAGE / HIT",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 10,
+      "color": {
+        "b": 95,
+        "g": 103,
+        "r": 92
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "DAMAGE / HIT",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 10,
+        "lineHeight": 0,
+        "color": "92;103;95"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "TowerInfoDamage",
+      "persistentUuid": "21be70a1-4cbd-4ae0-959c-c57337992991",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "0",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 16,
+      "color": {
+        "b": 48,
+        "g": 52,
+        "r": 39
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "0",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 16,
+        "lineHeight": 0,
+        "color": "39;52;48"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "TowerInfoRateLabel",
+      "persistentUuid": "29b1b3dd-09f1-4a13-8319-0440d17add9c",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "FIRE INTERVAL",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 10,
+      "color": {
+        "b": 95,
+        "g": 103,
+        "r": 92
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "FIRE INTERVAL",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 10,
+        "lineHeight": 0,
+        "color": "92;103;95"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "TowerInfoRate",
+      "persistentUuid": "997fdc15-1430-4688-adb9-7bccfe8c79ff",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "0",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 16,
+      "color": {
+        "b": 48,
+        "g": 52,
+        "r": 39
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "0",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 16,
+        "lineHeight": 0,
+        "color": "39;52;48"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "TowerInfoRangeLabel",
+      "persistentUuid": "b7b96fdb-d200-4125-aa26-791b269e1fc5",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "ATTACK RANGE",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 10,
+      "color": {
+        "b": 95,
+        "g": 103,
+        "r": 92
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "ATTACK RANGE",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 10,
+        "lineHeight": 0,
+        "color": "92;103;95"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "TowerInfoRange",
+      "persistentUuid": "64be2ebb-25ae-4a77-aa8b-be9d2c9f1666",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "0",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 16,
+      "color": {
+        "b": 48,
+        "g": 52,
+        "r": 39
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "0",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 16,
+        "lineHeight": 0,
+        "color": "39;52;48"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "TowerInfoDealtLabel",
+      "persistentUuid": "08f20aec-38bf-4893-adca-624c919601cd",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "DAMAGE DEALT",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 10,
+      "color": {
+        "b": 95,
+        "g": 103,
+        "r": 92
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "DAMAGE DEALT",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 10,
+        "lineHeight": 0,
+        "color": "92;103;95"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "TowerInfoDealt",
+      "persistentUuid": "a346d30c-e6e2-4767-a01b-c742b4fb57cc",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "0",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 16,
+      "color": {
+        "b": 48,
+        "g": 52,
+        "r": 39
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "0",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 16,
+        "lineHeight": 0,
+        "color": "39;52;48"
+      }
+    },
+    {
+      "assetStoreId": "9f3730c55c8073fc715b8c5cb0147617c70d9b602d24e7b908af7147952ad16d",
+      "bottomMargin": 16,
+      "height": 48,
+      "leftMargin": 16,
+      "name": "TowerSellButton",
+      "persistentUuid": "9c98e0ba-cfc5-41c6-9f8a-d5e91df281ee",
+      "rightMargin": 16,
+      "texture": "Default-panel (31).png",
+      "tiled": false,
+      "topMargin": 16,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 48,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "TowerSellLabel",
+      "persistentUuid": "8cd1bbb6-15d1-481f-818b-285d7b8f9bea",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "SELL",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 16,
+      "color": {
+        "b": 31,
+        "g": 82,
+        "r": 111
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "SELL",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 16,
+        "lineHeight": 0,
+        "color": "111;82;31"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "TowerSellValue",
+      "persistentUuid": "c99c15b5-2bbe-4839-bebc-5f073a4a71ad",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "0 Gold",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 13,
+      "color": {
+        "b": 31,
+        "g": 82,
+        "r": 111
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "0 Gold",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 13,
+        "lineHeight": 0,
+        "color": "111;82;31"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "TowerInfoCloseHint",
+      "persistentUuid": "be8d60a2-a8db-4287-a161-524a3c59e2fa",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "ESC / click map",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 10,
+      "color": {
+        "b": 95,
+        "g": 103,
+        "r": 92
+      },
+      "content": {
+        "bold": false,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "ESC / click map",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 10,
+        "lineHeight": 0,
+        "color": "92;103;95"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "RangeIndicator",
+      "persistentUuid": "0713f446-23d9-4ee7-a844-05e6804d5eee",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/tower-range.svg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -3102,10 +4878,557 @@
       },
       {
         "objectName": "PathBlocker"
+      },
+      {
+        "objectName": "AssetCardPanel"
+      },
+      {
+        "objectName": "AssetPanelTitle"
+      },
+      {
+        "objectName": "AssetPanelSubtitle"
+      },
+      {
+        "objectName": "AssetTowerLabel"
+      },
+      {
+        "objectName": "AssetTowerPrice"
+      },
+      {
+        "objectName": "AssetShotgunTowerLabel"
+      },
+      {
+        "objectName": "AssetShotgunTowerPrice"
+      },
+      {
+        "objectName": "AssetRocketTowerLabel"
+      },
+      {
+        "objectName": "AssetRocketTowerPrice"
+      },
+      {
+        "objectName": "AssetPanelHint"
+      },
+      {
+        "objectName": "AssetCardSeparator"
+      },
+      {
+        "objectName": "TowerInfoName"
+      },
+      {
+        "objectName": "TowerInfoDamageLabel"
+      },
+      {
+        "objectName": "TowerInfoDamage"
+      },
+      {
+        "objectName": "TowerInfoRateLabel"
+      },
+      {
+        "objectName": "TowerInfoRate"
+      },
+      {
+        "objectName": "TowerInfoRangeLabel"
+      },
+      {
+        "objectName": "TowerInfoRange"
+      },
+      {
+        "objectName": "TowerInfoDealtLabel"
+      },
+      {
+        "objectName": "TowerInfoDealt"
+      },
+      {
+        "objectName": "TowerSellButton"
+      },
+      {
+        "objectName": "TowerSellLabel"
+      },
+      {
+        "objectName": "TowerSellValue"
+      },
+      {
+        "objectName": "TowerInfoCloseHint"
+      },
+      {
+        "objectName": "RangeIndicator"
       }
     ]
   },
   "events": [
+    {
+      "colorB": 109,
+      "colorG": 143,
+      "colorR": 90,
+      "creationTime": 0,
+      "name": "Tower selection and selling",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneJustBegins"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteObject::SetColor"
+              },
+              "parameters": [
+                "TowerSellButton",
+                "\"239;227;196\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "PlaceableTile",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "PlaceableTile",
+                "TowerId",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "NextTowerId",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "PlaceableTile",
+                "TowerId",
+                "=",
+                "NextTowerId"
+              ]
+            },
+            {
+              "type": {
+                "value": "ZOrder"
+              },
+              "parameters": [
+                "PlaceableTile",
+                "=",
+                "2"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "TowerPointerWasDown",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "TowerUIConsumesClick",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SelectedTower",
+                    ">",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "IsCursorOnObject"
+                  },
+                  "parameters": [
+                    "TowerShopBox",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "TowerUIConsumesClick",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SelectedTower",
+                    ">",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "IsCursorOnObject"
+                  },
+                  "parameters": [
+                    "TowerSellButton",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "PlaceableTile",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "PlaceableTile",
+                        "TowerId",
+                        "=",
+                        "SelectedTower"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "PlaceableTile",
+                        "SellValue",
+                        "=",
+                        "floor(PlaceableTile.Variable(PurchasePrice) * SellRefundRate)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "Money",
+                        "+",
+                        "PlaceableTile.Variable(SellValue)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "PlaceableTile",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "SelectedTower",
+                        "=",
+                        "0"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Hide"
+                      },
+                      "parameters": [
+                        "RangeIndicator"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Hide"
+                      },
+                      "parameters": [
+                        "TowerInfoUI"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "IsCursorOnObject"
+                  },
+                  "parameters": [
+                    "TowerShopBox",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "SelectedTower",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::ForEach",
+                  "object": "PlaceableTile",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "CursorX()",
+                        ">=",
+                        "PlaceableTile.X()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "CursorX()",
+                        "<=",
+                        "PlaceableTile.X() + PlaceableTile.Width()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "CursorY()",
+                        ">=",
+                        "PlaceableTile.Y()"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::CompareNumbers"
+                      },
+                      "parameters": [
+                        "CursorY()",
+                        "<=",
+                        "PlaceableTile.Y() + PlaceableTile.Height()"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberVariable"
+                      },
+                      "parameters": [
+                        "SelectedTower",
+                        "=",
+                        "PlaceableTile.Variable(TowerId)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Hide"
+                      },
+                      "parameters": [
+                        "TilePlacement_Indicator"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::EnableEffect"
+                      },
+                      "parameters": [
+                        "TileType_Button",
+                        "Effect",
+                        "\"Outline\"",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextJustPressed"
+              },
+              "parameters": [
+                "",
+                "\"Escape\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SelectedTower",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "TilePlacement_Indicator"
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "TileType_Button",
+                "Effect",
+                "\"Outline\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "TowerPointerWasDown",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "TowerPointerWasDown",
+                "False",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
     {
       "aiGeneratedEventId": "01M48XHDR72FVAPY3A0DBSQ22K",
       "type": "BuiltinCommonInstructions::Standard",
@@ -3188,6 +5511,26 @@
           "parameters": [
             "TileType_Button",
             "ButtonFSM",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "SelectedTower",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "TowerUIConsumesClick",
+            "False",
             ""
           ]
         }
@@ -3882,6 +6225,67 @@
         }
       ],
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "PlaceableTile",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "PlaceableTile",
+                "TowerId",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "NextTowerId",
+                "+",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "PlaceableTile",
+                "TowerId",
+                "=",
+                "NextTowerId"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "PlaceableTile",
+                "PurchasePrice",
+                "=",
+                "TowerCost"
+              ]
+            },
+            {
+              "type": {
+                "value": "ZOrder"
+              },
+              "parameters": [
+                "PlaceableTile",
+                "=",
+                "2"
+              ]
+            }
+          ]
+        },
         {
           "aiGeneratedEventId": "01M48W34XHZ8QFW418BZFNMTKF",
           "type": "BuiltinCommonInstructions::Standard",
@@ -4578,7 +6982,8 @@
         },
         {
           "aiGeneratedEventId": "01M48XHDR72FVAPY3A0DBSQ22K",
-          "type": "BuiltinCommonInstructions::Standard",
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Tower",
           "conditions": [
             {
               "type": {
@@ -4587,7 +6992,7 @@
               "parameters": [
                 "Tower",
                 "Enemy",
-                "200",
+                "Tower.Variable(AttackRange)",
                 ""
               ]
             },
@@ -4615,16 +7020,6 @@
             },
             {
               "type": {
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "Tower",
-                "=",
-                "Tower.AngleToPosition(Enemy.CenterX(), Enemy.CenterY())"
-              ]
-            },
-            {
-              "type": {
                 "value": "FireBullet::FireBullet::FireTowardObject"
               },
               "parameters": [
@@ -4642,7 +7037,8 @@
         },
         {
           "aiGeneratedEventId": "01M48XHDR72FVAPY3A0DBSQ22K",
-          "type": "BuiltinCommonInstructions::Standard",
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "ShotgunTower",
           "conditions": [
             {
               "type": {
@@ -4651,7 +7047,7 @@
               "parameters": [
                 "ShotgunTower",
                 "Enemy",
-                "140",
+                "ShotgunTower.Variable(AttackRange)",
                 ""
               ]
             },
@@ -4690,16 +7086,6 @@
             },
             {
               "type": {
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "ShotgunTower",
-                "=",
-                "ShotgunTower.AngleToPosition(Enemy.CenterX(), Enemy.CenterY())"
-              ]
-            },
-            {
-              "type": {
                 "value": "ResetObjectTimer"
               },
               "parameters": [
@@ -4732,7 +7118,7 @@
                 "ShotgunTower.CenterX()",
                 "ShotgunTower.CenterY()",
                 "Bullet",
-                "ShotgunTower.Angle() + 8",
+                "ShotgunTower.AngleToPosition(Enemy.CenterX(), Enemy.CenterY()) + 8",
                 "450",
                 ""
               ]
@@ -4747,7 +7133,7 @@
                 "ShotgunTower.CenterX()",
                 "ShotgunTower.CenterY()",
                 "Bullet",
-                "ShotgunTower.Angle() - 8",
+                "ShotgunTower.AngleToPosition(Enemy.CenterX(), Enemy.CenterY()) - 8",
                 "450",
                 ""
               ]
@@ -4762,7 +7148,7 @@
                 "ShotgunTower.CenterX()",
                 "ShotgunTower.CenterY()",
                 "Bullet",
-                "ShotgunTower.Angle() + 16",
+                "ShotgunTower.AngleToPosition(Enemy.CenterX(), Enemy.CenterY()) + 16",
                 "450",
                 ""
               ]
@@ -4777,7 +7163,7 @@
                 "ShotgunTower.CenterX()",
                 "ShotgunTower.CenterY()",
                 "Bullet",
-                "ShotgunTower.Angle() - 16",
+                "ShotgunTower.AngleToPosition(Enemy.CenterX(), Enemy.CenterY()) - 16",
                 "450",
                 ""
               ]
@@ -4786,7 +7172,8 @@
         },
         {
           "aiGeneratedEventId": "01M48XJ30W5DBNV9XJVAY8N90T",
-          "type": "BuiltinCommonInstructions::Standard",
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "RocketTower",
           "conditions": [
             {
               "type": {
@@ -4795,7 +7182,7 @@
               "parameters": [
                 "RocketTower",
                 "Enemy",
-                "300",
+                "RocketTower.Variable(AttackRange)",
                 ""
               ]
             },
@@ -4834,16 +7221,6 @@
             },
             {
               "type": {
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "RocketTower",
-                "=",
-                "RocketTower.AngleToPosition(Enemy.CenterX(), Enemy.CenterY())"
-              ]
-            },
-            {
-              "type": {
                 "value": "ResetObjectTimer"
               },
               "parameters": [
@@ -4869,8 +7246,8 @@
           ]
         },
         {
-          "aiGeneratedEventId": "01M48XJ30W5DBNV9XJVAY8N90T",
-          "type": "BuiltinCommonInstructions::Standard",
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "Bullet",
           "conditions": [
             {
               "type": {
@@ -4883,36 +7260,125 @@
                 "",
                 ""
               ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "Enemy",
+                "Health",
+                ""
+              ]
             }
           ],
           "actions": [
             {
               "type": {
-                "value": "Health::Health::Hit"
+                "value": "PickNearest"
               },
               "parameters": [
                 "Enemy",
-                "Health",
-                "15",
-                "no",
-                "no",
-                ""
+                "Bullet.CenterX()",
+                "Bullet.CenterY()"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Enemy",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    "HitHealthBefore",
+                    "=",
+                    "max(0, Enemy.Health::Health())"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Enemy",
+                    "Health",
+                    "Bullet.Variable(Damage)",
+                    "no",
+                    "no",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    "ActualDamage",
+                    "=",
+                    "max(0, Bullet.Variable(HitHealthBefore) - max(0, Enemy.Health::Health()))"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "PlaceableTile",
+                        "TowerId",
+                        "=",
+                        "Bullet.Variable(OwnerTowerId)"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "PlaceableTile",
+                        "DamageDealt",
+                        "+",
+                        "Bullet.Variable(ActualDamage)"
+                      ]
+                    }
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "Bullet",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Bullet",
+                    ""
+                  ]
+                }
               ]
             }
           ]
         },
         {
-          "aiGeneratedEventId": "01M48XJ30W5DBNV9XJVAY8N90T",
-          "type": "BuiltinCommonInstructions::Standard",
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "RocketBullet",
           "conditions": [
             {
               "type": {
@@ -4923,6 +7389,17 @@
                 "Enemy",
                 "",
                 "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Health::Health::IsDead"
+              },
+              "parameters": [
+                "Enemy",
+                "Health",
                 ""
               ]
             }
@@ -4940,7 +7417,8 @@
           ],
           "events": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "Enemy",
               "conditions": [
                 {
                   "type": {
@@ -4952,9 +7430,31 @@
                     "100",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Health::Health::IsDead"
+                  },
+                  "parameters": [
+                    "Enemy",
+                    "Health",
+                    ""
+                  ]
                 }
               ],
               "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "RocketBullet",
+                    "HitHealthBefore",
+                    "=",
+                    "max(0, Enemy.Health::Health())"
+                  ]
+                },
                 {
                   "type": {
                     "value": "Health::Health::Hit"
@@ -4962,10 +7462,52 @@
                   "parameters": [
                     "Enemy",
                     "Health",
-                    "40",
+                    "RocketBullet.Variable(Damage)",
                     "no",
                     "no",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "RocketBullet",
+                    "ActualDamage",
+                    "=",
+                    "max(0, RocketBullet.Variable(HitHealthBefore) - max(0, Enemy.Health::Health()))"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "NumberObjectVariable"
+                      },
+                      "parameters": [
+                        "PlaceableTile",
+                        "TowerId",
+                        "=",
+                        "RocketBullet.Variable(OwnerTowerId)"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "PlaceableTile",
+                        "DamageDealt",
+                        "+",
+                        "RocketBullet.Variable(ActualDamage)"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -5238,6 +7780,525 @@
                 "Text",
                 "=",
                 "\"Wave: \" + ToString(Wave) + \"/5\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 109,
+      "colorG": 143,
+      "colorR": 90,
+      "creationTime": 0,
+      "name": "Asset panel presentation",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneJustBegins"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "TileType_Button",
+                    "Animation",
+                    "=",
+                    "\"Tower\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonScaleTween::SetIdleScale"
+                  },
+                  "parameters": [
+                    "TileType_Button",
+                    "ButtonScaleTween",
+                    "=",
+                    "0.6875"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonScaleTween::SetFocusedScale"
+                  },
+                  "parameters": [
+                    "TileType_Button",
+                    "ButtonScaleTween",
+                    "=",
+                    "0.6875"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonScaleTween::SetPressedScale"
+                  },
+                  "parameters": [
+                    "TileType_Button",
+                    "ButtonScaleTween",
+                    "=",
+                    "0.653125"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeWidth"
+                  },
+                  "parameters": [
+                    "TileType_Button",
+                    "=",
+                    "44"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeHeight"
+                  },
+                  "parameters": [
+                    "TileType_Button",
+                    "=",
+                    "44"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "TileType_Button",
+                    "Animation",
+                    "=",
+                    "\"ShotgunTower\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonScaleTween::SetIdleScale"
+                  },
+                  "parameters": [
+                    "TileType_Button",
+                    "ButtonScaleTween",
+                    "=",
+                    "0.4444444444444445"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonScaleTween::SetFocusedScale"
+                  },
+                  "parameters": [
+                    "TileType_Button",
+                    "ButtonScaleTween",
+                    "=",
+                    "0.4444444444444445"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonScaleTween::SetPressedScale"
+                  },
+                  "parameters": [
+                    "TileType_Button",
+                    "ButtonScaleTween",
+                    "=",
+                    "0.4222222222222222"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeWidth"
+                  },
+                  "parameters": [
+                    "TileType_Button",
+                    "=",
+                    "25.77777777777778"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeHeight"
+                  },
+                  "parameters": [
+                    "TileType_Button",
+                    "=",
+                    "44"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::Name"
+                  },
+                  "parameters": [
+                    "TileType_Button",
+                    "Animation",
+                    "=",
+                    "\"RocketTower\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonScaleTween::SetIdleScale"
+                  },
+                  "parameters": [
+                    "TileType_Button",
+                    "ButtonScaleTween",
+                    "=",
+                    "2.75"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonScaleTween::SetFocusedScale"
+                  },
+                  "parameters": [
+                    "TileType_Button",
+                    "ButtonScaleTween",
+                    "=",
+                    "2.75"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ButtonStates::ButtonScaleTween::SetPressedScale"
+                  },
+                  "parameters": [
+                    "TileType_Button",
+                    "ButtonScaleTween",
+                    "=",
+                    "2.6125"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeWidth"
+                  },
+                  "parameters": [
+                    "TileType_Button",
+                    "=",
+                    "44"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeHeight"
+                  },
+                  "parameters": [
+                    "TileType_Button",
+                    "=",
+                    "22"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 109,
+      "colorG": 143,
+      "colorR": 90,
+      "creationTime": 0,
+      "name": "Selected tower information and range",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "SelectedTowerFound",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEach",
+          "object": "PlaceableTile",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "PlaceableTile",
+                "TowerId",
+                "=",
+                "SelectedTower"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "SelectedTowerFound",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "PlaceableTile",
+                "SellValue",
+                "=",
+                "floor(PlaceableTile.Variable(PurchasePrice) * SellRefundRate)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeWidth"
+              },
+              "parameters": [
+                "RangeIndicator",
+                "=",
+                "PlaceableTile.Variable(AttackRange) * 2"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeHeight"
+              },
+              "parameters": [
+                "RangeIndicator",
+                "=",
+                "PlaceableTile.Variable(AttackRange) * 2"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetXY"
+              },
+              "parameters": [
+                "RangeIndicator",
+                "=",
+                "PlaceableTile.CenterX() - PlaceableTile.Variable(AttackRange)",
+                "=",
+                "PlaceableTile.CenterY() - PlaceableTile.Variable(AttackRange)"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "TowerInfoName",
+                "Text",
+                "=",
+                "PlaceableTile.VariableString(TowerName)"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "TowerInfoDamage",
+                "Text",
+                "=",
+                "ToString(PlaceableTile.Variable(Damage))"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "TowerInfoRate",
+                "Text",
+                "=",
+                "ToString(PlaceableTile.Variable(AttackInterval)) + \" s\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "TowerInfoRange",
+                "Text",
+                "=",
+                "ToString(PlaceableTile.Variable(AttackRange)) + \" px\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "TowerInfoDealt",
+                "Text",
+                "=",
+                "ToString(PlaceableTile.Variable(DamageDealt))"
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "TowerSellValue",
+                "Text",
+                "=",
+                "ToString(PlaceableTile.Variable(SellValue)) + \" Gold\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "SelectedTowerFound",
+                "False",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SelectedTower",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SelectedTower",
+                ">",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "RangeIndicator",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "TowerInfoUI",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "TowerShopContent"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "SelectedTower",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "RangeIndicator"
+              ]
+            },
+            {
+              "type": {
+                "value": "Hide"
+              },
+              "parameters": [
+                "TowerInfoUI"
+              ]
+            },
+            {
+              "type": {
+                "value": "Show"
+              },
+              "parameters": [
+                "TowerShopContent",
+                ""
               ]
             }
           ]

@@ -490,6 +490,22 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Isometric Pack/Platformer tiles/fdba5517e77d24a900edd784ed6243d191e8b6f328429cc1634e484d5c8746ba_Isometric Platformer Dirt_Texture.png",
           "name": "Isometric Platformer Dirt_Texture.png"
         }
+      },
+      {
+        "file": "assets/tower-range.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/tower-range.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/shop-separator.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/shop-separator.svg",
+        "smoothed": true,
+        "userAdded": true
       }
     ]
   },

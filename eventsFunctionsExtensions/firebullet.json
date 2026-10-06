@@ -741,7 +741,7 @@
           "objectGroups": []
         },
         {
-          "description": "Fire bullets toward an object at a specified speed. Call this continuously, the action checks readiness internally — no extra timer or check needed.",
+          "description": "Fire bullets toward an object at a specified speed. Call this continuously, the action checks readiness internally â€” no extra timer or check needed.",
           "fullName": "Fire bullets toward an object",
           "functionType": "Action",
           "name": "FireTowardObject",
@@ -810,7 +810,7 @@
           "objectGroups": []
         },
         {
-          "description": "Fire bullets toward a position at a specified speed. Call this continuously, the action checks readiness internally — no extra timer or check needed.",
+          "description": "Fire bullets toward a position at a specified speed. Call this continuously, the action checks readiness internally â€” no extra timer or check needed.",
           "fullName": "Fire bullets toward a position",
           "functionType": "Action",
           "name": "FireTowardPosition",
@@ -884,7 +884,7 @@
           "objectGroups": []
         },
         {
-          "description": "Fire bullets in the direction of a given angle at a specified speed. Call this continuously, the action checks readiness internally — no extra timer or check needed.",
+          "description": "Fire bullets in the direction of a given angle at a specified speed. Call this continuously, the action checks readiness internally â€” no extra timer or check needed.",
           "fullName": "Fire bullets toward an angle",
           "functionType": "Action",
           "name": "Fire",
@@ -1183,6 +1183,28 @@
                         "XPosition",
                         "YPosition",
                         "BulletLayer"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Bullet",
+                        "OwnerTowerId",
+                        "=",
+                        "Object.Variable(TowerId)"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "SetNumberObjectVariable"
+                      },
+                      "parameters": [
+                        "Bullet",
+                        "Damage",
+                        "=",
+                        "Object.Variable(Damage)"
                       ]
                     }
                   ],
@@ -5500,7 +5522,7 @@
       "previewIconUrl": "",
       "eventsFunctions": [
         {
-          "description": "Fire bullets from the object at a specified speed. Call this continuously, the action checks readiness internally — no extra timer or check needed.",
+          "description": "Fire bullets from the object at a specified speed. Call this continuously, the action checks readiness internally â€” no extra timer or check needed.",
           "fullName": "Fire bullets from 3D object",
           "functionType": "Action",
           "name": "FireForwardObject3D",
@@ -5740,7 +5762,7 @@
           "objectGroups": []
         },
         {
-          "description": "Fire bullets from the camera at a specified speed. Call this continuously, the action checks readiness internally — no extra timer or check needed.",
+          "description": "Fire bullets from the camera at a specified speed. Call this continuously, the action checks readiness internally â€” no extra timer or check needed.",
           "fullName": "Fire bullets from 3D camera",
           "functionType": "Action",
           "name": "FireForwardCamera3D",
