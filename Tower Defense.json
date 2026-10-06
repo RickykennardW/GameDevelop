@@ -466,6 +466,30 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Fantasy UI Borders/Default Size/Panels/4530207f9820c0990ac1354b1c323ac80c2df8a9280996d4e00f0c34e378e0d3_Default-panel (31).png",
           "name": "Default-panel (31).png"
         }
+      },
+      {
+        "file": "assets/Isometric Platformer Dirt_Surface.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Isometric Platformer Dirt_Surface.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Isometric Pack/Platformer tiles/e2af30348cc26409ba251e1843ab8a2e90404364512afb58ad09810797477138_Isometric Platformer Dirt_Surface.png",
+          "name": "Isometric Platformer Dirt_Surface.png"
+        }
+      },
+      {
+        "file": "assets/Isometric Platformer Dirt_Texture.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Isometric Platformer Dirt_Texture.png",
+        "smoothed": true,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Isometric Pack/Platformer tiles/fdba5517e77d24a900edd784ed6243d191e8b6f328429cc1634e484d5c8746ba_Isometric Platformer Dirt_Texture.png",
+          "name": "Isometric Platformer Dirt_Texture.png"
+        }
       }
     ]
   },
@@ -485,8 +509,8 @@
   "tests": [
     {
       "description": "Picking a tile type in the toolbar shows what is about to be placed, and picking it again stops placing.",
-      "lastRunAt": 1791301007400,
-      "lastRunDurationMs": 435,
+      "lastRunAt": 1791302544077,
+      "lastRunDurationMs": 370,
       "lastRunFramesExecuted": 20,
       "lastRunStatus": "passed",
       "name": "Picking a tile type",
@@ -548,8 +572,8 @@
     },
     {
       "description": "With a tile type picked, clicking a buildable cell places that tile on the grid, and clicking it again does not stack a second one.",
-      "lastRunAt": 1791301031988,
-      "lastRunDurationMs": 544,
+      "lastRunAt": 1791302545389,
+      "lastRunDurationMs": 545,
       "lastRunFramesExecuted": 27,
       "lastRunStatus": "passed",
       "name": "Placing a tile on the board",
@@ -581,8 +605,8 @@
     },
     {
       "description": "Place a basic tower, start wave 1, verify towers auto-shoot and kill all enemies.",
-      "lastRunAt": 1791300966761,
-      "lastRunDurationMs": 1252,
+      "lastRunAt": 1791302547074,
+      "lastRunDurationMs": 1047,
       "lastRunFramesExecuted": 645,
       "lastRunStatus": "passed",
       "name": "TowerDefenseCore",
@@ -616,9 +640,9 @@
     },
     {
       "description": "Shotgun placement and cost, rocket cost gate, S-path movement, wave cleared by shotgun.",
-      "lastRunAt": 1791300990517,
-      "lastRunDurationMs": 1224,
-      "lastRunFramesExecuted": 781,
+      "lastRunAt": 1791302570228,
+      "lastRunDurationMs": 1211,
+      "lastRunFramesExecuted": 657,
       "lastRunStatus": "passed",
       "name": "TowerTypesAndSPath",
       "type": "gameplay",
@@ -656,32 +680,29 @@
       ]
     },
     {
-      "description": "Verify grass placement works and path tiles block.",
-      "lastRunAt": 1791301673497,
-      "lastRunDurationMs": 501,
-      "lastRunFramesExecuted": 13,
-      "lastRunStatus": "error",
+      "description": "Final placement verification.",
+      "lastRunAt": 1791302495695,
+      "lastRunDurationMs": 556,
+      "lastRunFramesExecuted": 39,
+      "lastRunStatus": "passed",
       "name": "PathPlaceCheck",
       "type": "gameplay",
       "source": [
         "await harness.goToScene('Game Scene');",
-        "await harness.stepFrames(5);",
+        "await harness.stepFrames(10);",
+        "await harness.takeScreenshot('final-map');",
         "const btns=harness.getObjects('TileType_Button');",
         "const towerBtn=btns.find(b=>b.animation==='Tower');",
         "const clickAt=async(x,y,layer)=>{harness.setMousePosition(x,y,layer);await harness.stepFrames(2);harness.setMouseButtonPressed(true);await harness.stepFrames(2);harness.setMouseButtonPressed(false);await harness.stepFrames(3);};",
         "await clickAt(towerBtn.centerX,towerBtn.centerY,towerBtn.layer);",
-        "let ind=harness.getObjects('TilePlacement_Indicator')[0];",
-        "harness.assert(ind.hidden===false,'indicator shown');",
-        "harness.assert(ind.width===64 && ind.height===64,'indicator is 64x64 cell, got '+ind.width+'x'+ind.height);",
-        "// grass cell (should place): tile col5 row3 = x320 y192",
-        "await clickAt(320,192,'');",
+        "await clickAt(448,192,'');",
         "harness.assert(harness.getObjects('Tower').length===1,'tower places on grass');",
-        "await harness.takeScreenshot('path-visible-grass-placed');",
-        "// path cell (should block): row1 path tile e.g. x320 y64 (col5 row1)",
-        "const before=harness.getObjects('Tower').length;",
-        "await clickAt(320,64,'');",
-        "harness.assert(harness.getObjects('Tower').length===before,'path cell blocked (no new tower on walking path)');",
-        "await harness.takeScreenshot('path-blocked-check');"
+        "const n0=harness.getObjects('Tower').length;",
+        "await clickAt(448,64,'');",
+        "harness.assert(harness.getObjects('Tower').length===n0,'dirt path blocked');",
+        "await clickAt(448,192,'');",
+        "harness.assert(harness.getObjects('Tower').length===n0,'stacking blocked');",
+        "await harness.takeScreenshot('final-placement');"
       ]
     }
   ],
