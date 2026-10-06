@@ -43,6 +43,11 @@
   ],
   "variables": [
     {
+      "name": "ButtonChanged",
+      "type": "boolean",
+      "value": false
+    },
+    {
       "name": "GameOver",
       "persistentUuid": "acaf60d0-29f6-49de-a9e4-cd9f81c2bd48",
       "type": "boolean",
@@ -52,7 +57,7 @@
       "name": "KillReward",
       "persistentUuid": "865e7744-2073-48ef-961a-a08a97593f37",
       "type": "number",
-      "value": 25
+      "value": 15
     },
     {
       "name": "TowerCost",
@@ -100,27 +105,10 @@
       "name": "Money",
       "persistentUuid": "9d1ef647-9b52-4a52-bc0a-50d44fa641a7",
       "type": "number",
-      "value": 250
+      "value": 200
     }
   ],
   "instances": [
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "name": "TilePlacement_Indicator",
-      "opacity": 128,
-      "persistentUuid": "bf696ef6-4dda-4e27-a4f3-274db97dd0ca",
-      "width": 0,
-      "x": 1344,
-      "y": 0,
-      "zOrder": 1,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
     {
       "angle": 0,
       "customSize": true,
@@ -199,7 +187,7 @@
       "stringProperties": [
         {
           "name": "tilemap",
-          "value": "{\"tileWidth\":64,\"tileHeight\":64,\"dimX\":20,\"dimY\":12,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4],[4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4],[4,4,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,4,4],[4,4,0,0,0,0,2,0,0,0,0,0,0,0,0,0,2,0,4,4],[4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4],[4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,4,4],[4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4],[4,4,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4],[4,4,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4]]}]}"
+          "value": "{\"tileWidth\":64,\"tileHeight\":64,\"dimX\":20,\"dimY\":12,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,4,4],[4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,4,4],[4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,4,4],[4,4,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,4,4],[4,4,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4],[4,4,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4],[4,4,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,4],[4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4],[4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4]]}]}"
         }
       ],
       "initialVariables": []
@@ -2158,6 +2146,7 @@
   },
   "events": [
     {
+      "aiGeneratedEventId": "01M48XHDR72FVAPY3A0DBSQ22K",
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2188,10 +2177,47 @@
           "parameters": [
             "TilePlacement_Indicator"
           ]
+        },
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::SetCooldownOp"
+          },
+          "parameters": [
+            "Tower",
+            "FireBullet",
+            "=",
+            "0.5",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::SetCooldownOp"
+          },
+          "parameters": [
+            "ShotgunTower",
+            "FireBullet",
+            "=",
+            "1.2",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "FireBullet::FireBullet::SetCooldownOp"
+          },
+          "parameters": [
+            "RocketTower",
+            "FireBullet",
+            "=",
+            "2",
+            ""
+          ]
         }
       ]
     },
     {
+      "aiGeneratedEventId": "01M48YAZAMDTA5NH22ZJ44RA41",
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2208,6 +2234,7 @@
       "actions": [],
       "events": [
         {
+          "aiGeneratedEventId": "01M48YBZJAA1WDCYJXPGSF4W59",
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2256,6 +2283,26 @@
             },
             {
               "type": {
+                "value": "ChangeWidth"
+              },
+              "parameters": [
+                "TilePlacement_Indicator",
+                "=",
+                "64"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeHeight"
+              },
+              "parameters": [
+                "TilePlacement_Indicator",
+                "=",
+                "64"
+              ]
+            },
+            {
+              "type": {
                 "value": "SetBooleanVariable"
               },
               "parameters": [
@@ -2273,7 +2320,7 @@
                 "assets/starter_switch.wav",
                 "",
                 "60",
-                "RandomWithStep(0.9,1.1,0.05)"
+                "RandomWithStep(0.9, 1.1, 0.05)"
               ]
             }
           ],
@@ -2392,6 +2439,7 @@
       ]
     },
     {
+      "aiGeneratedEventId": "01M48XHDR72FVAPY3A0DBSQ22K",
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [],
       "actions": [
@@ -2419,6 +2467,141 @@
             "0",
             "0",
             ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "TilePlacement_Indicator"
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "TilePlacement_Indicator",
+                "GrassGround",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "TilePlacement_Indicator",
+                "Ground_Tilemap",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "TilePlacement_Indicator",
+                "PlaceableTile",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "TilePlacement_Indicator",
+                "TowerShopBox",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "IsCursorOnObject"
+              },
+              "parameters": [
+                "TileType_Button",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "IsCursorOnObject"
+              },
+              "parameters": [
+                "TowerShopBox",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Money",
+                ">=",
+                "TowerCost"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "TilePlacement_Indicator",
+                "\"0;255;0\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Else",
+          "conditions": [
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "TilePlacement_Indicator"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "TilePlacement_Indicator",
+                "\"255;0;0\""
+              ]
+            }
           ]
         }
       ]
@@ -2537,7 +2720,7 @@
       "comment": "Place unit"
     },
     {
-      "aiGeneratedEventId": "01M48VWVCAWVAC837GVWAXG07Z",
+      "aiGeneratedEventId": "01M48XHDR72FVAPY3A0DBSQ22K",
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2559,11 +2742,35 @@
         },
         {
           "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "TilePlacement_Indicator",
+            "GrassGround",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
             "inverted": true,
             "value": "IsCursorOnObject"
           },
           "parameters": [
             "TileType_Button",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "IsCursorOnObject"
+          },
+          "parameters": [
+            "TowerShopBox",
             "",
             "",
             ""
@@ -2590,6 +2797,19 @@
           "parameters": [
             "TilePlacement_Indicator",
             "Ground_Tilemap",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "inverted": true,
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "TilePlacement_Indicator",
+            "TowerShopBox",
             "",
             "",
             ""
@@ -2870,7 +3090,7 @@
           ]
         },
         {
-          "aiGeneratedEventId": "01M48VWVCAWVAC837GVWAXG07Z",
+          "aiGeneratedEventId": "01M48XHDR72FVAPY3A0DBSQ22K",
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2915,6 +3135,29 @@
                 "Enemy",
                 "-50",
                 "100",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::SetMaxHealthOp"
+              },
+              "parameters": [
+                "Enemy",
+                "Health",
+                "=",
+                "EnemyHP",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Health::Health::SetHealth"
+              },
+              "parameters": [
+                "Enemy",
+                "Health",
+                "EnemyHP",
                 ""
               ]
             },
@@ -3316,7 +3559,7 @@
           ]
         },
         {
-          "aiGeneratedEventId": "01M48VWVCAWVAC837GVWAXG07Z",
+          "aiGeneratedEventId": "01M48XHDR72FVAPY3A0DBSQ22K",
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3326,7 +3569,7 @@
               "parameters": [
                 "Tower",
                 "Enemy",
-                "280",
+                "200",
                 ""
               ]
             },
@@ -3380,7 +3623,7 @@
           ]
         },
         {
-          "aiGeneratedEventId": "01M48W4SDTS9HYT03SCTZ92EY2",
+          "aiGeneratedEventId": "01M48XHDR72FVAPY3A0DBSQ22K",
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3390,7 +3633,7 @@
               "parameters": [
                 "ShotgunTower",
                 "Enemy",
-                "220",
+                "140",
                 ""
               ]
             },
@@ -3412,7 +3655,7 @@
                 "ShotgunTower",
                 "\"shoot\"",
                 ">",
-                "0.7"
+                "1.2"
               ]
             }
           ],
@@ -3524,7 +3767,7 @@
           ]
         },
         {
-          "aiGeneratedEventId": "01M48VWVCAWVAC837GVWAXG07Z",
+          "aiGeneratedEventId": "01M48XJ30W5DBNV9XJVAY8N90T",
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3534,7 +3777,7 @@
               "parameters": [
                 "RocketTower",
                 "Enemy",
-                "350",
+                "300",
                 ""
               ]
             },
@@ -3608,6 +3851,7 @@
           ]
         },
         {
+          "aiGeneratedEventId": "01M48XJ30W5DBNV9XJVAY8N90T",
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3631,7 +3875,7 @@
               "parameters": [
                 "Enemy",
                 "Health",
-                "10",
+                "15",
                 "no",
                 "no",
                 ""
@@ -3649,7 +3893,7 @@
           ]
         },
         {
-          "aiGeneratedEventId": "01M48VWVCAWVAC837GVWAXG07Z",
+          "aiGeneratedEventId": "01M48XJ30W5DBNV9XJVAY8N90T",
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3668,24 +3912,59 @@
           "actions": [
             {
               "type": {
-                "value": "Health::Health::Hit"
+                "value": "PickAllInstances"
               },
               "parameters": [
-                "Enemy",
-                "Health",
-                "40",
-                "no",
-                "no",
-                ""
+                "",
+                "Enemy"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "Distance"
+                  },
+                  "parameters": [
+                    "Enemy",
+                    "RocketBullet",
+                    "100",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Health::Health::Hit"
+                  },
+                  "parameters": [
+                    "Enemy",
+                    "Health",
+                    "40",
+                    "no",
+                    "no",
+                    ""
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "Delete"
-              },
-              "parameters": [
-                "RocketBullet",
-                ""
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "RocketBullet",
+                    ""
+                  ]
+                }
               ]
             }
           ]
