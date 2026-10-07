@@ -183,13 +183,13 @@
       "name": "KillReward",
       "persistentUuid": "865e7744-2073-48ef-961a-a08a97593f37",
       "type": "number",
-      "value": 15
+      "value": 10
     },
     {
       "name": "TowerCost",
       "persistentUuid": "2639e11a-1448-4981-be25-2e5f8c6e18e1",
       "type": "number",
-      "value": 100
+      "value": 250
     },
     {
       "name": "WaveActive",
@@ -201,13 +201,13 @@
       "name": "EnemySpeed",
       "persistentUuid": "f56ca296-3105-4ba6-8cc3-00990b7cd1ea",
       "type": "number",
-      "value": 90
+      "value": 80
     },
     {
       "name": "EnemyHP",
       "persistentUuid": "64fd5b6a-c81b-4563-ba9c-5ce76262ba40",
       "type": "number",
-      "value": 30
+      "value": 100
     },
     {
       "name": "EnemiesToSpawn",
@@ -231,7 +231,7 @@
       "name": "Money",
       "persistentUuid": "9d1ef647-9b52-4a52-bc0a-50d44fa641a7",
       "type": "number",
-      "value": 200
+      "value": 650
     },
     {
       "name": "SelectedTower",
@@ -294,12 +294,12 @@
             {
               "name": "Name",
               "type": "string",
-              "value": "Tower"
+              "value": "Basic"
             },
             {
               "name": "Cost",
               "type": "number",
-              "value": 100
+              "value": 250
             },
             {
               "name": "IconAnimation",
@@ -319,12 +319,12 @@
             {
               "name": "Name",
               "type": "string",
-              "value": "Shotgun"
+              "value": "Heavy"
             },
             {
               "name": "Cost",
               "type": "number",
-              "value": 150
+              "value": 500
             },
             {
               "name": "IconAnimation",
@@ -344,12 +344,12 @@
             {
               "name": "Name",
               "type": "string",
-              "value": "Rocket"
+              "value": "Advanced"
             },
             {
               "name": "Cost",
               "type": "number",
-              "value": 250
+              "value": 700
             },
             {
               "name": "IconAnimation",
@@ -377,6 +377,2198 @@
     },
     {
       "name": "PlayWaveRequested",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "WaveConfigs",
+      "type": "array",
+      "children": [
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 6
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 1.2
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 8
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 2
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 1.1
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 8
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 4
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 5
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 5
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.95
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 8
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 8
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 6
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.9
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 12
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 6
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 7
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.9
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 8
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 8
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.85
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 12
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 2
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 9
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.85
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 8
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 2
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.8
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 15
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 8
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 2
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 11
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.8
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 12
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 12
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 12
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.8
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 15
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 13
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.75
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 15
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 4
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 14
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.75
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 12
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 12
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 15
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.75
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 15
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 15
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 16
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.7
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 12
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 18
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 4
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 4
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 17
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.7
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 15
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 15
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 5
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 5
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 18
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.7
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 15
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 20
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 5
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 5
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 19
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.65
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 15
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 15
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 6
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 5
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 20
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.65
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 15
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 20
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 5
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 6
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 21
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.65
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 12
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 22
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 6
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 6
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 22
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.65
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 15
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 20
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 7
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 7
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 23
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.6
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 25
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 7
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 8
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 24
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.6
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 15
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 20
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 8
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 25
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.6
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 28
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 8
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 8
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 26
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.6
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 12
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 25
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 27
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.55
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 30
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 28
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.55
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 30
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 12
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 12
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 29
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.55
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 25
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 12
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 2
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 30
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.55
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 30
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 12
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 15
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 31
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.5
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 8
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 35
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 12
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 15
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 32
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.5
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 30
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 15
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 18
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 33
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.5
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 8
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 38
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 15
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 15
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 34
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.5
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 5
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 35
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 18
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 20
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 35
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.5
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 5
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 40
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 18
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 20
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 36
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.45
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 5
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 42
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 20
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 20
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 37
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.45
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 5
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 40
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 22
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 25
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 38
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.45
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 45
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 22
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 25
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 39
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.45
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 35
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 20
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 20
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 3
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 40
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.45
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 40
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 22
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 28
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 41
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.45
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 45
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 25
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 30
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 42
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.4
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 50
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 25
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 30
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 43
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.4
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 45
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 30
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 35
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 44
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.4
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 50
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 30
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 35
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 45
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.4
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 55
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 32
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 38
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 46
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.4
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 60
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 35
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 40
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 47
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.35
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 55
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 40
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 45
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 48
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.35
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 65
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 40
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 50
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 2
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 49
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.35
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Normal",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Fast",
+              "type": "number",
+              "value": 60
+            },
+            {
+              "name": "Tank",
+              "type": "number",
+              "value": 45
+            },
+            {
+              "name": "Elite",
+              "type": "number",
+              "value": 50
+            },
+            {
+              "name": "Boss",
+              "type": "number",
+              "value": 5
+            },
+            {
+              "name": "Wave",
+              "type": "number",
+              "value": 50
+            },
+            {
+              "name": "SpawnInterval",
+              "type": "number",
+              "value": 0.35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "EnemyTypes",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Normal",
+          "type": "structure",
+          "children": [
+            {
+              "name": "HP",
+              "type": "number",
+              "value": 100
+            },
+            {
+              "name": "Speed",
+              "type": "number",
+              "value": 80
+            },
+            {
+              "name": "Reward",
+              "type": "number",
+              "value": 10
+            },
+            {
+              "name": "Tint",
+              "type": "string",
+              "value": "255;255;255"
+            },
+            {
+              "name": "Scale",
+              "type": "number",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "name": "Fast",
+          "type": "structure",
+          "children": [
+            {
+              "name": "HP",
+              "type": "number",
+              "value": 70
+            },
+            {
+              "name": "Speed",
+              "type": "number",
+              "value": 145
+            },
+            {
+              "name": "Reward",
+              "type": "number",
+              "value": 12
+            },
+            {
+              "name": "Tint",
+              "type": "string",
+              "value": "255;224;110"
+            },
+            {
+              "name": "Scale",
+              "type": "number",
+              "value": 0.85
+            }
+          ]
+        },
+        {
+          "name": "Tank",
+          "type": "structure",
+          "children": [
+            {
+              "name": "HP",
+              "type": "number",
+              "value": 450
+            },
+            {
+              "name": "Speed",
+              "type": "number",
+              "value": 55
+            },
+            {
+              "name": "Reward",
+              "type": "number",
+              "value": 30
+            },
+            {
+              "name": "Tint",
+              "type": "string",
+              "value": "145;190;255"
+            },
+            {
+              "name": "Scale",
+              "type": "number",
+              "value": 1.25
+            }
+          ]
+        },
+        {
+          "name": "Elite",
+          "type": "structure",
+          "children": [
+            {
+              "name": "HP",
+              "type": "number",
+              "value": 275
+            },
+            {
+              "name": "Speed",
+              "type": "number",
+              "value": 105
+            },
+            {
+              "name": "Reward",
+              "type": "number",
+              "value": 25
+            },
+            {
+              "name": "Tint",
+              "type": "string",
+              "value": "220;140;255"
+            },
+            {
+              "name": "Scale",
+              "type": "number",
+              "value": 1.1
+            }
+          ]
+        },
+        {
+          "name": "Boss",
+          "type": "structure",
+          "children": [
+            {
+              "name": "HP",
+              "type": "number",
+              "value": 1800
+            },
+            {
+              "name": "Speed",
+              "type": "number",
+              "value": 45
+            },
+            {
+              "name": "Reward",
+              "type": "number",
+              "value": 120
+            },
+            {
+              "name": "Tint",
+              "type": "string",
+              "value": "255;105;105"
+            },
+            {
+              "name": "Scale",
+              "type": "number",
+              "value": 1.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "IntermissionRemaining",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "SpawnInterval",
+      "type": "number",
+      "value": 1.2
+    },
+    {
+      "name": "WaveMode",
+      "type": "string",
+      "value": "Waiting"
+    },
+    {
+      "name": "IndexOpen",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "IndexBlocksInput",
       "type": "boolean",
       "value": false
     }
@@ -3136,6 +5328,40 @@
         }
       ],
       "keepRatio": false
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 60,
+      "layer": "UI",
+      "name": "ShopIndexButton",
+      "persistentUuid": "2e7e7261-d812-4c61-8166-cca0d0d17982",
+      "width": 192,
+      "x": 1168,
+      "y": 368,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [],
+      "keepRatio": false
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 24,
+      "layer": "UI",
+      "name": "ShopIndexLabel",
+      "persistentUuid": "9ffa0e25-3dfb-4d10-9286-9000fba34391",
+      "width": 104,
+      "x": 1228,
+      "y": 386,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [],
+      "keepRatio": false
     }
   ],
   "objects": [
@@ -3554,17 +5780,17 @@
         {
           "name": "Damage",
           "type": "number",
-          "value": 15
+          "value": 20
         },
         {
           "name": "AttackRange",
           "type": "number",
-          "value": 200
+          "value": 190
         },
         {
           "name": "AttackInterval",
           "type": "number",
-          "value": 0.6
+          "value": 0.5
         },
         {
           "name": "SellValue",
@@ -3582,7 +5808,7 @@
         {
           "name": "FireBullet",
           "type": "FireBullet::FireBullet",
-          "FireCooldown": 0.6,
+          "FireCooldown": 0.5,
           "HasJustFired": false,
           "RotateBullet": true,
           "FiringArc": 45,
@@ -3698,6 +5924,21 @@
           "name": "AnimationReferenceSpeed",
           "type": "number",
           "value": 90
+        },
+        {
+          "name": "EnemyType",
+          "type": "string",
+          "value": "Normal"
+        },
+        {
+          "name": "MoveSpeed",
+          "type": "number",
+          "value": 80
+        },
+        {
+          "name": "GoldReward",
+          "type": "number",
+          "value": 10
         }
       ],
       "effects": [],
@@ -3705,9 +5946,9 @@
         {
           "name": "Health",
           "type": "Health::Health",
-          "Health": 30,
+          "Health": 100,
           "CurrentHealth": 0,
-          "MaxHealth": 30,
+          "MaxHealth": 100,
           "DamageCooldown": 0,
           "AllowOverHealing": false,
           "IsHealthJustDamaged": false,
@@ -4622,17 +6863,17 @@
         {
           "name": "Damage",
           "type": "number",
-          "value": 15
+          "value": 80
         },
         {
           "name": "AttackRange",
           "type": "number",
-          "value": 140
+          "value": 230
         },
         {
           "name": "AttackInterval",
           "type": "number",
-          "value": 1.2
+          "value": 1.5
         },
         {
           "name": "SellValue",
@@ -4642,7 +6883,7 @@
         {
           "name": "TowerName",
           "type": "string",
-          "value": "Shotgun"
+          "value": "Heavy Tower"
         }
       ],
       "effects": [],
@@ -4650,7 +6891,7 @@
         {
           "name": "FireBullet",
           "type": "FireBullet::FireBullet",
-          "FireCooldown": 1,
+          "FireCooldown": 1.5,
           "HasJustFired": false,
           "RotateBullet": true,
           "FiringArc": 45,
@@ -4803,17 +7044,17 @@
         {
           "name": "Damage",
           "type": "number",
-          "value": 40
+          "value": 35
         },
         {
           "name": "AttackRange",
           "type": "number",
-          "value": 300
+          "value": 260
         },
         {
           "name": "AttackInterval",
           "type": "number",
-          "value": 2
+          "value": 0.5
         },
         {
           "name": "SellValue",
@@ -4823,7 +7064,7 @@
         {
           "name": "TowerName",
           "type": "string",
-          "value": "Rocket"
+          "value": "Advanced Tower"
         }
       ],
       "effects": [],
@@ -4831,7 +7072,7 @@
         {
           "name": "FireBullet",
           "type": "FireBullet::FireBullet",
-          "FireCooldown": 2,
+          "FireCooldown": 0.5,
           "HasJustFired": false,
           "RotateBullet": true,
           "FiringArc": 45,
@@ -6630,6 +8871,35 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Manual",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ui/manual-wave.svg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -6865,6 +9135,862 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 12,
+      "height": 48,
+      "leftMargin": 12,
+      "name": "ShopIndexButton",
+      "persistentUuid": "206efb9c-0233-4ee3-9c1d-7af5c93c80dc",
+      "rightMargin": 12,
+      "texture": "assets/ui/play-button.svg",
+      "tiled": false,
+      "topMargin": 12,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 48,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "ShopIndexLabel",
+      "persistentUuid": "d8536b5d-5d81-4fd5-ba26-aa0de40c2e45",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "PLAY",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 16,
+      "color": {
+        "r": 255,
+        "g": 246,
+        "b": 215
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "PLAY",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 16,
+        "lineHeight": 0,
+        "color": "255;246;215"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 12,
+      "height": 48,
+      "leftMargin": 12,
+      "name": "IndexPanel",
+      "persistentUuid": "ed02700d-e285-4772-9727-6780a6d144e3",
+      "rightMargin": 12,
+      "texture": "assets/ui/panel.svg",
+      "tiled": false,
+      "topMargin": 12,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 48,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "IndexText",
+      "persistentUuid": "81711831-d470-49e1-bbc7-8e314e730be1",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 11,
+      "color": {
+        "b": 48,
+        "g": 52,
+        "r": 39
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 11,
+        "lineHeight": 0,
+        "color": "39;52;48"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "IndexTowerImage",
+      "persistentUuid": "bce29dc5-70a1-49a6-91bc-b6750b879f01",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "ShotgunTower",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Shotgun Vertical_Aiming.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 58,
+                        "y": 0
+                      },
+                      {
+                        "x": 58,
+                        "y": 99
+                      },
+                      {
+                        "x": 0,
+                        "y": 99
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tower",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\StartingTower.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "RocketTower",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Missile.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 8
+                      },
+                      {
+                        "x": 0,
+                        "y": 8
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "d4b9086084c7ad8ca9c380e35c78ba31a6267091f539f0d20a1d46f8a4ed1f67",
+      "name": "IndexMonsterImage",
+      "persistentUuid": "24ae229b-edb9-4973-8cac-8af3e79e7642",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Hit",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.2,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Hit_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Hit_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Hit_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Hit_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Hit_5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Idle Run",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.1,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Idle Run_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Idle Run_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Idle Run_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Idle Run_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Idle Run_5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Idle Run_6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Idle Run_7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Idle Run_8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Idle Run_9.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Slime_Idle Run_10.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 11
+                      },
+                      {
+                        "x": 44,
+                        "y": 30
+                      },
+                      {
+                        "x": 0,
+                        "y": 30
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -7037,6 +10163,24 @@
       },
       {
         "objectName": "ShopScrollThumb"
+      },
+      {
+        "objectName": "ShopIndexButton"
+      },
+      {
+        "objectName": "ShopIndexLabel"
+      },
+      {
+        "objectName": "IndexPanel"
+      },
+      {
+        "objectName": "IndexText"
+      },
+      {
+        "objectName": "IndexTowerImage"
+      },
+      {
+        "objectName": "IndexMonsterImage"
       }
     ]
   },
@@ -7060,6 +10204,9 @@
             "const first = name => get(name)[0];",
             "const number = name => variables.get(name).getAsNumber();",
             "const boolean = name => variables.get(name).getAsBoolean();",
+            "const mode = () => variables.get(\"WaveMode\").getAsString();",
+            "if (mode() !== \"Auto\") variables.get(\"WaveMode\").setString(boolean(\"WaveActive\") ? \"Manual\" : \"Waiting\");",
+            "const modal = boolean(\"IndexOpen\");",
             "let ui = scene.__towerShopUI;",
             "if (!ui || ui.root !== first(\"TowerShopBox\")) {",
             "  ui = scene.__towerShopUI = { root: first(\"TowerShopBox\"), cards: [], wasDown: false, pressedCard: -1, pressedControl: \"\", dragging: false };",
@@ -7102,9 +10249,12 @@
             "rect(\"AssetPanelTitle\", 1168, 32, 192, 24);",
             "rect(\"AssetPanelSubtitle\", 1168, 57, 192, 16);",
             "rect(\"AssetPanelHint\", 1168, geometry.bottom - 108, 192, 18);",
-            "rect(\"ShopPlayButton\", 1168, geometry.playY, 192, 60);",
-            "rect(\"ShopPlayIcon\", 1200, geometry.playY + 18, 24, 24);",
-            "rect(\"ShopPlayLabel\", 1228, geometry.playY + 18, 104, 24);",
+            "rect(\"ShopIndexButton\", 1168, geometry.playY, 92, 60);",
+            "rect(\"ShopIndexLabel\", 1168, geometry.playY + 22, 92, 24);",
+            "first(\"ShopIndexLabel\").setString(\"INDEX\");",
+            "rect(\"ShopPlayButton\", 1268, geometry.playY, 92, 60);",
+            "rect(\"ShopPlayIcon\", 1302, geometry.playY + 8, 24, 24);",
+            "rect(\"ShopPlayLabel\", 1268, geometry.playY + 36, 92, 20);",
             "rect(\"ShopScrollUp\", 1168, geometry.controlsY, 40, 28);",
             "rect(\"ShopScrollDown\", 1216, geometry.controlsY, 40, 28);",
             "get(\"ShopScrollArrow\").forEach((o, i) => { o.setPosition(1176 + i * 48, geometry.controlsY + 6); o.setWidth(20); o.setHeight(16); });",
@@ -7163,7 +10313,7 @@
             "const mx = gdjs.evtTools.input.getCursorX(scene, \"UI\", 0);",
             "const my = gdjs.evtTools.input.getCursorY(scene, \"UI\", 0);",
             "const inside = (x,y,w,h) => mx >= x && mx < x+w && my >= y && my < y+h;",
-            "const shopVisible = number(\"SelectedTower\") === 0;",
+            "const shopVisible = number(\"SelectedTower\") === 0 && !modal;",
             "const inList = inside(geometry.listX, geometry.listY, geometry.listWidth, geometry.listHeight);",
             "const inTrack = inside(geometry.trackX - 3, geometry.listY, 14, geometry.listHeight);",
             "variables.get(\"TowerShopPointerInside\").setBoolean(shopVisible && inList);",
@@ -7176,21 +10326,27 @@
             "  const col = Math.floor(x / 92), row = Math.floor(y / 108), index = row * 2 + col;",
             "  return col < 2 && x % 92 < 84 && y % 108 < 100 && index < catalog.length ? index : -1;",
             "};",
-            "const ready = !boolean(\"WaveActive\") && !boolean(\"GameOver\") && number(\"Wave\") < 5;",
-            "const overPlay = inside(1168, geometry.playY, 192, 60);",
+            "const ready = !boolean(\"WaveActive\") && !boolean(\"GameOver\") && number(\"Wave\") < 50;",
+            "const overIndex = !modal && inside(1168, geometry.playY, 92, 60);",
+            "const overPlay = !modal && inside(1268, geometry.playY, 92, 60);",
             "const overUp = shopVisible && inside(1168, geometry.controlsY, 40, 28);",
             "const overDown = shopVisible && inside(1216, geometry.controlsY, 40, 28);",
             "const down = input.isMouseButtonPressed(0);",
             "let hovered = hoveredIndex();",
             "if (down && !ui.wasDown) {",
             "  ui.pressedCard = hovered;",
-            "  ui.pressedControl = overPlay ? \"Play\" : overUp ? \"Up\" : overDown ? \"Down\" : \"\";",
+            "  ui.pressedControl = overIndex ? \"Index\" : overPlay ? \"Play\" : overUp ? \"Up\" : overDown ? \"Down\" : \"\";",
             "  if (inTrack && maxScroll > 0 && shopVisible) { ui.dragging = true; ui.dragStartY = my; ui.dragStartScroll = scroll; ui.pressedCard = -1; }",
             "}",
             "const thumbHeight = maxScroll > 0 ? Math.max(22, geometry.listHeight * geometry.listHeight / contentHeight) : geometry.listHeight;",
             "if (ui.dragging && down) scroll = Math.max(0, Math.min(maxScroll, ui.dragStartScroll + (my - ui.dragStartY) * maxScroll / Math.max(1, geometry.listHeight - thumbHeight)));",
             "if (!down && ui.wasDown) {",
-            "  if (ui.pressedControl === \"Play\" && overPlay && ready) variables.get(\"PlayWaveRequested\").setBoolean(true);",
+            "  if (ui.pressedControl === \"Index\" && overIndex) ui.indexRequested = true;",
+            "  if (ui.pressedControl === \"Play\" && overPlay && !boolean(\"GameOver\")) {",
+            "    if (mode() === \"Auto\") variables.get(\"WaveMode\").setString(boolean(\"WaveActive\") ? \"Manual\" : \"Waiting\");",
+            "    else if (boolean(\"WaveActive\")) variables.get(\"WaveMode\").setString(\"Auto\");",
+            "    else if (ready) variables.get(\"PlayWaveRequested\").setBoolean(true);",
+            "  }",
             "  if (ui.pressedControl === \"Up\" && overUp) scroll = Math.max(0, scroll - 108);",
             "  if (ui.pressedControl === \"Down\" && overDown) scroll = Math.min(maxScroll, scroll + 108);",
             "  if (!ui.dragging && ui.pressedCard >= 0 && ui.pressedCard === hovered && number(\"Money\") >= catalog[hovered].Cost) variables.get(\"TowerShopRequestedType\").setString(catalog[hovered].Type);",
@@ -7229,10 +10385,16 @@
             "    card.name.setColor(affordable ? \"55;60;48\" : \"126;121;110\");",
             "    for (const part of [card.background,card.icon,card.name,card.price,card.coin]) part.hide(selectedTower);",
             "  });",
-            "  const currentlyReady = !boolean(\"WaveActive\") && !boolean(\"GameOver\") && number(\"Wave\") < 5;",
-            "  first(\"ShopPlayButton\").setOpacity(currentlyReady ? 255 : 155);",
-            "  first(\"ShopPlayButton\").setColor(currentlyReady && ui.overPlay ? (ui.wasDown ? \"206;219;177\" : \"235;255;228\") : \"255;255;255\");",
-            "  first(\"ShopPlayLabel\").setString(currentlyReady ? \"PLAY\" : boolean(\"GameOver\") ? (number(\"Lives\") > 0 ? \"COMPLETE\" : \"GAME OVER\") : number(\"Wave\") >= 5 && !boolean(\"WaveActive\") ? \"COMPLETE\" : \"RUNNING\");",
+            "  if (mode() !== \"Auto\") variables.get(\"WaveMode\").setString(boolean(\"WaveActive\") ? \"Manual\" : \"Waiting\");",
+            "  const ended = boolean(\"GameOver\"), current = mode();",
+            "  first(\"ShopPlayButton\").setOpacity(ended ? 155 : 255);",
+            "  first(\"ShopPlayButton\").setColor(current === \"Auto\" ? \"189;222;148\" : ui.overPlay ? \"235;255;228\" : \"255;255;255\");",
+            "  first(\"ShopPlayIcon\").hide(ended || current === \"Auto\");",
+            "  first(\"ShopPlayIcon\").setAnimationName(current === \"Manual\" ? \"Manual\" : \"Play\");",
+            "  first(\"ShopPlayLabel\").setCharacterSize(ended ? 12 : 14);",
+            "  first(\"ShopPlayLabel\").setString(ended ? (number(\"Lives\") > 0 ? \"COMPLETE\" : \"GAME OVER\") : current === \"Auto\" ? \"AUTO\" : current === \"Manual\" ? \"MANUAL\" : \"PLAY\");",
+            "  first(\"ShopPlayLabel\").setY(geometry.playY + (ended || current === \"Auto\" ? 22 : 36));",
+            "  first(\"ShopIndexButton\").setColor(overIndex ? \"235;255;228\" : \"255;255;255\");",
             "  first(\"ShopScrollUp\").setOpacity(scroll > 0 ? 255 : 120);",
             "  first(\"ShopScrollDown\").setOpacity(scroll < maxScroll ? 255 : 120);",
             "  first(\"ShopScrollThumb\").setOpacity(maxScroll > 0 ? 255 : 110);",
@@ -7246,6 +10408,137 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Group",
+      "name": "Unit INDEX modal",
+      "colorR": 90,
+      "colorG": 143,
+      "colorB": 109,
+      "creationTime": 0,
+      "source": "",
+      "parameters": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "// Display-only objects: none belongs to Enemy or PlaceableTile.",
+            "const sv = runtimeScene.getVariables();",
+            "const game = runtimeScene.getGame();",
+            "const width = game.getGameResolutionWidth(), height = game.getGameResolutionHeight();",
+            "const input = game.getInputManager();",
+            "let index = runtimeScene.__unitIndex;",
+            "if (!index) {",
+            "  index = runtimeScene.__unitIndex = { objects: {}, cards: [], category: \"Towers\", scroll: 0, wasDown: false, pressed: \"\", dragging: false };",
+            "  index.ensure = (key, name, layer, z) => {",
+            "    if (!index.objects[key]) {",
+            "      const object = runtimeScene.createObject(name); object.setLayer(layer); object.setZOrder(z);",
+            "      index.objects[key] = object;",
+            "    }",
+            "    return index.objects[key];",
+            "  };",
+            "  const container = runtimeScene.getLayer(\"IndexList\").getRenderer().getRendererObject();",
+            "  index.mask = new PIXI.Graphics(); container.addChild(index.mask); container.mask = index.mask;",
+            "}",
+            "for (const name of [\"IndexUI\", \"IndexList\"]) {",
+            "  const layer = runtimeScene.getLayer(name);",
+            "  layer.setCameraZoom(1); layer.setCameraX(width/2); layer.setCameraY(height/2);",
+            "}",
+            "const wasOpen = sv.get(\"IndexOpen\").getAsBoolean();",
+            "const shop = runtimeScene.__towerShopUI;",
+            "if (shop && shop.indexRequested) { sv.get(\"IndexOpen\").setBoolean(true); shop.indexRequested = false; }",
+            "let open = sv.get(\"IndexOpen\").getAsBoolean();",
+            "// Block the entire closing frame too, so CLOSE/Escape cannot activate controls beneath.",
+            "sv.get(\"IndexBlocksInput\").setBoolean(wasOpen || open);",
+            "const down = input.isMouseButtonPressed(0);",
+            "if (!open) {",
+            "  runtimeScene.getLayer(\"IndexUI\").show(false); runtimeScene.getLayer(\"IndexList\").show(false);",
+            "  index.wasDown = down; index.pressed = \"\"; index.dragging = false;",
+            "  return;",
+            "}",
+            "const mx = gdjs.evtTools.input.getCursorX(runtimeScene,\"IndexUI\",0), my = gdjs.evtTools.input.getCursorY(runtimeScene,\"IndexUI\",0);",
+            "const w = Math.min(700,width-32), h = Math.min(600,height-32), x = (width-w)/2, y = (height-h)/2;",
+            "const content = { x:x+20,y:y+108,w:w-52,h:h-180 };",
+            "index.geometry = {x,y,w,h,content};",
+            "const inside = (a,b,c,d) => mx>=a && mx<a+c && my>=b && my<b+d;",
+            "const closeY=y+h-54, tabWidth=(w-48)/2;",
+            "const hover = inside(x+20,y+62,tabWidth,32)?\"Towers\":inside(x+28+tabWidth,y+62,tabWidth,32)?\"Monsters\":inside(x+w-140,closeY,120,34)?\"Close\":inside(x+20,closeY,38,34)?\"Up\":inside(x+64,closeY,38,34)?\"Down\":\"\";",
+            "if (down && !index.wasDown) index.pressed=hover;",
+            "if ((!down && index.wasDown && index.pressed===\"Close\" && hover===\"Close\") || gdjs.evtTools.input.wasKeyJustPressed(runtimeScene,\"Escape\")) {",
+            "  sv.get(\"IndexOpen\").setBoolean(false);open=false;",
+            "}",
+            "if (!down && index.wasDown && index.pressed===hover && [\"Towers\",\"Monsters\"].includes(hover) && index.category!==hover) { index.category=hover;index.scroll=0; }",
+            "// Read the same object variables/catalog/archetypes that the game uses. No copied balance table.",
+            "const data=game.getSceneAndExtensionsData(runtimeScene.getName()).sceneData;",
+            "const catalog=sv.get(\"TowerShopCatalog\").toJSObject();",
+            "const archetypes=sv.get(\"EnemyTypes\").toJSObject();",
+            "const roles={Normal:\"General enemy\",Fast:\"Fast runner / low HP\",Tank:\"High HP / slow\",Elite:\"Durable and fast\",Boss:\"Heavy threat / slow\"};",
+            "const entries=index.category===\"Towers\" ? catalog.map(item=>{",
+            "  const definition=data.objects.find(o=>o.name===item.Type); if(!definition)return null;",
+            "  const values=Object.fromEntries(definition.variables.map(v=>[v.name,v.value]));",
+            "  return {name:values.TowerName||item.Name,animation:item.IconAnimation||item.Type,damage:values.Damage,range:values.AttackRange,cooldown:values.AttackInterval,price:item.Cost,",
+            "    special:item.Type===\"RocketTower\"?\"Single-target rocket projectile.\":\"Single projectile per shot.\",type:item.Type};",
+            "}).filter(Boolean) : [...new Set([\"Normal\",\"Fast\",\"Tank\",\"Elite\",\"Boss\",...Object.keys(archetypes)])].filter(name=>archetypes[name]).map(name=>({name,...archetypes[name],role:roles[name]||\"Enemy archetype\"}));",
+            "index.entries=entries;",
+            "const stride=160, cardHeight=148, maxScroll=Math.max(0,entries.length*stride-12-content.h);",
+            "if(inside(content.x,content.y,content.w+16,content.h))index.scroll-=Math.sign(input.getMouseWheelDelta())*52;",
+            "if(!down && index.wasDown && index.pressed===hover){if(hover===\"Up\")index.scroll-=stride;if(hover===\"Down\")index.scroll+=stride;}",
+            "const trackX=x+w-24,thumbHeight=maxScroll>0?Math.max(28,content.h*content.h/(entries.length*stride-12)):content.h;",
+            "if(down&&!index.wasDown&&inside(trackX-3,content.y,14,content.h)){index.dragging=true;index.dragY=my;index.dragScroll=index.scroll;}",
+            "if(down&&index.dragging)index.scroll=index.dragScroll+(my-index.dragY)*maxScroll/Math.max(1,content.h-thumbHeight);",
+            "if(!down)index.dragging=false;",
+            "index.scroll=Math.max(0,Math.min(maxScroll,index.scroll));index.maxScroll=maxScroll;",
+            "const panel=(key,a,b,c,d,color,opacity=255,layer=\"IndexUI\",z=1)=>{",
+            "  const o=index.ensure(key,\"IndexPanel\",layer,z);o.setPosition(a,b);o.setWidth(c);o.setHeight(d);o.setColor(color);o.setOpacity(opacity);o.hide(false);return o;",
+            "};",
+            "const text=(key,value,a,b,c,size,color=\"51;62;49\",bold=false,layer=\"IndexUI\",z=2)=>{",
+            "  const o=index.ensure(key,\"IndexText\",layer,z);o.setPosition(a,b);o.setWidth(c);o.setString(String(value));o.setCharacterSize(size);o.setColor(color);o.setBold(bold);o.hide(false);return o;",
+            "};",
+            "Object.values(index.objects).forEach(o=>o.hide());",
+            "panel(\"shade\",0,0,width,height,\"20;29;23\",190,\"IndexUI\",0);",
+            "panel(\"frame\",x,y,w,h,\"255;255;255\");",
+            "text(\"title\",\"UNIT INDEX\",x+22,y+16,w-44,24,\"47;68;46\",true);",
+            "text(\"subtitle\",\"Field guide  /  Live gameplay stats\",x+22,y+44,w-44,12,\"115;114;96\");",
+            "for(const [i,category] of [\"Towers\",\"Monsters\"].entries()){",
+            "  const tx=x+20+i*(tabWidth+8),active=index.category===category;",
+            "  panel(\"tab\"+i,tx,y+62,tabWidth,32,active?\"191;219;171\":\"237;231;213\");",
+            "  text(\"tabText\"+i,category.toUpperCase(),tx+14,y+69,tabWidth-28,14,\"48;67;44\",true);",
+            "}",
+            "index.mask.clear().beginFill(0xffffff).drawRect(content.x,content.y,content.w,content.h).endFill();",
+            "index.cards=[];",
+            "entries.forEach((entry,i)=>{",
+            "  const cy=content.y+i*stride-index.scroll, cx=content.x, cw=content.w;",
+            "  panel(\"card\"+i,cx,cy,cw,cardHeight,\"248;246;234\",255,\"IndexList\",0);",
+            "  panel(\"portrait\"+i,cx+12,cy+12,80,cardHeight-24,\"230;235;214\",255,\"IndexList\",1);",
+            "  const monster=index.category===\"Monsters\", sprite=index.ensure((monster?\"monster\":\"tower\")+i,monster?\"IndexMonsterImage\":\"IndexTowerImage\",\"IndexList\",2);",
+            "  sprite.setAnimationName(monster?\"Idle Run\":entry.animation);",
+            "  sprite.setColor(monster?entry.Tint:\"255;255;255\");",
+            "  // Fit each existing image to the portrait; no real gameplay unit is created.",
+            "  sprite.setScale(1);const ratio=sprite.getWidth()/Math.max(1,sprite.getHeight());",
+            "  const size=monster?Math.min(66,46*(entry.Scale||1)):58;",
+            "  sprite.setWidth(ratio>=1?size:size*ratio);sprite.setHeight(ratio>=1?size/ratio:size);",
+            "  sprite.setPosition(cx+52-sprite.getWidth()/2,cy+cardHeight/2-sprite.getHeight()/2);sprite.hide(false);",
+            "  const name=text(\"name\"+i,entry.name,cx+108,cy+12,cw-124,20,\"45;67;43\",true,\"IndexList\");",
+            "  const stats=monster?\"HP: \"+entry.HP+\"     Speed: \"+entry.Speed+\"\\nGold Reward: \"+entry.Reward+\" Gold\":\"Damage: \"+entry.damage+\"     Range: \"+entry.range+\"\\nCooldown: \"+Number(entry.cooldown).toFixed(2)+\" s     Price: \"+entry.price+\" Gold\";",
+            "  const statText=text(\"stats\"+i,stats,cx+108,cy+44,cw-124,15,\"62;68;53\",false,\"IndexList\");",
+            "  const special=text(\"special\"+i,(monster?\"ROLE\\n\":\"SPECIAL\\n\")+(monster?entry.role:entry.special),cx+108,cy+92,cw-124,13,\"116;102;67\",false,\"IndexList\");",
+            "  index.cards.push({name,stats:statText,special,sprite});",
+            "});",
+            "panel(\"track\",trackX,content.y,8,content.h,\"225;219;198\");",
+            "panel(\"thumb\",trackX,content.y+(maxScroll?index.scroll/maxScroll*(content.h-thumbHeight):0),8,thumbHeight,\"138;163;116\");",
+            "for(const [key,label,bx,bw] of [[\"Up\",\"UP\",x+20,38],[\"Down\",\"DN\",x+64,38],[\"Close\",\"CLOSE\",x+w-140,120]]){",
+            "  panel(\"button\"+key,bx,closeY,bw,34,hover===key?\"196;222;175\":\"224;230;208\");",
+            "  text(\"buttonText\"+key,label,bx+8,closeY+9,bw-16,13,\"48;68;44\",true);",
+            "}",
+            "text(\"count\",entries.length+\" \"+index.category.toUpperCase()+\"  /  SCROLL\",x+118,closeY+10,Math.max(80,w-280),12,\"116;111;91\");",
+            "runtimeScene.getLayer(\"IndexUI\").show(open);runtimeScene.getLayer(\"IndexList\").show(open);",
+            "index.wasDown=down;if(!down)index.pressed=\"\";"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ]
     },
     {
       "type": "BuiltinCommonInstructions::Group",
@@ -7407,6 +10700,16 @@
               },
               "parameters": [
                 "TowerPointerWasDown",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "IndexBlocksInput",
                 "False",
                 ""
               ]
@@ -7688,6 +10991,16 @@
                 "",
                 "\"Escape\""
               ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "IndexBlocksInput",
+                "False",
+                ""
+              ]
             }
           ],
           "actions": [
@@ -7819,7 +11132,7 @@
             "Tower",
             "FireBullet",
             "=",
-            "0.5",
+            "Tower.Variable(AttackInterval)",
             ""
           ]
         },
@@ -7831,7 +11144,7 @@
             "ShotgunTower",
             "FireBullet",
             "=",
-            "1.2",
+            "ShotgunTower.Variable(AttackInterval)",
             ""
           ]
         },
@@ -7843,7 +11156,7 @@
             "RocketTower",
             "FireBullet",
             "=",
-            "2",
+            "RocketTower.Variable(AttackInterval)",
             ""
           ]
         }
@@ -7902,6 +11215,16 @@
             "Money",
             ">=",
             "TileType_Button.Variable(Cost)"
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "IndexBlocksInput",
+            "False",
+            ""
           ]
         }
       ],
@@ -8482,6 +11805,16 @@
             ">=",
             "TowerCost"
           ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "IndexBlocksInput",
+            "False",
+            ""
+          ]
         }
       ],
       "actions": [
@@ -8706,241 +12039,82 @@
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Or"
-              },
-              "parameters": [],
-              "subInstructions": [
-                {
-                  "type": {
-                    "value": "KeyFromTextJustPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "\"Space\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BooleanVariable"
-                  },
-                  "parameters": [
-                    "PlayWaveRequested",
-                    "True",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "WaveActive",
-                "False",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "Wave",
-                "<",
-                "5"
-              ]
-            },
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "GameOver",
-                "False",
-                ""
-              ]
-            }
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "const sv = runtimeScene.getVariables();",
+            "const num = n => sv.get(n).getAsNumber();",
+            "const yes = n => sv.get(n).getAsBoolean();",
+            "const auto = () => sv.get(\"WaveMode\").getAsString() === \"Auto\";",
+            "const enemies = runtimeScene.getObjects(\"Enemy\");",
+            "const dt = gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene);",
+            "let state = runtimeScene.__waveManager;",
+            "if (!state) state = runtimeScene.__waveManager = { queue: [], index: 0, elapsed: 0, wait: 3 };",
+            "const message = runtimeScene.getObjects(\"MessageText\")[0];",
+            "const idle = !yes(\"WaveActive\") && num(\"EnemiesToSpawn\") === 0 && enemies.length === 0;",
+            "if (!auto() || !idle) state.wait = 3;",
+            "else if (num(\"Wave\") > 0 && num(\"Wave\") < 50 && !yes(\"GameOver\")) {",
+            "  state.wait = Math.max(0, state.wait - dt);",
+            "  message.setString(\"Wave \" + num(\"Wave\") + \" Complete\\nNext Wave\\n\" + Math.ceil(state.wait)); message.hide(false);",
+            "}",
+            "if (idle && !auto() && num(\"Wave\") > 0 && !yes(\"GameOver\")) { message.setString(\"Wave \" + num(\"Wave\") + \" Complete! Press PLAY\"); message.hide(false); }",
+            "sv.get(\"IntermissionRemaining\").setNumber(state.wait);",
+            "const manual = !yes(\"IndexBlocksInput\") && sv.get(\"WaveMode\").getAsString() === \"Waiting\" && (yes(\"PlayWaveRequested\") || gdjs.evtTools.input.wasKeyJustPressed(runtimeScene, \"Space\"));",
+            "if (idle && !yes(\"GameOver\") && num(\"Lives\") > 0 && num(\"Wave\") < 50 && (manual || (auto() && num(\"Wave\") > 0 && state.wait <= 0))) {",
+            "  if (!auto()) sv.get(\"WaveMode\").setString(\"Manual\");",
+            "  const wave = num(\"Wave\") + 1;",
+            "  const config = sv.get(\"WaveConfigs\").getChild(wave - 1).toJSObject();",
+            "  const queue = [];",
+            "  // Smooth weighted interleave preserves exact counts, without long type blocks.",
+            "  const mix = counts => {",
+            "    const names = [\"Normal\",\"Fast\",\"Tank\",\"Elite\"], used = names.map(() => 0);",
+            "    const total = names.reduce((n,t) => n + (counts[t] || 0), 0);",
+            "    for (let i = 0; i < total; i++) {",
+            "      let best = -1, score = -Infinity;",
+            "      names.forEach((t,j) => { const count = counts[t] || 0; const deficit = (i+1)*count/total-used[j]; if (used[j]<count && deficit>score) { best=j;score=deficit; } });",
+            "      queue.push(names[best]); used[best]++;",
+            "    }",
+            "  };",
+            "  if (wave === 50) {",
+            "    // Five deliberate assaults, each ending in a Boss; 60 Fast / 45 Tank / 50 Elite.",
+            "    for (const part of [{Fast:18,Tank:6,Elite:6},{Fast:14,Tank:9,Elite:10},{Fast:10,Tank:10,Elite:12},{Fast:10,Tank:10,Elite:11},{Fast:8,Tank:10,Elite:11}]) { mix(part); queue.push(\"Boss\"); }",
+            "  } else {",
+            "    mix(config);",
+            "    const ordinary = queue.length;",
+            "    for (let b=0;b<config.Boss;b++) queue.splice(Math.floor((b+1)*ordinary/(config.Boss+1))+b,0,\"Boss\");",
+            "  }",
+            "  state.queue=queue;state.index=0;state.elapsed=0;state.wait=3;",
+            "  sv.get(\"Wave\").setNumber(wave);sv.get(\"SpawnInterval\").setNumber(config.SpawnInterval);",
+            "  sv.get(\"EnemiesToSpawn\").setNumber(queue.length);sv.get(\"WaveActive\").setBoolean(true);message.hide();",
+            "}"
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Wave",
-                "+",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "EnemiesToSpawn",
-                "=",
-                "4 + Wave * 2"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "EnemySpeed",
-                "=",
-                "90 + (Wave - 1) * 12"
-              ]
-            },
-            {
-              "type": {
-                "value": "SetBooleanVariable"
-              },
-              "parameters": [
-                "WaveActive",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"SpawnTimer\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Hide"
-              },
-              "parameters": [
-                "MessageText"
-              ]
-            }
-          ]
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
         },
         {
-          "aiGeneratedEventId": "01M48XHDR72FVAPY3A0DBSQ22K",
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "WaveActive",
-                "True",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "NumberVariable"
-              },
-              "parameters": [
-                "EnemiesToSpawn",
-                ">",
-                "0"
-              ]
-            },
-            {
-              "type": {
-                "value": "CompareTimer"
-              },
-              "parameters": [
-                "",
-                "\"SpawnTimer\"",
-                ">",
-                "0.8"
-              ]
-            }
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "const sv=runtimeScene.getVariables(), state=runtimeScene.__waveManager;",
+            "if (state && sv.get(\"WaveActive\").getAsBoolean() && !sv.get(\"GameOver\").getAsBoolean() && sv.get(\"Lives\").getAsNumber()>0) {",
+            "  state.elapsed += gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene);",
+            "  const interval=sv.get(\"SpawnInterval\").getAsNumber();",
+            "  while (state.index<state.queue.length && state.elapsed>=interval) {",
+            "    state.elapsed-=interval;",
+            "    const type=state.queue[state.index++], stats=sv.get(\"EnemyTypes\").getChild(type).toJSObject();",
+            "    const enemy=runtimeScene.createObject(\"Enemy\"), vars=enemy.getVariables();",
+            "    vars.get(\"EnemyType\").setString(type);vars.get(\"MoveSpeed\").setNumber(stats.Speed);vars.get(\"GoldReward\").setNumber(stats.Reward);",
+            "    enemy.setScale(stats.Scale);enemy.setColor(stats.Tint);",
+            "    const point=sv.get(\"MonsterPathPoints\").getChild(0);",
+            "    enemy.setPosition(point.getChild(\"X\").getAsNumber()-enemy.getWidth()/2,point.getChild(\"Y\").getAsNumber()-enemy.getHeight()/2);",
+            "    enemy.setAnimationName(vars.get(\"MovementAnimation\").getAsString());",
+            "    enemy.getBehavior(\"Health\").SetMaxHealth(stats.HP);enemy.getBehavior(\"Health\").SetHealth(stats.HP);",
+            "    sv.get(\"EnemiesToSpawn\").setNumber(state.queue.length-state.index);",
+            "  }",
+            "}"
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "Enemy",
-                "MonsterPathPoints[0].X",
-                "MonsterPathPoints[0].Y",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetXY"
-              },
-              "parameters": [
-                "Enemy",
-                "=",
-                "MonsterPathPoints[0].X - Enemy.Width() / 2",
-                "=",
-                "MonsterPathPoints[0].Y - Enemy.Height() / 2"
-              ]
-            },
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::SetName"
-              },
-              "parameters": [
-                "Enemy",
-                "Animation",
-                "=",
-                "Enemy.VariableString(MovementAnimation)"
-              ]
-            },
-            {
-              "type": {
-                "value": "Health::Health::SetMaxHealthOp"
-              },
-              "parameters": [
-                "Enemy",
-                "Health",
-                "=",
-                "EnemyHP",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Health::Health::SetHealth"
-              },
-              "parameters": [
-                "Enemy",
-                "Health",
-                "EnemyHP",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "EnemiesToSpawn",
-                "-",
-                "1"
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetTimer"
-              },
-              "parameters": [
-                "",
-                "\"SpawnTimer\""
-              ]
-            }
-          ]
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
         },
         {
           "type": "BuiltinCommonInstructions::ForEach",
@@ -8959,7 +12133,7 @@
                 "const route = sceneVars.get(\"MonsterPathPoints\");",
                 "const count = sceneVars.get(\"MonsterPathPointCount\").getAsNumber();",
                 "let waypoint = vars.get(\"Waypoint\").getAsNumber();",
-                "const speed = Math.max(0, sceneVars.get(\"EnemySpeed\").getAsNumber());",
+                "const speed = Math.max(0, vars.get(\"MoveSpeed\").getAsNumber());",
                 "let budget = speed * gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene);",
                 "let moved = false;",
                 "let horizontalDirection = 0;",
@@ -9119,17 +12293,6 @@
                 "=",
                 "0"
               ]
-            },
-            {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "ShotgunTower",
-                "\"shoot\"",
-                ">",
-                "1.2"
-              ]
             }
           ],
           "actions": [
@@ -9145,15 +12308,6 @@
             },
             {
               "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "ShotgunTower",
-                "\"shoot\""
-              ]
-            },
-            {
-              "type": {
                 "value": "FireBullet::FireBullet::FireTowardObject"
               },
               "parameters": [
@@ -9163,66 +12317,6 @@
                 "ShotgunTower.CenterY()",
                 "Bullet",
                 "Enemy",
-                "450",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::Fire"
-              },
-              "parameters": [
-                "ShotgunTower",
-                "FireBullet",
-                "ShotgunTower.CenterX()",
-                "ShotgunTower.CenterY()",
-                "Bullet",
-                "ShotgunTower.AngleToPosition(Enemy.CenterX(), Enemy.CenterY()) + 8",
-                "450",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::Fire"
-              },
-              "parameters": [
-                "ShotgunTower",
-                "FireBullet",
-                "ShotgunTower.CenterX()",
-                "ShotgunTower.CenterY()",
-                "Bullet",
-                "ShotgunTower.AngleToPosition(Enemy.CenterX(), Enemy.CenterY()) - 8",
-                "450",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::Fire"
-              },
-              "parameters": [
-                "ShotgunTower",
-                "FireBullet",
-                "ShotgunTower.CenterX()",
-                "ShotgunTower.CenterY()",
-                "Bullet",
-                "ShotgunTower.AngleToPosition(Enemy.CenterX(), Enemy.CenterY()) + 16",
-                "450",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "FireBullet::FireBullet::Fire"
-              },
-              "parameters": [
-                "ShotgunTower",
-                "FireBullet",
-                "ShotgunTower.CenterX()",
-                "ShotgunTower.CenterY()",
-                "Bullet",
-                "ShotgunTower.AngleToPosition(Enemy.CenterX(), Enemy.CenterY()) - 16",
                 "450",
                 ""
               ]
@@ -9254,17 +12348,6 @@
                 "=",
                 "0"
               ]
-            },
-            {
-              "type": {
-                "value": "CompareObjectTimer"
-              },
-              "parameters": [
-                "RocketTower",
-                "\"shoot\"",
-                ">",
-                "2"
-              ]
             }
           ],
           "actions": [
@@ -9276,15 +12359,6 @@
                 "Enemy",
                 "RocketTower.CenterX()",
                 "RocketTower.CenterY()"
-              ]
-            },
-            {
-              "type": {
-                "value": "ResetObjectTimer"
-              },
-              "parameters": [
-                "RocketTower",
-                "\"shoot\""
               ]
             },
             {
@@ -9466,11 +12540,12 @@
           "actions": [
             {
               "type": {
-                "value": "PickAllInstances"
+                "value": "PickNearest"
               },
               "parameters": [
-                "",
-                "Enemy"
+                "Enemy",
+                "RocketBullet.CenterX()",
+                "RocketBullet.CenterY()"
               ]
             }
           ],
@@ -9478,30 +12553,7 @@
             {
               "type": "BuiltinCommonInstructions::ForEach",
               "object": "Enemy",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "Distance"
-                  },
-                  "parameters": [
-                    "Enemy",
-                    "RocketBullet",
-                    "100",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "inverted": true,
-                    "value": "Health::Health::IsDead"
-                  },
-                  "parameters": [
-                    "Enemy",
-                    "Health",
-                    ""
-                  ]
-                }
-              ],
+              "conditions": [],
               "actions": [
                 {
                   "type": {
@@ -9589,7 +12641,7 @@
           ]
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
+          "type": "BuiltinCommonInstructions::ForEach",
           "conditions": [
             {
               "type": {
@@ -9605,24 +12657,25 @@
           "actions": [
             {
               "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Money",
+                "+",
+                "Enemy.Variable(GoldReward)"
+              ]
+            },
+            {
+              "type": {
                 "value": "Delete"
               },
               "parameters": [
                 "Enemy",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "Money",
-                "+",
-                "KillReward"
-              ]
             }
-          ]
+          ],
+          "object": "Enemy"
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
@@ -9657,6 +12710,16 @@
                 "=",
                 "0"
               ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Lives",
+                ">",
+                "0"
+              ]
             }
           ],
           "actions": [
@@ -9682,7 +12745,7 @@
                   "parameters": [
                     "Wave",
                     ">=",
-                    "5"
+                    "50"
                   ]
                 }
               ],
@@ -9731,7 +12794,7 @@
                     "MessageText",
                     "Text",
                     "=",
-                    "\"Wave cleared! Press SPACE\""
+                    "\"Wave \" + ToString(Wave) + \" Complete! Press PLAY\""
                   ]
                 },
                 {
@@ -9838,7 +12901,7 @@
                 "WaveText",
                 "Text",
                 "=",
-                "ToString(Wave) + \"/5\""
+                "ToString(Wave) + \"/50\""
               ]
             }
           ]
@@ -10450,6 +13513,42 @@
       "name": "TowerShopList",
       "renderingType": "",
       "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "IndexUI",
+      "renderingType": "",
+      "visibility": false,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "IndexList",
+      "renderingType": "",
+      "visibility": false,
       "cameras": [],
       "effects": []
     }

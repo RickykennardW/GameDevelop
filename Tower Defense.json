@@ -610,6 +610,14 @@
         "name": "assets/ui/scroll.svg",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "assets/ui/manual-wave.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/manual-wave.svg",
+        "smoothed": true,
+        "userAdded": true
       }
     ]
   },
