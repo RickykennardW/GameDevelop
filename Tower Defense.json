@@ -706,6 +706,14 @@
         "name": "Index_Button_Icon",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "Default size/towerDefense_tile203.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default size/towerDefense_tile203.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ]
   },

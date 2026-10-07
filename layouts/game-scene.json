@@ -74,25 +74,10 @@
           "name": "AssetRocketTowerPrice"
         },
         {
-          "name": "AssetPanelHint"
-        },
-        {
           "name": "AssetCardSeparator"
         },
         {
           "name": "ShopCoin"
-        },
-        {
-          "name": "ShopScrollUp"
-        },
-        {
-          "name": "ShopScrollDown"
-        },
-        {
-          "name": "ShopScrollArrow"
-        },
-        {
-          "name": "ShopScrollLabel"
         },
         {
           "name": "ShopScrollTrack"
@@ -162,6 +147,17 @@
         },
         {
           "name": "Ground_Decoration"
+        }
+      ]
+    },
+    {
+      "name": "MapEndpoints",
+      "objects": [
+        {
+          "name": "SpawnMarker"
+        },
+        {
+          "name": "BaseMarker"
         }
       ]
     }
@@ -2571,6 +2567,16 @@
       "name": "IndexBlocksInput",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "MapPlacementFits",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "MapRouteDirty",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -2749,22 +2755,6 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "UI",
-      "name": "HelpText",
-      "persistentUuid": "40b3db81-b164-470e-ade9-f8708c055c32",
-      "width": 0,
-      "x": 20,
-      "y": 650,
-      "zOrder": 0,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
       "customSize": true,
       "depth": 1,
       "height": 432,
@@ -2794,1437 +2784,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "ecac8a7f-75f0-4061-b538-0991f662fd6f",
-      "width": 64,
-      "x": 128,
-      "y": 64,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 3
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "b637d1e3-fdab-4b38-955d-6b308bf1fa18",
-      "width": 64,
-      "x": 192,
-      "y": 64,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "7327c161-0a62-44af-b617-8ace12ab3572",
-      "width": 64,
-      "x": 256,
-      "y": 64,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 5
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "4ca88312-a79e-4cf2-ae41-3354d0d12358",
-      "width": 64,
-      "x": 320,
-      "y": 64,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 6
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "febaec3c-b6b8-4916-8958-81098be5c647",
-      "width": 64,
-      "x": 384,
-      "y": 64,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 7
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "26acbf0b-d421-43a8-93bb-5f52e5d020cb",
-      "width": 64,
-      "x": 448,
-      "y": 64,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 8
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "62807aa3-e9fb-46a9-b962-adfdc3a8de35",
-      "width": 64,
-      "x": 512,
-      "y": 64,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 9
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "c1a4b85d-b517-4d9f-a0e5-b937e5c26da6",
-      "width": 64,
-      "x": 576,
-      "y": 64,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 10
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "a9f0ce5d-9a37-45c8-b668-7ed39dd045af",
-      "width": 64,
-      "x": 640,
-      "y": 64,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 11
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "c1ade4a5-e5f6-44f4-9b78-f0e7d043fcd5",
-      "width": 64,
-      "x": 704,
-      "y": 64,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 12
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "580aae38-572f-4fe1-b023-96521365457e",
-      "width": 64,
-      "x": 768,
-      "y": 64,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 13
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "d36ca5ba-a828-4cd8-b12d-3e9e53df98e8",
-      "width": 64,
-      "x": 832,
-      "y": 64,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 14
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "db5a2b21-2555-4d4a-80d5-13f6a6452936",
-      "width": 64,
-      "x": 896,
-      "y": 64,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 15
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "0d45f64f-2be3-4213-8a07-1ae13592cd8e",
-      "width": 64,
-      "x": 960,
-      "y": 64,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 16
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "963a74a5-e163-4d94-923b-1d6f59a6df26",
-      "width": 64,
-      "x": 1024,
-      "y": 64,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 17
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "1feece0a-8321-47e8-8f4b-6172de7f9590",
-      "width": 64,
-      "x": 1088,
-      "y": 64,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 18
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "7526197a-45fe-49a0-8515-bcfe9b12c79f",
-      "width": 64,
-      "x": 1088,
-      "y": 128,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 19
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "5ddc4427-553d-43cc-b316-b487d8b688d9",
-      "width": 64,
-      "x": 1088,
-      "y": 192,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 20
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "ff27a2ba-986b-496d-ab41-807274729f3c",
-      "width": 64,
-      "x": 1088,
-      "y": 256,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 21
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "437f2735-4758-4f58-b3e1-6468c000ab95",
-      "width": 64,
-      "x": 128,
-      "y": 256,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 36
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "8892962b-f0db-45b0-a3e0-559faef34d96",
-      "width": 64,
-      "x": 192,
-      "y": 256,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 35
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "ebfcab23-1058-4867-869b-0aa0bcd10df7",
-      "width": 64,
-      "x": 256,
-      "y": 256,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 34
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "f8cee53c-53a4-4797-a45d-8171d602a29b",
-      "width": 64,
-      "x": 320,
-      "y": 256,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 33
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "3d600ada-a199-4582-b303-3bdb4ac930f5",
-      "width": 64,
-      "x": 384,
-      "y": 256,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 32
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "cd92d4a5-2323-4e74-b444-8a0c6a6a39cd",
-      "width": 64,
-      "x": 448,
-      "y": 256,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 31
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "74f4a778-78a1-4159-b2bf-b341ba0624ff",
-      "width": 64,
-      "x": 512,
-      "y": 256,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 30
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "1f960943-2f76-446f-802c-76dc95bb9295",
-      "width": 64,
-      "x": 576,
-      "y": 256,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 29
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "1d353338-f5d3-4ef9-bae3-e1c4074b39b9",
-      "width": 64,
-      "x": 640,
-      "y": 256,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 28
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "0c542cb1-b0c7-43cc-b5ca-04deed779db2",
-      "width": 64,
-      "x": 704,
-      "y": 256,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 27
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "d99fa2b6-2b6d-4362-b226-847328a9c62e",
-      "width": 64,
-      "x": 768,
-      "y": 256,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 26
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "e821916d-2504-428f-9cc6-f9ab0b9653ca",
-      "width": 64,
-      "x": 832,
-      "y": 256,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 25
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "5d0032ad-7841-4367-8ed1-37de4277c7ad",
-      "width": 64,
-      "x": 896,
-      "y": 256,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 24
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "2a6948bd-c106-4637-b638-18e7088cacbb",
-      "width": 64,
-      "x": 960,
-      "y": 256,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 23
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "c0fad579-2ea4-4788-bc66-da90689e6ae9",
-      "width": 64,
-      "x": 1024,
-      "y": 256,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 22
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "bba290f7-6302-4c24-bb94-cbf70de9b28a",
-      "width": 64,
-      "x": 128,
-      "y": 320,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 37
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "0319ba6c-09a1-4fb1-a0ea-1d85b9b89255",
-      "width": 64,
-      "x": 128,
-      "y": 384,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 38
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "557f91bc-7ad8-4822-be5a-c1514005db7e",
-      "width": 64,
-      "x": 128,
-      "y": 448,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 39
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "9ff9de48-463b-4564-b881-14d810a23d0b",
-      "width": 64,
-      "x": 192,
-      "y": 448,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 40
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "34c09c0f-cb8b-4838-bdf5-ccea98d739c3",
-      "width": 64,
-      "x": 256,
-      "y": 448,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 41
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "625b6c01-bb89-40ea-bb6c-11a0ccbb54b2",
-      "width": 64,
-      "x": 320,
-      "y": 448,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 42
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "11eeab56-2486-401e-98da-72c061da91b9",
-      "width": 64,
-      "x": 384,
-      "y": 448,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 43
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "471e78e3-426c-4606-86d3-b2332b67180a",
-      "width": 64,
-      "x": 448,
-      "y": 448,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 44
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "d304340a-095b-45d7-bfac-1aeb8946a62f",
-      "width": 64,
-      "x": 512,
-      "y": 448,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 45
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "d07d014a-028b-489f-8adf-41b3065859f8",
-      "width": 64,
-      "x": 576,
-      "y": 448,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 46
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "10b32488-717a-474a-aab8-c979da898171",
-      "width": 64,
-      "x": 640,
-      "y": 448,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 47
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "f91b682a-a778-4940-bc88-d51ba25d0c25",
-      "width": 64,
-      "x": 704,
-      "y": 448,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 48
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "4318c554-3648-4508-b492-aaba06582036",
-      "width": 64,
-      "x": 768,
-      "y": 448,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 49
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "c70d0d79-6f0f-429f-a70a-0f7b6bc3e61d",
-      "width": 64,
-      "x": 832,
-      "y": 448,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 50
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "665da30a-eac5-4006-81d8-20432c1b5af9",
-      "width": 64,
-      "x": 896,
-      "y": 448,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 51
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "06750d75-0d99-42a3-9a23-af70c823c97a",
-      "width": 64,
-      "x": 960,
-      "y": 448,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 52
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "d961274f-4e24-4fde-806f-37eb0864ab55",
-      "width": 64,
-      "x": 1024,
-      "y": 448,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 53
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "18a7f6fe-6fa2-4fad-9710-b621e62146d2",
-      "width": 64,
-      "x": 1088,
-      "y": 448,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 54
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "4710f158-58fb-4a15-bd9f-a17c9b1f01aa",
-      "width": 64,
-      "x": 1152,
-      "y": 512,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 56
-        }
-      ]
     },
     {
       "angle": 0,
@@ -4367,22 +2926,6 @@
           "value": 0
         }
       ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 18,
-      "layer": "UI",
-      "name": "AssetPanelHint",
-      "persistentUuid": "bb8b15d3-dbd1-4579-bb92-507cd90ab7d4",
-      "width": 192,
-      "x": 1168,
-      "y": 340,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
     },
     {
       "angle": 0,
@@ -4611,174 +3154,12 @@
     {
       "angle": 0,
       "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "01e2eae8-9ce6-4a7a-a798-3b66ba676019",
-      "width": 64,
-      "x": -64,
-      "y": 64,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 0
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "1803a3a2-d632-4016-99ad-57b89d1dc6a8",
-      "width": 64,
-      "x": 0,
-      "y": 64,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "b8762903-d131-4910-a4cf-2419f992bb4f",
-      "width": 64,
-      "x": 64,
-      "y": 64,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "d9d7f07d-22e7-453e-beac-6a5b407d3910",
-      "width": 64,
-      "x": 1216,
-      "y": 512,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 57
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "ff4f601c-82ea-4abd-afa1-3c92f2853e86",
-      "width": 64,
-      "x": 1280,
-      "y": 512,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 58
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "2aba7124-669d-4aaf-b54f-ee8fc8d6a54e",
-      "width": 64,
-      "x": 1344,
-      "y": 512,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 59
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 720,
+      "height": 1152,
       "keepRatio": false,
       "layer": "",
       "name": "Ground_Map",
       "persistentUuid": "00df393f-74f3-452c-9209-ea629a9f58e4",
-      "width": 1280,
+      "width": 1536,
       "x": 0,
       "y": 0,
       "zOrder": -10,
@@ -4795,8 +3176,8 @@
       "name": "Ground_Decoration",
       "persistentUuid": "6627a3b0-4221-4b44-a98a-bf33bcd2ff71",
       "width": 64,
-      "x": 24,
-      "y": 164,
+      "x": 192,
+      "y": 288,
       "zOrder": -5,
       "numberProperties": [],
       "stringProperties": [],
@@ -4811,8 +3192,8 @@
       "name": "Ground_Decoration",
       "persistentUuid": "b8c23db2-3d81-49d5-9169-fed7cbd433b0",
       "width": 64,
-      "x": 32,
-      "y": 352,
+      "x": 1152,
+      "y": 480,
       "zOrder": -5,
       "numberProperties": [],
       "stringProperties": [],
@@ -4827,8 +3208,8 @@
       "name": "Ground_Decoration",
       "persistentUuid": "3e7f9a62-bbc2-4895-9968-042cbd366c90",
       "width": 64,
-      "x": 40,
-      "y": 548,
+      "x": 672,
+      "y": 672,
       "zOrder": -5,
       "numberProperties": [],
       "stringProperties": [],
@@ -4843,8 +3224,8 @@
       "name": "Ground_Decoration",
       "persistentUuid": "8b610349-bf17-4b8e-9436-068115b70445",
       "width": 64,
-      "x": 264,
-      "y": 572,
+      "x": 320,
+      "y": 896,
       "zOrder": -5,
       "numberProperties": [],
       "stringProperties": [],
@@ -4859,8 +3240,8 @@
       "name": "Ground_Decoration",
       "persistentUuid": "78da639a-2f7b-4207-9d10-40e95b4675d8",
       "width": 64,
-      "x": 776,
-      "y": 568,
+      "x": 1088,
+      "y": 96,
       "zOrder": -5,
       "numberProperties": [],
       "stringProperties": [],
@@ -4875,39 +3256,12 @@
       "name": "Ground_Decoration",
       "persistentUuid": "946e2741-e8e8-4917-adfe-a398b543caa8",
       "width": 64,
-      "x": 1164,
-      "y": 564,
+      "x": 1024,
+      "y": 672,
       "zOrder": -5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "height": 64,
-      "keepRatio": false,
-      "layer": "",
-      "name": "Monster_Path",
-      "persistentUuid": "768f8a99-3bfa-489d-9c81-0e1a0159f988",
-      "width": 64,
-      "x": 1088,
-      "y": 512,
-      "zOrder": 0,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "PathOrder",
-          "type": "number",
-          "value": 55
-        }
-      ]
     },
     {
       "angle": 0,
@@ -5038,101 +3392,6 @@
       "x": 1200,
       "y": 386,
       "zOrder": 7,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [],
-      "keepRatio": false
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 28,
-      "layer": "UI",
-      "name": "ShopScrollUp",
-      "persistentUuid": "d3a3f390-97eb-4684-a526-1c71a79d8294",
-      "width": 40,
-      "x": 1168,
-      "y": 306,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [],
-      "keepRatio": false
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 28,
-      "layer": "UI",
-      "name": "ShopScrollDown",
-      "persistentUuid": "dd01300e-ad98-41c2-b030-5ee902411352",
-      "width": 40,
-      "x": 1216,
-      "y": 306,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [],
-      "keepRatio": false
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 16,
-      "layer": "UI",
-      "name": "ShopScrollArrow",
-      "persistentUuid": "006364bc-93b6-4974-9fd1-c792c3572d60",
-      "width": 20,
-      "x": 1176,
-      "y": 312,
-      "zOrder": 6,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 0
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [],
-      "keepRatio": false
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 16,
-      "layer": "UI",
-      "name": "ShopScrollArrow",
-      "persistentUuid": "ffa94cbb-3980-455f-a8f6-e855301895bc",
-      "width": 20,
-      "x": 1224,
-      "y": 312,
-      "zOrder": 6,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 1
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [],
-      "keepRatio": false
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 20,
-      "layer": "UI",
-      "name": "ShopScrollLabel",
-      "persistentUuid": "dbcefff8-b489-4aad-8297-03e1707ce4dc",
-      "width": 92,
-      "x": 1268,
-      "y": 313,
-      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": [],
@@ -5409,6 +3668,3177 @@
       "x": 1160,
       "y": 360,
       "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [],
+      "keepRatio": false
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "eb667d50-f8be-485b-a7a4-6801c8642d0c",
+      "width": 64,
+      "x": 64,
+      "y": 192,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "25e50252-737c-4b8b-bfc5-e0eed23564e8",
+      "width": 64,
+      "x": 128,
+      "y": 192,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "aaacec49-b2c8-4a0f-900a-5c37dfa319bc",
+      "width": 64,
+      "x": 192,
+      "y": 192,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "fe1456c3-3f3d-4f7f-b877-9221911fbec3",
+      "width": 64,
+      "x": 256,
+      "y": 192,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "81d873bc-7b72-4e71-8db3-a7966bdc1e78",
+      "width": 64,
+      "x": 320,
+      "y": 192,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 4
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "1f6be9b5-9dfe-4339-92a4-b99382e9faad",
+      "width": 64,
+      "x": 384,
+      "y": 192,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "a7c23e91-6605-4c14-ac83-e14bb937a159",
+      "width": 64,
+      "x": 448,
+      "y": 192,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "9ad0495d-baa2-423c-b569-73ac7cf05465",
+      "width": 64,
+      "x": 512,
+      "y": 192,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 7
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "ed5d88e1-cd73-4cac-98a5-b29ed5351cf0",
+      "width": 64,
+      "x": 576,
+      "y": 192,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "a3f326e6-ba03-441f-add9-82d6a3135ffc",
+      "width": 64,
+      "x": 640,
+      "y": 192,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 9
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "7ca6a69e-55ed-494e-8722-efd045da6ce1",
+      "width": 64,
+      "x": 704,
+      "y": 192,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "24543f97-d9ce-4e76-8682-a842b7c61615",
+      "width": 64,
+      "x": 768,
+      "y": 192,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 11
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "2f2961f3-bd7c-46d2-8468-8bc4261024e6",
+      "width": 64,
+      "x": 832,
+      "y": 192,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 12
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "c1283d89-d9ab-4542-abdf-95571a5462dc",
+      "width": 64,
+      "x": 896,
+      "y": 192,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 13
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "aad7702e-30b4-483f-a7ee-1d1d35b7a646",
+      "width": 64,
+      "x": 960,
+      "y": 192,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 14
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "cbbc3181-57ec-4427-aafa-a8d7c75ae1eb",
+      "width": 64,
+      "x": 1024,
+      "y": 192,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "95bd191a-15ef-4819-9ff4-27f90bd4c8e3",
+      "width": 64,
+      "x": 1088,
+      "y": 192,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 16
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "740758e4-b919-416f-9aaf-75ce3fa6a98c",
+      "width": 64,
+      "x": 1152,
+      "y": 192,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 17
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "43497e1a-2623-490c-bfdc-abba020c0390",
+      "width": 64,
+      "x": 1216,
+      "y": 192,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 18
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "c2219c44-361d-4a7f-b5f3-720681df4b97",
+      "width": 64,
+      "x": 1280,
+      "y": 192,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 19
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "8705102f-2771-41af-bfdf-257a2c75a9ea",
+      "width": 64,
+      "x": 1344,
+      "y": 192,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "2be60e70-98a9-4426-ba3f-78b9354452ff",
+      "width": 64,
+      "x": 1344,
+      "y": 256,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 21
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "d31f6e83-10ff-4150-97e0-95dd74abad73",
+      "width": 64,
+      "x": 1344,
+      "y": 320,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 22
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "9aea8b04-fb29-4fde-851b-87b5548da49f",
+      "width": 64,
+      "x": 1344,
+      "y": 384,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 23
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "7f56b2e3-0ce4-407f-b19a-2b08bc25ce5c",
+      "width": 64,
+      "x": 1280,
+      "y": 384,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 24
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "f2bec6cf-825b-49f4-87a4-ea7194ed6a85",
+      "width": 64,
+      "x": 1216,
+      "y": 384,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 25
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "7422cf68-5fec-4a2f-9fcb-3018a6a7ea0e",
+      "width": 64,
+      "x": 1152,
+      "y": 384,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 26
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "e7e77992-9d7b-4b9a-86b8-0fb2dc793e7b",
+      "width": 64,
+      "x": 1088,
+      "y": 384,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 27
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "04ffbd78-ded7-410a-ac3e-2746a052c16e",
+      "width": 64,
+      "x": 1024,
+      "y": 384,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 28
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "881b4299-947d-48ed-a62e-8907cea012fe",
+      "width": 64,
+      "x": 960,
+      "y": 384,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 29
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "9c885854-c0db-4243-88f7-d6a17facbd9c",
+      "width": 64,
+      "x": 896,
+      "y": 384,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "b8d55a0f-fcf7-40bb-951d-4565ba40e1b1",
+      "width": 64,
+      "x": 832,
+      "y": 384,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 31
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "0c762ed6-effb-4952-86e7-ffde522c070f",
+      "width": 64,
+      "x": 768,
+      "y": 384,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 32
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "6b2493f1-75d7-4252-9628-9234887e0679",
+      "width": 64,
+      "x": 704,
+      "y": 384,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 33
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "4a86cba5-792f-41f6-ba05-29cbc9bebc77",
+      "width": 64,
+      "x": 640,
+      "y": 384,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 34
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "bb4e57db-8824-422a-bd52-161e08033848",
+      "width": 64,
+      "x": 576,
+      "y": 384,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 35
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "0d71400c-6058-440f-add0-64da381fbe03",
+      "width": 64,
+      "x": 512,
+      "y": 384,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 36
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "4d2a416e-5211-4768-94a4-58bb64ee80b9",
+      "width": 64,
+      "x": 448,
+      "y": 384,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 37
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "f6ffd0fa-9551-484f-aab0-13062cf8cf56",
+      "width": 64,
+      "x": 384,
+      "y": 384,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 38
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "1ee0c081-4601-43b3-a9e9-b55f272a893b",
+      "width": 64,
+      "x": 320,
+      "y": 384,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 39
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "0d0e25b5-2a03-449b-a6f1-ee1dc6e0333f",
+      "width": 64,
+      "x": 256,
+      "y": 384,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 40
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "37e70983-84c1-4bec-b47e-8607641001cb",
+      "width": 64,
+      "x": 192,
+      "y": 384,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 41
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "62593eb8-bd45-4551-9829-5b2cc71b6c3d",
+      "width": 64,
+      "x": 128,
+      "y": 384,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 42
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "887fb4e9-d310-4d1f-a2d1-43436a8b093b",
+      "width": 64,
+      "x": 64,
+      "y": 384,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 43
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "be84ee81-2958-478c-bb1b-8ec17fd9fecf",
+      "width": 64,
+      "x": 64,
+      "y": 448,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 44
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "9bc83b28-7f5e-4c2e-922a-3a7d6d8fa27b",
+      "width": 64,
+      "x": 64,
+      "y": 512,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 45
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "6feb44a5-748c-4da7-8c68-19a769ff1653",
+      "width": 64,
+      "x": 64,
+      "y": 576,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 46
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "a554f634-a9d4-4e91-a9d7-53ba0be39206",
+      "width": 64,
+      "x": 128,
+      "y": 576,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 47
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "1e114cac-ccbd-4dfd-883a-13bde53a9364",
+      "width": 64,
+      "x": 192,
+      "y": 576,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 48
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "149b50e7-3c1f-468a-b942-d19fccd7bb62",
+      "width": 64,
+      "x": 256,
+      "y": 576,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 49
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "4d7f33ae-ba54-44b0-a642-1abb5a6e4df9",
+      "width": 64,
+      "x": 320,
+      "y": 576,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 50
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "c6ce7f38-a8e4-4f03-8203-fa076b1f2931",
+      "width": 64,
+      "x": 384,
+      "y": 576,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 51
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "d14af6ce-6361-40f3-b989-5f3b81316ba5",
+      "width": 64,
+      "x": 448,
+      "y": 576,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 52
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "c6ab485d-7983-43a0-b8b6-c2e91ac791be",
+      "width": 64,
+      "x": 512,
+      "y": 576,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 53
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "b7a2482a-4655-4e1d-9509-0152ee8e243f",
+      "width": 64,
+      "x": 576,
+      "y": 576,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 54
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "f987aec3-7f03-45de-b0bf-52c8513dc10d",
+      "width": 64,
+      "x": 640,
+      "y": 576,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 55
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "71672998-7f45-4901-86a6-765d74b7eee7",
+      "width": 64,
+      "x": 704,
+      "y": 576,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 56
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "b060f750-6f4b-4023-85b1-5d12907fb9a4",
+      "width": 64,
+      "x": 768,
+      "y": 576,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 57
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "9ee59967-faeb-4770-8770-aefef6e52686",
+      "width": 64,
+      "x": 832,
+      "y": 576,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 58
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "a331cf14-3602-4714-9aa7-d1cfe0ea2079",
+      "width": 64,
+      "x": 896,
+      "y": 576,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 59
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "bd311ad9-5028-4bf5-9f51-0ea93ae6ab1e",
+      "width": 64,
+      "x": 960,
+      "y": 576,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 60
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "edbc5476-170e-4635-83b6-5693cfd9eb12",
+      "width": 64,
+      "x": 1024,
+      "y": 576,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 61
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "2355117e-e3fc-427c-94ca-24add96d2335",
+      "width": 64,
+      "x": 1088,
+      "y": 576,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 62
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "e3d11190-4a82-48b9-a7ea-49f064b37783",
+      "width": 64,
+      "x": 1152,
+      "y": 576,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 63
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "d96feddb-52a9-4411-9df8-f7331e29326a",
+      "width": 64,
+      "x": 1216,
+      "y": 576,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 64
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "64b218a2-27ea-4870-a853-09fc643bb570",
+      "width": 64,
+      "x": 1280,
+      "y": 576,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 65
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "827df594-9fee-4d76-89f4-e60f68c3b433",
+      "width": 64,
+      "x": 1344,
+      "y": 576,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 66
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "86270188-24c5-46af-b493-7774ec1ec81d",
+      "width": 64,
+      "x": 1344,
+      "y": 640,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 67
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "6fcda4b5-fe9d-4e64-8796-1b39188382b2",
+      "width": 64,
+      "x": 1344,
+      "y": 704,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 68
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "55c17249-1ece-434f-9a40-0fc74256390e",
+      "width": 64,
+      "x": 1344,
+      "y": 768,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 69
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "2ec095bb-becb-42d7-ad44-fd2535c53f1d",
+      "width": 64,
+      "x": 1280,
+      "y": 768,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 70
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "187a9d8f-926d-4440-8d9f-a685ebb3fda2",
+      "width": 64,
+      "x": 1216,
+      "y": 768,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 71
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "3abd7af3-ac72-40d4-8c80-c8c071d100f7",
+      "width": 64,
+      "x": 1152,
+      "y": 768,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 72
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "88b139c2-aea2-4acb-82b4-fae796ae180a",
+      "width": 64,
+      "x": 1088,
+      "y": 768,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 73
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "cc56cff5-1450-4dde-b183-824ce7f2945e",
+      "width": 64,
+      "x": 1024,
+      "y": 768,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 74
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "7181188b-0b67-49ee-a147-d61cb1b6c095",
+      "width": 64,
+      "x": 960,
+      "y": 768,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 75
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "9f6b275c-04d8-4e01-b492-09d86108d370",
+      "width": 64,
+      "x": 896,
+      "y": 768,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 76
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "1628c92b-c3d4-4e46-b50e-57091865b482",
+      "width": 64,
+      "x": 832,
+      "y": 768,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 77
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "bcd46e88-9f02-4073-833a-7396ae4d6822",
+      "width": 64,
+      "x": 768,
+      "y": 768,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 78
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "47bea345-e5dd-457e-8188-48ed755952e2",
+      "width": 64,
+      "x": 704,
+      "y": 768,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 79
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "5a770907-80a1-4b36-a2c6-ac543dfd3485",
+      "width": 64,
+      "x": 640,
+      "y": 768,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 80
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "254a4611-56a1-4535-9d92-632a9601740f",
+      "width": 64,
+      "x": 576,
+      "y": 768,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 81
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "2624ba28-cfab-4064-bacd-62b714c4b112",
+      "width": 64,
+      "x": 512,
+      "y": 768,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 82
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "b56efd71-1823-4774-9e8c-86ba7cac5b20",
+      "width": 64,
+      "x": 448,
+      "y": 768,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 83
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "116002ec-532d-4ec8-b787-d94fc3ba8f2e",
+      "width": 64,
+      "x": 384,
+      "y": 768,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 84
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "b746fd39-de0f-4eae-bf16-4b4712b8af32",
+      "width": 64,
+      "x": 320,
+      "y": 768,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 85
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "251746a3-46c6-4221-9e49-8f0a09789d29",
+      "width": 64,
+      "x": 256,
+      "y": 768,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 86
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "cd3ba422-8854-482a-b6b6-e071e535eba8",
+      "width": 64,
+      "x": 192,
+      "y": 768,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 87
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "29e58e64-091f-451a-bd35-39c23816ec40",
+      "width": 64,
+      "x": 128,
+      "y": 768,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 88
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "a92a4906-bc19-41bc-bc70-16a782ffaab4",
+      "width": 64,
+      "x": 64,
+      "y": 768,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 89
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "31994bc1-fc14-436c-be2b-4dd18a9ffd8b",
+      "width": 64,
+      "x": 64,
+      "y": 832,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 90
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "2fffaf4f-7dd5-4719-bb99-ffd80b110791",
+      "width": 64,
+      "x": 64,
+      "y": 896,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 91
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "87ab72bb-4b95-4311-88ea-ab7d127d9573",
+      "width": 64,
+      "x": 64,
+      "y": 960,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 92
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "e28b670d-013d-431d-aa30-0d79833768db",
+      "width": 64,
+      "x": 64,
+      "y": 1024,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 93
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "2f4548b8-e38a-4d86-8437-7e7d06d75bd4",
+      "width": 64,
+      "x": 128,
+      "y": 1024,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 94
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "c78648db-eb0a-4bfc-b992-8ea7cb49a26f",
+      "width": 64,
+      "x": 192,
+      "y": 1024,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 95
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "5856bfdf-ac8c-4968-944f-34654b5bfbeb",
+      "width": 64,
+      "x": 256,
+      "y": 1024,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 96
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "1241d31d-8088-4a47-91e9-80e8826885b7",
+      "width": 64,
+      "x": 320,
+      "y": 1024,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 97
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "aefd89e8-2706-4a15-81ce-671c55579304",
+      "width": 64,
+      "x": 384,
+      "y": 1024,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 98
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "07ace568-5f01-4e43-b92c-26a4846ff2d5",
+      "width": 64,
+      "x": 448,
+      "y": 1024,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 99
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "2e6ac99c-ecb6-44d3-a967-5608b6772a2d",
+      "width": 64,
+      "x": 512,
+      "y": 1024,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 100
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "0122408f-5966-4d05-87cd-b962cc60eccf",
+      "width": 64,
+      "x": 576,
+      "y": 1024,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 101
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "3571227e-f7ac-4ad2-8f21-19f89a9e9844",
+      "width": 64,
+      "x": 640,
+      "y": 1024,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 102
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "2848d1bd-c676-465f-9b2b-149239f8107a",
+      "width": 64,
+      "x": 704,
+      "y": 1024,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 103
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "e5725ab1-5aef-43de-b30d-2d7ad03b510f",
+      "width": 64,
+      "x": 768,
+      "y": 1024,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 104
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "f3e8dc97-462d-404c-a55e-8be95b68c41c",
+      "width": 64,
+      "x": 832,
+      "y": 1024,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 105
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "3b9ebdaa-a82c-4ebe-ab5d-4c4287a4d4da",
+      "width": 64,
+      "x": 896,
+      "y": 1024,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 106
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "9ea4db95-59ef-48c7-b0fa-16512f1b19d6",
+      "width": 64,
+      "x": 960,
+      "y": 1024,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 107
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "73088cfd-4079-43af-b144-80780d417a9d",
+      "width": 64,
+      "x": 1024,
+      "y": 1024,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 108
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "b0b95d81-5f75-40b1-b953-c2b3b5856250",
+      "width": 64,
+      "x": 1088,
+      "y": 1024,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 109
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "55c117e9-1b7f-4f79-a2b7-32d020b716ea",
+      "width": 64,
+      "x": 1152,
+      "y": 1024,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 110
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "826019bb-981b-4ff7-96bb-48f683f122b9",
+      "width": 64,
+      "x": 1216,
+      "y": 1024,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 111
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "9e3d8640-ce25-4f51-bb04-728480adc3fd",
+      "width": 64,
+      "x": 1280,
+      "y": 1024,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 112
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "ecda5224-566c-4cb7-8eaa-e53653dbf76e",
+      "width": 64,
+      "x": 1344,
+      "y": 1024,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 113
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 32,
+      "keepRatio": false,
+      "layer": "",
+      "name": "SpawnMarker",
+      "persistentUuid": "cfbf86fd-e96a-4e6c-aac2-2c404c20983b",
+      "width": 32,
+      "x": 80,
+      "y": 208,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 80,
+      "keepRatio": false,
+      "layer": "",
+      "name": "BaseMarker",
+      "persistentUuid": "a05e12fc-8766-44f4-95f1-190c5061cc0c",
+      "width": 80,
+      "x": 1336,
+      "y": 1016,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 24,
+      "keepRatio": false,
+      "layer": "",
+      "name": "MapEndpointLabel",
+      "persistentUuid": "d36c0abf-5ce1-43d2-ac13-ae8172ff9b5f",
+      "width": 96,
+      "x": 48,
+      "y": 164,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Endpoint",
+          "type": "string",
+          "value": "Spawn"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 24,
+      "keepRatio": false,
+      "layer": "",
+      "name": "MapEndpointLabel",
+      "persistentUuid": "d4d3801b-5521-4485-814f-22d9ecb0fb62",
+      "width": 96,
+      "x": 1328,
+      "y": 996,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Endpoint",
+          "type": "string",
+          "value": "Base"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 14,
+      "layer": "UI",
+      "name": "ShopSpeedBadge",
+      "persistentUuid": "24f5d65a-86f2-42d4-b318-f633e1980509",
+      "width": 20,
+      "x": 1332,
+      "y": 648,
+      "zOrder": 8,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": [],
@@ -6845,50 +8275,6 @@
       }
     },
     {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "HelpText",
-      "persistentUuid": "9e6f2f82-4400-440a-b8c1-c1297edb0ac9",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Select a tower, then place on grass. PLAY or SPACE starts the next wave.",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 16,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Select a tower, then place on grass. PLAY or SPACE starts the next wave.",
-        "font": "",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 16,
-        "lineHeight": 0,
-        "color": "0;0;0"
-      }
-    },
-    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "9657e1e903147a4841f5fe372992a5d475b9c2c33255a7905bbe2065aadf3a9d",
       "name": "ShotgunTower",
@@ -7937,50 +9323,6 @@
       }
     },
     {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "AssetPanelHint",
-      "persistentUuid": "d29e09f7-c2cf-44d0-ba98-56d8bab84fa7",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "Pick an icon",
-      "font": "",
-      "textAlignment": "center",
-      "characterSize": 12,
-      "color": {
-        "r": 246,
-        "g": 212,
-        "b": 154
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Pick an icon",
-        "font": "",
-        "textAlignment": "center",
-        "verticalTextAlignment": "top",
-        "characterSize": 12,
-        "lineHeight": 0,
-        "color": "246;212;154"
-      }
-    },
-    {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "AssetCardSeparator",
@@ -8966,155 +10308,6 @@
           ]
         }
       ]
-    },
-    {
-      "assetStoreId": "",
-      "bottomMargin": 10,
-      "height": 48,
-      "leftMargin": 10,
-      "name": "ShopScrollUp",
-      "persistentUuid": "fe9d7ef4-fcdb-4065-a6a9-10b19737db1f",
-      "rightMargin": 10,
-      "texture": "assets/ui/fantasy-plaque.svg",
-      "tiled": false,
-      "topMargin": 10,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 48,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "assetStoreId": "",
-      "bottomMargin": 10,
-      "height": 48,
-      "leftMargin": 10,
-      "name": "ShopScrollDown",
-      "persistentUuid": "bb50d4be-2ef2-49b6-a983-30ca405be259",
-      "rightMargin": 10,
-      "texture": "assets/ui/fantasy-plaque.svg",
-      "tiled": false,
-      "topMargin": 10,
-      "type": "PanelSpriteObject::PanelSprite",
-      "width": 48,
-      "variables": [],
-      "effects": [],
-      "behaviors": []
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "ShopScrollArrow",
-      "persistentUuid": "737e0cb9-6bc4-4c74-9e99-e5b555dc841d",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "Up",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/ui/up.svg",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Down",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "assets/ui/down.svg",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "assetStoreId": "",
-      "bold": true,
-      "italic": false,
-      "name": "ShopScrollLabel",
-      "persistentUuid": "c4042682-9608-49d4-833f-e285bfa96dca",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "string": "3 TOWERS",
-      "font": "",
-      "textAlignment": "center",
-      "characterSize": 10,
-      "color": {
-        "r": 246,
-        "g": 212,
-        "b": 154
-      },
-      "content": {
-        "bold": true,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "3 TOWERS",
-        "font": "",
-        "textAlignment": "center",
-        "verticalTextAlignment": "top",
-        "characterSize": 10,
-        "lineHeight": 0,
-        "color": "246;212;154"
-      }
     },
     {
       "adaptCollisionMaskAutomatically": true,
@@ -10227,6 +11420,222 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "SpawnMarker",
+      "persistentUuid": "30b37b90-0e40-4993-b5ec-e414579e3c10",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Marker",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ui/play.svg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 24,
+                        "y": 0
+                      },
+                      {
+                        "x": 24,
+                        "y": 24
+                      },
+                      {
+                        "x": 0,
+                        "y": 24
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "BaseMarker",
+      "persistentUuid": "eedd0259-dcd0-49a4-8830-56adf5726479",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Marker",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Default size/towerDefense_tile203.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "MapEndpointLabel",
+      "persistentUuid": "79ce1548-bd45-4ff6-98fb-09e198c9d05f",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [
+        {
+          "name": "Endpoint",
+          "type": "string",
+          "value": ""
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "string": "",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 14,
+      "color": {
+        "r": 70,
+        "g": 39,
+        "b": 16
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 14,
+        "lineHeight": 0,
+        "color": "70;39;16"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "ShopSpeedBadge",
+      "persistentUuid": "2fc75d79-1ca9-4dac-acf9-bb4346693892",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "2x",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 11,
+      "color": {
+        "r": 255,
+        "g": 230,
+        "b": 144
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "2x",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 11,
+        "lineHeight": 0,
+        "color": "255;230;144"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -10261,9 +11670,6 @@
       },
       {
         "objectName": "MessageText"
-      },
-      {
-        "objectName": "HelpText"
       },
       {
         "objectName": "ShotgunTower"
@@ -10309,9 +11715,6 @@
       },
       {
         "objectName": "AssetRocketTowerPrice"
-      },
-      {
-        "objectName": "AssetPanelHint"
       },
       {
         "objectName": "AssetCardSeparator"
@@ -10383,18 +11786,6 @@
         "objectName": "ShopPlayIcon"
       },
       {
-        "objectName": "ShopScrollUp"
-      },
-      {
-        "objectName": "ShopScrollDown"
-      },
-      {
-        "objectName": "ShopScrollArrow"
-      },
-      {
-        "objectName": "ShopScrollLabel"
-      },
-      {
         "objectName": "ShopScrollTrack"
       },
       {
@@ -10432,6 +11823,18 @@
       },
       {
         "objectName": "ShopFooterFrame"
+      },
+      {
+        "objectName": "SpawnMarker"
+      },
+      {
+        "objectName": "BaseMarker"
+      },
+      {
+        "objectName": "MapEndpointLabel"
+      },
+      {
+        "objectName": "ShopSpeedBadge"
       }
     ]
   },
@@ -10456,7 +11859,23 @@
             "const number = name => variables.get(name).getAsNumber();",
             "const boolean = name => variables.get(name).getAsBoolean();",
             "const mode = () => variables.get(\"WaveMode\").getAsString();",
-            "if (mode() !== \"Auto\") variables.get(\"WaveMode\").setString(boolean(\"WaveActive\") ? \"Manual\" : \"Waiting\");",
+            "// One authoritative state: Waiting(0), Manual(1), ManualFast(2), Auto(3), AutoFast(4).",
+            "const autoMode = () => mode() === \"Auto\" || mode() === \"AutoFast\";",
+            "const fastMode = () => mode() === \"ManualFast\" || mode() === \"AutoFast\";",
+            "const syncWaveControl = () => {",
+            "  const valid = [\"Waiting\",\"Manual\",\"ManualFast\",\"Auto\",\"AutoFast\"];",
+            "  if (!valid.includes(mode())) variables.get(\"WaveMode\").setString(boolean(\"WaveActive\") ? \"Manual\" : \"Waiting\");",
+            "  const manager = scene.__waveManager;",
+            "  const spawningDone = !manager || manager.index >= manager.queue.length;",
+            "  const finished = !boolean(\"WaveActive\") && number(\"EnemiesToSpawn\") === 0 && get(\"Enemy\").length === 0 && spawningDone;",
+            "  if (boolean(\"GameOver\") || number(\"Lives\") <= 0) variables.get(\"WaveMode\").setString(\"Waiting\");",
+            "  else if (!autoMode() && finished) variables.get(\"WaveMode\").setString(\"Waiting\");",
+            "  else if (mode() === \"Waiting\" && boolean(\"WaveActive\")) variables.get(\"WaveMode\").setString(\"Manual\");",
+            "  const scale = fastMode() ? 2 : 1;",
+            "  const time = scene.getTimeManager();",
+            "  if (time.getTimeScale() !== scale) time.setTimeScale(scale);",
+            "};",
+            "syncWaveControl();",
             "const modal = boolean(\"IndexOpen\");",
             "let ui = scene.__towerShopUI;",
             "if (!ui || ui.root !== first(\"TowerShopBox\")) {",
@@ -10472,49 +11891,136 @@
             "  container.addChild(ui.mask);",
             "  container.mask = ui.mask;",
             "}",
-            "const width = scene.getGame().getGameResolutionWidth();",
-            "const height = scene.getGame().getGameResolutionHeight();",
+            "// Match the actual Preview/window viewport; keep UI pixels and camera zoom at 1.",
+            "const game = scene.getGame();",
+            "const viewportWidth = Math.round(gdjs.RuntimeGameRenderer.getWindowInnerWidth());",
+            "const viewportHeight = Math.round(gdjs.RuntimeGameRenderer.getWindowInnerHeight());",
+            "if (viewportWidth > 0 && viewportHeight > 0 && (game.getGameResolutionWidth() !== viewportWidth || game.getGameResolutionHeight() !== viewportHeight)) {",
+            "  game.setGameResolutionSize(viewportWidth, viewportHeight);",
+            "  scene.onGameResolutionResized();",
+            "}",
+            "const width = game.getGameResolutionWidth();",
+            "const height = game.getGameResolutionHeight();",
             "// UI uses a stable logical shop X outside the buildable world area. Its camera anchors it to screen right.",
-            "const offsetX = 1392 - width;",
+            "const sidebarMargin = 8, mapSidebarGap = 10;",
+            "const sidebarScreenX = width - 224 - sidebarMargin;",
+            "const gameAreaRight = Math.max(1, sidebarScreenX - mapSidebarGap);",
+            "const offsetX = 1376 + sidebarMargin - width;",
             "for (const layerName of [\"UI\", \"TowerShopList\"]) {",
             "  const layer = scene.getLayer(layerName);",
             "  layer.setCameraZoom(1, 0);",
             "  layer.setCameraX(width / 2 + offsetX, 0);",
             "  layer.setCameraY(height / 2, 0);",
             "}",
-            "const mapWidth = Math.max(240, width - 272);",
-            "const zoom = Math.min(mapWidth / 1408, Math.max(160, height - 128) / 720);",
+            "// A full terrain layer, with a new five-lane snake level built for the initial viewport.",
+            "// When units exist, resizing fits the same route instead of moving towers or resetting enemies.",
             "const map = scene.getLayer(\"\");",
-            "map.setCameraZoom(zoom, 0);",
-            "map.setCameraX((width / 2 - 16) / zoom, 0);",
-            "map.setCameraY((height / 2 - 80) / zoom, 0);",
-            "ui.geometry = { rootX: 1152, rootY: 16, panelHeight: Math.min(432, Math.max(320, height - 32)), listX: 1168, listY: 80, listWidth: 176 };",
+            "const compactHUD = gameAreaRight < 348;",
+            "const hudHeight = compactHUD ? 104 : 44;",
+            "const safeTop = 16 + hudHeight + 20;",
+            "const mapFrame = { left: 16, top: safeTop, right: Math.max(17,gameAreaRight-16), bottom: Math.max(safeTop+1,height-24) };",
+            "const layoutKey = [gameAreaRight,height,hudHeight].join(\",\");",
+            "const unitsExist = get(\"Enemy\").length || get(\"Tower\").length || get(\"ShotgunTower\").length || get(\"RocketTower\").length || get(\"Bullet\").length || get(\"RocketBullet\").length;",
+            "if (!ui.level || (ui.level.key !== layoutKey && !unitsExist && !boolean(\"WaveActive\"))) {",
+            "  const buildZoom = Math.max(0.025,Math.min(1,(height-safeTop-24)/992));",
+            "  const worldWidth = gameAreaRight/buildZoom;",
+            "  const left = 64, right = Math.max(left+320,Math.floor((worldWidth-96)/64)*64);",
+            "  const firstY = Math.ceil((safeTop/buildZoom+32)/64)*64;",
+            "  const lastY = Math.max(firstY+768,Math.floor((height-24)/buildZoom/64)*64-64);",
+            "  const rowSteps = Math.round((lastY-firstY)/64);",
+            "  const rows = Array.from({length:5},(_,i)=>firstY+Math.floor(i*rowSteps/4)*64);",
+            "  const corners = [[left,rows[0]]];",
+            "  rows.forEach((y,i)=>{if(i)corners.push([corners[corners.length-1][0],y]);corners.push([i%2===0?right:left,y]);});",
+            "  const positions = [corners[0]];",
+            "  for (const [tx,ty] of corners.slice(1)) {",
+            "    let [x,y] = positions[positions.length-1];",
+            "    while (x!==tx || y!==ty) { x+=Math.sign(tx-x)*64;y+=Math.sign(ty-y)*64;positions.push([x,y]); }",
+            "  }",
+            "  const tiles = get(\"Monster_Path\").slice().sort((a,b)=>a.getVariables().get(\"PathOrder\").getAsNumber()-b.getVariables().get(\"PathOrder\").getAsNumber());",
+            "  positions.forEach(([x,y],i)=>{",
+            "    const tile = tiles[i] || scene.createObject(\"Monster_Path\");",
+            "    tile.setLayer(\"\");tile.setZOrder(0);tile.setWidth(64);tile.setHeight(64);tile.setPosition(x,y);tile.setAnimationName(\"Surface\");tile.getVariables().get(\"PathOrder\").setNumber(i);",
+            "  });",
+            "  tiles.slice(positions.length).forEach(tile=>tile.deleteFromScene());",
+            "  const spawnPoint = [left+32,firstY+32], basePoint=[right+32,rows[4]+32];",
+            "  const spawn = first(\"SpawnMarker\"), base=first(\"BaseMarker\");",
+            "  spawn.setPosition(spawnPoint[0]-16,spawnPoint[1]-16);spawn.setWidth(32);spawn.setHeight(32);spawn.setZOrder(0);",
+            "  base.setPosition(basePoint[0]-40,basePoint[1]-40);base.setWidth(80);base.setHeight(80);",
+            "  get(\"MapEndpointLabel\").forEach(label=>{",
+            "    const isSpawn=label.getVariables().get(\"Endpoint\").getAsString()===\"Spawn\",point=isSpawn?spawnPoint:basePoint;",
+            "    label.setString(isSpawn?\"SPAWN\":\"BASE\");label.setPosition(point[0]-48,point[1]-60);label.setWidth(96);",
+            "  });",
+            "  const trees = get(\"Ground_Decoration\");",
+            "  const middle=(left+right)/2;",
+            "  const treePoints = [",
+            "    [left+128,(rows[0]+64+rows[1])/2-32],",
+            "    [right-192,(rows[1]+64+rows[2])/2-32],",
+            "    [middle,(rows[2]+64+rows[3])/2-32],",
+            "    [left+256,(rows[3]+64+rows[4])/2-32],",
+            "    [right-256,firstY-96],",
+            "    [right-320,(rows[2]+64+rows[3])/2-32]",
+            "  ];",
+            "  trees.forEach((tree,i)=>{tree.setPosition(...treePoints[i%treePoints.length]);});",
+            "  // Fit road, markers and decorations. Ground coverage is independent of these bounds.",
+            "  const visuals=[...get(\"Monster_Path\"),...get(\"Ground_Decoration\"),spawn,base,...get(\"MapEndpointLabel\")];",
+            "  let minX=Infinity,minY=Infinity,maxX=-Infinity,maxY=-Infinity;",
+            "  for(const o of visuals){minX=Math.min(minX,o.getX());minY=Math.min(minY,o.getY());maxX=Math.max(maxX,o.getX()+o.getWidth());maxY=Math.max(maxY,o.getY()+o.getHeight());}",
+            "  ui.mapBounds={left:minX-16,top:minY-16,right:maxX+16,bottom:maxY+16};",
+            "  ui.level={key:layoutKey,rows,left,right,spawn:spawnPoint,base:basePoint,tileCount:positions.length,length:(positions.length-1)*64};",
+            "  variables.get(\"MapRouteDirty\").setBoolean(true);",
+            "}",
+            "const bounds = {...ui.mapBounds};",
+            "// Towers built on edge grass must stay visible after a later resize as well.",
+            "for(const tower of [...get(\"Tower\"),...get(\"ShotgunTower\"),...get(\"RocketTower\")]) {",
+            "  bounds.left=Math.min(bounds.left,tower.getX()-16);bounds.top=Math.min(bounds.top,tower.getY()-16);",
+            "  bounds.right=Math.max(bounds.right,tower.getX()+tower.getWidth()+16);bounds.bottom=Math.max(bounds.bottom,tower.getY()+tower.getHeight()+16);",
+            "}",
+            "ui.fittedBounds=bounds;",
+            "const zoom = Math.max(0.001,Math.min(1,(mapFrame.right-mapFrame.left)/(bounds.right-bounds.left),(mapFrame.bottom-mapFrame.top)/(bounds.bottom-bounds.top)));",
+            "map.setCameraZoom(zoom,0);",
+            "map.setCameraX((bounds.left+bounds.right)/2-((mapFrame.left+mapFrame.right)/2-width/2)/zoom,0);",
+            "map.setCameraY((bounds.top+bounds.bottom)/2-((mapFrame.top+mapFrame.bottom)/2-height/2)/zoom,0);",
+            "// Keep endpoint labels readable as the map camera adapts, without scaling the units.",
+            "get(\"MapEndpointLabel\").forEach(label=>{",
+            "  const point=label.getVariables().get(\"Endpoint\").getAsString()===\"Spawn\"?ui.level.spawn:ui.level.base;",
+            "  const roadTop=map.convertInverseCoords(point[0],point[1]-32,0,[0,0]);",
+            "  const screenX=Math.max(4,Math.min(gameAreaRight-68,roadTop[0]-32));",
+            "  const position=map.convertCoords(screenX,roadTop[1]-20,0,[0,0]);",
+            "  label.setPosition(position[0],position[1]);label.setWidth(64/zoom);label.setCharacterSize(12/zoom);",
+            "});",
+            "// The original grass texture tiles naturally across ALL visible gameplay pixels.",
+            "const ground = first(\"Ground_Map\");",
+            "const min = map.convertCoords(0,0,0,[0,0]), max=map.convertCoords(gameAreaRight,height,0,[0,0]);",
+            "ground.setPosition(min[0],min[1]);ground.setWidth(max[0]-min[0]);ground.setHeight(max[1]-min[1]);",
+            "if (!ui.mapMask) {",
+            "  const container=map.getRenderer().getRendererObject();ui.mapMask=new PIXI.Graphics();container.addChild(ui.mapMask);container.mask=ui.mapMask;",
+            "}",
+            "const maskKey=[width,height,gameAreaRight,zoom,map.getCameraX(),map.getCameraY()].join(\",\");",
+            "if(ui.mapMaskKey!==maskKey){ui.mapMask.clear().beginFill(0xffffff).drawRect(min[0],min[1],max[0]-min[0],max[1]-min[1]).endFill();ui.mapMaskKey=maskKey;}",
+            "ui.gameArea={left:0,top:0,right:gameAreaRight,bottom:height,sidebarX:sidebarScreenX,gap:mapSidebarGap,margin:sidebarMargin,frame:mapFrame};",
+            "",
+            "ui.geometry = { rootX: 1152, rootY: sidebarMargin, panelHeight: height - sidebarMargin * 2, listX: 1168, listY: 72 + sidebarMargin, listWidth: 176 };",
             "const geometry = ui.geometry;",
-            "geometry.listHeight = geometry.panelHeight - 216;",
             "geometry.bottom = geometry.rootY + geometry.panelHeight;",
-            "geometry.controlsY = geometry.bottom - 142;",
-            "geometry.playY = geometry.bottom - 80;",
+            "geometry.listHeight = Math.max(1, geometry.bottom - geometry.listY - 88);",
+            "geometry.playY = geometry.bottom - 72;",
             "geometry.trackX = 1350;",
             "const rect = (name, x, y, w, h) => { const o = first(name); o.setPosition(x, y); if (w !== undefined) o.setWidth(w); if (h !== undefined) o.setHeight(h); };",
-            "rect(\"TowerShopBox\", 1152, 16, 224, geometry.panelHeight);",
-            "rect(\"ShopHeaderPlaque\", 1166, 26, 196, 48);",
+            "rect(\"TowerShopBox\", 1152, geometry.rootY, 224, geometry.panelHeight);",
+            "rect(\"ShopHeaderPlaque\", 1166, geometry.rootY + 10, 196, 48);",
             "rect(\"ShopFooterFrame\", 1160, geometry.playY - 4, 208, 72);",
-            "rect(\"AssetPanelTitle\", 1168, 32, 192, 24);",
-            "rect(\"AssetPanelSubtitle\", 1168, 53, 192, 16);",
-            "rect(\"AssetPanelHint\", 1168, geometry.bottom - 108, 192, 18);",
+            "rect(\"AssetPanelTitle\", 1168, geometry.rootY + 16, 192, 24);",
+            "rect(\"AssetPanelSubtitle\", 1168, geometry.rootY + 37, 192, 16);",
             "rect(\"ShopIndexButton\", 1168, geometry.playY, 92, 60);",
             "first(\"ShopIndexLabel\").hide();",
             "rect(\"ShopPlayButton\", 1268, geometry.playY, 92, 60);",
             "rect(\"ShopPlayIcon\", 1302, geometry.playY + 8, 24, 24);",
             "rect(\"ShopPlayLabel\", 1268, geometry.playY + 36, 92, 20);",
-            "rect(\"ShopScrollUp\", 1168, geometry.controlsY, 40, 28);",
-            "rect(\"ShopScrollDown\", 1216, geometry.controlsY, 40, 28);",
-            "get(\"ShopScrollArrow\").forEach((o, i) => { o.setPosition(1176 + i * 48, geometry.controlsY + 6); o.setWidth(20); o.setHeight(16); });",
-            "rect(\"ShopScrollLabel\", 1260, geometry.controlsY + 7, 100, 18);",
+            "rect(\"ShopSpeedBadge\", 1332, geometry.playY + 8, 20, 14);",
             "rect(\"ShopScrollTrack\", geometry.trackX, geometry.listY, 8, geometry.listHeight);",
             "// The existing tower information view shares the frame, while PLAY remains available below it.",
-            "rect(\"TowerInfoName\", 1168, 36, 192, 30);",
-            "const statStep = Math.max(26, (geometry.bottom - 152 - 80 - 10) / 4);",
+            "rect(\"TowerInfoName\", 1168, geometry.rootY + 20, 192, 30);",
+            "const statStep = Math.max(26, Math.min(64, (geometry.bottom - 152 - 80 - 10) / 4));",
             "for (const [index, field] of [\"Damage\", \"Rate\", \"Range\", \"Dealt\"].entries()) {",
             "  const y = 80 + index * statStep;",
             "  rect(\"TowerInfo\" + field + \"Label\", 1168, y + 5, 112, 20);",
@@ -10524,14 +12030,16 @@
             "rect(\"TowerSellLabel\", 1180, geometry.bottom - 137, 72, 24);",
             "rect(\"TowerSellValue\", 1252, geometry.bottom - 137, 100, 24);",
             "rect(\"TowerInfoCloseHint\", 1168, geometry.bottom - 98, 192, 18);",
-            "rect(\"HUDPanel\", offsetX + 16, 16, 316, 44);",
-            "get(\"HUDIcon\").forEach((o, i) => { o.setPosition(offsetX + [28,148,230][i], 26); o.setWidth(24); o.setHeight(24); });",
-            "rect(\"MoneyText\", offsetX + 60, 25, 80, 28);",
-            "rect(\"LivesText\", offsetX + 180, 25, 40, 28);",
-            "rect(\"WaveText\", offsetX + 262, 25, 62, 28);",
-            "rect(\"HelpText\", offsetX + 20, height - 42, mapWidth, 30);",
+            "// Keep the original HUD artwork. On narrow windows only its row arrangement changes.",
+            "const hudWidth = compactHUD ? Math.max(1, Math.min(196, gameAreaRight - 32)) : 316;",
+            "rect(\"HUDPanel\", offsetX + 16, 16, hudWidth, hudHeight);",
+            "get(\"HUDIcon\").forEach((o, i) => { o.setPosition(offsetX + (compactHUD ? 28 : [28,148,230][i]), compactHUD ? 26 + i * 30 : 26); o.setWidth(24); o.setHeight(24); });",
+            "for (const [i,name] of [\"MoneyText\",\"LivesText\",\"WaveText\"].entries()) {",
+            "  rect(name, offsetX + (compactHUD ? 60 : [60,180,262][i]), compactHUD ? 25 + i * 30 : 25, compactHUD ? Math.max(1,hudWidth-52) : [80,40,62][i], 28);",
+            "}",
             "const message = first(\"MessageText\");",
-            "message.setPosition(offsetX + 16 + mapWidth / 2 - message.getWidth() / 2, height / 2 - 20);",
+            "message.setWidth(Math.max(1, gameAreaRight - 32));",
+            "message.setPosition(offsetX + 16, height / 2 - 20);",
             "// Prices have exactly one source: the existing costs migrated unchanged into TowerShopCatalog.",
             "const catalog = variables.get(\"TowerShopCatalog\").toJSObject();",
             "for (const name of [\"AssetCardPanel\", \"TileType_Button\", \"AssetTowerLabel\", \"AssetTowerPrice\", \"ShopCoin\"]) {",
@@ -10581,13 +12089,11 @@
             "const ready = !boolean(\"WaveActive\") && !boolean(\"GameOver\") && number(\"Wave\") < 50;",
             "const overIndex = !modal && inside(1168, geometry.playY, 92, 60);",
             "const overPlay = !modal && inside(1268, geometry.playY, 92, 60);",
-            "const overUp = shopVisible && inside(1168, geometry.controlsY, 40, 28);",
-            "const overDown = shopVisible && inside(1216, geometry.controlsY, 40, 28);",
             "const down = input.isMouseButtonPressed(0);",
             "let hovered = hoveredIndex();",
             "if (down && !ui.wasDown) {",
             "  ui.pressedCard = hovered;",
-            "  ui.pressedControl = overIndex ? \"Index\" : overPlay ? \"Play\" : overUp ? \"Up\" : overDown ? \"Down\" : \"\";",
+            "  ui.pressedControl = overIndex ? \"Index\" : overPlay ? \"Play\" : \"\";",
             "  if (inTrack && maxScroll > 0 && shopVisible) { ui.dragging = true; ui.dragStartY = my; ui.dragStartScroll = scroll; ui.pressedCard = -1; }",
             "}",
             "const thumbHeight = maxScroll > 0 ? Math.max(22, geometry.listHeight * geometry.listHeight / contentHeight) : geometry.listHeight;",
@@ -10595,12 +12101,15 @@
             "if (!down && ui.wasDown) {",
             "  if (ui.pressedControl === \"Index\" && overIndex) ui.indexRequested = true;",
             "  if (ui.pressedControl === \"Play\" && overPlay && !boolean(\"GameOver\")) {",
-            "    if (mode() === \"Auto\") variables.get(\"WaveMode\").setString(boolean(\"WaveActive\") ? \"Manual\" : \"Waiting\");",
-            "    else if (boolean(\"WaveActive\")) variables.get(\"WaveMode\").setString(\"Auto\");",
-            "    else if (ready) variables.get(\"PlayWaveRequested\").setBoolean(true);",
+            "    if (mode() === \"Waiting\") {",
+            "      if (ready) variables.get(\"PlayWaveRequested\").setBoolean(true);",
+            "    } else {",
+            "      const cycle = [\"Manual\",\"ManualFast\",\"Auto\",\"AutoFast\"];",
+            "      variables.get(\"WaveMode\").setString(cycle[(cycle.indexOf(mode()) + 1) % cycle.length]);",
+            "      // Cancelling AUTO between waves returns to waiting; an active wave never pauses.",
+            "      syncWaveControl();",
+            "    }",
             "  }",
-            "  if (ui.pressedControl === \"Up\" && overUp) scroll = Math.max(0, scroll - 108);",
-            "  if (ui.pressedControl === \"Down\" && overDown) scroll = Math.min(maxScroll, scroll + 108);",
             "  if (!ui.dragging && ui.pressedCard >= 0 && ui.pressedCard === hovered && number(\"Money\") >= catalog[hovered].Cost) variables.get(\"TowerShopRequestedType\").setString(catalog[hovered].Type);",
             "  ui.pressedCard = -1; ui.pressedControl = \"\"; ui.dragging = false;",
             "}",
@@ -10620,7 +12129,7 @@
             "  card.price.setPosition(x + 31, y + 77); card.price.setWidth(46); card.price.setHeight(20);",
             "});",
             "rect(\"ShopScrollThumb\", geometry.trackX, geometry.listY + (maxScroll > 0 ? scroll / maxScroll * (geometry.listHeight - thumbHeight) : 0), 8, thumbHeight);",
-            "ui.scrollMax = maxScroll; ui.hovered = hovered; ui.ready = ready; ui.overPlay = overPlay; ui.overUp = overUp; ui.overDown = overDown;",
+            "ui.scrollMax = maxScroll; ui.hovered = hovered; ui.ready = ready; ui.overPlay = overPlay;",
             "ui.refresh = () => {",
             "  const selectedTower = number(\"SelectedTower\") > 0;",
             "  scene.getLayer(\"TowerShopList\").show(!selectedTower);",
@@ -10637,27 +12146,26 @@
             "    card.name.setColor(affordable ? \"255;228;177\" : \"208;175;135\");",
             "    for (const part of [card.background,card.icon,card.name,card.price,card.coin]) part.hide(selectedTower);",
             "  });",
-            "  if (mode() !== \"Auto\") variables.get(\"WaveMode\").setString(boolean(\"WaveActive\") ? \"Manual\" : \"Waiting\");",
+            "  syncWaveControl();",
             "  const ended = boolean(\"GameOver\"), current = mode();",
+            "  const isAuto = autoMode(), isFast = fastMode();",
+            "  const isManual = current === \"Manual\" || current === \"ManualFast\";",
             "  first(\"ShopPlayButton\").setOpacity(ended ? 155 : 255);",
-            "  first(\"ShopPlayButton\").setColor(current === \"Auto\" ? \"255;236;167\" : ui.overPlay ? \"255;244;214\" : \"245;216;184\");",
-            "  if (first(\"ShopPlayButton\").hasBehavior(\"Effect\")) first(\"ShopPlayButton\").getBehavior(\"Effect\").enableEffect(\"Outline\", current === \"Auto\" && !ended);",
-            "  first(\"ShopPlayIcon\").hide(ended || current === \"Auto\");",
-            "  first(\"ShopPlayIcon\").setAnimationName(current === \"Manual\" ? \"Manual\" : \"Play\");",
+            "  first(\"ShopPlayButton\").setColor(isFast ? \"255;243;173\" : ui.overPlay ? \"255;244;214\" : \"245;216;184\");",
+            "  if (first(\"ShopPlayButton\").hasBehavior(\"Effect\")) first(\"ShopPlayButton\").getBehavior(\"Effect\").enableEffect(\"Outline\", isFast && !ended);",
+            "  first(\"ShopPlayIcon\").hide(ended || isAuto);",
+            "  first(\"ShopPlayIcon\").setAnimationName(isManual ? \"Manual\" : \"Play\");",
             "  first(\"ShopPlayLabel\").setCharacterSize(ended ? 12 : 14);",
-            "  first(\"ShopPlayLabel\").setString(ended ? (number(\"Lives\") > 0 ? \"COMPLETE\" : \"GAME OVER\") : current === \"Auto\" ? \"AUTO\" : current === \"Manual\" ? \"MANUAL\" : \"PLAY\");",
-            "  first(\"ShopPlayLabel\").setY(geometry.playY + (ended || current === \"Auto\" ? 22 : 36));",
+            "  first(\"ShopPlayLabel\").setString(ended ? (number(\"Lives\") > 0 ? \"COMPLETE\" : \"GAME OVER\") : isAuto ? \"AUTO\" : isManual ? \"MANUAL\" : \"PLAY\");",
+            "  first(\"ShopPlayLabel\").setY(geometry.playY + (ended || isAuto ? 22 : 36));",
+            "  first(\"ShopSpeedBadge\").hide(!isFast || ended);",
             "  first(\"ShopIndexButton\").setColor(overIndex ? \"255;244;214\" : \"255;255;255\");",
             "  const indexIcon = first(\"Index_logo\"), indexButton = first(\"ShopIndexButton\");",
             "  const iconScale = overIndex ? (ui.wasDown && ui.pressedControl === \"Index\" ? 0.95 : 1.05) : 1;",
             "  const iconSize = Math.min(indexButton.getWidth(), indexButton.getHeight()) * 0.90 * iconScale;",
             "  indexIcon.setWidth(iconSize); indexIcon.setHeight(iconSize);",
             "  indexIcon.setPosition(indexButton.getX() + (indexButton.getWidth() - iconSize) / 2, indexButton.getY() + (indexButton.getHeight() - iconSize) / 2);",
-            "  first(\"ShopScrollUp\").setOpacity(scroll > 0 ? 255 : 120);",
-            "  first(\"ShopScrollDown\").setOpacity(scroll < maxScroll ? 255 : 120);",
             "  first(\"ShopScrollThumb\").setOpacity(maxScroll > 0 ? 255 : 110);",
-            "  first(\"ShopScrollLabel\").setString(catalog.length + \" TOWERS\");",
-            "  first(\"AssetPanelHint\").setString(ui.hovered >= 0 && number(\"Money\") < ui.cards[ui.hovered].item.Cost ? \"Need \" + (ui.cards[ui.hovered].item.Cost - number(\"Money\")) + \" more\" : \"Select, then place\");",
             "};"
           ],
           "parameterObjects": "",
@@ -10812,10 +12320,28 @@
           "conditions": [
             {
               "type": {
-                "value": "SceneJustBegins"
+                "value": "BuiltinCommonInstructions::Or"
               },
-              "parameters": [
-                ""
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "SceneJustBegins"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "MapRouteDirty",
+                    "True",
+                    ""
+                  ]
+                }
               ]
             }
           ],
@@ -10846,7 +12372,8 @@
                 "  point.getChild(\"X\").setNumber(tile.getCenterXInScene());",
                 "  point.getChild(\"Y\").setNumber(tile.getCenterYInScene());",
                 "}",
-                "runtimeScene.getVariables().get(\"MonsterPathPointCount\").setNumber(tiles.length);"
+                "runtimeScene.getVariables().get(\"MonsterPathPointCount\").setNumber(tiles.length);",
+                "runtimeScene.getVariables().get(\"MapRouteDirty\").setBoolean(false);"
               ],
               "parameterObjects": "",
               "useStrict": true,
@@ -11727,6 +13254,34 @@
       ],
       "events": [
         {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "const scene = runtimeScene;",
+            "const indicator = scene.getObjects(\"TilePlacement_Indicator\")[0];",
+            "indicator.setHeight(indicator.getAnimationName() === \"ShotgunTower\" ? 65 : 64);",
+            "const area = scene.__towerShopUI.gameArea;",
+            "const map = scene.getLayer(\"\");",
+            "const x = indicator.getX(), y = indicator.getY();",
+            "// One world pixel of conservative padding covers the existing 0.65 Shotgun scale.",
+            "const w = indicator.getWidth() + 1, h = indicator.getHeight() + 1;",
+            "const corners = [[x,y],[x+w,y],[x,y+h],[x+w,y+h]];",
+            "const fits = corners.every(point => {",
+            "  const screen = map.convertInverseCoords(point[0], point[1], 0, [0,0]);",
+            "  return screen[0] >= area.left && screen[0] <= area.right && screen[1] >= area.top && screen[1] <= area.bottom;",
+            "});",
+            "const hud = scene.getObjects(\"HUDPanel\")[0];",
+            "const uiLayer = scene.getLayer(\"UI\");",
+            "const hudMin = uiLayer.convertInverseCoords(hud.getX(),hud.getY(),0,[0,0]);",
+            "const hudMax = uiLayer.convertInverseCoords(hud.getX()+hud.getWidth(),hud.getY()+hud.getHeight(),0,[0,0]);",
+            "const min = map.convertInverseCoords(x,y,0,[0,0]), max = map.convertInverseCoords(x+w,y+h,0,[0,0]);",
+            "const overHUD = min[0] < hudMax[0] && max[0] > hudMin[0] && min[1] < hudMax[1] && max[1] > hudMin[1];",
+            "scene.getVariables().get(\"MapPlacementFits\").setBoolean(fits && !overHUD);"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        },
+        {
           "aiGeneratedEventId": "01M48Z56WMT06DXVY2HFVEAKRV",
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -11736,46 +13291,6 @@
               },
               "parameters": [
                 "TilePlacement_Indicator"
-              ]
-            },
-            {
-              "type": {
-                "value": "PosX"
-              },
-              "parameters": [
-                "TilePlacement_Indicator",
-                ">=",
-                "128"
-              ]
-            },
-            {
-              "type": {
-                "value": "PosX"
-              },
-              "parameters": [
-                "TilePlacement_Indicator",
-                "<=",
-                "1088"
-              ]
-            },
-            {
-              "type": {
-                "value": "PosY"
-              },
-              "parameters": [
-                "TilePlacement_Indicator",
-                ">=",
-                "64"
-              ]
-            },
-            {
-              "type": {
-                "value": "PosY"
-              },
-              "parameters": [
-                "TilePlacement_Indicator",
-                "<=",
-                "512"
               ]
             },
             {
@@ -11799,19 +13314,6 @@
               "parameters": [
                 "TilePlacement_Indicator",
                 "PlaceableTile",
-                "",
-                "",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "inverted": true,
-                "value": "CollisionNP"
-              },
-              "parameters": [
-                "TilePlacement_Indicator",
-                "TowerShopBox",
                 "",
                 "",
                 ""
@@ -11849,6 +13351,29 @@
                 "Money",
                 ">=",
                 "TowerCost"
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "MapPlacementFits",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP",
+                "inverted": true
+              },
+              "parameters": [
+                "TilePlacement_Indicator",
+                "MapEndpoints",
+                "",
+                "",
+                ""
               ]
             }
           ],
@@ -11953,46 +13478,6 @@
         },
         {
           "type": {
-            "value": "PosX"
-          },
-          "parameters": [
-            "TilePlacement_Indicator",
-            ">=",
-            "128"
-          ]
-        },
-        {
-          "type": {
-            "value": "PosX"
-          },
-          "parameters": [
-            "TilePlacement_Indicator",
-            "<=",
-            "1088"
-          ]
-        },
-        {
-          "type": {
-            "value": "PosY"
-          },
-          "parameters": [
-            "TilePlacement_Indicator",
-            ">=",
-            "64"
-          ]
-        },
-        {
-          "type": {
-            "value": "PosY"
-          },
-          "parameters": [
-            "TilePlacement_Indicator",
-            "<=",
-            "512"
-          ]
-        },
-        {
-          "type": {
             "inverted": true,
             "value": "IsCursorOnObject"
           },
@@ -12043,19 +13528,6 @@
         },
         {
           "type": {
-            "inverted": true,
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "TilePlacement_Indicator",
-            "TowerShopBox",
-            "",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
             "value": "NumberVariable"
           },
           "parameters": [
@@ -12071,6 +13543,29 @@
           "parameters": [
             "IndexBlocksInput",
             "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "MapPlacementFits",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "CollisionNP",
+            "inverted": true
+          },
+          "parameters": [
+            "TilePlacement_Indicator",
+            "MapEndpoints",
+            "",
+            "",
             ""
           ]
         }
@@ -12302,13 +13797,13 @@
             "const sv = runtimeScene.getVariables();",
             "const num = n => sv.get(n).getAsNumber();",
             "const yes = n => sv.get(n).getAsBoolean();",
-            "const auto = () => sv.get(\"WaveMode\").getAsString() === \"Auto\";",
+            "const auto = () => [\"Auto\",\"AutoFast\"].includes(sv.get(\"WaveMode\").getAsString());",
             "const enemies = runtimeScene.getObjects(\"Enemy\");",
             "const dt = gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene);",
             "let state = runtimeScene.__waveManager;",
             "if (!state) state = runtimeScene.__waveManager = { queue: [], index: 0, elapsed: 0, wait: 3 };",
             "const message = runtimeScene.getObjects(\"MessageText\")[0];",
-            "const idle = !yes(\"WaveActive\") && num(\"EnemiesToSpawn\") === 0 && enemies.length === 0;",
+            "const idle = !yes(\"WaveActive\") && num(\"EnemiesToSpawn\") === 0 && enemies.length === 0 && state.index >= state.queue.length;",
             "if (!auto() || !idle) state.wait = 3;",
             "else if (num(\"Wave\") > 0 && num(\"Wave\") < 50 && !yes(\"GameOver\")) {",
             "  state.wait = Math.max(0, state.wait - dt);",
