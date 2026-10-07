@@ -5362,6 +5362,57 @@
       "stringProperties": [],
       "initialVariables": [],
       "keepRatio": false
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 51,
+      "layer": "UI",
+      "name": "Index_logo",
+      "persistentUuid": "6631fa96-e03c-414d-9a58-6227b980af1f",
+      "width": 51,
+      "x": 1188.5,
+      "y": 372.5,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [],
+      "keepRatio": false
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 48,
+      "layer": "UI",
+      "name": "ShopHeaderPlaque",
+      "persistentUuid": "ef12346c-df21-498e-92fd-36079a892c03",
+      "width": 196,
+      "x": 1166,
+      "y": 26,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [],
+      "keepRatio": false
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 76,
+      "layer": "UI",
+      "name": "ShopFooterFrame",
+      "persistentUuid": "92d64bd1-fb56-4ef5-a0b0-4963eba94032",
+      "width": 208,
+      "x": 1160,
+      "y": 360,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [],
+      "keepRatio": false
     }
   ],
   "objects": [
@@ -6637,9 +6688,9 @@
       "textAlignment": "left",
       "characterSize": 18,
       "color": {
-        "r": 51,
-        "g": 60,
-        "b": 48
+        "r": 70,
+        "g": 31,
+        "b": 13
       },
       "content": {
         "bold": true,
@@ -6661,7 +6712,7 @@
         "verticalTextAlignment": "top",
         "characterSize": 18,
         "lineHeight": 0,
-        "color": "51;60;48"
+        "color": "70;31;13"
       }
     },
     {
@@ -6680,9 +6731,9 @@
       "textAlignment": "left",
       "characterSize": 18,
       "color": {
-        "r": 51,
-        "g": 60,
-        "b": 48
+        "r": 70,
+        "g": 31,
+        "b": 13
       },
       "content": {
         "bold": true,
@@ -6704,7 +6755,7 @@
         "verticalTextAlignment": "top",
         "characterSize": 18,
         "lineHeight": 0,
-        "color": "51;60;48"
+        "color": "70;31;13"
       }
     },
     {
@@ -6723,9 +6774,9 @@
       "textAlignment": "left",
       "characterSize": 18,
       "color": {
-        "r": 51,
-        "g": 60,
-        "b": 48
+        "r": 70,
+        "g": 31,
+        "b": 13
       },
       "content": {
         "bold": true,
@@ -6747,7 +6798,7 @@
         "verticalTextAlignment": "top",
         "characterSize": 18,
         "lineHeight": 0,
-        "color": "51;60;48"
+        "color": "70;31;13"
       }
     },
     {
@@ -7355,15 +7406,15 @@
     },
     {
       "assetStoreId": "",
-      "bottomMargin": 12,
+      "bottomMargin": 16,
       "height": 48,
-      "leftMargin": 12,
+      "leftMargin": 16,
       "name": "TowerShopBox",
       "persistentUuid": "94d2f2b3-aac5-4e2e-ba22-0061344da7d8",
-      "rightMargin": 12,
-      "texture": "assets/ui/panel.svg",
+      "rightMargin": 16,
+      "texture": "assets/ui/fantasy-frame.svg",
       "tiled": false,
-      "topMargin": 12,
+      "topMargin": 16,
       "type": "PanelSpriteObject::PanelSprite",
       "width": 48,
       "variables": [],
@@ -7487,13 +7538,13 @@
     },
     {
       "assetStoreId": "",
-      "bottomMargin": 12,
+      "bottomMargin": 28,
       "height": 48,
-      "leftMargin": 12,
+      "leftMargin": 10,
       "name": "AssetCardPanel",
       "persistentUuid": "1a259e48-6782-436b-a142-3bae7a2c4b43",
-      "rightMargin": 12,
-      "texture": "assets/ui/card.svg",
+      "rightMargin": 10,
+      "texture": "assets/ui/fantasy-card.svg",
       "tiled": false,
       "topMargin": 12,
       "type": "PanelSpriteObject::PanelSprite",
@@ -7514,7 +7565,7 @@
             "thickness": 2
           },
           "stringParameters": {
-            "color": "216;164;56"
+            "color": "255;210;55"
           },
           "booleanParameters": {}
         }
@@ -7533,14 +7584,14 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "TOWER SHOP",
+      "string": "TOWERS",
       "font": "",
       "textAlignment": "center",
       "characterSize": 17,
       "color": {
-        "b": 48,
-        "g": 52,
-        "r": 39
+        "r": 70,
+        "g": 31,
+        "b": 13
       },
       "content": {
         "bold": true,
@@ -7556,13 +7607,13 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "TOWER SHOP",
+        "text": "TOWERS",
         "font": "",
         "textAlignment": "center",
         "verticalTextAlignment": "top",
         "characterSize": 17,
         "lineHeight": 0,
-        "color": "39;52;48"
+        "color": "70;31;13"
       }
     },
     {
@@ -7582,9 +7633,9 @@
       "textAlignment": "center",
       "characterSize": 10,
       "color": {
-        "b": 95,
-        "g": 103,
-        "r": 92
+        "r": 70,
+        "g": 31,
+        "b": 13
       },
       "content": {
         "bold": false,
@@ -7606,7 +7657,7 @@
         "verticalTextAlignment": "top",
         "characterSize": 10,
         "lineHeight": 0,
-        "color": "92;103;95"
+        "color": "70;31;13"
       }
     },
     {
@@ -7902,9 +7953,9 @@
       "textAlignment": "center",
       "characterSize": 12,
       "color": {
-        "b": 95,
-        "g": 103,
-        "r": 92
+        "r": 246,
+        "g": 212,
+        "b": 154
       },
       "content": {
         "bold": false,
@@ -7926,7 +7977,7 @@
         "verticalTextAlignment": "top",
         "characterSize": 12,
         "lineHeight": 0,
-        "color": "92;103;95"
+        "color": "246;212;154"
       }
     },
     {
@@ -7988,9 +8039,9 @@
       "textAlignment": "center",
       "characterSize": 17,
       "color": {
-        "b": 48,
-        "g": 52,
-        "r": 39
+        "r": 70,
+        "g": 31,
+        "b": 13
       },
       "content": {
         "bold": true,
@@ -8012,7 +8063,7 @@
         "verticalTextAlignment": "top",
         "characterSize": 17,
         "lineHeight": 0,
-        "color": "39;52;48"
+        "color": "70;31;13"
       }
     },
     {
@@ -8032,9 +8083,9 @@
       "textAlignment": "center",
       "characterSize": 10,
       "color": {
-        "b": 95,
-        "g": 103,
-        "r": 92
+        "r": 246,
+        "g": 212,
+        "b": 154
       },
       "content": {
         "bold": false,
@@ -8056,7 +8107,7 @@
         "verticalTextAlignment": "top",
         "characterSize": 10,
         "lineHeight": 0,
-        "color": "92;103;95"
+        "color": "246;212;154"
       }
     },
     {
@@ -8076,9 +8127,9 @@
       "textAlignment": "center",
       "characterSize": 16,
       "color": {
-        "b": 48,
-        "g": 52,
-        "r": 39
+        "r": 255,
+        "g": 220,
+        "b": 123
       },
       "content": {
         "bold": true,
@@ -8100,7 +8151,7 @@
         "verticalTextAlignment": "top",
         "characterSize": 16,
         "lineHeight": 0,
-        "color": "39;52;48"
+        "color": "255;220;123"
       }
     },
     {
@@ -8120,9 +8171,9 @@
       "textAlignment": "center",
       "characterSize": 10,
       "color": {
-        "b": 95,
-        "g": 103,
-        "r": 92
+        "r": 246,
+        "g": 212,
+        "b": 154
       },
       "content": {
         "bold": false,
@@ -8144,7 +8195,7 @@
         "verticalTextAlignment": "top",
         "characterSize": 10,
         "lineHeight": 0,
-        "color": "92;103;95"
+        "color": "246;212;154"
       }
     },
     {
@@ -8164,9 +8215,9 @@
       "textAlignment": "center",
       "characterSize": 16,
       "color": {
-        "b": 48,
-        "g": 52,
-        "r": 39
+        "r": 255,
+        "g": 220,
+        "b": 123
       },
       "content": {
         "bold": true,
@@ -8188,7 +8239,7 @@
         "verticalTextAlignment": "top",
         "characterSize": 16,
         "lineHeight": 0,
-        "color": "39;52;48"
+        "color": "255;220;123"
       }
     },
     {
@@ -8208,9 +8259,9 @@
       "textAlignment": "center",
       "characterSize": 10,
       "color": {
-        "b": 95,
-        "g": 103,
-        "r": 92
+        "r": 246,
+        "g": 212,
+        "b": 154
       },
       "content": {
         "bold": false,
@@ -8232,7 +8283,7 @@
         "verticalTextAlignment": "top",
         "characterSize": 10,
         "lineHeight": 0,
-        "color": "92;103;95"
+        "color": "246;212;154"
       }
     },
     {
@@ -8252,9 +8303,9 @@
       "textAlignment": "center",
       "characterSize": 16,
       "color": {
-        "b": 48,
-        "g": 52,
-        "r": 39
+        "r": 255,
+        "g": 220,
+        "b": 123
       },
       "content": {
         "bold": true,
@@ -8276,7 +8327,7 @@
         "verticalTextAlignment": "top",
         "characterSize": 16,
         "lineHeight": 0,
-        "color": "39;52;48"
+        "color": "255;220;123"
       }
     },
     {
@@ -8296,9 +8347,9 @@
       "textAlignment": "center",
       "characterSize": 10,
       "color": {
-        "b": 95,
-        "g": 103,
-        "r": 92
+        "r": 246,
+        "g": 212,
+        "b": 154
       },
       "content": {
         "bold": false,
@@ -8320,7 +8371,7 @@
         "verticalTextAlignment": "top",
         "characterSize": 10,
         "lineHeight": 0,
-        "color": "92;103;95"
+        "color": "246;212;154"
       }
     },
     {
@@ -8340,9 +8391,9 @@
       "textAlignment": "center",
       "characterSize": 16,
       "color": {
-        "b": 48,
-        "g": 52,
-        "r": 39
+        "r": 255,
+        "g": 220,
+        "b": 123
       },
       "content": {
         "bold": true,
@@ -8364,20 +8415,20 @@
         "verticalTextAlignment": "top",
         "characterSize": 16,
         "lineHeight": 0,
-        "color": "39;52;48"
+        "color": "255;220;123"
       }
     },
     {
       "assetStoreId": "",
-      "bottomMargin": 12,
+      "bottomMargin": 10,
       "height": 48,
-      "leftMargin": 12,
+      "leftMargin": 10,
       "name": "TowerSellButton",
       "persistentUuid": "9c98e0ba-cfc5-41c6-9f8a-d5e91df281ee",
-      "rightMargin": 12,
-      "texture": "assets/ui/card.svg",
+      "rightMargin": 10,
+      "texture": "assets/ui/fantasy-plaque.svg",
       "tiled": false,
-      "topMargin": 12,
+      "topMargin": 10,
       "type": "PanelSpriteObject::PanelSprite",
       "width": 48,
       "variables": [],
@@ -8401,9 +8452,9 @@
       "textAlignment": "center",
       "characterSize": 16,
       "color": {
-        "b": 31,
-        "g": 82,
-        "r": 111
+        "r": 70,
+        "g": 31,
+        "b": 13
       },
       "content": {
         "bold": true,
@@ -8425,7 +8476,7 @@
         "verticalTextAlignment": "top",
         "characterSize": 16,
         "lineHeight": 0,
-        "color": "111;82;31"
+        "color": "70;31;13"
       }
     },
     {
@@ -8445,9 +8496,9 @@
       "textAlignment": "center",
       "characterSize": 13,
       "color": {
-        "b": 31,
-        "g": 82,
-        "r": 111
+        "r": 70,
+        "g": 31,
+        "b": 13
       },
       "content": {
         "bold": true,
@@ -8469,7 +8520,7 @@
         "verticalTextAlignment": "top",
         "characterSize": 13,
         "lineHeight": 0,
-        "color": "111;82;31"
+        "color": "70;31;13"
       }
     },
     {
@@ -8489,9 +8540,9 @@
       "textAlignment": "center",
       "characterSize": 10,
       "color": {
-        "b": 95,
-        "g": 103,
-        "r": 92
+        "r": 246,
+        "g": 212,
+        "b": 154
       },
       "content": {
         "bold": false,
@@ -8513,7 +8564,7 @@
         "verticalTextAlignment": "top",
         "characterSize": 10,
         "lineHeight": 0,
-        "color": "92;103;95"
+        "color": "246;212;154"
       }
     },
     {
@@ -8756,15 +8807,15 @@
     },
     {
       "assetStoreId": "",
-      "bottomMargin": 12,
+      "bottomMargin": 10,
       "height": 48,
-      "leftMargin": 12,
+      "leftMargin": 10,
       "name": "HUDPanel",
       "persistentUuid": "eb5644b2-7f82-43c3-8b0e-db6a2313dc0f",
-      "rightMargin": 12,
-      "texture": "assets/ui/panel.svg",
+      "rightMargin": 10,
+      "texture": "assets/ui/fantasy-plaque.svg",
       "tiled": false,
-      "topMargin": 12,
+      "topMargin": 10,
       "type": "PanelSpriteObject::PanelSprite",
       "width": 48,
       "variables": [],
@@ -8773,19 +8824,32 @@
     },
     {
       "assetStoreId": "",
-      "bottomMargin": 12,
+      "bottomMargin": 10,
       "height": 48,
-      "leftMargin": 12,
+      "leftMargin": 10,
       "name": "ShopPlayButton",
       "persistentUuid": "8e0f1d2c-6a04-4ed2-a3e2-129032e6db53",
-      "rightMargin": 12,
-      "texture": "assets/ui/play-button.svg",
+      "rightMargin": 10,
+      "texture": "assets/ui/fantasy-button.svg",
       "tiled": false,
-      "topMargin": 12,
+      "topMargin": 10,
       "type": "PanelSpriteObject::PanelSprite",
       "width": 48,
       "variables": [],
-      "effects": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Outline",
+          "doubleParameters": {
+            "padding": 3,
+            "thickness": 2
+          },
+          "stringParameters": {
+            "color": "255;210;55"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": []
     },
     {
@@ -8905,15 +8969,15 @@
     },
     {
       "assetStoreId": "",
-      "bottomMargin": 12,
+      "bottomMargin": 10,
       "height": 48,
-      "leftMargin": 12,
+      "leftMargin": 10,
       "name": "ShopScrollUp",
       "persistentUuid": "fe9d7ef4-fcdb-4065-a6a9-10b19737db1f",
-      "rightMargin": 12,
-      "texture": "assets/ui/card.svg",
+      "rightMargin": 10,
+      "texture": "assets/ui/fantasy-plaque.svg",
       "tiled": false,
-      "topMargin": 12,
+      "topMargin": 10,
       "type": "PanelSpriteObject::PanelSprite",
       "width": 48,
       "variables": [],
@@ -8922,15 +8986,15 @@
     },
     {
       "assetStoreId": "",
-      "bottomMargin": 12,
+      "bottomMargin": 10,
       "height": 48,
-      "leftMargin": 12,
+      "leftMargin": 10,
       "name": "ShopScrollDown",
       "persistentUuid": "bb50d4be-2ef2-49b6-a983-30ca405be259",
-      "rightMargin": 12,
-      "texture": "assets/ui/card.svg",
+      "rightMargin": 10,
+      "texture": "assets/ui/fantasy-plaque.svg",
       "tiled": false,
-      "topMargin": 12,
+      "topMargin": 10,
       "type": "PanelSpriteObject::PanelSprite",
       "width": 48,
       "variables": [],
@@ -9025,9 +9089,9 @@
       "textAlignment": "center",
       "characterSize": 10,
       "color": {
-        "r": 75,
-        "g": 70,
-        "b": 58
+        "r": 246,
+        "g": 212,
+        "b": 154
       },
       "content": {
         "bold": true,
@@ -9049,7 +9113,7 @@
         "verticalTextAlignment": "top",
         "characterSize": 10,
         "lineHeight": 0,
-        "color": "75;70;58"
+        "color": "246;212;154"
       }
     },
     {
@@ -9073,7 +9137,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets/ui/scroll.svg",
+                  "image": "assets/ui/fantasy-track.svg",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -9115,7 +9179,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets/ui/scroll.svg",
+                  "image": "assets/ui/fantasy-thumb.svg",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -9138,15 +9202,15 @@
     },
     {
       "assetStoreId": "",
-      "bottomMargin": 12,
+      "bottomMargin": 10,
       "height": 48,
-      "leftMargin": 12,
+      "leftMargin": 10,
       "name": "ShopIndexButton",
       "persistentUuid": "206efb9c-0233-4ee3-9c1d-7af5c93c80dc",
-      "rightMargin": 12,
-      "texture": "assets/ui/play-button.svg",
+      "rightMargin": 10,
+      "texture": "assets/ui/fantasy-index-button.svg",
       "tiled": false,
-      "topMargin": 12,
+      "topMargin": 10,
       "type": "PanelSpriteObject::PanelSprite",
       "width": 48,
       "variables": [],
@@ -9991,6 +10055,178 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "HealthBarBackground",
+      "persistentUuid": "fe61ba12-0fcf-436e-b99c-7ff0d4cfa869",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "OwnerEnemyId",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Bar",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ui/enemy-health-pixel.svg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "HealthBarFill",
+      "persistentUuid": "64698a93-f990-4299-bd97-34420dec2d7e",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "OwnerEnemyId",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Bar",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ui/enemy-health-pixel.svg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Index_logo",
+      "persistentUuid": "3b6e43e2-5bf1-42b0-a9b2-e74070b44a8a",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Index",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Index_Button_Icon",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 10,
+      "height": 48,
+      "leftMargin": 10,
+      "name": "ShopHeaderPlaque",
+      "persistentUuid": "b970de2e-90f2-4f76-9fd2-1755affe52e9",
+      "rightMargin": 10,
+      "texture": "assets/ui/fantasy-plaque.svg",
+      "tiled": false,
+      "topMargin": 10,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 48,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 10,
+      "height": 48,
+      "leftMargin": 10,
+      "name": "ShopFooterFrame",
+      "persistentUuid": "5bdee5a4-5523-433b-882a-fbe942aea58c",
+      "rightMargin": 10,
+      "texture": "assets/ui/fantasy-well.svg",
+      "tiled": false,
+      "topMargin": 10,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 48,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
     }
   ],
   "objectsFolderStructure": {
@@ -10181,6 +10417,21 @@
       },
       {
         "objectName": "IndexMonsterImage"
+      },
+      {
+        "objectName": "HealthBarBackground"
+      },
+      {
+        "objectName": "HealthBarFill"
+      },
+      {
+        "objectName": "Index_logo"
+      },
+      {
+        "objectName": "ShopHeaderPlaque"
+      },
+      {
+        "objectName": "ShopFooterFrame"
       }
     ]
   },
@@ -10246,12 +10497,13 @@
             "geometry.trackX = 1350;",
             "const rect = (name, x, y, w, h) => { const o = first(name); o.setPosition(x, y); if (w !== undefined) o.setWidth(w); if (h !== undefined) o.setHeight(h); };",
             "rect(\"TowerShopBox\", 1152, 16, 224, geometry.panelHeight);",
+            "rect(\"ShopHeaderPlaque\", 1166, 26, 196, 48);",
+            "rect(\"ShopFooterFrame\", 1160, geometry.playY - 4, 208, 72);",
             "rect(\"AssetPanelTitle\", 1168, 32, 192, 24);",
-            "rect(\"AssetPanelSubtitle\", 1168, 57, 192, 16);",
+            "rect(\"AssetPanelSubtitle\", 1168, 53, 192, 16);",
             "rect(\"AssetPanelHint\", 1168, geometry.bottom - 108, 192, 18);",
             "rect(\"ShopIndexButton\", 1168, geometry.playY, 92, 60);",
-            "rect(\"ShopIndexLabel\", 1168, geometry.playY + 22, 92, 24);",
-            "first(\"ShopIndexLabel\").setString(\"INDEX\");",
+            "first(\"ShopIndexLabel\").hide();",
             "rect(\"ShopPlayButton\", 1268, geometry.playY, 92, 60);",
             "rect(\"ShopPlayIcon\", 1302, geometry.playY + 8, 24, 24);",
             "rect(\"ShopPlayLabel\", 1268, geometry.playY + 36, 92, 20);",
@@ -10271,7 +10523,7 @@
             "rect(\"TowerSellButton\", 1168, geometry.bottom - 152, 192, 52);",
             "rect(\"TowerSellLabel\", 1180, geometry.bottom - 137, 72, 24);",
             "rect(\"TowerSellValue\", 1252, geometry.bottom - 137, 100, 24);",
-            "rect(\"TowerInfoCloseHint\", 1168, geometry.bottom - 92, 192, 18);",
+            "rect(\"TowerInfoCloseHint\", 1168, geometry.bottom - 98, 192, 18);",
             "rect(\"HUDPanel\", offsetX + 16, 16, 316, 44);",
             "get(\"HUDIcon\").forEach((o, i) => { o.setPosition(offsetX + [28,148,230][i], 26); o.setWidth(24); o.setHeight(24); });",
             "rect(\"MoneyText\", offsetX + 60, 25, 80, 28);",
@@ -10360,7 +10612,7 @@
             "  const x = geometry.listX + (i % 2) * 92, y = geometry.listY + Math.floor(i / 2) * 108 - scroll;",
             "  card.background.setPosition(x, y); card.background.setWidth(84); card.background.setHeight(100);",
             "  const pressed = down && ui.pressedCard === i && hovered === i;",
-            "  const scale = pressed ? 0.94 : 1;",
+            "  const scale = pressed ? 0.94 : hovered === i ? 1.04 : 1;",
             "  card.icon.setWidth(card.iconWidth * scale); card.icon.setHeight(card.iconHeight * scale);",
             "  card.icon.setPosition(x + 42 - card.icon.getWidth()/2, y + 47 - card.icon.getHeight()/2);",
             "  card.name.setPosition(x + 4, y + 7); card.name.setWidth(76); card.name.setHeight(18);",
@@ -10377,24 +10629,30 @@
             "    const affordable = number(\"Money\") >= card.item.Cost;",
             "    const selected = !indicator.isHidden() && indicator.getAnimationName() === card.item.Type;",
             "    const pressed = ui.wasDown && ui.pressedCard === i && ui.hovered === i;",
-            "    card.background.setColor(selected ? \"255;223;157\" : pressed ? \"237;219;184\" : ui.hovered === i ? \"255;242;211\" : \"255;255;255\");",
+            "    card.background.setColor(selected ? \"255;244;198\" : pressed ? \"220;193;163\" : ui.hovered === i ? \"255;248;217\" : \"244;224;204\");",
             "    if (card.background.hasBehavior(\"Effect\")) card.background.getBehavior(\"Effect\").enableEffect(\"Outline\", selected);",
-            "    card.background.setOpacity(affordable ? 255 : 155);",
-            "    card.icon.setOpacity(affordable ? 255 : 140);",
-            "    card.price.setColor(affordable ? \"117;82;32\" : \"164;67;60\");",
-            "    card.name.setColor(affordable ? \"55;60;48\" : \"126;121;110\");",
+            "    card.background.setOpacity(affordable ? 255 : 220);",
+            "    card.icon.setOpacity(affordable ? 255 : 190);",
+            "    card.price.setColor(affordable ? \"68;28;12\" : \"175;39;23\");",
+            "    card.name.setColor(affordable ? \"255;228;177\" : \"208;175;135\");",
             "    for (const part of [card.background,card.icon,card.name,card.price,card.coin]) part.hide(selectedTower);",
             "  });",
             "  if (mode() !== \"Auto\") variables.get(\"WaveMode\").setString(boolean(\"WaveActive\") ? \"Manual\" : \"Waiting\");",
             "  const ended = boolean(\"GameOver\"), current = mode();",
             "  first(\"ShopPlayButton\").setOpacity(ended ? 155 : 255);",
-            "  first(\"ShopPlayButton\").setColor(current === \"Auto\" ? \"189;222;148\" : ui.overPlay ? \"235;255;228\" : \"255;255;255\");",
+            "  first(\"ShopPlayButton\").setColor(current === \"Auto\" ? \"255;236;167\" : ui.overPlay ? \"255;244;214\" : \"245;216;184\");",
+            "  if (first(\"ShopPlayButton\").hasBehavior(\"Effect\")) first(\"ShopPlayButton\").getBehavior(\"Effect\").enableEffect(\"Outline\", current === \"Auto\" && !ended);",
             "  first(\"ShopPlayIcon\").hide(ended || current === \"Auto\");",
             "  first(\"ShopPlayIcon\").setAnimationName(current === \"Manual\" ? \"Manual\" : \"Play\");",
             "  first(\"ShopPlayLabel\").setCharacterSize(ended ? 12 : 14);",
             "  first(\"ShopPlayLabel\").setString(ended ? (number(\"Lives\") > 0 ? \"COMPLETE\" : \"GAME OVER\") : current === \"Auto\" ? \"AUTO\" : current === \"Manual\" ? \"MANUAL\" : \"PLAY\");",
             "  first(\"ShopPlayLabel\").setY(geometry.playY + (ended || current === \"Auto\" ? 22 : 36));",
-            "  first(\"ShopIndexButton\").setColor(overIndex ? \"235;255;228\" : \"255;255;255\");",
+            "  first(\"ShopIndexButton\").setColor(overIndex ? \"255;244;214\" : \"255;255;255\");",
+            "  const indexIcon = first(\"Index_logo\"), indexButton = first(\"ShopIndexButton\");",
+            "  const iconScale = overIndex ? (ui.wasDown && ui.pressedControl === \"Index\" ? 0.95 : 1.05) : 1;",
+            "  const iconSize = Math.min(indexButton.getWidth(), indexButton.getHeight()) * 0.90 * iconScale;",
+            "  indexIcon.setWidth(iconSize); indexIcon.setHeight(iconSize);",
+            "  indexIcon.setPosition(indexButton.getX() + (indexButton.getWidth() - iconSize) / 2, indexButton.getY() + (indexButton.getHeight() - iconSize) / 2);",
             "  first(\"ShopScrollUp\").setOpacity(scroll > 0 ? 255 : 120);",
             "  first(\"ShopScrollDown\").setOpacity(scroll < maxScroll ? 255 : 120);",
             "  first(\"ShopScrollThumb\").setOpacity(maxScroll > 0 ? 255 : 110);",
@@ -13448,6 +13706,76 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Group",
+      "name": "Enemy instance health bars",
+      "colorR": 90,
+      "colorG": 143,
+      "colorB": 109,
+      "creationTime": 0,
+      "source": "",
+      "parameters": [],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "// Display-only pass after movement/damage/removal: one pair per unique enemy lifetime.",
+            "// GDevelop gives recycled instances a new unique id. No nearest-enemy selection.",
+            "let bars = runtimeScene.__enemyHealthBars;",
+            "if (!bars) bars = runtimeScene.__enemyHealthBars = new Map();",
+            "for (const enemy of runtimeScene.getObjects(\"Enemy\")) {",
+            "  const id = enemy.getUniqueId();",
+            "  let pair = bars.get(id);",
+            "  if (!pair) {",
+            "    const background = runtimeScene.createObject(\"HealthBarBackground\");",
+            "    const fill = runtimeScene.createObject(\"HealthBarFill\");",
+            "    pair = { enemy, background, fill, width: -1, height: -1, ratio: -1, color: \"\" };",
+            "    bars.set(id, pair);",
+            "    background.getVariables().get(\"OwnerEnemyId\").setNumber(id);",
+            "    fill.getVariables().get(\"OwnerEnemyId\").setNumber(id);",
+            "    background.setColor(\"38;47;35\"); background.setOpacity(225);",
+            "    // Covers kills, reaching the base, external deletion and scene cleanup.",
+            "    const cleanup = () => {",
+            "      background.deleteFromScene(); fill.deleteFromScene(); bars.delete(id);",
+            "      enemy.unregisterDestroyCallback(cleanup);",
+            "    };",
+            "    enemy.registerDestroyCallback(cleanup);",
+            "  }",
+            "  const health = enemy.getBehavior(\"Health\");",
+            "  const current = health.Health(), maximum = health.MaxHealth();",
+            "  const ratio = maximum > 0 ? Math.max(0, Math.min(1, current / maximum)) : 0;",
+            "  const boss = enemy.getVariables().get(\"EnemyType\").getAsString() === \"Boss\";",
+            "  const width = Math.round(Math.max(boss ? 48 : 28, Math.min(boss ? 58 : 44, enemy.getWidth() * 0.9)));",
+            "  const height = boss ? 7 : 5;",
+            "  const x = enemy.getCenterXInScene() - width / 2;",
+            "  const y = enemy.getY() - height - Math.max(4, Math.min(7, enemy.getHeight() * 0.12));",
+            "  const layer = enemy.getLayer();",
+            "  if (pair.background.getLayer() !== layer) pair.background.setLayer(layer);",
+            "  if (pair.fill.getLayer() !== layer) pair.fill.setLayer(layer);",
+            "  // World layer follows the map camera; UI/HUD layers remain above it.",
+            "  const z = Math.max(20, enemy.getZOrder() + 1);",
+            "  pair.background.setZOrder(z); pair.fill.setZOrder(z + 1);",
+            "  pair.background.setPosition(x, y); pair.fill.setPosition(x + 1, y + 1);",
+            "  if (pair.width !== width || pair.height !== height) {",
+            "    pair.background.setWidth(width); pair.background.setHeight(height);",
+            "    pair.fill.setHeight(height - 2); pair.ratio = -1;",
+            "    pair.width = width; pair.height = height;",
+            "  }",
+            "  if (pair.ratio !== ratio) {",
+            "    // Origin is top-left. Only the right edge changes when HP changes.",
+            "    pair.fill.setWidth((width - 2) * ratio); pair.ratio = ratio;",
+            "  }",
+            "  const color = ratio > 0.6 ? \"119;191;84\" : ratio >= 0.3 ? \"238;181;64\" : \"220;79;64\";",
+            "  if (pair.color !== color) { pair.fill.setColor(color); pair.color = color; }",
+            "  pair.background.hide(enemy.isHidden()); pair.fill.hide(enemy.isHidden() || ratio <= 0);",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ]
     }
   ],
   "layers": [

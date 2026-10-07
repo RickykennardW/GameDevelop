@@ -618,6 +618,94 @@
         "name": "assets/ui/manual-wave.svg",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "assets/ui/enemy-health-pixel.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/enemy-health-pixel.svg",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "Index_Logo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Index_logo",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/fantasy-frame.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/fantasy-frame.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/fantasy-plaque.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/fantasy-plaque.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/fantasy-card.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/fantasy-card.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/fantasy-button.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/fantasy-button.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/fantasy-index-button.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/fantasy-index-button.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/fantasy-well.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/fantasy-well.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/fantasy-track.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/fantasy-track.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/fantasy-thumb.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/fantasy-thumb.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/Index_Button_Icon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Index_Button_Icon",
+        "smoothed": true,
+        "userAdded": true
       }
     ]
   },
