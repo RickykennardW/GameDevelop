@@ -78,6 +78,27 @@
         },
         {
           "name": "AssetCardSeparator"
+        },
+        {
+          "name": "ShopCoin"
+        },
+        {
+          "name": "ShopScrollUp"
+        },
+        {
+          "name": "ShopScrollDown"
+        },
+        {
+          "name": "ShopScrollArrow"
+        },
+        {
+          "name": "ShopScrollLabel"
+        },
+        {
+          "name": "ShopScrollTrack"
+        },
+        {
+          "name": "ShopScrollThumb"
         }
       ]
     },
@@ -257,6 +278,107 @@
       "name": "MonsterPathPointCount",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "TowerShopCatalog",
+      "type": "array",
+      "children": [
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Type",
+              "type": "string",
+              "value": "Tower"
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Tower"
+            },
+            {
+              "name": "Cost",
+              "type": "number",
+              "value": 100
+            },
+            {
+              "name": "IconAnimation",
+              "type": "string",
+              "value": "Tower"
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Type",
+              "type": "string",
+              "value": "ShotgunTower"
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Shotgun"
+            },
+            {
+              "name": "Cost",
+              "type": "number",
+              "value": 150
+            },
+            {
+              "name": "IconAnimation",
+              "type": "string",
+              "value": "ShotgunTower"
+            }
+          ]
+        },
+        {
+          "type": "structure",
+          "children": [
+            {
+              "name": "Type",
+              "type": "string",
+              "value": "RocketTower"
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Rocket"
+            },
+            {
+              "name": "Cost",
+              "type": "number",
+              "value": 250
+            },
+            {
+              "name": "IconAnimation",
+              "type": "string",
+              "value": "RocketTower"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TowerShopScroll",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "TowerShopRequestedType",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "name": "TowerShopPointerInside",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "PlayWaveRequested",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -266,12 +388,12 @@
       "depth": 1,
       "height": 22,
       "keepRatio": true,
-      "layer": "UI",
+      "layer": "TowerShopList",
       "name": "TileType_Button",
       "persistentUuid": "c68085e2-ea50-4b1b-bb18-b8e5af9ce807",
       "width": 44,
-      "x": 1190,
-      "y": 383,
+      "x": 1188.0,
+      "y": 224.0,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -280,7 +402,23 @@
         }
       ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "ShopIndex",
+          "type": "number",
+          "value": 2
+        },
+        {
+          "name": "TowerType",
+          "type": "string",
+          "value": "RocketTower"
+        },
+        {
+          "name": "Cost",
+          "type": "number",
+          "value": 0
+        }
+      ]
     },
     {
       "angle": 0,
@@ -288,16 +426,32 @@
       "depth": 1,
       "height": 44,
       "keepRatio": true,
-      "layer": "UI",
+      "layer": "TowerShopList",
       "name": "TileType_Button",
       "persistentUuid": "7f84d899-b9b0-4371-a885-dd5e0bb9d3fb",
       "width": 25.77777777777778,
-      "x": 1199.111111111111,
-      "y": 264,
+      "x": 1289.111111111111,
+      "y": 105.0,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "ShopIndex",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "TowerType",
+          "type": "string",
+          "value": "ShotgunTower"
+        },
+        {
+          "name": "Cost",
+          "type": "number",
+          "value": 0
+        }
+      ]
     },
     {
       "angle": 0,
@@ -305,12 +459,12 @@
       "depth": 1,
       "height": 44,
       "keepRatio": true,
-      "layer": "UI",
+      "layer": "TowerShopList",
       "name": "TileType_Button",
       "persistentUuid": "91364a9a-21e9-4931-a120-fd7db3f09407",
       "width": 44,
-      "x": 1190,
-      "y": 156,
+      "x": 1188.0,
+      "y": 105.0,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -319,52 +473,68 @@
         }
       ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "ShopIndex",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "TowerType",
+          "type": "string",
+          "value": "Tower"
+        },
+        {
+          "name": "Cost",
+          "type": "number",
+          "value": 0
+        }
+      ]
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "height": 28,
       "keepRatio": true,
       "layer": "UI",
       "name": "MoneyText",
       "persistentUuid": "de2a8787-c51e-487d-9754-46bed3e40ebd",
-      "width": 0,
+      "width": 80,
       "x": 20,
       "y": 20,
-      "zOrder": 0,
+      "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "height": 28,
       "keepRatio": true,
       "layer": "UI",
       "name": "LivesText",
       "persistentUuid": "557b7130-6363-4194-9410-bbdfe6b05420",
-      "width": 0,
+      "width": 48,
       "x": 20,
       "y": 55,
-      "zOrder": 0,
+      "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "height": 28,
       "keepRatio": true,
       "layer": "UI",
       "name": "WaveText",
       "persistentUuid": "6eae470a-3f4a-40d0-bbd0-a306dcf67d7a",
-      "width": 0,
+      "width": 48,
       "x": 20,
       "y": 90,
-      "zOrder": 0,
+      "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -405,13 +575,13 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 420,
+      "height": 432,
       "layer": "UI",
       "name": "TowerShopBox",
       "persistentUuid": "39857ce2-5137-48b7-b436-c751024dffbb",
-      "width": 120,
+      "width": 224,
       "x": 1152,
-      "y": 64,
+      "y": 16,
       "zOrder": -1,
       "numberProperties": [],
       "stringProperties": [],
@@ -1869,60 +2039,78 @@
       "customSize": true,
       "depth": 1,
       "height": 100,
-      "layer": "UI",
+      "layer": "TowerShopList",
       "name": "AssetCardPanel",
       "persistentUuid": "f1abf032-392a-4adc-a0d4-d78b4d10a757",
-      "width": 96,
-      "x": 1164,
-      "y": 128,
+      "width": 84,
+      "x": 1168,
+      "y": 80,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "ShopIndex",
+          "type": "number",
+          "value": 0
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "depth": 1,
       "height": 100,
-      "layer": "UI",
+      "layer": "TowerShopList",
       "name": "AssetCardPanel",
       "persistentUuid": "f5266ff8-04d5-470d-a134-f024c2498a5a",
-      "width": 96,
-      "x": 1164,
-      "y": 236,
+      "width": 84,
+      "x": 1260,
+      "y": 80,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "ShopIndex",
+          "type": "number",
+          "value": 1
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "depth": 1,
       "height": 100,
-      "layer": "UI",
+      "layer": "TowerShopList",
       "name": "AssetCardPanel",
       "persistentUuid": "e64dce8b-8ba7-4fa6-8a48-65cf0880adbf",
-      "width": 96,
-      "x": 1164,
-      "y": 344,
+      "width": 84,
+      "x": 1168,
+      "y": 188,
       "zOrder": 0,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "ShopIndex",
+          "type": "number",
+          "value": 2
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 23,
+      "height": 24,
       "layer": "UI",
       "name": "AssetPanelTitle",
       "persistentUuid": "e2bae964-8a36-4646-b124-4a8355e2f0c2",
-      "width": 96,
-      "x": 1164,
-      "y": 80,
+      "width": 192,
+      "x": 1168,
+      "y": 32,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -1936,9 +2124,9 @@
       "layer": "UI",
       "name": "AssetPanelSubtitle",
       "persistentUuid": "58315c75-3aa2-4b10-8eca-60a83bf34191",
-      "width": 96,
-      "x": 1164,
-      "y": 105,
+      "width": 192,
+      "x": 1168,
+      "y": 57,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -1948,97 +2136,45 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 20,
-      "layer": "UI",
+      "height": 18,
+      "layer": "TowerShopList",
       "name": "AssetTowerLabel",
       "persistentUuid": "4bee1f6e-c693-4d71-8e05-8e32708fd485",
-      "width": 84,
-      "x": 1170,
-      "y": 136,
+      "width": 76,
+      "x": 1172,
+      "y": 87,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "ShopIndex",
+          "type": "number",
+          "value": 0
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 18,
-      "layer": "UI",
+      "height": 20,
+      "layer": "TowerShopList",
       "name": "AssetTowerPrice",
       "persistentUuid": "57ee778a-5850-48b7-9575-9b1c48b7ad42",
-      "width": 84,
-      "x": 1170,
-      "y": 205,
+      "width": 46,
+      "x": 1199,
+      "y": 157,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 20,
-      "layer": "UI",
-      "name": "AssetShotgunTowerLabel",
-      "persistentUuid": "86304c53-6f60-4a70-a7b4-06d90b504a37",
-      "width": 84,
-      "x": 1170,
-      "y": 244,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 18,
-      "layer": "UI",
-      "name": "AssetShotgunTowerPrice",
-      "persistentUuid": "3be488b2-b4ce-4e37-b8ec-ebeea1c93da8",
-      "width": 84,
-      "x": 1170,
-      "y": 313,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 20,
-      "layer": "UI",
-      "name": "AssetRocketTowerLabel",
-      "persistentUuid": "82bc6b93-7e99-4f53-a0c3-5cd15c177538",
-      "width": 84,
-      "x": 1170,
-      "y": 352,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 18,
-      "layer": "UI",
-      "name": "AssetRocketTowerPrice",
-      "persistentUuid": "9f70016e-741b-4df7-b2f3-35ffafef5aeb",
-      "width": 84,
-      "x": 1170,
-      "y": 421,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "ShopIndex",
+          "type": "number",
+          "value": 0
+        }
+      ]
     },
     {
       "angle": 0,
@@ -2048,40 +2184,8 @@
       "layer": "UI",
       "name": "AssetPanelHint",
       "persistentUuid": "bb8b15d3-dbd1-4579-bb92-507cd90ab7d4",
-      "width": 96,
-      "x": 1164,
-      "y": 452,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 1,
-      "layer": "UI",
-      "name": "AssetCardSeparator",
-      "persistentUuid": "6c7a4af5-592e-409b-a06d-5d3260e4b849",
-      "width": 80,
-      "x": 1172,
-      "y": 232,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 1,
-      "layer": "UI",
-      "name": "AssetCardSeparator",
-      "persistentUuid": "1ea59f56-80b9-4980-95eb-6122b520a6c1",
-      "width": 80,
-      "x": 1172,
+      "width": 192,
+      "x": 1168,
       "y": 340,
       "zOrder": 3,
       "numberProperties": [],
@@ -2096,9 +2200,9 @@
       "layer": "UI",
       "name": "TowerInfoName",
       "persistentUuid": "45bcee5e-92bd-4797-9a96-d9757469247e",
-      "width": 100,
-      "x": 1162,
-      "y": 82,
+      "width": 192,
+      "x": 1168,
+      "y": 36,
       "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
@@ -2236,13 +2340,13 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 64,
+      "height": 52,
       "layer": "UI",
       "name": "TowerSellButton",
       "persistentUuid": "eb66f9ce-b063-4a7f-bc80-3d4396646442",
-      "width": 96,
-      "x": 1164,
-      "y": 346,
+      "width": 192,
+      "x": 1168,
+      "y": 296,
       "zOrder": 11,
       "numberProperties": [],
       "stringProperties": [],
@@ -2256,9 +2360,9 @@
       "layer": "UI",
       "name": "TowerSellLabel",
       "persistentUuid": "f900ea7e-2270-46ea-8efb-dbdf942e8429",
-      "width": 96,
-      "x": 1164,
-      "y": 356,
+      "width": 72,
+      "x": 1180,
+      "y": 311,
       "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
@@ -2268,13 +2372,13 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 22,
+      "height": 24,
       "layer": "UI",
       "name": "TowerSellValue",
       "persistentUuid": "8e8f974d-ee65-4d71-baf3-af89807a33fe",
-      "width": 96,
-      "x": 1164,
-      "y": 382,
+      "width": 100,
+      "x": 1252,
+      "y": 311,
       "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
@@ -2288,9 +2392,9 @@
       "layer": "UI",
       "name": "TowerInfoCloseHint",
       "persistentUuid": "b7b1af58-b383-4bc0-aa26-50449df47871",
-      "width": 100,
-      "x": 1162,
-      "y": 448,
+      "width": 192,
+      "x": 1168,
+      "y": 356,
       "zOrder": 12,
       "numberProperties": [],
       "stringProperties": [],
@@ -2612,6 +2716,426 @@
           "value": 55
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 44,
+      "layer": "UI",
+      "name": "HUDPanel",
+      "persistentUuid": "9c7f4c69-8d9d-44aa-9cb9-cf8d3fcb8eac",
+      "width": 316,
+      "x": 20,
+      "y": 16,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [],
+      "keepRatio": false
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 24,
+      "layer": "UI",
+      "name": "HUDIcon",
+      "persistentUuid": "2f2b72da-6897-4433-8321-01b7e9dd2c5e",
+      "width": 24,
+      "x": 30,
+      "y": 26,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [],
+      "keepRatio": false
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 24,
+      "layer": "UI",
+      "name": "HUDIcon",
+      "persistentUuid": "b96ff961-7fb7-47e1-a1e7-afc01538afb1",
+      "width": 24,
+      "x": 150,
+      "y": 26,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [],
+      "keepRatio": false
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 24,
+      "layer": "UI",
+      "name": "HUDIcon",
+      "persistentUuid": "ec59baba-1703-4996-a1f3-55f44eb7350f",
+      "width": 24,
+      "x": 230,
+      "y": 26,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 2
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [],
+      "keepRatio": false
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 60,
+      "layer": "UI",
+      "name": "ShopPlayButton",
+      "persistentUuid": "06a18a17-aab2-43a5-9d19-083c93753a96",
+      "width": 192,
+      "x": 1168,
+      "y": 368,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [],
+      "keepRatio": false
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 24,
+      "layer": "UI",
+      "name": "ShopPlayLabel",
+      "persistentUuid": "9da01966-cbf2-4a11-9227-c9818cc865df",
+      "width": 104,
+      "x": 1228,
+      "y": 386,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [],
+      "keepRatio": false
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 24,
+      "layer": "UI",
+      "name": "ShopPlayIcon",
+      "persistentUuid": "f67af3cf-a976-4cc7-9d43-6475e6fd4ea3",
+      "width": 24,
+      "x": 1200,
+      "y": 386,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [],
+      "keepRatio": false
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 28,
+      "layer": "UI",
+      "name": "ShopScrollUp",
+      "persistentUuid": "d3a3f390-97eb-4684-a526-1c71a79d8294",
+      "width": 40,
+      "x": 1168,
+      "y": 306,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [],
+      "keepRatio": false
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 28,
+      "layer": "UI",
+      "name": "ShopScrollDown",
+      "persistentUuid": "dd01300e-ad98-41c2-b030-5ee902411352",
+      "width": 40,
+      "x": 1216,
+      "y": 306,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [],
+      "keepRatio": false
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 16,
+      "layer": "UI",
+      "name": "ShopScrollArrow",
+      "persistentUuid": "006364bc-93b6-4974-9fd1-c792c3572d60",
+      "width": 20,
+      "x": 1176,
+      "y": 312,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [],
+      "keepRatio": false
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 16,
+      "layer": "UI",
+      "name": "ShopScrollArrow",
+      "persistentUuid": "ffa94cbb-3980-455f-a8f6-e855301895bc",
+      "width": 20,
+      "x": 1224,
+      "y": 312,
+      "zOrder": 6,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [],
+      "keepRatio": false
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 20,
+      "layer": "UI",
+      "name": "ShopScrollLabel",
+      "persistentUuid": "dbcefff8-b489-4aad-8297-03e1707ce4dc",
+      "width": 92,
+      "x": 1268,
+      "y": 313,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [],
+      "keepRatio": false
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 216,
+      "layer": "UI",
+      "name": "ShopScrollTrack",
+      "persistentUuid": "741d13be-911b-4fa1-b95b-ee72db8beec4",
+      "width": 8,
+      "x": 1350,
+      "y": 80,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [],
+      "keepRatio": false
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 216,
+      "layer": "UI",
+      "name": "ShopScrollThumb",
+      "persistentUuid": "5cfbc863-c50e-4c4f-9bc2-9a1357af1348",
+      "width": 8,
+      "x": 1350,
+      "y": 80,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [],
+      "keepRatio": false
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 18,
+      "layer": "TowerShopList",
+      "name": "AssetTowerLabel",
+      "persistentUuid": "2f76b925-99d4-4615-a357-1f3f66cc785f",
+      "width": 76,
+      "x": 1264,
+      "y": 87,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "ShopIndex",
+          "type": "number",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 18,
+      "layer": "TowerShopList",
+      "name": "AssetTowerLabel",
+      "persistentUuid": "519791ae-7008-45bd-b45f-90531bb8343f",
+      "width": 76,
+      "x": 1172,
+      "y": 195,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "ShopIndex",
+          "type": "number",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 20,
+      "layer": "TowerShopList",
+      "name": "AssetTowerPrice",
+      "persistentUuid": "70aad96d-c6b5-448f-94c1-9a2ec94c857f",
+      "width": 46,
+      "x": 1291,
+      "y": 157,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "ShopIndex",
+          "type": "number",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 20,
+      "layer": "TowerShopList",
+      "name": "AssetTowerPrice",
+      "persistentUuid": "9abe1d33-276b-4b5b-9bdc-3b6615c40fde",
+      "width": 46,
+      "x": 1199,
+      "y": 265,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "ShopIndex",
+          "type": "number",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 15,
+      "layer": "TowerShopList",
+      "name": "ShopCoin",
+      "persistentUuid": "25e1604e-a363-49d2-a5bf-879d5a7aad9c",
+      "width": 15,
+      "x": 1181,
+      "y": 159,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "ShopIndex",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "keepRatio": false
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 15,
+      "layer": "TowerShopList",
+      "name": "ShopCoin",
+      "persistentUuid": "f79772bb-4824-4999-8069-bfe4d2b48e56",
+      "width": 15,
+      "x": 1273,
+      "y": 159,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "ShopIndex",
+          "type": "number",
+          "value": 1
+        }
+      ],
+      "keepRatio": false
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 15,
+      "layer": "TowerShopList",
+      "name": "ShopCoin",
+      "persistentUuid": "55832f44-9536-4f97-b4ec-259f304373b4",
+      "width": 15,
+      "x": 1181,
+      "y": 267,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "ShopIndex",
+          "type": "number",
+          "value": 2
+        }
+      ],
+      "keepRatio": false
     }
   ],
   "objects": [
@@ -2779,7 +3303,23 @@
       "persistentUuid": "8f724aaa-a290-4af1-bcd0-a965da77a256",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "TowerType",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "Cost",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "ShopIndex",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "effects": [
         {
           "effectType": "Outline",
@@ -3842,7 +4382,7 @@
     },
     {
       "assetStoreId": "",
-      "bold": false,
+      "bold": true,
       "italic": false,
       "name": "MoneyText",
       "smoothed": true,
@@ -3854,14 +4394,14 @@
       "string": "Text",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 22,
+      "characterSize": 18,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "r": 51,
+        "g": 60,
+        "b": 48
       },
       "content": {
-        "bold": false,
+        "bold": true,
         "isOutlineEnabled": false,
         "isShadowEnabled": false,
         "italic": false,
@@ -3878,14 +4418,14 @@
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 22,
+        "characterSize": 18,
         "lineHeight": 0,
-        "color": "0;0;0"
+        "color": "51;60;48"
       }
     },
     {
       "assetStoreId": "",
-      "bold": false,
+      "bold": true,
       "italic": false,
       "name": "LivesText",
       "smoothed": true,
@@ -3897,14 +4437,14 @@
       "string": "Text",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 22,
+      "characterSize": 18,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "r": 51,
+        "g": 60,
+        "b": 48
       },
       "content": {
-        "bold": false,
+        "bold": true,
         "isOutlineEnabled": false,
         "isShadowEnabled": false,
         "italic": false,
@@ -3921,14 +4461,14 @@
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 22,
+        "characterSize": 18,
         "lineHeight": 0,
-        "color": "0;0;0"
+        "color": "51;60;48"
       }
     },
     {
       "assetStoreId": "",
-      "bold": false,
+      "bold": true,
       "italic": false,
       "name": "WaveText",
       "smoothed": true,
@@ -3940,14 +4480,14 @@
       "string": "Text",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 22,
+      "characterSize": 18,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
+        "r": 51,
+        "g": 60,
+        "b": 48
       },
       "content": {
-        "bold": false,
+        "bold": true,
         "isOutlineEnabled": false,
         "isShadowEnabled": false,
         "italic": false,
@@ -3964,9 +4504,9 @@
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 22,
+        "characterSize": 18,
         "lineHeight": 0,
-        "color": "0;0;0"
+        "color": "51;60;48"
       }
     },
     {
@@ -4024,10 +4564,10 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Pick a tower on the right, click map to place. Tower 100g, Shotgun 150g, Rocket 250g. SPACE = next wave.",
+      "string": "Select a tower, then place on grass. PLAY or SPACE starts the next wave.",
       "font": "",
       "textAlignment": "left",
-      "characterSize": 22,
+      "characterSize": 16,
       "color": {
         "b": 0,
         "g": 0,
@@ -4047,11 +4587,11 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Pick a tower on the right, click map to place. Tower 100g, Shotgun 150g, Rocket 250g. SPACE = next wave.",
+        "text": "Select a tower, then place on grass. PLAY or SPACE starts the next wave.",
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
-        "characterSize": 22,
+        "characterSize": 16,
         "lineHeight": 0,
         "color": "0;0;0"
       }
@@ -4573,16 +5113,16 @@
       "behaviors": []
     },
     {
-      "assetStoreId": "9f3730c55c8073fc715b8c5cb0147617c70d9b602d24e7b908af7147952ad16d",
-      "bottomMargin": 16,
+      "assetStoreId": "",
+      "bottomMargin": 12,
       "height": 48,
-      "leftMargin": 16,
+      "leftMargin": 12,
       "name": "TowerShopBox",
       "persistentUuid": "94d2f2b3-aac5-4e2e-ba22-0061344da7d8",
-      "rightMargin": 16,
-      "texture": "Default-panel (31).png",
+      "rightMargin": 12,
+      "texture": "assets/ui/panel.svg",
       "tiled": false,
-      "topMargin": 16,
+      "topMargin": 12,
       "type": "PanelSpriteObject::PanelSprite",
       "width": 48,
       "variables": [],
@@ -4705,20 +5245,39 @@
       ]
     },
     {
-      "assetStoreId": "9f3730c55c8073fc715b8c5cb0147617c70d9b602d24e7b908af7147952ad16d",
-      "bottomMargin": 16,
+      "assetStoreId": "",
+      "bottomMargin": 12,
       "height": 48,
-      "leftMargin": 16,
+      "leftMargin": 12,
       "name": "AssetCardPanel",
       "persistentUuid": "1a259e48-6782-436b-a142-3bae7a2c4b43",
-      "rightMargin": 16,
-      "texture": "Default-panel (31).png",
+      "rightMargin": 12,
+      "texture": "assets/ui/card.svg",
       "tiled": false,
-      "topMargin": 16,
+      "topMargin": 12,
       "type": "PanelSpriteObject::PanelSprite",
       "width": 48,
-      "variables": [],
-      "effects": [],
+      "variables": [
+        {
+          "name": "ShopIndex",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Outline",
+          "doubleParameters": {
+            "padding": 3,
+            "thickness": 2
+          },
+          "stringParameters": {
+            "color": "216;164;56"
+          },
+          "booleanParameters": {}
+        }
+      ],
       "behaviors": []
     },
     {
@@ -4733,10 +5292,10 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "TOWERS",
+      "string": "TOWER SHOP",
       "font": "",
       "textAlignment": "center",
-      "characterSize": 18,
+      "characterSize": 17,
       "color": {
         "b": 48,
         "g": 52,
@@ -4756,11 +5315,11 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "TOWERS",
+        "text": "TOWER SHOP",
         "font": "",
         "textAlignment": "center",
         "verticalTextAlignment": "top",
-        "characterSize": 18,
+        "characterSize": 17,
         "lineHeight": 0,
         "color": "39;52;48"
       }
@@ -4818,13 +5377,19 @@
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "ShopIndex",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "effects": [],
       "behaviors": [],
-      "string": "Tower",
+      "string": "",
       "font": "",
       "textAlignment": "center",
-      "characterSize": 15,
+      "characterSize": 11,
       "color": {
         "b": 48,
         "g": 52,
@@ -4844,11 +5409,11 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "Tower",
+        "text": "",
         "font": "",
         "textAlignment": "center",
         "verticalTextAlignment": "top",
-        "characterSize": 15,
+        "characterSize": 11,
         "lineHeight": 0,
         "color": "39;52;48"
       }
@@ -4862,10 +5427,16 @@
       "smoothed": true,
       "type": "TextObject::Text",
       "underlined": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "ShopIndex",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "effects": [],
       "behaviors": [],
-      "string": "100 g",
+      "string": "0",
       "font": "",
       "textAlignment": "center",
       "characterSize": 13,
@@ -4888,7 +5459,7 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "100 g",
+        "text": "0",
         "font": "",
         "textAlignment": "center",
         "verticalTextAlignment": "top",
@@ -5174,7 +5745,7 @@
       "string": "Tower",
       "font": "",
       "textAlignment": "center",
-      "characterSize": 14,
+      "characterSize": 17,
       "color": {
         "b": 48,
         "g": 52,
@@ -5198,7 +5769,7 @@
         "font": "",
         "textAlignment": "center",
         "verticalTextAlignment": "top",
-        "characterSize": 14,
+        "characterSize": 17,
         "lineHeight": 0,
         "color": "39;52;48"
       }
@@ -5556,16 +6127,16 @@
       }
     },
     {
-      "assetStoreId": "9f3730c55c8073fc715b8c5cb0147617c70d9b602d24e7b908af7147952ad16d",
-      "bottomMargin": 16,
+      "assetStoreId": "",
+      "bottomMargin": 12,
       "height": 48,
-      "leftMargin": 16,
+      "leftMargin": 12,
       "name": "TowerSellButton",
       "persistentUuid": "9c98e0ba-cfc5-41c6-9f8a-d5e91df281ee",
-      "rightMargin": 16,
-      "texture": "Default-panel (31).png",
+      "rightMargin": 12,
+      "texture": "assets/ui/card.svg",
       "tiled": false,
-      "topMargin": 16,
+      "topMargin": 12,
       "type": "PanelSpriteObject::PanelSprite",
       "width": 48,
       "variables": [],
@@ -5799,6 +6370,501 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "ShopCoin",
+      "persistentUuid": "d47f5f87-2858-4890-8fa3-29a9804a53de",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Coin",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ui/coin.svg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "HUDIcon",
+      "persistentUuid": "2c7b413c-502c-40cc-8713-0ac97f7d67a2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Coin",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ui/coin.svg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Heart",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ui/heart.svg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Flag",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ui/flag.svg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 12,
+      "height": 48,
+      "leftMargin": 12,
+      "name": "HUDPanel",
+      "persistentUuid": "eb5644b2-7f82-43c3-8b0e-db6a2313dc0f",
+      "rightMargin": 12,
+      "texture": "assets/ui/panel.svg",
+      "tiled": false,
+      "topMargin": 12,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 48,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 12,
+      "height": 48,
+      "leftMargin": 12,
+      "name": "ShopPlayButton",
+      "persistentUuid": "8e0f1d2c-6a04-4ed2-a3e2-129032e6db53",
+      "rightMargin": 12,
+      "texture": "assets/ui/play-button.svg",
+      "tiled": false,
+      "topMargin": 12,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 48,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "ShopPlayLabel",
+      "persistentUuid": "056b66f7-df85-4249-a3ac-44b0ea71167d",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "PLAY",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 16,
+      "color": {
+        "r": 255,
+        "g": 246,
+        "b": 215
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "PLAY",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 16,
+        "lineHeight": 0,
+        "color": "255;246;215"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "ShopPlayIcon",
+      "persistentUuid": "e59e91cf-0fa6-45d4-a580-1c33bb2cd732",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Play",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ui/play.svg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 12,
+      "height": 48,
+      "leftMargin": 12,
+      "name": "ShopScrollUp",
+      "persistentUuid": "fe9d7ef4-fcdb-4065-a6a9-10b19737db1f",
+      "rightMargin": 12,
+      "texture": "assets/ui/card.svg",
+      "tiled": false,
+      "topMargin": 12,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 48,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 12,
+      "height": 48,
+      "leftMargin": 12,
+      "name": "ShopScrollDown",
+      "persistentUuid": "bb50d4be-2ef2-49b6-a983-30ca405be259",
+      "rightMargin": 12,
+      "texture": "assets/ui/card.svg",
+      "tiled": false,
+      "topMargin": 12,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 48,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "ShopScrollArrow",
+      "persistentUuid": "737e0cb9-6bc4-4c74-9e99-e5b555dc841d",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Up",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ui/up.svg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Down",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ui/down.svg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "ShopScrollLabel",
+      "persistentUuid": "c4042682-9608-49d4-833f-e285bfa96dca",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "3 TOWERS",
+      "font": "",
+      "textAlignment": "center",
+      "characterSize": 10,
+      "color": {
+        "r": 75,
+        "g": 70,
+        "b": 58
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "3 TOWERS",
+        "font": "",
+        "textAlignment": "center",
+        "verticalTextAlignment": "top",
+        "characterSize": 10,
+        "lineHeight": 0,
+        "color": "75;70;58"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "ShopScrollTrack",
+      "persistentUuid": "95b61a3e-6ffb-44b6-ae5a-f0ae1fbb05df",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Track",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ui/scroll.svg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "ShopScrollThumb",
+      "persistentUuid": "6eb44dae-6b2a-4cea-9cf4-578050d7046a",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Track",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ui/scroll.svg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -5935,10 +7001,252 @@
       },
       {
         "objectName": "Ground_Decoration"
+      },
+      {
+        "objectName": "ShopCoin"
+      },
+      {
+        "objectName": "HUDIcon"
+      },
+      {
+        "objectName": "HUDPanel"
+      },
+      {
+        "objectName": "ShopPlayButton"
+      },
+      {
+        "objectName": "ShopPlayLabel"
+      },
+      {
+        "objectName": "ShopPlayIcon"
+      },
+      {
+        "objectName": "ShopScrollUp"
+      },
+      {
+        "objectName": "ShopScrollDown"
+      },
+      {
+        "objectName": "ShopScrollArrow"
+      },
+      {
+        "objectName": "ShopScrollLabel"
+      },
+      {
+        "objectName": "ShopScrollTrack"
+      },
+      {
+        "objectName": "ShopScrollThumb"
       }
     ]
   },
   "events": [
+    {
+      "type": "BuiltinCommonInstructions::Group",
+      "name": "Responsive tower shop layout and input",
+      "source": "",
+      "colorB": 109,
+      "colorG": 143,
+      "colorR": 90,
+      "creationTime": 0,
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "// Responsive, clipped, two-column UI. All purchase and wave actions stay in the native events below.",
+            "const scene = runtimeScene;",
+            "const variables = scene.getVariables();",
+            "const get = name => scene.getObjects(name);",
+            "const first = name => get(name)[0];",
+            "const number = name => variables.get(name).getAsNumber();",
+            "const boolean = name => variables.get(name).getAsBoolean();",
+            "let ui = scene.__towerShopUI;",
+            "if (!ui || ui.root !== first(\"TowerShopBox\")) {",
+            "  ui = scene.__towerShopUI = { root: first(\"TowerShopBox\"), cards: [], wasDown: false, pressedCard: -1, pressedControl: \"\", dragging: false };",
+            "  ui.ensure = (name, index) => {",
+            "    let object = get(name).find(object => object.getVariables().get(\"ShopIndex\").getAsNumber() === index);",
+            "    if (!object) { object = scene.createObject(name); object.getVariables().get(\"ShopIndex\").setNumber(index); }",
+            "    object.setLayer(\"TowerShopList\");",
+            "    return object;",
+            "  };",
+            "  const container = scene.getLayer(\"TowerShopList\").getRenderer().getRendererObject();",
+            "  ui.mask = new PIXI.Graphics();",
+            "  container.addChild(ui.mask);",
+            "  container.mask = ui.mask;",
+            "}",
+            "const width = scene.getGame().getGameResolutionWidth();",
+            "const height = scene.getGame().getGameResolutionHeight();",
+            "// UI uses a stable logical shop X outside the buildable world area. Its camera anchors it to screen right.",
+            "const offsetX = 1392 - width;",
+            "for (const layerName of [\"UI\", \"TowerShopList\"]) {",
+            "  const layer = scene.getLayer(layerName);",
+            "  layer.setCameraZoom(1, 0);",
+            "  layer.setCameraX(width / 2 + offsetX, 0);",
+            "  layer.setCameraY(height / 2, 0);",
+            "}",
+            "const mapWidth = Math.max(240, width - 272);",
+            "const zoom = Math.min(mapWidth / 1408, Math.max(160, height - 128) / 720);",
+            "const map = scene.getLayer(\"\");",
+            "map.setCameraZoom(zoom, 0);",
+            "map.setCameraX((width / 2 - 16) / zoom, 0);",
+            "map.setCameraY((height / 2 - 80) / zoom, 0);",
+            "ui.geometry = { rootX: 1152, rootY: 16, panelHeight: Math.min(432, Math.max(320, height - 32)), listX: 1168, listY: 80, listWidth: 176 };",
+            "const geometry = ui.geometry;",
+            "geometry.listHeight = geometry.panelHeight - 216;",
+            "geometry.bottom = geometry.rootY + geometry.panelHeight;",
+            "geometry.controlsY = geometry.bottom - 142;",
+            "geometry.playY = geometry.bottom - 80;",
+            "geometry.trackX = 1350;",
+            "const rect = (name, x, y, w, h) => { const o = first(name); o.setPosition(x, y); if (w !== undefined) o.setWidth(w); if (h !== undefined) o.setHeight(h); };",
+            "rect(\"TowerShopBox\", 1152, 16, 224, geometry.panelHeight);",
+            "rect(\"AssetPanelTitle\", 1168, 32, 192, 24);",
+            "rect(\"AssetPanelSubtitle\", 1168, 57, 192, 16);",
+            "rect(\"AssetPanelHint\", 1168, geometry.bottom - 108, 192, 18);",
+            "rect(\"ShopPlayButton\", 1168, geometry.playY, 192, 60);",
+            "rect(\"ShopPlayIcon\", 1200, geometry.playY + 18, 24, 24);",
+            "rect(\"ShopPlayLabel\", 1228, geometry.playY + 18, 104, 24);",
+            "rect(\"ShopScrollUp\", 1168, geometry.controlsY, 40, 28);",
+            "rect(\"ShopScrollDown\", 1216, geometry.controlsY, 40, 28);",
+            "get(\"ShopScrollArrow\").forEach((o, i) => { o.setPosition(1176 + i * 48, geometry.controlsY + 6); o.setWidth(20); o.setHeight(16); });",
+            "rect(\"ShopScrollLabel\", 1260, geometry.controlsY + 7, 100, 18);",
+            "rect(\"ShopScrollTrack\", geometry.trackX, geometry.listY, 8, geometry.listHeight);",
+            "// The existing tower information view shares the frame, while PLAY remains available below it.",
+            "rect(\"TowerInfoName\", 1168, 36, 192, 30);",
+            "const statStep = Math.max(26, (geometry.bottom - 152 - 80 - 10) / 4);",
+            "for (const [index, field] of [\"Damage\", \"Rate\", \"Range\", \"Dealt\"].entries()) {",
+            "  const y = 80 + index * statStep;",
+            "  rect(\"TowerInfo\" + field + \"Label\", 1168, y + 5, 112, 20);",
+            "  rect(\"TowerInfo\" + field, 1280, y, 80, 24);",
+            "}",
+            "rect(\"TowerSellButton\", 1168, geometry.bottom - 152, 192, 52);",
+            "rect(\"TowerSellLabel\", 1180, geometry.bottom - 137, 72, 24);",
+            "rect(\"TowerSellValue\", 1252, geometry.bottom - 137, 100, 24);",
+            "rect(\"TowerInfoCloseHint\", 1168, geometry.bottom - 92, 192, 18);",
+            "rect(\"HUDPanel\", offsetX + 16, 16, 316, 44);",
+            "get(\"HUDIcon\").forEach((o, i) => { o.setPosition(offsetX + [28,148,230][i], 26); o.setWidth(24); o.setHeight(24); });",
+            "rect(\"MoneyText\", offsetX + 60, 25, 80, 28);",
+            "rect(\"LivesText\", offsetX + 180, 25, 40, 28);",
+            "rect(\"WaveText\", offsetX + 262, 25, 62, 28);",
+            "rect(\"HelpText\", offsetX + 20, height - 42, mapWidth, 30);",
+            "const message = first(\"MessageText\");",
+            "message.setPosition(offsetX + 16 + mapWidth / 2 - message.getWidth() / 2, height / 2 - 20);",
+            "// Prices have exactly one source: the existing costs migrated unchanged into TowerShopCatalog.",
+            "const catalog = variables.get(\"TowerShopCatalog\").toJSObject();",
+            "for (const name of [\"AssetCardPanel\", \"TileType_Button\", \"AssetTowerLabel\", \"AssetTowerPrice\", \"ShopCoin\"]) {",
+            "  get(name).slice().forEach(object => {",
+            "    if (object.getVariables().get(\"ShopIndex\").getAsNumber() >= catalog.length) object.deleteFromScene(scene);",
+            "  });",
+            "}",
+            "ui.cards.length = catalog.length;",
+            "for (let i = 0; i < catalog.length; i++) {",
+            "  const item = catalog[i];",
+            "  if (!ui.cards[i]) {",
+            "    const card = ui.cards[i] = { background: ui.ensure(\"AssetCardPanel\", i), icon: ui.ensure(\"TileType_Button\", i), name: ui.ensure(\"AssetTowerLabel\", i), price: ui.ensure(\"AssetTowerPrice\", i), coin: ui.ensure(\"ShopCoin\", i) };",
+            "    card.icon.activateBehavior(\"ButtonScaleTween\", false);",
+            "    if (card.icon.hasBehavior(\"Effect\")) card.icon.getBehavior(\"Effect\").enableEffect(\"Outline\", false);",
+            "    card.icon.setAnimationName(item.IconAnimation || item.Type);",
+            "    const ratio = card.icon.getWidth() / Math.max(1, card.icon.getHeight());",
+            "    card.iconWidth = ratio > 1 ? 44 : 44 * ratio;",
+            "    card.iconHeight = ratio > 1 ? 44 / ratio : 44;",
+            "  }",
+            "  const card = ui.cards[i];",
+            "  card.item = item;",
+            "  card.icon.getVariables().get(\"TowerType\").setString(item.Type);",
+            "  card.icon.getVariables().get(\"Cost\").setNumber(item.Cost);",
+            "  card.name.setString(item.Name);",
+            "  card.price.setString(String(item.Cost));",
+            "}",
+            "const contentHeight = Math.ceil(catalog.length / 2) * 108 - 8;",
+            "const maxScroll = Math.max(0, contentHeight - geometry.listHeight);",
+            "let scroll = Math.max(0, Math.min(maxScroll, number(\"TowerShopScroll\")));",
+            "const input = scene.getGame().getInputManager();",
+            "const mx = gdjs.evtTools.input.getCursorX(scene, \"UI\", 0);",
+            "const my = gdjs.evtTools.input.getCursorY(scene, \"UI\", 0);",
+            "const inside = (x,y,w,h) => mx >= x && mx < x+w && my >= y && my < y+h;",
+            "const shopVisible = number(\"SelectedTower\") === 0;",
+            "const inList = inside(geometry.listX, geometry.listY, geometry.listWidth, geometry.listHeight);",
+            "const inTrack = inside(geometry.trackX - 3, geometry.listY, 14, geometry.listHeight);",
+            "variables.get(\"TowerShopPointerInside\").setBoolean(shopVisible && inList);",
+            "variables.get(\"TowerShopRequestedType\").setString(\"\");",
+            "variables.get(\"PlayWaveRequested\").setBoolean(false);",
+            "if (shopVisible && (inList || inTrack)) scroll = Math.max(0, Math.min(maxScroll, scroll - Math.sign(input.getMouseWheelDelta()) * 48));",
+            "const hoveredIndex = () => {",
+            "  if (!shopVisible || !inList) return -1;",
+            "  const x = mx - geometry.listX, y = my - geometry.listY + scroll;",
+            "  const col = Math.floor(x / 92), row = Math.floor(y / 108), index = row * 2 + col;",
+            "  return col < 2 && x % 92 < 84 && y % 108 < 100 && index < catalog.length ? index : -1;",
+            "};",
+            "const ready = !boolean(\"WaveActive\") && !boolean(\"GameOver\") && number(\"Wave\") < 5;",
+            "const overPlay = inside(1168, geometry.playY, 192, 60);",
+            "const overUp = shopVisible && inside(1168, geometry.controlsY, 40, 28);",
+            "const overDown = shopVisible && inside(1216, geometry.controlsY, 40, 28);",
+            "const down = input.isMouseButtonPressed(0);",
+            "let hovered = hoveredIndex();",
+            "if (down && !ui.wasDown) {",
+            "  ui.pressedCard = hovered;",
+            "  ui.pressedControl = overPlay ? \"Play\" : overUp ? \"Up\" : overDown ? \"Down\" : \"\";",
+            "  if (inTrack && maxScroll > 0 && shopVisible) { ui.dragging = true; ui.dragStartY = my; ui.dragStartScroll = scroll; ui.pressedCard = -1; }",
+            "}",
+            "const thumbHeight = maxScroll > 0 ? Math.max(22, geometry.listHeight * geometry.listHeight / contentHeight) : geometry.listHeight;",
+            "if (ui.dragging && down) scroll = Math.max(0, Math.min(maxScroll, ui.dragStartScroll + (my - ui.dragStartY) * maxScroll / Math.max(1, geometry.listHeight - thumbHeight)));",
+            "if (!down && ui.wasDown) {",
+            "  if (ui.pressedControl === \"Play\" && overPlay && ready) variables.get(\"PlayWaveRequested\").setBoolean(true);",
+            "  if (ui.pressedControl === \"Up\" && overUp) scroll = Math.max(0, scroll - 108);",
+            "  if (ui.pressedControl === \"Down\" && overDown) scroll = Math.min(maxScroll, scroll + 108);",
+            "  if (!ui.dragging && ui.pressedCard >= 0 && ui.pressedCard === hovered && number(\"Money\") >= catalog[hovered].Cost) variables.get(\"TowerShopRequestedType\").setString(catalog[hovered].Type);",
+            "  ui.pressedCard = -1; ui.pressedControl = \"\"; ui.dragging = false;",
+            "}",
+            "ui.wasDown = down;",
+            "variables.get(\"TowerShopScroll\").setNumber(scroll);",
+            "hovered = hoveredIndex();",
+            "ui.mask.clear().beginFill(0xffffff).drawRect(geometry.listX, geometry.listY, geometry.listWidth, geometry.listHeight).endFill();",
+            "ui.cards.forEach((card, i) => {",
+            "  const x = geometry.listX + (i % 2) * 92, y = geometry.listY + Math.floor(i / 2) * 108 - scroll;",
+            "  card.background.setPosition(x, y); card.background.setWidth(84); card.background.setHeight(100);",
+            "  const pressed = down && ui.pressedCard === i && hovered === i;",
+            "  const scale = pressed ? 0.94 : 1;",
+            "  card.icon.setWidth(card.iconWidth * scale); card.icon.setHeight(card.iconHeight * scale);",
+            "  card.icon.setPosition(x + 42 - card.icon.getWidth()/2, y + 47 - card.icon.getHeight()/2);",
+            "  card.name.setPosition(x + 4, y + 7); card.name.setWidth(76); card.name.setHeight(18);",
+            "  card.coin.setPosition(x + 13, y + 79); card.coin.setWidth(15); card.coin.setHeight(15);",
+            "  card.price.setPosition(x + 31, y + 77); card.price.setWidth(46); card.price.setHeight(20);",
+            "});",
+            "rect(\"ShopScrollThumb\", geometry.trackX, geometry.listY + (maxScroll > 0 ? scroll / maxScroll * (geometry.listHeight - thumbHeight) : 0), 8, thumbHeight);",
+            "ui.scrollMax = maxScroll; ui.hovered = hovered; ui.ready = ready; ui.overPlay = overPlay; ui.overUp = overUp; ui.overDown = overDown;",
+            "ui.refresh = () => {",
+            "  const selectedTower = number(\"SelectedTower\") > 0;",
+            "  scene.getLayer(\"TowerShopList\").show(!selectedTower);",
+            "  const indicator = first(\"TilePlacement_Indicator\");",
+            "  ui.cards.forEach((card, i) => {",
+            "    const affordable = number(\"Money\") >= card.item.Cost;",
+            "    const selected = !indicator.isHidden() && indicator.getAnimationName() === card.item.Type;",
+            "    const pressed = ui.wasDown && ui.pressedCard === i && ui.hovered === i;",
+            "    card.background.setColor(selected ? \"255;223;157\" : pressed ? \"237;219;184\" : ui.hovered === i ? \"255;242;211\" : \"255;255;255\");",
+            "    if (card.background.hasBehavior(\"Effect\")) card.background.getBehavior(\"Effect\").enableEffect(\"Outline\", selected);",
+            "    card.background.setOpacity(affordable ? 255 : 155);",
+            "    card.icon.setOpacity(affordable ? 255 : 140);",
+            "    card.price.setColor(affordable ? \"117;82;32\" : \"164;67;60\");",
+            "    card.name.setColor(affordable ? \"55;60;48\" : \"126;121;110\");",
+            "    for (const part of [card.background,card.icon,card.name,card.price,card.coin]) part.hide(selectedTower);",
+            "  });",
+            "  const currentlyReady = !boolean(\"WaveActive\") && !boolean(\"GameOver\") && number(\"Wave\") < 5;",
+            "  first(\"ShopPlayButton\").setOpacity(currentlyReady ? 255 : 155);",
+            "  first(\"ShopPlayButton\").setColor(currentlyReady && ui.overPlay ? (ui.wasDown ? \"206;219;177\" : \"235;255;228\") : \"255;255;255\");",
+            "  first(\"ShopPlayLabel\").setString(currentlyReady ? \"PLAY\" : boolean(\"GameOver\") ? (number(\"Lives\") > 0 ? \"COMPLETE\" : \"GAME OVER\") : number(\"Wave\") >= 5 && !boolean(\"WaveActive\") ? \"COMPLETE\" : \"RUNNING\");",
+            "  first(\"ShopScrollUp\").setOpacity(scroll > 0 ? 255 : 120);",
+            "  first(\"ShopScrollDown\").setOpacity(scroll < maxScroll ? 255 : 120);",
+            "  first(\"ShopScrollThumb\").setOpacity(maxScroll > 0 ? 255 : 110);",
+            "  first(\"ShopScrollLabel\").setString(catalog.length + \" TOWERS\");",
+            "  first(\"AssetPanelHint\").setString(ui.hovered >= 0 && number(\"Money\") < ui.cards[ui.hovered].item.Cost ? \"Need \" + (ui.cards[ui.hovered].item.Cost - number(\"Money\")) + \" more\" : \"Select, then place\");",
+            "};"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ],
+      "parameters": []
+    },
     {
       "type": "BuiltinCommonInstructions::Group",
       "name": "Monster path initialization",
@@ -6547,12 +7855,13 @@
       "conditions": [
         {
           "type": {
-            "value": "ButtonStates::ButtonFSM::IsClicked"
+            "value": "StringObjectVariable"
           },
           "parameters": [
             "TileType_Button",
-            "ButtonFSM",
-            ""
+            "TowerType",
+            "=",
+            "TowerShopRequestedType"
           ]
         },
         {
@@ -6573,6 +7882,26 @@
             "TowerUIConsumesClick",
             "False",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "TowerShopPointerInside",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberVariable"
+          },
+          "parameters": [
+            "Money",
+            ">=",
+            "TileType_Button.Variable(Cost)"
           ]
         }
       ],
@@ -6623,7 +7952,7 @@
                 "TilePlacement_Indicator",
                 "Animation",
                 "=",
-                "TileType_Button.Animation::Name()"
+                "TileType_Button.VariableString(TowerType)"
               ]
             },
             {
@@ -6996,88 +8325,15 @@
       "actions": [],
       "events": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::Name"
-              },
-              "parameters": [
-                "TilePlacement_Indicator",
-                "Animation",
-                "=",
-                "\"Tower\""
-              ]
-            }
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "const type = runtimeScene.getObjects(\"TilePlacement_Indicator\")[0].getAnimationName();",
+            "const item = runtimeScene.getVariables().get(\"TowerShopCatalog\").toJSObject().find(item => item.Type === type);",
+            "if (item) runtimeScene.getVariables().get(\"TowerCost\").setNumber(item.Cost);"
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "TowerCost",
-                "=",
-                "100"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::Name"
-              },
-              "parameters": [
-                "TilePlacement_Indicator",
-                "Animation",
-                "=",
-                "\"ShotgunTower\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "TowerCost",
-                "=",
-                "150"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "AnimatableCapability::AnimatableBehavior::Name"
-              },
-              "parameters": [
-                "TilePlacement_Indicator",
-                "Animation",
-                "=",
-                "\"RocketTower\""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetNumberVariable"
-              },
-              "parameters": [
-                "TowerCost",
-                "=",
-                "250"
-              ]
-            }
-          ]
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
         }
       ]
     },
@@ -7454,11 +8710,29 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyFromTextJustPressed"
+                "value": "BuiltinCommonInstructions::Or"
               },
-              "parameters": [
-                "",
-                "\"Space\""
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextJustPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Space\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "PlayWaveRequested",
+                    "True",
+                    ""
+                  ]
+                }
               ]
             },
             {
@@ -8542,7 +9816,7 @@
                 "MoneyText",
                 "Text",
                 "=",
-                "\"Money: \" + ToString(Money)"
+                "ToString(Money)"
               ]
             },
             {
@@ -8553,7 +9827,7 @@
                 "LivesText",
                 "Text",
                 "=",
-                "\"Lives: \" + ToString(Lives)"
+                "ToString(Lives)"
               ]
             },
             {
@@ -8564,7 +9838,7 @@
                 "WaveText",
                 "Text",
                 "=",
-                "\"Wave: \" + ToString(Wave) + \"/5\""
+                "ToString(Wave) + \"/5\""
               ]
             }
           ]
@@ -9090,6 +10364,27 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Group",
+      "name": "Tower shop visual states",
+      "source": "",
+      "colorB": 109,
+      "colorG": 143,
+      "colorR": 90,
+      "creationTime": 0,
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "runtimeScene.__towerShopUI.refresh();"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ],
+      "parameters": []
     }
   ],
   "layers": [
@@ -9135,6 +10430,24 @@
       "isLightingLayer": false,
       "isLocked": false,
       "name": "UI",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "TowerShopList",
       "renderingType": "",
       "visibility": true,
       "cameras": [],

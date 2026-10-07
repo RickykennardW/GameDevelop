@@ -530,6 +530,86 @@
         "name": "Default size/towerDefense_tile093.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "assets/ui/panel.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/panel.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/card.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/card.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/play-button.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/play-button.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/coin.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/coin.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/heart.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/heart.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/flag.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/flag.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/play.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/play.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/up.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/up.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/down.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/down.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/scroll.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/scroll.svg",
+        "smoothed": true,
+        "userAdded": true
       }
     ]
   },
