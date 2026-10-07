@@ -506,6 +506,30 @@
         "name": "assets/shop-separator.svg",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "Default size/towerDefense_tile024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default size/towerDefense_tile024.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "Default size/towerDefense_tile050.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default size/towerDefense_tile050.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "Default size/towerDefense_tile093.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Default size/towerDefense_tile093.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ]
   },

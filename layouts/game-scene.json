@@ -124,6 +124,25 @@
           "name": "TowerInfoCloseHint"
         }
       ]
+    },
+    {
+      "name": "MonsterEnemies",
+      "objects": [
+        {
+          "name": "Enemy"
+        }
+      ]
+    },
+    {
+      "name": "GroundMapVisuals",
+      "objects": [
+        {
+          "name": "Ground_Map"
+        },
+        {
+          "name": "Ground_Decoration"
+        }
+      ]
     }
   ],
   "variables": [
@@ -228,6 +247,16 @@
       "persistentUuid": "87a326e5-74f0-43f7-a794-4f30a6ab276e",
       "type": "boolean",
       "value": false
+    },
+    {
+      "name": "MonsterPathPoints",
+      "type": "array",
+      "children": []
+    },
+    {
+      "name": "MonsterPathPointCount",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
@@ -290,28 +319,6 @@
         }
       ],
       "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "",
-      "locked": true,
-      "name": "Ground_Tilemap",
-      "persistentUuid": "738bc12b-5841-410a-af96-cf38874461dd",
-      "width": 0,
-      "x": 0,
-      "y": 0,
-      "zOrder": 0,
-      "numberProperties": [],
-      "stringProperties": [
-        {
-          "name": "tilemap",
-          "value": "{\"tileWidth\":64,\"tileHeight\":64,\"dimX\":20,\"dimY\":12,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4]]}]}"
-        }
-      ],
       "initialVariables": []
     },
     {
@@ -430,849 +437,1432 @@
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "ecac8a7f-75f0-4061-b538-0991f662fd6f",
       "width": 64,
       "x": 128,
       "y": 64,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 3
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "b637d1e3-fdab-4b38-955d-6b308bf1fa18",
       "width": 64,
       "x": 192,
       "y": 64,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 4
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "7327c161-0a62-44af-b617-8ace12ab3572",
       "width": 64,
       "x": 256,
       "y": 64,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 5
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "4ca88312-a79e-4cf2-ae41-3354d0d12358",
       "width": 64,
       "x": 320,
       "y": 64,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 6
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "febaec3c-b6b8-4916-8958-81098be5c647",
       "width": 64,
       "x": 384,
       "y": 64,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 7
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "26acbf0b-d421-43a8-93bb-5f52e5d020cb",
       "width": 64,
       "x": 448,
       "y": 64,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 8
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "62807aa3-e9fb-46a9-b962-adfdc3a8de35",
       "width": 64,
       "x": 512,
       "y": 64,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 9
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "c1a4b85d-b517-4d9f-a0e5-b937e5c26da6",
       "width": 64,
       "x": 576,
       "y": 64,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 10
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "a9f0ce5d-9a37-45c8-b668-7ed39dd045af",
       "width": 64,
       "x": 640,
       "y": 64,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 11
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "c1ade4a5-e5f6-44f4-9b78-f0e7d043fcd5",
       "width": 64,
       "x": 704,
       "y": 64,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 12
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "580aae38-572f-4fe1-b023-96521365457e",
       "width": 64,
       "x": 768,
       "y": 64,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 13
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "d36ca5ba-a828-4cd8-b12d-3e9e53df98e8",
       "width": 64,
       "x": 832,
       "y": 64,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 14
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "db5a2b21-2555-4d4a-80d5-13f6a6452936",
       "width": 64,
       "x": 896,
       "y": 64,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 15
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "0d45f64f-2be3-4213-8a07-1ae13592cd8e",
       "width": 64,
       "x": 960,
       "y": 64,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 16
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "963a74a5-e163-4d94-923b-1d6f59a6df26",
       "width": 64,
       "x": 1024,
       "y": 64,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 17
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "1feece0a-8321-47e8-8f4b-6172de7f9590",
       "width": 64,
       "x": 1088,
       "y": 64,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 18
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "7526197a-45fe-49a0-8515-bcfe9b12c79f",
       "width": 64,
       "x": 1088,
       "y": 128,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 19
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "5ddc4427-553d-43cc-b316-b487d8b688d9",
       "width": 64,
       "x": 1088,
       "y": 192,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 20
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "ff27a2ba-986b-496d-ab41-807274729f3c",
       "width": 64,
       "x": 1088,
       "y": 256,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 21
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "437f2735-4758-4f58-b3e1-6468c000ab95",
       "width": 64,
       "x": 128,
       "y": 256,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 36
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "8892962b-f0db-45b0-a3e0-559faef34d96",
       "width": 64,
       "x": 192,
       "y": 256,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 35
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "ebfcab23-1058-4867-869b-0aa0bcd10df7",
       "width": 64,
       "x": 256,
       "y": 256,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 34
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "f8cee53c-53a4-4797-a45d-8171d602a29b",
       "width": 64,
       "x": 320,
       "y": 256,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 33
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "3d600ada-a199-4582-b303-3bdb4ac930f5",
       "width": 64,
       "x": 384,
       "y": 256,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 32
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "cd92d4a5-2323-4e74-b444-8a0c6a6a39cd",
       "width": 64,
       "x": 448,
       "y": 256,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 31
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "74f4a778-78a1-4159-b2bf-b341ba0624ff",
       "width": 64,
       "x": 512,
       "y": 256,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 30
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "1f960943-2f76-446f-802c-76dc95bb9295",
       "width": 64,
       "x": 576,
       "y": 256,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 29
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "1d353338-f5d3-4ef9-bae3-e1c4074b39b9",
       "width": 64,
       "x": 640,
       "y": 256,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 28
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "0c542cb1-b0c7-43cc-b5ca-04deed779db2",
       "width": 64,
       "x": 704,
       "y": 256,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 27
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "d99fa2b6-2b6d-4362-b226-847328a9c62e",
       "width": 64,
       "x": 768,
       "y": 256,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 26
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "e821916d-2504-428f-9cc6-f9ab0b9653ca",
       "width": 64,
       "x": 832,
       "y": 256,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 25
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "5d0032ad-7841-4367-8ed1-37de4277c7ad",
       "width": 64,
       "x": 896,
       "y": 256,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 24
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "2a6948bd-c106-4637-b638-18e7088cacbb",
       "width": 64,
       "x": 960,
       "y": 256,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 23
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "c0fad579-2ea4-4788-bc66-da90689e6ae9",
       "width": 64,
       "x": 1024,
       "y": 256,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 22
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "bba290f7-6302-4c24-bb94-cbf70de9b28a",
       "width": 64,
       "x": 128,
       "y": 320,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 37
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "0319ba6c-09a1-4fb1-a0ea-1d85b9b89255",
       "width": 64,
       "x": 128,
       "y": 384,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 38
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "557f91bc-7ad8-4822-be5a-c1514005db7e",
       "width": 64,
       "x": 128,
       "y": 448,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 39
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "9ff9de48-463b-4564-b881-14d810a23d0b",
       "width": 64,
       "x": 192,
       "y": 448,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 40
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "34c09c0f-cb8b-4838-bdf5-ccea98d739c3",
       "width": 64,
       "x": 256,
       "y": 448,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 41
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "625b6c01-bb89-40ea-bb6c-11a0ccbb54b2",
       "width": 64,
       "x": 320,
       "y": 448,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 42
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "11eeab56-2486-401e-98da-72c061da91b9",
       "width": 64,
       "x": 384,
       "y": 448,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 43
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "471e78e3-426c-4606-86d3-b2332b67180a",
       "width": 64,
       "x": 448,
       "y": 448,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 44
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "d304340a-095b-45d7-bfac-1aeb8946a62f",
       "width": 64,
       "x": 512,
       "y": 448,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 45
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "d07d014a-028b-489f-8adf-41b3065859f8",
       "width": 64,
       "x": 576,
       "y": 448,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 46
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "10b32488-717a-474a-aab8-c979da898171",
       "width": 64,
       "x": 640,
       "y": 448,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 47
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "f91b682a-a778-4940-bc88-d51ba25d0c25",
       "width": 64,
       "x": 704,
       "y": 448,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 48
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "4318c554-3648-4508-b492-aaba06582036",
       "width": 64,
       "x": 768,
       "y": 448,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 49
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "c70d0d79-6f0f-429f-a70a-0f7b6bc3e61d",
       "width": 64,
       "x": 832,
       "y": 448,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 1
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 50
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "665da30a-eac5-4006-81d8-20432c1b5af9",
       "width": 64,
       "x": 896,
       "y": 448,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 51
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "06750d75-0d99-42a3-9a23-af70c823c97a",
       "width": 64,
       "x": 960,
       "y": 448,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 52
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "d961274f-4e24-4fde-806f-37eb0864ab55",
       "width": 64,
       "x": 1024,
       "y": 448,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 53
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "18a7f6fe-6fa2-4fad-9710-b621e62146d2",
       "width": 64,
       "x": 1088,
       "y": 448,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 54
+        }
+      ]
     },
     {
       "angle": 0,
       "customSize": true,
       "height": 64,
-      "keepRatio": true,
+      "keepRatio": false,
       "layer": "",
-      "name": "PathBlocker",
+      "name": "Monster_Path",
       "persistentUuid": "4710f158-58fb-4a15-bd9f-a17c9b1f01aa",
       "width": 64,
       "x": 1152,
-      "y": 448,
+      "y": 512,
       "zOrder": 0,
-      "numberProperties": [],
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 56
+        }
+      ]
     },
     {
       "angle": 0,
@@ -1721,6 +2311,307 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "01e2eae8-9ce6-4a7a-a798-3b66ba676019",
+      "width": 64,
+      "x": -64,
+      "y": 64,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "1803a3a2-d632-4016-99ad-57b89d1dc6a8",
+      "width": 64,
+      "x": 0,
+      "y": 64,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "b8762903-d131-4910-a4cf-2419f992bb4f",
+      "width": 64,
+      "x": 64,
+      "y": 64,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "d9d7f07d-22e7-453e-beac-6a5b407d3910",
+      "width": 64,
+      "x": 1216,
+      "y": 512,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 57
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "ff4f601c-82ea-4abd-afa1-3c92f2853e86",
+      "width": 64,
+      "x": 1280,
+      "y": 512,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 58
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "2aba7124-669d-4aaf-b54f-ee8fc8d6a54e",
+      "width": 64,
+      "x": 1344,
+      "y": 512,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 59
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 720,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Ground_Map",
+      "persistentUuid": "00df393f-74f3-452c-9209-ea629a9f58e4",
+      "width": 1280,
+      "x": 0,
+      "y": 0,
+      "zOrder": -10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Ground_Decoration",
+      "persistentUuid": "6627a3b0-4221-4b44-a98a-bf33bcd2ff71",
+      "width": 64,
+      "x": 24,
+      "y": 164,
+      "zOrder": -5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Ground_Decoration",
+      "persistentUuid": "b8c23db2-3d81-49d5-9169-fed7cbd433b0",
+      "width": 64,
+      "x": 32,
+      "y": 352,
+      "zOrder": -5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Ground_Decoration",
+      "persistentUuid": "3e7f9a62-bbc2-4895-9968-042cbd366c90",
+      "width": 64,
+      "x": 40,
+      "y": 548,
+      "zOrder": -5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Ground_Decoration",
+      "persistentUuid": "8b610349-bf17-4b8e-9436-068115b70445",
+      "width": 64,
+      "x": 264,
+      "y": 572,
+      "zOrder": -5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Ground_Decoration",
+      "persistentUuid": "78da639a-2f7b-4207-9d10-40e95b4675d8",
+      "width": 64,
+      "x": 776,
+      "y": 568,
+      "zOrder": -5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Ground_Decoration",
+      "persistentUuid": "946e2741-e8e8-4917-adfe-a398b543caa8",
+      "width": 64,
+      "x": 1164,
+      "y": 564,
+      "zOrder": -5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Monster_Path",
+      "persistentUuid": "768f8a99-3bfa-489d-9c81-0e1a0159f988",
+      "width": 64,
+      "x": 1088,
+      "y": 512,
+      "zOrder": 0,
+      "numberProperties": [
+        {
+          "name": "animation",
+          "value": 0
+        }
+      ],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 55
+        }
+      ]
     }
   ],
   "objects": [
@@ -2242,6 +3133,31 @@
           "name": "Waypoint",
           "type": "number",
           "value": 0
+        },
+        {
+          "name": "PathFinished",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "IsMoving",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "MovementAnimation",
+          "type": "string",
+          "value": "Idle Run"
+        },
+        {
+          "name": "IdleAnimation",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "AnimationReferenceSpeed",
+          "type": "number",
+          "value": 90
         }
       ],
       "effects": [],
@@ -3675,12 +4591,18 @@
     },
     {
       "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "88d49284cf5edb8006100511d11a249a70f6446af8906b9200d1266f3fcabcd2",
-      "name": "PathBlocker",
+      "assetStoreId": "",
+      "name": "Monster_Path",
       "persistentUuid": "d73cdaef-66c4-4eae-98ef-59727c51133d",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "PathOrder",
+          "type": "number",
+          "value": 0
+        }
+      ],
       "effects": [],
       "behaviors": [],
       "animations": [
@@ -3689,12 +4611,12 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": true,
+              "looping": false,
               "timeBetweenFrames": 0.025,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Isometric Platformer Dirt_Surface.png",
+                  "image": "Default size/towerDefense_tile050.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -3714,16 +4636,16 @@
                         "y": 0
                       },
                       {
-                        "x": 111,
+                        "x": 64,
                         "y": 0
                       },
                       {
-                        "x": 111,
-                        "y": 128
+                        "x": 64,
+                        "y": 64
                       },
                       {
                         "x": 0,
-                        "y": 128
+                        "y": 64
                       }
                     ]
                   ]
@@ -3737,12 +4659,12 @@
           "useMultipleDirections": false,
           "directions": [
             {
-              "looping": true,
+              "looping": false,
               "timeBetweenFrames": 0.025,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Isometric Platformer Dirt_Texture.png",
+                  "image": "Default size/towerDefense_tile093.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -3762,16 +4684,16 @@
                         "y": 0
                       },
                       {
-                        "x": 111,
+                        "x": 64,
                         "y": 0
                       },
                       {
-                        "x": 111,
-                        "y": 128
+                        "x": 64,
+                        "y": 64
                       },
                       {
                         "x": 0,
-                        "y": 128
+                        "y": 64
                       }
                     ]
                   ]
@@ -4823,6 +5745,60 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "0bcc429b6cb259a7297640eae9bfc91fe0c6ea9defd96db32868844b6868cd8e",
+      "height": 512,
+      "name": "Ground_Map",
+      "persistentUuid": "fb2f8870-1b0c-4abb-b812-6ee5c0879bb7",
+      "texture": "Default size/towerDefense_tile024.png",
+      "type": "TiledSpriteObject::TiledSprite",
+      "width": 512,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Ground_Decoration",
+      "persistentUuid": "5bf4d238-6807-42e9-a06e-2eb488613a1d",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\StartingTree.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -4877,7 +5853,7 @@
         "objectName": "TowerShopBox"
       },
       {
-        "objectName": "PathBlocker"
+        "objectName": "Monster_Path"
       },
       {
         "objectName": "AssetCardPanel"
@@ -4953,10 +5929,75 @@
       },
       {
         "objectName": "RangeIndicator"
+      },
+      {
+        "objectName": "Ground_Map"
+      },
+      {
+        "objectName": "Ground_Decoration"
       }
     ]
   },
   "events": [
+    {
+      "type": "BuiltinCommonInstructions::Group",
+      "name": "Monster path initialization",
+      "source": "",
+      "colorB": 109,
+      "colorG": 143,
+      "colorR": 90,
+      "creationTime": 0,
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneJustBegins"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "// The scene's Monster_Path instances are the only source of route geometry.",
+                "const tiles = runtimeScene.getObjects(\"Monster_Path\").slice().sort((a, b) =>",
+                "  a.getVariables().get(\"PathOrder\").getAsNumber() - b.getVariables().get(\"PathOrder\").getAsNumber());",
+                "if (tiles.length < 2) throw new Error(\"Monster_Path needs a spawn tile and an end tile.\");",
+                "const route = runtimeScene.getVariables().get(\"MonsterPathPoints\");",
+                "route.clearChildren();",
+                "for (let i = 0; i < tiles.length; i++) {",
+                "  const tile = tiles[i];",
+                "  if (tile.getVariables().get(\"PathOrder\").getAsNumber() !== i)",
+                "    throw new Error(\"Monster_Path PathOrder must be unique and consecutive, starting at 0.\");",
+                "  if (i > 0) {",
+                "    const prev = tiles[i - 1];",
+                "    const dx = Math.abs(tile.getCenterXInScene() - prev.getCenterXInScene());",
+                "    const dy = Math.abs(tile.getCenterYInScene() - prev.getCenterYInScene());",
+                "    const horizontal = dy < 0.001 && dx > 0.001 && dx <= (tile.getWidth() + prev.getWidth()) / 2 + 0.001;",
+                "    const vertical = dx < 0.001 && dy > 0.001 && dy <= (tile.getHeight() + prev.getHeight()) / 2 + 0.001;",
+                "    if (!horizontal && !vertical) throw new Error(\"Monster_Path tiles must form a continuous, cardinal route.\");",
+                "  }",
+                "  const point = route.getChild(i);",
+                "  point.getChild(\"X\").setNumber(tile.getCenterXInScene());",
+                "  point.getChild(\"Y\").setNumber(tile.getCenterYInScene());",
+                "}",
+                "runtimeScene.getVariables().get(\"MonsterPathPointCount\").setNumber(tiles.length);"
+              ],
+              "parameterObjects": "",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
     {
       "colorB": 109,
       "colorG": 143,
@@ -5834,7 +6875,7 @@
               },
               "parameters": [
                 "TilePlacement_Indicator",
-                "PathBlocker",
+                "Monster_Path",
                 "",
                 "",
                 ""
@@ -6157,7 +7198,7 @@
           },
           "parameters": [
             "TilePlacement_Indicator",
-            "PathBlocker",
+            "Monster_Path",
             "",
             "",
             ""
@@ -6555,9 +7596,32 @@
               "parameters": [
                 "",
                 "Enemy",
-                "-50",
-                "100",
+                "MonsterPathPoints[0].X",
+                "MonsterPathPoints[0].Y",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetXY"
+              },
+              "parameters": [
+                "Enemy",
+                "=",
+                "MonsterPathPoints[0].X - Enemy.Width() / 2",
+                "=",
+                "MonsterPathPoints[0].Y - Enemy.Height() / 2"
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "Enemy",
+                "Animation",
+                "=",
+                "Enemy.VariableString(MovementAnimation)"
               ]
             },
             {
@@ -6605,356 +7669,77 @@
           ]
         },
         {
-          "aiGeneratedEventId": "01M48W34XHZ8QFW418BZFNMTKF",
           "type": "BuiltinCommonInstructions::ForEach",
-          "object": "Enemy",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "Enemy",
-                "Waypoint",
-                "=",
-                "0"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetXY"
-              },
-              "parameters": [
-                "Enemy",
-                "=",
-                "Enemy.X() + (1150 - Enemy.X()) / sqrt(pow(1150 - Enemy.X(), 2) + pow(100 - Enemy.Y(), 2)) * EnemySpeed * TimeDelta()",
-                "=",
-                "Enemy.Y() + (100 - Enemy.Y()) / sqrt(pow(1150 - Enemy.X(), 2) + pow(100 - Enemy.Y(), 2)) * EnemySpeed * TimeDelta()"
-              ]
-            }
-          ],
+          "object": "MonsterEnemies",
+          "conditions": [],
+          "actions": [],
           "events": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                  },
-                  "parameters": [
-                    "sqrt(pow(Enemy.X() - 1150, 2) + pow(Enemy.Y() - 100, 2))",
-                    "<",
-                    "6"
-                  ]
-                }
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "// Called once per picked MonsterEnemies instance. Consume the full movement budget",
+                "// through consecutive tile centers, even at corners or after a long frame.",
+                "const enemy = objects[0];",
+                "const vars = enemy.getVariables();",
+                "const sceneVars = runtimeScene.getVariables();",
+                "const route = sceneVars.get(\"MonsterPathPoints\");",
+                "const count = sceneVars.get(\"MonsterPathPointCount\").getAsNumber();",
+                "let waypoint = vars.get(\"Waypoint\").getAsNumber();",
+                "const speed = Math.max(0, sceneVars.get(\"EnemySpeed\").getAsNumber());",
+                "let budget = speed * gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene);",
+                "let moved = false;",
+                "let horizontalDirection = 0;",
+                "while (waypoint < count && budget > 0.000001) {",
+                "  const point = route.getChild(waypoint);",
+                "  const dx = point.getChild(\"X\").getAsNumber() - enemy.getCenterXInScene();",
+                "  const dy = point.getChild(\"Y\").getAsNumber() - enemy.getCenterYInScene();",
+                "  const distance = Math.hypot(dx, dy);",
+                "  if (distance < 0.000001) { waypoint++; continue; }",
+                "  const step = Math.min(distance, budget);",
+                "  enemy.setPosition(enemy.getX() + dx / distance * step, enemy.getY() + dy / distance * step);",
+                "  if (Math.abs(dx) > 0.000001) horizontalDirection = dx > 0 ? 1 : -1;",
+                "  moved = true;",
+                "  budget -= step;",
+                "  if (step >= distance - 0.000001) waypoint++;",
+                "}",
+                "vars.get(\"Waypoint\").setNumber(waypoint);",
+                "vars.get(\"PathFinished\").setBoolean(waypoint >= count);",
+                "vars.get(\"IsMoving\").setBoolean(moved);",
+                "if (horizontalDirection !== 0) enemy.flipX(horizontalDirection < 0);",
+                "const moveAnimation = vars.get(\"MovementAnimation\").getAsString();",
+                "const idleAnimation = vars.get(\"IdleAnimation\").getAsString();",
+                "const animation = moved || !idleAnimation ? moveAnimation : idleAnimation;",
+                "if (animation && enemy.getAnimationName() !== animation) enemy.setAnimationName(animation);",
+                "if (moved) {",
+                "  enemy.setAnimationSpeedScale(speed / Math.max(1, vars.get(\"AnimationReferenceSpeed\").getAsNumber()));",
+                "  enemy.playAnimation();",
+                "} else if (idleAnimation) {",
+                "  enemy.setAnimationSpeedScale(1);",
+                "  enemy.playAnimation();",
+                "} else {",
+                "  // Idle Run is a combined clip; pause its current frame when no separate idle exists.",
+                "  enemy.pauseAnimation();",
+                "}"
               ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Enemy",
-                    "Waypoint",
-                    "=",
-                    "1"
-                  ]
-                }
-              ]
+              "parameterObjects": "MonsterEnemies",
+              "useStrict": true,
+              "eventsSheetExpanded": false
             }
           ]
         },
         {
-          "aiGeneratedEventId": "01M48W34XHZ8QFW418BZFNMTKF",
           "type": "BuiltinCommonInstructions::ForEach",
-          "object": "Enemy",
+          "object": "MonsterEnemies",
           "conditions": [
             {
               "type": {
-                "value": "NumberObjectVariable"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
-                "Enemy",
-                "Waypoint",
-                "=",
-                "1"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetXY"
-              },
-              "parameters": [
-                "Enemy",
-                "=",
-                "Enemy.X() + (1150 - Enemy.X()) / sqrt(pow(1150 - Enemy.X(), 2) + pow(300 - Enemy.Y(), 2)) * EnemySpeed * TimeDelta()",
-                "=",
-                "Enemy.Y() + (300 - Enemy.Y()) / sqrt(pow(1150 - Enemy.X(), 2) + pow(300 - Enemy.Y(), 2)) * EnemySpeed * TimeDelta()"
-              ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                  },
-                  "parameters": [
-                    "sqrt(pow(Enemy.X() - 1150, 2) + pow(Enemy.Y() - 300, 2))",
-                    "<",
-                    "6"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Enemy",
-                    "Waypoint",
-                    "=",
-                    "2"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "aiGeneratedEventId": "01M48W34XHZ8QFW418BZFNMTKF",
-          "type": "BuiltinCommonInstructions::ForEach",
-          "object": "Enemy",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "Enemy",
-                "Waypoint",
-                "=",
-                "2"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetXY"
-              },
-              "parameters": [
-                "Enemy",
-                "=",
-                "Enemy.X() + (130 - Enemy.X()) / sqrt(pow(130 - Enemy.X(), 2) + pow(300 - Enemy.Y(), 2)) * EnemySpeed * TimeDelta()",
-                "=",
-                "Enemy.Y() + (300 - Enemy.Y()) / sqrt(pow(130 - Enemy.X(), 2) + pow(300 - Enemy.Y(), 2)) * EnemySpeed * TimeDelta()"
-              ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                  },
-                  "parameters": [
-                    "sqrt(pow(Enemy.X() - 130, 2) + pow(Enemy.Y() - 300, 2))",
-                    "<",
-                    "6"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Enemy",
-                    "Waypoint",
-                    "=",
-                    "3"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "aiGeneratedEventId": "01M48W34XHZ8QFW418BZFNMTKF",
-          "type": "BuiltinCommonInstructions::ForEach",
-          "object": "Enemy",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "Enemy",
-                "Waypoint",
-                "=",
-                "3"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetXY"
-              },
-              "parameters": [
-                "Enemy",
-                "=",
-                "Enemy.X() + (130 - Enemy.X()) / sqrt(pow(130 - Enemy.X(), 2) + pow(500 - Enemy.Y(), 2)) * EnemySpeed * TimeDelta()",
-                "=",
-                "Enemy.Y() + (500 - Enemy.Y()) / sqrt(pow(130 - Enemy.X(), 2) + pow(500 - Enemy.Y(), 2)) * EnemySpeed * TimeDelta()"
-              ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                  },
-                  "parameters": [
-                    "sqrt(pow(Enemy.X() - 130, 2) + pow(Enemy.Y() - 500, 2))",
-                    "<",
-                    "6"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Enemy",
-                    "Waypoint",
-                    "=",
-                    "4"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "aiGeneratedEventId": "01M48W34XHZ8QFW418BZFNMTKF",
-          "type": "BuiltinCommonInstructions::ForEach",
-          "object": "Enemy",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "Enemy",
-                "Waypoint",
-                "=",
-                "4"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetXY"
-              },
-              "parameters": [
-                "Enemy",
-                "=",
-                "Enemy.X() + (1250 - Enemy.X()) / sqrt(pow(1250 - Enemy.X(), 2) + pow(500 - Enemy.Y(), 2)) * EnemySpeed * TimeDelta()",
-                "=",
-                "Enemy.Y() + (500 - Enemy.Y()) / sqrt(pow(1250 - Enemy.X(), 2) + pow(500 - Enemy.Y(), 2)) * EnemySpeed * TimeDelta()"
-              ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::CompareNumbers"
-                  },
-                  "parameters": [
-                    "sqrt(pow(Enemy.X() - 1250, 2) + pow(Enemy.Y() - 500, 2))",
-                    "<",
-                    "6"
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetNumberObjectVariable"
-                  },
-                  "parameters": [
-                    "Enemy",
-                    "Waypoint",
-                    "=",
-                    "5"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "aiGeneratedEventId": "01M48W34XHZ8QFW418BZFNMTKF",
-          "type": "BuiltinCommonInstructions::ForEach",
-          "object": "Enemy",
-          "conditions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "Enemy",
-                "Waypoint",
-                "=",
-                "5"
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "SetX"
-              },
-              "parameters": [
-                "Enemy",
-                "+",
-                "EnemySpeed * TimeDelta()"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "PosX"
-              },
-              "parameters": [
-                "Enemy",
-                ">",
-                "1300"
+                "MonsterEnemies",
+                "PathFinished",
+                "True",
+                ""
               ]
             }
           ],
@@ -6964,7 +7749,7 @@
                 "value": "Delete"
               },
               "parameters": [
-                "Enemy",
+                "MonsterEnemies",
                 ""
               ]
             },
