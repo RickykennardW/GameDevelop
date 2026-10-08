@@ -1,0 +1,615 @@
+{
+  "generation": "Built-in image_gen; one generation per sprite/icon; alpha-preserving normalization at import",
+  "towerCanvas": [
+    512,
+    512
+  ],
+  "origin": [
+    0,
+    0
+  ],
+  "footprint": "fixed 64 x 64 world pixels",
+  "states": [
+    "0_0",
+    "0_1",
+    "0_2",
+    "0_3",
+    "0_4",
+    "1_0",
+    "1_1",
+    "1_2",
+    "1_3",
+    "1_4",
+    "2_0",
+    "2_1",
+    "2_2",
+    "2_3",
+    "2_4",
+    "3_0",
+    "3_1",
+    "3_2",
+    "4_0",
+    "4_1",
+    "4_2"
+  ],
+  "assets": [
+    {
+      "name": "ArcherTower_0_0",
+      "file": "assets/archer/ArcherTower_0_0.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "f0354e10e4ab4b6df5e26519623d8b4e54979437bc86bd9a3d3b14797cffbfc4",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherTower_0_1",
+      "file": "assets/archer/ArcherTower_0_1.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "515f296ce078d3b0f99bfe68233d060af20aad55698967cf3d3ff6f81bcda071",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherTower_0_2",
+      "file": "assets/archer/ArcherTower_0_2.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "fe7fb13f6c47b87a0cd6f69395ccec3e97a44c4a939164b878fed235f5b6466d",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherTower_0_3",
+      "file": "assets/archer/ArcherTower_0_3.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "cc814186fbd67c92b455ed0c45314ecaebe3c934c9d1c5e829be82dd14afdf1b",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherTower_0_4",
+      "file": "assets/archer/ArcherTower_0_4.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "728372a854c9dbb5bd916ba32a903cd48a2df3353d32fb2bd2f5475041788ef6",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherTower_1_0",
+      "file": "assets/archer/ArcherTower_1_0.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "9f91af414ff17939b7c742639d9cc7ae930785dad232fb8d1c5903d283dd0ed3",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherTower_1_1",
+      "file": "assets/archer/ArcherTower_1_1.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "785cf717af09dd09bbe5a8f59c2f6d09047da3c4139735955f527262b55904d9",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherTower_1_2",
+      "file": "assets/archer/ArcherTower_1_2.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "bb3ebe4f87be5517f0e34074c7a4a3110e22a9102df64fb3b23514a230071aa4",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherTower_1_3",
+      "file": "assets/archer/ArcherTower_1_3.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "ee5ef5208191eb3df85a948bd9b70b1ac3197a93067bc152f0df8e296f86a05c",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherTower_1_4",
+      "file": "assets/archer/ArcherTower_1_4.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "ecacd762395613b02ea75a3e869cee1ed92f01bbce5eef701be139e63773891a",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherTower_2_0",
+      "file": "assets/archer/ArcherTower_2_0.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "43db62da3fdcac0270640b07a2e3344755d0641a26de95505ec38d6eb440967a",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherTower_2_1",
+      "file": "assets/archer/ArcherTower_2_1.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "c5f8c7c5414b929f1a691c8b618b961733866c40f3c33ade19cb126c43849d56",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherTower_2_2",
+      "file": "assets/archer/ArcherTower_2_2.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "f71c8f9b25aae0318833aa978d63368684ed8807b9cd0a11518a44082c2c4921",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherTower_2_3",
+      "file": "assets/archer/ArcherTower_2_3.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "6c7ace022bd7c4c4399bcd0a0406d59cd3bbd1c7cdd28984f8f753e52e195d62",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherTower_2_4",
+      "file": "assets/archer/ArcherTower_2_4.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "85934d3115d64cd00f93c82880e23ab2e872f7ebfc1781367da03ba0655f8da0",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherTower_3_0",
+      "file": "assets/archer/ArcherTower_3_0.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "ea978b8a7fc2e63828bbec4120967d795b97b2ac132f3f87802e876a00bbf459",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherTower_3_1",
+      "file": "assets/archer/ArcherTower_3_1.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "3f612c4bc20a603ff433eede4e4be1fa67f7d10863e8157edaaf296d510966ca",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherTower_3_2",
+      "file": "assets/archer/ArcherTower_3_2.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "67ce3ed0c46105bc321ae6f23dcad8e4dc7addf48ca56af87c9559d2000ea36a",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherTower_4_0",
+      "file": "assets/archer/ArcherTower_4_0.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "3d9d60b5e95820f8b563754fea3fa6aed708451c334a0ad7c5643da4e02301a1",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherTower_4_1",
+      "file": "assets/archer/ArcherTower_4_1.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "f78fff92bc8767ccc053530d6298e07005858d21dc8f888dee7f08f4648b452f",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherTower_4_2",
+      "file": "assets/archer/ArcherTower_4_2.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "4986e654a1e7f27f449278b3f12d2e8c11a8fe2dfcfeef85058c8acd5705a771",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherUpgrade_P1_L1_Damage",
+      "file": "assets/archer/ArcherUpgrade_P1_L1_Damage.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "9c7c8219a9c206337a48437b749434e8bc96462773b594183932704c9edace23",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherUpgrade_P1_L2_AttackSpeed",
+      "file": "assets/archer/ArcherUpgrade_P1_L2_AttackSpeed.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "f0e7eaeb1f09647e38c51f8c5a32ec8904e072b243f518e113104ca32ef7a7a9",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherUpgrade_P1_L3_TwinArchers",
+      "file": "assets/archer/ArcherUpgrade_P1_L3_TwinArchers.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "650c212508a6fac94bc56271a3c4b47aa5e0807150e1ec8b45c6d6a83db720fe",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherUpgrade_P1_L4_ArrowStorm",
+      "file": "assets/archer/ArcherUpgrade_P1_L4_ArrowStorm.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "71d907ba4f2507b4afc52d40034e3d986d62ed95fa54459891a521cd6c69e0bc",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherUpgrade_P2_L1_Range",
+      "file": "assets/archer/ArcherUpgrade_P2_L1_Range.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "751adc667847778aee2234e9d569d44b0b16191d5295614bac80409c75825d9e",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherUpgrade_P2_L2_ProjectileSpeed",
+      "file": "assets/archer/ArcherUpgrade_P2_L2_ProjectileSpeed.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "99d8ee8273cd4480cca7b27136cb98d88a21eddad1ad710eaab977211d193122",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherUpgrade_P2_L3_PiercingCrossbow",
+      "file": "assets/archer/ArcherUpgrade_P2_L3_PiercingCrossbow.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "68591d14c8e283b2bf4935e7a83645f0749126836fa24acb23ef3bc3e1b27df7",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "ArcherUpgrade_P2_L4_HeavyBolts",
+      "file": "assets/archer/ArcherUpgrade_P2_L4_HeavyBolts.png",
+      "canvas": [
+        512,
+        512
+      ],
+      "sha256": "369c1a5a827eb233763566380cfd29a7061ede0a8c9d93ddf5c282a6c34de0fe",
+      "status": "generated-final",
+      "transparent": true
+    },
+    {
+      "name": "Archer_Arrow",
+      "file": "assets/archer/Archer_Arrow.png",
+      "canvas": [
+        512,
+        128
+      ],
+      "sha256": "2497822e03d307cd4fb3493354ead531ee14329ab6f5896519664a9e9c43d400",
+      "status": "generated-final",
+      "transparent": true,
+      "paddingNormalization": "Bounds use alpha > 8 to exclude nearly transparent outliers; original pixels inside bounds retained."
+    },
+    {
+      "name": "Archer_CrossbowBolt",
+      "file": "assets/archer/Archer_CrossbowBolt.png",
+      "canvas": [
+        512,
+        128
+      ],
+      "sha256": "63b09f8d3055a3645bd507deb7b12f4700a71ce81b82af1c105ee597f66d8526",
+      "status": "generated-final",
+      "transparent": true,
+      "paddingNormalization": "Bounds use alpha > 8 to exclude nearly transparent outliers; original pixels inside bounds retained."
+    }
+  ],
+  "config": {
+    "BaseDamage": 18,
+    "BaseInterval": 0.55,
+    "BaseRange": 210,
+    "BaseProjectileSpeed": 480,
+    "SharpenedDamage": 5,
+    "QuickInterval": 0.4,
+    "StormInterval": 0.24,
+    "EagleRange": 35,
+    "SwiftSpeed": 760,
+    "HeavyDamage": 12,
+    "Paths": [
+      {
+        "Name": "RAPID ARCHER",
+        "Upgrades": [
+          {
+            "Name": "SHARPENED ARROWS",
+            "Description": "Slightly increases damage.",
+            "Cost": 100,
+            "Icon": "ArcherUpgrade_P1_L1_Damage"
+          },
+          {
+            "Name": "QUICK DRAW",
+            "Description": "Increases attack speed.",
+            "Cost": 200,
+            "Icon": "ArcherUpgrade_P1_L2_AttackSpeed"
+          },
+          {
+            "Name": "TWIN ARCHERS",
+            "Description": "Adds a second Archer.",
+            "Cost": 650,
+            "Icon": "ArcherUpgrade_P1_L3_TwinArchers"
+          },
+          {
+            "Name": "ARROW STORM",
+            "Description": "Greatly increases attack speed.",
+            "Cost": 1200,
+            "Icon": "ArcherUpgrade_P1_L4_ArrowStorm"
+          }
+        ]
+      },
+      {
+        "Name": "CROSSBOW / PIERCING",
+        "Upgrades": [
+          {
+            "Name": "EAGLE EYE",
+            "Description": "Slightly increases range.",
+            "Cost": 100,
+            "Icon": "ArcherUpgrade_P2_L1_Range"
+          },
+          {
+            "Name": "SWIFT ARROWS",
+            "Description": "Arrows travel much faster.",
+            "Cost": 175,
+            "Icon": "ArcherUpgrade_P2_L2_ProjectileSpeed"
+          },
+          {
+            "Name": "PIERCING CROSSBOW",
+            "Description": "Bolts pierce up to 2 enemies.",
+            "Cost": 600,
+            "Icon": "ArcherUpgrade_P2_L3_PiercingCrossbow"
+          },
+          {
+            "Name": "HEAVY BOLTS",
+            "Description": "More damage. Pierces 3 enemies.",
+            "Cost": 1100,
+            "Icon": "ArcherUpgrade_P2_L4_HeavyBolts"
+          }
+        ]
+      }
+    ]
+  },
+  "towerBottomAnchor": 490,
+  "projectileCanvas": [
+    512,
+    128
+  ],
+  "renderOnlyTowerScale": 1.5,
+  "renderOnlyProjectileScale": 1.8,
+  "projectilePhysicalSize": [
+    22,
+    7
+  ],
+  "firingPoints": {
+    "0_0": [
+      [
+        345,
+        128
+      ]
+    ],
+    "0_1": [
+      [
+        343,
+        126
+      ]
+    ],
+    "0_2": [
+      [
+        344,
+        131
+      ]
+    ],
+    "0_3": [
+      [
+        351,
+        147
+      ]
+    ],
+    "0_4": [
+      [
+        370,
+        155
+      ]
+    ],
+    "1_0": [
+      [
+        344,
+        115
+      ]
+    ],
+    "1_1": [
+      [
+        350,
+        140
+      ]
+    ],
+    "1_2": [
+      [
+        340,
+        138
+      ]
+    ],
+    "1_3": [
+      [
+        329,
+        152
+      ]
+    ],
+    "1_4": [
+      [
+        359,
+        165
+      ]
+    ],
+    "2_0": [
+      [
+        345,
+        145
+      ]
+    ],
+    "2_1": [
+      [
+        349,
+        133
+      ]
+    ],
+    "2_2": [
+      [
+        347,
+        131
+      ]
+    ],
+    "2_3": [
+      [
+        366,
+        151
+      ]
+    ],
+    "2_4": [
+      [
+        365,
+        150
+      ]
+    ],
+    "3_0": [
+      [
+        170,
+        138
+      ],
+      [
+        355,
+        163
+      ]
+    ],
+    "3_1": [
+      [
+        175,
+        140
+      ],
+      [
+        355,
+        167
+      ]
+    ],
+    "3_2": [
+      [
+        171,
+        133
+      ],
+      [
+        342,
+        171
+      ]
+    ],
+    "4_0": [
+      [
+        164,
+        137
+      ],
+      [
+        369,
+        141
+      ]
+    ],
+    "4_1": [
+      [
+        168,
+        150
+      ],
+      [
+        352,
+        128
+      ]
+    ],
+    "4_2": [
+      [
+        169,
+        135
+      ],
+      [
+        340,
+        197
+      ]
+    ]
+  }
+}

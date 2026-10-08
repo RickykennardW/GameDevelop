@@ -714,6 +714,254 @@
         "name": "Default size/towerDefense_tile203.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherTower_0_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherTower_0_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherTower_0_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherTower_0_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherTower_0_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherTower_0_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherTower_0_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherTower_0_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherTower_0_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherTower_0_4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherTower_1_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherTower_1_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherTower_1_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherTower_1_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherTower_1_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherTower_1_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherTower_1_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherTower_1_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherTower_1_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherTower_1_4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherTower_2_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherTower_2_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherTower_2_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherTower_2_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherTower_2_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherTower_2_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherTower_2_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherTower_2_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherTower_2_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherTower_2_4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherTower_3_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherTower_3_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherTower_3_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherTower_3_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherTower_3_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherTower_3_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherTower_4_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherTower_4_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherTower_4_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherTower_4_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherTower_4_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherTower_4_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherUpgrade_P1_L1_Damage.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherUpgrade_P1_L1_Damage.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherUpgrade_P1_L2_AttackSpeed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherUpgrade_P1_L2_AttackSpeed.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherUpgrade_P1_L3_TwinArchers.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherUpgrade_P1_L3_TwinArchers.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherUpgrade_P1_L4_ArrowStorm.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherUpgrade_P1_L4_ArrowStorm.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherUpgrade_P2_L1_Range.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherUpgrade_P2_L1_Range.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherUpgrade_P2_L2_ProjectileSpeed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherUpgrade_P2_L2_ProjectileSpeed.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherUpgrade_P2_L3_PiercingCrossbow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherUpgrade_P2_L3_PiercingCrossbow.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/ArcherUpgrade_P2_L4_HeavyBolts.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/ArcherUpgrade_P2_L4_HeavyBolts.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/Archer_Arrow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/Archer_Arrow.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/archer/Archer_CrossbowBolt.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/archer/Archer_CrossbowBolt.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ]
   },

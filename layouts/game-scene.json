@@ -37,6 +37,9 @@
         },
         {
           "name": "RocketTower"
+        },
+        {
+          "name": "ArcherTower"
         }
       ]
     },
@@ -351,6 +354,32 @@
               "name": "IconAnimation",
               "type": "string",
               "value": "RocketTower"
+            }
+          ]
+        },
+        {
+          "name": "3",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Type",
+              "type": "string",
+              "value": "ArcherTower"
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "ARCHER TOWER"
+            },
+            {
+              "name": "Cost",
+              "type": "number",
+              "value": 300
+            },
+            {
+              "name": "IconAnimation",
+              "type": "string",
+              "value": "ArcherTower"
             }
           ]
         }
@@ -2575,6 +2604,315 @@
     },
     {
       "name": "MapRouteDirty",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "ArcherConfig",
+      "type": "structure",
+      "children": [
+        {
+          "name": "BaseDamage",
+          "type": "number",
+          "value": 18
+        },
+        {
+          "name": "BaseInterval",
+          "type": "number",
+          "value": 0.55
+        },
+        {
+          "name": "BaseRange",
+          "type": "number",
+          "value": 210
+        },
+        {
+          "name": "BaseProjectileSpeed",
+          "type": "number",
+          "value": 480
+        },
+        {
+          "name": "SharpenedDamage",
+          "type": "number",
+          "value": 5
+        },
+        {
+          "name": "QuickInterval",
+          "type": "number",
+          "value": 0.4
+        },
+        {
+          "name": "StormInterval",
+          "type": "number",
+          "value": 0.24
+        },
+        {
+          "name": "EagleRange",
+          "type": "number",
+          "value": 35
+        },
+        {
+          "name": "SwiftSpeed",
+          "type": "number",
+          "value": 760
+        },
+        {
+          "name": "HeavyDamage",
+          "type": "number",
+          "value": 12
+        },
+        {
+          "name": "Paths",
+          "type": "array",
+          "children": [
+            {
+              "name": "0",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Name",
+                  "type": "string",
+                  "value": "RAPID ARCHER"
+                },
+                {
+                  "name": "Upgrades",
+                  "type": "array",
+                  "children": [
+                    {
+                      "name": "0",
+                      "type": "structure",
+                      "children": [
+                        {
+                          "name": "Name",
+                          "type": "string",
+                          "value": "SHARPENED ARROWS"
+                        },
+                        {
+                          "name": "Description",
+                          "type": "string",
+                          "value": "Slightly increases damage."
+                        },
+                        {
+                          "name": "Cost",
+                          "type": "number",
+                          "value": 100
+                        },
+                        {
+                          "name": "Icon",
+                          "type": "string",
+                          "value": "ArcherUpgrade_P1_L1_Damage"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "1",
+                      "type": "structure",
+                      "children": [
+                        {
+                          "name": "Name",
+                          "type": "string",
+                          "value": "QUICK DRAW"
+                        },
+                        {
+                          "name": "Description",
+                          "type": "string",
+                          "value": "Increases attack speed."
+                        },
+                        {
+                          "name": "Cost",
+                          "type": "number",
+                          "value": 200
+                        },
+                        {
+                          "name": "Icon",
+                          "type": "string",
+                          "value": "ArcherUpgrade_P1_L2_AttackSpeed"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2",
+                      "type": "structure",
+                      "children": [
+                        {
+                          "name": "Name",
+                          "type": "string",
+                          "value": "TWIN ARCHERS"
+                        },
+                        {
+                          "name": "Description",
+                          "type": "string",
+                          "value": "Adds a second Archer."
+                        },
+                        {
+                          "name": "Cost",
+                          "type": "number",
+                          "value": 650
+                        },
+                        {
+                          "name": "Icon",
+                          "type": "string",
+                          "value": "ArcherUpgrade_P1_L3_TwinArchers"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "3",
+                      "type": "structure",
+                      "children": [
+                        {
+                          "name": "Name",
+                          "type": "string",
+                          "value": "ARROW STORM"
+                        },
+                        {
+                          "name": "Description",
+                          "type": "string",
+                          "value": "Greatly increases attack speed."
+                        },
+                        {
+                          "name": "Cost",
+                          "type": "number",
+                          "value": 1200
+                        },
+                        {
+                          "name": "Icon",
+                          "type": "string",
+                          "value": "ArcherUpgrade_P1_L4_ArrowStorm"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "1",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Name",
+                  "type": "string",
+                  "value": "CROSSBOW / PIERCING"
+                },
+                {
+                  "name": "Upgrades",
+                  "type": "array",
+                  "children": [
+                    {
+                      "name": "0",
+                      "type": "structure",
+                      "children": [
+                        {
+                          "name": "Name",
+                          "type": "string",
+                          "value": "EAGLE EYE"
+                        },
+                        {
+                          "name": "Description",
+                          "type": "string",
+                          "value": "Slightly increases range."
+                        },
+                        {
+                          "name": "Cost",
+                          "type": "number",
+                          "value": 100
+                        },
+                        {
+                          "name": "Icon",
+                          "type": "string",
+                          "value": "ArcherUpgrade_P2_L1_Range"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "1",
+                      "type": "structure",
+                      "children": [
+                        {
+                          "name": "Name",
+                          "type": "string",
+                          "value": "SWIFT ARROWS"
+                        },
+                        {
+                          "name": "Description",
+                          "type": "string",
+                          "value": "Arrows travel much faster."
+                        },
+                        {
+                          "name": "Cost",
+                          "type": "number",
+                          "value": 175
+                        },
+                        {
+                          "name": "Icon",
+                          "type": "string",
+                          "value": "ArcherUpgrade_P2_L2_ProjectileSpeed"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2",
+                      "type": "structure",
+                      "children": [
+                        {
+                          "name": "Name",
+                          "type": "string",
+                          "value": "PIERCING CROSSBOW"
+                        },
+                        {
+                          "name": "Description",
+                          "type": "string",
+                          "value": "Bolts pierce up to 2 enemies."
+                        },
+                        {
+                          "name": "Cost",
+                          "type": "number",
+                          "value": 600
+                        },
+                        {
+                          "name": "Icon",
+                          "type": "string",
+                          "value": "ArcherUpgrade_P2_L3_PiercingCrossbow"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "3",
+                      "type": "structure",
+                      "children": [
+                        {
+                          "name": "Name",
+                          "type": "string",
+                          "value": "HEAVY BOLTS"
+                        },
+                        {
+                          "name": "Description",
+                          "type": "string",
+                          "value": "More damage. Pierces 3 enemies."
+                        },
+                        {
+                          "name": "Cost",
+                          "type": "number",
+                          "value": 1100
+                        },
+                        {
+                          "name": "Icon",
+                          "type": "string",
+                          "value": "ArcherUpgrade_P2_L4_HeavyBolts"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SelectedPanelPointerInside",
       "type": "boolean",
       "value": false
     }
@@ -6843,6 +7181,102 @@
       "stringProperties": [],
       "initialVariables": [],
       "keepRatio": false
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Ground_Decoration",
+      "persistentUuid": "c0f6aa84-5159-40d1-a831-9cd58775ce61",
+      "width": 64,
+      "x": 450,
+      "y": 288,
+      "zOrder": -5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Ground_Decoration",
+      "persistentUuid": "e335ef83-fef7-4a1b-a142-11a45f82d043",
+      "width": 64,
+      "x": 514,
+      "y": 480,
+      "zOrder": -5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Ground_Decoration",
+      "persistentUuid": "badc02ec-27bc-4d3b-ae1f-18cf2fb3ea2d",
+      "width": 64,
+      "x": 578,
+      "y": 672,
+      "zOrder": -5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Ground_Decoration",
+      "persistentUuid": "f9428010-e5be-4f20-816b-5b44051e796b",
+      "width": 64,
+      "x": 642,
+      "y": 864,
+      "zOrder": -5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Ground_Decoration",
+      "persistentUuid": "56e08a11-92b0-4c35-9104-88c4e327d4a2",
+      "width": 64,
+      "x": 706,
+      "y": 288,
+      "zOrder": -5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 64,
+      "keepRatio": false,
+      "layer": "",
+      "name": "Ground_Decoration",
+      "persistentUuid": "b07d2f15-6702-4223-9183-7d65954b698e",
+      "width": 64,
+      "x": 770,
+      "y": 480,
+      "zOrder": -5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -6993,6 +7427,54 @@
                       {
                         "x": 4.25,
                         "y": 7.375
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ArcherTower",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_0_0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 511,
+                        "y": 1
+                      },
+                      {
+                        "x": 511,
+                        "y": 511
+                      },
+                      {
+                        "x": 1,
+                        "y": 511
                       }
                     ]
                   ]
@@ -7209,6 +7691,54 @@
                       {
                         "x": 0,
                         "y": 8
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ArcherTower",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/archer/ArcherTower_0_0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
                       }
                     ]
                   ]
@@ -10669,6 +11199,54 @@
               ]
             }
           ]
+        },
+        {
+          "name": "ArcherTower",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/archer/ArcherTower_0_0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -11636,6 +12214,3254 @@
         "lineHeight": 0,
         "color": "255;230;144"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "ArcherTower",
+      "persistentUuid": "36938f6b-ffb7-45aa-aacb-a2e18b8eed8f",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "TowerId",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "PurchasePrice",
+          "type": "number",
+          "value": 300
+        },
+        {
+          "name": "TotalInvestment",
+          "type": "number",
+          "value": 300
+        },
+        {
+          "name": "DamageDealt",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Damage",
+          "type": "number",
+          "value": 18
+        },
+        {
+          "name": "AttackRange",
+          "type": "number",
+          "value": 210
+        },
+        {
+          "name": "AttackInterval",
+          "type": "number",
+          "value": 0.55
+        },
+        {
+          "name": "ProjectileSpeed",
+          "type": "number",
+          "value": 480
+        },
+        {
+          "name": "ProjectilePierce",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "ArcherCount",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "name": "Path1Level",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Path2Level",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "CurrentDamage",
+          "type": "number",
+          "value": 18
+        },
+        {
+          "name": "CurrentRange",
+          "type": "number",
+          "value": 210
+        },
+        {
+          "name": "CurrentAttackInterval",
+          "type": "number",
+          "value": 0.55
+        },
+        {
+          "name": "CurrentProjectileSpeed",
+          "type": "number",
+          "value": 480
+        },
+        {
+          "name": "SellValue",
+          "type": "number",
+          "value": 210
+        },
+        {
+          "name": "TowerName",
+          "type": "string",
+          "value": "Archer Tower"
+        },
+        {
+          "name": "TowerType",
+          "type": "string",
+          "value": "Archer"
+        },
+        {
+          "name": "VisualKey",
+          "type": "string",
+          "value": "0_0"
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 0.55,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 0,
+          "BulletQuantity": 1,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "0_0",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_0_0.png",
+                  "points": [
+                    {
+                      "name": "FirePointA",
+                      "x": 345,
+                      "y": 128
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "0_1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_0_1.png",
+                  "points": [
+                    {
+                      "name": "FirePointA",
+                      "x": 343,
+                      "y": 126
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "0_2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_0_2.png",
+                  "points": [
+                    {
+                      "name": "FirePointA",
+                      "x": 344,
+                      "y": 131
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "0_3",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_0_3.png",
+                  "points": [
+                    {
+                      "name": "FirePointA",
+                      "x": 351,
+                      "y": 147
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "0_4",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_0_4.png",
+                  "points": [
+                    {
+                      "name": "FirePointA",
+                      "x": 370,
+                      "y": 155
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "1_0",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_1_0.png",
+                  "points": [
+                    {
+                      "name": "FirePointA",
+                      "x": 344,
+                      "y": 115
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "1_1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_1_1.png",
+                  "points": [
+                    {
+                      "name": "FirePointA",
+                      "x": 350,
+                      "y": 140
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "1_2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_1_2.png",
+                  "points": [
+                    {
+                      "name": "FirePointA",
+                      "x": 340,
+                      "y": 138
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "1_3",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_1_3.png",
+                  "points": [
+                    {
+                      "name": "FirePointA",
+                      "x": 329,
+                      "y": 152
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "1_4",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_1_4.png",
+                  "points": [
+                    {
+                      "name": "FirePointA",
+                      "x": 359,
+                      "y": 165
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "2_0",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_2_0.png",
+                  "points": [
+                    {
+                      "name": "FirePointA",
+                      "x": 345,
+                      "y": 145
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "2_1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_2_1.png",
+                  "points": [
+                    {
+                      "name": "FirePointA",
+                      "x": 349,
+                      "y": 133
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "2_2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_2_2.png",
+                  "points": [
+                    {
+                      "name": "FirePointA",
+                      "x": 347,
+                      "y": 131
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "2_3",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_2_3.png",
+                  "points": [
+                    {
+                      "name": "FirePointA",
+                      "x": 366,
+                      "y": 151
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "2_4",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_2_4.png",
+                  "points": [
+                    {
+                      "name": "FirePointA",
+                      "x": 365,
+                      "y": 150
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "3_0",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_3_0.png",
+                  "points": [
+                    {
+                      "name": "FirePointA",
+                      "x": 170,
+                      "y": 138
+                    },
+                    {
+                      "name": "FirePointB",
+                      "x": 355,
+                      "y": 163
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "3_1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_3_1.png",
+                  "points": [
+                    {
+                      "name": "FirePointA",
+                      "x": 175,
+                      "y": 140
+                    },
+                    {
+                      "name": "FirePointB",
+                      "x": 355,
+                      "y": 167
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "3_2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_3_2.png",
+                  "points": [
+                    {
+                      "name": "FirePointA",
+                      "x": 171,
+                      "y": 133
+                    },
+                    {
+                      "name": "FirePointB",
+                      "x": 342,
+                      "y": 171
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "4_0",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_4_0.png",
+                  "points": [
+                    {
+                      "name": "FirePointA",
+                      "x": 164,
+                      "y": 137
+                    },
+                    {
+                      "name": "FirePointB",
+                      "x": 369,
+                      "y": 141
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "4_1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_4_1.png",
+                  "points": [
+                    {
+                      "name": "FirePointA",
+                      "x": 168,
+                      "y": 150
+                    },
+                    {
+                      "name": "FirePointB",
+                      "x": 352,
+                      "y": 128
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "4_2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_4_2.png",
+                  "points": [
+                    {
+                      "name": "FirePointA",
+                      "x": 169,
+                      "y": 135
+                    },
+                    {
+                      "name": "FirePointB",
+                      "x": 340,
+                      "y": 197
+                    }
+                  ],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "b9c7dea224a0b7ecf6d781229de6dc63e728a91488a2035afa17e737aa51a4c6",
+      "name": "ArcherProjectile",
+      "persistentUuid": "29c47190-b6de-4c59-a49b-38950ef95929",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "OwnerTowerId",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "Damage",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "HitHealthBefore",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "ActualDamage",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "RemainingHits",
+          "type": "number",
+          "value": 1
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Arrow",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/Archer_Arrow.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 96
+                      },
+                      {
+                        "x": 32,
+                        "y": 96
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bolt",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/Archer_CrossbowBolt.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 32,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 32
+                      },
+                      {
+                        "x": 480,
+                        "y": 96
+                      },
+                      {
+                        "x": 32,
+                        "y": 96
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "SelectedTowerPreview",
+      "persistentUuid": "8699c088-c9ad-4e7c-ab0d-5bd1d1e32856",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "ShotgunTower",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Shotgun Vertical_Aiming.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 58,
+                        "y": 0
+                      },
+                      {
+                        "x": 58,
+                        "y": 99
+                      },
+                      {
+                        "x": 0,
+                        "y": 99
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tower",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\StartingTower.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "RocketTower",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Missile.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 8
+                      },
+                      {
+                        "x": 0,
+                        "y": 8
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "0_0",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_0_0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "0_1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_0_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "0_2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_0_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "0_3",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_0_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "0_4",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_0_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "1_0",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_1_0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "1_1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_1_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "1_2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_1_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "1_3",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_1_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "1_4",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_1_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "2_0",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_2_0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "2_1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_2_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "2_2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_2_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "2_3",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_2_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "2_4",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_2_4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "3_0",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_3_0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "3_1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_3_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "3_2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_3_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "4_0",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_4_0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "4_1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_4_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "4_2",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/archer/ArcherTower_4_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "ArcherUpgradeIcon",
+      "persistentUuid": "482c9d09-de29-464d-853f-af69b7d84348",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "ArcherUpgrade_P1_L1_Damage",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/archer/ArcherUpgrade_P1_L1_Damage.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ArcherUpgrade_P1_L2_AttackSpeed",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/archer/ArcherUpgrade_P1_L2_AttackSpeed.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ArcherUpgrade_P1_L3_TwinArchers",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/archer/ArcherUpgrade_P1_L3_TwinArchers.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ArcherUpgrade_P1_L4_ArrowStorm",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/archer/ArcherUpgrade_P1_L4_ArrowStorm.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ArcherUpgrade_P2_L1_Range",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/archer/ArcherUpgrade_P2_L1_Range.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ArcherUpgrade_P2_L2_ProjectileSpeed",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/archer/ArcherUpgrade_P2_L2_ProjectileSpeed.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ArcherUpgrade_P2_L3_PiercingCrossbow",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/archer/ArcherUpgrade_P2_L3_PiercingCrossbow.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ArcherUpgrade_P2_L4_HeavyBolts",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/archer/ArcherUpgrade_P2_L4_HeavyBolts.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 128,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 232
+                      },
+                      {
+                        "x": 384,
+                        "y": 488
+                      },
+                      {
+                        "x": 128,
+                        "y": 488
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 16,
+      "height": 48,
+      "leftMargin": 16,
+      "name": "SelectedPanelBackground",
+      "persistentUuid": "7e3e061a-6c34-46b3-ba4b-cc508b14cd7b",
+      "rightMargin": 16,
+      "texture": "assets/ui/fantasy-frame.svg",
+      "tiled": false,
+      "topMargin": 16,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 48,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 10,
+      "height": 48,
+      "leftMargin": 10,
+      "name": "SelectedPanelPlaque",
+      "persistentUuid": "09f01afc-32d3-4170-b308-2992b2221f6e",
+      "rightMargin": 10,
+      "texture": "assets/ui/fantasy-plaque.svg",
+      "tiled": false,
+      "topMargin": 10,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 48,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 28,
+      "height": 48,
+      "leftMargin": 10,
+      "name": "SelectedUpgradeCard",
+      "persistentUuid": "b3b2bb04-0fb5-4da4-9374-3178817c84dd",
+      "rightMargin": 10,
+      "texture": "assets/ui/fantasy-card.svg",
+      "tiled": false,
+      "topMargin": 12,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 48,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "SelectedPanelText",
+      "persistentUuid": "485824d1-131b-420b-9e4c-2156dfa3c388",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 11,
+      "color": {
+        "b": 48,
+        "g": 52,
+        "r": 39
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 11,
+        "lineHeight": 0,
+        "color": "39;52;48"
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "SelectedProgressBlock",
+      "persistentUuid": "ebb4edc9-a328-4389-b696-f97ac71ae4d7",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Bar",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/ui/enemy-health-pixel.svg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 16,
+      "height": 48,
+      "leftMargin": 16,
+      "name": "WaveBannerPanel",
+      "persistentUuid": "038057eb-52cd-4ed7-b9f8-2a466fe52efc",
+      "rightMargin": 16,
+      "texture": "assets/ui/fantasy-frame.svg",
+      "tiled": false,
+      "topMargin": 16,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 48,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "WaveBannerTitle",
+      "persistentUuid": "a5492286-f1a9-4cdd-82f1-9af04e609de9",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 11,
+      "color": {
+        "b": 48,
+        "g": 52,
+        "r": 39
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 11,
+        "lineHeight": 0,
+        "color": "39;52;48"
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bold": true,
+      "italic": false,
+      "name": "WaveBannerDetail",
+      "persistentUuid": "5eaaf45f-d512-4bcb-ac0d-04af547b82a9",
+      "smoothed": true,
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "string": "",
+      "font": "",
+      "textAlignment": "left",
+      "characterSize": 11,
+      "color": {
+        "b": 48,
+        "g": 52,
+        "r": 39
+      },
+      "content": {
+        "bold": true,
+        "isOutlineEnabled": false,
+        "isShadowEnabled": false,
+        "italic": false,
+        "outlineColor": "255;255;255",
+        "outlineThickness": 2,
+        "shadowAngle": 90,
+        "shadowBlurRadius": 2,
+        "shadowColor": "0;0;0",
+        "shadowDistance": 4,
+        "shadowOpacity": 127,
+        "smoothed": true,
+        "underlined": false,
+        "text": "",
+        "font": "",
+        "textAlignment": "left",
+        "verticalTextAlignment": "top",
+        "characterSize": 11,
+        "lineHeight": 0,
+        "color": "39;52;48"
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -11835,6 +15661,42 @@
       },
       {
         "objectName": "ShopSpeedBadge"
+      },
+      {
+        "objectName": "ArcherTower"
+      },
+      {
+        "objectName": "ArcherProjectile"
+      },
+      {
+        "objectName": "SelectedTowerPreview"
+      },
+      {
+        "objectName": "ArcherUpgradeIcon"
+      },
+      {
+        "objectName": "SelectedPanelBackground"
+      },
+      {
+        "objectName": "SelectedPanelPlaque"
+      },
+      {
+        "objectName": "SelectedUpgradeCard"
+      },
+      {
+        "objectName": "SelectedPanelText"
+      },
+      {
+        "objectName": "SelectedProgressBlock"
+      },
+      {
+        "objectName": "WaveBannerPanel"
+      },
+      {
+        "objectName": "WaveBannerTitle"
+      },
+      {
+        "objectName": "WaveBannerDetail"
       }
     ]
   },
@@ -11920,7 +15782,7 @@
             "const safeTop = 16 + hudHeight + 20;",
             "const mapFrame = { left: 16, top: safeTop, right: Math.max(17,gameAreaRight-16), bottom: Math.max(safeTop+1,height-24) };",
             "const layoutKey = [gameAreaRight,height,hudHeight].join(\",\");",
-            "const unitsExist = get(\"Enemy\").length || get(\"Tower\").length || get(\"ShotgunTower\").length || get(\"RocketTower\").length || get(\"Bullet\").length || get(\"RocketBullet\").length;",
+            "const unitsExist = get(\"Enemy\").length || get(\"Tower\").length || get(\"ShotgunTower\").length || get(\"RocketTower\").length || get(\"ArcherTower\").length || get(\"ArcherProjectile\").length || get(\"Bullet\").length || get(\"RocketBullet\").length;",
             "if (!ui.level || (ui.level.key !== layoutKey && !unitsExist && !boolean(\"WaveActive\"))) {",
             "  const buildZoom = Math.max(0.025,Math.min(1,(height-safeTop-24)/992));",
             "  const worldWidth = gameAreaRight/buildZoom;",
@@ -11958,7 +15820,13 @@
             "    [middle,(rows[2]+64+rows[3])/2-32],",
             "    [left+256,(rows[3]+64+rows[4])/2-32],",
             "    [right-256,firstY-96],",
-            "    [right-320,(rows[2]+64+rows[3])/2-32]",
+            "    [right-320,(rows[2]+64+rows[3])/2-32],",
+            "    [left+(right-left)*.28-32,(rows[0]+64+rows[1])/2-32],",
+            "    [left+(right-left)*.68-32,(rows[0]+64+rows[1])/2-32],",
+            "    [left+(right-left)*.35-32,(rows[1]+64+rows[2])/2-32],",
+            "    [left+(right-left)*.70-32,(rows[2]+64+rows[3])/2-32],",
+            "    [left+(right-left)*.36-32,(rows[3]+64+rows[4])/2-32],",
+            "    [left+(right-left)*.72-32,(rows[3]+64+rows[4])/2-32]",
             "  ];",
             "  trees.forEach((tree,i)=>{tree.setPosition(...treePoints[i%treePoints.length]);});",
             "  // Fit road, markers and decorations. Ground coverage is independent of these bounds.",
@@ -11971,7 +15839,7 @@
             "}",
             "const bounds = {...ui.mapBounds};",
             "// Towers built on edge grass must stay visible after a later resize as well.",
-            "for(const tower of [...get(\"Tower\"),...get(\"ShotgunTower\"),...get(\"RocketTower\")]) {",
+            "for(const tower of [...get(\"Tower\"),...get(\"ShotgunTower\"),...get(\"RocketTower\"),...get(\"ArcherTower\")]) {",
             "  bounds.left=Math.min(bounds.left,tower.getX()-16);bounds.top=Math.min(bounds.top,tower.getY()-16);",
             "  bounds.right=Math.max(bounds.right,tower.getX()+tower.getWidth()+16);bounds.bottom=Math.max(bounds.bottom,tower.getY()+tower.getHeight()+16);",
             "}",
@@ -12056,24 +15924,26 @@
             "    if (card.icon.hasBehavior(\"Effect\")) card.icon.getBehavior(\"Effect\").enableEffect(\"Outline\", false);",
             "    card.icon.setAnimationName(item.IconAnimation || item.Type);",
             "    const ratio = card.icon.getWidth() / Math.max(1, card.icon.getHeight());",
-            "    card.iconWidth = ratio > 1 ? 44 : 44 * ratio;",
-            "    card.iconHeight = ratio > 1 ? 44 / ratio : 44;",
+            "    card.iconWidth = ratio > 1 ? 56 : 56 * ratio;",
+            "    card.iconHeight = ratio > 1 ? 56 / ratio : 56;",
             "  }",
             "  const card = ui.cards[i];",
             "  card.item = item;",
             "  card.icon.getVariables().get(\"TowerType\").setString(item.Type);",
             "  card.icon.getVariables().get(\"Cost\").setNumber(item.Cost);",
-            "  card.name.setString(item.Name);",
+            "  card.name.setString(item.Type === \"ArcherTower\" ? \"Archer\" : item.Name);",
+            "  card.name.setCharacterSize(11);card.name.setWrapping(true);card.name.setWrappingWidth(76);card.name.setTextAlignment(\"center\");",
+            "  card.price.setCharacterSize(13);card.price.setWrapping(true);card.price.setWrappingWidth(46);card.price.setTextAlignment(\"center\");",
             "  card.price.setString(String(item.Cost));",
             "}",
-            "const contentHeight = Math.ceil(catalog.length / 2) * 108 - 8;",
+            "const contentHeight = Math.ceil(catalog.length / 2) * 120 - 8;",
             "const maxScroll = Math.max(0, contentHeight - geometry.listHeight);",
             "let scroll = Math.max(0, Math.min(maxScroll, number(\"TowerShopScroll\")));",
             "const input = scene.getGame().getInputManager();",
             "const mx = gdjs.evtTools.input.getCursorX(scene, \"UI\", 0);",
             "const my = gdjs.evtTools.input.getCursorY(scene, \"UI\", 0);",
             "const inside = (x,y,w,h) => mx >= x && mx < x+w && my >= y && my < y+h;",
-            "const shopVisible = number(\"SelectedTower\") === 0 && !modal;",
+            "const shopVisible = !modal;",
             "const inList = inside(geometry.listX, geometry.listY, geometry.listWidth, geometry.listHeight);",
             "const inTrack = inside(geometry.trackX - 3, geometry.listY, 14, geometry.listHeight);",
             "variables.get(\"TowerShopPointerInside\").setBoolean(shopVisible && inList);",
@@ -12083,8 +15953,8 @@
             "const hoveredIndex = () => {",
             "  if (!shopVisible || !inList) return -1;",
             "  const x = mx - geometry.listX, y = my - geometry.listY + scroll;",
-            "  const col = Math.floor(x / 92), row = Math.floor(y / 108), index = row * 2 + col;",
-            "  return col < 2 && x % 92 < 84 && y % 108 < 100 && index < catalog.length ? index : -1;",
+            "  const col = Math.floor(x / 92), row = Math.floor(y / 120), index = row * 2 + col;",
+            "  return col < 2 && x % 92 < 84 && y % 120 < 112 && index < catalog.length ? index : -1;",
             "};",
             "const ready = !boolean(\"WaveActive\") && !boolean(\"GameOver\") && number(\"Wave\") < 50;",
             "const overIndex = !modal && inside(1168, geometry.playY, 92, 60);",
@@ -12118,21 +15988,21 @@
             "hovered = hoveredIndex();",
             "ui.mask.clear().beginFill(0xffffff).drawRect(geometry.listX, geometry.listY, geometry.listWidth, geometry.listHeight).endFill();",
             "ui.cards.forEach((card, i) => {",
-            "  const x = geometry.listX + (i % 2) * 92, y = geometry.listY + Math.floor(i / 2) * 108 - scroll;",
-            "  card.background.setPosition(x, y); card.background.setWidth(84); card.background.setHeight(100);",
+            "  const x = geometry.listX + (i % 2) * 92, y = geometry.listY + Math.floor(i / 2) * 120 - scroll;",
+            "  card.background.setPosition(x, y); card.background.setWidth(84); card.background.setHeight(112);",
             "  const pressed = down && ui.pressedCard === i && hovered === i;",
             "  const scale = pressed ? 0.94 : hovered === i ? 1.04 : 1;",
             "  card.icon.setWidth(card.iconWidth * scale); card.icon.setHeight(card.iconHeight * scale);",
-            "  card.icon.setPosition(x + 42 - card.icon.getWidth()/2, y + 47 - card.icon.getHeight()/2);",
-            "  card.name.setPosition(x + 4, y + 7); card.name.setWidth(76); card.name.setHeight(18);",
-            "  card.coin.setPosition(x + 13, y + 79); card.coin.setWidth(15); card.coin.setHeight(15);",
-            "  card.price.setPosition(x + 31, y + 77); card.price.setWidth(46); card.price.setHeight(20);",
+            "  card.icon.setPosition(x + 42 - card.icon.getWidth()/2, y + 51 - card.icon.getHeight()/2);",
+            "  card.name.setPosition(x + 4, y + 5); card.name.setWidth(76); card.name.setHeight(18);",
+            "  card.coin.setPosition(x + 13, y + 91); card.coin.setWidth(15); card.coin.setHeight(15);",
+            "  card.price.setPosition(x + 31, y + 91); card.price.setWidth(46); card.price.setHeight(20);",
             "});",
             "rect(\"ShopScrollThumb\", geometry.trackX, geometry.listY + (maxScroll > 0 ? scroll / maxScroll * (geometry.listHeight - thumbHeight) : 0), 8, thumbHeight);",
             "ui.scrollMax = maxScroll; ui.hovered = hovered; ui.ready = ready; ui.overPlay = overPlay;",
             "ui.refresh = () => {",
             "  const selectedTower = number(\"SelectedTower\") > 0;",
-            "  scene.getLayer(\"TowerShopList\").show(!selectedTower);",
+            "  scene.getLayer(\"TowerShopList\").show(true);",
             "  const indicator = first(\"TilePlacement_Indicator\");",
             "  ui.cards.forEach((card, i) => {",
             "    const affordable = number(\"Money\") >= card.item.Cost;",
@@ -12143,8 +16013,8 @@
             "    card.background.setOpacity(affordable ? 255 : 220);",
             "    card.icon.setOpacity(affordable ? 255 : 190);",
             "    card.price.setColor(affordable ? \"68;28;12\" : \"175;39;23\");",
-            "    card.name.setColor(affordable ? \"255;228;177\" : \"208;175;135\");",
-            "    for (const part of [card.background,card.icon,card.name,card.price,card.coin]) part.hide(selectedTower);",
+            "    card.name.setColor(affordable ? \"255;239;208\" : \"224;195;155\");",
+            "    for (const part of [card.background,card.icon,card.name,card.price,card.coin]) part.hide(false);",
             "  });",
             "  syncWaveControl();",
             "  const ended = boolean(\"GameOver\"), current = mode();",
@@ -12243,13 +16113,14 @@
             "  const definition=data.objects.find(o=>o.name===item.Type); if(!definition)return null;",
             "  const values=Object.fromEntries(definition.variables.map(v=>[v.name,v.value]));",
             "  return {name:values.TowerName||item.Name,animation:item.IconAnimation||item.Type,damage:values.Damage,range:values.AttackRange,cooldown:values.AttackInterval,price:item.Cost,",
-            "    special:item.Type===\"RocketTower\"?\"Single-target rocket projectile.\":\"Single projectile per shot.\",type:item.Type};",
+            "    projectileSpeed:values.ProjectileSpeed, special:item.Type===\"ArcherTower\"?\"Ranged / Projectile. 2 UPGRADE PATHS.\":item.Type===\"RocketTower\"?\"Single-target rocket projectile.\":\"Single projectile per shot.\",type:item.Type};",
             "}).filter(Boolean) : [...new Set([\"Normal\",\"Fast\",\"Tank\",\"Elite\",\"Boss\",...Object.keys(archetypes)])].filter(name=>archetypes[name]).map(name=>({name,...archetypes[name],role:roles[name]||\"Enemy archetype\"}));",
             "index.entries=entries;",
-            "const stride=160, cardHeight=148, maxScroll=Math.max(0,entries.length*stride-12-content.h);",
+            "const heights=entries.map(e=>e.type===\"ArcherTower\"?470:148), offsets=[];let total=0;heights.forEach(h=>{offsets.push(total);total+=h+12;});",
+            "const stride=160, maxScroll=Math.max(0,total-12-content.h);",
             "if(inside(content.x,content.y,content.w+16,content.h))index.scroll-=Math.sign(input.getMouseWheelDelta())*52;",
             "if(!down && index.wasDown && index.pressed===hover){if(hover===\"Up\")index.scroll-=stride;if(hover===\"Down\")index.scroll+=stride;}",
-            "const trackX=x+w-24,thumbHeight=maxScroll>0?Math.max(28,content.h*content.h/(entries.length*stride-12)):content.h;",
+            "const trackX=x+w-24,thumbHeight=maxScroll>0?Math.max(28,content.h*content.h/(total-12)):content.h;",
             "if(down&&!index.wasDown&&inside(trackX-3,content.y,14,content.h)){index.dragging=true;index.dragY=my;index.dragScroll=index.scroll;}",
             "if(down&&index.dragging)index.scroll=index.dragScroll+(my-index.dragY)*maxScroll/Math.max(1,content.h-thumbHeight);",
             "if(!down)index.dragging=false;",
@@ -12273,9 +16144,9 @@
             "index.mask.clear().beginFill(0xffffff).drawRect(content.x,content.y,content.w,content.h).endFill();",
             "index.cards=[];",
             "entries.forEach((entry,i)=>{",
-            "  const cy=content.y+i*stride-index.scroll, cx=content.x, cw=content.w;",
+            "  const cardHeight=heights[i],cy=content.y+offsets[i]-index.scroll,cx=content.x,cw=content.w;",
             "  panel(\"card\"+i,cx,cy,cw,cardHeight,\"248;246;234\",255,\"IndexList\",0);",
-            "  panel(\"portrait\"+i,cx+12,cy+12,80,cardHeight-24,\"230;235;214\",255,\"IndexList\",1);",
+            "  panel(\"portrait\"+i,cx+12,cy+12,80,124,\"230;235;214\",255,\"IndexList\",1);",
             "  const monster=index.category===\"Monsters\", sprite=index.ensure((monster?\"monster\":\"tower\")+i,monster?\"IndexMonsterImage\":\"IndexTowerImage\",\"IndexList\",2);",
             "  sprite.setAnimationName(monster?\"Idle Run\":entry.animation);",
             "  sprite.setColor(monster?entry.Tint:\"255;255;255\");",
@@ -12283,11 +16154,26 @@
             "  sprite.setScale(1);const ratio=sprite.getWidth()/Math.max(1,sprite.getHeight());",
             "  const size=monster?Math.min(66,46*(entry.Scale||1)):58;",
             "  sprite.setWidth(ratio>=1?size:size*ratio);sprite.setHeight(ratio>=1?size/ratio:size);",
-            "  sprite.setPosition(cx+52-sprite.getWidth()/2,cy+cardHeight/2-sprite.getHeight()/2);sprite.hide(false);",
+            "  sprite.setPosition(cx+52-sprite.getWidth()/2,cy+74-sprite.getHeight()/2);sprite.hide(false);",
             "  const name=text(\"name\"+i,entry.name,cx+108,cy+12,cw-124,20,\"45;67;43\",true,\"IndexList\");",
             "  const stats=monster?\"HP: \"+entry.HP+\"     Speed: \"+entry.Speed+\"\\nGold Reward: \"+entry.Reward+\" Gold\":\"Damage: \"+entry.damage+\"     Range: \"+entry.range+\"\\nCooldown: \"+Number(entry.cooldown).toFixed(2)+\" s     Price: \"+entry.price+\" Gold\";",
             "  const statText=text(\"stats\"+i,stats,cx+108,cy+44,cw-124,15,\"62;68;53\",false,\"IndexList\");",
             "  const special=text(\"special\"+i,(monster?\"ROLE\\n\":\"SPECIAL\\n\")+(monster?entry.role:entry.special),cx+108,cy+92,cw-124,13,\"116;102;67\",false,\"IndexList\");",
+            "  if(entry.type===\"ArcherTower\") {",
+            "    text(\"archerSpeed\", \"Arrow speed: \"+entry.projectileSpeed+\" px/s\",cx+108,cy+130,cw-124,12,\"116;102;67\",false,\"IndexList\");",
+            "    const cfg=sv.get(\"ArcherConfig\").toJSObject(), column=(cw-32)/2;",
+            "    cfg.Paths.forEach((path,p)=>{",
+            "      const px=cx+16+p*column;",
+            "      text(\"archerPath\"+p,path.Name,px,cy+164,column-12,13,\"79;61;32\",true,\"IndexList\");",
+            "      path.Upgrades.forEach((upgrade,n)=>{",
+            "        const yy=cy+192+n*58,icon=index.ensure(\"archerUpgrade\"+p+n,\"ArcherUpgradeIcon\",\"IndexList\",3);",
+            "        icon.setAnimationName(upgrade.Icon);icon.setPosition(px,yy);icon.setWidth(40);icon.setHeight(40);icon.hide(false);",
+            "        text(\"archerUpgradeName\"+p+n,\"Lv\"+(n+1)+\" \"+upgrade.Name,px+46,yy,column-56,11,\"65;60;40\",true,\"IndexList\");",
+            "        text(\"archerUpgradeDesc\"+p+n,upgrade.Description+\"\\n\"+upgrade.Cost+\" Gold\",px+46,yy+16,column-56,11,\"116;102;67\",false,\"IndexList\");",
+            "      });",
+            "    });",
+            "    text(\"archerRule\",\"Level 3 specializes one path. The other can reach Lv2.\",cx+16,cy+436,cw-32,12,\"109;77;35\",true,\"IndexList\");",
+            "  }",
             "  index.cards.push({name,stats:statText,special,sprite});",
             "});",
             "panel(\"track\",trackX,content.y,8,content.h,\"225;219;198\");",
@@ -12299,6 +16185,101 @@
             "text(\"count\",entries.length+\" \"+index.category.toUpperCase()+\"  /  SCROLL\",x+118,closeY+10,Math.max(80,w-280),12,\"116;111;91\");",
             "runtimeScene.getLayer(\"IndexUI\").show(open);runtimeScene.getLayer(\"IndexList\").show(open);",
             "index.wasDown=down;if(!down)index.pressed=\"\";"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "// A separate UI overlay. Shop and map geometry stay independent of selection.",
+            "const scene=runtimeScene,sv=scene.getVariables(),game=scene.getGame();",
+            "let ui=scene.__selectedPanel;",
+            "if(!ui) {",
+            "  ui=scene.__selectedPanel={objects:{},wasDown:false,pressed:\"\",pressedTower:0,cards:[]};",
+            "  ui.ensure=(key,name,z=1)=>{",
+            "    if(!ui.objects[key]){const o=scene.createObject(name);o.setLayer(\"SelectedTowerUI\");o.setZOrder(z);ui.objects[key]=o;}",
+            "    return ui.objects[key];",
+            "  };",
+            "}",
+            "const towers=[...scene.getObjects(\"Tower\"),...scene.getObjects(\"ShotgunTower\"),...scene.getObjects(\"RocketTower\"),...scene.getObjects(\"ArcherTower\")];",
+            "let selected=towers.find(t=>t.getVariables().get(\"TowerId\").getAsNumber()===sv.get(\"SelectedTower\").getAsNumber());",
+            "if(!selected&&sv.get(\"SelectedTower\").getAsNumber()>0)sv.get(\"SelectedTower\").setNumber(0);",
+            "const input=game.getInputManager(),down=input.isMouseButtonPressed(0),modal=sv.get(\"IndexBlocksInput\").getAsBoolean();",
+            "const h=680,w=320,scale=Math.min(1,(game.getGameResolutionHeight()-16)/h,Math.max(.35,(game.getGameResolutionWidth()-250)/w));",
+            "const sx=scene.__towerShopUI.gameArea.sidebarX-10-w*scale,sy=8;",
+            "const layer=scene.getLayer(\"SelectedTowerUI\");layer.setCameraZoom(scale);layer.setCameraX(game.getGameResolutionWidth()/2/scale-sx/scale);layer.setCameraY(game.getGameResolutionHeight()/2/scale-sy/scale);",
+            "const mx=gdjs.evtTools.input.getCursorX(scene,\"SelectedTowerUI\",0),my=gdjs.evtTools.input.getCursorY(scene,\"SelectedTowerUI\",0);",
+            "const inside=(x,y,width,height)=>mx>=x&&mx<x+width&&my>=y&&my<y+height;",
+            "const pointer=!!selected&&!modal&&inside(0,0,w,h);",
+            "sv.get(\"SelectedPanelPointerInside\").setBoolean(pointer);",
+            "sv.get(\"TowerUIConsumesClick\").setBoolean(pointer);",
+            "ui.screenRect=selected?{x:sx,y:sy,w:w*scale,h:h*scale}:null;",
+            "const hover=!selected||modal?\"\":inside(16,h-66,w-32,48)?\"Sell\":inside(278,12,26,26)?\"Close\":inside(16,314,140,270)?\"Path1\":inside(164,314,140,270)?\"Path2\":pointer?\"Panel\":\"\";",
+            "if(down&&!ui.wasDown){ui.pressed=hover;ui.pressedTower=selected?selected.getVariables().get(\"TowerId\").getAsNumber():0;}",
+            "if(!down&&ui.wasDown&&selected&&!modal&&ui.pressed===hover&&ui.pressedTower===selected.getVariables().get(\"TowerId\").getAsNumber()) {",
+            "  if(hover===\"Sell\") {",
+            "    const v=selected.getVariables(),investment=selected.getName()===\"ArcherTower\"?v.get(\"TotalInvestment\").getAsNumber():v.get(\"PurchasePrice\").getAsNumber();",
+            "    sv.get(\"Money\").setNumber(sv.get(\"Money\").getAsNumber()+Math.floor(investment*sv.get(\"SellRefundRate\").getAsNumber()));",
+            "    selected.deleteFromScene();sv.get(\"SelectedTower\").setNumber(0);selected=null;",
+            "  } else if(hover===\"Close\") {sv.get(\"SelectedTower\").setNumber(0);selected=null;}",
+            "  else if((hover===\"Path1\"||hover===\"Path2\")&&selected.getName()===\"ArcherTower\"&&scene.__archerSystem)scene.__archerSystem.upgrade(selected,hover===\"Path1\"?1:2);",
+            "}",
+            "if(!down)ui.pressed=\"\";ui.wasDown=down;",
+            "ui.render=()=>{",
+            "  Object.values(ui.objects).forEach(o=>o.hide());",
+            "  const tower=towers.find(t=>t.getVariables().get(\"TowerId\").getAsNumber()===sv.get(\"SelectedTower\").getAsNumber()&&scene.getObjects(t.getName()).includes(t));",
+            "  layer.show(!!tower);ui.tower=tower;ui.cards=[];",
+            "  if(!tower){ui.screenRect=null;return;}",
+            "  const v=tower.getVariables(),isArcher=tower.getName()===\"ArcherTower\",cfg=sv.get(\"ArcherConfig\").toJSObject();",
+            "  const panel=(key,x,y,width,height,color=\"255;255;255\",name=\"SelectedPanelBackground\",z=1)=>{const o=ui.ensure(key,name,z);o.setPosition(x,y);o.setWidth(width);o.setHeight(height);o.setColor(color);o.setOpacity(255);o.hide(false);return o;};",
+            "  const text=(key,value,x,y,width,size=13,color=\"255;231;184\",bold=false)=>{const o=ui.ensure(key,\"SelectedPanelText\",4);o.setPosition(x,y);o.setWrapping(true);o.setWrappingWidth(width);o.setTextAlignment(\"left\");o.setString(String(value));o.setCharacterSize(size);o.setBold(bold);o.setColor(color);o.hide(false);return o;};",
+            "  panel(\"frame\",0,0,w,h);",
+            "  panel(\"header\",12,10,w-24,42,\"255;255;255\",\"SelectedPanelPlaque\",2);",
+            "  text(\"title\",v.get(\"TowerName\").getAsString().toUpperCase(),22,22,w-66,17,\"70;40;20\",true);",
+            "  text(\"close\",\"X\",286,20,16,14,\"100;58;27\",true);",
+            "  const preview=ui.ensure(\"preview\",\"SelectedTowerPreview\",3);preview.setAnimationName(isArcher?v.get(\"VisualKey\").getAsString():tower.getName());preview.setScale(1);const ratio=preview.getWidth()/Math.max(1,preview.getHeight());preview.setWidth(ratio>=1?84:84*ratio);preview.setHeight(ratio>=1?84/ratio:84);preview.setPosition((w-preview.getWidth())/2,62+(84-preview.getHeight())/2);preview.hide(false);",
+            "  if(isArcher)text(\"build\",v.get(\"Path1Level\").getAsNumber()+\" - \"+v.get(\"Path2Level\").getAsNumber(),138,148,64,12,\"236;195;101\",true);",
+            "  const stats=[[\"DAMAGE\",v.get(\"Damage\").getAsNumber()],[\"FIRE INTERVAL\",Number(v.get(\"AttackInterval\").getAsNumber()).toFixed(2)+\" s\"],[\"ATTACK RANGE\",v.get(\"AttackRange\").getAsNumber()+\" px\"],[\"DAMAGE DEALT\",Math.round(v.get(\"DamageDealt\").getAsNumber())]];",
+            "  stats.forEach(([label,value],i)=>{",
+            "    const y=174+i*25;text(\"statLabel\"+i,label,24,y,164,12,\"211;183;137\");const o=text(\"statValue\"+i,value,194,y,100,13,\"255;237;198\",true);o.setTextAlignment(\"right\");",
+            "    panel(\"rule\"+i,24,y+20,272,1,\"124;87;43\",\"SelectedProgressBlock\",2);",
+            "  });",
+            "  if(isArcher) {",
+            "    text(\"upgrades\",\"UPGRADES\",116,282,150,14,\"239;201;106\",true);",
+            "    cfg.Paths.forEach((path,i)=>{",
+            "      const level=v.get(i===0?\"Path1Level\":\"Path2Level\").getAsNumber(),other=v.get(i===0?\"Path2Level\":\"Path1Level\").getAsNumber();",
+            "      const locked=level>=2&&other>=3,max=level>=4,upgrade=path.Upgrades[max?3:level],affordable=sv.get(\"Money\").getAsNumber()>=upgrade.Cost;",
+            "      const x=16+i*148,y=314,active=!locked&&!max;",
+            "      const background=panel(\"card\"+i,x,y,140,270,locked?\"150;139;121\":active&&hover===\"Path\"+(i+1)?\"255;240;197\":\"239;219;188\",\"SelectedUpgradeCard\",2);",
+            "      text(\"path\"+i,\"PATH \"+(i+1),x+12,y+12,116,13,\"246;218;145\",true);",
+            "      for(let n=0;n<4;n++)panel(\"progress\"+i+\"_\"+n,x+12+n*29,y+36,24,8,n<level?\"239;190;64\":\"81;58;38\",\"SelectedProgressBlock\",3);",
+            "      const icon=ui.ensure(\"icon\"+i,\"ArcherUpgradeIcon\",3);icon.setAnimationName(upgrade.Icon);icon.setWidth(66);icon.setHeight(66);icon.setPosition(x+37,y+54);icon.setOpacity(locked?130:255);icon.hide(false);",
+            "      const title=upgrade.Name.replace(\"SHARPENED ARROWS\",\"SHARPENED\\nARROWS\").replace(\"PIERCING CROSSBOW\",\"PIERCING\\nCROSSBOW\");",
+            "      const name=text(\"upgradeName\"+i,title,x+10,y+130,120,12,\"248;225;167\",true);name.setTextAlignment(\"center\");",
+            "      const desc=text(\"description\"+i,upgrade.Description,x+10,y+168,120,11,\"222;199;161\");desc.setTextAlignment(\"center\");",
+            "      panel(\"purchase\"+i,x+10,y+222,120,34,locked?\"150;140;128\":\"255;255;255\",\"SelectedPanelPlaque\",3);",
+            "      const status=max?\"MAX LEVEL\":locked?\"LOCKED\":upgrade.Cost+\" GOLD\";",
+            "      const label=text(\"cost\"+i,status,x+14,y+232,112,12,locked?\"94;86;72\":!max&&!affordable?\"165;43;24\":\"78;45;22\",true);label.setTextAlignment(\"center\");",
+            "      if(locked) {",
+            "        panel(\"lockBody\"+i,x+63,y+202,14,12,\"205;173;102\",\"SelectedProgressBlock\",4);",
+            "        panel(\"lockLeft\"+i,x+65,y+195,2,9,\"205;173;102\",\"SelectedProgressBlock\",4);",
+            "        panel(\"lockTop\"+i,x+65,y+194,10,2,\"205;173;102\",\"SelectedProgressBlock\",4);",
+            "        panel(\"lockRight\"+i,x+73,y+195,2,9,\"205;173;102\",\"SelectedProgressBlock\",4);",
+            "        panel(\"lockHole\"+i,x+69,y+205,2,5,\"89;67;44\",\"SelectedProgressBlock\",5);",
+            "      }",
+            "      ui.cards.push({path:i+1,level,locked,max,affordable,background,icon,name,cost:label});",
+            "    });",
+            "    text(\"lockHint\",\"Specialization caps the other path at Lv2.\",24,593,272,11,\"189;163;123\");",
+            "  } else text(\"none\",\"NO UPGRADES AVAILABLE\",60,332,224,13,\"197;174;137\",true);",
+            "  const investment=isArcher?v.get(\"TotalInvestment\").getAsNumber():v.get(\"PurchasePrice\").getAsNumber();",
+            "  const sellValue=Math.floor(investment*sv.get(\"SellRefundRate\").getAsNumber());v.get(\"SellValue\").setNumber(sellValue);",
+            "  panel(\"sell\",16,h-66,w-32,48,hover===\"Sell\"?\"255;237;184\":\"255;255;255\",\"SelectedPanelPlaque\",3);",
+            "  text(\"sellText\",\"SELL\",30,h-49,90,14,\"91;39;20\",true);",
+            "  const sell=text(\"sellValue\",sellValue+\" GOLD\",154,h-49,132,14,\"91;39;20\",true);sell.setTextAlignment(\"right\");",
+            "  text(\"hint\",\"Empty map / ESC to close\",83,h-14,220,10,\"184;155;113\");",
+            "};"
           ],
           "parameterObjects": "",
           "useStrict": true,
@@ -12498,163 +16479,20 @@
                 "False",
                 ""
               ]
-            }
-          ],
-          "actions": [
+            },
             {
               "type": {
-                "value": "SetBooleanVariable"
+                "value": "BooleanVariable"
               },
               "parameters": [
-                "TowerUIConsumesClick",
+                "SelectedPanelPointerInside",
                 "False",
                 ""
               ]
             }
           ],
+          "actions": [],
           "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "SelectedTower",
-                    ">",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "IsCursorOnObject"
-                  },
-                  "parameters": [
-                    "TowerShopBox",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetBooleanVariable"
-                  },
-                  "parameters": [
-                    "TowerUIConsumesClick",
-                    "True",
-                    ""
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "NumberVariable"
-                  },
-                  "parameters": [
-                    "SelectedTower",
-                    ">",
-                    "0"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "IsCursorOnObject"
-                  },
-                  "parameters": [
-                    "TowerSellButton",
-                    "",
-                    "",
-                    ""
-                  ]
-                }
-              ],
-              "actions": [],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::ForEach",
-                  "object": "PlaceableTile",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "NumberObjectVariable"
-                      },
-                      "parameters": [
-                        "PlaceableTile",
-                        "TowerId",
-                        "=",
-                        "SelectedTower"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "SetNumberObjectVariable"
-                      },
-                      "parameters": [
-                        "PlaceableTile",
-                        "SellValue",
-                        "=",
-                        "floor(PlaceableTile.Variable(PurchasePrice) * SellRefundRate)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "Money",
-                        "+",
-                        "PlaceableTile.Variable(SellValue)"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Delete"
-                      },
-                      "parameters": [
-                        "PlaceableTile",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberVariable"
-                      },
-                      "parameters": [
-                        "SelectedTower",
-                        "=",
-                        "0"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Hide"
-                      },
-                      "parameters": [
-                        "RangeIndicator"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Hide"
-                      },
-                      "parameters": [
-                        "TowerInfoUI"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -12964,16 +16802,6 @@
         },
         {
           "type": {
-            "value": "NumberVariable"
-          },
-          "parameters": [
-            "SelectedTower",
-            "=",
-            "0"
-          ]
-        },
-        {
-          "type": {
             "value": "BooleanVariable"
           },
           "parameters": [
@@ -13032,6 +16860,16 @@
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SelectedTower",
+                "=",
+                "0"
+              ]
+            },
             {
               "type": {
                 "value": "EffectCapability::EffectBehavior::EnableEffect"
@@ -13275,7 +17113,9 @@
             "const hudMax = uiLayer.convertInverseCoords(hud.getX()+hud.getWidth(),hud.getY()+hud.getHeight(),0,[0,0]);",
             "const min = map.convertInverseCoords(x,y,0,[0,0]), max = map.convertInverseCoords(x+w,y+h,0,[0,0]);",
             "const overHUD = min[0] < hudMax[0] && max[0] > hudMin[0] && min[1] < hudMax[1] && max[1] > hudMin[1];",
-            "scene.getVariables().get(\"MapPlacementFits\").setBoolean(fits && !overHUD);"
+            "const panel=scene.__selectedPanel&&scene.__selectedPanel.screenRect;",
+            "const overPanel=panel&&min[0]<panel.x+panel.w&&max[0]>panel.x&&min[1]<panel.y+panel.h&&max[1]>panel.y;",
+            "scene.getVariables().get(\"MapPlacementFits\").setBoolean(fits && !overHUD && !overPanel);"
           ],
           "parameterObjects": "",
           "useStrict": true,
@@ -13568,6 +17408,16 @@
             "",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "SelectedPanelPointerInside",
+            "False",
+            ""
+          ]
         }
       ],
       "actions": [
@@ -13743,6 +17593,44 @@
               "parameters": [
                 "RocketTower",
                 "\"shoot\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::Name"
+              },
+              "parameters": [
+                "TilePlacement_Indicator",
+                "Animation",
+                "=",
+                "\"ArcherTower\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ChangeWidth"
+              },
+              "parameters": [
+                "ArcherTower",
+                "=",
+                "64"
+              ]
+            },
+            {
+              "type": {
+                "value": "ChangeHeight"
+              },
+              "parameters": [
+                "ArcherTower",
+                "=",
+                "64"
               ]
             }
           ]
@@ -14130,6 +18018,126 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "// Archer modifiers are composed per instance. Existing FireBullet and Health behaviors",
+            "// remain the authoritative cooldown, firing, projectile force and damage systems.",
+            "const scene = runtimeScene, sv = scene.getVariables();",
+            "let archer = scene.__archerSystem;",
+            "if (!archer) {",
+            "  const config = sv.get(\"ArcherConfig\").toJSObject();",
+            "  archer = scene.__archerSystem = { config, visualScale: 1.5, projectileVisualScale: 1.8 };",
+            "  archer.stats = (a,b) => ({",
+            "    Damage: config.BaseDamage + (a>=1 ? config.SharpenedDamage : 0) + (b>=4 ? config.HeavyDamage : 0),",
+            "    AttackRange: config.BaseRange + (b>=1 ? config.EagleRange : 0),",
+            "    AttackInterval: a>=4 ? config.StormInterval : a>=2 ? config.QuickInterval : config.BaseInterval,",
+            "    ProjectileSpeed: b>=2 ? config.SwiftSpeed : config.BaseProjectileSpeed,",
+            "    ProjectilePierce: b>=4 ? 3 : b>=3 ? 2 : 1,",
+            "    ArcherCount: a>=3 ? 2 : 1",
+            "  });",
+            "  archer.apply = tower => {",
+            "    const v=tower.getVariables(), a=v.get(\"Path1Level\").getAsNumber(), b=v.get(\"Path2Level\").getAsNumber();",
+            "    if (!Number.isInteger(a)||!Number.isInteger(b)||a<0||b<0||a>4||b>4||(a>=3&&b>=3)) return false;",
+            "    const stats=archer.stats(a,b);",
+            "    for(const [name,value] of Object.entries(stats)) v.get(name).setNumber(value);",
+            "    v.get(\"CurrentDamage\").setNumber(stats.Damage);v.get(\"CurrentRange\").setNumber(stats.AttackRange);",
+            "    v.get(\"CurrentAttackInterval\").setNumber(stats.AttackInterval);v.get(\"CurrentProjectileSpeed\").setNumber(stats.ProjectileSpeed);",
+            "    v.get(\"VisualKey\").setString(a+\"_\"+b);",
+            "    tower.setAnimationName(a+\"_\"+b);tower.setWidth(64);tower.setHeight(64);",
+            "    const fire=tower.getBehavior(\"FireBullet\");fire.SetCooldown(stats.AttackInterval);fire.SetBulletQuantity(stats.ArcherCount);",
+            "    return true;",
+            "  };",
+            "  archer.upgrade = (tower,path) => {",
+            "    // Validate again here, independent of the card's visual/disabled state.",
+            "    if(!scene.getObjects(\"ArcherTower\").includes(tower)||![1,2].includes(path)||sv.get(\"IndexBlocksInput\").getAsBoolean())return false;",
+            "    const v=tower.getVariables(),a=v.get(\"Path1Level\").getAsNumber(),b=v.get(\"Path2Level\").getAsNumber();",
+            "    if(!Number.isInteger(a)||!Number.isInteger(b)||a<0||b<0||a>4||b>4||(a>=3&&b>=3))return false;",
+            "    const level=path===1?a:b,other=path===1?b:a;",
+            "    if(level>=4||(level+1>=3&&other>=3))return false;",
+            "    const cost=config.Paths[path-1].Upgrades[level].Cost;",
+            "    if(sv.get(\"Money\").getAsNumber()<cost)return false;",
+            "    sv.get(\"Money\").setNumber(sv.get(\"Money\").getAsNumber()-cost);",
+            "    v.get(path===1?\"Path1Level\":\"Path2Level\").setNumber(level+1);",
+            "    v.get(\"TotalInvestment\").setNumber(v.get(\"TotalInvestment\").getAsNumber()+cost);",
+            "    archer.apply(tower);return true;",
+            "  };",
+            "}",
+            "const towers=scene.getObjects(\"ArcherTower\"), enemies=scene.getObjects(\"Enemy\");",
+            "for(const tower of towers) {",
+            "  const v=tower.getVariables();",
+            "  if(!tower.__archerReady) {",
+            "    tower.__archerReady=true;",
+            "    if(v.get(\"TotalInvestment\").getAsNumber()<=0)v.get(\"TotalInvestment\").setNumber(v.get(\"PurchasePrice\").getAsNumber()||300);",
+            "    archer.apply(tower);",
+            "  }",
+            "  if(sv.get(\"GameOver\").getAsBoolean())continue;",
+            "  let target=null,nearest=Infinity;",
+            "  for(const enemy of enemies) {",
+            "    if(enemy.getBehavior(\"Health\").IsDead())continue;",
+            "    const d=Math.hypot(enemy.getCenterXInScene()-tower.getCenterXInScene(),enemy.getCenterYInScene()-tower.getCenterYInScene());",
+            "    if(d<=v.get(\"AttackRange\").getAsNumber()&&d<nearest){target=enemy;nearest=d;}",
+            "  }",
+            "  if(!target)continue;",
+            "  const old=new Set(scene.getObjects(\"ArcherProjectile\"));",
+            "  const bulletMap=Hashtable.newFrom({ArcherProjectile:[]}),targetMap=Hashtable.newFrom({Enemy:[target]});",
+            "  tower.getBehavior(\"FireBullet\").FireTowardObject(tower.getCenterXInScene(),tower.getCenterYInScene(),bulletMap,targetMap,v.get(\"ProjectileSpeed\").getAsNumber());",
+            "  const shots=scene.getObjects(\"ArcherProjectile\").filter(p=>!old.has(p));",
+            "  shots.forEach((p,i)=>{",
+            "    const pv=p.getVariables();pv.get(\"RemainingHits\").setNumber(v.get(\"ProjectilePierce\").getAsNumber());",
+            "    p.setAnimationName(v.get(\"Path2Level\").getAsNumber()>=3?\"Bolt\":\"Arrow\");p.setWidth(22);p.setHeight(7);",
+            "    // Frame points follow each drawn weapon. Scale about the unchanged tower center.",
+            "    const point = i === 0 ? \"FirePointA\" : \"FirePointB\";",
+            "    const cx=tower.getCenterXInScene(), cy=tower.getCenterYInScene();",
+            "    const muzzleX=cx+(tower.getPointX(point)-cx)*archer.visualScale;",
+            "    const muzzleY=cy+(tower.getPointY(point)-cy)*archer.visualScale;",
+            "    p.setPosition(muzzleX-p.getWidth()/2,muzzleY-p.getHeight()/2);",
+            "    p.setLayer(tower.getLayer());p.setZOrder(10);p.setOpacity(255);",
+            "    const angle=Math.atan2(target.getCenterYInScene()-p.getCenterYInScene(),target.getCenterXInScene()-p.getCenterXInScene())*180/Math.PI;",
+            "    p.setAngle(angle);p.clearForces();p.addPolarForce(angle,v.get(\"ProjectileSpeed\").getAsNumber(),1);",
+            "    p.__archerHits=new Set();p.__archerPrevious=[p.getX(),p.getY()];p.__archerAge=0;",
+            "  });",
+            "}",
+            "const owners=new Map([...scene.getObjects(\"Tower\"),...scene.getObjects(\"ShotgunTower\"),...scene.getObjects(\"RocketTower\"),...towers].map(t=>[t.getVariables().get(\"TowerId\").getAsNumber(),t]));",
+            "const dt=gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(scene);",
+            "for(const p of scene.getObjects(\"ArcherProjectile\").slice()) {",
+            "  const v=p.getVariables();if(!p.__archerHits)p.__archerHits=new Set();",
+            "  p.__archerAge=(p.__archerAge||0)+dt;",
+            "  if(p.__archerAge>6||v.get(\"RemainingHits\").getAsNumber()<=0){p.deleteFromScene();continue;}",
+            "  const end=[p.getX(),p.getY()],start=p.__archerPrevious||end;",
+            "  const dx=end[0]-start[0],dy=end[1]-start[1],length=Math.hypot(dx,dy);",
+            "  const hits=[];",
+            "  for(const enemy of enemies) {",
+            "    if(enemy.getBehavior(\"Health\").IsDead()||p.__archerHits.has(enemy.getUniqueId()))continue;",
+            "    // Broad phase, then the native collision masks sampled along the actual segment.",
+            "    const pad=Math.max(p.getWidth(),p.getHeight());",
+            "    if(Math.max(start[0],end[0])+pad<enemy.getX()||Math.min(start[0],end[0])-pad>enemy.getX()+enemy.getWidth()||Math.max(start[1],end[1])+pad<enemy.getY()||Math.min(start[1],end[1])-pad>enemy.getY()+enemy.getHeight())continue;",
+            "    const steps=Math.max(1,Math.ceil(length/3));",
+            "    for(let i=0;i<=steps;i++) {",
+            "      const t=i/steps;p.setPosition(start[0]+dx*t,start[1]+dy*t);",
+            "      if(gdjs.RuntimeObject.collisionTest(p,enemy,false)){hits.push({enemy,t});break;}",
+            "    }",
+            "  }",
+            "  p.setPosition(...end);hits.sort((a,b)=>a.t-b.t);",
+            "  for(const {enemy} of hits) {",
+            "    if(v.get(\"RemainingHits\").getAsNumber()<=0)break;",
+            "    const health=enemy.getBehavior(\"Health\"),before=Math.max(0,health.Health());",
+            "    if(before<=0)continue;",
+            "    p.__archerHits.add(enemy.getUniqueId());health.Hit(v.get(\"Damage\").getAsNumber(),false,false);",
+            "    const actual=Math.max(0,before-Math.max(0,health.Health()));",
+            "    v.get(\"ActualDamage\").setNumber(actual);",
+            "    const owner=owners.get(v.get(\"OwnerTowerId\").getAsNumber());",
+            "    if(owner){const dealt=owner.getVariables().get(\"DamageDealt\");dealt.setNumber(dealt.getAsNumber()+actual);}",
+            "    v.get(\"RemainingHits\").setNumber(v.get(\"RemainingHits\").getAsNumber()-1);",
+            "  }",
+            "  if(v.get(\"RemainingHits\").getAsNumber()<=0)p.deleteFromScene();",
+            "  else p.__archerPrevious=end;",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
         },
         {
           "type": "BuiltinCommonInstructions::ForEach",
@@ -15116,23 +19124,6 @@
                 "RangeIndicator",
                 ""
               ]
-            },
-            {
-              "type": {
-                "value": "Show"
-              },
-              "parameters": [
-                "TowerInfoUI",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Hide"
-              },
-              "parameters": [
-                "TowerShopContent"
-              ]
             }
           ]
         },
@@ -15158,25 +19149,20 @@
               "parameters": [
                 "RangeIndicator"
               ]
-            },
-            {
-              "type": {
-                "value": "Hide"
-              },
-              "parameters": [
-                "TowerInfoUI"
-              ]
-            },
-            {
-              "type": {
-                "value": "Show"
-              },
-              "parameters": [
-                "TowerShopContent",
-                ""
-              ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "runtimeScene.getObjects(\"TowerInfoName\").forEach(o=>o.hide());",
+            "const old=runtimeScene.getObjects(\"TowerSellButton\");",
+            "for(const name of [\"TowerInfoDamageLabel\",\"TowerInfoDamage\",\"TowerInfoRateLabel\",\"TowerInfoRate\",\"TowerInfoRangeLabel\",\"TowerInfoRange\",\"TowerInfoDealtLabel\",\"TowerInfoDealt\",\"TowerSellButton\",\"TowerSellLabel\",\"TowerSellValue\",\"TowerInfoCloseHint\"])runtimeScene.getObjects(name).forEach(o=>o.hide());",
+            "if(runtimeScene.__selectedPanel)runtimeScene.__selectedPanel.render();"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
         }
       ],
       "parameters": []
@@ -15271,6 +19257,87 @@
           "eventsSheetExpanded": false
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Group",
+      "name": "Archer visual size and projectile visibility",
+      "colorR": 139,
+      "colorG": 103,
+      "colorB": 53,
+      "creationTime": 0,
+      "source": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "// Render-only scale: object dimensions, native hitboxes and map fitting stay unchanged.",
+            "// Refresh native frame state first, then enlarge the PIXI sprite around its center anchor.",
+            "const system=runtimeScene.__archerSystem;",
+            "for(const [name,scale] of [[\"Tower\",1.25],[\"ShotgunTower\",1.25],[\"RocketTower\",1.25],[\"ArcherTower\",system?system.visualScale:1.5],[\"ArcherProjectile\",system?system.projectileVisualScale:1.8],[\"SpawnMarker\",1.4],[\"BaseMarker\",1.4],[\"Ground_Decoration\",1.25]]) {",
+            "  for(const [index,object] of runtimeScene.getObjects(name).entries()) {",
+            "    const drawScale=name===\"Ground_Decoration\"?[1.22,1.27,1.30,1.24][index%4]:scale;",
+            "    object.updatePreRender(runtimeScene);",
+            "    const sprite=object.getRendererObject();",
+            "    if(!sprite||!sprite.texture)continue;",
+            "    sprite.scale.set(object.getWidth()/sprite.texture.width*drawScale,object.getHeight()/sprite.texture.height*drawScale);",
+            "  }",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Group",
+      "name": "Compact wave completion banner",
+      "colorR": 139,
+      "colorG": 103,
+      "colorB": 53,
+      "creationTime": 0,
+      "source": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "// Display-only wave notification; no input interception or wave requests.",
+            "const scene=runtimeScene,sv=scene.getVariables(),get=n=>scene.getObjects(n);",
+            "let banner=scene.__waveBanner;",
+            "if(!banner){",
+            "  banner=scene.__waveBanner={wave:-1,elapsed:100};",
+            "  for(const [key,name] of [[\"panel\",\"WaveBannerPanel\"],[\"title\",\"WaveBannerTitle\"],[\"detail\",\"WaveBannerDetail\"]]){",
+            "    const o=scene.createObject(name);o.setLayer(\"UI\");o.setZOrder(key===\"panel\"?12:13);banner[key]=o;",
+            "  }",
+            "}",
+            "const message=get(\"MessageText\")[0],wave=sv.get(\"Wave\").getAsNumber(),active=sv.get(\"WaveActive\").getAsBoolean(),ended=sv.get(\"GameOver\").getAsBoolean();",
+            "const complete=!active&&wave>0&&!ended&&message.getString().includes(\"Complete\");",
+            "const dt=gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(scene)/Math.max(.001,scene.getTimeManager().getTimeScale());",
+            "if(complete&&banner.wave!==wave){banner.wave=wave;banner.elapsed=0;}else banner.elapsed+=dt;",
+            "const visible=complete&&banner.elapsed<2.6;",
+            "if(complete)message.hide();",
+            "for(const key of [\"panel\",\"title\",\"detail\"])banner[key].hide(!visible);",
+            "if(!visible)return;",
+            "const shop=scene.__towerShopUI,ui=scene.getLayer(\"UI\"),selected=scene.__selectedPanel&&scene.__selectedPanel.screenRect;",
+            "const right=Math.min(shop.gameArea.right,selected?selected.x-10:shop.gameArea.right);",
+            "const width=Math.max(1,Math.min(360,right-32)),height=76;",
+            "const screenX=(right-width)/2,screenY=16+get(\"HUDPanel\")[0].getHeight()+12;",
+            "const pos=ui.convertCoords(screenX,screenY,0,[0,0]);",
+            "const alpha=Math.max(0,Math.min(1,banner.elapsed/.18,(2.6-banner.elapsed)/.4))*255;",
+            "banner.panel.setPosition(pos[0],pos[1]);banner.panel.setWidth(width);banner.panel.setHeight(height);banner.panel.setOpacity(alpha);",
+            "const layout=(o,value,y,size,color)=>{o.setString(value);o.setCharacterSize(size);o.setBold(true);o.setColor(color);o.setWrapping(true);o.setWrappingWidth(Math.max(1,width-24));o.setTextAlignment(\"center\");o.setPosition(pos[0]+12,pos[1]+y);o.setOpacity(alpha);};",
+            "layout(banner.title,\"WAVE \"+wave+\" COMPLETE!\",14,Math.max(13,Math.min(20,width/17)),\"255;235;185\");",
+            "const mode=sv.get(\"WaveMode\").getAsString(),auto=mode===\"Auto\"||mode===\"AutoFast\";",
+            "layout(banner.detail,\"Next Wave: \"+(wave+1)+(auto?\"  /  \"+Math.ceil(sv.get(\"IntermissionRemaining\").getAsNumber())+\" s\":\"  /  Press PLAY\"),44,Math.max(10,Math.min(13,width/25)),\"222;190;127\");",
+            "banner.geometry={screenX,screenY,width,height,right,alpha};"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ],
+      "parameters": []
     }
   ],
   "layers": [
@@ -15336,6 +19403,24 @@
       "name": "TowerShopList",
       "renderingType": "",
       "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "SelectedTowerUI",
+      "renderingType": "",
+      "visibility": false,
       "cameras": [],
       "effects": []
     },
