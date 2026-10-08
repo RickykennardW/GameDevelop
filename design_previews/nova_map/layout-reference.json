@@ -1,0 +1,62 @@
+{
+  "referenceViewport": [
+    1280,
+    800
+  ],
+  "gameplayPreview": [
+    1038,
+    800
+  ],
+  "sidebar": {
+    "x": 1048,
+    "width": 224,
+    "margin": 8,
+    "mapGap": 10
+  },
+  "routeScreenCenters": [
+    [
+      87,
+      178
+    ],
+    [
+      951,
+      178
+    ],
+    [
+      951,
+      307
+    ],
+    [
+      87,
+      307
+    ],
+    [
+      87,
+      436
+    ],
+    [
+      951,
+      436
+    ],
+    [
+      951,
+      609
+    ],
+    [
+      87,
+      609
+    ],
+    [
+      87,
+      739
+    ],
+    [
+      951,
+      739
+    ]
+  ],
+  "pathWidthScreen": 44,
+  "gridWorld": 64,
+  "originalEditorPathTiles": 114,
+  "warning": "Screen reference only. Actual runtime waypoints remain tile-center points initialized from Monster_Path ordered by PathOrder."
+}

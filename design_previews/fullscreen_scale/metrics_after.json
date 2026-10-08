@@ -1,0 +1,92 @@
+[
+  {
+    "width": 1280,
+    "height": 800,
+    "zoom": 0.6190769230769231,
+    "pathPixels": 39.62092307692308,
+    "towerPixels": 49.526153846153846,
+    "archerPixels": 59.431384615384616,
+    "bounds": {
+      "left": -76.5,
+      "top": -22,
+      "right": 1548.5,
+      "bottom": 1155
+    },
+    "rows": [
+      192,
+      384,
+      576,
+      768,
+      960
+    ],
+    "left": 64,
+    "right": 1344,
+    "tiles": 113,
+    "frame": {
+      "left": 16,
+      "top": 16,
+      "right": 1022,
+      "bottom": 776
+    }
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "zoom": 0.8836023789294817,
+    "pathPixels": 56.55055225148683,
+    "towerPixels": 70.68819031435854,
+    "archerPixels": 84.82582837723024,
+    "bounds": {
+      "left": -76.5,
+      "top": -22,
+      "right": 1548.5,
+      "bottom": 1155
+    },
+    "rows": [
+      192,
+      384,
+      576,
+      768,
+      960
+    ],
+    "left": 64,
+    "right": 1344,
+    "tiles": 113,
+    "frame": {
+      "left": 16,
+      "top": 16,
+      "right": 1662,
+      "bottom": 1056
+    }
+  },
+  {
+    "width": 2560,
+    "height": 1440,
+    "zoom": 1.18946474086661,
+    "pathPixels": 76.12574341546303,
+    "towerPixels": 95.1571792693288,
+    "archerPixels": 114.18861512319455,
+    "bounds": {
+      "left": -76.5,
+      "top": -22,
+      "right": 1548.5,
+      "bottom": 1155
+    },
+    "rows": [
+      192,
+      384,
+      576,
+      768,
+      960
+    ],
+    "left": 64,
+    "right": 1344,
+    "tiles": 113,
+    "frame": {
+      "left": 16,
+      "top": 16,
+      "right": 2302,
+      "bottom": 1416
+    }
+  }
+]

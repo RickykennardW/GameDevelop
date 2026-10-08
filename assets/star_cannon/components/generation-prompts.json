@@ -1,0 +1,306 @@
+[
+  {
+    "part": "Base",
+    "prompt": "Precise technical sprite layer separation of the referenced Star Cannon 0-0, NOT a redesign. Return ONLY the STATIONARY LOWER BASE on genuine transparent background: keep the exact ivory/gold circular celestial plinth, its ornaments, two support forks and a complete centered rotating socket. Remove EVERY cannon barrel, star muzzle, upper energy chamber and rotating upper mechanism; no gun or muzzle may remain in this output. Reconstruct only the small area formerly hidden below the upper mechanism as a clean ivory/gold socket with a purple inset. Preserve original shape, painting, materials, perspective and pixel placement of the lower foundation as closely as possible. Match the source square canvas and proportions; do NOT center/reframe/enlarge the cutout. Mechanical socket pivot at normalized canvas (50%,60%). Preserve original lower footprint location. No text, no floor, no shadows outside the base, no duplicate cannon parts. One base component only, true alpha transparency.",
+    "a": 0,
+    "b": 0
+  },
+  {
+    "part": "Turret",
+    "prompt": "Precise technical sprite layer separation of referenced Star Cannon 0-0, NOT a redesign. Return ONLY the COMPLETE ROTATING UPPER TURRET on genuine transparent background: preserve its exact ivory/gold barrel, one star-shaped muzzle, purple-blue energy chamber, complete rear enclosed mechanism and rotating upper ornaments. Remove the entire stationary circular foundation, lower support legs and base pedestal; do not leave fragments of the lower platform. Keep the full rear of the cannon closed and clean, no cut-off hole. Preserve the exact reference painting, colors, barrel shape, 3/4 top-down perspective, default upper-right direction and original pixel placement/proportions. Match source square canvas, no recentering/reframing. Rotation socket/pivot at normalized canvas (50%,60%), same source registration as the complementary base. No text, no floor, no scene, no extra barrels, no new design. One turret component only, true alpha transparency.",
+    "a": 0,
+    "b": 0
+  },
+  {
+    "a": 0,
+    "b": 2,
+    "part": "Base",
+    "prompt": "Create ONLY the stationary BASE layer of the provided original Star Cannon upgrade 0-2. Precise component separation, preserve that variant's exact lower platform, ivory and gold ornament shapes, gems and details. Keep circular celestial platform, support forks and fixed vertical structures, complete centered rotating socket. Remove ALL upper cannon barrels, star muzzles and rotating energy chambers. Reconstruct small hidden socket area so complete foundation remains. Do NOT redesign, add barrels or change perspective. 3/4 top-down fantasy game sprite. Same square canvas as original and same object scale, position and empty margins. Base lower contact area should stay in original location. True transparent background.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Base_0_2.png"
+  },
+  {
+    "a": 0,
+    "b": 3,
+    "part": "Base",
+    "prompt": "Create ONLY the stationary BASE layer of the provided original Star Cannon upgrade 0-3. Precise component separation, preserve that variant's exact lower platform, ivory and gold ornament shapes, gems and details. Keep circular celestial platform, support forks and fixed vertical structures, complete centered rotating socket. Remove ALL upper cannon barrels, star muzzles and rotating energy chambers. Reconstruct small hidden socket area so complete foundation remains. Do NOT redesign, add barrels or change perspective. 3/4 top-down fantasy game sprite. Same square canvas as original and same object scale, position and empty margins. Base lower contact area should stay in original location. True transparent background.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Base_0_3.png"
+  },
+  {
+    "a": 0,
+    "b": 1,
+    "part": "Base",
+    "prompt": "Create ONLY the stationary BASE layer of the provided original Star Cannon upgrade 0-1. Precise component separation, preserve that variant's exact lower platform, ivory and gold ornament shapes, gems and details. Keep circular celestial platform, support forks and fixed vertical structures, complete centered rotating socket. Remove ALL upper cannon barrels, star muzzles and rotating energy chambers. Reconstruct small hidden socket area so complete foundation remains. Do NOT redesign, add barrels or change perspective. 3/4 top-down fantasy game sprite. Same square canvas as original and same object scale, position and empty margins. Base lower contact area should stay in original location. True transparent background.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Base_0_1.png"
+  },
+  {
+    "a": 0,
+    "b": 4,
+    "part": "Base",
+    "prompt": "Create ONLY the stationary BASE layer of the provided original Star Cannon upgrade 0-4. Precise component separation, preserve that variant's exact lower platform, ivory and gold ornament shapes, gems and details. Keep circular celestial platform, support forks and fixed vertical structures, complete centered rotating socket. Remove ALL upper cannon barrels, star muzzles and rotating energy chambers. Reconstruct small hidden socket area so complete foundation remains. Do NOT redesign, add barrels or change perspective. 3/4 top-down fantasy game sprite. Same square canvas as original and same object scale, position and empty margins. Base lower contact area should stay in original location. True transparent background.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Base_0_4.png"
+  },
+  {
+    "a": 1,
+    "b": 2,
+    "part": "Base",
+    "prompt": "Create ONLY the stationary BASE layer of the provided original Star Cannon upgrade 1-2. Precise component separation, preserve that variant's exact lower platform, ivory and gold ornament shapes, gems and details. Keep circular celestial platform, support forks and fixed vertical structures, complete centered rotating socket. Remove ALL upper cannon barrels, star muzzles and rotating energy chambers. Reconstruct small hidden socket area so complete foundation remains. Do NOT redesign, add barrels or change perspective. 3/4 top-down fantasy game sprite. Same square canvas as original and same object scale, position and empty margins. Base lower contact area should stay in original location. True transparent background.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Base_1_2.png"
+  },
+  {
+    "a": 1,
+    "b": 4,
+    "part": "Base",
+    "prompt": "Create ONLY the stationary BASE layer of the provided original Star Cannon upgrade 1-4. Precise component separation, preserve that variant's exact lower platform, ivory and gold ornament shapes, gems and details. Keep circular celestial platform, support forks and fixed vertical structures, complete centered rotating socket. Remove ALL upper cannon barrels, star muzzles and rotating energy chambers. Reconstruct small hidden socket area so complete foundation remains. Do NOT redesign, add barrels or change perspective. 3/4 top-down fantasy game sprite. Same square canvas as original and same object scale, position and empty margins. Base lower contact area should stay in original location. True transparent background.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Base_1_4.png"
+  },
+  {
+    "a": 1,
+    "b": 3,
+    "part": "Base",
+    "prompt": "Create ONLY the stationary BASE layer of the provided original Star Cannon upgrade 1-3. Precise component separation, preserve that variant's exact lower platform, ivory and gold ornament shapes, gems and details. Keep circular celestial platform, support forks and fixed vertical structures, complete centered rotating socket. Remove ALL upper cannon barrels, star muzzles and rotating energy chambers. Reconstruct small hidden socket area so complete foundation remains. Do NOT redesign, add barrels or change perspective. 3/4 top-down fantasy game sprite. Same square canvas as original and same object scale, position and empty margins. Base lower contact area should stay in original location. True transparent background.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Base_1_3.png"
+  },
+  {
+    "a": 1,
+    "b": 0,
+    "part": "Base",
+    "prompt": "Create ONLY the stationary BASE layer of the provided original Star Cannon upgrade 1-0. Precise component separation, preserve that variant's exact lower platform, ivory and gold ornament shapes, gems and details. Keep circular celestial platform, support forks and fixed vertical structures, complete centered rotating socket. Remove ALL upper cannon barrels, star muzzles and rotating energy chambers. Reconstruct small hidden socket area so complete foundation remains. Do NOT redesign, add barrels or change perspective. 3/4 top-down fantasy game sprite. Same square canvas as original and same object scale, position and empty margins. Base lower contact area should stay in original location. True transparent background.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Base_1_0.png"
+  },
+  {
+    "a": 1,
+    "b": 1,
+    "part": "Base",
+    "prompt": "Create ONLY the stationary BASE layer of the provided original Star Cannon upgrade 1-1. Precise component separation, preserve that variant's exact lower platform, ivory and gold ornament shapes, gems and details. Keep circular celestial platform, support forks and fixed vertical structures, complete centered rotating socket. Remove ALL upper cannon barrels, star muzzles and rotating energy chambers. Reconstruct small hidden socket area so complete foundation remains. Do NOT redesign, add barrels or change perspective. 3/4 top-down fantasy game sprite. Same square canvas as original and same object scale, position and empty margins. Base lower contact area should stay in original location. True transparent background.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Base_1_1.png"
+  },
+  {
+    "a": 2,
+    "b": 1,
+    "part": "Base",
+    "prompt": "Create ONLY the stationary BASE layer of the provided original Star Cannon upgrade 2-1. Precise component separation, preserve that variant's exact lower platform, ivory and gold ornament shapes, gems and details. Keep circular celestial platform, support forks and fixed vertical structures, complete centered rotating socket. Remove ALL upper cannon barrels, star muzzles and rotating energy chambers. Reconstruct small hidden socket area so complete foundation remains. Do NOT redesign, add barrels or change perspective. 3/4 top-down fantasy game sprite. Same square canvas as original and same object scale, position and empty margins. Base lower contact area should stay in original location. True transparent background.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Base_2_1.png"
+  },
+  {
+    "a": 2,
+    "b": 4,
+    "part": "Base",
+    "prompt": "Create ONLY the stationary BASE layer of the provided original Star Cannon upgrade 2-4. Precise component separation, preserve that variant's exact lower platform, ivory and gold ornament shapes, gems and details. Keep circular celestial platform, support forks and fixed vertical structures, complete centered rotating socket. Remove ALL upper cannon barrels, star muzzles and rotating energy chambers. Reconstruct small hidden socket area so complete foundation remains. Do NOT redesign, add barrels or change perspective. 3/4 top-down fantasy game sprite. Same square canvas as original and same object scale, position and empty margins. Base lower contact area should stay in original location. True transparent background.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Base_2_4.png"
+  },
+  {
+    "a": 2,
+    "b": 2,
+    "part": "Base",
+    "prompt": "Create ONLY the stationary BASE layer of the provided original Star Cannon upgrade 2-2. Precise component separation, preserve that variant's exact lower platform, ivory and gold ornament shapes, gems and details. Keep circular celestial platform, support forks and fixed vertical structures, complete centered rotating socket. Remove ALL upper cannon barrels, star muzzles and rotating energy chambers. Reconstruct small hidden socket area so complete foundation remains. Do NOT redesign, add barrels or change perspective. 3/4 top-down fantasy game sprite. Same square canvas as original and same object scale, position and empty margins. Base lower contact area should stay in original location. True transparent background.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Base_2_2.png"
+  },
+  {
+    "a": 3,
+    "b": 0,
+    "part": "Base",
+    "prompt": "Create ONLY the stationary BASE layer of the provided original Star Cannon upgrade 3-0. Precise component separation, preserve that variant's exact lower platform, ivory and gold ornament shapes, gems and details. Keep circular celestial platform, support forks and fixed vertical structures, complete centered rotating socket. Remove ALL upper cannon barrels, star muzzles and rotating energy chambers. Reconstruct small hidden socket area so complete foundation remains. Do NOT redesign, add barrels or change perspective. 3/4 top-down fantasy game sprite. Same square canvas as original and same object scale, position and empty margins. Base lower contact area should stay in original location. True transparent background.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Base_3_0.png"
+  },
+  {
+    "a": 2,
+    "b": 3,
+    "part": "Base",
+    "prompt": "Create ONLY the stationary BASE layer of the provided original Star Cannon upgrade 2-3. Precise component separation, preserve that variant's exact lower platform, ivory and gold ornament shapes, gems and details. Keep circular celestial platform, support forks and fixed vertical structures, complete centered rotating socket. Remove ALL upper cannon barrels, star muzzles and rotating energy chambers. Reconstruct small hidden socket area so complete foundation remains. Do NOT redesign, add barrels or change perspective. 3/4 top-down fantasy game sprite. Same square canvas as original and same object scale, position and empty margins. Base lower contact area should stay in original location. True transparent background.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Base_2_3.png"
+  },
+  {
+    "a": 2,
+    "b": 0,
+    "part": "Base",
+    "prompt": "Create ONLY the stationary BASE layer of the provided original Star Cannon upgrade 2-0. Precise component separation, preserve that variant's exact lower platform, ivory and gold ornament shapes, gems and details. Keep circular celestial platform, support forks and fixed vertical structures, complete centered rotating socket. Remove ALL upper cannon barrels, star muzzles and rotating energy chambers. Reconstruct small hidden socket area so complete foundation remains. Do NOT redesign, add barrels or change perspective. 3/4 top-down fantasy game sprite. Same square canvas as original and same object scale, position and empty margins. Base lower contact area should stay in original location. True transparent background.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Base_2_0.png"
+  },
+  {
+    "a": 3,
+    "b": 1,
+    "part": "Base",
+    "prompt": "Create ONLY the stationary BASE layer of the provided original Star Cannon upgrade 3-1. Precise component separation, preserve that variant's exact lower platform, ivory and gold ornament shapes, gems and details. Keep circular celestial platform, support forks and fixed vertical structures, complete centered rotating socket. Remove ALL upper cannon barrels, star muzzles and rotating energy chambers. Reconstruct small hidden socket area so complete foundation remains. Do NOT redesign, add barrels or change perspective. 3/4 top-down fantasy game sprite. Same square canvas as original and same object scale, position and empty margins. Base lower contact area should stay in original location. True transparent background.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Base_3_1.png"
+  },
+  {
+    "a": 4,
+    "b": 0,
+    "part": "Base",
+    "prompt": "Create ONLY the stationary BASE layer of the provided original Star Cannon upgrade 4-0. Precise component separation, preserve that variant's exact lower platform, ivory and gold ornament shapes, gems and details. Keep circular celestial platform, support forks and fixed vertical structures, complete centered rotating socket. Remove ALL upper cannon barrels, star muzzles and rotating energy chambers. Reconstruct small hidden socket area so complete foundation remains. Do NOT redesign, add barrels or change perspective. 3/4 top-down fantasy game sprite. Same square canvas as original and same object scale, position and empty margins. Base lower contact area should stay in original location. True transparent background.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Base_4_0.png"
+  },
+  {
+    "a": 4,
+    "b": 2,
+    "part": "Base",
+    "prompt": "Create ONLY the stationary BASE layer of the provided original Star Cannon upgrade 4-2. Precise component separation, preserve that variant's exact lower platform, ivory and gold ornament shapes, gems and details. Keep circular celestial platform, support forks and fixed vertical structures, complete centered rotating socket. Remove ALL upper cannon barrels, star muzzles and rotating energy chambers. Reconstruct small hidden socket area so complete foundation remains. Do NOT redesign, add barrels or change perspective. 3/4 top-down fantasy game sprite. Same square canvas as original and same object scale, position and empty margins. Base lower contact area should stay in original location. True transparent background.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Base_4_2.png"
+  },
+  {
+    "a": 3,
+    "b": 2,
+    "part": "Base",
+    "prompt": "Create ONLY the stationary BASE layer of the provided original Star Cannon upgrade 3-2. Precise component separation, preserve that variant's exact lower platform, ivory and gold ornament shapes, gems and details. Keep circular celestial platform, support forks and fixed vertical structures, complete centered rotating socket. Remove ALL upper cannon barrels, star muzzles and rotating energy chambers. Reconstruct small hidden socket area so complete foundation remains. Do NOT redesign, add barrels or change perspective. 3/4 top-down fantasy game sprite. Same square canvas as original and same object scale, position and empty margins. Base lower contact area should stay in original location. True transparent background.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Base_3_2.png"
+  },
+  {
+    "a": 4,
+    "b": 1,
+    "part": "Base",
+    "prompt": "Create ONLY the stationary BASE layer of the provided original Star Cannon upgrade 4-1. Precise component separation, preserve that variant's exact lower platform, ivory and gold ornament shapes, gems and details. Keep circular celestial platform, support forks and fixed vertical structures, complete centered rotating socket. Remove ALL upper cannon barrels, star muzzles and rotating energy chambers. Reconstruct small hidden socket area so complete foundation remains. Do NOT redesign, add barrels or change perspective. 3/4 top-down fantasy game sprite. Same square canvas as original and same object scale, position and empty margins. Base lower contact area should stay in original location. True transparent background.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Base_4_1.png"
+  },
+  {
+    "a": 0,
+    "b": 1,
+    "part": "Turret",
+    "prompt": "Extract ONLY the rotating UPPER GUN layer of original Star Cannon upgrade 0-1, reference 1. Preserve EXACT that variant's barrel layout, decorations, energy colors, ivory and gold forms. It has 1 distinct star-shaped firing muzzles; all 1 must remain distinct and clearly visible. Keep its upper cannons, star muzzles, rotating energy chamber, complete closed rear dome and upper ornaments. REMOVE every stationary structure beneath rear sphere: all vertical forks, left/right star-bearing support disks, feet, circular platform, lower socket. Close the occluded rear gun shell so no hole remains. Reference 2 shows correct separation of the base-level gun ONLY, use it to understand which parts are removed, do NOT simplify this upgrade to that model. Same original square canvas, pixel locations, object scale and empty margins. 3/4 top-down perspective, original upper-right orientation. True transparent background, no ground shadow.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Turret_0_1.png"
+  },
+  {
+    "a": 0,
+    "b": 2,
+    "part": "Turret",
+    "prompt": "Extract ONLY the rotating UPPER GUN layer of original Star Cannon upgrade 0-2, reference 1. Preserve EXACT that variant's barrel layout, decorations, energy colors, ivory and gold forms. It has 1 distinct star-shaped firing muzzles; all 1 must remain distinct and clearly visible. Keep its upper cannons, star muzzles, rotating energy chamber, complete closed rear dome and upper ornaments. REMOVE every stationary structure beneath rear sphere: all vertical forks, left/right star-bearing support disks, feet, circular platform, lower socket. Close the occluded rear gun shell so no hole remains. Reference 2 shows correct separation of the base-level gun ONLY, use it to understand which parts are removed, do NOT simplify this upgrade to that model. Same original square canvas, pixel locations, object scale and empty margins. 3/4 top-down perspective, original upper-right orientation. True transparent background, no ground shadow.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Turret_0_2.png"
+  },
+  {
+    "a": 1,
+    "b": 0,
+    "part": "Turret",
+    "prompt": "Extract ONLY the rotating UPPER GUN layer of original Star Cannon upgrade 1-0, reference 1. Preserve EXACT that variant's barrel layout, decorations, energy colors, ivory and gold forms. It has 1 distinct star-shaped firing muzzles; all 1 must remain distinct and clearly visible. Keep its upper cannons, star muzzles, rotating energy chamber, complete closed rear dome and upper ornaments. REMOVE every stationary structure beneath rear sphere: all vertical forks, left/right star-bearing support disks, feet, circular platform, lower socket. Close the occluded rear gun shell so no hole remains. Reference 2 shows correct separation of the base-level gun ONLY, use it to understand which parts are removed, do NOT simplify this upgrade to that model. Same original square canvas, pixel locations, object scale and empty margins. 3/4 top-down perspective, original upper-right orientation. True transparent background, no ground shadow.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Turret_1_0.png"
+  },
+  {
+    "a": 0,
+    "b": 3,
+    "part": "Turret",
+    "prompt": "Extract ONLY the rotating UPPER GUN layer of original Star Cannon upgrade 0-3, reference 1. Preserve EXACT that variant's barrel layout, decorations, energy colors, ivory and gold forms. It has 2 distinct star-shaped firing muzzles; all 2 must remain distinct and clearly visible. Keep its upper cannons, star muzzles, rotating energy chamber, complete closed rear dome and upper ornaments. REMOVE every stationary structure beneath rear sphere: all vertical forks, left/right star-bearing support disks, feet, circular platform, lower socket. Close the occluded rear gun shell so no hole remains. Reference 2 shows correct separation of the base-level gun ONLY, use it to understand which parts are removed, do NOT simplify this upgrade to that model. Same original square canvas, pixel locations, object scale and empty margins. 3/4 top-down perspective, original upper-right orientation. True transparent background, no ground shadow.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Turret_0_3.png"
+  },
+  {
+    "a": 1,
+    "b": 1,
+    "part": "Turret",
+    "prompt": "Extract ONLY the rotating UPPER GUN layer of original Star Cannon upgrade 1-1, reference 1. Preserve EXACT that variant's barrel layout, decorations, energy colors, ivory and gold forms. It has 1 distinct star-shaped firing muzzles; all 1 must remain distinct and clearly visible. Keep its upper cannons, star muzzles, rotating energy chamber, complete closed rear dome and upper ornaments. REMOVE every stationary structure beneath rear sphere: all vertical forks, left/right star-bearing support disks, feet, circular platform, lower socket. Close the occluded rear gun shell so no hole remains. Reference 2 shows correct separation of the base-level gun ONLY, use it to understand which parts are removed, do NOT simplify this upgrade to that model. Same original square canvas, pixel locations, object scale and empty margins. 3/4 top-down perspective, original upper-right orientation. True transparent background, no ground shadow.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Turret_1_1.png"
+  },
+  {
+    "a": 0,
+    "b": 4,
+    "part": "Turret",
+    "prompt": "Extract ONLY the rotating UPPER GUN layer of original Star Cannon upgrade 0-4, reference 1. Preserve EXACT that variant's barrel layout, decorations, energy colors, ivory and gold forms. It has 3 distinct star-shaped firing muzzles; all 3 must remain distinct and clearly visible. Keep its upper cannons, star muzzles, rotating energy chamber, complete closed rear dome and upper ornaments. REMOVE every stationary structure beneath rear sphere: all vertical forks, left/right star-bearing support disks, feet, circular platform, lower socket. Close the occluded rear gun shell so no hole remains. Reference 2 shows correct separation of the base-level gun ONLY, use it to understand which parts are removed, do NOT simplify this upgrade to that model. Same original square canvas, pixel locations, object scale and empty margins. 3/4 top-down perspective, original upper-right orientation. True transparent background, no ground shadow.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Turret_0_4.png"
+  },
+  {
+    "a": 1,
+    "b": 2,
+    "part": "Turret",
+    "prompt": "Extract ONLY the rotating UPPER GUN layer of original Star Cannon upgrade 1-2, reference 1. Preserve EXACT that variant's barrel layout, decorations, energy colors, ivory and gold forms. It has 1 distinct star-shaped firing muzzles; all 1 must remain distinct and clearly visible. Keep its upper cannons, star muzzles, rotating energy chamber, complete closed rear dome and upper ornaments. REMOVE every stationary structure beneath rear sphere: all vertical forks, left/right star-bearing support disks, feet, circular platform, lower socket. Close the occluded rear gun shell so no hole remains. Reference 2 shows correct separation of the base-level gun ONLY, use it to understand which parts are removed, do NOT simplify this upgrade to that model. Same original square canvas, pixel locations, object scale and empty margins. 3/4 top-down perspective, original upper-right orientation. True transparent background, no ground shadow.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Turret_1_2.png"
+  },
+  {
+    "a": 1,
+    "b": 3,
+    "part": "Turret",
+    "prompt": "Extract ONLY the rotating UPPER GUN layer of original Star Cannon upgrade 1-3, reference 1. Preserve EXACT that variant's barrel layout, decorations, energy colors, ivory and gold forms. It has 2 distinct star-shaped firing muzzles; all 2 must remain distinct and clearly visible. Keep its upper cannons, star muzzles, rotating energy chamber, complete closed rear dome and upper ornaments. REMOVE every stationary structure beneath rear sphere: all vertical forks, left/right star-bearing support disks, feet, circular platform, lower socket. Close the occluded rear gun shell so no hole remains. Reference 2 shows correct separation of the base-level gun ONLY, use it to understand which parts are removed, do NOT simplify this upgrade to that model. Same original square canvas, pixel locations, object scale and empty margins. 3/4 top-down perspective, original upper-right orientation. True transparent background, no ground shadow.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Turret_1_3.png"
+  },
+  {
+    "a": 1,
+    "b": 4,
+    "part": "Turret",
+    "prompt": "Extract ONLY the rotating UPPER GUN layer of original Star Cannon upgrade 1-4, reference 1. Preserve EXACT that variant's barrel layout, decorations, energy colors, ivory and gold forms. It has 3 distinct star-shaped firing muzzles; all 3 must remain distinct and clearly visible. Keep its upper cannons, star muzzles, rotating energy chamber, complete closed rear dome and upper ornaments. REMOVE every stationary structure beneath rear sphere: all vertical forks, left/right star-bearing support disks, feet, circular platform, lower socket. Close the occluded rear gun shell so no hole remains. Reference 2 shows correct separation of the base-level gun ONLY, use it to understand which parts are removed, do NOT simplify this upgrade to that model. Same original square canvas, pixel locations, object scale and empty margins. 3/4 top-down perspective, original upper-right orientation. True transparent background, no ground shadow.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Turret_1_4.png"
+  },
+  {
+    "a": 2,
+    "b": 0,
+    "part": "Turret",
+    "prompt": "Extract ONLY the rotating UPPER GUN layer of original Star Cannon upgrade 2-0, reference 1. Preserve EXACT that variant's barrel layout, decorations, energy colors, ivory and gold forms. It has 1 distinct star-shaped firing muzzles; all 1 must remain distinct and clearly visible. Keep its upper cannons, star muzzles, rotating energy chamber, complete closed rear dome and upper ornaments. REMOVE every stationary structure beneath rear sphere: all vertical forks, left/right star-bearing support disks, feet, circular platform, lower socket. Close the occluded rear gun shell so no hole remains. Reference 2 shows correct separation of the base-level gun ONLY, use it to understand which parts are removed, do NOT simplify this upgrade to that model. Same original square canvas, pixel locations, object scale and empty margins. 3/4 top-down perspective, original upper-right orientation. True transparent background, no ground shadow.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Turret_2_0.png"
+  },
+  {
+    "a": 2,
+    "b": 1,
+    "part": "Turret",
+    "prompt": "Extract ONLY the rotating UPPER GUN layer of original Star Cannon upgrade 2-1, reference 1. Preserve EXACT that variant's barrel layout, decorations, energy colors, ivory and gold forms. It has 1 distinct star-shaped firing muzzles; all 1 must remain distinct and clearly visible. Keep its upper cannons, star muzzles, rotating energy chamber, complete closed rear dome and upper ornaments. REMOVE every stationary structure beneath rear sphere: all vertical forks, left/right star-bearing support disks, feet, circular platform, lower socket. Close the occluded rear gun shell so no hole remains. Reference 2 shows correct separation of the base-level gun ONLY, use it to understand which parts are removed, do NOT simplify this upgrade to that model. Same original square canvas, pixel locations, object scale and empty margins. 3/4 top-down perspective, original upper-right orientation. True transparent background, no ground shadow.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Turret_2_1.png"
+  },
+  {
+    "a": 3,
+    "b": 0,
+    "part": "Turret",
+    "prompt": "Extract ONLY the rotating UPPER GUN layer of original Star Cannon upgrade 3-0, reference 1. Preserve EXACT that variant's barrel layout, decorations, energy colors, ivory and gold forms. It has 1 distinct star-shaped firing muzzles; all 1 must remain distinct and clearly visible. Keep its upper cannons, star muzzles, rotating energy chamber, complete closed rear dome and upper ornaments. REMOVE every stationary structure beneath rear sphere: all vertical forks, left/right star-bearing support disks, feet, circular platform, lower socket. Close the occluded rear gun shell so no hole remains. Reference 2 shows correct separation of the base-level gun ONLY, use it to understand which parts are removed, do NOT simplify this upgrade to that model. Same original square canvas, pixel locations, object scale and empty margins. 3/4 top-down perspective, original upper-right orientation. True transparent background, no ground shadow.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Turret_3_0.png"
+  },
+  {
+    "a": 2,
+    "b": 3,
+    "part": "Turret",
+    "prompt": "Extract ONLY the rotating UPPER GUN layer of original Star Cannon upgrade 2-3, reference 1. Preserve EXACT that variant's barrel layout, decorations, energy colors, ivory and gold forms. It has 2 distinct star-shaped firing muzzles; all 2 must remain distinct and clearly visible. Keep its upper cannons, star muzzles, rotating energy chamber, complete closed rear dome and upper ornaments. REMOVE every stationary structure beneath rear sphere: all vertical forks, left/right star-bearing support disks, feet, circular platform, lower socket. Close the occluded rear gun shell so no hole remains. Reference 2 shows correct separation of the base-level gun ONLY, use it to understand which parts are removed, do NOT simplify this upgrade to that model. Same original square canvas, pixel locations, object scale and empty margins. 3/4 top-down perspective, original upper-right orientation. True transparent background, no ground shadow.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Turret_2_3.png"
+  },
+  {
+    "a": 3,
+    "b": 1,
+    "part": "Turret",
+    "prompt": "Extract ONLY the rotating UPPER GUN layer of original Star Cannon upgrade 3-1, reference 1. Preserve EXACT that variant's barrel layout, decorations, energy colors, ivory and gold forms. It has 1 distinct star-shaped firing muzzles; all 1 must remain distinct and clearly visible. Keep its upper cannons, star muzzles, rotating energy chamber, complete closed rear dome and upper ornaments. REMOVE every stationary structure beneath rear sphere: all vertical forks, left/right star-bearing support disks, feet, circular platform, lower socket. Close the occluded rear gun shell so no hole remains. Reference 2 shows correct separation of the base-level gun ONLY, use it to understand which parts are removed, do NOT simplify this upgrade to that model. Same original square canvas, pixel locations, object scale and empty margins. 3/4 top-down perspective, original upper-right orientation. True transparent background, no ground shadow.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Turret_3_1.png"
+  },
+  {
+    "a": 2,
+    "b": 4,
+    "part": "Turret",
+    "prompt": "Extract ONLY the rotating UPPER GUN layer of original Star Cannon upgrade 2-4, reference 1. Preserve EXACT that variant's barrel layout, decorations, energy colors, ivory and gold forms. It has 3 distinct star-shaped firing muzzles; all 3 must remain distinct and clearly visible. Keep its upper cannons, star muzzles, rotating energy chamber, complete closed rear dome and upper ornaments. REMOVE every stationary structure beneath rear sphere: all vertical forks, left/right star-bearing support disks, feet, circular platform, lower socket. Close the occluded rear gun shell so no hole remains. Reference 2 shows correct separation of the base-level gun ONLY, use it to understand which parts are removed, do NOT simplify this upgrade to that model. Same original square canvas, pixel locations, object scale and empty margins. 3/4 top-down perspective, original upper-right orientation. True transparent background, no ground shadow.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Turret_2_4.png"
+  },
+  {
+    "a": 2,
+    "b": 2,
+    "part": "Turret",
+    "prompt": "Extract ONLY the rotating UPPER GUN layer of original Star Cannon upgrade 2-2, reference 1. Preserve EXACT that variant's barrel layout, decorations, energy colors, ivory and gold forms. It has 1 distinct star-shaped firing muzzles; all 1 must remain distinct and clearly visible. Keep its upper cannons, star muzzles, rotating energy chamber, complete closed rear dome and upper ornaments. REMOVE every stationary structure beneath rear sphere: all vertical forks, left/right star-bearing support disks, feet, circular platform, lower socket. Close the occluded rear gun shell so no hole remains. Reference 2 shows correct separation of the base-level gun ONLY, use it to understand which parts are removed, do NOT simplify this upgrade to that model. Same original square canvas, pixel locations, object scale and empty margins. 3/4 top-down perspective, original upper-right orientation. True transparent background, no ground shadow.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Turret_2_2.png"
+  },
+  {
+    "a": 4,
+    "b": 0,
+    "part": "Turret",
+    "prompt": "Extract ONLY the rotating UPPER GUN layer of original Star Cannon upgrade 4-0, reference 1. Preserve EXACT that variant's barrel layout, decorations, energy colors, ivory and gold forms. It has 1 distinct star-shaped firing muzzles; all 1 must remain distinct and clearly visible. Keep its upper cannons, star muzzles, rotating energy chamber, complete closed rear dome and upper ornaments. REMOVE every stationary structure beneath rear sphere: all vertical forks, left/right star-bearing support disks, feet, circular platform, lower socket. Close the occluded rear gun shell so no hole remains. Reference 2 shows correct separation of the base-level gun ONLY, use it to understand which parts are removed, do NOT simplify this upgrade to that model. Same original square canvas, pixel locations, object scale and empty margins. 3/4 top-down perspective, original upper-right orientation. True transparent background, no ground shadow.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Turret_4_0.png"
+  },
+  {
+    "a": 3,
+    "b": 2,
+    "part": "Turret",
+    "prompt": "Extract ONLY the rotating UPPER GUN layer of original Star Cannon upgrade 3-2, reference 1. Preserve EXACT that variant's barrel layout, decorations, energy colors, ivory and gold forms. It has 1 distinct star-shaped firing muzzles; all 1 must remain distinct and clearly visible. Keep its upper cannons, star muzzles, rotating energy chamber, complete closed rear dome and upper ornaments. REMOVE every stationary structure beneath rear sphere: all vertical forks, left/right star-bearing support disks, feet, circular platform, lower socket. Close the occluded rear gun shell so no hole remains. Reference 2 shows correct separation of the base-level gun ONLY, use it to understand which parts are removed, do NOT simplify this upgrade to that model. Same original square canvas, pixel locations, object scale and empty margins. 3/4 top-down perspective, original upper-right orientation. True transparent background, no ground shadow.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Turret_3_2.png"
+  },
+  {
+    "a": 4,
+    "b": 1,
+    "part": "Turret",
+    "prompt": "Extract ONLY the rotating UPPER GUN layer of original Star Cannon upgrade 4-1, reference 1. Preserve EXACT that variant's barrel layout, decorations, energy colors, ivory and gold forms. It has 1 distinct star-shaped firing muzzles; all 1 must remain distinct and clearly visible. Keep its upper cannons, star muzzles, rotating energy chamber, complete closed rear dome and upper ornaments. REMOVE every stationary structure beneath rear sphere: all vertical forks, left/right star-bearing support disks, feet, circular platform, lower socket. Close the occluded rear gun shell so no hole remains. Reference 2 shows correct separation of the base-level gun ONLY, use it to understand which parts are removed, do NOT simplify this upgrade to that model. Same original square canvas, pixel locations, object scale and empty margins. 3/4 top-down perspective, original upper-right orientation. True transparent background, no ground shadow.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Turret_4_1.png"
+  },
+  {
+    "a": 4,
+    "b": 2,
+    "part": "Turret",
+    "prompt": "Extract ONLY the rotating UPPER GUN layer of original Star Cannon upgrade 4-2, reference 1. Preserve EXACT that variant's barrel layout, decorations, energy colors, ivory and gold forms. It has 1 distinct star-shaped firing muzzles; all 1 must remain distinct and clearly visible. Keep its upper cannons, star muzzles, rotating energy chamber, complete closed rear dome and upper ornaments. REMOVE every stationary structure beneath rear sphere: all vertical forks, left/right star-bearing support disks, feet, circular platform, lower socket. Close the occluded rear gun shell so no hole remains. Reference 2 shows correct separation of the base-level gun ONLY, use it to understand which parts are removed, do NOT simplify this upgrade to that model. Same original square canvas, pixel locations, object scale and empty margins. 3/4 top-down perspective, original upper-right orientation. True transparent background, no ground shadow.",
+    "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\assets\\star_cannon\\components\\StarCannon_Turret_4_2.png"
+  },
+  {
+    "key": "1_4",
+    "prompt": "Technical sprite correction ONLY. This THREE-emitter Star Cannon turret is cropped at the right border. Extend and reconstruct ALL THREE complete gold star outlines so NO muzzle, ornament, rear housing or glow touches canvas boundary. Reduce entire turret silhouette 15% uniformly and keep its relative proportions, all 3 barrels, ivory/gold/violet details and upper-right direction. Center the existing gun on a square canvas with at least 8% transparent padding on every side. Keep it ONLY the upper gun, no base, no legs, no stationary bearing forks. True transparent background.",
+    "path": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-029e434f-24fd-4453-96c9-66145774184e.png",
+    "repair": true
+  },
+  {
+    "key": "2_4",
+    "prompt": "Technical sprite correction ONLY. This THREE-emitter Star Cannon turret is cropped at the right border. Extend and reconstruct ALL THREE complete gold star outlines so NO muzzle, ornament, rear housing or glow touches canvas boundary. Reduce entire turret silhouette 15% uniformly and keep its relative proportions, all 3 barrels, ivory/gold/violet details and upper-right direction. Center the existing gun on a square canvas with at least 8% transparent padding on every side. Keep it ONLY the upper gun, no base, no legs, no stationary bearing forks. True transparent background.",
+    "path": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-cc8f5751-a069-43fa-9ca4-03b166bfc303.png",
+    "repair": true
+  }
+]

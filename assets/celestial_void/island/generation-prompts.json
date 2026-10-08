@@ -1,0 +1,35 @@
+{
+  "reference": "design_previews/island_upgrade/Reference.png",
+  "assets": [
+    {
+      "key": "nebula",
+      "prompt": "Generate a NEW game background texture asset, reference image is style reference only. Wide landscape cosmic void background, rich layered violet nebula clouds at the OUTER edges, midnight purple quiet dark center, small far floating asteroid islands and suspended crystal shards near left/right edges, tiny stars, painted premium fantasy cartoon matching attached celestial island reference. No main island, no ground surface, no roads, no portal, no base, no text, no UI. Background must stay subdued behind a separate playable island. Landscape 3:2. Save as background artwork.",
+      "tool": "image_gen.imagegen",
+      "output_hint": "Generated images are saved to C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c as C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-4f297b78-a84a-4443-81e5-451ad38d089f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "key": "terrain",
+      "prompt": "Generate a NEW seamless repeating ground texture for a top-down 2D tower defense floating celestial island. Reference attached only for art style. Muted dark slate-purple rocky earth like interior soil of reference, finely painted irregular mottled mineral patches, sparse tiny lavender flowers and stone chips, low contrast with broad quiet empty usable ground. Completely flat overhead view. Seamless left-right and top-bottom matching edges. No large obstacles, no crystals, no buildings, no trees, no pathways, no island boundaries, no writing. Square bitmap texture, detailed hand painted fantasy cartoon. Texture will be tiled across a large playable map.",
+      "tool": "image_gen.imagegen",
+      "output_hint": "Generated images are saved to C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c as C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-c78e2bfa-28c1-455b-b9c3-4e9bc4752025.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "key": "rim",
+      "prompt": "Generate a NEW transparent game art overlay: a large floating celestial island's rocky PERIMETER FRAME ONLY, open empty transparent center. Style matching attached reference: jagged dark violet rock shoreline with gold mineral glints, deep hanging pointed cliffs below the lower edge, craggy stones on side edges, small purple bushes and crystals on outer rim. Overall wide landscape rounded irregular rectangle perimeter, 4:3 ratio. Very thin inward top rim: playable inner opening spans at least 88% of width and 86% of height. Outside frame and entire center must have REAL ALPHA TRANSPARENCY, not colored backdrop. No road, no portal, no base, no text. Natural painterly fantasy cartoon. This is a reusable transparent cliff border over separately tiled terrain, NOT a full map screenshot.",
+      "tool": "image_gen.imagegen",
+      "output_hint": "Generated images are saved to C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c as C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-ae16e7e7-8722-4aa6-80f8-d953a05c85b2.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "key": "garden",
+      "prompt": "Generate one new transparent game environment prop, style reference only from attached image. A compact celestial moon ruin garden: a broken ivory-gold crescent pillar, small ancient round moonstone platform, lush purple-lavender bushes around its base, tiny violet flowers and crystal chips. Elevated top-down 2D painted fantasy cartoon matching reference. Composition must fit inside a circular footprint centered in a square canvas, transparent outer corners. Elegant ivory ruins and dense purple foliage, muted shadows, no text, no UI, no background, no tall tree canopy, no roads. Grounded assembly full object visible with generous real-alpha padding. This will replace a small solid ruin sprite, not a map screenshot.",
+      "tool": "image_gen.imagegen",
+      "output_hint": "Generated images are saved to C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c as C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-81963891-c30b-4a7e-b4a8-fc097cb49746.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    },
+    {
+      "key": "shrub",
+      "prompt": "Generate ONE transparent low celestial shrub patch game sprite matching the attached reference art. Broad lush cushions of purple and lavender leaves and blossoms, a few deep-blue leaves, tiny pale-violet flowers, organic lobed silhouette with soft dark ground contact shadow. Elevated top-down 2D fantasy cartoon painterly game art. Make broad simple readable leaf masses and restrained detail for display at 60 pixels, no glitter speckling. No rocks, no crystals, no architecture, no trees with trunks, no roads, no background, no text. This is LOW FOLIAGE non-solid decoration, not a solid structure. Entire bush within canvas with real-alpha transparent padding, roughly elliptical patch, no hard rectangular edges.",
+      "tool": "image_gen.imagegen",
+      "output_hint": "Generated images are saved to C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c as C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-eb845bc9-7fa6-48c2-b1fb-cf4d78821514.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+    }
+  ]
+}

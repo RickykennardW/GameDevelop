@@ -1,0 +1,10 @@
+{
+  "type": "BuiltinCommonInstructions::JsCode",
+  "inlineCode": [
+    "const m=runtimeScene.__waveManager;",
+    "runtimeScene.getVariables().get(\"WaveSpawningFinished\").setBoolean(!!m&&m.index>=m.queue.length);"
+  ],
+  "parameterObjects": "",
+  "useStrict": true,
+  "eventsSheetExpanded": false
+}

@@ -1,0 +1,131 @@
+{
+  "type": "BuiltinCommonInstructions::ForEach",
+  "object": "RocketBullet",
+  "conditions": [
+    {
+      "type": {
+        "value": "CollisionNP"
+      },
+      "parameters": [
+        "RocketBullet",
+        "Enemy",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "type": {
+        "inverted": true,
+        "value": "Health::Health::IsDead"
+      },
+      "parameters": [
+        "Enemy",
+        "Health",
+        ""
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": {
+        "value": "PickNearest"
+      },
+      "parameters": [
+        "Enemy",
+        "RocketBullet.CenterX()",
+        "RocketBullet.CenterY()"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::ForEach",
+      "object": "Enemy",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "RocketBullet",
+            "HitHealthBefore",
+            "=",
+            "max(0, Enemy.Health::Health())"
+          ]
+        },
+        {
+          "type": {
+            "value": "Health::Health::Hit"
+          },
+          "parameters": [
+            "Enemy",
+            "Health",
+            "RocketBullet.Variable(Damage)",
+            "no",
+            "no",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "RocketBullet",
+            "ActualDamage",
+            "=",
+            "max(0, RocketBullet.Variable(HitHealthBefore) - max(0, Enemy.Health::Health()))"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "PlaceableTile",
+                "TowerId",
+                "=",
+                "RocketBullet.Variable(OwnerTowerId)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "PlaceableTile",
+                "DamageDealt",
+                "+",
+                "RocketBullet.Variable(ActualDamage)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "RocketBullet",
+            ""
+          ]
+        }
+      ]
+    }
+  ]
+}

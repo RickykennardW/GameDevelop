@@ -1,0 +1,88 @@
+{
+  "type": "BuiltinCommonInstructions::Standard",
+  "conditions": [
+    {
+      "type": {
+        "value": "BooleanVariable"
+      },
+      "parameters": [
+        "WaveActive",
+        "True",
+        ""
+      ]
+    },
+    {
+      "type": {
+        "value": "NumberVariable"
+      },
+      "parameters": [
+        "EnemiesToSpawn",
+        "=",
+        "0"
+      ]
+    },
+    {
+      "type": {
+        "value": "SceneInstancesCount"
+      },
+      "parameters": [
+        "",
+        "Enemy",
+        "=",
+        "0"
+      ]
+    },
+    {
+      "type": {
+        "value": "BooleanVariable"
+      },
+      "parameters": [
+        "WaveSpawningFinished",
+        "True",
+        ""
+      ]
+    },
+    {
+      "type": {
+        "value": "NumberVariable"
+      },
+      "parameters": [
+        "Wave",
+        ">",
+        "0"
+      ]
+    },
+    {
+      "type": {
+        "value": "NumberVariable"
+      },
+      "parameters": [
+        "Wave",
+        ">",
+        "LastRewardedWave"
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": {
+        "value": "SetNumberVariable"
+      },
+      "parameters": [
+        "Money",
+        "+",
+        "100"
+      ]
+    },
+    {
+      "type": {
+        "value": "SetNumberVariable"
+      },
+      "parameters": [
+        "LastRewardedWave",
+        "=",
+        "Wave"
+      ]
+    }
+  ]
+}

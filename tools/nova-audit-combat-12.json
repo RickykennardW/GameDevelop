@@ -1,0 +1,37 @@
+{
+  "type": "BuiltinCommonInstructions::ForEach",
+  "object": "Enemy",
+  "conditions": [
+    {
+      "type": {
+        "value": "Health::Health::IsDead"
+      },
+      "parameters": [
+        "Enemy",
+        "Health",
+        ""
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": {
+        "value": "SetNumberVariable"
+      },
+      "parameters": [
+        "Money",
+        "+",
+        "Enemy.Variable(GoldReward)"
+      ]
+    },
+    {
+      "type": {
+        "value": "Delete"
+      },
+      "parameters": [
+        "Enemy",
+        ""
+      ]
+    }
+  ]
+}

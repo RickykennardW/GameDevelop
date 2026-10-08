@@ -1,0 +1,26 @@
+{
+  "monsterTypes": 1,
+  "views": 4,
+  "files": [
+    {
+      "name": "NovaWisp_Down.png",
+      "bytes": 885338,
+      "sha256": "6c034aca8aee63400873c4559269e13d3369bd3c7d6cbce0b3ffc372851c9dc0"
+    },
+    {
+      "name": "NovaWisp_Left.png",
+      "bytes": 757598,
+      "sha256": "513fed4d3ffeabf4a1a5e66c627f7a2dd604834c1cbe5b5c52de8d1268f9c21e"
+    },
+    {
+      "name": "NovaWisp_Right.png",
+      "bytes": 767656,
+      "sha256": "279ca3ff6dc07a8f520900760a6f510635c65601b317bfde9ec271be7b36da3a"
+    },
+    {
+      "name": "NovaWisp_Up.png",
+      "bytes": 853942,
+      "sha256": "1b0724e2f34482c6c784ac7ae90f1d10826f21f4042f7126b74f9dc95e9b0ba2"
+    }
+  ]
+}

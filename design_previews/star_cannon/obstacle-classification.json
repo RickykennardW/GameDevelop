@@ -1,0 +1,322 @@
+[
+  {
+    "index": 0,
+    "kind": "Crystal",
+    "localScale": 1,
+    "category": "RemovableObstacle",
+    "blocking": true,
+    "center": [
+      468.15999999999997,
+      352
+    ],
+    "blockerCenter": [
+      469.7439999999999,
+      352.264
+    ],
+    "blockerRadius": 62.02983975084216
+  },
+  {
+    "index": 1,
+    "kind": "Rock",
+    "localScale": 1,
+    "category": "RemovableObstacle",
+    "blocking": true,
+    "center": [
+      594.88,
+      352
+    ],
+    "blockerCenter": [
+      594.5999999999999,
+      352
+    ],
+    "blockerRadius": 60.27059196069425
+  },
+  {
+    "index": 2,
+    "kind": "Ruin",
+    "localScale": 1,
+    "category": "RemovableObstacle",
+    "blocking": true,
+    "center": [
+      1038.4,
+      352
+    ],
+    "blockerCenter": [
+      1039.5040000000001,
+      353.472
+    ],
+    "blockerRadius": 78.97904875032245
+  },
+  {
+    "index": 3,
+    "kind": "Shrub",
+    "localScale": 1,
+    "category": "PermanentEnvironment",
+    "blocking": false,
+    "center": [
+      1149.28,
+      352
+    ],
+    "blockerCenter": [
+      1149.28,
+      352
+    ],
+    "blockerRadius": 83.6704760932994
+  },
+  {
+    "index": 4,
+    "kind": "Crystal",
+    "localScale": 1,
+    "category": "RemovableObstacle",
+    "blocking": true,
+    "center": [
+      1228.48,
+      616
+    ],
+    "blockerCenter": [
+      1230.0639999999999,
+      616.2639999999999
+    ],
+    "blockerRadius": 62.029839750842285
+  },
+  {
+    "index": 5,
+    "kind": "Rock",
+    "localScale": 1,
+    "category": "RemovableObstacle",
+    "blocking": true,
+    "center": [
+      1101.76,
+      616
+    ],
+    "blockerCenter": [
+      1101.48,
+      616
+    ],
+    "blockerRadius": 60.27059196069423
+  },
+  {
+    "index": 6,
+    "kind": "Ruin",
+    "localScale": 1,
+    "category": "RemovableObstacle",
+    "blocking": true,
+    "center": [
+      563.2,
+      616
+    ],
+    "blockerCenter": [
+      564.3040000000001,
+      617.472
+    ],
+    "blockerRadius": 78.97904875032245
+  },
+  {
+    "index": 7,
+    "kind": "Shrub",
+    "localScale": 1,
+    "category": "PermanentEnvironment",
+    "blocking": false,
+    "center": [
+      705.76,
+      616
+    ],
+    "blockerCenter": [
+      705.76,
+      616
+    ],
+    "blockerRadius": 83.67047609329936
+  },
+  {
+    "index": 8,
+    "kind": "Crystal",
+    "localScale": 1,
+    "category": "RemovableObstacle",
+    "blocking": true,
+    "center": [
+      642.4,
+      880
+    ],
+    "blockerCenter": [
+      643.9839999999999,
+      880.2639999999999
+    ],
+    "blockerRadius": 62.02983975084218
+  },
+  {
+    "index": 9,
+    "kind": "Rock",
+    "localScale": 1,
+    "category": "RemovableObstacle",
+    "blocking": true,
+    "center": [
+      769.12,
+      880
+    ],
+    "blockerCenter": [
+      768.8399999999999,
+      880
+    ],
+    "blockerRadius": 60.27059196069423
+  },
+  {
+    "index": 10,
+    "kind": "Ruin",
+    "localScale": 1,
+    "category": "RemovableObstacle",
+    "blocking": true,
+    "center": [
+      1228.48,
+      880
+    ],
+    "blockerCenter": [
+      1229.5839999999998,
+      881.472
+    ],
+    "blockerRadius": 78.97904875032235
+  },
+  {
+    "index": 11,
+    "kind": "Shrub",
+    "localScale": 1,
+    "category": "PermanentEnvironment",
+    "blocking": false,
+    "center": [
+      1339.3600000000001,
+      880
+    ],
+    "blockerCenter": [
+      1339.3600000000001,
+      880
+    ],
+    "blockerRadius": 83.67047609329936
+  },
+  {
+    "index": 12,
+    "kind": "Rock",
+    "localScale": 0.42,
+    "category": "RemovableObstacle",
+    "blocking": true,
+    "center": [
+      420.64,
+      392
+    ],
+    "blockerCenter": [
+      420.52239999999995,
+      392
+    ],
+    "blockerRadius": 30.533648623491576
+  },
+  {
+    "index": 13,
+    "kind": "Shrub",
+    "localScale": 0.56,
+    "category": "PermanentEnvironment",
+    "blocking": false,
+    "center": [
+      547.3599999999999,
+      398
+    ],
+    "blockerCenter": [
+      547.3599999999999,
+      398
+    ],
+    "blockerRadius": 50.815466612247654
+  },
+  {
+    "index": 14,
+    "kind": "Crystal",
+    "localScale": 0.46,
+    "category": "RemovableObstacle",
+    "blocking": true,
+    "center": [
+      1276,
+      658
+    ],
+    "blockerCenter": [
+      1276.72864,
+      658.12144
+    ],
+    "blockerRadius": 33.393726285387395
+  },
+  {
+    "index": 15,
+    "kind": "Shrub",
+    "localScale": 0.53,
+    "category": "PermanentEnvironment",
+    "blocking": false,
+    "center": [
+      1149.28,
+      666
+    ],
+    "blockerCenter": [
+      1149.28,
+      666
+    ],
+    "blockerRadius": 48.57535232944866
+  },
+  {
+    "index": 16,
+    "kind": "Rock",
+    "localScale": 0.43,
+    "category": "RemovableObstacle",
+    "blocking": true,
+    "center": [
+      1180.9599999999998,
+      924
+    ],
+    "blockerCenter": [
+      1180.8395999999998,
+      924
+    ],
+    "blockerRadius": 31.04635454309864
+  },
+  {
+    "index": 17,
+    "kind": "Shrub",
+    "localScale": 0.56,
+    "category": "PermanentEnvironment",
+    "blocking": false,
+    "center": [
+      705.76,
+      928
+    ],
+    "blockerCenter": [
+      705.76,
+      928
+    ],
+    "blockerRadius": 50.815466612247654
+  },
+  {
+    "index": 18,
+    "kind": "Crystal",
+    "localScale": 0.8,
+    "category": "PermanentEnvironment",
+    "blocking": true,
+    "center": [
+      848.3199999999999,
+      104
+    ],
+    "blockerCenter": [
+      849.5871999999999,
+      104.21119999999999
+    ],
+    "blockerRadius": 51.42387180067374
+  },
+  {
+    "index": 19,
+    "kind": "Shrub",
+    "localScale": 0.72,
+    "category": "PermanentEnvironment",
+    "blocking": false,
+    "center": [
+      943.36,
+      104
+    ],
+    "blockerCenter": [
+      943.36,
+      104
+    ],
+    "blockerRadius": 62.76274278717555
+  }
+]

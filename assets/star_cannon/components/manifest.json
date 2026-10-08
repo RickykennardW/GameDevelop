@@ -1,0 +1,216 @@
+{
+  "baseCount": 21,
+  "turretCount": 21,
+  "files": [
+    {
+      "name": "StarCannon_Base_0_0.png",
+      "bytes": 658222,
+      "sha256": "29f6e30b3bb8662d9668fe79b58de3b52aa261c31016a6a64f6331031b17db29"
+    },
+    {
+      "name": "StarCannon_Base_0_1.png",
+      "bytes": 521008,
+      "sha256": "408665958f23c66d06f984f3f68f9bb9e82a65f457b9d4266facc175c36cf6fc"
+    },
+    {
+      "name": "StarCannon_Base_0_2.png",
+      "bytes": 654846,
+      "sha256": "f35360324ec103d98a80b5d6bcff55880ecc20a2a064ae9a42a0104e0ed0ee9a"
+    },
+    {
+      "name": "StarCannon_Base_0_3.png",
+      "bytes": 659616,
+      "sha256": "2ce3eb5f56720ed51c3c341c14f2fe88f06c8658ab3a1f269008e81f2c5be60a"
+    },
+    {
+      "name": "StarCannon_Base_0_4.png",
+      "bytes": 816412,
+      "sha256": "54345df0da8b8774ed1a887464f35187e49dedba9a14b71049d8ceebbce2105a"
+    },
+    {
+      "name": "StarCannon_Base_1_0.png",
+      "bytes": 756402,
+      "sha256": "03136aaf5e1e9ae834a682067f48cd7cdfd757f72965521b06a8112dbcc13208"
+    },
+    {
+      "name": "StarCannon_Base_1_1.png",
+      "bytes": 660433,
+      "sha256": "380f332ba604219d18bef80adfb31b88f8e5ce12b86250558da8bd3d2376ae5e"
+    },
+    {
+      "name": "StarCannon_Base_1_2.png",
+      "bytes": 894233,
+      "sha256": "4b24735d6ef851ebb182a6fafcabbce340a5da09c2122fa5d92ed5c12e229545"
+    },
+    {
+      "name": "StarCannon_Base_1_3.png",
+      "bytes": 753486,
+      "sha256": "7c4bbcb9aa0c0f91f994023516df69972516f2ca0baa0ff1719221c6f41e014a"
+    },
+    {
+      "name": "StarCannon_Base_1_4.png",
+      "bytes": 773749,
+      "sha256": "cd452e73c09651ac8979cfe5044c32a0554a739087dfb8afc570240827169d32"
+    },
+    {
+      "name": "StarCannon_Base_2_0.png",
+      "bytes": 748741,
+      "sha256": "47738e84fc5128c222c4580925472f09d929921a62ce29c8e4669c9b34dba3d6"
+    },
+    {
+      "name": "StarCannon_Base_2_1.png",
+      "bytes": 1030126,
+      "sha256": "8519696dc8067febcead73d64c4373c15c12273d081f91b6a41b38b8504e7635"
+    },
+    {
+      "name": "StarCannon_Base_2_2.png",
+      "bytes": 831839,
+      "sha256": "8e34c4da0f8d1a40aa413901578d3e6f6f9779b4ce4c9ccef01371202860a103"
+    },
+    {
+      "name": "StarCannon_Base_2_3.png",
+      "bytes": 703440,
+      "sha256": "2dc2b3c75d4e597d060a7d93dfdce207a1e61024df8e176d7d141d4cb5bd9b8d"
+    },
+    {
+      "name": "StarCannon_Base_2_4.png",
+      "bytes": 838731,
+      "sha256": "5d03ebd9760f53e0cce11a1442ebf06450a41244ad1dc160b6df83ebd75e28a5"
+    },
+    {
+      "name": "StarCannon_Base_3_0.png",
+      "bytes": 1010035,
+      "sha256": "878fb94963c40b7438f33390ef97121ed80b798e2458a4262092d96ae98286f0"
+    },
+    {
+      "name": "StarCannon_Base_3_1.png",
+      "bytes": 790363,
+      "sha256": "5be4b626cdcb1ec57a3cdc6c000e2693cfbfef7f35fa2cb79bf68bc2798005a7"
+    },
+    {
+      "name": "StarCannon_Base_3_2.png",
+      "bytes": 895194,
+      "sha256": "6414020843d9b765b3bcb613b09309285071ddb801d67e1e77a18a9df517b72e"
+    },
+    {
+      "name": "StarCannon_Base_4_0.png",
+      "bytes": 699661,
+      "sha256": "faed60860910cbc5ea9622058c37e07fc70e3f16442fe80b7e4dd7ea1b574dd8"
+    },
+    {
+      "name": "StarCannon_Base_4_1.png",
+      "bytes": 825791,
+      "sha256": "d399634174bab0027c92aae5216ceb15284e600c206b7333cef0b687440aacfc"
+    },
+    {
+      "name": "StarCannon_Base_4_2.png",
+      "bytes": 737984,
+      "sha256": "01ff0236c2aec4a9302587d6543cdb6225cc5491f87842f8dfa392659414fee5"
+    },
+    {
+      "name": "StarCannon_Turret_0_0.png",
+      "bytes": 493482,
+      "sha256": "4cff7fc4778d635bd3790a223f1f69ee3c5df1f6c99539d55b4fba550ac181c6"
+    },
+    {
+      "name": "StarCannon_Turret_0_1.png",
+      "bytes": 777540,
+      "sha256": "2f296253f0c7e4cba15d53336f8ecd94cf15e83c300fdb4a2b49eb953e9392a4"
+    },
+    {
+      "name": "StarCannon_Turret_0_2.png",
+      "bytes": 974108,
+      "sha256": "82a2ee04fd3dd194273f91871cc2b547d22c47c70550ca7b20c4fd2803ac0419"
+    },
+    {
+      "name": "StarCannon_Turret_0_3.png",
+      "bytes": 823759,
+      "sha256": "bead801f45f6b0f39dd66570af8c28bd0a560120190b286a503ebac3ae1ed1f5"
+    },
+    {
+      "name": "StarCannon_Turret_0_4.png",
+      "bytes": 1274503,
+      "sha256": "c3351273d8ff7364845c3b9d61528c209842cefbf3b700575bb71cf6d6abef0d"
+    },
+    {
+      "name": "StarCannon_Turret_1_0.png",
+      "bytes": 713782,
+      "sha256": "2db43f1c630a11f93fa555edd883e924f0f2be756c7f293eecdbdb37ed724207"
+    },
+    {
+      "name": "StarCannon_Turret_1_1.png",
+      "bytes": 923384,
+      "sha256": "5fa1c98aa5f1be7ccab8af3d1044566baf08f46f2fd87d10360dfa4d69df9fa0"
+    },
+    {
+      "name": "StarCannon_Turret_1_2.png",
+      "bytes": 1115681,
+      "sha256": "3bc0f65b314024bdeff9c5f7d77b3e441bc6e69361f28e684d9e734347ef0945"
+    },
+    {
+      "name": "StarCannon_Turret_1_3.png",
+      "bytes": 1241369,
+      "sha256": "7718fe03215af0a2f072fe4e2829123a6da8f77f078ee999bbd32b115307989d"
+    },
+    {
+      "name": "StarCannon_Turret_1_4.png",
+      "bytes": 1158137,
+      "sha256": "28a5a890395162b5dbd1235cfa64902dbc292599bb03e1f313cd103c1654fc66"
+    },
+    {
+      "name": "StarCannon_Turret_2_0.png",
+      "bytes": 934480,
+      "sha256": "944f0d5da1c024250f3ea54740e4a775e9c2979c56202f3708ce0d889ce76561"
+    },
+    {
+      "name": "StarCannon_Turret_2_1.png",
+      "bytes": 1004719,
+      "sha256": "8606ad310594a61ac013d5a5ee6a12b9559d12d8a658852fedf2bae9459f9003"
+    },
+    {
+      "name": "StarCannon_Turret_2_2.png",
+      "bytes": 1060569,
+      "sha256": "ae492297130bb3fca37fd9c91d6a6234cd5940de29d91c763c7ad15ae4779843"
+    },
+    {
+      "name": "StarCannon_Turret_2_3.png",
+      "bytes": 1242928,
+      "sha256": "7cc81c7d36e56138cea0ed15b0f55b3b3e9cc556261860d1a71a8ddd31f13cb8"
+    },
+    {
+      "name": "StarCannon_Turret_2_4.png",
+      "bytes": 1180568,
+      "sha256": "d4052b839f686201f30cc6fa9eddc56e4d557d20efe7241078476b39f73a9512"
+    },
+    {
+      "name": "StarCannon_Turret_3_0.png",
+      "bytes": 1066436,
+      "sha256": "18befed5dfa03287334884579bc6b520a533b337bb5f93f0a949c892eeb4085e"
+    },
+    {
+      "name": "StarCannon_Turret_3_1.png",
+      "bytes": 1208420,
+      "sha256": "f600d3a87d10246d96c83cc395b81c8ed9de744b429fa13f23f3b4686fcefc78"
+    },
+    {
+      "name": "StarCannon_Turret_3_2.png",
+      "bytes": 1184968,
+      "sha256": "5b39422cc1f0c1300e5d855d9be5d9515f1fbd56927011b4002fd42c4d3f6262"
+    },
+    {
+      "name": "StarCannon_Turret_4_0.png",
+      "bytes": 934380,
+      "sha256": "6ebf94d7ac32e175fddf29b9d09240a21fb045c82e0e2c03613d8f80aa3e07fa"
+    },
+    {
+      "name": "StarCannon_Turret_4_1.png",
+      "bytes": 1099149,
+      "sha256": "d2f87569bec2054686f3a70bd9e077bd8da99bae14239d4ea9208a171e01f38b"
+    },
+    {
+      "name": "StarCannon_Turret_4_2.png",
+      "bytes": 1051089,
+      "sha256": "074c15fb389155c2cbb09bdc06d5dda1c8c1a5cdc5eb58d7f7a17ccb6bb657a9"
+    }
+  ]
+}

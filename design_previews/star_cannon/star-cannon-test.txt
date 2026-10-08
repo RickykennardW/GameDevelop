@@ -1,0 +1,212 @@
+PASS Star Cannon fifth shop card and exact cost 300
+PASS Star shop title and icon
+PASS whole card starts native Star builder
+PASS find valid fractional free placement
+PASS one native placement charges once and exits builder
+PASS exact unsnapped Star footprint
+PASS tower overlap never charges
+PASS widened road blocks Star placement
+PASS right click cancels Star builder
+PASS Escape cancels Star builder
+PASS native selection opens two Star upgrade paths
+PASS panel shows named Star paths
+PASS panel Star title and live preview
+PASS base range 210 uses canonical footprint center
+PASS unaffordable upgrade rejected in actual panel
+PASS actual purchased visual and investment 0_0
+PASS multiplicative damage 0_0
+PASS range and rate stack 0_0
+PASS upgrade keeps owner anchor footprint camera 0_0
+PASS rendered contact registered to footprint 0_0
+PASS panel follows composed visual 0_0
+PASS sell refunds base and upgrades once 0_0
+PASS actual purchased visual and investment 0_1
+PASS multiplicative damage 0_1
+PASS range and rate stack 0_1
+PASS upgrade keeps owner anchor footprint camera 0_1
+PASS rendered contact registered to footprint 0_1
+PASS panel follows composed visual 0_1
+PASS sell refunds base and upgrades once 0_1
+PASS actual purchased visual and investment 0_2
+PASS multiplicative damage 0_2
+PASS range and rate stack 0_2
+PASS upgrade keeps owner anchor footprint camera 0_2
+PASS rendered contact registered to footprint 0_2
+PASS panel follows composed visual 0_2
+PASS sell refunds base and upgrades once 0_2
+PASS actual purchased visual and investment 0_3
+PASS multiplicative damage 0_3
+PASS range and rate stack 0_3
+PASS upgrade keeps owner anchor footprint camera 0_3
+PASS rendered contact registered to footprint 0_3
+PASS panel follows composed visual 0_3
+PASS sell refunds base and upgrades once 0_3
+PASS actual purchased visual and investment 0_4
+PASS multiplicative damage 0_4
+PASS range and rate stack 0_4
+PASS upgrade keeps owner anchor footprint camera 0_4
+PASS rendered contact registered to footprint 0_4
+PASS panel follows composed visual 0_4
+PASS sell refunds base and upgrades once 0_4
+PASS actual purchased visual and investment 1_0
+PASS multiplicative damage 1_0
+PASS range and rate stack 1_0
+PASS upgrade keeps owner anchor footprint camera 1_0
+PASS rendered contact registered to footprint 1_0
+PASS panel follows composed visual 1_0
+PASS sell refunds base and upgrades once 1_0
+PASS actual purchased visual and investment 1_1
+PASS multiplicative damage 1_1
+PASS range and rate stack 1_1
+PASS upgrade keeps owner anchor footprint camera 1_1
+PASS rendered contact registered to footprint 1_1
+PASS panel follows composed visual 1_1
+PASS sell refunds base and upgrades once 1_1
+PASS actual purchased visual and investment 1_2
+PASS multiplicative damage 1_2
+PASS range and rate stack 1_2
+PASS upgrade keeps owner anchor footprint camera 1_2
+PASS rendered contact registered to footprint 1_2
+PASS panel follows composed visual 1_2
+PASS sell refunds base and upgrades once 1_2
+PASS actual purchased visual and investment 1_3
+PASS multiplicative damage 1_3
+PASS range and rate stack 1_3
+PASS upgrade keeps owner anchor footprint camera 1_3
+PASS rendered contact registered to footprint 1_3
+PASS panel follows composed visual 1_3
+PASS sell refunds base and upgrades once 1_3
+PASS actual purchased visual and investment 1_4
+PASS multiplicative damage 1_4
+PASS range and rate stack 1_4
+PASS upgrade keeps owner anchor footprint camera 1_4
+PASS rendered contact registered to footprint 1_4
+PASS panel follows composed visual 1_4
+PASS sell refunds base and upgrades once 1_4
+PASS actual purchased visual and investment 2_0
+PASS multiplicative damage 2_0
+PASS range and rate stack 2_0
+PASS upgrade keeps owner anchor footprint camera 2_0
+PASS rendered contact registered to footprint 2_0
+PASS panel follows composed visual 2_0
+PASS sell refunds base and upgrades once 2_0
+PASS actual purchased visual and investment 2_1
+PASS multiplicative damage 2_1
+PASS range and rate stack 2_1
+PASS upgrade keeps owner anchor footprint camera 2_1
+PASS rendered contact registered to footprint 2_1
+PASS panel follows composed visual 2_1
+PASS sell refunds base and upgrades once 2_1
+PASS actual purchased visual and investment 2_2
+PASS multiplicative damage 2_2
+PASS range and rate stack 2_2
+PASS upgrade keeps owner anchor footprint camera 2_2
+PASS rendered contact registered to footprint 2_2
+PASS panel follows composed visual 2_2
+PASS sell refunds base and upgrades once 2_2
+PASS actual purchased visual and investment 2_3
+PASS multiplicative damage 2_3
+PASS range and rate stack 2_3
+PASS upgrade keeps owner anchor footprint camera 2_3
+PASS rendered contact registered to footprint 2_3
+PASS panel follows composed visual 2_3
+PASS secondary Lv3 visually locked 2_3
+PASS secondary Lv3 blocked by UI and system 2_3
+PASS sell refunds base and upgrades once 2_3
+PASS actual purchased visual and investment 2_4
+PASS multiplicative damage 2_4
+PASS range and rate stack 2_4
+PASS upgrade keeps owner anchor footprint camera 2_4
+PASS rendered contact registered to footprint 2_4
+PASS panel follows composed visual 2_4
+PASS secondary Lv3 visually locked 2_4
+PASS secondary Lv3 blocked by UI and system 2_4
+PASS sell refunds base and upgrades once 2_4
+PASS actual purchased visual and investment 3_0
+PASS multiplicative damage 3_0
+PASS range and rate stack 3_0
+PASS upgrade keeps owner anchor footprint camera 3_0
+PASS rendered contact registered to footprint 3_0
+PASS panel follows composed visual 3_0
+PASS sell refunds base and upgrades once 3_0
+PASS actual purchased visual and investment 3_1
+PASS multiplicative damage 3_1
+PASS range and rate stack 3_1
+PASS upgrade keeps owner anchor footprint camera 3_1
+PASS rendered contact registered to footprint 3_1
+PASS panel follows composed visual 3_1
+PASS sell refunds base and upgrades once 3_1
+PASS actual purchased visual and investment 3_2
+PASS multiplicative damage 3_2
+PASS range and rate stack 3_2
+PASS upgrade keeps owner anchor footprint camera 3_2
+PASS rendered contact registered to footprint 3_2
+PASS panel follows composed visual 3_2
+PASS secondary Lv3 visually locked 3_2
+PASS secondary Lv3 blocked by UI and system 3_2
+PASS sell refunds base and upgrades once 3_2
+PASS invalid combined specialization rejected 3_3
+PASS invalid combined specialization rejected 3_4
+PASS actual purchased visual and investment 4_0
+PASS multiplicative damage 4_0
+PASS range and rate stack 4_0
+PASS upgrade keeps owner anchor footprint camera 4_0
+PASS rendered contact registered to footprint 4_0
+PASS panel follows composed visual 4_0
+PASS sell refunds base and upgrades once 4_0
+PASS actual purchased visual and investment 4_1
+PASS multiplicative damage 4_1
+PASS range and rate stack 4_1
+PASS upgrade keeps owner anchor footprint camera 4_1
+PASS rendered contact registered to footprint 4_1
+PASS panel follows composed visual 4_1
+PASS sell refunds base and upgrades once 4_1
+PASS actual purchased visual and investment 4_2
+PASS multiplicative damage 4_2
+PASS range and rate stack 4_2
+PASS upgrade keeps owner anchor footprint camera 4_2
+PASS rendered contact registered to footprint 4_2
+PASS panel follows composed visual 4_2
+PASS secondary Lv3 visually locked 4_2
+PASS secondary Lv3 blocked by UI and system 4_2
+PASS sell refunds base and upgrades once 4_2
+PASS invalid combined specialization rejected 4_3
+PASS invalid combined specialization rejected 4_4
+PASS new purchase after upgrade/sell resets lifetime and immediately attacks
+PASS base autonomous target acquisition and visible projectile
+PASS base real direct damage and owner attribution
+PASS snapshot projectile count/fraction/skin 1_0
+PASS distinct real emitter origins 1_0
+PASS actual volley damage once 1_0
+PASS snapshot projectile count/fraction/skin 3_0
+PASS distinct real emitter origins 3_0
+PASS actual volley damage once 3_0
+PASS snapshot projectile count/fraction/skin 4_0
+PASS distinct real emitter origins 4_0
+PASS actual volley damage once 4_0
+PASS snapshot projectile count/fraction/skin 0_3
+PASS distinct real emitter origins 0_3
+PASS actual volley damage once 0_3
+PASS snapshot projectile count/fraction/skin 0_4
+PASS distinct real emitter origins 0_4
+PASS actual volley damage once 0_4
+PASS snapshot projectile count/fraction/skin 2_3
+PASS distinct real emitter origins 2_3
+PASS actual volley damage once 2_3
+PASS snapshot projectile count/fraction/skin 2_4
+PASS distinct real emitter origins 2_4
+PASS actual volley damage once 2_4
+PASS primary full damage without own splash 3
+PASS single splash fraction and radius boundary 3
+PASS direct plus actual splash attributed once 3
+PASS primary full damage without own splash 4
+PASS single splash fraction and radius boundary 4
+PASS direct plus actual splash attributed once 4
+PASS Supernova radius is 1.4 times level 3
+PASS in-flight projectile stats immutable after upgrade
+PASS damage dealt clamps overkill to actual HP
+PASS native cooldown respects global 2x
+PASS Star appears in live Index with actual base stats
+PASS Index shows eight Star upgrade icons
+PASS effects and projectiles cleaned up
+ALL STAR CANNON TESTS PASSED

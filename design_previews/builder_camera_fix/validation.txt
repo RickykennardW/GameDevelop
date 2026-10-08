@@ -1,0 +1,22 @@
+Builder/camera bugfix validation
+GDevelop 5.6.283 native load/compile/export: 0 diagnostics, EXPORT true
+PASS JSON scene parses
+PASS No object/config/instance/group/layer changes
+PASS Only camera and placement roots changed
+PASS Only map-camera child edited in root 0
+PASS Native placement sound preserved
+PASS Embedded runtime source matches
+PASS Embedded click source matches
+PASS Embedded rings source matches
+PASS builder-fix-test no failures
+builder-fix-test: 127 PASS
+PASS free-placement-test no failures
+free-placement-test: 61 PASS
+PASS celestial-void-test no failures
+celestial-void-test: 52 PASS
+PASS celestial-full-wave-regression no failures
+celestial-full-wave-regression: 419 PASS
+PASS celestial-wave-speed-test no failures
+celestial-wave-speed-test: 64 PASS
+Native builder/camera including viewport resize: 29 PASS
+Native Archer/INDEX/wave controls: 11 PASS

@@ -1,0 +1,131 @@
+{
+  "type": "BuiltinCommonInstructions::ForEach",
+  "object": "Bullet",
+  "conditions": [
+    {
+      "type": {
+        "value": "CollisionNP"
+      },
+      "parameters": [
+        "Bullet",
+        "Enemy",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "type": {
+        "inverted": true,
+        "value": "Health::Health::IsDead"
+      },
+      "parameters": [
+        "Enemy",
+        "Health",
+        ""
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": {
+        "value": "PickNearest"
+      },
+      "parameters": [
+        "Enemy",
+        "Bullet.CenterX()",
+        "Bullet.CenterY()"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::ForEach",
+      "object": "Enemy",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "Bullet",
+            "HitHealthBefore",
+            "=",
+            "max(0, Enemy.Health::Health())"
+          ]
+        },
+        {
+          "type": {
+            "value": "Health::Health::Hit"
+          },
+          "parameters": [
+            "Enemy",
+            "Health",
+            "Bullet.Variable(Damage)",
+            "no",
+            "no",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "Bullet",
+            "ActualDamage",
+            "=",
+            "max(0, Bullet.Variable(HitHealthBefore) - max(0, Enemy.Health::Health()))"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "PlaceableTile",
+                "TowerId",
+                "=",
+                "Bullet.Variable(OwnerTowerId)"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "PlaceableTile",
+                "DamageDealt",
+                "+",
+                "Bullet.Variable(ActualDamage)"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Bullet",
+            ""
+          ]
+        }
+      ]
+    }
+  ]
+}

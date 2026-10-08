@@ -1,0 +1,31 @@
+Free placement final validation
+GDevelop native compile/export: 0 diagnostics, EXPORT true
+PASS Scene JSON parses
+PASS Only intended event roots changed
+PASS Original object definitions preserved
+PASS Original variables preserved
+PASS Original instances and waypoints preserved
+PASS All native wave, reward, combat, projectile, movement, UI and upgrade events preserved
+PASS No snap call in scene events
+PASS All instance references exist
+PASS Object group references valid
+PASS Footprint/range visuals absent from placement groups
+PASS UUIDs unique
+PASS Embedded source matches runtime
+PASS Embedded source matches click
+PASS Embedded source matches rings
+PASS free-placement-test runtime passes
+free-placement-test: 61 PASS
+PASS celestial-void-test runtime passes
+celestial-void-test: 52 PASS
+PASS celestial-full-wave-regression runtime passes
+celestial-full-wave-regression: 419 PASS
+PASS celestial-wave-speed-test runtime passes
+celestial-wave-speed-test: 64 PASS
+PASS archer-test runtime passes
+archer-test: 170 PASS
+PASS cross-path-test runtime passes
+cross-path-test: 143 PASS
+Native mouse free placement: 7 PASS
+Native mouse Archer/INDEX/wave: 11 PASS
+Native responsive/bonus banner: 7 PASS

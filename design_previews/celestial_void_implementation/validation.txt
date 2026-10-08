@@ -1,0 +1,36 @@
+Celestial Void final validation
+GDevelop 5.6.283 native load/compile/export: 0 diagnostics, EXPORT true
+celestial-void-test: 52 PASS, 0 FAIL
+celestial-full-wave-regression: 419 PASS, 0 FAIL
+celestial-wave-speed-test: 64 PASS, 0 FAIL
+archer-test: 170 PASS, 0 FAIL
+cross-path-test: 143 PASS, 0 FAIL
+healthbar-test: 51 PASS, 0 FAIL
+Native mouse Archer/INDEX/wave controls: 11 PASS
+Native responsive panels + reward banner: 7 PASS
+
+PASS All 8 project/theme JSON files parse
+PASS Registered resource names unique
+PASS All registered resource files exist
+PASS Object names unique
+PASS All instance object references valid
+PASS All scene instances and waypoint positions unchanged
+PASS Tower exact baseline definition
+PASS ShotgunTower exact baseline definition
+PASS RocketTower exact baseline definition
+PASS ArcherTower exact baseline definition
+PASS Enemy exact baseline definition
+PASS Every original scene variable unchanged
+PASS Native purchase/placement event unchanged
+PASS Original spawning, movement and combat event blocks unchanged
+PASS All object image/texture references registered
+PASS Object group references valid
+PASS All Celestial Void SVG assets parse
+PASS Base_Nexus.png RGBA 512x512
+PASS Cosmic_Codex.png RGBA 512x512
+PASS Cosmic_Rock.png RGBA 512x512
+PASS Crystal_Cluster.png RGBA 512x512
+PASS Lunar_Ruin.png RGBA 512x512
+PASS Purple_Shrub.png RGBA 512x512
+PASS Spawn_Portal.png RGBA 512x512
+PASS No mojibake marker in scene JSON

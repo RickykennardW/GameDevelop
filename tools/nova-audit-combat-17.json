@@ -1,0 +1,39 @@
+{
+  "type": "BuiltinCommonInstructions::Standard",
+  "conditions": [],
+  "actions": [
+    {
+      "type": {
+        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+      },
+      "parameters": [
+        "MoneyText",
+        "Text",
+        "=",
+        "ToString(Money)"
+      ]
+    },
+    {
+      "type": {
+        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+      },
+      "parameters": [
+        "LivesText",
+        "Text",
+        "=",
+        "ToString(Lives)"
+      ]
+    },
+    {
+      "type": {
+        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+      },
+      "parameters": [
+        "WaveText",
+        "Text",
+        "=",
+        "ToString(Wave) + \"/50\""
+      ]
+    }
+  ]
+}

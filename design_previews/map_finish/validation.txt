@@ -1,0 +1,10 @@
+Map finish / region blocker validation
+Native GDevelop 5.6.283 load/compile/export: 0 diagnostics, EXPORT true
+map-finish-test: 69 PASS
+finish-full-wave-regression: 419 PASS
+finish-medium-circles-test: 80 PASS
+medium-archer-test: 170 PASS
+celestial-wave-speed-test: 64 PASS
+Native mouse/resize/panel/placement: 20 PASS
+Only scene event roots 0 and 6 changed; every object definition, resource, scene variable, serialized instance and layer preserved.
+Fringe fixture samples free world positions; closes a panel before clicking a tower occluded by that panel. All original regression assertions retained.

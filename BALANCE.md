@@ -11,7 +11,7 @@ Lima archetype memakai object Enemy yang sama dengan tint/ukuran berbeda dan ani
 | RocketTower | Advanced | 700 | 35 | 260 | 0.50 |
 
 Heavy sekarang satu peluru; Advanced menggunakan visual rocket dengan satu target. Ini menjaga baseline DPS 40 / 53.33 / 70 tanpa penggandaan pellet atau splash.
-Starting Money 650. Refund tetap 70% dari harga pembelian. Tidak ada bonus gold wave baru.
+Starting Money 650. Refund tetap 70% dari harga pembelian. Setiap wave yang benar-benar selesai memberikan bonus tambahan 100 Gold satu kali; angka Gold pada tabel di bawah hanya reward kill, belum termasuk bonus wave.
 
 | Wave | Enemy | Interval (s) | Total HP | Gold jika semua dikalahkan |
 |---|---:|---:|---:|---:|

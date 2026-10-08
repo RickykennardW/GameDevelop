@@ -1,0 +1,21 @@
+{
+  "colorB": 109,
+  "colorG": 143,
+  "colorR": 90,
+  "creationTime": 0,
+  "name": "Tower shop visual states",
+  "source": "",
+  "type": "BuiltinCommonInstructions::Group",
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::JsCode",
+      "inlineCode": [
+        "runtimeScene.__towerShopUI.refresh();"
+      ],
+      "parameterObjects": "",
+      "useStrict": true,
+      "eventsSheetExpanded": false
+    }
+  ],
+  "parameters": []
+}

@@ -1,0 +1,81 @@
+PASS builder type ArcherTower
+PASS display and authoritative blocker radius/center match 32
+PASS display and authoritative blocker radius/center match 33
+PASS display and authoritative blocker radius/center match 34
+PASS display and authoritative blocker radius/center match 36
+PASS display and authoritative blocker radius/center match 37
+PASS display and authoritative blocker radius/center match 176
+PASS display and authoritative blocker radius/center match 178
+PASS display and authoritative blocker radius/center match 179
+PASS display and authoritative blocker radius/center match 180
+PASS display and authoritative blocker radius/center match 173
+PASS display and authoritative blocker radius/center match 174
+PASS medium tower radii configured
+PASS builder type ArcherTower
+PASS clear circle boundary found Ground_Decoration
+PASS circle touching and overlap rejected Ground_Decoration
+PASS red preview at visible circle boundary Ground_Decoration
+PASS native invalid click never charges Ground_Decoration
+PASS outside circle clearance valid Ground_Decoration
+PASS native just-outside circle builds once Ground_Decoration
+PASS builder type ArcherTower
+PASS clear circle boundary found Ground_Decoration
+PASS circle touching and overlap rejected Ground_Decoration
+PASS red preview at visible circle boundary Ground_Decoration
+PASS native invalid click never charges Ground_Decoration
+PASS outside circle clearance valid Ground_Decoration
+PASS native just-outside circle builds once Ground_Decoration
+PASS builder type ArcherTower
+PASS clear circle boundary found Ground_Decoration
+PASS circle touching and overlap rejected Ground_Decoration
+PASS red preview at visible circle boundary Ground_Decoration
+PASS native invalid click never charges Ground_Decoration
+PASS outside circle clearance valid Ground_Decoration
+PASS native just-outside circle builds once Ground_Decoration
+PASS builder type ArcherTower
+PASS clear circle boundary found SpawnMarker
+PASS circle touching and overlap rejected SpawnMarker
+PASS red preview at visible circle boundary SpawnMarker
+PASS native invalid click never charges SpawnMarker
+PASS outside circle clearance valid SpawnMarker
+PASS native just-outside circle builds once SpawnMarker
+PASS builder type ArcherTower
+PASS clear circle boundary found BaseMarker
+PASS circle touching and overlap rejected BaseMarker
+PASS red preview at visible circle boundary BaseMarker
+PASS native invalid click never charges BaseMarker
+PASS outside circle clearance valid BaseMarker
+PASS native just-outside circle builds once BaseMarker
+PASS builder type ArcherTower
+PASS builder type Tower
+PASS selected panel opposite side RIGHT
+PASS panel fully inside gameplay viewport RIGHT
+PASS panel does not cover selected tower RIGHT
+PASS panel below HUD RIGHT
+PASS selected range plus physical footprint RIGHT
+PASS only selected footprint visible in normal RIGHT
+PASS dynamic panel native upgrade preserves footprint
+PASS selected panel opposite side LEFT
+PASS panel fully inside gameplay viewport LEFT
+PASS panel does not cover selected tower LEFT
+PASS panel below HUD LEFT
+PASS selected range plus physical footprint LEFT
+PASS only selected footprint visible in normal LEFT
+PASS selected panel opposite side RIGHT
+PASS panel fully inside gameplay viewport RIGHT
+PASS panel does not cover selected tower RIGHT
+PASS panel below HUD RIGHT
+PASS selected range plus physical footprint RIGHT
+PASS only selected footprint visible in normal RIGHT
+PASS dynamic panel input consumed without map click-through
+PASS builder type RocketTower
+PASS builder exposes all medium tower/block circles
+PASS normal deselected mode hides every build circle
+PASS selected panel opposite side LEFT
+PASS panel fully inside gameplay viewport LEFT
+PASS panel does not cover selected tower LEFT
+PASS panel below HUD LEFT
+PASS selected range plus physical footprint LEFT
+PASS only selected footprint visible in normal LEFT
+PASS dynamic left panel sell clears owner footprint
+ALL MEDIUM CIRCLE AND DYNAMIC PANEL TESTS PASSED

@@ -962,6 +962,1036 @@
         "name": "assets/archer/Archer_CrossbowBolt.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/backdrop.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/backdrop.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/base-ring.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/base-ring.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/Base_Nexus.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/Base_Nexus.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/Cosmic_Codex.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/Cosmic_Codex.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/Cosmic_Rock.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/Cosmic_Rock.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/Crystal_Cluster.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/Crystal_Cluster.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/ground.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/ground.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/Lunar_Ruin.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/Lunar_Ruin.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/path_Cap_E.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/path_Cap_E.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/path_Cap_N.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/path_Cap_N.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/path_Cap_S.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/path_Cap_S.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/path_Cap_W.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/path_Cap_W.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/path_H.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/path_H.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/path_NE.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/path_NE.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/path_NW.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/path_NW.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/path_SE.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/path_SE.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/path_SW.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/path_SW.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/path_V.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/path_V.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/Purple_Shrub.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/Purple_Shrub.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/range.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/range.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/Spawn_Portal.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/Spawn_Portal.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/ui/button.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/ui/button.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/ui/card.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/ui/card.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/ui/frame.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/ui/frame.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/ui/index-button.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/ui/index-button.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/ui/index-panel.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/ui/index-panel.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/ui/plaque.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/ui/plaque.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/ui/well.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/ui/well.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/ui/track.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/ui/track.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/ui/thumb.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/ui/thumb.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/celestial_void/island/Nebula.png",
+        "file": "assets/celestial_void/island/Nebula.png",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/celestial_void/island/Terrain.png",
+        "file": "assets/celestial_void/island/Terrain.png",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/celestial_void/island/terrain-repeat.svg",
+        "file": "assets/celestial_void/island/terrain-repeat.svg",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/celestial_void/island/Cliff_Frame.png",
+        "file": "assets/celestial_void/island/Cliff_Frame.png",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/celestial_void/island/Moon_Garden.png",
+        "file": "assets/celestial_void/island/Moon_Garden.png",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "kind": "image",
+        "name": "assets/celestial_void/island/Purple_Foliage.png",
+        "file": "assets/celestial_void/island/Purple_Foliage.png",
+        "smoothed": true,
+        "metadata": "",
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/celestial_void/island/path_H_plain.svg",
+        "file": "assets/celestial_void/island/path_H_plain.svg",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/celestial_void/island/path_V_plain.svg",
+        "file": "assets/celestial_void/island/path_V_plain.svg",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Impact_Barrage.svg",
+        "file": "assets/star_cannon/Impact_Barrage.svg",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Impact_Base.svg",
+        "file": "assets/star_cannon/Impact_Base.svg",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Impact_Explosion.svg",
+        "file": "assets/star_cannon/Impact_Explosion.svg",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Impact_Supernova.svg",
+        "file": "assets/star_cannon/Impact_Supernova.svg",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Projectile_Base.svg",
+        "file": "assets/star_cannon/Projectile_Base.svg",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Projectile_Explosion.svg",
+        "file": "assets/star_cannon/Projectile_Explosion.svg",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Projectile_Meteor.svg",
+        "file": "assets/star_cannon/Projectile_Meteor.svg",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Projectile_Reinforced.svg",
+        "file": "assets/star_cannon/Projectile_Reinforced.svg",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Projectile_Supernova.svg",
+        "file": "assets/star_cannon/Projectile_Supernova.svg",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Projectile_Twin.svg",
+        "file": "assets/star_cannon/Projectile_Twin.svg",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Star_Cannon_0_0.png",
+        "file": "assets/star_cannon/Star_Cannon_0_0.png",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Star_Cannon_0_1.png",
+        "file": "assets/star_cannon/Star_Cannon_0_1.png",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Star_Cannon_0_2.png",
+        "file": "assets/star_cannon/Star_Cannon_0_2.png",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Star_Cannon_0_3.png",
+        "file": "assets/star_cannon/Star_Cannon_0_3.png",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Star_Cannon_0_4.png",
+        "file": "assets/star_cannon/Star_Cannon_0_4.png",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Star_Cannon_1_0.png",
+        "file": "assets/star_cannon/Star_Cannon_1_0.png",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Star_Cannon_1_1.png",
+        "file": "assets/star_cannon/Star_Cannon_1_1.png",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Star_Cannon_1_2.png",
+        "file": "assets/star_cannon/Star_Cannon_1_2.png",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Star_Cannon_1_3.png",
+        "file": "assets/star_cannon/Star_Cannon_1_3.png",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Star_Cannon_1_4.png",
+        "file": "assets/star_cannon/Star_Cannon_1_4.png",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Star_Cannon_2_0.png",
+        "file": "assets/star_cannon/Star_Cannon_2_0.png",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Star_Cannon_2_1.png",
+        "file": "assets/star_cannon/Star_Cannon_2_1.png",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Star_Cannon_2_2.png",
+        "file": "assets/star_cannon/Star_Cannon_2_2.png",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Star_Cannon_2_3.png",
+        "file": "assets/star_cannon/Star_Cannon_2_3.png",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Star_Cannon_2_4.png",
+        "file": "assets/star_cannon/Star_Cannon_2_4.png",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Star_Cannon_3_0.png",
+        "file": "assets/star_cannon/Star_Cannon_3_0.png",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Star_Cannon_3_1.png",
+        "file": "assets/star_cannon/Star_Cannon_3_1.png",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Star_Cannon_3_2.png",
+        "file": "assets/star_cannon/Star_Cannon_3_2.png",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Star_Cannon_4_0.png",
+        "file": "assets/star_cannon/Star_Cannon_4_0.png",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Star_Cannon_4_1.png",
+        "file": "assets/star_cannon/Star_Cannon_4_1.png",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Star_Cannon_4_2.png",
+        "file": "assets/star_cannon/Star_Cannon_4_2.png",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Upgrade_HeavyImpact.svg",
+        "file": "assets/star_cannon/Upgrade_HeavyImpact.svg",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Upgrade_MeteorBarrage.svg",
+        "file": "assets/star_cannon/Upgrade_MeteorBarrage.svg",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Upgrade_PrecisionCore.svg",
+        "file": "assets/star_cannon/Upgrade_PrecisionCore.svg",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Upgrade_RapidFire.svg",
+        "file": "assets/star_cannon/Upgrade_RapidFire.svg",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Upgrade_ReinforcedCore.svg",
+        "file": "assets/star_cannon/Upgrade_ReinforcedCore.svg",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Upgrade_StarExplosion.svg",
+        "file": "assets/star_cannon/Upgrade_StarExplosion.svg",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Upgrade_Supernova.svg",
+        "file": "assets/star_cannon/Upgrade_Supernova.svg",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "kind": "image",
+        "name": "assets/star_cannon/Upgrade_TwinStar.svg",
+        "file": "assets/star_cannon/Upgrade_TwinStar.svg",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Base_0_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Base_0_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Base_0_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Base_0_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Base_0_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Base_0_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Base_0_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Base_0_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Base_0_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Base_0_4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Base_1_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Base_1_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Base_1_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Base_1_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Base_1_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Base_1_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Base_1_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Base_1_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Base_1_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Base_1_4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Base_2_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Base_2_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Base_2_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Base_2_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Base_2_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Base_2_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Base_2_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Base_2_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Base_2_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Base_2_4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Base_3_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Base_3_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Base_3_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Base_3_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Base_3_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Base_3_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Base_4_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Base_4_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Base_4_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Base_4_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Base_4_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Base_4_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Turret_0_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Turret_0_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Turret_0_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Turret_0_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Turret_0_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Turret_0_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Turret_0_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Turret_0_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Turret_0_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Turret_0_4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Turret_1_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Turret_1_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Turret_1_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Turret_1_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Turret_1_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Turret_1_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Turret_1_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Turret_1_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Turret_1_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Turret_1_4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Turret_2_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Turret_2_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Turret_2_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Turret_2_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Turret_2_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Turret_2_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Turret_2_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Turret_2_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Turret_2_4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Turret_2_4.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Turret_3_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Turret_3_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Turret_3_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Turret_3_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Turret_3_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Turret_3_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Turret_4_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Turret_4_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Turret_4_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Turret_4_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/star_cannon/components/StarCannon_Turret_4_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/components/StarCannon_Turret_4_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/nova_wisp/NovaWisp_Down.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/nova_wisp/NovaWisp_Down.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/nova_wisp/NovaWisp_Left.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/nova_wisp/NovaWisp_Left.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/nova_wisp/NovaWisp_Right.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/nova_wisp/NovaWisp_Right.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/nova_wisp/NovaWisp_Up.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/nova_wisp/NovaWisp_Up.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ]
   },

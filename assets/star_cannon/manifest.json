@@ -1,0 +1,260 @@
+{
+  "towerSprites": [
+    {
+      "file": "Star_Cannon_0_0.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "21d2777b1c9689523be915623eed6a2ac3ffa644631271e310c502096b0256c6"
+    },
+    {
+      "file": "Star_Cannon_0_1.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "ee9033fe77834fa3c8c4a3bea30bd5212dd36ee3d3358032d5a47413abf145e4"
+    },
+    {
+      "file": "Star_Cannon_0_2.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "8b27ddcdb2ec5bf3b852fed57333189be6dc44a63d80904523586b348e804767"
+    },
+    {
+      "file": "Star_Cannon_0_3.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "92fa5dbab9bcea9216d9b1507ae61a6973b3e1463e0136029949913f62b416fc"
+    },
+    {
+      "file": "Star_Cannon_0_4.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "10f5275ccc0b6f5984d98f5a9f0d8f8b290995a14d1d2b88425ccaeacf177f60"
+    },
+    {
+      "file": "Star_Cannon_1_0.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "1023c3cbe4d9112a65cfdec215f242fceef5aa9d397a4a60b1decf9d6adb6db0"
+    },
+    {
+      "file": "Star_Cannon_1_1.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "83797b144191a9c3358f419d8e7c8b2aaf995d516ed95e8b3f157c783ec60401"
+    },
+    {
+      "file": "Star_Cannon_1_2.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "e8e1d3040292c474711cf80fbb6d35a2f646aaa73b40e02d5701390fb664a249"
+    },
+    {
+      "file": "Star_Cannon_1_3.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "5d6c482302c007be0b60dc15ccc9c549b6657278c2b80a716dfd06f86c42a72f"
+    },
+    {
+      "file": "Star_Cannon_1_4.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "bff77f0b7b32f536f110d0aba56cd124120da39a9a7fb6b66a04bee0d3e1fa6a"
+    },
+    {
+      "file": "Star_Cannon_2_0.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "555d0dc272ce5f7e9a7528e27bbe24432abaf9f6a0223b09ab62f50ce1750f8a"
+    },
+    {
+      "file": "Star_Cannon_2_1.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "6dbf15aedd2f9ea3b82ba10eb87e113b1b7b43f7999ffccd8e40a9089fa41006"
+    },
+    {
+      "file": "Star_Cannon_2_2.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "bc97fc929d7f4359dcdc91c4264e9e54a65635d66646b10b0cdff2091c22b1c4"
+    },
+    {
+      "file": "Star_Cannon_2_3.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "431feb1bffa4e2f92dcd24e0abc3c18e1b191f63a6b21811150e096741ba6f83"
+    },
+    {
+      "file": "Star_Cannon_2_4.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "e7b0c84a9d70be83e14241638f53de43ca50c7e0e4059b59aca79d0475d0db46"
+    },
+    {
+      "file": "Star_Cannon_3_0.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "8475824de144fd6bc14bccf9628d8ae67f18d9517ada911c00d1ba7592785558"
+    },
+    {
+      "file": "Star_Cannon_3_1.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "a88ea747798d83e871c1eb06ecc0298a69dc85583fd5077e62224eb89b109ff7"
+    },
+    {
+      "file": "Star_Cannon_3_2.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "6e54e8bda1db23b86e7b98309a662fc150af5248565b6fcc5e879fdff7cf37a0"
+    },
+    {
+      "file": "Star_Cannon_4_0.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "818564aaea493b8ae61033f004dfa72baf9b13b414ce723726c2d4f369ddf1f5"
+    },
+    {
+      "file": "Star_Cannon_4_1.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "54facc0138a15044ee7f17590f875818642e72065602391cd65582f907d6dc51"
+    },
+    {
+      "file": "Star_Cannon_4_2.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "alpha": [
+        0,
+        255
+      ],
+      "sha256": "90def729194053c2d4f2c61d96dc29c36bd32432327764c5b4ffb49da70aa037"
+    }
+  ],
+  "projectiles": 6,
+  "upgradeIcons": 8,
+  "impacts": 4,
+  "baseCost": 300
+}

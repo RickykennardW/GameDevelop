@@ -1,0 +1,292 @@
+PASS all five existing shop choices and footprint types retained
+PASS native upgrade panel buys both component states 0_0
+PASS unchanged damage range cooldown 0_0
+PASS base contact and canonical footprint stable 0_0
+PASS range remains centered 0_0
+PASS smooth tracking reaches aligned target 0_0
+PASS base stays still while turret rotates 0_0
+PASS aligned volley emitted 0_0
+PASS distinct emitter and muzzle flash count 0_0
+PASS projectiles and flashes at transformed mouths with correct damage fractions 0_0
+PASS actual volley hits once and accounts damage 0_0
+PASS sell removes pair and refunds once 0_0
+PASS native upgrade panel buys both component states 0_1
+PASS unchanged damage range cooldown 0_1
+PASS base contact and canonical footprint stable 0_1
+PASS range remains centered 0_1
+PASS smooth tracking reaches aligned target 0_1
+PASS base stays still while turret rotates 0_1
+PASS aligned volley emitted 0_1
+PASS distinct emitter and muzzle flash count 0_1
+PASS projectiles and flashes at transformed mouths with correct damage fractions 0_1
+PASS actual volley hits once and accounts damage 0_1
+PASS sell removes pair and refunds once 0_1
+PASS native upgrade panel buys both component states 0_2
+PASS unchanged damage range cooldown 0_2
+PASS base contact and canonical footprint stable 0_2
+PASS range remains centered 0_2
+PASS smooth tracking reaches aligned target 0_2
+PASS base stays still while turret rotates 0_2
+PASS aligned volley emitted 0_2
+PASS distinct emitter and muzzle flash count 0_2
+PASS projectiles and flashes at transformed mouths with correct damage fractions 0_2
+PASS actual volley hits once and accounts damage 0_2
+PASS sell removes pair and refunds once 0_2
+PASS native upgrade panel buys both component states 0_3
+PASS unchanged damage range cooldown 0_3
+PASS base contact and canonical footprint stable 0_3
+PASS range remains centered 0_3
+PASS smooth tracking reaches aligned target 0_3
+PASS base stays still while turret rotates 0_3
+PASS aligned volley emitted 0_3
+PASS distinct emitter and muzzle flash count 0_3
+PASS projectiles and flashes at transformed mouths with correct damage fractions 0_3
+PASS actual volley hits once and accounts damage 0_3
+PASS sell removes pair and refunds once 0_3
+PASS native upgrade panel buys both component states 0_4
+PASS unchanged damage range cooldown 0_4
+PASS base contact and canonical footprint stable 0_4
+PASS range remains centered 0_4
+PASS smooth tracking reaches aligned target 0_4
+PASS base stays still while turret rotates 0_4
+PASS aligned volley emitted 0_4
+PASS distinct emitter and muzzle flash count 0_4
+PASS projectiles and flashes at transformed mouths with correct damage fractions 0_4
+PASS actual volley hits once and accounts damage 0_4
+PASS sell removes pair and refunds once 0_4
+PASS native upgrade panel buys both component states 1_0
+PASS unchanged damage range cooldown 1_0
+PASS base contact and canonical footprint stable 1_0
+PASS range remains centered 1_0
+PASS smooth tracking reaches aligned target 1_0
+PASS base stays still while turret rotates 1_0
+PASS aligned volley emitted 1_0
+PASS distinct emitter and muzzle flash count 1_0
+PASS projectiles and flashes at transformed mouths with correct damage fractions 1_0
+PASS actual volley hits once and accounts damage 1_0
+PASS sell removes pair and refunds once 1_0
+PASS native upgrade panel buys both component states 1_1
+PASS unchanged damage range cooldown 1_1
+PASS base contact and canonical footprint stable 1_1
+PASS range remains centered 1_1
+PASS smooth tracking reaches aligned target 1_1
+PASS base stays still while turret rotates 1_1
+PASS aligned volley emitted 1_1
+PASS distinct emitter and muzzle flash count 1_1
+PASS projectiles and flashes at transformed mouths with correct damage fractions 1_1
+PASS actual volley hits once and accounts damage 1_1
+PASS sell removes pair and refunds once 1_1
+PASS native upgrade panel buys both component states 1_2
+PASS unchanged damage range cooldown 1_2
+PASS base contact and canonical footprint stable 1_2
+PASS range remains centered 1_2
+PASS smooth tracking reaches aligned target 1_2
+PASS base stays still while turret rotates 1_2
+PASS aligned volley emitted 1_2
+PASS distinct emitter and muzzle flash count 1_2
+PASS projectiles and flashes at transformed mouths with correct damage fractions 1_2
+PASS actual volley hits once and accounts damage 1_2
+PASS sell removes pair and refunds once 1_2
+PASS native upgrade panel buys both component states 1_3
+PASS unchanged damage range cooldown 1_3
+PASS base contact and canonical footprint stable 1_3
+PASS range remains centered 1_3
+PASS smooth tracking reaches aligned target 1_3
+PASS base stays still while turret rotates 1_3
+PASS aligned volley emitted 1_3
+PASS distinct emitter and muzzle flash count 1_3
+PASS projectiles and flashes at transformed mouths with correct damage fractions 1_3
+PASS actual volley hits once and accounts damage 1_3
+PASS sell removes pair and refunds once 1_3
+PASS native upgrade panel buys both component states 1_4
+PASS unchanged damage range cooldown 1_4
+PASS base contact and canonical footprint stable 1_4
+PASS range remains centered 1_4
+PASS smooth tracking reaches aligned target 1_4
+PASS base stays still while turret rotates 1_4
+PASS aligned volley emitted 1_4
+PASS distinct emitter and muzzle flash count 1_4
+PASS projectiles and flashes at transformed mouths with correct damage fractions 1_4
+PASS actual volley hits once and accounts damage 1_4
+PASS sell removes pair and refunds once 1_4
+PASS native upgrade panel buys both component states 2_0
+PASS unchanged damage range cooldown 2_0
+PASS base contact and canonical footprint stable 2_0
+PASS range remains centered 2_0
+PASS smooth tracking reaches aligned target 2_0
+PASS base stays still while turret rotates 2_0
+PASS aligned volley emitted 2_0
+PASS distinct emitter and muzzle flash count 2_0
+PASS projectiles and flashes at transformed mouths with correct damage fractions 2_0
+PASS actual volley hits once and accounts damage 2_0
+PASS sell removes pair and refunds once 2_0
+PASS native upgrade panel buys both component states 2_1
+PASS unchanged damage range cooldown 2_1
+PASS base contact and canonical footprint stable 2_1
+PASS range remains centered 2_1
+PASS smooth tracking reaches aligned target 2_1
+PASS base stays still while turret rotates 2_1
+PASS aligned volley emitted 2_1
+PASS distinct emitter and muzzle flash count 2_1
+PASS projectiles and flashes at transformed mouths with correct damage fractions 2_1
+PASS actual volley hits once and accounts damage 2_1
+PASS sell removes pair and refunds once 2_1
+PASS native upgrade panel buys both component states 2_2
+PASS unchanged damage range cooldown 2_2
+PASS base contact and canonical footprint stable 2_2
+PASS range remains centered 2_2
+PASS smooth tracking reaches aligned target 2_2
+PASS base stays still while turret rotates 2_2
+PASS aligned volley emitted 2_2
+PASS distinct emitter and muzzle flash count 2_2
+PASS projectiles and flashes at transformed mouths with correct damage fractions 2_2
+PASS actual volley hits once and accounts damage 2_2
+PASS sell removes pair and refunds once 2_2
+PASS native upgrade panel buys both component states 2_3
+PASS unchanged damage range cooldown 2_3
+PASS base contact and canonical footprint stable 2_3
+PASS range remains centered 2_3
+PASS smooth tracking reaches aligned target 2_3
+PASS base stays still while turret rotates 2_3
+PASS aligned volley emitted 2_3
+PASS distinct emitter and muzzle flash count 2_3
+PASS projectiles and flashes at transformed mouths with correct damage fractions 2_3
+PASS actual volley hits once and accounts damage 2_3
+PASS sell removes pair and refunds once 2_3
+PASS native upgrade panel buys both component states 2_4
+PASS unchanged damage range cooldown 2_4
+PASS base contact and canonical footprint stable 2_4
+PASS range remains centered 2_4
+PASS smooth tracking reaches aligned target 2_4
+PASS base stays still while turret rotates 2_4
+PASS aligned volley emitted 2_4
+PASS distinct emitter and muzzle flash count 2_4
+PASS projectiles and flashes at transformed mouths with correct damage fractions 2_4
+PASS actual volley hits once and accounts damage 2_4
+PASS sell removes pair and refunds once 2_4
+PASS native upgrade panel buys both component states 3_0
+PASS unchanged damage range cooldown 3_0
+PASS base contact and canonical footprint stable 3_0
+PASS range remains centered 3_0
+PASS smooth tracking reaches aligned target 3_0
+PASS base stays still while turret rotates 3_0
+PASS aligned volley emitted 3_0
+PASS distinct emitter and muzzle flash count 3_0
+PASS projectiles and flashes at transformed mouths with correct damage fractions 3_0
+PASS actual volley hits once and accounts damage 3_0
+PASS sell removes pair and refunds once 3_0
+PASS native upgrade panel buys both component states 3_1
+PASS unchanged damage range cooldown 3_1
+PASS base contact and canonical footprint stable 3_1
+PASS range remains centered 3_1
+PASS smooth tracking reaches aligned target 3_1
+PASS base stays still while turret rotates 3_1
+PASS aligned volley emitted 3_1
+PASS distinct emitter and muzzle flash count 3_1
+PASS projectiles and flashes at transformed mouths with correct damage fractions 3_1
+PASS actual volley hits once and accounts damage 3_1
+PASS sell removes pair and refunds once 3_1
+PASS native upgrade panel buys both component states 3_2
+PASS unchanged damage range cooldown 3_2
+PASS base contact and canonical footprint stable 3_2
+PASS range remains centered 3_2
+PASS smooth tracking reaches aligned target 3_2
+PASS base stays still while turret rotates 3_2
+PASS aligned volley emitted 3_2
+PASS distinct emitter and muzzle flash count 3_2
+PASS projectiles and flashes at transformed mouths with correct damage fractions 3_2
+PASS actual volley hits once and accounts damage 3_2
+PASS sell removes pair and refunds once 3_2
+PASS invalid crosspath rejected 3_3
+PASS invalid crosspath rejected 3_4
+PASS native upgrade panel buys both component states 4_0
+PASS unchanged damage range cooldown 4_0
+PASS base contact and canonical footprint stable 4_0
+PASS range remains centered 4_0
+PASS smooth tracking reaches aligned target 4_0
+PASS base stays still while turret rotates 4_0
+PASS aligned volley emitted 4_0
+PASS distinct emitter and muzzle flash count 4_0
+PASS projectiles and flashes at transformed mouths with correct damage fractions 4_0
+PASS actual volley hits once and accounts damage 4_0
+PASS sell removes pair and refunds once 4_0
+PASS native upgrade panel buys both component states 4_1
+PASS unchanged damage range cooldown 4_1
+PASS base contact and canonical footprint stable 4_1
+PASS range remains centered 4_1
+PASS smooth tracking reaches aligned target 4_1
+PASS base stays still while turret rotates 4_1
+PASS aligned volley emitted 4_1
+PASS distinct emitter and muzzle flash count 4_1
+PASS projectiles and flashes at transformed mouths with correct damage fractions 4_1
+PASS actual volley hits once and accounts damage 4_1
+PASS sell removes pair and refunds once 4_1
+PASS native upgrade panel buys both component states 4_2
+PASS unchanged damage range cooldown 4_2
+PASS base contact and canonical footprint stable 4_2
+PASS range remains centered 4_2
+PASS smooth tracking reaches aligned target 4_2
+PASS base stays still while turret rotates 4_2
+PASS aligned volley emitted 4_2
+PASS distinct emitter and muzzle flash count 4_2
+PASS projectiles and flashes at transformed mouths with correct damage fractions 4_2
+PASS actual volley hits once and accounts damage 4_2
+PASS sell removes pair and refunds once 4_2
+PASS invalid crosspath rejected 4_3
+PASS invalid crosspath rejected 4_4
+PASS all 21 valid combinations exercised
+PASS no enemy: no idle rotation
+PASS out-of-range enemy never tracked
+PASS nearest acquisition and per-frame shortest-angle cap
+PASS nearer newcomer does not steal valid lock
+PASS out-of-range lock switches to valid target
+PASS dead lock cleared and turret holds last direction
+PASS misaligned cannon cannot fire
+PASS aligned cannon resumes autonomous firing
+PASS unchanged direct and splash damage/radius Lv3
+PASS unchanged direct and splash damage/radius Lv4
+PASS near-barrel contact shot detected without adding a minimum range
+PASS contact projectile keeps barrel heading during visible muzzle frame
+PASS contact resolves unchanged damage once without backward travel
+PASS 240-degree rotation follows existing 2x game clock
+PASS visible base/body selection Tower
+PASS selection silhouette excludes empty footprint area Tower
+PASS empty outer footprint never selects Tower
+PASS visible base/body selection ShotgunTower
+PASS selection silhouette excludes empty footprint area ShotgunTower
+PASS empty outer footprint never selects ShotgunTower
+PASS visible base/body selection RocketTower
+PASS selection silhouette excludes empty footprint area RocketTower
+PASS empty outer footprint never selects RocketTower
+PASS visible base/body selection ArcherTower
+PASS selection silhouette excludes empty footprint area ArcherTower
+PASS empty outer footprint never selects ArcherTower
+PASS visible base/body selection StarCannonTower
+PASS rotated visible star muzzle selects owner
+PASS selection silhouette excludes empty footprint area StarCannonTower
+PASS empty outer footprint never selects StarCannonTower
+PASS 12 interior solid obstacles removable; edge crystal permanent
+PASS nonblocking foliage never sold as a clearable blocker
+PASS spawn base road cliffs and cosmic background permanent
+PASS edge crystal click cannot open Clear
+PASS real removable owner has usable cleared floor
+PASS normal click opens themed Clear panel without deleting
+PASS Cancel keeps obstacle and gold
+PASS X closes without charge
+PASS insufficient gold retains visual blocker and shows message
+PASS clear charges exactly 250 and removes owned object/ring/selection
+PASS only selected owner blocker removed
+PASS second Clear-position click cannot charge again
+PASS cleared circle available if no other blockers
+PASS actual purchase builds in cleared space at unchanged catalog price
+PASS builder obstacle click stays invalid and cannot open Clear
+PASS overlapping other owner remains blocked after clear
+PASS clear selection build and combat never shift camera or route
+PASS tower visual selection takes priority over underlying obstacle
+PASS obstacle selection closes tower upgrade panel
+PASS panel body click is consumed without map selection or placement
+PASS Escape closes Clear panel
+PASS Index closes Clear and blocks map input
+PASS empty ground closes obstacle and tower selection
+PASS no leaked component objects after priority fixtures
+ALL TURRET / SELECTION / OBSTACLE TESTS PASSED

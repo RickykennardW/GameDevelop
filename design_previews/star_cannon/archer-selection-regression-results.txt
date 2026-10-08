@@ -1,0 +1,171 @@
+PASS Archer shop integration and exact cost 300
+PASS unaffordable purchase rejected
+PASS whole Archer card selects native placement
+PASS native Archer placement and single cost deduction
+PASS fixed footprint and initial investment
+PASS road placement blocked
+PASS tower stacking blocked
+PASS shop blocks placement
+PASS Archer instance selection
+PASS Tower Shop stays visible alongside selection
+PASS separate panel immediately left of shop
+PASS two four-level upgrade cards
+PASS base range circle matches actual range
+PASS unaffordable upgrade changes no state
+PASS card buys one upgrade 1 / 1_0
+PASS card buys one upgrade 1 / 2_0
+PASS card buys one upgrade 2 / 2_1
+PASS card buys one upgrade 2 / 2_2
+PASS card buys one upgrade 1 / 3_2
+PASS Path1 Lv3 locks Path2
+PASS Path1 lock enforced by UI and gameplay
+PASS card buys one upgrade 1 / 4_2
+PASS Path1 final / MAX state
+PASS upgrades preserve same instance UID selection and damage
+PASS map and preview immediately use current combined visual
+PASS Path1 final stacks secondary range and projectile speed
+PASS Eagle Eye immediately expands real range indicator
+PASS card buys one upgrade 2 / 0_1
+PASS card buys one upgrade 2 / 0_2
+PASS card buys one upgrade 1 / 1_2
+PASS card buys one upgrade 1 / 2_2
+PASS card buys one upgrade 2 / 2_3
+PASS Path2 Lv3 locks Path1 in logic
+PASS card buys one upgrade 2 / 2_4
+PASS Path2 final stacks damage and secondary quick draw
+PASS card buys one upgrade 1 / 1_0
+PASS card buys one upgrade 2 / 1_1
+PASS three simultaneous independent builds
+PASS independent map visuals
+PASS independent investment and refunds
+PASS holding card never repeats upgrade
+PASS release purchases one level
+PASS panel background never places or selects through
+PASS shop remains usable while a tower was selected
+PASS ESC closes new panel
+PASS empty map closes panel
+PASS all 21 resources mapped uniquely
+PASS composed purchased visual/stats/investment 0_0
+PASS reachable purchased state 0_1 step 2
+PASS composed purchased visual/stats/investment 0_1
+PASS reachable purchased state 0_2 step 2
+PASS reachable purchased state 0_2 step 2
+PASS composed purchased visual/stats/investment 0_2
+PASS reachable purchased state 0_3 step 2
+PASS reachable purchased state 0_3 step 2
+PASS reachable purchased state 0_3 step 2
+PASS composed purchased visual/stats/investment 0_3
+PASS reachable purchased state 0_4 step 2
+PASS reachable purchased state 0_4 step 2
+PASS reachable purchased state 0_4 step 2
+PASS reachable purchased state 0_4 step 2
+PASS composed purchased visual/stats/investment 0_4
+PASS reachable purchased state 1_0 step 1
+PASS composed purchased visual/stats/investment 1_0
+PASS reachable purchased state 1_1 step 2
+PASS reachable purchased state 1_1 step 1
+PASS composed purchased visual/stats/investment 1_1
+PASS reachable purchased state 1_2 step 2
+PASS reachable purchased state 1_2 step 2
+PASS reachable purchased state 1_2 step 1
+PASS composed purchased visual/stats/investment 1_2
+PASS reachable purchased state 1_3 step 1
+PASS reachable purchased state 1_3 step 2
+PASS reachable purchased state 1_3 step 2
+PASS reachable purchased state 1_3 step 2
+PASS composed purchased visual/stats/investment 1_3
+PASS reachable purchased state 1_4 step 1
+PASS reachable purchased state 1_4 step 2
+PASS reachable purchased state 1_4 step 2
+PASS reachable purchased state 1_4 step 2
+PASS reachable purchased state 1_4 step 2
+PASS composed purchased visual/stats/investment 1_4
+PASS reachable purchased state 2_0 step 1
+PASS reachable purchased state 2_0 step 1
+PASS composed purchased visual/stats/investment 2_0
+PASS reachable purchased state 2_1 step 2
+PASS reachable purchased state 2_1 step 1
+PASS reachable purchased state 2_1 step 1
+PASS composed purchased visual/stats/investment 2_1
+PASS reachable purchased state 2_2 step 2
+PASS reachable purchased state 2_2 step 2
+PASS reachable purchased state 2_2 step 1
+PASS reachable purchased state 2_2 step 1
+PASS composed purchased visual/stats/investment 2_2
+PASS reachable purchased state 2_3 step 1
+PASS reachable purchased state 2_3 step 1
+PASS reachable purchased state 2_3 step 2
+PASS reachable purchased state 2_3 step 2
+PASS reachable purchased state 2_3 step 2
+PASS composed purchased visual/stats/investment 2_3
+PASS reachable purchased state 2_4 step 1
+PASS reachable purchased state 2_4 step 1
+PASS reachable purchased state 2_4 step 2
+PASS reachable purchased state 2_4 step 2
+PASS reachable purchased state 2_4 step 2
+PASS reachable purchased state 2_4 step 2
+PASS composed purchased visual/stats/investment 2_4
+PASS reachable purchased state 3_0 step 1
+PASS reachable purchased state 3_0 step 1
+PASS reachable purchased state 3_0 step 1
+PASS composed purchased visual/stats/investment 3_0
+PASS reachable purchased state 3_1 step 2
+PASS reachable purchased state 3_1 step 1
+PASS reachable purchased state 3_1 step 1
+PASS reachable purchased state 3_1 step 1
+PASS composed purchased visual/stats/investment 3_1
+PASS reachable purchased state 3_2 step 2
+PASS reachable purchased state 3_2 step 2
+PASS reachable purchased state 3_2 step 1
+PASS reachable purchased state 3_2 step 1
+PASS reachable purchased state 3_2 step 1
+PASS composed purchased visual/stats/investment 3_2
+PASS reachable purchased state 4_0 step 1
+PASS reachable purchased state 4_0 step 1
+PASS reachable purchased state 4_0 step 1
+PASS reachable purchased state 4_0 step 1
+PASS composed purchased visual/stats/investment 4_0
+PASS reachable purchased state 4_1 step 2
+PASS reachable purchased state 4_1 step 1
+PASS reachable purchased state 4_1 step 1
+PASS reachable purchased state 4_1 step 1
+PASS reachable purchased state 4_1 step 1
+PASS composed purchased visual/stats/investment 4_1
+PASS reachable purchased state 4_2 step 2
+PASS reachable purchased state 4_2 step 2
+PASS reachable purchased state 4_2 step 1
+PASS reachable purchased state 4_2 step 1
+PASS reachable purchased state 4_2 step 1
+PASS reachable purchased state 4_2 step 1
+PASS composed purchased visual/stats/investment 4_2
+PASS invalid combined state refused 3_3
+PASS invalid combined state refused 3_4
+PASS invalid combined state refused 4_3
+PASS invalid combined state refused 4_4
+PASS base Archer acquires nearest target fires and deals attributed damage
+PASS existing firing behavior drives Archer attacks
+PASS projectile damages exactly 1 distinct monsters
+PASS pierce destroys at limit and totals actual damage 1
+PASS projectile damages exactly 2 distinct monsters
+PASS pierce destroys at limit and totals actual damage 2
+PASS projectile damages exactly 3 distinct monsters
+PASS pierce destroys at limit and totals actual damage 3
+PASS projectile damages exactly 3 distinct monsters
+PASS pierce destroys at limit and totals actual damage 3
+PASS one projectile cannot repeat-hit stationary monster
+PASS damage attribution clamps overkill to actual lost HP
+PASS Twin Archers fires two owner-attributed projectiles
+PASS twin firing points are distinct
+PASS actual upgraded Crossbow fires owner-attributed pierce-3 bolt
+PASS Archer real cooldown follows 2x without stat multiplication
+PASS Archer projectile movement follows global 2x
+PASS sell includes base plus every purchased upgrade exactly once
+PASS existing tower uses new panel with no fake upgrades
+PASS deleting selected tower closes panel
+PASS Archer registered in live Index
+PASS Index reuses all eight upgrade icons
+PASS existing Wave Control preserved ManualFast
+PASS existing Wave Control preserved Auto
+PASS existing Wave Control preserved AutoFast
+PASS existing Wave Control preserved Manual
+ALL ARCHER INTEGRATION TESTS PASSED

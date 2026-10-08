@@ -1,0 +1,273 @@
+{
+  "aiGeneratedEventId": "01M48YAZAMDTA5NH22ZJ44RA41",
+  "type": "BuiltinCommonInstructions::Standard",
+  "conditions": [
+    {
+      "type": {
+        "value": "StringObjectVariable"
+      },
+      "parameters": [
+        "TileType_Button",
+        "TowerType",
+        "=",
+        "TowerShopRequestedType"
+      ]
+    },
+    {
+      "type": {
+        "value": "BooleanVariable"
+      },
+      "parameters": [
+        "TowerUIConsumesClick",
+        "False",
+        ""
+      ]
+    },
+    {
+      "type": {
+        "value": "BooleanVariable"
+      },
+      "parameters": [
+        "TowerShopPointerInside",
+        "True",
+        ""
+      ]
+    },
+    {
+      "type": {
+        "value": "NumberVariable"
+      },
+      "parameters": [
+        "Money",
+        ">=",
+        "TileType_Button.Variable(Cost)"
+      ]
+    },
+    {
+      "type": {
+        "value": "BooleanVariable"
+      },
+      "parameters": [
+        "IndexBlocksInput",
+        "False",
+        ""
+      ]
+    }
+  ],
+  "actions": [],
+  "events": [
+    {
+      "aiGeneratedEventId": "01M48YBZJAA1WDCYJXPGSF4W59",
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "inverted": true,
+            "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+          },
+          "parameters": [
+            "TileType_Button",
+            "Effect",
+            "\"Outline\""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberVariable"
+          },
+          "parameters": [
+            "SelectedTower",
+            "=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "EffectCapability::EffectBehavior::EnableEffect"
+          },
+          "parameters": [
+            "TileType_Button",
+            "Effect",
+            "\"Outline\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Show"
+          },
+          "parameters": [
+            "TilePlacement_Indicator",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "TilePlacement_Indicator",
+            "Animation",
+            "=",
+            "TileType_Button.VariableString(TowerType)"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeWidth"
+          },
+          "parameters": [
+            "TilePlacement_Indicator",
+            "=",
+            "64"
+          ]
+        },
+        {
+          "type": {
+            "value": "ChangeHeight"
+          },
+          "parameters": [
+            "TilePlacement_Indicator",
+            "=",
+            "64"
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "ButtonChanged",
+            "True",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets/starter_switch.wav",
+            "",
+            "60",
+            "RandomWithStep(0.9, 1.1, 0.05)"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "PickAllInstances"
+              },
+              "parameters": [
+                "",
+                "TileType_Button"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "TileType_Button",
+                "Effect",
+                "\"Outline\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "TileType_Button",
+                "Effect",
+                "\"Outline\"",
+                "yes"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "EffectCapability::EffectBehavior::IsEffectEnabled"
+          },
+          "parameters": [
+            "TileType_Button",
+            "Effect",
+            "\"Outline\""
+          ]
+        },
+        {
+          "type": {
+            "value": "BooleanVariable"
+          },
+          "parameters": [
+            "ButtonChanged",
+            "=",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "EffectCapability::EffectBehavior::EnableEffect"
+          },
+          "parameters": [
+            "TileType_Button",
+            "Effect",
+            "\"Outline\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Hide"
+          },
+          "parameters": [
+            "TilePlacement_Indicator"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets/starter_switch.wav",
+            "",
+            "30",
+            "RandomWithStep(0.7,0.8,0.05)"
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": [
+    {
+      "name": "ButtonChanged",
+      "type": "boolean",
+      "value": false
+    }
+  ]
+}
