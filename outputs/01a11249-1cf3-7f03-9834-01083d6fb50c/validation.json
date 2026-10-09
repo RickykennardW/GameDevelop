@@ -1,0 +1,28 @@
+{
+  "waves": 45,
+  "monsters": 6,
+  "towerBuilds": 21,
+  "upgrades": 8,
+  "seed": 177017,
+  "totalEnemies": 7117,
+  "totalKillGold": 46980,
+  "firstSelectedGolemWave": 13,
+  "checks": [
+    "45 wave compositions reconcile to active embedded generator",
+    "all monster rows match EnemyTypes",
+    "21 build stats reconcile to actual star.stats",
+    "8 prices/descriptions match config",
+    "count/buff input edits recalculate and restored",
+    "monster ID lookups stay correct after row reordering",
+    "formula scan clear",
+    "XLSX roundtrip verified",
+    "game files unchanged"
+  ],
+  "sourceHashes": {
+    "Tower Defense.json": "f2a0c36fbd4ca5a4f8bf836df9b8de2baac15dad8e7a3e2649280d190494a57f",
+    "layouts/game-scene.json": "1cf36ccc4855edde9c03a369aa8af6edbb80365a6f6700e3fa02b78f2cf399c7",
+    "tools/gold-budget-runtime.js": "db62fc90588f325b6c3fc70d5478e3deb7ed6c5cd0c8dd519a63d9843e7a99db",
+    "tools/star-cannon-runtime.js": "9dac5af7fc2b56c59948d122bc633e74d2bafde5bf6b4db6718893ed92e6677a",
+    "tools/selected-panel-runtime.js": "c9e557f1633259986854101541292651a833780bddd85610b8d9a4a98a7dd201"
+  }
+}
