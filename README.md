@@ -1,8 +1,8 @@
 # Celestial Void Tower Defense
 
-Buka **Tower Defense.json** dengan GDevelop. Project folder memiliki satu scene `layouts/game-scene.json`, satu tower resmi **Star Cannon**, dan lima enemy **Nova Wisp, Void Hound, Void Guard, Void Sentinel, Void Brute** untuk50 wave.
+Buka **Tower Defense.json** dengan GDevelop. Project folder memiliki satu scene `layouts/game-scene.json`, satu tower resmi **Star Cannon**, dan enam enemy **Nova Wisp, Void Hound, Void Guard, Void Sentinel, Void Brute, Void Golem** untuk45 wave dengan Gold Budget.
 
-Dokumentasi aktif: CLEANUP_REPORT.md, BALANCE.md, STAR_CANNON.md, NOVA_WISP.md, VOID_HOUND.md, VOID_COMMON_ENEMIES.md, VOID_COMMON_ENEMIES.md, STAR_TURRET_OBSTACLES.md, CELESTIAL_VOID.md. Resource gameplay berada di assets; runtime source berada di tools dan disalin ke event menggunakan `python tools/embed-free-placement.py`.
+Dokumentasi aktif: VOID_GOLEM.md, CLEANUP_REPORT.md, BALANCE.md, STAR_CANNON.md, NOVA_WISP.md, VOID_HOUND.md, VOID_COMMON_ENEMIES.md, VOID_COMMON_ENEMIES.md, STAR_TURRET_OBSTACLES.md, CELESTIAL_VOID.md. Resource gameplay berada di assets; runtime source berada di tools dan disalin ke event menggunakan `python tools/embed-free-placement.py`.
 
 Backup lengkap sebelum cleanup: `backups/pre_star_only_cleanup_20261009.zip`. Skrip migrasi dan laporan/preview versi lama sudah diarsipkan dalam backup. Buka file utama yang sudah dibersihkan saat GDevelop masih menyimpan project lama di memori; autosave pra-cleanup juga tersedia dalam backup.
 
@@ -19,3 +19,5 @@ Three common enemies: assets/enemies/void_guard, void_sentinel, void_brute.192na
 Balance/HP bars terbaru (2026-10-09): HP_BARS_BALANCE_REPORT.md dan BALANCE.md. Bukti ada di design_previews/gameplay_balance. Stats enemy/art/animasi tetap; konfigurasi upgrade, bonus wave, distribusi tank, spawn pacing, dan pasangan HP bar diperbarui. Laporan cleanup/enemy sebelumnya merupakan catatan versi saat dibuat.
 
 Tes HP/balance: `python tools/run-clean-validation.py test-healthbars-balance`. Skrip model tanpa dependencies: `node tools/analyze-game-balance.cjs --live`. Set `GD_VALIDATION_RESULTS` ke folder hasil yang diinginkan agar bukti lama tidak tertimpa.
+
+Void Golem Elite terbaru: `VOID_GOLEM.md`. Empat atlas final/80pose,20animasi, cast diam0.8s, Void Fortification armor+10/10s/cooldown25s/radius100. Wave sekarang memakai `WaveBudgetConfig`, cost=kill reward, milestone+20%, selesai45; completion reward0. Artwork/stat lima enemy lama dan Star Cannon tetap. Preview animasi: `design_previews/void_golem/Animation_Preview.html`; bukti native dan static audit di folder yang sama. Tidak ada backup/snapshot/ZIP/project JSON duplikat baru.

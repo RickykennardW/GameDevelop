@@ -227,7 +227,7 @@ const hoveredIndex = () => {
   const col = Math.floor(x / 92), row = Math.floor(y / 120), index = row * 2 + col;
   return col < 2 && x % 92 < 84 && y % 120 < 112 && index < catalog.length ? index : -1;
 };
-const ready = !boolean("WaveActive") && !boolean("GameOver") && number("Wave") < 50;
+const ready = !boolean("WaveActive") && !boolean("GameOver") && number("Wave") < (number("MaximumWave")||45);
 const overIndex = !modal && inside(1168, geometry.playY, 92, 60);
 const overPlay = !modal && inside(1268, geometry.playY, 92, 60);
 const down = input.isMouseButtonPressed(0);

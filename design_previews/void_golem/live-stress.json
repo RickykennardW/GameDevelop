@@ -1,0 +1,39 @@
+{
+  "result": {
+    "checks": [
+      "native real-frame 200 enemies/bars/shields without allocations",
+      "native real-frame 450 enemies/bars/shields without allocations",
+      "stress cleanup no dangling effects/peers/bars"
+    ],
+    "performance": [
+      {
+        "enemies": 200,
+        "golems": 33,
+        "shields": 200,
+        "samples": 120,
+        "meanMs": 6.947499999900659,
+        "p95Ms": 16.799999952316284,
+        "maxMs": 21,
+        "newVFX": 0,
+        "newHPBarPairs": 0
+      },
+      {
+        "enemies": 450,
+        "golems": 75,
+        "shields": 450,
+        "samples": 120,
+        "meanMs": 17.339166666567326,
+        "p95Ms": 29.899999976158142,
+        "maxMs": 41.10000002384186,
+        "newVFX": 0,
+        "newHPBarPairs": 0
+      }
+    ],
+    "note": "120 actual requestAnimationFrame samples per crowd;headless Chrome on this machine;static enemies,no towers;not a universal FPS guarantee"
+  },
+  "progress": [
+    "BALANCE PROGRESS {\"enemies\":200,\"golems\":33,\"shields\":200,\"samples\":120,\"meanMs\":6.947499999900659,\"p95Ms\":16.799999952316284,\"maxMs\":21,\"newVFX\":0,\"newHPBarPairs\":0}",
+    "BALANCE PROGRESS {\"enemies\":450,\"golems\":75,\"shields\":450,\"samples\":120,\"meanMs\":17.339166666567326,\"p95Ms\":29.899999976158142,\"maxMs\":41.10000002384186,\"newVFX\":0,\"newHPBarPairs\":0}"
+  ],
+  "consoleErrors": []
+}

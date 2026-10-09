@@ -2928,6 +2928,78 @@
         "name": "assets/ui/enemy-health-track.svg",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "file": "assets/enemies/void_golem/VoidGolem_Down.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_golem/VoidGolem_Down.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/enemies/void_golem/VoidGolem_Up.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_golem/VoidGolem_Up.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/enemies/void_golem/VoidGolem_Left.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_golem/VoidGolem_Left.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/enemies/void_golem/VoidGolem_Right.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_golem/VoidGolem_Right.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/effects/void_fortification/Shield_0.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/effects/void_fortification/Shield_0.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/effects/void_fortification/Shield_1.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/effects/void_fortification/Shield_1.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/effects/void_fortification/Shield_2.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/effects/void_fortification/Shield_2.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/effects/void_fortification/Shield_3.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/effects/void_fortification/Shield_3.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/effects/void_fortification/CastPulse.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/effects/void_fortification/CastPulse.svg",
+        "smoothed": true,
+        "userAdded": true
       }
     ]
   },

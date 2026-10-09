@@ -1,0 +1,29 @@
+libGD.js based on GDevelop 5.6.283-0
+Initializing GDJS platform...
+* Loading builtin extensions... done.
+* Loading other extensions... done.
+Platform initialization ended.
+Child sharedPropertyDescriptors not found in SerializerElement::GetChild
+Child previewLayout not found in SerializerElement::GetChild
+PARSER: scenes=1, objects=61
+SCENE COMPILE diagnostics 0
+EXTENSIONS COMPILE PASS; includes [
+  'Extensions/TextObject/textruntimeobject-pixi-renderer.js',
+  'Extensions/TextObject/textruntimeobject.js',
+  'gdjs-evtsext__health__health.js',
+  'object-capabilities/AnimatableBehavior.js',
+  'object-capabilities/EffectBehavior.js',
+  'object-capabilities/TextContainerBehavior.js',
+  'runtimeobject.js'
+]
+STATUS: Project cloning took 4.330099999904633ms
+Copying all resources from C:\Users\My ASUS\OneDrive\Documents\GitHub\GameDevelop to C:\Users\My ASUS\.codex\visualizations\2026\10\06\01a11249-1cf3-7f03-9834-01083d6fb50c\gdevelop-shop-rework-validation\preview...
+STATUS: Resource export took 636.4455999732018ms
+STATUS: Include files export took 20.09869998693466ms
+STATUS:   Scene 'Game Scene': 2.338199973106384ms, 63 events, 207 KB generated code
+STATUS: Events code export took 5.426400005817413ms
+STATUS: Project data export took 48.46119999885559ms
+Could not find GDJS include file gdjs-evtsext__health__health.js
+STATUS: Include and libs export took 456.59760004282ms
+EXPORT true 
+CUSTOM BEHAVIOR BUNDLE 1

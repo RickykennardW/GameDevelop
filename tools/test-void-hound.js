@@ -1,7 +1,7 @@
 step(5);const h=scene.__voidHound,n=scene.__novaWisp,star=scene.__starCannon,p=scene.__freePlacement,near=(a,b)=>Math.abs(a-b)<.0001;
 const clear=()=>{for(const name of ['Enemy','NovaWispDeathVisual','StarCannonProjectile','StarCannonImpact'])get(name).slice().forEach(e=>e.deleteFromScene());step();};
 const make=(x=800,y=550)=>{const e=scene.createObject('Enemy');e.getVariables().get('EnemyType').setString('VoidHound');h.ensure(e);e.getVariables().get('MoveSpeed').setNumber(0);e.setPosition(x-24,y-24);return e;};
-const types=vars.get('EnemyTypes').toJSObject();ok(Object.keys(types).sort().join(',')==='Basic,VoidBrute,VoidGuard,VoidHound,VoidSentinel','exactly five archetypes, original Hound fixed');
+const types=vars.get('EnemyTypes').toJSObject();ok(Object.keys(types).sort().join(',')==='Basic,VoidBrute,VoidGolem,VoidGuard,VoidHound,VoidSentinel','exactly six archetypes, original Hound fixed');
 ok(h.config.HP===60&&h.config.Speed===135&&h.config.Armor===0&&h.config.Reward===7&&h.config.SpecialAbility==='None'&&h.config.MinimumWave===4,'exact fixed Hound stats/no additional ability');
 for(const direction of ['Right','Left','Down','Up']){
  ok(h.config.Views[direction].Frames.length===16,'four states x four atlas poses '+direction);
@@ -40,7 +40,7 @@ clear();const route=vars.get('MonsterPathPoints').toJSObject();e=make(route[0].X
 for(let i=0;i<4000&&get('Enemy').includes(e);i++){scene.renderAndStep(100);input.onFrameEnded();if(get('Enemy').includes(e))directionsSeen.add(e.getVariables().get('Facing').getAsString());}
 ok(!get('Enemy').includes(e)&&v('Lives')===routeLives-1&&v('Money')===routeGold&&directionsSeen.has('Right')&&directionsSeen.has('Left')&&directionsSeen.has('Down'),'complete unchanged82-waypoint zigzag at135 through all bends, one base damage/no reward');
 const nova=scene.createObject('Enemy');n.ensure(nova);nova.getVariables().get('MoveSpeed').setNumber(0);step();ok(nova.getBehavior('Health').Health()===100&&nova.__novaRig&&nova.getAnimationName().startsWith('Nova'),'Nova health/animation rig preserved');clear();
-vars.get('IndexOpen').setBoolean(true);step();scene.__unitIndex.category='Monsters';step();ok(scene.__unitIndex.entries.length===5&&scene.__unitIndex.entries[1].name==='Void Hound'&&scene.__unitIndex.entries[1].Speed===135,'Index displays canonical Hound stats beside Nova');
+vars.get('IndexOpen').setBoolean(true);step();scene.__unitIndex.category='Monsters';step();ok(scene.__unitIndex.entries.length===6&&scene.__unitIndex.entries[1].name==='Void Hound'&&scene.__unitIndex.entries[1].Speed===135,'Index displays canonical Hound stats beside Nova');
 const portrait=scene.__unitIndex.cards[1].sprite;ok(portrait.getRendererObject().texture===h.texture('Down',0,0),'Index renders one portrait cell without atlas leakage');vars.get('IndexOpen').setBoolean(false);step();
 ok(scene.__towerShopUI.cards.length===1&&scene.__towerShopUI.cards[0].background.getWidth()===84,'small single-Star shop unchanged');
 lines.push('ALL VOID HOUND TESTS PASSED');output.textContent=lines.join('\n');document.title='PASS '+(lines.length-1)+' Void Hound checks';

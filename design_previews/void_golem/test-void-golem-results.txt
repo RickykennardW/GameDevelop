@@ -1,0 +1,553 @@
+PASS six archetypes/exact elite stats
+PASS 20native directional clips/80 actual atlas poses/no attacks
+PASS uniform atlas frame canvas Up/Idle/0
+PASS uniform atlas frame canvas Up/Idle/1
+PASS uniform atlas frame canvas Up/Idle/2
+PASS uniform atlas frame canvas Up/Idle/3
+PASS uniform atlas frame canvas Up/Move/0
+PASS uniform atlas frame canvas Up/Move/1
+PASS uniform atlas frame canvas Up/Move/2
+PASS uniform atlas frame canvas Up/Move/3
+PASS uniform atlas frame canvas Up/Hit/0
+PASS uniform atlas frame canvas Up/Hit/1
+PASS uniform atlas frame canvas Up/Hit/2
+PASS uniform atlas frame canvas Up/Hit/3
+PASS uniform atlas frame canvas Up/Death/0
+PASS uniform atlas frame canvas Up/Death/1
+PASS uniform atlas frame canvas Up/Death/2
+PASS uniform atlas frame canvas Up/Death/3
+PASS uniform atlas frame canvas Up/Skill/0
+PASS uniform atlas frame canvas Up/Skill/1
+PASS uniform atlas frame canvas Up/Skill/2
+PASS uniform atlas frame canvas Up/Skill/3
+PASS uniform atlas frame canvas Down/Idle/0
+PASS uniform atlas frame canvas Down/Idle/1
+PASS uniform atlas frame canvas Down/Idle/2
+PASS uniform atlas frame canvas Down/Idle/3
+PASS uniform atlas frame canvas Down/Move/0
+PASS uniform atlas frame canvas Down/Move/1
+PASS uniform atlas frame canvas Down/Move/2
+PASS uniform atlas frame canvas Down/Move/3
+PASS uniform atlas frame canvas Down/Hit/0
+PASS uniform atlas frame canvas Down/Hit/1
+PASS uniform atlas frame canvas Down/Hit/2
+PASS uniform atlas frame canvas Down/Hit/3
+PASS uniform atlas frame canvas Down/Death/0
+PASS uniform atlas frame canvas Down/Death/1
+PASS uniform atlas frame canvas Down/Death/2
+PASS uniform atlas frame canvas Down/Death/3
+PASS uniform atlas frame canvas Down/Skill/0
+PASS uniform atlas frame canvas Down/Skill/1
+PASS uniform atlas frame canvas Down/Skill/2
+PASS uniform atlas frame canvas Down/Skill/3
+PASS uniform atlas frame canvas Left/Idle/0
+PASS uniform atlas frame canvas Left/Idle/1
+PASS uniform atlas frame canvas Left/Idle/2
+PASS uniform atlas frame canvas Left/Idle/3
+PASS uniform atlas frame canvas Left/Move/0
+PASS uniform atlas frame canvas Left/Move/1
+PASS uniform atlas frame canvas Left/Move/2
+PASS uniform atlas frame canvas Left/Move/3
+PASS uniform atlas frame canvas Left/Hit/0
+PASS uniform atlas frame canvas Left/Hit/1
+PASS uniform atlas frame canvas Left/Hit/2
+PASS uniform atlas frame canvas Left/Hit/3
+PASS uniform atlas frame canvas Left/Death/0
+PASS uniform atlas frame canvas Left/Death/1
+PASS uniform atlas frame canvas Left/Death/2
+PASS uniform atlas frame canvas Left/Death/3
+PASS uniform atlas frame canvas Left/Skill/0
+PASS uniform atlas frame canvas Left/Skill/1
+PASS uniform atlas frame canvas Left/Skill/2
+PASS uniform atlas frame canvas Left/Skill/3
+PASS uniform atlas frame canvas Right/Idle/0
+PASS uniform atlas frame canvas Right/Idle/1
+PASS uniform atlas frame canvas Right/Idle/2
+PASS uniform atlas frame canvas Right/Idle/3
+PASS uniform atlas frame canvas Right/Move/0
+PASS uniform atlas frame canvas Right/Move/1
+PASS uniform atlas frame canvas Right/Move/2
+PASS uniform atlas frame canvas Right/Move/3
+PASS uniform atlas frame canvas Right/Hit/0
+PASS uniform atlas frame canvas Right/Hit/1
+PASS uniform atlas frame canvas Right/Hit/2
+PASS uniform atlas frame canvas Right/Hit/3
+PASS uniform atlas frame canvas Right/Death/0
+PASS uniform atlas frame canvas Right/Death/1
+PASS uniform atlas frame canvas Right/Death/2
+PASS uniform atlas frame canvas Right/Death/3
+PASS uniform atlas frame canvas Right/Skill/0
+PASS uniform atlas frame canvas Right/Skill/1
+PASS uniform atlas frame canvas Right/Skill/2
+PASS uniform atlas frame canvas Right/Skill/3
+PASS four actual idle textures Up
+PASS stable collider/base health/armor Up
+PASS four directional walking frames/no spin Up
+PASS four hit frames/flat armor/hit does not stop movement Up
+PASS directional skill begins Up
+PASS no drift/teleport/waypoint progress while casting Up/1
+PASS hit cannot override skill Up/1
+PASS no drift/teleport/waypoint progress while casting Up/2
+PASS hit cannot override skill Up/2
+PASS no drift/teleport/waypoint progress while casting Up/3
+PASS hit cannot override skill Up/3
+PASS no drift/teleport/waypoint progress while casting Up/4
+PASS hit cannot override skill Up/4
+PASS no drift/teleport/waypoint progress while casting Up/5
+PASS hit cannot override skill Up/5
+PASS no drift/teleport/waypoint progress while casting Up/6
+PASS hit cannot override skill Up/6
+PASS no drift/teleport/waypoint progress while casting Up/7
+PASS hit cannot override skill Up/7
+PASS no drift/teleport/waypoint progress while casting Up/8
+PASS hit cannot override skill Up/8
+PASS no drift/teleport/waypoint progress while casting Up/9
+PASS hit cannot override skill Up/9
+PASS no drift/teleport/waypoint progress while casting Up/10
+PASS hit cannot override skill Up/10
+PASS no drift/teleport/waypoint progress while casting Up/11
+PASS hit cannot override skill Up/11
+PASS no drift/teleport/waypoint progress while casting Up/12
+PASS hit cannot override skill Up/12
+PASS no drift/teleport/waypoint progress while casting Up/13
+PASS hit cannot override skill Up/13
+PASS no drift/teleport/waypoint progress while casting Up/14
+PASS hit cannot override skill Up/14
+PASS vulnerable while casting Up
+PASS no drift/teleport/waypoint progress while casting Up/15
+PASS hit cannot override skill Up/15
+PASS no drift/teleport/waypoint progress while casting Up/16
+PASS hit cannot override skill Up/16
+PASS no drift/teleport/waypoint progress while casting Up/17
+PASS hit cannot override skill Up/17
+PASS no drift/teleport/waypoint progress while casting Up/18
+PASS hit cannot override skill Up/18
+PASS no drift/teleport/waypoint progress while casting Up/19
+PASS hit cannot override skill Up/19
+PASS no drift/teleport/waypoint progress while casting Up/20
+PASS hit cannot override skill Up/20
+PASS no drift/teleport/waypoint progress while casting Up/21
+PASS hit cannot override skill Up/21
+PASS no drift/teleport/waypoint progress while casting Up/22
+PASS hit cannot override skill Up/22
+PASS no drift/teleport/waypoint progress while casting Up/23
+PASS hit cannot override skill Up/23
+PASS no drift/teleport/waypoint progress while casting Up/24
+PASS hit cannot override skill Up/24
+PASS no drift/teleport/waypoint progress while casting Up/25
+PASS hit cannot override skill Up/25
+PASS no drift/teleport/waypoint progress while casting Up/26
+PASS hit cannot override skill Up/26
+PASS no drift/teleport/waypoint progress while casting Up/27
+PASS hit cannot override skill Up/27
+PASS no drift/teleport/waypoint progress while casting Up/28
+PASS hit cannot override skill Up/28
+PASS no drift/teleport/waypoint progress while casting Up/29
+PASS hit cannot override skill Up/29
+PASS no drift/teleport/waypoint progress while casting Up/30
+PASS hit cannot override skill Up/30
+PASS no drift/teleport/waypoint progress while casting Up/31
+PASS hit cannot override skill Up/31
+PASS no drift/teleport/waypoint progress while casting Up/32
+PASS hit cannot override skill Up/32
+PASS no drift/teleport/waypoint progress while casting Up/33
+PASS hit cannot override skill Up/33
+PASS no drift/teleport/waypoint progress while casting Up/34
+PASS hit cannot override skill Up/34
+PASS no drift/teleport/waypoint progress while casting Up/35
+PASS hit cannot override skill Up/35
+PASS no drift/teleport/waypoint progress while casting Up/36
+PASS hit cannot override skill Up/36
+PASS no drift/teleport/waypoint progress while casting Up/37
+PASS hit cannot override skill Up/37
+PASS no drift/teleport/waypoint progress while casting Up/38
+PASS hit cannot override skill Up/38
+PASS no drift/teleport/waypoint progress while casting Up/39
+PASS hit cannot override skill Up/39
+PASS no drift/teleport/waypoint progress while casting Up/40
+PASS hit cannot override skill Up/40
+PASS no drift/teleport/waypoint progress while casting Up/41
+PASS hit cannot override skill Up/41
+PASS no drift/teleport/waypoint progress while casting Up/42
+PASS hit cannot override skill Up/42
+PASS no drift/teleport/waypoint progress while casting Up/43
+PASS hit cannot override skill Up/43
+PASS no drift/teleport/waypoint progress while casting Up/44
+PASS hit cannot override skill Up/44
+PASS no drift/teleport/waypoint progress while casting Up/45
+PASS hit cannot override skill Up/45
+PASS no drift/teleport/waypoint progress while casting Up/46
+PASS hit cannot override skill Up/46
+PASS no drift/teleport/waypoint progress while casting Up/47
+PASS hit cannot override skill Up/47
+PASS no drift/teleport/waypoint progress while casting Up/48
+PASS four skill frames/one release/cooldown from cast start Up
+PASS base speed intact/self35armor/base25 Up
+PASS resume exact movement budget/current point Up
+PASS death priority/no collider/bar/buff/single20reward Up
+PASS four death frames/rig cleanup/no duplicate reward Up
+PASS four actual idle textures Down
+PASS stable collider/base health/armor Down
+PASS four directional walking frames/no spin Down
+PASS four hit frames/flat armor/hit does not stop movement Down
+PASS directional skill begins Down
+PASS no drift/teleport/waypoint progress while casting Down/1
+PASS hit cannot override skill Down/1
+PASS no drift/teleport/waypoint progress while casting Down/2
+PASS hit cannot override skill Down/2
+PASS no drift/teleport/waypoint progress while casting Down/3
+PASS hit cannot override skill Down/3
+PASS no drift/teleport/waypoint progress while casting Down/4
+PASS hit cannot override skill Down/4
+PASS no drift/teleport/waypoint progress while casting Down/5
+PASS hit cannot override skill Down/5
+PASS no drift/teleport/waypoint progress while casting Down/6
+PASS hit cannot override skill Down/6
+PASS no drift/teleport/waypoint progress while casting Down/7
+PASS hit cannot override skill Down/7
+PASS no drift/teleport/waypoint progress while casting Down/8
+PASS hit cannot override skill Down/8
+PASS no drift/teleport/waypoint progress while casting Down/9
+PASS hit cannot override skill Down/9
+PASS no drift/teleport/waypoint progress while casting Down/10
+PASS hit cannot override skill Down/10
+PASS no drift/teleport/waypoint progress while casting Down/11
+PASS hit cannot override skill Down/11
+PASS no drift/teleport/waypoint progress while casting Down/12
+PASS hit cannot override skill Down/12
+PASS no drift/teleport/waypoint progress while casting Down/13
+PASS hit cannot override skill Down/13
+PASS no drift/teleport/waypoint progress while casting Down/14
+PASS hit cannot override skill Down/14
+PASS vulnerable while casting Down
+PASS no drift/teleport/waypoint progress while casting Down/15
+PASS hit cannot override skill Down/15
+PASS no drift/teleport/waypoint progress while casting Down/16
+PASS hit cannot override skill Down/16
+PASS no drift/teleport/waypoint progress while casting Down/17
+PASS hit cannot override skill Down/17
+PASS no drift/teleport/waypoint progress while casting Down/18
+PASS hit cannot override skill Down/18
+PASS no drift/teleport/waypoint progress while casting Down/19
+PASS hit cannot override skill Down/19
+PASS no drift/teleport/waypoint progress while casting Down/20
+PASS hit cannot override skill Down/20
+PASS no drift/teleport/waypoint progress while casting Down/21
+PASS hit cannot override skill Down/21
+PASS no drift/teleport/waypoint progress while casting Down/22
+PASS hit cannot override skill Down/22
+PASS no drift/teleport/waypoint progress while casting Down/23
+PASS hit cannot override skill Down/23
+PASS no drift/teleport/waypoint progress while casting Down/24
+PASS hit cannot override skill Down/24
+PASS no drift/teleport/waypoint progress while casting Down/25
+PASS hit cannot override skill Down/25
+PASS no drift/teleport/waypoint progress while casting Down/26
+PASS hit cannot override skill Down/26
+PASS no drift/teleport/waypoint progress while casting Down/27
+PASS hit cannot override skill Down/27
+PASS no drift/teleport/waypoint progress while casting Down/28
+PASS hit cannot override skill Down/28
+PASS no drift/teleport/waypoint progress while casting Down/29
+PASS hit cannot override skill Down/29
+PASS no drift/teleport/waypoint progress while casting Down/30
+PASS hit cannot override skill Down/30
+PASS no drift/teleport/waypoint progress while casting Down/31
+PASS hit cannot override skill Down/31
+PASS no drift/teleport/waypoint progress while casting Down/32
+PASS hit cannot override skill Down/32
+PASS no drift/teleport/waypoint progress while casting Down/33
+PASS hit cannot override skill Down/33
+PASS no drift/teleport/waypoint progress while casting Down/34
+PASS hit cannot override skill Down/34
+PASS no drift/teleport/waypoint progress while casting Down/35
+PASS hit cannot override skill Down/35
+PASS no drift/teleport/waypoint progress while casting Down/36
+PASS hit cannot override skill Down/36
+PASS no drift/teleport/waypoint progress while casting Down/37
+PASS hit cannot override skill Down/37
+PASS no drift/teleport/waypoint progress while casting Down/38
+PASS hit cannot override skill Down/38
+PASS no drift/teleport/waypoint progress while casting Down/39
+PASS hit cannot override skill Down/39
+PASS no drift/teleport/waypoint progress while casting Down/40
+PASS hit cannot override skill Down/40
+PASS no drift/teleport/waypoint progress while casting Down/41
+PASS hit cannot override skill Down/41
+PASS no drift/teleport/waypoint progress while casting Down/42
+PASS hit cannot override skill Down/42
+PASS no drift/teleport/waypoint progress while casting Down/43
+PASS hit cannot override skill Down/43
+PASS no drift/teleport/waypoint progress while casting Down/44
+PASS hit cannot override skill Down/44
+PASS no drift/teleport/waypoint progress while casting Down/45
+PASS hit cannot override skill Down/45
+PASS no drift/teleport/waypoint progress while casting Down/46
+PASS hit cannot override skill Down/46
+PASS no drift/teleport/waypoint progress while casting Down/47
+PASS hit cannot override skill Down/47
+PASS no drift/teleport/waypoint progress while casting Down/48
+PASS four skill frames/one release/cooldown from cast start Down
+PASS base speed intact/self35armor/base25 Down
+PASS resume exact movement budget/current point Down
+PASS death priority/no collider/bar/buff/single20reward Down
+PASS four death frames/rig cleanup/no duplicate reward Down
+PASS four actual idle textures Left
+PASS stable collider/base health/armor Left
+PASS four directional walking frames/no spin Left
+PASS four hit frames/flat armor/hit does not stop movement Left
+PASS directional skill begins Left
+PASS no drift/teleport/waypoint progress while casting Left/1
+PASS hit cannot override skill Left/1
+PASS no drift/teleport/waypoint progress while casting Left/2
+PASS hit cannot override skill Left/2
+PASS no drift/teleport/waypoint progress while casting Left/3
+PASS hit cannot override skill Left/3
+PASS no drift/teleport/waypoint progress while casting Left/4
+PASS hit cannot override skill Left/4
+PASS no drift/teleport/waypoint progress while casting Left/5
+PASS hit cannot override skill Left/5
+PASS no drift/teleport/waypoint progress while casting Left/6
+PASS hit cannot override skill Left/6
+PASS no drift/teleport/waypoint progress while casting Left/7
+PASS hit cannot override skill Left/7
+PASS no drift/teleport/waypoint progress while casting Left/8
+PASS hit cannot override skill Left/8
+PASS no drift/teleport/waypoint progress while casting Left/9
+PASS hit cannot override skill Left/9
+PASS no drift/teleport/waypoint progress while casting Left/10
+PASS hit cannot override skill Left/10
+PASS no drift/teleport/waypoint progress while casting Left/11
+PASS hit cannot override skill Left/11
+PASS no drift/teleport/waypoint progress while casting Left/12
+PASS hit cannot override skill Left/12
+PASS no drift/teleport/waypoint progress while casting Left/13
+PASS hit cannot override skill Left/13
+PASS no drift/teleport/waypoint progress while casting Left/14
+PASS hit cannot override skill Left/14
+PASS vulnerable while casting Left
+PASS no drift/teleport/waypoint progress while casting Left/15
+PASS hit cannot override skill Left/15
+PASS no drift/teleport/waypoint progress while casting Left/16
+PASS hit cannot override skill Left/16
+PASS no drift/teleport/waypoint progress while casting Left/17
+PASS hit cannot override skill Left/17
+PASS no drift/teleport/waypoint progress while casting Left/18
+PASS hit cannot override skill Left/18
+PASS no drift/teleport/waypoint progress while casting Left/19
+PASS hit cannot override skill Left/19
+PASS no drift/teleport/waypoint progress while casting Left/20
+PASS hit cannot override skill Left/20
+PASS no drift/teleport/waypoint progress while casting Left/21
+PASS hit cannot override skill Left/21
+PASS no drift/teleport/waypoint progress while casting Left/22
+PASS hit cannot override skill Left/22
+PASS no drift/teleport/waypoint progress while casting Left/23
+PASS hit cannot override skill Left/23
+PASS no drift/teleport/waypoint progress while casting Left/24
+PASS hit cannot override skill Left/24
+PASS no drift/teleport/waypoint progress while casting Left/25
+PASS hit cannot override skill Left/25
+PASS no drift/teleport/waypoint progress while casting Left/26
+PASS hit cannot override skill Left/26
+PASS no drift/teleport/waypoint progress while casting Left/27
+PASS hit cannot override skill Left/27
+PASS no drift/teleport/waypoint progress while casting Left/28
+PASS hit cannot override skill Left/28
+PASS no drift/teleport/waypoint progress while casting Left/29
+PASS hit cannot override skill Left/29
+PASS no drift/teleport/waypoint progress while casting Left/30
+PASS hit cannot override skill Left/30
+PASS no drift/teleport/waypoint progress while casting Left/31
+PASS hit cannot override skill Left/31
+PASS no drift/teleport/waypoint progress while casting Left/32
+PASS hit cannot override skill Left/32
+PASS no drift/teleport/waypoint progress while casting Left/33
+PASS hit cannot override skill Left/33
+PASS no drift/teleport/waypoint progress while casting Left/34
+PASS hit cannot override skill Left/34
+PASS no drift/teleport/waypoint progress while casting Left/35
+PASS hit cannot override skill Left/35
+PASS no drift/teleport/waypoint progress while casting Left/36
+PASS hit cannot override skill Left/36
+PASS no drift/teleport/waypoint progress while casting Left/37
+PASS hit cannot override skill Left/37
+PASS no drift/teleport/waypoint progress while casting Left/38
+PASS hit cannot override skill Left/38
+PASS no drift/teleport/waypoint progress while casting Left/39
+PASS hit cannot override skill Left/39
+PASS no drift/teleport/waypoint progress while casting Left/40
+PASS hit cannot override skill Left/40
+PASS no drift/teleport/waypoint progress while casting Left/41
+PASS hit cannot override skill Left/41
+PASS no drift/teleport/waypoint progress while casting Left/42
+PASS hit cannot override skill Left/42
+PASS no drift/teleport/waypoint progress while casting Left/43
+PASS hit cannot override skill Left/43
+PASS no drift/teleport/waypoint progress while casting Left/44
+PASS hit cannot override skill Left/44
+PASS no drift/teleport/waypoint progress while casting Left/45
+PASS hit cannot override skill Left/45
+PASS no drift/teleport/waypoint progress while casting Left/46
+PASS hit cannot override skill Left/46
+PASS no drift/teleport/waypoint progress while casting Left/47
+PASS hit cannot override skill Left/47
+PASS no drift/teleport/waypoint progress while casting Left/48
+PASS four skill frames/one release/cooldown from cast start Left
+PASS base speed intact/self35armor/base25 Left
+PASS resume exact movement budget/current point Left
+PASS death priority/no collider/bar/buff/single20reward Left
+PASS four death frames/rig cleanup/no duplicate reward Left
+PASS four actual idle textures Right
+PASS stable collider/base health/armor Right
+PASS four directional walking frames/no spin Right
+PASS four hit frames/flat armor/hit does not stop movement Right
+PASS directional skill begins Right
+PASS no drift/teleport/waypoint progress while casting Right/1
+PASS hit cannot override skill Right/1
+PASS no drift/teleport/waypoint progress while casting Right/2
+PASS hit cannot override skill Right/2
+PASS no drift/teleport/waypoint progress while casting Right/3
+PASS hit cannot override skill Right/3
+PASS no drift/teleport/waypoint progress while casting Right/4
+PASS hit cannot override skill Right/4
+PASS no drift/teleport/waypoint progress while casting Right/5
+PASS hit cannot override skill Right/5
+PASS no drift/teleport/waypoint progress while casting Right/6
+PASS hit cannot override skill Right/6
+PASS no drift/teleport/waypoint progress while casting Right/7
+PASS hit cannot override skill Right/7
+PASS no drift/teleport/waypoint progress while casting Right/8
+PASS hit cannot override skill Right/8
+PASS no drift/teleport/waypoint progress while casting Right/9
+PASS hit cannot override skill Right/9
+PASS no drift/teleport/waypoint progress while casting Right/10
+PASS hit cannot override skill Right/10
+PASS no drift/teleport/waypoint progress while casting Right/11
+PASS hit cannot override skill Right/11
+PASS no drift/teleport/waypoint progress while casting Right/12
+PASS hit cannot override skill Right/12
+PASS no drift/teleport/waypoint progress while casting Right/13
+PASS hit cannot override skill Right/13
+PASS no drift/teleport/waypoint progress while casting Right/14
+PASS hit cannot override skill Right/14
+PASS vulnerable while casting Right
+PASS no drift/teleport/waypoint progress while casting Right/15
+PASS hit cannot override skill Right/15
+PASS no drift/teleport/waypoint progress while casting Right/16
+PASS hit cannot override skill Right/16
+PASS no drift/teleport/waypoint progress while casting Right/17
+PASS hit cannot override skill Right/17
+PASS no drift/teleport/waypoint progress while casting Right/18
+PASS hit cannot override skill Right/18
+PASS no drift/teleport/waypoint progress while casting Right/19
+PASS hit cannot override skill Right/19
+PASS no drift/teleport/waypoint progress while casting Right/20
+PASS hit cannot override skill Right/20
+PASS no drift/teleport/waypoint progress while casting Right/21
+PASS hit cannot override skill Right/21
+PASS no drift/teleport/waypoint progress while casting Right/22
+PASS hit cannot override skill Right/22
+PASS no drift/teleport/waypoint progress while casting Right/23
+PASS hit cannot override skill Right/23
+PASS no drift/teleport/waypoint progress while casting Right/24
+PASS hit cannot override skill Right/24
+PASS no drift/teleport/waypoint progress while casting Right/25
+PASS hit cannot override skill Right/25
+PASS no drift/teleport/waypoint progress while casting Right/26
+PASS hit cannot override skill Right/26
+PASS no drift/teleport/waypoint progress while casting Right/27
+PASS hit cannot override skill Right/27
+PASS no drift/teleport/waypoint progress while casting Right/28
+PASS hit cannot override skill Right/28
+PASS no drift/teleport/waypoint progress while casting Right/29
+PASS hit cannot override skill Right/29
+PASS no drift/teleport/waypoint progress while casting Right/30
+PASS hit cannot override skill Right/30
+PASS no drift/teleport/waypoint progress while casting Right/31
+PASS hit cannot override skill Right/31
+PASS no drift/teleport/waypoint progress while casting Right/32
+PASS hit cannot override skill Right/32
+PASS no drift/teleport/waypoint progress while casting Right/33
+PASS hit cannot override skill Right/33
+PASS no drift/teleport/waypoint progress while casting Right/34
+PASS hit cannot override skill Right/34
+PASS no drift/teleport/waypoint progress while casting Right/35
+PASS hit cannot override skill Right/35
+PASS no drift/teleport/waypoint progress while casting Right/36
+PASS hit cannot override skill Right/36
+PASS no drift/teleport/waypoint progress while casting Right/37
+PASS hit cannot override skill Right/37
+PASS no drift/teleport/waypoint progress while casting Right/38
+PASS hit cannot override skill Right/38
+PASS no drift/teleport/waypoint progress while casting Right/39
+PASS hit cannot override skill Right/39
+PASS no drift/teleport/waypoint progress while casting Right/40
+PASS hit cannot override skill Right/40
+PASS no drift/teleport/waypoint progress while casting Right/41
+PASS hit cannot override skill Right/41
+PASS no drift/teleport/waypoint progress while casting Right/42
+PASS hit cannot override skill Right/42
+PASS no drift/teleport/waypoint progress while casting Right/43
+PASS hit cannot override skill Right/43
+PASS no drift/teleport/waypoint progress while casting Right/44
+PASS hit cannot override skill Right/44
+PASS no drift/teleport/waypoint progress while casting Right/45
+PASS hit cannot override skill Right/45
+PASS no drift/teleport/waypoint progress while casting Right/46
+PASS hit cannot override skill Right/46
+PASS no drift/teleport/waypoint progress while casting Right/47
+PASS hit cannot override skill Right/47
+PASS no drift/teleport/waypoint progress while casting Right/48
+PASS four skill frames/one release/cooldown from cast start Right
+PASS base speed intact/self35armor/base25 Right
+PASS resume exact movement budget/current point Right
+PASS death priority/no collider/bar/buff/single20reward Right
+PASS four death frames/rig cleanup/no duplicate reward Right
+PASS bounded native timeline
+PASS actual first cooldown25seconds
+PASS bounded native timeline
+PASS actual release at25.6/self35armor
+PASS bounded native timeline
+PASS cast finishes after0.8 without movement
+PASS bounded native timeline
+PASS buff expires10seconds/exact base armor restoration
+PASS bounded native timeline
+PASS second casting at50seconds,not after expiry
+PASS independent per-instance cooldown
+PASS bounded native timeline
+PASS release snapshot/radius<=100/common armor correct
+PASS one transient pulse plus independent persistent shields
+PASS leaving retains/entering afterward does not gain aura
+PASS shield follows exact owner/below HP/projectiles
+PASS two casters refresh10seconds without stacking/duplicate icon
+PASS instant allied buff persists after caster death
+PASS bounded native timeline
+PASS refreshed duration expires and removes VFX
+PASS death before release cancels casting and cannot buff/pay twice
+PASS base arrival disables casting/buff/VFX/no kill reward
+PASS 200 recipients use same shared VFX assets
+PASS 200 shields are not created every frame
+PASS all owned bodies/shields/pulses/bars clean up
+PASS Index preserves five and shows sixth elite cropped portrait
+PASS unchanged Star-only small shop
+PASS actual aligned Golem volley launched
+PASS bounded native timeline
+PASS native50 projectile minus base25 armor
+PASS actual aligned Golem volley launched
+PASS bounded native timeline
+PASS native50 projectile minus buffed35 armor
+PASS existing damage tier bought
+PASS existing damage tier bought
+PASS existing Meteor tier bought
+PASS existing Meteor tier bought
+PASS existing Meteor tier bought
+PASS existing Meteor tier bought
+PASS actual aligned Golem volley launched
+PASS bounded native timeline
+PASS native2-4 three Meteors respect minimum1 versus35armor
+PASS lethal homing hit on0.6release frame has death priority
+PASS Elite timers use existing2x game clock
+PASS 2x release after0.6game seconds without drift
+PASS 2x cast finishes after0.8game seconds
+ALL VOID GOLEM TESTS PASSED

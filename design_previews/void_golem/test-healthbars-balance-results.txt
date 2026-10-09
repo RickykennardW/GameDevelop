@@ -1,0 +1,184 @@
+PASS spawn creates independently owned pair Basic
+PASS fixed width/accurate fill independent of HP Basic/1
+PASS visible compact threshold colors/above world Basic/1
+PASS fixed width/accurate fill independent of HP Basic/0.75
+PASS visible compact threshold colors/above world Basic/0.75
+PASS fixed width/accurate fill independent of HP Basic/0.61
+PASS visible compact threshold colors/above world Basic/0.61
+PASS fixed width/accurate fill independent of HP Basic/0.6
+PASS visible compact threshold colors/above world Basic/0.6
+PASS fixed width/accurate fill independent of HP Basic/0.5
+PASS visible compact threshold colors/above world Basic/0.5
+PASS fixed width/accurate fill independent of HP Basic/0.3
+PASS visible compact threshold colors/above world Basic/0.3
+PASS fixed width/accurate fill independent of HP Basic/0.25
+PASS visible compact threshold colors/above world Basic/0.25
+PASS fixed width/accurate fill independent of HP Basic/0.001
+PASS visible compact threshold colors/above world Basic/0.001
+PASS fixed width/accurate fill independent of HP Basic/1.2
+PASS visible compact threshold colors/above world Basic/1.2
+PASS follows native movement and facing Basic/Up
+PASS bar stays above rendered head Basic/Up
+PASS follows native movement and facing Basic/Down
+PASS bar stays above rendered head Basic/Down
+PASS follows native movement and facing Basic/Left
+PASS bar stays above rendered head Basic/Left
+PASS follows native movement and facing Basic/Right
+PASS bar stays above rendered head Basic/Right
+PASS no per-frame healthbar allocations Basic
+PASS bar follows owner layer Basic
+PASS external bar deletion repairs pair/removes stale callback Basic
+PASS base cleanup/no orphan or kill reward Basic
+PASS spawn creates independently owned pair VoidHound
+PASS fixed width/accurate fill independent of HP VoidHound/1
+PASS visible compact threshold colors/above world VoidHound/1
+PASS fixed width/accurate fill independent of HP VoidHound/0.75
+PASS visible compact threshold colors/above world VoidHound/0.75
+PASS fixed width/accurate fill independent of HP VoidHound/0.61
+PASS visible compact threshold colors/above world VoidHound/0.61
+PASS fixed width/accurate fill independent of HP VoidHound/0.6
+PASS visible compact threshold colors/above world VoidHound/0.6
+PASS fixed width/accurate fill independent of HP VoidHound/0.5
+PASS visible compact threshold colors/above world VoidHound/0.5
+PASS fixed width/accurate fill independent of HP VoidHound/0.3
+PASS visible compact threshold colors/above world VoidHound/0.3
+PASS fixed width/accurate fill independent of HP VoidHound/0.25
+PASS visible compact threshold colors/above world VoidHound/0.25
+PASS fixed width/accurate fill independent of HP VoidHound/0.001
+PASS visible compact threshold colors/above world VoidHound/0.001
+PASS fixed width/accurate fill independent of HP VoidHound/1.2
+PASS visible compact threshold colors/above world VoidHound/1.2
+PASS follows native movement and facing VoidHound/Up
+PASS bar stays above rendered head VoidHound/Up
+PASS follows native movement and facing VoidHound/Down
+PASS bar stays above rendered head VoidHound/Down
+PASS follows native movement and facing VoidHound/Left
+PASS bar stays above rendered head VoidHound/Left
+PASS follows native movement and facing VoidHound/Right
+PASS bar stays above rendered head VoidHound/Right
+PASS no per-frame healthbar allocations VoidHound
+PASS bar follows owner layer VoidHound
+PASS external bar deletion repairs pair/removes stale callback VoidHound
+PASS base cleanup/no orphan or kill reward VoidHound
+PASS spawn creates independently owned pair VoidGuard
+PASS fixed width/accurate fill independent of HP VoidGuard/1
+PASS visible compact threshold colors/above world VoidGuard/1
+PASS fixed width/accurate fill independent of HP VoidGuard/0.75
+PASS visible compact threshold colors/above world VoidGuard/0.75
+PASS fixed width/accurate fill independent of HP VoidGuard/0.61
+PASS visible compact threshold colors/above world VoidGuard/0.61
+PASS fixed width/accurate fill independent of HP VoidGuard/0.6
+PASS visible compact threshold colors/above world VoidGuard/0.6
+PASS fixed width/accurate fill independent of HP VoidGuard/0.5
+PASS visible compact threshold colors/above world VoidGuard/0.5
+PASS fixed width/accurate fill independent of HP VoidGuard/0.3
+PASS visible compact threshold colors/above world VoidGuard/0.3
+PASS fixed width/accurate fill independent of HP VoidGuard/0.25
+PASS visible compact threshold colors/above world VoidGuard/0.25
+PASS fixed width/accurate fill independent of HP VoidGuard/0.001
+PASS visible compact threshold colors/above world VoidGuard/0.001
+PASS fixed width/accurate fill independent of HP VoidGuard/1.2
+PASS visible compact threshold colors/above world VoidGuard/1.2
+PASS follows native movement and facing VoidGuard/Up
+PASS bar stays above rendered head VoidGuard/Up
+PASS follows native movement and facing VoidGuard/Down
+PASS bar stays above rendered head VoidGuard/Down
+PASS follows native movement and facing VoidGuard/Left
+PASS bar stays above rendered head VoidGuard/Left
+PASS follows native movement and facing VoidGuard/Right
+PASS bar stays above rendered head VoidGuard/Right
+PASS no per-frame healthbar allocations VoidGuard
+PASS bar follows owner layer VoidGuard
+PASS external bar deletion repairs pair/removes stale callback VoidGuard
+PASS base cleanup/no orphan or kill reward VoidGuard
+PASS spawn creates independently owned pair VoidSentinel
+PASS fixed width/accurate fill independent of HP VoidSentinel/1
+PASS visible compact threshold colors/above world VoidSentinel/1
+PASS fixed width/accurate fill independent of HP VoidSentinel/0.75
+PASS visible compact threshold colors/above world VoidSentinel/0.75
+PASS fixed width/accurate fill independent of HP VoidSentinel/0.61
+PASS visible compact threshold colors/above world VoidSentinel/0.61
+PASS fixed width/accurate fill independent of HP VoidSentinel/0.6
+PASS visible compact threshold colors/above world VoidSentinel/0.6
+PASS fixed width/accurate fill independent of HP VoidSentinel/0.5
+PASS visible compact threshold colors/above world VoidSentinel/0.5
+PASS fixed width/accurate fill independent of HP VoidSentinel/0.3
+PASS visible compact threshold colors/above world VoidSentinel/0.3
+PASS fixed width/accurate fill independent of HP VoidSentinel/0.25
+PASS visible compact threshold colors/above world VoidSentinel/0.25
+PASS fixed width/accurate fill independent of HP VoidSentinel/0.001
+PASS visible compact threshold colors/above world VoidSentinel/0.001
+PASS fixed width/accurate fill independent of HP VoidSentinel/1.2
+PASS visible compact threshold colors/above world VoidSentinel/1.2
+PASS follows native movement and facing VoidSentinel/Up
+PASS bar stays above rendered head VoidSentinel/Up
+PASS follows native movement and facing VoidSentinel/Down
+PASS bar stays above rendered head VoidSentinel/Down
+PASS follows native movement and facing VoidSentinel/Left
+PASS bar stays above rendered head VoidSentinel/Left
+PASS follows native movement and facing VoidSentinel/Right
+PASS bar stays above rendered head VoidSentinel/Right
+PASS no per-frame healthbar allocations VoidSentinel
+PASS bar follows owner layer VoidSentinel
+PASS external bar deletion repairs pair/removes stale callback VoidSentinel
+PASS base cleanup/no orphan or kill reward VoidSentinel
+PASS spawn creates independently owned pair VoidBrute
+PASS fixed width/accurate fill independent of HP VoidBrute/1
+PASS visible compact threshold colors/above world VoidBrute/1
+PASS fixed width/accurate fill independent of HP VoidBrute/0.75
+PASS visible compact threshold colors/above world VoidBrute/0.75
+PASS fixed width/accurate fill independent of HP VoidBrute/0.61
+PASS visible compact threshold colors/above world VoidBrute/0.61
+PASS fixed width/accurate fill independent of HP VoidBrute/0.6
+PASS visible compact threshold colors/above world VoidBrute/0.6
+PASS fixed width/accurate fill independent of HP VoidBrute/0.5
+PASS visible compact threshold colors/above world VoidBrute/0.5
+PASS fixed width/accurate fill independent of HP VoidBrute/0.3
+PASS visible compact threshold colors/above world VoidBrute/0.3
+PASS fixed width/accurate fill independent of HP VoidBrute/0.25
+PASS visible compact threshold colors/above world VoidBrute/0.25
+PASS fixed width/accurate fill independent of HP VoidBrute/0.001
+PASS visible compact threshold colors/above world VoidBrute/0.001
+PASS fixed width/accurate fill independent of HP VoidBrute/1.2
+PASS visible compact threshold colors/above world VoidBrute/1.2
+PASS follows native movement and facing VoidBrute/Up
+PASS bar stays above rendered head VoidBrute/Up
+PASS follows native movement and facing VoidBrute/Down
+PASS bar stays above rendered head VoidBrute/Down
+PASS follows native movement and facing VoidBrute/Left
+PASS bar stays above rendered head VoidBrute/Left
+PASS follows native movement and facing VoidBrute/Right
+PASS bar stays above rendered head VoidBrute/Right
+PASS no per-frame healthbar allocations VoidBrute
+PASS bar follows owner layer VoidBrute
+PASS external bar deletion repairs pair/removes stale callback VoidBrute
+PASS base cleanup/no orphan or kill reward VoidBrute
+PASS logical death unregisters bar callback before corpse expires VoidHound
+PASS native pool actually reused deleted bar VoidHound
+PASS old corpse cannot delete recycled living enemy bars VoidHound
+PASS logical death unregisters bar callback before corpse expires VoidGuard
+PASS native pool actually reused deleted bar VoidGuard
+PASS old corpse cannot delete recycled living enemy bars VoidGuard
+PASS logical death unregisters bar callback before corpse expires VoidSentinel
+PASS native pool actually reused deleted bar VoidSentinel
+PASS old corpse cannot delete recycled living enemy bars VoidSentinel
+PASS logical death unregisters bar callback before corpse expires VoidBrute
+PASS native pool actually reused deleted bar VoidBrute
+PASS old corpse cannot delete recycled living enemy bars VoidBrute
+PASS 200 enemies /200 independent native pairs
+PASS 200 owners remain visible without object creation each frame
+PASS 200-owner deletion leaves no orphan bars
+PASS positive sub-armor damage has minimum1 VoidGuard
+PASS invalid/zero damage cannot create phantom hits VoidGuard
+PASS positive sub-armor damage has minimum1 VoidBrute
+PASS invalid/zero damage cannot create phantom hits VoidBrute
+PASS all specialization restrictions retained
+PASS buy Path1 tier 1
+PASS buy Path1 tier 2
+PASS buy Path1 tier 3
+PASS buy Path1 tier 4
+PASS buy Path2 cross tier 1
+PASS buy Path2 cross tier 2
+PASS 4-2 native costs/investment exactly5070 including300 purchase
+PASS locked/max upgrade cannot charge gold
+ALL HEALTHBAR BALANCE TESTS PASSED

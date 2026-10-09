@@ -1,0 +1,1296 @@
+{
+  "method": "actual seeded gold generator;income assumesall kills, no spending/sell;DPS upper bound excludes range,turning,travel,overkill and splash",
+  "seed": 177017,
+  "firstEliteWave": 13,
+  "totalEnemies": 7117,
+  "totalKillGold": 46980,
+  "rows": [
+    {
+      "wave": 1,
+      "budget": 100,
+      "spent": 100,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 20,
+        "VoidHound": 0,
+        "VoidGuard": 0,
+        "VoidSentinel": 0,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 20,
+      "eligible": [
+        "Basic"
+      ],
+      "goldIfAllKilledBeforeSpending": 750
+    },
+    {
+      "wave": 2,
+      "budget": 150,
+      "spent": 150,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 30,
+        "VoidHound": 0,
+        "VoidGuard": 0,
+        "VoidSentinel": 0,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 30,
+      "eligible": [
+        "Basic"
+      ],
+      "goldIfAllKilledBeforeSpending": 900
+    },
+    {
+      "wave": 3,
+      "budget": 200,
+      "spent": 200,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 40,
+        "VoidHound": 0,
+        "VoidGuard": 0,
+        "VoidSentinel": 0,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 40,
+      "eligible": [
+        "Basic"
+      ],
+      "goldIfAllKilledBeforeSpending": 1100
+    },
+    {
+      "wave": 4,
+      "budget": 250,
+      "spent": 250,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 36,
+        "VoidHound": 10,
+        "VoidGuard": 0,
+        "VoidSentinel": 0,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 46,
+      "eligible": [
+        "Basic",
+        "VoidHound"
+      ],
+      "goldIfAllKilledBeforeSpending": 1350
+    },
+    {
+      "wave": 5,
+      "budget": 360,
+      "spent": 360,
+      "unused": 0,
+      "milestone": true,
+      "counts": {
+        "Basic": 2,
+        "VoidHound": 50,
+        "VoidGuard": 0,
+        "VoidSentinel": 0,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 52,
+      "eligible": [
+        "Basic",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 1710
+    },
+    {
+      "wave": 6,
+      "budget": 300,
+      "spent": 300,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 28,
+        "VoidHound": 22,
+        "VoidGuard": 0,
+        "VoidSentinel": 1,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 51,
+      "eligible": [
+        "Basic",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 2010
+    },
+    {
+      "wave": 7,
+      "budget": 350,
+      "spent": 350,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 35,
+        "VoidHound": 23,
+        "VoidGuard": 1,
+        "VoidSentinel": 1,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 60,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 2360
+    },
+    {
+      "wave": 8,
+      "budget": 400,
+      "spent": 400,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 80,
+        "VoidHound": 0,
+        "VoidGuard": 0,
+        "VoidSentinel": 0,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 80,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 2760
+    },
+    {
+      "wave": 9,
+      "budget": 450,
+      "spent": 450,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 0,
+        "VoidHound": 0,
+        "VoidGuard": 27,
+        "VoidSentinel": 39,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 66,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 3210
+    },
+    {
+      "wave": 10,
+      "budget": 600,
+      "spent": 600,
+      "unused": 0,
+      "milestone": true,
+      "counts": {
+        "Basic": 0,
+        "VoidHound": 0,
+        "VoidGuard": 75,
+        "VoidSentinel": 0,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 75,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 3810
+    },
+    {
+      "wave": 11,
+      "budget": 500,
+      "spent": 500,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 54,
+        "VoidHound": 32,
+        "VoidGuard": 0,
+        "VoidSentinel": 1,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 87,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 4310
+    },
+    {
+      "wave": 12,
+      "budget": 550,
+      "spent": 550,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 47,
+        "VoidHound": 25,
+        "VoidGuard": 0,
+        "VoidSentinel": 0,
+        "VoidBrute": 14,
+        "VoidGolem": 0
+      },
+      "enemies": 86,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 4860
+    },
+    {
+      "wave": 13,
+      "budget": 600,
+      "spent": 600,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 0,
+        "VoidHound": 46,
+        "VoidGuard": 0,
+        "VoidSentinel": 43,
+        "VoidBrute": 0,
+        "VoidGolem": 1
+      },
+      "enemies": 90,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 5460
+    },
+    {
+      "wave": 14,
+      "budget": 650,
+      "spent": 650,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 0,
+        "VoidHound": 0,
+        "VoidGuard": 1,
+        "VoidSentinel": 107,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 108,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 6110
+    },
+    {
+      "wave": 15,
+      "budget": 840,
+      "spent": 840,
+      "unused": 0,
+      "milestone": true,
+      "counts": {
+        "Basic": 0,
+        "VoidHound": 0,
+        "VoidGuard": 105,
+        "VoidSentinel": 0,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 105,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 6950
+    },
+    {
+      "wave": 16,
+      "budget": 700,
+      "spent": 700,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 1,
+        "VoidHound": 1,
+        "VoidGuard": 86,
+        "VoidSentinel": 0,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 88,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 7650
+    },
+    {
+      "wave": 17,
+      "budget": 750,
+      "spent": 750,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 63,
+        "VoidHound": 39,
+        "VoidGuard": 0,
+        "VoidSentinel": 27,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 129,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 8400
+    },
+    {
+      "wave": 18,
+      "budget": 800,
+      "spent": 800,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 104,
+        "VoidHound": 0,
+        "VoidGuard": 35,
+        "VoidSentinel": 0,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 139,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 9200
+    },
+    {
+      "wave": 19,
+      "budget": 850,
+      "spent": 850,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 0,
+        "VoidHound": 0,
+        "VoidGuard": 1,
+        "VoidSentinel": 82,
+        "VoidBrute": 33,
+        "VoidGolem": 1
+      },
+      "enemies": 117,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 10050
+    },
+    {
+      "wave": 20,
+      "budget": 1080,
+      "spent": 1080,
+      "unused": 0,
+      "milestone": true,
+      "counts": {
+        "Basic": 109,
+        "VoidHound": 1,
+        "VoidGuard": 66,
+        "VoidSentinel": 0,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 176,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 11130
+    },
+    {
+      "wave": 21,
+      "budget": 900,
+      "spent": 900,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 1,
+        "VoidHound": 1,
+        "VoidGuard": 111,
+        "VoidSentinel": 0,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 113,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 12030
+    },
+    {
+      "wave": 22,
+      "budget": 950,
+      "spent": 950,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 62,
+        "VoidHound": 36,
+        "VoidGuard": 46,
+        "VoidSentinel": 0,
+        "VoidBrute": 0,
+        "VoidGolem": 1
+      },
+      "enemies": 145,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 12980
+    },
+    {
+      "wave": 23,
+      "budget": 1000,
+      "spent": 1000,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 200,
+        "VoidHound": 0,
+        "VoidGuard": 0,
+        "VoidSentinel": 0,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 200,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 13980
+    },
+    {
+      "wave": 24,
+      "budget": 1050,
+      "spent": 1050,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 0,
+        "VoidHound": 0,
+        "VoidGuard": 1,
+        "VoidSentinel": 87,
+        "VoidBrute": 48,
+        "VoidGolem": 2
+      },
+      "enemies": 138,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 15030
+    },
+    {
+      "wave": 25,
+      "budget": 1320,
+      "spent": 1320,
+      "unused": 0,
+      "milestone": true,
+      "counts": {
+        "Basic": 0,
+        "VoidHound": 0,
+        "VoidGuard": 0,
+        "VoidSentinel": 0,
+        "VoidBrute": 128,
+        "VoidGolem": 2
+      },
+      "enemies": 130,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 16350
+    },
+    {
+      "wave": 26,
+      "budget": 1100,
+      "spent": 1100,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 1,
+        "VoidHound": 1,
+        "VoidGuard": 136,
+        "VoidSentinel": 0,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 138,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 17450
+    },
+    {
+      "wave": 27,
+      "budget": 1150,
+      "spent": 1150,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 112,
+        "VoidHound": 42,
+        "VoidGuard": 1,
+        "VoidSentinel": 48,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 203,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 18600
+    },
+    {
+      "wave": 28,
+      "budget": 1200,
+      "spent": 1200,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 156,
+        "VoidHound": 0,
+        "VoidGuard": 0,
+        "VoidSentinel": 0,
+        "VoidBrute": 42,
+        "VoidGolem": 0
+      },
+      "enemies": 198,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 19800
+    },
+    {
+      "wave": 29,
+      "budget": 1250,
+      "spent": 1250,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 1,
+        "VoidHound": 177,
+        "VoidGuard": 0,
+        "VoidSentinel": 1,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 179,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 21050
+    },
+    {
+      "wave": 30,
+      "budget": 1560,
+      "spent": 1560,
+      "unused": 0,
+      "milestone": true,
+      "counts": {
+        "Basic": 0,
+        "VoidHound": 0,
+        "VoidGuard": 80,
+        "VoidSentinel": 65,
+        "VoidBrute": 49,
+        "VoidGolem": 2
+      },
+      "enemies": 196,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 22610
+    },
+    {
+      "wave": 31,
+      "budget": 1300,
+      "spent": 1300,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 116,
+        "VoidHound": 60,
+        "VoidGuard": 0,
+        "VoidSentinel": 50,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 226,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 23910
+    },
+    {
+      "wave": 32,
+      "budget": 1350,
+      "spent": 1350,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 176,
+        "VoidHound": 0,
+        "VoidGuard": 1,
+        "VoidSentinel": 77,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 254,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 25260
+    },
+    {
+      "wave": 33,
+      "budget": 1400,
+      "spent": 1400,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 1,
+        "VoidHound": 1,
+        "VoidGuard": 171,
+        "VoidSentinel": 0,
+        "VoidBrute": 0,
+        "VoidGolem": 1
+      },
+      "enemies": 174,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 26660
+    },
+    {
+      "wave": 34,
+      "budget": 1450,
+      "spent": 1450,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 122,
+        "VoidHound": 76,
+        "VoidGuard": 1,
+        "VoidSentinel": 0,
+        "VoidBrute": 30,
+        "VoidGolem": 0
+      },
+      "enemies": 229,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 28110
+    },
+    {
+      "wave": 35,
+      "budget": 1800,
+      "spent": 1800,
+      "unused": 0,
+      "milestone": true,
+      "counts": {
+        "Basic": 122,
+        "VoidHound": 0,
+        "VoidGuard": 78,
+        "VoidSentinel": 1,
+        "VoidBrute": 54,
+        "VoidGolem": 1
+      },
+      "enemies": 256,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 29910
+    },
+    {
+      "wave": 36,
+      "budget": 1500,
+      "spent": 1500,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 134,
+        "VoidHound": 0,
+        "VoidGuard": 58,
+        "VoidSentinel": 1,
+        "VoidBrute": 34,
+        "VoidGolem": 1
+      },
+      "enemies": 228,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 31410
+    },
+    {
+      "wave": 37,
+      "budget": 1550,
+      "spent": 1550,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 176,
+        "VoidHound": 0,
+        "VoidGuard": 0,
+        "VoidSentinel": 105,
+        "VoidBrute": 0,
+        "VoidGolem": 2
+      },
+      "enemies": 283,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 32960
+    },
+    {
+      "wave": 38,
+      "budget": 1600,
+      "spent": 1600,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 153,
+        "VoidHound": 1,
+        "VoidGuard": 0,
+        "VoidSentinel": 73,
+        "VoidBrute": 39,
+        "VoidGolem": 0
+      },
+      "enemies": 266,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 34560
+    },
+    {
+      "wave": 39,
+      "budget": 1650,
+      "spent": 1650,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 314,
+        "VoidHound": 0,
+        "VoidGuard": 0,
+        "VoidSentinel": 0,
+        "VoidBrute": 0,
+        "VoidGolem": 4
+      },
+      "enemies": 318,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 36210
+    },
+    {
+      "wave": 40,
+      "budget": 2040,
+      "spent": 2040,
+      "unused": 0,
+      "milestone": true,
+      "counts": {
+        "Basic": 0,
+        "VoidHound": 0,
+        "VoidGuard": 0,
+        "VoidSentinel": 0,
+        "VoidBrute": 200,
+        "VoidGolem": 2
+      },
+      "enemies": 202,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 38250
+    },
+    {
+      "wave": 41,
+      "budget": 1700,
+      "spent": 1700,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 196,
+        "VoidHound": 102,
+        "VoidGuard": 0,
+        "VoidSentinel": 1,
+        "VoidBrute": 0,
+        "VoidGolem": 0
+      },
+      "enemies": 299,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 39950
+    },
+    {
+      "wave": 42,
+      "budget": 1750,
+      "spent": 1750,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 3,
+        "VoidHound": 99,
+        "VoidGuard": 0,
+        "VoidSentinel": 87,
+        "VoidBrute": 44,
+        "VoidGolem": 4
+      },
+      "enemies": 237,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 41700
+    },
+    {
+      "wave": 43,
+      "budget": 1800,
+      "spent": 1800,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 174,
+        "VoidHound": 0,
+        "VoidGuard": 1,
+        "VoidSentinel": 87,
+        "VoidBrute": 34,
+        "VoidGolem": 3
+      },
+      "enemies": 299,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 43500
+    },
+    {
+      "wave": 44,
+      "budget": 1850,
+      "spent": 1850,
+      "unused": 0,
+      "milestone": false,
+      "counts": {
+        "Basic": 216,
+        "VoidHound": 0,
+        "VoidGuard": 0,
+        "VoidSentinel": 115,
+        "VoidBrute": 0,
+        "VoidGolem": 4
+      },
+      "enemies": 335,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 45350
+    },
+    {
+      "wave": 45,
+      "budget": 2280,
+      "spent": 2280,
+      "unused": 0,
+      "milestone": true,
+      "counts": {
+        "Basic": 0,
+        "VoidHound": 0,
+        "VoidGuard": 0,
+        "VoidSentinel": 0,
+        "VoidBrute": 224,
+        "VoidGolem": 2
+      },
+      "enemies": 226,
+      "eligible": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "goldIfAllKilledBeforeSpending": 47630
+    }
+  ],
+  "dps": [
+    {
+      "build": "0-0",
+      "shots": 1,
+      "perShot": 50,
+      "interval": 0.9,
+      "unarmoredDPS": 55.55555555555556,
+      "golemArmor25DPS": 27.77777777777778,
+      "fortifiedGolemArmor35DPS": 16.666666666666668
+    },
+    {
+      "build": "0-1",
+      "shots": 1,
+      "perShot": 50,
+      "interval": 0.8181818181818181,
+      "unarmoredDPS": 61.111111111111114,
+      "golemArmor25DPS": 30.555555555555557,
+      "fortifiedGolemArmor35DPS": 18.333333333333336
+    },
+    {
+      "build": "0-2",
+      "shots": 1,
+      "perShot": 50,
+      "interval": 0.7377049180327869,
+      "unarmoredDPS": 67.77777777777777,
+      "golemArmor25DPS": 33.888888888888886,
+      "fortifiedGolemArmor35DPS": 20.333333333333332
+    },
+    {
+      "build": "0-3",
+      "shots": 2,
+      "perShot": 31,
+      "interval": 0.7377049180327869,
+      "unarmoredDPS": 84.04444444444444,
+      "golemArmor25DPS": 16.266666666666666,
+      "fortifiedGolemArmor35DPS": 2.711111111111111
+    },
+    {
+      "build": "0-4",
+      "shots": 3,
+      "perShot": 28.000000000000004,
+      "interval": 0.7377049180327869,
+      "unarmoredDPS": 113.86666666666667,
+      "golemArmor25DPS": 12.200000000000014,
+      "fortifiedGolemArmor35DPS": 4.066666666666666
+    },
+    {
+      "build": "1-0",
+      "shots": 1,
+      "perShot": 56.00000000000001,
+      "interval": 0.9,
+      "unarmoredDPS": 62.22222222222223,
+      "golemArmor25DPS": 34.44444444444445,
+      "fortifiedGolemArmor35DPS": 23.33333333333334
+    },
+    {
+      "build": "1-1",
+      "shots": 1,
+      "perShot": 56.00000000000001,
+      "interval": 0.8181818181818181,
+      "unarmoredDPS": 68.44444444444446,
+      "golemArmor25DPS": 37.8888888888889,
+      "fortifiedGolemArmor35DPS": 25.66666666666668
+    },
+    {
+      "build": "1-2",
+      "shots": 1,
+      "perShot": 56.00000000000001,
+      "interval": 0.7377049180327869,
+      "unarmoredDPS": 75.91111111111111,
+      "golemArmor25DPS": 42.02222222222223,
+      "fortifiedGolemArmor35DPS": 28.466666666666676
+    },
+    {
+      "build": "1-3",
+      "shots": 2,
+      "perShot": 34.720000000000006,
+      "interval": 0.7377049180327869,
+      "unarmoredDPS": 94.12977777777779,
+      "golemArmor25DPS": 26.352000000000015,
+      "fortifiedGolemArmor35DPS": 2.711111111111111
+    },
+    {
+      "build": "1-4",
+      "shots": 3,
+      "perShot": 31.360000000000007,
+      "interval": 0.7377049180327869,
+      "unarmoredDPS": 127.53066666666668,
+      "golemArmor25DPS": 25.864000000000026,
+      "fortifiedGolemArmor35DPS": 4.066666666666666
+    },
+    {
+      "build": "2-0",
+      "shots": 1,
+      "perShot": 62,
+      "interval": 0.9,
+      "unarmoredDPS": 68.88888888888889,
+      "golemArmor25DPS": 41.11111111111111,
+      "fortifiedGolemArmor35DPS": 30
+    },
+    {
+      "build": "2-1",
+      "shots": 1,
+      "perShot": 62,
+      "interval": 0.8181818181818181,
+      "unarmoredDPS": 75.77777777777779,
+      "golemArmor25DPS": 45.22222222222223,
+      "fortifiedGolemArmor35DPS": 33
+    },
+    {
+      "build": "2-2",
+      "shots": 1,
+      "perShot": 62,
+      "interval": 0.7377049180327869,
+      "unarmoredDPS": 84.04444444444444,
+      "golemArmor25DPS": 50.15555555555555,
+      "fortifiedGolemArmor35DPS": 36.6
+    },
+    {
+      "build": "2-3",
+      "shots": 2,
+      "perShot": 38.44,
+      "interval": 0.7377049180327869,
+      "unarmoredDPS": 104.2151111111111,
+      "golemArmor25DPS": 36.43733333333333,
+      "fortifiedGolemArmor35DPS": 9.326222222222215
+    },
+    {
+      "build": "2-4",
+      "shots": 3,
+      "perShot": 34.720000000000006,
+      "interval": 0.7377049180327869,
+      "unarmoredDPS": 141.1946666666667,
+      "golemArmor25DPS": 39.52800000000002,
+      "fortifiedGolemArmor35DPS": 4.066666666666666
+    },
+    {
+      "build": "3-0",
+      "shots": 1,
+      "perShot": 62,
+      "interval": 0.9,
+      "unarmoredDPS": 68.88888888888889,
+      "golemArmor25DPS": 41.11111111111111,
+      "fortifiedGolemArmor35DPS": 30
+    },
+    {
+      "build": "3-1",
+      "shots": 1,
+      "perShot": 62,
+      "interval": 0.8181818181818181,
+      "unarmoredDPS": 75.77777777777779,
+      "golemArmor25DPS": 45.22222222222223,
+      "fortifiedGolemArmor35DPS": 33
+    },
+    {
+      "build": "3-2",
+      "shots": 1,
+      "perShot": 62,
+      "interval": 0.7377049180327869,
+      "unarmoredDPS": 84.04444444444444,
+      "golemArmor25DPS": 50.15555555555555,
+      "fortifiedGolemArmor35DPS": 36.6
+    },
+    {
+      "build": "4-0",
+      "shots": 1,
+      "perShot": 74,
+      "interval": 0.9,
+      "unarmoredDPS": 82.22222222222221,
+      "golemArmor25DPS": 54.44444444444444,
+      "fortifiedGolemArmor35DPS": 43.333333333333336
+    },
+    {
+      "build": "4-1",
+      "shots": 1,
+      "perShot": 74,
+      "interval": 0.8181818181818181,
+      "unarmoredDPS": 90.44444444444446,
+      "golemArmor25DPS": 59.88888888888889,
+      "fortifiedGolemArmor35DPS": 47.66666666666667
+    },
+    {
+      "build": "4-2",
+      "shots": 1,
+      "perShot": 74,
+      "interval": 0.7377049180327869,
+      "unarmoredDPS": 100.3111111111111,
+      "golemArmor25DPS": 66.42222222222222,
+      "fortifiedGolemArmor35DPS": 52.86666666666667
+    }
+  ]
+}

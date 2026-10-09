@@ -5,6 +5,7 @@ if(!nova){
  const config=sv.get('NovaWispConfig').toJSObject();
  nova=scene.__novaWisp={config,atlases:new Map()};
  nova.ensure=e=>{
+  if(scene.__voidGolem?.has(e))return scene.__voidGolem.ensure(e);
   if(scene.__voidCommon?.has(e.getVariables().get('EnemyType').getAsString()))return scene.__voidCommon.ensure(e);
   if(e.getVariables().get('EnemyType').getAsString()==='VoidHound')return scene.__voidHound.ensure(e);
   if(e.__novaUid===e.getUniqueId())return e.__novaState;
@@ -74,7 +75,7 @@ if(!nova){
  nova.render=()=>{
   const dt=gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(scene);
   for(const e of get('Enemy')){
-   if(e.getVariables().get('EnemyType').getAsString()==='VoidHound'||scene.__voidCommon?.has(e.getVariables().get('EnemyType').getAsString()))continue;
+   if(scene.__voidGolem?.has(e)||e.getVariables().get('EnemyType').getAsString()==='VoidHound'||scene.__voidCommon?.has(e.getVariables().get('EnemyType').getAsString()))continue;
    const state=nova.ensure(e),v=e.getVariables(),hp=e.getBehavior('Health').Health();if(hp<state.lastHP&&hp>0)state.hit=.16;state.lastHP=hp;state.age+=dt;state.hit=Math.max(0,state.hit-dt);
    const direction=v.get('Facing').getAsString()||'Right',mode=state.hit>0?'Hit':v.get('IsMoving').getAsBoolean()?'Move':'Idle';e.setAnimationName('Nova'+mode+'_'+direction);nova.animate(e,direction,state);
   }

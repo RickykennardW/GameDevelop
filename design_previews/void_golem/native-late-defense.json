@@ -1,0 +1,125 @@
+{
+  "result": {
+    "checks": [
+      "valid native placement near300,352",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path2 upgrade",
+      "native Path2 upgrade",
+      "valid native placement near800,352",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path2 upgrade",
+      "native Path2 upgrade",
+      "valid native placement near1300,352",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path2 upgrade",
+      "native Path2 upgrade",
+      "valid native placement near400,616",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path2 upgrade",
+      "native Path2 upgrade",
+      "valid native placement near900,616",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path2 upgrade",
+      "native Path2 upgrade",
+      "valid native placement near1400,616",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path2 upgrade",
+      "native Path2 upgrade",
+      "valid native placement near600,880",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path2 upgrade",
+      "native Path2 upgrade",
+      "valid native placement near1150,880",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path1 upgrade",
+      "native Path2 upgrade",
+      "native Path2 upgrade",
+      "native milestone45 starts",
+      "native wave drain/victory",
+      "8 native upgraded cannons clear milestone45",
+      "late enemy/HP/shield cleanup"
+    ],
+    "result": {
+      "wave": 45,
+      "total": 226,
+      "budget": 2280,
+      "counts": {
+        "Basic": 0,
+        "VoidBrute": 224,
+        "VoidGolem": 2,
+        "VoidGuard": 0,
+        "VoidHound": 0,
+        "VoidSentinel": 0
+      },
+      "leaks": 0,
+      "killGold": 2280,
+      "peak": 77,
+      "simulatedSeconds": 117.4,
+      "towers": 8,
+      "build": "4-2",
+      "positions": [
+        [
+          300,
+          352
+        ],
+        [
+          800,
+          352
+        ],
+        [
+          1300,
+          352
+        ],
+        [
+          400,
+          616
+        ],
+        [
+          900,
+          616
+        ],
+        [
+          1400,
+          616
+        ],
+        [
+          540,
+          840
+        ],
+        [
+          1110,
+          840
+        ]
+      ],
+      "investment": 40560
+    },
+    "method": "diagnostic native45 fixture with actual homing/splash,100000Gold/10000Lives;not a completed earned-income45wave campaign"
+  },
+  "progress": [
+    "BALANCE PROGRESS {\"wave\":45,\"total\":226,\"budget\":2280,\"counts\":{\"Basic\":0,\"VoidBrute\":224,\"VoidGolem\":2,\"VoidGuard\":0,\"VoidHound\":0,\"VoidSentinel\":0},\"leaks\":0,\"killGold\":2280,\"peak\":77,\"simulatedSeconds\":117.4,\"towers\":8,\"build\":\"4-2\",\"positions\":[[300,352],[800,352],[1300,352],[400,616],[900,616],[1400,616],[540,840],[1110,840]],\"investment\":40560}"
+  ],
+  "consoleErrors": []
+}

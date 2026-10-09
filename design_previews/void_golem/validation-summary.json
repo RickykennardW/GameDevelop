@@ -1,0 +1,74 @@
+{
+  "nativeGDevelopVersion": "5.6.283",
+  "nativeParser": {
+    "scenes": 1,
+    "objects": 61,
+    "resources": 333
+  },
+  "sceneAndExtensionCompileDiagnostics": 0,
+  "previewExport": true,
+  "tests": [
+    {
+      "suite": "test-clean-project",
+      "checks": 283,
+      "passed": true,
+      "consoleExceptions": 0
+    },
+    {
+      "suite": "test-gold-budget",
+      "checks": 7486,
+      "passed": true,
+      "consoleExceptions": 0
+    },
+    {
+      "suite": "test-healthbars-balance",
+      "checks": 183,
+      "passed": true,
+      "consoleExceptions": 0
+    },
+    {
+      "suite": "test-nova-wisp",
+      "checks": 14532,
+      "passed": true,
+      "consoleExceptions": 0
+    },
+    {
+      "suite": "test-void-common",
+      "checks": 636,
+      "passed": true,
+      "consoleExceptions": 0
+    },
+    {
+      "suite": "test-void-golem",
+      "checks": 552,
+      "passed": true,
+      "consoleExceptions": 0
+    },
+    {
+      "suite": "test-void-hound",
+      "checks": 117,
+      "passed": true,
+      "consoleExceptions": 0
+    }
+  ],
+  "suiteChecks": 23789,
+  "staticChecks": 1342,
+  "oldAssetsUnchanged": 345,
+  "liveReports": [
+    "live-buff.json",
+    "live-cast.json",
+    "live-stress.json",
+    "native-economy.json",
+    "native-late-defense.json",
+    "gallery-check.json"
+  ],
+  "noBackupsCreated": true,
+  "noGitHistoryChanges": true,
+  "limitations": [
+    "native parser/compiler and actual compiled preview tested;GUI editor was not manually operated",
+    "native animation editor shows source atlas;custom renderer crops gameplay frames",
+    "full earned-income campaign1-45 not tested;actual1-5 and diagnosticlate-wave combat tested",
+    "headless stress samples are device-specific,not a universal FPS guarantee"
+  ],
+  "compileEvidence": "native-compile.txt"
+}

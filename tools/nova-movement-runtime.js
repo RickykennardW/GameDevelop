@@ -3,6 +3,8 @@
 const enemy = objects[0];
 runtimeScene.__novaWisp.ensure(enemy);
 if(enemy.getBehavior("Health").IsDead())return;
+// Only the elite can pause its existing movement; no speed/waypoint reset.
+if(runtimeScene.__voidGolem?.has(enemy)&&!runtimeScene.__voidGolem.beforeMove(enemy))return;
 const vars = enemy.getVariables();
 const sceneVars = runtimeScene.getVariables();
 const route = sceneVars.get("MonsterPathPoints");
@@ -29,13 +31,13 @@ vars.get("Waypoint").setNumber(waypoint);
 vars.get("PathFinished").setBoolean(waypoint >= count);
 vars.get("IsMoving").setBoolean(moved);
 vars.get('Facing').setString(facing);enemy.flipX(false);enemy.setAngle(0);
-const type=vars.get('EnemyType').getAsString(),prefix=runtimeScene.__voidCommon?.has(type)?type:type==='VoidHound'?'Hound':'Nova';
+const type=vars.get('EnemyType').getAsString(),prefix=type==='VoidGolem'?'VoidGolem':runtimeScene.__voidCommon?.has(type)?type:type==='VoidHound'?'Hound':'Nova';
 vars.get('MovementAnimation').setString(prefix+'Move_'+facing);vars.get('IdleAnimation').setString(prefix+'Idle_'+facing);
 const moveAnimation = vars.get("MovementAnimation").getAsString();
 const idleAnimation = vars.get("IdleAnimation").getAsString();
 const animation = moved || !idleAnimation ? moveAnimation : idleAnimation;
 if (animation && enemy.getAnimationName() !== animation) {
-  if(runtimeScene.__voidCommon?.has(type))runtimeScene.__voidCommon.setAnimation(enemy,animation);else if(prefix==='Hound')runtimeScene.__voidHound.setAnimation(enemy,animation);else enemy.setAnimationName(animation);
+  if(prefix==='VoidGolem')runtimeScene.__voidGolem.setAnimation(enemy,animation);else if(runtimeScene.__voidCommon?.has(type))runtimeScene.__voidCommon.setAnimation(enemy,animation);else if(prefix==='Hound')runtimeScene.__voidHound.setAnimation(enemy,animation);else enemy.setAnimationName(animation);
 }
 if (moved) {
   enemy.setAnimationSpeedScale(speed / Math.max(1, vars.get("AnimationReferenceSpeed").getAsNumber()));

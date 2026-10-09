@@ -48,13 +48,13 @@ if (!down && index.wasDown && index.pressed===hover && ["Towers","Monsters"].inc
 const data=game.getSceneAndExtensionsData(runtimeScene.getName()).sceneData;
 const catalog=sv.get("TowerShopCatalog").toJSObject();
 const archetypes=sv.get("EnemyTypes").toJSObject();
-const roles={Basic:"Basic cosmic enemy / No special ability",VoidHound:"Fast Enemy / Armor 0 / No special ability / Wave 4+"};
+const roles={Basic:"Basic cosmic enemy / No special ability",VoidHound:"Fast Enemy / Armor 0 / No special ability / Wave 4+",VoidGolem:"Elite / Armor25 / Void Fortification +10 armor / Wave12+"};
 const entries=index.category==="Towers" ? catalog.map(item=>{
   const definition=data.objects.find(o=>o.name===item.Type); if(!definition)return null;
   const values=Object.fromEntries(definition.variables.map(v=>[v.name,v.value]));
   return {name:values.TowerName||item.Name,animation:item.IconAnimation||item.Type,damage:values.Damage,range:values.AttackRange,cooldown:values.AttackInterval,price:item.Cost,
     projectileSpeed:values.ProjectileSpeed, special:"Cosmic cannon / 2 UPGRADE PATHS.",type:item.Type};
-}).filter(Boolean) : ["Basic","VoidHound","VoidGuard","VoidSentinel","VoidBrute"].filter(name=>archetypes[name]).map(name=>({name:archetypes[name].Name||name,...archetypes[name],role:roles[name]||(archetypes[name].Role+" / Armor "+archetypes[name].Armor+" / No special ability / Wave "+archetypes[name].MinimumWave+"+")}));
+}).filter(Boolean) : ["Basic","VoidHound","VoidGuard","VoidSentinel","VoidBrute","VoidGolem"].filter(name=>archetypes[name]).map(name=>({name:archetypes[name].Name||name,...archetypes[name],role:roles[name]||(archetypes[name].Role+" / Armor "+archetypes[name].Armor+" / No special ability / Wave "+archetypes[name].MinimumWave+"+")}));
 index.entries=entries;
 const heights=entries.map(e=>e.type==="StarCannonTower"?470:148), offsets=[];let total=0;heights.forEach(h=>{offsets.push(total);total+=h+12;});
 const stride=160, maxScroll=Math.max(0,total-12-content.h);
@@ -91,10 +91,15 @@ entries.forEach((entry,i)=>{
   sprite.setAnimationName(monster?(entry.Animation||"NovaIdle_Down"):entry.animation);
   sprite.setColor(monster?entry.Tint:"255;255;255");
   // Fit each existing image to the portrait; no real gameplay unit is created.
-  sprite.setScale(1);const ratio=sprite.getWidth()/Math.max(1,sprite.getHeight());
-  const size=monster?Math.min(66,46*(entry.Scale||1)):58;
-  sprite.setWidth(ratio>=1?size:size*ratio);sprite.setHeight(ratio>=1?size/ratio:size);
-  sprite.setPosition(cx+52-sprite.getWidth()/2,cy+74-sprite.getHeight()/2);sprite.hide(false);
+  if(monster&&entry.Animation?.startsWith('VoidGolem')){
+    sprite.setWidth(64);sprite.setHeight(64);sprite.setPosition(cx+20,cy+42);runtimeScene.__voidGolem?.portrait(sprite,cx+52,cy+74,100);
+  }else{
+    sprite.setOpacity(255);sprite.setScale(1);const ratio=sprite.getWidth()/Math.max(1,sprite.getHeight());
+    const size=monster?Math.min(66,46*(entry.Scale||1)):58;
+    sprite.setWidth(ratio>=1?size:size*ratio);sprite.setHeight(ratio>=1?size/ratio:size);
+    sprite.setPosition(cx+52-sprite.getWidth()/2,cy+74-sprite.getHeight()/2);
+  }
+  sprite.hide(false);
   const name=text("name"+i,entry.name,cx+108,cy+12,cw-124,20,"237;228;255",true,"IndexList");
   const stats=monster?"HP: "+entry.HP+"     Speed: "+entry.Speed+"\nGold Reward: "+entry.Reward+" Gold":"Damage: "+entry.damage+"     Range: "+entry.range+"\nCooldown: "+Number(entry.cooldown).toFixed(2)+" s     Price: "+entry.price+" Gold";
   const statText=text("stats"+i,stats,cx+108,cy+44,cw-124,15,"218;206;241",false,"IndexList");

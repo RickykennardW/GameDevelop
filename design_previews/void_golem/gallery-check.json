@@ -1,0 +1,13 @@
+{
+  "result": {
+    "checks": [
+      "gallery20 directional clips",
+      "four final atlas images loaded",
+      "gallery uniform canvas dimensions"
+    ],
+    "clips": 20,
+    "atlasImages": 4
+  },
+  "progress": [],
+  "consoleErrors": []
+}

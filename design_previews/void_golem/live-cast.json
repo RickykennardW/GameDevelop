@@ -1,0 +1,49 @@
+{
+  "result": {
+    "checks": [
+      "live four-direction casting stationary",
+      "live Skill retains facing"
+    ],
+    "casting": [
+      {
+        "animation": "VoidGolemSkill_Up",
+        "castAge": 0.14569999999999997,
+        "position": [
+          388,
+          453
+        ],
+        "waypoint": 0
+      },
+      {
+        "animation": "VoidGolemSkill_Down",
+        "castAge": 0.14569999999999997,
+        "position": [
+          718,
+          453
+        ],
+        "waypoint": 0
+      },
+      {
+        "animation": "VoidGolemSkill_Left",
+        "castAge": 0.14569999999999997,
+        "position": [
+          1048,
+          453
+        ],
+        "waypoint": 0
+      },
+      {
+        "animation": "VoidGolemSkill_Right",
+        "castAge": 0.14569999999999997,
+        "position": [
+          1378,
+          453
+        ],
+        "waypoint": 0
+      }
+    ],
+    "fixture": "shortened cooldown for screenshot only;production25seconds"
+  },
+  "progress": [],
+  "consoleErrors": []
+}

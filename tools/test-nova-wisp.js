@@ -2,27 +2,31 @@ step(5);const nova=scene.__novaWisp,manager=scene.__waveManager,star=scene.__sta
 const route=vars.get('MonsterPathPoints').toJSObject(),routeCount=v('MonsterPathPointCount'),fixedRoute=JSON.stringify(route),fixedCamera=JSON.stringify([scene.getLayer('').getCameraX(),scene.getLayer('').getCameraY(),scene.getLayer('').getCameraZoom()]);
 const clear=()=>{for(const n of ['Enemy','NovaWispDeathVisual','StarCannonProjectile','StarCannonImpact'])get(n).slice().forEach(o=>o.deleteFromScene());step();};
 const make=(x=700,y=600)=>{const e=scene.createObject('Enemy');nova.ensure(e);e.setPosition(x-24,y-24);e.getVariables().get('MoveSpeed').setNumber(0);return e;};
-ok(Object.keys(vars.get('EnemyTypes').toJSObject()).sort().join(',')==='Basic,VoidBrute,VoidGuard,VoidHound,VoidSentinel','exactly five fixed archetypes including preserved Nova/Hound');
+ok(Object.keys(vars.get('EnemyTypes').toJSObject()).sort().join(',')==='Basic,VoidBrute,VoidGolem,VoidGuard,VoidHound,VoidSentinel','exactly six fixed archetypes including preserved Nova/Hound');
 ok(nova.config.HP===100&&nova.config.Speed===80&&nova.config.Armor===0&&nova.config.Reward===5,'canonical HP100 speed80 armor0 reward5 config');
 ok(Object.keys(nova.config.Views).length===4&&Object.values(nova.config.Views).every(x=>x.Crystals.length===4),'four genuine views and four individually animated crystal regions');
 vars.get('Money').setNumber(100000);vars.get('Lives').setNumber(10000);
 // Every real native wave starts through its existing Play request and sequential spawner.
-for(let wave=1;wave<=50;wave++){
+for(let wave=1;wave<=45;wave++){
  clear();vars.get('GameOver').setBoolean(false);vars.get('Wave').setNumber(wave-1);vars.get('LastRewardedWave').setNumber(wave-1);vars.get('WaveActive').setBoolean(false);vars.get('WaveMode').setString('Waiting');vars.get('EnemiesToSpawn').setNumber(0);manager.queue=[];manager.index=0;manager.wait=3;
- clickObject(get('ShopPlayButton')[0]);ok(v('Wave')===wave&&manager.queue.length===wave*4&&manager.queue.filter(x=>x==='VoidHound').length===(wave<4?0:4*(1+Math.floor((wave-4)/3)))&&manager.queue.every(x=>['Basic','VoidHound','VoidGuard','VoidSentinel','VoidBrute'].includes(x))&&manager.queue.filter(x=>x==='VoidSentinel').length===(wave<5?0:2*(1+Math.floor((wave-5)/3)))&&manager.queue.filter(x=>x==='VoidGuard').length===(wave<6?0:3*(1+Math.floor((wave-6)/4)))&&manager.queue.filter(x=>x==='VoidBrute').length===(wave<7?0:2*(1+Math.floor((wave-7)/5))),'native total and reviewed five-type distribution '+wave);
+ clickObject(get('ShopPlayButton')[0]);
+ const budget=(100+50*(wave-1-Math.floor((wave-1)/5)))*(wave%5===0?1.2:1);
+ const roster=vars.get('EnemyTypes').toJSObject(),sum=manager.queue.reduce((s,type)=>s+roster[type].Reward,0);
+ ok(v('Wave')===wave&&sum<=budget&&v('WaveBudget')===budget&&manager.queue.every(type=>wave>=(roster[type].MinimumWave??1)),'native seeded reward budget/unlocks '+wave);
+ ok(v('WaveEnemyCount')===manager.queue.length&&v('WaveBudgetSpent')===sum&&v('WaveBudgetUnused')===budget-sum,'variable native enemy count/accounting '+wave);
  ok(near(v('SpawnInterval'),Math.max(.36,.9-Math.max(0,wave-5)*.015)),'gradual native spawn pacing '+wave);
  let spawned=0,rewards=0,ids=new Set(),before=v('Money');
  while(manager.index<manager.queue.length){
   manager.elapsed=v('SpawnInterval');step();const es=get('Enemy');
   ok(es.length===1,'one-at-a-time spawn '+wave+'/'+(spawned+1));const e=es[0],health=e.getBehavior('Health');spawned++;ids.add(e.getUniqueId());
   const type=e.getVariables().get('EnemyType').getAsString(),isHound=type==='VoidHound',stats=vars.get('EnemyTypes').getChild(type).toJSObject(),HP=stats.HP,speed=stats.Speed,reward=stats.Reward;rewards+=reward;
-  ok(health.Health()===HP&&health.MaxHealth()===HP&&num(e,'MoveSpeed')===speed&&num(e,'GoldReward')===reward&&num(e,'Armor')===stats.Armor&&health.FlatDamageReduction()===stats.Armor&&e.getWidth()===48&&e.getHeight()===48&&e.getColor()==='255;255;255','fixed archetype stats '+wave+'/'+spawned);
-  health.SetHealth(0);step();if(isHound){e.__houndState.deathAge=scene.__voidHound.config.DeathDuration;step();}if(scene.__voidCommon.has(type)){e.__voidCommonState.deathAge=e.__voidCommonState.cfg.DeathDuration;step();}get('NovaWispDeathVisual').slice().forEach(o=>o.deleteFromScene());
+  ok(health.Health()===HP&&health.MaxHealth()===HP&&num(e,'MoveSpeed')===speed&&num(e,'GoldReward')===reward&&num(e,'Armor')===stats.Armor&&health.FlatDamageReduction()===stats.Armor&&e.getWidth()===(type==='VoidGolem'?64:48)&&e.getHeight()===(type==='VoidGolem'?64:48)&&e.getColor()==='255;255;255','fixed archetype stats '+wave+'/'+spawned);
+  health.SetHealth(0);step();if(isHound){e.__houndState.deathAge=scene.__voidHound.config.DeathDuration;step();}if(scene.__voidCommon.has(type)){e.__voidCommonState.deathAge=e.__voidCommonState.cfg.DeathDuration;step();}if(type==='VoidGolem'){e.__golemState.deathStart=scene.__voidGolem.frameTime-scene.__voidGolem.config.DeathDuration;step();}get('NovaWispDeathVisual').slice().forEach(o=>o.deleteFromScene());
  }
- step();ok(spawned===wave*4&&ids.size===spawned&&!get('Enemy').length&&v('EnemiesToSpawn')===0&&!vars.get('WaveActive').getAsBoolean(),'exact spawn drain and completion '+wave);
- ok(v('Money')===before+rewards+60,'fixed kill rewards and single60 completion bonus '+wave);const balance=v('Money');step(4);ok(v('Money')===balance,'no duplicate kill or completion reward '+wave);
+ step();ok(spawned===manager.queue.length&&ids.size===spawned&&!get('Enemy').length&&v('EnemiesToSpawn')===0&&!vars.get('WaveActive').getAsBoolean(),'exact spawn drain and completion '+wave);
+ ok(v('Money')===before+rewards,'kill-only budget income/zero completion gift '+wave);const balance=v('Money');step(4);ok(v('Money')===balance,'no duplicate kill or completion reward '+wave);
 }
-ok(vars.get('GameOver').getAsBoolean()&&v('Wave')===50,'existing victory after wave50');clear();vars.get('GameOver').setBoolean(false);vars.get('WaveActive').setBoolean(false);vars.get('WaveMode').setString('Waiting');vars.get('Wave').setNumber(0);vars.get('LastRewardedWave').setNumber(0);manager.queue=[];manager.index=0;
+ok(vars.get('GameOver').getAsBoolean()&&v('Wave')===45,'configured victory after wave45');clear();vars.get('GameOver').setBoolean(false);vars.get('WaveActive').setBoolean(false);vars.get('WaveMode').setString('Waiting');vars.get('Wave').setNumber(0);vars.get('LastRewardedWave').setNumber(0);manager.queue=[];manager.index=0;
 // Facing follows full world movement vector, never whole-sprite rotation or flip tricks.
 const point=vars.get('MonsterPathPoints').getChild(0),oldX=point.getChild('X').getAsNumber(),oldY=point.getChild('Y').getAsNumber();
 for(const [direction,dx,dy] of [['Right',100,0],['Left',-100,0],['Down',0,100],['Up',0,-100]]){
@@ -49,7 +53,7 @@ const death=get('NovaWispDeathVisual')[0];step(15);ok(get('NovaWispDeathVisual')
 const balance=v('Money');step(50);ok(!get('NovaWispDeathVisual').length&&v('Money')===balance,'death completes and cleans up with no duplicate reward');t.deleteFromScene();step();
 // Base escape keeps existing life cost and grants no kill reward.
 e=make();e.getVariables().get('MoveSpeed').setNumber(80);e.getVariables().get('Waypoint').setNumber(routeCount);const lives=v('Lives'),money=v('Money');step();ok(!get('Enemy').includes(e)&&v('Lives')===lives-1&&v('Money')===money&&!get('NovaWispDeathVisual').length,'base arrival subtracts one life, no kill reward');
-vars.get('IndexOpen').setBoolean(true);step();scene.__unitIndex.category='Monsters';step();ok(scene.__unitIndex.entries.length===5&&scene.__unitIndex.entries[0].name==='Nova Wisp'&&scene.__unitIndex.entries[0].HP===100&&scene.__unitIndex.entries[1].name==='Void Hound'&&scene.__unitIndex.entries[1].HP===60,'Index preserves Nova/Hound and shows exactly three new common enemies');vars.get('IndexOpen').setBoolean(false);step();
+vars.get('IndexOpen').setBoolean(true);step();scene.__unitIndex.category='Monsters';step();ok(scene.__unitIndex.entries.length===6&&scene.__unitIndex.entries[0].name==='Nova Wisp'&&scene.__unitIndex.entries[0].HP===100&&scene.__unitIndex.entries[1].name==='Void Hound'&&scene.__unitIndex.entries[1].HP===60,'Index preserves Nova/Hound and shows exactly three new common enemies');vars.get('IndexOpen').setBoolean(false);step();
 // Exercise all five tower combat implementations against the same Basic enemy.
 for(const name of p.types){
  const tower=scene.createObject(name),v0=tower.getVariables();p.positionSprite(tower,name,700,550);v0.get('FootprintX').setNumber(700);v0.get('FootprintY').setNumber(550);v0.get('FootprintRadius').setNumber(p.config(name).Radius);v0.get('TowerId').setNumber(88000+tower.getUniqueId());step();

@@ -140,5 +140,21 @@
       3
     ],
     "void-common-runtime.js"
+  ],
+  [
+    10,
+    [
+      0,
+      4
+    ],
+    "void-golem-runtime.js"
+  ],
+  [
+    10,
+    [
+      0,
+      5
+    ],
+    "gold-budget-runtime.js"
   ]
 ]

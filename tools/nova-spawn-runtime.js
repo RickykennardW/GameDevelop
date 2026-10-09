@@ -11,9 +11,11 @@ if (state && sv.get("WaveActive").getAsBoolean() && !sv.get("GameOver").getAsBoo
     const prefix=stats.AnimationPrefix||(type==="VoidHound"?"Hound":"Nova");vars.get("EnemyName").setString(stats.Name);vars.get("Armor").setNumber(stats.Armor);vars.get("Facing").setString("Right");vars.get("MovementAnimation").setString(prefix+"Move_Right");vars.get("IdleAnimation").setString(prefix+"Idle_Right");vars.get("AnimationReferenceSpeed").setNumber(stats.Speed);
     const point=sv.get("MonsterPathPoints").getChild(0);
     enemy.setAnimationName(vars.get("MovementAnimation").getAsString());
-    enemy.setWidth(48);enemy.setHeight(48);
-    enemy.setPosition(point.getChild("X").getAsNumber()-24,point.getChild("Y").getAsNumber()-24);
+    const size=type==='VoidGolem'?runtimeScene.__voidGolem.config.LogicalSize:48;
+    enemy.setWidth(size);enemy.setHeight(size);
+    enemy.setPosition(point.getChild("X").getAsNumber()-size/2,point.getChild("Y").getAsNumber()-size/2);
     enemy.getBehavior("Health").SetMaxHealth(stats.HP);enemy.getBehavior("Health").SetHealth(stats.HP);enemy.getBehavior("Health").SetFlatDamageReduction(stats.Armor);enemy.getBehavior("Health").SetPercentDamageReduction(0);
+    runtimeScene.__novaWisp.ensure(enemy);runtimeScene.__voidGolem.fort.ensure(enemy);
     sv.get("EnemiesToSpawn").setNumber(state.queue.length-state.index);
   }
 }

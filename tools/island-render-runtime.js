@@ -35,3 +35,4 @@ if(runtimeScene.__starCannon)runtimeScene.__starCannon.render();
 if(runtimeScene.__novaWisp)runtimeScene.__novaWisp.render();
 
 if(runtimeScene.__voidHound)runtimeScene.__voidHound.render();
+if(runtimeScene.__voidGolem)runtimeScene.__voidGolem.render();

@@ -1,0 +1,48 @@
+{
+  "result": {
+    "checks": [
+      "nine native shield owners visible"
+    ],
+    "armor": [
+      {
+        "enemy": "VoidGolem",
+        "armor": 35
+      },
+      {
+        "enemy": "VoidGolem",
+        "armor": 35
+      },
+      {
+        "enemy": "VoidGolem",
+        "armor": 35
+      },
+      {
+        "enemy": "VoidGolem",
+        "armor": 35
+      },
+      {
+        "enemy": "Basic",
+        "armor": 10
+      },
+      {
+        "enemy": "VoidHound",
+        "armor": 10
+      },
+      {
+        "enemy": "VoidGuard",
+        "armor": 20
+      },
+      {
+        "enemy": "VoidSentinel",
+        "armor": 10
+      },
+      {
+        "enemy": "VoidBrute",
+        "armor": 25
+      }
+    ],
+    "shields": 9
+  },
+  "progress": [],
+  "consoleErrors": []
+}

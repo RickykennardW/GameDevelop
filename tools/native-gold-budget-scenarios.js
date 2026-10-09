@@ -1,0 +1,18 @@
+(async()=>{
+ const game=testGame,input=game.getInputManager();game.pause(true);const checks=[],results=[],ok=(v,m)=>{if(!v)throw Error(m);checks.push(m);};
+ const step=S=>{S.renderAndStep(50);input.onFrameEnded();},fresh=()=>{const S=new gdjs.RuntimeScene(game);S.loadFromScene(game.getSceneAndExtensionsData('Game Scene'));for(let i=0;i<5;i++)step(S);return S;};
+ const buy=(S,x,y,a=0,b=0)=>{const p=S.__freePlacement,check=p.validate('StarCannonTower',x,y),V=S.getVariables();ok(check.valid&&V.get('Money').getAsNumber()>=check.cost,'native affordable valid tower purchase');V.get('Money').sub(check.cost);const t=S.createObject('StarCannonTower'),v=t.getVariables();p.positionSprite(t,'StarCannonTower',x,y);v.get('FootprintX').setNumber(x);v.get('FootprintY').setNumber(y);v.get('FootprintRadius').setNumber(check.radius);v.get('TowerId').setNumber(980000+t.getUniqueId());step(S);for(let i=0;i<a;i++)ok(S.__starCannon.upgrade(t,1),'actual upgrade path1');for(let i=0;i<b;i++)ok(S.__starCannon.upgrade(t,2),'actual upgrade path2');return t;};
+ const wave=async S=>{const V=S.getVariables(),startMoney=V.get('Money').getAsNumber(),startLives=V.get('Lives').getAsNumber(),n=V.get('Wave').getAsNumber()+1;
+  const button=S.getObjects('ShopPlayButton')[0],q=S.getLayer(button.getLayer()).convertInverseCoords(button.getCenterXInScene(),button.getCenterYInScene(),0,[0,0]);input.onMouseMove(...q);input.onMouseButtonPressed(0);step(S);step(S);input.onMouseButtonReleased(0);step(S);step(S);ok(V.get('Wave').getAsNumber()===n,'native starts wave'+n);let frames=0,peak=0,golemCasts=0,seen=new Set();
+  while(V.get('WaveActive').getAsBoolean()&&!V.get('GameOver').getAsBoolean()&&frames++<8000){step(S);peak=Math.max(peak,S.getObjects('Enemy').length);for(const e of S.__voidGolem.actors.values()){if(!seen.has(e)){seen.add(e);}golemCasts+=e.__golemState.castCount-(e.__scenarioCasts||0);e.__scenarioCasts=e.__golemState.castCount;}if(frames%200===0)await new Promise(r=>setTimeout(r,0));}
+  const total=S.__waveManager.queue.length,leaks=startLives-V.get('Lives').getAsNumber(),r={wave:n,budget:V.get('WaveBudget').getAsNumber(),counts:S.__waveManager.composition.counts,total,spawned:S.__waveManager.index,leaks,killed:total-leaks,clear:leaks===0&&S.__waveManager.index===total&&!S.getObjects('Enemy').length,gameOver:V.get('GameOver').getAsBoolean(),gold:V.get('Money').getAsNumber(),income:V.get('Money').getAsNumber()-startMoney,lives:V.get('Lives').getAsNumber(),peak,simulatedSeconds:frames*.05,golemCasts};
+  ok(frames<8000,'bounded wave completion');console.log('BALANCE PROGRESS '+JSON.stringify(r));return r;
+ };
+ {const S=fresh(),V=S.getVariables();buy(S,300,352);buy(S,800,352);const rows=[];
+  for(let w=1;w<=5;w++){const r=await wave(S);rows.push(r);ok(!r.gameOver&&r.lives>0,'earned-income early campaign survives'+w);}
+  results.push({scenario:'early1-5',startingGold:650,investment:600,rows});ok(V.get('Money').getAsNumber()>=0,'no early overspend');S.unloadScene();}
+ for(const [w,build]of [[13,[0,0]],[45,[4,2]],[45,[2,4]]]){
+  const S=fresh(),V=S.getVariables();V.get('Money').setNumber(100000);V.get('Lives').setNumber(10000);buy(S,800,352,...build);V.get('Wave').setNumber(w-1);V.get('LastRewardedWave').setNumber(w-1);const r=await wave(S);results.push({scenario:'single-'+build.join('-'),...r});ok(!S.__enemyHealthBars.size&&!S.__voidGolem.fort.members.size&&!S.__voidGolem.actors.size,'full-wave native owner cleanup');S.unloadScene();
+ }
+ game.pause(false);return{checks,results,method:'native compiled events/path/targeting/homing at50ms/step;starting650/10Lives for campaign;diagnostics100000Gold/10000Lives only to count every leak;Tower/enemy stats unchanged'};
+})()
