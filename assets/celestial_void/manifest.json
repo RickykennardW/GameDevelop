@@ -6,10 +6,7 @@
     "assets/celestial_void/Cosmic_Codex.png",
     "assets/celestial_void/Cosmic_Rock.png",
     "assets/celestial_void/Crystal_Cluster.png",
-    "assets/celestial_void/Lunar_Ruin.png",
-    "assets/celestial_void/Purple_Shrub.png",
     "assets/celestial_void/Spawn_Portal.png",
-    "assets/celestial_void/backdrop.svg",
     "assets/celestial_void/base-ring.svg",
     "assets/celestial_void/ground.svg",
     "assets/celestial_void/island/Cliff_Frame.png",
@@ -37,8 +34,6 @@
     "assets/celestial_void/ui/index-button.svg",
     "assets/celestial_void/ui/index-panel.svg",
     "assets/celestial_void/ui/plaque.svg",
-    "assets/celestial_void/ui/thumb.svg",
-    "assets/celestial_void/ui/track.svg",
     "assets/celestial_void/ui/well.svg"
   ],
   "grid": 88,
@@ -49,10 +44,7 @@
   "towerRing": "visual-only; excluded from collision and placement groups",
   "placement": "free world cursor; circular footprint; road ribbon and obstacle contour polygons",
   "footprintRadii": {
-    "Tower": 40,
-    "ShotgunTower": 48,
-    "RocketTower": 42,
-    "ArcherTower": 44
+    "StarCannonTower": 46
   },
   "buildCircleVisibility": "Building: all; Selected: selected tower only plus range; Normal deselected: none",
   "blockedCircleGeometry": "normalized source contour envelope times Kind render scale times LocalScale; endpoint scale 5.2/2.15; same geometry drives validation and displayed ring",
@@ -61,5 +53,6 @@
   "terrainBoundary": "inner soil polygon plus dynamically repeated rocky perimeter rectangle regions; visible terrain underlap is non-placeable fringe",
   "routePolish": "four 88-unit rows at 176/440/704/968; 82 tiles; total distance 7128 vs previous 7168",
   "worldPresentation": "fixed four-lane, 82-tile, 7128-world-unit route; full-island static fit; separate UI pixel cameras",
-  "endpointLabels": "MapEndpointLabel object, both instances, folder entry and all event/source references removed"
+  "endpointLabels": "MapEndpointLabel object, both instances, folder entry and all event/source references removed",
+  "note": "Active Celestial_Void asset list after dependency-audited cleanup; authoring Terrain.png is retained."
 }

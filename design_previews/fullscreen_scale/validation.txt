@@ -1,8 +1,0 @@
-GDevelop native parser/export: zero scene diagnostics, export true.
-JSON and source audit: PASS; gameplay events 1–17 byte-equivalent after JSON parse; remaining definitions, instances, variables, layers, groups identical.
-map-finish-test: 63 PASS
-finish-full-wave-regression: 419 PASS
-finish-medium-circles-test: 80 PASS
-medium-archer-test: 170 PASS
-celestial-wave-speed-test: 64 PASS
-Native Chrome fullscreen/placement/panel/resize: 34 PASS.

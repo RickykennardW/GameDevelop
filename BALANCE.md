@@ -1,33 +1,19 @@
-# Tower Defense: konfigurasi 50 wave
+# Konfigurasi aktif â€” Star Cannon dan Nova Wisp
 
-Sumber konfigurasi: `layouts/game-scene.json`, scene variables `WaveConfigs`, `EnemyTypes`, dan `TowerShopCatalog`.
-Semua HP, speed, dan reward berasal dari tipe enemy; tidak ada scaling berdasarkan wave.
-Lima archetype memakai object Enemy yang sama dengan tint/ukuran berbeda dan animasi Idle Run. Semua mengikuti Monster_Path.
+Sumber resmi: scene variables `TowerShopCatalog`, `StarCannonConfig`, `NovaWispConfig`, dan `EnemyTypes` di `layouts/game-scene.json`. Cleanup tidak mengubah balancing.
 
-| Object | Role | Cost | Damage | Range | Cooldown |
-|---|---|---:|---:|---:|---:|
-| Tower | Basic | 250 | 20 | 190 | 0.50 |
-| ShotgunTower | Heavy | 500 | 80 | 230 | 1.50 |
-| RocketTower | Advanced | 700 | 35 | 260 | 0.50 |
-
-Heavy sekarang satu peluru; Advanced menggunakan visual rocket dengan satu target. Ini menjaga baseline DPS 40 / 53.33 / 70 tanpa penggandaan pellet atau splash.
-Starting Money 650. Refund tetap 70% dari harga pembelian. Setiap wave yang benar-benar selesai memberikan bonus tambahan 100 Gold satu kali; angka Gold pada tabel di bawah hanya reward kill, belum termasuk bonus wave.
-
-| Wave | Enemy | Interval (s) | Total HP | Gold jika semua dikalahkan |
+| Unit | Harga / reward | HP / damage | Range / speed | Interval |
 |---|---:|---:|---:|---:|
-| 1 | 6 | 1.20 | 600 | 60 |
-| 5 | 15 | 0.95 | 1350 | 160 |
-| 10 | 21 | 0.80 | 4260 | 376 |
-| 20 | 42 | 0.65 | 8425 | 755 |
-| 30 | 59 | 0.55 | 14500 | 1250 |
-| 40 | 78 | 0.45 | 22350 | 1880 |
-| 45 | 116 | 0.40 | 28425 | 2495 |
-| 50 | 160 | 0.35 | 47200 | 3920 |
+| Star Cannon | 300 Gold | 50 damage | 210 range | 0.9 detik |
+| Nova Wisp | 5 Gold per kill | 100 HP | 80 speed | spawn 0.9 detik |
+| Void Hound | 7 Gold per kill | 60 HP | 135 speed | spawn 0.9 detik |
 
-AUTO default OFF. ON memulai wave berikutnya setelah antrean kosong, semua enemy selesai, WaveActive false, lalu jeda 3 detik. Wave pertama tetap dimulai dengan PLAY/SPACE. Tombol PLAY memakai WaveMode Waiting / Manual / Auto. Saat wave berjalan, klik hanya mengubah Manual dan Auto; tidak memulai wave baru. Membatalkan Auto saat intermission mengembalikan PLAY dan membatalkan countdown. Game berakhir setelah wave 50 atau Lives habis.
-Wave 50 mempunyai lima kelompok serangan, masing-masing diakhiri Boss, dengan total tepat 60 Fast, 45 Tank, 50 Elite, dan 5 Boss.
+Money awal 650; Lives awal 10. Wave n berisi n Ã— 4 Nova Wisp identik. Wave 1/10/50 berisi 4/40/200; total 5.100 enemy untuk 50 wave. Tidak ada scaling HP, speed, armor, ukuran, atau reward. Bonus completion +100 Gold satu kali per wave; Auto menunggu 3 detik. Tidak ada wave 51.
 
-Validasi: parsing seluruh JSON, kompilasi/export core GDevelop 5.6.283, pembelian/placement, damage dan cadence aktual ketiga tower, komposisi serta stat seluruh 50 wave, reward serentak, movement, AUTO/manual, dan tidak ada wave 51. Preview panel diperiksa secara visual.
-Uji otomatis menggunakan percepatan antrean spawn untuk memeriksa semua instance. Ini bukan playthrough strategi pemain penuh; rasa kesulitan dan kelayakan tiap strategi belum dinilai melalui playtest manusia. Tidak dilakukan penyesuaian balance di luar angka permintaan.
+Path Star Destroyer: Reinforced Core 125, Heavy Impact 200, Star Explosion 650, Supernova 1250 Gold.
+Path Cosmic Barrage: Rapid Fire 100, Precision Core 175, Twin Star 600, Meteor Barrage 1100 Gold.
+Dua path tidak boleh sama-sama mencapai level3; tersedia 21 kombinasi. Twin memakai 2 Ã—65% damage dan Meteor 3 Ã—60%. Multiplier, splash, projectile speed, refund70% dari total investasi, muzzle, serta stats per-upgrade dipertahankan dari konfigurasi sebelum cleanup.
 
-INDEX tersedia di samping PLAY, dengan tab TOWERS/MONSTERS, scroll, CLOSE, dan Escape. Angka tower dibaca dari object variables dan TowerShopCatalog; angka monster dari EnemyTypes. Panel hanya menampilkan unit yang sudah tersedia. Gameplay tetap berjalan saat INDEX terbuka.
+PLAY memulai wave; klik berikutnya berputar Manual1x â†’ Manual2x â†’ Auto1x â†’ Auto2x. Semua waktu gameplay memakai time scale yang sama. Clear obstacle tetap 250 Gold. Lihat CLEANUP_REPORT.md untuk bukti pengujian dan batas pengujian.
+
+Distribusi mudah diedit lewat EnemyWaveDistribution di scene variables. Wave50=136Nova+64Hounds. Tidak ada variant/stat scaling. Bonus100, Star stats, refund, obstacle250, Money/Lives awal dan controls tidak berubah.

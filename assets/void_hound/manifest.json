@@ -1,0 +1,440 @@
+{
+  "enemy": "VoidHound",
+  "archetypes": 1,
+  "method": "built-in imagegen; PNG copied intact; alpha/gutters measured read-only; GPU texture crops share each atlas",
+  "reference": "D:/My Data ALL/Downloads/Lembar Konsep Musuh Void Hound.png",
+  "assets": [
+    {
+      "file": "assets/void_hound/VoidHound_Right_Atlas.png",
+      "mode": "RGBA",
+      "size": [
+        1254,
+        1254
+      ],
+      "zeroAlphaFraction": 0.545079350543969,
+      "sha256": "792762fd9dad4b85ac1f739b281092841315c039e3936fda1d46bd973481e896",
+      "frames": [
+        {
+          "row": 0,
+          "column": 0,
+          "poseSHA256": "9912d6ec27a0d6e4bfba348a8f9f234989a2a1e907fea07f8b050f28ae426d01",
+          "opaquePixels": 27891
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "poseSHA256": "e001eb48e9b20b38219b8f1dddb0131be79cefbdae5b7ebe67855b32c6f67100",
+          "opaquePixels": 27194
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "poseSHA256": "191e3f0fe29c9c65c2823da5457da6fb401cca1f7d7034351e87724f97662221",
+          "opaquePixels": 26886
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "poseSHA256": "4a65b4f6201de832323af40d1e13bc7f93877fba67eceaa51d99cf0d6e37afc6",
+          "opaquePixels": 27063
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "poseSHA256": "95397d3bd55f62fdfd06c6eb923d720e4bd206312529a45c557a15034a8d10de",
+          "opaquePixels": 28682
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "poseSHA256": "5f051cabc861bbb21bc44fe5fd49025ac4e2bd06ec119fa49023996950ac63e2",
+          "opaquePixels": 24754
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "poseSHA256": "a409b61b2d4f0cab6c4528c79e6cf60734c22bdb4965ac9be4d41bf0e273ce6a",
+          "opaquePixels": 29533
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "poseSHA256": "9567e08c7f7faf5f42a535b03d87cb4d8693418098a213915cfe95ece3ab6e6a",
+          "opaquePixels": 26195
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "poseSHA256": "6452d50faee5593a3e6756551c497bbd053b1617898ce2083ed2a9ae5c8af476",
+          "opaquePixels": 28714
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "poseSHA256": "d9abc1fcc4b0901b9512d0d1cef684ff96ac9947d806898a6b4d60da19d84aad",
+          "opaquePixels": 28708
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "poseSHA256": "9ee112a407aa1e26221d8bbf6f51cfd7a5b2a38ff4c3b04110214f0fe42366b1",
+          "opaquePixels": 27908
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "poseSHA256": "7bf682ac9c5a06a4818e84f75eb4e71f7b3293f06f8d48b8b2c1233c8a6f2094",
+          "opaquePixels": 28888
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "poseSHA256": "12a6d45afe7f5a9fb95417746317e136cfe1aa45e7c6586919c5810286cc990f",
+          "opaquePixels": 28046
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "poseSHA256": "4d61a99e0989c5dfb198cbf5ef0a3b5138ea42d1cc873d6a476ef130f2246e7e",
+          "opaquePixels": 29324
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "poseSHA256": "749aa55643ff32642dcaed559bd53bc727b5d0c240b68117b83195089f000fda",
+          "opaquePixels": 28767
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "poseSHA256": "9150add415aa7a4c1d0e498fc07b274e283719122d55da771b2d9b4509819e32",
+          "opaquePixels": 19283
+        }
+      ]
+    },
+    {
+      "file": "assets/void_hound/VoidHound_Left_Atlas.png",
+      "mode": "RGBA",
+      "size": [
+        1448,
+        1086
+      ],
+      "zeroAlphaFraction": 0.4441815980383179,
+      "sha256": "13d9f79337cdc9bb38ea2dc1275ad341d6a523e270fb8dc99c0a8fdfb38bd8b7",
+      "frames": [
+        {
+          "row": 0,
+          "column": 0,
+          "poseSHA256": "1a7bce431e47cd1b112c4f9ace18dfe7f687e66359eed7d50373a8daf66c387d",
+          "opaquePixels": 35051
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "poseSHA256": "839994165b881a722e5c4b01f84232d45d11c446ea9f0ffd8bb4a5d5c3cf2fca",
+          "opaquePixels": 34005
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "poseSHA256": "d0b9ffdeacfdf242bae3e6077d03a0404ab87d8bf0be186cd596e9d385bee6d4",
+          "opaquePixels": 33605
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "poseSHA256": "1543f59f15e38722442bafb67a2ceabc1fd501bb506b0a7774c498d64d291a20",
+          "opaquePixels": 33659
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "poseSHA256": "da53d3ba98c24ad825bd29cad856f48f7cf8c7dd746c0ab85f576558edf8eb94",
+          "opaquePixels": 33468
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "poseSHA256": "77b9063be03dcca6af05611bb25c2b6b883329f191772aae08a2a213b7c01649",
+          "opaquePixels": 29939
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "poseSHA256": "9836004f6f9a261fadd0a0d8bac809074f21da8359ac8605adac570a3127e30f",
+          "opaquePixels": 30122
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "poseSHA256": "838318eed3ee8a33ddeccb991e9d0706d1881b3e30064e568d979e8e26e6d8ed",
+          "opaquePixels": 30311
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "poseSHA256": "c0e019a03ec2d212fd2716292eaba02753492201d3b5cbc57f1b35399a3f1745",
+          "opaquePixels": 31959
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "poseSHA256": "676063974fb914ef3f76fa6b34e0af6e48f97b6c13ec0da99d1dc7c19b505845",
+          "opaquePixels": 31108
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "poseSHA256": "80052b6f25f6e89ad6314e73d1c44620ad87e3b77ecf4d119ce04852bab55032",
+          "opaquePixels": 31937
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "poseSHA256": "0a956791d8e5676d85875705d401c8b29477fd291013b8c663c3368ff4029ddb",
+          "opaquePixels": 32446
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "poseSHA256": "8564745d8c4456b0ce0b19adff9a3f0c6094bc4a7d3d641e74fea5eaeddd0613",
+          "opaquePixels": 25937
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "poseSHA256": "e8f0db5bb2313e30e368dfecf198c8321589127bd63e331f7ec0f119b0bf7523",
+          "opaquePixels": 30583
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "poseSHA256": "05c3a14e6491cabbee8dac88d31ae790b2091c027f90a5e5ec33ab0479890b73",
+          "opaquePixels": 26581
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "poseSHA256": "209bc36fd199615cb4b6df59ca05a5b4e2fa29aa5596ad2802634a7d8bc9209e",
+          "opaquePixels": 26232
+        }
+      ]
+    },
+    {
+      "file": "assets/void_hound/VoidHound_Down_Atlas.png",
+      "mode": "RGBA",
+      "size": [
+        1536,
+        1024
+      ],
+      "zeroAlphaFraction": 0.424835205078125,
+      "sha256": "02436720e270cb33e35efb2d94f8c41e8a7c5085da530f589394d9a77a8b4008",
+      "frames": [
+        {
+          "row": 0,
+          "column": 0,
+          "poseSHA256": "d8529499f5ea05111a6cf5990eb218be80d6dc2b1a16c4e51b64bd7049befc3d",
+          "opaquePixels": 26586
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "poseSHA256": "b6b5dcf12f451a560b89efa3860842c97b4418c1d9b46b2cef15cdfba305db38",
+          "opaquePixels": 27706
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "poseSHA256": "88b3bd9e4f7ca247326a1ce0f54d5e13c65d3aa94edff7177a7529746f1a5b0d",
+          "opaquePixels": 28033
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "poseSHA256": "d6e05fc77598526b78659ab8d30711f3d2d57b0d232c447e74326ac2c95cc512",
+          "opaquePixels": 28207
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "poseSHA256": "6223519d04885103debfa61342e49388ab16d9b0ffe83f92c1b9094e883533da",
+          "opaquePixels": 32862
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "poseSHA256": "d7a42a94d4d0dc571ef11cc975a21cb537242218c7a6d71dc060e06123b0a0e8",
+          "opaquePixels": 35233
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "poseSHA256": "6c7656e85c1b6e987dcbd5aaf0d23bf2b63496f0cb8f9805d3479396e004d8e7",
+          "opaquePixels": 31951
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "poseSHA256": "3c6d2b01425cfe7005d6927b98aa8046be157f0a922b691a6f088814577f468e",
+          "opaquePixels": 31732
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "poseSHA256": "1078c594974583ef1cb3ccb58df8fef4efc80f1a0bfab427667b308fdb987609",
+          "opaquePixels": 35104
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "poseSHA256": "333f0d76e31ce6ea8b2e95239fe95b4934bca6ff82211a59e29a457b8740ea2b",
+          "opaquePixels": 35802
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "poseSHA256": "0623e44edabbb3aa06a9bfaff7d27c1bb4a4ba94b7c189a59e0bd3d96b4645e1",
+          "opaquePixels": 33000
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "poseSHA256": "c88d7492607a19e458e603821940eb6c22067abf18a2e507b01da215d80a63a0",
+          "opaquePixels": 30145
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "poseSHA256": "c4a1d7adfd45c8604504af2e1b7aa5c4378941c03999adeb0ecf75b7b0c6f60e",
+          "opaquePixels": 37381
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "poseSHA256": "eda518223ca398a6d03d5fd659b1b38786a37619c01abdf800ef6cfe361c8a6a",
+          "opaquePixels": 37919
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "poseSHA256": "fe930011752ca20fea1e4a9836f4532fe89dc3c963dd86d86b57cf0b3c0ffbb9",
+          "opaquePixels": 31543
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "poseSHA256": "c74ef988a873c6590d52cca5933a2f03d9b3f1c91d150e7ed71a221c84e0034b",
+          "opaquePixels": 23457
+        }
+      ]
+    },
+    {
+      "file": "assets/void_hound/VoidHound_Up_Atlas.png",
+      "mode": "RGBA",
+      "size": [
+        1448,
+        1086
+      ],
+      "zeroAlphaFraction": 0.621264613412289,
+      "sha256": "daadcf07329aa2ca0bea5693f0b5129075d36827a880d5e5c6596beabcd77378",
+      "frames": [
+        {
+          "row": 0,
+          "column": 0,
+          "poseSHA256": "cde1e8c8e6ba49754e81c9a3a6ae894b570c62c8f0a542f94538be52ad757364",
+          "opaquePixels": 20962
+        },
+        {
+          "row": 0,
+          "column": 1,
+          "poseSHA256": "1a077f7cc64b77720055edd3551e202054d48c3159a2c9d0b81cd744495499f8",
+          "opaquePixels": 20259
+        },
+        {
+          "row": 0,
+          "column": 2,
+          "poseSHA256": "6257ad172495a682bd996d394e259d71527bef44bfb8b9ed5cb498d1faa926cb",
+          "opaquePixels": 21064
+        },
+        {
+          "row": 0,
+          "column": 3,
+          "poseSHA256": "c087ae92b51fd7274d60c8d934a11e5380a3976d853fd3ee88bc04f64cea4335",
+          "opaquePixels": 20597
+        },
+        {
+          "row": 1,
+          "column": 0,
+          "poseSHA256": "9909139039e5346d69eaa84c7afe5a53bbd921f1026c52320d12f133e94438be",
+          "opaquePixels": 20565
+        },
+        {
+          "row": 1,
+          "column": 1,
+          "poseSHA256": "6f20266f7f074f75b217764b5671cb1fe6c67f0ec9f8cfddb0eaa36ca0ec863c",
+          "opaquePixels": 19040
+        },
+        {
+          "row": 1,
+          "column": 2,
+          "poseSHA256": "76d9f7e7feee43568fcb0bd97a65cd05e29b507fe9addec5d202e992f3bbfe68",
+          "opaquePixels": 19516
+        },
+        {
+          "row": 1,
+          "column": 3,
+          "poseSHA256": "32141a85a9222fc20bd9ffc14680c6e0dd4364f3a9f8718c09069fed4d90d5b5",
+          "opaquePixels": 18478
+        },
+        {
+          "row": 2,
+          "column": 0,
+          "poseSHA256": "094b6dd86a8e966b7a0b216ff4c50ba097c36214fe60b997a203b324d2f981a6",
+          "opaquePixels": 25213
+        },
+        {
+          "row": 2,
+          "column": 1,
+          "poseSHA256": "3a2b8ad4262b76a9bda0e94b455c440622c9d2c83933127f70ad20a85e1c4cb8",
+          "opaquePixels": 22558
+        },
+        {
+          "row": 2,
+          "column": 2,
+          "poseSHA256": "7055dca640a617a61901f388e2433045060ff76d692aa0626000f54ba601634a",
+          "opaquePixels": 24306
+        },
+        {
+          "row": 2,
+          "column": 3,
+          "poseSHA256": "8e781e47b7e98203dc10520d7d764a8b04148895bb3e8c26889266a33f8665bc",
+          "opaquePixels": 22637
+        },
+        {
+          "row": 3,
+          "column": 0,
+          "poseSHA256": "61d921e25adb34212217ff13878a56068ef03a4c56a6d8c50a69256c2cf6ea3d",
+          "opaquePixels": 24570
+        },
+        {
+          "row": 3,
+          "column": 1,
+          "poseSHA256": "e502918a419cd5798695210c4346f7120a78087b4a0b322cf0b40acf30b95517",
+          "opaquePixels": 27953
+        },
+        {
+          "row": 3,
+          "column": 2,
+          "poseSHA256": "44baefe867805b933a0b2fdd4d8327b1c813cd559bb0bc22b3e79ea080a89f74",
+          "opaquePixels": 25654
+        },
+        {
+          "row": 3,
+          "column": 3,
+          "poseSHA256": "9652069483cab83b19e9eeb0eb0130a1ef0014ac392891b32f87673f428703ac",
+          "opaquePixels": 23309
+        }
+      ]
+    }
+  ]
+}

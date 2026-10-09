@@ -1,0 +1,32 @@
+PASS exported GDevelop runtime loaded
+PASS native Index opens one Star entry
+PASS native Monsters tab contains only Nova
+PASS native Index close works
+PASS native Star card and single free placement charge 300
+PASS native visible Base click opens upgrades
+PASS native panel buys Meteor Barrage 2-4 pair
+PASS live turret tracks in-range enemy while Base stays fixed
+PASS actual rendered PIXI mouths match world MuzzlePoints
+PASS live triple volley and three muzzle flashes
+PASS live target exits range and rotation stops
+PASS native rotated barrel click selects the same owner
+PASS Base anchor and selected range stable at 2560
+PASS route unchanged at 2560
+PASS Base anchor and selected range stable at 800
+PASS route unchanged at 800
+PASS Base anchor and selected range stable at 1920
+PASS route unchanged at 1920
+PASS native Sell cleans both component owners
+PASS native Rock click opens Clear panel
+PASS Clear panel fits outside shop at 800
+PASS Clear panel fits outside shop at 2560
+PASS Clear panel fits outside shop at 1920
+PASS native Clear removes only its owner and exactly 250 gold
+PASS native clearing leaves camera and monster route fixed
+PASS native PLAY starts Nova wave in Manual
+PASS native control ManualFast at 2x
+PASS native control Auto at 1x
+PASS native control AutoFast at 2x
+PASS native control Manual at 1x
+PASS Nova animation clock actually doubles at2x
+PASS no console errors, uncaught exceptions or missing assets during fresh-load native test

@@ -1,3 +1,0 @@
-JSON/source/stat/resource audit PASS. Native GDevelop compile: 0 diagnostics; Pixi export true.
-[('rework-environment', 73), ('rework-full-wave', 419), ('rework-archer', 170), ('rework-circles', 84), ('rework-health', 51), ('rework-wave-speed', 64)]
-Native fullscreen checks: 34 PASS.
