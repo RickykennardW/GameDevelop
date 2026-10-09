@@ -8,7 +8,7 @@ if(!ui) {
     return ui.objects[key];
   };
 }
-const towers=[...scene.getObjects("Tower"),...scene.getObjects("ShotgunTower"),...scene.getObjects("RocketTower"),...scene.getObjects("ArcherTower"),...scene.getObjects("StarCannonTower")];
+const towers=scene.getObjects("StarCannonTower");
 let selected=towers.find(t=>t.getVariables().get("TowerId").getAsNumber()===sv.get("SelectedTower").getAsNumber());
 if(!selected&&sv.get("SelectedTower").getAsNumber()>0)sv.get("SelectedTower").setNumber(0);
 const input=game.getInputManager(),down=input.isMouseButtonPressed(0),modal=sv.get("IndexBlocksInput").getAsBoolean();
@@ -41,11 +41,11 @@ const hover=!selected||modal?"":inside(16,h-66,w-32,48)?"Sell":inside(278,12,26,
 if(down&&!ui.wasDown){ui.pressed=hover;ui.pressedTower=selected?selected.getVariables().get("TowerId").getAsNumber():0;}
 if(!down&&ui.wasDown&&selected&&!modal&&ui.pressed===hover&&ui.pressedTower===selected.getVariables().get("TowerId").getAsNumber()) {
   if(hover==="Sell") {
-    const v=selected.getVariables(),investment=["ArcherTower","StarCannonTower"].includes(selected.getName())?v.get("TotalInvestment").getAsNumber():v.get("PurchasePrice").getAsNumber();
-    sv.get("Money").setNumber(sv.get("Money").getAsNumber()+Math.floor(investment*sv.get("SellRefundRate").getAsNumber()+(selected.getName()==="StarCannonTower"?1e-8:0)));
+    const v=selected.getVariables(),investment=v.get("TotalInvestment").getAsNumber();
+    sv.get("Money").setNumber(sv.get("Money").getAsNumber()+Math.floor(investment*sv.get("SellRefundRate").getAsNumber()+1e-8));
     selected.deleteFromScene();sv.get("SelectedTower").setNumber(0);selected=null;
   } else if(hover==="Close") {sv.get("SelectedTower").setNumber(0);selected=null;}
-  else if((hover==="Path1"||hover==="Path2")&&["ArcherTower","StarCannonTower"].includes(selected.getName()))(selected.getName()==="StarCannonTower"?scene.__starCannon:scene.__archerSystem)?.upgrade(selected,hover==="Path1"?1:2);
+  else if((hover==="Path1"||hover==="Path2"))scene.__starCannon?.upgrade(selected,hover==="Path1"?1:2);
 }
 if(!down)ui.pressed="";ui.wasDown=down;
 ui.render=()=>{
@@ -53,14 +53,14 @@ ui.render=()=>{
   const tower=towers.find(t=>t.getVariables().get("TowerId").getAsNumber()===sv.get("SelectedTower").getAsNumber()&&scene.getObjects(t.getName()).includes(t));
   positionPanel(tower);layer.show(!!tower);ui.tower=tower;ui.cards=[];
   if(!tower){ui.screenRect=null;return;}
-  const v=tower.getVariables(),isStar=tower.getName()==="StarCannonTower",isArcher=tower.getName()==="ArcherTower",hasUpgrades=isArcher||isStar,cfg=sv.get(isStar?"StarCannonConfig":"ArcherConfig").toJSObject();
+  const v=tower.getVariables(),isStar=true,hasUpgrades=true,cfg=sv.get("StarCannonConfig").toJSObject();
   const panel=(key,x,y,width,height,color="255;255;255",name="SelectedPanelBackground",z=1)=>{const o=ui.ensure(key,name,z);o.setPosition(x,y);o.setWidth(width);o.setHeight(height);o.setColor(color);o.setOpacity(255);o.hide(false);return o;};
   const text=(key,value,x,y,width,size=13,color="240;230;255",bold=false)=>{const o=ui.ensure(key,"SelectedPanelText",4);o.setPosition(x,y);o.setWrapping(true);o.setWrappingWidth(width);o.setTextAlignment("left");o.setString(String(value));o.setCharacterSize(size);o.setBold(bold);o.setColor(color);o.hide(false);return o;};
   panel("frame",0,0,w,h);
   panel("header",12,10,w-24,42,"255;255;255","SelectedPanelPlaque",2);
   text("title",v.get("TowerName").getAsString().toUpperCase(),22,22,w-66,17,"243;234;255",true);
   text("close","X",286,20,16,14,"194;171;233",true);
-  const preview=ui.ensure("preview","SelectedTowerPreview",3);preview.setAnimationName(isStar?"SC_"+v.get("VisualKey").getAsString():isArcher?v.get("VisualKey").getAsString():tower.getName());preview.setScale(1);const ratio=preview.getWidth()/Math.max(1,preview.getHeight());preview.setWidth(ratio>=1?84:84*ratio);preview.setHeight(ratio>=1?84/ratio:84);preview.setPosition((w-preview.getWidth())/2,62+(84-preview.getHeight())/2);preview.hide(false);
+  const preview=ui.ensure("preview","SelectedTowerPreview",3);preview.setAnimationName("SC_"+v.get("VisualKey").getAsString());preview.setScale(1);const ratio=preview.getWidth()/Math.max(1,preview.getHeight());preview.setWidth(ratio>=1?84:84*ratio);preview.setHeight(ratio>=1?84/ratio:84);preview.setPosition((w-preview.getWidth())/2,62+(84-preview.getHeight())/2);preview.hide(false);
   if(hasUpgrades)text("build",v.get("Path1Level").getAsNumber()+" - "+v.get("Path2Level").getAsNumber(),138,148,64,12,"163;224;251",true);
   const stats=[["DAMAGE",Number(v.get("Damage").getAsNumber().toFixed(2))],["FIRE INTERVAL",Number(v.get("AttackInterval").getAsNumber()).toFixed(2)+" s"],["ATTACK RANGE",Number(v.get("AttackRange").getAsNumber().toFixed(2))+" px"],["DAMAGE DEALT",Math.round(v.get("DamageDealt").getAsNumber())]];
   stats.forEach(([label,value],i)=>{
@@ -80,8 +80,8 @@ ui.render=()=>{
       const background=panel("card"+i,x,y,140,270,locked?"116;95;148":active&&hover==="Path"+(i+1)?"230;210;255":"240;224;255","SelectedUpgradeCard",2);
       text("path"+i,isStar?path.Name:"PATH "+(i+1),x+12,y+12,116,isStar?11:13,"193;224;255",true);
       for(let n=0;n<4;n++)panel("progress"+i+"_"+n,x+12+n*29,y+36,24,8,n<level?"151;232;255":"112;93;146","SelectedProgressBlock",3);
-      const icon=ui.ensure("icon"+i,"ArcherUpgradeIcon",3);icon.setAnimationName(upgrade.Icon);icon.setWidth(66);icon.setHeight(66);icon.setPosition(x+37,y+54);icon.setOpacity(locked?130:255);icon.hide(false);
-      const title=upgrade.Name.replace("SHARPENED ARROWS","SHARPENED\nARROWS").replace("PIERCING CROSSBOW","PIERCING\nCROSSBOW");
+      const icon=ui.ensure("icon"+i,"StarUpgradeIcon",3);icon.setAnimationName(upgrade.Icon);icon.setWidth(66);icon.setHeight(66);icon.setPosition(x+37,y+54);icon.setOpacity(locked?130:255);icon.hide(false);
+      const title=upgrade.Name;
       const name=text("upgradeName"+i,title,x+10,y+130,120,12,"237;224;255",true);name.setTextAlignment("center");
       const desc=text("description"+i,upgrade.Description,x+10,y+168,120,11,"184;174;208");desc.setTextAlignment("center");
       panel("purchase"+i,x+10,y+222,120,34,locked?"130;105;157":"255;255;255","SelectedPanelPlaque",3);

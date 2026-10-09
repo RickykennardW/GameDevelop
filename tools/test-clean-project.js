@@ -7,10 +7,10 @@ sv.get('Money').setNumber(100000);const make=(name='StarCannonTower',a=0,b=0)=>{
  const t=scene.createObject(name),v=t.getVariables();p.positionSprite(t,name,700,550);v.get('TowerId').setNumber(9000+t.getUniqueId());v.get('FootprintX').setNumber(700);v.get('FootprintY').setNumber(550);v.get('FootprintRadius').setNumber(p.config(name).Radius);v.get('PurchasePrice').setNumber(300);step();
  if(name==='StarCannonTower'){v.get('Path1Level').setNumber(a);v.get('Path2Level').setNumber(b);star.apply(t);t.__starCooldown=100000;}return t;
 };
-const enemy=(x,y,hp=1000)=>{const e=scene.createObject('Enemy');e.setAnimationName('Idle Run');e.setPosition(x-e.getWidth()/2,y-e.getHeight()/2);e.getVariables().get('MoveSpeed').setNumber(0);e.getVariables().get('EnemyType').setString('Normal');e.getVariables().get('GoldReward').setNumber(0);e.getVariables().get('Waypoint').setNumber(0);e.getBehavior('Health').SetMaxHealth(hp);e.getBehavior('Health').SetHealth(hp);return e;};
+const enemy=(x,y,hp=1000)=>{const e=scene.createObject('Enemy');scene.__novaWisp.ensure(e);e.setAnimationName('NovaMove_Right');e.setWidth(48);e.setHeight(48);e.setPosition(x-e.getWidth()/2,y-e.getHeight()/2);e.getVariables().get('MoveSpeed').setNumber(0);e.getVariables().get('EnemyType').setString('Normal');e.getVariables().get('GoldReward').setNumber(0);e.getVariables().get('Waypoint').setNumber(0);e.getBehavior('Health').SetMaxHealth(hp);e.getBehavior('Health').SetHealth(hp);return e;};
 const health=e=>e.getBehavior('Health').Health();
 const close=()=>{sv.get('SelectedTower').setNumber(0);ob.close();step();};
-ok(shop.cards.length===5&&p.types.length===5,'all five existing shop choices and footprint types retained');
+ok(shop.cards.length===1&&p.types.length===1,'one official Star shop card and footprint type');
 let states=0;
 for(let a=0;a<=4;a++)for(let b=0;b<=4;b++){
  if(a>=3&&b>=3){ok(star.stats(a,b)===null,'invalid crosspath rejected '+a+'_'+b);continue;}
@@ -78,7 +78,7 @@ ok(['SpawnMarker','BaseMarker','Monster_Path','IslandCliffFrame','VoidBackdrop']
 const permanent=solids.find(o=>o.getVariables().get('EnvironmentCategory').getAsString()==='PermanentEnvironment');clickObject(permanent);ok(v('SelectedObstacleId')===0,'edge crystal click cannot open Clear');
 // Choose a real interior owner whose cleared space admits a tower circle.
 let obstacle,free;for(const o of removable){const old=p.blockers;p.blockers=old.filter(b=>b.owner!==o);const c=p.blockedCircle(o);
- for(let y=c.y-45;y<=c.y+45&&!free;y+=5)for(let x=c.x-45;x<=c.x+45;x+=5)if(p.validate('Tower',x,y).valid){obstacle=o;free=[x,y];break;}
+ for(let y=c.y-45;y<=c.y+45&&!free;y+=5)for(let x=c.x-45;x<=c.x+45;x+=5)if(p.validate('StarCannonTower',x,y).valid){obstacle=o;free=[x,y];break;}
  p.blockers=old;if(free)break;}
 ok(!!obstacle,'real removable owner has usable cleared floor');const id=obstacle.getUniqueId(),otherIds=p.blockers.filter(b=>b.owner!==obstacle).map(b=>b.owner.getUniqueId());
 clickObject(obstacle);ok(ob.owner()===obstacle&&scene.getLayer('ObstacleUI').isVisible()&&v('SelectedTower')===0,'normal click opens themed Clear panel without deleting');
@@ -88,10 +88,10 @@ sv.get('Money').setNumber(249);clickObject(obstacle);click(142,151,'ObstacleUI')
 sv.get('Money').setNumber(1000);click(142,151,'ObstacleUI');ok(!get('Ground_Decoration').includes(obstacle)&&!ob.owner()&&v('Money')===750&&!scene.__blockedBuildRings.has(id),'clear charges exactly 250 and removes owned object/ring/selection');
 ok(!p.blockers.some(b=>b.owner.getUniqueId()===id)&&otherIds.every(id=>p.blockers.some(b=>b.owner.getUniqueId()===id)),'only selected owner blocker removed');
 click(142,151,'ObstacleUI');ok(v('Money')===750,'second Clear-position click cannot charge again');
-ok(p.validate('Tower',...free).valid,'cleared circle available if no other blockers');clickObject(shop.cards[0].background);click(...free);ok(get('Tower').length===1&&v('Money')===750-sv.get('TowerShopCatalog').toJSObject()[0].Cost,'actual purchase builds in cleared space at unchanged catalog price');remove('Tower');close();
+ok(p.validate('StarCannonTower',...free).valid,'cleared circle available if no other blockers');clickObject(shop.cards[0].background);click(...free);ok(get('StarCannonTower').length===1&&v('Money')===750-sv.get('TowerShopCatalog').toJSObject()[0].Cost,'actual purchase builds in cleared space at unchanged catalog price');remove('StarCannonTower');close();
 const next=removable.find(o=>get('Ground_Decoration').includes(o));clickObject(shop.cards[0].background);const gold=v('Money');clickObject(next);ok(p.active&&!ob.owner()&&v('Money')===gold&&!sv.get('PlacementValid').getAsBoolean(),'builder obstacle click stays invalid and cannot open Clear');p.stop();step();
 const overlapping=scene.createObject('Ground_Decoration');overlapping.setAnimationName(next.getAnimationName());overlapping.setWidth(next.getWidth());overlapping.setHeight(next.getHeight());overlapping.setPosition(next.getX(),next.getY());overlapping.getVariables().get('Kind').setString(next.getVariables().get('Kind').getAsString());overlapping.getVariables().get('LocalScale').setNumber(next.getVariables().get('LocalScale').getAsNumber());step();
-ob.select(next);sv.get('Money').setNumber(1000);const c=p.blockedCircle(next);click(142,151,'ObstacleUI');ok(p.blockers.some(b=>b.owner===overlapping)&&p.validate('Tower',c.x,c.y).reason==='obstacle','overlapping other owner remains blocked after clear');overlapping.deleteFromScene();step();
+ob.select(next);sv.get('Money').setNumber(1000);const c=p.blockedCircle(next);click(142,151,'ObstacleUI');ok(p.blockers.some(b=>b.owner===overlapping)&&p.validate('StarCannonTower',c.x,c.y).reason==='obstacle','overlapping other owner remains blocked after clear');overlapping.deleteFromScene();step();
 ok(camera()===fixedCamera&&JSON.stringify(sv.get('MonsterPathPoints').toJSObject())===route,'clear selection build and combat never shift camera or route');
 // Input priority and mutually exclusive panels on deliberately overlapping visual fixtures.
 const remaining=get('Ground_Decoration').find(o=>o.getVariables().get('EnvironmentCategory').getAsString()==='RemovableObstacle');
@@ -103,4 +103,5 @@ input.onKeyPressed(27);step();input.onKeyReleased(27);step();ok(!ob.owner(),'Esc
 ob.select(remaining);step();sv.get('IndexOpen').setBoolean(true);step();ok(!ob.owner()&&sv.get('IndexBlocksInput').getAsBoolean(),'Index closes Clear and blocks map input');sv.get('IndexOpen').setBoolean(false);step();
 remove('StarCannonTower');close();ob.select(remaining);step();click(1600,600);ok(!ob.owner()&&v('SelectedTower')===0,'empty ground closes obstacle and tower selection');
 ok(get('StarCannonBaseVisual').length===0&&get('StarCannonTurretVisual').length===0,'no leaked component objects after priority fixtures');
+vars.get('IndexOpen').setBoolean(true);step();scene.__unitIndex.category='Towers';step();ok(scene.__unitIndex.entries.length===1&&scene.__unitIndex.entries[0].type==='StarCannonTower'&&scene.__unitIndex.entries[0].price===300,'Index one official Star entry with300 price');ok(Object.keys(scene.__unitIndex.objects).filter(k=>/^starUpgrade[01][0-3]$/.test(k)).length===8,'Index retains all eight Star upgrade icons');scene.__unitIndex.category='Monsters';step();ok(scene.__unitIndex.entries.length===2&&scene.__unitIndex.entries[0].name==='Nova Wisp'&&scene.__unitIndex.entries[1].name==='Void Hound','Index Nova Wisp and one Void Hound');vars.get('IndexOpen').setBoolean(false);step();ok(shop.scrollMax===0&&get('TileType_Button').length===1&&get('AssetCardPanel').length===1&&shop.cards[0].background.getWidth()===84&&shop.cards[0].background.getHeight()===112&&shop.cards[0].background.getX()===1168&&shop.cards[0].price.getString()==='300'&&!shop.guide&&get('ShopScrollTrack').length===1&&get('ShopScrollThumb').length===1,'single small first card in original two-column shop, no empty cards or upgrade guide, price300');
 lines.push('ALL TURRET / SELECTION / OBSTACLE TESTS PASSED');output.textContent=lines.join('\n');document.title='PASS '+(lines.length-1)+' checks';

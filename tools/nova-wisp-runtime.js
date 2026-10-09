@@ -5,6 +5,7 @@ if(!nova){
  const config=sv.get('NovaWispConfig').toJSObject();
  nova=scene.__novaWisp={config,atlases:new Map()};
  nova.ensure=e=>{
+  if(e.getVariables().get('EnemyType').getAsString()==='VoidHound')return scene.__voidHound.ensure(e);
   if(e.__novaUid===e.getUniqueId())return e.__novaState;
   const cx=e.getCenterXInScene(),cy=e.getCenterYInScene();e.setWidth(48);e.setHeight(48);e.setPosition(cx-24,cy-24);e.setAngle(0);e.flipX(false);
   e.__novaUid=e.getUniqueId();e.__novaState={age:0,hit:0,lastHP:e.getBehavior('Health').Health(),phase:(e.getUniqueId()*.61803398875%1)*Math.PI*2};
@@ -72,6 +73,7 @@ if(!nova){
  nova.render=()=>{
   const dt=gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(scene);
   for(const e of get('Enemy')){
+   if(e.getVariables().get('EnemyType').getAsString()==='VoidHound')continue;
    const state=nova.ensure(e),v=e.getVariables(),hp=e.getBehavior('Health').Health();if(hp<state.lastHP&&hp>0)state.hit=.16;state.lastHP=hp;state.age+=dt;state.hit=Math.max(0,state.hit-dt);
    const direction=v.get('Facing').getAsString()||'Right',mode=state.hit>0?'Hit':v.get('IsMoving').getAsBoolean()?'Move':'Idle';e.setAnimationName('Nova'+mode+'_'+direction);nova.animate(e,direction,state);
   }

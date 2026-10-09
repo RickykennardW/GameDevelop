@@ -1,0 +1,391 @@
+{
+  "enemyID": "VoidHound",
+  "newArchetypes": 1,
+  "stats": {
+    "Name": "Void Hound",
+    "Type": "Fast Enemy",
+    "HP": 60,
+    "MaxHP": 60,
+    "Speed": 135,
+    "Armor": 0,
+    "Reward": 7,
+    "SpecialAbility": "None",
+    "MinimumWave": 4
+  },
+  "waveDistribution": [
+    {
+      "wave": 1,
+      "NovaWisp": 4,
+      "VoidHound": 0,
+      "total": 4
+    },
+    {
+      "wave": 2,
+      "NovaWisp": 8,
+      "VoidHound": 0,
+      "total": 8
+    },
+    {
+      "wave": 3,
+      "NovaWisp": 12,
+      "VoidHound": 0,
+      "total": 12
+    },
+    {
+      "wave": 4,
+      "NovaWisp": 12,
+      "VoidHound": 4,
+      "total": 16
+    },
+    {
+      "wave": 5,
+      "NovaWisp": 16,
+      "VoidHound": 4,
+      "total": 20
+    },
+    {
+      "wave": 6,
+      "NovaWisp": 20,
+      "VoidHound": 4,
+      "total": 24
+    },
+    {
+      "wave": 7,
+      "NovaWisp": 20,
+      "VoidHound": 8,
+      "total": 28
+    },
+    {
+      "wave": 8,
+      "NovaWisp": 24,
+      "VoidHound": 8,
+      "total": 32
+    },
+    {
+      "wave": 9,
+      "NovaWisp": 28,
+      "VoidHound": 8,
+      "total": 36
+    },
+    {
+      "wave": 10,
+      "NovaWisp": 28,
+      "VoidHound": 12,
+      "total": 40
+    },
+    {
+      "wave": 11,
+      "NovaWisp": 32,
+      "VoidHound": 12,
+      "total": 44
+    },
+    {
+      "wave": 12,
+      "NovaWisp": 36,
+      "VoidHound": 12,
+      "total": 48
+    },
+    {
+      "wave": 13,
+      "NovaWisp": 36,
+      "VoidHound": 16,
+      "total": 52
+    },
+    {
+      "wave": 14,
+      "NovaWisp": 40,
+      "VoidHound": 16,
+      "total": 56
+    },
+    {
+      "wave": 15,
+      "NovaWisp": 44,
+      "VoidHound": 16,
+      "total": 60
+    },
+    {
+      "wave": 16,
+      "NovaWisp": 44,
+      "VoidHound": 20,
+      "total": 64
+    },
+    {
+      "wave": 17,
+      "NovaWisp": 48,
+      "VoidHound": 20,
+      "total": 68
+    },
+    {
+      "wave": 18,
+      "NovaWisp": 52,
+      "VoidHound": 20,
+      "total": 72
+    },
+    {
+      "wave": 19,
+      "NovaWisp": 52,
+      "VoidHound": 24,
+      "total": 76
+    },
+    {
+      "wave": 20,
+      "NovaWisp": 56,
+      "VoidHound": 24,
+      "total": 80
+    },
+    {
+      "wave": 21,
+      "NovaWisp": 60,
+      "VoidHound": 24,
+      "total": 84
+    },
+    {
+      "wave": 22,
+      "NovaWisp": 60,
+      "VoidHound": 28,
+      "total": 88
+    },
+    {
+      "wave": 23,
+      "NovaWisp": 64,
+      "VoidHound": 28,
+      "total": 92
+    },
+    {
+      "wave": 24,
+      "NovaWisp": 68,
+      "VoidHound": 28,
+      "total": 96
+    },
+    {
+      "wave": 25,
+      "NovaWisp": 68,
+      "VoidHound": 32,
+      "total": 100
+    },
+    {
+      "wave": 26,
+      "NovaWisp": 72,
+      "VoidHound": 32,
+      "total": 104
+    },
+    {
+      "wave": 27,
+      "NovaWisp": 76,
+      "VoidHound": 32,
+      "total": 108
+    },
+    {
+      "wave": 28,
+      "NovaWisp": 76,
+      "VoidHound": 36,
+      "total": 112
+    },
+    {
+      "wave": 29,
+      "NovaWisp": 80,
+      "VoidHound": 36,
+      "total": 116
+    },
+    {
+      "wave": 30,
+      "NovaWisp": 84,
+      "VoidHound": 36,
+      "total": 120
+    },
+    {
+      "wave": 31,
+      "NovaWisp": 84,
+      "VoidHound": 40,
+      "total": 124
+    },
+    {
+      "wave": 32,
+      "NovaWisp": 88,
+      "VoidHound": 40,
+      "total": 128
+    },
+    {
+      "wave": 33,
+      "NovaWisp": 92,
+      "VoidHound": 40,
+      "total": 132
+    },
+    {
+      "wave": 34,
+      "NovaWisp": 92,
+      "VoidHound": 44,
+      "total": 136
+    },
+    {
+      "wave": 35,
+      "NovaWisp": 96,
+      "VoidHound": 44,
+      "total": 140
+    },
+    {
+      "wave": 36,
+      "NovaWisp": 100,
+      "VoidHound": 44,
+      "total": 144
+    },
+    {
+      "wave": 37,
+      "NovaWisp": 100,
+      "VoidHound": 48,
+      "total": 148
+    },
+    {
+      "wave": 38,
+      "NovaWisp": 104,
+      "VoidHound": 48,
+      "total": 152
+    },
+    {
+      "wave": 39,
+      "NovaWisp": 108,
+      "VoidHound": 48,
+      "total": 156
+    },
+    {
+      "wave": 40,
+      "NovaWisp": 108,
+      "VoidHound": 52,
+      "total": 160
+    },
+    {
+      "wave": 41,
+      "NovaWisp": 112,
+      "VoidHound": 52,
+      "total": 164
+    },
+    {
+      "wave": 42,
+      "NovaWisp": 116,
+      "VoidHound": 52,
+      "total": 168
+    },
+    {
+      "wave": 43,
+      "NovaWisp": 116,
+      "VoidHound": 56,
+      "total": 172
+    },
+    {
+      "wave": 44,
+      "NovaWisp": 120,
+      "VoidHound": 56,
+      "total": 176
+    },
+    {
+      "wave": 45,
+      "NovaWisp": 124,
+      "VoidHound": 56,
+      "total": 180
+    },
+    {
+      "wave": 46,
+      "NovaWisp": 124,
+      "VoidHound": 60,
+      "total": 184
+    },
+    {
+      "wave": 47,
+      "NovaWisp": 128,
+      "VoidHound": 60,
+      "total": 188
+    },
+    {
+      "wave": 48,
+      "NovaWisp": 132,
+      "VoidHound": 60,
+      "total": 192
+    },
+    {
+      "wave": 49,
+      "NovaWisp": 132,
+      "VoidHound": 64,
+      "total": 196
+    },
+    {
+      "wave": 50,
+      "NovaWisp": 136,
+      "VoidHound": 64,
+      "total": 200
+    }
+  ],
+  "PNGAtlasBytes": 8471547,
+  "PNGAtlases": 4,
+  "paintedPoses": 64,
+  "nativeObjectDefinitionsBeforeAndAfter": 59,
+  "tests": {
+    "nativeCompileDiagnostics": 0,
+    "nativeExport": "PASS",
+    "houndRuntimeChecks": 117,
+    "mixed50WaveChecks": 10428,
+    "starPlacementChecks": 283,
+    "nativeClickRenderCombatChecks": 13,
+    "protectedConfigurationHashReferenceChecks": 269,
+    "totalActualWaveSpawns": 5100,
+    "consoleErrors": 0,
+    "missingAssets": 0
+  },
+  "filesModified": [
+    "BALANCE.md",
+    "NOVA_WISP.md",
+    "README.md",
+    "Tower Defense.json",
+    "layouts/game-scene.json",
+    "tools/embed-free-placement.py",
+    "tools/enemy-healthbar-runtime.js",
+    "tools/island-render-runtime.js",
+    "tools/nova-death-runtime.js",
+    "tools/nova-movement-runtime.js",
+    "tools/nova-spawn-runtime.js",
+    "tools/nova-wave-manager.js",
+    "tools/nova-wisp-runtime.js",
+    "tools/run-clean-validation.py",
+    "tools/test-clean-project-live.py",
+    "tools/test-clean-project.js",
+    "tools/test-nova-wisp.js",
+    "tools/unit-index-runtime.js",
+    "design_previews/cleanup/test-clean-project-results.txt",
+    "design_previews/cleanup/test-nova-wisp-results.txt",
+    "tools/cleanup-audit/source-mapping.json"
+  ],
+  "filesCreated": [
+    "Tower Defense.json.autosave",
+    "tools/integrate-void-hound.py",
+    "tools/test-void-hound-live.py",
+    "tools/test-void-hound.js",
+    "tools/void-hound-runtime.js",
+    "assets/void_hound/generation-prompts.json",
+    "assets/void_hound/manifest.json",
+    "assets/void_hound/views.json",
+    "assets/void_hound/VoidHound_Down_Atlas.png",
+    "assets/void_hound/VoidHound_Left_Atlas.png",
+    "assets/void_hound/VoidHound_Right_Atlas.png",
+    "assets/void_hound/VoidHound_Up_Atlas.png",
+    "design_previews/cleanup/test-void-hound-results.txt",
+    "design_previews/void_hound/Asset_Gallery.html",
+    "design_previews/void_hound/console-errors.json",
+    "design_previews/void_hound/Index_Nova_And_Void_Hound.png",
+    "design_previews/void_hound/native-tests.txt",
+    "design_previews/void_hound/static-audit.json",
+    "design_previews/void_hound/test-clean-project-results.txt",
+    "design_previews/void_hound/test-nova-wisp-results.txt",
+    "design_previews/void_hound/test-void-hound-results.txt",
+    "design_previews/void_hound/Void_Hound_Death_Dissolve.png",
+    "design_previews/void_hound/Void_Hound_Four_Directions.png",
+    "design_previews/void_hound/Void_Hound_Gameplay_Animation.webm",
+    "design_previews/void_hound/Void_Hound_Hit_By_Star.png",
+    "design_previews/void_hound/Void_Hound_Mixed_Wave_4.png"
+  ],
+  "backup": "backups/pre_void_hound_20261009.zip",
+  "limitations": [
+    "four AI-painted poses per state/direction; not a skeletal animation rig",
+    "native editor thumbnail shows atlas; runtime preview renders individual GPU-cropped frames",
+    "all50wave verification uses accelerated spawn/corpse fixtures; full route and death timing tested separately",
+    "desktop GUI editor opening not automated; native parser/compiler/export and real browser preview executed"
+  ]
+}

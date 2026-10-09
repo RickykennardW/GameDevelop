@@ -29,11 +29,14 @@ vars.get("Waypoint").setNumber(waypoint);
 vars.get("PathFinished").setBoolean(waypoint >= count);
 vars.get("IsMoving").setBoolean(moved);
 vars.get('Facing').setString(facing);enemy.flipX(false);enemy.setAngle(0);
-vars.get('MovementAnimation').setString('NovaMove_'+facing);vars.get('IdleAnimation').setString('NovaIdle_'+facing);
+const prefix=vars.get('EnemyType').getAsString()==='VoidHound'?'Hound':'Nova';
+vars.get('MovementAnimation').setString(prefix+'Move_'+facing);vars.get('IdleAnimation').setString(prefix+'Idle_'+facing);
 const moveAnimation = vars.get("MovementAnimation").getAsString();
 const idleAnimation = vars.get("IdleAnimation").getAsString();
 const animation = moved || !idleAnimation ? moveAnimation : idleAnimation;
-if (animation && enemy.getAnimationName() !== animation) enemy.setAnimationName(animation);
+if (animation && enemy.getAnimationName() !== animation) {
+  if(prefix==='Hound')runtimeScene.__voidHound.setAnimation(enemy,animation);else enemy.setAnimationName(animation);
+}
 if (moved) {
   enemy.setAnimationSpeedScale(speed / Math.max(1, vars.get("AnimationReferenceSpeed").getAsNumber()));
   enemy.playAnimation();

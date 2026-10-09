@@ -19,9 +19,13 @@ const manual = !yes("IndexBlocksInput") && sv.get("WaveMode").getAsString() === 
 if (idle && !yes("GameOver") && num("Lives") > 0 && num("Wave") < 50 && (manual || (auto() && num("Wave") > 0 && state.wait <= 0))) {
   if (!auto()) sv.get("WaveMode").setString("Manual");
   const wave = num("Wave") + 1;
-  // One identical Basic Nova Wisp archetype, with count as the only wave scaling.
+  // Fixed archetype stats; distribution controls only the two enemy counts.
   const config = sv.get("NovaWispConfig").toJSObject();
-  const queue = Array(wave * 4).fill("Basic");
+  const distribution=sv.get("EnemyWaveDistribution").toJSObject();
+  const total=wave*distribution.TotalMultiplier;
+  const hounds=wave<distribution.HoundMinimumWave?0:Math.min(total,(Math.floor((wave-distribution.HoundMinimumWave)/distribution.HoundIncreaseEvery)+1)*distribution.HoundsPerStep);
+  // Even deterministic interleaving retains sequential spawn timing.
+  const queue=Array.from({length:total},(_,i)=>Math.floor((i+1)*hounds/total)>Math.floor(i*hounds/total)?"VoidHound":"Basic");
   state.queue=queue;state.index=0;state.elapsed=0;state.wait=3;
   sv.get("Wave").setNumber(wave);sv.get("SpawnInterval").setNumber(config.SpawnInterval);
   sv.get("EnemiesToSpawn").setNumber(queue.length);sv.get("WaveActive").setBoolean(true);message.hide();

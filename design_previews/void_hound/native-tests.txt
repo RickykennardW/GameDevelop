@@ -1,0 +1,13 @@
+PASS native exported GDevelop runtime loaded
+PASS four Hound views60HP/stable48px colliders
+PASS Nova100HP/animation rig retained
+PASS native Index shows two canonical enemies
+PASS native PLAY Wave4 sequential12Nova+4Hounds
+PASS live mixed wave135/80 fixed speeds
+PASS actual four-second mixed-wave animation recorded
+PASS native small Star card/purchase/placement300
+PASS actual native Star projectile60to10
+PASS native death disables collision and pays7once
+PASS native death finishes/7reward/60actualDamageDealt
+PASS map/camera/route/smallStarShop unchanged
+PASS console0 errors/missing assets/uncaught exceptions

@@ -1,15 +1,15 @@
-// Responsive, clipped, two-column UI. All purchase and wave actions stay in the native events below.
+// Responsive two-column shop with one official Star Cannon. All purchase and wave actions stay in the native events below.
 const scene = runtimeScene;
 const variables = scene.getVariables();
 // Independent world presentation controls; combat stats are deliberately separate.
-const style=scene.__worldStyle || (scene.__worldStyle={road:88,tower:1.8,archer:2.25,star:2.5,
- enemy:1.55,projectile:1.2,spawn:5.2,base:2.15,
+const style=scene.__worldStyle || (scene.__worldStyle={road:88,star:2.5,
+ enemy:1.55,spawn:5.2,base:2.15,
  props:{Crystal:1.65,Rock:1.75,Ruin:2.30,Shrub:1.65},
- footprints:{Tower:40,ShotgunTower:48,RocketTower:42,ArcherTower:44,StarCannonTower:46},cliffUnit:.32});
+ footprints:{StarCannonTower:46},cliffUnit:.32});
 if(!scene.__worldStyleInitialized){
  for(const [name,radius] of Object.entries(style.footprints)){
   const v=variables.get('TowerFootprints').getChild(name);v.getChild('Radius').setNumber(radius);
-  v.getChild('RenderScale').setNumber(name==='ArcherTower'?style.archer:name==='StarCannonTower'?style.star:style.tower);
+  v.getChild('RenderScale').setNumber(style.star);
  }
  scene.__worldStyleInitialized=true;
 }
@@ -162,24 +162,13 @@ rect("ShopFooterFrame", 1160, geometry.playY - 4, 208, 72);
 rect("AssetPanelTitle", 1168, geometry.rootY + 16, 192, 24);
 rect("AssetPanelSubtitle", 1168, geometry.rootY + 37, 192, 16);
 rect("ShopIndexButton", 1168, geometry.playY, 92, 60);
-first("ShopIndexLabel").hide();
+
 rect("ShopPlayButton", 1268, geometry.playY, 92, 60);
 rect("ShopPlayIcon", 1302, geometry.playY + 8, 24, 24);
 rect("ShopPlayLabel", 1268, geometry.playY + 36, 92, 20);
 rect("ShopSpeedBadge", 1332, geometry.playY + 8, 20, 14);
 rect("ShopScrollTrack", geometry.trackX, geometry.listY, 8, geometry.listHeight);
-// The existing tower information view shares the frame, while PLAY remains available below it.
-rect("TowerInfoName", 1168, geometry.rootY + 20, 192, 30);
-const statStep = Math.max(26, Math.min(64, (geometry.bottom - 152 - 80 - 10) / 4));
-for (const [index, field] of ["Damage", "Rate", "Range", "Dealt"].entries()) {
-  const y = 80 + index * statStep;
-  rect("TowerInfo" + field + "Label", 1168, y + 5, 112, 20);
-  rect("TowerInfo" + field, 1280, y, 80, 24);
-}
-rect("TowerSellButton", 1168, geometry.bottom - 152, 192, 52);
-rect("TowerSellLabel", 1180, geometry.bottom - 137, 72, 24);
-rect("TowerSellValue", 1252, geometry.bottom - 137, 100, 24);
-rect("TowerInfoCloseHint", 1168, geometry.bottom - 98, 192, 18);
+
 // Keep the original HUD artwork. On narrow windows only its row arrangement changes.
 const hudWidth = compactHUD ? Math.max(1, Math.min(196, gameAreaRight - 32)) : 316;
 rect("HUDPanel", offsetX + 16, 16, hudWidth, hudHeight);
@@ -202,7 +191,7 @@ for (let i = 0; i < catalog.length; i++) {
   const item = catalog[i];
   if (!ui.cards[i]) {
     const card = ui.cards[i] = { background: ui.ensure("AssetCardPanel", i), icon: ui.ensure("TileType_Button", i), name: ui.ensure("AssetTowerLabel", i), price: ui.ensure("AssetTowerPrice", i), coin: ui.ensure("ShopCoin", i) };
-    card.icon.activateBehavior("ButtonScaleTween", false);
+    
     if (card.icon.hasBehavior("Effect")) card.icon.getBehavior("Effect").enableEffect("Outline", false);
     card.icon.setAnimationName(item.IconAnimation || item.Type);
     const ratio = card.icon.getWidth() / Math.max(1, card.icon.getHeight());
@@ -213,7 +202,7 @@ for (let i = 0; i < catalog.length; i++) {
   card.item = item;
   card.icon.getVariables().get("TowerType").setString(item.Type);
   card.icon.getVariables().get("Cost").setNumber(item.Cost);
-  card.name.setString(item.Type === "ArcherTower" ? "Archer" : item.Name);
+  card.name.setString(item.Name);
   card.name.setCharacterSize(11);card.name.setWrapping(true);card.name.setWrappingWidth(76);card.name.setTextAlignment("center");
   card.price.setCharacterSize(13);card.price.setWrapping(true);card.price.setWrappingWidth(46);card.price.setTextAlignment("center");
   card.price.setString(String(item.Cost));

@@ -1,5 +1,0 @@
-Native GDevelop: zero scene diagnostics, export true.
-Static JSON/resource/reference/preservation audit PASS.
-[('star-cannon-test', 211), ('star-regression-archer', 170), ('rework-full-wave', 419), ('rework-wave-speed', 64)]
-Native fullscreen and mouse/key checks: 39 PASS.
-21 unique RGBA generated PNG, all with alpha transparency; 39 new image resources.

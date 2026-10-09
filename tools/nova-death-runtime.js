@@ -5,7 +5,8 @@ for(const e of scene.getObjects('Enemy').slice()){
  nova.ensure(e);const v=e.getVariables();
  if(!v.get('RewardPaid').getAsBoolean()){
   v.get('RewardPaid').setBoolean(true);
-  if(!v.get('PathFinished').getAsBoolean()){sv.get('Money').add(5);nova.death(e);}
+  if(!v.get('PathFinished').getAsBoolean()){sv.get('Money').add(v.get('GoldReward').getAsNumber());if(v.get('EnemyType').getAsString()==='VoidHound')scene.__voidHound.beginDeath(e);else nova.death(e);}
  }
+ if(v.get('EnemyType').getAsString()==='VoidHound'&&!v.get('PathFinished').getAsBoolean())continue;
  e.deleteFromScene();
 }
