@@ -1,7 +1,6 @@
 // Selection silhouettes are independent of placement/range circles and logical sprite bounds.
 const scene=runtimeScene,sv=scene.getVariables(),p=scene.__freePlacement,input=scene.getGame().getInputManager();
 const down=input.isMouseButtonPressed(0),pressed=down&&!sv.get('TowerPointerWasDown').getAsBoolean();
-sv.get('WorldSelectionHandled').setBoolean(pressed);
 let pick=scene.__worldSelection;
 if(!pick){
  const geometry=sv.get('SelectionGeometry').toJSObject();
@@ -13,12 +12,8 @@ if(!pick){
   return hull.map(([a,b])=>[x+(a-.5)*w*c-(b-.5)*h*s,y+(a-.5)*w*s+(b-.5)*h*c]);
  };
  pick.towerHit=(o,x,y)=>{
-  if(o.getName()==='StarCannonTower'){
-   const visual=scene.__starCannon?.visual(o);if(!visual)return false;
-   return ['Base','Turret'].some(part=>pick.hitPolygon(x,y,scene.__starCannon.componentPoints(o,part,visual.meta[part].Hull)));
-  }
-  const data=geometry[o.getName()]?.[o.getAnimationName()];if(!data)return false;
-  return pick.hitPolygon(x,y,pick.spritePoints(o,scene.__freePlacement.config(o.getName()).RenderScale,data.Hull));
+  const visual=scene.__starCannon?.visual(o);if(!visual)return false;
+  return ['Base','Turret'].some(part=>pick.hitPolygon(x,y,scene.__starCannon.componentPoints(o,part,visual.meta[part].Hull)));
  };
  pick.obstacleHit=(o,x,y)=>{
   const kind=o.getVariables().get('Kind').getAsString(),hull=geometry.Ground_Decoration?.[kind]?.Hull;if(!hull)return false;

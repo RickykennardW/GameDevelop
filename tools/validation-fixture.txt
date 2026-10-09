@@ -1,0 +1,9 @@
+function runTowerTests(game) {
+ const output=document.getElementById('results'),lines=[];const ok=(v,m)=>{if(!v)throw new Error(m);lines.push('PASS '+m);output.textContent=lines.join('\n');};
+ try {
+ const scene=new gdjs.RuntimeScene(game);scene.loadFromScene(game.getSceneAndExtensionsData('Game Scene'));const input=game.getInputManager(),vars=scene.getVariables(),get=n=>scene.getObjects(n),v=n=>vars.get(n).getAsNumber();
+ const step=(n=1)=>{for(let i=0;i<n;i++){scene.renderAndStep(16.667);input.onFrameEnded();}};
+ const screen=(x,y,layer='')=>{const l=scene.getLayer(layer),z=l.getCameraZoom();return [(x-l.getCameraX())*z+game.getGameResolutionWidth()/2,(y-l.getCameraY())*z+game.getGameResolutionHeight()/2];};
+ const move=(x,y,layer='')=>{const [sx,sy]=screen(x,y,layer);input.onMouseMove(sx,sy);};
+ const click=(x,y,layer='')=>{move(x,y,layer);input.onMouseButtonPressed(0);step(2);input.onMouseButtonReleased(0);step(2);};
+ const clickObject=(o)=>click(o.getX()+o.getWidth()/2,o.getY()+o.getHeight()/2,o.getLayer());

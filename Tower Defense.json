@@ -92,62 +92,6 @@
   "resources": {
     "resources": [
       {
-        "file": "assets/StartingUnit.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\StartingUnit.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/StartingTower.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\StartingTower.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/StartingTree.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\StartingTree.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/StartingButtonUnit.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\StartingButtonUnit.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/StartingButtonTower.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\StartingButtonTower.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/StartingButtonTree.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\StartingButtonTree.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/StartingGroundTilemap.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets\\StartingGroundTilemap.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "assets/starting_woodthump.wav",
         "kind": "audio",
         "metadata": "",
@@ -166,394 +110,6 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
-      },
-      {
-        "file": "assets/Slime_Hit_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Slime_Hit_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/f710d2ea22cbf9c9efecc52d26c2e2056c9698752df30e6247dd486394bd800a_Slime_Hit_1.png",
-          "name": "Slime_Hit_1.png"
-        }
-      },
-      {
-        "file": "assets/Slime_Hit_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Slime_Hit_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/f710d2ea22cbf9c9efecc52d26c2e2056c9698752df30e6247dd486394bd800a_Slime_Hit_2.png",
-          "name": "Slime_Hit_2.png"
-        }
-      },
-      {
-        "file": "assets/Slime_Hit_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Slime_Hit_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/ab666ab362393347c83a5c28798fcf6e8326b94a0172caeb1e73936e43a16e6f_Slime_Hit_3.png",
-          "name": "Slime_Hit_3.png"
-        }
-      },
-      {
-        "file": "assets/Slime_Hit_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Slime_Hit_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/f776e3ad6f5c12b8a3ef4a28bae3e817395ce2b1dbc39ef952afa5fe12a44ffa_Slime_Hit_4.png",
-          "name": "Slime_Hit_4.png"
-        }
-      },
-      {
-        "file": "assets/Slime_Hit_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Slime_Hit_5.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/b31d36f6cc3b914b94e6d910306975b46c74835e9fa1765f5c64a36416052edb_Slime_Hit_5.png",
-          "name": "Slime_Hit_5.png"
-        }
-      },
-      {
-        "file": "assets/Slime_Idle Run_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Slime_Idle Run_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/d50d4e0c4add1c6faf64a05230304d51b4a756efb161f5ec4b53e0746112c020_Slime_Idle Run_1.png",
-          "name": "Slime_Idle Run_1.png"
-        }
-      },
-      {
-        "file": "assets/Slime_Idle Run_10.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Slime_Idle Run_10.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/3241cb25901f9aa5f8ca57fad62d75ea9028038c1bc610213e122f6059b78801_Slime_Idle Run_10.png",
-          "name": "Slime_Idle Run_10.png"
-        }
-      },
-      {
-        "file": "assets/Slime_Idle Run_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Slime_Idle Run_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/f7206921b4916aea9b3ca1b4ac330a058feea7c721b1995324bd8582583c4cb1_Slime_Idle Run_2.png",
-          "name": "Slime_Idle Run_2.png"
-        }
-      },
-      {
-        "file": "assets/Slime_Idle Run_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Slime_Idle Run_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/053cb03fda71da9cf198e56e00566acbe4c4acc32c3a025c3c0858acf785539c_Slime_Idle Run_3.png",
-          "name": "Slime_Idle Run_3.png"
-        }
-      },
-      {
-        "file": "assets/Slime_Idle Run_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Slime_Idle Run_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/053cb03fda71da9cf198e56e00566acbe4c4acc32c3a025c3c0858acf785539c_Slime_Idle Run_4.png",
-          "name": "Slime_Idle Run_4.png"
-        }
-      },
-      {
-        "file": "assets/Slime_Idle Run_5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Slime_Idle Run_5.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/6ec5793ffe7470c8fb63cdbbd274673ff88fc8318d99bebcf50d1f39239fe198_Slime_Idle Run_5.png",
-          "name": "Slime_Idle Run_5.png"
-        }
-      },
-      {
-        "file": "assets/Slime_Idle Run_6.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Slime_Idle Run_6.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/d50d4e0c4add1c6faf64a05230304d51b4a756efb161f5ec4b53e0746112c020_Slime_Idle Run_6.png",
-          "name": "Slime_Idle Run_6.png"
-        }
-      },
-      {
-        "file": "assets/Slime_Idle Run_7.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Slime_Idle Run_7.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/3241cb25901f9aa5f8ca57fad62d75ea9028038c1bc610213e122f6059b78801_Slime_Idle Run_7.png",
-          "name": "Slime_Idle Run_7.png"
-        }
-      },
-      {
-        "file": "assets/Slime_Idle Run_8.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Slime_Idle Run_8.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/cc6a1e7cac875cafa2f8b43ca7718f7beb76c3e445845d98671ecce8c3e5b3d9_Slime_Idle Run_8.png",
-          "name": "Slime_Idle Run_8.png"
-        }
-      },
-      {
-        "file": "assets/Slime_Idle Run_9.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Slime_Idle Run_9.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Adventure Pack/Enemies/Slime/cc6a1e7cac875cafa2f8b43ca7718f7beb76c3e445845d98671ecce8c3e5b3d9_Slime_Idle Run_9.png",
-          "name": "Slime_Idle Run_9.png"
-        }
-      },
-      {
-        "file": "assets/Bullet 5.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Bullet 5.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Western FPS 2D/Weapon/Projectile/Ball/f8c97f4f344ceda06e1b53c65b15e33b24c6256e0991bc881eb7f2317b89ba57_Bullet 5.png",
-          "name": "Bullet 5.png"
-        }
-      },
-      {
-        "file": "assets/Shotgun Vertical_Aiming.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Shotgun Vertical_Aiming.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Western FPS 2D/Weapon/bd63ea37ab03d04d6f31313cc0142b7a0f097d29a82d95f0486acd40dbc18c77_Shotgun Vertical_Aiming.png",
-          "name": "Shotgun Vertical_Aiming.png"
-        }
-      },
-      {
-        "file": "assets/Shotgun Vertical_Firing.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Shotgun Vertical_Firing.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Western FPS 2D/Weapon/6b09ce20a6835016653d3042d061b7ad69331b81231a7169ef818b56423d85da_Shotgun Vertical_Firing.png",
-          "name": "Shotgun Vertical_Firing.png"
-        }
-      },
-      {
-        "file": "assets/Missile.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Missile.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 2/Projectile/feeb5237642bae469494e9b4f54f3e41a4a12d9e608b585b72f4c9d0cc451cf9_Missile.png",
-          "name": "Missile.png"
-        }
-      },
-      {
-        "file": "assets/Nairan Rocket_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Nairan Rocket_1.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Nairan Fleet/Projectiles/3de053d1238b473ecf98a7c5e8c140c88b3818dbd7057fd391c6ab310b23ba30_Nairan Rocket_1.png",
-          "name": "Nairan Rocket_1.png"
-        }
-      },
-      {
-        "file": "assets/Nairan Rocket_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Nairan Rocket_2.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Nairan Fleet/Projectiles/33f0e57a5a2249021e6755fc4feeeeea5bed9aeb7cba3ca9e504fd36820ba63e_Nairan Rocket_2.png",
-          "name": "Nairan Rocket_2.png"
-        }
-      },
-      {
-        "file": "assets/Nairan Rocket_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Nairan Rocket_3.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Nairan Fleet/Projectiles/8523af1e88d1450f66938933641a6f6414d7a535bf2f868eb3f3bb1e2fba29c5_Nairan Rocket_3.png",
-          "name": "Nairan Rocket_3.png"
-        }
-      },
-      {
-        "file": "assets/Nairan Rocket_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Nairan Rocket_4.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/FoozleCC/Void Collection/Nairan Fleet/Projectiles/5243cb3452e0d8fb8581d45645c988c3d989cdad7bfcd96ebb23ac50f81dbd33_Nairan Rocket_4.png",
-          "name": "Nairan Rocket_4.png"
-        }
-      },
-      {
-        "file": "assets/tiled_Grass2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "tiled_Grass2.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Tileable Ground Textures/56c74486b789657d72777e8c74bc5f720923d43f41a598636cc34c1bec5046b0_tiled_Grass2.png",
-          "name": "tiled_Grass2.png"
-        }
-      },
-      {
-        "file": "assets/Default-panel (31).png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Default-panel (31).png",
-        "smoothed": true,
-        "userAdded": true,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Fantasy UI Borders/Default Size/Panels/4530207f9820c0990ac1354b1c323ac80c2df8a9280996d4e00f0c34e378e0d3_Default-panel (31).png",
-          "name": "Default-panel (31).png"
-        }
-      },
-      {
-        "file": "assets/Isometric Platformer Dirt_Surface.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Isometric Platformer Dirt_Surface.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Isometric Pack/Platformer tiles/e2af30348cc26409ba251e1843ab8a2e90404364512afb58ad09810797477138_Isometric Platformer Dirt_Surface.png",
-          "name": "Isometric Platformer Dirt_Surface.png"
-        }
-      },
-      {
-        "file": "assets/Isometric Platformer Dirt_Texture.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Isometric Platformer Dirt_Texture.png",
-        "smoothed": true,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Isometric Pack/Platformer tiles/fdba5517e77d24a900edd784ed6243d191e8b6f328429cc1634e484d5c8746ba_Isometric Platformer Dirt_Texture.png",
-          "name": "Isometric Platformer Dirt_Texture.png"
-        }
-      },
-      {
-        "file": "assets/tower-range.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/tower-range.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/shop-separator.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/shop-separator.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "Default size/towerDefense_tile024.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Default size/towerDefense_tile024.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "Default size/towerDefense_tile050.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Default size/towerDefense_tile050.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "Default size/towerDefense_tile093.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Default size/towerDefense_tile093.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ui/panel.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/ui/panel.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ui/card.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/ui/card.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ui/play-button.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/ui/play-button.svg",
-        "smoothed": true,
-        "userAdded": true
       },
       {
         "file": "assets/ui/coin.svg",
@@ -588,30 +144,6 @@
         "userAdded": true
       },
       {
-        "file": "assets/ui/up.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/ui/up.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ui/down.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/ui/down.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ui/scroll.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/ui/scroll.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
         "file": "assets/ui/manual-wave.svg",
         "kind": "image",
         "metadata": "",
@@ -625,350 +157,6 @@
         "metadata": "",
         "name": "assets/ui/enemy-health-pixel.svg",
         "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "file": "Index_Logo.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Index_logo",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ui/fantasy-frame.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/ui/fantasy-frame.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ui/fantasy-plaque.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/ui/fantasy-plaque.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ui/fantasy-card.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/ui/fantasy-card.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ui/fantasy-button.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/ui/fantasy-button.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ui/fantasy-index-button.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/ui/fantasy-index-button.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ui/fantasy-well.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/ui/fantasy-well.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ui/fantasy-track.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/ui/fantasy-track.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ui/fantasy-thumb.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/ui/fantasy-thumb.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/ui/Index_Button_Icon.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Index_Button_Icon",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "Default size/towerDefense_tile203.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Default size/towerDefense_tile203.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherTower_0_0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherTower_0_0.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherTower_0_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherTower_0_1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherTower_0_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherTower_0_2.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherTower_0_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherTower_0_3.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherTower_0_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherTower_0_4.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherTower_1_0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherTower_1_0.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherTower_1_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherTower_1_1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherTower_1_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherTower_1_2.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherTower_1_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherTower_1_3.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherTower_1_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherTower_1_4.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherTower_2_0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherTower_2_0.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherTower_2_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherTower_2_1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherTower_2_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherTower_2_2.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherTower_2_3.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherTower_2_3.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherTower_2_4.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherTower_2_4.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherTower_3_0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherTower_3_0.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherTower_3_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherTower_3_1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherTower_3_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherTower_3_2.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherTower_4_0.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherTower_4_0.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherTower_4_1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherTower_4_1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherTower_4_2.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherTower_4_2.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherUpgrade_P1_L1_Damage.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherUpgrade_P1_L1_Damage.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherUpgrade_P1_L2_AttackSpeed.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherUpgrade_P1_L2_AttackSpeed.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherUpgrade_P1_L3_TwinArchers.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherUpgrade_P1_L3_TwinArchers.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherUpgrade_P1_L4_ArrowStorm.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherUpgrade_P1_L4_ArrowStorm.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherUpgrade_P2_L1_Range.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherUpgrade_P2_L1_Range.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherUpgrade_P2_L2_ProjectileSpeed.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherUpgrade_P2_L2_ProjectileSpeed.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherUpgrade_P2_L3_PiercingCrossbow.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherUpgrade_P2_L3_PiercingCrossbow.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/ArcherUpgrade_P2_L4_HeavyBolts.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/ArcherUpgrade_P2_L4_HeavyBolts.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/Archer_Arrow.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/Archer_Arrow.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/archer/Archer_CrossbowBolt.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/archer/Archer_CrossbowBolt.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/celestial_void/backdrop.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/celestial_void/backdrop.svg",
-        "smoothed": true,
         "userAdded": true
       },
       {
@@ -1016,14 +204,6 @@
         "kind": "image",
         "metadata": "",
         "name": "assets/celestial_void/ground.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/celestial_void/Lunar_Ruin.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/celestial_void/Lunar_Ruin.png",
         "smoothed": true,
         "userAdded": true
       },
@@ -1108,14 +288,6 @@
         "userAdded": true
       },
       {
-        "file": "assets/celestial_void/Purple_Shrub.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/celestial_void/Purple_Shrub.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
         "file": "assets/celestial_void/range.svg",
         "kind": "image",
         "metadata": "",
@@ -1188,33 +360,9 @@
         "userAdded": true
       },
       {
-        "file": "assets/celestial_void/ui/track.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/celestial_void/ui/track.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/celestial_void/ui/thumb.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/celestial_void/ui/thumb.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
         "kind": "image",
         "name": "assets/celestial_void/island/Nebula.png",
         "file": "assets/celestial_void/island/Nebula.png",
-        "smoothed": true,
-        "userAdded": true,
-        "metadata": ""
-      },
-      {
-        "kind": "image",
-        "name": "assets/celestial_void/island/Terrain.png",
-        "file": "assets/celestial_void/island/Terrain.png",
         "smoothed": true,
         "userAdded": true,
         "metadata": ""
@@ -1992,6 +1140,58 @@
         "name": "assets/nova_wisp/NovaWisp_Up.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/ui/track.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/ui/track.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/celestial_void/ui/thumb.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/ui/thumb.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/void_hound/VoidHound_Right_Atlas.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/void_hound/VoidHound_Right_Atlas.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/void_hound/VoidHound_Left_Atlas.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/void_hound/VoidHound_Left_Atlas.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/void_hound/VoidHound_Down_Atlas.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/void_hound/VoidHound_Down_Atlas.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/void_hound/VoidHound_Up_Atlas.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/void_hound/VoidHound_Up_Atlas.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ]
   },
@@ -2010,12 +1210,12 @@
   "externalEvents": [],
   "tests": [
     {
-      "description": "Picking a tile type in the toolbar shows what is about to be placed, and picking it again stops placing.",
-      "lastRunAt": 1791302544077,
+      "description": "Star Cannon selection toggles the single placement builder.",
+      "lastRunAt": 0,
       "lastRunDurationMs": 370,
       "lastRunFramesExecuted": 20,
-      "lastRunStatus": "passed",
-      "name": "Picking a tile type",
+      "lastRunStatus": "not-run",
+      "name": "Picking Star Cannon",
       "type": "gameplay",
       "source": [
         "// Picking a tile type in the toolbar shows what is about to be placed.",
@@ -2032,7 +1232,7 @@
         "",
         "const buttons = harness.getObjects('TileType_Button');",
         "harness.assert(buttons.length > 0, 'The toolbar has tile types to pick from.');",
-        "const button = buttons[0];",
+        "harness.assert(buttons.length === 1, \"Only Star Cannon is available.\");\nconst button = buttons[0];",
         "console.log(",
         "  'buttons=' + JSON.stringify(buttons.map((one) => one.animation)) +",
         "    ' layer=' + JSON.stringify(button.layer)",
@@ -2071,159 +1271,12 @@
         "  'Picking the same tile type again stops placing.'",
         ");"
       ]
-    },
-    {
-      "description": "With a tile type picked, clicking a buildable cell places that tile on the grid, and clicking it again does not stack a second one.",
-      "lastRunAt": 1791302545389,
-      "lastRunDurationMs": 545,
-      "lastRunFramesExecuted": 27,
-      "lastRunStatus": "passed",
-      "name": "Placing a tile on the board",
-      "type": "gameplay",
-      "source": [
-        "await harness.goToScene('Game Scene');",
-        "harness.watch('TilePlacement_Indicator');",
-        "const getIndicator = () => harness.getObjects('TilePlacement_Indicator')[0];",
-        "const placedTiles = () => ['Tower','ShotgunTower','RocketTower'].reduce((t,n)=>t+harness.getObjects(n).length,0);",
-        "await harness.stepFrames(5);",
-        "// Pick cheapest affordable tower (Tower 100) so starting Money 200 always allows placement",
-        "let button = harness.getObjects('TileType_Button').find(b=>b.animation==='Tower') || harness.getObjects('TileType_Button')[0];",
-        "const tileType = button.animation;",
-        "harness.assert(placedTiles()===0, 'The board starts empty.');",
-        "const clickAt = async (x,y,layer)=>{ harness.setMousePosition(x,y,layer); await harness.stepFrames(2); harness.setMouseButtonPressed(true); await harness.stepFrames(2); harness.setMouseButtonPressed(false); await harness.stepFrames(3); };",
-        "await clickAt(button.centerX, button.centerY, button.layer);",
-        "harness.assert(getIndicator().hidden===false, 'A tile type is picked ('+tileType+').');",
-        "let placedAtX=null, placedAtY=null;",
-        "for(let x=320;x<=960 && placedAtX===null;x+=64){ for(let y=192;y<=448 && placedAtX===null;y+=64){ await clickAt(x,y,''); if(placedTiles()>0){placedAtX=x;placedAtY=y;} } }",
-        "console.log('placedAt='+placedAtX+','+placedAtY+' tiles='+placedTiles());",
-        "harness.assert(placedAtX!==null, 'Clicking a buildable cell of the board places the picked tile there.');",
-        "harness.assert(harness.getObjects(tileType).length===1, 'Placed type matches picked type');",
-        "const placed = harness.getObjects(tileType)[0];",
-        "harness.assert(placed.x%64===0 && placed.y%64===0, 'Tile placed on grid at '+Math.round(placed.x)+','+Math.round(placed.y));",
-        "await clickAt(placedAtX,placedAtY,'');",
-        "console.log('afterSecondClick: tiles='+placedTiles());",
-        "harness.assert(placedTiles()===1, 'Clicking occupied cell does not stack ('+placedTiles()+' tiles)');"
-      ]
-    },
-    {
-      "description": "Place a basic tower, start wave 1, verify towers auto-shoot and kill all enemies.",
-      "lastRunAt": 1791302547074,
-      "lastRunDurationMs": 1047,
-      "lastRunFramesExecuted": 645,
-      "lastRunStatus": "passed",
-      "name": "TowerDefenseCore",
-      "type": "gameplay",
-      "source": [
-        "await harness.goToScene('Game Scene');",
-        "await harness.stepFrames(5);",
-        "const money0 = harness.getSceneVariable('Money')?.value;",
-        "harness.assert(money0 === 200, 'Money starts at 200, got '+money0);",
-        "const btns = harness.getObjects('TileType_Button');",
-        "const towerBtn = btns.find(b=>b.animation==='Tower');",
-        "harness.assert(!!towerBtn, 'Tower button exists');",
-        "const clickAt = async (x,y,layer)=>{ harness.setMousePosition(x,y,layer); await harness.stepFrames(2); harness.setMouseButtonPressed(true); await harness.stepFrames(2); harness.setMouseButtonPressed(false); await harness.stepFrames(3); };",
-        "await clickAt(towerBtn.centerX, towerBtn.centerY, towerBtn.layer);",
-        "let ind = harness.getObjects('TilePlacement_Indicator')[0];",
-        "harness.assert(ind.hidden===false, 'Indicator visible after Tower pick');",
-        "// find buildable cell",
-        "let px=null, py=null;",
-        "for(let x=320;x<=960 && px===null;x+=64){ for(let y=192;y<=448 && px===null;y+=64){ await clickAt(x,y,''); if(harness.getObjects('Tower').length>0){px=x;py=y;} } }",
-        "harness.assert(px!==null, 'Tower placed on buildable cell');",
-        "harness.assert(harness.getSceneVariable('Money')?.value===100, 'Money 200-100=100 after Tower, got '+harness.getSceneVariable('Money')?.value);",
-        "harness.setKeyPressed('Space', true); await harness.stepFrames(2); harness.setKeyPressed('Space', false); await harness.stepFrames(2);",
-        "harness.assert(harness.getSceneVariable('Wave')?.value===1, 'Wave 1 started');",
-        "const moneyBeforeWave = harness.getSceneVariable('Money')?.value;",
-        "const killed = await harness.stepUntil(()=>harness.getObjects('Enemy').length===0 && harness.getSceneVariable('EnemiesToSpawn')?.value===0, {maxFrames:2400});",
-        "harness.assert(killed, 'Wave 1 enemies all killed by towers');",
-        "harness.assert(harness.getSceneVariable('Money')?.value>moneyBeforeWave, 'Money increased from kills (+15 each)');",
-        "harness.assert(harness.getSceneVariable('WaveActive')?.value===false, 'Wave ended');",
-        "harness.takeScreenshot && await harness.takeScreenshot('core-done');"
-      ]
-    },
-    {
-      "description": "Shotgun placement and cost, rocket cost gate, S-path movement, wave cleared by shotgun.",
-      "lastRunAt": 1791302570228,
-      "lastRunDurationMs": 1211,
-      "lastRunFramesExecuted": 657,
-      "lastRunStatus": "passed",
-      "name": "TowerTypesAndSPath",
-      "type": "gameplay",
-      "source": [
-        "await harness.goToScene('Game Scene');",
-        "await harness.stepFrames(5);",
-        "const btns = harness.getObjects('TileType_Button');",
-        "const sgBtn = btns.find(b=>b.animation==='ShotgunTower');",
-        "harness.assert(!!sgBtn, 'Shotgun button exists');",
-        "const clickAt = async (x,y,layer)=>{ harness.setMousePosition(x,y,layer); await harness.stepFrames(2); harness.setMouseButtonPressed(true); await harness.stepFrames(2); harness.setMouseButtonPressed(false); await harness.stepFrames(3); };",
-        "await clickAt(sgBtn.centerX, sgBtn.centerY, sgBtn.layer);",
-        "let ind = harness.getObjects('TilePlacement_Indicator')[0];",
-        "harness.assert(ind.hidden===false, 'Indicator visible after shotgun pick');",
-        "await clickAt(600,192,'');",
-        "// if blocked (path), scan for a free cell",
-        "if(harness.getObjects('ShotgunTower').length===0){",
-        " for(let x=320;x<=960 && harness.getObjects('ShotgunTower').length===0;x+=64){ for(let y=192;y<=448 && harness.getObjects('ShotgunTower').length===0;y+=64){ await clickAt(x,y,''); } }",
-        "}",
-        "harness.assert(harness.getObjects('ShotgunTower').length===1, 'ShotgunTower placed');",
-        "harness.assert(harness.getSceneVariable('Money')?.value===50, 'Money 200-150=50 after shotgun, got '+harness.getSceneVariable('Money')?.value);",
-        "const rkBtn = harness.getObjects('TileType_Button').find(b=>b.animation==='RocketTower');",
-        "await clickAt(rkBtn.centerX, rkBtn.centerY, rkBtn.layer);",
-        "await clickAt(300,380,'');",
-        "harness.assert(harness.getObjects('RocketTower').length===0, 'Rocket too expensive with 50g');",
-        "harness.setKeyPressed('Space', true); await harness.stepFrames(2); harness.setKeyPressed('Space', false); await harness.stepFrames(2);",
-        "await harness.stepFrames(80);",
-        "const enemies = harness.getObjects('Enemy');",
-        "harness.assert(enemies.length>0, 'Enemies spawned');",
-        "const e = enemies[0];",
-        "harness.assert(e.y<160, 'Enemy on top path segment, y='+e.y);",
-        "harness.assert(e.x>-40, 'Enemy moving right, x='+e.x);",
-        "const cleared = await harness.stepUntil(()=>harness.getObjects('Enemy').length===0 && harness.getSceneVariable('EnemiesToSpawn')?.value===0, {maxFrames:2500});",
-        "harness.assert(cleared, 'Wave cleared by shotgun tower');",
-        "harness.assert(harness.getSceneVariable('Lives')?.value===10, 'No lives lost');"
-      ]
-    },
-    {
-      "description": "Final placement verification.",
-      "lastRunAt": 1791302495695,
-      "lastRunDurationMs": 556,
-      "lastRunFramesExecuted": 39,
-      "lastRunStatus": "passed",
-      "name": "PathPlaceCheck",
-      "type": "gameplay",
-      "source": [
-        "await harness.goToScene('Game Scene');",
-        "await harness.stepFrames(10);",
-        "await harness.takeScreenshot('final-map');",
-        "const btns=harness.getObjects('TileType_Button');",
-        "const towerBtn=btns.find(b=>b.animation==='Tower');",
-        "const clickAt=async(x,y,layer)=>{harness.setMousePosition(x,y,layer);await harness.stepFrames(2);harness.setMouseButtonPressed(true);await harness.stepFrames(2);harness.setMouseButtonPressed(false);await harness.stepFrames(3);};",
-        "await clickAt(towerBtn.centerX,towerBtn.centerY,towerBtn.layer);",
-        "await clickAt(448,192,'');",
-        "harness.assert(harness.getObjects('Tower').length===1,'tower places on grass');",
-        "const n0=harness.getObjects('Tower').length;",
-        "await clickAt(448,64,'');",
-        "harness.assert(harness.getObjects('Tower').length===n0,'dirt path blocked');",
-        "await clickAt(448,192,'');",
-        "harness.assert(harness.getObjects('Tower').length===n0,'stacking blocked');",
-        "await harness.takeScreenshot('final-placement');"
-      ]
     }
   ],
   "eventsFunctionsExtensions": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/buttonstates"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/snaptogrid"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/health"
-    },
-    {
-      "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/eventsFunctionsExtensions/firebullet"
     }
   ],
   "externalLayouts": []

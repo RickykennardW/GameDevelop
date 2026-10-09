@@ -48,15 +48,15 @@ if (!down && index.wasDown && index.pressed===hover && ["Towers","Monsters"].inc
 const data=game.getSceneAndExtensionsData(runtimeScene.getName()).sceneData;
 const catalog=sv.get("TowerShopCatalog").toJSObject();
 const archetypes=sv.get("EnemyTypes").toJSObject();
-const roles={Basic:"Basic cosmic enemy / No special ability",Normal:"General enemy",Fast:"Fast runner / low HP",Tank:"High HP / slow",Elite:"Durable and fast",Boss:"Heavy threat / slow"};
+const roles={Basic:"Basic cosmic enemy / No special ability",VoidHound:"Fast Enemy / Armor 0 / No special ability / Wave 4+"};
 const entries=index.category==="Towers" ? catalog.map(item=>{
   const definition=data.objects.find(o=>o.name===item.Type); if(!definition)return null;
   const values=Object.fromEntries(definition.variables.map(v=>[v.name,v.value]));
   return {name:values.TowerName||item.Name,animation:item.IconAnimation||item.Type,damage:values.Damage,range:values.AttackRange,cooldown:values.AttackInterval,price:item.Cost,
-    projectileSpeed:values.ProjectileSpeed, special:item.Type==="StarCannonTower"?"Cosmic cannon / 2 UPGRADE PATHS.":item.Type==="ArcherTower"?"Ranged / Projectile. 2 UPGRADE PATHS.":item.Type==="RocketTower"?"Single-target rocket projectile.":"Single projectile per shot.",type:item.Type};
-}).filter(Boolean) : [...new Set(["Normal","Fast","Tank","Elite","Boss",...Object.keys(archetypes)])].filter(name=>archetypes[name]).map(name=>({name:archetypes[name].Name||name,...archetypes[name],role:roles[name]||"Enemy archetype"}));
+    projectileSpeed:values.ProjectileSpeed, special:"Cosmic cannon / 2 UPGRADE PATHS.",type:item.Type};
+}).filter(Boolean) : Object.keys(archetypes).filter(name=>archetypes[name]).map(name=>({name:archetypes[name].Name||name,...archetypes[name],role:roles[name]||"Enemy archetype"}));
 index.entries=entries;
-const heights=entries.map(e=>["ArcherTower","StarCannonTower"].includes(e.type)?470:148), offsets=[];let total=0;heights.forEach(h=>{offsets.push(total);total+=h+12;});
+const heights=entries.map(e=>e.type==="StarCannonTower"?470:148), offsets=[];let total=0;heights.forEach(h=>{offsets.push(total);total+=h+12;});
 const stride=160, maxScroll=Math.max(0,total-12-content.h);
 if(inside(content.x,content.y,content.w+16,content.h))index.scroll-=Math.sign(input.getMouseWheelDelta())*52;
 if(!down && index.wasDown && index.pressed===hover){if(hover==="Up")index.scroll-=stride;if(hover==="Down")index.scroll+=stride;}
@@ -88,7 +88,7 @@ entries.forEach((entry,i)=>{
   panel("card"+i,cx,cy,cw,cardHeight,"87;66;115",255,"IndexList",0);
   panel("portrait"+i,cx+12,cy+12,80,124,"115;86;145",255,"IndexList",1);
   const monster=index.category==="Monsters", sprite=index.ensure((monster?"monster":"tower")+i,monster?"IndexMonsterImage":"IndexTowerImage","IndexList",2);
-  sprite.setAnimationName(monster?(entry.Animation||"Idle Run"):entry.animation);
+  sprite.setAnimationName(monster?(entry.Animation||"NovaIdle_Down"):entry.animation);
   sprite.setColor(monster?entry.Tint:"255;255;255");
   // Fit each existing image to the portrait; no real gameplay unit is created.
   sprite.setScale(1);const ratio=sprite.getWidth()/Math.max(1,sprite.getHeight());
@@ -99,15 +99,15 @@ entries.forEach((entry,i)=>{
   const stats=monster?"HP: "+entry.HP+"     Speed: "+entry.Speed+"\nGold Reward: "+entry.Reward+" Gold":"Damage: "+entry.damage+"     Range: "+entry.range+"\nCooldown: "+Number(entry.cooldown).toFixed(2)+" s     Price: "+entry.price+" Gold";
   const statText=text("stats"+i,stats,cx+108,cy+44,cw-124,15,"218;206;241",false,"IndexList");
   const special=text("special"+i,(monster?"ROLE\n":"SPECIAL\n")+(monster?entry.role:entry.special),cx+108,cy+92,cw-124,13,"181;168;214",false,"IndexList");
-  if(["ArcherTower","StarCannonTower"].includes(entry.type)) {
-    const isStar=entry.type==="StarCannonTower",prefix=isStar?"star":"archer";
-    text(prefix+"Speed", (isStar?"Star speed: ":"Arrow speed: ")+entry.projectileSpeed+" px/s",cx+108,cy+130,cw-124,12,"181;168;214",false,"IndexList");
-    const cfg=sv.get(isStar?"StarCannonConfig":"ArcherConfig").toJSObject(), column=(cw-32)/2;
+  if(entry.type==="StarCannonTower") {
+    const isStar=entry.type==="StarCannonTower",prefix="star";
+    text(prefix+"Speed", "Star speed: "+entry.projectileSpeed+" px/s",cx+108,cy+130,cw-124,12,"181;168;214",false,"IndexList");
+    const cfg=sv.get("StarCannonConfig").toJSObject(), column=(cw-32)/2;
     cfg.Paths.forEach((path,p)=>{
       const px=cx+16+p*column;
       text(prefix+"Path"+p,path.Name,px,cy+164,column-12,13,"200;187;231",true,"IndexList");
       path.Upgrades.forEach((upgrade,n)=>{
-        const yy=cy+192+n*58,icon=index.ensure(prefix+"Upgrade"+p+n,"ArcherUpgradeIcon","IndexList",3);
+        const yy=cy+192+n*58,icon=index.ensure(prefix+"Upgrade"+p+n,"StarUpgradeIcon","IndexList",3);
         icon.setAnimationName(upgrade.Icon);icon.setPosition(px,yy);icon.setWidth(40);icon.setHeight(40);icon.hide(false);
         text(prefix+"UpgradeName"+p+n,"Lv"+(n+1)+" "+upgrade.Name,px+46,yy,column-56,11,"237;228;255",true,"IndexList");
         text(prefix+"UpgradeDesc"+p+n,upgrade.Description+"\n"+upgrade.Cost+" Gold",px+46,yy+16,column-56,11,"181;168;214",false,"IndexList");
