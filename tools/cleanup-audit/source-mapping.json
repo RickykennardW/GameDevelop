@@ -132,5 +132,13 @@
       2
     ],
     "void-hound-runtime.js"
+  ],
+  [
+    10,
+    [
+      0,
+      3
+    ],
+    "void-common-runtime.js"
   ]
 ]

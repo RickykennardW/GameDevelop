@@ -1,0 +1,15 @@
+PASS native exported GDevelop runtime loaded
+PASS twelve native views:3species x4directions,48px stable collider/no rotation
+PASS actual150/120/220HP initialized
+PASS native Index preserves old entries and adds exactly3
+PASS actual120-frame mixed40-enemy performance measured
+PASS actual200 mixed-enemy stress benchmark measured
+PASS native deletion cleans all common actors/owned healthbars
+PASS nativeWave7 exact15Nova/8Hound/2Sentinel/2Guard/1Brute sequential spawn
+PASS actualfive-second mixed-wave animation recorded
+PASS smallStarShop/native purchase/placement300 unchanged
+PASS actualStar50 damage minus existing10armor yields40
+PASS nativeGuarddeath disables collision and pays8once
+PASS native death finishes/8reward/150actualDamageDealt
+PASS map/camera/route/smallStarShop unchanged
+PASS console0 errors/missing assets/uncaught exceptions

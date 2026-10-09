@@ -54,7 +54,7 @@ const entries=index.category==="Towers" ? catalog.map(item=>{
   const values=Object.fromEntries(definition.variables.map(v=>[v.name,v.value]));
   return {name:values.TowerName||item.Name,animation:item.IconAnimation||item.Type,damage:values.Damage,range:values.AttackRange,cooldown:values.AttackInterval,price:item.Cost,
     projectileSpeed:values.ProjectileSpeed, special:"Cosmic cannon / 2 UPGRADE PATHS.",type:item.Type};
-}).filter(Boolean) : Object.keys(archetypes).filter(name=>archetypes[name]).map(name=>({name:archetypes[name].Name||name,...archetypes[name],role:roles[name]||"Enemy archetype"}));
+}).filter(Boolean) : ["Basic","VoidHound","VoidGuard","VoidSentinel","VoidBrute"].filter(name=>archetypes[name]).map(name=>({name:archetypes[name].Name||name,...archetypes[name],role:roles[name]||(archetypes[name].Role+" / Armor "+archetypes[name].Armor+" / No special ability / Wave "+archetypes[name].MinimumWave+"+")}));
 index.entries=entries;
 const heights=entries.map(e=>e.type==="StarCannonTower"?470:148), offsets=[];let total=0;heights.forEach(h=>{offsets.push(total);total+=h+12;});
 const stride=160, maxScroll=Math.max(0,total-12-content.h);

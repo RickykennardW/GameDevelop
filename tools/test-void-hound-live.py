@@ -49,7 +49,7 @@ async def main():
   ok(await js('nova.getBehavior("Health").Health()===100&&!!nova.__novaRig'),'Nova100HP/animation rig retained')
   await screenshot('Void_Hound_Four_Directions')
   await click(await js('P(O("ShopIndexButton"))'));await click(await js('P(S.__unitIndex.objects.tab1)'))
-  ok(await js('S.__unitIndex.entries.length===2&&S.__unitIndex.entries[1].name==="Void Hound"&&S.__unitIndex.entries[1].HP===60&&S.__unitIndex.entries[1].Speed===135&&S.__unitIndex.entries[1].Reward===7'),'native Index shows two canonical enemies')
+  ok(await js('S.__unitIndex.entries.length===5&&S.__unitIndex.entries[1].name==="Void Hound"&&S.__unitIndex.entries[1].HP===60&&S.__unitIndex.entries[1].Speed===135&&S.__unitIndex.entries[1].Reward===7'),'native Index shows five canonical enemies')
   await screenshot('Index_Nova_And_Void_Hound');await click(await js('P(S.__unitIndex.objects.buttonClose)'))
   await js('S.getObjects("Enemy").slice().forEach(e=>e.deleteFromScene());V.get("Wave").setNumber(3);V.get("LastRewardedWave").setNumber(3);true');await frames()
   await click(await js('P(O("ShopPlayButton"))'));await click(await js('P(O("ShopPlayButton"))'))

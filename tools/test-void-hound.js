@@ -1,7 +1,7 @@
 step(5);const h=scene.__voidHound,n=scene.__novaWisp,star=scene.__starCannon,p=scene.__freePlacement,near=(a,b)=>Math.abs(a-b)<.0001;
 const clear=()=>{for(const name of ['Enemy','NovaWispDeathVisual','StarCannonProjectile','StarCannonImpact'])get(name).slice().forEach(e=>e.deleteFromScene());step();};
 const make=(x=800,y=550)=>{const e=scene.createObject('Enemy');e.getVariables().get('EnemyType').setString('VoidHound');h.ensure(e);e.getVariables().get('MoveSpeed').setNumber(0);e.setPosition(x-24,y-24);return e;};
-const types=vars.get('EnemyTypes').toJSObject();ok(Object.keys(types).join(',')==='Basic,VoidHound','exactly two archetypes, one new Void Hound');
+const types=vars.get('EnemyTypes').toJSObject();ok(Object.keys(types).sort().join(',')==='Basic,VoidBrute,VoidGuard,VoidHound,VoidSentinel','exactly five archetypes, original Hound fixed');
 ok(h.config.HP===60&&h.config.Speed===135&&h.config.Armor===0&&h.config.Reward===7&&h.config.SpecialAbility==='None'&&h.config.MinimumWave===4,'exact fixed Hound stats/no additional ability');
 for(const direction of ['Right','Left','Down','Up']){
  ok(h.config.Views[direction].Frames.length===16,'four states x four atlas poses '+direction);
@@ -27,7 +27,7 @@ ok(e.getHitBoxes().length>0,'living Hound has compact body-only native collision
 clear();const t=scene.createObject('StarCannonTower'),tv=t.getVariables();p.positionSprite(t,'StarCannonTower',700,550);tv.get('FootprintX').setNumber(700);tv.get('FootprintY').setNumber(550);tv.get('FootprintRadius').setNumber(46);tv.get('TowerId').setNumber(990001);step();t.__starCooldown=100000;
 e=make(840,510);step();t.__starFacing=star.bearing(t,e);const gold=v('Money');ok(star.fire(t,e),'existing Star targeting/fire accepts Void Hound');
 for(let i=0;i<60&&e.getBehavior('Health').Health()===60;i++)step();
-ok(e.getBehavior('Health').Health()===10&&e.__houndRig.mode==='Hit'&&e.__houndState.hit>0&&v('Money')===gold,'first actual projectile60â†’10 and short hit flash/no reward');
+ok(e.getBehavior('Health').Health()===10&&e.__houndRig.mode==='Hit'&&e.__houndState.hit>0&&v('Money')===gold,'first actual projectile60ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢10 and short hit flash/no reward');
 e.getVariables().get('MoveSpeed').setNumber(135);const x=e.getCenterXInScene(),y=e.getCenterYInScene();step();ok(Math.hypot(e.getCenterXInScene()-x,e.getCenterYInScene()-y)>0,'hit does not stop path movement');e.getVariables().get('MoveSpeed').setNumber(0);t.__starFacing=star.bearing(t,e);star.fire(t,e);
 for(let i=0;i<60&&!e.__houndState.dying;i++)step();
 ok(e.__houndState.dying&&get('Enemy').includes(e)&&v('Money')===gold+7,'death retained until dissolve completes;7Gold awarded once');
@@ -40,7 +40,7 @@ clear();const route=vars.get('MonsterPathPoints').toJSObject();e=make(route[0].X
 for(let i=0;i<4000&&get('Enemy').includes(e);i++){scene.renderAndStep(100);input.onFrameEnded();if(get('Enemy').includes(e))directionsSeen.add(e.getVariables().get('Facing').getAsString());}
 ok(!get('Enemy').includes(e)&&v('Lives')===routeLives-1&&v('Money')===routeGold&&directionsSeen.has('Right')&&directionsSeen.has('Left')&&directionsSeen.has('Down'),'complete unchanged82-waypoint zigzag at135 through all bends, one base damage/no reward');
 const nova=scene.createObject('Enemy');n.ensure(nova);nova.getVariables().get('MoveSpeed').setNumber(0);step();ok(nova.getBehavior('Health').Health()===100&&nova.__novaRig&&nova.getAnimationName().startsWith('Nova'),'Nova health/animation rig preserved');clear();
-vars.get('IndexOpen').setBoolean(true);step();scene.__unitIndex.category='Monsters';step();ok(scene.__unitIndex.entries.length===2&&scene.__unitIndex.entries[1].name==='Void Hound'&&scene.__unitIndex.entries[1].Speed===135,'Index displays canonical Hound stats beside Nova');
+vars.get('IndexOpen').setBoolean(true);step();scene.__unitIndex.category='Monsters';step();ok(scene.__unitIndex.entries.length===5&&scene.__unitIndex.entries[1].name==='Void Hound'&&scene.__unitIndex.entries[1].Speed===135,'Index displays canonical Hound stats beside Nova');
 const portrait=scene.__unitIndex.cards[1].sprite;ok(portrait.getRendererObject().texture===h.texture('Down',0,0),'Index renders one portrait cell without atlas leakage');vars.get('IndexOpen').setBoolean(false);step();
 ok(scene.__towerShopUI.cards.length===1&&scene.__towerShopUI.cards[0].background.getWidth()===84,'small single-Star shop unchanged');
 lines.push('ALL VOID HOUND TESTS PASSED');output.textContent=lines.join('\n');document.title='PASS '+(lines.length-1)+' Void Hound checks';

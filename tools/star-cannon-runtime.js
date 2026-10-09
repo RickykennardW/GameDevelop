@@ -105,7 +105,7 @@ star.render=()=>{
  };
  star.deal=(owner,enemy,damage)=>{
   const health=enemy.getBehavior('Health');if(health.IsDead())return 0;
-  const before=Math.max(0,health.Health());health.Hit(damage,false,false);
+  const before=Math.max(0,health.Health());health.Hit(damage,false,enemy.getVariables().get('Armor').getAsNumber()>0);
   const actual=Math.max(0,before-Math.max(0,health.Health()));
   if(owner)owner.getVariables().get('DamageDealt').add(actual);
   return actual;

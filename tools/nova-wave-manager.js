@@ -24,8 +24,20 @@ if (idle && !yes("GameOver") && num("Lives") > 0 && num("Wave") < 50 && (manual 
   const distribution=sv.get("EnemyWaveDistribution").toJSObject();
   const total=wave*distribution.TotalMultiplier;
   const hounds=wave<distribution.HoundMinimumWave?0:Math.min(total,(Math.floor((wave-distribution.HoundMinimumWave)/distribution.HoundIncreaseEvery)+1)*distribution.HoundsPerStep);
-  // Even deterministic interleaving retains sequential spawn timing.
-  const queue=Array.from({length:total},(_,i)=>Math.floor((i+1)*hounds/total)>Math.floor(i*hounds/total)?"VoidHound":"Basic");
+  const counts={VoidHound:hounds};let remaining=total-hounds-1;
+  for(const entry of distribution.AddedTypes||[]){
+   const wanted=wave<entry.MinimumWave?0:entry.CountPerStep*(1+Math.floor((wave-entry.MinimumWave)/entry.IncreaseEvery));
+   counts[entry.Type]=Math.max(0,Math.min(wanted,remaining));remaining-=counts[entry.Type];
+  }
+  counts.Basic=total-Object.values(counts).reduce((a,b)=>a+b,0);
+  // Preserve every original Hound slot; fairly distribute new types among Nova slots.
+  const queue=[],used=Object.fromEntries(Object.keys(counts).map(type=>[type,0]));let otherIndex=0;
+  for(let i=0;i<total;i++){
+   if(Math.floor((i+1)*hounds/total)>Math.floor(i*hounds/total)){queue.push('VoidHound');used.VoidHound++;continue;}
+   let chosen='',best=-Infinity;
+   for(const [type,count] of Object.entries(counts))if(type!=='VoidHound'&&used[type]<count){const deficit=(otherIndex+1)*count/(total-hounds)-used[type];if(deficit>best){best=deficit;chosen=type;}}
+   queue.push(chosen);used[chosen]++;otherIndex++;
+  }
   state.queue=queue;state.index=0;state.elapsed=0;state.wait=3;
   sv.get("Wave").setNumber(wave);sv.get("SpawnInterval").setNumber(config.SpawnInterval);
   sv.get("EnemiesToSpawn").setNumber(queue.length);sv.get("WaveActive").setBoolean(true);message.hide();

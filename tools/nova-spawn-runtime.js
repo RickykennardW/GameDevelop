@@ -8,11 +8,12 @@ if (state && sv.get("WaveActive").getAsBoolean() && !sv.get("GameOver").getAsBoo
     const enemy=runtimeScene.createObject("Enemy"), vars=enemy.getVariables();
     vars.get("EnemyType").setString(type);vars.get("MoveSpeed").setNumber(stats.Speed);vars.get("GoldReward").setNumber(stats.Reward);
     enemy.setWidth(48);enemy.setHeight(48);enemy.setAngle(0);enemy.flipX(false);enemy.setColor("255;255;255");
-    const prefix=type==="VoidHound"?"Hound":"Nova";vars.get("EnemyName").setString(stats.Name);vars.get("Armor").setNumber(stats.Armor);vars.get("Facing").setString("Right");vars.get("MovementAnimation").setString(prefix+"Move_Right");vars.get("IdleAnimation").setString(prefix+"Idle_Right");vars.get("AnimationReferenceSpeed").setNumber(stats.Speed);
+    const prefix=stats.AnimationPrefix||(type==="VoidHound"?"Hound":"Nova");vars.get("EnemyName").setString(stats.Name);vars.get("Armor").setNumber(stats.Armor);vars.get("Facing").setString("Right");vars.get("MovementAnimation").setString(prefix+"Move_Right");vars.get("IdleAnimation").setString(prefix+"Idle_Right");vars.get("AnimationReferenceSpeed").setNumber(stats.Speed);
     const point=sv.get("MonsterPathPoints").getChild(0);
-    enemy.setPosition(point.getChild("X").getAsNumber()-enemy.getWidth()/2,point.getChild("Y").getAsNumber()-enemy.getHeight()/2);
     enemy.setAnimationName(vars.get("MovementAnimation").getAsString());
-    enemy.getBehavior("Health").SetMaxHealth(stats.HP);enemy.getBehavior("Health").SetHealth(stats.HP);
+    enemy.setWidth(48);enemy.setHeight(48);
+    enemy.setPosition(point.getChild("X").getAsNumber()-24,point.getChild("Y").getAsNumber()-24);
+    enemy.getBehavior("Health").SetMaxHealth(stats.HP);enemy.getBehavior("Health").SetHealth(stats.HP);enemy.getBehavior("Health").SetFlatDamageReduction(stats.Armor);enemy.getBehavior("Health").SetPercentDamageReduction(0);
     sv.get("EnemiesToSpawn").setNumber(state.queue.length-state.index);
   }
 }

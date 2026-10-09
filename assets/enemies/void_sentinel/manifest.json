@@ -1,0 +1,2199 @@
+{
+  "enemyID": "VoidSentinel",
+  "mode": "imagegen illustration + permitted PIL extraction/resize/padding",
+  "nativeFrameSize": [
+    128,
+    128
+  ],
+  "categories": [
+    "Idle",
+    "Move",
+    "Hit",
+    "Death"
+  ],
+  "directions": [
+    "Up",
+    "Down",
+    "Left",
+    "Right"
+  ],
+  "frames": [
+    {
+      "file": "assets/enemies/void_sentinel/Idle_Down_0.png",
+      "state": "Idle",
+      "direction": "Down",
+      "frame": 0,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        0,
+        0,
+        315,
+        312
+      ],
+      "sourceScale": 0.28921470174733904,
+      "alphaBBox": [
+        30,
+        17,
+        109,
+        104
+      ],
+      "zeroAlphaFraction": 0.73602294921875,
+      "bytes": 13482,
+      "sha256": "083e34eaa93b194cb27a95e8008823cf721f6dc14ebaad9fbe627a2d0bedc0d8"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Idle_Down_1.png",
+      "state": "Idle",
+      "direction": "Down",
+      "frame": 1,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        315,
+        0,
+        315,
+        312
+      ],
+      "sourceScale": 0.28921470174733904,
+      "alphaBBox": [
+        18,
+        16,
+        109,
+        104
+      ],
+      "zeroAlphaFraction": 0.72064208984375,
+      "bytes": 13755,
+      "sha256": "b302717a0fd6ec1dd9030eb69ef29a38e3be9ea425516cc16e1850cea063c94b"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Idle_Down_2.png",
+      "state": "Idle",
+      "direction": "Down",
+      "frame": 2,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        630,
+        0,
+        316,
+        312
+      ],
+      "sourceScale": 0.28921470174733904,
+      "alphaBBox": [
+        18,
+        14,
+        109,
+        104
+      ],
+      "zeroAlphaFraction": 0.72760009765625,
+      "bytes": 13753,
+      "sha256": "279d1c12642e34a6576a4f13966d83b0cb5ff76b6f5699b89efef43ce0dd88bf"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Idle_Down_3.png",
+      "state": "Idle",
+      "direction": "Down",
+      "frame": 3,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        946,
+        0,
+        315,
+        312
+      ],
+      "sourceScale": 0.28921470174733904,
+      "alphaBBox": [
+        19,
+        19,
+        100,
+        104
+      ],
+      "zeroAlphaFraction": 0.74090576171875,
+      "bytes": 13437,
+      "sha256": "191d94565992984b49b89f550a61608cdebf671cc5d79936722630493cf1fbe2"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Move_Down_0.png",
+      "state": "Move",
+      "direction": "Down",
+      "frame": 0,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        0,
+        312,
+        315,
+        312
+      ],
+      "sourceScale": 0.28921470174733904,
+      "alphaBBox": [
+        23,
+        14,
+        109,
+        104
+      ],
+      "zeroAlphaFraction": 0.72967529296875,
+      "bytes": 13550,
+      "sha256": "5d6493ff4190bdc71fcd85064a6187fd12acc0d206ab80eb6577d33cb12887d4"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Move_Down_1.png",
+      "state": "Move",
+      "direction": "Down",
+      "frame": 1,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        315,
+        312,
+        315,
+        312
+      ],
+      "sourceScale": 0.28921470174733904,
+      "alphaBBox": [
+        18,
+        14,
+        109,
+        104
+      ],
+      "zeroAlphaFraction": 0.7000732421875,
+      "bytes": 13950,
+      "sha256": "eb9a42d822a2d4f53fd8d16b58fe0e6f6d51e0128814a9a6820eea0e382d8877"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Move_Down_2.png",
+      "state": "Move",
+      "direction": "Down",
+      "frame": 2,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        630,
+        312,
+        316,
+        312
+      ],
+      "sourceScale": 0.28921470174733904,
+      "alphaBBox": [
+        18,
+        14,
+        109,
+        104
+      ],
+      "zeroAlphaFraction": 0.6942138671875,
+      "bytes": 14111,
+      "sha256": "6953418a5ba8467352d9f9c3df8b6580e362866f0d713ac808df725adc0575b9"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Move_Down_3.png",
+      "state": "Move",
+      "direction": "Down",
+      "frame": 3,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        946,
+        312,
+        315,
+        312
+      ],
+      "sourceScale": 0.28921470174733904,
+      "alphaBBox": [
+        18,
+        14,
+        102,
+        104
+      ],
+      "zeroAlphaFraction": 0.718994140625,
+      "bytes": 13803,
+      "sha256": "242e137455ce7b645c61d8dbb19b8e5ccead668b41f72282658bf342d06086ee"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Hit_Down_0.png",
+      "state": "Hit",
+      "direction": "Down",
+      "frame": 0,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        0,
+        624,
+        315,
+        295
+      ],
+      "sourceScale": 0.28921470174733904,
+      "alphaBBox": [
+        18,
+        15,
+        109,
+        100
+      ],
+      "zeroAlphaFraction": 0.736083984375,
+      "bytes": 13489,
+      "sha256": "d42ae21f8c7a7e44e99673e8a80a0517357f806b076b7316deb86a53dbbe6c01"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Hit_Down_1.png",
+      "state": "Hit",
+      "direction": "Down",
+      "frame": 1,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        315,
+        624,
+        315,
+        295
+      ],
+      "sourceScale": 0.28921470174733904,
+      "alphaBBox": [
+        18,
+        15,
+        109,
+        100
+      ],
+      "zeroAlphaFraction": 0.72589111328125,
+      "bytes": 13206,
+      "sha256": "cf2501eb8ba948b35179153bfbb73700d67b7d99c36ad04797bac807f7406f08"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Hit_Down_2.png",
+      "state": "Hit",
+      "direction": "Down",
+      "frame": 2,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        630,
+        624,
+        316,
+        295
+      ],
+      "sourceScale": 0.28921470174733904,
+      "alphaBBox": [
+        18,
+        15,
+        109,
+        100
+      ],
+      "zeroAlphaFraction": 0.69342041015625,
+      "bytes": 13946,
+      "sha256": "00f7fb4b2f4677e6147f7ae652b7c1d671e7c5181333b73cd6e1edc0d2421816"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Hit_Down_3.png",
+      "state": "Hit",
+      "direction": "Down",
+      "frame": 3,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        946,
+        624,
+        315,
+        295
+      ],
+      "sourceScale": 0.28921470174733904,
+      "alphaBBox": [
+        18,
+        15,
+        105,
+        100
+      ],
+      "zeroAlphaFraction": 0.7205810546875,
+      "bytes": 13642,
+      "sha256": "c08f835ab993cb66d613077751973092f550f44b4318b2f6d6b3f26ee934a64b"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Death_Down_0.png",
+      "state": "Death",
+      "direction": "Down",
+      "frame": 0,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        0,
+        919,
+        321,
+        328
+      ],
+      "sourceScale": 0.28921470174733904,
+      "alphaBBox": [
+        24,
+        10,
+        111,
+        97
+      ],
+      "zeroAlphaFraction": 0.70556640625,
+      "bytes": 15127,
+      "sha256": "57b9e8420dc500a8504fafc07417d83d5131cabd1d51c6aba6c9594798ab4290"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Death_Down_1.png",
+      "state": "Death",
+      "direction": "Down",
+      "frame": 1,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        321,
+        919,
+        309,
+        328
+      ],
+      "sourceScale": 0.28921470174733904,
+      "alphaBBox": [
+        20,
+        10,
+        109,
+        102
+      ],
+      "zeroAlphaFraction": 0.6983642578125,
+      "bytes": 15318,
+      "sha256": "faaf8768e8a4b0b2f6c540dd0d89f40511c54cfd9023a0ad6ec0cfc218e4253d"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Death_Down_2.png",
+      "state": "Death",
+      "direction": "Down",
+      "frame": 2,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        630,
+        919,
+        316,
+        328
+      ],
+      "sourceScale": 0.28921470174733904,
+      "alphaBBox": [
+        18,
+        10,
+        109,
+        100
+      ],
+      "zeroAlphaFraction": 0.68707275390625,
+      "bytes": 16132,
+      "sha256": "2204229293f878696bd56dcadcc1b11c5d4803dd45dcb12e31a7f66e80ebd3c4"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Death_Down_3.png",
+      "state": "Death",
+      "direction": "Down",
+      "frame": 3,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        946,
+        919,
+        315,
+        328
+      ],
+      "sourceScale": 0.28921470174733904,
+      "alphaBBox": [
+        18,
+        10,
+        100,
+        102
+      ],
+      "zeroAlphaFraction": 0.7713623046875,
+      "bytes": 10273,
+      "sha256": "5cdf9cbe1ffe9403739485e159ade3dcccacb1d7716beb96853a0a1383ea31b2"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Idle_Up_0.png",
+      "state": "Idle",
+      "direction": "Up",
+      "frame": 0,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        0,
+        0,
+        318,
+        310
+      ],
+      "sourceScale": 0.2863012790774737,
+      "alphaBBox": [
+        19,
+        15,
+        110,
+        104
+      ],
+      "zeroAlphaFraction": 0.61029052734375,
+      "bytes": 14407,
+      "sha256": "2eba3d2023b0baf85552376419fc655b9d8dfa4929d6b4e00fd874f31aab7686"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Idle_Up_1.png",
+      "state": "Idle",
+      "direction": "Up",
+      "frame": 1,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        318,
+        0,
+        317,
+        310
+      ],
+      "sourceScale": 0.2863012790774737,
+      "alphaBBox": [
+        19,
+        15,
+        110,
+        104
+      ],
+      "zeroAlphaFraction": 0.57342529296875,
+      "bytes": 14781,
+      "sha256": "e1f0863ec8fb6c1dc91bb641872647aba4726a479202726a4f46cc9bcaa72494"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Idle_Up_2.png",
+      "state": "Idle",
+      "direction": "Up",
+      "frame": 2,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        635,
+        0,
+        317,
+        310
+      ],
+      "sourceScale": 0.2863012790774737,
+      "alphaBBox": [
+        19,
+        15,
+        110,
+        104
+      ],
+      "zeroAlphaFraction": 0.57940673828125,
+      "bytes": 14604,
+      "sha256": "ecedfdbc3452b98b5b31a633837552e9efc7db488dba5a84894e930583835b5a"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Idle_Up_3.png",
+      "state": "Idle",
+      "direction": "Up",
+      "frame": 3,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        952,
+        0,
+        318,
+        310
+      ],
+      "sourceScale": 0.2863012790774737,
+      "alphaBBox": [
+        18,
+        15,
+        109,
+        104
+      ],
+      "zeroAlphaFraction": 0.59552001953125,
+      "bytes": 14088,
+      "sha256": "d2eb6f5041e8791e0f1fa7df6ccc900b18d204c20518e9a7f7186d31483a2e06"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Move_Up_0.png",
+      "state": "Move",
+      "direction": "Up",
+      "frame": 0,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        0,
+        310,
+        318,
+        310
+      ],
+      "sourceScale": 0.2863012790774737,
+      "alphaBBox": [
+        22,
+        15,
+        110,
+        104
+      ],
+      "zeroAlphaFraction": 0.578125,
+      "bytes": 13975,
+      "sha256": "a810c94bfed8b34fc2431d3dc4e17c87e8f7f724c4439f94e2dfdaf106e196c0"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Move_Up_1.png",
+      "state": "Move",
+      "direction": "Up",
+      "frame": 1,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        318,
+        310,
+        317,
+        310
+      ],
+      "sourceScale": 0.2863012790774737,
+      "alphaBBox": [
+        19,
+        15,
+        110,
+        104
+      ],
+      "zeroAlphaFraction": 0.5438232421875,
+      "bytes": 14059,
+      "sha256": "26edebdb625ffc4cc1d0ffe2c945ebdda3adee141510c75f201f8286260e1039"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Move_Up_2.png",
+      "state": "Move",
+      "direction": "Up",
+      "frame": 2,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        635,
+        310,
+        317,
+        310
+      ],
+      "sourceScale": 0.2863012790774737,
+      "alphaBBox": [
+        19,
+        15,
+        110,
+        104
+      ],
+      "zeroAlphaFraction": 0.540771484375,
+      "bytes": 14378,
+      "sha256": "52e5ca8dfb1ed4b63cb429b57084b3f9f2ccba7e6fe4541ee66cd53055f39a59"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Move_Up_3.png",
+      "state": "Move",
+      "direction": "Up",
+      "frame": 3,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        952,
+        310,
+        318,
+        310
+      ],
+      "sourceScale": 0.2863012790774737,
+      "alphaBBox": [
+        18,
+        15,
+        109,
+        104
+      ],
+      "zeroAlphaFraction": 0.56805419921875,
+      "bytes": 14027,
+      "sha256": "36d836cdf76cd6128d7524072f48c3f377b851e8d6d2f75948281c3bd3f84ee3"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Hit_Up_0.png",
+      "state": "Hit",
+      "direction": "Up",
+      "frame": 0,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        0,
+        620,
+        318,
+        291
+      ],
+      "sourceScale": 0.2863012790774737,
+      "alphaBBox": [
+        19,
+        15,
+        110,
+        98
+      ],
+      "zeroAlphaFraction": 0.5792236328125,
+      "bytes": 15314,
+      "sha256": "58e10561981ec86693dc4669b391563166112503211cef8a9b23d8768ea56c5d"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Hit_Up_1.png",
+      "state": "Hit",
+      "direction": "Up",
+      "frame": 1,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        318,
+        620,
+        317,
+        291
+      ],
+      "sourceScale": 0.2863012790774737,
+      "alphaBBox": [
+        19,
+        15,
+        110,
+        98
+      ],
+      "zeroAlphaFraction": 0.57025146484375,
+      "bytes": 14903,
+      "sha256": "99f1ae15e764c8de9cdb1223fc0dae793975f46ebc06aca1eccea353444d5c7a"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Hit_Up_2.png",
+      "state": "Hit",
+      "direction": "Up",
+      "frame": 2,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        635,
+        620,
+        317,
+        291
+      ],
+      "sourceScale": 0.2863012790774737,
+      "alphaBBox": [
+        19,
+        15,
+        110,
+        98
+      ],
+      "zeroAlphaFraction": 0.566162109375,
+      "bytes": 16167,
+      "sha256": "06f65dff6218b7083854205b7da974254a94764a45fd1059f54c5a50542d249d"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Hit_Up_3.png",
+      "state": "Hit",
+      "direction": "Up",
+      "frame": 3,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        952,
+        620,
+        318,
+        291
+      ],
+      "sourceScale": 0.2863012790774737,
+      "alphaBBox": [
+        18,
+        15,
+        109,
+        98
+      ],
+      "zeroAlphaFraction": 0.5859375,
+      "bytes": 14873,
+      "sha256": "315d236a8909a24320903058734f403d1d2633e058d6f51337c7628253799a0e"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Death_Up_0.png",
+      "state": "Death",
+      "direction": "Up",
+      "frame": 0,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        0,
+        911,
+        321,
+        328
+      ],
+      "sourceScale": 0.2863012790774737,
+      "alphaBBox": [
+        19,
+        10,
+        111,
+        104
+      ],
+      "zeroAlphaFraction": 0.587646484375,
+      "bytes": 17414,
+      "sha256": "f8048f12d5ef4840ee6ad34532ec86654ee834c36e1c547ff069db695c5cec22"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Death_Up_1.png",
+      "state": "Death",
+      "direction": "Up",
+      "frame": 1,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        321,
+        911,
+        314,
+        328
+      ],
+      "sourceScale": 0.2863012790774737,
+      "alphaBBox": [
+        20,
+        10,
+        110,
+        104
+      ],
+      "zeroAlphaFraction": 0.56402587890625,
+      "bytes": 16462,
+      "sha256": "c9aed10a0e1060bdca6a962aabe8b3ed3fc757ffd0b00ae3d24dc7139b70e09b"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Death_Up_2.png",
+      "state": "Death",
+      "direction": "Up",
+      "frame": 2,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        635,
+        911,
+        317,
+        328
+      ],
+      "sourceScale": 0.2863012790774737,
+      "alphaBBox": [
+        19,
+        10,
+        110,
+        104
+      ],
+      "zeroAlphaFraction": 0.5670166015625,
+      "bytes": 16516,
+      "sha256": "71ddd63d0eb20cf63dca5de70e647f1c2f723c090c036701269202199d034cb0"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Death_Up_3.png",
+      "state": "Death",
+      "direction": "Up",
+      "frame": 3,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        952,
+        911,
+        318,
+        328
+      ],
+      "sourceScale": 0.2863012790774737,
+      "alphaBBox": [
+        18,
+        10,
+        109,
+        104
+      ],
+      "zeroAlphaFraction": 0.61962890625,
+      "bytes": 14936,
+      "sha256": "c5e238eaa0d150febc011e4c670daf7bb99e384c97439cf2c7987e134bd722ad"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Idle_Left_0.png",
+      "state": "Idle",
+      "direction": "Left",
+      "frame": 0,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        0,
+        0,
+        315,
+        312
+      ],
+      "sourceScale": 0.29881718198796453,
+      "alphaBBox": [
+        27,
+        18,
+        111,
+        106
+      ],
+      "zeroAlphaFraction": 0.7325439453125,
+      "bytes": 12692,
+      "sha256": "27cf179a1d4dba5fd76b9572973d8eda593550071647529ea17ddde4f1f24ee0"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Idle_Left_1.png",
+      "state": "Idle",
+      "direction": "Left",
+      "frame": 1,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        315,
+        0,
+        315,
+        312
+      ],
+      "sourceScale": 0.29881718198796453,
+      "alphaBBox": [
+        17,
+        13,
+        111,
+        106
+      ],
+      "zeroAlphaFraction": 0.6761474609375,
+      "bytes": 14058,
+      "sha256": "c2050d18fcd96d9dcfa9c76086eee12aa09c6efef28c4f4f24f22fc0c8c92f71"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Idle_Left_2.png",
+      "state": "Idle",
+      "direction": "Left",
+      "frame": 2,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        630,
+        0,
+        316,
+        312
+      ],
+      "sourceScale": 0.29881718198796453,
+      "alphaBBox": [
+        17,
+        15,
+        111,
+        106
+      ],
+      "zeroAlphaFraction": 0.6729736328125,
+      "bytes": 13709,
+      "sha256": "3e837383a8e917d2a444f977569b2642ff2c8963ee32e91492435b9239b7ff7a"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Idle_Left_3.png",
+      "state": "Idle",
+      "direction": "Left",
+      "frame": 3,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        946,
+        0,
+        315,
+        312
+      ],
+      "sourceScale": 0.29881718198796453,
+      "alphaBBox": [
+        17,
+        18,
+        111,
+        106
+      ],
+      "zeroAlphaFraction": 0.702880859375,
+      "bytes": 13125,
+      "sha256": "068c8905c088016d37ca5fe0d7edb3a915f102aa725cbcdb14514bde50394e2f"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Move_Left_0.png",
+      "state": "Move",
+      "direction": "Left",
+      "frame": 0,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        0,
+        312,
+        315,
+        312
+      ],
+      "sourceScale": 0.29881718198796453,
+      "alphaBBox": [
+        25,
+        13,
+        111,
+        106
+      ],
+      "zeroAlphaFraction": 0.68011474609375,
+      "bytes": 14217,
+      "sha256": "1fcd7b1f0a8057ed395aacb8e2a0ae94ed0738884bd5047447e8fd80650e89d1"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Move_Left_1.png",
+      "state": "Move",
+      "direction": "Left",
+      "frame": 1,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        315,
+        312,
+        322,
+        312
+      ],
+      "sourceScale": 0.29881718198796453,
+      "alphaBBox": [
+        17,
+        13,
+        113,
+        106
+      ],
+      "zeroAlphaFraction": 0.63372802734375,
+      "bytes": 14803,
+      "sha256": "2be5e20874e3759af4c930d5b39bf447144eaea655c409957313a2d22687d588"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Move_Left_2.png",
+      "state": "Move",
+      "direction": "Left",
+      "frame": 2,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        637,
+        312,
+        311,
+        312
+      ],
+      "sourceScale": 0.29881718198796453,
+      "alphaBBox": [
+        19,
+        13,
+        112,
+        106
+      ],
+      "zeroAlphaFraction": 0.6209716796875,
+      "bytes": 14919,
+      "sha256": "a1d82af3aebb7ce51ed133a9e840655fb456b5d99aabcf82dfcf4149152bf165"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Move_Left_3.png",
+      "state": "Move",
+      "direction": "Left",
+      "frame": 3,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        948,
+        312,
+        313,
+        312
+      ],
+      "sourceScale": 0.29881718198796453,
+      "alphaBBox": [
+        18,
+        13,
+        112,
+        106
+      ],
+      "zeroAlphaFraction": 0.59942626953125,
+      "bytes": 14681,
+      "sha256": "363beda037fa0c853fffad2f736fba27c41c655b094b030d9fd9a2168f342ae0"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Hit_Left_0.png",
+      "state": "Hit",
+      "direction": "Left",
+      "frame": 0,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        0,
+        624,
+        315,
+        302
+      ],
+      "sourceScale": 0.29881718198796453,
+      "alphaBBox": [
+        17,
+        13,
+        111,
+        103
+      ],
+      "zeroAlphaFraction": 0.6475830078125,
+      "bytes": 15181,
+      "sha256": "b53cbe1c983789527b062043c852c2ba1c9cdea45f5e816b174c78ea3041fb29"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Hit_Left_1.png",
+      "state": "Hit",
+      "direction": "Left",
+      "frame": 1,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        315,
+        624,
+        315,
+        302
+      ],
+      "sourceScale": 0.29881718198796453,
+      "alphaBBox": [
+        17,
+        13,
+        111,
+        103
+      ],
+      "zeroAlphaFraction": 0.63800048828125,
+      "bytes": 14746,
+      "sha256": "029ccdaccfb69164582f9c3f335890a36387525ae69ac372d359184a1af045ee"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Hit_Left_2.png",
+      "state": "Hit",
+      "direction": "Left",
+      "frame": 2,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        630,
+        624,
+        316,
+        302
+      ],
+      "sourceScale": 0.29881718198796453,
+      "alphaBBox": [
+        17,
+        13,
+        111,
+        103
+      ],
+      "zeroAlphaFraction": 0.6480712890625,
+      "bytes": 14937,
+      "sha256": "bd1e1d7ad575aadbdb921623544dbcde0df8935b317415bbfd46e45cf2edd74f"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Hit_Left_3.png",
+      "state": "Hit",
+      "direction": "Left",
+      "frame": 3,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        946,
+        624,
+        315,
+        302
+      ],
+      "sourceScale": 0.29881718198796453,
+      "alphaBBox": [
+        17,
+        13,
+        111,
+        103
+      ],
+      "zeroAlphaFraction": 0.64947509765625,
+      "bytes": 13586,
+      "sha256": "2644e801d81100728b06470fc8f1ccb3ae999282c78ca1abc1504422ea0d2c92"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Death_Left_0.png",
+      "state": "Death",
+      "direction": "Left",
+      "frame": 0,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        0,
+        926,
+        315,
+        321
+      ],
+      "sourceScale": 0.29881718198796453,
+      "alphaBBox": [
+        17,
+        10,
+        111,
+        101
+      ],
+      "zeroAlphaFraction": 0.66015625,
+      "bytes": 16276,
+      "sha256": "ec0b7f915b88ad8bdad34356e28ec2543ae32d0f28aac0df1794411979c86d27"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Death_Left_1.png",
+      "state": "Death",
+      "direction": "Left",
+      "frame": 1,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        315,
+        926,
+        315,
+        321
+      ],
+      "sourceScale": 0.29881718198796453,
+      "alphaBBox": [
+        17,
+        10,
+        111,
+        106
+      ],
+      "zeroAlphaFraction": 0.645263671875,
+      "bytes": 16477,
+      "sha256": "146e724f96735dc3dcb2361618109dbb442b343d8bf953dd2763d05cab7a6e1d"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Death_Left_2.png",
+      "state": "Death",
+      "direction": "Left",
+      "frame": 2,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        630,
+        926,
+        316,
+        321
+      ],
+      "sourceScale": 0.29881718198796453,
+      "alphaBBox": [
+        17,
+        10,
+        111,
+        106
+      ],
+      "zeroAlphaFraction": 0.60357666015625,
+      "bytes": 17005,
+      "sha256": "98002246c990abb3b5bca6145b4680a7ce8795048910d103cbd51e862dbdf751"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Death_Left_3.png",
+      "state": "Death",
+      "direction": "Left",
+      "frame": 3,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        946,
+        926,
+        315,
+        321
+      ],
+      "sourceScale": 0.29881718198796453,
+      "alphaBBox": [
+        17,
+        10,
+        109,
+        106
+      ],
+      "zeroAlphaFraction": 0.646240234375,
+      "bytes": 14093,
+      "sha256": "215ba7e991560e18b027f69fa2902c6a7374db6a99fc664b7228e82bb7d185e5"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Idle_Right_0.png",
+      "state": "Idle",
+      "direction": "Right",
+      "frame": 0,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        0,
+        0,
+        355,
+        277
+      ],
+      "sourceScale": 0.30422535211267604,
+      "alphaBBox": [
+        23,
+        21,
+        118,
+        102
+      ],
+      "zeroAlphaFraction": 0.73834228515625,
+      "bytes": 12454,
+      "sha256": "8bbd36b44485505d33ba796f292b1a1159e0a34ceb2c05bfec1cd56d4f83be90"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Idle_Right_1.png",
+      "state": "Idle",
+      "direction": "Right",
+      "frame": 1,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        355,
+        0,
+        355,
+        277
+      ],
+      "sourceScale": 0.30422535211267604,
+      "alphaBBox": [
+        10,
+        21,
+        118,
+        102
+      ],
+      "zeroAlphaFraction": 0.72918701171875,
+      "bytes": 12708,
+      "sha256": "b4ec6b95a101e10f0eb01a118b5c4e58e5e72673b71a6480e0a1b0baa0333380"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Idle_Right_2.png",
+      "state": "Idle",
+      "direction": "Right",
+      "frame": 2,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        710,
+        0,
+        355,
+        277
+      ],
+      "sourceScale": 0.30422535211267604,
+      "alphaBBox": [
+        10,
+        21,
+        117,
+        102
+      ],
+      "zeroAlphaFraction": 0.7117919921875,
+      "bytes": 13340,
+      "sha256": "35e5ab9ed8c5a6f6699c08f0310d7122bc6b82157c9975ef1689ce892f867dba"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Idle_Right_3.png",
+      "state": "Idle",
+      "direction": "Right",
+      "frame": 3,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        1065,
+        0,
+        355,
+        277
+      ],
+      "sourceScale": 0.30422535211267604,
+      "alphaBBox": [
+        15,
+        18,
+        112,
+        102
+      ],
+      "zeroAlphaFraction": 0.71148681640625,
+      "bytes": 13495,
+      "sha256": "7c9bb1cc7cb5fb73a226bfaeb6f139286c29ed463f6f546e699f23aec6c81393"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Move_Right_0.png",
+      "state": "Move",
+      "direction": "Right",
+      "frame": 0,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        0,
+        277,
+        355,
+        277
+      ],
+      "sourceScale": 0.30422535211267604,
+      "alphaBBox": [
+        15,
+        18,
+        118,
+        102
+      ],
+      "zeroAlphaFraction": 0.64996337890625,
+      "bytes": 15865,
+      "sha256": "db16629dbf4d091036693dd4b792920dbf0a6aa2588994254fb15f5adaf7a76e"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Move_Right_1.png",
+      "state": "Move",
+      "direction": "Right",
+      "frame": 1,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        355,
+        277,
+        355,
+        277
+      ],
+      "sourceScale": 0.30422535211267604,
+      "alphaBBox": [
+        10,
+        18,
+        118,
+        102
+      ],
+      "zeroAlphaFraction": 0.6187744140625,
+      "bytes": 16237,
+      "sha256": "4b282b1f5762857340435184f7bfda3689d64da3dbb4904271db702250505d0c"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Move_Right_2.png",
+      "state": "Move",
+      "direction": "Right",
+      "frame": 2,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        710,
+        277,
+        355,
+        277
+      ],
+      "sourceScale": 0.30422535211267604,
+      "alphaBBox": [
+        10,
+        18,
+        118,
+        102
+      ],
+      "zeroAlphaFraction": 0.6041259765625,
+      "bytes": 16707,
+      "sha256": "af51ca5cec1fbffde7fb2671fbd7d65ce5fe7543adb4fe684cabd103fc7ebae8"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Move_Right_3.png",
+      "state": "Move",
+      "direction": "Right",
+      "frame": 3,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        1065,
+        277,
+        355,
+        277
+      ],
+      "sourceScale": 0.30422535211267604,
+      "alphaBBox": [
+        10,
+        18,
+        118,
+        102
+      ],
+      "zeroAlphaFraction": 0.6580810546875,
+      "bytes": 15233,
+      "sha256": "f55a399b72f9775a48fdee08fe626594b2991a9821c98fff194e8641d45d7c57"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Hit_Right_0.png",
+      "state": "Hit",
+      "direction": "Right",
+      "frame": 0,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        0,
+        554,
+        355,
+        268
+      ],
+      "sourceScale": 0.30422535211267604,
+      "alphaBBox": [
+        15,
+        18,
+        118,
+        100
+      ],
+      "zeroAlphaFraction": 0.65020751953125,
+      "bytes": 15528,
+      "sha256": "753e4b988f24c137b4793c0646ce0c3e45a2ca2d12363cf4ecde3afd1bfc22a6"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Hit_Right_1.png",
+      "state": "Hit",
+      "direction": "Right",
+      "frame": 1,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        355,
+        554,
+        355,
+        268
+      ],
+      "sourceScale": 0.30422535211267604,
+      "alphaBBox": [
+        10,
+        18,
+        118,
+        100
+      ],
+      "zeroAlphaFraction": 0.65576171875,
+      "bytes": 15322,
+      "sha256": "bb25f759ac20f2fda57da61eeb013c2132ccc7c1602c6669d9a41a6f84c1ea74"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Hit_Right_2.png",
+      "state": "Hit",
+      "direction": "Right",
+      "frame": 2,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        710,
+        554,
+        355,
+        268
+      ],
+      "sourceScale": 0.30422535211267604,
+      "alphaBBox": [
+        10,
+        18,
+        118,
+        100
+      ],
+      "zeroAlphaFraction": 0.64508056640625,
+      "bytes": 14983,
+      "sha256": "a41afc8adb2e5c8c043eb12c4cb0b33a8eb75fee47ef10690e506a75a6f2500b"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Hit_Right_3.png",
+      "state": "Hit",
+      "direction": "Right",
+      "frame": 3,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        1065,
+        554,
+        355,
+        268
+      ],
+      "sourceScale": 0.30422535211267604,
+      "alphaBBox": [
+        10,
+        18,
+        116,
+        100
+      ],
+      "zeroAlphaFraction": 0.68994140625,
+      "bytes": 14006,
+      "sha256": "7e47f40d8d4711d951cf7b98aa1ba93d361e59f4d3501fba95f6643e715aefdb"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Death_Right_0.png",
+      "state": "Death",
+      "direction": "Right",
+      "frame": 0,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        0,
+        822,
+        355,
+        286
+      ],
+      "sourceScale": 0.30422535211267604,
+      "alphaBBox": [
+        15,
+        15,
+        118,
+        100
+      ],
+      "zeroAlphaFraction": 0.66314697265625,
+      "bytes": 16630,
+      "sha256": "d9daf0a765c893d1b55058a78569c3258fc1208aae4efc6c36ddede00d147ab1"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Death_Right_1.png",
+      "state": "Death",
+      "direction": "Right",
+      "frame": 1,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        355,
+        822,
+        355,
+        286
+      ],
+      "sourceScale": 0.30422535211267604,
+      "alphaBBox": [
+        10,
+        15,
+        118,
+        102
+      ],
+      "zeroAlphaFraction": 0.62548828125,
+      "bytes": 18381,
+      "sha256": "555a3cc6016ab7ab6ef6428ceb36a94f983cfcbabaabd676571c2ef06efaaaa2"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Death_Right_2.png",
+      "state": "Death",
+      "direction": "Right",
+      "frame": 2,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        710,
+        822,
+        355,
+        286
+      ],
+      "sourceScale": 0.30422535211267604,
+      "alphaBBox": [
+        10,
+        15,
+        118,
+        102
+      ],
+      "zeroAlphaFraction": 0.60174560546875,
+      "bytes": 18442,
+      "sha256": "55aa6561728ef80fda80b8f17ca736573e66ae429f6614a8758e10830522610b"
+    },
+    {
+      "file": "assets/enemies/void_sentinel/Death_Right_3.png",
+      "state": "Death",
+      "direction": "Right",
+      "frame": 3,
+      "size": [
+        128,
+        128
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "center": [
+        64,
+        64
+      ],
+      "sourceRect": [
+        1065,
+        822,
+        355,
+        286
+      ],
+      "sourceScale": 0.30422535211267604,
+      "alphaBBox": [
+        10,
+        15,
+        114,
+        102
+      ],
+      "zeroAlphaFraction": 0.60302734375,
+      "bytes": 15410,
+      "sha256": "a47ca7ff4070dfe6da9c037693850cf5097504524f79a02a93304ff3b407266a"
+    }
+  ],
+  "bytes": 941124
+}

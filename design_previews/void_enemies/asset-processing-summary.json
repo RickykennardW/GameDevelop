@@ -1,0 +1,17 @@
+[
+  {
+    "enemy": "VoidGuard",
+    "frames": 64,
+    "bytes": 1161214
+  },
+  {
+    "enemy": "VoidSentinel",
+    "frames": 64,
+    "bytes": 941124
+  },
+  {
+    "enemy": "VoidBrute",
+    "frames": 64,
+    "bytes": 1072203
+  }
+]

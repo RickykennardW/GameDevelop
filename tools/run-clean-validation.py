@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parent.parent
 W = Path(os.environ.get('GD_VALIDATION_HOME', r'C:\Users\My ASUS\.codex\visualizations\2026\10\06\01a11249-1cf3-7f03-9834-01083d6fb50c\gdevelop-shop-rework-validation'))
 OUT = ROOT / 'design_previews/cleanup'
 OUT.mkdir(parents=True, exist_ok=True)
-NAMES = ['test-clean-project', 'test-nova-wisp', 'test-void-hound']
+NAMES = ['test-clean-project', 'test-nova-wisp', 'test-void-hound', 'test-void-common']
 if sys.argv[1:] == ['--prepare']:
     template = (W / 'preview/index.html').read_text(encoding='utf-8')
     prefix = (ROOT / 'tools/validation-fixture.txt').read_text(encoding='utf-8')

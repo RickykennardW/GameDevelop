@@ -1192,6 +1192,1734 @@
         "name": "assets/void_hound/VoidHound_Up_Atlas.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Idle_Down_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Idle_Down_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Idle_Down_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Idle_Down_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Idle_Down_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Idle_Down_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Idle_Down_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Idle_Down_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Move_Down_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Move_Down_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Move_Down_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Move_Down_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Move_Down_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Move_Down_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Move_Down_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Move_Down_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Hit_Down_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Hit_Down_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Hit_Down_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Hit_Down_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Hit_Down_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Hit_Down_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Hit_Down_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Hit_Down_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Death_Down_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Death_Down_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Death_Down_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Death_Down_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Death_Down_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Death_Down_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Death_Down_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Death_Down_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Idle_Up_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Idle_Up_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Idle_Up_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Idle_Up_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Idle_Up_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Idle_Up_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Idle_Up_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Idle_Up_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Move_Up_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Move_Up_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Move_Up_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Move_Up_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Move_Up_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Move_Up_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Move_Up_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Move_Up_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Hit_Up_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Hit_Up_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Hit_Up_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Hit_Up_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Hit_Up_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Hit_Up_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Hit_Up_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Hit_Up_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Death_Up_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Death_Up_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Death_Up_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Death_Up_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Death_Up_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Death_Up_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Death_Up_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Death_Up_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Idle_Left_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Idle_Left_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Idle_Left_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Idle_Left_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Idle_Left_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Idle_Left_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Idle_Left_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Idle_Left_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Move_Left_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Move_Left_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Move_Left_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Move_Left_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Move_Left_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Move_Left_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Move_Left_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Move_Left_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Hit_Left_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Hit_Left_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Hit_Left_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Hit_Left_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Hit_Left_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Hit_Left_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Hit_Left_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Hit_Left_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Death_Left_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Death_Left_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Death_Left_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Death_Left_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Death_Left_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Death_Left_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Death_Left_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Death_Left_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Idle_Right_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Idle_Right_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Idle_Right_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Idle_Right_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Idle_Right_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Idle_Right_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Idle_Right_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Idle_Right_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Move_Right_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Move_Right_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Move_Right_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Move_Right_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Move_Right_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Move_Right_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Move_Right_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Move_Right_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Hit_Right_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Hit_Right_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Hit_Right_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Hit_Right_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Hit_Right_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Hit_Right_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Hit_Right_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Hit_Right_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Death_Right_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Death_Right_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Death_Right_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Death_Right_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Death_Right_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Death_Right_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_guard/Death_Right_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_guard/Death_Right_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Idle_Down_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Idle_Down_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Idle_Down_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Idle_Down_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Idle_Down_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Idle_Down_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Idle_Down_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Idle_Down_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Move_Down_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Move_Down_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Move_Down_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Move_Down_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Move_Down_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Move_Down_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Move_Down_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Move_Down_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Hit_Down_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Hit_Down_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Hit_Down_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Hit_Down_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Hit_Down_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Hit_Down_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Hit_Down_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Hit_Down_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Death_Down_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Death_Down_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Death_Down_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Death_Down_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Death_Down_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Death_Down_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Death_Down_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Death_Down_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Idle_Up_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Idle_Up_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Idle_Up_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Idle_Up_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Idle_Up_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Idle_Up_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Idle_Up_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Idle_Up_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Move_Up_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Move_Up_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Move_Up_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Move_Up_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Move_Up_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Move_Up_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Move_Up_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Move_Up_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Hit_Up_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Hit_Up_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Hit_Up_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Hit_Up_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Hit_Up_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Hit_Up_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Hit_Up_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Hit_Up_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Death_Up_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Death_Up_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Death_Up_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Death_Up_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Death_Up_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Death_Up_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Death_Up_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Death_Up_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Idle_Left_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Idle_Left_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Idle_Left_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Idle_Left_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Idle_Left_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Idle_Left_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Idle_Left_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Idle_Left_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Move_Left_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Move_Left_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Move_Left_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Move_Left_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Move_Left_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Move_Left_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Move_Left_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Move_Left_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Hit_Left_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Hit_Left_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Hit_Left_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Hit_Left_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Hit_Left_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Hit_Left_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Hit_Left_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Hit_Left_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Death_Left_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Death_Left_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Death_Left_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Death_Left_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Death_Left_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Death_Left_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Death_Left_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Death_Left_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Idle_Right_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Idle_Right_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Idle_Right_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Idle_Right_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Idle_Right_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Idle_Right_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Idle_Right_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Idle_Right_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Move_Right_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Move_Right_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Move_Right_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Move_Right_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Move_Right_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Move_Right_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Move_Right_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Move_Right_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Hit_Right_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Hit_Right_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Hit_Right_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Hit_Right_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Hit_Right_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Hit_Right_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Hit_Right_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Hit_Right_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Death_Right_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Death_Right_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Death_Right_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Death_Right_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Death_Right_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Death_Right_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_sentinel/Death_Right_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_sentinel/Death_Right_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Idle_Down_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Idle_Down_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Idle_Down_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Idle_Down_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Idle_Down_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Idle_Down_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Idle_Down_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Idle_Down_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Move_Down_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Move_Down_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Move_Down_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Move_Down_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Move_Down_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Move_Down_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Move_Down_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Move_Down_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Hit_Down_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Hit_Down_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Hit_Down_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Hit_Down_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Hit_Down_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Hit_Down_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Hit_Down_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Hit_Down_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Death_Down_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Death_Down_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Death_Down_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Death_Down_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Death_Down_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Death_Down_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Death_Down_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Death_Down_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Idle_Up_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Idle_Up_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Idle_Up_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Idle_Up_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Idle_Up_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Idle_Up_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Idle_Up_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Idle_Up_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Move_Up_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Move_Up_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Move_Up_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Move_Up_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Move_Up_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Move_Up_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Move_Up_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Move_Up_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Hit_Up_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Hit_Up_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Hit_Up_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Hit_Up_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Hit_Up_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Hit_Up_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Hit_Up_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Hit_Up_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Death_Up_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Death_Up_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Death_Up_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Death_Up_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Death_Up_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Death_Up_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Death_Up_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Death_Up_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Idle_Left_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Idle_Left_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Idle_Left_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Idle_Left_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Idle_Left_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Idle_Left_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Idle_Left_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Idle_Left_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Move_Left_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Move_Left_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Move_Left_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Move_Left_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Move_Left_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Move_Left_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Move_Left_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Move_Left_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Hit_Left_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Hit_Left_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Hit_Left_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Hit_Left_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Hit_Left_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Hit_Left_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Hit_Left_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Hit_Left_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Death_Left_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Death_Left_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Death_Left_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Death_Left_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Death_Left_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Death_Left_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Death_Left_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Death_Left_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Idle_Right_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Idle_Right_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Idle_Right_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Idle_Right_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Idle_Right_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Idle_Right_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Idle_Right_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Idle_Right_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Move_Right_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Move_Right_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Move_Right_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Move_Right_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Move_Right_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Move_Right_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Move_Right_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Move_Right_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Hit_Right_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Hit_Right_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Hit_Right_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Hit_Right_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Hit_Right_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Hit_Right_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Hit_Right_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Hit_Right_3.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Death_Right_0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Death_Right_0.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Death_Right_1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Death_Right_1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Death_Right_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Death_Right_2.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/enemies/void_brute/Death_Right_3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/enemies/void_brute/Death_Right_3.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ]
   },

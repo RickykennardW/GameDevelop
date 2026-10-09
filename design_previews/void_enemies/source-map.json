@@ -1,0 +1,20 @@
+{
+  "VoidGuard": {
+    "Down": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-96fa7a40-eeea-4a76-a131-778550db4ca4.png",
+    "Up": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-597221c7-3ef5-485b-907c-6a34d01c7780.png",
+    "Left": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-be9b3c58-b25a-4cb3-a601-c6ece0b37d4e.png",
+    "Right": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-609d3ba0-2983-4bf7-954f-61dc77b07386.png"
+  },
+  "VoidSentinel": {
+    "Down": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-b6184c35-fa14-4ee9-9b15-cc1acba4ae69.png",
+    "Up": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-6f81bcf2-5b56-419b-bc9f-c4b59cc64575.png",
+    "Left": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-123025b2-2cba-4e1e-94c9-23170ff136b9.png",
+    "Right": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-359a6d23-6e03-49fc-816f-7dc583557971.png"
+  },
+  "VoidBrute": {
+    "Down": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-d844f23c-f636-4c6d-8aca-4d51c07dbf66.png",
+    "Up": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-a10cf372-f358-4c39-be8b-118f5e379a90.png",
+    "Left": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-cefb7fc9-8525-4622-ad3b-f2f482cfb08f.png",
+    "Right": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-2f05e0a7-5b59-4894-9fdf-f00e66a16989.png"
+  }
+}

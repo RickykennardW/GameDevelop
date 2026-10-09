@@ -5,7 +5,7 @@ if (!bars) bars = runtimeScene.__enemyHealthBars = new Map();
 for (const enemy of runtimeScene.getObjects("Enemy")) {
   const id = enemy.getUniqueId();
   let pair = bars.get(id);
-  if(enemy.getVariables().get('EnemyType').getAsString()==='VoidHound'&&enemy.getBehavior('Health').IsDead()){
+  if((enemy.getVariables().get('EnemyType').getAsString()==='VoidHound'||runtimeScene.__voidCommon?.has(enemy.getVariables().get('EnemyType').getAsString()))&&enemy.getBehavior('Health').IsDead()){
     if(pair){pair.background.deleteFromScene();pair.fill.deleteFromScene();bars.delete(id);}continue;
   }
   if (!pair) {
@@ -26,7 +26,7 @@ for (const enemy of runtimeScene.getObjects("Enemy")) {
   const health = enemy.getBehavior("Health");
   const current = health.Health(), maximum = health.MaxHealth();
   const ratio = maximum > 0 ? Math.max(0, Math.min(1, current / maximum)) : 0;
-  const visualScale=runtimeScene.__worldStyle.enemy;
+  const visualScale=runtimeScene.__voidCommon?.configs[enemy.getVariables().get('EnemyType').getAsString()]?.RenderScale||runtimeScene.__worldStyle.enemy;
   const width = Math.round(Math.max(28, Math.min(44, enemy.getWidth() * 0.9)) * visualScale);
   const height = 7;
   const x = enemy.getCenterXInScene() - width / 2;

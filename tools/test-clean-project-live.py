@@ -49,7 +49,7 @@ async def main():
   ok(await js('V.get("IndexOpen").getAsBoolean()&&S.__unitIndex.entries.length===1&&S.__unitIndex.entries[0].name==="Star Cannon"'),'native Index opens one Star entry')
   await screenshot('Index_Star_Cannon')
   await click(await js('P(S.__unitIndex.objects.tab1)'))
-  ok(await js('S.__unitIndex.category==="Monsters"&&S.__unitIndex.entries.length===2&&S.__unitIndex.entries[0].name==="Nova Wisp"&&S.__unitIndex.entries[1].name==="Void Hound"'),'native Monsters tab preserves Nova and adds one Void Hound')
+  ok(await js('S.__unitIndex.category==="Monsters"&&S.__unitIndex.entries.length===5&&S.__unitIndex.entries[0].name==="Nova Wisp"&&S.__unitIndex.entries[1].name==="Void Hound"'),'native Monsters tab preserves Nova and adds one Void Hound')
   await screenshot('Index_Nova_Wisp')
   await click(await js('P(S.__unitIndex.objects.buttonClose)'))
   ok(await js('!V.get("IndexOpen").getAsBoolean()'),'native Index close works')
