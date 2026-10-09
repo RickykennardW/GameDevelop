@@ -20,7 +20,7 @@ for(let a=0;a<=4;a++)for(let b=0;b<=4;b++){
  for(let i=0;i<b;i++)clickObject(scene.__selectedPanel.cards[1].background);
  const pair=star.visual(t),key=a+'_'+b,cost=star.config.Paths[0].Upgrades.slice(0,a).reduce((s,u)=>s+u.Cost,0)+star.config.Paths[1].Upgrades.slice(0,b).reduce((s,u)=>s+u.Cost,0);
  ok(pair.Base.getAnimationName()===key&&pair.Turret.getAnimationName()===key&&near(v('Money'),gold-cost),'native upgrade panel buys both component states '+key);
- ok(near(num(t,'Damage'),[50,57.5,66.125,66.125,89.26875][a])&&near(num(t,'AttackRange'),210*(a>=2?1.05:1)*(b>=2?1.05:1))&&near(num(t,'AttackInterval'),.9/((b>=1?1.15:1)*(b>=2?1.1:1))),'unchanged damage range cooldown '+key);
+ ok(near(num(t,'Damage'),[50,56,62,62,74][a])&&near(num(t,'AttackRange'),210*(a>=2?1.04:1)*(b>=2?1.04:1))&&near(num(t,'AttackInterval'),.9/[1,1.1,1.22,1.22,1.22][b]),'reviewed damage range cooldown '+key);
  const baseContact=star.componentPoints(t,'Base',[pair.meta.Base.Contact])[0];
  ok(near(baseContact[0],anchor[0])&&near(baseContact[1],anchor[1])&&p.radius(t)===46&&t.getUniqueId()===id&&camera()===fixedCamera,'base contact and canonical footprint stable '+key);
  const range=get('RangeIndicator')[0];ok(near(range.getCenterXInScene(),anchor[0])&&near(range.getCenterYInScene(),anchor[1])&&near(range.getWidth(),num(t,'AttackRange')*2),'range remains centered '+key);
@@ -29,8 +29,8 @@ for(let a=0;a<=4;a++)for(let b=0;b<=4;b++){
  remove('StarCannonProjectile','StarCannonImpact');const count=b>=4?3:b>=3?2:1;
  ok(star.fire(t,target),'aligned volley emitted '+key);const shots=get('StarCannonProjectile'),flashes=get('StarCannonImpact').filter(o=>o.__muzzleFlash);
  ok(shots.length===count&&flashes.length===count&&new Set(shots.map(o=>o.__spawnPoint.join(','))).size===count,'distinct emitter and muzzle flash count '+key);
- ok(shots.every((shot,i)=>{const m=star.muzzle(t,i),flash=flashes[i];return near(shot.getCenterXInScene(),m[0])&&near(shot.getCenterYInScene(),m[1])&&near(flash.getCenterXInScene(),m[0])&&near(flash.getCenterYInScene(),m[1])&&near(num(shot,'Damage'),num(t,'Damage')*(b>=4?.6:b>=3?.65:1));}),'projectiles and flashes at transformed mouths with correct damage fractions '+key);
- step(80);ok(near(10000-health(target),num(t,'Damage')*count*(b>=4?.6:b>=3?.65:1))&&near(num(t,'DamageDealt'),10000-health(target)),'actual volley hits once and accounts damage '+key);
+ ok(shots.every((shot,i)=>{const m=star.muzzle(t,i),flash=flashes[i];return near(shot.getCenterXInScene(),m[0])&&near(shot.getCenterYInScene(),m[1])&&near(flash.getCenterXInScene(),m[0])&&near(flash.getCenterYInScene(),m[1])&&near(num(shot,'Damage'),num(t,'Damage')*(b>=4?.56:b>=3?.62:1));}),'projectiles and flashes at transformed mouths with correct damage fractions '+key);
+ step(80);ok(near(10000-health(target),num(t,'Damage')*count*(b>=4?.56:b>=3?.62:1))&&near(num(t,'DamageDealt'),10000-health(target)),'actual volley hits once and accounts damage '+key);
  remove('Enemy','StarCannonProjectile','StarCannonImpact');
  const money=v('Money'),investment=num(t,'TotalInvestment');click(100,638,'SelectedTowerUI');
  ok(!get('StarCannonTower').length&&!get('StarCannonBaseVisual').length&&!get('StarCannonTurretVisual').length&&star.visuals.size===0&&v('Money')===money+Math.floor(investment*7/10),'sell removes pair and refunds once '+key);
@@ -46,15 +46,15 @@ second.getBehavior('Health').SetHealth(0);step(2);last=t.__starFacing;step(15);o
 remove('Enemy');let target=enemy(810,580);t.__starCooldown=0;t.__starFacing=star.wrap(star.bearing(t,target)+180);step();
 ok(!get('StarCannonProjectile').length&&!star.canFire(t,target),'misaligned cannon cannot fire');step(70);ok(get('StarCannonProjectile').length>0||health(target)<1000,'aligned cannon resumes autonomous firing');
 remove('Enemy','StarCannonProjectile','StarCannonImpact','StarCannonTower');
-// Direct splash excludes primary, retains exact old fractions and radii.
+// Direct splash excludes primary and applies the reviewed fractions and radii.
 for(const a of [3,4]){
  t=make('StarCannonTower',a,0);target=enemy(840,510,10000);const adjacent=enemy(860,510,10000),outside=enemy(1100,510,10000);step(70);star.fire(t,target);step(80);
- ok(near(10000-health(target),num(t,'Damage'))&&near(10000-health(adjacent),num(t,'Damage')*(a===3?.4:.65))&&health(outside)===10000,'unchanged direct and splash damage/radius Lv'+a);
+ ok(near(10000-health(target),num(t,'Damage'))&&near(10000-health(adjacent),num(t,'Damage')*(a===3?.25:.4))&&health(outside)===10000,'reviewed direct and splash damage/radius Lv'+a);
  remove('Enemy','StarCannonProjectile','StarCannonImpact','StarCannonTower');
 }
 // Very close target: show each muzzle shot, then contact-hit without reversing its heading.
 t=make('StarCannonTower',4,0);const pivot=star.componentTransform(t,'Turret');target=enemy(pivot.x,pivot.y-45,1000);t.__starFacing=star.bearing(t,target);star.fire(t,target);
-let contact=get('StarCannonProjectile')[0];ok(contact&&contact.__starContactHit,'near-barrel contact shot detected without adding a minimum range');const heading=contact.getAngle();step();ok(contact.getAngle()===heading&&health(target)===1000,'contact projectile keeps barrel heading during visible muzzle frame');step();ok(near(1000-health(target),89.26875)&&!get('StarCannonProjectile').length,'contact resolves unchanged damage once without backward travel');remove('Enemy','StarCannonProjectile','StarCannonImpact','StarCannonTower');
+let contact=get('StarCannonProjectile')[0];ok(contact&&contact.__starContactHit,'near-barrel contact shot detected without adding a minimum range');const heading=contact.getAngle();step();ok(contact.getAngle()===heading&&health(target)===1000,'contact projectile keeps barrel heading during visible muzzle frame');step();ok(near(1000-health(target),74)&&!get('StarCannonProjectile').length,'contact resolves reviewed damage once without backward travel');remove('Enemy','StarCannonProjectile','StarCannonImpact','StarCannonTower');
 const speedCheck=mode=>{t=make();target=enemy(840,510,100000);sv.get('WaveMode').setString(mode);t.__starCooldown=100000;step(70);const face=star.bearing(t,target);t.__starFacing=star.wrap(face+100);const old=t.__starFacing;step();const delta=Math.abs(star.wrap(t.__starFacing-old));remove('Enemy','StarCannonTower');return delta;};
 const one=speedCheck('Manual'),two=speedCheck('ManualFast');ok(two>one*1.9&&two<one*2.1,'240-degree rotation follows existing 2x game clock');sv.get('WaveMode').setString('Waiting');step();
 // All visual silhouettes select the owning tower, independent of logical 64px bounds.

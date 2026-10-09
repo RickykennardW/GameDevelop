@@ -19,7 +19,7 @@ const manual = !yes("IndexBlocksInput") && sv.get("WaveMode").getAsString() === 
 if (idle && !yes("GameOver") && num("Lives") > 0 && num("Wave") < 50 && (manual || (auto() && num("Wave") > 0 && state.wait <= 0))) {
   if (!auto()) sv.get("WaveMode").setString("Manual");
   const wave = num("Wave") + 1;
-  // Fixed archetype stats; distribution controls only the two enemy counts.
+  // Fixed archetype stats; composition and gradual pacing supply progression.
   const config = sv.get("NovaWispConfig").toJSObject();
   const distribution=sv.get("EnemyWaveDistribution").toJSObject();
   const total=wave*distribution.TotalMultiplier;
@@ -39,6 +39,8 @@ if (idle && !yes("GameOver") && num("Lives") > 0 && num("Wave") < 50 && (manual 
    queue.push(chosen);used[chosen]++;otherIndex++;
   }
   state.queue=queue;state.index=0;state.elapsed=0;state.wait=3;
-  sv.get("Wave").setNumber(wave);sv.get("SpawnInterval").setNumber(config.SpawnInterval);
+  const pacing=sv.get('WavePacing').toJSObject();
+  const interval=Math.max(pacing.MinimumInterval,config.SpawnInterval-Math.max(0,wave-pacing.SpeedUpAfterWave)*pacing.IntervalReductionPerWave);
+  sv.get("Wave").setNumber(wave);sv.get("SpawnInterval").setNumber(interval);
   sv.get("EnemiesToSpawn").setNumber(queue.length);sv.get("WaveActive").setBoolean(true);message.hide();
 }

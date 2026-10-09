@@ -1,24 +1,53 @@
-# Konfigurasi aktif â€” Star Cannon dan Nova Wisp
+# Balance aktif Celestial Void - 2026-10-09
 
-Sumber resmi: scene variables `TowerShopCatalog`, `StarCannonConfig`, `NovaWispConfig`, dan `EnemyTypes` di `layouts/game-scene.json`. Cleanup tidak mengubah balancing.
+Project: `Tower Defense.json`, scene: `layouts/game-scene.json`.
+Sumber balance: scene variables `StarCannonConfig`, `EnemyTypes`, `EnemyWaveDistribution`, `WavePacing`, `WaveCompletionReward`, `EnemyHPBarConfig`.
+Laporan audit, perbandingan sebelum/sesudah, simulasi, pengujian, dan batasnya: [HP_BARS_BALANCE_REPORT.md](HP_BARS_BALANCE_REPORT.md).
 
-| Unit | Harga / reward | HP / damage | Range / speed | Interval |
-|---|---:|---:|---:|---:|
-| Star Cannon | 300 Gold | 50 damage | 210 range | 0.9 detik |
-| Nova Wisp | 5 Gold per kill | 100 HP | 80 speed | spawn 0.9 detik |
-| Void Hound | 7 Gold per kill | 60 HP | 135 speed | spawn 0.9 detik |
-| Void Guard | 8 Gold per kill | 150 HP | 70 speed | spawn 0.9 detik |
-| Void Sentinel | 6 Gold per kill | 120 HP | 85 speed | spawn 0.9 detik |
-| Void Brute | 10 Gold per kill | 220 HP | 60 speed | spawn 0.9 detik |
+Star Cannon tetap satu-satunya tower, harga300 Gold, base damage50, range210, interval0.9s, projectile speed520. Tidak ada critical damage.
+Starting Gold650, Lives10, leak1Life, sell70% dari total investasi (dibulatkan ke bawah), clear obstacle250. Tidak ada passive Gold.
+Bonus wave60 Gold satu kali (sebelumnya100). Auto intermission3s dan Manual/Auto1x/2x dipertahankan.
 
-Money awal 650; Lives awal 10. Wave n berisi n Ã— 4 Nova Wisp identik. Wave 1/10/50 berisi 4/40/200; total 5.100 enemy untuk 50 wave. Tidak ada scaling HP, speed, armor, ukuran, atau reward. Bonus completion +100 Gold satu kali per wave; Auto menunggu 3 detik. Tidak ada wave 51.
+| Enemy | HP | Speed | Flat armor | Gold | Mulai wave | Lebar HP bar |
+|---|---:|---:|---:|---:|---:|---:|
+| Nova Wisp | 100 | 80 | 0 | 5 | 1 | 24 |
+| Void Hound | 60 | 135 | 0 | 7 | 4 | 30 |
+| Void Guard | 150 | 70 | 10 | 8 | 6 | 30 |
+| Void Sentinel | 120 | 85 | 0 | 6 | 5 | 26 |
+| Void Brute | 220 | 60 | 15 | 10 | 7 | 36 |
 
-Path Star Destroyer: Reinforced Core 125, Heavy Impact 200, Star Explosion 650, Supernova 1250 Gold.
-Path Cosmic Barrage: Rapid Fire 100, Precision Core 175, Twin Star 600, Meteor Barrage 1100 Gold.
-Dua path tidak boleh sama-sama mencapai level3; tersedia 21 kombinasi. Twin memakai 2 Ã—65% damage dan Meteor 3 Ã—60%. Multiplier, splash, projectile speed, refund70% dari total investasi, muzzle, serta stats per-upgrade dipertahankan dari konfigurasi sebelum cleanup.
+Enemy stats/roles/art/animations tetap. Damage positif memakai `max(1, RawDamage - FlatArmor)`, melalui Health asli; 0/negative/NaN tidak menciptakan hit. Tidak ada shield/attack/variant/boss baru.
+HP bars memakai track/fill native berpasangan dengan ID lifetime, tinggi6, inner fill `(Width-2)*clamp(HP/MaxHP,0,1)`. Callback dilepas pada logical death sebelum object bar dipakai ulang oleh enemy lain. Green >60%, yellow30-60%, red <30%. Ukuran tidak berasal dari nilai MaxHP atau skala atlas.
 
-PLAY memulai wave; klik berikutnya berputar Manual1x â†’ Manual2x â†’ Auto1x â†’ Auto2x. Semua waktu gameplay memakai time scale yang sama. Clear obstacle tetap 250 Gold. Lihat CLEANUP_REPORT.md untuk bukti pengujian dan batas pengujian.
+## Dua path Star Cannon
 
-Distribusi mudah diedit lewat EnemyWaveDistribution di scene variables. Wave50=136Nova+64Hounds. Tidak ada variant/stat scaling. Bonus100, Star stats, refund, obstacle250, Money/Lives awal dan controls tidak berubah.
+Path1 cumulative damage50/56/62/62/74, range multiplier1/1/1.04/1.04/1.04.
+Path2 cumulative speed multiplier1/1.10/1.22/1.22/1.22, range multiplier1/1/1.04/1.04/1.04.
+Path1 level3:25% splash/radius64; level4:40% splash/radius84. Primary tidak menerima splash miliknya sendiri.
+Path2 level3:2 shots masing-masing62%; level4:3 shots masing-masing56%. Satu projectile hanya menyelesaikan satu impact. Overkill/reward tidak dihitung dua kali.
+Max masing-masing path4. Salah satu path>=3 membatasi lainnya<=2:21 build valid, 3-3/4-3/4-4 terlarang.
 
-Common additions: Sentinel wave5/count2/every3; Guard wave6/count2/every4; Brute wave7/count1/every5. New enemies replace Nova slots; Hound count and original slot positions stay. Wave50=71Nova+64Hound+32Sentinel+24Guard+9Brute. Existing Health flat armor:10Guard/15Brute. No shield/attack. Details: VOID_COMMON_ENEMIES.md.
+| Tier | Star Destroyer | Cosmic Barrage |
+|---|---:|---:|
+| 1 | 160 | 130 |
+| 2 | 300 | 280 |
+| 3 | 1100 | 1000 |
+| 4 | 2800 | 2500 |
+
+Total cost4-2=5070;2-4=4670. Theoretical single-target DPS4-2=100.31;2-4=141.19 sebelum armor, overkill, turning, travel atau range downtime. Splash tergantung jumlah dan jarak tetangga, bukan multiplier DPS permanen.
+
+## Wave
+
+50 waves, jumlah `wave*4`, total5100 enemy. Tidak ada HP/speed/reward scaling.
+Hound:mulai4, +4 setiap3wave; Sentinel:mulai5,+2 setiap3wave; Guard:mulai6,+3 setiap4wave; Brute:mulai7,+2 setiap5wave. Menggantikan slot Nova; posisi interleave Hound tetap.
+Spawn interval `max(0.36, 0.9 - max(0,wave-5)*0.015)` game-seconds. Waves1-5 tetap0.9;W10=.825,W20=.675,W35=.45,W41-50=.36.
+Wave50=50Nova+64Hound+32Sentinel+36Guard+18Brute.
+
+| Setelah wave | Total Gold tersedia jika semua kill, sebelum belanja |
+|---|---:|
+| 5 | 1268 |
+| 10 | 2558 |
+| 15 | 4534 |
+| 20 | 7202 |
+
+Bukti terbaru: `design_previews/gameplay_balance/`. Total Gold tabel termasuk650 awal, bukan sisa uang pemain setelah membeli tower.

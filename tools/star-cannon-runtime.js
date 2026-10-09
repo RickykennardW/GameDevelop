@@ -63,12 +63,13 @@ star.render=()=>{
  star.valid=(a,b)=>Number.isInteger(a)&&Number.isInteger(b)&&a>=0&&b>=0&&a<=4&&b<=4&&!(a>=3&&b>=3);
  star.stats=(a,b)=>{
   if(!star.valid(a,b))return null;
-  const damage=config.BaseDamage*(a>=1?1.15:1)*(a>=2?1.15:1)*(a>=4?1.35:1);
-  const count=b>=4?3:b>=3?2:1,fraction=b>=4?.60:b>=3?.65:1;
-  return {Damage:damage,AttackRange:config.BaseRange*(a>=2?1.05:1)*(b>=2?1.05:1),
-   AttackInterval:config.BaseInterval/((b>=1?1.15:1)*(b>=2?1.10:1)),
+  // Cumulative tier tables prevent accidental multiplicative upgrade stacking.
+  const damage=config.BaseDamage*config.DamageMultipliers[a];
+  const count=b>=4?3:b>=3?2:1,fraction=config.ProjectileFractions[b];
+  return {Damage:damage,AttackRange:config.BaseRange*config.Path1RangeMultipliers[a]*config.Path2RangeMultipliers[b],
+   AttackInterval:config.BaseInterval/config.SpeedMultipliers[b],
    ProjectileSpeed:config.ProjectileSpeed,ProjectileCount:count,ProjectileDamage:damage*fraction,
-   SplashRatio:a>=4?.65:a>=3?.40:0,SplashRadius:a>=4?config.ExplosionRadius*1.40:a>=3?config.ExplosionRadius:0,
+   SplashRatio:config.SplashRatios[a],SplashRadius:config.SplashRadii[a],
    ProjectileKind:a>=4?'Supernova':a>=3?'Explosion':b>=4?'Meteor':b>=3?'Twin':a>=1?'Reinforced':'Base'};
  };
  star.apply=tower=>{
@@ -104,8 +105,10 @@ star.render=()=>{
   o.__starEffect={x,y,size,age:0,life:kind==='Supernova'?.55:kind==='Explosion'?.42:.22};return o;
  };
  star.deal=(owner,enemy,damage)=>{
-  const health=enemy.getBehavior('Health');if(health.IsDead())return 0;
-  const before=Math.max(0,health.Health());health.Hit(damage,false,enemy.getVariables().get('Armor').getAsNumber()>0);
+  const health=enemy.getBehavior('Health');if(health.IsDead()||!Number.isFinite(damage)||damage<=0)return 0;
+  const before=Math.max(0,health.Health()),armor=Math.max(0,health.FlatDamageReduction());
+  // Keep native flat armor; a positive impact always removes at least 1 HP.
+  health.Hit(Math.max(damage,armor+config.MinimumDamage),false,armor>0);
   const actual=Math.max(0,before-Math.max(0,health.Health()));
   if(owner)owner.getVariables().get('DamageDealt').add(actual);
   return actual;
@@ -133,11 +136,15 @@ star.render=()=>{
   return true;
  };
  star.wrap=degrees=>(degrees+540)%360-180;
- star.targetValid=(tower,target)=>!!target&&get('Enemy').includes(target)&&!target.getBehavior('Health').IsDead()&&Math.hypot(target.getCenterXInScene()-scene.__freePlacement.center(tower)[0],target.getCenterYInScene()-scene.__freePlacement.center(tower)[1])<=tower.getVariables().get('AttackRange').getAsNumber();
+ star.targetValid=(tower,target,liveSet)=>{
+  if(!target||!(liveSet?liveSet.has(target):get('Enemy').includes(target))||target.getBehavior('Health').IsDead())return false;
+  const [x,y]=scene.__freePlacement.center(tower),dx=target.getCenterXInScene()-x,dy=target.getCenterYInScene()-y,range=tower.getVariables().get('AttackRange').getAsNumber();
+  return dx*dx+dy*dy<=range*range;
+ };
  star.bearing=(tower,target)=>{const pivot=star.componentTransform(tower,'Turret');return Math.atan2(target.getCenterYInScene()-pivot.y,target.getCenterXInScene()-pivot.x)*180/Math.PI;};
  star.canFire=(tower,target)=>star.targetValid(tower,target)&&Math.abs(star.wrap(star.bearing(tower,target)-tower.__starFacing))<=componentConfig.FireToleranceDegrees;
 }
-const dt=gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(scene),enemies=get('Enemy');
+const dt=gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(scene),enemies=get('Enemy'),liveSet=new Set(enemies);
 for(const tower of get('StarCannonTower')){
  const v=tower.getVariables();
  if(tower.__starLifetime!==tower.getUniqueId()){
@@ -148,9 +155,9 @@ for(const tower of get('StarCannonTower')){
  star.visual(tower);tower.__starCooldown=Math.max(0,tower.__starCooldown-dt);
  if(sv.get('GameOver').getAsBoolean())continue;
  let target=enemies.find(e=>e.getUniqueId()===tower.__starTargetId);
- if(!star.targetValid(tower,target)){
+ if(!star.targetValid(tower,target,liveSet)){
   const [x,y]=scene.__freePlacement.center(tower);let nearest=Infinity;target=null;
-  for(const enemy of enemies){if(!star.targetValid(tower,enemy))continue;
+  for(const enemy of enemies){if(!star.targetValid(tower,enemy,liveSet))continue;
    const d=Math.hypot(enemy.getCenterXInScene()-x,enemy.getCenterYInScene()-y);
    if(d<nearest){nearest=d;target=enemy;}
   }

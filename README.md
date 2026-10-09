@@ -15,3 +15,7 @@ Void Hound: assets/void_hound, empat atlas/64 poses, muncul mulai Wave4. Detail 
 Tiga common Void enemies: assets/enemies/void_guard, void_sentinel, void_brute;192 nativeRGBA frames128px. Animations/armor/waves/current test evidence: VOID_COMMON_ENEMIES.md dan design_previews/void_enemies.
 
 Three common enemies: assets/enemies/void_guard, void_sentinel, void_brute.192native RGBA frames128px. Current animation/armor/wave/test report: VOID_COMMON_ENEMIES.md.
+
+Balance/HP bars terbaru (2026-10-09): HP_BARS_BALANCE_REPORT.md dan BALANCE.md. Bukti ada di design_previews/gameplay_balance. Stats enemy/art/animasi tetap; konfigurasi upgrade, bonus wave, distribusi tank, spawn pacing, dan pasangan HP bar diperbarui. Laporan cleanup/enemy sebelumnya merupakan catatan versi saat dibuat.
+
+Tes HP/balance: `python tools/run-clean-validation.py test-healthbars-balance`. Skrip model tanpa dependencies: `node tools/analyze-game-balance.cjs --live`. Set `GD_VALIDATION_RESULTS` ke folder hasil yang diinginkan agar bukti lama tidak tertimpa.

@@ -9,17 +9,18 @@ vars.get('Money').setNumber(100000);vars.get('Lives').setNumber(10000);
 // Every real native wave starts through its existing Play request and sequential spawner.
 for(let wave=1;wave<=50;wave++){
  clear();vars.get('GameOver').setBoolean(false);vars.get('Wave').setNumber(wave-1);vars.get('LastRewardedWave').setNumber(wave-1);vars.get('WaveActive').setBoolean(false);vars.get('WaveMode').setString('Waiting');vars.get('EnemiesToSpawn').setNumber(0);manager.queue=[];manager.index=0;manager.wait=3;
- clickObject(get('ShopPlayButton')[0]);ok(v('Wave')===wave&&manager.queue.length===wave*4&&manager.queue.filter(x=>x==='VoidHound').length===(wave<4?0:4*(1+Math.floor((wave-4)/3)))&&manager.queue.every(x=>['Basic','VoidHound','VoidGuard','VoidSentinel','VoidBrute'].includes(x))&&manager.queue.filter(x=>x==='VoidSentinel').length===(wave<5?0:2*(1+Math.floor((wave-5)/3)))&&manager.queue.filter(x=>x==='VoidGuard').length===(wave<6?0:2*(1+Math.floor((wave-6)/4)))&&manager.queue.filter(x=>x==='VoidBrute').length===(wave<7?0:1+Math.floor((wave-7)/5)),'native total and predictable two-type distribution '+wave);
+ clickObject(get('ShopPlayButton')[0]);ok(v('Wave')===wave&&manager.queue.length===wave*4&&manager.queue.filter(x=>x==='VoidHound').length===(wave<4?0:4*(1+Math.floor((wave-4)/3)))&&manager.queue.every(x=>['Basic','VoidHound','VoidGuard','VoidSentinel','VoidBrute'].includes(x))&&manager.queue.filter(x=>x==='VoidSentinel').length===(wave<5?0:2*(1+Math.floor((wave-5)/3)))&&manager.queue.filter(x=>x==='VoidGuard').length===(wave<6?0:3*(1+Math.floor((wave-6)/4)))&&manager.queue.filter(x=>x==='VoidBrute').length===(wave<7?0:2*(1+Math.floor((wave-7)/5))),'native total and reviewed five-type distribution '+wave);
+ ok(near(v('SpawnInterval'),Math.max(.36,.9-Math.max(0,wave-5)*.015)),'gradual native spawn pacing '+wave);
  let spawned=0,rewards=0,ids=new Set(),before=v('Money');
  while(manager.index<manager.queue.length){
-  manager.elapsed=nova.config.SpawnInterval;step();const es=get('Enemy');
+  manager.elapsed=v('SpawnInterval');step();const es=get('Enemy');
   ok(es.length===1,'one-at-a-time spawn '+wave+'/'+(spawned+1));const e=es[0],health=e.getBehavior('Health');spawned++;ids.add(e.getUniqueId());
   const type=e.getVariables().get('EnemyType').getAsString(),isHound=type==='VoidHound',stats=vars.get('EnemyTypes').getChild(type).toJSObject(),HP=stats.HP,speed=stats.Speed,reward=stats.Reward;rewards+=reward;
   ok(health.Health()===HP&&health.MaxHealth()===HP&&num(e,'MoveSpeed')===speed&&num(e,'GoldReward')===reward&&num(e,'Armor')===stats.Armor&&health.FlatDamageReduction()===stats.Armor&&e.getWidth()===48&&e.getHeight()===48&&e.getColor()==='255;255;255','fixed archetype stats '+wave+'/'+spawned);
   health.SetHealth(0);step();if(isHound){e.__houndState.deathAge=scene.__voidHound.config.DeathDuration;step();}if(scene.__voidCommon.has(type)){e.__voidCommonState.deathAge=e.__voidCommonState.cfg.DeathDuration;step();}get('NovaWispDeathVisual').slice().forEach(o=>o.deleteFromScene());
  }
  step();ok(spawned===wave*4&&ids.size===spawned&&!get('Enemy').length&&v('EnemiesToSpawn')===0&&!vars.get('WaveActive').getAsBoolean(),'exact spawn drain and completion '+wave);
- ok(v('Money')===before+rewards+100,'fixed5/7 kill rewards and unchanged single completion bonus '+wave);const balance=v('Money');step(4);ok(v('Money')===balance,'no duplicate kill or completion reward '+wave);
+ ok(v('Money')===before+rewards+60,'fixed kill rewards and single60 completion bonus '+wave);const balance=v('Money');step(4);ok(v('Money')===balance,'no duplicate kill or completion reward '+wave);
 }
 ok(vars.get('GameOver').getAsBoolean()&&v('Wave')===50,'existing victory after wave50');clear();vars.get('GameOver').setBoolean(false);vars.get('WaveActive').setBoolean(false);vars.get('WaveMode').setString('Waiting');vars.get('Wave').setNumber(0);vars.get('LastRewardedWave').setNumber(0);manager.queue=[];manager.index=0;
 // Facing follows full world movement vector, never whole-sprite rotation or flip tricks.

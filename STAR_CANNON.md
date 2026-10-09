@@ -9,3 +9,5 @@ Base tetap angle0; turret memilih target hidup dalam range, mempertahankan targe
 Shared upgrade icon object sekarang bernama `StarUpgradeIcon`; delapan state SC dipertahankan dan seluruh consumer diperbarui. Shop hanya satu Star Cannon300 Gold. Index mempunyai satu entry dengan kedua path lengkap.
 
 Asset gallery: `design_previews/star_cannon/Asset_Gallery.html` dan tiga `Component_Gallery_*.html`. Bukti terbaru dan rincian cleanup: CLEANUP_REPORT.md.
+
+Balance aktif per2026-10-09: lihat BALANCE.md dan HP_BARS_BALANCE_REPORT.md untuk stats, DPS, harga, serta armor floor1 yang terbaru. Arsitektur komponen, art, muzzle, tracking, selection, placement, dan refund di atas tetap; parameter combat/upgrade diambil dari StarCannonConfig.

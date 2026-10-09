@@ -2920,6 +2920,14 @@
         "name": "assets/enemies/void_brute/Death_Right_3.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "assets/ui/enemy-health-track.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/enemy-health-track.svg",
+        "smoothed": false,
+        "userAdded": true
       }
     ]
   },

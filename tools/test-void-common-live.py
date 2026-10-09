@@ -64,7 +64,7 @@ async def main():
   for _ in range(40):
    if await js('S.__waveManager.index===28'):break
    await frames(60)
-  ok(await js('V.get("Wave").getAsNumber()===7&&S.getObjects("Enemy").length===28&&S.__waveManager.queue.filter(t=>t==="VoidGuard").length===2&&S.__waveManager.queue.filter(t=>t==="VoidSentinel").length===2&&S.__waveManager.queue.filter(t=>t==="VoidBrute").length===1&&S.__waveManager.queue.filter(t=>t==="VoidHound").length===8'),'nativeWave7 exact15Nova/8Hound/2Sentinel/2Guard/1Brute sequential spawn')
+  ok(await js('V.get("Wave").getAsNumber()===7&&S.getObjects("Enemy").length===28&&S.__waveManager.queue.filter(t=>t==="VoidGuard").length===3&&S.__waveManager.queue.filter(t=>t==="VoidSentinel").length===2&&S.__waveManager.queue.filter(t=>t==="VoidBrute").length===2&&S.__waveManager.queue.filter(t=>t==="VoidHound").length===8'),'nativeWave7 exact13Nova/8Hound/2Sentinel/3Guard/2Brute sequential spawn')
   await screenshot('Five_Types_Mixed_Wave_7')
   video=await js("new Promise(resolve=>{const stream=document.querySelector('canvas').captureStream(60),rec=new MediaRecorder(stream,{mimeType:'video/webm',videoBitsPerSecond:2500000}),chunks=[];rec.ondataavailable=e=>{if(e.data.size)chunks.push(e.data)};rec.onstop=()=>{const reader=new FileReader();reader.onload=()=>resolve(reader.result.split(',')[1]);reader.readAsDataURL(new Blob(chunks,{type:'video/webm'}));};rec.start();setTimeout(()=>rec.stop(),5000);})")
   (OUT/'Five_Enemy_Gameplay_Animation.webm').write_bytes(base64.b64decode(video));ok(len(video)>10000,'actualfive-second mixed-wave animation recorded')

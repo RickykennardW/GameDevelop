@@ -1,0 +1,69 @@
+{
+  "method": "Native compiled GDevelop events / 50ms steps / real homing projectiles. Isolated fixtures use10000Lives and100000Gold to fully measure leaks, not a player campaign.",
+  "source": "BALANCE PROGRESS console records from executed session8152. All seven standalone scenarios completed and passed their assertions before a separate one-tower Wave5 campaign expectation failed. Campaign expectation corrected to buy support from earned gold; separate campaign results follow.",
+  "results": [
+    {
+      "scenario": "base",
+      "wave": 20,
+      "total": 80,
+      "killed": 21,
+      "leaked": 59,
+      "investment": 300,
+      "frames": 3359
+    },
+    {
+      "scenario": "max42",
+      "wave": 50,
+      "total": 200,
+      "killed": 102,
+      "leaked": 98,
+      "investment": 5070,
+      "frames": 3331
+    },
+    {
+      "scenario": "max24",
+      "wave": 50,
+      "total": 200,
+      "killed": 72,
+      "leaked": 128,
+      "investment": 4670,
+      "frames": 3533
+    },
+    {
+      "scenario": "sixBasic",
+      "wave": 20,
+      "total": 80,
+      "killed": 80,
+      "leaked": 0,
+      "investment": 1800,
+      "frames": 1670
+    },
+    {
+      "scenario": "sixBasic",
+      "wave": 50,
+      "total": 200,
+      "killed": 181,
+      "leaked": 19,
+      "investment": 1800,
+      "frames": 2726
+    },
+    {
+      "scenario": "mixed",
+      "wave": 20,
+      "total": 80,
+      "killed": 80,
+      "leaked": 0,
+      "investment": 6980,
+      "frames": 1316
+    },
+    {
+      "scenario": "mixed",
+      "wave": 50,
+      "total": 200,
+      "killed": 200,
+      "leaked": 0,
+      "investment": 6980,
+      "frames": 2015
+    }
+  ]
+}

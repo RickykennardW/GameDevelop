@@ -1,0 +1,2922 @@
+{
+  "before": {
+    "base": [
+      {
+        "wave": 1,
+        "killed": 4,
+        "leaked": 0,
+        "total": 4,
+        "clear": true,
+        "simulationSeconds": 14.2,
+        "investment": 300,
+        "damage": 400,
+        "placements": [
+          [
+            800,
+            352,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 5,
+        "killed": 20,
+        "leaked": 0,
+        "total": 20,
+        "clear": true,
+        "simulationSeconds": 50.15,
+        "investment": 300,
+        "damage": 1880,
+        "placements": [
+          [
+            800,
+            352,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 10,
+        "killed": 26,
+        "leaked": 14,
+        "total": 40,
+        "clear": false,
+        "simulationSeconds": 129.55,
+        "investment": 300,
+        "damage": 3085,
+        "placements": [
+          [
+            800,
+            352,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 15,
+        "killed": 30,
+        "leaked": 30,
+        "total": 60,
+        "clear": false,
+        "simulationSeconds": 157.45,
+        "investment": 300,
+        "damage": 4090,
+        "placements": [
+          [
+            800,
+            352,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 20,
+        "killed": 33,
+        "leaked": 47,
+        "total": 80,
+        "clear": false,
+        "simulationSeconds": 169.3,
+        "investment": 300,
+        "damage": 4890,
+        "placements": [
+          [
+            800,
+            352,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 35,
+        "killed": 46,
+        "leaked": 94,
+        "total": 140,
+        "clear": false,
+        "simulationSeconds": 234.85,
+        "investment": 300,
+        "damage": 7405,
+        "placements": [
+          [
+            800,
+            352,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 51,
+        "leaked": 149,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 288.85,
+        "investment": 300,
+        "damage": 9875,
+        "placements": [
+          [
+            800,
+            352,
+            0,
+            0
+          ]
+        ]
+      }
+    ],
+    "max42": [
+      {
+        "wave": 1,
+        "killed": 4,
+        "leaked": 0,
+        "total": 4,
+        "clear": true,
+        "simulationSeconds": 9.7,
+        "investment": 2800,
+        "damage": 400,
+        "placements": [
+          [
+            800,
+            352,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 5,
+        "killed": 20,
+        "leaked": 0,
+        "total": 20,
+        "clear": true,
+        "simulationSeconds": 23.6,
+        "investment": 2800,
+        "damage": 1880,
+        "placements": [
+          [
+            800,
+            352,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 10,
+        "killed": 40,
+        "leaked": 0,
+        "total": 40,
+        "clear": true,
+        "simulationSeconds": 42,
+        "investment": 2800,
+        "damage": 3920,
+        "placements": [
+          [
+            800,
+            352,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 15,
+        "killed": 60,
+        "leaked": 0,
+        "total": 60,
+        "clear": true,
+        "simulationSeconds": 60,
+        "investment": 2800,
+        "damage": 6060,
+        "placements": [
+          [
+            800,
+            352,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 20,
+        "killed": 80,
+        "leaked": 0,
+        "total": 80,
+        "clear": true,
+        "simulationSeconds": 78.2,
+        "investment": 2800,
+        "damage": 8040,
+        "placements": [
+          [
+            800,
+            352,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 35,
+        "killed": 140,
+        "leaked": 0,
+        "total": 140,
+        "clear": true,
+        "simulationSeconds": 132.3,
+        "investment": 2800,
+        "damage": 14200,
+        "placements": [
+          [
+            800,
+            352,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 200,
+        "leaked": 0,
+        "total": 200,
+        "clear": true,
+        "simulationSeconds": 186.3,
+        "investment": 2800,
+        "damage": 20360,
+        "placements": [
+          [
+            800,
+            352,
+            4,
+            2
+          ]
+        ]
+      }
+    ],
+    "max24": [
+      {
+        "wave": 1,
+        "killed": 4,
+        "leaked": 0,
+        "total": 4,
+        "clear": true,
+        "simulationSeconds": 9.85,
+        "investment": 2600,
+        "damage": 400,
+        "placements": [
+          [
+            800,
+            352,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 5,
+        "killed": 20,
+        "leaked": 0,
+        "total": 20,
+        "clear": true,
+        "simulationSeconds": 23.75,
+        "investment": 2600,
+        "damage": 1880,
+        "placements": [
+          [
+            800,
+            352,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 10,
+        "killed": 40,
+        "leaked": 0,
+        "total": 40,
+        "clear": true,
+        "simulationSeconds": 53.1,
+        "investment": 2600,
+        "damage": 3920,
+        "placements": [
+          [
+            800,
+            352,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 15,
+        "killed": 59,
+        "leaked": 1,
+        "total": 60,
+        "clear": false,
+        "simulationSeconds": 93.25,
+        "investment": 2600,
+        "damage": 6000,
+        "placements": [
+          [
+            800,
+            352,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 20,
+        "killed": 78,
+        "leaked": 2,
+        "total": 80,
+        "clear": false,
+        "simulationSeconds": 126.85,
+        "investment": 2600,
+        "damage": 7820,
+        "placements": [
+          [
+            800,
+            352,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 35,
+        "killed": 128,
+        "leaked": 12,
+        "total": 140,
+        "clear": false,
+        "simulationSeconds": 177.4,
+        "investment": 2600,
+        "damage": 13270,
+        "placements": [
+          [
+            800,
+            352,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 173,
+        "leaked": 27,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 242.05,
+        "investment": 2600,
+        "damage": 18260,
+        "placements": [
+          [
+            800,
+            352,
+            2,
+            4
+          ]
+        ]
+      }
+    ],
+    "sixBasic": [
+      {
+        "wave": 1,
+        "killed": 4,
+        "leaked": 0,
+        "total": 4,
+        "clear": true,
+        "simulationSeconds": 7.95,
+        "investment": 1800,
+        "damage": 400,
+        "placements": [
+          [
+            300,
+            352,
+            0,
+            0
+          ],
+          [
+            800,
+            352,
+            0,
+            0
+          ],
+          [
+            1300,
+            352,
+            0,
+            0
+          ],
+          [
+            400,
+            616,
+            0,
+            0
+          ],
+          [
+            900,
+            616,
+            0,
+            0
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 5,
+        "killed": 20,
+        "leaked": 0,
+        "total": 20,
+        "clear": true,
+        "simulationSeconds": 25.55,
+        "investment": 1800,
+        "damage": 1880,
+        "placements": [
+          [
+            300,
+            352,
+            0,
+            0
+          ],
+          [
+            800,
+            352,
+            0,
+            0
+          ],
+          [
+            1300,
+            352,
+            0,
+            0
+          ],
+          [
+            400,
+            616,
+            0,
+            0
+          ],
+          [
+            900,
+            616,
+            0,
+            0
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 10,
+        "killed": 40,
+        "leaked": 0,
+        "total": 40,
+        "clear": true,
+        "simulationSeconds": 43.75,
+        "investment": 1800,
+        "damage": 3920,
+        "placements": [
+          [
+            300,
+            352,
+            0,
+            0
+          ],
+          [
+            800,
+            352,
+            0,
+            0
+          ],
+          [
+            1300,
+            352,
+            0,
+            0
+          ],
+          [
+            400,
+            616,
+            0,
+            0
+          ],
+          [
+            900,
+            616,
+            0,
+            0
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 15,
+        "killed": 60,
+        "leaked": 0,
+        "total": 60,
+        "clear": true,
+        "simulationSeconds": 63.2,
+        "investment": 1800,
+        "damage": 6060,
+        "placements": [
+          [
+            300,
+            352,
+            0,
+            0
+          ],
+          [
+            800,
+            352,
+            0,
+            0
+          ],
+          [
+            1300,
+            352,
+            0,
+            0
+          ],
+          [
+            400,
+            616,
+            0,
+            0
+          ],
+          [
+            900,
+            616,
+            0,
+            0
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 20,
+        "killed": 80,
+        "leaked": 0,
+        "total": 80,
+        "clear": true,
+        "simulationSeconds": 80.75,
+        "investment": 1800,
+        "damage": 8040,
+        "placements": [
+          [
+            300,
+            352,
+            0,
+            0
+          ],
+          [
+            800,
+            352,
+            0,
+            0
+          ],
+          [
+            1300,
+            352,
+            0,
+            0
+          ],
+          [
+            400,
+            616,
+            0,
+            0
+          ],
+          [
+            900,
+            616,
+            0,
+            0
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 35,
+        "killed": 140,
+        "leaked": 0,
+        "total": 140,
+        "clear": true,
+        "simulationSeconds": 141,
+        "investment": 1800,
+        "damage": 14200,
+        "placements": [
+          [
+            300,
+            352,
+            0,
+            0
+          ],
+          [
+            800,
+            352,
+            0,
+            0
+          ],
+          [
+            1300,
+            352,
+            0,
+            0
+          ],
+          [
+            400,
+            616,
+            0,
+            0
+          ],
+          [
+            900,
+            616,
+            0,
+            0
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 200,
+        "leaked": 0,
+        "total": 200,
+        "clear": true,
+        "simulationSeconds": 195,
+        "investment": 1800,
+        "damage": 20360,
+        "placements": [
+          [
+            300,
+            352,
+            0,
+            0
+          ],
+          [
+            800,
+            352,
+            0,
+            0
+          ],
+          [
+            1300,
+            352,
+            0,
+            0
+          ],
+          [
+            400,
+            616,
+            0,
+            0
+          ],
+          [
+            900,
+            616,
+            0,
+            0
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      }
+    ],
+    "mixed": [
+      {
+        "wave": 1,
+        "killed": 4,
+        "leaked": 0,
+        "total": 4,
+        "clear": true,
+        "simulationSeconds": 7.9,
+        "investment": 5225,
+        "damage": 400,
+        "placements": [
+          [
+            300,
+            352,
+            2,
+            0
+          ],
+          [
+            800,
+            352,
+            3,
+            2
+          ],
+          [
+            1300,
+            352,
+            2,
+            3
+          ],
+          [
+            400,
+            616,
+            1,
+            1
+          ],
+          [
+            900,
+            616,
+            2,
+            1
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 5,
+        "killed": 20,
+        "leaked": 0,
+        "total": 20,
+        "clear": true,
+        "simulationSeconds": 23.7,
+        "investment": 5225,
+        "damage": 1880,
+        "placements": [
+          [
+            300,
+            352,
+            2,
+            0
+          ],
+          [
+            800,
+            352,
+            3,
+            2
+          ],
+          [
+            1300,
+            352,
+            2,
+            3
+          ],
+          [
+            400,
+            616,
+            1,
+            1
+          ],
+          [
+            900,
+            616,
+            2,
+            1
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 10,
+        "killed": 40,
+        "leaked": 0,
+        "total": 40,
+        "clear": true,
+        "simulationSeconds": 41.6,
+        "investment": 5225,
+        "damage": 3920,
+        "placements": [
+          [
+            300,
+            352,
+            2,
+            0
+          ],
+          [
+            800,
+            352,
+            3,
+            2
+          ],
+          [
+            1300,
+            352,
+            2,
+            3
+          ],
+          [
+            400,
+            616,
+            1,
+            1
+          ],
+          [
+            900,
+            616,
+            2,
+            1
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 15,
+        "killed": 60,
+        "leaked": 0,
+        "total": 60,
+        "clear": true,
+        "simulationSeconds": 59.85,
+        "investment": 5225,
+        "damage": 6060,
+        "placements": [
+          [
+            300,
+            352,
+            2,
+            0
+          ],
+          [
+            800,
+            352,
+            3,
+            2
+          ],
+          [
+            1300,
+            352,
+            2,
+            3
+          ],
+          [
+            400,
+            616,
+            1,
+            1
+          ],
+          [
+            900,
+            616,
+            2,
+            1
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 20,
+        "killed": 80,
+        "leaked": 0,
+        "total": 80,
+        "clear": true,
+        "simulationSeconds": 76.65,
+        "investment": 5225,
+        "damage": 8040,
+        "placements": [
+          [
+            300,
+            352,
+            2,
+            0
+          ],
+          [
+            800,
+            352,
+            3,
+            2
+          ],
+          [
+            1300,
+            352,
+            2,
+            3
+          ],
+          [
+            400,
+            616,
+            1,
+            1
+          ],
+          [
+            900,
+            616,
+            2,
+            1
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 35,
+        "killed": 140,
+        "leaked": 0,
+        "total": 140,
+        "clear": true,
+        "simulationSeconds": 131.3,
+        "investment": 5225,
+        "damage": 14200,
+        "placements": [
+          [
+            300,
+            352,
+            2,
+            0
+          ],
+          [
+            800,
+            352,
+            3,
+            2
+          ],
+          [
+            1300,
+            352,
+            2,
+            3
+          ],
+          [
+            400,
+            616,
+            1,
+            1
+          ],
+          [
+            900,
+            616,
+            2,
+            1
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 200,
+        "leaked": 0,
+        "total": 200,
+        "clear": true,
+        "simulationSeconds": 185.3,
+        "investment": 5225,
+        "damage": 20360,
+        "placements": [
+          [
+            300,
+            352,
+            2,
+            0
+          ],
+          [
+            800,
+            352,
+            3,
+            2
+          ],
+          [
+            1300,
+            352,
+            2,
+            3
+          ],
+          [
+            400,
+            616,
+            1,
+            1
+          ],
+          [
+            900,
+            616,
+            2,
+            1
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      }
+    ]
+  },
+  "after": {
+    "base": [
+      {
+        "wave": 1,
+        "killed": 4,
+        "leaked": 0,
+        "total": 4,
+        "clear": true,
+        "simulationSeconds": 14.2,
+        "investment": 300,
+        "damage": 400,
+        "placements": [
+          [
+            800,
+            352,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 5,
+        "killed": 20,
+        "leaked": 0,
+        "total": 20,
+        "clear": true,
+        "simulationSeconds": 50.15,
+        "investment": 300,
+        "damage": 1880,
+        "placements": [
+          [
+            800,
+            352,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 10,
+        "killed": 21,
+        "leaked": 19,
+        "total": 40,
+        "clear": false,
+        "simulationSeconds": 144.35,
+        "investment": 300,
+        "damage": 3095,
+        "placements": [
+          [
+            800,
+            352,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 15,
+        "killed": 22,
+        "leaked": 38,
+        "total": 60,
+        "clear": false,
+        "simulationSeconds": 157.75,
+        "investment": 300,
+        "damage": 3805,
+        "placements": [
+          [
+            800,
+            352,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 20,
+        "killed": 21,
+        "leaked": 59,
+        "total": 80,
+        "clear": false,
+        "simulationSeconds": 168.05,
+        "investment": 300,
+        "damage": 4255,
+        "placements": [
+          [
+            800,
+            352,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 35,
+        "killed": 28,
+        "leaked": 112,
+        "total": 140,
+        "clear": false,
+        "simulationSeconds": 178.6,
+        "investment": 300,
+        "damage": 4900,
+        "placements": [
+          [
+            800,
+            352,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 18,
+        "leaked": 182,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 188.95,
+        "investment": 300,
+        "damage": 5030,
+        "placements": [
+          [
+            800,
+            352,
+            0,
+            0
+          ]
+        ]
+      }
+    ],
+    "max42": [
+      {
+        "wave": 1,
+        "killed": 4,
+        "leaked": 0,
+        "total": 4,
+        "clear": true,
+        "simulationSeconds": 10.55,
+        "investment": 5070,
+        "damage": 400,
+        "placements": [
+          [
+            800,
+            352,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 5,
+        "killed": 20,
+        "leaked": 0,
+        "total": 20,
+        "clear": true,
+        "simulationSeconds": 37.9,
+        "investment": 5070,
+        "damage": 1880,
+        "placements": [
+          [
+            800,
+            352,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 10,
+        "killed": 38,
+        "leaked": 2,
+        "total": 40,
+        "clear": false,
+        "simulationSeconds": 69.25,
+        "investment": 5070,
+        "damage": 4108.8,
+        "placements": [
+          [
+            800,
+            352,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 15,
+        "killed": 54,
+        "leaked": 6,
+        "total": 60,
+        "clear": false,
+        "simulationSeconds": 124,
+        "investment": 5070,
+        "damage": 6177.4,
+        "placements": [
+          [
+            800,
+            352,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 20,
+        "killed": 65,
+        "leaked": 15,
+        "total": 80,
+        "clear": false,
+        "simulationSeconds": 131.6,
+        "investment": 5070,
+        "damage": 8007.2,
+        "placements": [
+          [
+            800,
+            352,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 35,
+        "killed": 95,
+        "leaked": 45,
+        "total": 140,
+        "clear": false,
+        "simulationSeconds": 142.15,
+        "investment": 5070,
+        "damage": 13483,
+        "placements": [
+          [
+            800,
+            352,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 114,
+        "leaked": 86,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 172.4,
+        "investment": 5070,
+        "damage": 18107.8,
+        "placements": [
+          [
+            800,
+            352,
+            4,
+            2
+          ]
+        ]
+      }
+    ],
+    "max24": [
+      {
+        "wave": 1,
+        "killed": 4,
+        "leaked": 0,
+        "total": 4,
+        "clear": true,
+        "simulationSeconds": 9.9,
+        "investment": 4670,
+        "damage": 400,
+        "placements": [
+          [
+            800,
+            352,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 5,
+        "killed": 20,
+        "leaked": 0,
+        "total": 20,
+        "clear": true,
+        "simulationSeconds": 23.8,
+        "investment": 4670,
+        "damage": 1880,
+        "placements": [
+          [
+            800,
+            352,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 10,
+        "killed": 38,
+        "leaked": 2,
+        "total": 40,
+        "clear": false,
+        "simulationSeconds": 66.8,
+        "investment": 4670,
+        "damage": 4020,
+        "placements": [
+          [
+            800,
+            352,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 15,
+        "killed": 54,
+        "leaked": 6,
+        "total": 60,
+        "clear": false,
+        "simulationSeconds": 103.35,
+        "investment": 4670,
+        "damage": 5970,
+        "placements": [
+          [
+            800,
+            352,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 20,
+        "killed": 60,
+        "leaked": 20,
+        "total": 80,
+        "clear": false,
+        "simulationSeconds": 140.95,
+        "investment": 4670,
+        "damage": 6944.16,
+        "placements": [
+          [
+            800,
+            352,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 35,
+        "killed": 60,
+        "leaked": 80,
+        "total": 140,
+        "clear": false,
+        "simulationSeconds": 163.75,
+        "investment": 4670,
+        "damage": 7715.8,
+        "placements": [
+          [
+            800,
+            352,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 67,
+        "leaked": 133,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 184.65,
+        "investment": 4670,
+        "damage": 8698.32,
+        "placements": [
+          [
+            800,
+            352,
+            2,
+            4
+          ]
+        ]
+      }
+    ],
+    "sixBasic": [
+      {
+        "wave": 1,
+        "killed": 4,
+        "leaked": 0,
+        "total": 4,
+        "clear": true,
+        "simulationSeconds": 7.95,
+        "investment": 1800,
+        "damage": 400,
+        "placements": [
+          [
+            300,
+            352,
+            0,
+            0
+          ],
+          [
+            800,
+            352,
+            0,
+            0
+          ],
+          [
+            1300,
+            352,
+            0,
+            0
+          ],
+          [
+            400,
+            616,
+            0,
+            0
+          ],
+          [
+            900,
+            616,
+            0,
+            0
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 5,
+        "killed": 20,
+        "leaked": 0,
+        "total": 20,
+        "clear": true,
+        "simulationSeconds": 25.55,
+        "investment": 1800,
+        "damage": 1880,
+        "placements": [
+          [
+            300,
+            352,
+            0,
+            0
+          ],
+          [
+            800,
+            352,
+            0,
+            0
+          ],
+          [
+            1300,
+            352,
+            0,
+            0
+          ],
+          [
+            400,
+            616,
+            0,
+            0
+          ],
+          [
+            900,
+            616,
+            0,
+            0
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 10,
+        "killed": 40,
+        "leaked": 0,
+        "total": 40,
+        "clear": true,
+        "simulationSeconds": 60.05,
+        "investment": 1800,
+        "damage": 4140,
+        "placements": [
+          [
+            300,
+            352,
+            0,
+            0
+          ],
+          [
+            800,
+            352,
+            0,
+            0
+          ],
+          [
+            1300,
+            352,
+            0,
+            0
+          ],
+          [
+            400,
+            616,
+            0,
+            0
+          ],
+          [
+            900,
+            616,
+            0,
+            0
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 15,
+        "killed": 60,
+        "leaked": 0,
+        "total": 60,
+        "clear": true,
+        "simulationSeconds": 69.5,
+        "investment": 1800,
+        "damage": 6450,
+        "placements": [
+          [
+            300,
+            352,
+            0,
+            0
+          ],
+          [
+            800,
+            352,
+            0,
+            0
+          ],
+          [
+            1300,
+            352,
+            0,
+            0
+          ],
+          [
+            400,
+            616,
+            0,
+            0
+          ],
+          [
+            900,
+            616,
+            0,
+            0
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 20,
+        "killed": 80,
+        "leaked": 0,
+        "total": 80,
+        "clear": true,
+        "simulationSeconds": 82.85,
+        "investment": 1800,
+        "damage": 8600,
+        "placements": [
+          [
+            300,
+            352,
+            0,
+            0
+          ],
+          [
+            800,
+            352,
+            0,
+            0
+          ],
+          [
+            1300,
+            352,
+            0,
+            0
+          ],
+          [
+            400,
+            616,
+            0,
+            0
+          ],
+          [
+            900,
+            616,
+            0,
+            0
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 35,
+        "killed": 140,
+        "leaked": 0,
+        "total": 140,
+        "clear": true,
+        "simulationSeconds": 97.2,
+        "investment": 1800,
+        "damage": 15320,
+        "placements": [
+          [
+            300,
+            352,
+            0,
+            0
+          ],
+          [
+            800,
+            352,
+            0,
+            0
+          ],
+          [
+            1300,
+            352,
+            0,
+            0
+          ],
+          [
+            400,
+            616,
+            0,
+            0
+          ],
+          [
+            900,
+            616,
+            0,
+            0
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 185,
+        "leaked": 15,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 132.8,
+        "investment": 1800,
+        "damage": 21570,
+        "placements": [
+          [
+            300,
+            352,
+            0,
+            0
+          ],
+          [
+            800,
+            352,
+            0,
+            0
+          ],
+          [
+            1300,
+            352,
+            0,
+            0
+          ],
+          [
+            400,
+            616,
+            0,
+            0
+          ],
+          [
+            900,
+            616,
+            0,
+            0
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      }
+    ],
+    "mixed": [
+      {
+        "wave": 1,
+        "killed": 4,
+        "leaked": 0,
+        "total": 4,
+        "clear": true,
+        "simulationSeconds": 7.9,
+        "investment": 6980,
+        "damage": 400,
+        "placements": [
+          [
+            300,
+            352,
+            2,
+            0
+          ],
+          [
+            800,
+            352,
+            3,
+            2
+          ],
+          [
+            1300,
+            352,
+            2,
+            3
+          ],
+          [
+            400,
+            616,
+            1,
+            1
+          ],
+          [
+            900,
+            616,
+            2,
+            1
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 5,
+        "killed": 20,
+        "leaked": 0,
+        "total": 20,
+        "clear": true,
+        "simulationSeconds": 23.05,
+        "investment": 6980,
+        "damage": 1880,
+        "placements": [
+          [
+            300,
+            352,
+            2,
+            0
+          ],
+          [
+            800,
+            352,
+            3,
+            2
+          ],
+          [
+            1300,
+            352,
+            2,
+            3
+          ],
+          [
+            400,
+            616,
+            1,
+            1
+          ],
+          [
+            900,
+            616,
+            2,
+            1
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 10,
+        "killed": 40,
+        "leaked": 0,
+        "total": 40,
+        "clear": true,
+        "simulationSeconds": 40.85,
+        "investment": 6980,
+        "damage": 4140,
+        "placements": [
+          [
+            300,
+            352,
+            2,
+            0
+          ],
+          [
+            800,
+            352,
+            3,
+            2
+          ],
+          [
+            1300,
+            352,
+            2,
+            3
+          ],
+          [
+            400,
+            616,
+            1,
+            1
+          ],
+          [
+            900,
+            616,
+            2,
+            1
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 15,
+        "killed": 60,
+        "leaked": 0,
+        "total": 60,
+        "clear": true,
+        "simulationSeconds": 54.2,
+        "investment": 6980,
+        "damage": 6450,
+        "placements": [
+          [
+            300,
+            352,
+            2,
+            0
+          ],
+          [
+            800,
+            352,
+            3,
+            2
+          ],
+          [
+            1300,
+            352,
+            2,
+            3
+          ],
+          [
+            400,
+            616,
+            1,
+            1
+          ],
+          [
+            900,
+            616,
+            2,
+            1
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 20,
+        "killed": 80,
+        "leaked": 0,
+        "total": 80,
+        "clear": true,
+        "simulationSeconds": 65.9,
+        "investment": 6980,
+        "damage": 8600,
+        "placements": [
+          [
+            300,
+            352,
+            2,
+            0
+          ],
+          [
+            800,
+            352,
+            3,
+            2
+          ],
+          [
+            1300,
+            352,
+            2,
+            3
+          ],
+          [
+            400,
+            616,
+            1,
+            1
+          ],
+          [
+            900,
+            616,
+            2,
+            1
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 35,
+        "killed": 140,
+        "leaked": 0,
+        "total": 140,
+        "clear": true,
+        "simulationSeconds": 81.7,
+        "investment": 6980,
+        "damage": 15320,
+        "placements": [
+          [
+            300,
+            352,
+            2,
+            0
+          ],
+          [
+            800,
+            352,
+            3,
+            2
+          ],
+          [
+            1300,
+            352,
+            2,
+            3
+          ],
+          [
+            400,
+            616,
+            1,
+            1
+          ],
+          [
+            900,
+            616,
+            2,
+            1
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 200,
+        "leaked": 0,
+        "total": 200,
+        "clear": true,
+        "simulationSeconds": 100.4,
+        "investment": 6980,
+        "damage": 22040,
+        "placements": [
+          [
+            300,
+            352,
+            2,
+            0
+          ],
+          [
+            800,
+            352,
+            3,
+            2
+          ],
+          [
+            1300,
+            352,
+            2,
+            3
+          ],
+          [
+            400,
+            616,
+            1,
+            1
+          ],
+          [
+            900,
+            616,
+            2,
+            1
+          ],
+          [
+            1400,
+            616,
+            0,
+            0
+          ]
+        ]
+      }
+    ],
+    "max42Positions": [
+      {
+        "wave": 50,
+        "killed": 125,
+        "leaked": 75,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 172.4,
+        "investment": 5070,
+        "damage": 19279,
+        "placements": [
+          [
+            300,
+            352,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 114,
+        "leaked": 86,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 172.4,
+        "investment": 5070,
+        "damage": 18107.8,
+        "placements": [
+          [
+            800,
+            352,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 106,
+        "leaked": 94,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 176.75,
+        "investment": 5070,
+        "damage": 16591.2,
+        "placements": [
+          [
+            900,
+            352,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 101,
+        "leaked": 99,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 176.75,
+        "investment": 5070,
+        "damage": 16143.6,
+        "placements": [
+          [
+            1200,
+            352,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 99,
+        "leaked": 101,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 173.1,
+        "investment": 5070,
+        "damage": 15839.2,
+        "placements": [
+          [
+            1300,
+            352,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 90,
+        "leaked": 110,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 181.05,
+        "investment": 5070,
+        "damage": 15044.6,
+        "placements": [
+          [
+            1400,
+            352,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 89,
+        "leaked": 111,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 184.65,
+        "investment": 5070,
+        "damage": 15380.6,
+        "placements": [
+          [
+            1500,
+            352,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 99,
+        "leaked": 101,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 173.1,
+        "investment": 5070,
+        "damage": 15497.6,
+        "placements": [
+          [
+            300,
+            616,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 87,
+        "leaked": 113,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 169.15,
+        "investment": 5070,
+        "damage": 15033.8,
+        "placements": [
+          [
+            400,
+            616,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 107,
+        "leaked": 93,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 181.05,
+        "investment": 5070,
+        "damage": 16432.6,
+        "placements": [
+          [
+            700,
+            616,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 114,
+        "leaked": 86,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 158.7,
+        "investment": 5070,
+        "damage": 16649.2,
+        "placements": [
+          [
+            800,
+            616,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 109,
+        "leaked": 91,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 170.95,
+        "investment": 5070,
+        "damage": 17430,
+        "placements": [
+          [
+            900,
+            616,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 129,
+        "leaked": 71,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 168.8,
+        "investment": 5070,
+        "damage": 19514,
+        "placements": [
+          [
+            1400,
+            616,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 129,
+        "leaked": 71,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 152.95,
+        "investment": 5070,
+        "damage": 18880.2,
+        "placements": [
+          [
+            1500,
+            616,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 128,
+        "leaked": 72,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 185.65,
+        "investment": 5070,
+        "damage": 19386.6,
+        "placements": [
+          [
+            300,
+            880,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 127,
+        "leaked": 73,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 181.9,
+        "investment": 5070,
+        "damage": 18788.8,
+        "placements": [
+          [
+            400,
+            880,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 129,
+        "leaked": 71,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 182.3,
+        "investment": 5070,
+        "damage": 19361.8,
+        "placements": [
+          [
+            500,
+            880,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 112,
+        "leaked": 88,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 171.6,
+        "investment": 5070,
+        "damage": 16774,
+        "placements": [
+          [
+            900,
+            880,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 110,
+        "leaked": 90,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 172.4,
+        "investment": 5070,
+        "damage": 17413.4,
+        "placements": [
+          [
+            1000,
+            880,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 106,
+        "leaked": 94,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 172.3,
+        "investment": 5070,
+        "damage": 16953,
+        "placements": [
+          [
+            1100,
+            880,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 96,
+        "leaked": 104,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 168.8,
+        "investment": 5070,
+        "damage": 15298.6,
+        "placements": [
+          [
+            1400,
+            880,
+            4,
+            2
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 107,
+        "leaked": 93,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 168.8,
+        "investment": 5070,
+        "damage": 15806.4,
+        "placements": [
+          [
+            1500,
+            880,
+            4,
+            2
+          ]
+        ]
+      }
+    ],
+    "max24Positions": [
+      {
+        "wave": 50,
+        "killed": 77,
+        "leaked": 123,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 173.1,
+        "investment": 4670,
+        "damage": 9730,
+        "placements": [
+          [
+            300,
+            352,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 67,
+        "leaked": 133,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 184.65,
+        "investment": 4670,
+        "damage": 8698.32,
+        "placements": [
+          [
+            800,
+            352,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 71,
+        "leaked": 129,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 184.65,
+        "investment": 4670,
+        "damage": 8555.8,
+        "placements": [
+          [
+            900,
+            352,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 69,
+        "leaked": 131,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 184.65,
+        "investment": 4670,
+        "damage": 8195.8,
+        "placements": [
+          [
+            1200,
+            352,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 62,
+        "leaked": 138,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 181.05,
+        "investment": 4670,
+        "damage": 7364.96,
+        "placements": [
+          [
+            1300,
+            352,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 59,
+        "leaked": 141,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 184.65,
+        "investment": 4670,
+        "damage": 7247.48,
+        "placements": [
+          [
+            1400,
+            352,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 61,
+        "leaked": 139,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 184.65,
+        "investment": 4670,
+        "damage": 7494.96,
+        "placements": [
+          [
+            1500,
+            352,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 72,
+        "leaked": 128,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 176.75,
+        "investment": 4670,
+        "damage": 8070,
+        "placements": [
+          [
+            300,
+            616,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 73,
+        "leaked": 127,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 173.1,
+        "investment": 4670,
+        "damage": 8470,
+        "placements": [
+          [
+            400,
+            616,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 74,
+        "leaked": 126,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 176.75,
+        "investment": 4670,
+        "damage": 9054.96,
+        "placements": [
+          [
+            700,
+            616,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 80,
+        "leaked": 120,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 172.4,
+        "investment": 4670,
+        "damage": 9120,
+        "placements": [
+          [
+            800,
+            616,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 79,
+        "leaked": 121,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 176.75,
+        "investment": 4670,
+        "damage": 9130,
+        "placements": [
+          [
+            900,
+            616,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 88,
+        "leaked": 112,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 176.75,
+        "investment": 4670,
+        "damage": 10414.12,
+        "placements": [
+          [
+            1400,
+            616,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 83,
+        "leaked": 117,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 172.4,
+        "investment": 4670,
+        "damage": 10040,
+        "placements": [
+          [
+            1500,
+            616,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 95,
+        "leaked": 105,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 185.6,
+        "investment": 4670,
+        "damage": 11595.72,
+        "placements": [
+          [
+            300,
+            880,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 94,
+        "leaked": 106,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 184.15,
+        "investment": 4670,
+        "damage": 11654.12,
+        "placements": [
+          [
+            400,
+            880,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 93,
+        "leaked": 107,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 182.45,
+        "investment": 4670,
+        "damage": 11338.32,
+        "placements": [
+          [
+            500,
+            880,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 91,
+        "leaked": 109,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 176.75,
+        "investment": 4670,
+        "damage": 10615.8,
+        "placements": [
+          [
+            900,
+            880,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 90,
+        "leaked": 110,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 176.75,
+        "investment": 4670,
+        "damage": 10233.28,
+        "placements": [
+          [
+            1000,
+            880,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 88,
+        "leaked": 112,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 170.95,
+        "investment": 4670,
+        "damage": 9897.48,
+        "placements": [
+          [
+            1100,
+            880,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 87,
+        "leaked": 113,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 176.75,
+        "investment": 4670,
+        "damage": 9578.32,
+        "placements": [
+          [
+            1400,
+            880,
+            2,
+            4
+          ]
+        ]
+      },
+      {
+        "wave": 50,
+        "killed": 86,
+        "leaked": 114,
+        "total": 200,
+        "clear": false,
+        "simulationSeconds": 169.15,
+        "investment": 4670,
+        "damage": 9450,
+        "placements": [
+          [
+            1500,
+            880,
+            2,
+            4
+          ]
+        ]
+      }
+    ]
+  }
+}

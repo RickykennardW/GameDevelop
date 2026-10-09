@@ -1,0 +1,34 @@
+{
+  "result": {
+    "checks": 27,
+    "performance": [
+      {
+        "enemies": 40,
+        "towers": 12,
+        "samples": 120,
+        "meanMs": 6.950833333532016,
+        "maxMs": 15.100000023841858,
+        "note": "static mixed enemies /12 towers, forced target reacquisition, shooting held by cooldown; headless device sample"
+      },
+      {
+        "enemies": 200,
+        "towers": 12,
+        "samples": 120,
+        "meanMs": 6.955000000198682,
+        "maxMs": 24.30000001192093,
+        "note": "static mixed enemies /12 towers, forced target reacquisition, shooting held by cooldown; headless device sample"
+      }
+    ],
+    "visibleViews": 20,
+    "colors": "100% and75% green /50% yellow /25% red",
+    "hpWidth": [
+      24,
+      30,
+      30,
+      26,
+      36
+    ]
+  },
+  "progress": [],
+  "consoleErrors": []
+}

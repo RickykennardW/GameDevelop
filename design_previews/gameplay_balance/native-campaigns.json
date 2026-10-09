@@ -1,0 +1,812 @@
+{
+  "result": {
+    "checks": 104,
+    "results": [
+      {
+        "scenario": "earlyCampaign",
+        "waves": [
+          {
+            "wave": 1,
+            "total": 4,
+            "spawned": 4,
+            "killed": 4,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 282,
+            "peak": 4,
+            "spawnInterval": 0.9,
+            "income": 80,
+            "gold": 430,
+            "lives": 10,
+            "remainingEnemies": 0
+          },
+          {
+            "wave": 2,
+            "total": 8,
+            "spawned": 8,
+            "killed": 8,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 803,
+            "peak": 8,
+            "spawnInterval": 0.9,
+            "income": 100,
+            "gold": 530,
+            "lives": 10,
+            "remainingEnemies": 0
+          },
+          {
+            "wave": 3,
+            "total": 12,
+            "spawned": 12,
+            "killed": 12,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 876,
+            "peak": 10,
+            "spawnInterval": 0.9,
+            "income": 120,
+            "gold": 650,
+            "lives": 10,
+            "remainingEnemies": 0
+          },
+          {
+            "wave": 4,
+            "total": 16,
+            "spawned": 16,
+            "killed": 16,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 928,
+            "peak": 13,
+            "spawnInterval": 0.9,
+            "income": 148,
+            "gold": 798,
+            "lives": 10,
+            "remainingEnemies": 0
+          },
+          {
+            "wave": 5,
+            "total": 20,
+            "spawned": 20,
+            "killed": 20,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 679,
+            "peak": 7,
+            "spawnInterval": 0.9,
+            "income": 170,
+            "gold": 668,
+            "lives": 10,
+            "remainingEnemies": 0
+          }
+        ],
+        "investment": 600
+      },
+      {
+        "scenario": "earnedIncomeCampaign",
+        "waves": [
+          {
+            "wave": 1,
+            "total": 4,
+            "spawned": 4,
+            "killed": 4,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 157,
+            "peak": 3,
+            "spawnInterval": 0.9,
+            "income": 80,
+            "gold": 130,
+            "lives": 10,
+            "remainingEnemies": 0,
+            "builds": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "investment": 600
+          },
+          {
+            "wave": 2,
+            "total": 8,
+            "spawned": 8,
+            "killed": 8,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 278,
+            "peak": 5,
+            "spawnInterval": 0.9,
+            "income": 100,
+            "gold": 230,
+            "lives": 10,
+            "remainingEnemies": 0,
+            "builds": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "investment": 600
+          },
+          {
+            "wave": 3,
+            "total": 12,
+            "spawned": 12,
+            "killed": 12,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 344,
+            "peak": 7,
+            "spawnInterval": 0.9,
+            "income": 120,
+            "gold": 350,
+            "lives": 10,
+            "remainingEnemies": 0,
+            "builds": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "investment": 600
+          },
+          {
+            "wave": 4,
+            "total": 16,
+            "spawned": 16,
+            "killed": 16,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 403,
+            "peak": 7,
+            "spawnInterval": 0.9,
+            "income": 148,
+            "gold": 498,
+            "lives": 10,
+            "remainingEnemies": 0,
+            "builds": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "investment": 600
+          },
+          {
+            "wave": 5,
+            "total": 20,
+            "spawned": 20,
+            "killed": 20,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 509,
+            "peak": 7,
+            "spawnInterval": 0.9,
+            "income": 170,
+            "gold": 368,
+            "lives": 10,
+            "remainingEnemies": 0,
+            "builds": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "investment": 900
+          },
+          {
+            "wave": 6,
+            "total": 24,
+            "spawned": 24,
+            "killed": 24,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 675,
+            "peak": 10,
+            "spawnInterval": 0.885,
+            "income": 199,
+            "gold": 407,
+            "lives": 10,
+            "remainingEnemies": 0,
+            "builds": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "investment": 1060
+          },
+          {
+            "wave": 7,
+            "total": 28,
+            "spawned": 28,
+            "killed": 28,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 796,
+            "peak": 13,
+            "spawnInterval": 0.87,
+            "income": 237,
+            "gold": 484,
+            "lives": 10,
+            "remainingEnemies": 0,
+            "builds": [
+              [
+                1,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "investment": 1220
+          },
+          {
+            "wave": 8,
+            "total": 32,
+            "spawned": 32,
+            "killed": 32,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 798,
+            "peak": 11,
+            "spawnInterval": 0.855,
+            "income": 259,
+            "gold": 313,
+            "lives": 10,
+            "remainingEnemies": 0,
+            "builds": [
+              [
+                2,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "investment": 1650
+          },
+          {
+            "wave": 9,
+            "total": 36,
+            "spawned": 36,
+            "killed": 36,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 807,
+            "peak": 12,
+            "spawnInterval": 0.8400000000000001,
+            "income": 279,
+            "gold": 292,
+            "lives": 10,
+            "remainingEnemies": 0,
+            "builds": [
+              [
+                2,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "investment": 1950
+          },
+          {
+            "wave": 10,
+            "total": 40,
+            "spawned": 40,
+            "killed": 40,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 913,
+            "peak": 11,
+            "spawnInterval": 0.8250000000000001,
+            "income": 316,
+            "gold": 608,
+            "lives": 10,
+            "remainingEnemies": 0,
+            "builds": [
+              [
+                2,
+                0
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "investment": 1950
+          },
+          {
+            "wave": 11,
+            "total": 44,
+            "spawned": 44,
+            "killed": 44,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 897,
+            "peak": 10,
+            "spawnInterval": 0.81,
+            "income": 338,
+            "gold": 516,
+            "lives": 10,
+            "remainingEnemies": 0,
+            "builds": [
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "investment": 2380
+          },
+          {
+            "wave": 12,
+            "total": 48,
+            "spawned": 48,
+            "killed": 48,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 958,
+            "peak": 13,
+            "spawnInterval": 0.795,
+            "income": 368,
+            "gold": 604,
+            "lives": 10,
+            "remainingEnemies": 0,
+            "builds": [
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "investment": 2660
+          },
+          {
+            "wave": 13,
+            "total": 52,
+            "spawned": 52,
+            "killed": 52,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 1010,
+            "peak": 12,
+            "spawnInterval": 0.78,
+            "income": 396,
+            "gold": 420,
+            "lives": 10,
+            "remainingEnemies": 0,
+            "builds": [
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                0,
+                2
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "investment": 3240
+          },
+          {
+            "wave": 14,
+            "total": 56,
+            "spawned": 56,
+            "killed": 56,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 1077,
+            "peak": 12,
+            "spawnInterval": 0.765,
+            "income": 427,
+            "gold": 687,
+            "lives": 10,
+            "remainingEnemies": 0,
+            "builds": [
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                1,
+                2
+              ],
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "investment": 3400
+          },
+          {
+            "wave": 15,
+            "total": 60,
+            "spawned": 60,
+            "killed": 60,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 1082,
+            "peak": 12,
+            "spawnInterval": 0.75,
+            "income": 447,
+            "gold": 674,
+            "lives": 10,
+            "remainingEnemies": 0,
+            "builds": [
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "investment": 3860
+          },
+          {
+            "wave": 16,
+            "total": 64,
+            "spawned": 64,
+            "killed": 64,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 1129,
+            "peak": 13,
+            "spawnInterval": 0.7350000000000001,
+            "income": 475,
+            "gold": 1019,
+            "lives": 10,
+            "remainingEnemies": 0,
+            "builds": [
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "investment": 3990
+          },
+          {
+            "wave": 17,
+            "total": 68,
+            "spawned": 68,
+            "killed": 68,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 1232,
+            "peak": 15,
+            "spawnInterval": 0.72,
+            "income": 507,
+            "gold": 1066,
+            "lives": 10,
+            "remainingEnemies": 0,
+            "builds": [
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "investment": 4450
+          },
+          {
+            "wave": 18,
+            "total": 72,
+            "spawned": 72,
+            "killed": 72,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 1230,
+            "peak": 15,
+            "spawnInterval": 0.7050000000000001,
+            "income": 536,
+            "gold": 1302,
+            "lives": 10,
+            "remainingEnemies": 0,
+            "builds": [
+              [
+                2,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "investment": 4750
+          },
+          {
+            "wave": 19,
+            "total": 76,
+            "spawned": 76,
+            "killed": 76,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 1242,
+            "peak": 16,
+            "spawnInterval": 0.6900000000000001,
+            "income": 564,
+            "gold": 636,
+            "lives": 10,
+            "remainingEnemies": 0,
+            "builds": [
+              [
+                2,
+                0
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "investment": 5980
+          },
+          {
+            "wave": 20,
+            "total": 80,
+            "spawned": 80,
+            "killed": 80,
+            "leaked": 0,
+            "clear": true,
+            "gameOver": false,
+            "frames": 1329,
+            "peak": 15,
+            "spawnInterval": 0.675,
+            "income": 586,
+            "gold": 1222,
+            "lives": 10,
+            "remainingEnemies": 0,
+            "builds": [
+              [
+                2,
+                0
+              ],
+              [
+                3,
+                2
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                1
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            "investment": 5980
+          }
+        ]
+      }
+    ],
+    "method": "native compiled events and actual homing projectiles at50ms/step; standalone difficulty fixtures have10000Lives to count every leak, campaign retains10Lives/650Gold; no gameplay logic substituted"
+  },
+  "progress": [
+    "BALANCE PROGRESS early {\"wave\":1,\"total\":4,\"spawned\":4,\"killed\":4,\"leaked\":0,\"clear\":true,\"gameOver\":false,\"frames\":282,\"peak\":4,\"spawnInterval\":0.9,\"income\":80,\"gold\":430,\"lives\":10,\"remainingEnemies\":0}",
+    "BALANCE PROGRESS early {\"wave\":2,\"total\":8,\"spawned\":8,\"killed\":8,\"leaked\":0,\"clear\":true,\"gameOver\":false,\"frames\":803,\"peak\":8,\"spawnInterval\":0.9,\"income\":100,\"gold\":530,\"lives\":10,\"remainingEnemies\":0}",
+    "BALANCE PROGRESS early {\"wave\":3,\"total\":12,\"spawned\":12,\"killed\":12,\"leaked\":0,\"clear\":true,\"gameOver\":false,\"frames\":876,\"peak\":10,\"spawnInterval\":0.9,\"income\":120,\"gold\":650,\"lives\":10,\"remainingEnemies\":0}",
+    "BALANCE PROGRESS early {\"wave\":4,\"total\":16,\"spawned\":16,\"killed\":16,\"leaked\":0,\"clear\":true,\"gameOver\":false,\"frames\":928,\"peak\":13,\"spawnInterval\":0.9,\"income\":148,\"gold\":798,\"lives\":10,\"remainingEnemies\":0}",
+    "BALANCE PROGRESS early {\"wave\":5,\"total\":20,\"spawned\":20,\"killed\":20,\"leaked\":0,\"clear\":true,\"gameOver\":false,\"frames\":679,\"peak\":7,\"spawnInterval\":0.9,\"income\":170,\"gold\":668,\"lives\":10,\"remainingEnemies\":0}",
+    "BALANCE PROGRESS early campaign1-5 passed",
+    "BALANCE PROGRESS campaign {\"wave\":5,\"total\":20,\"spawned\":20,\"killed\":20,\"leaked\":0,\"clear\":true,\"gameOver\":false,\"frames\":509,\"peak\":7,\"spawnInterval\":0.9,\"income\":170,\"gold\":368,\"lives\":10,\"remainingEnemies\":0,\"builds\":[[0,0],[0,0],[0,0]],\"investment\":900}",
+    "BALANCE PROGRESS campaign {\"wave\":10,\"total\":40,\"spawned\":40,\"killed\":40,\"leaked\":0,\"clear\":true,\"gameOver\":false,\"frames\":913,\"peak\":11,\"spawnInterval\":0.8250000000000001,\"income\":316,\"gold\":608,\"lives\":10,\"remainingEnemies\":0,\"builds\":[[2,0],[1,0],[0,1],[0,0]],\"investment\":1950}",
+    "BALANCE PROGRESS campaign {\"wave\":15,\"total\":60,\"spawned\":60,\"killed\":60,\"leaked\":0,\"clear\":true,\"gameOver\":false,\"frames\":1082,\"peak\":12,\"spawnInterval\":0.75,\"income\":447,\"gold\":674,\"lives\":10,\"remainingEnemies\":0,\"builds\":[[2,0],[2,2],[2,2],[1,0],[0,0]],\"investment\":3860}",
+    "BALANCE PROGRESS campaign {\"wave\":20,\"total\":80,\"spawned\":80,\"killed\":80,\"leaked\":0,\"clear\":true,\"gameOver\":false,\"frames\":1329,\"peak\":15,\"spawnInterval\":0.675,\"income\":586,\"gold\":1222,\"lives\":10,\"remainingEnemies\":0,\"builds\":[[2,0],[3,2],[2,2],[1,1],[2,1],[0,0]],\"investment\":5980}"
+  ],
+  "consoleErrors": []
+}

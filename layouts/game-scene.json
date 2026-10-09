@@ -770,7 +770,7 @@
           "persistentUuid": "29198e84-ded0-40ef-8498-6fe14e17d215",
           "name": "ExplosionRadius",
           "type": "number",
-          "value": 70
+          "value": 64
         },
         {
           "persistentUuid": "38e2456a-d883-44c0-8fbb-b6fec6d4149a",
@@ -806,7 +806,7 @@
                           "persistentUuid": "0d1d9aff-6bf9-4f6a-bdf1-127c740da4bc",
                           "name": "Cost",
                           "type": "number",
-                          "value": 125
+                          "value": 160
                         },
                         {
                           "persistentUuid": "a176454d-dda4-432f-bfb8-6a2c83583f5c",
@@ -818,7 +818,7 @@
                           "persistentUuid": "9a6baed5-8bf5-43df-88a7-92369d1de077",
                           "name": "Description",
                           "type": "string",
-                          "value": "Damage +15%"
+                          "value": "Damage: 50 -> 56"
                         }
                       ]
                     },
@@ -836,7 +836,7 @@
                           "persistentUuid": "caf6d9f1-143d-436b-b8cc-6cc2c09d00ba",
                           "name": "Cost",
                           "type": "number",
-                          "value": 200
+                          "value": 300
                         },
                         {
                           "persistentUuid": "f56f4866-aeec-43ce-b5ee-db0e87017e81",
@@ -848,7 +848,7 @@
                           "persistentUuid": "fbde4be0-e641-4623-b2d9-7f0d88dac36f",
                           "name": "Description",
                           "type": "string",
-                          "value": "Damage +15%\nRange +5%"
+                          "value": "Damage: 56 -> 62\nRange +4%"
                         }
                       ]
                     },
@@ -866,7 +866,7 @@
                           "persistentUuid": "446fd734-b34f-4916-ba10-3837c2026976",
                           "name": "Cost",
                           "type": "number",
-                          "value": 650
+                          "value": 1100
                         },
                         {
                           "persistentUuid": "9159853c-7a27-4ac5-893f-8c71f08a69db",
@@ -878,7 +878,7 @@
                           "persistentUuid": "30596223-4710-425b-bfd7-23da4ddca17d",
                           "name": "Description",
                           "type": "string",
-                          "value": "40% splash\n70-unit radius"
+                          "value": "25% splash\n64-unit radius"
                         }
                       ]
                     },
@@ -896,7 +896,7 @@
                           "persistentUuid": "5fc22aba-adac-4774-8131-bab1bb71dcc4",
                           "name": "Cost",
                           "type": "number",
-                          "value": 1250
+                          "value": 2800
                         },
                         {
                           "persistentUuid": "37fac8f0-dd97-4fcb-8d3d-7ba29ff62aec",
@@ -908,7 +908,7 @@
                           "persistentUuid": "eaee7e0a-2f54-4398-a088-4dfb81026b74",
                           "name": "Description",
                           "type": "string",
-                          "value": "Damage +35%\n65% splash\nRadius +40%"
+                          "value": "Damage: 62 -> 74\n40% splash\n84-unit radius"
                         }
                       ]
                     }
@@ -945,7 +945,7 @@
                           "persistentUuid": "800c330a-ab52-4855-a4e1-fb8d3998f0fc",
                           "name": "Cost",
                           "type": "number",
-                          "value": 100
+                          "value": 130
                         },
                         {
                           "persistentUuid": "0d37c070-c562-48d8-8421-4f89d26a4ab9",
@@ -957,7 +957,7 @@
                           "persistentUuid": "083acf31-6a25-4795-abea-971cf112a798",
                           "name": "Description",
                           "type": "string",
-                          "value": "Attack speed +15%"
+                          "value": "Attack speed +10%"
                         }
                       ]
                     },
@@ -975,7 +975,7 @@
                           "persistentUuid": "ebe0495d-179e-47ec-8c03-baa4d944de80",
                           "name": "Cost",
                           "type": "number",
-                          "value": 175
+                          "value": 280
                         },
                         {
                           "persistentUuid": "1ca75773-4542-497c-b861-d113966e0311",
@@ -987,7 +987,7 @@
                           "persistentUuid": "695507da-3fdb-4ad7-bcba-189f35e8f208",
                           "name": "Description",
                           "type": "string",
-                          "value": "Attack speed +10%\nRange +5%"
+                          "value": "Attack speed: +22% total\nRange +4%"
                         }
                       ]
                     },
@@ -1005,7 +1005,7 @@
                           "persistentUuid": "54658394-decb-4304-9c62-d322e9f4f49d",
                           "name": "Cost",
                           "type": "number",
-                          "value": 600
+                          "value": 1000
                         },
                         {
                           "persistentUuid": "2e3e3b81-4514-490d-acba-9b84df05e266",
@@ -1017,7 +1017,7 @@
                           "persistentUuid": "ede5ce3c-9b3d-4093-8cfb-d24dceada77a",
                           "name": "Description",
                           "type": "string",
-                          "value": "2 shots\n65% damage each"
+                          "value": "2 shots\n62% damage each"
                         }
                       ]
                     },
@@ -1035,7 +1035,7 @@
                           "persistentUuid": "103967cb-1b92-4780-b357-af10631d461a",
                           "name": "Cost",
                           "type": "number",
-                          "value": 1100
+                          "value": 2500
                         },
                         {
                           "persistentUuid": "82a9621b-f79f-4aa6-baa9-09e754986fef",
@@ -1047,7 +1047,7 @@
                           "persistentUuid": "97d99bc1-da93-4035-a895-e6cc58c92201",
                           "name": "Description",
                           "type": "string",
-                          "value": "3 shots\n60% damage each"
+                          "value": "3 shots\n56% damage each"
                         }
                       ]
                     }
@@ -1462,6 +1462,193 @@
               ]
             }
           ]
+        },
+        {
+          "name": "DamageMultipliers",
+          "type": "array",
+          "children": [
+            {
+              "type": "number",
+              "value": 1
+            },
+            {
+              "type": "number",
+              "value": 1.12
+            },
+            {
+              "type": "number",
+              "value": 1.24
+            },
+            {
+              "type": "number",
+              "value": 1.24
+            },
+            {
+              "type": "number",
+              "value": 1.48
+            }
+          ]
+        },
+        {
+          "name": "SpeedMultipliers",
+          "type": "array",
+          "children": [
+            {
+              "type": "number",
+              "value": 1
+            },
+            {
+              "type": "number",
+              "value": 1.1
+            },
+            {
+              "type": "number",
+              "value": 1.22
+            },
+            {
+              "type": "number",
+              "value": 1.22
+            },
+            {
+              "type": "number",
+              "value": 1.22
+            }
+          ]
+        },
+        {
+          "name": "Path1RangeMultipliers",
+          "type": "array",
+          "children": [
+            {
+              "type": "number",
+              "value": 1
+            },
+            {
+              "type": "number",
+              "value": 1
+            },
+            {
+              "type": "number",
+              "value": 1.04
+            },
+            {
+              "type": "number",
+              "value": 1.04
+            },
+            {
+              "type": "number",
+              "value": 1.04
+            }
+          ]
+        },
+        {
+          "name": "Path2RangeMultipliers",
+          "type": "array",
+          "children": [
+            {
+              "type": "number",
+              "value": 1
+            },
+            {
+              "type": "number",
+              "value": 1
+            },
+            {
+              "type": "number",
+              "value": 1.04
+            },
+            {
+              "type": "number",
+              "value": 1.04
+            },
+            {
+              "type": "number",
+              "value": 1.04
+            }
+          ]
+        },
+        {
+          "name": "ProjectileFractions",
+          "type": "array",
+          "children": [
+            {
+              "type": "number",
+              "value": 1
+            },
+            {
+              "type": "number",
+              "value": 1
+            },
+            {
+              "type": "number",
+              "value": 1
+            },
+            {
+              "type": "number",
+              "value": 0.62
+            },
+            {
+              "type": "number",
+              "value": 0.56
+            }
+          ]
+        },
+        {
+          "name": "SplashRatios",
+          "type": "array",
+          "children": [
+            {
+              "type": "number",
+              "value": 0
+            },
+            {
+              "type": "number",
+              "value": 0
+            },
+            {
+              "type": "number",
+              "value": 0
+            },
+            {
+              "type": "number",
+              "value": 0.25
+            },
+            {
+              "type": "number",
+              "value": 0.4
+            }
+          ]
+        },
+        {
+          "name": "SplashRadii",
+          "type": "array",
+          "children": [
+            {
+              "type": "number",
+              "value": 0
+            },
+            {
+              "type": "number",
+              "value": 0
+            },
+            {
+              "type": "number",
+              "value": 0
+            },
+            {
+              "type": "number",
+              "value": 64
+            },
+            {
+              "type": "number",
+              "value": 84
+            }
+          ]
+        },
+        {
+          "name": "MinimumDamage",
+          "type": "number",
+          "value": 1
         }
       ]
     },
@@ -39898,7 +40085,7 @@
                   "persistentUuid": "647092d8-d5f7-4d8c-9d05-8691ef23f52c",
                   "name": "CountPerStep",
                   "type": "number",
-                  "value": 2
+                  "value": 3
                 },
                 {
                   "persistentUuid": "c910b379-52ba-4a3d-a586-f9d441aef7f7",
@@ -39928,7 +40115,7 @@
                   "persistentUuid": "ed4ac224-8ed0-4aae-8fa4-46f567ca8529",
                   "name": "CountPerStep",
                   "type": "number",
-                  "value": 1
+                  "value": 2
                 },
                 {
                   "persistentUuid": "55a7d8ef-cb73-48f7-9022-03eb7bf2b069",
@@ -40055,6 +40242,134 @@
               "name": "DeathDuration",
               "type": "number",
               "value": 0.75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "WavePacing",
+      "type": "structure",
+      "children": [
+        {
+          "name": "MinimumInterval",
+          "type": "number",
+          "value": 0.36
+        },
+        {
+          "name": "SpeedUpAfterWave",
+          "type": "number",
+          "value": 5
+        },
+        {
+          "name": "IntervalReductionPerWave",
+          "type": "number",
+          "value": 0.015
+        }
+      ]
+    },
+    {
+      "name": "WaveCompletionReward",
+      "type": "number",
+      "value": 60
+    },
+    {
+      "name": "EnemyHPBarConfig",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Height",
+          "type": "number",
+          "value": 6
+        },
+        {
+          "name": "ZOrder",
+          "type": "number",
+          "value": 20000
+        },
+        {
+          "name": "Types",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Basic",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Width",
+                  "type": "number",
+                  "value": 24
+                },
+                {
+                  "name": "HeadOffset",
+                  "type": "number",
+                  "value": 40
+                }
+              ]
+            },
+            {
+              "name": "VoidHound",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Width",
+                  "type": "number",
+                  "value": 30
+                },
+                {
+                  "name": "HeadOffset",
+                  "type": "number",
+                  "value": 60
+                }
+              ]
+            },
+            {
+              "name": "VoidGuard",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Width",
+                  "type": "number",
+                  "value": 30
+                },
+                {
+                  "name": "HeadOffset",
+                  "type": "number",
+                  "value": 48
+                }
+              ]
+            },
+            {
+              "name": "VoidSentinel",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Width",
+                  "type": "number",
+                  "value": 26
+                },
+                {
+                  "name": "HeadOffset",
+                  "type": "number",
+                  "value": 42
+                }
+              ]
+            },
+            {
+              "name": "VoidBrute",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Width",
+                  "type": "number",
+                  "value": 36
+                },
+                {
+                  "name": "HeadOffset",
+                  "type": "number",
+                  "value": 55
+                }
+              ]
             }
           ]
         }
@@ -56530,7 +56845,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "assets/ui/enemy-health-pixel.svg",
+                  "image": "assets/ui/enemy-health-track.svg",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -65226,7 +65541,7 @@
             "if (idle && !yes(\"GameOver\") && num(\"Lives\") > 0 && num(\"Wave\") < 50 && (manual || (auto() && num(\"Wave\") > 0 && state.wait <= 0))) {",
             "  if (!auto()) sv.get(\"WaveMode\").setString(\"Manual\");",
             "  const wave = num(\"Wave\") + 1;",
-            "  // Fixed archetype stats; distribution controls only the two enemy counts.",
+            "  // Fixed archetype stats; composition and gradual pacing supply progression.",
             "  const config = sv.get(\"NovaWispConfig\").toJSObject();",
             "  const distribution=sv.get(\"EnemyWaveDistribution\").toJSObject();",
             "  const total=wave*distribution.TotalMultiplier;",
@@ -65246,7 +65561,9 @@
             "   queue.push(chosen);used[chosen]++;otherIndex++;",
             "  }",
             "  state.queue=queue;state.index=0;state.elapsed=0;state.wait=3;",
-            "  sv.get(\"Wave\").setNumber(wave);sv.get(\"SpawnInterval\").setNumber(config.SpawnInterval);",
+            "  const pacing=sv.get('WavePacing').toJSObject();",
+            "  const interval=Math.max(pacing.MinimumInterval,config.SpawnInterval-Math.max(0,wave-pacing.SpeedUpAfterWave)*pacing.IntervalReductionPerWave);",
+            "  sv.get(\"Wave\").setNumber(wave);sv.get(\"SpawnInterval\").setNumber(interval);",
             "  sv.get(\"EnemiesToSpawn\").setNumber(queue.length);sv.get(\"WaveActive\").setBoolean(true);message.hide();",
             "}"
           ],
@@ -65460,12 +65777,13 @@
             " star.valid=(a,b)=>Number.isInteger(a)&&Number.isInteger(b)&&a>=0&&b>=0&&a<=4&&b<=4&&!(a>=3&&b>=3);",
             " star.stats=(a,b)=>{",
             "  if(!star.valid(a,b))return null;",
-            "  const damage=config.BaseDamage*(a>=1?1.15:1)*(a>=2?1.15:1)*(a>=4?1.35:1);",
-            "  const count=b>=4?3:b>=3?2:1,fraction=b>=4?.60:b>=3?.65:1;",
-            "  return {Damage:damage,AttackRange:config.BaseRange*(a>=2?1.05:1)*(b>=2?1.05:1),",
-            "   AttackInterval:config.BaseInterval/((b>=1?1.15:1)*(b>=2?1.10:1)),",
+            "  // Cumulative tier tables prevent accidental multiplicative upgrade stacking.",
+            "  const damage=config.BaseDamage*config.DamageMultipliers[a];",
+            "  const count=b>=4?3:b>=3?2:1,fraction=config.ProjectileFractions[b];",
+            "  return {Damage:damage,AttackRange:config.BaseRange*config.Path1RangeMultipliers[a]*config.Path2RangeMultipliers[b],",
+            "   AttackInterval:config.BaseInterval/config.SpeedMultipliers[b],",
             "   ProjectileSpeed:config.ProjectileSpeed,ProjectileCount:count,ProjectileDamage:damage*fraction,",
-            "   SplashRatio:a>=4?.65:a>=3?.40:0,SplashRadius:a>=4?config.ExplosionRadius*1.40:a>=3?config.ExplosionRadius:0,",
+            "   SplashRatio:config.SplashRatios[a],SplashRadius:config.SplashRadii[a],",
             "   ProjectileKind:a>=4?'Supernova':a>=3?'Explosion':b>=4?'Meteor':b>=3?'Twin':a>=1?'Reinforced':'Base'};",
             " };",
             " star.apply=tower=>{",
@@ -65501,8 +65819,10 @@
             "  o.__starEffect={x,y,size,age:0,life:kind==='Supernova'?.55:kind==='Explosion'?.42:.22};return o;",
             " };",
             " star.deal=(owner,enemy,damage)=>{",
-            "  const health=enemy.getBehavior('Health');if(health.IsDead())return 0;",
-            "  const before=Math.max(0,health.Health());health.Hit(damage,false,enemy.getVariables().get('Armor').getAsNumber()>0);",
+            "  const health=enemy.getBehavior('Health');if(health.IsDead()||!Number.isFinite(damage)||damage<=0)return 0;",
+            "  const before=Math.max(0,health.Health()),armor=Math.max(0,health.FlatDamageReduction());",
+            "  // Keep native flat armor; a positive impact always removes at least 1 HP.",
+            "  health.Hit(Math.max(damage,armor+config.MinimumDamage),false,armor>0);",
             "  const actual=Math.max(0,before-Math.max(0,health.Health()));",
             "  if(owner)owner.getVariables().get('DamageDealt').add(actual);",
             "  return actual;",
@@ -65530,11 +65850,15 @@
             "  return true;",
             " };",
             " star.wrap=degrees=>(degrees+540)%360-180;",
-            " star.targetValid=(tower,target)=>!!target&&get('Enemy').includes(target)&&!target.getBehavior('Health').IsDead()&&Math.hypot(target.getCenterXInScene()-scene.__freePlacement.center(tower)[0],target.getCenterYInScene()-scene.__freePlacement.center(tower)[1])<=tower.getVariables().get('AttackRange').getAsNumber();",
+            " star.targetValid=(tower,target,liveSet)=>{",
+            "  if(!target||!(liveSet?liveSet.has(target):get('Enemy').includes(target))||target.getBehavior('Health').IsDead())return false;",
+            "  const [x,y]=scene.__freePlacement.center(tower),dx=target.getCenterXInScene()-x,dy=target.getCenterYInScene()-y,range=tower.getVariables().get('AttackRange').getAsNumber();",
+            "  return dx*dx+dy*dy<=range*range;",
+            " };",
             " star.bearing=(tower,target)=>{const pivot=star.componentTransform(tower,'Turret');return Math.atan2(target.getCenterYInScene()-pivot.y,target.getCenterXInScene()-pivot.x)*180/Math.PI;};",
             " star.canFire=(tower,target)=>star.targetValid(tower,target)&&Math.abs(star.wrap(star.bearing(tower,target)-tower.__starFacing))<=componentConfig.FireToleranceDegrees;",
             "}",
-            "const dt=gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(scene),enemies=get('Enemy');",
+            "const dt=gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(scene),enemies=get('Enemy'),liveSet=new Set(enemies);",
             "for(const tower of get('StarCannonTower')){",
             " const v=tower.getVariables();",
             " if(tower.__starLifetime!==tower.getUniqueId()){",
@@ -65545,9 +65869,9 @@
             " star.visual(tower);tower.__starCooldown=Math.max(0,tower.__starCooldown-dt);",
             " if(sv.get('GameOver').getAsBoolean())continue;",
             " let target=enemies.find(e=>e.getUniqueId()===tower.__starTargetId);",
-            " if(!star.targetValid(tower,target)){",
+            " if(!star.targetValid(tower,target,liveSet)){",
             "  const [x,y]=scene.__freePlacement.center(tower);let nearest=Infinity;target=null;",
-            "  for(const enemy of enemies){if(!star.targetValid(tower,enemy))continue;",
+            "  for(const enemy of enemies){if(!star.targetValid(tower,enemy,liveSet))continue;",
             "   const d=Math.hypot(enemy.getCenterXInScene()-x,enemy.getCenterYInScene()-y);",
             "   if(d<nearest){nearest=d;target=enemy;}",
             "  }",
@@ -65690,7 +66014,7 @@
               "parameters": [
                 "Money",
                 "+",
-                "100"
+                "WaveCompletionReward"
               ]
             },
             {
@@ -66001,59 +66325,56 @@
         {
           "type": "BuiltinCommonInstructions::JsCode",
           "inlineCode": [
-            "// Display-only pass after movement/damage/removal: one pair per unique enemy lifetime.",
-            "// GDevelop gives recycled instances a new unique id. No nearest-enemy selection.",
-            "let bars = runtimeScene.__enemyHealthBars;",
-            "if (!bars) bars = runtimeScene.__enemyHealthBars = new Map();",
-            "for (const enemy of runtimeScene.getObjects(\"Enemy\")) {",
-            "  const id = enemy.getUniqueId();",
-            "  let pair = bars.get(id);",
-            "  if((enemy.getVariables().get('EnemyType').getAsString()==='VoidHound'||runtimeScene.__voidCommon?.has(enemy.getVariables().get('EnemyType').getAsString()))&&enemy.getBehavior('Health').IsDead()){",
-            "    if(pair){pair.background.deleteFromScene();pair.fill.deleteFromScene();bars.delete(id);}continue;",
-            "  }",
-            "  if (!pair) {",
-            "    const background = runtimeScene.createObject(\"HealthBarBackground\");",
-            "    const fill = runtimeScene.createObject(\"HealthBarFill\");",
-            "    pair = { enemy, background, fill, width: -1, height: -1, ratio: -1, color: \"\" };",
-            "    bars.set(id, pair);",
-            "    background.getVariables().get(\"OwnerEnemyId\").setNumber(id);",
-            "    fill.getVariables().get(\"OwnerEnemyId\").setNumber(id);",
-            "    background.setColor(\"38;47;35\"); background.setOpacity(225);",
-            "    // Covers kills, reaching the base, external deletion and scene cleanup.",
-            "    const cleanup = () => {",
-            "      background.deleteFromScene(); fill.deleteFromScene(); bars.delete(id);",
-            "      enemy.unregisterDestroyCallback(cleanup);",
-            "    };",
-            "    enemy.registerDestroyCallback(cleanup);",
-            "  }",
-            "  const health = enemy.getBehavior(\"Health\");",
-            "  const current = health.Health(), maximum = health.MaxHealth();",
-            "  const ratio = maximum > 0 ? Math.max(0, Math.min(1, current / maximum)) : 0;",
-            "  const visualScale=runtimeScene.__voidCommon?.configs[enemy.getVariables().get('EnemyType').getAsString()]?.RenderScale||runtimeScene.__worldStyle.enemy;",
-            "  const width = Math.round(Math.max(28, Math.min(44, enemy.getWidth() * 0.9)) * visualScale);",
-            "  const height = 7;",
-            "  const x = enemy.getCenterXInScene() - width / 2;",
-            "  const y = enemy.getCenterYInScene() - enemy.getHeight()*visualScale/2 - height - Math.max(4, Math.min(7, enemy.getHeight() * 0.12));",
-            "  const layer = enemy.getLayer();",
-            "  if (pair.background.getLayer() !== layer) pair.background.setLayer(layer);",
-            "  if (pair.fill.getLayer() !== layer) pair.fill.setLayer(layer);",
-            "  // World layer follows the map camera; UI/HUD layers remain above it.",
-            "  const z = Math.max(20, enemy.getZOrder() + 1);",
-            "  pair.background.setZOrder(z); pair.fill.setZOrder(z + 1);",
-            "  pair.background.setPosition(x, y); pair.fill.setPosition(x + 1, y + 1);",
-            "  if (pair.width !== width || pair.height !== height) {",
-            "    pair.background.setWidth(width); pair.background.setHeight(height);",
-            "    pair.fill.setHeight(height - 2); pair.ratio = -1;",
-            "    pair.width = width; pair.height = height;",
-            "  }",
-            "  if (pair.ratio !== ratio) {",
-            "    // Origin is top-left. Only the right edge changes when HP changes.",
-            "    pair.fill.setWidth((width - 2) * ratio); pair.ratio = ratio;",
-            "  }",
-            "  const color = ratio > 0.6 ? \"119;191;84\" : ratio >= 0.3 ? \"238;181;64\" : \"220;79;64\";",
-            "  if (pair.color !== color) { pair.fill.setColor(color); pair.color = color; }",
-            "  pair.background.hide(enemy.isHidden()); pair.fill.hide(enemy.isHidden() || ratio <= 0);",
-            "}"
+            "// One native track/fill pair per living Enemy lifetime, after movement/combat.",
+            "// Detach cleanup at logical death: pooled bars can be reused before corpses expire.",
+            "const scene=runtimeScene;",
+            "let bars=scene.__enemyHealthBars;",
+            "if(!bars)bars=scene.__enemyHealthBars=new Map();",
+            "let state=scene.__enemyHealthBarState;",
+            "if(!state)state=scene.__enemyHealthBarState={config:scene.getVariables().get('EnemyHPBarConfig').toJSObject(),createdPairs:0};",
+            "const backgrounds=new Set(scene.getObjects('HealthBarBackground'));",
+            "const fills=new Set(scene.getObjects('HealthBarFill'));",
+            "const living=new Set();",
+            "const dispose=pair=>{",
+            " if(pair.disposed)return;pair.disposed=true;",
+            " if(pair.enemy.getUniqueId()===pair.id)pair.enemy.unregisterDestroyCallback(pair.cleanup);",
+            " // References alone are insufficient: GDevelop reinitializes pooled object instances.",
+            " for(const [object,uid]of [[pair.background,pair.backgroundId],[pair.fill,pair.fillId]])",
+            "  if(object.getUniqueId()===uid&&object.getVariables().get('OwnerEnemyId').getAsNumber()===pair.id)object.deleteFromScene();",
+            " if(bars.get(pair.id)===pair)bars.delete(pair.id);",
+            "};",
+            "for(const enemy of scene.getObjects('Enemy')){",
+            " const id=enemy.getUniqueId(),health=enemy.getBehavior('Health');let pair=bars.get(id);",
+            " if(health.IsDead()) {if(pair)dispose(pair);continue;}",
+            " living.add(id);",
+            " if(pair&&(pair.enemy!==enemy||pair.background.getUniqueId()!==pair.backgroundId||pair.fill.getUniqueId()!==pair.fillId||!backgrounds.has(pair.background)||!fills.has(pair.fill))){dispose(pair);pair=null;}",
+            " if(!pair){",
+            "  const background=scene.createObject('HealthBarBackground'),fill=scene.createObject('HealthBarFill');",
+            "  pair={id,enemy,background,fill,backgroundId:background.getUniqueId(),fillId:fill.getUniqueId(),width:-1,height:-1,ratio:-1,color:'',disposed:false};",
+            "  pair.cleanup=()=>dispose(pair);enemy.registerDestroyCallback(pair.cleanup);bars.set(id,pair);state.createdPairs++;",
+            "  background.getVariables().get('OwnerEnemyId').setNumber(id);fill.getVariables().get('OwnerEnemyId').setNumber(id);",
+            "  background.setColor('255;255;255');background.setOpacity(255);fill.setOpacity(255);",
+            " }",
+            " const type=enemy.getVariables().get('EnemyType').getAsString(),cfg=state.config.Types[type]||state.config.Types.Basic;",
+            " const width=cfg.Width,height=state.config.Height,current=health.Health(),maximum=health.MaxHealth();",
+            " const ratio=Number.isFinite(current)&&Number.isFinite(maximum)&&maximum>0?Math.max(0,Math.min(1,current/maximum)):0;",
+            " // Stable world dimensions/offsets, independent of HP, atlas size and render-only scale.",
+            " const x=enemy.getCenterXInScene()-width/2,y=enemy.getCenterYInScene()-cfg.HeadOffset-height;",
+            " const layer=enemy.getLayer();",
+            " for(const object of [pair.background,pair.fill])if(object.getLayer()!==layer)object.setLayer(layer);",
+            " pair.background.setZOrder(state.config.ZOrder);pair.fill.setZOrder(state.config.ZOrder+1);",
+            " pair.background.setPosition(x,y);pair.fill.setPosition(x+1,y+1);",
+            " if(pair.width!==width||pair.height!==height){",
+            "  pair.background.setWidth(width);pair.background.setHeight(height);pair.fill.setHeight(height-2);",
+            "  pair.width=width;pair.height=height;pair.ratio=-1;",
+            " }",
+            " if(pair.ratio!==ratio){pair.fill.setWidth((width-2)*ratio);pair.ratio=ratio;}",
+            " const color=ratio>.6?'93;203;123':ratio>=.3?'239;192;70':'235;84;96';",
+            " if(pair.color!==color){pair.fill.setColor(color);pair.color=color;}",
+            " pair.background.hide(enemy.isHidden());pair.fill.hide(enemy.isHidden()||ratio<=0);",
+            "}",
+            "// Also recover from unusual external deletions without accumulating orphan owners.",
+            "for(const [id,pair]of bars)if(!living.has(id))dispose(pair);"
           ],
           "parameterObjects": "",
           "useStrict": true
@@ -66160,7 +66481,7 @@
             "const mode=sv.get(\"WaveMode\").getAsString(),auto=mode===\"Auto\"||mode===\"AutoFast\";",
             "layout(banner.detail,ended?(sv.get(\"Lives\").getAsNumber()>0?\"All 50 waves cleared\":\"Final wave ended\"):\"Next Wave: \"+(wave+1)+(auto?\"  /  \"+Math.ceil(sv.get(\"IntermissionRemaining\").getAsNumber())+\" s\":\"  /  Press PLAY\"),44,Math.max(10,Math.min(13,width/25)),\"186;208;240\");",
             "banner.geometry={screenX,screenY,width,height,right,alpha};",
-            "layout(banner.reward,sv.get(\"LastRewardedWave\").getAsNumber()===wave?\"+100 GOLD\":\"\",66,12,\"149;240;212\");"
+            "layout(banner.reward,sv.get(\"LastRewardedWave\").getAsNumber()===wave?\"+\"+sv.get(\"WaveCompletionReward\").getAsNumber()+\" GOLD\":\"\",66,12,\"149;240;212\");"
           ],
           "parameterObjects": "",
           "useStrict": true,
