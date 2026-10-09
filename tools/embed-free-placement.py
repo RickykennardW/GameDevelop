@@ -6,6 +6,8 @@ root = Path(__file__).resolve().parent.parent
 path = root / 'layouts/game-scene.json'
 source = path.read_text(encoding='utf-8')
 scene = json.loads(source)
+if len(scene['events'])>17:
+    scene['events'][17]['events'][0]['inlineCode']=(root/'tools/audio-runtime.js').read_text(encoding='utf-8-sig').splitlines()
 for child,filename in [(4,'void-golem-runtime.js'),(5,'gold-budget-runtime.js')]:
     event=scene['events'][10]['events'][0]['events'][child]
     assert event['type']=='BuiltinCommonInstructions::JsCode'

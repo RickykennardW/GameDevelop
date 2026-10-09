@@ -1,0 +1,115 @@
+{
+  "result": {
+    "checks": [
+      "bounded native readiness",
+      "bounded native readiness",
+      "actual decoded buffer wraps without new BGM AncientGalaxyAmbience",
+      "bounded native readiness",
+      "actual decoded buffer wraps without new BGM CosmicDefense",
+      "bounded native readiness",
+      "actual decoded buffer wraps without new BGM SacredVoidTemple",
+      "bounded native readiness",
+      "actual decoded buffer wraps without new BGM VoidAwakening",
+      "rapid state changes never create third BGM",
+      "three-shot native Meteor volley fires",
+      "one audio discharge for3projectiles /zero muzzle impacts",
+      "true impacts play afterward",
+      "native tower selection feedback",
+      "actual Sell event emits one SFX /refund unchanged",
+      "MuteSFX suppresses UI and combat",
+      "no per-frame callback/widget allocation",
+      "changing Lives without an actual leaked enemy has no damage sound",
+      "dispose stops channels /unloads owned buffers"
+    ],
+    "loops": [
+      {
+        "id": "AncientGalaxyAmbience",
+        "seekAfterBoundary": 0.10666666666666735,
+        "starts": 1
+      },
+      {
+        "id": "CosmicDefense",
+        "seekAfterBoundary": 0.10666666666666735,
+        "starts": 1
+      },
+      {
+        "id": "SacredVoidTemple",
+        "seekAfterBoundary": 0.11733333333333285,
+        "starts": 2
+      },
+      {
+        "id": "VoidAwakening",
+        "seekAfterBoundary": 0.10666666666666558,
+        "starts": 1
+      }
+    ],
+    "hooks": 12,
+    "widgets": 2,
+    "stats": {
+      "requested": {
+        "TowerUpgrade": 4,
+        "TowerMajorUpgrade": 2,
+        "StarCannonFire": 1,
+        "EnemyHit": 2,
+        "ProjectileImpact": 3,
+        "CommonEnemyDeath": 1,
+        "GoldReward": 1,
+        "TowerSelect": 1,
+        "TowerSell": 1,
+        "UIClick": 1
+      },
+      "played": {
+        "TowerUpgrade": 1,
+        "TowerMajorUpgrade": 1,
+        "StarCannonFire": 1,
+        "EnemyHit": 1,
+        "ProjectileImpact": 1,
+        "CommonEnemyDeath": 1,
+        "GoldReward": 1,
+        "TowerSelect": 1,
+        "TowerSell": 1
+      },
+      "dropped": {
+        "TowerUpgrade": 3,
+        "TowerMajorUpgrade": 1,
+        "EnemyHit": 1,
+        "ProjectileImpact": 2,
+        "UIClick": 1
+      },
+      "bgmStarts": {
+        "SacredVoidTemple": 3,
+        "AncientGalaxyAmbience": 2,
+        "CosmicDefense": 1,
+        "VoidAwakening": 1
+      },
+      "maxMusic": 2,
+      "maxVoices": 6,
+      "baseEvents": 0,
+      "casts": 0,
+      "applies": 0,
+      "goldBatches": 1
+    },
+    "saved": {
+      "Master": 73,
+      "Music": 21,
+      "SFX": 62,
+      "UI": 42,
+      "MuteMusic": true,
+      "MuteSFX": false
+    },
+    "reloadExpected": true,
+    "reload": {
+      "settings": {
+        "Master": 73,
+        "Music": 21,
+        "SFX": 62,
+        "UI": 42,
+        "MuteMusic": true,
+        "MuteSFX": false
+      },
+      "unlocked": false
+    }
+  },
+  "progress": [],
+  "consoleErrors": []
+}

@@ -1,0 +1,766 @@
+{
+  "result": {
+    "geometry": {
+      "button": {
+        "x": 340,
+        "y": 22,
+        "w": 32,
+        "h": 32
+      },
+      "panel": {
+        "x": 340,
+        "y": 62,
+        "w": 308,
+        "h": 276
+      }
+    },
+    "layer": {
+      "visible": true,
+      "camera": [
+        960,
+        540,
+        1
+      ]
+    },
+    "objects": [
+      {
+        "key": "speakerPanel",
+        "name": "AudioPanel",
+        "hidden": false,
+        "xy": [
+          340,
+          22
+        ],
+        "size": [
+          32,
+          32
+        ],
+        "z": 1,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 340,
+            "y": 22,
+            "width": 32,
+            "height": 32,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "speaker",
+        "name": "AudioSpeaker",
+        "hidden": false,
+        "xy": [
+          344,
+          26
+        ],
+        "size": [
+          24,
+          24
+        ],
+        "z": 5,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 344,
+            "y": 26,
+            "width": 24,
+            "height": 24,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "popup",
+        "name": "AudioPanel",
+        "hidden": false,
+        "xy": [
+          340,
+          62
+        ],
+        "size": [
+          308,
+          276
+        ],
+        "z": 1,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 340,
+            "y": 62,
+            "width": 308,
+            "height": 276,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "title",
+        "name": "AudioText",
+        "hidden": false,
+        "xy": [
+          358,
+          77
+        ],
+        "size": [
+          220,
+          16
+        ],
+        "z": 6,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 353,
+            "y": 72,
+            "width": 56,
+            "height": 26,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "close",
+        "name": "AudioText",
+        "hidden": false,
+        "xy": [
+          621,
+          77
+        ],
+        "size": [
+          20,
+          14
+        ],
+        "z": 6,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 616,
+            "y": 72,
+            "width": 19,
+            "height": 24,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "labelMaster",
+        "name": "AudioText",
+        "hidden": false,
+        "xy": [
+          358,
+          117
+        ],
+        "size": [
+          92,
+          13
+        ],
+        "z": 6,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 353,
+            "y": 112,
+            "width": 57,
+            "height": 23,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "trackMaster",
+        "name": "AudioBlock",
+        "hidden": false,
+        "xy": [
+          454,
+          123
+        ],
+        "size": [
+          136,
+          5
+        ],
+        "z": 3,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 454,
+            "y": 123,
+            "width": 136,
+            "height": 5,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "fillMaster",
+        "name": "AudioBlock",
+        "hidden": false,
+        "xy": [
+          454,
+          123
+        ],
+        "size": [
+          136,
+          5
+        ],
+        "z": 4,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 454,
+            "y": 123,
+            "width": 136,
+            "height": 5,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "knobMaster",
+        "name": "AudioBlock",
+        "hidden": false,
+        "xy": [
+          587,
+          118
+        ],
+        "size": [
+          7,
+          15
+        ],
+        "z": 5,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 587,
+            "y": 118,
+            "width": 7,
+            "height": 15,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "numberMaster",
+        "name": "AudioText",
+        "hidden": false,
+        "xy": [
+          598,
+          116
+        ],
+        "size": [
+          42,
+          13
+        ],
+        "z": 6,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 593,
+            "y": 111,
+            "width": 39,
+            "height": 23,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "labelMusic",
+        "name": "AudioText",
+        "hidden": false,
+        "xy": [
+          358,
+          154
+        ],
+        "size": [
+          92,
+          13
+        ],
+        "z": 6,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 353,
+            "y": 149,
+            "width": 46,
+            "height": 23,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "trackMusic",
+        "name": "AudioBlock",
+        "hidden": false,
+        "xy": [
+          454,
+          160
+        ],
+        "size": [
+          136,
+          5
+        ],
+        "z": 3,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 454,
+            "y": 160,
+            "width": 136,
+            "height": 5,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "fillMusic",
+        "name": "AudioBlock",
+        "hidden": false,
+        "xy": [
+          454,
+          160
+        ],
+        "size": [
+          47.6,
+          5
+        ],
+        "z": 4,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 454,
+            "y": 160,
+            "width": 47.600006103515625,
+            "height": 5,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "knobMusic",
+        "name": "AudioBlock",
+        "hidden": false,
+        "xy": [
+          498.6,
+          155
+        ],
+        "size": [
+          7,
+          15
+        ],
+        "z": 5,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 498.6000061035156,
+            "y": 155,
+            "width": 7,
+            "height": 15,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "numberMusic",
+        "name": "AudioText",
+        "hidden": false,
+        "xy": [
+          598,
+          153
+        ],
+        "size": [
+          42,
+          13
+        ],
+        "z": 6,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 593,
+            "y": 148,
+            "width": 33,
+            "height": 23,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "labelSFX",
+        "name": "AudioText",
+        "hidden": false,
+        "xy": [
+          358,
+          191
+        ],
+        "size": [
+          92,
+          13
+        ],
+        "z": 6,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 353,
+            "y": 186,
+            "width": 32,
+            "height": 23,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "trackSFX",
+        "name": "AudioBlock",
+        "hidden": false,
+        "xy": [
+          454,
+          197
+        ],
+        "size": [
+          136,
+          5
+        ],
+        "z": 3,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 454,
+            "y": 197,
+            "width": 136,
+            "height": 5,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "fillSFX",
+        "name": "AudioBlock",
+        "hidden": false,
+        "xy": [
+          454,
+          197
+        ],
+        "size": [
+          95.2,
+          5
+        ],
+        "z": 4,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 454,
+            "y": 197,
+            "width": 95.20001220703125,
+            "height": 5,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "knobSFX",
+        "name": "AudioBlock",
+        "hidden": false,
+        "xy": [
+          546.2,
+          192
+        ],
+        "size": [
+          7,
+          15
+        ],
+        "z": 5,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 546.2000122070312,
+            "y": 192,
+            "width": 7,
+            "height": 15,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "numberSFX",
+        "name": "AudioText",
+        "hidden": false,
+        "xy": [
+          598,
+          190
+        ],
+        "size": [
+          42,
+          13
+        ],
+        "z": 6,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 593,
+            "y": 185,
+            "width": 33,
+            "height": 23,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "labelUI",
+        "name": "AudioText",
+        "hidden": false,
+        "xy": [
+          358,
+          228
+        ],
+        "size": [
+          92,
+          13
+        ],
+        "z": 6,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 353,
+            "y": 223,
+            "width": 21,
+            "height": 23,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "trackUI",
+        "name": "AudioBlock",
+        "hidden": false,
+        "xy": [
+          454,
+          234
+        ],
+        "size": [
+          136,
+          5
+        ],
+        "z": 3,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 454,
+            "y": 234,
+            "width": 136,
+            "height": 5,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "fillUI",
+        "name": "AudioBlock",
+        "hidden": false,
+        "xy": [
+          454,
+          234
+        ],
+        "size": [
+          61.2,
+          5
+        ],
+        "z": 4,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 454,
+            "y": 234,
+            "width": 61.20001220703125,
+            "height": 5,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "knobUI",
+        "name": "AudioBlock",
+        "hidden": false,
+        "xy": [
+          512.2,
+          229
+        ],
+        "size": [
+          7,
+          15
+        ],
+        "z": 5,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 512.2000122070312,
+            "y": 229,
+            "width": 7,
+            "height": 15,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "numberUI",
+        "name": "AudioText",
+        "hidden": false,
+        "xy": [
+          598,
+          227
+        ],
+        "size": [
+          42,
+          13
+        ],
+        "z": 6,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 593,
+            "y": 222,
+            "width": 33,
+            "height": 23,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "MuteMusic",
+        "name": "AudioPanel",
+        "hidden": false,
+        "xy": [
+          358,
+          273
+        ],
+        "size": [
+          132,
+          28
+        ],
+        "z": 1,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 358,
+            "y": 273,
+            "width": 132,
+            "height": 28,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "muteMuteMusic",
+        "name": "AudioText",
+        "hidden": false,
+        "xy": [
+          370,
+          281
+        ],
+        "size": [
+          112,
+          12
+        ],
+        "z": 6,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 365,
+            "y": 276,
+            "width": 74,
+            "height": 22,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "MuteSFX",
+        "name": "AudioPanel",
+        "hidden": false,
+        "xy": [
+          500,
+          273
+        ],
+        "size": [
+          132,
+          28
+        ],
+        "z": 1,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 500,
+            "y": 273,
+            "width": 132,
+            "height": 28,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "muteMuteSFX",
+        "name": "AudioText",
+        "hidden": false,
+        "xy": [
+          512,
+          281
+        ],
+        "size": [
+          112,
+          12
+        ],
+        "z": 6,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 507,
+            "y": 276,
+            "width": 61,
+            "height": 22,
+            "type": 1
+          }
+        }
+      },
+      {
+        "key": "saved",
+        "name": "AudioText",
+        "hidden": false,
+        "xy": [
+          358,
+          312
+        ],
+        "size": [
+          268,
+          12
+        ],
+        "z": 6,
+        "renderer": {
+          "visible": true,
+          "bounds": {
+            "x": 353,
+            "y": 307,
+            "width": 103,
+            "height": 22,
+            "type": 1
+          }
+        }
+      }
+    ],
+    "state": {
+      "flow": "MENU",
+      "voices": {
+        "requested": {},
+        "played": {},
+        "dropped": {},
+        "bgmStarts": {},
+        "maxMusic": 0,
+        "maxVoices": 0,
+        "baseEvents": 0,
+        "casts": 0,
+        "applies": 0,
+        "goldBatches": 0
+      },
+      "unlocked": true
+    }
+  },
+  "progress": [],
+  "consoleErrors": []
+}

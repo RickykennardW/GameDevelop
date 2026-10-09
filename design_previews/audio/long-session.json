@@ -1,0 +1,133 @@
+{
+  "result": {
+    "checks": [
+      "trusted gesture unlock",
+      "affordable native footprint",
+      "affordable native footprint",
+      "native first wave",
+      "five real-time earned-income waves complete",
+      "actual leaked enemies match Base Damage cues",
+      "four normal /one milestone /five actual completion cues",
+      "wave completion returns calm BGM",
+      "long-session channel/history/observer bounds",
+      "real output audio is non-silent /no clipped samples observed"
+    ],
+    "rows": [
+      {
+        "wave": 1,
+        "lives": 10,
+        "gold": 150,
+        "music": "PREPARATION",
+        "activeBGM": [
+          "CosmicDefense"
+        ],
+        "hooks": 12,
+        "widgets": 2
+      },
+      {
+        "wave": 2,
+        "lives": 10,
+        "gold": 300,
+        "music": "PREPARATION",
+        "activeBGM": [
+          "CosmicDefense"
+        ],
+        "hooks": 12,
+        "widgets": 2
+      },
+      {
+        "wave": 3,
+        "lives": 10,
+        "gold": 500,
+        "music": "PREPARATION",
+        "activeBGM": [
+          "CosmicDefense"
+        ],
+        "hooks": 12,
+        "widgets": 2
+      },
+      {
+        "wave": 4,
+        "lives": 9,
+        "gold": 743,
+        "music": "PREPARATION",
+        "activeBGM": [
+          "CosmicDefense"
+        ],
+        "hooks": 12,
+        "widgets": 2
+      },
+      {
+        "wave": 5,
+        "lives": 9,
+        "gold": 1103,
+        "music": "PREPARATION",
+        "activeBGM": [
+          "VoidAwakening"
+        ],
+        "hooks": 12,
+        "widgets": 2
+      }
+    ],
+    "elapsedSeconds": 120.55289999997616,
+    "output": {
+      "peak": 0.32299286127090454,
+      "rms": 0.05006871229970641,
+      "samples": 1939456
+    },
+    "stats": {
+      "requested": {
+        "WaveStart": 4,
+        "UIClick": 2,
+        "StarCannonFire": 375,
+        "EnemyHit": 188,
+        "ProjectileImpact": 375,
+        "CommonEnemyDeath": 187,
+        "GoldReward": 118,
+        "WaveComplete": 5,
+        "BaseDamage": 1,
+        "MilestoneWave": 1
+      },
+      "played": {
+        "WaveStart": 4,
+        "UIClick": 2,
+        "StarCannonFire": 304,
+        "EnemyHit": 171,
+        "ProjectileImpact": 280,
+        "CommonEnemyDeath": 159,
+        "GoldReward": 100,
+        "WaveComplete": 5,
+        "BaseDamage": 1,
+        "MilestoneWave": 1
+      },
+      "dropped": {
+        "GoldReward": 18,
+        "StarCannonFire": 71,
+        "EnemyHit": 17,
+        "ProjectileImpact": 95,
+        "CommonEnemyDeath": 28
+      },
+      "bgmStarts": {
+        "AncientGalaxyAmbience": 6,
+        "CosmicDefense": 1,
+        "VoidAwakening": 1
+      },
+      "maxMusic": 2,
+      "maxVoices": 5,
+      "baseEvents": 1,
+      "casts": 0,
+      "applies": 0,
+      "goldBatches": 118
+    },
+    "finalGold": 1103,
+    "note": "Actual browser wall-clock gameplay at existing2x mode;native homing/armor/Gold Budget;two paid baseCannon;output sampled after production limiter"
+  },
+  "progress": [
+    "BALANCE PROGRESS {\"wave\":1,\"lives\":10,\"gold\":150,\"music\":\"PREPARATION\",\"activeBGM\":[\"CosmicDefense\"],\"hooks\":12,\"widgets\":2}",
+    "BALANCE PROGRESS {\"wave\":2,\"lives\":10,\"gold\":300,\"music\":\"PREPARATION\",\"activeBGM\":[\"CosmicDefense\"],\"hooks\":12,\"widgets\":2}",
+    "BALANCE PROGRESS {\"wave\":3,\"lives\":10,\"gold\":500,\"music\":\"PREPARATION\",\"activeBGM\":[\"CosmicDefense\"],\"hooks\":12,\"widgets\":2}",
+    "BALANCE PROGRESS {\"wave\":4,\"lives\":9,\"gold\":743,\"music\":\"PREPARATION\",\"activeBGM\":[\"CosmicDefense\"],\"hooks\":12,\"widgets\":2}",
+    "BALANCE PROGRESS {\"wave\":5,\"lives\":9,\"gold\":1103,\"music\":\"PREPARATION\",\"activeBGM\":[\"VoidAwakening\"],\"hooks\":12,\"widgets\":2}"
+  ],
+  "consoleErrors": []
+}

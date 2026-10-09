@@ -1,0 +1,27 @@
+{
+  "result": {
+    "secureContext": true,
+    "audioEncoder": "function",
+    "audioData": "function",
+    "audioContext": "function",
+    "howler": "object",
+    "soundManager": "p",
+    "opus": true,
+    "state": {
+      "scene": "Game Scene",
+      "wave": 0,
+      "roster": [
+        "Basic",
+        "VoidBrute",
+        "VoidGolem",
+        "VoidGuard",
+        "VoidHound",
+        "VoidSentinel"
+      ],
+      "waypoints": 82,
+      "shop": 1
+    }
+  },
+  "progress": [],
+  "consoleErrors": []
+}

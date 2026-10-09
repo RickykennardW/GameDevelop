@@ -1,0 +1,66 @@
+{
+  "result": {
+    "checks": [
+      "trusted audio context ready",
+      "shop insufficient Gold feedback preserves balance",
+      "native builder started",
+      "actual path rejects tower footprint",
+      "invalid road placement emits one rejection /no charge",
+      "settings open during builder",
+      "native Music mute button works",
+      "native Music unmute button works",
+      "native Music slider immediately changes actual channels",
+      "popup clicks never buy/place a tower",
+      "outside popup dismissal consumes click before placement",
+      "builder still places once after popup closes",
+      "insufficient upgrade Gold cue leaves upgrade level unchanged"
+    ],
+    "geometry": {
+      "button": {
+        "x": 340,
+        "y": 22,
+        "w": 32,
+        "h": 32
+      },
+      "panel": {
+        "x": 340,
+        "y": 62,
+        "w": 308,
+        "h": 276
+      }
+    },
+    "settings": {
+      "Master": 100,
+      "Music": 35,
+      "SFX": 70,
+      "UI": 45,
+      "MuteMusic": false,
+      "MuteSFX": false
+    },
+    "stats": {
+      "requested": {
+        "InvalidAction": 3,
+        "UIClick": 6,
+        "TowerPlace": 1
+      },
+      "played": {
+        "InvalidAction": 3,
+        "UIClick": 6,
+        "TowerPlace": 1
+      },
+      "dropped": {},
+      "bgmStarts": {
+        "SacredVoidTemple": 1,
+        "AncientGalaxyAmbience": 1
+      },
+      "maxMusic": 2,
+      "maxVoices": 2,
+      "baseEvents": 0,
+      "casts": 0,
+      "applies": 0,
+      "goldBatches": 0
+    }
+  },
+  "progress": [],
+  "consoleErrors": []
+}

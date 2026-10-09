@@ -51,9 +51,21 @@ async def main():
         await call('Emulation.setDeviceMetricsOverride', dict(width=1920,height=1080,deviceScaleFactor=1,mobile=False))
         mode=next((a.split('=',1)[1] for a in sys.argv[3:] if a.startswith('--mode=')),None)
         if mode: await js('globalThis.BALANCE_MODE='+json.dumps(mode))
+        if '--gesture' in sys.argv:
+            await js('globalThis.audioGateBeforeGesture=!!testGame.getSceneStack().getCurrentScene().__audio&&!testGame.getSceneStack().getCurrentScene().__audio.unlocked')
+            await call('Input.dispatchMouseEvent',dict(type='mousePressed',x=10,y=10,button='left',clickCount=1))
+            await call('Input.dispatchMouseEvent',dict(type='mouseReleased',x=10,y=10,button='left',clickCount=1))
         try: result = await js(Path(sys.argv[1]).read_text(encoding='utf-8'))
         except Exception as exc:
             Path(sys.argv[2]).write_text(json.dumps(dict(failure=str(exc),progress=progress,consoleErrors=errors),indent=2),encoding='utf-8'); raise
+        if '--reload-check' in sys.argv:
+            await call('Page.reload')
+            for _ in range(300):
+                if await js('!!(window.testGame&&testGame.getSceneStack().getCurrentScene()?.__audio)'): break
+                await asyncio.sleep(.1)
+            reloaded=await js('({settings:testGame.getSceneStack().getCurrentScene().__audio.settings,unlocked:testGame.getSceneStack().getCurrentScene().__audio.unlocked})')
+            if reloaded['settings']!=result['saved'] or reloaded['unlocked']:raise RuntimeError('Audio settings/autoplay reload check failed')
+            result['reload']=reloaded
         screenshot_data=None
         screenshot=next((a for a in sys.argv[3:] if not a.startswith('--')),None)
         if screenshot:

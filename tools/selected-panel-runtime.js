@@ -11,7 +11,7 @@ if(!ui) {
 const towers=scene.getObjects("StarCannonTower");
 let selected=towers.find(t=>t.getVariables().get("TowerId").getAsNumber()===sv.get("SelectedTower").getAsNumber());
 if(!selected&&sv.get("SelectedTower").getAsNumber()>0)sv.get("SelectedTower").setNumber(0);
-const input=game.getInputManager(),down=input.isMouseButtonPressed(0),modal=sv.get("IndexBlocksInput").getAsBoolean();
+const input=game.getInputManager(),down=input.isMouseButtonPressed(0),modal=sv.get("IndexBlocksInput").getAsBoolean()||sv.get("AudioUIConsumesClick").getAsBoolean();
 const h=680,w=320,layer=scene.getLayer("SelectedTowerUI");
 let scale=1,sx=8,sy=8;
 const positionPanel=tower=>{

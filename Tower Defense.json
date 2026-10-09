@@ -92,26 +92,6 @@
   "resources": {
     "resources": [
       {
-        "file": "assets/starting_woodthump.wav",
-        "kind": "audio",
-        "metadata": "",
-        "name": "assets/starting_woodthump.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "assets/starter_switch.wav",
-        "kind": "audio",
-        "metadata": "",
-        "name": "assets/starter_switch.wav",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
         "file": "assets/ui/coin.svg",
         "kind": "image",
         "metadata": "",
@@ -2998,6 +2978,264 @@
         "kind": "image",
         "metadata": "",
         "name": "assets/effects/void_fortification/CastPulse.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/music/ancient_galaxy_ambience.ogg",
+        "name": "assets/audio/music/ancient_galaxy_ambience.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/music/sacred_void_temple.ogg",
+        "name": "assets/audio/music/sacred_void_temple.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/music/cosmic_defense.ogg",
+        "name": "assets/audio/music/cosmic_defense.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/music/void_awakening.ogg",
+        "name": "assets/audio/music/void_awakening.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/towers/tower_place.ogg",
+        "name": "assets/audio/towers/tower_place.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/towers/tower_upgrade.ogg",
+        "name": "assets/audio/towers/tower_upgrade.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/towers/tower_major_upgrade.ogg",
+        "name": "assets/audio/towers/tower_major_upgrade.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/towers/tower_sell.ogg",
+        "name": "assets/audio/towers/tower_sell.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/towers/star_cannon_fire.ogg",
+        "name": "assets/audio/towers/star_cannon_fire.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/towers/projectile_impact.ogg",
+        "name": "assets/audio/towers/projectile_impact.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/enemies/enemy_hit.ogg",
+        "name": "assets/audio/enemies/enemy_hit.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/enemies/common_enemy_death.ogg",
+        "name": "assets/audio/enemies/common_enemy_death.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/enemies/elite_enemy_death.ogg",
+        "name": "assets/audio/enemies/elite_enemy_death.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/skills/void_golem_skill.ogg",
+        "name": "assets/audio/skills/void_golem_skill.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/skills/void_fortification_apply.ogg",
+        "name": "assets/audio/skills/void_fortification_apply.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/waves/wave_start.ogg",
+        "name": "assets/audio/waves/wave_start.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/waves/milestone_wave.ogg",
+        "name": "assets/audio/waves/milestone_wave.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/waves/wave_complete.ogg",
+        "name": "assets/audio/waves/wave_complete.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/gameplay/gold_reward.ogg",
+        "name": "assets/audio/gameplay/gold_reward.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/gameplay/base_damage.ogg",
+        "name": "assets/audio/gameplay/base_damage.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/gameplay/game_over.ogg",
+        "name": "assets/audio/gameplay/game_over.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/gameplay/victory.ogg",
+        "name": "assets/audio/gameplay/victory.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/ui/ui_click.ogg",
+        "name": "assets/audio/ui/ui_click.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/ui/invalid_action.ogg",
+        "name": "assets/audio/ui/invalid_action.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/ui/tower_select.ogg",
+        "name": "assets/audio/ui/tower_select.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "preloadAsMusic": false,
+        "preloadAsSound": true,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/audio_speaker.svg",
+        "name": "assets/ui/audio_speaker.svg",
+        "kind": "image",
+        "metadata": "",
         "smoothed": true,
         "userAdded": true
       }

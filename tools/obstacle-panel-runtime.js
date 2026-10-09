@@ -58,7 +58,7 @@ sv.get('ObstaclePanelPointerInside').setBoolean(pointer);
 sv.get('TowerUIConsumesClick').setBoolean(sv.get('TowerUIConsumesClick').getAsBoolean()||pointer);
 ui.hover=!pointer?'':inside(16,132,252,38)?'Clear':inside(16,180,252,28)?'Cancel':inside(246,10,28,38)?'Close':'Panel';
 if(down&&!ui.wasDown){ui.pressed=ui.hover;ui.pressedOwner=owner?owner.getUniqueId():0;}
-if(!down&&ui.wasDown&&owner&&ui.pressed===ui.hover&&ui.pressedOwner===owner.getUniqueId()){
+if(!sv.get('AudioUIConsumesClick').getAsBoolean()&&!down&&ui.wasDown&&owner&&ui.pressed===ui.hover&&ui.pressedOwner===owner.getUniqueId()){
  if(ui.hover==='Clear')ui.clear();else if(['Cancel','Close'].includes(ui.hover))ui.close();
  ui.render();
 }

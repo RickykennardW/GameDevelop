@@ -22,7 +22,7 @@ if(!pick){
  };
 }
 if(!pressed||!p)return;
-if(sv.get('IndexBlocksInput').getAsBoolean()||sv.get('TowerUIConsumesClick').getAsBoolean()||sv.get('SelectedPanelPointerInside').getAsBoolean()||sv.get('ObstaclePanelPointerInside').getAsBoolean())return;
+if(sv.get('AudioUIConsumesClick').getAsBoolean()||sv.get('IndexBlocksInput').getAsBoolean()||sv.get('TowerUIConsumesClick').getAsBoolean()||sv.get('SelectedPanelPointerInside').getAsBoolean()||sv.get('ObstaclePanelPointerInside').getAsBoolean())return;
 const [x,y]=p.cursor(),screen=scene.getLayer('').convertInverseCoords(x,y,0,[0,0]),area=scene.__towerShopUI.gameArea;
 if(screen[0]<area.left||screen[0]>=area.right||screen[1]<area.top||screen[1]>=area.bottom)return;
 const hud=scene.getObjects('HUDPanel')[0],hl=scene.getLayer('UI'),a=hl.convertInverseCoords(hud.getX(),hud.getY(),0,[0,0]),b=hl.convertInverseCoords(hud.getX()+hud.getWidth(),hud.getY()+hud.getHeight(),0,[0,0]);

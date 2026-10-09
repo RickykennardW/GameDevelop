@@ -2,6 +2,7 @@
 const scene=runtimeScene,p=scene.__freePlacement,sv=scene.getVariables(),input=scene.getGame().getInputManager();
 const down=input.isMouseButtonPressed(0),pressed=down&&!p.wasDown;p.wasDown=down;
 sv.get('PlacementCommitted').setBoolean(false);
+if(sv.get('AudioUIConsumesClick').getAsBoolean())return;
 const indicator=scene.getObjects('TilePlacement_Indicator')[0];
 const right=gdjs.evtTools.input.isMouseButtonPressed(scene,'Right'),cancel=right&&!p.rightWasDown;p.rightWasDown=right;
 if(cancel&&p.active){p.stop();return;}

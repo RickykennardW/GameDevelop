@@ -1,0 +1,820 @@
+{
+  "method": "Original note-level DSP score /numpy additive+formant synthesis /cyclic convolution reverb /local Chromium WebCodecs Opus112k stereo BGM and64k monoSFX /in-memory PCM and OGG mux;no samples/downloads/intermediate WAVs",
+  "sampleRate": 48000,
+  "assets": [
+    {
+      "id": "AncientGalaxyAmbience",
+      "file": "assets/audio/music/ancient_galaxy_ambience.ogg",
+      "kind": "music",
+      "bytes": 1860587,
+      "sha256": "c56baf8439f8b01018bfc54232e5db3e5c865c9d440a3f3f4ab5e0569bafcfd6",
+      "score": {
+        "bpm": 64,
+        "bars": 32,
+        "duration": 120.0,
+        "key": "D minor / suspended ninth",
+        "motif": "D5 F5 E5 A4 D5; response C5 Bb4 A4",
+        "chords": [
+          {
+            "bar": 1,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 3,
+            "chord": "Gm9"
+          },
+          {
+            "bar": 5,
+            "chord": "Bbmaj7"
+          },
+          {
+            "bar": 7,
+            "chord": "Csus2"
+          },
+          {
+            "bar": 9,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 11,
+            "chord": "Gm9"
+          },
+          {
+            "bar": 13,
+            "chord": "Am(add4)"
+          },
+          {
+            "bar": 15,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 17,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 19,
+            "chord": "Gm9"
+          },
+          {
+            "bar": 21,
+            "chord": "Bbmaj7"
+          },
+          {
+            "bar": 23,
+            "chord": "Csus2"
+          },
+          {
+            "bar": 25,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 27,
+            "chord": "Gm9"
+          },
+          {
+            "bar": 29,
+            "chord": "Am(add4)"
+          },
+          {
+            "bar": 31,
+            "chord": "Dm9"
+          }
+        ],
+        "layers": [
+          "warm detuned cosmic pad",
+          "formant wordless choir",
+          "modal crystal bells",
+          "rounded motif lead",
+          "low D drone",
+          "diffuse circular reverb"
+        ]
+      },
+      "decoded": {
+        "duration": 120,
+        "samples": 5760000,
+        "channels": 2,
+        "rms": 0.06787237781011209,
+        "peak": 0.3188289403915405,
+        "loopJump": 0.005624072626233101,
+        "edgeRMS": 0.07804467487655933
+      }
+    },
+    {
+      "id": "SacredVoidTemple",
+      "file": "assets/audio/music/sacred_void_temple.ogg",
+      "kind": "music",
+      "bytes": 1984393,
+      "sha256": "6f383f8f4897dda67385bf89bf60e11c6397b5ef2debecee506bd1517bc893de",
+      "score": {
+        "bpm": 60,
+        "bars": 32,
+        "duration": 128.0,
+        "key": "D minor / suspended ninth",
+        "motif": "D5 F5 E5 A4 D5; response C5 Bb4 A4",
+        "chords": [
+          {
+            "bar": 1,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 3,
+            "chord": "Gm9"
+          },
+          {
+            "bar": 5,
+            "chord": "Bbmaj7"
+          },
+          {
+            "bar": 7,
+            "chord": "Csus2"
+          },
+          {
+            "bar": 9,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 11,
+            "chord": "Gm9"
+          },
+          {
+            "bar": 13,
+            "chord": "Am(add4)"
+          },
+          {
+            "bar": 15,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 17,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 19,
+            "chord": "Gm9"
+          },
+          {
+            "bar": 21,
+            "chord": "Bbmaj7"
+          },
+          {
+            "bar": 23,
+            "chord": "Csus2"
+          },
+          {
+            "bar": 25,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 27,
+            "chord": "Gm9"
+          },
+          {
+            "bar": 29,
+            "chord": "Am(add4)"
+          },
+          {
+            "bar": 31,
+            "chord": "Dm9"
+          }
+        ],
+        "layers": [
+          "warm detuned cosmic pad",
+          "formant wordless choir",
+          "modal crystal bells",
+          "rounded motif lead",
+          "low D drone",
+          "diffuse circular reverb",
+          "bowed additive strings"
+        ]
+      },
+      "decoded": {
+        "duration": 128,
+        "samples": 6144000,
+        "channels": 2,
+        "rms": 0.07155448874207175,
+        "peak": 0.324404239654541,
+        "loopJump": 0.013440068811178207,
+        "edgeRMS": 0.05889106179319584
+      }
+    },
+    {
+      "id": "CosmicDefense",
+      "file": "assets/audio/music/cosmic_defense.ogg",
+      "kind": "music",
+      "bytes": 1860208,
+      "sha256": "d01aa9f41b54f7fc07668b63a3c099c6c5ea0884b8a402457f2f85ee185c405e",
+      "score": {
+        "bpm": 96,
+        "bars": 48,
+        "duration": 120.0,
+        "key": "D minor / suspended ninth",
+        "motif": "D5 F5 E5 A4 D5; response C5 Bb4 A4",
+        "chords": [
+          {
+            "bar": 1,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 3,
+            "chord": "Gm9"
+          },
+          {
+            "bar": 5,
+            "chord": "Bbmaj7"
+          },
+          {
+            "bar": 7,
+            "chord": "Csus2"
+          },
+          {
+            "bar": 9,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 11,
+            "chord": "Gm9"
+          },
+          {
+            "bar": 13,
+            "chord": "Am(add4)"
+          },
+          {
+            "bar": 15,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 17,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 19,
+            "chord": "Gm9"
+          },
+          {
+            "bar": 21,
+            "chord": "Bbmaj7"
+          },
+          {
+            "bar": 23,
+            "chord": "Csus2"
+          },
+          {
+            "bar": 25,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 27,
+            "chord": "Gm9"
+          },
+          {
+            "bar": 29,
+            "chord": "Am(add4)"
+          },
+          {
+            "bar": 31,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 33,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 35,
+            "chord": "Gm9"
+          },
+          {
+            "bar": 37,
+            "chord": "Bbmaj7"
+          },
+          {
+            "bar": 39,
+            "chord": "Csus2"
+          },
+          {
+            "bar": 41,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 43,
+            "chord": "Gm9"
+          },
+          {
+            "bar": 45,
+            "chord": "Am(add4)"
+          },
+          {
+            "bar": 47,
+            "chord": "Dm9"
+          }
+        ],
+        "layers": [
+          "warm detuned cosmic pad",
+          "formant wordless choir",
+          "modal crystal bells",
+          "rounded motif lead",
+          "low D drone",
+          "diffuse circular reverb",
+          "bowed additive strings",
+          "pulsing bass",
+          "eighth-note string ostinato",
+          "controlled low percussion"
+        ]
+      },
+      "decoded": {
+        "duration": 120,
+        "samples": 5760000,
+        "channels": 2,
+        "rms": 0.07615090865437255,
+        "peak": 0.32263872027397156,
+        "loopJump": 0.005100811831653118,
+        "edgeRMS": 0.07726733702342545
+      }
+    },
+    {
+      "id": "VoidAwakening",
+      "file": "assets/audio/music/void_awakening.ogg",
+      "kind": "music",
+      "bytes": 1860417,
+      "sha256": "9ee35fe74d82ed690b02ba2fd8833d1cffcd926bef0641d152976f64ebb3efd7",
+      "score": {
+        "bpm": 112,
+        "bars": 56,
+        "duration": 120.0,
+        "key": "D minor / suspended ninth",
+        "motif": "D5 F5 E5 A4 D5; response C5 Bb4 A4",
+        "chords": [
+          {
+            "bar": 1,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 3,
+            "chord": "Gm9"
+          },
+          {
+            "bar": 5,
+            "chord": "Bbmaj7"
+          },
+          {
+            "bar": 7,
+            "chord": "Csus2"
+          },
+          {
+            "bar": 9,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 11,
+            "chord": "Gm9"
+          },
+          {
+            "bar": 13,
+            "chord": "Am(add4)"
+          },
+          {
+            "bar": 15,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 17,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 19,
+            "chord": "Gm9"
+          },
+          {
+            "bar": 21,
+            "chord": "Bbmaj7"
+          },
+          {
+            "bar": 23,
+            "chord": "Csus2"
+          },
+          {
+            "bar": 25,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 27,
+            "chord": "Gm9"
+          },
+          {
+            "bar": 29,
+            "chord": "Am(add4)"
+          },
+          {
+            "bar": 31,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 33,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 35,
+            "chord": "Gm9"
+          },
+          {
+            "bar": 37,
+            "chord": "Bbmaj7"
+          },
+          {
+            "bar": 39,
+            "chord": "Csus2"
+          },
+          {
+            "bar": 41,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 43,
+            "chord": "Gm9"
+          },
+          {
+            "bar": 45,
+            "chord": "Am(add4)"
+          },
+          {
+            "bar": 47,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 49,
+            "chord": "Dm9"
+          },
+          {
+            "bar": 51,
+            "chord": "Gm9"
+          },
+          {
+            "bar": 53,
+            "chord": "Bbmaj7"
+          },
+          {
+            "bar": 55,
+            "chord": "Csus2"
+          }
+        ],
+        "layers": [
+          "warm detuned cosmic pad",
+          "formant wordless choir",
+          "modal crystal bells",
+          "rounded motif lead",
+          "low D drone",
+          "diffuse circular reverb",
+          "bowed additive strings",
+          "pulsing bass",
+          "eighth-note string ostinato",
+          "controlled low percussion"
+        ]
+      },
+      "decoded": {
+        "duration": 120,
+        "samples": 5760000,
+        "channels": 2,
+        "rms": 0.07997826891548676,
+        "peak": 0.3696698844432831,
+        "loopJump": 0.007140088826417923,
+        "edgeRMS": 0.08257522515176821
+      }
+    },
+    {
+      "id": "TowerPlace",
+      "file": "assets/audio/towers/tower_place.ogg",
+      "kind": "sfx",
+      "bytes": 3869,
+      "sha256": "bdee44876d376edefa806e41f7816a09713a22cbdb9c91f4fd932c8dfcc253ac",
+      "decoded": {
+        "duration": 0.36,
+        "samples": 17280,
+        "channels": 1,
+        "rms": 0.11014823880443324,
+        "peak": 0.27115771174430847,
+        "loopJump": 0.00030947657069191337,
+        "edgeRMS": 0.1085842546151168
+      }
+    },
+    {
+      "id": "TowerUpgrade",
+      "file": "assets/audio/towers/tower_upgrade.ogg",
+      "kind": "sfx",
+      "bytes": 6883,
+      "sha256": "4c66c50fac65a0dc6e45b125eda70e459bb441bf36c118ae2447eed518a3cfc3",
+      "decoded": {
+        "duration": 0.68,
+        "samples": 32640,
+        "channels": 1,
+        "rms": 0.10856429090253972,
+        "peak": 0.30560949444770813,
+        "loopJump": 1.968741707969457e-05,
+        "edgeRMS": 0.06836015868401432
+      }
+    },
+    {
+      "id": "TowerMajorUpgrade",
+      "file": "assets/audio/towers/tower_major_upgrade.ogg",
+      "kind": "sfx",
+      "bytes": 8972,
+      "sha256": "334ffc1a02bc7ee23b7f432109b666116243e45270820042b4191eff4b6098cb",
+      "decoded": {
+        "duration": 0.9,
+        "samples": 43200,
+        "channels": 1,
+        "rms": 0.10879997290109267,
+        "peak": 0.28858062624931335,
+        "loopJump": 0.0003768953320104629,
+        "edgeRMS": 0.06961192299033848
+      }
+    },
+    {
+      "id": "TowerSell",
+      "file": "assets/audio/towers/tower_sell.ogg",
+      "kind": "sfx",
+      "bytes": 4172,
+      "sha256": "05279655db9b051f58ba2c5dc6d1b40e9a5a8dd3b751912cec1d2eabbab73a16",
+      "decoded": {
+        "duration": 0.4,
+        "samples": 19200,
+        "channels": 1,
+        "rms": 0.10982117637524043,
+        "peak": 0.25325968861579895,
+        "loopJump": 0.0008530822524335235,
+        "edgeRMS": 0.07150467174516333
+      }
+    },
+    {
+      "id": "StarCannonFire",
+      "file": "assets/audio/towers/star_cannon_fire.ogg",
+      "kind": "sfx",
+      "bytes": 1790,
+      "sha256": "c2959296b501a8222d25c13e77bdcfe3bd64f45b503efd82ff60553710eb115d",
+      "decoded": {
+        "duration": 0.14,
+        "samples": 6720,
+        "channels": 1,
+        "rms": 0.11077206012414643,
+        "peak": 0.194459930062294,
+        "loopJump": 0.00010406682849861681,
+        "edgeRMS": 0.09733001122454828
+      }
+    },
+    {
+      "id": "ProjectileImpact",
+      "file": "assets/audio/towers/projectile_impact.ogg",
+      "kind": "sfx",
+      "bytes": 1790,
+      "sha256": "25969fc05327fa22b10bacaaed9fd28d3c4921cbb40e59721dba63a3cdeeb042",
+      "decoded": {
+        "duration": 0.15,
+        "samples": 7200,
+        "channels": 1,
+        "rms": 0.11082520091957167,
+        "peak": 0.19773168861865997,
+        "loopJump": 0.0032790343975648284,
+        "edgeRMS": 0.09397436891166722
+      }
+    },
+    {
+      "id": "EnemyHit",
+      "file": "assets/audio/enemies/enemy_hit.ogg",
+      "kind": "sfx",
+      "bytes": 1412,
+      "sha256": "dbca231982cc9f92fe335d717ea3539219f5f1b40e42cacf9dab9fdab057ed5d",
+      "decoded": {
+        "duration": 0.105,
+        "samples": 5040,
+        "channels": 1,
+        "rms": 0.11101594979198282,
+        "peak": 0.19664296507835388,
+        "loopJump": 0.002201550465542823,
+        "edgeRMS": 0.10913428746671819
+      }
+    },
+    {
+      "id": "CommonEnemyDeath",
+      "file": "assets/audio/enemies/common_enemy_death.ogg",
+      "kind": "sfx",
+      "bytes": 4058,
+      "sha256": "352a6073fd38268bf68dfc6ee45164842f5715e5bc8810a83b26235bc67aaad6",
+      "decoded": {
+        "duration": 0.38,
+        "samples": 18240,
+        "channels": 1,
+        "rms": 0.11079874071468813,
+        "peak": 0.24403175711631775,
+        "loopJump": 0.0015199320623651147,
+        "edgeRMS": 0.060938644195328774
+      }
+    },
+    {
+      "id": "EliteEnemyDeath",
+      "file": "assets/audio/enemies/elite_enemy_death.ogg",
+      "kind": "sfx",
+      "bytes": 10606,
+      "sha256": "a4b324c53f0b9d0fb9bf3ce5bae83dd85617139bebcb06cd0acfe83d195cde84",
+      "decoded": {
+        "duration": 1.08,
+        "samples": 51840,
+        "channels": 1,
+        "rms": 0.11004456056064264,
+        "peak": 0.24497251212596893,
+        "loopJump": 0.001824539969675243,
+        "edgeRMS": 0.06607101555792008
+      }
+    },
+    {
+      "id": "VoidGolemSkillCast",
+      "file": "assets/audio/skills/void_golem_skill.ogg",
+      "kind": "sfx",
+      "bytes": 7253,
+      "sha256": "c1002ae7b58e5afa4deb0627462ba12c3a246a8019713709572a1240ca774fbf",
+      "decoded": {
+        "duration": 0.72,
+        "samples": 34560,
+        "channels": 1,
+        "rms": 0.10943682745858968,
+        "peak": 0.2551267445087433,
+        "loopJump": 0.00010851609840756282,
+        "edgeRMS": 0.04379070082005036
+      }
+    },
+    {
+      "id": "VoidFortificationApply",
+      "file": "assets/audio/skills/void_fortification_apply.ogg",
+      "kind": "sfx",
+      "bytes": 3682,
+      "sha256": "f148ee50c00a45cb94b9ae3f9d68a4e46dbaaebc4c7460e48dd3a28da3ce5e0c",
+      "decoded": {
+        "duration": 0.34,
+        "samples": 16320,
+        "channels": 1,
+        "rms": 0.1097612030616024,
+        "peak": 0.23568108677864075,
+        "loopJump": 7.86331802373752e-05,
+        "edgeRMS": 0.06849198178352228
+      }
+    },
+    {
+      "id": "WaveStart",
+      "file": "assets/audio/waves/wave_start.ogg",
+      "kind": "sfx",
+      "bytes": 7824,
+      "sha256": "19ce5281495dfc95851e9b5531f77169eb99f8711dd0e2cdffd04e4218798f0b",
+      "decoded": {
+        "duration": 0.78,
+        "samples": 37440,
+        "channels": 1,
+        "rms": 0.10939766233362071,
+        "peak": 0.25626567006111145,
+        "loopJump": 5.311035056365654e-05,
+        "edgeRMS": 0.04518074215713315
+      }
+    },
+    {
+      "id": "MilestoneWave",
+      "file": "assets/audio/waves/milestone_wave.ogg",
+      "kind": "sfx",
+      "bytes": 11992,
+      "sha256": "2bb780c6c5fd38a44c49a95307c27eb87950187394bfc85bb2bdb2da2df8da31",
+      "decoded": {
+        "duration": 1.22,
+        "samples": 58560,
+        "channels": 1,
+        "rms": 0.11033116451731105,
+        "peak": 0.27360105514526367,
+        "loopJump": 3.7081847949593794e-05,
+        "edgeRMS": 0.03440451051653941
+      }
+    },
+    {
+      "id": "WaveComplete",
+      "file": "assets/audio/waves/wave_complete.ogg",
+      "kind": "sfx",
+      "bytes": 7792,
+      "sha256": "3803edab88307ef338eefae098e99e545e2681e4e4ec593e9ec39d4476930395",
+      "decoded": {
+        "duration": 0.78,
+        "samples": 37440,
+        "channels": 1,
+        "rms": 0.10849680708067667,
+        "peak": 0.30485475063323975,
+        "loopJump": 0.00044710228394251317,
+        "edgeRMS": 0.06448297885402628
+      }
+    },
+    {
+      "id": "GoldReward",
+      "file": "assets/audio/gameplay/gold_reward.ogg",
+      "kind": "sfx",
+      "bytes": 2358,
+      "sha256": "e4d6574e82463243c197a1c0b742965f7f0ce2db5e08db2407b2024e6673ba01",
+      "decoded": {
+        "duration": 0.2,
+        "samples": 9600,
+        "channels": 1,
+        "rms": 0.10864532175992421,
+        "peak": 0.2991774082183838,
+        "loopJump": 7.200101390480995e-05,
+        "edgeRMS": 0.09199924180002474
+      }
+    },
+    {
+      "id": "BaseDamage",
+      "file": "assets/audio/gameplay/base_damage.ogg",
+      "kind": "sfx",
+      "bytes": 6078,
+      "sha256": "ecc929b5ad0dcb4b0bdba0d6ab28403ab64ed6cf14639d1203626cbe41fe4dfd",
+      "decoded": {
+        "duration": 0.6,
+        "samples": 28800,
+        "channels": 1,
+        "rms": 0.1104698092707472,
+        "peak": 0.27558043599128723,
+        "loopJump": 0.0006595697195734829,
+        "edgeRMS": 0.054938897060794245
+      }
+    },
+    {
+      "id": "GameOver",
+      "file": "assets/audio/gameplay/game_over.ogg",
+      "kind": "sfx",
+      "bytes": 22580,
+      "sha256": "1ce14b57853752982d8ad4ad63728117199cc3f79c7e90659dfcd036b9ece03f",
+      "decoded": {
+        "duration": 2.35,
+        "samples": 112800,
+        "channels": 1,
+        "rms": 0.1106923003230481,
+        "peak": 0.2262231558561325,
+        "loopJump": 0.0008314960286952555,
+        "edgeRMS": 0.04098691210155744
+      }
+    },
+    {
+      "id": "Victory",
+      "file": "assets/audio/gameplay/victory.ogg",
+      "kind": "sfx",
+      "bytes": 20691,
+      "sha256": "a7054e8d4307ead2a714b2c47c00d6d0789d434c9bc82b6c7c8f24ff85ab6523",
+      "decoded": {
+        "duration": 2.15,
+        "samples": 103200,
+        "channels": 1,
+        "rms": 0.10863901058159943,
+        "peak": 0.3170447051525116,
+        "loopJump": 0.0014320003683678806,
+        "edgeRMS": 0.05273272264158115
+      }
+    },
+    {
+      "id": "UIClick",
+      "file": "assets/audio/ui/ui_click.ogg",
+      "kind": "sfx",
+      "bytes": 1223,
+      "sha256": "78694aad09f6d4e740dd14d1a4bb06370d3c19c8190250f7262c8dc409ef00d7",
+      "decoded": {
+        "duration": 0.075,
+        "samples": 3600,
+        "channels": 1,
+        "rms": 0.10871024791995576,
+        "peak": 0.2699292302131653,
+        "loopJump": 0.0014243856712710112,
+        "edgeRMS": 0.10871024791995576
+      }
+    },
+    {
+      "id": "InvalidAction",
+      "file": "assets/audio/ui/invalid_action.ogg",
+      "kind": "sfx",
+      "bytes": 2357,
+      "sha256": "9b5a6f73c431a035993309a3c32ab5b477b7ecd9d7bcb07b46b7608d53bba2c3",
+      "decoded": {
+        "duration": 0.2,
+        "samples": 9600,
+        "channels": 1,
+        "rms": 0.10586943675519682,
+        "peak": 0.33335503935813904,
+        "loopJump": 0.0017717071459628642,
+        "edgeRMS": 0.12093507127867824
+      }
+    },
+    {
+      "id": "TowerSelect",
+      "file": "assets/audio/ui/tower_select.ogg",
+      "kind": "sfx",
+      "bytes": 1601,
+      "sha256": "e86c5f55771c3532e17bb9e41de3f56d0bec2285793a555cdbfdce2d6e384096",
+      "decoded": {
+        "duration": 0.13,
+        "samples": 6240,
+        "channels": 1,
+        "rms": 0.10834976001846008,
+        "peak": 0.2990567088127136,
+        "loopJump": 0.0014624102041125298,
+        "edgeRMS": 0.11215973938558858
+      }
+    }
+  ],
+  "totalBytes": 7704588
+}

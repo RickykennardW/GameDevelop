@@ -1,0 +1,243 @@
+{
+  "result": {
+    "checks": [
+      "registered AncientGalaxyAmbience",
+      "valid non-silent/unclipped AncientGalaxyAmbience",
+      "registered SacredVoidTemple",
+      "valid non-silent/unclipped SacredVoidTemple",
+      "registered CosmicDefense",
+      "valid non-silent/unclipped CosmicDefense",
+      "registered VoidAwakening",
+      "valid non-silent/unclipped VoidAwakening",
+      "registered TowerPlace",
+      "valid non-silent/unclipped TowerPlace",
+      "registered TowerUpgrade",
+      "valid non-silent/unclipped TowerUpgrade",
+      "registered TowerMajorUpgrade",
+      "valid non-silent/unclipped TowerMajorUpgrade",
+      "registered TowerSell",
+      "valid non-silent/unclipped TowerSell",
+      "registered StarCannonFire",
+      "valid non-silent/unclipped StarCannonFire",
+      "registered ProjectileImpact",
+      "valid non-silent/unclipped ProjectileImpact",
+      "registered EnemyHit",
+      "valid non-silent/unclipped EnemyHit",
+      "registered CommonEnemyDeath",
+      "valid non-silent/unclipped CommonEnemyDeath",
+      "registered EliteEnemyDeath",
+      "valid non-silent/unclipped EliteEnemyDeath",
+      "registered VoidGolemSkillCast",
+      "valid non-silent/unclipped VoidGolemSkillCast",
+      "registered VoidFortificationApply",
+      "valid non-silent/unclipped VoidFortificationApply",
+      "registered WaveStart",
+      "valid non-silent/unclipped WaveStart",
+      "registered MilestoneWave",
+      "valid non-silent/unclipped MilestoneWave",
+      "registered WaveComplete",
+      "valid non-silent/unclipped WaveComplete",
+      "registered GoldReward",
+      "valid non-silent/unclipped GoldReward",
+      "registered BaseDamage",
+      "valid non-silent/unclipped BaseDamage",
+      "registered GameOver",
+      "valid non-silent/unclipped GameOver",
+      "registered Victory",
+      "valid non-silent/unclipped Victory",
+      "registered UIClick",
+      "valid non-silent/unclipped UIClick",
+      "registered InvalidAction",
+      "valid non-silent/unclipped InvalidAction",
+      "registered TowerSelect",
+      "valid non-silent/unclipped TowerSelect",
+      "12 simultaneous default-mix SFX plus2BGM do not clip after limiter"
+    ],
+    "assets": [
+      {
+        "id": "AncientGalaxyAmbience",
+        "duration": 120,
+        "peak": 0.3188289403915405,
+        "rms": 0.06787237781011209,
+        "edgeJump": 0.005624072626233101
+      },
+      {
+        "id": "SacredVoidTemple",
+        "duration": 128,
+        "peak": 0.324404239654541,
+        "rms": 0.07155448874207175,
+        "edgeJump": 0.013440068811178207
+      },
+      {
+        "id": "CosmicDefense",
+        "duration": 120,
+        "peak": 0.32263872027397156,
+        "rms": 0.07615090865437255,
+        "edgeJump": 0.005100811831653118
+      },
+      {
+        "id": "VoidAwakening",
+        "duration": 120,
+        "peak": 0.3696698844432831,
+        "rms": 0.07997826891548676,
+        "edgeJump": 0.007140088826417923
+      },
+      {
+        "id": "TowerPlace",
+        "duration": 0.36,
+        "peak": 0.27115771174430847,
+        "rms": 0.11014823880443324,
+        "edgeJump": 0.00030947657069191337
+      },
+      {
+        "id": "TowerUpgrade",
+        "duration": 0.68,
+        "peak": 0.30560949444770813,
+        "rms": 0.10856429090253972,
+        "edgeJump": 1.968741707969457e-05
+      },
+      {
+        "id": "TowerMajorUpgrade",
+        "duration": 0.9,
+        "peak": 0.28858062624931335,
+        "rms": 0.10879997290109267,
+        "edgeJump": 0.0003768953320104629
+      },
+      {
+        "id": "TowerSell",
+        "duration": 0.4,
+        "peak": 0.25325968861579895,
+        "rms": 0.10982117637524043,
+        "edgeJump": 0.0008530822524335235
+      },
+      {
+        "id": "StarCannonFire",
+        "duration": 0.14,
+        "peak": 0.194459930062294,
+        "rms": 0.11077206012414643,
+        "edgeJump": 0.00010406682849861681
+      },
+      {
+        "id": "ProjectileImpact",
+        "duration": 0.15,
+        "peak": 0.19773168861865997,
+        "rms": 0.11082520091957167,
+        "edgeJump": 0.0032790343975648284
+      },
+      {
+        "id": "EnemyHit",
+        "duration": 0.105,
+        "peak": 0.19664296507835388,
+        "rms": 0.11101594979198282,
+        "edgeJump": 0.002201550465542823
+      },
+      {
+        "id": "CommonEnemyDeath",
+        "duration": 0.38,
+        "peak": 0.24403175711631775,
+        "rms": 0.11079874071468813,
+        "edgeJump": 0.0015199320623651147
+      },
+      {
+        "id": "EliteEnemyDeath",
+        "duration": 1.08,
+        "peak": 0.24497251212596893,
+        "rms": 0.11004456056064264,
+        "edgeJump": 0.001824539969675243
+      },
+      {
+        "id": "VoidGolemSkillCast",
+        "duration": 0.72,
+        "peak": 0.2551267445087433,
+        "rms": 0.10943682745858968,
+        "edgeJump": 0.00010851609840756282
+      },
+      {
+        "id": "VoidFortificationApply",
+        "duration": 0.34,
+        "peak": 0.23568108677864075,
+        "rms": 0.1097612030616024,
+        "edgeJump": 7.86331802373752e-05
+      },
+      {
+        "id": "WaveStart",
+        "duration": 0.78,
+        "peak": 0.25626567006111145,
+        "rms": 0.10939766233362071,
+        "edgeJump": 5.311035056365654e-05
+      },
+      {
+        "id": "MilestoneWave",
+        "duration": 1.22,
+        "peak": 0.27360105514526367,
+        "rms": 0.11033116451731105,
+        "edgeJump": 3.7081847949593794e-05
+      },
+      {
+        "id": "WaveComplete",
+        "duration": 0.78,
+        "peak": 0.30485475063323975,
+        "rms": 0.10849680708067667,
+        "edgeJump": 0.00044710228394251317
+      },
+      {
+        "id": "GoldReward",
+        "duration": 0.2,
+        "peak": 0.2991774082183838,
+        "rms": 0.10864532175992421,
+        "edgeJump": 7.200101390480995e-05
+      },
+      {
+        "id": "BaseDamage",
+        "duration": 0.6,
+        "peak": 0.27558043599128723,
+        "rms": 0.1104698092707472,
+        "edgeJump": 0.0006595697195734829
+      },
+      {
+        "id": "GameOver",
+        "duration": 2.35,
+        "peak": 0.2262231558561325,
+        "rms": 0.1106923003230481,
+        "edgeJump": 0.0008314960286952555
+      },
+      {
+        "id": "Victory",
+        "duration": 2.15,
+        "peak": 0.3170447051525116,
+        "rms": 0.10863901058159943,
+        "edgeJump": 0.0014320003683678806
+      },
+      {
+        "id": "UIClick",
+        "duration": 0.075,
+        "peak": 0.2699292302131653,
+        "rms": 0.10871024791995576,
+        "edgeJump": 0.0014243856712710112
+      },
+      {
+        "id": "InvalidAction",
+        "duration": 0.2,
+        "peak": 0.33335503935813904,
+        "rms": 0.10586943675519682,
+        "edgeJump": 0.0017717071459628642
+      },
+      {
+        "id": "TowerSelect",
+        "duration": 0.13,
+        "peak": 0.2990567088127136,
+        "rms": 0.10834976001846008,
+        "edgeJump": 0.0014624102041125298
+      }
+    ],
+    "mixStress": {
+      "voices": 12,
+      "bgm": 2,
+      "peak": 0.6510566473007202,
+      "clipped": 0
+    },
+    "method": "Decode every exported registered audio resource;native OfflineAudioContext/rendered mix with production limiter settings"
+  },
+  "progress": [],
+  "consoleErrors": []
+}

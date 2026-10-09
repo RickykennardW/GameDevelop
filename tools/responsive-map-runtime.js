@@ -35,7 +35,7 @@ const syncWaveControl = () => {
   if (time.getTimeScale() !== scale) time.setTimeScale(scale);
 };
 syncWaveControl();
-const modal = boolean("IndexOpen");
+const modal = boolean("IndexOpen") || boolean("AudioUIConsumesClick");
 let ui = scene.__towerShopUI;
 if (!ui || ui.root !== first("TowerShopBox")) {
   ui = scene.__towerShopUI = { root: first("TowerShopBox"), cards: [], wasDown: false, pressedCard: -1, pressedControl: "", dragging: false };

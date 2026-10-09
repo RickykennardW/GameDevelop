@@ -1,0 +1,637 @@
+PASS exactly six enemy types, three additions only
+PASS old Nova/Hound fixed stats preserved
+PASS exact stats/no abilities VoidGuard
+PASS sixteen native states/four actual frames/no attacks VoidGuard
+PASS four-frame native idle loop VoidGuard/Up
+PASS idle origin/collider stable VoidGuard/Up
+PASS correct actual view without rotation/mirror VoidGuard/Up
+PASS exact movement speed/origin after direction swap VoidGuard/Up
+PASS native four-phase walking/floating VoidGuard/Up
+PASS existing Health armor and native Hit VoidGuard/Up
+PASS short four-frame hit recovers VoidGuard/Up
+PASS death mask disabled and one exact reward VoidGuard/Up
+PASS dead collider never moves VoidGuard/Up/0
+PASS dead collider never moves VoidGuard/Up/1
+PASS dead collider never moves VoidGuard/Up/2
+PASS dead collider never moves VoidGuard/Up/3
+PASS dead collider never moves VoidGuard/Up/4
+PASS dead collider never moves VoidGuard/Up/5
+PASS dead collider never moves VoidGuard/Up/6
+PASS dead collider never moves VoidGuard/Up/7
+PASS dead collider never moves VoidGuard/Up/8
+PASS dead collider never moves VoidGuard/Up/9
+PASS dead collider never moves VoidGuard/Up/10
+PASS dead collider never moves VoidGuard/Up/11
+PASS dead collider never moves VoidGuard/Up/12
+PASS dead collider never moves VoidGuard/Up/13
+PASS dead collider never moves VoidGuard/Up/14
+PASS dead collider never moves VoidGuard/Up/15
+PASS dead collider never moves VoidGuard/Up/16
+PASS dead collider never moves VoidGuard/Up/17
+PASS dead collider never moves VoidGuard/Up/18
+PASS dead collider never moves VoidGuard/Up/19
+PASS dead collider never moves VoidGuard/Up/20
+PASS dead collider never moves VoidGuard/Up/21
+PASS dead collider never moves VoidGuard/Up/22
+PASS dead collider never moves VoidGuard/Up/23
+PASS dead collider never moves VoidGuard/Up/24
+PASS dead collider never moves VoidGuard/Up/25
+PASS dead collider never moves VoidGuard/Up/26
+PASS dead collider never moves VoidGuard/Up/27
+PASS dead collider never moves VoidGuard/Up/28
+PASS dead collider never moves VoidGuard/Up/29
+PASS dead collider never moves VoidGuard/Up/30
+PASS dead collider never moves VoidGuard/Up/31
+PASS dead collider never moves VoidGuard/Up/32
+PASS dead collider never moves VoidGuard/Up/33
+PASS dead collider never moves VoidGuard/Up/34
+PASS dead collider never moves VoidGuard/Up/35
+PASS dead collider never moves VoidGuard/Up/36
+PASS dead collider never moves VoidGuard/Up/37
+PASS four death frames, cleanup and no duplicate reward VoidGuard/Up
+PASS four-frame native idle loop VoidGuard/Down
+PASS idle origin/collider stable VoidGuard/Down
+PASS correct actual view without rotation/mirror VoidGuard/Down
+PASS exact movement speed/origin after direction swap VoidGuard/Down
+PASS native four-phase walking/floating VoidGuard/Down
+PASS existing Health armor and native Hit VoidGuard/Down
+PASS short four-frame hit recovers VoidGuard/Down
+PASS death mask disabled and one exact reward VoidGuard/Down
+PASS dead collider never moves VoidGuard/Down/0
+PASS dead collider never moves VoidGuard/Down/1
+PASS dead collider never moves VoidGuard/Down/2
+PASS dead collider never moves VoidGuard/Down/3
+PASS dead collider never moves VoidGuard/Down/4
+PASS dead collider never moves VoidGuard/Down/5
+PASS dead collider never moves VoidGuard/Down/6
+PASS dead collider never moves VoidGuard/Down/7
+PASS dead collider never moves VoidGuard/Down/8
+PASS dead collider never moves VoidGuard/Down/9
+PASS dead collider never moves VoidGuard/Down/10
+PASS dead collider never moves VoidGuard/Down/11
+PASS dead collider never moves VoidGuard/Down/12
+PASS dead collider never moves VoidGuard/Down/13
+PASS dead collider never moves VoidGuard/Down/14
+PASS dead collider never moves VoidGuard/Down/15
+PASS dead collider never moves VoidGuard/Down/16
+PASS dead collider never moves VoidGuard/Down/17
+PASS dead collider never moves VoidGuard/Down/18
+PASS dead collider never moves VoidGuard/Down/19
+PASS dead collider never moves VoidGuard/Down/20
+PASS dead collider never moves VoidGuard/Down/21
+PASS dead collider never moves VoidGuard/Down/22
+PASS dead collider never moves VoidGuard/Down/23
+PASS dead collider never moves VoidGuard/Down/24
+PASS dead collider never moves VoidGuard/Down/25
+PASS dead collider never moves VoidGuard/Down/26
+PASS dead collider never moves VoidGuard/Down/27
+PASS dead collider never moves VoidGuard/Down/28
+PASS dead collider never moves VoidGuard/Down/29
+PASS dead collider never moves VoidGuard/Down/30
+PASS dead collider never moves VoidGuard/Down/31
+PASS dead collider never moves VoidGuard/Down/32
+PASS dead collider never moves VoidGuard/Down/33
+PASS dead collider never moves VoidGuard/Down/34
+PASS dead collider never moves VoidGuard/Down/35
+PASS dead collider never moves VoidGuard/Down/36
+PASS dead collider never moves VoidGuard/Down/37
+PASS four death frames, cleanup and no duplicate reward VoidGuard/Down
+PASS four-frame native idle loop VoidGuard/Left
+PASS idle origin/collider stable VoidGuard/Left
+PASS correct actual view without rotation/mirror VoidGuard/Left
+PASS exact movement speed/origin after direction swap VoidGuard/Left
+PASS native four-phase walking/floating VoidGuard/Left
+PASS existing Health armor and native Hit VoidGuard/Left
+PASS short four-frame hit recovers VoidGuard/Left
+PASS death mask disabled and one exact reward VoidGuard/Left
+PASS dead collider never moves VoidGuard/Left/0
+PASS dead collider never moves VoidGuard/Left/1
+PASS dead collider never moves VoidGuard/Left/2
+PASS dead collider never moves VoidGuard/Left/3
+PASS dead collider never moves VoidGuard/Left/4
+PASS dead collider never moves VoidGuard/Left/5
+PASS dead collider never moves VoidGuard/Left/6
+PASS dead collider never moves VoidGuard/Left/7
+PASS dead collider never moves VoidGuard/Left/8
+PASS dead collider never moves VoidGuard/Left/9
+PASS dead collider never moves VoidGuard/Left/10
+PASS dead collider never moves VoidGuard/Left/11
+PASS dead collider never moves VoidGuard/Left/12
+PASS dead collider never moves VoidGuard/Left/13
+PASS dead collider never moves VoidGuard/Left/14
+PASS dead collider never moves VoidGuard/Left/15
+PASS dead collider never moves VoidGuard/Left/16
+PASS dead collider never moves VoidGuard/Left/17
+PASS dead collider never moves VoidGuard/Left/18
+PASS dead collider never moves VoidGuard/Left/19
+PASS dead collider never moves VoidGuard/Left/20
+PASS dead collider never moves VoidGuard/Left/21
+PASS dead collider never moves VoidGuard/Left/22
+PASS dead collider never moves VoidGuard/Left/23
+PASS dead collider never moves VoidGuard/Left/24
+PASS dead collider never moves VoidGuard/Left/25
+PASS dead collider never moves VoidGuard/Left/26
+PASS dead collider never moves VoidGuard/Left/27
+PASS dead collider never moves VoidGuard/Left/28
+PASS dead collider never moves VoidGuard/Left/29
+PASS dead collider never moves VoidGuard/Left/30
+PASS dead collider never moves VoidGuard/Left/31
+PASS dead collider never moves VoidGuard/Left/32
+PASS dead collider never moves VoidGuard/Left/33
+PASS dead collider never moves VoidGuard/Left/34
+PASS dead collider never moves VoidGuard/Left/35
+PASS dead collider never moves VoidGuard/Left/36
+PASS dead collider never moves VoidGuard/Left/37
+PASS four death frames, cleanup and no duplicate reward VoidGuard/Left
+PASS four-frame native idle loop VoidGuard/Right
+PASS idle origin/collider stable VoidGuard/Right
+PASS correct actual view without rotation/mirror VoidGuard/Right
+PASS exact movement speed/origin after direction swap VoidGuard/Right
+PASS native four-phase walking/floating VoidGuard/Right
+PASS existing Health armor and native Hit VoidGuard/Right
+PASS short four-frame hit recovers VoidGuard/Right
+PASS death mask disabled and one exact reward VoidGuard/Right
+PASS dead collider never moves VoidGuard/Right/0
+PASS dead collider never moves VoidGuard/Right/1
+PASS dead collider never moves VoidGuard/Right/2
+PASS dead collider never moves VoidGuard/Right/3
+PASS dead collider never moves VoidGuard/Right/4
+PASS dead collider never moves VoidGuard/Right/5
+PASS dead collider never moves VoidGuard/Right/6
+PASS dead collider never moves VoidGuard/Right/7
+PASS dead collider never moves VoidGuard/Right/8
+PASS dead collider never moves VoidGuard/Right/9
+PASS dead collider never moves VoidGuard/Right/10
+PASS dead collider never moves VoidGuard/Right/11
+PASS dead collider never moves VoidGuard/Right/12
+PASS dead collider never moves VoidGuard/Right/13
+PASS dead collider never moves VoidGuard/Right/14
+PASS dead collider never moves VoidGuard/Right/15
+PASS dead collider never moves VoidGuard/Right/16
+PASS dead collider never moves VoidGuard/Right/17
+PASS dead collider never moves VoidGuard/Right/18
+PASS dead collider never moves VoidGuard/Right/19
+PASS dead collider never moves VoidGuard/Right/20
+PASS dead collider never moves VoidGuard/Right/21
+PASS dead collider never moves VoidGuard/Right/22
+PASS dead collider never moves VoidGuard/Right/23
+PASS dead collider never moves VoidGuard/Right/24
+PASS dead collider never moves VoidGuard/Right/25
+PASS dead collider never moves VoidGuard/Right/26
+PASS dead collider never moves VoidGuard/Right/27
+PASS dead collider never moves VoidGuard/Right/28
+PASS dead collider never moves VoidGuard/Right/29
+PASS dead collider never moves VoidGuard/Right/30
+PASS dead collider never moves VoidGuard/Right/31
+PASS dead collider never moves VoidGuard/Right/32
+PASS dead collider never moves VoidGuard/Right/33
+PASS dead collider never moves VoidGuard/Right/34
+PASS dead collider never moves VoidGuard/Right/35
+PASS dead collider never moves VoidGuard/Right/36
+PASS dead collider never moves VoidGuard/Right/37
+PASS four death frames, cleanup and no duplicate reward VoidGuard/Right
+PASS actual Star volley VoidGuard/0
+PASS actual armored projectile damage VoidGuard/0
+PASS actual Star volley VoidGuard/1
+PASS actual armored projectile damage VoidGuard/1
+PASS actual Star volley VoidGuard/2
+PASS actual armored projectile damage VoidGuard/2
+PASS actual Star volley VoidGuard/3
+PASS actual armored projectile damage VoidGuard/3
+PASS Star tracks actual HP damage and exact reward VoidGuard
+PASS Star kill finishes native death VoidGuard
+PASS entire82-waypoint zigzag/base rule VoidGuard
+PASS exact stats/no abilities VoidSentinel
+PASS sixteen native states/four actual frames/no attacks VoidSentinel
+PASS four-frame native idle loop VoidSentinel/Up
+PASS idle origin/collider stable VoidSentinel/Up
+PASS correct actual view without rotation/mirror VoidSentinel/Up
+PASS exact movement speed/origin after direction swap VoidSentinel/Up
+PASS native four-phase walking/floating VoidSentinel/Up
+PASS existing Health armor and native Hit VoidSentinel/Up
+PASS short four-frame hit recovers VoidSentinel/Up
+PASS death mask disabled and one exact reward VoidSentinel/Up
+PASS dead collider never moves VoidSentinel/Up/0
+PASS dead collider never moves VoidSentinel/Up/1
+PASS dead collider never moves VoidSentinel/Up/2
+PASS dead collider never moves VoidSentinel/Up/3
+PASS dead collider never moves VoidSentinel/Up/4
+PASS dead collider never moves VoidSentinel/Up/5
+PASS dead collider never moves VoidSentinel/Up/6
+PASS dead collider never moves VoidSentinel/Up/7
+PASS dead collider never moves VoidSentinel/Up/8
+PASS dead collider never moves VoidSentinel/Up/9
+PASS dead collider never moves VoidSentinel/Up/10
+PASS dead collider never moves VoidSentinel/Up/11
+PASS dead collider never moves VoidSentinel/Up/12
+PASS dead collider never moves VoidSentinel/Up/13
+PASS dead collider never moves VoidSentinel/Up/14
+PASS dead collider never moves VoidSentinel/Up/15
+PASS dead collider never moves VoidSentinel/Up/16
+PASS dead collider never moves VoidSentinel/Up/17
+PASS dead collider never moves VoidSentinel/Up/18
+PASS dead collider never moves VoidSentinel/Up/19
+PASS dead collider never moves VoidSentinel/Up/20
+PASS dead collider never moves VoidSentinel/Up/21
+PASS dead collider never moves VoidSentinel/Up/22
+PASS dead collider never moves VoidSentinel/Up/23
+PASS dead collider never moves VoidSentinel/Up/24
+PASS dead collider never moves VoidSentinel/Up/25
+PASS dead collider never moves VoidSentinel/Up/26
+PASS dead collider never moves VoidSentinel/Up/27
+PASS dead collider never moves VoidSentinel/Up/28
+PASS dead collider never moves VoidSentinel/Up/29
+PASS dead collider never moves VoidSentinel/Up/30
+PASS dead collider never moves VoidSentinel/Up/31
+PASS dead collider never moves VoidSentinel/Up/32
+PASS dead collider never moves VoidSentinel/Up/33
+PASS dead collider never moves VoidSentinel/Up/34
+PASS dead collider never moves VoidSentinel/Up/35
+PASS dead collider never moves VoidSentinel/Up/36
+PASS dead collider never moves VoidSentinel/Up/37
+PASS four death frames, cleanup and no duplicate reward VoidSentinel/Up
+PASS four-frame native idle loop VoidSentinel/Down
+PASS idle origin/collider stable VoidSentinel/Down
+PASS correct actual view without rotation/mirror VoidSentinel/Down
+PASS exact movement speed/origin after direction swap VoidSentinel/Down
+PASS native four-phase walking/floating VoidSentinel/Down
+PASS existing Health armor and native Hit VoidSentinel/Down
+PASS short four-frame hit recovers VoidSentinel/Down
+PASS death mask disabled and one exact reward VoidSentinel/Down
+PASS dead collider never moves VoidSentinel/Down/0
+PASS dead collider never moves VoidSentinel/Down/1
+PASS dead collider never moves VoidSentinel/Down/2
+PASS dead collider never moves VoidSentinel/Down/3
+PASS dead collider never moves VoidSentinel/Down/4
+PASS dead collider never moves VoidSentinel/Down/5
+PASS dead collider never moves VoidSentinel/Down/6
+PASS dead collider never moves VoidSentinel/Down/7
+PASS dead collider never moves VoidSentinel/Down/8
+PASS dead collider never moves VoidSentinel/Down/9
+PASS dead collider never moves VoidSentinel/Down/10
+PASS dead collider never moves VoidSentinel/Down/11
+PASS dead collider never moves VoidSentinel/Down/12
+PASS dead collider never moves VoidSentinel/Down/13
+PASS dead collider never moves VoidSentinel/Down/14
+PASS dead collider never moves VoidSentinel/Down/15
+PASS dead collider never moves VoidSentinel/Down/16
+PASS dead collider never moves VoidSentinel/Down/17
+PASS dead collider never moves VoidSentinel/Down/18
+PASS dead collider never moves VoidSentinel/Down/19
+PASS dead collider never moves VoidSentinel/Down/20
+PASS dead collider never moves VoidSentinel/Down/21
+PASS dead collider never moves VoidSentinel/Down/22
+PASS dead collider never moves VoidSentinel/Down/23
+PASS dead collider never moves VoidSentinel/Down/24
+PASS dead collider never moves VoidSentinel/Down/25
+PASS dead collider never moves VoidSentinel/Down/26
+PASS dead collider never moves VoidSentinel/Down/27
+PASS dead collider never moves VoidSentinel/Down/28
+PASS dead collider never moves VoidSentinel/Down/29
+PASS dead collider never moves VoidSentinel/Down/30
+PASS dead collider never moves VoidSentinel/Down/31
+PASS dead collider never moves VoidSentinel/Down/32
+PASS dead collider never moves VoidSentinel/Down/33
+PASS dead collider never moves VoidSentinel/Down/34
+PASS dead collider never moves VoidSentinel/Down/35
+PASS dead collider never moves VoidSentinel/Down/36
+PASS dead collider never moves VoidSentinel/Down/37
+PASS four death frames, cleanup and no duplicate reward VoidSentinel/Down
+PASS four-frame native idle loop VoidSentinel/Left
+PASS idle origin/collider stable VoidSentinel/Left
+PASS correct actual view without rotation/mirror VoidSentinel/Left
+PASS exact movement speed/origin after direction swap VoidSentinel/Left
+PASS native four-phase walking/floating VoidSentinel/Left
+PASS existing Health armor and native Hit VoidSentinel/Left
+PASS short four-frame hit recovers VoidSentinel/Left
+PASS death mask disabled and one exact reward VoidSentinel/Left
+PASS dead collider never moves VoidSentinel/Left/0
+PASS dead collider never moves VoidSentinel/Left/1
+PASS dead collider never moves VoidSentinel/Left/2
+PASS dead collider never moves VoidSentinel/Left/3
+PASS dead collider never moves VoidSentinel/Left/4
+PASS dead collider never moves VoidSentinel/Left/5
+PASS dead collider never moves VoidSentinel/Left/6
+PASS dead collider never moves VoidSentinel/Left/7
+PASS dead collider never moves VoidSentinel/Left/8
+PASS dead collider never moves VoidSentinel/Left/9
+PASS dead collider never moves VoidSentinel/Left/10
+PASS dead collider never moves VoidSentinel/Left/11
+PASS dead collider never moves VoidSentinel/Left/12
+PASS dead collider never moves VoidSentinel/Left/13
+PASS dead collider never moves VoidSentinel/Left/14
+PASS dead collider never moves VoidSentinel/Left/15
+PASS dead collider never moves VoidSentinel/Left/16
+PASS dead collider never moves VoidSentinel/Left/17
+PASS dead collider never moves VoidSentinel/Left/18
+PASS dead collider never moves VoidSentinel/Left/19
+PASS dead collider never moves VoidSentinel/Left/20
+PASS dead collider never moves VoidSentinel/Left/21
+PASS dead collider never moves VoidSentinel/Left/22
+PASS dead collider never moves VoidSentinel/Left/23
+PASS dead collider never moves VoidSentinel/Left/24
+PASS dead collider never moves VoidSentinel/Left/25
+PASS dead collider never moves VoidSentinel/Left/26
+PASS dead collider never moves VoidSentinel/Left/27
+PASS dead collider never moves VoidSentinel/Left/28
+PASS dead collider never moves VoidSentinel/Left/29
+PASS dead collider never moves VoidSentinel/Left/30
+PASS dead collider never moves VoidSentinel/Left/31
+PASS dead collider never moves VoidSentinel/Left/32
+PASS dead collider never moves VoidSentinel/Left/33
+PASS dead collider never moves VoidSentinel/Left/34
+PASS dead collider never moves VoidSentinel/Left/35
+PASS dead collider never moves VoidSentinel/Left/36
+PASS dead collider never moves VoidSentinel/Left/37
+PASS four death frames, cleanup and no duplicate reward VoidSentinel/Left
+PASS four-frame native idle loop VoidSentinel/Right
+PASS idle origin/collider stable VoidSentinel/Right
+PASS correct actual view without rotation/mirror VoidSentinel/Right
+PASS exact movement speed/origin after direction swap VoidSentinel/Right
+PASS native four-phase walking/floating VoidSentinel/Right
+PASS existing Health armor and native Hit VoidSentinel/Right
+PASS short four-frame hit recovers VoidSentinel/Right
+PASS death mask disabled and one exact reward VoidSentinel/Right
+PASS dead collider never moves VoidSentinel/Right/0
+PASS dead collider never moves VoidSentinel/Right/1
+PASS dead collider never moves VoidSentinel/Right/2
+PASS dead collider never moves VoidSentinel/Right/3
+PASS dead collider never moves VoidSentinel/Right/4
+PASS dead collider never moves VoidSentinel/Right/5
+PASS dead collider never moves VoidSentinel/Right/6
+PASS dead collider never moves VoidSentinel/Right/7
+PASS dead collider never moves VoidSentinel/Right/8
+PASS dead collider never moves VoidSentinel/Right/9
+PASS dead collider never moves VoidSentinel/Right/10
+PASS dead collider never moves VoidSentinel/Right/11
+PASS dead collider never moves VoidSentinel/Right/12
+PASS dead collider never moves VoidSentinel/Right/13
+PASS dead collider never moves VoidSentinel/Right/14
+PASS dead collider never moves VoidSentinel/Right/15
+PASS dead collider never moves VoidSentinel/Right/16
+PASS dead collider never moves VoidSentinel/Right/17
+PASS dead collider never moves VoidSentinel/Right/18
+PASS dead collider never moves VoidSentinel/Right/19
+PASS dead collider never moves VoidSentinel/Right/20
+PASS dead collider never moves VoidSentinel/Right/21
+PASS dead collider never moves VoidSentinel/Right/22
+PASS dead collider never moves VoidSentinel/Right/23
+PASS dead collider never moves VoidSentinel/Right/24
+PASS dead collider never moves VoidSentinel/Right/25
+PASS dead collider never moves VoidSentinel/Right/26
+PASS dead collider never moves VoidSentinel/Right/27
+PASS dead collider never moves VoidSentinel/Right/28
+PASS dead collider never moves VoidSentinel/Right/29
+PASS dead collider never moves VoidSentinel/Right/30
+PASS dead collider never moves VoidSentinel/Right/31
+PASS dead collider never moves VoidSentinel/Right/32
+PASS dead collider never moves VoidSentinel/Right/33
+PASS dead collider never moves VoidSentinel/Right/34
+PASS dead collider never moves VoidSentinel/Right/35
+PASS dead collider never moves VoidSentinel/Right/36
+PASS dead collider never moves VoidSentinel/Right/37
+PASS four death frames, cleanup and no duplicate reward VoidSentinel/Right
+PASS actual Star volley VoidSentinel/0
+PASS actual armored projectile damage VoidSentinel/0
+PASS actual Star volley VoidSentinel/1
+PASS actual armored projectile damage VoidSentinel/1
+PASS actual Star volley VoidSentinel/2
+PASS actual armored projectile damage VoidSentinel/2
+PASS Star tracks actual HP damage and exact reward VoidSentinel
+PASS Star kill finishes native death VoidSentinel
+PASS entire82-waypoint zigzag/base rule VoidSentinel
+PASS exact stats/no abilities VoidBrute
+PASS sixteen native states/four actual frames/no attacks VoidBrute
+PASS four-frame native idle loop VoidBrute/Up
+PASS idle origin/collider stable VoidBrute/Up
+PASS correct actual view without rotation/mirror VoidBrute/Up
+PASS exact movement speed/origin after direction swap VoidBrute/Up
+PASS native four-phase walking/floating VoidBrute/Up
+PASS existing Health armor and native Hit VoidBrute/Up
+PASS short four-frame hit recovers VoidBrute/Up
+PASS death mask disabled and one exact reward VoidBrute/Up
+PASS dead collider never moves VoidBrute/Up/0
+PASS dead collider never moves VoidBrute/Up/1
+PASS dead collider never moves VoidBrute/Up/2
+PASS dead collider never moves VoidBrute/Up/3
+PASS dead collider never moves VoidBrute/Up/4
+PASS dead collider never moves VoidBrute/Up/5
+PASS dead collider never moves VoidBrute/Up/6
+PASS dead collider never moves VoidBrute/Up/7
+PASS dead collider never moves VoidBrute/Up/8
+PASS dead collider never moves VoidBrute/Up/9
+PASS dead collider never moves VoidBrute/Up/10
+PASS dead collider never moves VoidBrute/Up/11
+PASS dead collider never moves VoidBrute/Up/12
+PASS dead collider never moves VoidBrute/Up/13
+PASS dead collider never moves VoidBrute/Up/14
+PASS dead collider never moves VoidBrute/Up/15
+PASS dead collider never moves VoidBrute/Up/16
+PASS dead collider never moves VoidBrute/Up/17
+PASS dead collider never moves VoidBrute/Up/18
+PASS dead collider never moves VoidBrute/Up/19
+PASS dead collider never moves VoidBrute/Up/20
+PASS dead collider never moves VoidBrute/Up/21
+PASS dead collider never moves VoidBrute/Up/22
+PASS dead collider never moves VoidBrute/Up/23
+PASS dead collider never moves VoidBrute/Up/24
+PASS dead collider never moves VoidBrute/Up/25
+PASS dead collider never moves VoidBrute/Up/26
+PASS dead collider never moves VoidBrute/Up/27
+PASS dead collider never moves VoidBrute/Up/28
+PASS dead collider never moves VoidBrute/Up/29
+PASS dead collider never moves VoidBrute/Up/30
+PASS dead collider never moves VoidBrute/Up/31
+PASS dead collider never moves VoidBrute/Up/32
+PASS dead collider never moves VoidBrute/Up/33
+PASS dead collider never moves VoidBrute/Up/34
+PASS dead collider never moves VoidBrute/Up/35
+PASS dead collider never moves VoidBrute/Up/36
+PASS dead collider never moves VoidBrute/Up/37
+PASS dead collider never moves VoidBrute/Up/38
+PASS dead collider never moves VoidBrute/Up/39
+PASS dead collider never moves VoidBrute/Up/40
+PASS dead collider never moves VoidBrute/Up/41
+PASS dead collider never moves VoidBrute/Up/42
+PASS dead collider never moves VoidBrute/Up/43
+PASS four death frames, cleanup and no duplicate reward VoidBrute/Up
+PASS four-frame native idle loop VoidBrute/Down
+PASS idle origin/collider stable VoidBrute/Down
+PASS correct actual view without rotation/mirror VoidBrute/Down
+PASS exact movement speed/origin after direction swap VoidBrute/Down
+PASS native four-phase walking/floating VoidBrute/Down
+PASS existing Health armor and native Hit VoidBrute/Down
+PASS short four-frame hit recovers VoidBrute/Down
+PASS death mask disabled and one exact reward VoidBrute/Down
+PASS dead collider never moves VoidBrute/Down/0
+PASS dead collider never moves VoidBrute/Down/1
+PASS dead collider never moves VoidBrute/Down/2
+PASS dead collider never moves VoidBrute/Down/3
+PASS dead collider never moves VoidBrute/Down/4
+PASS dead collider never moves VoidBrute/Down/5
+PASS dead collider never moves VoidBrute/Down/6
+PASS dead collider never moves VoidBrute/Down/7
+PASS dead collider never moves VoidBrute/Down/8
+PASS dead collider never moves VoidBrute/Down/9
+PASS dead collider never moves VoidBrute/Down/10
+PASS dead collider never moves VoidBrute/Down/11
+PASS dead collider never moves VoidBrute/Down/12
+PASS dead collider never moves VoidBrute/Down/13
+PASS dead collider never moves VoidBrute/Down/14
+PASS dead collider never moves VoidBrute/Down/15
+PASS dead collider never moves VoidBrute/Down/16
+PASS dead collider never moves VoidBrute/Down/17
+PASS dead collider never moves VoidBrute/Down/18
+PASS dead collider never moves VoidBrute/Down/19
+PASS dead collider never moves VoidBrute/Down/20
+PASS dead collider never moves VoidBrute/Down/21
+PASS dead collider never moves VoidBrute/Down/22
+PASS dead collider never moves VoidBrute/Down/23
+PASS dead collider never moves VoidBrute/Down/24
+PASS dead collider never moves VoidBrute/Down/25
+PASS dead collider never moves VoidBrute/Down/26
+PASS dead collider never moves VoidBrute/Down/27
+PASS dead collider never moves VoidBrute/Down/28
+PASS dead collider never moves VoidBrute/Down/29
+PASS dead collider never moves VoidBrute/Down/30
+PASS dead collider never moves VoidBrute/Down/31
+PASS dead collider never moves VoidBrute/Down/32
+PASS dead collider never moves VoidBrute/Down/33
+PASS dead collider never moves VoidBrute/Down/34
+PASS dead collider never moves VoidBrute/Down/35
+PASS dead collider never moves VoidBrute/Down/36
+PASS dead collider never moves VoidBrute/Down/37
+PASS dead collider never moves VoidBrute/Down/38
+PASS dead collider never moves VoidBrute/Down/39
+PASS dead collider never moves VoidBrute/Down/40
+PASS dead collider never moves VoidBrute/Down/41
+PASS dead collider never moves VoidBrute/Down/42
+PASS dead collider never moves VoidBrute/Down/43
+PASS four death frames, cleanup and no duplicate reward VoidBrute/Down
+PASS four-frame native idle loop VoidBrute/Left
+PASS idle origin/collider stable VoidBrute/Left
+PASS correct actual view without rotation/mirror VoidBrute/Left
+PASS exact movement speed/origin after direction swap VoidBrute/Left
+PASS native four-phase walking/floating VoidBrute/Left
+PASS existing Health armor and native Hit VoidBrute/Left
+PASS short four-frame hit recovers VoidBrute/Left
+PASS death mask disabled and one exact reward VoidBrute/Left
+PASS dead collider never moves VoidBrute/Left/0
+PASS dead collider never moves VoidBrute/Left/1
+PASS dead collider never moves VoidBrute/Left/2
+PASS dead collider never moves VoidBrute/Left/3
+PASS dead collider never moves VoidBrute/Left/4
+PASS dead collider never moves VoidBrute/Left/5
+PASS dead collider never moves VoidBrute/Left/6
+PASS dead collider never moves VoidBrute/Left/7
+PASS dead collider never moves VoidBrute/Left/8
+PASS dead collider never moves VoidBrute/Left/9
+PASS dead collider never moves VoidBrute/Left/10
+PASS dead collider never moves VoidBrute/Left/11
+PASS dead collider never moves VoidBrute/Left/12
+PASS dead collider never moves VoidBrute/Left/13
+PASS dead collider never moves VoidBrute/Left/14
+PASS dead collider never moves VoidBrute/Left/15
+PASS dead collider never moves VoidBrute/Left/16
+PASS dead collider never moves VoidBrute/Left/17
+PASS dead collider never moves VoidBrute/Left/18
+PASS dead collider never moves VoidBrute/Left/19
+PASS dead collider never moves VoidBrute/Left/20
+PASS dead collider never moves VoidBrute/Left/21
+PASS dead collider never moves VoidBrute/Left/22
+PASS dead collider never moves VoidBrute/Left/23
+PASS dead collider never moves VoidBrute/Left/24
+PASS dead collider never moves VoidBrute/Left/25
+PASS dead collider never moves VoidBrute/Left/26
+PASS dead collider never moves VoidBrute/Left/27
+PASS dead collider never moves VoidBrute/Left/28
+PASS dead collider never moves VoidBrute/Left/29
+PASS dead collider never moves VoidBrute/Left/30
+PASS dead collider never moves VoidBrute/Left/31
+PASS dead collider never moves VoidBrute/Left/32
+PASS dead collider never moves VoidBrute/Left/33
+PASS dead collider never moves VoidBrute/Left/34
+PASS dead collider never moves VoidBrute/Left/35
+PASS dead collider never moves VoidBrute/Left/36
+PASS dead collider never moves VoidBrute/Left/37
+PASS dead collider never moves VoidBrute/Left/38
+PASS dead collider never moves VoidBrute/Left/39
+PASS dead collider never moves VoidBrute/Left/40
+PASS dead collider never moves VoidBrute/Left/41
+PASS dead collider never moves VoidBrute/Left/42
+PASS dead collider never moves VoidBrute/Left/43
+PASS four death frames, cleanup and no duplicate reward VoidBrute/Left
+PASS four-frame native idle loop VoidBrute/Right
+PASS idle origin/collider stable VoidBrute/Right
+PASS correct actual view without rotation/mirror VoidBrute/Right
+PASS exact movement speed/origin after direction swap VoidBrute/Right
+PASS native four-phase walking/floating VoidBrute/Right
+PASS existing Health armor and native Hit VoidBrute/Right
+PASS short four-frame hit recovers VoidBrute/Right
+PASS death mask disabled and one exact reward VoidBrute/Right
+PASS dead collider never moves VoidBrute/Right/0
+PASS dead collider never moves VoidBrute/Right/1
+PASS dead collider never moves VoidBrute/Right/2
+PASS dead collider never moves VoidBrute/Right/3
+PASS dead collider never moves VoidBrute/Right/4
+PASS dead collider never moves VoidBrute/Right/5
+PASS dead collider never moves VoidBrute/Right/6
+PASS dead collider never moves VoidBrute/Right/7
+PASS dead collider never moves VoidBrute/Right/8
+PASS dead collider never moves VoidBrute/Right/9
+PASS dead collider never moves VoidBrute/Right/10
+PASS dead collider never moves VoidBrute/Right/11
+PASS dead collider never moves VoidBrute/Right/12
+PASS dead collider never moves VoidBrute/Right/13
+PASS dead collider never moves VoidBrute/Right/14
+PASS dead collider never moves VoidBrute/Right/15
+PASS dead collider never moves VoidBrute/Right/16
+PASS dead collider never moves VoidBrute/Right/17
+PASS dead collider never moves VoidBrute/Right/18
+PASS dead collider never moves VoidBrute/Right/19
+PASS dead collider never moves VoidBrute/Right/20
+PASS dead collider never moves VoidBrute/Right/21
+PASS dead collider never moves VoidBrute/Right/22
+PASS dead collider never moves VoidBrute/Right/23
+PASS dead collider never moves VoidBrute/Right/24
+PASS dead collider never moves VoidBrute/Right/25
+PASS dead collider never moves VoidBrute/Right/26
+PASS dead collider never moves VoidBrute/Right/27
+PASS dead collider never moves VoidBrute/Right/28
+PASS dead collider never moves VoidBrute/Right/29
+PASS dead collider never moves VoidBrute/Right/30
+PASS dead collider never moves VoidBrute/Right/31
+PASS dead collider never moves VoidBrute/Right/32
+PASS dead collider never moves VoidBrute/Right/33
+PASS dead collider never moves VoidBrute/Right/34
+PASS dead collider never moves VoidBrute/Right/35
+PASS dead collider never moves VoidBrute/Right/36
+PASS dead collider never moves VoidBrute/Right/37
+PASS dead collider never moves VoidBrute/Right/38
+PASS dead collider never moves VoidBrute/Right/39
+PASS dead collider never moves VoidBrute/Right/40
+PASS dead collider never moves VoidBrute/Right/41
+PASS dead collider never moves VoidBrute/Right/42
+PASS dead collider never moves VoidBrute/Right/43
+PASS four death frames, cleanup and no duplicate reward VoidBrute/Right
+PASS actual Star volley VoidBrute/0
+PASS actual armored projectile damage VoidBrute/0
+PASS actual Star volley VoidBrute/1
+PASS actual armored projectile damage VoidBrute/1
+PASS actual Star volley VoidBrute/2
+PASS actual armored projectile damage VoidBrute/2
+PASS actual Star volley VoidBrute/3
+PASS actual armored projectile damage VoidBrute/3
+PASS actual Star volley VoidBrute/4
+PASS actual armored projectile damage VoidBrute/4
+PASS actual Star volley VoidBrute/5
+PASS actual armored projectile damage VoidBrute/5
+PASS actual Star volley VoidBrute/6
+PASS actual armored projectile damage VoidBrute/6
+PASS Star tracks actual HP damage and exact reward VoidBrute
+PASS Star kill finishes native death VoidBrute
+PASS entire82-waypoint zigzag/base rule VoidBrute
+PASS no leaked common actors/owned healthbars after lifecycle tests
+PASS Index has exactly six nonempty canonical entries
+PASS original small single-Star shop unchanged
+ALL VOID COMMON TESTS PASSED
