@@ -1,0 +1,11 @@
+{
+  "status": "KEEP",
+  "files": [
+    "design_previews/island_upgrade/Reference.png",
+    "design_previews/nova_map/Nova_Celestial_Void_Preview.png"
+  ],
+  "restoredFromBackup": [
+    "design_previews/island_upgrade/Reference.png"
+  ],
+  "reason": "Source artwork referenced by retained map metadata; excluded from historical preview removal"
+}

@@ -13,8 +13,7 @@ const conf=p.config(type),tower=scene.createObject(type);if(!tower)return;
 tower.setLayer('');const [ox,oy]=p.offsets(type);p.positionSprite(tower,type,x,y);tower.setZOrder(2);
 const tv=tower.getVariables();sv.get('NextTowerId').add(1);tv.get('TowerId').setNumber(sv.get('NextTowerId').getAsNumber());tv.get('PurchasePrice').setNumber(result.cost);
 tv.get('FootprintRadius').setNumber(conf.Radius);tv.get('FootprintOffsetX').setNumber(ox);tv.get('FootprintOffsetY').setNumber(oy);tv.get('FootprintX').setNumber(x);tv.get('FootprintY').setNumber(y);
-if(type==='ArcherTower'||type==='StarCannonTower')tv.get('TotalInvestment').setNumber(result.cost);
-if(type==='ShotgunTower'||type==='RocketTower')tower.resetTimer('shoot');
+if(type==='StarCannonTower')tv.get('TotalInvestment').setNumber(result.cost);
 sv.get('Money').sub(result.cost);sv.get('PlacementCommitted').setBoolean(true);
 // Single placement consumes the builder, not only the current mouse edge.
 p.stop();

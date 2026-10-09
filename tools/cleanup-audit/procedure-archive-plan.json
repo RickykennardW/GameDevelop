@@ -1,0 +1,72 @@
+[
+  {
+    "path": "tools/cleanup-star-only.py",
+    "sha256": "37adafbd49340fc454a0c27a4b63f704f290c31617016fbea0171011d41f66a5",
+    "bytes": 10342,
+    "reason": "Completed one-shot cleanup procedure/raw audit snapshots archived; structured dependency and final audits retained",
+    "backup": "backups\\cleanup_procedure_20261009.zip"
+  },
+  {
+    "path": "tools/cleanup-audit/autosave-diff.json",
+    "sha256": "c69de9af06e00bfd6b98104bbae33f2eba92aa77a1cb7a7659e1b3dc6e968a04",
+    "bytes": 717057,
+    "reason": "Completed one-shot cleanup procedure/raw audit snapshots archived; structured dependency and final audits retained",
+    "backup": "backups\\cleanup_procedure_20261009.zip"
+  },
+  {
+    "path": "tools/cleanup-audit/event-11.json",
+    "sha256": "68525bbc45b34d0c92307f9afa8c456daae14d3a0c319f9bea3dde7de5dbf32b",
+    "bytes": 6318,
+    "reason": "Completed one-shot cleanup procedure/raw audit snapshots archived; structured dependency and final audits retained",
+    "backup": "backups\\cleanup_procedure_20261009.zip"
+  },
+  {
+    "path": "tools/cleanup-audit/event-12.json",
+    "sha256": "6cfad0fa04c026889b93c575e74aa3e332929c0f901f2471d028fc1fc6fd4eb1",
+    "bytes": 6510,
+    "reason": "Completed one-shot cleanup procedure/raw audit snapshots archived; structured dependency and final audits retained",
+    "backup": "backups\\cleanup_procedure_20261009.zip"
+  },
+  {
+    "path": "tools/cleanup-audit/event-13.json",
+    "sha256": "6d2e6946d0c38c0a68d920dfa2b14b8cbcbf8166204dfd433f047bce9c899ed1",
+    "bytes": 464,
+    "reason": "Completed one-shot cleanup procedure/raw audit snapshots archived; structured dependency and final audits retained",
+    "backup": "backups\\cleanup_procedure_20261009.zip"
+  },
+  {
+    "path": "tools/cleanup-audit/event-3.json",
+    "sha256": "ef8d8e92fa3dcbe093adfe3f1159d9611fef780b1b69b5e1c2fc054dd1af9158",
+    "bytes": 12320,
+    "reason": "Completed one-shot cleanup procedure/raw audit snapshots archived; structured dependency and final audits retained",
+    "backup": "backups\\cleanup_procedure_20261009.zip"
+  },
+  {
+    "path": "tools/cleanup-audit/event-4.json",
+    "sha256": "2f79955fdee36af5c191c65bc99467d885c7c8894a84b359fdd462fa56d5987a",
+    "bytes": 1385,
+    "reason": "Completed one-shot cleanup procedure/raw audit snapshots archived; structured dependency and final audits retained",
+    "backup": "backups\\cleanup_procedure_20261009.zip"
+  },
+  {
+    "path": "tools/cleanup-audit/event-5.json",
+    "sha256": "b7ac5eb90c39ef4187d88f26219b61f7988e82d8bf4fff3b82bfde893e6c94ad",
+    "bytes": 6016,
+    "reason": "Completed one-shot cleanup procedure/raw audit snapshots archived; structured dependency and final audits retained",
+    "backup": "backups\\cleanup_procedure_20261009.zip"
+  },
+  {
+    "path": "tools/cleanup-audit/event-7.json",
+    "sha256": "189b80fa5601acd5297e1d2a59021ac0a310c8c07cb41adbf22ec3b2fd7c4459",
+    "bytes": 817,
+    "reason": "Completed one-shot cleanup procedure/raw audit snapshots archived; structured dependency and final audits retained",
+    "backup": "backups\\cleanup_procedure_20261009.zip"
+  },
+  {
+    "path": "tools/cleanup-audit/event-9.json",
+    "sha256": "3a593046b4415d866e18388165cd85afe25f598bb203ef5737fd54502a7ccdef",
+    "bytes": 2983,
+    "reason": "Completed one-shot cleanup procedure/raw audit snapshots archived; structured dependency and final audits retained",
+    "backup": "backups\\cleanup_procedure_20261009.zip"
+  }
+]

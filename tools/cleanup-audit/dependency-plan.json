@@ -1,0 +1,4699 @@
+{
+  "removeObjects": [
+    "ArcherProjectile",
+    "ArcherTower",
+    "AssetCardSeparator",
+    "AssetRocketTowerLabel",
+    "AssetRocketTowerPrice",
+    "AssetShotgunTowerLabel",
+    "AssetShotgunTowerPrice",
+    "Bullet",
+    "RocketBullet",
+    "RocketTower",
+    "ShopIndexLabel",
+    "ShopScrollThumb",
+    "ShopScrollTrack",
+    "ShotgunTower",
+    "Tower",
+    "TowerInfoCloseHint",
+    "TowerInfoDamage",
+    "TowerInfoDamageLabel",
+    "TowerInfoDealt",
+    "TowerInfoDealtLabel",
+    "TowerInfoName",
+    "TowerInfoRange",
+    "TowerInfoRangeLabel",
+    "TowerInfoRate",
+    "TowerInfoRateLabel",
+    "TowerSellButton",
+    "TowerSellLabel",
+    "TowerSellValue"
+  ],
+  "renamedSharedObject": {
+    "ArcherUpgradeIcon": "StarUpgradeIcon"
+  },
+  "removeVariables": [
+    "ArcherConfig",
+    "EnemyHP",
+    "EnemySpeed",
+    "KillReward",
+    "LegacyEnemyTypes",
+    "LegacyWaveConfigs",
+    "SelectedTowerFound",
+    "TowerShopScroll",
+    "WaveConfigs",
+    "WorldSelectionHandled"
+  ],
+  "resources": [
+    {
+      "name": "assets\\StartingUnit.png",
+      "file": "assets/StartingUnit.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 1902,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets\\StartingTower.png",
+      "file": "assets/StartingTower.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 970,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets\\StartingTree.png",
+      "file": "assets/StartingTree.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 1226,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets\\StartingButtonUnit.png",
+      "file": "assets/StartingButtonUnit.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 2303,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets\\StartingButtonTower.png",
+      "file": "assets/StartingButtonTower.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 1396,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets\\StartingButtonTree.png",
+      "file": "assets/StartingButtonTree.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 1603,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets\\StartingGroundTilemap.png",
+      "file": "assets/StartingGroundTilemap.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 1847,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/starting_woodthump.wav",
+      "file": "assets/starting_woodthump.wav",
+      "status": "KEEP",
+      "consumers": [
+        "events"
+      ],
+      "bytes": 35904,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/starter_switch.wav",
+      "file": "assets/starter_switch.wav",
+      "status": "KEEP",
+      "consumers": [
+        "events"
+      ],
+      "bytes": 68288,
+      "reason": "live dependency"
+    },
+    {
+      "name": "Slime_Hit_1.png",
+      "file": "assets/Slime_Hit_1.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 205,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Slime_Hit_2.png",
+      "file": "assets/Slime_Hit_2.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 205,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Slime_Hit_3.png",
+      "file": "assets/Slime_Hit_3.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 644,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Slime_Hit_4.png",
+      "file": "assets/Slime_Hit_4.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 628,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Slime_Hit_5.png",
+      "file": "assets/Slime_Hit_5.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 635,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Slime_Idle Run_1.png",
+      "file": "assets/Slime_Idle Run_1.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 658,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Slime_Idle Run_10.png",
+      "file": "assets/Slime_Idle Run_10.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 675,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Slime_Idle Run_2.png",
+      "file": "assets/Slime_Idle Run_2.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 648,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Slime_Idle Run_3.png",
+      "file": "assets/Slime_Idle Run_3.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 659,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Slime_Idle Run_4.png",
+      "file": "assets/Slime_Idle Run_4.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 659,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Slime_Idle Run_5.png",
+      "file": "assets/Slime_Idle Run_5.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 646,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Slime_Idle Run_6.png",
+      "file": "assets/Slime_Idle Run_6.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 658,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Slime_Idle Run_7.png",
+      "file": "assets/Slime_Idle Run_7.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 675,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Slime_Idle Run_8.png",
+      "file": "assets/Slime_Idle Run_8.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 675,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Slime_Idle Run_9.png",
+      "file": "assets/Slime_Idle Run_9.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 675,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Bullet 5.png",
+      "file": "assets/Bullet 5.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 2970,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Shotgun Vertical_Aiming.png",
+      "file": "assets/Shotgun Vertical_Aiming.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 1459,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Shotgun Vertical_Firing.png",
+      "file": "assets/Shotgun Vertical_Firing.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 1780,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Missile.png",
+      "file": "assets/Missile.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 231,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Nairan Rocket_1.png",
+      "file": "assets/Nairan Rocket_1.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 389,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Nairan Rocket_2.png",
+      "file": "assets/Nairan Rocket_2.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 394,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Nairan Rocket_3.png",
+      "file": "assets/Nairan Rocket_3.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 377,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Nairan Rocket_4.png",
+      "file": "assets/Nairan Rocket_4.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 386,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "tiled_Grass2.png",
+      "file": "assets/tiled_Grass2.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 1050873,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Default-panel (31).png",
+      "file": "assets/Default-panel (31).png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 172,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Isometric Platformer Dirt_Surface.png",
+      "file": "assets/Isometric Platformer Dirt_Surface.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 4709,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Isometric Platformer Dirt_Texture.png",
+      "file": "assets/Isometric Platformer Dirt_Texture.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 4563,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/tower-range.svg",
+      "file": "assets/tower-range.svg",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 221,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/shop-separator.svg",
+      "file": "assets/shop-separator.svg",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 157,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Default size/towerDefense_tile024.png",
+      "file": "Default size/towerDefense_tile024.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 3269,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Default size/towerDefense_tile050.png",
+      "file": "Default size/towerDefense_tile050.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 1056,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Default size/towerDefense_tile093.png",
+      "file": "Default size/towerDefense_tile093.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 2971,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/ui/panel.svg",
+      "file": "assets/ui/panel.svg",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 189,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/ui/card.svg",
+      "file": "assets/ui/card.svg",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 189,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/ui/play-button.svg",
+      "file": "assets/ui/play-button.svg",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 189,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/ui/coin.svg",
+      "file": "assets/ui/coin.svg",
+      "status": "SHARED",
+      "consumers": [
+        "object:HUDIcon",
+        "object:ShopCoin"
+      ],
+      "bytes": 306,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/ui/heart.svg",
+      "file": "assets/ui/heart.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:HUDIcon"
+      ],
+      "bytes": 271,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/ui/flag.svg",
+      "file": "assets/ui/flag.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:HUDIcon"
+      ],
+      "bytes": 232,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/ui/play.svg",
+      "file": "assets/ui/play.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:ShopPlayIcon"
+      ],
+      "bytes": 137,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/ui/up.svg",
+      "file": "assets/ui/up.svg",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 214,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/ui/down.svg",
+      "file": "assets/ui/down.svg",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 213,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/ui/scroll.svg",
+      "file": "assets/ui/scroll.svg",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 152,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/ui/manual-wave.svg",
+      "file": "assets/ui/manual-wave.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:ShopPlayIcon"
+      ],
+      "bytes": 218,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/ui/enemy-health-pixel.svg",
+      "file": "assets/ui/enemy-health-pixel.svg",
+      "status": "SHARED",
+      "consumers": [
+        "object:HealthBarBackground",
+        "object:HealthBarFill",
+        "object:SelectedProgressBlock"
+      ],
+      "bytes": 122,
+      "reason": "live dependency"
+    },
+    {
+      "name": "Index_logo",
+      "file": "Index_Logo.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 1424238,
+      "reason": "resource alias only collides with object declaration name; actual portrait references Cosmic_Codex.png"
+    },
+    {
+      "name": "assets/ui/fantasy-frame.svg",
+      "file": "assets/ui/fantasy-frame.svg",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 961,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/ui/fantasy-plaque.svg",
+      "file": "assets/ui/fantasy-plaque.svg",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 862,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/ui/fantasy-card.svg",
+      "file": "assets/ui/fantasy-card.svg",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 1031,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/ui/fantasy-button.svg",
+      "file": "assets/ui/fantasy-button.svg",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 984,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/ui/fantasy-index-button.svg",
+      "file": "assets/ui/fantasy-index-button.svg",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 984,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/ui/fantasy-well.svg",
+      "file": "assets/ui/fantasy-well.svg",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 709,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/ui/fantasy-track.svg",
+      "file": "assets/ui/fantasy-track.svg",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 169,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/ui/fantasy-thumb.svg",
+      "file": "assets/ui/fantasy-thumb.svg",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 639,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Index_Button_Icon",
+      "file": "assets/ui/Index_Button_Icon.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 1258202,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "Default size/towerDefense_tile203.png",
+      "file": "Default size/towerDefense_tile203.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 1888,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherTower_0_0.png",
+      "file": "assets/archer/ArcherTower_0_0.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 218354,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherTower_0_1.png",
+      "file": "assets/archer/ArcherTower_0_1.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 217503,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherTower_0_2.png",
+      "file": "assets/archer/ArcherTower_0_2.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 221093,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherTower_0_3.png",
+      "file": "assets/archer/ArcherTower_0_3.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 219889,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherTower_0_4.png",
+      "file": "assets/archer/ArcherTower_0_4.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 221867,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherTower_1_0.png",
+      "file": "assets/archer/ArcherTower_1_0.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 243803,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherTower_1_1.png",
+      "file": "assets/archer/ArcherTower_1_1.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 231861,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherTower_1_2.png",
+      "file": "assets/archer/ArcherTower_1_2.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 228966,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherTower_1_3.png",
+      "file": "assets/archer/ArcherTower_1_3.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 215429,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherTower_1_4.png",
+      "file": "assets/archer/ArcherTower_1_4.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 240760,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherTower_2_0.png",
+      "file": "assets/archer/ArcherTower_2_0.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 217650,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherTower_2_1.png",
+      "file": "assets/archer/ArcherTower_2_1.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 249068,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherTower_2_2.png",
+      "file": "assets/archer/ArcherTower_2_2.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 243336,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherTower_2_3.png",
+      "file": "assets/archer/ArcherTower_2_3.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 208426,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherTower_2_4.png",
+      "file": "assets/archer/ArcherTower_2_4.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 231798,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherTower_3_0.png",
+      "file": "assets/archer/ArcherTower_3_0.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 211040,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherTower_3_1.png",
+      "file": "assets/archer/ArcherTower_3_1.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 233217,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherTower_3_2.png",
+      "file": "assets/archer/ArcherTower_3_2.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 238752,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherTower_4_0.png",
+      "file": "assets/archer/ArcherTower_4_0.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 230381,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherTower_4_1.png",
+      "file": "assets/archer/ArcherTower_4_1.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 257325,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherTower_4_2.png",
+      "file": "assets/archer/ArcherTower_4_2.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 230713,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherUpgrade_P1_L1_Damage.png",
+      "file": "assets/archer/ArcherUpgrade_P1_L1_Damage.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 175989,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherUpgrade_P1_L2_AttackSpeed.png",
+      "file": "assets/archer/ArcherUpgrade_P1_L2_AttackSpeed.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 153346,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherUpgrade_P1_L3_TwinArchers.png",
+      "file": "assets/archer/ArcherUpgrade_P1_L3_TwinArchers.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 227598,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherUpgrade_P1_L4_ArrowStorm.png",
+      "file": "assets/archer/ArcherUpgrade_P1_L4_ArrowStorm.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 296042,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherUpgrade_P2_L1_Range.png",
+      "file": "assets/archer/ArcherUpgrade_P2_L1_Range.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 205935,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherUpgrade_P2_L2_ProjectileSpeed.png",
+      "file": "assets/archer/ArcherUpgrade_P2_L2_ProjectileSpeed.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 153755,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherUpgrade_P2_L3_PiercingCrossbow.png",
+      "file": "assets/archer/ArcherUpgrade_P2_L3_PiercingCrossbow.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 134679,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/ArcherUpgrade_P2_L4_HeavyBolts.png",
+      "file": "assets/archer/ArcherUpgrade_P2_L4_HeavyBolts.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 145881,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/Archer_Arrow.png",
+      "file": "assets/archer/Archer_Arrow.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 42476,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/archer/Archer_CrossbowBolt.png",
+      "file": "assets/archer/Archer_CrossbowBolt.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 45191,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/celestial_void/backdrop.svg",
+      "file": "assets/celestial_void/backdrop.svg",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 1324,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/celestial_void/base-ring.svg",
+      "file": "assets/celestial_void/base-ring.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:TowerBaseRing"
+      ],
+      "bytes": 472,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/Base_Nexus.png",
+      "file": "assets/celestial_void/Base_Nexus.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:BaseMarker"
+      ],
+      "bytes": 352304,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/Cosmic_Codex.png",
+      "file": "assets/celestial_void/Cosmic_Codex.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:Index_logo"
+      ],
+      "bytes": 385069,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/Cosmic_Rock.png",
+      "file": "assets/celestial_void/Cosmic_Rock.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:Ground_Decoration"
+      ],
+      "bytes": 207359,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/Crystal_Cluster.png",
+      "file": "assets/celestial_void/Crystal_Cluster.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:Ground_Decoration"
+      ],
+      "bytes": 284273,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/ground.svg",
+      "file": "assets/celestial_void/ground.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:Monster_Path"
+      ],
+      "bytes": 580,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/Lunar_Ruin.png",
+      "file": "assets/celestial_void/Lunar_Ruin.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 258043,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/celestial_void/path_Cap_E.svg",
+      "file": "assets/celestial_void/path_Cap_E.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:Monster_Path"
+      ],
+      "bytes": 1450,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/path_Cap_N.svg",
+      "file": "assets/celestial_void/path_Cap_N.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:Monster_Path"
+      ],
+      "bytes": 1450,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/path_Cap_S.svg",
+      "file": "assets/celestial_void/path_Cap_S.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:Monster_Path"
+      ],
+      "bytes": 1450,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/path_Cap_W.svg",
+      "file": "assets/celestial_void/path_Cap_W.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:Monster_Path"
+      ],
+      "bytes": 1450,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/path_H.svg",
+      "file": "assets/celestial_void/path_H.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:Monster_Path"
+      ],
+      "bytes": 1445,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/path_NE.svg",
+      "file": "assets/celestial_void/path_NE.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:Monster_Path"
+      ],
+      "bytes": 1520,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/path_NW.svg",
+      "file": "assets/celestial_void/path_NW.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:Monster_Path"
+      ],
+      "bytes": 1520,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/path_SE.svg",
+      "file": "assets/celestial_void/path_SE.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:Monster_Path"
+      ],
+      "bytes": 1520,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/path_SW.svg",
+      "file": "assets/celestial_void/path_SW.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:Monster_Path"
+      ],
+      "bytes": 1520,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/path_V.svg",
+      "file": "assets/celestial_void/path_V.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:Monster_Path"
+      ],
+      "bytes": 1445,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/Purple_Shrub.png",
+      "file": "assets/celestial_void/Purple_Shrub.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 200892,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/celestial_void/range.svg",
+      "file": "assets/celestial_void/range.svg",
+      "status": "SHARED",
+      "consumers": [
+        "object:PlacementRangeIndicator",
+        "object:RangeIndicator"
+      ],
+      "bytes": 320,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/Spawn_Portal.png",
+      "file": "assets/celestial_void/Spawn_Portal.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:SpawnMarker"
+      ],
+      "bytes": 353676,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/ui/button.svg",
+      "file": "assets/celestial_void/ui/button.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:ShopPlayButton"
+      ],
+      "bytes": 984,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/ui/card.svg",
+      "file": "assets/celestial_void/ui/card.svg",
+      "status": "SHARED",
+      "consumers": [
+        "object:AssetCardPanel",
+        "object:SelectedUpgradeCard"
+      ],
+      "bytes": 1031,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/ui/frame.svg",
+      "file": "assets/celestial_void/ui/frame.svg",
+      "status": "SHARED",
+      "consumers": [
+        "object:SelectedPanelBackground",
+        "object:TowerShopBox",
+        "object:WaveBannerPanel"
+      ],
+      "bytes": 961,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/ui/index-button.svg",
+      "file": "assets/celestial_void/ui/index-button.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:ShopIndexButton"
+      ],
+      "bytes": 984,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/ui/index-panel.svg",
+      "file": "assets/celestial_void/ui/index-panel.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:IndexPanel"
+      ],
+      "bytes": 189,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/ui/plaque.svg",
+      "file": "assets/celestial_void/ui/plaque.svg",
+      "status": "SHARED",
+      "consumers": [
+        "object:HUDPanel",
+        "object:SelectedPanelPlaque",
+        "object:ShopHeaderPlaque"
+      ],
+      "bytes": 862,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/ui/well.svg",
+      "file": "assets/celestial_void/ui/well.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:ShopFooterFrame"
+      ],
+      "bytes": 709,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/ui/track.svg",
+      "file": "assets/celestial_void/ui/track.svg",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 169,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/celestial_void/ui/thumb.svg",
+      "file": "assets/celestial_void/ui/thumb.svg",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 639,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/celestial_void/island/Nebula.png",
+      "file": "assets/celestial_void/island/Nebula.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:VoidBackdrop"
+      ],
+      "bytes": 2381877,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/island/Terrain.png",
+      "file": "assets/celestial_void/island/Terrain.png",
+      "status": "REMOVE",
+      "consumers": [],
+      "bytes": 2466466,
+      "reason": "no reference after scoped object/animation/event cleanup"
+    },
+    {
+      "name": "assets/celestial_void/island/terrain-repeat.svg",
+      "file": "assets/celestial_void/island/terrain-repeat.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:Ground_Map"
+      ],
+      "bytes": 13154980,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/island/Cliff_Frame.png",
+      "file": "assets/celestial_void/island/Cliff_Frame.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:IslandCliffFrame"
+      ],
+      "bytes": 1359606,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/island/Moon_Garden.png",
+      "file": "assets/celestial_void/island/Moon_Garden.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:Ground_Decoration"
+      ],
+      "bytes": 1875769,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/island/Purple_Foliage.png",
+      "file": "assets/celestial_void/island/Purple_Foliage.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:Ground_Decoration"
+      ],
+      "bytes": 1738935,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/island/path_H_plain.svg",
+      "file": "assets/celestial_void/island/path_H_plain.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:Monster_Path"
+      ],
+      "bytes": 1195,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/celestial_void/island/path_V_plain.svg",
+      "file": "assets/celestial_void/island/path_V_plain.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:Monster_Path"
+      ],
+      "bytes": 1195,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Impact_Barrage.svg",
+      "file": "assets/star_cannon/Impact_Barrage.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonImpact"
+      ],
+      "bytes": 1014,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Impact_Base.svg",
+      "file": "assets/star_cannon/Impact_Base.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonImpact"
+      ],
+      "bytes": 922,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Impact_Explosion.svg",
+      "file": "assets/star_cannon/Impact_Explosion.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonImpact"
+      ],
+      "bytes": 1012,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Impact_Supernova.svg",
+      "file": "assets/star_cannon/Impact_Supernova.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonImpact"
+      ],
+      "bytes": 1012,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Projectile_Base.svg",
+      "file": "assets/star_cannon/Projectile_Base.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonProjectile"
+      ],
+      "bytes": 1048,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Projectile_Explosion.svg",
+      "file": "assets/star_cannon/Projectile_Explosion.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonProjectile"
+      ],
+      "bytes": 1241,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Projectile_Meteor.svg",
+      "file": "assets/star_cannon/Projectile_Meteor.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonProjectile"
+      ],
+      "bytes": 1176,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Projectile_Reinforced.svg",
+      "file": "assets/star_cannon/Projectile_Reinforced.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonProjectile"
+      ],
+      "bytes": 1145,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Projectile_Supernova.svg",
+      "file": "assets/star_cannon/Projectile_Supernova.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonProjectile"
+      ],
+      "bytes": 1208,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Projectile_Twin.svg",
+      "file": "assets/star_cannon/Projectile_Twin.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonProjectile"
+      ],
+      "bytes": 1142,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Star_Cannon_0_0.png",
+      "file": "assets/star_cannon/Star_Cannon_0_0.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:IndexTowerImage",
+        "object:SelectedTowerPreview",
+        "object:StarCannonTower",
+        "object:TilePlacement_Indicator",
+        "object:TileType_Button"
+      ],
+      "bytes": 848322,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Star_Cannon_0_1.png",
+      "file": "assets/star_cannon/Star_Cannon_0_1.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:SelectedTowerPreview",
+        "object:StarCannonTower"
+      ],
+      "bytes": 884084,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Star_Cannon_0_2.png",
+      "file": "assets/star_cannon/Star_Cannon_0_2.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:SelectedTowerPreview",
+        "object:StarCannonTower"
+      ],
+      "bytes": 1061488,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Star_Cannon_0_3.png",
+      "file": "assets/star_cannon/Star_Cannon_0_3.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:SelectedTowerPreview",
+        "object:StarCannonTower"
+      ],
+      "bytes": 1041100,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Star_Cannon_0_4.png",
+      "file": "assets/star_cannon/Star_Cannon_0_4.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:SelectedTowerPreview",
+        "object:StarCannonTower"
+      ],
+      "bytes": 1171510,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Star_Cannon_1_0.png",
+      "file": "assets/star_cannon/Star_Cannon_1_0.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:SelectedTowerPreview",
+        "object:StarCannonTower"
+      ],
+      "bytes": 875774,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Star_Cannon_1_1.png",
+      "file": "assets/star_cannon/Star_Cannon_1_1.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:SelectedTowerPreview",
+        "object:StarCannonTower"
+      ],
+      "bytes": 1024864,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Star_Cannon_1_2.png",
+      "file": "assets/star_cannon/Star_Cannon_1_2.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:SelectedTowerPreview",
+        "object:StarCannonTower"
+      ],
+      "bytes": 1196364,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Star_Cannon_1_3.png",
+      "file": "assets/star_cannon/Star_Cannon_1_3.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:SelectedTowerPreview",
+        "object:StarCannonTower"
+      ],
+      "bytes": 1284095,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Star_Cannon_1_4.png",
+      "file": "assets/star_cannon/Star_Cannon_1_4.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:SelectedTowerPreview",
+        "object:StarCannonTower"
+      ],
+      "bytes": 1235920,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Star_Cannon_2_0.png",
+      "file": "assets/star_cannon/Star_Cannon_2_0.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:SelectedTowerPreview",
+        "object:StarCannonTower"
+      ],
+      "bytes": 1144139,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Star_Cannon_2_1.png",
+      "file": "assets/star_cannon/Star_Cannon_2_1.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:SelectedTowerPreview",
+        "object:StarCannonTower"
+      ],
+      "bytes": 1459788,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Star_Cannon_2_2.png",
+      "file": "assets/star_cannon/Star_Cannon_2_2.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:SelectedTowerPreview",
+        "object:StarCannonTower"
+      ],
+      "bytes": 1177271,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Star_Cannon_2_3.png",
+      "file": "assets/star_cannon/Star_Cannon_2_3.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:SelectedTowerPreview",
+        "object:StarCannonTower"
+      ],
+      "bytes": 1238012,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Star_Cannon_2_4.png",
+      "file": "assets/star_cannon/Star_Cannon_2_4.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:SelectedTowerPreview",
+        "object:StarCannonTower"
+      ],
+      "bytes": 1498953,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Star_Cannon_3_0.png",
+      "file": "assets/star_cannon/Star_Cannon_3_0.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:SelectedTowerPreview",
+        "object:StarCannonTower"
+      ],
+      "bytes": 1416843,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Star_Cannon_3_1.png",
+      "file": "assets/star_cannon/Star_Cannon_3_1.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:SelectedTowerPreview",
+        "object:StarCannonTower"
+      ],
+      "bytes": 1231891,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Star_Cannon_3_2.png",
+      "file": "assets/star_cannon/Star_Cannon_3_2.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:SelectedTowerPreview",
+        "object:StarCannonTower"
+      ],
+      "bytes": 1267985,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Star_Cannon_4_0.png",
+      "file": "assets/star_cannon/Star_Cannon_4_0.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:SelectedTowerPreview",
+        "object:StarCannonTower"
+      ],
+      "bytes": 1224666,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Star_Cannon_4_1.png",
+      "file": "assets/star_cannon/Star_Cannon_4_1.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:SelectedTowerPreview",
+        "object:StarCannonTower"
+      ],
+      "bytes": 1128754,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Star_Cannon_4_2.png",
+      "file": "assets/star_cannon/Star_Cannon_4_2.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:SelectedTowerPreview",
+        "object:StarCannonTower"
+      ],
+      "bytes": 1185343,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Upgrade_HeavyImpact.svg",
+      "file": "assets/star_cannon/Upgrade_HeavyImpact.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarUpgradeIcon"
+      ],
+      "bytes": 913,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Upgrade_MeteorBarrage.svg",
+      "file": "assets/star_cannon/Upgrade_MeteorBarrage.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarUpgradeIcon"
+      ],
+      "bytes": 1012,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Upgrade_PrecisionCore.svg",
+      "file": "assets/star_cannon/Upgrade_PrecisionCore.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarUpgradeIcon"
+      ],
+      "bytes": 978,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Upgrade_RapidFire.svg",
+      "file": "assets/star_cannon/Upgrade_RapidFire.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarUpgradeIcon"
+      ],
+      "bytes": 852,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Upgrade_ReinforcedCore.svg",
+      "file": "assets/star_cannon/Upgrade_ReinforcedCore.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarUpgradeIcon"
+      ],
+      "bytes": 912,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Upgrade_StarExplosion.svg",
+      "file": "assets/star_cannon/Upgrade_StarExplosion.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarUpgradeIcon"
+      ],
+      "bytes": 928,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Upgrade_Supernova.svg",
+      "file": "assets/star_cannon/Upgrade_Supernova.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarUpgradeIcon"
+      ],
+      "bytes": 947,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/Upgrade_TwinStar.svg",
+      "file": "assets/star_cannon/Upgrade_TwinStar.svg",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarUpgradeIcon"
+      ],
+      "bytes": 900,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Base_0_0.png",
+      "file": "assets/star_cannon/components/StarCannon_Base_0_0.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonBaseVisual"
+      ],
+      "bytes": 658222,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Base_0_1.png",
+      "file": "assets/star_cannon/components/StarCannon_Base_0_1.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonBaseVisual"
+      ],
+      "bytes": 521008,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Base_0_2.png",
+      "file": "assets/star_cannon/components/StarCannon_Base_0_2.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonBaseVisual"
+      ],
+      "bytes": 654846,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Base_0_3.png",
+      "file": "assets/star_cannon/components/StarCannon_Base_0_3.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonBaseVisual"
+      ],
+      "bytes": 659616,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Base_0_4.png",
+      "file": "assets/star_cannon/components/StarCannon_Base_0_4.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonBaseVisual"
+      ],
+      "bytes": 816412,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Base_1_0.png",
+      "file": "assets/star_cannon/components/StarCannon_Base_1_0.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonBaseVisual"
+      ],
+      "bytes": 756402,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Base_1_1.png",
+      "file": "assets/star_cannon/components/StarCannon_Base_1_1.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonBaseVisual"
+      ],
+      "bytes": 660433,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Base_1_2.png",
+      "file": "assets/star_cannon/components/StarCannon_Base_1_2.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonBaseVisual"
+      ],
+      "bytes": 894233,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Base_1_3.png",
+      "file": "assets/star_cannon/components/StarCannon_Base_1_3.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonBaseVisual"
+      ],
+      "bytes": 753486,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Base_1_4.png",
+      "file": "assets/star_cannon/components/StarCannon_Base_1_4.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonBaseVisual"
+      ],
+      "bytes": 773749,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Base_2_0.png",
+      "file": "assets/star_cannon/components/StarCannon_Base_2_0.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonBaseVisual"
+      ],
+      "bytes": 748741,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Base_2_1.png",
+      "file": "assets/star_cannon/components/StarCannon_Base_2_1.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonBaseVisual"
+      ],
+      "bytes": 1030126,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Base_2_2.png",
+      "file": "assets/star_cannon/components/StarCannon_Base_2_2.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonBaseVisual"
+      ],
+      "bytes": 831839,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Base_2_3.png",
+      "file": "assets/star_cannon/components/StarCannon_Base_2_3.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonBaseVisual"
+      ],
+      "bytes": 703440,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Base_2_4.png",
+      "file": "assets/star_cannon/components/StarCannon_Base_2_4.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonBaseVisual"
+      ],
+      "bytes": 838731,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Base_3_0.png",
+      "file": "assets/star_cannon/components/StarCannon_Base_3_0.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonBaseVisual"
+      ],
+      "bytes": 1010035,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Base_3_1.png",
+      "file": "assets/star_cannon/components/StarCannon_Base_3_1.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonBaseVisual"
+      ],
+      "bytes": 790363,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Base_3_2.png",
+      "file": "assets/star_cannon/components/StarCannon_Base_3_2.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonBaseVisual"
+      ],
+      "bytes": 895194,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Base_4_0.png",
+      "file": "assets/star_cannon/components/StarCannon_Base_4_0.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonBaseVisual"
+      ],
+      "bytes": 699661,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Base_4_1.png",
+      "file": "assets/star_cannon/components/StarCannon_Base_4_1.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonBaseVisual"
+      ],
+      "bytes": 825791,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Base_4_2.png",
+      "file": "assets/star_cannon/components/StarCannon_Base_4_2.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonBaseVisual"
+      ],
+      "bytes": 737984,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Turret_0_0.png",
+      "file": "assets/star_cannon/components/StarCannon_Turret_0_0.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonTurretVisual"
+      ],
+      "bytes": 493482,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Turret_0_1.png",
+      "file": "assets/star_cannon/components/StarCannon_Turret_0_1.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonTurretVisual"
+      ],
+      "bytes": 777540,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Turret_0_2.png",
+      "file": "assets/star_cannon/components/StarCannon_Turret_0_2.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonTurretVisual"
+      ],
+      "bytes": 974108,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Turret_0_3.png",
+      "file": "assets/star_cannon/components/StarCannon_Turret_0_3.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonTurretVisual"
+      ],
+      "bytes": 823759,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Turret_0_4.png",
+      "file": "assets/star_cannon/components/StarCannon_Turret_0_4.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonTurretVisual"
+      ],
+      "bytes": 1274503,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Turret_1_0.png",
+      "file": "assets/star_cannon/components/StarCannon_Turret_1_0.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonTurretVisual"
+      ],
+      "bytes": 713782,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Turret_1_1.png",
+      "file": "assets/star_cannon/components/StarCannon_Turret_1_1.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonTurretVisual"
+      ],
+      "bytes": 923384,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Turret_1_2.png",
+      "file": "assets/star_cannon/components/StarCannon_Turret_1_2.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonTurretVisual"
+      ],
+      "bytes": 1115681,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Turret_1_3.png",
+      "file": "assets/star_cannon/components/StarCannon_Turret_1_3.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonTurretVisual"
+      ],
+      "bytes": 1241369,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Turret_1_4.png",
+      "file": "assets/star_cannon/components/StarCannon_Turret_1_4.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonTurretVisual"
+      ],
+      "bytes": 1158137,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Turret_2_0.png",
+      "file": "assets/star_cannon/components/StarCannon_Turret_2_0.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonTurretVisual"
+      ],
+      "bytes": 934480,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Turret_2_1.png",
+      "file": "assets/star_cannon/components/StarCannon_Turret_2_1.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonTurretVisual"
+      ],
+      "bytes": 1004719,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Turret_2_2.png",
+      "file": "assets/star_cannon/components/StarCannon_Turret_2_2.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonTurretVisual"
+      ],
+      "bytes": 1060569,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Turret_2_3.png",
+      "file": "assets/star_cannon/components/StarCannon_Turret_2_3.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonTurretVisual"
+      ],
+      "bytes": 1242928,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Turret_2_4.png",
+      "file": "assets/star_cannon/components/StarCannon_Turret_2_4.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonTurretVisual"
+      ],
+      "bytes": 1180568,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Turret_3_0.png",
+      "file": "assets/star_cannon/components/StarCannon_Turret_3_0.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonTurretVisual"
+      ],
+      "bytes": 1066436,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Turret_3_1.png",
+      "file": "assets/star_cannon/components/StarCannon_Turret_3_1.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonTurretVisual"
+      ],
+      "bytes": 1208420,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Turret_3_2.png",
+      "file": "assets/star_cannon/components/StarCannon_Turret_3_2.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonTurretVisual"
+      ],
+      "bytes": 1184968,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Turret_4_0.png",
+      "file": "assets/star_cannon/components/StarCannon_Turret_4_0.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonTurretVisual"
+      ],
+      "bytes": 934380,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Turret_4_1.png",
+      "file": "assets/star_cannon/components/StarCannon_Turret_4_1.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonTurretVisual"
+      ],
+      "bytes": 1099149,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/star_cannon/components/StarCannon_Turret_4_2.png",
+      "file": "assets/star_cannon/components/StarCannon_Turret_4_2.png",
+      "status": "KEEP",
+      "consumers": [
+        "object:StarCannonTurretVisual"
+      ],
+      "bytes": 1051089,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/nova_wisp/NovaWisp_Down.png",
+      "file": "assets/nova_wisp/NovaWisp_Down.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:Enemy",
+        "object:IndexMonsterImage",
+        "object:NovaWispDeathVisual",
+        "scene config"
+      ],
+      "bytes": 885338,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/nova_wisp/NovaWisp_Left.png",
+      "file": "assets/nova_wisp/NovaWisp_Left.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:Enemy",
+        "object:NovaWispDeathVisual",
+        "scene config"
+      ],
+      "bytes": 757598,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/nova_wisp/NovaWisp_Right.png",
+      "file": "assets/nova_wisp/NovaWisp_Right.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:Enemy",
+        "object:NovaWispDeathVisual",
+        "scene config"
+      ],
+      "bytes": 767656,
+      "reason": "live dependency"
+    },
+    {
+      "name": "assets/nova_wisp/NovaWisp_Up.png",
+      "file": "assets/nova_wisp/NovaWisp_Up.png",
+      "status": "SHARED",
+      "consumers": [
+        "object:Enemy",
+        "object:NovaWispDeathVisual",
+        "scene config"
+      ],
+      "bytes": 853942,
+      "reason": "live dependency"
+    }
+  ],
+  "deleteAssets": [
+    {
+      "path": "assets/Bullet 5.png",
+      "bytes": 2970,
+      "sha256": "bd55873ee9e4c48ae3c20bb06289da50980fabd312066e846b7df98f04b9745e",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Default-panel (31).png",
+      "bytes": 172,
+      "sha256": "77499c59b7d1512af52f2968471aba5c128ea416390876dc2c648ecd5c2d396c",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Isometric Platformer Dirt_Surface.png",
+      "bytes": 4709,
+      "sha256": "78865b81c2e5cd270901662c0c15d447727b96a313d046f2c2b6e6adfd55c26a",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Isometric Platformer Dirt_Texture.png",
+      "bytes": 4563,
+      "sha256": "4cf739174e03dc5600cc7c9339d7886da5f4dfe230c4a5b8cdb6841984580f66",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Missile.png",
+      "bytes": 231,
+      "sha256": "f9c119421b87b953980c154ed81bea2e193d5a2541dc9a40c7e40f11a1b9b41e",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Nairan Rocket_1.png",
+      "bytes": 389,
+      "sha256": "d4d9fb53121452138fd953da4b753ccc0cec2623e7558c563bc8086eef8d5124",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Nairan Rocket_2.png",
+      "bytes": 394,
+      "sha256": "4453532cb67e5e9a04f91d26ee2be27f4f84849b83a3134d34a6cea780bdf091",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Nairan Rocket_3.png",
+      "bytes": 377,
+      "sha256": "e9b04cfcb42f84e6a9dedec76e4363569d1b6192a40527a3ff7f9d3c51b88a97",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Nairan Rocket_4.png",
+      "bytes": 386,
+      "sha256": "9e7b973f21856228fa997f0436ff17f4a5795ff68797aa3696028786834bd522",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/shop-separator.svg",
+      "bytes": 157,
+      "sha256": "b5ffa83e3301d6444ea690ff74d0ec1a7cf142d3111bd7f12be29775b42ba189",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Shotgun Vertical_Aiming.png",
+      "bytes": 1459,
+      "sha256": "c2ed68d067aa6693058f43ed497e955ef1e3a4d426956b90b917a8d676fea4ea",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Shotgun Vertical_Firing.png",
+      "bytes": 1780,
+      "sha256": "0a87be4a57df99fc8f0550acc38ff837ef17c0651a0dce28328b91b5712cfd9d",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Slime_Hit_1.png",
+      "bytes": 205,
+      "sha256": "948bf45859444d39d905fe709ea01ced6d3f173fd86cf3ac31ba548253971ff6",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Slime_Hit_2.png",
+      "bytes": 205,
+      "sha256": "948bf45859444d39d905fe709ea01ced6d3f173fd86cf3ac31ba548253971ff6",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Slime_Hit_3.png",
+      "bytes": 644,
+      "sha256": "4c5403fa72fb915fc26d532198a8db9e6c3486a03c160cad7e2b0b7cf963753d",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Slime_Hit_4.png",
+      "bytes": 628,
+      "sha256": "d680893c4511ff97b797e9278dc8a874e609119f686fc1dad777afec2436c3d6",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Slime_Hit_5.png",
+      "bytes": 635,
+      "sha256": "a4739360a262417a593876ea04d2b880ff6df160832b7734de8b3b9e02f38fea",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Slime_Idle Run_1.png",
+      "bytes": 658,
+      "sha256": "e52500ab63aa1d87cf595f4b84af6ce9c2b1fef09d2315067d8311e4a3760310",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Slime_Idle Run_10.png",
+      "bytes": 675,
+      "sha256": "df4f2d0a926dcb1d39df9e24b122b0ca6aec30175e21fe3d59eb0472379736c3",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Slime_Idle Run_2.png",
+      "bytes": 648,
+      "sha256": "0ba6372505bab4e45852077fefcb0e91bbbb3e1ca7872e876f6da89402c08251",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Slime_Idle Run_3.png",
+      "bytes": 659,
+      "sha256": "6480f8596cb8cd87cbd645b8294fc04b576b9a80685bb1c7b7647249d0bc084a",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Slime_Idle Run_4.png",
+      "bytes": 659,
+      "sha256": "6480f8596cb8cd87cbd645b8294fc04b576b9a80685bb1c7b7647249d0bc084a",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Slime_Idle Run_5.png",
+      "bytes": 646,
+      "sha256": "10db2add312ae4214510e914e63b393339cc5a3d1a4fa3787706eef4a1e0c42b",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Slime_Idle Run_6.png",
+      "bytes": 658,
+      "sha256": "e52500ab63aa1d87cf595f4b84af6ce9c2b1fef09d2315067d8311e4a3760310",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Slime_Idle Run_7.png",
+      "bytes": 675,
+      "sha256": "df4f2d0a926dcb1d39df9e24b122b0ca6aec30175e21fe3d59eb0472379736c3",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Slime_Idle Run_8.png",
+      "bytes": 675,
+      "sha256": "50e7d73df6a13c28159d18778da1b211c07a1bc4aae5f42013d13ebc5affb19d",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/Slime_Idle Run_9.png",
+      "bytes": 675,
+      "sha256": "50e7d73df6a13c28159d18778da1b211c07a1bc4aae5f42013d13ebc5affb19d",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/StartingButtonTower.png",
+      "bytes": 1396,
+      "sha256": "e8dd840f1ee20ff763020864eb98d932b08acbd50ece3c939a2033f2293eff96",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/StartingButtonTree.png",
+      "bytes": 1603,
+      "sha256": "d1fb209c4397be7f16fbd787f674943893b7a68d418575655ab4fdbc2523df68",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/StartingButtonUnit.png",
+      "bytes": 2303,
+      "sha256": "52c1b6dc984c0bcd565a18e9a8a0f4bba0e32c1a969b863af2e8043f6d49cb5d",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/StartingGroundTilemap.png",
+      "bytes": 1847,
+      "sha256": "bd34d3b86141bd0c904338e9be103ea857a1b79b4e62f06a1cd8fc917d4a06da",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/StartingTower.png",
+      "bytes": 970,
+      "sha256": "85086adec6015957d08f0be63df265b31f7ee8c0787d079771f0e042c7c63fcb",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/StartingTree.png",
+      "bytes": 1226,
+      "sha256": "4a21234b665a417dc779bd1afc7313a2203913bb3651e51dc9c69e1e5de36056",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/StartingUnit.png",
+      "bytes": 1902,
+      "sha256": "3788e625fcaadca5fed3c586d13b79db3268a224eba535e8954e28a4fbc24657",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/tiled_Grass2.png",
+      "bytes": 1050873,
+      "sha256": "b8adcdf9cdf0992674cb9fd9853793834dc589def9fa61143e32421ddcd75636",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/tower-range.svg",
+      "bytes": 221,
+      "sha256": "75658a00cbf51e8d8b14e48ce4df51627c2571c1321151d569cd093c7d7d01c1",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherTower_0_0.png",
+      "bytes": 218354,
+      "sha256": "f0354e10e4ab4b6df5e26519623d8b4e54979437bc86bd9a3d3b14797cffbfc4",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherTower_0_1.png",
+      "bytes": 217503,
+      "sha256": "515f296ce078d3b0f99bfe68233d060af20aad55698967cf3d3ff6f81bcda071",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherTower_0_2.png",
+      "bytes": 221093,
+      "sha256": "fe7fb13f6c47b87a0cd6f69395ccec3e97a44c4a939164b878fed235f5b6466d",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherTower_0_3.png",
+      "bytes": 219889,
+      "sha256": "cc814186fbd67c92b455ed0c45314ecaebe3c934c9d1c5e829be82dd14afdf1b",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherTower_0_4.png",
+      "bytes": 221867,
+      "sha256": "728372a854c9dbb5bd916ba32a903cd48a2df3353d32fb2bd2f5475041788ef6",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherTower_1_0.png",
+      "bytes": 243803,
+      "sha256": "9f91af414ff17939b7c742639d9cc7ae930785dad232fb8d1c5903d283dd0ed3",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherTower_1_1.png",
+      "bytes": 231861,
+      "sha256": "785cf717af09dd09bbe5a8f59c2f6d09047da3c4139735955f527262b55904d9",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherTower_1_2.png",
+      "bytes": 228966,
+      "sha256": "bb3ebe4f87be5517f0e34074c7a4a3110e22a9102df64fb3b23514a230071aa4",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherTower_1_3.png",
+      "bytes": 215429,
+      "sha256": "ee5ef5208191eb3df85a948bd9b70b1ac3197a93067bc152f0df8e296f86a05c",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherTower_1_4.png",
+      "bytes": 240760,
+      "sha256": "ecacd762395613b02ea75a3e869cee1ed92f01bbce5eef701be139e63773891a",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherTower_2_0.png",
+      "bytes": 217650,
+      "sha256": "43db62da3fdcac0270640b07a2e3344755d0641a26de95505ec38d6eb440967a",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherTower_2_1.png",
+      "bytes": 249068,
+      "sha256": "c5f8c7c5414b929f1a691c8b618b961733866c40f3c33ade19cb126c43849d56",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherTower_2_2.png",
+      "bytes": 243336,
+      "sha256": "f71c8f9b25aae0318833aa978d63368684ed8807b9cd0a11518a44082c2c4921",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherTower_2_3.png",
+      "bytes": 208426,
+      "sha256": "6c7ace022bd7c4c4399bcd0a0406d59cd3bbd1c7cdd28984f8f753e52e195d62",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherTower_2_4.png",
+      "bytes": 231798,
+      "sha256": "85934d3115d64cd00f93c82880e23ab2e872f7ebfc1781367da03ba0655f8da0",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherTower_3_0.png",
+      "bytes": 211040,
+      "sha256": "ea978b8a7fc2e63828bbec4120967d795b97b2ac132f3f87802e876a00bbf459",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherTower_3_1.png",
+      "bytes": 233217,
+      "sha256": "3f612c4bc20a603ff433eede4e4be1fa67f7d10863e8157edaaf296d510966ca",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherTower_3_2.png",
+      "bytes": 238752,
+      "sha256": "67ce3ed0c46105bc321ae6f23dcad8e4dc7addf48ca56af87c9559d2000ea36a",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherTower_4_0.png",
+      "bytes": 230381,
+      "sha256": "3d9d60b5e95820f8b563754fea3fa6aed708451c334a0ad7c5643da4e02301a1",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherTower_4_1.png",
+      "bytes": 257325,
+      "sha256": "f78fff92bc8767ccc053530d6298e07005858d21dc8f888dee7f08f4648b452f",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherTower_4_2.png",
+      "bytes": 230713,
+      "sha256": "4986e654a1e7f27f449278b3f12d2e8c11a8fe2dfcfeef85058c8acd5705a771",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherUpgrade_P1_L1_Damage.png",
+      "bytes": 175989,
+      "sha256": "9c7c8219a9c206337a48437b749434e8bc96462773b594183932704c9edace23",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherUpgrade_P1_L2_AttackSpeed.png",
+      "bytes": 153346,
+      "sha256": "f0e7eaeb1f09647e38c51f8c5a32ec8904e072b243f518e113104ca32ef7a7a9",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherUpgrade_P1_L3_TwinArchers.png",
+      "bytes": 227598,
+      "sha256": "650c212508a6fac94bc56271a3c4b47aa5e0807150e1ec8b45c6d6a83db720fe",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherUpgrade_P1_L4_ArrowStorm.png",
+      "bytes": 296042,
+      "sha256": "71d907ba4f2507b4afc52d40034e3d986d62ed95fa54459891a521cd6c69e0bc",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherUpgrade_P2_L1_Range.png",
+      "bytes": 205935,
+      "sha256": "751adc667847778aee2234e9d569d44b0b16191d5295614bac80409c75825d9e",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherUpgrade_P2_L2_ProjectileSpeed.png",
+      "bytes": 153755,
+      "sha256": "99d8ee8273cd4480cca7b27136cb98d88a21eddad1ad710eaab977211d193122",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherUpgrade_P2_L3_PiercingCrossbow.png",
+      "bytes": 134679,
+      "sha256": "68591d14c8e283b2bf4935e7a83645f0749126836fa24acb23ef3bc3e1b27df7",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/ArcherUpgrade_P2_L4_HeavyBolts.png",
+      "bytes": 145881,
+      "sha256": "369c1a5a827eb233763566380cfd29a7061ede0a8c9d93ddf5c282a6c34de0fe",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/Archer_Arrow.png",
+      "bytes": 42476,
+      "sha256": "2497822e03d307cd4fb3493354ead531ee14329ab6f5896519664a9e9c43d400",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/Archer_CrossbowBolt.png",
+      "bytes": 45191,
+      "sha256": "63b09f8d3055a3645bd507deb7b12f4700a71ce81b82af1c105ee597f66d8526",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/generated-sources.json",
+      "bytes": 4903,
+      "sha256": "f25d5c93433598a55e63c470f75b9370000ad8083108217fac47245d3abf1810",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/generation-prompts.json",
+      "bytes": 4245,
+      "sha256": "02377e188d7d9112b129d9b18752dabd69948f9b1b503672ba67bbaa5edddadd",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/archer/manifest.json",
+      "bytes": 14527,
+      "sha256": "990490787de24978b63e25ac5e86c0e5050e9ba6a19bc011fd251a4285fc9795",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/celestial_void/backdrop.svg",
+      "bytes": 1324,
+      "sha256": "3e1cabac3c243704add1f06136b617a5cc38c23c14ef114f42f3de99e47df970",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/celestial_void/Lunar_Ruin.png",
+      "bytes": 258043,
+      "sha256": "bbb8707c4d1e1c5d0abe9680ab8b4b3ca7007d6508bb318ac3e5e14cfde46379",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/celestial_void/Purple_Shrub.png",
+      "bytes": 200892,
+      "sha256": "e6826dbea9dd76b25eda4233638e80aa01c5c820ce591d8f2d93a70088b461a5",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/ui/card.svg",
+      "bytes": 189,
+      "sha256": "150a95f7b295e9b7a580587ac2899e737d4b77ca52c1a4e853165fed5999b893",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/ui/down.svg",
+      "bytes": 213,
+      "sha256": "d29656e65353ead9f7e4158641ee5e2704a381c330ea0ed85dec8c39585d2662",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/ui/fantasy-button.svg",
+      "bytes": 984,
+      "sha256": "5890d448d17e38b8161bfb856020c9d044e0374969e486873e11c07beb06deea",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/ui/fantasy-card.svg",
+      "bytes": 1031,
+      "sha256": "3e14d6fb5ec3eea90c331af907da5bd1eb1bb27c9d9b717e4b08773cb8777e8f",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/ui/fantasy-frame.svg",
+      "bytes": 961,
+      "sha256": "a246ce1be64c884b3d935405e8809149e80eda0a88803fc721f045601ef05cfe",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/ui/fantasy-index-button.svg",
+      "bytes": 984,
+      "sha256": "5890d448d17e38b8161bfb856020c9d044e0374969e486873e11c07beb06deea",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/ui/fantasy-plaque.svg",
+      "bytes": 862,
+      "sha256": "bd626a2b7eea54109004c8f435028e097561f91c8b70a747d722c219fd302cb6",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/ui/fantasy-thumb.svg",
+      "bytes": 639,
+      "sha256": "fa20ddc33688aff5bf3aa7e44011744fa9b250c82fe53c98ffb188cb8126f7ef",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/ui/fantasy-track.svg",
+      "bytes": 169,
+      "sha256": "4cb6015b81238605bfc15a0419b4f1631f0986b21c195752228463caa6d2382c",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/ui/fantasy-well.svg",
+      "bytes": 709,
+      "sha256": "83113d8f2b553bf2f5e2a8914ba44df84ade5dc37ef54c8a73aee67f918c59b5",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/ui/Index_Button_Icon.png",
+      "bytes": 1258202,
+      "sha256": "4816b71be660b051c6379124e5509cc2d9f16076f90b898e24ed9a9300f6ab32",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/ui/panel.svg",
+      "bytes": 189,
+      "sha256": "e44a63ebd9b29bc27def229047e764cba71003eda910f451b3c3f16a6f366fc7",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/ui/play-button.svg",
+      "bytes": 189,
+      "sha256": "da792870a14c5c766a1bf3c710157e7da5393813062597eaf70c48bc8b5afbfd",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/ui/scroll.svg",
+      "bytes": 152,
+      "sha256": "d0c9d17e0fa91c1864182f27457007c431a490b903f68c8f4541a685462303ea",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/ui/up.svg",
+      "bytes": 214,
+      "sha256": "ae9f7007075c3e30badfbb6b65036972939a2708cd5deca2849591216160737e",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/celestial_void/ui/thumb.svg",
+      "bytes": 639,
+      "sha256": "1954153e21ebb7b801d659c327ca4fe9c1a9d4e8608e9d661605c1e63df2f5ef",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "assets/celestial_void/ui/track.svg",
+      "bytes": 169,
+      "sha256": "487ab0ab6b610b84bb00348144c2b1600c20a3e99fd5a846de22731c6c251c56",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/tile_0084.png",
+      "bytes": 232,
+      "sha256": "b3909f80a29a0f18729f96a90ebe446ecaf26a195da633f2a6c3dd31f660821e",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/tile_0085.png",
+      "bytes": 230,
+      "sha256": "377b35acbce5129e8167df1f5d1d0420805990962a37a30f5784b88b81a40ec2",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/tile_0086.png",
+      "bytes": 224,
+      "sha256": "0606653ad07e177c06c9782c9fff4b1388c7b67865b6ab0e202f76e8e6f6bec8",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/tile_0087.png",
+      "bytes": 239,
+      "sha256": "321ecd683c4e542e09d368709e75821b8b823b7b98b71bebb39d66cead951315",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/tile_0088.png",
+      "bytes": 222,
+      "sha256": "ad6715e9bcab60faed303260a21adfca2de09a7950b98384065bcc5df05634b2",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/tile_0096.png",
+      "bytes": 206,
+      "sha256": "b8a0a9376c1c3398a059a1e3226e8f8d6839c1d73ac53ea37425340d762055fd",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/tile_0097.png",
+      "bytes": 225,
+      "sha256": "20915fde756b990f5b0c86fda557a93a6c306373d7c4fc07a1991f4ace3271b4",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/tile_0098.png",
+      "bytes": 238,
+      "sha256": "39b7c35f414e086b9c7e0cd2b34693ae370e5382a05b4dbb9964cef20f9769c8",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/tile_0099.png",
+      "bytes": 238,
+      "sha256": "61af4b9f1f67aa761e89e516ac6d60371175875b78b073b7f6a8415517c66181",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/tile_0100.png",
+      "bytes": 240,
+      "sha256": "e139ab1d56c599af1cea5a955b705ead18a92d41e8e635b550729383cad9de3c",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/tile_0108.png",
+      "bytes": 189,
+      "sha256": "f15c964db469039861f70bdc75cc5b02ba9351eaa5d7421a85d028131eb12f4d",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/tile_0109.png",
+      "bytes": 219,
+      "sha256": "f344d22151345f81fe1b95fdb03cf007747042670bda1540192c14853f35b94a",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/tile_0110.png",
+      "bytes": 217,
+      "sha256": "ca2d26579be3738be5abfb74cea388634e212fb991b84701deeda65da4780f1c",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/tile_0111.png",
+      "bytes": 228,
+      "sha256": "8ecfc9b753e676a3cd1fcf2f8f98cc70c8e814f706f41a7e172508fe15156618",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/tile_0112.png",
+      "bytes": 237,
+      "sha256": "1e82481db9d95d0cec64ba0ea95b8fadf1e3675936e93731d0ff0e3bc72470b0",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/tile_0120.png",
+      "bytes": 195,
+      "sha256": "2ca96264cc5506bb52a5f7b5d278d0fa8e66e26c4b8242e40db6b46acb9df95e",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/tile_0121.png",
+      "bytes": 189,
+      "sha256": "28466ec899a6e0720f40e4f622aee5925d2e5c50b2409856f36ef65c7eedc532",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/tile_0122.png",
+      "bytes": 232,
+      "sha256": "2cb76164d899e3a5eb42d7cd23ffe8defae130f6ce702a35926cbf61d2d1b569",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/tile_0123.png",
+      "bytes": 201,
+      "sha256": "16d8f777b329a6516f32d790b389fd5072622195152680c298d2caf8d723ef8b",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/tile_0124.png",
+      "bytes": 203,
+      "sha256": "cda39a2ba32af6935e106b5c243ba5ca813a8b2566855b94524485463883196a",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile001.png",
+      "bytes": 2251,
+      "sha256": "019ab758fa0611a3f2ffa6fdedef9eae6f10fc7c113040504ead86d19ed144f4",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile002.png",
+      "bytes": 1627,
+      "sha256": "642baff559591ec729e05e8552fea2882a2eff9efdaacb55fa0c6b0c9b61ceab",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile003.png",
+      "bytes": 3355,
+      "sha256": "0b667520ed92798d5032070c1a968b2e9e2857f5eb1cc8f0503e41193290f74d",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile004.png",
+      "bytes": 3587,
+      "sha256": "c8dc775c2c2dc1103f8632651d66961effc639881db695d1ea39d2816c0044fe",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile005.png",
+      "bytes": 1495,
+      "sha256": "b06cfe4d80a13acadf2ae9f5ed91f6eeffd60bf0f0c600ce88d2b608992f81e4",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile006.png",
+      "bytes": 2144,
+      "sha256": "3e2ff3487b3c36c19b8843ef03bad44d667047392c0174ddb9cd8ff128dfc174",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile007.png",
+      "bytes": 1549,
+      "sha256": "10231ab48d69ece0b104569d499dd0cfbfcb76ec08c9e0e4b6fb8950f30ebcc8",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile008.png",
+      "bytes": 3050,
+      "sha256": "351b65baca45e5117dd5c2f6983e705e2c57106d1ec3e135d60bacdbc527b981",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile009.png",
+      "bytes": 3439,
+      "sha256": "b96bb5f9bf22002424c0bcc259ab84c152e43e6e831ae36f5f9f72ad7950fc47",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile010.png",
+      "bytes": 1457,
+      "sha256": "6bf376da089bf996025c4f514742ad4c0d38e50168bb1cd36d832fa0c5ee132b",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile011.png",
+      "bytes": 1920,
+      "sha256": "d517689a1b03657aef34d93d5015411137f38f9151d4abaa0e475fb486c83c73",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile012.png",
+      "bytes": 1603,
+      "sha256": "be50ed3bdd48a59dfd50e65de50bd616c29024fd0eaab0821e4bbf6bd710ffcf",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile013.png",
+      "bytes": 3040,
+      "sha256": "7af4eb735a366ee6382d4366d1d6bcb2b5dca8fd9f662d969ab8339b75602b6e",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile014.png",
+      "bytes": 3421,
+      "sha256": "11b872b5f40b58e22b61dee8decbe5bf2d45eaf59863bad7bef6d6b308c3d84f",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile015.png",
+      "bytes": 1250,
+      "sha256": "7bfa6d65d0b6f6625b9c08156d161d76c1a1d1300db97cb03f6be1b6aa69189e",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile016.png",
+      "bytes": 1965,
+      "sha256": "0b76d15cc4fef9b89997e40601166664f6563d60eccc9cbdd4a281b984967fac",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile017.png",
+      "bytes": 1706,
+      "sha256": "040c3b23cb2150c727db4f6d3b303316bda952051b9ffdc4ba9a8d73580bb0ee",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile018.png",
+      "bytes": 2115,
+      "sha256": "d6639ed0aafb4b417b0737d82e3f7cf89fe9490d5e3532a550bc330174b32b8d",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile019.png",
+      "bytes": 2274,
+      "sha256": "4a042e81680c406dccbeb981a2218754196d79b5787b33a0957a04f01c985bbb",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile020.png",
+      "bytes": 2377,
+      "sha256": "6175514e1076d888809d52c7aa9525df8699139fcde11eea30b3316077c10272",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile021.png",
+      "bytes": 2189,
+      "sha256": "c40a3b2ab52bd8bb8108fbb897dfd8859a39eb9d343843cde842aac13d64e368",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile022.png",
+      "bytes": 1608,
+      "sha256": "90d62d313ede3180ba0ceb9ac40462187d6e759394c1ec9892e308e4ba7f1efd",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile023.png",
+      "bytes": 2459,
+      "sha256": "1522b4e8db141fa349fc929f2cb17be0d74ad363fb7b4073d6bb0d3d77279cd8",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile024.png",
+      "bytes": 3269,
+      "sha256": "6cfe439b1b7410451ba6538d8df2fd4a364ed134b49fe437404cd8b84b944c46",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile025.png",
+      "bytes": 2573,
+      "sha256": "2638a82eef649bbdc2d33391663138656bcdfa6e0fd7dc44698cad8a5245053f",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile026.png",
+      "bytes": 3434,
+      "sha256": "4955bbd4b4d49af0b201cec1e722cf68b4a944a68f4cc3f229256078076d3758",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile027.png",
+      "bytes": 3220,
+      "sha256": "74bf4ca88ae57b4f82ee7ba96a841cac573a96fd6108d64fb74db7d3c2dbdfd4",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile028.png",
+      "bytes": 2516,
+      "sha256": "592ceb012929c8f29d355edce198a48da098848d054af8aa644e548b65b6532a",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile029.png",
+      "bytes": 2859,
+      "sha256": "930a422ee376e31fce5e6059ebfdb72ac4e1d15e1dc37078c985d461af9f3472",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile030.png",
+      "bytes": 2464,
+      "sha256": "26d12403b66c6fb7660880f05ee9b987f38dd54b7abece29e344c2f8b2967c0f",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile031.png",
+      "bytes": 3158,
+      "sha256": "8e290b0b83228ac29c934e521e305ea6d08b51790540f2f5b35a69fc767accb0",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile032.png",
+      "bytes": 2974,
+      "sha256": "b180b7a12576573ea136c382fdd13915928e90abd2f7f12d8924c0d5ab447980",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile033.png",
+      "bytes": 2193,
+      "sha256": "9fc23b6a698dfabe2219ab4f5fd48d443daac37421574ffddd57c08405761a55",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile034.png",
+      "bytes": 2674,
+      "sha256": "a1a0f63fec23a5951a3dbdd2df1726af2e2ceac31f41966678d5933602daf7fe",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile035.png",
+      "bytes": 2186,
+      "sha256": "32e182c01632479a4115be9f3ae8409331e818a86808096e366bf1b5d74a1f39",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile036.png",
+      "bytes": 3440,
+      "sha256": "d3a7d1ff80dfac0073ec32421130105bb32bf7ee06f0dddddff81c569d7d2f89",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile037.png",
+      "bytes": 3103,
+      "sha256": "e0a780d3ede6c6a239fd03a1a08bf9c8829aad031962e79dfcaff3f24d74f257",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile038.png",
+      "bytes": 1207,
+      "sha256": "1c0eb22226eceaee5c70c52b65d62844141de1a37c5bc397796078a590c598ee",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile039.png",
+      "bytes": 1831,
+      "sha256": "ab45062e22de8d13f297cd664e64ad2785706a29dbd50355cfb3cd1f09db1764",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile040.png",
+      "bytes": 1638,
+      "sha256": "718b19ade5039720120e062ecadf619de3ad7c9018d0d930b25cb917b98b45d1",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile041.png",
+      "bytes": 2007,
+      "sha256": "90a6c91aaf04f3e362e7fc8a1576b02fd9bd16141ce8b1b1371c29b94376f7b2",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile042.png",
+      "bytes": 3011,
+      "sha256": "03c3882e66292b8a202559983cf150239fd519b93b9389b838ed55fafa02d988",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile043.png",
+      "bytes": 3361,
+      "sha256": "71ced01013bc85c7e0d97562ecd039fe450c6b1d46271150b7d7118d919c0a8b",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile044.png",
+      "bytes": 3195,
+      "sha256": "a26daf121fc9ab70db4d0822c4f6891655b2925a3a6f687adfc9d1dc8770a5c8",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile045.png",
+      "bytes": 3495,
+      "sha256": "b6d2080def086e6c58023d9815fe8da0e78b1d8215f581d84f67f87b6f93600f",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile046.png",
+      "bytes": 1685,
+      "sha256": "a9917307941f25090479f36f446ce68c7936b70adcede6f7245ffb34b3341e31",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile047.png",
+      "bytes": 2251,
+      "sha256": "a2e4048226448d8f833baa28a4f746c9586daa48ea87e9c231f1404cf2136585",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile048.png",
+      "bytes": 1508,
+      "sha256": "106d3460d12fca498a18a3faa7bd0d0da2036c34baa3ef9d994c43d5e0f4a2e1",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile049.png",
+      "bytes": 2844,
+      "sha256": "153061346393aea25a085b9631943148fa6f34ea96451b7947febd1295070dff",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile050.png",
+      "bytes": 1056,
+      "sha256": "9d2362c129669bae9884a0b8e427517d9dc9b7c9b73f6ed2444c7e58a28df30e",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile051.png",
+      "bytes": 1637,
+      "sha256": "631c0e6132bb8c6f04881709843dc1d361145f7ab45feb28812e7f0728da5426",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile052.png",
+      "bytes": 2215,
+      "sha256": "5e089cdc6a40656e58b5d2650136de59a83c62eb3aab2a7b2c8894a85028296b",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile053.png",
+      "bytes": 1587,
+      "sha256": "002f18140bb5a0c76648c7cd25189d283379d05191693e18ab70b184b6c25b92",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile054.png",
+      "bytes": 2843,
+      "sha256": "b0b35247a9016403aa0375d7f850c6a90de638771e187499881fc874f8e7f3c1",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile055.png",
+      "bytes": 1056,
+      "sha256": "1c802133b5bb85e475b6079b743caa4cf33aea7cf5e2c31e95c4e3debb24a645",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile056.png",
+      "bytes": 1634,
+      "sha256": "5ac2d93f3768ca9cd005c010d5de03ee72d90f85fe2b20688d31d772e55483bd",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile057.png",
+      "bytes": 1983,
+      "sha256": "226e5e16cf6dc5337682c373e0f7a025dd1a50b99bc8f98b8e4d8899a8cc8fc5",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile058.png",
+      "bytes": 1616,
+      "sha256": "c01bf36069243b6639bfd870bfa8c863fbeeaca3013a4baad9ac56221f874aba",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile059.png",
+      "bytes": 2949,
+      "sha256": "cc00a935cc537bbe110eb9b1de0202216e276d9086cd9f5e693002de629a0f92",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile060.png",
+      "bytes": 1056,
+      "sha256": "7f5b93cfe7a6baa503fa74a71236e6ba2e3341c87914a1a89e25de6676712002",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile061.png",
+      "bytes": 1206,
+      "sha256": "7f557b4346a9b41cc9413c50edeb00fddc4b86556379afb7f25462047ef37725",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile062.png",
+      "bytes": 1833,
+      "sha256": "54d9db9d71a5f1837263f05e7bc8536e434040a51db1044ac2c7cdfbbc7613e7",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile063.png",
+      "bytes": 1633,
+      "sha256": "84ce530b6f597cbc9602d34c76a1faa39434da9f72638e797f7c30cd144bd27b",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile064.png",
+      "bytes": 1994,
+      "sha256": "8d7b69335d1dfb2c7a0c8f8c2149c7c85c07e373fbee34aeac7e6c69083d0724",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile065.png",
+      "bytes": 2840,
+      "sha256": "0f219f0bb6a3122906d320ca1442eb10bd2cb99eabe3218a108cac26d8e05fad",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile066.png",
+      "bytes": 3233,
+      "sha256": "2c9927e972b0ac39d904e1a4b4b0c75815b370585d2f2c373a4b635a127a97e0",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile067.png",
+      "bytes": 3030,
+      "sha256": "a377414d1742e914b90c9c8719fe29689d717902a513f9abcdecbf512d3a199e",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile068.png",
+      "bytes": 3334,
+      "sha256": "03e72efdc5d2ed5b8b2ecf9588ff3eb809a1def54c459f7f7a608ad77ac6dbc5",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile069.png",
+      "bytes": 1478,
+      "sha256": "fea236a708ff228e01420a8d866bd6d08d71926af3099d96599fa421b9f2bd16",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile070.png",
+      "bytes": 2145,
+      "sha256": "e66bf7b2e7fd7431a96985d5455aa8f3c78ad73cbbc8da9ce1e3df81a59272c1",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile071.png",
+      "bytes": 1668,
+      "sha256": "34c9f4705b42ad8d27b467c764ea6df880f458ae0d9e1af5f422a2488e9ebdbd",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile072.png",
+      "bytes": 3116,
+      "sha256": "69ed8e7c27a0c083d1659db1a25a01daa3a8f6259697fbfd1ba95f7f3ad71dcd",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile073.png",
+      "bytes": 3472,
+      "sha256": "b115b462ba9356b3f3c8167e1145fa6f2d8f478e624b224d4d548ca57c9f5999",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile074.png",
+      "bytes": 1525,
+      "sha256": "607eb3b65eb6d80987d0f1be92d10bbe0737b8233d040e2cb08c74b35a617a25",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile075.png",
+      "bytes": 2190,
+      "sha256": "095e7986480b1f3364bae8d97b75fdc99889ae7351cb22665fbea97737d5bac3",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile076.png",
+      "bytes": 1575,
+      "sha256": "70994174180d26586494a57de33768ff2730ec8d914113fc9230a2aadda61d57",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile077.png",
+      "bytes": 3112,
+      "sha256": "d3e4c05f107c90854371f7337c05461a4f2c300b342f7c54ae1d1181c721bded",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile078.png",
+      "bytes": 3436,
+      "sha256": "b97913582a8187ccc2149e97993c7656b14785bb2be941e54051332cc3cdb8d1",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile079.png",
+      "bytes": 1463,
+      "sha256": "ce098cc15882ab2e556406db1140da343d47dbb97131cebae31fdaf94671dd0b",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile080.png",
+      "bytes": 1990,
+      "sha256": "73f9346e31c9ea6e8c11c0ee3f5f31993cacf967a024eb1c8aa24fda0b665243",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile081.png",
+      "bytes": 1612,
+      "sha256": "7343c8f59570890a692981747cc2c088d1f41f574e0f9d179b9a9dccee5fe674",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile082.png",
+      "bytes": 3072,
+      "sha256": "7834e9982b0f4ab418b727ce03f4595d03b921c2b6e519d7ff69c04001296490",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile083.png",
+      "bytes": 3491,
+      "sha256": "f13c9ba8293ffaa70becb485e7ea3874c4a4b3da729070a45c36257e65e37ef2",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile084.png",
+      "bytes": 1206,
+      "sha256": "fc26b481254c818923925751d554a3bd7c716aa99482fdbc5fd7434a378c40b6",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile085.png",
+      "bytes": 1828,
+      "sha256": "4e436f19151bdb3d48d0a7539aeea6f77bf5289de21dc4c389887c4196815656",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile086.png",
+      "bytes": 1631,
+      "sha256": "8147087a6b838e880350c0a6d48228bf42b7ad1932a6840e46053c25e0866696",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile087.png",
+      "bytes": 1993,
+      "sha256": "3d42a0de8a77a487450843b149b28f9f0eeeb89b15faaea031920ca57c98dc24",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile088.png",
+      "bytes": 2521,
+      "sha256": "8c80997809dc64d73340f83f082e3d85b2cd5b3280a2a5f01cbea416237f157f",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile089.png",
+      "bytes": 2938,
+      "sha256": "966f79697944ec8005825bf7eec749d29d01eaa54781c077e28349a8e9bd3e98",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile090.png",
+      "bytes": 2785,
+      "sha256": "911bc9e18bc1daed4657b303131ad5bf7fb3295d50a3998a747f0b8206542c3a",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile091.png",
+      "bytes": 3060,
+      "sha256": "05dda6744ce005682481e1de8bcd462972e577db57fa8e5cf5b46987a984a103",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile092.png",
+      "bytes": 2405,
+      "sha256": "43680ca19f2ba84e59528a04e2e33f4f6b6e8b2fbb8b06cc3af5cd6b24c30ad8",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile093.png",
+      "bytes": 2971,
+      "sha256": "ec9eb4c215e7ee2ef527a1a3526da269673df4c0dfa74e552c8e1f1146b65876",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile094.png",
+      "bytes": 2493,
+      "sha256": "a49a4fb258e542f39c4f4dbdd247c63b62284199c24921c74336d8cf798a3282",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile095.png",
+      "bytes": 3397,
+      "sha256": "f45bb3be94f020df129c97ec2c478648dda5fff54c32363f14be0573fe6fcbee",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile096.png",
+      "bytes": 3152,
+      "sha256": "98649ef5d9b3b0cec361d6dbb8ab1f2daf2d790e94dd4f691c48469c568c9352",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile097.png",
+      "bytes": 2535,
+      "sha256": "3db79d294076109e6ce4645e42a5b64cb8106f2c28b0fda1e045b80c15b9f5d7",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile098.png",
+      "bytes": 2859,
+      "sha256": "bf106380f5c2cd3760fe914a7d161a6875b04910a9fa4d3c99d31ce563f43efc",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile099.png",
+      "bytes": 2477,
+      "sha256": "0c5325ca07f5d2e379bb4cd289bc263951885933ee0d947980c85c60a092b150",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile100.png",
+      "bytes": 3237,
+      "sha256": "721322c827c97d198de371639fa2704d4fd137084652203765bb04f3e606322d",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile101.png",
+      "bytes": 3043,
+      "sha256": "9cdf2af3f056340c4a50f019632dd51a40e0f9c2ea7f2b0d201f2771f39ffbc5",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile102.png",
+      "bytes": 2194,
+      "sha256": "46d32fff46614309eedcdd9e954ad13669a2bdff21bcf2794c9daf7dcd972dff",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile103.png",
+      "bytes": 2674,
+      "sha256": "8e5bd65a22d25084c3cee6ddfc9686f54e3d55bfebc2c0a642722d60220df0dd",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile104.png",
+      "bytes": 2202,
+      "sha256": "4dd399a3c2085dd61eb4dd00aef5c5d8e5bba077d43092a7ccf9e653f6b2a037",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile105.png",
+      "bytes": 3477,
+      "sha256": "4c1f9e3435ed6956de42e6a28101a106c2fb5cca5544a5c395376d71414cb963",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile106.png",
+      "bytes": 3094,
+      "sha256": "ec109fa0db9a2f3460651352e419e561e7ce11503fef6dc9e9892c1dac827ca1",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile107.png",
+      "bytes": 1206,
+      "sha256": "e984519660fad77864e445706754b969244eb4bfa508d03d072ae57ef5d79d2b",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile108.png",
+      "bytes": 1827,
+      "sha256": "a096fe5cb21b87a804528add937f922b7b805f5b459dbc801f129d32578a78d0",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile109.png",
+      "bytes": 1633,
+      "sha256": "4ac1a48034062c8bd16a65b7a7b2d8b53bbb162e617b163b5150122c5cd92230",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile110.png",
+      "bytes": 1985,
+      "sha256": "742f322f4489710001ad1759213755f179ba4208c8190ec9c54fa60c8ed914d6",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile111.png",
+      "bytes": 2586,
+      "sha256": "29368120ec2f7d8f9a5af9efda1a4373990d22158ec8b5ad2818de3a8d0c8903",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile112.png",
+      "bytes": 2994,
+      "sha256": "34bcd30fbcdabbf6435a15f79f24b7e29a5ef3a686939c5b46144c0d20acdb57",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile113.png",
+      "bytes": 2804,
+      "sha256": "a4826ce6bbbda18e0b07df8a9d51f04d0a38d6803e6af96afe96d19403170396",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile114.png",
+      "bytes": 3051,
+      "sha256": "b3ae3cde50ead568627c8349c843826f1ad736902ee50768576d70f5c8a9e419",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile115.png",
+      "bytes": 1641,
+      "sha256": "9a846510aaf2f1c18ac856fcade0d0c9505f74a426bc0eb0b05881588975d642",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile116.png",
+      "bytes": 2211,
+      "sha256": "d35de5bb07487a4a8908196da7c586fc22106794510ea68ad56d619f5af01427",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile117.png",
+      "bytes": 1630,
+      "sha256": "fd4dd973f896f6dbcb4164fb259555bd89c46dc1a8d18a79c3850efe567d12dd",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile118.png",
+      "bytes": 2912,
+      "sha256": "ab61a12f37da546c6e90c7f8e9996f64185dec5bad1158149ea03c6d2ca75543",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile119.png",
+      "bytes": 1056,
+      "sha256": "8784c686d1e582eb4e14253f0f5f0507e245ab25442eef49e18f7d4b4ab29d8b",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile120.png",
+      "bytes": 1610,
+      "sha256": "f8ae389d2181dd7c4e390bfb6c7847c77e5bbb99d1b941d6a7b4eb724bc0cf94",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile121.png",
+      "bytes": 2295,
+      "sha256": "5eb612b5432bb196f65f1badfeeb94f7cf82014d4acc459a527ebd9cf0a123ef",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile122.png",
+      "bytes": 1581,
+      "sha256": "0ff97d9a79a6c20beadebcda5fa2a6ab45e628da3ce3302fb19ca3356829a02c",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile123.png",
+      "bytes": 2870,
+      "sha256": "4925eb5da86ab569f1543d70dc9c34cb485cf18a95c3b77f9344d87a4e790a90",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile124.png",
+      "bytes": 1056,
+      "sha256": "20d86b863121e20bcf018a7880f09757ccf520d789eb1edaa309154047fe2e22",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile125.png",
+      "bytes": 1644,
+      "sha256": "729d2c37974aa5b5613995ca079ffca235d5b6a9623433d3d82a48ae279fb1db",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile126.png",
+      "bytes": 1995,
+      "sha256": "b3613ba5df07e156465a0cff81ddc5a242b05dd94df0c45a87cb553aa8b08e0f",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile127.png",
+      "bytes": 1613,
+      "sha256": "f3dfd2dfd76f65dd1699c2a28cc3ab6cd36b8abb16703636dbfae7fd56606581",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile128.png",
+      "bytes": 2950,
+      "sha256": "039928078b08d1a42125220a4686e2e6c0e90254728c79b294a4ff481fad7f33",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile129.png",
+      "bytes": 1056,
+      "sha256": "bde3198ae5cb32cef74debe60a1c2a9294ed373ee5354f8e8ed136a4c4b95452",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile130.png",
+      "bytes": 3781,
+      "sha256": "fdad58c09e1d08bed3f0282f33f99c30d2a21eb8320deda17bd0ad904d9f6c75",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile131.png",
+      "bytes": 2567,
+      "sha256": "930aa36257e3948a74162a69912f0f72cafc571c7c16fc9a62ee52ff3e932c53",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile132.png",
+      "bytes": 3061,
+      "sha256": "0b16eaf89b044b5569ff9d6151671967c2dd934c23ba2ea55936319216bdafd9",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile133.png",
+      "bytes": 4290,
+      "sha256": "32e141a5548f3115eb90e6bdab7abbc03fb8c79d356ef7420c31a7447c8ff484",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile134.png",
+      "bytes": 3842,
+      "sha256": "82e648355f45ee2f40d8b55e820a2a5b163b841d6c4a1e1184b7683f4b8a2c9e",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile135.png",
+      "bytes": 2728,
+      "sha256": "5ab6f7c146033575b34cae3a7bc58043d1df65292a8aa6c7548c1006b7a4159d",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile136.png",
+      "bytes": 3537,
+      "sha256": "21ac66ab3428799a8e6a6cf3381bafd19bb7bc626a48a9872f8332fcdc281084",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile137.png",
+      "bytes": 3170,
+      "sha256": "a2c4a17f0cfa65cd2457fe9eba264ef2284dc2a7333a819357d95818b6104311",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile138.png",
+      "bytes": 1505,
+      "sha256": "10908d1582747e21dc654d00bc2de40da4780e4ed43ac67abffa0f2500c4a4ab",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile139.png",
+      "bytes": 2309,
+      "sha256": "61d10e43e84f472df0adc214394986d03e993dcd58e6084e35df4c726141f6a6",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile140.png",
+      "bytes": 1624,
+      "sha256": "4adc4dfe8130363cf71bd5b0d1abd323369f3c4623ade113d588051657a6f701",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile141.png",
+      "bytes": 3443,
+      "sha256": "c2c2d17a7971bf4ecd393403293544f1d21263411ee801e691fd61cf168b280f",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile142.png",
+      "bytes": 3492,
+      "sha256": "f35c423ec52509fb4cafd8d1f4b9a2eff2f58a228b8a3fffab4f480c4c736271",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile143.png",
+      "bytes": 1473,
+      "sha256": "057df6a0f28c7400be45821405d8f787ae4bd6b8d20615c8fcac68654541d5fe",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile144.png",
+      "bytes": 2179,
+      "sha256": "cf331f668b5a11827ddd563a6def819a669dd9f2c789cc52eba36ff89b36c7f5",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile145.png",
+      "bytes": 1654,
+      "sha256": "d74d40b4e7eaa6142b8ef07e12c30af85b039b9172f6086e5a5b5664717adf22",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile146.png",
+      "bytes": 3095,
+      "sha256": "e20aa4181b16d0edb035aa2ea477d156a62060f56641d8bfe1e0721d8ae66edd",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile147.png",
+      "bytes": 3402,
+      "sha256": "53d1f3af423cb54d66d4adda76b316a1cd04200b56949fc66031d8b02832d48b",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile148.png",
+      "bytes": 1468,
+      "sha256": "0e2b2961fed520d3efd04d223a5e0843f23e0fdde55c24146ea26229a600052a",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile149.png",
+      "bytes": 1930,
+      "sha256": "9af8b12d6ec03df6e150ecab335534f2adee85a52b97ad07948797acc7211cfe",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile150.png",
+      "bytes": 1614,
+      "sha256": "5fe92765cafafa082c149ec19332130e0b47e828a70068b67c93933ccd304301",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile151.png",
+      "bytes": 3076,
+      "sha256": "67328cef5065000b1f68887650d4de32b470e944b5e8b6b22e63bb780df0a1bf",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile152.png",
+      "bytes": 3421,
+      "sha256": "c7d89e4c164a0d4f4db4f448d509e61b94b48210a6d5e3ade8141f53c925514c",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile153.png",
+      "bytes": 1140,
+      "sha256": "4a6ef7fb34e25a75c300c7e8698f9afa29ec489c2b7bde25012c0bb7d4576e5a",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile154.png",
+      "bytes": 1140,
+      "sha256": "23981531787e3cb533106c8624a682adcbea647deb3e62a27b8647746891c242",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile155.png",
+      "bytes": 1141,
+      "sha256": "d793bce25a5abc988f76b2e8e852a413f0179e76670203b532f4cd22fccaae55",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile156.png",
+      "bytes": 1141,
+      "sha256": "a2ccdddb11dd3a5f904179b30ce3e4c6ab31677b3693018de1b7ff7f4404b73f",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile157.png",
+      "bytes": 3269,
+      "sha256": "137a0695f95aff1276f7c223c971e6877cf38bdf5d2e2608fe12a78a347fb4d8",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile158.png",
+      "bytes": 3065,
+      "sha256": "cdb7f7ad39624578648dd7804aae46e0adc6a0e117503ec799621322ec9a95ec",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile159.png",
+      "bytes": 2674,
+      "sha256": "e9bcf8cca2cb6ce0a7af520d9a731a9e9733fd9b5cb2383502671e708ad02d84",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile160.png",
+      "bytes": 2859,
+      "sha256": "55d35532472bc8baff30df7e717aea6af18b4ebec0b7c44077c3f20eefd8eebd",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile161.png",
+      "bytes": 2550,
+      "sha256": "3906ea5bb2a5d83c501a94eabb506cecec8649e7a14ee2240f1f0c636424fc01",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile162.png",
+      "bytes": 3269,
+      "sha256": "b6527b41e7ddd344aa8b700efdfb92c358fd949d8ebce54e5ef987008bfeb810",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile163.png",
+      "bytes": 2623,
+      "sha256": "480fa692f75349cd3a626065c5c866aa45ad3426543d227d039f1b2d49737c03",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile164.png",
+      "bytes": 3576,
+      "sha256": "59c8bd3316edf0504f39201aa1c75477ff861f18f4eaf6063b173793ded77934",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile165.png",
+      "bytes": 3368,
+      "sha256": "405929c102ae2ddb0fc2e2bb15a42e7668944f295e7a0d1da9f5be12854aaa97",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile166.png",
+      "bytes": 2416,
+      "sha256": "a8a543f8f4fb8987b296da3d8e8307bec49400e13699cd61f08f9697cf9a0a06",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile167.png",
+      "bytes": 2971,
+      "sha256": "365032b40e9e573502575bfef9d3dbd401324e264186dfa411b48eb7c0096394",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile168.png",
+      "bytes": 2490,
+      "sha256": "e5d16eee56e6a9d228219953f68c4c5c0f5731d58627420a96724bde11618b61",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile169.png",
+      "bytes": 3433,
+      "sha256": "12f173b727c0fd0df53938f824085aea1b806fa2b0abc8d140edef938df4e81b",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile170.png",
+      "bytes": 3127,
+      "sha256": "50e7cd03e89dc916b7e6254691099710a4b83f7ef2828d761ab229e0dad4df6b",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile171.png",
+      "bytes": 2177,
+      "sha256": "9e46a5d42fda413babdaf05107d4612ab8679b4ac35862e6e3e6cbe86d02757d",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile172.png",
+      "bytes": 2674,
+      "sha256": "6277aa176fa0e8a419d08e65d40ed0a7ac8d5155ade5dd273ae543d6a28e6cde",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile173.png",
+      "bytes": 2172,
+      "sha256": "9742968417fdedc2bb6bf5ab21dc6096b07012c15bd5ba091465893bcbe1e787",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile174.png",
+      "bytes": 3434,
+      "sha256": "b7760f4696c63797a4525adbb43eef253afc41c2f2f2d468f14b94c2a515a58f",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile175.png",
+      "bytes": 3086,
+      "sha256": "99d0d37b67436c9559f0c62be3bcef0528cb552a78ddc2bca15d6839911a43a7",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile176.png",
+      "bytes": 1107,
+      "sha256": "a2c43573ae92c7ec45cb9854023fd97cec1c9eb1f0965cbd6d90f9adf5570eed",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile177.png",
+      "bytes": 1107,
+      "sha256": "051ed30c54726362843670ac27f56f02376191f6cfb5463234dd84b623d732cd",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile178.png",
+      "bytes": 1107,
+      "sha256": "43e9a135fd3d1a6334d47cfdb2ac562c726fd31861353209766ca80b66955012",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile179.png",
+      "bytes": 1107,
+      "sha256": "4452d7c53b68f1957a9d4e6b358c40930d537aa32d577902d33e89c114fc5761",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile180.png",
+      "bytes": 1921,
+      "sha256": "477cca9e002b7eaa107f72d8b59a976cfc492df66f64ba41a181e311a17eb4ca",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile181.png",
+      "bytes": 2371,
+      "sha256": "3aadd75f2e5f37ca53896f37358710b0a74973b72e7387a069c5a175685951e8",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile182.png",
+      "bytes": 2004,
+      "sha256": "478988f459479b37ac1231829cf600bae1014cce5b63f6ae6208b456ae04dd2c",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile183.png",
+      "bytes": 2246,
+      "sha256": "44163af98699b7ef4eedd49f80cbe96b577f53ebc462c5c4d35ac29bcd50f77e",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile184.png",
+      "bytes": 1659,
+      "sha256": "5e4f042769712439d674b5f2d40c57acab2d6488cce09d4d96623fa005d71333",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile185.png",
+      "bytes": 2321,
+      "sha256": "b46ab5dda1deab6f6d4bb968094670157ef2fd099d645e198efde87abe018a54",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile186.png",
+      "bytes": 1544,
+      "sha256": "aef0fa3f4efba2219604ef91d138cdf9f63ec2afe57caaf9dcbff5f8bff4ef69",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile187.png",
+      "bytes": 2883,
+      "sha256": "a56cb947e4d6ad129c54926f1d3d6c9f65634f485c698c28aaf8ce35240b6494",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile188.png",
+      "bytes": 1058,
+      "sha256": "564225325672b78b79a77dbcf5f8410b848fd49aa758662b4a0ec97d2f2d77d5",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile189.png",
+      "bytes": 1588,
+      "sha256": "76eba24cb47dccf281b337f20e29d8224c144ca21fcaab5ad61605b2fc9639e8",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile190.png",
+      "bytes": 2222,
+      "sha256": "b91cbad63be07db23835308ddc470e164b85a11c5b7ff52e8a7760620e91a8c1",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile191.png",
+      "bytes": 1622,
+      "sha256": "479db05baa48e8e4da631ba00e53e571c0205c739e208e210651fdceb0d9adc1",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile192.png",
+      "bytes": 2843,
+      "sha256": "4b0b2ed0f0cc018a4b368c1857597e2ea318122ba9324e2b5498d6972e193ab4",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile193.png",
+      "bytes": 1058,
+      "sha256": "495414e90efea1d1e6bd9df7f350072f89756b3290ebc2212ddc1831caaf5ebd",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile194.png",
+      "bytes": 1609,
+      "sha256": "a2f20a95ccd0aa9c64a1c7957f218285c907a4ba760f113d6db5e021f84e942e",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile195.png",
+      "bytes": 1968,
+      "sha256": "d3a4b6e807c6d52f1c3ee3acc8e9d320acf36ef8e8bccc394dba7f1a85247732",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile196.png",
+      "bytes": 1602,
+      "sha256": "99c752c5603d7213faa47134090620d31c882efac45b69725efab4762929d650",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile197.png",
+      "bytes": 2911,
+      "sha256": "3f97337e24835dea39c2c650ef970f911a68978e355ff7039d0c3aab8e9035e7",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile198.png",
+      "bytes": 1058,
+      "sha256": "4e2fd0d5262a271e644182bfbaf7654845d5e8d87efc9ddc457662ffd320eec0",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile199.png",
+      "bytes": 1128,
+      "sha256": "fa1eae1500c0d7f9687524744cc26bb0a314455163045196f561c428496875c6",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile200.png",
+      "bytes": 1127,
+      "sha256": "7ae3d62416f0cb193123c0bf795bab35ca4ac22835898cf15e64f3be544ef80b",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile201.png",
+      "bytes": 1127,
+      "sha256": "eefa16b9c20edf8cadb88ecca4a30c2ac97169d14102b59279d61c40c4d91b37",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile202.png",
+      "bytes": 1127,
+      "sha256": "71225ad3aa3e2fb47e605322346bd6b7bc37d163c22622fb19f5f442f234c5ee",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile203.png",
+      "bytes": 1888,
+      "sha256": "b8e2db13978897761ffb299887b68f1a19746841576ce85905a243a74e712eb9",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile204.png",
+      "bytes": 2176,
+      "sha256": "5c3e2f32303d7f3ed4ea422e45f26917ea6aec3845c7514aa06bb8a479c74053",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile205.png",
+      "bytes": 3045,
+      "sha256": "0bf738b061537fc167962873991b5f77037b97f4384ab06edc49c191c27755da",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile206.png",
+      "bytes": 2933,
+      "sha256": "27d43a6700787dc974e492e4397df463b4f8f7879b3fee0226660b9b597c193a",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile207.png",
+      "bytes": 1493,
+      "sha256": "a65e6791bd3454be9e2a787d31c8057720e48fd131600c08e181230ae51d35e9",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile208.png",
+      "bytes": 2297,
+      "sha256": "9f09322bf8eb3bf5641e2e68f6b676a084320c08ed0de858947f3ac433dede89",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile209.png",
+      "bytes": 1612,
+      "sha256": "00734f33e367d4ec43067e50c024f7da34c5c95e088e986ea4a499120ef1c55c",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile210.png",
+      "bytes": 3419,
+      "sha256": "af0a31e3b0971416a29c6a69c635e13838a4cf20ef73d364f6844468c4c3f47e",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile211.png",
+      "bytes": 3605,
+      "sha256": "a7bb9cdda1f79dbf429ad8dfcfd4c7c3a75d90a0adac69e975de2e0456660377",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile212.png",
+      "bytes": 1465,
+      "sha256": "84d8a4988fcae35eb5fe8ac94ea64b50f0b4389dc8dac3cc7fafb668656eea8e",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile213.png",
+      "bytes": 2158,
+      "sha256": "bdb55480606ea6b1676f43c6b99df702d8ff177a6d50aff2e0cbd82987c14a9b",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile214.png",
+      "bytes": 1639,
+      "sha256": "c80de53e659376c26959ebfd8f15c9a92d9ec4db991828ba5d8b462e68fc391c",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile215.png",
+      "bytes": 3104,
+      "sha256": "0019ac559ec6895e8f3bf89001d7a528b9cba670ca0d1369d5614ea37a05f1e4",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile216.png",
+      "bytes": 3475,
+      "sha256": "89b332b9885dcd70a4893816ec723a0689645535fecb7a93ffc9ef4dbe373e19",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile217.png",
+      "bytes": 1496,
+      "sha256": "8f9d3987b3bc77071ca1c6d8c325005cc19d346bdca355218497aa99e9a75b2f",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile218.png",
+      "bytes": 2115,
+      "sha256": "94fa98f797708deb362ccfaa54246fced09d56a65a52a2e1850467020c4da91c",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile219.png",
+      "bytes": 1568,
+      "sha256": "536eb2564e4c0d6f85bf812fb5b8f2f28c4ef98ebb952872d055cea1ee0f2a59",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile220.png",
+      "bytes": 3034,
+      "sha256": "dc9f6aa301cf2852fddfd74a4594944ead0197e51fa6f871d171c9b05af09240",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile221.png",
+      "bytes": 3501,
+      "sha256": "b6b90dba3cde0604bcd2b08fd2f0572d88ed0442e927aa9e5b818196db9348c2",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile222.png",
+      "bytes": 1100,
+      "sha256": "a1eeea629d70c30f830a6fa4e68506069b987617b53a4ebdecf2786ca9f18053",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile223.png",
+      "bytes": 1100,
+      "sha256": "79eba0dbba608c6879e67dfbf0133797f8342b02517a54aaa6347bf2414954d6",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile224.png",
+      "bytes": 1100,
+      "sha256": "d400f854d2c711b923c39c6904ea41f823e75163d3fdcdfcea33cf215a42a000",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile225.png",
+      "bytes": 1100,
+      "sha256": "0255d0465097e2317e16945e6c982137d168a7bf12b2c438ebf0c91901924a28",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile226.png",
+      "bytes": 2197,
+      "sha256": "e528bf21ab1aaca80f3add9f28237c38dc5ce58c8a2f7cd740ff5cd8943c4c48",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile227.png",
+      "bytes": 1666,
+      "sha256": "93d672b7b93ca95810facdf3707479603ed1c823fa8081614110c3d93d936d13",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile228.png",
+      "bytes": 1564,
+      "sha256": "0aafa9e2d2b621f0a972679cc6b198c2b94654aa10d497cd0b63d831a5275b6d",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile229.png",
+      "bytes": 1553,
+      "sha256": "c3f1a7b9da33a9dfabebb484de93686fdf1cf04d69fd1aad6e109d632fabc305",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile230.png",
+      "bytes": 2495,
+      "sha256": "25a57290c559115dacaf8e691d199614f43f1b54c4fb24c3a5a3d9ad48412031",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile231.png",
+      "bytes": 3269,
+      "sha256": "24cf212f601c575006a4e5a0c04127d0567ceddde5ba93e9be1eb09e840b6f40",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile232.png",
+      "bytes": 2581,
+      "sha256": "4c9999442f1a5db0afbcf37e8e28f59364a977c767ca73d8a16e5bb495a59bd1",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile233.png",
+      "bytes": 3611,
+      "sha256": "da9a781ae36877181843339603337931259f64d77801c12ea08f2303f5fc80ca",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile234.png",
+      "bytes": 3324,
+      "sha256": "3e9b062084360a78fae2fd961405a4a1bc0e27cc201545c4fbae133fdf9f9e5b",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile235.png",
+      "bytes": 2379,
+      "sha256": "a33b2203ecfef214cc6d2a0aeb591c84568d571a1ccc1f27a2b021108889b610",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile236.png",
+      "bytes": 2971,
+      "sha256": "64bd5a7e388662afb088a6934f62d754c2b0d5589b56f3c4d88e2bb3fdbb8c46",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile237.png",
+      "bytes": 2448,
+      "sha256": "5d6356c4c5ae8c60aa2879f0d0d213832ee0ffe61187841533c528918da642cf",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile238.png",
+      "bytes": 3366,
+      "sha256": "d928e481b5698e3bfe72912b0c79662443394ecf7a4624298023b2c2c5138c9c",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile239.png",
+      "bytes": 3143,
+      "sha256": "42aafabdd1ac7d1e4a907b4a6aad1278bf4077c70338297123b91836b20e6bb5",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile240.png",
+      "bytes": 2484,
+      "sha256": "93af23904bc0d2268a9f379c7ff9bcd4d31827716c5d3d48c91debfe55cd6bcb",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile241.png",
+      "bytes": 2859,
+      "sha256": "c0a3784e4bd79e3e690a961bc2d3f5289807602f9907b1fb874286f17a817220",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile242.png",
+      "bytes": 2465,
+      "sha256": "eff8bd67e8ca4cd9e6ed934b7387956d72e3396971c95d5e24923433d2088602",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile243.png",
+      "bytes": 3200,
+      "sha256": "c3421f9f4c3319e66eaaceba83ad8f3974649ec9f691912724b14fbc6dd399bb",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile244.png",
+      "bytes": 2974,
+      "sha256": "36585fa60c5d7a67d4906a795d571f1311beb7845c7fbf1a1aaf40e18f4bc259",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile245.png",
+      "bytes": 2618,
+      "sha256": "26060431bd2eeabddf383631e4ca854d8361978421501de049ab3dc932b2df1e",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile246.png",
+      "bytes": 2586,
+      "sha256": "ae22aead77eb647266ddc2e5c3d66802dfa0c7c190603c0045f3b6d997275972",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile247.png",
+      "bytes": 2535,
+      "sha256": "dc6b3d9212740fac53d847d3d74621a1a9d4af37a55080a809c8ffb7b45361d2",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile248.png",
+      "bytes": 2521,
+      "sha256": "c5ae85506a397c8ba88ca1c7d734f32ddfe5a1ebb1cc23133378a663bbda3965",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile249.png",
+      "bytes": 2171,
+      "sha256": "0be7e876c56820acbf2187e6211bfdd327d42fb4a7fe2aefff6145747a2aacb0",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile250.png",
+      "bytes": 2430,
+      "sha256": "93aea1990fcff3b9315711fc175110b2b4ecae32f85912123305646cbc4ff504",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile251.png",
+      "bytes": 2159,
+      "sha256": "3384f24f77011f25239500e7ebd61b89a699225a278b5675187bc223fc657ae5",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile252.png",
+      "bytes": 2454,
+      "sha256": "d69e051dae62e8952160176cdfd94d9d97d845d441f96dea8120122c063e19bb",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile253.png",
+      "bytes": 1727,
+      "sha256": "8dbf178758271898fca64c4e7bc211f9eb8c48f62009168362f8f219ce823eb9",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile254.png",
+      "bytes": 2328,
+      "sha256": "fdb1b833088e5e01027f4ce8cf08f3c1ece5eb1fac3f8661afbd064ec14eccc6",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile255.png",
+      "bytes": 1517,
+      "sha256": "60d7b2c12daa1618b505e0cc43e6b8dc7d80e6bc3a3dcc7cb6c876564e9c380d",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile256.png",
+      "bytes": 2919,
+      "sha256": "12982ffb7cbf8ee26ae9271184e2b4fe099569e2a535c3914f7c7a3b7cf56b06",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile257.png",
+      "bytes": 1056,
+      "sha256": "f12ab570bbc1fc9e2fd0dfec68a67130b89bdcac5e4e30c0d5d33b3dc3ab7caa",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile258.png",
+      "bytes": 1646,
+      "sha256": "636ddd689831de4c93a8869cb3c4360243b9306e7bd536ef10d4a7d46018d0d1",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile259.png",
+      "bytes": 2245,
+      "sha256": "ae2150bbaf999d4d890f76c1e0069065a4e3fe5dacac6b12c763c0d7814d082d",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile260.png",
+      "bytes": 1617,
+      "sha256": "2bad79b43cecb499b9c625852de4ba78a2de41b2c1873a22dafdb7959431ecf2",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile261.png",
+      "bytes": 2872,
+      "sha256": "d4ce6dc5655c753a0c85821ec38396570f79f97d331ba4ce6fa8d9de23ffab82",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile262.png",
+      "bytes": 1056,
+      "sha256": "f1d02b8be1719ff0374e1eaa7ddd5125c0b72480e96e13b68526f30cf4bfdd15",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile263.png",
+      "bytes": 1649,
+      "sha256": "3215883080920e5d90968c33dbcf08622d2caaf016661e193cb8a2b2ed7352b3",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile264.png",
+      "bytes": 2239,
+      "sha256": "fa51223f84c34d6129e8888f4fc66d30983d882a9157d9b597b55b39a2edccae",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile265.png",
+      "bytes": 1587,
+      "sha256": "3a7f1e81faf5dc0616b29bf04beb8a85428d6ea1cd20badc10f443f0fe473a90",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile266.png",
+      "bytes": 2868,
+      "sha256": "c87be3b799eb0d7e285eaa89a4a2f04505e6494749506f96dcbc31175d2182f2",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile267.png",
+      "bytes": 1056,
+      "sha256": "7ba6b247be07c51c45934a85a3c9587e07f6856ff004699e0bbbc3d0054fb075",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile268.png",
+      "bytes": 2111,
+      "sha256": "963d3b7a34cb8ce74a30a338b624f19cfba0fab820bf99d1b8004db5c4d5e72b",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile269.png",
+      "bytes": 2123,
+      "sha256": "aa271164a2e7a8c47427393fd6071706e2816393986e7e4084c43adf51fd2e2d",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile270.png",
+      "bytes": 3088,
+      "sha256": "d10e8078608e3f51b851c21e424770ed50d051900c58c3c20b541117dfeff55a",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile271.png",
+      "bytes": 3065,
+      "sha256": "446d4fbe95410c1dbe37781b8c64f9f2e3348a40fa9d68f64559cbb9c136e85d",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile272.png",
+      "bytes": 1788,
+      "sha256": "b1d9d11c963539d3b05e33a76dddc49572158637ee9ebd94d19181ee348ab1da",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile273.png",
+      "bytes": 1762,
+      "sha256": "573df75ab8c217f9b4ef30df294159dab8bc3be98c937f14b9e4f8ada90435bf",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile274.png",
+      "bytes": 1792,
+      "sha256": "ecd70efda10811d693090059d199ef8aca45910bb11705aa5cf3548323a78162",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile275.png",
+      "bytes": 1726,
+      "sha256": "7d2caebc05fdbc5eb2b3f5f7153a8597f92d6d7865310ed6c5879cc97dea5260",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile276.png",
+      "bytes": 1901,
+      "sha256": "d62a1403bbb834229d7ac2201dc40f6639392af082d5cf62f533a3b5610ef247",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile277.png",
+      "bytes": 1568,
+      "sha256": "95f8e1a07b9a1f5b03bc5a817cc409dbdbe731ef4f8e9669732a453d26140a01",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile278.png",
+      "bytes": 1864,
+      "sha256": "f701ad24bc8ce174f21d87dfae12ec9d33f0e1fbacff4ae18c1674545bcd9bd8",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile279.png",
+      "bytes": 1688,
+      "sha256": "7b4c62333eceecdd33f805247ef2912042fa42a9f7b852b6ab0e9dca31432dc4",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile280.png",
+      "bytes": 1759,
+      "sha256": "3720265d4f01cc2b3a5996e30f351050eb6721d2164583fa223bfc452a7b1e07",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile281.png",
+      "bytes": 1953,
+      "sha256": "51e022ea089529a8b3c99f8b9db5b97ac1690b2336bd35c3777655a2c6bc6f10",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile282.png",
+      "bytes": 1892,
+      "sha256": "0f6c99e354a89ce95c10510f5ce941c642a09a5416f6ba623a0cab09d4fd01fc",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile283.png",
+      "bytes": 1611,
+      "sha256": "a97227e7959b41d4a74a149c693d442437496412198504893fc98468a8e25cf9",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile284.png",
+      "bytes": 1848,
+      "sha256": "adbb2e0b72795690f9214fdb76bfc35c297586ffe5ecc51b25557f2de56a3e2c",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile285.png",
+      "bytes": 1952,
+      "sha256": "0025afd9aefa1f428fcee3189cf4caee8e530bd5ab2b7916f874e2d2375f195c",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile286.png",
+      "bytes": 2627,
+      "sha256": "f8e5490d73ffa98afdd7d1f14ab3b1533e4d0097def9e0407727a0ec50e3ddb7",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile287.png",
+      "bytes": 2393,
+      "sha256": "ec630a41cbe8e5b0384cf1c2c6ab0fe20557e42be641fec523d6ef0d4a7bd1a5",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile288.png",
+      "bytes": 1407,
+      "sha256": "2d980d7ecbe6d3ac208c69e7354f2dc7f25ac44ff61918187936f3507fecd057",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile289.png",
+      "bytes": 1756,
+      "sha256": "0157e44364580ed8d14acb768a154b13e56ca1f14cd3b80afea97f9fafe1aaab",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile290.png",
+      "bytes": 1281,
+      "sha256": "daf4d63a9015c287604f17661b4146f49d1d4d49cfbe31fe9d66f6b716522c38",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile291.png",
+      "bytes": 2220,
+      "sha256": "937ed10d39ac52ff407538e0be59fe3183e71ae1c4b06411bc76cb3ab555abe0",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile292.png",
+      "bytes": 2224,
+      "sha256": "9b27dad791a4637961784ef914cc4a2b5edcfe05cd2540b3f123148bea791ae6",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile293.png",
+      "bytes": 1840,
+      "sha256": "c52d61c61f8fce1e0450c4c47178840277e144ec94c9fd7a7e06ac71095c07e0",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile294.png",
+      "bytes": 1912,
+      "sha256": "dbf3dd257aa980201c63df3ebec895b5ef4c384cd091a04f195a353f0f3a93fe",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile295.png",
+      "bytes": 1966,
+      "sha256": "30ae73ebc87e7a8e87f8424ea2198315239dacbbec06f5133d761ea9d189ff15",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile296.png",
+      "bytes": 2364,
+      "sha256": "3cfe1201b20af5c65905e4f15a4059266c2584ab22665f344b2d4520aa386f8e",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile297.png",
+      "bytes": 1884,
+      "sha256": "90a4f51d6f2788eb997625051853e778d9259ab1cab87229c39b03122cf8492e",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile298.png",
+      "bytes": 2165,
+      "sha256": "9b86d068e41f909a64dbf74a053db91e4bb8e84fd29937601affbba65ce7fe3f",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Default size/towerDefense_tile299.png",
+      "bytes": 1496,
+      "sha256": "624ee65608a35d5fa760a6f7ecdd23f4835c7b0b9a89dd06908e7dfb3d539d3f",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Ornate Fantasy Atlas Index Book.png",
+      "bytes": 1424238,
+      "sha256": "07633a05c4ad81b20c9c6ae27afd41555758150f36aaa989e28984de3dc6d5e6",
+      "reason": "orphaned physical asset after dependency audit"
+    },
+    {
+      "path": "Index_Logo.png",
+      "bytes": 1424238,
+      "sha256": "07633a05c4ad81b20c9c6ae27afd41555758150f36aaa989e28984de3dc6d5e6",
+      "reason": "unused duplicate of retired index book; current Index uses Cosmic_Codex.png"
+    }
+  ],
+  "keepAuthoringSource": "assets/celestial_void/island/Terrain.png",
+  "objectsAfter": 57,
+  "resourcesAfter": 125,
+  "runtimeSourceMapping": [
+    [
+      0,
+      [
+        0
+      ],
+      "responsive-map-runtime.js"
+    ],
+    [
+      0,
+      [
+        1
+      ],
+      "island-map-runtime.js"
+    ],
+    [
+      1,
+      [
+        0
+      ],
+      "unit-index-runtime.js"
+    ],
+    [
+      1,
+      [
+        1
+      ],
+      "selected-panel-runtime.js"
+    ],
+    [
+      1,
+      [
+        2
+      ],
+      "obstacle-panel-runtime.js"
+    ],
+    [
+      3,
+      [
+        0
+      ],
+      "world-selection-runtime.js"
+    ],
+    [
+      6,
+      [],
+      "free-placement-runtime.js"
+    ],
+    [
+      9,
+      [
+        0
+      ],
+      "free-placement-click.js"
+    ],
+    [
+      10,
+      [
+        0,
+        1
+      ],
+      "nova-wisp-runtime.js"
+    ],
+    [
+      10,
+      [
+        1
+      ],
+      "nova-wave-manager.js"
+    ],
+    [
+      10,
+      [
+        2
+      ],
+      "nova-spawn-runtime.js"
+    ],
+    [
+      10,
+      [
+        3,
+        0
+      ],
+      "nova-movement-runtime.js"
+    ],
+    [
+      10,
+      [
+        5
+      ],
+      "star-cannon-runtime.js"
+    ],
+    [
+      10,
+      [
+        6
+      ],
+      "nova-death-runtime.js"
+    ],
+    [
+      11,
+      [
+        0
+      ],
+      "selected-range-runtime.js"
+    ],
+    [
+      13,
+      [
+        0
+      ],
+      "enemy-healthbar-runtime.js"
+    ],
+    [
+      14,
+      [
+        0
+      ],
+      "island-render-runtime.js"
+    ],
+    [
+      16,
+      [
+        0
+      ],
+      "free-placement-rings.js"
+    ]
+  ],
+  "removedCombatChildren": [
+    5,
+    6,
+    7,
+    8,
+    10,
+    11
+  ],
+  "removedSharedBehaviorTypes": [
+    "ButtonStates::ButtonFSM",
+    "ButtonStates::ButtonScaleTween",
+    "FireBullet::FireBullet",
+    "TileMap::TileMapBehavior",
+    "Tween::TweenBehavior"
+  ]
+}

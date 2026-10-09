@@ -1,0 +1,5 @@
+{
+  "meaningfulObjectOrVariableChanges": [],
+  "numericTolerance": 0.0001,
+  "note": "Named arrays sorted; float32 serialization allowed. Earlier event/instance/layer comparison recorded separately."
+}

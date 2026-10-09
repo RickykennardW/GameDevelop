@@ -14,7 +14,7 @@ if(!p){
   if(p.preview){p.preview.valid=false;p.preview.type='';}
   get('TileType_Button').forEach(o=>{if(o.hasBehavior('Effect'))o.getBehavior('Effect').enableEffect('Outline',false);});
  };
- p.types=['Tower','ShotgunTower','RocketTower','ArcherTower','StarCannonTower'];
+ p.types=['StarCannonTower'];
  p.config=type=>p.types.includes(type)?sv.get('TowerFootprints').getChild(type).toJSObject():{};
  p.towers=()=>p.types.flatMap(get);
  p.offsets=type=>{const c=p.config(type);return [(c.AnchorX-.5)*c.Width*c.RenderScale,(c.AnchorY-.5)*c.Height*c.RenderScale];};
@@ -97,7 +97,7 @@ if(!p){
  };
  p.cursor=()=>[gdjs.evtTools.input.getCursorX(scene,'',0),gdjs.evtTools.input.getCursorY(scene,'',0)];
 }
-// Existing towers retain an instance footprint even when Archer animation changes.
+// Existing towers retain an instance footprint across upgrades.
 for(const o of p.towers())if(!o.getVariables().get('FootprintRadius').getAsNumber()){
  o.getVariables().get('FootprintRadius').setNumber(p.config(o.getName()).Radius);const [ox,oy]=p.offsets(o.getName());o.getVariables().get('FootprintOffsetX').setNumber(ox);o.getVariables().get('FootprintOffsetY').setNumber(oy);o.getVariables().get('FootprintX').setNumber(o.getCenterXInScene()+ox);o.getVariables().get('FootprintY').setNumber(o.getCenterYInScene()+oy);
 }

@@ -1,0 +1,1194 @@
+[
+  {
+    "path": "tools/archer-runtime.js",
+    "sha256": "c5a4e450ccdef87002e5df49effe8fe943d110741f5ac3d4caa61322f5db5ed2",
+    "bytes": 7265,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/integrate-nova-wisp.py",
+    "sha256": "1cd1a42b3ecad83e67564569cb238e177d8f118e349b85a58fb90c91bcce408f",
+    "bytes": 5869,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/integrate-star-cannon.py",
+    "sha256": "b4cf68499f0f45acce18e77ce29a254aa8c566ec5799df005afceab44f4fd546",
+    "bytes": 7054,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/integrate-star-turret-obstacles.py",
+    "sha256": "1c9ba76ffee4e9628d69dd8fb363fb319dc95b42972a9195adab4fc69e359b5a",
+    "bytes": 5929,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/nova-audit-combat-1.json",
+    "sha256": "0962df337d04f8ddfa277545e45a3f425b70a6d49749b9dfeb7f02bd758f4290",
+    "bytes": 3521,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/nova-audit-combat-10.json",
+    "sha256": "9b3be8a05e2470fd5572a14c8dbf3c91030decfba3eb7f6c25afa7033afdafd7",
+    "bytes": 2783,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/nova-audit-combat-11.json",
+    "sha256": "cf8e911f7405b5afb35710ddebc4631cb04b0e57b58676b0fa7ab0b3c071a8fe",
+    "bytes": 2849,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/nova-audit-combat-12.json",
+    "sha256": "cd4c1c2fa3f3cda58754832e7e0052d8b48c8f6e0aab4e0591da3291edf9761c",
+    "bytes": 598,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/nova-audit-combat-13.json",
+    "sha256": "9e0a6ffcc388973a1e9459f73d83f041899171da95b2fb4bbd6a7eb17ca80658",
+    "bytes": 309,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/nova-audit-combat-14.json",
+    "sha256": "903b1f45955db5c78e0041c65d8737faa6d36b08954c78a2aa78fa79dcd90e32",
+    "bytes": 1418,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/nova-audit-combat-15.json",
+    "sha256": "8dd5b0a348080a80bf9f0fb307c58008c4bbeb7d81a757e41f31ac8b3a2f92ee",
+    "bytes": 2684,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/nova-audit-combat-16.json",
+    "sha256": "dff76c2adb3b5c6983a65b235548b6aba2468078ad9ac18df4261c5b8dcc7b5d",
+    "bytes": 943,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/nova-audit-combat-17.json",
+    "sha256": "a2f2e36bec57320272c64bdba97d119648a1d2514b4e6f88f1716352e678bbdf",
+    "bytes": 796,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/nova-audit-combat-2.json",
+    "sha256": "f76b2a9761903fbe26a058bc79bffbd9dc42ebc68500327bed5915b38774a9db",
+    "bytes": 1578,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/nova-audit-combat-3.json",
+    "sha256": "6c8e002902b097d7ea3251f1978c1c6ea1c2756109ec9333d1096353fe0b9c06",
+    "bytes": 3008,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/nova-audit-combat-4.json",
+    "sha256": "531646698b4a9d5c597f241ed9db7ba8ace0aef2ae4cb1835c64d2decefbd30d",
+    "bytes": 622,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/nova-audit-enemy.json",
+    "sha256": "fac19da42d63088b65028f10fd9aad2f115b626c13ead5d2c8fd87ec66961f39",
+    "bytes": 16836,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/nova-healthbar-source.js",
+    "sha256": "bab4d670392733a3ddfbf84c687831cb955a4a4030b2408c9e1c0d06d144860c",
+    "bytes": 2923,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/star-audit-event-1.json",
+    "sha256": "cf1381e94491588f75fd381dc2af01e29ac296a5736e9e40bbceb876ad85c11c",
+    "bytes": 22880,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/star-audit-event-12.json",
+    "sha256": "6cfad0fa04c026889b93c575e74aa3e332929c0f901f2471d028fc1fc6fd4eb1",
+    "bytes": 6510,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/star-audit-event-13.json",
+    "sha256": "6d2e6946d0c38c0a68d920dfa2b14b8cbcbf8166204dfd433f047bce9c899ed1",
+    "bytes": 464,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/star-audit-event-3.json",
+    "sha256": "f5d24b9d14ce32e39b43d9970948e6ab7d29925979235135907985e0628efe85",
+    "bytes": 8399,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/star-audit-event-5.json",
+    "sha256": "b7ac5eb90c39ef4187d88f26219b61f7988e82d8bf4fff3b82bfde893e6c94ad",
+    "bytes": 6016,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/test-build-circles.js",
+    "sha256": "0857acf004a7e2c9fddb4f0b6c301ff28199960c13998fe61b084d64d1a4683d",
+    "bytes": 5668,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/test-builder-fix.js",
+    "sha256": "4dd8b9c0a99b5ed4217ba3d3a762f442331f34c636067662d6c542c79d77ad37",
+    "bytes": 5127,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/test-canonical-centers.js",
+    "sha256": "3e271ac17ed36f7023efd6dc356250bf7ee8cbba977149b2780e1c94422bc1b8",
+    "bytes": 4818,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/test-celestial-rework-live.py",
+    "sha256": "7c95d1ba6fbbf4b9f8cd6d62924b06c5bdd359d3dfbcbda9a4a7e2219668ca64",
+    "bytes": 8760,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/test-celestial-rework.js",
+    "sha256": "c39b82814225ba7455d3dc69fd6d930341666e38803551c42eeff17ce1d8cbdc",
+    "bytes": 3974,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/test-free-placement.js",
+    "sha256": "e6b8b7f92477f6a99fe868fd7ba647f591ea0d12189f6cfb96541324ad324a03",
+    "bytes": 8506,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/test-fullscreen-scale-live.py",
+    "sha256": "83663a8486eb09ef9e23c7e4b2a49b950a54d8ac6cd44860b05c18361de5ee8b",
+    "bytes": 8768,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/test-island-visual.js",
+    "sha256": "31e1ed4df04a5dbc3e4946e32d390daadc6c5f5031ce3a3984a12e415bc79b1e",
+    "bytes": 2929,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/test-map-finish.js",
+    "sha256": "72a43d0511dc7b25474c2fb05dc5fdf21b07ef50d61cd2a7c39586c3c5624e7a",
+    "bytes": 3359,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/test-medium-circles.js",
+    "sha256": "0dc89956388fcd77995dc737cc2397d50c3bcafd3615820f4aa349ed05022609",
+    "bytes": 5499,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/test-nova-wisp-live.py",
+    "sha256": "fa0d4cc410c54cc1574a289e9b5260bbab2e72e46cd477ad7b0b39c85bdf43e2",
+    "bytes": 9696,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/test-star-cannon-live.py",
+    "sha256": "9a07328822e64acd012bbd20aa2f019c28d73cb922ee584aa76bab36c53bb5a7",
+    "bytes": 10498,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/test-star-cannon.js",
+    "sha256": "60c843b6625453c519199646eded23b8db2d6f09bcce9c2362cae608f0886ad6",
+    "bytes": 10832,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/test-turret-obstacles-live.py",
+    "sha256": "b247e29884f5af7f7ed710e8e7c0a088a00a8d1658fa3d8a0bd794260709c363",
+    "bytes": 9134,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/test-turret-obstacles.js",
+    "sha256": "109687739677cf71eb706c8e0e741e7076537629a702026cf2552c444c55690c",
+    "bytes": 15518,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "tools/test-turret-rotation-showcase.py",
+    "sha256": "ef7975fa001e14b7f1b6bb439cd547a34f13cd4036009e0abfa5c690a6f4e1e1",
+    "bytes": 5584,
+    "status": "REMOVE",
+    "reason": "Obsolete migration/test/snapshot; active runtime source-mapping and fresh tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "ARCHER.md",
+    "sha256": "55cefc93c98a215f845771b5d761fd64c38f189784f24440aa0f91e550edc4a6",
+    "bytes": 4209,
+    "status": "REMOVE",
+    "reason": "Historical implementation report superseded by current cleanup report; preserved in backup",
+    "backupVerified": true
+  },
+  {
+    "path": "BUILDER_CAMERA_FIX.md",
+    "sha256": "9e455cf0f3fc4b2ac2e0339a034129b74ef025cdfa3e2390b48fc355b6f4f380",
+    "bytes": 2795,
+    "status": "REMOVE",
+    "reason": "Historical implementation report superseded by current cleanup report; preserved in backup",
+    "backupVerified": true
+  },
+  {
+    "path": "BUILD_CIRCLES.md",
+    "sha256": "0cc2fc7ad15ba3b36710ce56807dad98ffa93d8362e4e3d87e6eb7627bd05cb9",
+    "bytes": 3861,
+    "status": "REMOVE",
+    "reason": "Historical implementation report superseded by current cleanup report; preserved in backup",
+    "backupVerified": true
+  },
+  {
+    "path": "CELESTIAL_ISLAND_VISUAL.md",
+    "sha256": "03e64d7c56dd65cb7e5aafbca0b9433c8d651cda899e91602f253aed55a17971",
+    "bytes": 4837,
+    "status": "REMOVE",
+    "reason": "Historical implementation report superseded by current cleanup report; preserved in backup",
+    "backupVerified": true
+  },
+  {
+    "path": "CELESTIAL_REWORK.md",
+    "sha256": "1e504092b192419c24fb3a395627eddd0c102b2d58485f5b4a9b7e0aa03719ae",
+    "bytes": 9475,
+    "status": "REMOVE",
+    "reason": "Historical implementation report superseded by current cleanup report; preserved in backup",
+    "backupVerified": true
+  },
+  {
+    "path": "FREE_PLACEMENT.md",
+    "sha256": "bd680f4270c715d7ffdb976c32d24a2202cfe13eaf5ee740c9c96192f4fe03ef",
+    "bytes": 5985,
+    "status": "REMOVE",
+    "reason": "Historical implementation report superseded by current cleanup report; preserved in backup",
+    "backupVerified": true
+  },
+  {
+    "path": "FULLSCREEN_SCALE.md",
+    "sha256": "28cbb381cb6353d83b6a29b344c2f4ab83465f10deb3229a170cc29b0e3ce80d",
+    "bytes": 4351,
+    "status": "REMOVE",
+    "reason": "Historical implementation report superseded by current cleanup report; preserved in backup",
+    "backupVerified": true
+  },
+  {
+    "path": "MAP_FINISH.md",
+    "sha256": "1aff10e560104920b7201db13b107d89b9c51656ca35a051df46a7126f2a6188",
+    "bytes": 4244,
+    "status": "REMOVE",
+    "reason": "Historical implementation report superseded by current cleanup report; preserved in backup",
+    "backupVerified": true
+  },
+  {
+    "path": "MEDIUM_CIRCLES_PANEL.md",
+    "sha256": "b61acf9918d68f89841f2653925ba9e711a56c049ada4d3a9f753a7e6fd8b958",
+    "bytes": 4072,
+    "status": "REMOVE",
+    "reason": "Historical implementation report superseded by current cleanup report; preserved in backup",
+    "backupVerified": true
+  },
+  {
+    "path": "PROJECT_RECOVERY_AUDIT.md",
+    "sha256": "edb5ea8be8dce60f2bb5de5c72c3a2ddaf144793490bb77730c3722cfdf77f34",
+    "bytes": 7105,
+    "status": "REMOVE",
+    "reason": "Historical implementation report superseded by current cleanup report; preserved in backup",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/builder_camera_fix/Fixed_Map_After.png",
+    "sha256": "e7b708f960da9cb3e87ca694532e20b33f631264f3b4d2cdac6d2d47a2bd350b",
+    "bytes": 462931,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/builder_camera_fix/Fixed_Map_Before.png",
+    "sha256": "1796caa62f24a729d03f8e24b10f671c857d49232a819c0776cf6f1bc04955ed",
+    "bytes": 455384,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/builder_camera_fix/validation.txt",
+    "sha256": "9041756054ee9cef082c220579ac5a2cdac4a27a920284e6aa2e1648b9e151d2",
+    "bytes": 895,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/build_circles/Building_Mode.png",
+    "sha256": "83b01a5c09cef109b85bcb8c654701f21744d131bfcc52e0bb585e7b941b043d",
+    "bytes": 510618,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/build_circles/Invalid_Preview.png",
+    "sha256": "eef398dea85558d721d3ad711996cd1c4ead52a4585f0255a26a0419401b948d",
+    "bytes": 509661,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/build_circles/Normal_Mode.png",
+    "sha256": "9eedab3a203ab5987facf5fd73847dd3ce9a74a7f707b422ffa754436d352aac",
+    "bytes": 461928,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/build_circles/Selected_Tower.png",
+    "sha256": "78de038b7724b005131c742c12ee1fd48cd61ad49f4ac16b24cb4b1c12cd4698",
+    "bytes": 440731,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/build_circles/validation.txt",
+    "sha256": "394d47c7cb8c7dfaf61b5edb2d7931bd965c9905a1d58dff0754243742b976f9",
+    "bytes": 881,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/celestial_rework/Building_FullHD.png",
+    "sha256": "c2e41d8352ac51c5e378c234416cc0b9b91686a26c44bbbc92a38e8636401a38",
+    "bytes": 2574013,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/celestial_rework/Gameplay_FullHD.png",
+    "sha256": "0222fa8a15be6d8f356cd19c5fb99850afebc141a45ea5185c01b764fba3e805",
+    "bytes": 2530464,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/celestial_rework/Map_FullHD.png",
+    "sha256": "63565cf7f4767800515bf52603026392577258aa4502eb5f54658472062e4d2e",
+    "bytes": 2537687,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/celestial_rework/Map_QHD.png",
+    "sha256": "fe80f8b8255bb7199a22d993b9d8c717b08b1bad298a5761f7388c49955b99bb",
+    "bytes": 4181795,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/celestial_rework/metrics_after.json",
+    "sha256": "c26265a59a3e53a52e6f72e762f45c93de868ffd504407d6574ee893a63e4bf7",
+    "bytes": 1677,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/celestial_rework/metrics_before.json",
+    "sha256": "dcfd226860f2eb09857b5ba34177a2fac2af8587e782d7a1de8543a909b9db7c",
+    "bytes": 1669,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/celestial_rework/native_validation.txt",
+    "sha256": "6524e42e17fde12339225513fdc779209f8cf20636254f1437f495520e0d5423",
+    "bytes": 1697,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/celestial_rework/rework-archer.txt",
+    "sha256": "7e51d4ceb4dd85319dc33b91e69782d4be2f29d8b1c41dedb1a70e70ab8d7f69",
+    "bytes": 7725,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/celestial_rework/rework-circles.txt",
+    "sha256": "2f59b37618d8dac409da9fa6d2fc97f019721a745d02573972d39d1567dc94da",
+    "bytes": 4347,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/celestial_rework/rework-environment.txt",
+    "sha256": "8be894b1f98366f9288f712cc79f04e847a8443ed18b88134f996a5296bd6adb",
+    "bytes": 3711,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/celestial_rework/rework-full-wave.txt",
+    "sha256": "3f720a9c9938efd72c319c28484710cfa672577c959ec7dc6b596cc55dce39fa",
+    "bytes": 17983,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/celestial_rework/rework-health.txt",
+    "sha256": "f00d1192ef1c2efa52c11f5a72697e69813d6f563375815e35893feffbde261d",
+    "bytes": 1942,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/celestial_rework/rework-wave-speed.txt",
+    "sha256": "dab1f6658e2d9718ee0a63239423bdff0504942ac544c0329a927ca2da2407f4",
+    "bytes": 2840,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/celestial_rework/Selected_Panel_QHD.png",
+    "sha256": "82ea7c7b7383d015353c77bd1cfcd14de93b1d6a40a94ffa3f5605d27b46e946",
+    "bytes": 4033953,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/celestial_rework/validation.txt",
+    "sha256": "f0e87ce7ce1d7c1eb07efaf99db7e705c373cb878fc9197c13e600e026299118",
+    "bytes": 288,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/free_placement/Free_Placement_Built.png",
+    "sha256": "22052167b581dc0b2b26c2e24b95adcab259162f418de7942280c508e753095c",
+    "bytes": 466260,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/free_placement/Free_Placement_Invalid.png",
+    "sha256": "baf65d93f32e7e58af8f4ed7850604ec1dcf5a5fc904c5e8c4233181140c1e32",
+    "bytes": 474424,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/free_placement/Free_Placement_Nearby.png",
+    "sha256": "b1a585397e2c7528ad26758bb4fe5110598b4afbea4f00fe3c79fae65dd424ae",
+    "bytes": 480196,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/free_placement/Free_Placement_Valid.png",
+    "sha256": "527e9c73e7f07274cde9fe4d3e95ef907490a1b7b93b1922e6960940c5481e3c",
+    "bytes": 470563,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/free_placement/validation.txt",
+    "sha256": "c148d4c514401b3c0b3d6ebe2ef55afb6600fb0cc21493af1a4b8ba389838812",
+    "bytes": 1230,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/fullscreen_scale/Build_Circles_FullHD.png",
+    "sha256": "5e9de8cf13f2ae5dda2e86e566daa2c0697f0e960d845ea58cb7f122a597ecf8",
+    "bytes": 2760824,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/fullscreen_scale/celestial-wave-speed-test.txt",
+    "sha256": "dab1f6658e2d9718ee0a63239423bdff0504942ac544c0329a927ca2da2407f4",
+    "bytes": 2840,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/fullscreen_scale/finish-full-wave-regression.txt",
+    "sha256": "3f720a9c9938efd72c319c28484710cfa672577c959ec7dc6b596cc55dce39fa",
+    "bytes": 17983,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/fullscreen_scale/finish-medium-circles-test.txt",
+    "sha256": "6214111586a13c836f38c4e9656940bcb19d2bf737c7bc90a3df46f110bb5edc",
+    "bytes": 4091,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/fullscreen_scale/Gameplay_FullHD.png",
+    "sha256": "afe5175d07b4eac1dba6d6023829ecad30d9f6b72f9716a4f83483ad4d2c48f6",
+    "bytes": 2740473,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/fullscreen_scale/map-finish-test.txt",
+    "sha256": "a5ccaed3f6b7e6419b200eb9a239577b5baf8efa9234064ba5ca4cff1d0c5bce",
+    "bytes": 2752,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/fullscreen_scale/Map_QHD.png",
+    "sha256": "8b204ca8583595bb68a356cf2fa05bedcaad7d292eb4e40c1f82cbefc018d7f2",
+    "bytes": 3759061,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/fullscreen_scale/medium-archer-test.txt",
+    "sha256": "7e51d4ceb4dd85319dc33b91e69782d4be2f29d8b1c41dedb1a70e70ab8d7f69",
+    "bytes": 7725,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/fullscreen_scale/metrics_after.json",
+    "sha256": "dcfd226860f2eb09857b5ba34177a2fac2af8587e782d7a1de8543a909b9db7c",
+    "bytes": 1669,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/fullscreen_scale/metrics_before.json",
+    "sha256": "24f3c115a654e8de5a153c28b3a8f172275d08b828f881cb6ae55e245ad5a067",
+    "bytes": 1631,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/fullscreen_scale/native_validation.txt",
+    "sha256": "6524e42e17fde12339225513fdc779209f8cf20636254f1437f495520e0d5423",
+    "bytes": 1697,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/fullscreen_scale/Responsive_800.png",
+    "sha256": "8501fa6de2d31a48ba7bcda82ed8f9b87c5a9d985f9f47b91619dc7c71f19c44",
+    "bytes": 404115,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/fullscreen_scale/Selected_Panel_QHD.png",
+    "sha256": "b10ed648fb06c3c46b5e78a030508c71e2ebbf77a6bc64aa04d43c7d1c3b1f9e",
+    "bytes": 3607575,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/fullscreen_scale/validation.txt",
+    "sha256": "888805aa91658786f6e0b11d49661ea65f19774b0c0e7b0b91d3cdefce33a59c",
+    "bytes": 454,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/full_project_audit/Canonical_Centers_800.png",
+    "sha256": "3c848694c61e920d9346b8fe72c9931aa24aa2dffc1171a13ce9f8a11e365791",
+    "bytes": 207376,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/full_project_audit/Canonical_Centers_Panel_Left.png",
+    "sha256": "1a11f882eb770be5d8e44884040c61787f47a3123b79ce5fe41ee9c55a7a603e",
+    "bytes": 438159,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/full_project_audit/Canonical_Centers_Panel_Right.png",
+    "sha256": "b45ecc0291440462eb0cbdfdd5d5799bfabf51f5fbc98bb82eaf4d1fb536ef56",
+    "bytes": 439031,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/full_project_audit/Recovered_Building_Mode.png",
+    "sha256": "02694daa41a2ccbb3267e0ac09b9c36ea767313b7cff05f549e2e38a87dcd667",
+    "bytes": 513051,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/full_project_audit/static-audit.txt",
+    "sha256": "21d3b6686284c2fd5056f5e79ec1ddc2697b7e9c08b9cb59111b63fba25ff481",
+    "bytes": 3607,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/full_project_audit/validation.txt",
+    "sha256": "b954d9232268152d4c34d7ab051f82dd88e0220752c94b8b87177b54bb3ce201",
+    "bytes": 532,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/island_upgrade/Building_Mode.png",
+    "sha256": "65221427c09f2591c6b1995e69efbb7110bc425ab61e2a5e0e9ce6752128fed4",
+    "bytes": 1256151,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/island_upgrade/Gameplay_Final.png",
+    "sha256": "b230a97ab14946a1e082e4d39b1a389ff7cb282d2fbc37d446ac67d13bda79ac",
+    "bytes": 1238778,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/island_upgrade/Responsive_800.png",
+    "sha256": "b0164aa62d51a0a1fa808a944e3554330b2eb0375c0e4e2be664582f1e84c675",
+    "bytes": 390345,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/island_upgrade/validation.txt",
+    "sha256": "d84ac4d14def70b802d8161cf4a9dac9dfdd5cdfcc3af930e66e6057a18aa009",
+    "bytes": 1075,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/map_finish/Building_Mode.png",
+    "sha256": "83134a8fed6c272cb5791fc9994bd172ac410296b9e24e44961ddf1a5adf083c",
+    "bytes": 1297615,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/map_finish/Gameplay_Final.png",
+    "sha256": "460826fd6ab8f276346c4835de3ad85b2f0ee4bb7bc1a005b9674a8a85e31ae7",
+    "bytes": 1280945,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/map_finish/Responsive_800.png",
+    "sha256": "6ad08f8641d24feb7694c322315b23211da7d443f326aa5a7e9637f265909982",
+    "bytes": 387104,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/map_finish/validation.txt",
+    "sha256": "1090f2a0e36d3599a573c764bba215963efb3b2e2b61fa7b77bfeaf828ecbee7",
+    "bytes": 614,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/medium_circles/Building_Mode.png",
+    "sha256": "091d87172a3b5ec1cf1eb8e04364e61e6693fe21adebda60580217c706db8500",
+    "bytes": 512971,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/medium_circles/Invalid_Circle_Overlap.png",
+    "sha256": "d0ec11c844c5e7bcd8318a1cfe68a54dc2cf3fc27b76c8cca8d28c8aaa3f0f0c",
+    "bytes": 523263,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/medium_circles/Responsive_800.png",
+    "sha256": "e6ffe4aac924746ff4e0077466faf8d0c5c24ce9ac9b4d5be133c9fed90fee02",
+    "bytes": 206946,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/medium_circles/Tower_Left_Panel_Right.png",
+    "sha256": "1c99245677c9d2a2bc34cd64e11744808cc19257247b9e6b3cbb3e58a37109ed",
+    "bytes": 437679,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/medium_circles/Tower_Right_Panel_Left.png",
+    "sha256": "481617448bfa756f312f61f30e53a46b3cc00e2799c7493c0a9f07391c2f53a4",
+    "bytes": 436160,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/medium_circles/validation.txt",
+    "sha256": "6df41237774ff46e57aed4aaf9d87bb54e31f99efd90df5b923d6e57ad652292",
+    "bytes": 1205,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/nova_wisp/native-tests.txt",
+    "sha256": "e7bfab659682feb3fe947cdd099a1ff31b5eb332c533085774ea1af9476b5b48",
+    "bytes": 680,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/nova_wisp/nova-archer-regression-results.txt",
+    "sha256": "7e51d4ceb4dd85319dc33b91e69782d4be2f29d8b1c41dedb1a70e70ab8d7f69",
+    "bytes": 7725,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/nova_wisp/nova-performance-40.json",
+    "sha256": "9c025f8c9a7a1f119be1c45718cf1ff4f859e5d5e80377bbe25d8581885421cd",
+    "bytes": 101,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/nova_wisp/nova-performance.json",
+    "sha256": "83a922c3dfd411938c42bcf31573d412ec0506d5154bf786a68474bf0cf7fc0c",
+    "bytes": 104,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/nova_wisp/nova-turret-regression-results.txt",
+    "sha256": "8b8a40cb65d14062aa5c024f338adcbc54a56b80ec7818f81b5e0a4000eb97b9",
+    "bytes": 14868,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/nova_wisp/nova-wave-speed-regression-results.txt",
+    "sha256": "2d49db1719f8d505a2e6d3a1e39f71bc8bb39067c9c77df879fe7bdf0c0a75c6",
+    "bytes": 2845,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/nova_wisp/nova-wisp-test-results.txt",
+    "sha256": "f331802f101fb01f2bdd7dc9f064cf5f6e10dd24b4b79075cd094e93d1b9c6de",
+    "bytes": 374753,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/nova_wisp/Nova_Wisp_200_Performance.png",
+    "sha256": "51f6381270fc2afe3a68b0de6a3be834dd10b96c78f043d0c247018b6e6f5f4b",
+    "bytes": 2919247,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/nova_wisp/Nova_Wisp_Wave_1.png",
+    "sha256": "d2cee27819fcd1dd6a05cc3081f81f273f234d75685ed3d2a893c1ae3ba73196",
+    "bytes": 2557512,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/nova_wisp/runtime-tests.txt",
+    "sha256": "f331802f101fb01f2bdd7dc9f064cf5f6e10dd24b4b79075cd094e93d1b9c6de",
+    "bytes": 374753,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/nova_wisp/static-audit.txt",
+    "sha256": "c9968dea735c873fa7b6daa00fb9cf7021e6b013727495b33e5556b4e9b509ac",
+    "bytes": 38161,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/archer-selection-regression-results.txt",
+    "sha256": "7e51d4ceb4dd85319dc33b91e69782d4be2f29d8b1c41dedb1a70e70ab8d7f69",
+    "bytes": 7725,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/Barrage_Combat_FullHD.png",
+    "sha256": "becfbce804ba5fcb482668929c59efb6c13285238a75f5f7c41d1e4394abb5e1",
+    "bytes": 2334997,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/Clear_Obstacle_Panel.png",
+    "sha256": "9e3061d7d7a8e7566136958778d068c5be04b817eac048b54c4d0cca05840536",
+    "bytes": 2505329,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/Clear_Panel_800.png",
+    "sha256": "9182682be058310bfa533a8ee8317b0ad01385a1692ffdbcbe820d7d226d0ef9",
+    "bytes": 426113,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/Combat_FullHD.png",
+    "sha256": "b3a585b2c8f2cc156d1c8af4a7a44a9dc6a65713911b18d71791b626158a99d2",
+    "bytes": 2347776,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/Meteor_Panel.png",
+    "sha256": "0c27d2ed060aaee08fb8e38e1b4e6db8a740c2f55fa7f8bd170cdd8776b1e477",
+    "bytes": 2348158,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/native-tests.txt",
+    "sha256": "141dadd7badde9c61702dc7be5227d40e0f223869c67c4df21e8ff0fee1919dc",
+    "bytes": 1057,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/native_validation.txt",
+    "sha256": "658d43f33975453d7cec9f0109ca236d2b36c0a1a939e76498d62b917b86cfc9",
+    "bytes": 1939,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/obstacle-classification.json",
+    "sha256": "e2663e03b44747da9db0ad99d61b762fe41b99e55f97233fc84ffdee742742b8",
+    "bytes": 5993,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/Obstacle_Cleared_Map.png",
+    "sha256": "d974fc4b2a9839f2beb3d841e3ec03462dcccd8f0c5c571af5ac1030dd7d2879",
+    "bytes": 2544528,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/Panel_QHD.png",
+    "sha256": "848d7adb9ed05be417a1c9117d8cde61bbfdeb1454c940d659ab16979eb2bc8b",
+    "bytes": 4046513,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/Responsive_800.png",
+    "sha256": "62a09699ac96321a07e932d9a8b1db8bfc605de42e35e6515a7a3ce165c57bff",
+    "bytes": 409416,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/rework-full-wave-results.txt",
+    "sha256": "3f720a9c9938efd72c319c28484710cfa672577c959ec7dc6b596cc55dce39fa",
+    "bytes": 17983,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/rework-full-wave.txt",
+    "sha256": "3f720a9c9938efd72c319c28484710cfa672577c959ec7dc6b596cc55dce39fa",
+    "bytes": 17983,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/rework-wave-speed-results.txt",
+    "sha256": "dab1f6658e2d9718ee0a63239423bdff0504942ac544c0329a927ca2da2407f4",
+    "bytes": 2840,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/rework-wave-speed.txt",
+    "sha256": "dab1f6658e2d9718ee0a63239423bdff0504942ac544c0329a927ca2da2407f4",
+    "bytes": 2840,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/Rotating_Meteor_Barrage.png",
+    "sha256": "d1f8f71f83d0310aa3968357d8256191fb26cc0dba9080d84d76dd873cc3277d",
+    "bytes": 2566967,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/Rotating_Turret_Selected.png",
+    "sha256": "76cb884d0165e7ffc8aaa50617706ef670c281aaf9c1233f33ea4b958a4d2be2",
+    "bytes": 2365710,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/rotation-showcase-tests.txt",
+    "sha256": "84d48f4f2d743c5d87205b3fd2357a5bd71ae119bff60488dc6dc7d45e9bd875",
+    "bytes": 96,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/star-cannon-test.txt",
+    "sha256": "4ddbc2aec5d5a89f817378c6be5d8d0b1eb9f2ad34df21919019c067a932e734",
+    "bytes": 9299,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/star-regression-archer.txt",
+    "sha256": "7e51d4ceb4dd85319dc33b91e69782d4be2f29d8b1c41dedb1a70e70ab8d7f69",
+    "bytes": 7725,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/static-audit.txt",
+    "sha256": "db8dc7ad6ddc763ec960236171310313f2435133b5f73125a296080c0011ddf6",
+    "bytes": 35434,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/Supernova_Panel.png",
+    "sha256": "6b2268af2a9d86be85154e8fe9aeab7fb97d75447b90a4cd3d3e8ef0d4e5b2eb",
+    "bytes": 2362956,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/turret-obstacles-test-results.txt",
+    "sha256": "8b8a40cb65d14062aa5c024f338adcbc54a56b80ec7818f81b5e0a4000eb97b9",
+    "bytes": 14868,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": "design_previews/star_cannon/validation.txt",
+    "sha256": "4df8e95eb8c3d353bef68ec1bd01aa98ab9c50fb8d08449741b04d48408d167e",
+    "bytes": 362,
+    "status": "REMOVE",
+    "reason": "Obsolete UI/gameplay preview or historical regression output; current clean preview/tests supersede it",
+    "backupVerified": true
+  },
+  {
+    "path": ".DS_Store",
+    "sha256": "83707e3a07acb2aee544f0713f50e1a7634593c33f6283d68f7277603aa3fed5",
+    "bytes": 8196,
+    "status": "REMOVE",
+    "reason": "Unused macOS filesystem metadata",
+    "backupVerified": true
+  },
+  {
+    "path": "Tower Defense.json.autosave",
+    "sha256": "5993b0b5c31bac76d7e10071c7de3a2caa5c35c34650c4fdcebefb6bd0a25533",
+    "bytes": 1525720,
+    "status": "REMOVE",
+    "reason": "Pre-cleanup autosave; semantic object/variable verification confirms no additional edits; complete copy in backup",
+    "backupVerified": true
+  }
+]
