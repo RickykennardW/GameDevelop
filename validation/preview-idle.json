@@ -1,0 +1,41 @@
+{
+  "result": {
+    "checks": [
+      "native map /82 road tiles",
+      "one small Star Cannon shop card"
+    ],
+    "mode": "idle",
+    "camera": [
+      1061.613608748481,
+      576.7092102065615,
+      0.8792735042735043
+    ],
+    "muzzle": null,
+    "objects": 82,
+    "resources": 712,
+    "shopCardSize": [
+      84,
+      112
+    ],
+    "layers": [
+      "",
+      "UI",
+      "TowerShopList",
+      "SelectedTowerUI",
+      "IndexUI",
+      "IndexList",
+      "ObstacleUI",
+      "AudioUI"
+    ],
+    "pixelComparison": {
+      "matchesPreviousPreview": true,
+      "sha256": "73e9d507b2c6557df81cf96e19c9a76ae015910d9fc5131683c327153e7a1a42",
+      "size": [
+        1920,
+        1080
+      ]
+    }
+  },
+  "progress": [],
+  "consoleErrors": []
+}

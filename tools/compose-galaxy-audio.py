@@ -7,6 +7,7 @@ import numpy as np
 ROOT=Path(__file__).resolve().parent.parent;SR=48000
 spec=importlib.util.spec_from_file_location('audio_codec',ROOT/'tools/audio-codec-browser.py');module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module);Codec=module.Codec
 RNG=np.random.default_rng(177017)
+RESOURCE_NAMES={a['file']:a['name'] for a in json.loads((ROOT/'Tower Defense.json').read_text(encoding='utf-8'))['resources']['resources']}
 def hz(note):return 440*2**((note-69)/12)
 def time(duration):return np.arange(round(duration*SR),dtype=np.float32)/SR
 def envelope(t,gate,attack=.03,release=.4):
@@ -102,7 +103,7 @@ def music(bpm,bars,mood):
  mix-=mix.mean(axis=0);rms=np.sqrt(np.mean(mix.astype(np.float64)**2));mix*=({'calm':.069,'sacred':.073,'combat':.078,'elite':.082}[mood])/rms
  mix=.52*np.tanh(mix/.52)
  return mix.astype(np.float32),{'bpm':bpm,'bars':bars,'duration':duration,'key':'D minor / suspended ninth','motif':'D5 F5 E5 A4 D5; response C5 Bb4 A4','chords':chords,'layers':['warm detuned cosmic pad','formant wordless choir','modal crystal bells','rounded motif lead','low D drone','diffuse circular reverb']+(['bowed additive strings'] if mood!='calm' else [])+(['pulsing bass','eighth-note string ostinato','controlled low percussion'] if mood in ['combat','elite'] else [])}
-EFFECTS=[('TowerPlace','towers/tower_place.ogg',.36),('TowerUpgrade','towers/tower_upgrade.ogg',.68),('TowerMajorUpgrade','towers/tower_major_upgrade.ogg',.9),('TowerSell','towers/tower_sell.ogg',.4),('StarCannonFire','towers/star_cannon_fire.ogg',.14),('ProjectileImpact','towers/projectile_impact.ogg',.15),('EnemyHit','enemies/enemy_hit.ogg',.105),('CommonEnemyDeath','enemies/common_enemy_death.ogg',.38),('EliteEnemyDeath','enemies/elite_enemy_death.ogg',1.08),('VoidGolemSkillCast','skills/void_golem_skill.ogg',.72),('VoidFortificationApply','skills/void_fortification_apply.ogg',.34),('WaveStart','waves/wave_start.ogg',.78),('MilestoneWave','waves/milestone_wave.ogg',1.22),('WaveComplete','waves/wave_complete.ogg',.78),('GoldReward','gameplay/gold_reward.ogg',.2),('BaseDamage','gameplay/base_damage.ogg',.6),('GameOver','gameplay/game_over.ogg',2.35),('Victory','gameplay/victory.ogg',2.15),('UIClick','ui/ui_click.ogg',.075),('InvalidAction','ui/invalid_action.ogg',.2),('TowerSelect','ui/tower_select.ogg',.13)]
+EFFECTS=[('TowerPlace','tower_sfx/tower_place.ogg',.36),('TowerUpgrade','tower_sfx/tower_upgrade.ogg',.68),('TowerMajorUpgrade','tower_sfx/tower_major_upgrade.ogg',.9),('TowerSell','tower_sfx/tower_sell.ogg',.4),('StarCannonFire','tower_sfx/star_cannon_fire.ogg',.14),('ProjectileImpact','tower_sfx/projectile_impact.ogg',.15),('EnemyHit','enemy_sfx/enemy_hit.ogg',.105),('CommonEnemyDeath','enemy_sfx/common_enemy_death.ogg',.38),('EliteEnemyDeath','enemy_sfx/elite_enemy_death.ogg',1.08),('VoidGolemSkillCast','skills/void_golem_skill.ogg',.72),('VoidFortificationApply','skills/void_fortification_apply.ogg',.34),('WaveStart','waves/wave_start.ogg',.78),('MilestoneWave','waves/milestone_wave.ogg',1.22),('WaveComplete','waves/wave_complete.ogg',.78),('GoldReward','gameplay/gold_reward.ogg',.2),('BaseDamage','gameplay/base_damage.ogg',.6),('GameOver','gameplay/game_over.ogg',2.35),('Victory','gameplay/victory.ogg',2.15),('UIClick','ui_sfx/ui_click.ogg',.075),('InvalidAction','ui_sfx/invalid_action.ogg',.2),('TowerSelect','ui_sfx/tower_select.ogg',.13)]
 def effect(name,duration):
  t=time(duration);x=np.zeros(len(t),dtype=np.float32)
  noise=RNG.normal(0,1,len(t)).astype(np.float32);noise=np.convolve(noise,np.ones(9)/9,mode='same').astype(np.float32)
@@ -140,11 +141,11 @@ async def main():
    print('COMPOSING',name,bpm,'BPM',flush=True);pcm,score=music(bpm,bars,mood);data,metrics=await codec.encode(pcm,112000)
    target=folder/'music'/file;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(data)
    assert metrics['peak']<.8 and metrics['rms']>.025 and metrics['edgeRMS']>.01 and metrics['loopJump']<.05,metrics
-   results.append({'id':name,'file':target.relative_to(ROOT).as_posix(),'kind':'music','bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'score':score,'decoded':metrics});print('ENCODED',name,len(data),metrics,flush=True);del pcm,data
+   results.append({'id':name,'file':target.relative_to(ROOT).as_posix(),'resourceName':RESOURCE_NAMES[target.relative_to(ROOT).as_posix()],'kind':'music','bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'score':score,'decoded':metrics});print('ENCODED',name,len(data),metrics,flush=True);del pcm,data
   for name,file,duration in EFFECTS:
    pcm=effect(name,duration);data,metrics=await codec.encode(pcm,64000);target=folder/file;target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(data)
    assert metrics['peak']<.8 and metrics['rms']>.015,metrics
-   results.append({'id':name,'file':target.relative_to(ROOT).as_posix(),'kind':'sfx','bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'decoded':metrics});print('SFX',name,len(data),flush=True)
+   results.append({'id':name,'file':target.relative_to(ROOT).as_posix(),'resourceName':RESOURCE_NAMES[target.relative_to(ROOT).as_posix()],'kind':'sfx','bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'decoded':metrics});print('SFX',name,len(data),flush=True)
  manifest={'method':'Original note-level DSP score /numpy additive+formant synthesis /cyclic convolution reverb /local Chromium WebCodecs Opus112k stereo BGM and64k monoSFX /in-memory PCM and OGG mux;no samples/downloads/intermediate WAVs','sampleRate':SR,'assets':results,'totalBytes':sum(r['bytes'] for r in results)}
  (folder/'manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8');print('COMPLETE',len(results),'finalOGG assets',manifest['totalBytes'],'bytes',flush=True)
 if __name__=='__main__':asyncio.run(main())

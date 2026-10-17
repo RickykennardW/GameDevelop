@@ -20,7 +20,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.5468750000000047,
+    "zoomFactor": 0.625,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -35,58 +35,10 @@
       ]
     },
     {
-      "name": "TowerShopContent",
-      "objects": [
-        {
-          "name": "TileType_Button"
-        },
-        {
-          "name": "AssetCardPanel"
-        },
-        {
-          "name": "AssetPanelTitle"
-        },
-        {
-          "name": "AssetPanelSubtitle"
-        },
-        {
-          "name": "AssetTowerLabel"
-        },
-        {
-          "name": "AssetTowerPrice"
-        },
-        {
-          "name": "ShopCoin"
-        }
-      ]
-    },
-    {
       "name": "MonsterEnemies",
       "objects": [
         {
           "name": "Enemy"
-        }
-      ]
-    },
-    {
-      "name": "GroundMapVisuals",
-      "objects": [
-        {
-          "name": "Ground_Map"
-        },
-        {
-          "name": "Ground_Decoration"
-        }
-      ]
-    },
-    {
-      "name": "MapEndpoints",
-      "objects": [
-        {
-          "name": "SpawnMarker"
-        },
-        {
-          "name": "BaseMarker"
         }
       ]
     }
@@ -44355,85 +44307,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 22,
-      "keepRatio": true,
-      "layer": "TowerShopList",
-      "name": "TileType_Button",
-      "persistentUuid": "c68085e2-ea50-4b1b-bb18-b8e5af9ce807",
-      "width": 44,
-      "x": 1188,
-      "y": 224,
-      "zOrder": 2,
-      "numberProperties": [
-        {
-          "name": "animation",
-          "value": 2
-        }
-      ],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "ShopIndex",
-          "type": "number",
-          "value": 2
-        },
-        {
-          "name": "TowerType",
-          "type": "string",
-          "value": "StarCannonTower"
-        },
-        {
-          "name": "Cost",
-          "type": "number",
-          "value": 300
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 44,
-      "keepRatio": true,
-      "layer": "TowerShopList",
-      "name": "TileType_Button",
-      "persistentUuid": "7f84d899-b9b0-4371-a885-dd5e0bb9d3fb",
-      "width": 25.77777777777778,
-      "x": 1289.111111111111,
-      "y": 105,
-      "zOrder": 2,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "ShopIndex",
-          "type": "number",
-          "value": 1
-        },
-        {
-          "name": "TowerType",
-          "type": "string",
-          "value": "StarCannonTower"
-        },
-        {
-          "name": "Cost",
-          "type": "number",
-          "value": 300
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 44,
+      "height": 56,
       "keepRatio": true,
       "layer": "TowerShopList",
       "name": "TileType_Button",
       "persistentUuid": "91364a9a-21e9-4931-a120-fd7db3f09407",
-      "width": 44,
-      "x": 1188,
-      "y": 105,
+      "width": 56,
+      "x": 1182,
+      "y": 103,
       "zOrder": 2,
       "numberProperties": [
         {
@@ -44469,8 +44350,8 @@
       "name": "MoneyText",
       "persistentUuid": "de2a8787-c51e-487d-9754-46bed3e40ebd",
       "width": 80,
-      "x": 20,
-      "y": 20,
+      "x": 60,
+      "y": 25,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -44484,9 +44365,9 @@
       "layer": "UI",
       "name": "LivesText",
       "persistentUuid": "557b7130-6363-4194-9410-bbdfe6b05420",
-      "width": 48,
-      "x": 20,
-      "y": 55,
+      "width": 40,
+      "x": 180,
+      "y": 25,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -44500,9 +44381,9 @@
       "layer": "UI",
       "name": "WaveText",
       "persistentUuid": "6eae470a-3f4a-40d0-bbd0-a306dcf67d7a",
-      "width": 48,
-      "x": 20,
-      "y": 90,
+      "width": 62,
+      "x": 262,
+      "y": 25,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -44528,13 +44409,13 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 432,
+      "height": 704,
       "layer": "UI",
       "name": "TowerShopBox",
       "persistentUuid": "39857ce2-5137-48b7-b436-c751024dffbb",
       "width": 224,
       "x": 1152,
-      "y": 16,
+      "y": 8,
       "zOrder": -1,
       "numberProperties": [],
       "stringProperties": [],
@@ -44542,25 +44423,26 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "height": 64,
       "keepRatio": true,
       "layer": "",
       "name": "TilePlacement_Indicator",
       "persistentUuid": "1e159d1f-4fe4-459e-9724-8e056a6d0015",
-      "width": 0,
-      "x": 1384,
-      "y": 78,
+      "width": 64,
+      "x": 1188,
+      "y": 105,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [],
+      "hidden": true
     },
     {
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 100,
+      "height": 112,
       "layer": "TowerShopList",
       "name": "AssetCardPanel",
       "persistentUuid": "f1abf032-392a-4adc-a0d4-d78b4d10a757",
@@ -44582,57 +44464,13 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 100,
-      "layer": "TowerShopList",
-      "name": "AssetCardPanel",
-      "persistentUuid": "f5266ff8-04d5-470d-a134-f024c2498a5a",
-      "width": 84,
-      "x": 1260,
-      "y": 80,
-      "zOrder": 0,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "ShopIndex",
-          "type": "number",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 100,
-      "layer": "TowerShopList",
-      "name": "AssetCardPanel",
-      "persistentUuid": "e64dce8b-8ba7-4fa6-8a48-65cf0880adbf",
-      "width": 84,
-      "x": 1168,
-      "y": 188,
-      "zOrder": 0,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "ShopIndex",
-          "type": "number",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
       "height": 24,
       "layer": "UI",
       "name": "AssetPanelTitle",
       "persistentUuid": "e2bae964-8a36-4646-b124-4a8355e2f0c2",
       "width": 192,
       "x": 1168,
-      "y": 32,
+      "y": 24,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -44648,7 +44486,7 @@
       "persistentUuid": "58315c75-3aa2-4b10-8eca-60a83bf34191",
       "width": 192,
       "x": 1168,
-      "y": 57,
+      "y": 45,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -44664,7 +44502,7 @@
       "persistentUuid": "4bee1f6e-c693-4d71-8e05-8e32708fd485",
       "width": 76,
       "x": 1172,
-      "y": 87,
+      "y": 85,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -44686,7 +44524,7 @@
       "persistentUuid": "57ee778a-5850-48b7-9575-9b1c48b7ad42",
       "width": 46,
       "x": 1199,
-      "y": 157,
+      "y": 171,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [],
@@ -44702,17 +44540,18 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 400,
+      "height": 64,
       "layer": "",
       "name": "RangeIndicator",
       "persistentUuid": "c65dceae-e97e-48eb-af63-b2ee7ae7c951",
-      "width": 400,
-      "x": 0,
-      "y": 0,
+      "width": 64,
+      "x": 1188,
+      "y": 105,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
-      "initialVariables": []
+      "initialVariables": [],
+      "hidden": true
     },
     {
       "angle": 0,
@@ -44906,9 +44745,9 @@
       "layer": "UI",
       "name": "ShopPlayButton",
       "persistentUuid": "06a18a17-aab2-43a5-9d19-083c93753a96",
-      "width": 192,
-      "x": 1168,
-      "y": 368,
+      "width": 92,
+      "x": 1268,
+      "y": 640,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -44918,13 +44757,13 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 24,
+      "height": 20,
       "layer": "UI",
       "name": "ShopPlayLabel",
       "persistentUuid": "9da01966-cbf2-4a11-9227-c9818cc865df",
-      "width": 104,
-      "x": 1228,
-      "y": 386,
+      "width": 92,
+      "x": 1268,
+      "y": 676,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -44939,100 +44778,12 @@
       "name": "ShopPlayIcon",
       "persistentUuid": "f67af3cf-a976-4cc7-9d43-6475e6fd4ea3",
       "width": 24,
-      "x": 1200,
-      "y": 386,
+      "x": 1302,
+      "y": 648,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 18,
-      "layer": "TowerShopList",
-      "name": "AssetTowerLabel",
-      "persistentUuid": "2f76b925-99d4-4615-a357-1f3f66cc785f",
-      "width": 76,
-      "x": 1264,
-      "y": 87,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "ShopIndex",
-          "type": "number",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 18,
-      "layer": "TowerShopList",
-      "name": "AssetTowerLabel",
-      "persistentUuid": "519791ae-7008-45bd-b45f-90531bb8343f",
-      "width": 76,
-      "x": 1172,
-      "y": 195,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "ShopIndex",
-          "type": "number",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 20,
-      "layer": "TowerShopList",
-      "name": "AssetTowerPrice",
-      "persistentUuid": "70aad96d-c6b5-448f-94c1-9a2ec94c857f",
-      "width": 46,
-      "x": 1291,
-      "y": 157,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "ShopIndex",
-          "type": "number",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 20,
-      "layer": "TowerShopList",
-      "name": "AssetTowerPrice",
-      "persistentUuid": "9abe1d33-276b-4b5b-9bdc-3b6615c40fde",
-      "width": 46,
-      "x": 1199,
-      "y": 265,
-      "zOrder": 3,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "ShopIndex",
-          "type": "number",
-          "value": 2
-        }
-      ]
     },
     {
       "angle": 0,
@@ -45044,7 +44795,7 @@
       "persistentUuid": "25e1604e-a363-49d2-a5bf-879d5a7aad9c",
       "width": 15,
       "x": 1181,
-      "y": 159,
+      "y": 171,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -45060,57 +44811,13 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 15,
-      "layer": "TowerShopList",
-      "name": "ShopCoin",
-      "persistentUuid": "f79772bb-4824-4999-8069-bfe4d2b48e56",
-      "width": 15,
-      "x": 1273,
-      "y": 159,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "ShopIndex",
-          "type": "number",
-          "value": 1
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 15,
-      "layer": "TowerShopList",
-      "name": "ShopCoin",
-      "persistentUuid": "55832f44-9536-4f97-b4ec-259f304373b4",
-      "width": 15,
-      "x": 1181,
-      "y": 267,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "ShopIndex",
-          "type": "number",
-          "value": 2
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
       "height": 60,
       "layer": "UI",
       "name": "ShopIndexButton",
       "persistentUuid": "2e7e7261-d812-4c61-8166-cca0d0d17982",
-      "width": 192,
+      "width": 92,
       "x": 1168,
-      "y": 368,
+      "y": 640,
       "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
@@ -45120,13 +44827,13 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 51,
+      "height": 54,
       "layer": "UI",
       "name": "Index_logo",
       "persistentUuid": "6631fa96-e03c-414d-9a58-6227b980af1f",
-      "width": 51,
-      "x": 1188.5,
-      "y": 372.5,
+      "width": 54,
+      "x": 1187,
+      "y": 643,
       "zOrder": 7,
       "numberProperties": [],
       "stringProperties": [],
@@ -45142,7 +44849,7 @@
       "persistentUuid": "ef12346c-df21-498e-92fd-36079a892c03",
       "width": 196,
       "x": 1166,
-      "y": 26,
+      "y": 18,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [],
@@ -45152,13 +44859,13 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 76,
+      "height": 72,
       "layer": "UI",
       "name": "ShopFooterFrame",
       "persistentUuid": "92d64bd1-fb56-4ef5-a0b0-4963eba94032",
       "width": 208,
       "x": 1160,
-      "y": 360,
+      "y": 636,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -48268,7 +47975,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 216,
+      "height": 544,
       "layer": "UI",
       "name": "ShopScrollTrack",
       "persistentUuid": "741d13be-911b-4fa1-b95b-ee72db8beec4",
@@ -48284,7 +47991,7 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 216,
+      "height": 544,
       "layer": "UI",
       "name": "ShopScrollThumb",
       "persistentUuid": "5cfbc863-c50e-4c4f-9bc2-9a1357af1348",
@@ -62814,7 +62521,7 @@
       "name": "ShopIndexButton",
       "persistentUuid": "206efb9c-0233-4ee3-9c1d-7af5c93c80dc",
       "rightMargin": 10,
-      "texture": "assets/celestial_void/ui/index-button.svg",
+      "texture": "assets/celestial_void/ui/button.svg",
       "tiled": false,
       "topMargin": 10,
       "type": "PanelSpriteObject::PanelSprite",
@@ -70799,180 +70506,329 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "TilePlacement_Indicator"
-      },
-      {
-        "objectName": "TileType_Button"
-      },
-      {
-        "objectName": "Enemy"
-      },
-      {
-        "objectName": "MoneyText"
-      },
-      {
-        "objectName": "LivesText"
-      },
-      {
-        "objectName": "WaveText"
-      },
-      {
-        "objectName": "MessageText"
-      },
-      {
-        "objectName": "TowerShopBox"
-      },
-      {
-        "objectName": "Monster_Path"
-      },
-      {
-        "objectName": "AssetCardPanel"
-      },
-      {
-        "objectName": "AssetPanelTitle"
-      },
-      {
-        "objectName": "AssetPanelSubtitle"
-      },
-      {
-        "objectName": "AssetTowerLabel"
-      },
-      {
-        "objectName": "AssetTowerPrice"
-      },
-      {
-        "objectName": "RangeIndicator"
-      },
-      {
-        "objectName": "Ground_Map"
-      },
-      {
-        "objectName": "Ground_Decoration"
-      },
-      {
-        "objectName": "ShopCoin"
-      },
-      {
-        "objectName": "HUDIcon"
-      },
-      {
-        "objectName": "HUDPanel"
-      },
-      {
-        "objectName": "ShopPlayButton"
-      },
-      {
-        "objectName": "ShopPlayLabel"
-      },
-      {
-        "objectName": "ShopPlayIcon"
-      },
-      {
-        "objectName": "ShopIndexButton"
-      },
-      {
-        "objectName": "IndexPanel"
-      },
-      {
-        "objectName": "IndexText"
-      },
-      {
-        "objectName": "IndexTowerImage"
-      },
-      {
-        "objectName": "IndexMonsterImage"
-      },
-      {
-        "objectName": "HealthBarBackground"
-      },
-      {
-        "objectName": "HealthBarFill"
-      },
-      {
-        "objectName": "Index_logo"
-      },
-      {
-        "objectName": "ShopHeaderPlaque"
-      },
-      {
-        "objectName": "ShopFooterFrame"
-      },
-      {
-        "objectName": "SpawnMarker"
-      },
-      {
-        "objectName": "BaseMarker"
-      },
-      {
-        "objectName": "ShopSpeedBadge"
-      },
-      {
-        "objectName": "SelectedTowerPreview"
-      },
-      {
-        "objectName": "StarUpgradeIcon"
-      },
-      {
-        "objectName": "SelectedPanelBackground"
-      },
-      {
-        "objectName": "SelectedPanelPlaque"
-      },
-      {
-        "objectName": "SelectedUpgradeCard"
-      },
-      {
-        "objectName": "SelectedPanelText"
-      },
-      {
-        "objectName": "SelectedProgressBlock"
-      },
-      {
-        "objectName": "WaveBannerPanel"
-      },
-      {
-        "objectName": "WaveBannerTitle"
-      },
-      {
-        "objectName": "WaveBannerDetail"
-      },
-      {
-        "objectName": "TowerBaseRing"
-      },
-      {
-        "objectName": "VoidBackdrop"
-      },
-      {
-        "objectName": "WaveBannerReward"
-      },
-      {
-        "folderName": "Free placement visuals",
+        "folderName": "01_MAP",
         "children": [
           {
-            "objectName": "PlacementRangeIndicator"
+            "folderName": "Terrain",
+            "children": [
+              {
+                "objectName": "Ground_Map"
+              },
+              {
+                "objectName": "VoidBackdrop"
+              },
+              {
+                "objectName": "IslandCliffFrame"
+              }
+            ]
+          },
+          {
+            "folderName": "MonsterPath",
+            "children": [
+              {
+                "objectName": "Monster_Path"
+              }
+            ]
+          },
+          {
+            "folderName": "SpawnAndBase",
+            "children": [
+              {
+                "objectName": "SpawnMarker"
+              },
+              {
+                "objectName": "BaseMarker"
+              }
+            ]
           }
         ]
       },
       {
-        "objectName": "IslandCliffFrame"
+        "folderName": "02_OBSTACLES",
+        "children": [
+          {
+            "folderName": "EnvironmentAndBlockers",
+            "children": [
+              {
+                "objectName": "Ground_Decoration"
+              }
+            ]
+          }
+        ]
       },
       {
-        "objectName": "StarCannonTower"
+        "folderName": "03_TOWERS",
+        "children": [
+          {
+            "folderName": "StarCannon",
+            "children": [
+              {
+                "objectName": "StarCannonTower"
+              },
+              {
+                "objectName": "StarCannonBaseVisual"
+              },
+              {
+                "objectName": "StarCannonTurretVisual"
+              }
+            ]
+          },
+          {
+            "folderName": "PlacementAndRange",
+            "children": [
+              {
+                "objectName": "TilePlacement_Indicator"
+              },
+              {
+                "objectName": "TowerBaseRing"
+              },
+              {
+                "objectName": "RangeIndicator"
+              },
+              {
+                "objectName": "PlacementRangeIndicator"
+              }
+            ]
+          }
+        ]
       },
       {
-        "objectName": "StarCannonProjectile"
+        "folderName": "04_PROJECTILES",
+        "children": [
+          {
+            "folderName": "StarCannon",
+            "children": [
+              {
+                "objectName": "StarCannonProjectile"
+              },
+              {
+                "objectName": "StarCannonImpact"
+              }
+            ]
+          }
+        ]
       },
       {
-        "objectName": "StarCannonImpact"
+        "folderName": "05_ENEMIES",
+        "children": [
+          {
+            "folderName": "Actors",
+            "children": [
+              {
+                "objectName": "Enemy"
+              }
+            ]
+          },
+          {
+            "folderName": "HealthBars",
+            "children": [
+              {
+                "objectName": "HealthBarBackground"
+              },
+              {
+                "objectName": "HealthBarFill"
+              }
+            ]
+          },
+          {
+            "folderName": "DeathEffects",
+            "children": [
+              {
+                "objectName": "NovaWispDeathVisual"
+              }
+            ]
+          }
+        ]
       },
       {
-        "objectName": "StarCannonBaseVisual"
+        "folderName": "06_UI",
+        "children": [
+          {
+            "folderName": "HUD",
+            "children": [
+              {
+                "objectName": "MoneyText"
+              },
+              {
+                "objectName": "LivesText"
+              },
+              {
+                "objectName": "WaveText"
+              },
+              {
+                "objectName": "HUDIcon"
+              },
+              {
+                "objectName": "HUDPanel"
+              }
+            ]
+          },
+          {
+            "folderName": "TowerShop",
+            "children": [
+              {
+                "objectName": "TowerShopBox"
+              },
+              {
+                "objectName": "TileType_Button"
+              },
+              {
+                "objectName": "AssetCardPanel"
+              },
+              {
+                "objectName": "AssetPanelTitle"
+              },
+              {
+                "objectName": "AssetPanelSubtitle"
+              },
+              {
+                "objectName": "AssetTowerLabel"
+              },
+              {
+                "objectName": "AssetTowerPrice"
+              },
+              {
+                "objectName": "ShopCoin"
+              },
+              {
+                "objectName": "ShopHeaderPlaque"
+              },
+              {
+                "objectName": "ShopFooterFrame"
+              },
+              {
+                "objectName": "ShopScrollTrack"
+              },
+              {
+                "objectName": "ShopScrollThumb"
+              }
+            ]
+          },
+          {
+            "folderName": "Buttons",
+            "children": [
+              {
+                "objectName": "ShopPlayButton"
+              },
+              {
+                "objectName": "ShopPlayLabel"
+              },
+              {
+                "objectName": "ShopPlayIcon"
+              },
+              {
+                "objectName": "ShopIndexButton"
+              },
+              {
+                "objectName": "ShopSpeedBadge"
+              }
+            ]
+          },
+          {
+            "folderName": "UpgradePanel",
+            "children": [
+              {
+                "objectName": "SelectedTowerPreview"
+              },
+              {
+                "objectName": "StarUpgradeIcon"
+              },
+              {
+                "objectName": "SelectedPanelBackground"
+              },
+              {
+                "objectName": "SelectedPanelPlaque"
+              },
+              {
+                "objectName": "SelectedUpgradeCard"
+              },
+              {
+                "objectName": "SelectedPanelText"
+              },
+              {
+                "objectName": "SelectedProgressBlock"
+              }
+            ]
+          },
+          {
+            "folderName": "Index",
+            "children": [
+              {
+                "objectName": "IndexPanel"
+              },
+              {
+                "objectName": "IndexText"
+              },
+              {
+                "objectName": "IndexTowerImage"
+              },
+              {
+                "objectName": "IndexMonsterImage"
+              },
+              {
+                "objectName": "Index_logo"
+              }
+            ]
+          },
+          {
+            "folderName": "Audio",
+            "children": [
+              {
+                "objectName": "AudioPanel"
+              },
+              {
+                "objectName": "AudioText"
+              },
+              {
+                "objectName": "AudioBlock"
+              },
+              {
+                "objectName": "AudioSpeaker"
+              }
+            ]
+          }
+        ]
       },
       {
-        "objectName": "StarCannonTurretVisual"
+        "folderName": "07_GAME_SYSTEMS",
+        "children": [
+          {
+            "folderName": "WaveFeedback",
+            "children": [
+              {
+                "objectName": "MessageText"
+              },
+              {
+                "objectName": "WaveBannerPanel"
+              },
+              {
+                "objectName": "WaveBannerTitle"
+              },
+              {
+                "objectName": "WaveBannerDetail"
+              },
+              {
+                "objectName": "WaveBannerReward"
+              }
+            ]
+          }
+        ]
       },
       {
-        "objectName": "NovaWispDeathVisual"
+        "folderName": "08_EFFECTS",
+        "children": [
+          {
+            "folderName": "VoidFortification",
+            "children": [
+              {
+                "objectName": "VoidFortificationVFX"
+              },
+              {
+                "objectName": "VoidFortificationCastPulse"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
@@ -72491,22 +72347,6 @@
           "parameterObjects": "",
           "useStrict": true,
           "eventsSheetExpanded": false
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "BooleanVariable"
-              },
-              "parameters": [
-                "PlacementCommitted",
-                "True",
-                ""
-              ]
-            }
-          ],
-          "actions": []
         }
       ]
     },
@@ -72543,15 +72383,6 @@
                   },
                   "parameters": [
                     "MessageText"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "ResetTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"SpawnTimer\""
                   ]
                 }
               ]

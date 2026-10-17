@@ -1,0 +1,58 @@
+{
+  "result": {
+    "checks": [
+      "native map /82 road tiles",
+      "one small Star Cannon shop card",
+      "native multi-projectile fire",
+      "three native Meteor projectiles spawned",
+      "six native paired HP bars",
+      "native projectile render remains visible"
+    ],
+    "mode": "combat",
+    "camera": [
+      1061.613608748481,
+      576.7092102065615,
+      0.8792735042735043
+    ],
+    "muzzle": [
+      [
+        392.29986578080474,
+        297.11221226073076
+      ],
+      [
+        358.52492716161066,
+        315.0207020066366
+      ],
+      [
+        378.5457382699639,
+        326.00641756596104
+      ]
+    ],
+    "objects": 82,
+    "resources": 712,
+    "shopCardSize": [
+      84,
+      112
+    ],
+    "layers": [
+      "",
+      "UI",
+      "TowerShopList",
+      "SelectedTowerUI",
+      "IndexUI",
+      "IndexList",
+      "ObstacleUI",
+      "AudioUI"
+    ],
+    "pixelComparison": {
+      "matchesPreviousPreview": true,
+      "sha256": "5b77a8855472cf2787dda962a8ce45269e30d859675b93890f5f7308f6b37c40",
+      "size": [
+        1920,
+        1080
+      ]
+    }
+  },
+  "progress": [],
+  "consoleErrors": []
+}

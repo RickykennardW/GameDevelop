@@ -8,7 +8,7 @@ from pathlib import Path
 import websockets
 ROOT=Path(__file__).resolve().parent.parent
 W=Path(os.environ.get('GD_VALIDATION_HOME',r'C:\Users\My ASUS\.codex\visualizations\2026\10\06\01a11249-1cf3-7f03-9834-01083d6fb50c\gdevelop-shop-rework-validation'))
-OUT=Path(os.environ.get('GD_VALIDATION_RESULTS',ROOT/'design_previews/void_golem'));OUT.mkdir(parents=True,exist_ok=True)
+OUT=Path(os.environ.get('GD_VALIDATION_RESULTS',ROOT/'validation'));OUT.mkdir(parents=True,exist_ok=True)
 name=sys.argv[1];assert re.fullmatch('test-[a-z-]+',name)
 sock=socket.socket();sock.bind(('127.0.0.1',0));port=sock.getsockname()[1];sock.close()
 profile=tempfile.TemporaryDirectory(prefix='native-suite-profile-',dir=W)

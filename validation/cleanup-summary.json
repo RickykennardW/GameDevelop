@@ -1,0 +1,171 @@
+{
+  "filesDeleted": 336,
+  "oldBackupFilesDeleted": 5,
+  "linksRemoved": 1,
+  "deletedFileBytes": 917288936,
+  "physicalBytesBeforeDeletion": 1040821167,
+  "physicalFilesBeforeDeletion": 745,
+  "categories": {
+    "unused_offline_authoring_metadata_or_source": {
+      "files": 22,
+      "bytes": 2925982
+    },
+    "duplicate_texture": {
+      "files": 1,
+      "bytes": 984
+    },
+    "superseded_documentation": {
+      "files": 13,
+      "bytes": 113789
+    },
+    "old_backups": {
+      "files": 3,
+      "bytes": 740545863
+    },
+    "historical_previews_and_test_artifacts": {
+      "files": 247,
+      "bytes": 170926499
+    },
+    "completed_spreadsheet_generation_artifacts": {
+      "files": 10,
+      "bytes": 1308004
+    },
+    "obsolete_migration_probe_or_test_tool": {
+      "files": 39,
+      "bytes": 452448
+    },
+    "obsolete_autosave": {
+      "files": 1,
+      "bytes": 1015367
+    }
+  },
+  "resourceCountBefore": 357,
+  "resourceCountAfter": 356,
+  "resourceKindsAfter": {
+    "image": 331,
+    "audio": 25
+  },
+  "objectCountUnchanged": 65,
+  "sceneVariablesUnchanged": 58,
+  "instancesUnchanged": 157,
+  "removedGroups": [
+    "TowerShopContent",
+    "GroundMapVisuals",
+    "MapEndpoints"
+  ],
+  "removedEmptyEvents": 1,
+  "removedUnusedTimerActions": 1,
+  "removedResourceName": "assets/celestial_void/ui/index-button.svg",
+  "canonicalResourceName": "assets/celestial_void/ui/button.svg",
+  "duplicateTextureSHA256": "62741f12ce12554e0766102cea0577961f0365be02d1e5b725874875b9d89d99",
+  "noBackupsCreated": true,
+  "sharedExternalCacheUntouched": true,
+  "preservedSpreadsheet": {
+    "file": "data/Celestial_Void_Data_Wave_Monster_Tower.xlsx",
+    "sha256": "6ac3de3e5a9b63798a07b47c0c8090a40d524b4cb30029b2c48295f41c447089"
+  },
+  "protectedRuntimeSourceSHA256": {
+    "void-hound-runtime.js": "01d13c6757d4473d609f6152819ca94c38a5280e23ffa90cdbaba1902c70b5c9",
+    "enemy-healthbar-runtime.js": "0f91fe8dc32ed432e0d64b58ba25e69a0dd48746a92786a90d1387bedaa7d37d",
+    "audio-runtime.js": "20f9a3e98a6d66012568a1567578448adccb2ded2ff6d97986be9518dcaf1443",
+    "nova-death-runtime.js": "8f588d9fc80aafd2c5cda9650b05ea8a03b54df100893d0edcde57503fa77de6",
+    "gold-budget-runtime.js": "db62fc90588f325b6c3fc70d5478e3deb7ed6c5cd0c8dd519a63d9843e7a99db",
+    "nova-wave-manager.js": "1648d20cb1d25d958fef9c83c34c3254dd0f00593d1cc333228479b4f5d7b19c",
+    "responsive-map-runtime.js": "82a2a1dcd8f4866b668a661b6e97cabd436fdb06329fa3871d67bd0cf595f54f",
+    "star-cannon-runtime.js": "9dac5af7fc2b56c59948d122bc633e74d2bafde5bf6b4db6718893ed92e6677a",
+    "void-common-runtime.js": "1f9588afa68af7555a0d16bb31855b957ec371b140108d1656ea929ec7124bbf",
+    "island-render-runtime.js": "211e94edf3f3b4e1c0e4527ee8bd64891098c9385140147e722815e5dbba7867",
+    "nova-movement-runtime.js": "1a3bcdf8ca9b5feba02940e842e00c8f7beb876b0b481dab0166d7ee8fddcb8e",
+    "free-placement-rings.js": "15fe6220065e479bf0637961fa1b12ab0f1ab4eea35071240f5356e28f5826ec",
+    "free-placement-click.js": "0643e2d3db4719dff4071aa20b0a1ca1b75a89c0eca57c43bbbf311c8bd2b018",
+    "obstacle-panel-runtime.js": "7d1790ea548d88500942b4613451495dbc34aa3d796e990dec8a231d9f59f1b6",
+    "free-placement-runtime.js": "b2a5f8072688261778f12d7c10570f3ccd7a86fc94fcf299f79cbc9bfcff2051",
+    "nova-spawn-runtime.js": "f0e9ba29ca7a4aeb113ab3682aed86356d5df8d7ceae17ccefc5a441ca2ecb6d",
+    "void-golem-runtime.js": "fed0cf2fe5e0b167e15f13a56a773d6631b1427c1c189e0c2c51fd753997d803",
+    "selected-panel-runtime.js": "4f9800a952cff3eeb5cef601407ef6572c49fa05d8b06407ecbee6282fc1abe2",
+    "world-selection-runtime.js": "761f71d305aa27b7559a40dab6cbb17832d999a049729d4e2801c95076620bc8",
+    "selected-range-runtime.js": "311c9b0df97d04c10e384acdc8cb15b4dd7192d0932876e0abdcbae21fe66753",
+    "island-map-runtime.js": "88e1905f541bc5e966dc4afae09ac9fcabe039ffb764a96ddaa393f5e1b0bc20",
+    "nova-wisp-runtime.js": "ee092ae2a67100bf206d5d784f744f577ad2000635290c7144f6b7d53f6a4007",
+    "unit-index-runtime.js": "117f386f64ccbc78e34d2989aa70ab6b8ceda889c22f6957c4e29a72aa42f2b4"
+  },
+  "protectedSceneDataSHA256": {
+    "instances": "4ec06272dd989fe9e3ad4751fd880e8fa95691cdcb8e0192d3cf784f76aa3a14",
+    "variables": "e76c1b399396273b8a705d30c1cb8911cddc3e82c0c25c98075a3a917e7d6d36",
+    "layers": "c93511563a5d85e85701e2f9fb8720624b0d52baafbe0619d48eda2955ddf068",
+    "uiSettings": "a758a83478e81e14e04abf6f0ab591e191a5973f74bead094e3b6e95fdcf6fb5",
+    "objectsFolderStructure": "10af4a2095665dee144f325ab6d714d531315d52f4ba813716853401a1d26f49",
+    "behaviorsSharedData": "db36b83d9b0cefec572ea4aa1655854a6ade7a7198e6ec4f09390426837011e6"
+  },
+  "previousPreviewPixelSHA256": {
+    "idle": "73e9d507b2c6557df81cf96e19c9a76ae015910d9fc5131683c327153e7a1a42",
+    "selected": "a2967b40b0b83e604f42cc5ab824f0e5be1815db6fed20898115894e2540cb65",
+    "index": "d4a5f7a931c2da03d0bd1752893e4af24974ee2c5f895883b9baed0c7945a9e5",
+    "combat": "5b77a8855472cf2787dda962a8ce45269e30d859675b93890f5f7308f6b37c40"
+  },
+  "assetBytesPreserved": true,
+  "removedAssetFiles": [
+    "assets/enemies/nova_wisp/metadata/generation-prompts.json",
+    "assets/enemies/nova_wisp/metadata/manifest.json",
+    "assets/enemies/nova_wisp/metadata/views.json",
+    "assets/enemies/void_brute/metadata/manifest.json",
+    "assets/enemies/void_golem/metadata/manifest.json",
+    "assets/enemies/void_guard/metadata/manifest.json",
+    "assets/enemies/void_hound/metadata/generation-prompts.json",
+    "assets/enemies/void_hound/metadata/manifest.json",
+    "assets/enemies/void_hound/metadata/views.json",
+    "assets/enemies/void_sentinel/metadata/manifest.json",
+    "assets/map/celestial_void/authoring/Terrain.png",
+    "assets/map/celestial_void/metadata/generated-sources.json",
+    "assets/map/celestial_void/metadata/island/generation-prompts.json",
+    "assets/map/celestial_void/metadata/manifest.json",
+    "assets/towers/star_cannon/metadata/components/calibration.json",
+    "assets/towers/star_cannon/metadata/components/component-metadata.json",
+    "assets/towers/star_cannon/metadata/components/generation-prompts.json",
+    "assets/towers/star_cannon/metadata/components/manifest.json",
+    "assets/towers/star_cannon/metadata/config.json",
+    "assets/towers/star_cannon/metadata/emitter-points.json",
+    "assets/towers/star_cannon/metadata/generation-prompts.json",
+    "assets/towers/star_cannon/metadata/manifest.json",
+    "assets/ui/buttons/index-button.svg"
+  ],
+  "finalValidation": {
+    "staticChecksPassed": 4501,
+    "nativeSceneDiagnostics": 0,
+    "nativePreviewExport": true,
+    "gameplaySuiteChecks": {
+      "test-clean-project": 283,
+      "test-gold-budget": 7486,
+      "test-healthbars-balance": 183,
+      "test-nova-wisp": 14532,
+      "test-void-common": 636,
+      "test-void-golem": 552,
+      "test-void-hound": 117
+    },
+    "gameplaySuiteChecksTotal": 23789,
+    "previewModesWithIdenticalPixels": [
+      "idle",
+      "selected",
+      "index",
+      "combat"
+    ],
+    "audioChecks": {
+      "signal": 51,
+      "runtime": 44,
+      "deep": 19,
+      "ui": 13,
+      "long-session": 10
+    },
+    "audioChecksTotal": 137,
+    "protectedSceneAndRuntimeChecksumsUnchanged": true,
+    "spreadsheetChecksumUnchanged": true,
+    "gitHeadUnchanged": true,
+    "noConsoleExceptions": true
+  },
+  "storageMeasurement": {
+    "basis": "Logical regular-file lengths inside workspace, excluding .git and external junction targets",
+    "physicalFilesAfterCleanup": 438,
+    "physicalBytesAfterCleanup": 127400137,
+    "netReductionBytes": 913421030
+  }
+}

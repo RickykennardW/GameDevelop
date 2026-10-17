@@ -3,7 +3,7 @@
 Fixture scripts operate a test scene only. They do not replace gameplay code.
 Usage: python tools/balance-browser.py SCRIPT.js OUTPUT.json [SCREENSHOT.png]
 """
-import asyncio, base64, json, os, socket, subprocess, sys, tempfile, urllib.request
+import asyncio, base64, hashlib, io, json, os, socket, subprocess, sys, tempfile, urllib.request
 from pathlib import Path
 import websockets
 
@@ -68,10 +68,18 @@ async def main():
             result['reload']=reloaded
         screenshot_data=None
         screenshot=next((a for a in sys.argv[3:] if not a.startswith('--')),None)
-        if screenshot:
+        pixel_sha=next((a.split('=',1)[1] for a in sys.argv[3:] if a.startswith('--pixel-sha=')),None)
+        if screenshot or pixel_sha:
             await asyncio.sleep(.2)
             r = await call('Page.captureScreenshot',dict(format='png'))
             screenshot_data=base64.b64decode(r['data'])
+            if pixel_sha:
+                from PIL import Image
+                pixels=Image.open(io.BytesIO(screenshot_data)).convert('RGB')
+                actual=hashlib.sha256(pixels.tobytes()).hexdigest()
+                if actual!=pixel_sha:raise RuntimeError('Native gameplay pixel comparison failed: '+actual)
+                result['pixelComparison']={'matchesPreviousPreview':True,'sha256':actual,'size':list(pixels.size)}
+            if not screenshot:screenshot_data=None
         print('RESULT', json.dumps(result)[:3500]); print('CONSOLE ERRORS',len(errors))
         return dict(result=result,progress=progress,consoleErrors=errors),screenshot,screenshot_data
 try: report,screenshot,screenshot_data=asyncio.run(main())

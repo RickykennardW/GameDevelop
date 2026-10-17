@@ -1,0 +1,88 @@
+"""Validate current project and maintained dependencies without creating backups."""
+import hashlib,json,re,sys
+from collections import Counter
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parent.parent
+checks=[]
+def ok(value,label):
+    if not value:raise ValueError(label)
+    checks.append(label)
+def read(file):return json.loads((ROOT/file).read_text(encoding='utf-8-sig'))
+p=read('Tower Defense.json')
+references=[]
+for key in ['layouts','eventsFunctionsExtensions','externalEvents','externalLayouts']:
+    for ref in p[key]:
+        if '__REFERENCE_TO_SPLIT_OBJECT' in ref:
+            file=ref['referenceTo'].lstrip('/')+'.json'
+            ok((ROOT/file).is_file(),'Split file exists: '+file);references.append(file)
+scenes=[read(ref['referenceTo'].lstrip('/')+'.json') for ref in p['layouts']]
+resources=p['resources']['resources'];byname={r['name']:r for r in resources}
+ok(len(byname)==len(resources),'Unique resource identifiers')
+ok(len({r['file'].casefold() for r in resources})==len(resources),'No duplicate resource file entries')
+for resource in resources:
+    path=(ROOT/resource['file']).resolve()
+    ok(path.is_relative_to((ROOT/'assets').resolve()) and path.is_file(),'Resource file exists inside assets: '+resource['name'])
+    at=ROOT
+    for part in Path(resource['file']).parts:
+        ok(part in {x.name for x in at.iterdir()},'Exact path spelling: '+str(at/part));at/=part
+all_strings=[]
+def strings(value):
+    if isinstance(value,str):all_strings.append(value)
+    elif isinstance(value,dict):
+        for x in value.values():strings(x)
+    elif isinstance(value,list):
+        for x in value:strings(x)
+for scene in scenes:
+    names={o['name'] for o in scene['objects']}|{o['name'] for o in p['objects']}
+    layers={l['name'] for l in scene['layers']}
+    ok(len(names)==len(scene['objects'])+len(p['objects']),'Object names unique')
+    for i in scene['instances']:ok(i['name'] in names and i['layer'] in layers,'Instance object/layer valid: '+i['name'])
+    for g in scene['objectsGroups']:ok(all(x['name'] in names for x in g['objects']),'Group members valid: '+g['name'])
+    leaves=[]
+    def folders(node):
+        if 'objectName' in node:leaves.append(node['objectName'])
+        else:
+            ok(bool(node.get('children')),'Nonempty editor folder: '+node['folderName'])
+            for child in node['children']:folders(child)
+    folders(scene['objectsFolderStructure'])
+    ok(Counter(leaves)==Counter(o['name'] for o in scene['objects']),'Every object occurs once in editor folders')
+    strings(scene)
+    def media(value):
+        if isinstance(value,dict):
+            for k,v in value.items():
+                if k in ['image','texture'] and isinstance(v,str) and v:ok(v in byname,'Object image/texture resolves: '+v)
+                else:media(v)
+        elif isinstance(value,list):
+            for v in value:media(v)
+    media(scene['objects'])
+mapping=read('tools/source-mapping.json')
+for index,path,name in mapping:
+    event=scenes[0]['events'][index]
+    for n in path:event=event['events'][n]
+    source=ROOT/'tools'/name
+    ok(source.is_file() and event['inlineCode']==source.read_text(encoding='utf-8-sig').splitlines(),'Runtime source/event match: '+name)
+ok(all(r['name'] in all_strings for r in resources),'Every resource is referenced by the active scene/configuration')
+manifest=read('assets/audio/manifest.json')
+for asset in manifest['assets']:
+    name=asset.get('resourceName',asset['file'])
+    ok(name in byname and byname[name]['file']==asset['file'],'Audio identifier/file mapping: '+asset['id'])
+    ok(hashlib.sha256((ROOT/asset['file']).read_bytes()).hexdigest()==asset['sha256'],'Audio checksum: '+asset['id'])
+allowed={r['file'] for r in resources}|{'assets/audio/manifest.json'}
+actual={f.relative_to(ROOT).as_posix() for f in (ROOT/'assets').rglob('*') if f.is_file()}
+ok(actual==allowed,'Only active resources and the maintained audio manifest remain in assets')
+for f in ROOT.rglob('*'):
+    parts=f.relative_to(ROOT).parts
+    if parts and parts[0]=='.git':continue
+    ok(not f.is_junction() and not f.is_symlink(),'No external dependency junction: '+str(f.relative_to(ROOT)))
+    ok(not any(part.lower() in ['backup','backups','archive','old'] for part in parts),'No backup/archive directory: '+str(f.relative_to(ROOT)))
+    if f.is_file():
+        ok(f.suffix.lower() not in ['.bak','.old','.backup','.autosave','.zip'],'No backup file: '+str(f.relative_to(ROOT)))
+        if f.suffix=='.json' and f.name!='Tower Defense.json':
+            d=json.loads(f.read_text(encoding='utf-8-sig'))
+            ok(not(isinstance(d,dict) and {'gdVersion','layouts','resources'}<=set(d)),'No duplicate project JSON: '+str(f.relative_to(ROOT)))
+ok('NO BACKUP' in (ROOT/'AGENTS.md').read_text(),'Permanent user rule recorded in AGENTS.md')
+report={'checksPassed':len(checks),'sceneCount':len(scenes),'resourceCount':len(resources),'resourceKinds':dict(Counter(r['kind'] for r in resources)),'objectCount':len(scenes[0]['objects']),'instanceCount':len(scenes[0]['instances']),'variableCount':len(scenes[0]['variables']),'runtimeSourceCount':len(mapping),'noBackupFiles':True,'checks':checks}
+out=ROOT/'validation';out.mkdir(exist_ok=True)
+(out/'static-checks.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+print(json.dumps({k:v for k,v in report.items() if k!='checks'}))

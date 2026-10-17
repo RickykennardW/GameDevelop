@@ -1,25 +1,31 @@
 # Celestial Void Tower Defense
 
-Buka **Tower Defense.json** dengan GDevelop. Project folder memiliki satu scene `layouts/game-scene.json`, satu tower resmi **Star Cannon**, dan enam enemy **Nova Wisp, Void Hound, Void Guard, Void Sentinel, Void Brute, Void Golem** untuk45 wave dengan Gold Budget.
+Buka **Tower Defense.json** di GDevelop. Project memakai satu Game Scene, satu Star Cannon dengan 21 kombinasi upgrade valid, enam enemy, 45 Gold-Budget waves, dan audio galaxy dinamis.
 
-Dokumentasi aktif: VOID_GOLEM.md, CLEANUP_REPORT.md, BALANCE.md, STAR_CANNON.md, NOVA_WISP.md, VOID_HOUND.md, VOID_COMMON_ENEMIES.md, VOID_COMMON_ENEMIES.md, STAR_TURRET_OBSTACLES.md, CELESTIAL_VOID.md. Resource gameplay berada di assets; runtime source berada di tools dan disalin ke event menggunakan `python tools/embed-free-placement.py`.
+**NO BACKUP — aturan permanen pengguna untuk seluruh pekerjaan Codex.** Jangan membuat salinan project/asset, folder backup, .bak/.old/.backup, JSON pengaman, ZIP atau snapshot manual. Instruksi lengkap ada di **AGENTS.md**.
 
-Backup lengkap sebelum cleanup: `backups/pre_star_only_cleanup_20261009.zip`. Skrip migrasi dan laporan/preview versi lama sudah diarsipkan dalam backup. Buka file utama yang sudah dibersihkan saat GDevelop masih menyimpan project lama di memori; autosave pra-cleanup juga tersedia dalam backup.
+Struktur aktif:
 
-Pengujian: `node tools/validate-clean-project.cjs`, lalu `python tools/run-clean-validation.py --prepare`, `python tools/run-clean-validation.py test-clean-project`, `python tools/run-clean-validation.py test-nova-wisp`, dan `python tools/test-clean-project-live.py`. Adapter memakai libGD/native runtime GDevelop yang terpasang pada mesin ini; set GD_VALIDATION_HOME untuk lokasi alternatif. Header tes live juga mencatat lokasi default.
+- `layouts/game-scene.json`: scene, object definitions, instance, event dan konfigurasi authoritative.
+- `eventsFunctionsExtensions/health.json`: extension Health yang digunakan gameplay.
+- `assets/`: map, Star Cannon, enemy, UI, effects, audio dan texture shared yang aktif.
+- `tools/`: 23 source runtime, embedding dan tool validasi yang masih dipakai; source komposisi audio original.
+- `data/Celestial_Void_Data_Wave_Monster_Tower.xlsx`: file Excel final yang sebelumnya diminta pengguna.
+- `validation/`: hasil pemeriksaan terbaru, tanpa salinan JSON project atau asset pengaman.
 
-Preview terbaru: design_previews/cleanup. Asset contact sheets Star/Nova dan konsep map disimpan terpisah sebagai referensi desain; bukan resource gameplay yang diload game.
+Panduan pemeliharaan: **PROJECT_GUIDE.md**. Hasil pembersihan: **FINAL_CLEANUP_REPORT.md**.
 
-Void Hound: assets/void_hound, empat atlas/64 poses, muncul mulai Wave4. Detail distribusi dan bukti terbaru ada di VOID_HOUND.md serta design_previews/void_hound.
+Sesudah mengedit source runtime, jalankan `python tools/embed-free-placement.py`. Resource identifier dapat berbeda dari lokasi file; gunakan `resources[].name` untuk referensi runtime dan `resources[].file` untuk filesystem.
 
-Tiga common Void enemies: assets/enemies/void_guard, void_sentinel, void_brute;192 nativeRGBA frames128px. Animations/armor/waves/current test evidence: VOID_COMMON_ENEMIES.md dan design_previews/void_enemies.
+Validasi:
 
-Three common enemies: assets/enemies/void_guard, void_sentinel, void_brute.192native RGBA frames128px. Current animation/armor/wave/test report: VOID_COMMON_ENEMIES.md.
+```powershell
+python tools/validate-project.py
+node tools/validate-clean-project.cjs
+python tools/run-clean-validation.py --prepare
+python tools/run-clean-validation.py test-clean-project
+```
 
-Balance/HP bars terbaru (2026-10-09): HP_BARS_BALANCE_REPORT.md dan BALANCE.md. Bukti ada di design_previews/gameplay_balance. Stats enemy/art/animasi tetap; konfigurasi upgrade, bonus wave, distribusi tank, spawn pacing, dan pasangan HP bar diperbarui. Laporan cleanup/enemy sebelumnya merupakan catatan versi saat dibuat.
+Suite lain: `test-nova-wisp`, `test-void-hound`, `test-void-common`, `test-healthbars-balance`, `test-void-golem`, `test-gold-budget`. Native compiler/runtime GDevelop tersedia pada mesin ini; `GD_VALIDATION_HOME` dapat menunjuk lokasi adapter lain. Export preview adalah build gameplay yang diregenerasi langsung, bukan backup atau salinan project sumber.
 
-Tes HP/balance: `python tools/run-clean-validation.py test-healthbars-balance`. Skrip model tanpa dependencies: `node tools/analyze-game-balance.cjs --live`. Set `GD_VALIDATION_RESULTS` ke folder hasil yang diinginkan agar bukti lama tidak tertimpa.
-
-Void Golem Elite terbaru: `VOID_GOLEM.md`. Empat atlas final/80pose,20animasi, cast diam0.8s, Void Fortification armor+10/10s/cooldown25s/radius100. Wave sekarang memakai `WaveBudgetConfig`, cost=kill reward, milestone+20%, selesai45; completion reward0. Artwork/stat lima enemy lama dan Star Cannon tetap. Preview animasi: `design_previews/void_golem/Animation_Preview.html`; bukti native dan static audit di folder yang sama. Tidak ada backup/snapshot/ZIP/project JSON duplikat baru.
-
-Audio original terbaru: `AUDIO_SYSTEM.md`. Empat BGM galaxy dengan motif bersama, 21 SFX, crossfade 3 detik, feedback gameplay, volume/mute melalui speaker kecil di sebelah HUD, dan penyimpanan pengaturan lokal. Klik/tap atau tekan tombol agar browser mengaktifkan audio. Asset final ada di `assets/audio`; bukti native, loop, mix dan regresi ada di `design_previews/audio`. Gameplay/stat/layout existing tetap dipertahankan; tidak ada backup baru.
+Klik/tap atau tekan tombol untuk mengaktifkan audio browser. Speaker kecil di sebelah HUD mengatur Master/Music/SFX/UI dan mute. Bila GDevelop masih menampilkan data lama, buka ulang project utama.

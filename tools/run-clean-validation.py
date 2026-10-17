@@ -4,7 +4,7 @@ First: node tools/validate-clean-project.cjs
 Then: python tools/run-clean-validation.py --prepare
 Then: python tools/run-clean-validation.py test-clean-project
       python tools/run-clean-validation.py test-nova-wisp
-      python tools/test-clean-project-live.py
+      python tools/balance-browser.py tools/preview-smoke.js validation/preview-idle.json
 GD_VALIDATION_HOME may override the installed native validation runtime directory.
 """
 import os, re, sys, subprocess, html
@@ -12,7 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 W = Path(os.environ.get('GD_VALIDATION_HOME', r'C:\Users\My ASUS\.codex\visualizations\2026\10\06\01a11249-1cf3-7f03-9834-01083d6fb50c\gdevelop-shop-rework-validation'))
-OUT = Path(os.environ.get('GD_VALIDATION_RESULTS', ROOT / 'design_previews/cleanup'))
+OUT = Path(os.environ.get('GD_VALIDATION_RESULTS', ROOT / 'validation'))
 OUT.mkdir(parents=True, exist_ok=True)
 NAMES = ['test-clean-project', 'test-nova-wisp', 'test-void-hound', 'test-void-common', 'test-healthbars-balance', 'test-void-golem', 'test-gold-budget']
 if sys.argv[1:] == ['--prepare']:

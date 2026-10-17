@@ -1,0 +1,30 @@
+libGD.js based on GDevelop 5.6.283-0
+Initializing GDJS platform...
+* Loading builtin extensions... done.
+* Loading other extensions... done.
+Platform initialization ended.
+Child sharedPropertyDescriptors not found in SerializerElement::GetChild
+Child previewLayout not found in SerializerElement::GetChild
+PARSER: scenes=1, objects=65
+SCENE COMPILE diagnostics 0
+EXTENSIONS COMPILE PASS; includes [
+  'Extensions/TextObject/textruntimeobject-pixi-renderer.js',
+  'Extensions/TextObject/textruntimeobject.js',
+  'gdjs-evtsext__health__health.js',
+  'object-capabilities/AnimatableBehavior.js',
+  'object-capabilities/EffectBehavior.js',
+  'object-capabilities/TextContainerBehavior.js',
+  'runtimeobject.js'
+]
+STATUS: Project cloning took 332.0771999955177ms
+Copying all resources from C:\Users\My ASUS\OneDrive\Documents\GitHub\GameDevelop to C:\Users\My ASUS\.codex\visualizations\2026\10\06\01a11249-1cf3-7f03-9834-01083d6fb50c\gdevelop-shop-rework-validation\preview...
+STATUS: Resource export took 821.2414000034332ms
+STATUS: Include files export took 17.38660000264645ms
+STATUS:   Scene 'Game Scene': 2.337599992752075ms, 64 events, 228 KB generated code
+STATUS: Events code export took 5.376999989151955ms
+STATUS: Project data export took 40.65600000321865ms
+Could not find GDJS include file gdjs-evtsext__health__health.js
+Warning: Unable to find C:\Users\My ASUS\.codex\visualizations\2026\10\06\01a11249-1cf3-7f03-9834-01083d6fb50c\gdevelop-shop-rework-validation\preview\gdjs-evtsext__health__health.js.
+STATUS: Include and libs export took 481.136800006032ms
+EXPORT true 
+CUSTOM BEHAVIOR BUNDLE 1
