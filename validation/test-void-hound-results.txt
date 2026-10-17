@@ -101,7 +101,7 @@ PASS four articulated run poses play Up
 PASS idle breathing/tendril frames loop without collider drift
 PASS living Hound has compact body-only native collision mask
 PASS existing Star targeting/fire accepts Void Hound
-PASS first actual projectile60ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢10 and short hit flash/no reward
+PASS first actual projectile60ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢10 and short hit flash/no reward
 PASS hit does not stop path movement
 PASS death retained until dissolve completes;7Gold awarded once
 PASS death disables native collision, targeting and healthbar
@@ -113,6 +113,6 @@ PASS Hound base escape costs one existing life/no kill reward
 PASS complete unchanged82-waypoint zigzag at135 through all bends, one base damage/no reward
 PASS Nova health/animation rig preserved
 PASS Index displays canonical Hound stats beside Nova
-PASS Index renders one portrait cell without atlas leakage
+PASS Index renders exactly the original idle portrait cell without atlas leakage
 PASS small single-Star shop unchanged
 ALL VOID HOUND TESTS PASSED

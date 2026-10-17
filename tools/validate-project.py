@@ -1,5 +1,6 @@
 """Validate current project and maintained dependencies without creating backups."""
 import hashlib,json,re,sys
+from PIL import Image
 from collections import Counter
 from pathlib import Path
 
@@ -34,6 +35,26 @@ def strings(value):
     elif isinstance(value,list):
         for x in value:strings(x)
 for scene in scenes:
+    def variable_value(v):
+        if v['type']=='array':return [variable_value(c) for c in v.get('children',[])]
+        if v['type']=='structure':return {c['name']:variable_value(c) for c in v.get('children',[])}
+        return v.get('value')
+    variables={v['name']:variable_value(v) for v in scene['variables']}
+    portraits=variables.get('MonsterPortraitConfig',{})
+    portrait_object=next(o for o in scene['objects'] if o['name']=='IndexMonsterImage')
+    for id,meta in portraits.items():
+        animation=next(a for a in portrait_object['animations'] if a['name']==meta['Animation'])
+        ok(meta['Animation']==variables['EnemyTypes'][id]['Animation'] and 'Idle' in meta['Animation'],'Portrait uses existing canonical idle animation: '+id)
+        ok(meta['Image']==animation['directions'][0]['sprites'][0]['image'] and meta['Image'] in byname,'Portrait uses original first idle frame resource: '+id)
+        with Image.open(ROOT/byname[meta['Image']]['file']) as original:
+            im=original.convert('RGBA')
+            if 'Frame' in meta:
+                x,y,w,h=meta['Frame'];ok(x>=0 and y>=0 and x+w<=im.width and y+h<=im.height,'Portrait crop stays inside atlas: '+id)
+                im=im.crop((x,y,x+w,y+h))
+            alpha=im.getchannel('A');ok(alpha.getextrema()[0]==0 and alpha.getextrema()[1]>0,'Portrait preserves actual transparent background: '+id)
+            l,t,r,b=alpha.point(lambda a:255 if a>=8 else 0).getbbox()
+            ok(meta['VisualBounds']==[l,t,r-l,b-t],'Portrait visual bounds match original alpha pixels: '+id)
+    ok(set(portraits)=={id for id,stats in variables['EnemyTypes'].items() if stats.get('Animation') in {a['name'] for a in portrait_object['animations']}},'Every active Index monster has one portrait configuration')
     names={o['name'] for o in scene['objects']}|{o['name'] for o in p['objects']}
     layers={l['name'] for l in scene['layers']}
     ok(len(names)==len(scene['objects'])+len(p['objects']),'Object names unique')

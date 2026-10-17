@@ -25,7 +25,8 @@
       "IndexUI",
       "IndexList",
       "ObstacleUI",
-      "AudioUI"
+      "AudioUI",
+      "DiscoveryUI"
     ],
     "pixelComparison": {
       "matchesPreviousPreview": true,

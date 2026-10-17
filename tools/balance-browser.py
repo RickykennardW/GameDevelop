@@ -13,7 +13,9 @@ sock = socket.socket(); sock.bind(('127.0.0.1', 0)); port = sock.getsockname()[1
 profile=tempfile.TemporaryDirectory(prefix='balance-browser-profile-',dir=W)
 profile_path=Path(profile.name).resolve()
 assert profile_path.parent==W.resolve() and profile_path.name.startswith('balance-browser-profile-')
-proc = subprocess.Popen(['C:/Program Files/Google/Chrome/Application/chrome.exe', '--headless', '--disable-extensions', '--disable-background-networking', '--disable-component-update', '--disable-sync', '--no-first-run', '--allow-file-access-from-files', '--remote-debugging-port='+str(port), '--user-data-dir='+profile.name, '--window-size=1920,1080', '--hide-scrollbars', (W/'preview/clean-sidebar-live.html').as_uri()], stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
+def start_browser():
+    return subprocess.Popen(['C:/Program Files/Google/Chrome/Application/chrome.exe', '--headless', '--disable-extensions', '--disable-background-networking', '--disable-component-update', '--disable-sync', '--no-first-run', '--allow-file-access-from-files', '--remote-debugging-port='+str(port), '--user-data-dir='+profile.name, '--window-size=1920,1080', '--hide-scrollbars', (W/'preview/clean-sidebar-live.html').as_uri()], stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
+proc = start_browser()
 
 async def main():
     target = None
@@ -48,7 +50,9 @@ async def main():
         for _ in range(300):
             if await js('!!(window.testGame&&testGame.getSceneStack().getCurrentScene()?.__starCannon)'): break
             await asyncio.sleep(.1)
-        await call('Emulation.setDeviceMetricsOverride', dict(width=1920,height=1080,deviceScaleFactor=1,mobile=False))
+        viewport=next((a.split('=',1)[1] for a in sys.argv[3:] if a.startswith('--viewport=')),'1920x1080')
+        vw,vh=map(int,viewport.split('x'))
+        await call('Emulation.setDeviceMetricsOverride', dict(width=vw,height=vh,deviceScaleFactor=1,mobile=False))
         mode=next((a.split('=',1)[1] for a in sys.argv[3:] if a.startswith('--mode=')),None)
         if mode: await js('globalThis.BALANCE_MODE='+json.dumps(mode))
         if '--gesture' in sys.argv:
@@ -81,8 +85,39 @@ async def main():
                 result['pixelComparison']={'matchesPreviousPreview':True,'sha256':actual,'size':list(pixels.size)}
             if not screenshot:screenshot_data=None
         print('RESULT', json.dumps(result)[:3500]); print('CONSOLE ERRORS',len(errors))
+        if '--discovery-relaunch-check' in sys.argv:
+            await ws.send(json.dumps(dict(id=count+1,method='Browser.close')))
+            await asyncio.sleep(.1)
         return dict(result=result,progress=progress,consoleErrors=errors),screenshot,screenshot_data
-try: report,screenshot,screenshot_data=asyncio.run(main())
+async def verify_discovery_relaunch():
+    target=None
+    for _ in range(100):
+        try:target=next(t for t in json.load(urllib.request.urlopen(f'http://127.0.0.1:{port}/json',timeout=1)) if t['type']=='page');break
+        except Exception:await asyncio.sleep(.1)
+    if not target:raise RuntimeError('Relaunched browser endpoint unavailable')
+    async with websockets.connect(target['webSocketDebuggerUrl'],max_size=40000000) as ws:
+        counter=0
+        async def evaluate(code):
+            nonlocal counter
+            counter+=1;await ws.send(json.dumps(dict(id=counter,method='Runtime.evaluate',params=dict(expression=code,returnByValue=True,awaitPromise=True))))
+            while True:
+                r=json.loads(await ws.recv())
+                if r.get('id')==counter:
+                    if 'exceptionDetails' in r.get('result',{}):raise RuntimeError(str(r))
+                    return r.get('result',{}).get('result',{}).get('value')
+        for _ in range(300):
+            if await evaluate('!!(window.testGame&&testGame.getSceneStack().getCurrentScene()?.__monsterDiscovery?.ready)'):break
+            await asyncio.sleep(.1)
+        return await evaluate("""(()=>{const g=testGame,s=g.getSceneStack().getCurrentScene(),d=s.__monsterDiscovery,v=s.getVariables();g.pause(true);const before={found:[...d.found],queue:d.queue.length,active:d.active,scope:d.scope,legacy:localStorage.getItem('celestialVoidMonsterDiscovery.v1'),unrelated:localStorage.getItem('celestialVoidBetaUnrelatedCheck'),audio:{...s.__audio.settings}};v.get('Wave').setNumber(1);v.get('WaveActive').setBoolean(true);v.get('WaveMode').setString('Manual');const w=s.__waveManager;w.queue=['Basic'];w.index=0;w.elapsed=v.get('SpawnInterval').getAsNumber();v.get('EnemiesToSpawn').setNumber(1);s.renderAndStep(16.667);return{before,encounterAgain:d.has('Basic')&&d.stats.shown===1&&d.stats.unlocks===1};})()""")
+try:
+    report,screenshot,screenshot_data=asyncio.run(main())
+    if '--discovery-relaunch-check' in sys.argv:
+        proc.wait(timeout=15)
+        proc=start_browser()
+        relaunched=asyncio.run(verify_discovery_relaunch());before=relaunched['before']
+        if before['found'] or before['queue'] or before['active'] or before['legacy'] is not None or before['scope']!='session' or before['unrelated']!='preserve' or before['audio']!=report['result']['sessionAudioSettings'] or not relaunched['encounterAgain']:raise RuntimeError('Discovery fresh-session/audio-preference relaunch check failed: '+str(relaunched))
+        report['result']['applicationRelaunch']=relaunched
+        print('APPLICATION RELAUNCH PASS: discovery reset; encounter announces again; audio/unrelated storage preserved')
 finally:
     # Stop this uniquely profiled browser and its descendants before deleting cache.
     if proc.poll() is None:

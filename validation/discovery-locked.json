@@ -1,0 +1,47 @@
+{
+  "result": {
+    "checks": [
+      "fresh save: six stable monster IDs /all locked before Index",
+      "fresh game has no discovery popup or pending discovery",
+      "Tower Index fully visible with eight upgrades without unlock",
+      "opening Index never discovers monsters",
+      "locked name/stats/ability/description hidden",
+      "true black silhouette, including Golem cropped atlas",
+      "locked name/stats/ability/description hidden",
+      "true black silhouette, including Golem cropped atlas",
+      "locked name/stats/ability/description hidden",
+      "true black silhouette, including Golem cropped atlas",
+      "locked name/stats/ability/description hidden",
+      "true black silhouette, including Golem cropped atlas",
+      "locked name/stats/ability/description hidden",
+      "true black silhouette, including Golem cropped atlas",
+      "locked name/stats/ability/description hidden",
+      "true black silhouette, including Golem cropped atlas",
+      "progress derives from active registered Index monsters",
+      "unchanged Index is not redrawn every frame"
+    ],
+    "mode": "locked",
+    "ids": [
+      "Basic",
+      "VoidHound",
+      "VoidGuard",
+      "VoidSentinel",
+      "VoidBrute",
+      "VoidGolem"
+    ],
+    "found": [],
+    "queued": [],
+    "active": null,
+    "scope": "session",
+    "stats": {
+      "unlocks": 0,
+      "shown": 0,
+      "sounds": 0,
+      "completed": 0
+    },
+    "geometry": null,
+    "renderCount": 2
+  },
+  "progress": [],
+  "consoleErrors": []
+}

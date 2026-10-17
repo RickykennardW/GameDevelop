@@ -27,7 +27,7 @@ ok(e.getHitBoxes().length>0,'living Hound has compact body-only native collision
 clear();const t=scene.createObject('StarCannonTower'),tv=t.getVariables();p.positionSprite(t,'StarCannonTower',700,550);tv.get('FootprintX').setNumber(700);tv.get('FootprintY').setNumber(550);tv.get('FootprintRadius').setNumber(46);tv.get('TowerId').setNumber(990001);step();t.__starCooldown=100000;
 e=make(840,510);step();t.__starFacing=star.bearing(t,e);const gold=v('Money');ok(star.fire(t,e),'existing Star targeting/fire accepts Void Hound');
 for(let i=0;i<60&&e.getBehavior('Health').Health()===60;i++)step();
-ok(e.getBehavior('Health').Health()===10&&e.__houndRig.mode==='Hit'&&e.__houndState.hit>0&&v('Money')===gold,'first actual projectile60ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢10 and short hit flash/no reward');
+ok(e.getBehavior('Health').Health()===10&&e.__houndRig.mode==='Hit'&&e.__houndState.hit>0&&v('Money')===gold,'first actual projectile60ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢10 and short hit flash/no reward');
 e.getVariables().get('MoveSpeed').setNumber(135);const x=e.getCenterXInScene(),y=e.getCenterYInScene();step();ok(Math.hypot(e.getCenterXInScene()-x,e.getCenterYInScene()-y)>0,'hit does not stop path movement');e.getVariables().get('MoveSpeed').setNumber(0);t.__starFacing=star.bearing(t,e);star.fire(t,e);
 for(let i=0;i<60&&!e.__houndState.dying;i++)step();
 ok(e.__houndState.dying&&get('Enemy').includes(e)&&v('Money')===gold+7,'death retained until dissolve completes;7Gold awarded once');
@@ -41,6 +41,6 @@ for(let i=0;i<4000&&get('Enemy').includes(e);i++){scene.renderAndStep(100);input
 ok(!get('Enemy').includes(e)&&v('Lives')===routeLives-1&&v('Money')===routeGold&&directionsSeen.has('Right')&&directionsSeen.has('Left')&&directionsSeen.has('Down'),'complete unchanged82-waypoint zigzag at135 through all bends, one base damage/no reward');
 const nova=scene.createObject('Enemy');n.ensure(nova);nova.getVariables().get('MoveSpeed').setNumber(0);step();ok(nova.getBehavior('Health').Health()===100&&nova.__novaRig&&nova.getAnimationName().startsWith('Nova'),'Nova health/animation rig preserved');clear();
 vars.get('IndexOpen').setBoolean(true);step();scene.__unitIndex.category='Monsters';step();ok(scene.__unitIndex.entries.length===6&&scene.__unitIndex.entries[1].name==='Void Hound'&&scene.__unitIndex.entries[1].Speed===135,'Index displays canonical Hound stats beside Nova');
-const portrait=scene.__unitIndex.cards[1].sprite;ok(portrait.getRendererObject().texture===h.texture('Down',0,0),'Index renders one portrait cell without atlas leakage');vars.get('IndexOpen').setBoolean(false);step();
+const portrait=scene.__unitIndex.cards[1].sprite,portraitTexture=portrait.getRendererObject().texture,idleTexture=h.texture('Down',0,0);ok(portraitTexture.baseTexture===idleTexture.baseTexture&&['x','y','width','height'].every(k=>portraitTexture.frame[k]===idleTexture.frame[k])&&portraitTexture.width===384&&portraitTexture.height===255,'Index renders exactly the original idle portrait cell without atlas leakage');vars.get('IndexOpen').setBoolean(false);step();
 ok(scene.__towerShopUI.cards.length===1&&scene.__towerShopUI.cards[0].background.getWidth()===84,'small single-Star shop unchanged');
 lines.push('ALL VOID HOUND TESTS PASSED');output.textContent=lines.join('\n');document.title='PASS '+(lines.length-1)+' Void Hound checks';

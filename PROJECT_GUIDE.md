@@ -4,7 +4,7 @@
 
 Project utama adalah `Tower Defense.json`; scene terpisah berada di `layouts/game-scene.json`. Seluruh property, ukuran, instance, camera, object folder, gameplay variable dan event berada pada kedua file ini. Extension Health berada di `eventsFunctionsExtensions/health.json`.
 
-`tools/source-mapping.json` memetakan 23 source JavaScript ke event scene. `python tools/embed-free-placement.py` melakukan embedding langsung, tanpa membuat salinan. Jangan mengembalikan script migrasi lama atau file konfigurasi hasil eksperimen yang sudah dihapus. Semua perubahan harus mengikuti **NO BACKUP** pada `AGENTS.md`.
+`tools/source-mapping.json` memetakan 24 source JavaScript ke event scene. `python tools/embed-free-placement.py` melakukan embedding langsung, tanpa membuat salinan. Jangan mengembalikan script migrasi lama atau file konfigurasi hasil eksperimen yang sudah dihapus. Semua perubahan harus mengikuti **NO BACKUP** pada `AGENTS.md`.
 
 ## Sistem yang dipertahankan
 
@@ -37,7 +37,7 @@ Setiap resource dikelola oleh GDevelop melalui **name** dan **file** yang berbed
 
 ## Audio original
 
-Empat BGM OGG di `assets/audio/music`: Ancient Galaxy Ambience 120s / 64 BPM, Sacred Void Temple 128s / 60 BPM, Cosmic Defense 120s / 96 BPM, Void Awakening 120s / 112 BPM. Semua berbagi motif D5–F5–E5–A4–D5 dan respon C5–Bb4–A4, dengan pad kosmik, choir formant tanpa kata, crystal bells, strings, bass dan perkusi terkontrol.
+Empat BGM OGG di `assets/audio/music`: Ancient Galaxy Ambience 120s / 64 BPM, Sacred Void Temple 128s / 60 BPM, Cosmic Defense 120s / 96 BPM, Void Awakening 120s / 112 BPM. Semua berbagi motif D5â€“F5â€“E5â€“A4â€“D5 dan respon C5â€“Bb4â€“A4, dengan pad kosmik, choir formant tanpa kata, crystal bells, strings, bass dan perkusi terkontrol.
 
 `tools/compose-galaxy-audio.py` dan `tools/audio-codec-browser.py` adalah source komposisi/encoding original yang dipertahankan, bukan file hasil eksperimen. Render memakai NumPy dan WebCodecs lokal; tidak memakai sample lagu komersial, layanan luar atau intermediate WAV. `assets/audio/manifest.json` masih dipakai validasi 25 audio dan memisahkan `resourceName` dari `file`.
 
@@ -52,3 +52,15 @@ Runtime memakai crossfade 3s, looping native, maksimal 2 BGM dan 12 SFX, rate li
 `preview-smoke.js`, fixture audio, dan driver `balance-browser.py` dipertahankan karena benar-benar dipakai untuk pemeriksaan preview/loop/volume/SFX. Artefak pengembangan dan hasil test historis dihapus; `validation/` berisi bukti terbaru. Cache/toolchain bersama di luar project bukan dependency folder yang disalin ke project dan tidak dihapus.
 
 Excel final di `data/` adalah deliverable pengguna yang dipertahankan byte-identik. Ia tidak mengendalikan balancing game dan harus diperbarui bila konfigurasi gameplay kelak berubah.
+
+## Monster discovery dan notifikasi
+
+`tools/monster-discovery-runtime.js` diinisialisasi sesudah responsive shop/map dan sebelum Index/spawn. Satu callback `onWaveSpawn(enemy,type)` di akhir inisialisasi enemy pada `nova-spawn-runtime.js` adalah satu-satunya trigger unlock. Jangan memindahkannya ke object creation umum atau renderer Index.
+
+Versi beta memakai `game.__celestialMonsterDiscoverySession` di memori RuntimeGame berdasarkan ID `EnemyTypes` yang stabil (`Basic` adalah Nova Wisp). Launch aplikasi baru membuat sesi kosong; perpindahan/reload scene biasa mempertahankan discovery serta notifikasi aktif/queue. Key discovery lama `celestialVoidMonsterDiscovery.v1` diabaikan dan hanya key tersebut dihapus sekali saat sesi baru. Settings/audio tidak dihapus. Untuk Restart/New Game eksplisit, panggil `runtimeScene.getGame().__celestialMonsterDiscoverySession?.resetForNewGame()` sebelum mengganti scene; API hanya mereset discovery, bukan gameplay lain. Project belum memiliki tombol Restart/New Game tersendiri, sehingga tidak ditambahkan kontrol UI baru. Registry otomatis mengikuti archetype aktif yang memiliki animation portrait di IndexMonsterImage, dalam urutan portrait existing. Untuk monster baru, daftarkan archetype dan portrait asli; tidak perlu mengubah daftar ID dalam notifikasi.
+
+Index menampilkan siluet hitam lewat tint per sprite, dengan salinan texture berwarna ungu gelap sebagai outline. Original texture tidak diedit. `MonsterPortraitConfig` memilih frame idle existing per jenis. Hound memakai cell `[0,0,384,255]` dan Golem `[0,0,256,307]`; jenis lain memakai PNG individual langsung. Texture satu frame dan fit berdasarkan visual alpha bounds yang sama digunakan oleh seluruh portrait Index/notifikasi; crop GPU hanya dimiliki UI dan dilepas ketika scene unload. Hanya nama/stat/role monster yang terkunci disamarkan; Tower Index tetap penuh. Dirty key pada Index meliputi status discovery sehingga unlock langsung terlihat tanpa redraw setiap frame.
+
+Layer `DiscoveryUI` memakai graphics/text/sprite PIXI yang reusable dan tidak interaktif. Animasi empat detik memakai waktu tanpa multiplier gameplay, queue maksimal satu entry per jenis, dan geometry menghindari HUD, sidebar serta Selected Tower Panel. Cue `DiscoveryUnlock` memakai chime WaveComplete existing pada volume UI yang lebih rendah; BGM tetap berjalan. Source ada pada mapping runtime ke-24.
+
+Pengujian: `python tools/balance-browser.py tools/discovery-qa.js validation/discovery-full.json --gesture`. `--viewport=960x640` memeriksa layout responsif. `python tools/balance-browser.py tools/discovery-beta-qa.js validation/discovery-beta.json --gesture --discovery-relaunch-check` menguji ordinary scene reload, reset New Game eksplisit, lalu benar-benar menutup dan meluncurkan kembali browser dengan profile test yang sama. Discovery harus kosong lagi, preferensi audio dan key lain harus tetap. Gunakan profile test terisolasi, bukan storage pengguna.

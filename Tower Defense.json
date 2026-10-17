@@ -1,7 +1,7 @@
 {
   "firstLayout": "",
   "gdVersion": {
-    "build": 283,
+    "build": 284,
     "major": 5,
     "minor": 6,
     "revision": 0
@@ -332,375 +332,374 @@
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/celestial_void/island/Nebula.png",
         "file": "assets/map/background/Nebula.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/island/Nebula.png",
         "smoothed": true,
-        "userAdded": true,
-        "metadata": ""
+        "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/celestial_void/island/terrain-repeat.svg",
         "file": "assets/map/celestial_void/terrain-repeat.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/island/terrain-repeat.svg",
         "smoothed": true,
-        "userAdded": true,
-        "metadata": ""
+        "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/celestial_void/island/Cliff_Frame.png",
         "file": "assets/map/celestial_void/Cliff_Frame.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/island/Cliff_Frame.png",
         "smoothed": true,
-        "userAdded": true,
-        "metadata": ""
+        "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/celestial_void/island/Moon_Garden.png",
         "file": "assets/map/obstacles/ruins/Moon_Garden.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/celestial_void/island/Moon_Garden.png",
         "smoothed": true,
-        "userAdded": true,
-        "metadata": ""
+        "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/celestial_void/island/Purple_Foliage.png",
         "file": "assets/map/decorations/Purple_Foliage.png",
-        "smoothed": true,
+        "kind": "image",
         "metadata": "",
+        "name": "assets/celestial_void/island/Purple_Foliage.png",
+        "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/celestial_void/island/path_H_plain.svg",
         "file": "assets/map/monster_path/path_H_plain.svg",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/celestial_void/island/path_H_plain.svg",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/celestial_void/island/path_V_plain.svg",
         "file": "assets/map/monster_path/path_V_plain.svg",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/celestial_void/island/path_V_plain.svg",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Impact_Barrage.svg",
         "file": "assets/towers/star_cannon/effects/impacts/Impact_Barrage.svg",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Impact_Barrage.svg",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Impact_Base.svg",
         "file": "assets/towers/star_cannon/effects/impacts/Impact_Base.svg",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Impact_Base.svg",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Impact_Explosion.svg",
         "file": "assets/towers/star_cannon/effects/impacts/Impact_Explosion.svg",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Impact_Explosion.svg",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Impact_Supernova.svg",
         "file": "assets/towers/star_cannon/effects/impacts/Impact_Supernova.svg",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Impact_Supernova.svg",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Projectile_Base.svg",
         "file": "assets/towers/star_cannon/projectiles/Projectile_Base.svg",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Projectile_Base.svg",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Projectile_Explosion.svg",
         "file": "assets/towers/star_cannon/projectiles/Projectile_Explosion.svg",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Projectile_Explosion.svg",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Projectile_Meteor.svg",
         "file": "assets/towers/star_cannon/projectiles/Projectile_Meteor.svg",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Projectile_Meteor.svg",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Projectile_Reinforced.svg",
         "file": "assets/towers/star_cannon/projectiles/Projectile_Reinforced.svg",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Projectile_Reinforced.svg",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Projectile_Supernova.svg",
         "file": "assets/towers/star_cannon/projectiles/Projectile_Supernova.svg",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Projectile_Supernova.svg",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Projectile_Twin.svg",
         "file": "assets/towers/star_cannon/projectiles/Projectile_Twin.svg",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Projectile_Twin.svg",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Star_Cannon_0_0.png",
         "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_0_0.png",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Star_Cannon_0_0.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Star_Cannon_0_1.png",
         "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_0_1.png",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Star_Cannon_0_1.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Star_Cannon_0_2.png",
         "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_0_2.png",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Star_Cannon_0_2.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Star_Cannon_0_3.png",
         "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_0_3.png",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Star_Cannon_0_3.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Star_Cannon_0_4.png",
         "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_0_4.png",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Star_Cannon_0_4.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Star_Cannon_1_0.png",
         "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_1_0.png",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Star_Cannon_1_0.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Star_Cannon_1_1.png",
         "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_1_1.png",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Star_Cannon_1_1.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Star_Cannon_1_2.png",
         "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_1_2.png",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Star_Cannon_1_2.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Star_Cannon_1_3.png",
         "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_1_3.png",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Star_Cannon_1_3.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Star_Cannon_1_4.png",
         "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_1_4.png",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Star_Cannon_1_4.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Star_Cannon_2_0.png",
         "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_2_0.png",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Star_Cannon_2_0.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Star_Cannon_2_1.png",
         "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_2_1.png",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Star_Cannon_2_1.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Star_Cannon_2_2.png",
         "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_2_2.png",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Star_Cannon_2_2.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Star_Cannon_2_3.png",
         "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_2_3.png",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Star_Cannon_2_3.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Star_Cannon_2_4.png",
         "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_2_4.png",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Star_Cannon_2_4.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Star_Cannon_3_0.png",
         "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_3_0.png",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Star_Cannon_3_0.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Star_Cannon_3_1.png",
         "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_3_1.png",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Star_Cannon_3_1.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Star_Cannon_3_2.png",
         "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_3_2.png",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Star_Cannon_3_2.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Star_Cannon_4_0.png",
         "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_4_0.png",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Star_Cannon_4_0.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Star_Cannon_4_1.png",
         "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_4_1.png",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Star_Cannon_4_1.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Star_Cannon_4_2.png",
         "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_4_2.png",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Star_Cannon_4_2.png",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Upgrade_HeavyImpact.svg",
         "file": "assets/towers/star_cannon/upgrade_icons/Upgrade_HeavyImpact.svg",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Upgrade_HeavyImpact.svg",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Upgrade_MeteorBarrage.svg",
         "file": "assets/towers/star_cannon/upgrade_icons/Upgrade_MeteorBarrage.svg",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Upgrade_MeteorBarrage.svg",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Upgrade_PrecisionCore.svg",
         "file": "assets/towers/star_cannon/upgrade_icons/Upgrade_PrecisionCore.svg",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Upgrade_PrecisionCore.svg",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Upgrade_RapidFire.svg",
         "file": "assets/towers/star_cannon/upgrade_icons/Upgrade_RapidFire.svg",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Upgrade_RapidFire.svg",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Upgrade_ReinforcedCore.svg",
         "file": "assets/towers/star_cannon/upgrade_icons/Upgrade_ReinforcedCore.svg",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Upgrade_ReinforcedCore.svg",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Upgrade_StarExplosion.svg",
         "file": "assets/towers/star_cannon/upgrade_icons/Upgrade_StarExplosion.svg",
+        "kind": "image",
         "metadata": "",
+        "name": "assets/star_cannon/Upgrade_StarExplosion.svg",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "kind": "image",
-        "name": "assets/star_cannon/Upgrade_Supernova.svg",
         "file": "assets/towers/star_cannon/upgrade_icons/Upgrade_Supernova.svg",
-        "metadata": "",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
         "kind": "image",
-        "name": "assets/star_cannon/Upgrade_TwinStar.svg",
-        "file": "assets/towers/star_cannon/upgrade_icons/Upgrade_TwinStar.svg",
         "metadata": "",
+        "name": "assets/star_cannon/Upgrade_Supernova.svg",
         "smoothed": true,
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
+        "file": "assets/towers/star_cannon/upgrade_icons/Upgrade_TwinStar.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/star_cannon/Upgrade_TwinStar.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
         "file": "assets/towers/star_cannon/base/StarCannon_Base_0_0.png",
         "kind": "image",
         "metadata": "",
@@ -709,7 +708,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/base/StarCannon_Base_0_1.png",
         "kind": "image",
         "metadata": "",
@@ -718,7 +716,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/base/StarCannon_Base_0_2.png",
         "kind": "image",
         "metadata": "",
@@ -727,7 +724,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/base/StarCannon_Base_0_3.png",
         "kind": "image",
         "metadata": "",
@@ -736,7 +732,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/base/StarCannon_Base_0_4.png",
         "kind": "image",
         "metadata": "",
@@ -745,7 +740,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/base/StarCannon_Base_1_0.png",
         "kind": "image",
         "metadata": "",
@@ -754,7 +748,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/base/StarCannon_Base_1_1.png",
         "kind": "image",
         "metadata": "",
@@ -763,7 +756,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/base/StarCannon_Base_1_2.png",
         "kind": "image",
         "metadata": "",
@@ -772,7 +764,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/base/StarCannon_Base_1_3.png",
         "kind": "image",
         "metadata": "",
@@ -781,7 +772,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/base/StarCannon_Base_1_4.png",
         "kind": "image",
         "metadata": "",
@@ -790,7 +780,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/base/StarCannon_Base_2_0.png",
         "kind": "image",
         "metadata": "",
@@ -799,7 +788,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/base/StarCannon_Base_2_1.png",
         "kind": "image",
         "metadata": "",
@@ -808,7 +796,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/base/StarCannon_Base_2_2.png",
         "kind": "image",
         "metadata": "",
@@ -817,7 +804,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/base/StarCannon_Base_2_3.png",
         "kind": "image",
         "metadata": "",
@@ -826,7 +812,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/base/StarCannon_Base_2_4.png",
         "kind": "image",
         "metadata": "",
@@ -835,7 +820,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/base/StarCannon_Base_3_0.png",
         "kind": "image",
         "metadata": "",
@@ -844,7 +828,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/base/StarCannon_Base_3_1.png",
         "kind": "image",
         "metadata": "",
@@ -853,7 +836,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/base/StarCannon_Base_3_2.png",
         "kind": "image",
         "metadata": "",
@@ -862,7 +844,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/base/StarCannon_Base_4_0.png",
         "kind": "image",
         "metadata": "",
@@ -871,7 +852,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/base/StarCannon_Base_4_1.png",
         "kind": "image",
         "metadata": "",
@@ -880,7 +860,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/base/StarCannon_Base_4_2.png",
         "kind": "image",
         "metadata": "",
@@ -889,7 +868,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/turret/StarCannon_Turret_0_0.png",
         "kind": "image",
         "metadata": "",
@@ -898,7 +876,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/turret/StarCannon_Turret_0_1.png",
         "kind": "image",
         "metadata": "",
@@ -907,7 +884,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/turret/StarCannon_Turret_0_2.png",
         "kind": "image",
         "metadata": "",
@@ -916,7 +892,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/turret/StarCannon_Turret_0_3.png",
         "kind": "image",
         "metadata": "",
@@ -925,7 +900,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/turret/StarCannon_Turret_0_4.png",
         "kind": "image",
         "metadata": "",
@@ -934,7 +908,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/turret/StarCannon_Turret_1_0.png",
         "kind": "image",
         "metadata": "",
@@ -943,7 +916,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/turret/StarCannon_Turret_1_1.png",
         "kind": "image",
         "metadata": "",
@@ -952,7 +924,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/turret/StarCannon_Turret_1_2.png",
         "kind": "image",
         "metadata": "",
@@ -961,7 +932,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/turret/StarCannon_Turret_1_3.png",
         "kind": "image",
         "metadata": "",
@@ -970,7 +940,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/turret/StarCannon_Turret_1_4.png",
         "kind": "image",
         "metadata": "",
@@ -979,7 +948,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/turret/StarCannon_Turret_2_0.png",
         "kind": "image",
         "metadata": "",
@@ -988,7 +956,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/turret/StarCannon_Turret_2_1.png",
         "kind": "image",
         "metadata": "",
@@ -997,7 +964,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/turret/StarCannon_Turret_2_2.png",
         "kind": "image",
         "metadata": "",
@@ -1006,7 +972,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/turret/StarCannon_Turret_2_3.png",
         "kind": "image",
         "metadata": "",
@@ -1015,7 +980,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/turret/StarCannon_Turret_2_4.png",
         "kind": "image",
         "metadata": "",
@@ -1024,7 +988,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/turret/StarCannon_Turret_3_0.png",
         "kind": "image",
         "metadata": "",
@@ -1033,7 +996,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/turret/StarCannon_Turret_3_1.png",
         "kind": "image",
         "metadata": "",
@@ -1042,7 +1004,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/turret/StarCannon_Turret_3_2.png",
         "kind": "image",
         "metadata": "",
@@ -1051,7 +1012,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/turret/StarCannon_Turret_4_0.png",
         "kind": "image",
         "metadata": "",
@@ -1060,7 +1020,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/turret/StarCannon_Turret_4_1.png",
         "kind": "image",
         "metadata": "",
@@ -1069,7 +1028,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/towers/star_cannon/turret/StarCannon_Turret_4_2.png",
         "kind": "image",
         "metadata": "",
@@ -1078,7 +1036,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/nova_wisp/animations/NovaWisp_Down.png",
         "kind": "image",
         "metadata": "",
@@ -1087,7 +1044,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/nova_wisp/animations/NovaWisp_Left.png",
         "kind": "image",
         "metadata": "",
@@ -1096,7 +1052,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/nova_wisp/animations/NovaWisp_Right.png",
         "kind": "image",
         "metadata": "",
@@ -1105,7 +1060,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/nova_wisp/animations/NovaWisp_Up.png",
         "kind": "image",
         "metadata": "",
@@ -1130,7 +1084,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_hound/animations/VoidHound_Right_Atlas.png",
         "kind": "image",
         "metadata": "",
@@ -1139,7 +1092,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_hound/animations/VoidHound_Left_Atlas.png",
         "kind": "image",
         "metadata": "",
@@ -1148,7 +1100,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_hound/animations/VoidHound_Down_Atlas.png",
         "kind": "image",
         "metadata": "",
@@ -1157,7 +1108,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_hound/animations/VoidHound_Up_Atlas.png",
         "kind": "image",
         "metadata": "",
@@ -1166,7 +1116,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/idle/Idle_Down_0.png",
         "kind": "image",
         "metadata": "",
@@ -1175,7 +1124,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/idle/Idle_Down_1.png",
         "kind": "image",
         "metadata": "",
@@ -1184,7 +1132,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/idle/Idle_Down_2.png",
         "kind": "image",
         "metadata": "",
@@ -1193,7 +1140,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/idle/Idle_Down_3.png",
         "kind": "image",
         "metadata": "",
@@ -1202,7 +1148,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/move/Move_Down_0.png",
         "kind": "image",
         "metadata": "",
@@ -1211,7 +1156,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/move/Move_Down_1.png",
         "kind": "image",
         "metadata": "",
@@ -1220,7 +1164,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/move/Move_Down_2.png",
         "kind": "image",
         "metadata": "",
@@ -1229,7 +1172,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/move/Move_Down_3.png",
         "kind": "image",
         "metadata": "",
@@ -1238,7 +1180,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/hit/Hit_Down_0.png",
         "kind": "image",
         "metadata": "",
@@ -1247,7 +1188,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/hit/Hit_Down_1.png",
         "kind": "image",
         "metadata": "",
@@ -1256,7 +1196,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/hit/Hit_Down_2.png",
         "kind": "image",
         "metadata": "",
@@ -1265,7 +1204,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/hit/Hit_Down_3.png",
         "kind": "image",
         "metadata": "",
@@ -1274,7 +1212,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/death/Death_Down_0.png",
         "kind": "image",
         "metadata": "",
@@ -1283,7 +1220,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/death/Death_Down_1.png",
         "kind": "image",
         "metadata": "",
@@ -1292,7 +1228,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/death/Death_Down_2.png",
         "kind": "image",
         "metadata": "",
@@ -1301,7 +1236,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/death/Death_Down_3.png",
         "kind": "image",
         "metadata": "",
@@ -1310,7 +1244,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/idle/Idle_Up_0.png",
         "kind": "image",
         "metadata": "",
@@ -1319,7 +1252,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/idle/Idle_Up_1.png",
         "kind": "image",
         "metadata": "",
@@ -1328,7 +1260,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/idle/Idle_Up_2.png",
         "kind": "image",
         "metadata": "",
@@ -1337,7 +1268,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/idle/Idle_Up_3.png",
         "kind": "image",
         "metadata": "",
@@ -1346,7 +1276,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/move/Move_Up_0.png",
         "kind": "image",
         "metadata": "",
@@ -1355,7 +1284,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/move/Move_Up_1.png",
         "kind": "image",
         "metadata": "",
@@ -1364,7 +1292,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/move/Move_Up_2.png",
         "kind": "image",
         "metadata": "",
@@ -1373,7 +1300,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/move/Move_Up_3.png",
         "kind": "image",
         "metadata": "",
@@ -1382,7 +1308,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/hit/Hit_Up_0.png",
         "kind": "image",
         "metadata": "",
@@ -1391,7 +1316,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/hit/Hit_Up_1.png",
         "kind": "image",
         "metadata": "",
@@ -1400,7 +1324,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/hit/Hit_Up_2.png",
         "kind": "image",
         "metadata": "",
@@ -1409,7 +1332,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/hit/Hit_Up_3.png",
         "kind": "image",
         "metadata": "",
@@ -1418,7 +1340,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/death/Death_Up_0.png",
         "kind": "image",
         "metadata": "",
@@ -1427,7 +1348,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/death/Death_Up_1.png",
         "kind": "image",
         "metadata": "",
@@ -1436,7 +1356,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/death/Death_Up_2.png",
         "kind": "image",
         "metadata": "",
@@ -1445,7 +1364,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/death/Death_Up_3.png",
         "kind": "image",
         "metadata": "",
@@ -1454,7 +1372,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/idle/Idle_Left_0.png",
         "kind": "image",
         "metadata": "",
@@ -1463,7 +1380,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/idle/Idle_Left_1.png",
         "kind": "image",
         "metadata": "",
@@ -1472,7 +1388,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/idle/Idle_Left_2.png",
         "kind": "image",
         "metadata": "",
@@ -1481,7 +1396,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/idle/Idle_Left_3.png",
         "kind": "image",
         "metadata": "",
@@ -1490,7 +1404,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/move/Move_Left_0.png",
         "kind": "image",
         "metadata": "",
@@ -1499,7 +1412,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/move/Move_Left_1.png",
         "kind": "image",
         "metadata": "",
@@ -1508,7 +1420,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/move/Move_Left_2.png",
         "kind": "image",
         "metadata": "",
@@ -1517,7 +1428,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/move/Move_Left_3.png",
         "kind": "image",
         "metadata": "",
@@ -1526,7 +1436,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/hit/Hit_Left_0.png",
         "kind": "image",
         "metadata": "",
@@ -1535,7 +1444,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/hit/Hit_Left_1.png",
         "kind": "image",
         "metadata": "",
@@ -1544,7 +1452,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/hit/Hit_Left_2.png",
         "kind": "image",
         "metadata": "",
@@ -1553,7 +1460,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/hit/Hit_Left_3.png",
         "kind": "image",
         "metadata": "",
@@ -1562,7 +1468,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/death/Death_Left_0.png",
         "kind": "image",
         "metadata": "",
@@ -1571,7 +1476,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/death/Death_Left_1.png",
         "kind": "image",
         "metadata": "",
@@ -1580,7 +1484,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/death/Death_Left_2.png",
         "kind": "image",
         "metadata": "",
@@ -1589,7 +1492,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/death/Death_Left_3.png",
         "kind": "image",
         "metadata": "",
@@ -1598,7 +1500,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/idle/Idle_Right_0.png",
         "kind": "image",
         "metadata": "",
@@ -1607,7 +1508,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/idle/Idle_Right_1.png",
         "kind": "image",
         "metadata": "",
@@ -1616,7 +1516,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/idle/Idle_Right_2.png",
         "kind": "image",
         "metadata": "",
@@ -1625,7 +1524,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/idle/Idle_Right_3.png",
         "kind": "image",
         "metadata": "",
@@ -1634,7 +1532,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/move/Move_Right_0.png",
         "kind": "image",
         "metadata": "",
@@ -1643,7 +1540,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/move/Move_Right_1.png",
         "kind": "image",
         "metadata": "",
@@ -1652,7 +1548,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/move/Move_Right_2.png",
         "kind": "image",
         "metadata": "",
@@ -1661,7 +1556,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/move/Move_Right_3.png",
         "kind": "image",
         "metadata": "",
@@ -1670,7 +1564,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/hit/Hit_Right_0.png",
         "kind": "image",
         "metadata": "",
@@ -1679,7 +1572,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/hit/Hit_Right_1.png",
         "kind": "image",
         "metadata": "",
@@ -1688,7 +1580,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/hit/Hit_Right_2.png",
         "kind": "image",
         "metadata": "",
@@ -1697,7 +1588,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/hit/Hit_Right_3.png",
         "kind": "image",
         "metadata": "",
@@ -1706,7 +1596,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/death/Death_Right_0.png",
         "kind": "image",
         "metadata": "",
@@ -1715,7 +1604,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/death/Death_Right_1.png",
         "kind": "image",
         "metadata": "",
@@ -1724,7 +1612,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/death/Death_Right_2.png",
         "kind": "image",
         "metadata": "",
@@ -1733,7 +1620,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_guard/animations/death/Death_Right_3.png",
         "kind": "image",
         "metadata": "",
@@ -1742,7 +1628,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/idle/Idle_Down_0.png",
         "kind": "image",
         "metadata": "",
@@ -1751,7 +1636,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/idle/Idle_Down_1.png",
         "kind": "image",
         "metadata": "",
@@ -1760,7 +1644,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/idle/Idle_Down_2.png",
         "kind": "image",
         "metadata": "",
@@ -1769,7 +1652,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/idle/Idle_Down_3.png",
         "kind": "image",
         "metadata": "",
@@ -1778,7 +1660,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/move/Move_Down_0.png",
         "kind": "image",
         "metadata": "",
@@ -1787,7 +1668,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/move/Move_Down_1.png",
         "kind": "image",
         "metadata": "",
@@ -1796,7 +1676,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/move/Move_Down_2.png",
         "kind": "image",
         "metadata": "",
@@ -1805,7 +1684,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/move/Move_Down_3.png",
         "kind": "image",
         "metadata": "",
@@ -1814,7 +1692,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/hit/Hit_Down_0.png",
         "kind": "image",
         "metadata": "",
@@ -1823,7 +1700,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/hit/Hit_Down_1.png",
         "kind": "image",
         "metadata": "",
@@ -1832,7 +1708,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/hit/Hit_Down_2.png",
         "kind": "image",
         "metadata": "",
@@ -1841,7 +1716,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/hit/Hit_Down_3.png",
         "kind": "image",
         "metadata": "",
@@ -1850,7 +1724,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/death/Death_Down_0.png",
         "kind": "image",
         "metadata": "",
@@ -1859,7 +1732,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/death/Death_Down_1.png",
         "kind": "image",
         "metadata": "",
@@ -1868,7 +1740,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/death/Death_Down_2.png",
         "kind": "image",
         "metadata": "",
@@ -1877,7 +1748,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/death/Death_Down_3.png",
         "kind": "image",
         "metadata": "",
@@ -1886,7 +1756,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/idle/Idle_Up_0.png",
         "kind": "image",
         "metadata": "",
@@ -1895,7 +1764,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/idle/Idle_Up_1.png",
         "kind": "image",
         "metadata": "",
@@ -1904,7 +1772,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/idle/Idle_Up_2.png",
         "kind": "image",
         "metadata": "",
@@ -1913,7 +1780,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/idle/Idle_Up_3.png",
         "kind": "image",
         "metadata": "",
@@ -1922,7 +1788,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/move/Move_Up_0.png",
         "kind": "image",
         "metadata": "",
@@ -1931,7 +1796,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/move/Move_Up_1.png",
         "kind": "image",
         "metadata": "",
@@ -1940,7 +1804,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/move/Move_Up_2.png",
         "kind": "image",
         "metadata": "",
@@ -1949,7 +1812,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/move/Move_Up_3.png",
         "kind": "image",
         "metadata": "",
@@ -1958,7 +1820,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/hit/Hit_Up_0.png",
         "kind": "image",
         "metadata": "",
@@ -1967,7 +1828,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/hit/Hit_Up_1.png",
         "kind": "image",
         "metadata": "",
@@ -1976,7 +1836,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/hit/Hit_Up_2.png",
         "kind": "image",
         "metadata": "",
@@ -1985,7 +1844,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/hit/Hit_Up_3.png",
         "kind": "image",
         "metadata": "",
@@ -1994,7 +1852,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/death/Death_Up_0.png",
         "kind": "image",
         "metadata": "",
@@ -2003,7 +1860,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/death/Death_Up_1.png",
         "kind": "image",
         "metadata": "",
@@ -2012,7 +1868,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/death/Death_Up_2.png",
         "kind": "image",
         "metadata": "",
@@ -2021,7 +1876,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/death/Death_Up_3.png",
         "kind": "image",
         "metadata": "",
@@ -2030,7 +1884,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/idle/Idle_Left_0.png",
         "kind": "image",
         "metadata": "",
@@ -2039,7 +1892,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/idle/Idle_Left_1.png",
         "kind": "image",
         "metadata": "",
@@ -2048,7 +1900,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/idle/Idle_Left_2.png",
         "kind": "image",
         "metadata": "",
@@ -2057,7 +1908,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/idle/Idle_Left_3.png",
         "kind": "image",
         "metadata": "",
@@ -2066,7 +1916,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/move/Move_Left_0.png",
         "kind": "image",
         "metadata": "",
@@ -2075,7 +1924,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/move/Move_Left_1.png",
         "kind": "image",
         "metadata": "",
@@ -2084,7 +1932,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/move/Move_Left_2.png",
         "kind": "image",
         "metadata": "",
@@ -2093,7 +1940,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/move/Move_Left_3.png",
         "kind": "image",
         "metadata": "",
@@ -2102,7 +1948,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/hit/Hit_Left_0.png",
         "kind": "image",
         "metadata": "",
@@ -2111,7 +1956,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/hit/Hit_Left_1.png",
         "kind": "image",
         "metadata": "",
@@ -2120,7 +1964,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/hit/Hit_Left_2.png",
         "kind": "image",
         "metadata": "",
@@ -2129,7 +1972,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/hit/Hit_Left_3.png",
         "kind": "image",
         "metadata": "",
@@ -2138,7 +1980,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/death/Death_Left_0.png",
         "kind": "image",
         "metadata": "",
@@ -2147,7 +1988,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/death/Death_Left_1.png",
         "kind": "image",
         "metadata": "",
@@ -2156,7 +1996,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/death/Death_Left_2.png",
         "kind": "image",
         "metadata": "",
@@ -2165,7 +2004,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/death/Death_Left_3.png",
         "kind": "image",
         "metadata": "",
@@ -2174,7 +2012,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/idle/Idle_Right_0.png",
         "kind": "image",
         "metadata": "",
@@ -2183,7 +2020,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/idle/Idle_Right_1.png",
         "kind": "image",
         "metadata": "",
@@ -2192,7 +2028,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/idle/Idle_Right_2.png",
         "kind": "image",
         "metadata": "",
@@ -2201,7 +2036,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/idle/Idle_Right_3.png",
         "kind": "image",
         "metadata": "",
@@ -2210,7 +2044,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/move/Move_Right_0.png",
         "kind": "image",
         "metadata": "",
@@ -2219,7 +2052,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/move/Move_Right_1.png",
         "kind": "image",
         "metadata": "",
@@ -2228,7 +2060,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/move/Move_Right_2.png",
         "kind": "image",
         "metadata": "",
@@ -2237,7 +2068,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/move/Move_Right_3.png",
         "kind": "image",
         "metadata": "",
@@ -2246,7 +2076,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/hit/Hit_Right_0.png",
         "kind": "image",
         "metadata": "",
@@ -2255,7 +2084,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/hit/Hit_Right_1.png",
         "kind": "image",
         "metadata": "",
@@ -2264,7 +2092,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/hit/Hit_Right_2.png",
         "kind": "image",
         "metadata": "",
@@ -2273,7 +2100,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/hit/Hit_Right_3.png",
         "kind": "image",
         "metadata": "",
@@ -2282,7 +2108,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/death/Death_Right_0.png",
         "kind": "image",
         "metadata": "",
@@ -2291,7 +2116,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/death/Death_Right_1.png",
         "kind": "image",
         "metadata": "",
@@ -2300,7 +2124,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/death/Death_Right_2.png",
         "kind": "image",
         "metadata": "",
@@ -2309,7 +2132,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_sentinel/animations/death/Death_Right_3.png",
         "kind": "image",
         "metadata": "",
@@ -2318,7 +2140,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/idle/Idle_Down_0.png",
         "kind": "image",
         "metadata": "",
@@ -2327,7 +2148,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/idle/Idle_Down_1.png",
         "kind": "image",
         "metadata": "",
@@ -2336,7 +2156,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/idle/Idle_Down_2.png",
         "kind": "image",
         "metadata": "",
@@ -2345,7 +2164,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/idle/Idle_Down_3.png",
         "kind": "image",
         "metadata": "",
@@ -2354,7 +2172,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/move/Move_Down_0.png",
         "kind": "image",
         "metadata": "",
@@ -2363,7 +2180,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/move/Move_Down_1.png",
         "kind": "image",
         "metadata": "",
@@ -2372,7 +2188,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/move/Move_Down_2.png",
         "kind": "image",
         "metadata": "",
@@ -2381,7 +2196,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/move/Move_Down_3.png",
         "kind": "image",
         "metadata": "",
@@ -2390,7 +2204,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/hit/Hit_Down_0.png",
         "kind": "image",
         "metadata": "",
@@ -2399,7 +2212,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/hit/Hit_Down_1.png",
         "kind": "image",
         "metadata": "",
@@ -2408,7 +2220,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/hit/Hit_Down_2.png",
         "kind": "image",
         "metadata": "",
@@ -2417,7 +2228,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/hit/Hit_Down_3.png",
         "kind": "image",
         "metadata": "",
@@ -2426,7 +2236,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/death/Death_Down_0.png",
         "kind": "image",
         "metadata": "",
@@ -2435,7 +2244,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/death/Death_Down_1.png",
         "kind": "image",
         "metadata": "",
@@ -2444,7 +2252,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/death/Death_Down_2.png",
         "kind": "image",
         "metadata": "",
@@ -2453,7 +2260,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/death/Death_Down_3.png",
         "kind": "image",
         "metadata": "",
@@ -2462,7 +2268,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/idle/Idle_Up_0.png",
         "kind": "image",
         "metadata": "",
@@ -2471,7 +2276,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/idle/Idle_Up_1.png",
         "kind": "image",
         "metadata": "",
@@ -2480,7 +2284,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/idle/Idle_Up_2.png",
         "kind": "image",
         "metadata": "",
@@ -2489,7 +2292,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/idle/Idle_Up_3.png",
         "kind": "image",
         "metadata": "",
@@ -2498,7 +2300,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/move/Move_Up_0.png",
         "kind": "image",
         "metadata": "",
@@ -2507,7 +2308,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/move/Move_Up_1.png",
         "kind": "image",
         "metadata": "",
@@ -2516,7 +2316,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/move/Move_Up_2.png",
         "kind": "image",
         "metadata": "",
@@ -2525,7 +2324,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/move/Move_Up_3.png",
         "kind": "image",
         "metadata": "",
@@ -2534,7 +2332,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/hit/Hit_Up_0.png",
         "kind": "image",
         "metadata": "",
@@ -2543,7 +2340,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/hit/Hit_Up_1.png",
         "kind": "image",
         "metadata": "",
@@ -2552,7 +2348,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/hit/Hit_Up_2.png",
         "kind": "image",
         "metadata": "",
@@ -2561,7 +2356,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/hit/Hit_Up_3.png",
         "kind": "image",
         "metadata": "",
@@ -2570,7 +2364,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/death/Death_Up_0.png",
         "kind": "image",
         "metadata": "",
@@ -2579,7 +2372,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/death/Death_Up_1.png",
         "kind": "image",
         "metadata": "",
@@ -2588,7 +2380,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/death/Death_Up_2.png",
         "kind": "image",
         "metadata": "",
@@ -2597,7 +2388,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/death/Death_Up_3.png",
         "kind": "image",
         "metadata": "",
@@ -2606,7 +2396,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/idle/Idle_Left_0.png",
         "kind": "image",
         "metadata": "",
@@ -2615,7 +2404,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/idle/Idle_Left_1.png",
         "kind": "image",
         "metadata": "",
@@ -2624,7 +2412,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/idle/Idle_Left_2.png",
         "kind": "image",
         "metadata": "",
@@ -2633,7 +2420,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/idle/Idle_Left_3.png",
         "kind": "image",
         "metadata": "",
@@ -2642,7 +2428,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/move/Move_Left_0.png",
         "kind": "image",
         "metadata": "",
@@ -2651,7 +2436,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/move/Move_Left_1.png",
         "kind": "image",
         "metadata": "",
@@ -2660,7 +2444,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/move/Move_Left_2.png",
         "kind": "image",
         "metadata": "",
@@ -2669,7 +2452,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/move/Move_Left_3.png",
         "kind": "image",
         "metadata": "",
@@ -2678,7 +2460,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/hit/Hit_Left_0.png",
         "kind": "image",
         "metadata": "",
@@ -2687,7 +2468,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/hit/Hit_Left_1.png",
         "kind": "image",
         "metadata": "",
@@ -2696,7 +2476,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/hit/Hit_Left_2.png",
         "kind": "image",
         "metadata": "",
@@ -2705,7 +2484,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/hit/Hit_Left_3.png",
         "kind": "image",
         "metadata": "",
@@ -2714,7 +2492,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/death/Death_Left_0.png",
         "kind": "image",
         "metadata": "",
@@ -2723,7 +2500,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/death/Death_Left_1.png",
         "kind": "image",
         "metadata": "",
@@ -2732,7 +2508,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/death/Death_Left_2.png",
         "kind": "image",
         "metadata": "",
@@ -2741,7 +2516,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/death/Death_Left_3.png",
         "kind": "image",
         "metadata": "",
@@ -2750,7 +2524,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/idle/Idle_Right_0.png",
         "kind": "image",
         "metadata": "",
@@ -2759,7 +2532,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/idle/Idle_Right_1.png",
         "kind": "image",
         "metadata": "",
@@ -2768,7 +2540,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/idle/Idle_Right_2.png",
         "kind": "image",
         "metadata": "",
@@ -2777,7 +2548,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/idle/Idle_Right_3.png",
         "kind": "image",
         "metadata": "",
@@ -2786,7 +2556,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/move/Move_Right_0.png",
         "kind": "image",
         "metadata": "",
@@ -2795,7 +2564,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/move/Move_Right_1.png",
         "kind": "image",
         "metadata": "",
@@ -2804,7 +2572,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/move/Move_Right_2.png",
         "kind": "image",
         "metadata": "",
@@ -2813,7 +2580,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/move/Move_Right_3.png",
         "kind": "image",
         "metadata": "",
@@ -2822,7 +2588,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/hit/Hit_Right_0.png",
         "kind": "image",
         "metadata": "",
@@ -2831,7 +2596,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/hit/Hit_Right_1.png",
         "kind": "image",
         "metadata": "",
@@ -2840,7 +2604,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/hit/Hit_Right_2.png",
         "kind": "image",
         "metadata": "",
@@ -2849,7 +2612,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/hit/Hit_Right_3.png",
         "kind": "image",
         "metadata": "",
@@ -2858,7 +2620,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/death/Death_Right_0.png",
         "kind": "image",
         "metadata": "",
@@ -2867,7 +2628,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/death/Death_Right_1.png",
         "kind": "image",
         "metadata": "",
@@ -2876,7 +2636,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/death/Death_Right_2.png",
         "kind": "image",
         "metadata": "",
@@ -2885,7 +2644,6 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
         "file": "assets/enemies/void_brute/animations/death/Death_Right_3.png",
         "kind": "image",
         "metadata": "",
@@ -2975,9 +2733,9 @@
       },
       {
         "file": "assets/audio/music/ancient_galaxy_ambience.ogg",
-        "name": "assets/audio/music/ancient_galaxy_ambience.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/music/ancient_galaxy_ambience.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
@@ -2985,9 +2743,9 @@
       },
       {
         "file": "assets/audio/music/sacred_void_temple.ogg",
-        "name": "assets/audio/music/sacred_void_temple.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/music/sacred_void_temple.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
@@ -2995,9 +2753,9 @@
       },
       {
         "file": "assets/audio/music/cosmic_defense.ogg",
-        "name": "assets/audio/music/cosmic_defense.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/music/cosmic_defense.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
@@ -3005,9 +2763,9 @@
       },
       {
         "file": "assets/audio/music/void_awakening.ogg",
-        "name": "assets/audio/music/void_awakening.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/music/void_awakening.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": false,
         "preloadInCache": false,
@@ -3015,9 +2773,9 @@
       },
       {
         "file": "assets/audio/tower_sfx/tower_place.ogg",
-        "name": "assets/audio/towers/tower_place.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/towers/tower_place.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": true,
         "preloadInCache": false,
@@ -3025,9 +2783,9 @@
       },
       {
         "file": "assets/audio/tower_sfx/tower_upgrade.ogg",
-        "name": "assets/audio/towers/tower_upgrade.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/towers/tower_upgrade.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": true,
         "preloadInCache": false,
@@ -3035,9 +2793,9 @@
       },
       {
         "file": "assets/audio/tower_sfx/tower_major_upgrade.ogg",
-        "name": "assets/audio/towers/tower_major_upgrade.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/towers/tower_major_upgrade.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": true,
         "preloadInCache": false,
@@ -3045,9 +2803,9 @@
       },
       {
         "file": "assets/audio/tower_sfx/tower_sell.ogg",
-        "name": "assets/audio/towers/tower_sell.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/towers/tower_sell.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": true,
         "preloadInCache": false,
@@ -3055,9 +2813,9 @@
       },
       {
         "file": "assets/audio/tower_sfx/star_cannon_fire.ogg",
-        "name": "assets/audio/towers/star_cannon_fire.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/towers/star_cannon_fire.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": true,
         "preloadInCache": false,
@@ -3065,9 +2823,9 @@
       },
       {
         "file": "assets/audio/tower_sfx/projectile_impact.ogg",
-        "name": "assets/audio/towers/projectile_impact.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/towers/projectile_impact.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": true,
         "preloadInCache": false,
@@ -3075,9 +2833,9 @@
       },
       {
         "file": "assets/audio/enemy_sfx/enemy_hit.ogg",
-        "name": "assets/audio/enemies/enemy_hit.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/enemies/enemy_hit.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": true,
         "preloadInCache": false,
@@ -3085,9 +2843,9 @@
       },
       {
         "file": "assets/audio/enemy_sfx/common_enemy_death.ogg",
-        "name": "assets/audio/enemies/common_enemy_death.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/enemies/common_enemy_death.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": true,
         "preloadInCache": false,
@@ -3095,9 +2853,9 @@
       },
       {
         "file": "assets/audio/enemy_sfx/elite_enemy_death.ogg",
-        "name": "assets/audio/enemies/elite_enemy_death.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/enemies/elite_enemy_death.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": true,
         "preloadInCache": false,
@@ -3105,9 +2863,9 @@
       },
       {
         "file": "assets/audio/skills/void_golem_skill.ogg",
-        "name": "assets/audio/skills/void_golem_skill.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/skills/void_golem_skill.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": true,
         "preloadInCache": false,
@@ -3115,9 +2873,9 @@
       },
       {
         "file": "assets/audio/skills/void_fortification_apply.ogg",
-        "name": "assets/audio/skills/void_fortification_apply.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/skills/void_fortification_apply.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": true,
         "preloadInCache": false,
@@ -3125,9 +2883,9 @@
       },
       {
         "file": "assets/audio/waves/wave_start.ogg",
-        "name": "assets/audio/waves/wave_start.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/waves/wave_start.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": true,
         "preloadInCache": false,
@@ -3135,9 +2893,9 @@
       },
       {
         "file": "assets/audio/waves/milestone_wave.ogg",
-        "name": "assets/audio/waves/milestone_wave.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/waves/milestone_wave.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": true,
         "preloadInCache": false,
@@ -3145,9 +2903,9 @@
       },
       {
         "file": "assets/audio/waves/wave_complete.ogg",
-        "name": "assets/audio/waves/wave_complete.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/waves/wave_complete.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": true,
         "preloadInCache": false,
@@ -3155,9 +2913,9 @@
       },
       {
         "file": "assets/audio/gameplay/gold_reward.ogg",
-        "name": "assets/audio/gameplay/gold_reward.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/gameplay/gold_reward.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": true,
         "preloadInCache": false,
@@ -3165,9 +2923,9 @@
       },
       {
         "file": "assets/audio/gameplay/base_damage.ogg",
-        "name": "assets/audio/gameplay/base_damage.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/gameplay/base_damage.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": true,
         "preloadInCache": false,
@@ -3175,9 +2933,9 @@
       },
       {
         "file": "assets/audio/gameplay/game_over.ogg",
-        "name": "assets/audio/gameplay/game_over.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/gameplay/game_over.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": true,
         "preloadInCache": false,
@@ -3185,9 +2943,9 @@
       },
       {
         "file": "assets/audio/gameplay/victory.ogg",
-        "name": "assets/audio/gameplay/victory.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/gameplay/victory.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": true,
         "preloadInCache": false,
@@ -3195,9 +2953,9 @@
       },
       {
         "file": "assets/audio/ui_sfx/ui_click.ogg",
-        "name": "assets/audio/ui/ui_click.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/ui/ui_click.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": true,
         "preloadInCache": false,
@@ -3205,9 +2963,9 @@
       },
       {
         "file": "assets/audio/ui_sfx/invalid_action.ogg",
-        "name": "assets/audio/ui/invalid_action.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/ui/invalid_action.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": true,
         "preloadInCache": false,
@@ -3215,9 +2973,9 @@
       },
       {
         "file": "assets/audio/ui_sfx/tower_select.ogg",
-        "name": "assets/audio/ui/tower_select.ogg",
         "kind": "audio",
         "metadata": "",
+        "name": "assets/audio/ui/tower_select.ogg",
         "preloadAsMusic": false,
         "preloadAsSound": true,
         "preloadInCache": false,
@@ -3225,9 +2983,9 @@
       },
       {
         "file": "assets/ui/icons/audio_speaker.svg",
-        "name": "assets/ui/audio_speaker.svg",
         "kind": "image",
         "metadata": "",
+        "name": "assets/ui/audio_speaker.svg",
         "smoothed": true,
         "userAdded": true
       }
@@ -3270,7 +3028,8 @@
         "",
         "const buttons = harness.getObjects('TileType_Button');",
         "harness.assert(buttons.length > 0, 'The toolbar has tile types to pick from.');",
-        "harness.assert(buttons.length === 1, \"Only Star Cannon is available.\");\nconst button = buttons[0];",
+        "harness.assert(buttons.length === 1, \"Only Star Cannon is available.\");",
+        "const button = buttons[0];",
         "console.log(",
         "  'buttons=' + JSON.stringify(buttons.map((one) => one.animation)) +",
         "    ' layer=' + JSON.stringify(button.layer)",

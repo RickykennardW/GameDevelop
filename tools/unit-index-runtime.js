@@ -30,6 +30,7 @@ const down = input.isMouseButtonPressed(0);
 if (!open) {
   runtimeScene.getLayer("IndexUI").show(false); runtimeScene.getLayer("IndexList").show(false);
   index.wasDown = down; index.pressed = ""; index.dragging = false;
+  index.renderKey=null;
   return;
 }
 const mx = gdjs.evtTools.input.getCursorX(runtimeScene,"IndexUI",0), my = gdjs.evtTools.input.getCursorY(runtimeScene,"IndexUI",0);
@@ -54,7 +55,7 @@ const entries=index.category==="Towers" ? catalog.map(item=>{
   const values=Object.fromEntries(definition.variables.map(v=>[v.name,v.value]));
   return {name:values.TowerName||item.Name,animation:item.IconAnimation||item.Type,damage:values.Damage,range:values.AttackRange,cooldown:values.AttackInterval,price:item.Cost,
     projectileSpeed:values.ProjectileSpeed, special:"Cosmic cannon / 2 UPGRADE PATHS.",type:item.Type};
-}).filter(Boolean) : ["Basic","VoidHound","VoidGuard","VoidSentinel","VoidBrute","VoidGolem"].filter(name=>archetypes[name]).map(name=>({name:archetypes[name].Name||name,...archetypes[name],role:roles[name]||(archetypes[name].Role+" / Armor "+archetypes[name].Armor+" / No special ability / Wave "+archetypes[name].MinimumWave+"+")}));
+}).filter(Boolean) : runtimeScene.__monsterDiscovery.ids.map(name=>({typeId:name,name:archetypes[name].Name||name,...archetypes[name],role:roles[name]||(archetypes[name].Role+" / Armor "+archetypes[name].Armor+" / No special ability / Wave "+archetypes[name].MinimumWave+"+")}));
 index.entries=entries;
 const heights=entries.map(e=>e.type==="StarCannonTower"?470:148), offsets=[];let total=0;heights.forEach(h=>{offsets.push(total);total+=h+12;});
 const stride=160, maxScroll=Math.max(0,total-12-content.h);
@@ -65,6 +66,9 @@ if(down&&!index.wasDown&&inside(trackX-3,content.y,14,content.h)){index.dragging
 if(down&&index.dragging)index.scroll=index.dragScroll+(my-index.dragY)*maxScroll/Math.max(1,content.h-thumbHeight);
 if(!down)index.dragging=false;
 index.scroll=Math.max(0,Math.min(maxScroll,index.scroll));index.maxScroll=maxScroll;
+const renderKey=JSON.stringify([index.category,index.scroll,width,height,hover,open,runtimeScene.__monsterDiscovery.revision]);
+if(index.renderKey===renderKey){index.wasDown=down;if(!down)index.pressed="";return;}
+index.renderKey=renderKey;index.renderCount=(index.renderCount||0)+1;
 const panel=(key,a,b,c,d,color,opacity=255,layer="IndexUI",z=1)=>{
   const o=index.ensure(key,"IndexPanel",layer,z);o.setPosition(a,b);o.setWidth(c);o.setHeight(d);o.setColor(color);o.setOpacity(opacity);o.hide(false);return o;
 };
@@ -75,7 +79,7 @@ Object.values(index.objects).forEach(o=>o.hide());
 panel("shade",0,0,width,height,"20;29;23",190,"IndexUI",0);
 panel("frame",x,y,w,h,"255;255;255");
 text("title","UNIT INDEX",x+22,y+16,w-44,24,"239;232;255",true);
-text("subtitle","Field guide  /  Live gameplay stats",x+22,y+44,w-44,12,"170;159;196");
+text("subtitle",index.category==="Monsters"?"MONSTER DISCOVERY  /  "+runtimeScene.__monsterDiscovery.found.size+" / "+entries.length+" DISCOVERED":"Field guide  /  Live gameplay stats",x+22,y+44,w-44,12,"170;159;196");
 for(const [i,category] of ["Towers","Monsters"].entries()){
   const tx=x+20+i*(tabWidth+8),active=index.category===category;
   panel("tab"+i,tx,y+62,tabWidth,32,active?"163;138;206":"87;67;120");
@@ -88,8 +92,10 @@ entries.forEach((entry,i)=>{
   panel("card"+i,cx,cy,cw,cardHeight,"87;66;115",255,"IndexList",0);
   panel("portrait"+i,cx+12,cy+12,80,124,"115;86;145",255,"IndexList",1);
   const monster=index.category==="Monsters", sprite=index.ensure((monster?"monster":"tower")+i,monster?"IndexMonsterImage":"IndexTowerImage","IndexList",2);
+  const locked=monster&&!runtimeScene.__monsterDiscovery.has(entry.typeId);sprite.__discoveryLocked=locked;
+  if(monster)sprite.__discoveryPortrait={id:entry.typeId,x:cx+52,y:cy+74,w:66,h:96};
   sprite.setAnimationName(monster?(entry.Animation||"NovaIdle_Down"):entry.animation);
-  sprite.setColor(monster?entry.Tint:"255;255;255");
+  sprite.setColor(locked?"0;0;0":monster?entry.Tint:"255;255;255");
   // Fit each existing image to the portrait; no real gameplay unit is created.
   if(monster&&entry.Animation?.startsWith('VoidGolem')){
     sprite.setWidth(64);sprite.setHeight(64);sprite.setPosition(cx+20,cy+42);runtimeScene.__voidGolem?.portrait(sprite,cx+52,cy+74,100);
@@ -100,10 +106,11 @@ entries.forEach((entry,i)=>{
     sprite.setPosition(cx+52-sprite.getWidth()/2,cy+74-sprite.getHeight()/2);
   }
   sprite.hide(false);
-  const name=text("name"+i,entry.name,cx+108,cy+12,cw-124,20,"237;228;255",true,"IndexList");
-  const stats=monster?"HP: "+entry.HP+"     Speed: "+entry.Speed+"\nGold Reward: "+entry.Reward+" Gold":"Damage: "+entry.damage+"     Range: "+entry.range+"\nCooldown: "+Number(entry.cooldown).toFixed(2)+" s     Price: "+entry.price+" Gold";
+  const name=text("name"+i,locked?"???":entry.name,cx+108,cy+12,monster?cw-246:cw-124,20,"237;228;255",true,"IndexList");
+  if(monster)text("discoveryStatus"+i,locked?"UNDISCOVERED":"DISCOVERED",cx+cw-126,cy+18,116,10,locked?"150;125;180":"161;204;229",true,"IndexList");
+  const stats=locked?"HP: ???     Speed: ???\nGold Reward: ???":monster?"HP: "+entry.HP+"     Speed: "+entry.Speed+"\nGold Reward: "+entry.Reward+" Gold":"Damage: "+entry.damage+"     Range: "+entry.range+"\nCooldown: "+Number(entry.cooldown).toFixed(2)+" s     Price: "+entry.price+" Gold";
   const statText=text("stats"+i,stats,cx+108,cy+44,cw-124,15,"218;206;241",false,"IndexList");
-  const special=text("special"+i,(monster?"ROLE\n":"SPECIAL\n")+(monster?entry.role:entry.special),cx+108,cy+92,cw-124,13,"181;168;214",false,"IndexList");
+  const special=text("special"+i,locked?"ABILITY: ???\nNot yet discovered.":(monster?"ROLE\n":"SPECIAL\n")+(monster?entry.role:entry.special),cx+108,cy+92,cw-124,13,"181;168;214",false,"IndexList");
   if(entry.type==="StarCannonTower") {
     const isStar=entry.type==="StarCannonTower",prefix="star";
     text(prefix+"Speed", "Star speed: "+entry.projectileSpeed+" px/s",cx+108,cy+130,cw-124,12,"181;168;214",false,"IndexList");
