@@ -8,7 +8,7 @@ Project utama adalah `Tower Defense.json`; scene terpisah berada di `layouts/gam
 
 ## Sistem yang dipertahankan
 
-- Satu Star Cannon resmi, harga 300 Gold, 21 kombinasi upgrade valid dari dua path. 21 Base, 21 Turret dan21 preview state tetap tersedia. Rotation, muzzle, homing, splash, sell dan collision tetap pada source existing.
+- Satu Star Cannon resmi, harga 300 Gold, desain Nova Spike, 27 kombinasi upgrade valid dari dua path sampai Lv5. Base tetap diam, chassis dan core mengikuti pivot bersama, barrel recoil independen. Path 1 memakai Nova setiap tembakan keempat, Armor Fracture dan Lance lurus; Path 2 memakai muzzle bergantian, Rhythm dan Overdrive. Targeting, sell dan footprint tetap pada sistem existing.
 - Nova Wisp, Void Hound, Void Guard, Void Sentinel, Void Brute dan elite Void Golem menggunakan object Enemy bersama. Animasi arah/state, armor, HP, movement, death dan HP bars tetap tersedia.
 - Golem memakai stationary cast dan Void Fortification: konfigurasi authoritative ada pada `VoidGolemConfig`, bukan file metadata eksperimen lama.
 - Map Celestial Void, waypoints, Spawn/Base, obstacle blockers/removal, Tower Shop, Selected Upgrade Panel, Index, HUD dan camera tetap.
@@ -20,8 +20,8 @@ Gunakan scene variables sebagai sumber authoritative:
 
 | Variable | Fungsi |
 |---|---|
-| `StarCannonConfig` | Stats dan dua upgrade path |
-| `StarComponentConfig` | Seluruh pivot, muzzle, socket, hull dan scale 21 kombinasi |
+| `StarCannonConfig` | Stats, additive modifiers, harga, Nova, Fracture, Rhythm, Overdrive dan Lance |
+| `StarComponentConfig` | Atlas frames, modular parts, pivot, muzzle, hull, scale dan recoil 27 kombinasi |
 | `NovaWispConfig.Views` | Atlas/crop/anchor Nova Wisp |
 | `VoidHoundConfig.Views` | Atlas/crop/anchor Hound |
 | `VoidCommonConfig` dan object Enemy animations | Frame state/direction Guard, Sentinel dan Brute |
@@ -47,7 +47,9 @@ Runtime memakai crossfade 3s, looping native, maksimal 2 BGM dan 12 SFX, rate li
 
 `tools/validate-project.py` memeriksa JSON, split references, resource paths/casing, object folders/groups, instance layers, source/event consistency, audio hashes, asset yang tidak didaftarkan, dan ketiadaan backup. Tool tidak menyimpan isi JSON project untuk pemulihan.
 
-`tools/validate-clean-project.cjs` memakai libGD serta runtime GDevelop yang terpasang untuk compile/export native, dan membersihkan hanya direktori build preview khusus sebelum regenerasi. Ia tidak membuat project source copy. `run-clean-validation.py` dan tujuh suite native memeriksa placement, 21 upgrade combinations, rotation/muzzle, projectile, enemy, HP bars, obstacle removal, UI, camera dan seluruh 45-wave rules.
+`tools/validate-clean-project.cjs` memakai libGD serta runtime GDevelop yang terpasang untuk compile/export native, dan membersihkan hanya direktori build preview khusus sebelum regenerasi. Ia tidak membuat project source copy. `run-clean-validation.py` dan delapan suite native memeriksa placement, 27 upgrade combinations, rotation/muzzle, projectile, enemy, HP bars, obstacle removal, UI, camera dan seluruh 45-wave rules.
+
+`tools/build-nova-spike.py` menyusun preview dan konfigurasi frame dari sebelas atlas artwork final di `assets/towers/star_cannon/nova_spike/atlases/`. Seluruh 27 komposit PNG dipakai oleh object native untuk editor/shop/ghost/Index/Selected Panel; renderer world menyusun bagian atlas yang sama. Perulangan build mempertahankan balancing Nova Spike yang sudah ada. `tools/nova-spike-prompts.json` menyimpan prompt produksi image_gen, termasuk koreksi unit barrel Rhythm. Jalankan embedding dan compile ulang setelah perubahan source. Rincian parameter, file dan pengujian ada di `NOVA_SPIKE_REPORT.md`.
 
 `preview-smoke.js`, fixture audio, dan driver `balance-browser.py` dipertahankan karena benar-benar dipakai untuk pemeriksaan preview/loop/volume/SFX. Artefak pengembangan dan hasil test historis dihapus; `validation/` berisi bukti terbaru. Cache/toolchain bersama di luar project bukan dependency folder yang disalin ke project dan tidak dihapus.
 

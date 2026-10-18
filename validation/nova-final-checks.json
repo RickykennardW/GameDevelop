@@ -1,0 +1,20 @@
+{
+  "nativeSuites": {
+    "test-clean-project": 354,
+    "test-nova-spike": 731,
+    "test-nova-wisp": 14532,
+    "test-void-hound": 117,
+    "test-void-common": 636,
+    "test-healthbars-balance": 184,
+    "test-void-golem": 552,
+    "test-gold-budget": 7486
+  },
+  "totalNativeChecks": 24592,
+  "oldStarAssetsRemoved": 81,
+  "newResourceCount": 119,
+  "alphaAndEnvelopeChecks": 98,
+  "noBackupCreated": true,
+  "audioChecks": 44,
+  "discoveryChecks": 53,
+  "staticChecks": 5310
+}

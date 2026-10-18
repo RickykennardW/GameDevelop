@@ -1,0 +1,25 @@
+{
+  "changes": [
+    "object:TilePlacement_Indicator",
+    "object:TileType_Button",
+    "object:IndexTowerImage",
+    "object:SelectedTowerPreview",
+    "object:StarUpgradeIcon",
+    "object:StarCannonTower",
+    "object:StarCannonProjectile",
+    "object:StarCannonImpact",
+    "object:StarCannonBaseVisual",
+    "object:StarCannonTurretVisual",
+    "variable:TowerFootprints",
+    "variable:StarCannonConfig",
+    "variable:StarComponentConfig"
+  ],
+  "inlineEventsChanged": [
+    "/1/events/0",
+    "/1/events/1",
+    "/10/events/0/events/4",
+    "/10/events/5",
+    "/16/events/0"
+  ],
+  "otherDataUnchanged": true
+}

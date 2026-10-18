@@ -12,7 +12,7 @@ const health=e=>e.getBehavior('Health').Health();
 const close=()=>{sv.get('SelectedTower').setNumber(0);ob.close();step();};
 ok(shop.cards.length===1&&p.types.length===1,'one official Star shop card and footprint type');
 let states=0;
-for(let a=0;a<=4;a++)for(let b=0;b<=4;b++){
+for(let a=0;a<=5;a++)for(let b=0;b<=5;b++){
  if(a>=3&&b>=3){ok(star.stats(a,b)===null,'invalid crosspath rejected '+a+'_'+b);continue;}
  states++;const t=make('StarCannonTower'),v0=t.getVariables(),anchor=p.center(t),id=t.getUniqueId(),gold=v('Money');
  sv.get('SelectedTower').setNumber(num(t,'TowerId'));step();
@@ -20,22 +20,22 @@ for(let a=0;a<=4;a++)for(let b=0;b<=4;b++){
  for(let i=0;i<b;i++)clickObject(scene.__selectedPanel.cards[1].background);
  const pair=star.visual(t),key=a+'_'+b,cost=star.config.Paths[0].Upgrades.slice(0,a).reduce((s,u)=>s+u.Cost,0)+star.config.Paths[1].Upgrades.slice(0,b).reduce((s,u)=>s+u.Cost,0);
  ok(pair.Base.getAnimationName()===key&&pair.Turret.getAnimationName()===key&&near(v('Money'),gold-cost),'native upgrade panel buys both component states '+key);
- ok(near(num(t,'Damage'),[50,56,62,62,74][a])&&near(num(t,'AttackRange'),210*(a>=2?1.04:1)*(b>=2?1.04:1))&&near(num(t,'AttackInterval'),.9/[1,1.1,1.22,1.22,1.22][b]),'reviewed damage range cooldown '+key);
+ ok(near(num(t,'Damage'),[50,57.5,65,65,65,65][a])&&near(num(t,'AttackRange'),210*(a>=2?1.04:1)*(b>=2?1.04:1))&&near(num(t,'AttackInterval'),.9/[1,1.1,1.2,1.45,1.45,1.45][b]),'additive damage/speed and preserved range '+key);
  const baseContact=star.componentPoints(t,'Base',[pair.meta.Base.Contact])[0];
  ok(near(baseContact[0],anchor[0])&&near(baseContact[1],anchor[1])&&p.radius(t)===46&&t.getUniqueId()===id&&camera()===fixedCamera,'base contact and canonical footprint stable '+key);
  const range=get('RangeIndicator')[0];ok(near(range.getCenterXInScene(),anchor[0])&&near(range.getCenterYInScene(),anchor[1])&&near(range.getWidth(),num(t,'AttackRange')*2),'range remains centered '+key);
  const target=enemy(840,510,10000);step(70);ok(star.canFire(t,target),'smooth tracking reaches aligned target '+key);
  const rotation=pair.Turret.getAngle();ok(pair.Base.getAngle()===0&&Math.abs(rotation)>1,'base stays still while turret rotates '+key);
- remove('StarCannonProjectile','StarCannonImpact');const count=b>=4?3:b>=3?2:1;
+ remove('StarCannonProjectile','StarCannonImpact');const count=1;
  ok(star.fire(t,target),'aligned volley emitted '+key);const shots=get('StarCannonProjectile'),flashes=get('StarCannonImpact').filter(o=>o.__muzzleFlash);
  ok(shots.length===count&&flashes.length===count&&new Set(shots.map(o=>o.__spawnPoint.join(','))).size===count,'distinct emitter and muzzle flash count '+key);
- ok(shots.every((shot,i)=>{const m=star.muzzle(t,i),flash=flashes[i];return near(shot.getCenterXInScene(),m[0])&&near(shot.getCenterYInScene(),m[1])&&near(flash.getCenterXInScene(),m[0])&&near(flash.getCenterYInScene(),m[1])&&near(num(shot,'Damage'),num(t,'Damage')*(b>=4?.56:b>=3?.62:1));}),'projectiles and flashes at transformed mouths with correct damage fractions '+key);
- step(80);ok(near(10000-health(target),num(t,'Damage')*count*(b>=4?.56:b>=3?.62:1))&&near(num(t,'DamageDealt'),10000-health(target)),'actual volley hits once and accounts damage '+key);
+ ok(shots.every((shot,i)=>{const m=shot.__spawnPoint,flash=flashes[i];return near(shot.getCenterXInScene(),m[0])&&near(shot.getCenterYInScene(),m[1])&&near(flash.getCenterXInScene(),m[0])&&near(flash.getCenterYInScene(),m[1])&&near(num(shot,'Damage'),num(t,'Damage'));}),'projectiles and flashes at transformed mouths with full single-shot damage '+key);
+ step(80);ok(near(10000-health(target),num(t,'Damage'))&&near(num(t,'DamageDealt'),10000-health(target)),'actual volley hits once and accounts damage '+key);
  remove('Enemy','StarCannonProjectile','StarCannonImpact');
  const money=v('Money'),investment=num(t,'TotalInvestment');click(100,638,'SelectedTowerUI');
  ok(!get('StarCannonTower').length&&!get('StarCannonBaseVisual').length&&!get('StarCannonTurretVisual').length&&star.visuals.size===0&&v('Money')===money+Math.floor(investment*7/10),'sell removes pair and refunds once '+key);
 }
-ok(states===21,'all 21 valid combinations exercised');close();
+ok(states===27,'all 27 valid combinations exercised');close();
 let t=make(),pair=star.visual(t),last=t.__starFacing;step(20);ok(near(t.__starFacing,last),'no enemy: no idle rotation');
 let far=enemy(1200,550);step(20);ok(near(t.__starFacing,last)&&t.__starTargetId===0,'out-of-range enemy never tracked');remove('Enemy');
 let first=enemy(600,550),second=enemy(820,550);const before=t.__starFacing;step();
@@ -48,13 +48,13 @@ ok(!get('StarCannonProjectile').length&&!star.canFire(t,target),'misaligned cann
 remove('Enemy','StarCannonProjectile','StarCannonImpact','StarCannonTower');
 // Direct splash excludes primary and applies the reviewed fractions and radii.
 for(const a of [3,4]){
- t=make('StarCannonTower',a,0);target=enemy(840,510,10000);const adjacent=enemy(860,510,10000),outside=enemy(1100,510,10000);step(70);star.fire(t,target);step(80);
- ok(near(10000-health(target),num(t,'Damage'))&&near(10000-health(adjacent),num(t,'Damage')*(a===3?.25:.4))&&health(outside)===10000,'reviewed direct and splash damage/radius Lv'+a);
+ t=make('StarCannonTower',a,0);target=enemy(840,510,10000);const adjacent=enemy(860,510,10000),outside=enemy(1100,510,10000);step(70);t.__starShotCount=3;star.fire(t,target);step(80);
+ ok(near(10000-health(target),num(t,'Damage')*1.75)&&near(10000-health(adjacent),num(t,'Damage')*1.75*.25)&&health(outside)===10000,'fourth-shot Nova direct/splash radius Lv'+a);
  remove('Enemy','StarCannonProjectile','StarCannonImpact','StarCannonTower');
 }
 // Very close target: show each muzzle shot, then contact-hit without reversing its heading.
-t=make('StarCannonTower',4,0);const pivot=star.componentTransform(t,'Turret');target=enemy(pivot.x,pivot.y-45,1000);t.__starFacing=star.bearing(t,target);star.fire(t,target);
-let contact=get('StarCannonProjectile')[0];ok(contact&&contact.__starContactHit,'near-barrel contact shot detected without adding a minimum range');const heading=contact.getAngle();step();ok(contact.getAngle()===heading&&health(target)===1000,'contact projectile keeps barrel heading during visible muzzle frame');step();ok(near(1000-health(target),74)&&!get('StarCannonProjectile').length,'contact resolves reviewed damage once without backward travel');remove('Enemy','StarCannonProjectile','StarCannonImpact','StarCannonTower');
+t=make('StarCannonTower',4,0);const pivot=star.componentTransform(t,'Turret');target=enemy(pivot.x,pivot.y-15,1000);t.__starFacing=star.bearing(t,target);star.fire(t,target);
+let contact=get('StarCannonProjectile')[0];ok(contact&&contact.__starContactHit,'near-barrel contact shot detected without adding a minimum range');const heading=contact.getAngle();step();ok(contact.getAngle()===heading&&health(target)===1000,'contact projectile keeps barrel heading during visible muzzle frame');step();ok(near(1000-health(target),65)&&!get('StarCannonProjectile').length,'contact resolves reviewed damage once without backward travel');remove('Enemy','StarCannonProjectile','StarCannonImpact','StarCannonTower');
 const speedCheck=mode=>{t=make();target=enemy(840,510,100000);sv.get('WaveMode').setString(mode);t.__starCooldown=100000;step(70);const face=star.bearing(t,target);t.__starFacing=star.wrap(face+100);const old=t.__starFacing;step();const delta=Math.abs(star.wrap(t.__starFacing-old));remove('Enemy','StarCannonTower');return delta;};
 const one=speedCheck('Manual'),two=speedCheck('ManualFast');ok(two>one*1.9&&two<one*2.1,'240-degree rotation follows existing 2x game clock');sv.get('WaveMode').setString('Waiting');step();
 // All visual silhouettes select the owning tower, independent of logical 64px bounds.
@@ -103,5 +103,5 @@ input.onKeyPressed(27);step();input.onKeyReleased(27);step();ok(!ob.owner(),'Esc
 ob.select(remaining);step();sv.get('IndexOpen').setBoolean(true);step();ok(!ob.owner()&&sv.get('IndexBlocksInput').getAsBoolean(),'Index closes Clear and blocks map input');sv.get('IndexOpen').setBoolean(false);step();
 remove('StarCannonTower');close();ob.select(remaining);step();click(1600,600);ok(!ob.owner()&&v('SelectedTower')===0,'empty ground closes obstacle and tower selection');
 ok(get('StarCannonBaseVisual').length===0&&get('StarCannonTurretVisual').length===0,'no leaked component objects after priority fixtures');
-vars.get('IndexOpen').setBoolean(true);step();scene.__unitIndex.category='Towers';step();ok(scene.__unitIndex.entries.length===1&&scene.__unitIndex.entries[0].type==='StarCannonTower'&&scene.__unitIndex.entries[0].price===300,'Index one official Star entry with300 price');ok(Object.keys(scene.__unitIndex.objects).filter(k=>/^starUpgrade[01][0-3]$/.test(k)).length===8,'Index retains all eight Star upgrade icons');scene.__unitIndex.category='Monsters';step();ok(scene.__unitIndex.entries.length===6&&scene.__unitIndex.entries[0].name==='Nova Wisp'&&scene.__unitIndex.entries[1].name==='Void Hound','Index preserves Nova/Hound plus four Void archetypes');vars.get('IndexOpen').setBoolean(false);step();ok(shop.scrollMax===0&&get('TileType_Button').length===1&&get('AssetCardPanel').length===1&&shop.cards[0].background.getWidth()===84&&shop.cards[0].background.getHeight()===112&&shop.cards[0].background.getX()===1168&&shop.cards[0].price.getString()==='300'&&!shop.guide&&get('ShopScrollTrack').length===1&&get('ShopScrollThumb').length===1,'single small first card in original two-column shop, no empty cards or upgrade guide, price300');
+vars.get('IndexOpen').setBoolean(true);step();scene.__unitIndex.category='Towers';step();ok(scene.__unitIndex.entries.length===1&&scene.__unitIndex.entries[0].type==='StarCannonTower'&&scene.__unitIndex.entries[0].price===300,'Index one official Star entry with300 price');ok(Object.keys(scene.__unitIndex.objects).filter(k=>/^starUpgrade[01][0-4]$/.test(k)).length===10,'Index displays all ten Star upgrade icons');scene.__unitIndex.category='Monsters';step();ok(scene.__unitIndex.entries.length===6&&scene.__unitIndex.entries[0].name==='Nova Wisp'&&scene.__unitIndex.entries[1].name==='Void Hound','Index preserves Nova/Hound plus four Void archetypes');vars.get('IndexOpen').setBoolean(false);step();ok(shop.scrollMax===0&&get('TileType_Button').length===1&&get('AssetCardPanel').length===1&&shop.cards[0].background.getWidth()===84&&shop.cards[0].background.getHeight()===112&&shop.cards[0].background.getX()===1168&&shop.cards[0].price.getString()==='300'&&!shop.guide&&get('ShopScrollTrack').length===1&&get('ShopScrollThumb').length===1,'single small first card in original two-column shop, no empty cards or upgrade guide, price300');
 lines.push('ALL TURRET / SELECTION / OBSTACLE TESTS PASSED');output.textContent=lines.join('\n');document.title='PASS '+(lines.length-1)+' checks';

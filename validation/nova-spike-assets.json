@@ -1,0 +1,338 @@
+{
+  "stateCount": 27,
+  "atlasCount": 11,
+  "newResources": 119,
+  "oldResourcesRemoved": [
+    {
+      "file": "assets/towers/star_cannon/effects/impacts/Impact_Barrage.svg",
+      "bytes": 1014
+    },
+    {
+      "file": "assets/towers/star_cannon/effects/impacts/Impact_Base.svg",
+      "bytes": 922
+    },
+    {
+      "file": "assets/towers/star_cannon/effects/impacts/Impact_Explosion.svg",
+      "bytes": 1012
+    },
+    {
+      "file": "assets/towers/star_cannon/effects/impacts/Impact_Supernova.svg",
+      "bytes": 1012
+    },
+    {
+      "file": "assets/towers/star_cannon/projectiles/Projectile_Base.svg",
+      "bytes": 1048
+    },
+    {
+      "file": "assets/towers/star_cannon/projectiles/Projectile_Explosion.svg",
+      "bytes": 1241
+    },
+    {
+      "file": "assets/towers/star_cannon/projectiles/Projectile_Meteor.svg",
+      "bytes": 1176
+    },
+    {
+      "file": "assets/towers/star_cannon/projectiles/Projectile_Reinforced.svg",
+      "bytes": 1145
+    },
+    {
+      "file": "assets/towers/star_cannon/projectiles/Projectile_Supernova.svg",
+      "bytes": 1208
+    },
+    {
+      "file": "assets/towers/star_cannon/projectiles/Projectile_Twin.svg",
+      "bytes": 1142
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_0_0.png",
+      "bytes": 848322
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_0_1.png",
+      "bytes": 884084
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_0_2.png",
+      "bytes": 1061488
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_0_3.png",
+      "bytes": 1041100
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_0_4.png",
+      "bytes": 1171510
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_1_0.png",
+      "bytes": 875774
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_1_1.png",
+      "bytes": 1024864
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_1_2.png",
+      "bytes": 1196364
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_1_3.png",
+      "bytes": 1284095
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_1_4.png",
+      "bytes": 1235920
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_2_0.png",
+      "bytes": 1144139
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_2_1.png",
+      "bytes": 1459788
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_2_2.png",
+      "bytes": 1177271
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_2_3.png",
+      "bytes": 1238012
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_2_4.png",
+      "bytes": 1498953
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_3_0.png",
+      "bytes": 1416843
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_3_1.png",
+      "bytes": 1231891
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_3_2.png",
+      "bytes": 1267985
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_4_0.png",
+      "bytes": 1224666
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_4_1.png",
+      "bytes": 1128754
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_states/Star_Cannon_4_2.png",
+      "bytes": 1185343
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_icons/Upgrade_HeavyImpact.svg",
+      "bytes": 913
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_icons/Upgrade_MeteorBarrage.svg",
+      "bytes": 1012
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_icons/Upgrade_PrecisionCore.svg",
+      "bytes": 978
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_icons/Upgrade_RapidFire.svg",
+      "bytes": 852
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_icons/Upgrade_ReinforcedCore.svg",
+      "bytes": 912
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_icons/Upgrade_StarExplosion.svg",
+      "bytes": 928
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_icons/Upgrade_Supernova.svg",
+      "bytes": 947
+    },
+    {
+      "file": "assets/towers/star_cannon/upgrade_icons/Upgrade_TwinStar.svg",
+      "bytes": 900
+    },
+    {
+      "file": "assets/towers/star_cannon/base/StarCannon_Base_0_0.png",
+      "bytes": 658222
+    },
+    {
+      "file": "assets/towers/star_cannon/base/StarCannon_Base_0_1.png",
+      "bytes": 521008
+    },
+    {
+      "file": "assets/towers/star_cannon/base/StarCannon_Base_0_2.png",
+      "bytes": 654846
+    },
+    {
+      "file": "assets/towers/star_cannon/base/StarCannon_Base_0_3.png",
+      "bytes": 659616
+    },
+    {
+      "file": "assets/towers/star_cannon/base/StarCannon_Base_0_4.png",
+      "bytes": 816412
+    },
+    {
+      "file": "assets/towers/star_cannon/base/StarCannon_Base_1_0.png",
+      "bytes": 756402
+    },
+    {
+      "file": "assets/towers/star_cannon/base/StarCannon_Base_1_1.png",
+      "bytes": 660433
+    },
+    {
+      "file": "assets/towers/star_cannon/base/StarCannon_Base_1_2.png",
+      "bytes": 894233
+    },
+    {
+      "file": "assets/towers/star_cannon/base/StarCannon_Base_1_3.png",
+      "bytes": 753486
+    },
+    {
+      "file": "assets/towers/star_cannon/base/StarCannon_Base_1_4.png",
+      "bytes": 773749
+    },
+    {
+      "file": "assets/towers/star_cannon/base/StarCannon_Base_2_0.png",
+      "bytes": 748741
+    },
+    {
+      "file": "assets/towers/star_cannon/base/StarCannon_Base_2_1.png",
+      "bytes": 1030126
+    },
+    {
+      "file": "assets/towers/star_cannon/base/StarCannon_Base_2_2.png",
+      "bytes": 831839
+    },
+    {
+      "file": "assets/towers/star_cannon/base/StarCannon_Base_2_3.png",
+      "bytes": 703440
+    },
+    {
+      "file": "assets/towers/star_cannon/base/StarCannon_Base_2_4.png",
+      "bytes": 838731
+    },
+    {
+      "file": "assets/towers/star_cannon/base/StarCannon_Base_3_0.png",
+      "bytes": 1010035
+    },
+    {
+      "file": "assets/towers/star_cannon/base/StarCannon_Base_3_1.png",
+      "bytes": 790363
+    },
+    {
+      "file": "assets/towers/star_cannon/base/StarCannon_Base_3_2.png",
+      "bytes": 895194
+    },
+    {
+      "file": "assets/towers/star_cannon/base/StarCannon_Base_4_0.png",
+      "bytes": 699661
+    },
+    {
+      "file": "assets/towers/star_cannon/base/StarCannon_Base_4_1.png",
+      "bytes": 825791
+    },
+    {
+      "file": "assets/towers/star_cannon/base/StarCannon_Base_4_2.png",
+      "bytes": 737984
+    },
+    {
+      "file": "assets/towers/star_cannon/turret/StarCannon_Turret_0_0.png",
+      "bytes": 493482
+    },
+    {
+      "file": "assets/towers/star_cannon/turret/StarCannon_Turret_0_1.png",
+      "bytes": 777540
+    },
+    {
+      "file": "assets/towers/star_cannon/turret/StarCannon_Turret_0_2.png",
+      "bytes": 974108
+    },
+    {
+      "file": "assets/towers/star_cannon/turret/StarCannon_Turret_0_3.png",
+      "bytes": 823759
+    },
+    {
+      "file": "assets/towers/star_cannon/turret/StarCannon_Turret_0_4.png",
+      "bytes": 1274503
+    },
+    {
+      "file": "assets/towers/star_cannon/turret/StarCannon_Turret_1_0.png",
+      "bytes": 713782
+    },
+    {
+      "file": "assets/towers/star_cannon/turret/StarCannon_Turret_1_1.png",
+      "bytes": 923384
+    },
+    {
+      "file": "assets/towers/star_cannon/turret/StarCannon_Turret_1_2.png",
+      "bytes": 1115681
+    },
+    {
+      "file": "assets/towers/star_cannon/turret/StarCannon_Turret_1_3.png",
+      "bytes": 1241369
+    },
+    {
+      "file": "assets/towers/star_cannon/turret/StarCannon_Turret_1_4.png",
+      "bytes": 1158137
+    },
+    {
+      "file": "assets/towers/star_cannon/turret/StarCannon_Turret_2_0.png",
+      "bytes": 934480
+    },
+    {
+      "file": "assets/towers/star_cannon/turret/StarCannon_Turret_2_1.png",
+      "bytes": 1004719
+    },
+    {
+      "file": "assets/towers/star_cannon/turret/StarCannon_Turret_2_2.png",
+      "bytes": 1060569
+    },
+    {
+      "file": "assets/towers/star_cannon/turret/StarCannon_Turret_2_3.png",
+      "bytes": 1242928
+    },
+    {
+      "file": "assets/towers/star_cannon/turret/StarCannon_Turret_2_4.png",
+      "bytes": 1180568
+    },
+    {
+      "file": "assets/towers/star_cannon/turret/StarCannon_Turret_3_0.png",
+      "bytes": 1066436
+    },
+    {
+      "file": "assets/towers/star_cannon/turret/StarCannon_Turret_3_1.png",
+      "bytes": 1208420
+    },
+    {
+      "file": "assets/towers/star_cannon/turret/StarCannon_Turret_3_2.png",
+      "bytes": 1184968
+    },
+    {
+      "file": "assets/towers/star_cannon/turret/StarCannon_Turret_4_0.png",
+      "bytes": 934380
+    },
+    {
+      "file": "assets/towers/star_cannon/turret/StarCannon_Turret_4_1.png",
+      "bytes": 1099149
+    },
+    {
+      "file": "assets/towers/star_cannon/turret/StarCannon_Turret_4_2.png",
+      "bytes": 1051089
+    }
+  ],
+  "physicalEnvelopeRadius": 46,
+  "logicalSize": 64,
+  "level5Costs": [
+    7000,
+    5750
+  ],
+  "generation": "Built-in image_gen; original modular painted components; deterministic native assembly (not recoloring)."
+}

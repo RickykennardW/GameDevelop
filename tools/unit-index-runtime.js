@@ -57,7 +57,7 @@ const entries=index.category==="Towers" ? catalog.map(item=>{
     projectileSpeed:values.ProjectileSpeed, special:"Cosmic cannon / 2 UPGRADE PATHS.",type:item.Type};
 }).filter(Boolean) : runtimeScene.__monsterDiscovery.ids.map(name=>({typeId:name,name:archetypes[name].Name||name,...archetypes[name],role:roles[name]||(archetypes[name].Role+" / Armor "+archetypes[name].Armor+" / No special ability / Wave "+archetypes[name].MinimumWave+"+")}));
 index.entries=entries;
-const heights=entries.map(e=>e.type==="StarCannonTower"?470:148), offsets=[];let total=0;heights.forEach(h=>{offsets.push(total);total+=h+12;});
+const heights=entries.map(e=>e.type==="StarCannonTower"?528:148), offsets=[];let total=0;heights.forEach(h=>{offsets.push(total);total+=h+12;});
 const stride=160, maxScroll=Math.max(0,total-12-content.h);
 if(inside(content.x,content.y,content.w+16,content.h))index.scroll-=Math.sign(input.getMouseWheelDelta())*52;
 if(!down && index.wasDown && index.pressed===hover){if(hover==="Up")index.scroll-=stride;if(hover==="Down")index.scroll+=stride;}
@@ -125,7 +125,7 @@ entries.forEach((entry,i)=>{
         text(prefix+"UpgradeDesc"+p+n,upgrade.Description+"\n"+upgrade.Cost+" Gold",px+46,yy+16,column-56,11,"181;168;214",false,"IndexList");
       });
     });
-    text(prefix+"Rule","Level 3 specializes one path. The other can reach Lv2.",cx+16,cy+436,cw-32,12,"194;179;224",true,"IndexList");
+    text(prefix+"Rule","Level 3 specializes one path. The other can reach Lv2. Max Lv5.",cx+16,cy+494,cw-32,12,"194;179;224",true,"IndexList");
   }
   index.cards.push({name,stats:statText,special,sprite});
 });

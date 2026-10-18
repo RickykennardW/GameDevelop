@@ -1,0 +1,35 @@
+{
+  "result": {
+    "checks": [
+      "native map /82 road tiles",
+      "one small Star Cannon shop card",
+      "native Index displays all ten new upgrades"
+    ],
+    "mode": "tower-index",
+    "camera": [
+      1061.613608748481,
+      576.7092102065615,
+      0.8792735042735043
+    ],
+    "muzzle": null,
+    "objects": 82,
+    "resources": 788,
+    "shopCardSize": [
+      84,
+      112
+    ],
+    "layers": [
+      "",
+      "UI",
+      "TowerShopList",
+      "SelectedTowerUI",
+      "IndexUI",
+      "IndexList",
+      "ObstacleUI",
+      "AudioUI",
+      "DiscoveryUI"
+    ]
+  },
+  "progress": [],
+  "consoleErrors": []
+}

@@ -10,7 +10,7 @@ if(!g){
  const owns=(object,uid,id,variable)=>object&&object.getUniqueId()===uid&&object.getVariables().get(variable).getAsNumber()===id;
  const status=rec=>rec.enemy.getVariables().get('StatusEffects').getChild(f.name);
  f.armor=rec=>{
-  const v=rec.enemy.getVariables(),value=rec.baseArmor+(rec.active?config.Skill.ArmorBonus:0),health=rec.enemy.getBehavior('Health');
+  const v=rec.enemy.getVariables(),value=Math.max(0,rec.baseArmor+(rec.active?config.Skill.ArmorBonus:0)-(scene.__starCannon?.fractureReduction(rec.enemy)||0)),health=rec.enemy.getBehavior('Health');
   v.get('BaseArmor').setNumber(rec.baseArmor);v.get('EffectiveArmor').setNumber(value);v.get('Armor').setNumber(value);
   if(health.FlatDamageReduction()!==value)health.SetFlatDamageReduction(value);
  };

@@ -69,21 +69,22 @@ ui.render=()=>{
   });
   if(hasUpgrades) {
     if(isStar){
-      const count=v.get('ProjectileCount').getAsNumber(),splash=v.get('SplashRatio').getAsNumber();
-      text('starMode',count+' SHOT'+(count>1?'S':'')+' | '+(splash>0?'SPLASH '+Math.round(splash*100)+'% | RADIUS '+Math.round(v.get('SplashRadius').getAsNumber()):Math.round(v.get('ProjectileDamage').getAsNumber()/v.get('Damage').getAsNumber()*100)+'% PER SHOT'),24,276,272,10,'184;211;239');
+      const a=v.get('Path1Level').getAsNumber(),b=v.get('Path2Level').getAsNumber();
+      const mode=a>=5?'EVERY 4TH: LANCE / 5 TARGETS':a>=3?'EVERY 4TH: NOVA / 175% DAMAGE':b>=5?(v.get('OverdriveActive').getAsBoolean()?'OVERDRIVE: DUAL FIRE':'ALTERNATING / OVERDRIVE '+v.get('OverdriveRemaining').getAsNumber().toFixed(1)+'s'):b>=3?'ALTERNATING MUZZLES':'SINGLE STELLAR BOLT';
+      text('starMode',mode+(b>=4?' / RHYTHM '+v.get('RhythmStacks').getAsNumber()+'/5':''),24,276,272,10,'184;211;239');
     }
     text("upgrades","UPGRADES",116,isStar?294:282,150,14,"160;230;249",true);
     cfg.Paths.forEach((path,i)=>{
       const level=v.get(i===0?"Path1Level":"Path2Level").getAsNumber(),other=v.get(i===0?"Path2Level":"Path1Level").getAsNumber();
-      const locked=level>=2&&other>=3,max=level>=4,upgrade=path.Upgrades[max?3:level],affordable=sv.get("Money").getAsNumber()>=upgrade.Cost;
+      const locked=level>=2&&other>=3,max=level>=cfg.MaxLevel,upgrade=path.Upgrades[max?cfg.MaxLevel-1:level],affordable=sv.get("Money").getAsNumber()>=upgrade.Cost;
       const x=16+i*148,y=314,active=!locked&&!max;
       const background=panel("card"+i,x,y,140,270,locked?"116;95;148":active&&hover==="Path"+(i+1)?"230;210;255":"240;224;255","SelectedUpgradeCard",2);
       text("path"+i,isStar?path.Name:"PATH "+(i+1),x+12,y+12,116,isStar?11:13,"193;224;255",true);
-      for(let n=0;n<4;n++)panel("progress"+i+"_"+n,x+12+n*29,y+36,24,8,n<level?"151;232;255":"112;93;146","SelectedProgressBlock",3);
-      const icon=ui.ensure("icon"+i,"StarUpgradeIcon",3);icon.setAnimationName(upgrade.Icon);icon.setWidth(66);icon.setHeight(66);icon.setPosition(x+37,y+54);icon.setOpacity(locked?130:255);icon.hide(false);
+      for(let n=0;n<cfg.MaxLevel;n++)panel("progress"+i+"_"+n,x+12+n*23,y+46,20,8,n<level?"151;232;255":"112;93;146","SelectedProgressBlock",3);
+      const icon=ui.ensure("icon"+i,"StarUpgradeIcon",3);icon.setAnimationName(upgrade.Icon);icon.setWidth(66);icon.setHeight(66);icon.setPosition(x+37,y+64);icon.setOpacity(locked?130:255);icon.hide(false);
       const title=upgrade.Name;
-      const name=text("upgradeName"+i,title,x+10,y+130,120,12,"237;224;255",true);name.setTextAlignment("center");
-      const desc=text("description"+i,upgrade.Description,x+10,y+168,120,11,"184;174;208");desc.setTextAlignment("center");
+      const name=text("upgradeName"+i,title,x+10,y+138,120,12,"237;224;255",true);name.setTextAlignment("center");
+      const desc=text("description"+i,upgrade.Description,x+10,y+174,120,11,"184;174;208");desc.setTextAlignment("center");
       panel("purchase"+i,x+10,y+222,120,34,locked?"130;105;157":"255;255;255","SelectedPanelPlaque",3);
       const status=max?"MAX LEVEL":locked?"LOCKED":upgrade.Cost+" GOLD";
       const label=text("cost"+i,status,x+14,y+232,112,12,locked?"201;181;224":!max&&!affordable?"255;130;164":"229;226;255",true);label.setTextAlignment("center");

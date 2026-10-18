@@ -180,5 +180,6 @@ PASS buy Path1 tier 4
 PASS buy Path2 cross tier 1
 PASS buy Path2 cross tier 2
 PASS 4-2 native costs/investment exactly5070 including300 purchase
-PASS locked/max upgrade cannot charge gold
+PASS buy new Path1 level5
+PASS locked/max level5 upgrade cannot charge gold
 ALL HEALTHBAR BALANCE TESTS PASSED

@@ -27,6 +27,6 @@ const data=scene.getGame().getSceneAndExtensionsData(scene.getName()).sceneData.
 range.setLayer('');range.setZOrder(0);range.setWidth(ar*2);range.setHeight(ar*2);range.setPosition(preview.x-ar,preview.y-ar);range.setOpacity(100);range.hide(!visible);
 if(visible){
  indicator.setColor(preview.valid?'197;255;221':'255;136;171');indicator.setOpacity(preview.valid?175:120);indicator.setZOrder(30002);
- indicator.updatePreRender(scene);const sprite=indicator.getRendererObject(),scale=conf.RenderScale;if(sprite&&sprite.texture)sprite.scale.set(indicator.getWidth()/sprite.texture.width*scale,indicator.getHeight()/sprite.texture.height*scale);
+ indicator.updatePreRender(scene);const sprite=indicator.getRendererObject(),scale=conf.RenderScale*(preview.type==='StarCannonTower'?(scene.__starCannon?.componentConfig.States['0_0'].Base.Scale||1):1);if(sprite&&sprite.texture)sprite.scale.set(indicator.getWidth()/sprite.texture.width*scale,indicator.getHeight()/sprite.texture.height*scale);
 }
 get('MessageText').forEach(o=>{o.setColor('237;228;255');o.setCharacterSize(26);o.setBold(true);o.setTextAlignment('center');});

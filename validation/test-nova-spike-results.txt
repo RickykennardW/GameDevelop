@@ -1,0 +1,732 @@
+PASS real atlas textures and barrel count 0_0
+PASS additive baseline stats 0_0
+PASS repeat apply retains identity economy damage tracking footprint 0_0
+PASS stationary base / stable shared pivot 0_0/-90
+PASS physical muzzle forward inside envelope 0_0/-90/0
+PASS stationary base / stable shared pivot 0_0/-45
+PASS physical muzzle forward inside envelope 0_0/-45/0
+PASS stationary base / stable shared pivot 0_0/0
+PASS physical muzzle forward inside envelope 0_0/0/0
+PASS stationary base / stable shared pivot 0_0/45
+PASS physical muzzle forward inside envelope 0_0/45/0
+PASS stationary base / stable shared pivot 0_0/90
+PASS physical muzzle forward inside envelope 0_0/90/0
+PASS stationary base / stable shared pivot 0_0/135
+PASS physical muzzle forward inside envelope 0_0/135/0
+PASS stationary base / stable shared pivot 0_0/180
+PASS physical muzzle forward inside envelope 0_0/180/0
+PASS stationary base / stable shared pivot 0_0/225
+PASS physical muzzle forward inside envelope 0_0/225/0
+PASS real atlas textures and barrel count 0_1
+PASS additive baseline stats 0_1
+PASS repeat apply retains identity economy damage tracking footprint 0_1
+PASS stationary base / stable shared pivot 0_1/-90
+PASS physical muzzle forward inside envelope 0_1/-90/0
+PASS stationary base / stable shared pivot 0_1/-45
+PASS physical muzzle forward inside envelope 0_1/-45/0
+PASS stationary base / stable shared pivot 0_1/0
+PASS physical muzzle forward inside envelope 0_1/0/0
+PASS stationary base / stable shared pivot 0_1/45
+PASS physical muzzle forward inside envelope 0_1/45/0
+PASS stationary base / stable shared pivot 0_1/90
+PASS physical muzzle forward inside envelope 0_1/90/0
+PASS stationary base / stable shared pivot 0_1/135
+PASS physical muzzle forward inside envelope 0_1/135/0
+PASS stationary base / stable shared pivot 0_1/180
+PASS physical muzzle forward inside envelope 0_1/180/0
+PASS stationary base / stable shared pivot 0_1/225
+PASS physical muzzle forward inside envelope 0_1/225/0
+PASS real atlas textures and barrel count 0_2
+PASS additive baseline stats 0_2
+PASS repeat apply retains identity economy damage tracking footprint 0_2
+PASS stationary base / stable shared pivot 0_2/-90
+PASS physical muzzle forward inside envelope 0_2/-90/0
+PASS stationary base / stable shared pivot 0_2/-45
+PASS physical muzzle forward inside envelope 0_2/-45/0
+PASS stationary base / stable shared pivot 0_2/0
+PASS physical muzzle forward inside envelope 0_2/0/0
+PASS stationary base / stable shared pivot 0_2/45
+PASS physical muzzle forward inside envelope 0_2/45/0
+PASS stationary base / stable shared pivot 0_2/90
+PASS physical muzzle forward inside envelope 0_2/90/0
+PASS stationary base / stable shared pivot 0_2/135
+PASS physical muzzle forward inside envelope 0_2/135/0
+PASS stationary base / stable shared pivot 0_2/180
+PASS physical muzzle forward inside envelope 0_2/180/0
+PASS stationary base / stable shared pivot 0_2/225
+PASS physical muzzle forward inside envelope 0_2/225/0
+PASS real atlas textures and barrel count 0_3
+PASS additive baseline stats 0_3
+PASS repeat apply retains identity economy damage tracking footprint 0_3
+PASS stationary base / stable shared pivot 0_3/-90
+PASS physical muzzle forward inside envelope 0_3/-90/0
+PASS physical muzzle forward inside envelope 0_3/-90/1
+PASS stationary base / stable shared pivot 0_3/-45
+PASS physical muzzle forward inside envelope 0_3/-45/0
+PASS physical muzzle forward inside envelope 0_3/-45/1
+PASS stationary base / stable shared pivot 0_3/0
+PASS physical muzzle forward inside envelope 0_3/0/0
+PASS physical muzzle forward inside envelope 0_3/0/1
+PASS stationary base / stable shared pivot 0_3/45
+PASS physical muzzle forward inside envelope 0_3/45/0
+PASS physical muzzle forward inside envelope 0_3/45/1
+PASS stationary base / stable shared pivot 0_3/90
+PASS physical muzzle forward inside envelope 0_3/90/0
+PASS physical muzzle forward inside envelope 0_3/90/1
+PASS stationary base / stable shared pivot 0_3/135
+PASS physical muzzle forward inside envelope 0_3/135/0
+PASS physical muzzle forward inside envelope 0_3/135/1
+PASS stationary base / stable shared pivot 0_3/180
+PASS physical muzzle forward inside envelope 0_3/180/0
+PASS physical muzzle forward inside envelope 0_3/180/1
+PASS stationary base / stable shared pivot 0_3/225
+PASS physical muzzle forward inside envelope 0_3/225/0
+PASS physical muzzle forward inside envelope 0_3/225/1
+PASS real atlas textures and barrel count 0_4
+PASS additive baseline stats 0_4
+PASS repeat apply retains identity economy damage tracking footprint 0_4
+PASS stationary base / stable shared pivot 0_4/-90
+PASS physical muzzle forward inside envelope 0_4/-90/0
+PASS physical muzzle forward inside envelope 0_4/-90/1
+PASS stationary base / stable shared pivot 0_4/-45
+PASS physical muzzle forward inside envelope 0_4/-45/0
+PASS physical muzzle forward inside envelope 0_4/-45/1
+PASS stationary base / stable shared pivot 0_4/0
+PASS physical muzzle forward inside envelope 0_4/0/0
+PASS physical muzzle forward inside envelope 0_4/0/1
+PASS stationary base / stable shared pivot 0_4/45
+PASS physical muzzle forward inside envelope 0_4/45/0
+PASS physical muzzle forward inside envelope 0_4/45/1
+PASS stationary base / stable shared pivot 0_4/90
+PASS physical muzzle forward inside envelope 0_4/90/0
+PASS physical muzzle forward inside envelope 0_4/90/1
+PASS stationary base / stable shared pivot 0_4/135
+PASS physical muzzle forward inside envelope 0_4/135/0
+PASS physical muzzle forward inside envelope 0_4/135/1
+PASS stationary base / stable shared pivot 0_4/180
+PASS physical muzzle forward inside envelope 0_4/180/0
+PASS physical muzzle forward inside envelope 0_4/180/1
+PASS stationary base / stable shared pivot 0_4/225
+PASS physical muzzle forward inside envelope 0_4/225/0
+PASS physical muzzle forward inside envelope 0_4/225/1
+PASS real atlas textures and barrel count 0_5
+PASS additive baseline stats 0_5
+PASS repeat apply retains identity economy damage tracking footprint 0_5
+PASS stationary base / stable shared pivot 0_5/-90
+PASS physical muzzle forward inside envelope 0_5/-90/0
+PASS physical muzzle forward inside envelope 0_5/-90/1
+PASS stationary base / stable shared pivot 0_5/-45
+PASS physical muzzle forward inside envelope 0_5/-45/0
+PASS physical muzzle forward inside envelope 0_5/-45/1
+PASS stationary base / stable shared pivot 0_5/0
+PASS physical muzzle forward inside envelope 0_5/0/0
+PASS physical muzzle forward inside envelope 0_5/0/1
+PASS stationary base / stable shared pivot 0_5/45
+PASS physical muzzle forward inside envelope 0_5/45/0
+PASS physical muzzle forward inside envelope 0_5/45/1
+PASS stationary base / stable shared pivot 0_5/90
+PASS physical muzzle forward inside envelope 0_5/90/0
+PASS physical muzzle forward inside envelope 0_5/90/1
+PASS stationary base / stable shared pivot 0_5/135
+PASS physical muzzle forward inside envelope 0_5/135/0
+PASS physical muzzle forward inside envelope 0_5/135/1
+PASS stationary base / stable shared pivot 0_5/180
+PASS physical muzzle forward inside envelope 0_5/180/0
+PASS physical muzzle forward inside envelope 0_5/180/1
+PASS stationary base / stable shared pivot 0_5/225
+PASS physical muzzle forward inside envelope 0_5/225/0
+PASS physical muzzle forward inside envelope 0_5/225/1
+PASS real atlas textures and barrel count 1_0
+PASS additive baseline stats 1_0
+PASS repeat apply retains identity economy damage tracking footprint 1_0
+PASS stationary base / stable shared pivot 1_0/-90
+PASS physical muzzle forward inside envelope 1_0/-90/0
+PASS stationary base / stable shared pivot 1_0/-45
+PASS physical muzzle forward inside envelope 1_0/-45/0
+PASS stationary base / stable shared pivot 1_0/0
+PASS physical muzzle forward inside envelope 1_0/0/0
+PASS stationary base / stable shared pivot 1_0/45
+PASS physical muzzle forward inside envelope 1_0/45/0
+PASS stationary base / stable shared pivot 1_0/90
+PASS physical muzzle forward inside envelope 1_0/90/0
+PASS stationary base / stable shared pivot 1_0/135
+PASS physical muzzle forward inside envelope 1_0/135/0
+PASS stationary base / stable shared pivot 1_0/180
+PASS physical muzzle forward inside envelope 1_0/180/0
+PASS stationary base / stable shared pivot 1_0/225
+PASS physical muzzle forward inside envelope 1_0/225/0
+PASS real atlas textures and barrel count 1_1
+PASS additive baseline stats 1_1
+PASS repeat apply retains identity economy damage tracking footprint 1_1
+PASS stationary base / stable shared pivot 1_1/-90
+PASS physical muzzle forward inside envelope 1_1/-90/0
+PASS stationary base / stable shared pivot 1_1/-45
+PASS physical muzzle forward inside envelope 1_1/-45/0
+PASS stationary base / stable shared pivot 1_1/0
+PASS physical muzzle forward inside envelope 1_1/0/0
+PASS stationary base / stable shared pivot 1_1/45
+PASS physical muzzle forward inside envelope 1_1/45/0
+PASS stationary base / stable shared pivot 1_1/90
+PASS physical muzzle forward inside envelope 1_1/90/0
+PASS stationary base / stable shared pivot 1_1/135
+PASS physical muzzle forward inside envelope 1_1/135/0
+PASS stationary base / stable shared pivot 1_1/180
+PASS physical muzzle forward inside envelope 1_1/180/0
+PASS stationary base / stable shared pivot 1_1/225
+PASS physical muzzle forward inside envelope 1_1/225/0
+PASS real atlas textures and barrel count 1_2
+PASS additive baseline stats 1_2
+PASS repeat apply retains identity economy damage tracking footprint 1_2
+PASS stationary base / stable shared pivot 1_2/-90
+PASS physical muzzle forward inside envelope 1_2/-90/0
+PASS stationary base / stable shared pivot 1_2/-45
+PASS physical muzzle forward inside envelope 1_2/-45/0
+PASS stationary base / stable shared pivot 1_2/0
+PASS physical muzzle forward inside envelope 1_2/0/0
+PASS stationary base / stable shared pivot 1_2/45
+PASS physical muzzle forward inside envelope 1_2/45/0
+PASS stationary base / stable shared pivot 1_2/90
+PASS physical muzzle forward inside envelope 1_2/90/0
+PASS stationary base / stable shared pivot 1_2/135
+PASS physical muzzle forward inside envelope 1_2/135/0
+PASS stationary base / stable shared pivot 1_2/180
+PASS physical muzzle forward inside envelope 1_2/180/0
+PASS stationary base / stable shared pivot 1_2/225
+PASS physical muzzle forward inside envelope 1_2/225/0
+PASS real atlas textures and barrel count 1_3
+PASS additive baseline stats 1_3
+PASS repeat apply retains identity economy damage tracking footprint 1_3
+PASS stationary base / stable shared pivot 1_3/-90
+PASS physical muzzle forward inside envelope 1_3/-90/0
+PASS physical muzzle forward inside envelope 1_3/-90/1
+PASS stationary base / stable shared pivot 1_3/-45
+PASS physical muzzle forward inside envelope 1_3/-45/0
+PASS physical muzzle forward inside envelope 1_3/-45/1
+PASS stationary base / stable shared pivot 1_3/0
+PASS physical muzzle forward inside envelope 1_3/0/0
+PASS physical muzzle forward inside envelope 1_3/0/1
+PASS stationary base / stable shared pivot 1_3/45
+PASS physical muzzle forward inside envelope 1_3/45/0
+PASS physical muzzle forward inside envelope 1_3/45/1
+PASS stationary base / stable shared pivot 1_3/90
+PASS physical muzzle forward inside envelope 1_3/90/0
+PASS physical muzzle forward inside envelope 1_3/90/1
+PASS stationary base / stable shared pivot 1_3/135
+PASS physical muzzle forward inside envelope 1_3/135/0
+PASS physical muzzle forward inside envelope 1_3/135/1
+PASS stationary base / stable shared pivot 1_3/180
+PASS physical muzzle forward inside envelope 1_3/180/0
+PASS physical muzzle forward inside envelope 1_3/180/1
+PASS stationary base / stable shared pivot 1_3/225
+PASS physical muzzle forward inside envelope 1_3/225/0
+PASS physical muzzle forward inside envelope 1_3/225/1
+PASS real atlas textures and barrel count 1_4
+PASS additive baseline stats 1_4
+PASS repeat apply retains identity economy damage tracking footprint 1_4
+PASS stationary base / stable shared pivot 1_4/-90
+PASS physical muzzle forward inside envelope 1_4/-90/0
+PASS physical muzzle forward inside envelope 1_4/-90/1
+PASS stationary base / stable shared pivot 1_4/-45
+PASS physical muzzle forward inside envelope 1_4/-45/0
+PASS physical muzzle forward inside envelope 1_4/-45/1
+PASS stationary base / stable shared pivot 1_4/0
+PASS physical muzzle forward inside envelope 1_4/0/0
+PASS physical muzzle forward inside envelope 1_4/0/1
+PASS stationary base / stable shared pivot 1_4/45
+PASS physical muzzle forward inside envelope 1_4/45/0
+PASS physical muzzle forward inside envelope 1_4/45/1
+PASS stationary base / stable shared pivot 1_4/90
+PASS physical muzzle forward inside envelope 1_4/90/0
+PASS physical muzzle forward inside envelope 1_4/90/1
+PASS stationary base / stable shared pivot 1_4/135
+PASS physical muzzle forward inside envelope 1_4/135/0
+PASS physical muzzle forward inside envelope 1_4/135/1
+PASS stationary base / stable shared pivot 1_4/180
+PASS physical muzzle forward inside envelope 1_4/180/0
+PASS physical muzzle forward inside envelope 1_4/180/1
+PASS stationary base / stable shared pivot 1_4/225
+PASS physical muzzle forward inside envelope 1_4/225/0
+PASS physical muzzle forward inside envelope 1_4/225/1
+PASS real atlas textures and barrel count 1_5
+PASS additive baseline stats 1_5
+PASS repeat apply retains identity economy damage tracking footprint 1_5
+PASS stationary base / stable shared pivot 1_5/-90
+PASS physical muzzle forward inside envelope 1_5/-90/0
+PASS physical muzzle forward inside envelope 1_5/-90/1
+PASS stationary base / stable shared pivot 1_5/-45
+PASS physical muzzle forward inside envelope 1_5/-45/0
+PASS physical muzzle forward inside envelope 1_5/-45/1
+PASS stationary base / stable shared pivot 1_5/0
+PASS physical muzzle forward inside envelope 1_5/0/0
+PASS physical muzzle forward inside envelope 1_5/0/1
+PASS stationary base / stable shared pivot 1_5/45
+PASS physical muzzle forward inside envelope 1_5/45/0
+PASS physical muzzle forward inside envelope 1_5/45/1
+PASS stationary base / stable shared pivot 1_5/90
+PASS physical muzzle forward inside envelope 1_5/90/0
+PASS physical muzzle forward inside envelope 1_5/90/1
+PASS stationary base / stable shared pivot 1_5/135
+PASS physical muzzle forward inside envelope 1_5/135/0
+PASS physical muzzle forward inside envelope 1_5/135/1
+PASS stationary base / stable shared pivot 1_5/180
+PASS physical muzzle forward inside envelope 1_5/180/0
+PASS physical muzzle forward inside envelope 1_5/180/1
+PASS stationary base / stable shared pivot 1_5/225
+PASS physical muzzle forward inside envelope 1_5/225/0
+PASS physical muzzle forward inside envelope 1_5/225/1
+PASS real atlas textures and barrel count 2_0
+PASS additive baseline stats 2_0
+PASS repeat apply retains identity economy damage tracking footprint 2_0
+PASS stationary base / stable shared pivot 2_0/-90
+PASS physical muzzle forward inside envelope 2_0/-90/0
+PASS stationary base / stable shared pivot 2_0/-45
+PASS physical muzzle forward inside envelope 2_0/-45/0
+PASS stationary base / stable shared pivot 2_0/0
+PASS physical muzzle forward inside envelope 2_0/0/0
+PASS stationary base / stable shared pivot 2_0/45
+PASS physical muzzle forward inside envelope 2_0/45/0
+PASS stationary base / stable shared pivot 2_0/90
+PASS physical muzzle forward inside envelope 2_0/90/0
+PASS stationary base / stable shared pivot 2_0/135
+PASS physical muzzle forward inside envelope 2_0/135/0
+PASS stationary base / stable shared pivot 2_0/180
+PASS physical muzzle forward inside envelope 2_0/180/0
+PASS stationary base / stable shared pivot 2_0/225
+PASS physical muzzle forward inside envelope 2_0/225/0
+PASS real atlas textures and barrel count 2_1
+PASS additive baseline stats 2_1
+PASS repeat apply retains identity economy damage tracking footprint 2_1
+PASS stationary base / stable shared pivot 2_1/-90
+PASS physical muzzle forward inside envelope 2_1/-90/0
+PASS stationary base / stable shared pivot 2_1/-45
+PASS physical muzzle forward inside envelope 2_1/-45/0
+PASS stationary base / stable shared pivot 2_1/0
+PASS physical muzzle forward inside envelope 2_1/0/0
+PASS stationary base / stable shared pivot 2_1/45
+PASS physical muzzle forward inside envelope 2_1/45/0
+PASS stationary base / stable shared pivot 2_1/90
+PASS physical muzzle forward inside envelope 2_1/90/0
+PASS stationary base / stable shared pivot 2_1/135
+PASS physical muzzle forward inside envelope 2_1/135/0
+PASS stationary base / stable shared pivot 2_1/180
+PASS physical muzzle forward inside envelope 2_1/180/0
+PASS stationary base / stable shared pivot 2_1/225
+PASS physical muzzle forward inside envelope 2_1/225/0
+PASS real atlas textures and barrel count 2_2
+PASS additive baseline stats 2_2
+PASS repeat apply retains identity economy damage tracking footprint 2_2
+PASS stationary base / stable shared pivot 2_2/-90
+PASS physical muzzle forward inside envelope 2_2/-90/0
+PASS stationary base / stable shared pivot 2_2/-45
+PASS physical muzzle forward inside envelope 2_2/-45/0
+PASS stationary base / stable shared pivot 2_2/0
+PASS physical muzzle forward inside envelope 2_2/0/0
+PASS stationary base / stable shared pivot 2_2/45
+PASS physical muzzle forward inside envelope 2_2/45/0
+PASS stationary base / stable shared pivot 2_2/90
+PASS physical muzzle forward inside envelope 2_2/90/0
+PASS stationary base / stable shared pivot 2_2/135
+PASS physical muzzle forward inside envelope 2_2/135/0
+PASS stationary base / stable shared pivot 2_2/180
+PASS physical muzzle forward inside envelope 2_2/180/0
+PASS stationary base / stable shared pivot 2_2/225
+PASS physical muzzle forward inside envelope 2_2/225/0
+PASS real atlas textures and barrel count 2_3
+PASS additive baseline stats 2_3
+PASS repeat apply retains identity economy damage tracking footprint 2_3
+PASS stationary base / stable shared pivot 2_3/-90
+PASS physical muzzle forward inside envelope 2_3/-90/0
+PASS physical muzzle forward inside envelope 2_3/-90/1
+PASS stationary base / stable shared pivot 2_3/-45
+PASS physical muzzle forward inside envelope 2_3/-45/0
+PASS physical muzzle forward inside envelope 2_3/-45/1
+PASS stationary base / stable shared pivot 2_3/0
+PASS physical muzzle forward inside envelope 2_3/0/0
+PASS physical muzzle forward inside envelope 2_3/0/1
+PASS stationary base / stable shared pivot 2_3/45
+PASS physical muzzle forward inside envelope 2_3/45/0
+PASS physical muzzle forward inside envelope 2_3/45/1
+PASS stationary base / stable shared pivot 2_3/90
+PASS physical muzzle forward inside envelope 2_3/90/0
+PASS physical muzzle forward inside envelope 2_3/90/1
+PASS stationary base / stable shared pivot 2_3/135
+PASS physical muzzle forward inside envelope 2_3/135/0
+PASS physical muzzle forward inside envelope 2_3/135/1
+PASS stationary base / stable shared pivot 2_3/180
+PASS physical muzzle forward inside envelope 2_3/180/0
+PASS physical muzzle forward inside envelope 2_3/180/1
+PASS stationary base / stable shared pivot 2_3/225
+PASS physical muzzle forward inside envelope 2_3/225/0
+PASS physical muzzle forward inside envelope 2_3/225/1
+PASS real atlas textures and barrel count 2_4
+PASS additive baseline stats 2_4
+PASS repeat apply retains identity economy damage tracking footprint 2_4
+PASS stationary base / stable shared pivot 2_4/-90
+PASS physical muzzle forward inside envelope 2_4/-90/0
+PASS physical muzzle forward inside envelope 2_4/-90/1
+PASS stationary base / stable shared pivot 2_4/-45
+PASS physical muzzle forward inside envelope 2_4/-45/0
+PASS physical muzzle forward inside envelope 2_4/-45/1
+PASS stationary base / stable shared pivot 2_4/0
+PASS physical muzzle forward inside envelope 2_4/0/0
+PASS physical muzzle forward inside envelope 2_4/0/1
+PASS stationary base / stable shared pivot 2_4/45
+PASS physical muzzle forward inside envelope 2_4/45/0
+PASS physical muzzle forward inside envelope 2_4/45/1
+PASS stationary base / stable shared pivot 2_4/90
+PASS physical muzzle forward inside envelope 2_4/90/0
+PASS physical muzzle forward inside envelope 2_4/90/1
+PASS stationary base / stable shared pivot 2_4/135
+PASS physical muzzle forward inside envelope 2_4/135/0
+PASS physical muzzle forward inside envelope 2_4/135/1
+PASS stationary base / stable shared pivot 2_4/180
+PASS physical muzzle forward inside envelope 2_4/180/0
+PASS physical muzzle forward inside envelope 2_4/180/1
+PASS stationary base / stable shared pivot 2_4/225
+PASS physical muzzle forward inside envelope 2_4/225/0
+PASS physical muzzle forward inside envelope 2_4/225/1
+PASS real atlas textures and barrel count 2_5
+PASS additive baseline stats 2_5
+PASS repeat apply retains identity economy damage tracking footprint 2_5
+PASS stationary base / stable shared pivot 2_5/-90
+PASS physical muzzle forward inside envelope 2_5/-90/0
+PASS physical muzzle forward inside envelope 2_5/-90/1
+PASS stationary base / stable shared pivot 2_5/-45
+PASS physical muzzle forward inside envelope 2_5/-45/0
+PASS physical muzzle forward inside envelope 2_5/-45/1
+PASS stationary base / stable shared pivot 2_5/0
+PASS physical muzzle forward inside envelope 2_5/0/0
+PASS physical muzzle forward inside envelope 2_5/0/1
+PASS stationary base / stable shared pivot 2_5/45
+PASS physical muzzle forward inside envelope 2_5/45/0
+PASS physical muzzle forward inside envelope 2_5/45/1
+PASS stationary base / stable shared pivot 2_5/90
+PASS physical muzzle forward inside envelope 2_5/90/0
+PASS physical muzzle forward inside envelope 2_5/90/1
+PASS stationary base / stable shared pivot 2_5/135
+PASS physical muzzle forward inside envelope 2_5/135/0
+PASS physical muzzle forward inside envelope 2_5/135/1
+PASS stationary base / stable shared pivot 2_5/180
+PASS physical muzzle forward inside envelope 2_5/180/0
+PASS physical muzzle forward inside envelope 2_5/180/1
+PASS stationary base / stable shared pivot 2_5/225
+PASS physical muzzle forward inside envelope 2_5/225/0
+PASS physical muzzle forward inside envelope 2_5/225/1
+PASS real atlas textures and barrel count 3_0
+PASS additive baseline stats 3_0
+PASS repeat apply retains identity economy damage tracking footprint 3_0
+PASS stationary base / stable shared pivot 3_0/-90
+PASS physical muzzle forward inside envelope 3_0/-90/0
+PASS stationary base / stable shared pivot 3_0/-45
+PASS physical muzzle forward inside envelope 3_0/-45/0
+PASS stationary base / stable shared pivot 3_0/0
+PASS physical muzzle forward inside envelope 3_0/0/0
+PASS stationary base / stable shared pivot 3_0/45
+PASS physical muzzle forward inside envelope 3_0/45/0
+PASS stationary base / stable shared pivot 3_0/90
+PASS physical muzzle forward inside envelope 3_0/90/0
+PASS stationary base / stable shared pivot 3_0/135
+PASS physical muzzle forward inside envelope 3_0/135/0
+PASS stationary base / stable shared pivot 3_0/180
+PASS physical muzzle forward inside envelope 3_0/180/0
+PASS stationary base / stable shared pivot 3_0/225
+PASS physical muzzle forward inside envelope 3_0/225/0
+PASS real atlas textures and barrel count 3_1
+PASS additive baseline stats 3_1
+PASS repeat apply retains identity economy damage tracking footprint 3_1
+PASS stationary base / stable shared pivot 3_1/-90
+PASS physical muzzle forward inside envelope 3_1/-90/0
+PASS stationary base / stable shared pivot 3_1/-45
+PASS physical muzzle forward inside envelope 3_1/-45/0
+PASS stationary base / stable shared pivot 3_1/0
+PASS physical muzzle forward inside envelope 3_1/0/0
+PASS stationary base / stable shared pivot 3_1/45
+PASS physical muzzle forward inside envelope 3_1/45/0
+PASS stationary base / stable shared pivot 3_1/90
+PASS physical muzzle forward inside envelope 3_1/90/0
+PASS stationary base / stable shared pivot 3_1/135
+PASS physical muzzle forward inside envelope 3_1/135/0
+PASS stationary base / stable shared pivot 3_1/180
+PASS physical muzzle forward inside envelope 3_1/180/0
+PASS stationary base / stable shared pivot 3_1/225
+PASS physical muzzle forward inside envelope 3_1/225/0
+PASS real atlas textures and barrel count 3_2
+PASS additive baseline stats 3_2
+PASS repeat apply retains identity economy damage tracking footprint 3_2
+PASS stationary base / stable shared pivot 3_2/-90
+PASS physical muzzle forward inside envelope 3_2/-90/0
+PASS stationary base / stable shared pivot 3_2/-45
+PASS physical muzzle forward inside envelope 3_2/-45/0
+PASS stationary base / stable shared pivot 3_2/0
+PASS physical muzzle forward inside envelope 3_2/0/0
+PASS stationary base / stable shared pivot 3_2/45
+PASS physical muzzle forward inside envelope 3_2/45/0
+PASS stationary base / stable shared pivot 3_2/90
+PASS physical muzzle forward inside envelope 3_2/90/0
+PASS stationary base / stable shared pivot 3_2/135
+PASS physical muzzle forward inside envelope 3_2/135/0
+PASS stationary base / stable shared pivot 3_2/180
+PASS physical muzzle forward inside envelope 3_2/180/0
+PASS stationary base / stable shared pivot 3_2/225
+PASS physical muzzle forward inside envelope 3_2/225/0
+PASS reject invalid 3-3
+PASS reject invalid 3-4
+PASS reject invalid 3-5
+PASS real atlas textures and barrel count 4_0
+PASS additive baseline stats 4_0
+PASS repeat apply retains identity economy damage tracking footprint 4_0
+PASS stationary base / stable shared pivot 4_0/-90
+PASS physical muzzle forward inside envelope 4_0/-90/0
+PASS stationary base / stable shared pivot 4_0/-45
+PASS physical muzzle forward inside envelope 4_0/-45/0
+PASS stationary base / stable shared pivot 4_0/0
+PASS physical muzzle forward inside envelope 4_0/0/0
+PASS stationary base / stable shared pivot 4_0/45
+PASS physical muzzle forward inside envelope 4_0/45/0
+PASS stationary base / stable shared pivot 4_0/90
+PASS physical muzzle forward inside envelope 4_0/90/0
+PASS stationary base / stable shared pivot 4_0/135
+PASS physical muzzle forward inside envelope 4_0/135/0
+PASS stationary base / stable shared pivot 4_0/180
+PASS physical muzzle forward inside envelope 4_0/180/0
+PASS stationary base / stable shared pivot 4_0/225
+PASS physical muzzle forward inside envelope 4_0/225/0
+PASS real atlas textures and barrel count 4_1
+PASS additive baseline stats 4_1
+PASS repeat apply retains identity economy damage tracking footprint 4_1
+PASS stationary base / stable shared pivot 4_1/-90
+PASS physical muzzle forward inside envelope 4_1/-90/0
+PASS stationary base / stable shared pivot 4_1/-45
+PASS physical muzzle forward inside envelope 4_1/-45/0
+PASS stationary base / stable shared pivot 4_1/0
+PASS physical muzzle forward inside envelope 4_1/0/0
+PASS stationary base / stable shared pivot 4_1/45
+PASS physical muzzle forward inside envelope 4_1/45/0
+PASS stationary base / stable shared pivot 4_1/90
+PASS physical muzzle forward inside envelope 4_1/90/0
+PASS stationary base / stable shared pivot 4_1/135
+PASS physical muzzle forward inside envelope 4_1/135/0
+PASS stationary base / stable shared pivot 4_1/180
+PASS physical muzzle forward inside envelope 4_1/180/0
+PASS stationary base / stable shared pivot 4_1/225
+PASS physical muzzle forward inside envelope 4_1/225/0
+PASS real atlas textures and barrel count 4_2
+PASS additive baseline stats 4_2
+PASS repeat apply retains identity economy damage tracking footprint 4_2
+PASS stationary base / stable shared pivot 4_2/-90
+PASS physical muzzle forward inside envelope 4_2/-90/0
+PASS stationary base / stable shared pivot 4_2/-45
+PASS physical muzzle forward inside envelope 4_2/-45/0
+PASS stationary base / stable shared pivot 4_2/0
+PASS physical muzzle forward inside envelope 4_2/0/0
+PASS stationary base / stable shared pivot 4_2/45
+PASS physical muzzle forward inside envelope 4_2/45/0
+PASS stationary base / stable shared pivot 4_2/90
+PASS physical muzzle forward inside envelope 4_2/90/0
+PASS stationary base / stable shared pivot 4_2/135
+PASS physical muzzle forward inside envelope 4_2/135/0
+PASS stationary base / stable shared pivot 4_2/180
+PASS physical muzzle forward inside envelope 4_2/180/0
+PASS stationary base / stable shared pivot 4_2/225
+PASS physical muzzle forward inside envelope 4_2/225/0
+PASS reject invalid 4-3
+PASS reject invalid 4-4
+PASS reject invalid 4-5
+PASS real atlas textures and barrel count 5_0
+PASS additive baseline stats 5_0
+PASS repeat apply retains identity economy damage tracking footprint 5_0
+PASS stationary base / stable shared pivot 5_0/-90
+PASS physical muzzle forward inside envelope 5_0/-90/0
+PASS stationary base / stable shared pivot 5_0/-45
+PASS physical muzzle forward inside envelope 5_0/-45/0
+PASS stationary base / stable shared pivot 5_0/0
+PASS physical muzzle forward inside envelope 5_0/0/0
+PASS stationary base / stable shared pivot 5_0/45
+PASS physical muzzle forward inside envelope 5_0/45/0
+PASS stationary base / stable shared pivot 5_0/90
+PASS physical muzzle forward inside envelope 5_0/90/0
+PASS stationary base / stable shared pivot 5_0/135
+PASS physical muzzle forward inside envelope 5_0/135/0
+PASS stationary base / stable shared pivot 5_0/180
+PASS physical muzzle forward inside envelope 5_0/180/0
+PASS stationary base / stable shared pivot 5_0/225
+PASS physical muzzle forward inside envelope 5_0/225/0
+PASS real atlas textures and barrel count 5_1
+PASS additive baseline stats 5_1
+PASS repeat apply retains identity economy damage tracking footprint 5_1
+PASS stationary base / stable shared pivot 5_1/-90
+PASS physical muzzle forward inside envelope 5_1/-90/0
+PASS stationary base / stable shared pivot 5_1/-45
+PASS physical muzzle forward inside envelope 5_1/-45/0
+PASS stationary base / stable shared pivot 5_1/0
+PASS physical muzzle forward inside envelope 5_1/0/0
+PASS stationary base / stable shared pivot 5_1/45
+PASS physical muzzle forward inside envelope 5_1/45/0
+PASS stationary base / stable shared pivot 5_1/90
+PASS physical muzzle forward inside envelope 5_1/90/0
+PASS stationary base / stable shared pivot 5_1/135
+PASS physical muzzle forward inside envelope 5_1/135/0
+PASS stationary base / stable shared pivot 5_1/180
+PASS physical muzzle forward inside envelope 5_1/180/0
+PASS stationary base / stable shared pivot 5_1/225
+PASS physical muzzle forward inside envelope 5_1/225/0
+PASS real atlas textures and barrel count 5_2
+PASS additive baseline stats 5_2
+PASS repeat apply retains identity economy damage tracking footprint 5_2
+PASS stationary base / stable shared pivot 5_2/-90
+PASS physical muzzle forward inside envelope 5_2/-90/0
+PASS stationary base / stable shared pivot 5_2/-45
+PASS physical muzzle forward inside envelope 5_2/-45/0
+PASS stationary base / stable shared pivot 5_2/0
+PASS physical muzzle forward inside envelope 5_2/0/0
+PASS stationary base / stable shared pivot 5_2/45
+PASS physical muzzle forward inside envelope 5_2/45/0
+PASS stationary base / stable shared pivot 5_2/90
+PASS physical muzzle forward inside envelope 5_2/90/0
+PASS stationary base / stable shared pivot 5_2/135
+PASS physical muzzle forward inside envelope 5_2/135/0
+PASS stationary base / stable shared pivot 5_2/180
+PASS physical muzzle forward inside envelope 5_2/180/0
+PASS stationary base / stable shared pivot 5_2/225
+PASS physical muzzle forward inside envelope 5_2/225/0
+PASS reject invalid 5-3
+PASS reject invalid 5-4
+PASS reject invalid 5-5
+PASS all 27 physical states exercised at 8 directions
+PASS placement ghost matches modular tower canvas at unchanged radius46 {"hidden":false,"w":64,"h":64,"sw":88,"sh":88,"active":true}
+PASS actual target acquisition -90
+PASS actual mouth / heading -90
+PASS projectiles terminate
+PASS actual target acquisition -45
+PASS actual mouth / heading -45
+PASS projectiles terminate
+PASS actual target acquisition 0
+PASS actual mouth / heading 0
+PASS projectiles terminate
+PASS actual target acquisition 45
+PASS actual mouth / heading 45
+PASS projectiles terminate
+PASS actual target acquisition 90
+PASS actual mouth / heading 90
+PASS projectiles terminate
+PASS actual target acquisition 135
+PASS actual mouth / heading 135
+PASS projectiles terminate
+PASS actual target acquisition 180
+PASS actual mouth / heading 180
+PASS projectiles terminate
+PASS actual target acquisition 225
+PASS actual mouth / heading 225
+PASS projectiles terminate
+PASS 2-2 specialization buy path1
+PASS correct specialization state
+PASS other level3 blocked without spending
+PASS levels4 and5 reachable
+PASS max level5 cannot charge
+PASS 2-2 specialization buy path2
+PASS correct specialization state
+PASS other level3 blocked without spending
+PASS levels4 and5 reachable
+PASS max level5 cannot charge
+PASS all prices / approved rounded tier5
+PASS Nova sequence shot1
+PASS only fourth projectile is Nova
+PASS projectiles terminate
+PASS direct damage exactly once 1
+PASS splash only on fourth / primary excluded 1
+PASS Nova sequence shot2
+PASS only fourth projectile is Nova
+PASS projectiles terminate
+PASS direct damage exactly once 2
+PASS splash only on fourth / primary excluded 2
+PASS Nova sequence shot3
+PASS only fourth projectile is Nova
+PASS projectiles terminate
+PASS direct damage exactly once 3
+PASS splash only on fourth / primary excluded 3
+PASS Nova sequence shot4
+PASS only fourth projectile is Nova
+PASS projectiles terminate
+PASS direct damage exactly once 4
+PASS splash only on fourth / primary excluded 4
+PASS Nova radius excludes distant enemy
+PASS animated native Nova explosion exists
+PASS explosion cleanup
+PASS projectiles terminate
+PASS fracture subtracts 20% BASE armor while keeping buff
+PASS native Health armor applied once
+PASS projectiles terminate
+PASS fracture refreshes duration without stacking or extra icon
+PASS fracture icon stays below head / HP bar
+PASS buff expiry preserves fracture
+PASS fracture expires / restores native armor / destroys icon
+PASS enemy deletion leaves no debuff record
+PASS Supernova fires distinct lance
+PASS projectiles terminate
+PASS five targets max / each exactly once / sixth untouched
+PASS five unique IDs / no homing rotation
+PASS projectiles terminate
+PASS dead original target does not cancel or redirect straight lance; finite range
+PASS one full-damage Twin bolt per shot
+PASS independent barrel recoil 0
+PASS projectiles terminate
+PASS Twin damage once 0
+PASS one full-damage Twin bolt per shot
+PASS independent barrel recoil 1
+PASS projectiles terminate
+PASS Twin damage once 1
+PASS one full-damage Twin bolt per shot
+PASS independent barrel recoil 2
+PASS projectiles terminate
+PASS Twin damage once 2
+PASS one full-damage Twin bolt per shot
+PASS independent barrel recoil 3
+PASS projectiles terminate
+PASS Twin damage once 3
+PASS left right alternation
+PASS projectiles terminate
+PASS Rhythm max five stack 1
+PASS projectiles terminate
+PASS Rhythm max five stack 2
+PASS projectiles terminate
+PASS Rhythm max five stack 3
+PASS projectiles terminate
+PASS Rhythm max five stack 4
+PASS projectiles terminate
+PASS Rhythm max five stack 5
+PASS projectiles terminate
+PASS Rhythm max five stack 6
+PASS projectiles terminate
+PASS Rhythm max five stack 7
+PASS Rhythm max +60% additive speed
+PASS Rhythm remains before3s
+PASS Rhythm resets3s after last real shot
+PASS Overdrive inactive before cooldown
+PASS Overdrive starts for2game seconds
+PASS Overdrive two distinct simultaneous emitters
+PASS projectiles terminate
+PASS Overdrive exactly two full-damage hits
+PASS Overdrive ends and waits18seconds
+PASS normal alternating fire restored immediately
+PASS projectiles terminate
+PASS no queued extra projectiles after Overdrive
+PASS cooldown cannot activate early
+PASS next cycle activates after20seconds
+PASS projectiles terminate
+PASS Star mechanics use existing2x game clock
+PASS 40 towers have one active component rig each
+PASS pool fixture activates Overdrive
+PASS reused native tower has fresh Overdrive cooldown
+PASS pool fixture activates Overdrive
+PASS reused native tower has fresh Overdrive cooldown
+PASS pool fixture activates Overdrive
+PASS reused native tower has fresh Overdrive cooldown
+PASS pool fixture activates Overdrive
+PASS reused native tower has fresh Overdrive cooldown
+PASS pool fixture activates Overdrive
+PASS reused native tower has fresh Overdrive cooldown
+PASS all tower rigs projectiles VFX and debuffs clean up
+PASS camera and path layout unchanged
+PASS unload fixture owns active rig debuff and cached frames
+PASS scene unload releases rigs/debuffs/cropped textures while preserving shared atlas
+ALL NOVA SPIKE TESTS PASSED

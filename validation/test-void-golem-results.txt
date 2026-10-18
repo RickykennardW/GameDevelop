@@ -539,13 +539,13 @@ PASS bounded native timeline
 PASS native50 projectile minus buffed35 armor
 PASS existing damage tier bought
 PASS existing damage tier bought
-PASS existing Meteor tier bought
-PASS existing Meteor tier bought
-PASS existing Meteor tier bought
-PASS existing Meteor tier bought
+PASS Celestial Barrage tier bought
+PASS Celestial Barrage tier bought
+PASS Celestial Barrage tier bought
+PASS Celestial Barrage tier bought
 PASS actual aligned Golem volley launched
 PASS bounded native timeline
-PASS native2-4 three Meteors respect minimum1 versus35armor
+PASS native2-4 one65damage bolt minus35armor, no duplicate dual hit
 PASS lethal homing hit on0.6release frame has death priority
 PASS Elite timers use existing2x game clock
 PASS 2x release after0.6game seconds without drift

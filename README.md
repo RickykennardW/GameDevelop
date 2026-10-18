@@ -1,6 +1,6 @@
 # Celestial Void Tower Defense
 
-Buka **Tower Defense.json** di GDevelop. Project memakai satu Game Scene, satu Star Cannon dengan 21 kombinasi upgrade valid, enam enemy, 45 Gold-Budget waves, dan audio galaxy dinamis.
+Buka **Tower Defense.json** di GDevelop. Project memakai satu Game Scene, satu Star Cannon Nova Spike dengan 27 kombinasi upgrade valid (maksimal Lv5), enam enemy, 45 Gold-Budget waves, dan audio galaxy dinamis.
 
 **NO BACKUP â€” aturan permanen pengguna untuk seluruh pekerjaan Codex.** Jangan membuat salinan project/asset, folder backup, .bak/.old/.backup, JSON pengaman, ZIP atau snapshot manual. Instruksi lengkap ada di **AGENTS.md**.
 
@@ -26,7 +26,9 @@ python tools/run-clean-validation.py --prepare
 python tools/run-clean-validation.py test-clean-project
 ```
 
-Suite lain: `test-nova-wisp`, `test-void-hound`, `test-void-common`, `test-healthbars-balance`, `test-void-golem`, `test-gold-budget`. Native compiler/runtime GDevelop tersedia pada mesin ini; `GD_VALIDATION_HOME` dapat menunjuk lokasi adapter lain. Export preview adalah build gameplay yang diregenerasi langsung, bukan backup atau salinan project sumber.
+Suite lain: `test-nova-spike`, `test-nova-wisp`, `test-void-hound`, `test-void-common`, `test-healthbars-balance`, `test-void-golem`, `test-gold-budget`. Native compiler/runtime GDevelop tersedia pada mesin ini; `GD_VALIDATION_HOME` dapat menunjuk lokasi adapter lain. Export preview adalah build gameplay yang diregenerasi langsung, bukan backup atau salinan project sumber.
+
+Nova Spike memakai base diam, chassis berputar, recoil barrel independen, dan core dari atlas modular. Konfigurasi balancing terpusat ada pada scene variable `StarCannonConfig`; geometri/komponen pada `StarComponentConfig`. Preview 27 state: `validation/Nova_Spike_27_States.png`. Detail perubahan dan pengujian: **NOVA_SPIKE_REPORT.md**.
 
 Klik/tap atau tekan tombol untuk mengaktifkan audio browser. Speaker kecil di sebelah HUD mengatur Master/Music/SFX/UI dan mute. Bila GDevelop masih menampilkan data lama, buka ulang project utama.
 

@@ -40,6 +40,13 @@ for scene in scenes:
         if v['type']=='structure':return {c['name']:variable_value(c) for c in v.get('children',[])}
         return v.get('value')
     variables={v['name']:variable_value(v) for v in scene['variables']}
+    component=variables['StarComponentConfig'];star=variables['StarCannonConfig']
+    expected={f'{a}_{b}' for a in range(6) for b in range(6) if not(a>=3 and b>=3)}
+    ok(set(component['States'])==expected and star['MaxLevel']==5,'Nova Spike complete 27-state matrix / cap5')
+    for key,meta in component['States'].items():
+        for part in ['Base','Turret']:
+            ok(all(isinstance(q,list) and len(q)==2 and all(isinstance(n,(int,float)) for n in q) for q in meta[part]['Hull']),'Native numeric selection hull pairs: '+key+'/'+part)
+        ok(len(meta['Turret']['Muzzles'])==(2 if int(key.split('_')[1])>=3 else 1),'Nova muzzle count: '+key)
     portraits=variables.get('MonsterPortraitConfig',{})
     portrait_object=next(o for o in scene['objects'] if o['name']=='IndexMonsterImage')
     for id,meta in portraits.items():

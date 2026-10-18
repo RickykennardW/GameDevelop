@@ -1,0 +1,176 @@
+{
+  "result": {
+    "checks": [
+      "fresh RuntimeGame starts all six types undiscovered",
+      "existing front/down Idle chosen for Basic",
+      "Index shares canonical single-frame portrait Basic",
+      "locked portrait remains a solid black silhouette Basic",
+      "individual PNG reused directly Basic",
+      "visual bounding box fits portrait /aspect ratio preserved Basic",
+      "visual monster center matches Index container Basic",
+      "existing front/down Idle chosen for VoidHound",
+      "Index shares canonical single-frame portrait VoidHound",
+      "locked portrait remains a solid black silhouette VoidHound",
+      "atlas restricted to exactly one native frame VoidHound",
+      "visual bounding box fits portrait /aspect ratio preserved VoidHound",
+      "visual monster center matches Index container VoidHound",
+      "existing front/down Idle chosen for VoidGuard",
+      "Index shares canonical single-frame portrait VoidGuard",
+      "locked portrait remains a solid black silhouette VoidGuard",
+      "individual PNG reused directly VoidGuard",
+      "visual bounding box fits portrait /aspect ratio preserved VoidGuard",
+      "visual monster center matches Index container VoidGuard",
+      "existing front/down Idle chosen for VoidSentinel",
+      "Index shares canonical single-frame portrait VoidSentinel",
+      "locked portrait remains a solid black silhouette VoidSentinel",
+      "individual PNG reused directly VoidSentinel",
+      "visual bounding box fits portrait /aspect ratio preserved VoidSentinel",
+      "visual monster center matches Index container VoidSentinel",
+      "existing front/down Idle chosen for VoidBrute",
+      "Index shares canonical single-frame portrait VoidBrute",
+      "locked portrait remains a solid black silhouette VoidBrute",
+      "individual PNG reused directly VoidBrute",
+      "visual bounding box fits portrait /aspect ratio preserved VoidBrute",
+      "visual monster center matches Index container VoidBrute",
+      "existing front/down Idle chosen for VoidGolem",
+      "Index shares canonical single-frame portrait VoidGolem",
+      "locked portrait remains a solid black silhouette VoidGolem",
+      "atlas restricted to exactly one native frame VoidGolem",
+      "visual bounding box fits portrait /aspect ratio preserved VoidGolem",
+      "visual monster center matches Index container VoidGolem",
+      "Void Hound is one384x255 idle cell /not1536x1024 atlas",
+      "Void Guard uses existing individual Idle_Down_0 /not Move_Up",
+      "notification uses same single-frame portrait/name as Index",
+      "original reveal animation completes",
+      "notification portrait never stretched",
+      "notification centers the actual visible monster body",
+      "same kind once per session /queue design unchanged",
+      "Index open/close never resets discovery",
+      "wave and1x/2x changes do not reset discovery",
+      "actual native ordinary scene replacement succeeds",
+      "old scene releases owned portrait crops /shared images survive",
+      "ordinary scene reload keeps runtime discovery session",
+      "ordinary scene reload preserves active/queued notifications without duplicate sound",
+      "explicit New Game reset clears discovery and pending notifications",
+      "first encounter announces again after explicit New Game",
+      "no new image resources or gameplay asset replacements"
+    ],
+    "observed": [
+      {
+        "id": "Basic",
+        "animation": "NovaIdle_Down",
+        "frame": "individual PNG",
+        "textureSize": [
+          1254,
+          1254
+        ],
+        "visualBounds": [
+          155,
+          129,
+          938,
+          996
+        ]
+      },
+      {
+        "id": "VoidHound",
+        "animation": "HoundIdle_Down",
+        "frame": [
+          0,
+          0,
+          384,
+          255
+        ],
+        "textureSize": [
+          384,
+          255
+        ],
+        "visualBounds": [
+          98,
+          7,
+          203,
+          239
+        ]
+      },
+      {
+        "id": "VoidGuard",
+        "animation": "VoidGuardIdle_Down",
+        "frame": "individual PNG",
+        "textureSize": [
+          128,
+          128
+        ],
+        "visualBounds": [
+          19,
+          19,
+          86,
+          85
+        ]
+      },
+      {
+        "id": "VoidSentinel",
+        "animation": "VoidSentinelIdle_Down",
+        "frame": "individual PNG",
+        "textureSize": [
+          128,
+          128
+        ],
+        "visualBounds": [
+          32,
+          26,
+          76,
+          74
+        ]
+      },
+      {
+        "id": "VoidBrute",
+        "animation": "VoidBruteIdle_Down",
+        "frame": "individual PNG",
+        "textureSize": [
+          128,
+          128
+        ],
+        "visualBounds": [
+          29,
+          35,
+          70,
+          69
+        ]
+      },
+      {
+        "id": "VoidGolem",
+        "animation": "VoidGolemIdle_Down",
+        "frame": [
+          0,
+          0,
+          256,
+          307
+        ],
+        "textureSize": [
+          256,
+          307
+        ],
+        "visualBounds": [
+          20,
+          30,
+          234,
+          261
+        ]
+      }
+    ],
+    "scope": "session",
+    "sessionFound": [
+      "Basic"
+    ],
+    "sessionAudioSettings": {
+      "Master": 73,
+      "Music": 35,
+      "SFX": 70,
+      "UI": 45,
+      "MuteMusic": false,
+      "MuteSFX": false
+    },
+    "note": "Legacy discovery is deliberately seeded for the real browser close/relaunch check; no user profile is used."
+  },
+  "progress": [],
+  "consoleErrors": []
+}

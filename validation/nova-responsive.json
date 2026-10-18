@@ -1,0 +1,35 @@
+{
+  "result": {
+    "checks": [
+      "native map /82 road tiles",
+      "one small Star Cannon shop card",
+      "native selected tower /two upgrade paths"
+    ],
+    "mode": "selected",
+    "camera": [
+      1254.1924198250729,
+      583.0754518950438,
+      0.36645299145299143
+    ],
+    "muzzle": null,
+    "objects": 82,
+    "resources": 788,
+    "shopCardSize": [
+      84,
+      112
+    ],
+    "layers": [
+      "",
+      "UI",
+      "TowerShopList",
+      "SelectedTowerUI",
+      "IndexUI",
+      "IndexList",
+      "ObstacleUI",
+      "AudioUI",
+      "DiscoveryUI"
+    ]
+  },
+  "progress": [],
+  "consoleErrors": []
+}

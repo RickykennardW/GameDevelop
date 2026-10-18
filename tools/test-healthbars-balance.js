@@ -52,6 +52,6 @@ ok(star.valid(4,2)&&star.valid(2,4)&&!star.valid(3,3)&&!star.valid(4,3)&&!star.v
 const beforeMoney=v('Money'),tower=scene.createObject('StarCannonTower'),tv=tower.getVariables();scene.__freePlacement.positionSprite(tower,'StarCannonTower',800,352);tv.get('FootprintX').setNumber(800);tv.get('FootprintY').setNumber(352);tv.get('TowerId').setNumber(987654);step();
 for(let i=0;i<4;i++)ok(star.upgrade(tower,1),'buy Path1 tier '+(i+1));for(let i=0;i<2;i++)ok(star.upgrade(tower,2),'buy Path2 cross tier '+(i+1));
 ok(near(beforeMoney-v('Money'),4770)&&tv.get('TotalInvestment').getAsNumber()===5070,'4-2 native costs/investment exactly5070 including300 purchase');
-const money=v('Money');ok(!star.upgrade(tower,2)&&!star.upgrade(tower,1)&&v('Money')===money,'locked/max upgrade cannot charge gold');
+ok(star.upgrade(tower,1),'buy new Path1 level5');const money=v('Money');ok(!star.upgrade(tower,2)&&!star.upgrade(tower,1)&&v('Money')===money,'locked/max level5 upgrade cannot charge gold');
 tower.deleteFromScene();step();
 lines.push('ALL HEALTHBAR BALANCE TESTS PASSED');output.textContent=lines.join('\n');document.title='PASS '+(lines.length-1)+' HP/balance checks';

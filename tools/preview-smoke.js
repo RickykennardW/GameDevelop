@@ -10,13 +10,15 @@
   tower=S.createObject('StarCannonTower');p.positionSprite(tower,'StarCannonTower',300,352);const v=tower.getVariables();for(const [key,value]of Object.entries({FootprintX:300,FootprintY:352,FootprintRadius:46,TowerId:900001,PurchasePrice:300,TotalInvestment:300,Path1Level:2,Path2Level:4}))v.get(key).setNumber(value);star.apply(tower);tower.__starCooldown=10000;step(2);
   if(mode==='selected'){V.get('SelectedTower').setNumber(900001);step(3);ok(S.__selectedPanel.tower===tower&&S.__selectedPanel.cards.length===2,'native selected tower /two upgrade paths');}
  }
- if(mode==='index'){
-  V.get('IndexOpen').setBoolean(true);S.__unitIndex.category='Monsters';step(4);ok(S.__unitIndex.entries.length===6,'native Index contains all six enemy types');
+ if(mode==='index'||mode==='tower-index'){
+  V.get('IndexOpen').setBoolean(true);S.__unitIndex.category=mode==='tower-index'?'Towers':'Monsters';step(4);
+  if(mode==='tower-index'){S.__unitIndex.scroll=S.__unitIndex.maxScroll;step(2);ok(Object.keys(S.__unitIndex.objects).filter(k=>/^starUpgrade[01][0-4]$/.test(k)).length===10,'native Index displays all ten new upgrades');}
+  else ok(S.__unitIndex.entries.length===6,'native Index contains all six enemy types');
  }
  if(mode==='combat'){
   const types=['Basic','VoidHound','VoidGuard','VoidSentinel','VoidBrute','VoidGolem'];
   types.forEach((type,i)=>{const e=S.createObject('Enemy'),v=e.getVariables(),stats=V.get('EnemyTypes').getChild(type).toJSObject();v.get('EnemyType').setString(type);e.getBehavior('Health').SetMaxHealth(stats.HP);e.getBehavior('Health').SetHealth(stats.HP);S.__novaWisp.ensure(e);v.get('MoveSpeed').setNumber(0);e.setPosition(500+i*140-e.getWidth()/2,352-e.getHeight()/2);});step(2);
-  const target=get('Enemy')[0];tower.__starFacing=star.bearing(tower,target);muzzle=star.visual(tower).meta.Turret.Muzzles.map((_,i)=>star.muzzle(tower,i));ok(star.fire(tower,target),'native multi-projectile fire');ok(get('StarCannonProjectile').length===3,'three native Meteor projectiles spawned');step(1);
+  const target=get('Enemy')[0];tower.__starFacing=star.bearing(tower,target);muzzle=star.visual(tower).meta.Turret.Muzzles.map((_,i)=>star.muzzle(tower,i));ok(star.fire(tower,target),'native alternating muzzle fire');ok(get('StarCannonProjectile').length===1,'one native Rhythm bolt from alternating muzzle');step(1);
   // Fix animation phase only in this disposable test scene for image comparison.
   for(const e of get('Enemy')){
    for(const key of ['__novaState','__houndState','__voidCommonState'])if(e[key]){e[key].age=1;e[key].phase=0;}
