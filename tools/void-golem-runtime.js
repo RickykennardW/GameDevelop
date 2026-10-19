@@ -15,6 +15,7 @@ if(!g){
   if(health.FlatDamageReduction()!==value)health.SetFlatDamageReduction(value);
  };
  f.end=rec=>{
+  scene.__enemyStatusIcons?.remove(rec.enemy,f.name,rec.id);
   if(owns(rec.vfx,rec.vfxId,rec.id,'OwnerEnemyId'))rec.vfx.deleteFromScene();rec.vfx=null;
   rec.active=false;rec.expires=0;
   if(rec.enemy.getUniqueId()===rec.id){
@@ -64,10 +65,10 @@ if(!g){
    if(!owns(rec.vfx,rec.vfxId,rec.id,'OwnerEnemyId')||!liveIcons.has(rec.vfx)){
     const icon=scene.createObject('VoidFortificationVFX');icon.getVariables().get('OwnerEnemyId').setNumber(rec.id);rec.vfx=icon;rec.vfxId=icon.getUniqueId();f.createdVFX++;
    }
-   const e=rec.enemy,icon=rec.vfx,type=e.getVariables().get('EnemyType').getAsString(),hp=sv.get('EnemyHPBarConfig').getChild('Types').getChild(type);
+   const e=rec.enemy,icon=rec.vfx,type=e.getVariables().get('EnemyType').getAsString();
    const size=type==='VoidGolem'?config.Skill.EliteIconSize:config.Skill.CommonIconSize;
-   icon.setLayer(e.getLayer());icon.setZOrder(14990);icon.setWidth(size);icon.setHeight(size);
-   icon.setPosition(e.getCenterXInScene()+hp.getChild('Width').getAsNumber()/2+3,e.getCenterYInScene()-hp.getChild('HeadOffset').getAsNumber()-7);
+   icon.setLayer(e.getLayer());icon.setWidth(size);icon.setHeight(size);
+   scene.__enemyStatusIcons?.set(e,f.name,icon,size,scene.__enemyStatusIcons.config.FortificationOrder);
    icon.setOpacity(Math.round(224+25*Math.sin(g.frameTime*3+rec.id)));icon.hide(e.isHidden());
   }
   for(const [id,p]of f.pulses){

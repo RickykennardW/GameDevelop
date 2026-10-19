@@ -1,0 +1,15 @@
+{
+  "result": {
+    "checks": [
+      "fresh Fusion archive starts undiscovered",
+      "three primary Index categories",
+      "actual Fusion tab navigates",
+      "unknown Fusion listed with hidden name/status",
+      "silhouette uses original Fusion asset with black per-sprite tint",
+      "cryptic hint visible; recipe and stats locked"
+    ],
+    "status": "undiscovered"
+  },
+  "progress": [],
+  "consoleErrors": []
+}

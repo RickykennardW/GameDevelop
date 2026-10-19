@@ -1,0 +1,33 @@
+{
+  "projectSHA256": "0e61cb9c83cd551ea309848e6176b56221c0abdd8f0d2b1cb9baa5863df2e9aa",
+  "existingSceneDataSHA256": "bf6056cb5dc267f909868ef73ed6017fa2c4b46c1fe1a5f08bb5e3b166a5b64f",
+  "protectedRuntimeSHA256": {
+    "star-cannon-runtime.js": "9d2be794ec688de87c737526cabfa60f4ee98fd61a50288fd5371292b7a73aec",
+    "free-placement-runtime.js": "6e534e8e6ee87affdb30c3ab659f478a4628a2e911a4d4d559b9bbe688e8ebde",
+    "monster-discovery-runtime.js": "3615ed7349ef622eda5aa2ceb301ddb4e0d498e868d40e4b3d2781ac60cbd457",
+    "nova-wave-manager.js": "1648d20cb1d25d958fef9c83c34c3254dd0f00593d1cc333228479b4f5d7b19c",
+    "void-golem-runtime.js": "945fbd0d30601e416a903cac1922f377e95cc6d5f03cad4c8ab486dbcb4b580d",
+    "audio-runtime.js": "f16f6acc3a2f11eefe10ccb91c7c3e4c952a33ead22f6084c4718519b99be658"
+  },
+  "resourceCount": 402,
+  "finalChecks": {
+    "projectJSONUnchanged": true,
+    "existingSceneObjectsConfigLayersInstancesUnchanged": true,
+    "protectedRuntimeUnchanged": {
+      "star-cannon-runtime.js": true,
+      "free-placement-runtime.js": true,
+      "monster-discovery-runtime.js": true,
+      "nova-wave-manager.js": true,
+      "void-golem-runtime.js": true,
+      "audio-runtime.js": true
+    },
+    "resourceCount": 402,
+    "newSceneVariables": [
+      "FusionCatalog"
+    ],
+    "newEvent": [
+      0,
+      4
+    ]
+  }
+}

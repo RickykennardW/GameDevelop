@@ -38,13 +38,14 @@ const w = Math.min(700,width-32), h = Math.min(600,height-32), x = (width-w)/2, 
 const content = { x:x+20,y:y+108,w:w-52,h:h-180 };
 index.geometry = {x,y,w,h,content};
 const inside = (a,b,c,d) => mx>=a && mx<a+c && my>=b && my<b+d;
-const closeY=y+h-54, tabWidth=(w-48)/2;
-const hover = inside(x+20,y+62,tabWidth,32)?"Towers":inside(x+28+tabWidth,y+62,tabWidth,32)?"Monsters":inside(x+w-140,closeY,120,34)?"Close":inside(x+20,closeY,38,34)?"Up":inside(x+64,closeY,38,34)?"Down":"";
+const categories=['Towers','Monsters','Fusion'],closeY=y+h-54,tabWidth=(w-40-(categories.length-1)*8)/categories.length;
+index.categories=categories;index.tabRects=categories.map((name,i)=>({name,x:x+20+i*(tabWidth+8),y:y+62,w:tabWidth,h:32}));
+const hover=index.tabRects.find(r=>inside(r.x,r.y,r.w,r.h))?.name||(inside(x+w-140,closeY,120,34)?'Close':inside(x+20,closeY,38,34)?'Up':inside(x+64,closeY,38,34)?'Down':'');
 if (down && !index.wasDown) index.pressed=hover;
 if ((!down && index.wasDown && index.pressed==="Close" && hover==="Close") || gdjs.evtTools.input.wasKeyJustPressed(runtimeScene,"Escape")) {
   sv.get("IndexOpen").setBoolean(false);open=false;
 }
-if (!down && index.wasDown && index.pressed===hover && ["Towers","Monsters"].includes(hover) && index.category!==hover) { index.category=hover;index.scroll=0; }
+if (!down && index.wasDown && index.pressed===hover && categories.includes(hover) && index.category!==hover) { index.category=hover;index.scroll=0; }
 // Read the same object variables/catalog/archetypes that the game uses. No copied balance table.
 const data=game.getSceneAndExtensionsData(runtimeScene.getName()).sceneData;
 const catalog=sv.get("TowerShopCatalog").toJSObject();
@@ -55,9 +56,9 @@ const entries=index.category==="Towers" ? catalog.map(item=>{
   const values=Object.fromEntries(definition.variables.map(v=>[v.name,v.value]));
   return {name:values.TowerName||item.Name,animation:item.IconAnimation||item.Type,damage:values.Damage,range:values.AttackRange,cooldown:values.AttackInterval,price:item.Cost,
     projectileSpeed:values.ProjectileSpeed, special:"Cosmic cannon / 2 UPGRADE PATHS.",type:item.Type};
-}).filter(Boolean) : runtimeScene.__monsterDiscovery.ids.map(name=>({typeId:name,name:archetypes[name].Name||name,...archetypes[name],role:roles[name]||(archetypes[name].Role+" / Armor "+archetypes[name].Armor+" / No special ability / Wave "+archetypes[name].MinimumWave+"+")}));
+}).filter(Boolean) : index.category==='Fusion' ? game.__fusionArchive.catalog.map(def=>({type:def.Id,name:def.Name,fusion:true,definition:def})) : runtimeScene.__monsterDiscovery.ids.map(name=>({typeId:name,name:archetypes[name].Name||name,...archetypes[name],role:roles[name]||(archetypes[name].Role+" / Armor "+archetypes[name].Armor+" / No special ability / Wave "+archetypes[name].MinimumWave+"+")}));
 index.entries=entries;
-const heights=entries.map(e=>e.type==="StarCannonTower"?528:148), offsets=[];let total=0;heights.forEach(h=>{offsets.push(total);total+=h+12;});
+const heights=entries.map(e=>e.fusion?(e.definition.AdaptiveVariants?236+e.definition.Variants.length*40:236):e.type==="StarCannonTower"?528:148), offsets=[];let total=0;heights.forEach(h=>{offsets.push(total);total+=h+12;});
 const stride=160, maxScroll=Math.max(0,total-12-content.h);
 if(inside(content.x,content.y,content.w+16,content.h))index.scroll-=Math.sign(input.getMouseWheelDelta())*52;
 if(!down && index.wasDown && index.pressed===hover){if(hover==="Up")index.scroll-=stride;if(hover==="Down")index.scroll+=stride;}
@@ -66,7 +67,7 @@ if(down&&!index.wasDown&&inside(trackX-3,content.y,14,content.h)){index.dragging
 if(down&&index.dragging)index.scroll=index.dragScroll+(my-index.dragY)*maxScroll/Math.max(1,content.h-thumbHeight);
 if(!down)index.dragging=false;
 index.scroll=Math.max(0,Math.min(maxScroll,index.scroll));index.maxScroll=maxScroll;
-const renderKey=JSON.stringify([index.category,index.scroll,width,height,hover,open,runtimeScene.__monsterDiscovery.revision]);
+const renderKey=JSON.stringify([index.category,index.scroll,width,height,hover,open,runtimeScene.__monsterDiscovery.revision,game.__fusionArchive?.revision||0]);
 if(index.renderKey===renderKey){index.wasDown=down;if(!down)index.pressed="";return;}
 index.renderKey=renderKey;index.renderCount=(index.renderCount||0)+1;
 const panel=(key,a,b,c,d,color,opacity=255,layer="IndexUI",z=1)=>{
@@ -79,8 +80,8 @@ Object.values(index.objects).forEach(o=>o.hide());
 panel("shade",0,0,width,height,"20;29;23",190,"IndexUI",0);
 panel("frame",x,y,w,h,"255;255;255");
 text("title","UNIT INDEX",x+22,y+16,w-44,24,"239;232;255",true);
-text("subtitle",index.category==="Monsters"?"MONSTER DISCOVERY  /  "+runtimeScene.__monsterDiscovery.found.size+" / "+entries.length+" DISCOVERED":"Field guide  /  Live gameplay stats",x+22,y+44,w-44,12,"170;159;196");
-for(const [i,category] of ["Towers","Monsters"].entries()){
+text("subtitle",index.category==='Fusion'?'FUSION ARCHIVE  /  '+entries.filter(e=>game.__fusionArchive.has(e.type)).length+' / '+entries.length+' DISCOVERED':index.category==="Monsters"?"MONSTER DISCOVERY  /  "+runtimeScene.__monsterDiscovery.found.size+" / "+entries.length+" DISCOVERED":"Field guide  /  Live gameplay stats",x+22,y+44,w-44,12,"170;159;196");
+for(const [i,category] of categories.entries()){
   const tx=x+20+i*(tabWidth+8),active=index.category===category;
   panel("tab"+i,tx,y+62,tabWidth,32,active?"163;138;206":"87;67;120");
   text("tabText"+i,category.toUpperCase(),tx+14,y+69,tabWidth-28,14,"234;228;251",true);
@@ -90,6 +91,26 @@ index.cards=[];
 entries.forEach((entry,i)=>{
   const cardHeight=heights[i],cy=content.y+offsets[i]-index.scroll,cx=content.x,cw=content.w;
   panel("card"+i,cx,cy,cw,cardHeight,"87;66;115",255,"IndexList",0);
+  if(entry.fusion){
+    const archive=game.__fusionArchive,def=entry.definition,locked=!archive.has(def.Id),known=def.Variants.filter(v=>archive.hasVariant(def.Id,v.Id));
+    const ft=(key,value,a,b,c,size=12,color='d')=>{const o=text('fusion'+key+i,value,a,b,c,size,color==='d'?'204;190;231':color,false,'IndexList',3);o.setWrapping(true);o.setWrappingWidth(c);return o;};
+    panel('fusionPortraitPanel'+i,cx+12,cy+12,80,124,'115;86;145',255,'IndexList',1);
+    const sprite=index.ensure('fusionPortrait'+i,'IndexTowerImage','IndexList',2);sprite.setAnimationName(def.Animation);sprite.setColor(locked?'0;0;0':'255;255;255');sprite.setOpacity(255);sprite.setWidth(76);sprite.setHeight(76);sprite.setPosition(cx+14,cy+36);sprite.hide(false);sprite.__fusionLocked=locked;sprite.__fusionId=def.Id;
+    const name=ft('Name',locked?'???':def.Name,cx+108,cy+12,cw-246,20,'237;228;255');name.setBold(true);
+    const status=ft('Status',locked?'UNDISCOVERED':'DISCOVERED',cx+cw-126,cy+18,116,10,locked?'159;140;187':'161;218;232');status.setBold(true);
+    const config=data.variables.some(v=>v.name===def.StatsConfig)?sv.get(def.StatsConfig).toJSObject():(def.Stats||{});
+    const stats=ft('Stats',locked?def.Kind.toUpperCase()+' FUSION\nStats and abilities locked':def.Kind.toUpperCase()+' FUSION  /  DAMAGE '+config.Damage+'\nRange: '+config.AttackRange+' px  /  Interval: '+Number(config.AttackInterval).toFixed(2)+' s',cx+108,cy+46,cw-124,13);
+    const special=ft('Description',locked?'CRYPTIC HINT\n'+def.Hint:def.Description,cx+108,cy+94,cw-124,12);
+    panel('fusionRule'+i,cx+16,cy+152,cw-32,1,'143;111;182',190,'IndexList',2);
+    ft('RecipeLabel','COMBINATION',cx+16,cy+163,cw-32,10,'166;210;232').setBold(true);
+    const recipe=v=>v.Recipe.map(p=>p.Label||p.Type+' '+p.Path1+'-'+p.Path2).join(' + ');
+    ft('Recipe',locked?'Combination locked':def.AdaptiveVariants?'Discovered variants are listed below':known.map(recipe).join('\n')||'Combination not yet recorded',cx+16,cy+182,cw-32,13);
+    if(def.AdaptiveVariants){
+      const progress=archive.progress(def.Id);ft('Progress','ADAPTIVE VARIANTS  /  '+progress.found+' / '+progress.total,cx+16,cy+214,cw-32,11,'177;219;240');
+      def.Variants.forEach((v,n)=>ft('Variant'+n,archive.hasVariant(def.Id,v.Id)?v.Name+'\n'+recipe(v):'???  /  UNDISCOVERED',cx+16,cy+236+n*40,cw-32,11));
+    }else ft('Pure','PURE FUSION  /  ONE CANONICAL RECIPE',cx+16,cy+214,cw-32,10,'168;149;198');
+    index.cards.push({name,stats,special,sprite,status,locked,id:def.Id});return;
+  }
   panel("portrait"+i,cx+12,cy+12,80,124,"115;86;145",255,"IndexList",1);
   const monster=index.category==="Monsters", sprite=index.ensure((monster?"monster":"tower")+i,monster?"IndexMonsterImage":"IndexTowerImage","IndexList",2);
   const locked=monster&&!runtimeScene.__monsterDiscovery.has(entry.typeId);sprite.__discoveryLocked=locked;
@@ -108,7 +129,7 @@ entries.forEach((entry,i)=>{
   sprite.hide(false);
   const name=text("name"+i,locked?"???":entry.name,cx+108,cy+12,monster?cw-246:cw-124,20,"237;228;255",true,"IndexList");
   if(monster)text("discoveryStatus"+i,locked?"UNDISCOVERED":"DISCOVERED",cx+cw-126,cy+18,116,10,locked?"150;125;180":"161;204;229",true,"IndexList");
-  const stats=locked?"HP: ???     Speed: ???\nGold Reward: ???":monster?"HP: "+entry.HP+"     Speed: "+entry.Speed+"\nGold Reward: "+entry.Reward+" Gold":"Damage: "+entry.damage+"     Range: "+entry.range+"\nCooldown: "+Number(entry.cooldown).toFixed(2)+" s     Price: "+entry.price+" Gold";
+  const stats=locked?"HP: ???     Speed: ???\nGold Reward: ???":monster?"HP: "+entry.HP+"     Speed: "+entry.Speed+"\nGold Reward: "+entry.Reward+" Gold":"Damage: "+entry.damage+"     Range: "+entry.range+"\nCooldown: "+Number(entry.cooldown).toFixed(2)+" s     "+(entry.fusion?'FUSION ARCHIVE':"Price: "+entry.price+" Gold");
   const statText=text("stats"+i,stats,cx+108,cy+44,cw-124,15,"218;206;241",false,"IndexList");
   const special=text("special"+i,locked?"ABILITY: ???\nNot yet discovered.":(monster?"ROLE\n":"SPECIAL\n")+(monster?entry.role:entry.special),cx+108,cy+92,cw-124,13,"181;168;214",false,"IndexList");
   if(entry.type==="StarCannonTower") {

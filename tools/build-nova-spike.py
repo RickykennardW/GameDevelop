@@ -94,10 +94,10 @@ def main():
         Path2RangeMultipliers=old['Path2RangeMultipliers'][:3]+[old['Path2RangeMultipliers'][3],old['Path2RangeMultipliers'][4],old['Path2RangeMultipliers'][4]],
         Nova={'EveryShots':4,'DamageMultiplier':1.75,'SplashRadius':old['ExplosionRadius'],'SplashRatio':old.get('SplashRatios',[0,0,0,.25])[3]},
         Fracture={'BaseArmorReduction':.20,'Duration':3},Rhythm={'PerStackSpeedBonus':.03,'MaxStacks':5,'ResetAfter':3},
-        Overdrive={'Duration':2,'CooldownAfterEnd':18},Lance={'MaxTargets':5,'Lifetime':6,'HitRadius':4},
+        Overdrive={'Duration':2,'CooldownAfterEnd':18},Lance={'MaxTargets':3,'Lifetime':6,'HitRadius':4},
         ProjectileLifetime=6,ProjectileContactRadius=4,VisualAnchors={k:{'X':.5,'Y':.5} for k in states})
     names=[['Star Compression','Dense Stellar Core','Nova Impact','Starbreaker','Supernova Cannon'],['Astral Accelerator','Rapid Starflow','Twin Star Muzzle','Cosmic Rhythm','Celestial Overdrive']]
-    descriptions=[['+15% base damage.','+30% total base damage.','Every 4th shot: 175% damage + nova splash.','Nova fractures 20% base armor for 3s.','Every 4th shot: straight lance, up to 5 enemies.'],['+10% base attack speed.','+20% total base attack speed.','Two alternating muzzles; +45% total speed.','+3% speed/shot, max 5. Reset after 3s idle.','Dual fire 2s; 18s cooldown after ending.']]
+    descriptions=[['+15% base damage.','+30% total base damage.','Every 4th shot: 175% damage + nova splash.','Nova fractures 20% base armor for 3s.','Every 4th shot: lance pierces 3; each hit explodes.'],['+10% base attack speed.','+20% total base attack speed.','Two alternating muzzles; +45% total speed.','+3% speed/shot, max 5. Reset after 3s idle.','Dual fire 2s; 18s cooldown after ending.']]
     paths=[]
     for p in range(2):
         costs=[u['Cost'] for u in old['Paths'][p]['Upgrades'][:4]]
@@ -130,7 +130,7 @@ def main():
             ring=''.join(f'<ellipse cx="{84-j*14}" cy="24" rx="3" ry="{7+j}" fill="none" stroke="#eddcff" opacity=".7"/>' for j in range((i//2)%3))
             svg=f'<svg xmlns="http://www.w3.org/2000/svg" width="128" height="48" viewBox="0 0 128 48"><defs><radialGradient id="g"><stop stop-color="#ffffff"/><stop offset=".22" stop-color="{color}"/><stop offset=".58" stop-color="#8b4de9" stop-opacity=".7"/><stop offset="1" stop-color="#371561" stop-opacity="0"/></radialGradient><linearGradient id="b"><stop stop-color="{color}" stop-opacity="0"/><stop offset=".7" stop-color="{color}"/><stop offset="1" stop-color="#ffffff"/></linearGradient></defs><ellipse cx="83" cy="24" rx="43" ry="21" fill="url(#g)" opacity="{pulse}"/>{channels}<path d="{body}" fill="url(#b)" stroke="{color}" stroke-width="1"/><path d="M 48 24 L 119 24" stroke="white" stroke-width="2" opacity="{pulse}"/>{ring}</svg>'
             (ASSET/'projectiles'/f'{kind}_{frame}.svg').write_text(svg,encoding='utf-8')
-    effects=['Base','Explosion','Fracture','Pierce','Dissipate','Surge','Stabilize','FractureIcon']
+    effects=['Base','Fracture','Pierce','Dissipate','Surge','Stabilize']
     for k,kind in enumerate(effects):
         for frame in range(6):
             t=(frame+1)/6;r=6+44*t;alpha=1-t*.82;color=['#a2dcff','#bc8bff','#e19eff','#d9eaff','#9eb6ff','#b4f4ff','#a4c4ff','#e0a0ff'][k]
@@ -165,6 +165,16 @@ def main():
     variables['TowerFootprints']['StarCannonTower']['AnchorX']=.5;variables['TowerFootprints']['StarCannonTower']['AnchorY']=.5
     for v in scene['variables']:
         if v['name'] in ['StarCannonConfig','StarComponentConfig','TowerFootprints']:v.update(pack(v['name'],variables[v['name']]))
+    # Keep the UI-only portrait/symbol system when rebuilding gameplay artwork.
+    if (ROOT/'assets/ui/star_cannon/StarCannon_UI_Portrait.png').is_file():
+        import runpy
+        runpy.run_path(str(ROOT/'tools/build-star-cannon-ui.py'))['apply_ui'](project,scene)
+    if (ROOT/'assets/effects/star_cannon/StarCannon_VFX_NovaExplosion.png').is_file():
+        import runpy
+        runpy.run_path(str(ROOT/'tools/build-star-cannon-vfx.py'))['apply_vfx'](project,scene)
+    if (ROOT/'assets/towers/starburst_cannon/Starburst_Modular_Atlas.png').is_file():
+        import runpy
+        runpy.run_path(str(ROOT/'tools/build-starburst.py'))['apply_starburst'](project,scene)
     serialized=json.dumps(scene)
     assert not any('"'+name+'"' in serialized for name in old_ids),'An old Star asset remains referenced'
     resources[:]=[r for r in resources if r['name'] not in old_ids]

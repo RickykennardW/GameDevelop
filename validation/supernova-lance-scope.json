@@ -1,0 +1,16 @@
+{
+  "unchangedSceneDataSHA256": "d063d2adec3399ba10c7809e96e9030e9e93a51c2039f3f3de9811422d69a12e",
+  "projectResourcesSHA256": "a3c7c72bde03311198e1a1ba8b5b2b826451a2f24cc140bc9df5b913f2b15d8f",
+  "protectedRuntimeSHA256": {
+    "stats": "76b333d10a69cacf6892772b0779a7bc1b90eb284fed9681fcc46cb42f2b8b6e",
+    "fractureDamageTargeting": "03e563b74c296ff8078ae21ac299bc7f095f458a8fa3dc9e069e19164d02ae12"
+  },
+  "initialGoldBefore": 10000,
+  "initialGoldAfter": 50000,
+  "directCapAfter": 3,
+  "radiusAfter": 76,
+  "scopePassed": true,
+  "resourcesUnchanged": true,
+  "statsArmorDamageTargetingUnchanged": true,
+  "noBackupsCreated": true
+}

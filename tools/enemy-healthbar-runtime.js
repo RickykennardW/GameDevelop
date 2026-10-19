@@ -5,6 +5,46 @@ let bars=scene.__enemyHealthBars;
 if(!bars)bars=scene.__enemyHealthBars=new Map();
 let state=scene.__enemyHealthBarState;
 if(!state)state=scene.__enemyHealthBarState={config:scene.getVariables().get('EnemyHPBarConfig').toJSObject(),createdPairs:0};
+// Status owners retain their own durations/icons. This registry only arranges
+// every registered buff/debuff in one centered row above the native HP track.
+if(!scene.__enemyStatusIcons){
+ const cfg=scene.getVariables().get('EnemyStatusIconConfig').toJSObject();
+ const row=scene.__enemyStatusIcons={config:cfg,owners:new Map()};
+ row.removeOwner=record=>{
+  if(record.enemy.getUniqueId()===record.id)record.enemy.unregisterDestroyCallback(record.cleanup);
+  if(row.owners.get(record.id)===record)row.owners.delete(record.id);
+ };
+ row.set=(enemy,key,icon,size,order=100)=>{
+  const id=enemy.getUniqueId();let owner=row.owners.get(id);
+  if(!owner){owner={id,enemy,icons:new Map()};owner.cleanup=()=>row.removeOwner(owner);enemy.registerDestroyCallback(owner.cleanup);row.owners.set(id,owner);}
+  let item=owner.icons.get(key);if(!item){item={key};owner.icons.set(key,item);}
+  item.icon=icon;item.uid=icon.getUniqueId();item.size=size;item.order=order;icon.getVariables().get('OwnerEnemyId').setNumber(id);
+  return item;
+ };
+ row.remove=(enemy,key,ownerId=enemy.getUniqueId())=>{
+  const owner=row.owners.get(ownerId);if(!owner||owner.enemy!==enemy)return;owner.icons.delete(key);if(!owner.icons.size)row.removeOwner(owner);
+ };
+ row.render=()=>{
+  const live=new Set(scene.getObjects('Enemy')),objects=new Map();
+  const present=icon=>{const name=icon.getName();if(!objects.has(name))objects.set(name,new Set(scene.getObjects(name)));return objects.get(name).has(icon);};
+  for(const owner of [...row.owners.values()]){
+   const enemy=owner.enemy,pair=scene.__enemyHealthBars.get(owner.id);
+   if(enemy.getUniqueId()!==owner.id||!live.has(enemy)||enemy.getBehavior('Health').IsDead()||!pair){row.removeOwner(owner);continue;}
+   for(const [key,item]of owner.icons)if(item.icon.getUniqueId()!==item.uid||!present(item.icon)||item.icon.getVariables().get('OwnerEnemyId').getAsNumber()!==owner.id)owner.icons.delete(key);
+   const items=[...owner.icons.values()].sort((a,b)=>a.order-b.order||a.key.localeCompare(b.key));
+   if(!items.length){row.removeOwner(owner);continue;}
+   const total=items.reduce((sum,item)=>sum+item.size,0)+(items.length-1)*cfg.HorizontalSpacing;
+   const center=pair.background.getCenterXInScene(),bottom=pair.background.getY()-cfg.GapAboveHealthBar;let x=center-total/2;
+   owner.layout={center,bottom,width:total,count:items.length};
+   for(const [i,item]of items.entries()){
+    const icon=item.icon;icon.setLayer(enemy.getLayer());icon.setWidth(item.size);icon.setHeight(item.size);icon.setPosition(x,bottom-item.size);
+    icon.setZOrder(pair.fill.getZOrder()+cfg.ZOrderOffset+i);icon.hide(enemy.isHidden());x+=item.size+cfg.HorizontalSpacing;
+   }
+  }
+ };
+ row.dispose=()=>{for(const owner of [...row.owners.values()])row.removeOwner(owner);};
+ if(!gdjs.__celestialStatusLayoutCallback){gdjs.__celestialStatusLayoutCallback=true;gdjs.callbacksRuntimeSceneUnloading.push(s=>s.__enemyStatusIcons?.dispose());}
+}
 const backgrounds=new Set(scene.getObjects('HealthBarBackground'));
 const fills=new Set(scene.getObjects('HealthBarFill'));
 const living=new Set();

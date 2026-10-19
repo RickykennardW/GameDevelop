@@ -55,7 +55,8 @@ ok(armor(a)===35&&armor(nova)===10&&armor(guard)===20&&armor(sentinel)===10&&arm
 ok(get('VoidFortificationVFX').length===4&&get('VoidFortificationCastPulse').length===1,'one transient pulse plus independent persistent shields');
 const rec=F.members.get(nova.getUniqueId()),icon=rec.vfx,oldExpires=rec.expires;nova.setPosition(1150-24,600-24);hound.setPosition(930-24,600-24);step(4);
 ok(armor(nova)===10&&armor(hound)===0,'leaving retains/entering afterward does not gain aura');
-ok(near(icon.getX(),nova.getCenterXInScene()+12+3)&&icon.getZOrder()===14990&&scene.__enemyHealthBars.get(nova.getUniqueId()).background.getZOrder()>icon.getZOrder(),'shield follows exact owner/below HP/projectiles');
+const shieldBar=scene.__enemyHealthBars.get(nova.getUniqueId()).background;
+ok(near(icon.getCenterXInScene(),shieldBar.getCenterXInScene())&&near(icon.getY()+icon.getHeight(),shieldBar.getY()-3)&&icon.getZOrder()>shieldBar.getZOrder(),'shield follows owner in centered row above HP bar');
 const b=make('VoidGolem',1150,600);step();F.apply(b);step();
 ok(armor(nova)===10&&rec.baseArmor===0&&rec.expires>oldExpires&&rec.vfx===icon,'two casters refresh10seconds without stacking/duplicate icon');
 const refreshed=rec.expires;b.getBehavior('Health').SetHealth(0);step();ok(armor(nova)===10,'instant allied buff persists after caster death');

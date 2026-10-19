@@ -30,12 +30,12 @@ const syncWaveControl = () => {
   if (boolean("GameOver") || number("Lives") <= 0) variables.get("WaveMode").setString("Waiting");
   else if (!autoMode() && finished) variables.get("WaveMode").setString("Waiting");
   else if (mode() === "Waiting" && boolean("WaveActive")) variables.get("WaveMode").setString("Manual");
-  const scale = fastMode() ? 2 : 1;
+  const scale = scene.__fusion?.active ? scene.__fusion.config.FusionTimeScale : fastMode() ? 2 : 1;
   const time = scene.getTimeManager();
   if (time.getTimeScale() !== scale) time.setTimeScale(scale);
 };
 syncWaveControl();
-const modal = boolean("IndexOpen") || boolean("AudioUIConsumesClick");
+const modal = boolean("IndexOpen") || boolean("AudioUIConsumesClick") || boolean("FusionActive");
 let ui = scene.__towerShopUI;
 if (!ui || ui.root !== first("TowerShopBox")) {
   ui = scene.__towerShopUI = { root: first("TowerShopBox"), cards: [], wasDown: false, pressedCard: -1, pressedControl: "", dragging: false };
@@ -195,8 +195,9 @@ for (let i = 0; i < catalog.length; i++) {
     if (card.icon.hasBehavior("Effect")) card.icon.getBehavior("Effect").enableEffect("Outline", false);
     card.icon.setAnimationName(item.IconAnimation || item.Type);
     const ratio = card.icon.getWidth() / Math.max(1, card.icon.getHeight());
-    card.iconWidth = ratio > 1 ? 56 : 56 * ratio;
-    card.iconHeight = ratio > 1 ? 56 / ratio : 56;
+    const iconSize = item.Type === "StarCannonTower" ? 64 : 56;
+    card.iconWidth = ratio > 1 ? iconSize : iconSize * ratio;
+    card.iconHeight = ratio > 1 ? iconSize / ratio : iconSize;
   }
   const card = ui.cards[i];
   card.item = item;
@@ -264,7 +265,7 @@ ui.cards.forEach((card, i) => {
   const pressed = down && ui.pressedCard === i && hovered === i;
   const scale = pressed ? 0.94 : hovered === i ? 1.04 : 1;
   card.icon.setWidth(card.iconWidth * scale); card.icon.setHeight(card.iconHeight * scale);
-  card.icon.setPosition(x + 42 - card.icon.getWidth()/2, y + 51 - card.icon.getHeight()/2);
+  card.icon.setPosition(x + 42 - card.icon.getWidth()/2, y + (card.item.Type === "StarCannonTower" ? 57 : 51) - card.icon.getHeight()/2);
   card.name.setPosition(x + 4, y + 5); card.name.setWidth(76); card.name.setHeight(18);
   card.coin.setPosition(x + 13, y + 91); card.coin.setWidth(15); card.coin.setHeight(15);
   card.price.setPosition(x + 31, y + 91); card.price.setWidth(46); card.price.setHeight(20);

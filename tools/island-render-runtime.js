@@ -36,3 +36,4 @@ if(runtimeScene.__novaWisp)runtimeScene.__novaWisp.render();
 
 if(runtimeScene.__voidHound)runtimeScene.__voidHound.render();
 if(runtimeScene.__voidGolem)runtimeScene.__voidGolem.render();
+if(runtimeScene.__enemyStatusIcons)runtimeScene.__enemyStatusIcons.render();

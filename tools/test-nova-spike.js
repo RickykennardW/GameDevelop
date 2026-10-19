@@ -67,15 +67,16 @@ ok(rec&&h.FlatDamageReduction()===30&&num(target,'BaseArmor')===25,'fracture sub
 ok(near(before-health(target),65*1.75-30),'native Health armor applied once');
 const firstExpiry=rec.expires,icon=rec.icon;step(40);t.__starShotCount=3;align(t,target);star.fire(t,target);drain();
 ok(star.fractures.size===1&&rec.icon===icon&&rec.expires>firstExpiry&&h.FlatDamageReduction()===30,'fracture refreshes duration without stacking or extra icon');
-ok(icon.getY()>target.getCenterYInScene()&&icon.getWidth()===17,'fracture icon stays below head / HP bar');
+const statusBar=scene.__enemyHealthBars.get(target.getUniqueId()).background,statusRow=scene.__enemyStatusIcons.owners.get(target.getUniqueId()).layout;
+ok(icon.getY()+icon.getHeight()<=statusBar.getY()-3&&icon.getWidth()===18&&near(statusRow.center,statusBar.getCenterXInScene()),'fracture icon joins centered row above HP bar');
 G.fort.end(G.fort.members.get(target.getUniqueId()));ok(h.FlatDamageReduction()===20,'buff expiry preserves fracture');
 while(star.time<rec.expires+.02)step();ok(h.FlatDamageReduction()===25&&!star.fractures.size&&!get('StarCannonImpact').includes(icon),'fracture expires / restores native armor / destroys icon');
 target.deleteFromScene();step();ok(!star.fractures.size,'enemy deletion leaves no debuff record');clear();
-// Straight lance crosses five enemies once and never retargets after first death.
+// Straight lance crosses three enemies once, exploding at each real direct hit.
 t=make(5,2);const line=Array.from({length:6},(_,i)=>enemy(860+i*23,352,'Basic'));align(t,line[0]);t.__starShotCount=3;star.fire(t,line[0]);
 let lance=get('StarCannonProjectile')[0];ok(lance.__starLance&&lance.getAnimationName()==='Lance','Supernova fires distinct lance');
-const angle=lance.getAngle();drain();ok(line.slice(0,5).every(e=>near(10000-health(e),65*1.75))&&health(line[5])===10000,'five targets max / each exactly once / sixth untouched');
-ok(lance.__starHitTargets.size===5&&lance.getAngle()===angle,'five unique IDs / no homing rotation');clear();
+const angle=lance.getAngle();drain();ok(line.every((e,i)=>near(10000-health(e),(i<3?65*1.75:0)+(i>0?65*1.75*.25:0))),'three direct hits max / one splash per enemy across overlapping explosions');
+ok(lance.__starHitTargets.size===3&&lance.__starAoETargets.size===5&&lance.getAngle()===angle&&get('StarCannonImpact').filter(o=>o.getAnimationName()==='Explosion').length===3,'three unique IDs / three explosions / no homing rotation');clear();
 t=make(5,0);target=enemy(900,352);const offLine=enemy(950,420);align(t,target);t.__starShotCount=3;star.fire(t,target);lance=get('StarCannonProjectile')[0];target.getBehavior('Health').SetHealth(0);drain();
 ok(health(offLine)===10000&&lance.__starTravel<=lance.__starRange+1e-5,'dead original target does not cancel or redirect straight lance; finite range');clear();
 // Twin alternation and independent local recoil, with no damage multiplication.

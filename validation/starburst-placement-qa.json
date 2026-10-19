@@ -1,0 +1,41 @@
+{
+  "result": {
+    "checks": [
+      "fresh game keeps50000 Gold and fusion inactive",
+      "real shop placement 5-2",
+      "native panel reaches 5-2",
+      "distant second tower fits real island floor",
+      "real shop placement 2-5",
+      "native panel reaches 2-5",
+      "both max investments spent normally /Gold27510",
+      "fixture uses existing2x wave speed",
+      "eligible max tower has Fusion button",
+      "actual Fusion button enters selection /0.5x without pausing",
+      "gameplay clock keeps moving at0.5x",
+      "same source rejected without deletion",
+      "same dominant path /unfinished rejected; max-only markers",
+      "ESC clears mode/markers/ghost, restores2x and keeps Gold",
+      "eligible max tower has Fusion button",
+      "actual Fusion button enters selection /0.5x without pausing",
+      "reverse order2-5 +5-2 chosen by actual map click",
+      "ghost valid over source footprint; both sources still alive",
+      "distant middle excluded by regional placement",
+      "invalid placement cannot consume or charge",
+      "Cancel button during ghost preserves both sources /speed",
+      "eligible max tower has Fusion button",
+      "actual Fusion button enters selection /0.5x without pausing",
+      "only source collisions ignored; unrelated tower still blocks",
+      "invalid third-tower collision refuses confirm",
+      "existing road polygon remains blocked in fusion region",
+      "normal obstacle circle still blocks fusion",
+      "both regional source positions eligible after obstacle removal"
+    ],
+    "gold": 27510,
+    "stage": "placement",
+    "scale": 0.5,
+    "sources": 2,
+    "regionalRadius": 96
+  },
+  "progress": [],
+  "consoleErrors": []
+}

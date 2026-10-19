@@ -1,0 +1,19 @@
+{
+  "scopePassed": true,
+  "unchangedExistingSceneDataSHA256": "d063d2adec3399ba10c7809e96e9030e9e93a51c2039f3f3de9811422d69a12e",
+  "unchangedExistingProjectResourcesSHA256": "a3c7c72bde03311198e1a1ba8b5b2b826451a2f24cc140bc9df5b913f2b15d8f",
+  "lineEndingsNormalizedForComparison": true,
+  "originalStarStateCount": 27,
+  "addedResources": 5,
+  "addedObjects": [
+    "StarburstGhost"
+  ],
+  "addedLayers": [
+    "FusionUI"
+  ],
+  "addedVariables": [
+    "StarburstConfig",
+    "FusionActive"
+  ],
+  "noProjectBackupsCreated": true
+}

@@ -1,0 +1,73 @@
+{
+  "result": {
+    "checks": [
+      "seeded valid older discovery records in isolated profile"
+    ],
+    "audioSettings": {
+      "Master": 100,
+      "Music": 35,
+      "SFX": 70,
+      "UI": 45,
+      "MuteMusic": false,
+      "MuteSFX": false
+    },
+    "expectation": "migration",
+    "unknown": {
+      "discovered": true,
+      "variants": {
+        "future_variant": true
+      },
+      "extra": "keep"
+    },
+    "pageReload": {
+      "checks": [
+        "Fusion entry and canonical Pure variant restored",
+        "loading known progress does not announce first discovery again",
+        "audio settings and unrelated storage survive",
+        "unknown saved entries and top-level metadata preserved",
+        "partial Hybrid save never unlocks remaining variants",
+        "legacy found list imported without erasing unknown progress",
+        "existing fresh-session Monster discovery behavior retained",
+        "Fusion Index actually opens with revealed original art/name",
+        "canonical recipe still visible after loading"
+      ],
+      "storageOK": true,
+      "discovered": [
+        "StarburstCannon",
+        "FutureFusion",
+        "FutureHybrid",
+        "LegacyUnknownFusion"
+      ],
+      "variant": {
+        "found": 1,
+        "total": 1
+      }
+    },
+    "applicationRelaunch": {
+      "checks": [
+        "Fusion entry and canonical Pure variant restored",
+        "loading known progress does not announce first discovery again",
+        "audio settings and unrelated storage survive",
+        "unknown saved entries and top-level metadata preserved",
+        "partial Hybrid save never unlocks remaining variants",
+        "legacy found list imported without erasing unknown progress",
+        "existing fresh-session Monster discovery behavior retained",
+        "Fusion Index actually opens with revealed original art/name",
+        "canonical recipe still visible after loading"
+      ],
+      "storageOK": true,
+      "discovered": [
+        "StarburstCannon",
+        "FutureFusion",
+        "FutureHybrid",
+        "LegacyUnknownFusion"
+      ],
+      "variant": {
+        "found": 1,
+        "total": 1
+      }
+    }
+  },
+  "progress": [],
+  "consoleErrors": []
+}

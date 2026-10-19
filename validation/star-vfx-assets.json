@@ -1,0 +1,21 @@
+{
+  "explosion": "assets/effects/star_cannon/StarCannon_VFX_NovaExplosion.png",
+  "armorFracture": "assets/effects/star_cannon/Debuff_ArmorFracture_Icon.svg",
+  "frames": 8,
+  "supersededGenericFramesRemoved": [
+    "assets/towers/star_cannon/nova_spike/vfx/Explosion_0.svg",
+    "assets/towers/star_cannon/nova_spike/vfx/Explosion_1.svg",
+    "assets/towers/star_cannon/nova_spike/vfx/Explosion_2.svg",
+    "assets/towers/star_cannon/nova_spike/vfx/Explosion_3.svg",
+    "assets/towers/star_cannon/nova_spike/vfx/Explosion_4.svg",
+    "assets/towers/star_cannon/nova_spike/vfx/Explosion_5.svg",
+    "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_0.svg",
+    "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_1.svg",
+    "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_2.svg",
+    "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_3.svg",
+    "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_4.svg",
+    "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_5.svg"
+  ],
+  "initialGold": 10000,
+  "gameplayModifiersUnchanged": true
+}

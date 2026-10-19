@@ -1,0 +1,38 @@
+{
+  "variables": {
+    "StarCannonConfig": "c65358f83bb0244701b70e255dae9b366ad3caf4146e87027a03a7a2d6c201ab",
+    "StarComponentConfig": "07a662ad5ccf2de41e73139d1fc38eb4a3f5466f99198b758609f47205b1a3d6",
+    "EnemyTypes": "ab1895ba3f64acd5cb0080da62ffc3e14d9dd25e111261f0891b6adbdee21468",
+    "EnemyHPBarConfig": "399894cae00179a93193bfeed53033bfd5841a72566f6d4a8379bb695e43900b",
+    "VoidGolemConfig": "10116681c9550729eabc71fb1fbac60aa389520612e9f83f89999ba6e266c910",
+    "WaveBudgetConfig": "212b8d717b591f76901cc0d8070fd59d31a33073380c70bb36dbbbf96275571e",
+    "TowerFootprints": "95270c08ea36140aab45f784068767b309648adf8670c2f18feaa2cedeb71232",
+    "WavePacing": "a8e4bbf5d4ccaaa6bab4e4624d1f403db54e6e716eaa113d09b3c311d36b5b15",
+    "MonsterPathPoints": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  "instances": "4ec06272dd989fe9e3ad4751fd880e8fa95691cdcb8e0192d3cf784f76aa3a14",
+  "layers": "ca9d9a3122fff9fa7e5d0fda25cb9981913cfa695b9c185e115db7d9d3243d14",
+  "resources": 407,
+  "initialMoneyBefore": 650,
+  "preservedConfigurations": [
+    "StarCannonConfig",
+    "StarComponentConfig",
+    "EnemyTypes",
+    "EnemyHPBarConfig",
+    "VoidGolemConfig",
+    "WaveBudgetConfig",
+    "TowerFootprints",
+    "WavePacing",
+    "MonsterPathPoints"
+  ],
+  "combatCodeSegmentsUnchanged": [
+    "star.stats=",
+    "star.upgrade=",
+    "star.deal=",
+    "star.targetValid=",
+    "star.fire=",
+    "const targets=new Map"
+  ],
+  "healthBarPositionAndSizeCodeUnchanged": true,
+  "initialGoldAfter": 10000
+}

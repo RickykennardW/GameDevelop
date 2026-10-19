@@ -519,7 +519,7 @@ PASS bounded native timeline
 PASS release snapshot/radius<=100/common armor correct
 PASS one transient pulse plus independent persistent shields
 PASS leaving retains/entering afterward does not gain aura
-PASS shield follows exact owner/below HP/projectiles
+PASS shield follows owner in centered row above HP bar
 PASS two casters refresh10seconds without stacking/duplicate icon
 PASS instant allied buff persists after caster death
 PASS bounded native timeline

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+<defs>
+<linearGradient id="gold" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#fff2bd"/><stop offset=".42" stop-color="#e7bc5d"/><stop offset=".72" stop-color="#a9702b"/><stop offset="1" stop-color="#f8d990"/></linearGradient>
+<linearGradient id="ice" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#f8ffff"/><stop offset=".44" stop-color="#9be4ff"/><stop offset="1" stop-color="#638bf7"/></linearGradient>
+<linearGradient id="violet" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e2d5ff"/><stop offset=".48" stop-color="#9471e9"/><stop offset="1" stop-color="#5838ad"/></linearGradient>
+<radialGradient id="pearl"><stop stop-color="#fffaff"/><stop offset=".3" stop-color="#d4e8ff"/><stop offset=".7" stop-color="#8f83ff"/><stop offset="1" stop-color="#7163df" stop-opacity=".12"/></radialGradient>
+<radialGradient id="halo"><stop stop-color="#a79bff" stop-opacity=".18"/><stop offset="1" stop-color="#9783ff" stop-opacity="0"/></radialGradient>
+</defs><circle cx="64" cy="64" r="58" fill="url(#halo)"/><path d="M 64.00 15.00 L 74.72 38.13 L 98.65 29.35 L 89.87 53.28 L 113.00 64.00 L 89.87 74.72 L 98.65 98.65 L 74.72 89.87 L 64.00 113.00 L 53.28 89.87 L 29.35 98.65 L 38.13 74.72 L 15.00 64.00 L 38.13 53.28 L 29.35 29.35 L 53.28 38.13 Z" fill="url(#violet)" opacity=".6"/><path d="M 64 18 L 90 48 L 76 48 L 76 97 L 52 97 L 52 48 L 38 48 Z" fill="url(#gold)" stroke="#fff0c4" stroke-width="2.4" stroke-linejoin="round"/><path d="M 61 39 L 67 39 L 67 86 L 61 86 Z" fill="#f6fbff"/><path d="M 28 78 L 35 92 M 100 78 L 93 92 M 47 108 L 81 108" fill="none" stroke="#95d9ff" stroke-width="5" stroke-linecap="round"/></svg>

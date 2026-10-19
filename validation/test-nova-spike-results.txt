@@ -657,14 +657,14 @@ PASS fracture subtracts 20% BASE armor while keeping buff
 PASS native Health armor applied once
 PASS projectiles terminate
 PASS fracture refreshes duration without stacking or extra icon
-PASS fracture icon stays below head / HP bar
+PASS fracture icon joins centered row above HP bar
 PASS buff expiry preserves fracture
 PASS fracture expires / restores native armor / destroys icon
 PASS enemy deletion leaves no debuff record
 PASS Supernova fires distinct lance
 PASS projectiles terminate
-PASS five targets max / each exactly once / sixth untouched
-PASS five unique IDs / no homing rotation
+PASS three direct hits max / one splash per enemy across overlapping explosions
+PASS three unique IDs / three explosions / no homing rotation
 PASS projectiles terminate
 PASS dead original target does not cancel or redirect straight lance; finite range
 PASS one full-damage Twin bolt per shot

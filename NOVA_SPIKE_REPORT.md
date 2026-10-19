@@ -45,7 +45,7 @@ Sumber runtime adalah scene variable **`StarCannonConfig`**. Tidak ada rumus bon
 | Max Rhythm | Total +60% base speed, interval 0,9/1,6 s |
 | Overdrive | Aktif 2 s, cooldown 18 s setelah berakhir; siklus 20 s |
 | Aktivasi pertama Overdrive | 18 s setelah memperoleh Lv5 |
-| Lance | Maksimal 5 target unik, arah lurus tanpa homing ulang; berakhir pada batas target/range/lifetime |
+| Lance | Maksimal 3 direct target unik, ledakan radius 76 per hit; satu splash per enemy per projectile. Arah lurus tanpa homing ulang; berakhir pada batas target/range/lifetime. Lihat `SUPERNOVA_LANCE_REPORT.md` |
 
 Range multiplier upgrade existing dipertahankan. Upgrade Lv1â€“4 tidak berubah harga. Harga Lv5 mengikuti faktor 2,5Ã— / 2,3Ã— Lv4 lalu dibulatkan naik ke kelipatan 50 Gold, sesuai jawaban pengguna.
 

@@ -1,0 +1,43 @@
+{
+  "result": {
+    "checks": [
+      "fresh Fusion archive starts undiscovered",
+      "three primary Index categories",
+      "actual Fusion tab navigates",
+      "unknown Fusion listed with hidden name/status",
+      "silhouette uses original Fusion asset with black per-sprite tint",
+      "cryptic hint visible; recipe and stats locked",
+      "actual Towers tab navigates",
+      "normal Tower Index unchanged and no Starburst duplicate",
+      "actual Monsters tab navigates",
+      "six Monster entries and session behavior preserved",
+      "actual Fusion tab navigates",
+      "eligible source enters partner selection",
+      "partner phase keeps Max-only candidate logos; no non-Max glow",
+      "opposite path enters placement",
+      "placement renders every tower footprint including non-Max",
+      "footprint follows actual center/radius for tower 298",
+      "source cyan/ignored versus occupied soft red 298",
+      "footprint follows actual center/radius for tower 302",
+      "source cyan/ignored versus occupied soft red 302",
+      "footprint follows actual center/radius for tower 306",
+      "source cyan/ignored versus occupied soft red 306",
+      "footprint follows actual center/radius for tower 310",
+      "source cyan/ignored versus occupied soft red 310",
+      "placement logos limited to the two chosen source towers",
+      "green ghost can overlap either source only",
+      "footprint graphics and ghost remain below Cancel/UI",
+      "240 frames reuse one renderer and footprint records without child growth",
+      "preview does not unlock, save or announce discovery",
+      "red ghost matches collision with non-Max footprint",
+      "occupied click consumes nothing and never unlocks",
+      "outside union of source regions remains invalid",
+      "real road polygon still blocks Fusion",
+      "existing obstacle remains blocked"
+    ],
+    "stage": "placement",
+    "towerFootprints": 4
+  },
+  "progress": [],
+  "consoleErrors": []
+}

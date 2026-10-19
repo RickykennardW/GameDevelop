@@ -1,0 +1,19 @@
+{
+  "method": "built-in image_gen",
+  "useCase": "stylized-concept",
+  "referenceRoles": [
+    "User Fusion Star Cannon concept blueprint",
+    "Existing Nova Spike p1_5 modular style",
+    "Existing Nova Spike p2_5 modular style"
+  ],
+  "referenceFiles": [
+    "C:/Users/MYASUS~1/AppData/Local/Temp/codex-clipboard-2bfd4eb8-0733-4c99-9a51-47121443380f.png",
+    "assets/towers/star_cannon/nova_spike/atlases/p1_5.png",
+    "assets/towers/star_cannon/nova_spike/atlases/p2_5.png"
+  ],
+  "promptSpecification": "Use case: stylized-concept. NEW transparent Starburst Cannon modular overhead atlas, 2 columns x 2 rows. User Fusion Star Cannon blueprint is primary visual reference; p1_5 and p2_5 atlases are existing style/layout references. Top-left stationary ivory/gold cosmic pedestal with violet-blue rune ring and central socket. Top-right symmetric rotating crystalline turret chassis with spear nose and central core opening. Bottom-left one isolated north-facing stellar barrel with pointed violet-blue energy tip, gold collars, ivory armor and dark internal channel, reused as heavy center plus smaller side barrels. Bottom-right compact violet-blue star fusion core in gold/ivory housing. Strict overhead orthographic view; true RGBA transparency; no text, labels, grids, background, shadow or presentation border; separate components, transparent gutters; clean readable silhouette at80px. Polished painted fantasy game art, controlled glow, sacred ancient-tech cosmic identity.",
+  "finalAtlas": "assets/towers/starburst_cannon/Starburst_Modular_Atlas.png",
+  "nativePreview": "assets/towers/starburst_cannon/Starburst_Preview.png",
+  "pipeline": "Real alpha gutters detected; GPU crop four parts; native composited preview assembled from the same parts. Three code-native SVG bolt frames follow existing projectile pipeline. No recolored substitute for tower artwork.",
+  "prompt": "Use case: stylized-concept. Production game asset: NEW Starburst Cannon modular top-down sprite atlas for a GDevelop cosmic tower-defense game. Image 1 is the player's concept blueprint; images 2 and 3 are existing modular asset style/layout references. Generate a NEW transparent square atlas, exactly 2 columns x 2 rows with generous transparent gutters (each component entirely contained inside its quadrant with 8% cell padding). NO TEXT, labels, grid lines, backdrop, shadow, typography, watermarks, presentation border. Truly transparent RGBA. Strict overhead orthographic camera for every part; cannons point straight UP (north), no perspective/isometric view. Four separate isolated parts: TOP LEFT stationary circular ornate pedestal, ivory armor and gold edging, blue-violet rune energy ring and dark central mounting socket, sacred star-shaped rim. TOP RIGHT rotating turret chassis/head, symmetric swept crystalline wing-fins and ivory-gold armor, clear north-pointing triangular spear-like nose, center circular core opening, no pedestal and NO barrels attached. BOTTOM LEFT a SINGLE isolated long forward-facing energy barrel, north-facing sharp compressed blue-violet star spear tip, gold collars, ivory armor, dark metallic internal channel, readable tapered muzzle at very top, mechanical attachment at bottom; this barrel will be reused as a heavy central lance and two smaller side cannons. BOTTOM RIGHT isolated compact glowing fusion core, luminous violet-blue star orb surrounded by gold circular housing and ivory trim, restrained crystal spikes. This is the clean fusion of a heavy single cannon and rapid dual cannons shown in refs, with the noble white/gold and crystalline violet/blue identity of image 1. Polished hand-painted fantasy game art, strong readable silhouette at 80px, controlled glow, consistent direct overhead lighting. Keep every part visually separate, no overlap across quadrants, no assembled extra tower, no giant glow cloud."
+}

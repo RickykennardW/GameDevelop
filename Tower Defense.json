@@ -3006,102 +3006,6 @@
         "userAdded": true
       },
       {
-        "file": "assets/towers/star_cannon/nova_spike/vfx/Explosion_0.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/towers/star_cannon/nova_spike/vfx/Explosion_0.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/towers/star_cannon/nova_spike/vfx/Explosion_1.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/towers/star_cannon/nova_spike/vfx/Explosion_1.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/towers/star_cannon/nova_spike/vfx/Explosion_2.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/towers/star_cannon/nova_spike/vfx/Explosion_2.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/towers/star_cannon/nova_spike/vfx/Explosion_3.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/towers/star_cannon/nova_spike/vfx/Explosion_3.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/towers/star_cannon/nova_spike/vfx/Explosion_4.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/towers/star_cannon/nova_spike/vfx/Explosion_4.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/towers/star_cannon/nova_spike/vfx/Explosion_5.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/towers/star_cannon/nova_spike/vfx/Explosion_5.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_0.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_0.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_1.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_1.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_2.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_2.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_3.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_3.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_4.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_4.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "file": "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_5.svg",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_5.svg",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
         "file": "assets/towers/star_cannon/nova_spike/vfx/Fracture_0.svg",
         "kind": "image",
         "metadata": "",
@@ -3290,6 +3194,166 @@
         "kind": "image",
         "metadata": "",
         "name": "assets/towers/star_cannon/nova_spike/vfx/Surge_5.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/star_cannon/StarCannon_UI_Portrait.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/star_cannon/StarCannon_UI_Portrait.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/star_cannon/Path_StellarDestruction.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/star_cannon/Path_StellarDestruction.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/star_cannon/Path_CelestialBarrage.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/star_cannon/Path_CelestialBarrage.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/star_cannon/StarCompression.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/star_cannon/StarCompression.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/star_cannon/DenseStellarCore.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/star_cannon/DenseStellarCore.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/star_cannon/NovaImpact.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/star_cannon/NovaImpact.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/star_cannon/Starbreaker.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/star_cannon/Starbreaker.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/star_cannon/SupernovaCannon.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/star_cannon/SupernovaCannon.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/star_cannon/AstralAccelerator.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/star_cannon/AstralAccelerator.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/star_cannon/RapidStarflow.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/star_cannon/RapidStarflow.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/star_cannon/TwinStarMuzzle.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/star_cannon/TwinStarMuzzle.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/star_cannon/CosmicRhythm.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/star_cannon/CosmicRhythm.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/star_cannon/CelestialOverdrive.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/star_cannon/CelestialOverdrive.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/effects/star_cannon/StarCannon_VFX_NovaExplosion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/effects/star_cannon/StarCannon_VFX_NovaExplosion.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/effects/star_cannon/Debuff_ArmorFracture_Icon.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/effects/star_cannon/Debuff_ArmorFracture_Icon.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/towers/starburst_cannon/Starburst_Modular_Atlas.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/starburst_cannon/Starburst_Modular_Atlas.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/towers/starburst_cannon/Starburst_Preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/starburst_cannon/Starburst_Preview.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/towers/starburst_cannon/Starburst_Bolt_0.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/starburst_cannon/Starburst_Bolt_0.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/towers/starburst_cannon/Starburst_Bolt_1.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/starburst_cannon/Starburst_Bolt_1.svg",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/towers/starburst_cannon/Starburst_Bolt_2.svg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/starburst_cannon/Starburst_Bolt_2.svg",
         "smoothed": true,
         "userAdded": true
       }

@@ -1,0 +1,10 @@
+{
+  "result": {
+    "checks": [
+      "fresh native preview starts with10000 Gold in HUD"
+    ],
+    "initialGold": 10000
+  },
+  "progress": [],
+  "consoleErrors": []
+}

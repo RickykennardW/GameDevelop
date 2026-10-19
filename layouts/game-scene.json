@@ -91,7 +91,7 @@
       "name": "Money",
       "persistentUuid": "9d1ef647-9b52-4a52-bc0a-50d44fa641a7",
       "type": "number",
-      "value": 650
+      "value": 50000
     },
     {
       "name": "SelectedTower",
@@ -975,7 +975,7 @@
             {
               "name": "SplashRadius",
               "type": "number",
-              "value": 64
+              "value": 76
             },
             {
               "name": "SplashRatio",
@@ -1044,7 +1044,7 @@
             {
               "name": "MaxTargets",
               "type": "number",
-              "value": 5
+              "value": 3
             },
             {
               "name": "Lifetime",
@@ -1644,7 +1644,7 @@
                         {
                           "name": "Description",
                           "type": "string",
-                          "value": "Every 4th shot: straight lance, up to 5 enemies."
+                          "value": "Every 4th shot: lance pierces 3; each hit explodes."
                         },
                         {
                           "name": "Icon",
@@ -45103,6 +45103,1590 @@
           ]
         }
       ]
+    },
+    {
+      "name": "StarCannonVFXConfig",
+      "type": "structure",
+      "children": [
+        {
+          "name": "NovaExplosion",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Image",
+              "type": "string",
+              "value": "assets/effects/star_cannon/StarCannon_VFX_NovaExplosion.png"
+            },
+            {
+              "name": "Frames",
+              "type": "array",
+              "children": [
+                {
+                  "name": "0",
+                  "type": "array",
+                  "children": [
+                    {
+                      "name": "0",
+                      "type": "number",
+                      "value": 0
+                    },
+                    {
+                      "name": "1",
+                      "type": "number",
+                      "value": 0
+                    },
+                    {
+                      "name": "2",
+                      "type": "number",
+                      "value": 444
+                    },
+                    {
+                      "name": "3",
+                      "type": "number",
+                      "value": 444
+                    }
+                  ]
+                },
+                {
+                  "name": "1",
+                  "type": "array",
+                  "children": [
+                    {
+                      "name": "0",
+                      "type": "number",
+                      "value": 444
+                    },
+                    {
+                      "name": "1",
+                      "type": "number",
+                      "value": 0
+                    },
+                    {
+                      "name": "2",
+                      "type": "number",
+                      "value": 443
+                    },
+                    {
+                      "name": "3",
+                      "type": "number",
+                      "value": 444
+                    }
+                  ]
+                },
+                {
+                  "name": "2",
+                  "type": "array",
+                  "children": [
+                    {
+                      "name": "0",
+                      "type": "number",
+                      "value": 887
+                    },
+                    {
+                      "name": "1",
+                      "type": "number",
+                      "value": 0
+                    },
+                    {
+                      "name": "2",
+                      "type": "number",
+                      "value": 443
+                    },
+                    {
+                      "name": "3",
+                      "type": "number",
+                      "value": 444
+                    }
+                  ]
+                },
+                {
+                  "name": "3",
+                  "type": "array",
+                  "children": [
+                    {
+                      "name": "0",
+                      "type": "number",
+                      "value": 1330
+                    },
+                    {
+                      "name": "1",
+                      "type": "number",
+                      "value": 0
+                    },
+                    {
+                      "name": "2",
+                      "type": "number",
+                      "value": 444
+                    },
+                    {
+                      "name": "3",
+                      "type": "number",
+                      "value": 444
+                    }
+                  ]
+                },
+                {
+                  "name": "4",
+                  "type": "array",
+                  "children": [
+                    {
+                      "name": "0",
+                      "type": "number",
+                      "value": 0
+                    },
+                    {
+                      "name": "1",
+                      "type": "number",
+                      "value": 444
+                    },
+                    {
+                      "name": "2",
+                      "type": "number",
+                      "value": 444
+                    },
+                    {
+                      "name": "3",
+                      "type": "number",
+                      "value": 443
+                    }
+                  ]
+                },
+                {
+                  "name": "5",
+                  "type": "array",
+                  "children": [
+                    {
+                      "name": "0",
+                      "type": "number",
+                      "value": 444
+                    },
+                    {
+                      "name": "1",
+                      "type": "number",
+                      "value": 444
+                    },
+                    {
+                      "name": "2",
+                      "type": "number",
+                      "value": 443
+                    },
+                    {
+                      "name": "3",
+                      "type": "number",
+                      "value": 443
+                    }
+                  ]
+                },
+                {
+                  "name": "6",
+                  "type": "array",
+                  "children": [
+                    {
+                      "name": "0",
+                      "type": "number",
+                      "value": 887
+                    },
+                    {
+                      "name": "1",
+                      "type": "number",
+                      "value": 444
+                    },
+                    {
+                      "name": "2",
+                      "type": "number",
+                      "value": 443
+                    },
+                    {
+                      "name": "3",
+                      "type": "number",
+                      "value": 443
+                    }
+                  ]
+                },
+                {
+                  "name": "7",
+                  "type": "array",
+                  "children": [
+                    {
+                      "name": "0",
+                      "type": "number",
+                      "value": 1330
+                    },
+                    {
+                      "name": "1",
+                      "type": "number",
+                      "value": 444
+                    },
+                    {
+                      "name": "2",
+                      "type": "number",
+                      "value": 444
+                    },
+                    {
+                      "name": "3",
+                      "type": "number",
+                      "value": 443
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Duration",
+              "type": "number",
+              "value": 0.64
+            },
+            {
+              "name": "SizeMultiplier",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "name": "PeakOpacity",
+              "type": "number",
+              "value": 225
+            },
+            {
+              "name": "ZOrder",
+              "type": "number",
+              "value": 15002
+            }
+          ]
+        },
+        {
+          "name": "ArmorFractureIcon",
+          "type": "string",
+          "value": "assets/effects/star_cannon/Debuff_ArmorFracture_Icon.svg"
+        }
+      ]
+    },
+    {
+      "name": "EnemyStatusIconConfig",
+      "type": "structure",
+      "children": [
+        {
+          "name": "GapAboveHealthBar",
+          "type": "number",
+          "value": 3
+        },
+        {
+          "name": "HorizontalSpacing",
+          "type": "number",
+          "value": 3
+        },
+        {
+          "name": "ZOrderOffset",
+          "type": "number",
+          "value": 10
+        },
+        {
+          "name": "ArmorFractureSize",
+          "type": "number",
+          "value": 18
+        },
+        {
+          "name": "FortificationOrder",
+          "type": "number",
+          "value": 10
+        },
+        {
+          "name": "FractureOrder",
+          "type": "number",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "name": "StarburstConfig",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Name",
+          "type": "string",
+          "value": "Starburst Cannon"
+        },
+        {
+          "name": "FusionCost",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "RegionalRadius",
+          "type": "number",
+          "value": 96
+        },
+        {
+          "name": "FusionTimeScale",
+          "type": "number",
+          "value": 0.5
+        },
+        {
+          "name": "OverlayOpacity",
+          "type": "number",
+          "value": 0.25
+        },
+        {
+          "name": "Damage",
+          "type": "number",
+          "value": 90
+        },
+        {
+          "name": "AttackInterval",
+          "type": "number",
+          "value": 0.4
+        },
+        {
+          "name": "AttackRange",
+          "type": "number",
+          "value": 227
+        },
+        {
+          "name": "ProjectileSpeed",
+          "type": "number",
+          "value": 600
+        },
+        {
+          "name": "SplashRadius",
+          "type": "number",
+          "value": 64
+        },
+        {
+          "name": "SplashRatio",
+          "type": "number",
+          "value": 0.2
+        },
+        {
+          "name": "RotationDegreesPerSecond",
+          "type": "number",
+          "value": 300
+        },
+        {
+          "name": "Kit",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Image",
+              "type": "string",
+              "value": "assets/towers/starburst_cannon/Starburst_Modular_Atlas.png"
+            },
+            {
+              "name": "Frames",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Base",
+                  "type": "array",
+                  "children": [
+                    {
+                      "name": "0",
+                      "type": "number",
+                      "value": 57
+                    },
+                    {
+                      "name": "1",
+                      "type": "number",
+                      "value": 30
+                    },
+                    {
+                      "name": "2",
+                      "type": "number",
+                      "value": 599
+                    },
+                    {
+                      "name": "3",
+                      "type": "number",
+                      "value": 577
+                    }
+                  ]
+                },
+                {
+                  "name": "Chassis",
+                  "type": "array",
+                  "children": [
+                    {
+                      "name": "0",
+                      "type": "number",
+                      "value": 694
+                    },
+                    {
+                      "name": "1",
+                      "type": "number",
+                      "value": 22
+                    },
+                    {
+                      "name": "2",
+                      "type": "number",
+                      "value": 472
+                    },
+                    {
+                      "name": "3",
+                      "type": "number",
+                      "value": 641
+                    }
+                  ]
+                },
+                {
+                  "name": "Barrel",
+                  "type": "array",
+                  "children": [
+                    {
+                      "name": "0",
+                      "type": "number",
+                      "value": 253
+                    },
+                    {
+                      "name": "1",
+                      "type": "number",
+                      "value": 621
+                    },
+                    {
+                      "name": "2",
+                      "type": "number",
+                      "value": 210
+                    },
+                    {
+                      "name": "3",
+                      "type": "number",
+                      "value": 605
+                    }
+                  ]
+                },
+                {
+                  "name": "Core",
+                  "type": "array",
+                  "children": [
+                    {
+                      "name": "0",
+                      "type": "number",
+                      "value": 718
+                    },
+                    {
+                      "name": "1",
+                      "type": "number",
+                      "value": 747
+                    },
+                    {
+                      "name": "2",
+                      "type": "number",
+                      "value": 425
+                    },
+                    {
+                      "name": "3",
+                      "type": "number",
+                      "value": 420
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "State",
+          "type": "structure",
+          "children": [
+            {
+              "name": "RestFacing",
+              "type": "number",
+              "value": -90
+            },
+            {
+              "name": "BaseKit",
+              "type": "string",
+              "value": "Starburst"
+            },
+            {
+              "name": "BaseRect",
+              "type": "array",
+              "children": [
+                {
+                  "name": "0",
+                  "type": "number",
+                  "value": 2
+                },
+                {
+                  "name": "1",
+                  "type": "number",
+                  "value": 2
+                },
+                {
+                  "name": "2",
+                  "type": "number",
+                  "value": 84
+                },
+                {
+                  "name": "3",
+                  "type": "number",
+                  "value": 84
+                }
+              ]
+            },
+            {
+              "name": "Base",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Contact",
+                  "type": "array",
+                  "children": [
+                    {
+                      "name": "0",
+                      "type": "number",
+                      "value": 0.5
+                    },
+                    {
+                      "name": "1",
+                      "type": "number",
+                      "value": 0.5
+                    }
+                  ]
+                },
+                {
+                  "name": "Socket",
+                  "type": "array",
+                  "children": [
+                    {
+                      "name": "0",
+                      "type": "number",
+                      "value": 0.5
+                    },
+                    {
+                      "name": "1",
+                      "type": "number",
+                      "value": 0.5
+                    }
+                  ]
+                },
+                {
+                  "name": "Scale",
+                  "type": "number",
+                  "value": 0.55
+                },
+                {
+                  "name": "Hull",
+                  "type": "array",
+                  "children": [
+                    {
+                      "name": "0",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.975
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.5
+                        }
+                      ]
+                    },
+                    {
+                      "name": "1",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.9588147674873074
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.6229390464236974
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.9113620667976083
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.7374999999999999
+                        }
+                      ]
+                    },
+                    {
+                      "name": "3",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.8358757210636101
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.8358757210636101
+                        }
+                      ]
+                    },
+                    {
+                      "name": "4",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.7375
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.9113620667976083
+                        }
+                      ]
+                    },
+                    {
+                      "name": "5",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.6229390464236974
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.9588147674873074
+                        }
+                      ]
+                    },
+                    {
+                      "name": "6",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.5
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.975
+                        }
+                      ]
+                    },
+                    {
+                      "name": "7",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.3770609535763027
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.9588147674873074
+                        }
+                      ]
+                    },
+                    {
+                      "name": "8",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.2625000000000001
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.9113620667976083
+                        }
+                      ]
+                    },
+                    {
+                      "name": "9",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.16412427893638998
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.8358757210636101
+                        }
+                      ]
+                    },
+                    {
+                      "name": "10",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.0886379332023916
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.7374999999999999
+                        }
+                      ]
+                    },
+                    {
+                      "name": "11",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.04118523251269263
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.6229390464236975
+                        }
+                      ]
+                    },
+                    {
+                      "name": "12",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.025000000000000022
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.5000000000000001
+                        }
+                      ]
+                    },
+                    {
+                      "name": "13",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.04118523251269257
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.37706095357630265
+                        }
+                      ]
+                    },
+                    {
+                      "name": "14",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.0886379332023916
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.2625000000000002
+                        }
+                      ]
+                    },
+                    {
+                      "name": "15",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.16412427893638976
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.16412427893639014
+                        }
+                      ]
+                    },
+                    {
+                      "name": "16",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.2624999999999998
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.08863793320239172
+                        }
+                      ]
+                    },
+                    {
+                      "name": "17",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.3770609535763027
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.04118523251269257
+                        }
+                      ]
+                    },
+                    {
+                      "name": "18",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.4999999999999999
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.025000000000000022
+                        }
+                      ]
+                    },
+                    {
+                      "name": "19",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.6229390464236971
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.041185232512692516
+                        }
+                      ]
+                    },
+                    {
+                      "name": "20",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.7375
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.08863793320239166
+                        }
+                      ]
+                    },
+                    {
+                      "name": "21",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.83587572106361
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.16412427893638987
+                        }
+                      ]
+                    },
+                    {
+                      "name": "22",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.9113620667976082
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.2624999999999998
+                        }
+                      ]
+                    },
+                    {
+                      "name": "23",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.9588147674873073
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.37706095357630226
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Turret",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Pivot",
+                  "type": "array",
+                  "children": [
+                    {
+                      "name": "0",
+                      "type": "number",
+                      "value": 0.5
+                    },
+                    {
+                      "name": "1",
+                      "type": "number",
+                      "value": 0.5
+                    }
+                  ]
+                },
+                {
+                  "name": "Mount",
+                  "type": "array",
+                  "children": [
+                    {
+                      "name": "0",
+                      "type": "number",
+                      "value": 0.5
+                    },
+                    {
+                      "name": "1",
+                      "type": "number",
+                      "value": 0.5
+                    }
+                  ]
+                },
+                {
+                  "name": "Scale",
+                  "type": "number",
+                  "value": 0.55
+                },
+                {
+                  "name": "Muzzles",
+                  "type": "array",
+                  "children": [
+                    {
+                      "name": "0",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.5
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.046590909090909086
+                        }
+                      ]
+                    },
+                    {
+                      "name": "1",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.22727272727272727
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.17659090909090908
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.7727272727272727
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.17659090909090908
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "Hull",
+                  "type": "array",
+                  "children": [
+                    {
+                      "name": "0",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.38636363636363635
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.022727272727272728
+                        }
+                      ]
+                    },
+                    {
+                      "name": "1",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.6136363636363636
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.022727272727272728
+                        }
+                      ]
+                    },
+                    {
+                      "name": "2",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.8522727272727273
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.19318181818181818
+                        }
+                      ]
+                    },
+                    {
+                      "name": "3",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.9090909090909091
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.5340909090909091
+                        }
+                      ]
+                    },
+                    {
+                      "name": "4",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.7954545454545454
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.8295454545454546
+                        }
+                      ]
+                    },
+                    {
+                      "name": "5",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.5
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.9318181818181818
+                        }
+                      ]
+                    },
+                    {
+                      "name": "6",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.20454545454545456
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.8295454545454546
+                        }
+                      ]
+                    },
+                    {
+                      "name": "7",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.09090909090909091
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.5340909090909091
+                        }
+                      ]
+                    },
+                    {
+                      "name": "8",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 0.14772727272727273
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 0.19318181818181818
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Parts",
+              "type": "array",
+              "children": [
+                {
+                  "name": "0",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "Kit",
+                      "type": "string",
+                      "value": "Starburst"
+                    },
+                    {
+                      "name": "Slot",
+                      "type": "string",
+                      "value": "Chassis"
+                    },
+                    {
+                      "name": "Rect",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 11
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 8
+                        },
+                        {
+                          "name": "2",
+                          "type": "number",
+                          "value": 66
+                        },
+                        {
+                          "name": "3",
+                          "type": "number",
+                          "value": 70
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Role",
+                      "type": "string",
+                      "value": "Housing"
+                    }
+                  ]
+                },
+                {
+                  "name": "1",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "Kit",
+                      "type": "string",
+                      "value": "Starburst"
+                    },
+                    {
+                      "name": "Slot",
+                      "type": "string",
+                      "value": "Barrel"
+                    },
+                    {
+                      "name": "Rect",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 34
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 2
+                        },
+                        {
+                          "name": "2",
+                          "type": "number",
+                          "value": 20
+                        },
+                        {
+                          "name": "3",
+                          "type": "number",
+                          "value": 60
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Role",
+                      "type": "string",
+                      "value": "Barrel0"
+                    }
+                  ]
+                },
+                {
+                  "name": "2",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "Kit",
+                      "type": "string",
+                      "value": "Starburst"
+                    },
+                    {
+                      "name": "Slot",
+                      "type": "string",
+                      "value": "Barrel"
+                    },
+                    {
+                      "name": "Rect",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 13
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 14
+                        },
+                        {
+                          "name": "2",
+                          "type": "number",
+                          "value": 14
+                        },
+                        {
+                          "name": "3",
+                          "type": "number",
+                          "value": 44
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Role",
+                      "type": "string",
+                      "value": "Barrel1"
+                    }
+                  ]
+                },
+                {
+                  "name": "3",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "Kit",
+                      "type": "string",
+                      "value": "Starburst"
+                    },
+                    {
+                      "name": "Slot",
+                      "type": "string",
+                      "value": "Barrel"
+                    },
+                    {
+                      "name": "Rect",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 61
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 14
+                        },
+                        {
+                          "name": "2",
+                          "type": "number",
+                          "value": 14
+                        },
+                        {
+                          "name": "3",
+                          "type": "number",
+                          "value": 44
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Role",
+                      "type": "string",
+                      "value": "Barrel2"
+                    }
+                  ]
+                },
+                {
+                  "name": "4",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "Kit",
+                      "type": "string",
+                      "value": "Starburst"
+                    },
+                    {
+                      "name": "Slot",
+                      "type": "string",
+                      "value": "Core"
+                    },
+                    {
+                      "name": "Rect",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "number",
+                          "value": 28
+                        },
+                        {
+                          "name": "1",
+                          "type": "number",
+                          "value": 47
+                        },
+                        {
+                          "name": "2",
+                          "type": "number",
+                          "value": 32
+                        },
+                        {
+                          "name": "3",
+                          "type": "number",
+                          "value": 32
+                        }
+                      ]
+                    },
+                    {
+                      "name": "Role",
+                      "type": "string",
+                      "value": "Core"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Preview",
+          "type": "string",
+          "value": "assets/towers/starburst_cannon/Starburst_Preview.png"
+        }
+      ]
+    },
+    {
+      "name": "FusionActive",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "FusionCatalog",
+      "type": "array",
+      "children": [
+        {
+          "name": "0",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Id",
+              "type": "string",
+              "value": "StarburstCannon"
+            },
+            {
+              "name": "Name",
+              "type": "string",
+              "value": "Starburst Cannon"
+            },
+            {
+              "name": "Kind",
+              "type": "string",
+              "value": "Pure"
+            },
+            {
+              "name": "Animation",
+              "type": "string",
+              "value": "StarburstCannon"
+            },
+            {
+              "name": "StatsConfig",
+              "type": "string",
+              "value": "StarburstConfig"
+            },
+            {
+              "name": "Hint",
+              "type": "string",
+              "value": "A heavy star and a restless pulse must share one constellation."
+            },
+            {
+              "name": "Description",
+              "type": "string",
+              "value": "A fused stellar core. Three muzzles alternate powerful bolts with small impact splash."
+            },
+            {
+              "name": "AdaptiveVariants",
+              "type": "boolean",
+              "value": false
+            },
+            {
+              "name": "Variants",
+              "type": "array",
+              "children": [
+                {
+                  "name": "0",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "Id",
+                      "type": "string",
+                      "value": "pure_52_25"
+                    },
+                    {
+                      "name": "Name",
+                      "type": "string",
+                      "value": "Pure Ascension"
+                    },
+                    {
+                      "name": "Recipe",
+                      "type": "array",
+                      "children": [
+                        {
+                          "name": "0",
+                          "type": "structure",
+                          "children": [
+                            {
+                              "name": "Type",
+                              "type": "string",
+                              "value": "StarCannonTower"
+                            },
+                            {
+                              "name": "Path1",
+                              "type": "number",
+                              "value": 5
+                            },
+                            {
+                              "name": "Path2",
+                              "type": "number",
+                              "value": 2
+                            },
+                            {
+                              "name": "Label",
+                              "type": "string",
+                              "value": "Star Cannon 5-2"
+                            }
+                          ]
+                        },
+                        {
+                          "name": "1",
+                          "type": "structure",
+                          "children": [
+                            {
+                              "name": "Type",
+                              "type": "string",
+                              "value": "StarCannonTower"
+                            },
+                            {
+                              "name": "Path1",
+                              "type": "number",
+                              "value": 2
+                            },
+                            {
+                              "name": "Path2",
+                              "type": "number",
+                              "value": 5
+                            },
+                            {
+                              "name": "Label",
+                              "type": "string",
+                              "value": "Star Cannon 2-5"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "instances": [
@@ -48900,7 +50484,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/towers/star_cannon/nova_spike/states/SC_0_0.png",
+                  "image": "assets/ui/star_cannon/StarCannon_UI_Portrait.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -63373,6 +64957,35 @@
               ]
             }
           ]
+        },
+        {
+          "name": "StarburstCannon",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.05,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/towers/starburst_cannon/Starburst_Preview.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -65360,6 +66973,35 @@
               ]
             }
           ]
+        },
+        {
+          "name": "SC_Fusion",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.05,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/towers/starburst_cannon/Starburst_Preview.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -65384,7 +67026,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/towers/star_cannon/nova_spike/states/SC_1_0.png",
+                  "image": "assets/ui/star_cannon/StarCompression.svg",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -65413,7 +67055,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/towers/star_cannon/nova_spike/states/SC_2_0.png",
+                  "image": "assets/ui/star_cannon/DenseStellarCore.svg",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -65442,7 +67084,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/towers/star_cannon/nova_spike/states/SC_3_0.png",
+                  "image": "assets/ui/star_cannon/NovaImpact.svg",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -65471,7 +67113,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/towers/star_cannon/nova_spike/states/SC_4_0.png",
+                  "image": "assets/ui/star_cannon/Starbreaker.svg",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -65500,7 +67142,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/towers/star_cannon/nova_spike/states/SC_5_0.png",
+                  "image": "assets/ui/star_cannon/SupernovaCannon.svg",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -65529,7 +67171,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/towers/star_cannon/nova_spike/states/SC_0_1.png",
+                  "image": "assets/ui/star_cannon/AstralAccelerator.svg",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -65558,7 +67200,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/towers/star_cannon/nova_spike/states/SC_0_2.png",
+                  "image": "assets/ui/star_cannon/RapidStarflow.svg",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -65587,7 +67229,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/towers/star_cannon/nova_spike/states/SC_0_3.png",
+                  "image": "assets/ui/star_cannon/TwinStarMuzzle.svg",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -65616,7 +67258,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/towers/star_cannon/nova_spike/states/SC_0_4.png",
+                  "image": "assets/ui/star_cannon/CosmicRhythm.svg",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -65645,7 +67287,65 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/towers/star_cannon/nova_spike/states/SC_0_5.png",
+                  "image": "assets/ui/star_cannon/CelestialOverdrive.svg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PathDamage",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.06,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/ui/star_cannon/Path_StellarDestruction.svg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "PathSpeed",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.06,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/ui/star_cannon/Path_CelestialBarrage.svg",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -67052,6 +68752,35 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Fusion",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.05,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/towers/starburst_cannon/Starburst_Preview.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -67795,6 +69524,69 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Starburst",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.05,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/towers/starburst_cannon/Starburst_Bolt_0.svg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/towers/starburst_cannon/Starburst_Bolt_1.svg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                },
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/towers/starburst_cannon/Starburst_Bolt_2.svg",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -67929,96 +69721,11 @@
           "directions": [
             {
               "looping": false,
-              "timeBetweenFrames": 0.05,
+              "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/towers/star_cannon/nova_spike/vfx/Explosion_0.svg",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets/towers/star_cannon/nova_spike/vfx/Explosion_1.svg",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets/towers/star_cannon/nova_spike/vfx/Explosion_2.svg",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets/towers/star_cannon/nova_spike/vfx/Explosion_3.svg",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets/towers/star_cannon/nova_spike/vfx/Explosion_4.svg",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets/towers/star_cannon/nova_spike/vfx/Explosion_5.svg",
+                  "image": "assets/effects/star_cannon/StarCannon_VFX_NovaExplosion.png",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -68613,96 +70320,11 @@
           "directions": [
             {
               "looping": false,
-              "timeBetweenFrames": 0.05,
+              "timeBetweenFrames": 0.08,
               "sprites": [
                 {
                   "hasCustomCollisionMask": false,
-                  "image": "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_0.svg",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_1.svg",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_2.svg",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_3.svg",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_4.svg",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": []
-                },
-                {
-                  "hasCustomCollisionMask": false,
-                  "image": "assets/towers/star_cannon/nova_spike/vfx/FractureIcon_5.svg",
+                  "image": "assets/effects/star_cannon/Debuff_ArmorFracture_Icon.svg",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -69842,6 +71464,64 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Fusion",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.05,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/towers/starburst_cannon/Starburst_Preview.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "StarburstAtlas",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.05,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/towers/starburst_cannon/Starburst_Modular_Atlas.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -70645,6 +72325,35 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Fusion",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.05,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/towers/starburst_cannon/Starburst_Preview.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -71292,6 +73001,48 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "StarburstGhost",
+      "persistentUuid": "3fa0e824-2a26-4249-a8de-d5039013998b",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Preview",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.05,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "assets/towers/starburst_cannon/Starburst_Preview.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -71379,6 +73130,14 @@
               },
               {
                 "objectName": "PlacementRangeIndicator"
+              }
+            ]
+          },
+          {
+            "folderName": "StarburstFusion",
+            "children": [
+              {
+                "objectName": "StarburstGhost"
               }
             ]
           }
@@ -71669,12 +73428,12 @@
             "  if (boolean(\"GameOver\") || number(\"Lives\") <= 0) variables.get(\"WaveMode\").setString(\"Waiting\");",
             "  else if (!autoMode() && finished) variables.get(\"WaveMode\").setString(\"Waiting\");",
             "  else if (mode() === \"Waiting\" && boolean(\"WaveActive\")) variables.get(\"WaveMode\").setString(\"Manual\");",
-            "  const scale = fastMode() ? 2 : 1;",
+            "  const scale = scene.__fusion?.active ? scene.__fusion.config.FusionTimeScale : fastMode() ? 2 : 1;",
             "  const time = scene.getTimeManager();",
             "  if (time.getTimeScale() !== scale) time.setTimeScale(scale);",
             "};",
             "syncWaveControl();",
-            "const modal = boolean(\"IndexOpen\") || boolean(\"AudioUIConsumesClick\");",
+            "const modal = boolean(\"IndexOpen\") || boolean(\"AudioUIConsumesClick\") || boolean(\"FusionActive\");",
             "let ui = scene.__towerShopUI;",
             "if (!ui || ui.root !== first(\"TowerShopBox\")) {",
             "  ui = scene.__towerShopUI = { root: first(\"TowerShopBox\"), cards: [], wasDown: false, pressedCard: -1, pressedControl: \"\", dragging: false };",
@@ -71834,8 +73593,9 @@
             "    if (card.icon.hasBehavior(\"Effect\")) card.icon.getBehavior(\"Effect\").enableEffect(\"Outline\", false);",
             "    card.icon.setAnimationName(item.IconAnimation || item.Type);",
             "    const ratio = card.icon.getWidth() / Math.max(1, card.icon.getHeight());",
-            "    card.iconWidth = ratio > 1 ? 56 : 56 * ratio;",
-            "    card.iconHeight = ratio > 1 ? 56 / ratio : 56;",
+            "    const iconSize = item.Type === \"StarCannonTower\" ? 64 : 56;",
+            "    card.iconWidth = ratio > 1 ? iconSize : iconSize * ratio;",
+            "    card.iconHeight = ratio > 1 ? iconSize / ratio : iconSize;",
             "  }",
             "  const card = ui.cards[i];",
             "  card.item = item;",
@@ -71903,7 +73663,7 @@
             "  const pressed = down && ui.pressedCard === i && hovered === i;",
             "  const scale = pressed ? 0.94 : hovered === i ? 1.04 : 1;",
             "  card.icon.setWidth(card.iconWidth * scale); card.icon.setHeight(card.iconHeight * scale);",
-            "  card.icon.setPosition(x + 42 - card.icon.getWidth()/2, y + 51 - card.icon.getHeight()/2);",
+            "  card.icon.setPosition(x + 42 - card.icon.getWidth()/2, y + (card.item.Type === \"StarCannonTower\" ? 57 : 51) - card.icon.getHeight()/2);",
             "  card.name.setPosition(x + 4, y + 5); card.name.setWidth(76); card.name.setHeight(18);",
             "  card.coin.setPosition(x + 13, y + 91); card.coin.setWidth(15); card.coin.setHeight(15);",
             "  card.price.setPosition(x + 31, y + 91); card.price.setWidth(46); card.price.setHeight(20);",
@@ -72154,6 +73914,199 @@
           "parameterObjects": "",
           "useStrict": true,
           "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "// Transactional Pure Fusion. Original towers remain alive until valid placement.",
+            "const scene=runtimeScene,sv=scene.getVariables(),game=scene.getGame(),get=n=>scene.getObjects(n),p=scene.__freePlacement,star=scene.__starCannon;",
+            "if(!p||!star)return;",
+            "let f=scene.__fusion;",
+            "if(!f){",
+            " const config=sv.get('StarburstConfig').toJSObject(),layer=scene.getLayer('FusionUI');",
+            " const archive=game.__fusionArchive;if(!archive?.persistent)return;",
+            " f=scene.__fusion={config,archive,active:false,stage:'idle',objects:{},markers:new Map(),footprints:new Map(),wasDown:false,pressed:'',error:'',disposed:false};",
+            " f.graphics=new PIXI.Graphics();layer.getRenderer().getRendererObject().addChild(f.graphics);f.graphics.zIndex=0;",
+            " f.ensure=(key,name,z=2)=>{if(!f.objects[key]){const o=scene.createObject(name);o.setLayer('FusionUI');o.setZOrder(z);f.objects[key]=o;}return f.objects[key];};",
+            " f.ghost=f.ensure('ghost','StarburstGhost',3);f.ghost.hide();",
+            " f.eligible=t=>!!t&&get('StarCannonTower').includes(t)&&!star.isFusion(t)&&((t.getVariables().get('Path1Level').getAsNumber()===5&&t.getVariables().get('Path2Level').getAsNumber()===2)||(t.getVariables().get('Path1Level').getAsNumber()===2&&t.getVariables().get('Path2Level').getAsNumber()===5));",
+            " f.pair=(a,b)=>f.eligible(a)&&f.eligible(b)&&a!==b&&a.getVariables().get('Path1Level').getAsNumber()!==b.getVariables().get('Path1Level').getAsNumber();",
+            " f.alive=(t,id)=>!!t&&t.getUniqueId()===id&&get('StarCannonTower').includes(t);",
+            " f.message=reason=>({region:'Place near either source tower',path:'Monster path is blocked',tower:'Another tower blocks this spot',obstacle:'Obstacle or structure blocks this spot',bounds:'Keep the footprint on the island',gold:'Not enough Gold',ui:'Move the preview onto the map',pair:'Select the opposite max path: 5-2 + 2-5'}[reason]||'Choose a clear placement near either source');",
+            " f.finish=()=>{",
+            "  f.active=false;f.stage='idle';f.a=null;f.b=null;f.aId=0;f.bId=0;f.preview=null;f.error='';f.pressed='';sv.get('FusionActive').setBoolean(false);",
+            "  f.graphics.clear();f.footprints.clear();for(const m of f.markers.values())m.destroy();f.markers.clear();Object.values(f.objects).forEach(o=>o.hide());layer.show(false);",
+            "  scene.getTimeManager().setTimeScale(f.previousScale||1);f.previousScale=undefined;",
+            " };",
+            " f.cancel=()=>{if(!f.active)return false;f.finish();scene.__audio?.play('UIClick');return true;};",
+            " f.begin=t=>{",
+            "  if(f.active||!f.eligible(t)||sv.get('GameOver').getAsBoolean()||sv.get('IndexBlocksInput').getAsBoolean())return false;",
+            "  f.previousScale=scene.getTimeManager().getTimeScale();f.active=true;f.stage='partner';f.a=t;f.aId=t.getUniqueId();f.b=null;f.error='';f.wasDown=game.getInputManager().isMouseButtonPressed(0);f.pressed='';",
+            "  sv.get('FusionActive').setBoolean(true);sv.get('SelectedTower').setNumber(0);sv.get('IndexOpen').setBoolean(false);scene.__obstaclePanel?.close();p.stop();",
+            "  if(scene.__audio){scene.__audio.ui.open=false;scene.__audio.ui.pressed='';}scene.getTimeManager().setTimeScale(config.FusionTimeScale);scene.__audio?.play('UIClick');return true;",
+            " };",
+            " f.choose=t=>{if(!f.active||f.stage!=='partner'||!f.pair(f.a,t)){f.error=f.message('pair');scene.__audio?.play('InvalidAction');return false;}f.b=t;f.bId=t.getUniqueId();f.stage='placement';f.error='';scene.__audio?.play('TowerSelect');return true;};",
+            " f.validate=(x,y)=>{",
+            "  if(!f.active||f.stage!=='placement'||!f.alive(f.a,f.aId)||!f.alive(f.b,f.bId)||!f.pair(f.a,f.b))return{valid:false,reason:'pair'};",
+            "  if(![f.a,f.b].some(t=>{const c=p.center(t);return Math.hypot(x-c[0],y-c[1])<=config.RegionalRadius;}))return{valid:false,reason:'region'};",
+            "  const point=scene.getLayer('').convertInverseCoords(x,y,0,[0,0]);",
+            "  if([f.bannerRect,f.cancelRect].some(r=>r&&point[0]>=r.x&&point[0]<r.x+r.w&&point[1]>=r.y&&point[1]<r.y+r.h))return{valid:false,reason:'ui'};",
+            "  return p.validate('StarCannonTower',x,y,{ignoreTowers:new Set([f.a,f.b]),cost:config.FusionCost});",
+            " };",
+            " f.confirm=(x,y)=>{",
+            "  const valid=f.validate(x,y);if(!valid.valid){f.error=f.message(valid.reason);scene.__audio?.play('InvalidAction');return false;}",
+            "  const a=f.a,b=f.b,t=scene.createObject('StarCannonTower');if(!t){f.error='Unable to create tower';return false;}",
+            "  const v=t.getVariables(),av=a.getVariables(),bv=b.getVariables(),cost=config.FusionCost,investment=av.get('TotalInvestment').getAsNumber()+bv.get('TotalInvestment').getAsNumber()+cost;",
+            "  const id=Math.max(sv.get('NextTowerId').getAsNumber(),...get('StarCannonTower').map(o=>o.getVariables().get('TowerId').getAsNumber()))+1;",
+            "  for(const [name,value]of Object.entries({TowerId:id,PurchasePrice:investment,TotalInvestment:investment,DamageDealt:av.get('DamageDealt').getAsNumber()+bv.get('DamageDealt').getAsNumber(),Path1Level:5,Path2Level:2,FootprintX:x,FootprintY:y,FootprintRadius:p.config('StarCannonTower').Radius,FootprintOffsetX:0,FootprintOffsetY:0,ShotCounter:0}))v.get(name).setNumber(value);",
+            "  v.get('TowerType').setString('StarburstCannon');v.get('TowerName').setString(config.Name);t.setLayer('');",
+            "  try{if(!star.apply(t))throw Error('Invalid fusion stats');}catch(e){t.deleteFromScene();f.error='Fusion could not be completed';return false;}",
+            "  const discovery=archive.resolve([a,b]);",
+            "  sv.get('NextTowerId').setNumber(id);sv.get('Money').sub(cost);a.deleteFromScene();b.deleteFromScene();if(discovery)archive.discover(discovery.id,discovery.variant);",
+            "  f.finish();sv.get('SelectedTower').setNumber(id);scene.__audio?.play('TowerMajorUpgrade');return t;",
+            " };",
+            " f.render=()=>{",
+            "  const w=game.getGameResolutionWidth(),h=game.getGameResolutionHeight();layer.setCameraZoom(1);layer.setCameraX(w/2);layer.setCameraY(h/2);layer.show(f.active);if(!f.active)return;",
+            "  const g=f.graphics,map=scene.getLayer(''),zoom=map.getCameraZoom(),screen=t=>map.convertInverseCoords(...p.center(t),0,[0,0]),area=scene.__towerShopUI.gameArea;",
+            "  g.clear().beginFill(0x09051b,config.OverlayOpacity).drawRect(0,0,w,h).endFill();",
+            "  const markerIds=new Set(),footprintIds=new Set();",
+            "  for(const t of p.towers()){",
+            "   const v=t.getVariables(),max=Math.max(v.get('Path1Level').getAsNumber(),v.get('Path2Level').getAsNumber())===5&&!star.isFusion(t);",
+            "   const id=t.getUniqueId(),[x,y]=screen(t),valid=f.pair(f.a,t),selected=t===f.a||t===f.b;",
+            "   if(f.stage==='placement'){",
+            "    const radius=p.radius(t),color=selected?0x9de8f0:0xf49ab1;",
+            "    g.lineStyle(2,color,.95).beginFill(color,selected ? .025 : .045).drawCircle(x,y,radius*zoom).endFill();",
+            "    const record=f.footprints.get(id)||{};Object.assign(record,{id,x,y,radius,screenRadius:radius*zoom,color,ignored:selected});f.footprints.set(id,record);footprintIds.add(id);",
+            "   }else if(max){const color=selected?0xf5d58d:valid?0x9df1ff:0x8a75aa;g.lineStyle(selected||valid?3:1,color,selected||valid?.95:.4).drawCircle(x,y,(p.radius(t)+5)*zoom);}",
+            "   if(!(f.stage==='partner'?max:selected))continue;",
+            "   markerIds.add(id);const color=selected?0xf5d58d:valid?0x9df1ff:0x8a75aa;",
+            "   let marker=f.markers.get(id);if(!marker){marker=new PIXI.Text('FUSION',{fontFamily:'Arial',fontSize:10,fontWeight:'bold',fill:color,stroke:0x211236,strokeThickness:3});marker.anchor.set(.5,1);marker.zIndex=2;layer.getRenderer().getRendererObject().addChild(marker);f.markers.set(id,marker);}marker.position.set(x,y-(p.radius(t)+8)*zoom);marker.style.fill=color;",
+            "  }",
+            "  for(const [id,m]of f.markers)if(!markerIds.has(id)){m.destroy();f.markers.delete(id);}",
+            "  for(const id of f.footprints.keys())if(!footprintIds.has(id))f.footprints.delete(id);",
+            "  if(f.stage==='placement'){",
+            "   for(const t of [f.a,f.b]){const [x,y]=screen(t);g.lineStyle(2,0xbfa0ff,.5).beginFill(0x9470d0,.07).drawCircle(x,y,config.RegionalRadius*zoom).endFill();}",
+            "   const [x,y]=p.cursor(),result=f.validate(x,y),point=map.convertInverseCoords(x,y,0,[0,0]);if(f.preview&&(f.preview.x!==x||f.preview.y!==y))f.error='';f.preview={x,y,...result};",
+            "   const size=88*zoom;f.ghost.setWidth(size);f.ghost.setHeight(size);f.ghost.setPosition(point[0]-size/2,point[1]-size/2);f.ghost.setOpacity(185);f.ghost.setColor(result.valid?'180;255;230':'255;80;105');f.ghost.hide(false);",
+            "   g.lineStyle(2,result.valid?0x9aedd5:0xff5b79,.95).drawCircle(...point,p.config('StarCannonTower').Radius*zoom);",
+            "  }",
+            "  const bw=Math.max(180,Math.min(460,area.right-area.left-24)),bx=area.left+(area.right-area.left-bw)/2,by=Math.max(66,h*.08);",
+            "  const plaque=f.ensure('banner','SelectedPanelPlaque',4);plaque.setPosition(bx,by);plaque.setWidth(bw);plaque.setHeight(96);plaque.hide(false);",
+            "  f.bannerRect={x:bx,y:by,w:bw,h:96};",
+            "  const text=(key,value,x,y,width,size=12)=>{const o=f.ensure(key,'IndexText',5);o.setString(value);o.setCharacterSize(size);o.setBold(key==='title');o.setColor('235;222;255');o.setWrapping(true);o.setWrappingWidth(width);o.setPosition(x,y);o.hide(false);return o;};",
+            "  text('title','CELESTIAL ASCENSION',bx+16,by+12,bw-32,16);",
+            "  text('instruction',f.stage==='partner'?'Choose the opposite max path: 5-2 + 2-5':'Place Starburst near either source tower',bx+16,by+37,bw-32,12);",
+            "  text('detail',f.error||(f.preview&&!f.preview.valid?f.message(f.preview.reason):f.stage==='placement'?'Click a valid spot / '+config.FusionCost+' Gold fusion':'Both towers stay until placement is confirmed'),bx+16,by+61,bw-32,11);",
+            "  const cy=Math.min(h-50,by+106),button=f.ensure('cancel','SelectedPanelPlaque',4);button.setPosition(bx+(bw-156)/2,cy);button.setWidth(156);button.setHeight(34);button.hide(false);text('cancelText','CANCEL  /  ESC',bx+(bw-156)/2+18,cy+9,130,12);f.cancelRect={x:button.getX(),y:cy,w:156,h:34};",
+            " };",
+            " f.dispose=()=>{if(f.disposed)return;if(f.active)f.finish();for(const o of Object.values(f.objects))o.deleteFromScene();f.objects={};f.graphics.destroy();f.disposed=true;};",
+            " if(!gdjs.__starburstFusionCallbacks){gdjs.__starburstFusionCallbacks=true;gdjs.callbacksRuntimeSceneUnloading.push(s=>s.__fusion?.dispose());}",
+            "}",
+            "const input=game.getInputManager(),down=input.isMouseButtonPressed(0);",
+            "if(f.active){",
+            " if(!f.alive(f.a,f.aId)||!f.eligible(f.a)||(f.b&&(!f.alive(f.b,f.bId)||!f.pair(f.a,f.b)))||sv.get('GameOver').getAsBoolean())f.cancel();",
+            " else if(gdjs.evtTools.input.wasKeyJustPressed(scene,'Escape'))f.cancel();",
+            " else{",
+            "  f.render();const x=gdjs.evtTools.input.getCursorX(scene,'FusionUI',0),y=gdjs.evtTools.input.getCursorY(scene,'FusionUI',0),r=f.cancelRect,cancel=x>=r.x&&x<r.x+r.w&&y>=r.y&&y<r.y+r.h;",
+            "  if(down&&!f.wasDown)f.pressed=cancel?'cancel':f.stage;",
+            "  if(!down&&f.wasDown){",
+            "   if(cancel&&f.pressed==='cancel')f.cancel();",
+            "   else if(f.pressed===f.stage){const [wx,wy]=p.cursor(),area=scene.__towerShopUI.gameArea,screen=scene.getLayer('').convertInverseCoords(wx,wy,0,[0,0]);",
+            "    if(screen[0]>=area.left&&screen[0]<area.right&&screen[1]>=area.top&&screen[1]<area.bottom){",
+            "     if(f.stage==='partner'){const target=p.towers().filter(t=>scene.__worldSelection.towerHit(t,wx,wy)).sort((a,b)=>b.getZOrder()-a.getZOrder())[0];f.choose(target);}",
+            "     else f.confirm(wx,wy);",
+            "    }",
+            "   }",
+            "   f.pressed='';",
+            "  }",
+            " }",
+            "}",
+            "f.wasDown=down;"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        },
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "// One permanent Fusion discovery source for notification, variants and Index.",
+            "// Storage follows the existing audio-settings mechanism; monster session state stays separate.",
+            "const scene=runtimeScene,game=scene.getGame(),sv=scene.getVariables(),catalog=sv.get('FusionCatalog').toJSObject();",
+            "let archive=game.__fusionArchive;",
+            "if(!archive?.persistent){",
+            " const oldFound=[...(archive?.found||[])],key='celestialVoidFusionDiscovery.v1';let state={version:1,entries:{}},storageOK=true,saveNeeded=false;",
+            " try{const raw=JSON.parse(localStorage.getItem(key)||'null');if(raw&&typeof raw==='object'&&!Array.isArray(raw)){state={...raw,entries:raw.entries&&typeof raw.entries==='object'&&!Array.isArray(raw.entries)?raw.entries:{}};state.version=raw.version||1;}}catch(e){storageOK=false;}",
+            " archive=game.__fusionArchive={persistent:true,storageKey:key,state,storageOK,catalog,found:new Set(),revision:0,queue:[],active:null,stats:{unlockedVariants:0,shown:0,completed:0,sounds:0,writes:0}};",
+            " const a=archive;",
+            " a.definition=id=>a.catalog.find(d=>d.Id===id);",
+            " a.recipeKey=parts=>parts.map(p=>{",
+            "  if(p?.getVariables){const v=p.getVariables();return(v.get('TowerType').getAsString()==='StarburstCannon'?'StarburstCannon':p.getName())+':'+v.get('Path1Level').getAsNumber()+'-'+v.get('Path2Level').getAsNumber();}",
+            "  return p.Type+':'+p.Path1+'-'+p.Path2;",
+            " }).sort().join('|');",
+            " a.resolve=parts=>{const k=a.recipeKey(parts);for(const d of a.catalog)for(const v of d.Variants||[])if(a.recipeKey(v.Recipe)===k)return{id:d.Id,variant:v.Id};return null;};",
+            " a.record=id=>{let r=a.state.entries[id];if(!r||typeof r!=='object'||Array.isArray(r)){r={discovered:r===true,variants:{}};a.state.entries[id]=r;}if(!r.variants||typeof r.variants!=='object'||Array.isArray(r.variants))r.variants={};return r;};",
+            " a.has=id=>a.found.has(id);",
+            " a.hasVariant=(id,variant)=>a.state.entries[id]?.variants?.[variant]===true;",
+            " a.progress=id=>{const d=a.definition(id),variants=d?.Variants||[];return{found:variants.filter(v=>a.hasVariant(id,v.Id)).length,total:variants.length};};",
+            " a.save=()=>{try{localStorage.setItem(key,JSON.stringify(a.state));a.storageOK=true;a.stats.writes++;return true;}catch(e){a.storageOK=false;return false;}};",
+            " const legacy=[...oldFound,...(Array.isArray(state.found)?state.found:[])];",
+            " for(const id of legacy)if(typeof id==='string'){a.record(id).discovered=true;saveNeeded=true;}",
+            " for(const id of Object.keys(state.entries)){",
+            "  const r=a.record(id),d=a.definition(id);if(r.discovered===true||Object.values(r.variants).some(v=>v===true)){",
+            "   a.found.add(id);r.discovered=true;",
+            "   // A legacy Pure unlock implies its sole variant. Hybrid progress never fans out.",
+            "   if(d?.Kind==='Pure'&&d.Variants?.length===1&&!Object.keys(r.variants).length){r.variants[d.Variants[0].Id]=true;saveNeeded=true;}",
+            "  }",
+            " }",
+            " a.discover=(id,variant)=>{",
+            "  const d=a.definition(id);if(!d)return false;",
+            "  variant=variant||(d.Kind==='Pure'&&d.Variants.length===1?d.Variants[0].Id:'');",
+            "  if(!d.Variants.some(v=>v.Id===variant)||a.hasVariant(id,variant))return false;",
+            "  const first=!a.has(id),r=a.record(id);r.discovered=true;r.variants[variant]=true;a.found.add(id);a.revision++;a.stats.unlockedVariants++;a.save();a.queue.push({id,variant,first});return true;",
+            " };",
+            " a.discoverRecipe=parts=>{const r=a.resolve(parts);return r?{...r,unlocked:a.discover(r.id,r.variant)}:null;};",
+            " if(saveNeeded)a.save();",
+            "}",
+            "let view=scene.__fusionDiscovery;",
+            "if(!view){",
+            " // Refresh definitions on scene reload; records and queue remain one shared source.",
+            " archive.catalog=catalog;",
+            " view=scene.__fusionDiscovery={archive,disposed:false};",
+            " const layer=scene.getLayer('DiscoveryUI'),parent=layer.getRenderer().getRendererObject(),root=view.root=new PIXI.Container(),mask=view.mask=new PIXI.Graphics();",
+            " root.interactive=false;root.interactiveChildren=false;root.visible=false;root.zIndex=204;mask.zIndex=203;mask.interactive=false;root.mask=mask;parent.addChild(mask,root);",
+            " const panel=new PIXI.Graphics();root.addChild(panel);panel.lineStyle(1.5,0xd1ae70,.95).beginFill(0x1a1030,.98).drawRoundedRect(0,0,440,132,12).endFill();panel.lineStyle(1,0x76609c,.8).drawRoundedRect(5,5,430,122,9);panel.lineStyle(1,0xa8cbee,.4).moveTo(112,29).lineTo(420,29);panel.lineStyle(1,0xc1a46a,.8).drawCircle(59,67,41);",
+            " for(const [x,y]of [[16,16],[424,16],[16,116],[424,116]])panel.beginFill(0xe2c98d).drawPolygon([x,y-4,x+4,y,x,y+4,x-4,y]).endFill();",
+            " const text=(s,x,y,size,color,bold=false)=>{const t=new PIXI.Text(s,{fontFamily:'Arial',fontSize:size,fill:color,fontWeight:bold?'bold':'normal'});t.position.set(x,y);root.addChild(t);return t;};",
+            " text('CELESTIAL ARCHIVE',112,12,10,0xd5bd87,true).style.letterSpacing=2;",
+            " view.heading=text('NEW FUSION DISCOVERED!',112,36,13,0xa6d9ff,true);view.name=text('',112,56,21,0xf3e8ff,true);view.detail=text('',112,85,11,0xb7a6cd);text('Fusion Index Updated',112,103,11,0x97bbdf);",
+            " view.icon=new PIXI.Sprite();view.icon.anchor.set(.5);view.icon.position.set(59,67);root.addChild(view.icon);",
+            " view.stars=[];for(let i=0;i<6;i++){const s=new PIXI.Graphics();s.beginFill(i%2?0xcaa1ff:0xa4dcff).drawPolygon([0,-3,1,-1,3,0,1,1,0,3,-1,1,-3,0,-1,-1]).endFill();root.addChild(s);view.stars.push(s);}",
+            " view.bind=event=>{",
+            "  const def=archive.definition(event.id),object=game.getSceneAndExtensionsData(scene.getName()).sceneData.objects.find(o=>o.name==='IndexTowerImage'),animation=object.animations.find(a=>a.name===def.Animation);",
+            "  const texture=game.getImageManager().getPIXITexture(animation.directions[0].sprites[0].image);view.icon.texture=texture;view.icon.scale.set(Math.min(76/texture.width,76/texture.height));",
+            "  view.heading.text=event.first?'NEW FUSION DISCOVERED!':'NEW VARIANT DISCOVERED!';view.name.text=def.Name;view.name.scale.set(1);view.name.scale.set(Math.min(1,304/Math.max(1,view.name.width)));view.detail.text=def.Kind+' Fusion revealed';view.bound=event;",
+            " };",
+            " view.update=()=>{",
+            "  if(view.disposed)return;",
+            "  if(sv.get('FusionActive').getAsBoolean()||sv.get('IndexOpen').getAsBoolean()||scene.__monsterDiscovery?.active){root.visible=false;mask.visible=false;return;}",
+            "  const dt=Math.max(0,scene.getTimeManager().getElapsedTime()/Math.max(.001,scene.getTimeManager().getTimeScale())/1000);",
+            "  if(archive.active){archive.active.age+=dt;if(archive.active.age>=4){archive.active=null;archive.stats.completed++;}}",
+            "  if(!archive.active&&archive.queue.length){archive.active={...archive.queue.shift(),age:0};archive.stats.shown++;if(scene.__audio?.play('DiscoveryUnlock'))archive.stats.sounds++;}",
+            "  const active=archive.active;if(!active){root.visible=false;mask.visible=false;return;}if(view.bound!==active)view.bind(active);",
+            "  layer.setCameraZoom(1);layer.setCameraX(game.getGameResolutionWidth()/2);layer.setCameraY(game.getGameResolutionHeight()/2);",
+            "  const g=scene.__monsterDiscovery.geometry(),age=active.age,smooth=x=>{x=Math.max(0,Math.min(1,x));return x*x*(3-2*x);},enter=smooth(age/.4),exit=smooth((age-3.2)/.8),reveal=smooth((age-.4)/.6);",
+            "  view.screenRect=g;const maskKey=[g.x,g.y,g.w,g.h,g.scale].join(':');if(view.maskKey!==maskKey){mask.clear().beginFill(0xffffff).drawRect(g.x-6*g.scale,g.y-6*g.scale,g.w+12*g.scale,g.h+12*g.scale).endFill();view.maskKey=maskKey;}",
+            "  root.visible=true;mask.visible=true;root.alpha=enter*(1-exit);root.scale.set(g.scale);root.position.set(g.x,g.y-(1-enter)*150*g.scale-exit*150*g.scale);const c=Math.round(255*reveal);view.icon.tint=(c<<16)|(c<<8)|c;view.name.alpha=smooth((age-1)/.2);",
+            "  view.stars.forEach((s,i)=>{s.position.set(59+Math.cos(age+i)*43,67+Math.sin(age+i)*40);s.alpha=reveal*.65;});",
+            " };",
+            " view.dispose=()=>{if(view.disposed)return;view.disposed=true;root.mask=null;root.destroy({children:true,texture:false,baseTexture:false});mask.destroy();};",
+            " if(!gdjs.__fusionArchiveCallbacks){gdjs.__fusionArchiveCallbacks=true;gdjs.callbacksRuntimeScenePostEvents.push(s=>s.__fusionDiscovery?.update());gdjs.callbacksRuntimeSceneUnloading.push(s=>s.__fusionDiscovery?.dispose());}",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
         }
       ],
       "parameters": []
@@ -72210,13 +74163,14 @@
             "const content = { x:x+20,y:y+108,w:w-52,h:h-180 };",
             "index.geometry = {x,y,w,h,content};",
             "const inside = (a,b,c,d) => mx>=a && mx<a+c && my>=b && my<b+d;",
-            "const closeY=y+h-54, tabWidth=(w-48)/2;",
-            "const hover = inside(x+20,y+62,tabWidth,32)?\"Towers\":inside(x+28+tabWidth,y+62,tabWidth,32)?\"Monsters\":inside(x+w-140,closeY,120,34)?\"Close\":inside(x+20,closeY,38,34)?\"Up\":inside(x+64,closeY,38,34)?\"Down\":\"\";",
+            "const categories=['Towers','Monsters','Fusion'],closeY=y+h-54,tabWidth=(w-40-(categories.length-1)*8)/categories.length;",
+            "index.categories=categories;index.tabRects=categories.map((name,i)=>({name,x:x+20+i*(tabWidth+8),y:y+62,w:tabWidth,h:32}));",
+            "const hover=index.tabRects.find(r=>inside(r.x,r.y,r.w,r.h))?.name||(inside(x+w-140,closeY,120,34)?'Close':inside(x+20,closeY,38,34)?'Up':inside(x+64,closeY,38,34)?'Down':'');",
             "if (down && !index.wasDown) index.pressed=hover;",
             "if ((!down && index.wasDown && index.pressed===\"Close\" && hover===\"Close\") || gdjs.evtTools.input.wasKeyJustPressed(runtimeScene,\"Escape\")) {",
             "  sv.get(\"IndexOpen\").setBoolean(false);open=false;",
             "}",
-            "if (!down && index.wasDown && index.pressed===hover && [\"Towers\",\"Monsters\"].includes(hover) && index.category!==hover) { index.category=hover;index.scroll=0; }",
+            "if (!down && index.wasDown && index.pressed===hover && categories.includes(hover) && index.category!==hover) { index.category=hover;index.scroll=0; }",
             "// Read the same object variables/catalog/archetypes that the game uses. No copied balance table.",
             "const data=game.getSceneAndExtensionsData(runtimeScene.getName()).sceneData;",
             "const catalog=sv.get(\"TowerShopCatalog\").toJSObject();",
@@ -72227,9 +74181,9 @@
             "  const values=Object.fromEntries(definition.variables.map(v=>[v.name,v.value]));",
             "  return {name:values.TowerName||item.Name,animation:item.IconAnimation||item.Type,damage:values.Damage,range:values.AttackRange,cooldown:values.AttackInterval,price:item.Cost,",
             "    projectileSpeed:values.ProjectileSpeed, special:\"Cosmic cannon / 2 UPGRADE PATHS.\",type:item.Type};",
-            "}).filter(Boolean) : runtimeScene.__monsterDiscovery.ids.map(name=>({typeId:name,name:archetypes[name].Name||name,...archetypes[name],role:roles[name]||(archetypes[name].Role+\" / Armor \"+archetypes[name].Armor+\" / No special ability / Wave \"+archetypes[name].MinimumWave+\"+\")}));",
+            "}).filter(Boolean) : index.category==='Fusion' ? game.__fusionArchive.catalog.map(def=>({type:def.Id,name:def.Name,fusion:true,definition:def})) : runtimeScene.__monsterDiscovery.ids.map(name=>({typeId:name,name:archetypes[name].Name||name,...archetypes[name],role:roles[name]||(archetypes[name].Role+\" / Armor \"+archetypes[name].Armor+\" / No special ability / Wave \"+archetypes[name].MinimumWave+\"+\")}));",
             "index.entries=entries;",
-            "const heights=entries.map(e=>e.type===\"StarCannonTower\"?528:148), offsets=[];let total=0;heights.forEach(h=>{offsets.push(total);total+=h+12;});",
+            "const heights=entries.map(e=>e.fusion?(e.definition.AdaptiveVariants?236+e.definition.Variants.length*40:236):e.type===\"StarCannonTower\"?528:148), offsets=[];let total=0;heights.forEach(h=>{offsets.push(total);total+=h+12;});",
             "const stride=160, maxScroll=Math.max(0,total-12-content.h);",
             "if(inside(content.x,content.y,content.w+16,content.h))index.scroll-=Math.sign(input.getMouseWheelDelta())*52;",
             "if(!down && index.wasDown && index.pressed===hover){if(hover===\"Up\")index.scroll-=stride;if(hover===\"Down\")index.scroll+=stride;}",
@@ -72238,7 +74192,7 @@
             "if(down&&index.dragging)index.scroll=index.dragScroll+(my-index.dragY)*maxScroll/Math.max(1,content.h-thumbHeight);",
             "if(!down)index.dragging=false;",
             "index.scroll=Math.max(0,Math.min(maxScroll,index.scroll));index.maxScroll=maxScroll;",
-            "const renderKey=JSON.stringify([index.category,index.scroll,width,height,hover,open,runtimeScene.__monsterDiscovery.revision]);",
+            "const renderKey=JSON.stringify([index.category,index.scroll,width,height,hover,open,runtimeScene.__monsterDiscovery.revision,game.__fusionArchive?.revision||0]);",
             "if(index.renderKey===renderKey){index.wasDown=down;if(!down)index.pressed=\"\";return;}",
             "index.renderKey=renderKey;index.renderCount=(index.renderCount||0)+1;",
             "const panel=(key,a,b,c,d,color,opacity=255,layer=\"IndexUI\",z=1)=>{",
@@ -72251,8 +74205,8 @@
             "panel(\"shade\",0,0,width,height,\"20;29;23\",190,\"IndexUI\",0);",
             "panel(\"frame\",x,y,w,h,\"255;255;255\");",
             "text(\"title\",\"UNIT INDEX\",x+22,y+16,w-44,24,\"239;232;255\",true);",
-            "text(\"subtitle\",index.category===\"Monsters\"?\"MONSTER DISCOVERY  /  \"+runtimeScene.__monsterDiscovery.found.size+\" / \"+entries.length+\" DISCOVERED\":\"Field guide  /  Live gameplay stats\",x+22,y+44,w-44,12,\"170;159;196\");",
-            "for(const [i,category] of [\"Towers\",\"Monsters\"].entries()){",
+            "text(\"subtitle\",index.category==='Fusion'?'FUSION ARCHIVE  /  '+entries.filter(e=>game.__fusionArchive.has(e.type)).length+' / '+entries.length+' DISCOVERED':index.category===\"Monsters\"?\"MONSTER DISCOVERY  /  \"+runtimeScene.__monsterDiscovery.found.size+\" / \"+entries.length+\" DISCOVERED\":\"Field guide  /  Live gameplay stats\",x+22,y+44,w-44,12,\"170;159;196\");",
+            "for(const [i,category] of categories.entries()){",
             "  const tx=x+20+i*(tabWidth+8),active=index.category===category;",
             "  panel(\"tab\"+i,tx,y+62,tabWidth,32,active?\"163;138;206\":\"87;67;120\");",
             "  text(\"tabText\"+i,category.toUpperCase(),tx+14,y+69,tabWidth-28,14,\"234;228;251\",true);",
@@ -72262,6 +74216,26 @@
             "entries.forEach((entry,i)=>{",
             "  const cardHeight=heights[i],cy=content.y+offsets[i]-index.scroll,cx=content.x,cw=content.w;",
             "  panel(\"card\"+i,cx,cy,cw,cardHeight,\"87;66;115\",255,\"IndexList\",0);",
+            "  if(entry.fusion){",
+            "    const archive=game.__fusionArchive,def=entry.definition,locked=!archive.has(def.Id),known=def.Variants.filter(v=>archive.hasVariant(def.Id,v.Id));",
+            "    const ft=(key,value,a,b,c,size=12,color='d')=>{const o=text('fusion'+key+i,value,a,b,c,size,color==='d'?'204;190;231':color,false,'IndexList',3);o.setWrapping(true);o.setWrappingWidth(c);return o;};",
+            "    panel('fusionPortraitPanel'+i,cx+12,cy+12,80,124,'115;86;145',255,'IndexList',1);",
+            "    const sprite=index.ensure('fusionPortrait'+i,'IndexTowerImage','IndexList',2);sprite.setAnimationName(def.Animation);sprite.setColor(locked?'0;0;0':'255;255;255');sprite.setOpacity(255);sprite.setWidth(76);sprite.setHeight(76);sprite.setPosition(cx+14,cy+36);sprite.hide(false);sprite.__fusionLocked=locked;sprite.__fusionId=def.Id;",
+            "    const name=ft('Name',locked?'???':def.Name,cx+108,cy+12,cw-246,20,'237;228;255');name.setBold(true);",
+            "    const status=ft('Status',locked?'UNDISCOVERED':'DISCOVERED',cx+cw-126,cy+18,116,10,locked?'159;140;187':'161;218;232');status.setBold(true);",
+            "    const config=data.variables.some(v=>v.name===def.StatsConfig)?sv.get(def.StatsConfig).toJSObject():(def.Stats||{});",
+            "    const stats=ft('Stats',locked?def.Kind.toUpperCase()+' FUSION\\nStats and abilities locked':def.Kind.toUpperCase()+' FUSION  /  DAMAGE '+config.Damage+'\\nRange: '+config.AttackRange+' px  /  Interval: '+Number(config.AttackInterval).toFixed(2)+' s',cx+108,cy+46,cw-124,13);",
+            "    const special=ft('Description',locked?'CRYPTIC HINT\\n'+def.Hint:def.Description,cx+108,cy+94,cw-124,12);",
+            "    panel('fusionRule'+i,cx+16,cy+152,cw-32,1,'143;111;182',190,'IndexList',2);",
+            "    ft('RecipeLabel','COMBINATION',cx+16,cy+163,cw-32,10,'166;210;232').setBold(true);",
+            "    const recipe=v=>v.Recipe.map(p=>p.Label||p.Type+' '+p.Path1+'-'+p.Path2).join(' + ');",
+            "    ft('Recipe',locked?'Combination locked':def.AdaptiveVariants?'Discovered variants are listed below':known.map(recipe).join('\\n')||'Combination not yet recorded',cx+16,cy+182,cw-32,13);",
+            "    if(def.AdaptiveVariants){",
+            "      const progress=archive.progress(def.Id);ft('Progress','ADAPTIVE VARIANTS  /  '+progress.found+' / '+progress.total,cx+16,cy+214,cw-32,11,'177;219;240');",
+            "      def.Variants.forEach((v,n)=>ft('Variant'+n,archive.hasVariant(def.Id,v.Id)?v.Name+'\\n'+recipe(v):'???  /  UNDISCOVERED',cx+16,cy+236+n*40,cw-32,11));",
+            "    }else ft('Pure','PURE FUSION  /  ONE CANONICAL RECIPE',cx+16,cy+214,cw-32,10,'168;149;198');",
+            "    index.cards.push({name,stats,special,sprite,status,locked,id:def.Id});return;",
+            "  }",
             "  panel(\"portrait\"+i,cx+12,cy+12,80,124,\"115;86;145\",255,\"IndexList\",1);",
             "  const monster=index.category===\"Monsters\", sprite=index.ensure((monster?\"monster\":\"tower\")+i,monster?\"IndexMonsterImage\":\"IndexTowerImage\",\"IndexList\",2);",
             "  const locked=monster&&!runtimeScene.__monsterDiscovery.has(entry.typeId);sprite.__discoveryLocked=locked;",
@@ -72280,7 +74254,7 @@
             "  sprite.hide(false);",
             "  const name=text(\"name\"+i,locked?\"???\":entry.name,cx+108,cy+12,monster?cw-246:cw-124,20,\"237;228;255\",true,\"IndexList\");",
             "  if(monster)text(\"discoveryStatus\"+i,locked?\"UNDISCOVERED\":\"DISCOVERED\",cx+cw-126,cy+18,116,10,locked?\"150;125;180\":\"161;204;229\",true,\"IndexList\");",
-            "  const stats=locked?\"HP: ???     Speed: ???\\nGold Reward: ???\":monster?\"HP: \"+entry.HP+\"     Speed: \"+entry.Speed+\"\\nGold Reward: \"+entry.Reward+\" Gold\":\"Damage: \"+entry.damage+\"     Range: \"+entry.range+\"\\nCooldown: \"+Number(entry.cooldown).toFixed(2)+\" s     Price: \"+entry.price+\" Gold\";",
+            "  const stats=locked?\"HP: ???     Speed: ???\\nGold Reward: ???\":monster?\"HP: \"+entry.HP+\"     Speed: \"+entry.Speed+\"\\nGold Reward: \"+entry.Reward+\" Gold\":\"Damage: \"+entry.damage+\"     Range: \"+entry.range+\"\\nCooldown: \"+Number(entry.cooldown).toFixed(2)+\" s     \"+(entry.fusion?'FUSION ARCHIVE':\"Price: \"+entry.price+\" Gold\");",
             "  const statText=text(\"stats\"+i,stats,cx+108,cy+44,cw-124,15,\"218;206;241\",false,\"IndexList\");",
             "  const special=text(\"special\"+i,locked?\"ABILITY: ???\\nNot yet discovered.\":(monster?\"ROLE\\n\":\"SPECIAL\\n\")+(monster?entry.role:entry.special),cx+108,cy+92,cw-124,13,\"181;168;214\",false,\"IndexList\");",
             "  if(entry.type===\"StarCannonTower\") {",
@@ -72331,7 +74305,7 @@
             "const towers=scene.getObjects(\"StarCannonTower\");",
             "let selected=towers.find(t=>t.getVariables().get(\"TowerId\").getAsNumber()===sv.get(\"SelectedTower\").getAsNumber());",
             "if(!selected&&sv.get(\"SelectedTower\").getAsNumber()>0)sv.get(\"SelectedTower\").setNumber(0);",
-            "const input=game.getInputManager(),down=input.isMouseButtonPressed(0),modal=sv.get(\"IndexBlocksInput\").getAsBoolean()||sv.get(\"AudioUIConsumesClick\").getAsBoolean();",
+            "const input=game.getInputManager(),down=input.isMouseButtonPressed(0),modal=sv.get(\"IndexBlocksInput\").getAsBoolean()||sv.get(\"AudioUIConsumesClick\").getAsBoolean()||sv.get('FusionActive').getAsBoolean();",
             "const h=680,w=320,layer=scene.getLayer(\"SelectedTowerUI\");",
             "let scale=1,sx=8,sy=8;",
             "const positionPanel=tower=>{",
@@ -72357,14 +74331,16 @@
             "sv.get(\"SelectedPanelPointerInside\").setBoolean(pointer);",
             "sv.get(\"TowerUIConsumesClick\").setBoolean(pointer);",
             "ui.screenRect=selected?{x:sx,y:sy,w:w*scale,h:h*scale}:null;",
-            "const hover=!selected||modal?\"\":inside(16,h-66,w-32,48)?\"Sell\":inside(278,12,26,26)?\"Close\":inside(16,314,140,270)?\"Path1\":inside(164,314,140,270)?\"Path2\":pointer?\"Panel\":\"\";",
+            "const canFuse=scene.__fusion?.eligible(selected)||false;",
+            "const hover=!selected||modal?\"\":canFuse&&inside(16,584,288,26)?'Fusion':inside(16,h-66,w-32,48)?\"Sell\":inside(278,12,26,26)?\"Close\":inside(16,314,140,270)?\"Path1\":inside(164,314,140,270)?\"Path2\":pointer?\"Panel\":\"\";",
             "if(down&&!ui.wasDown){ui.pressed=hover;ui.pressedTower=selected?selected.getVariables().get(\"TowerId\").getAsNumber():0;}",
             "if(!down&&ui.wasDown&&selected&&!modal&&ui.pressed===hover&&ui.pressedTower===selected.getVariables().get(\"TowerId\").getAsNumber()) {",
             "  if(hover===\"Sell\") {",
             "    const v=selected.getVariables(),investment=v.get(\"TotalInvestment\").getAsNumber();",
             "    sv.get(\"Money\").setNumber(sv.get(\"Money\").getAsNumber()+Math.floor(investment*sv.get(\"SellRefundRate\").getAsNumber()+1e-8));",
             "    selected.deleteFromScene();sv.get(\"SelectedTower\").setNumber(0);selected=null;",
-            "  } else if(hover===\"Close\") {sv.get(\"SelectedTower\").setNumber(0);selected=null;}",
+            "  } else if(hover==='Fusion'){scene.__fusion?.begin(selected);selected=null;}",
+            "  else if(hover===\"Close\") {sv.get(\"SelectedTower\").setNumber(0);selected=null;}",
             "  else if((hover===\"Path1\"||hover===\"Path2\"))scene.__starCannon?.upgrade(selected,hover===\"Path1\"?1:2);",
             "}",
             "if(!down)ui.pressed=\"\";ui.wasDown=down;",
@@ -72373,7 +74349,7 @@
             "  const tower=towers.find(t=>t.getVariables().get(\"TowerId\").getAsNumber()===sv.get(\"SelectedTower\").getAsNumber()&&scene.getObjects(t.getName()).includes(t));",
             "  positionPanel(tower);layer.show(!!tower);ui.tower=tower;ui.cards=[];",
             "  if(!tower){ui.screenRect=null;return;}",
-            "  const v=tower.getVariables(),isStar=true,hasUpgrades=true,cfg=sv.get(\"StarCannonConfig\").toJSObject();",
+            "  const v=tower.getVariables(),isStar=true,isFusion=scene.__starCannon.isFusion(tower),hasUpgrades=!isFusion,cfg=sv.get(\"StarCannonConfig\").toJSObject();",
             "  const panel=(key,x,y,width,height,color=\"255;255;255\",name=\"SelectedPanelBackground\",z=1)=>{const o=ui.ensure(key,name,z);o.setPosition(x,y);o.setWidth(width);o.setHeight(height);o.setColor(color);o.setOpacity(255);o.hide(false);return o;};",
             "  const text=(key,value,x,y,width,size=13,color=\"240;230;255\",bold=false)=>{const o=ui.ensure(key,\"SelectedPanelText\",4);o.setPosition(x,y);o.setWrapping(true);o.setWrappingWidth(width);o.setTextAlignment(\"left\");o.setString(String(value));o.setCharacterSize(size);o.setBold(bold);o.setColor(color);o.hide(false);return o;};",
             "  panel(\"frame\",0,0,w,h);",
@@ -72390,7 +74366,7 @@
             "  if(hasUpgrades) {",
             "    if(isStar){",
             "      const a=v.get('Path1Level').getAsNumber(),b=v.get('Path2Level').getAsNumber();",
-            "      const mode=a>=5?'EVERY 4TH: LANCE / 5 TARGETS':a>=3?'EVERY 4TH: NOVA / 175% DAMAGE':b>=5?(v.get('OverdriveActive').getAsBoolean()?'OVERDRIVE: DUAL FIRE':'ALTERNATING / OVERDRIVE '+v.get('OverdriveRemaining').getAsNumber().toFixed(1)+'s'):b>=3?'ALTERNATING MUZZLES':'SINGLE STELLAR BOLT';",
+            "      const mode=a>=5?'EVERY 4TH: LANCE / '+cfg.Lance.MaxTargets+' IMPACTS':a>=3?'EVERY 4TH: NOVA / 175% DAMAGE':b>=5?(v.get('OverdriveActive').getAsBoolean()?'OVERDRIVE: DUAL FIRE':'ALTERNATING / OVERDRIVE '+v.get('OverdriveRemaining').getAsNumber().toFixed(1)+'s'):b>=3?'ALTERNATING MUZZLES':'SINGLE STELLAR BOLT';",
             "      text('starMode',mode+(b>=4?' / RHYTHM '+v.get('RhythmStacks').getAsNumber()+'/5':''),24,276,272,10,'184;211;239');",
             "    }",
             "    text(\"upgrades\",\"UPGRADES\",116,isStar?294:282,150,14,\"160;230;249\",true);",
@@ -72399,9 +74375,10 @@
             "      const locked=level>=2&&other>=3,max=level>=cfg.MaxLevel,upgrade=path.Upgrades[max?cfg.MaxLevel-1:level],affordable=sv.get(\"Money\").getAsNumber()>=upgrade.Cost;",
             "      const x=16+i*148,y=314,active=!locked&&!max;",
             "      const background=panel(\"card\"+i,x,y,140,270,locked?\"116;95;148\":active&&hover===\"Path\"+(i+1)?\"230;210;255\":\"240;224;255\",\"SelectedUpgradeCard\",2);",
-            "      text(\"path\"+i,isStar?path.Name:\"PATH \"+(i+1),x+12,y+12,116,isStar?11:13,\"193;224;255\",true);",
+            "      const badge=ui.ensure(\"pathBadge\"+i,\"StarUpgradeIcon\",3);badge.setAnimationName(i===0?\"PathDamage\":\"PathSpeed\");badge.setWidth(24);badge.setHeight(24);badge.setPosition(x+10,y+12);badge.setOpacity(locked?170:255);badge.hide(false);",
+            "      text(\"path\"+i,isStar?path.Name:\"PATH \"+(i+1),x+40,y+12,90,isStar?10:13,\"193;224;255\",true);",
             "      for(let n=0;n<cfg.MaxLevel;n++)panel(\"progress\"+i+\"_\"+n,x+12+n*23,y+46,20,8,n<level?\"151;232;255\":\"112;93;146\",\"SelectedProgressBlock\",3);",
-            "      const icon=ui.ensure(\"icon\"+i,\"StarUpgradeIcon\",3);icon.setAnimationName(upgrade.Icon);icon.setWidth(66);icon.setHeight(66);icon.setPosition(x+37,y+64);icon.setOpacity(locked?130:255);icon.hide(false);",
+            "      const icon=ui.ensure(\"icon\"+i,\"StarUpgradeIcon\",3);icon.setAnimationName(upgrade.Icon);icon.setWidth(72);icon.setHeight(72);icon.setPosition(x+34,y+61);icon.setOpacity(locked?165:255);icon.hide(false);",
             "      const title=upgrade.Name;",
             "      const name=text(\"upgradeName\"+i,title,x+10,y+138,120,12,\"237;224;255\",true);name.setTextAlignment(\"center\");",
             "      const desc=text(\"description\"+i,upgrade.Description,x+10,y+174,120,11,\"184;174;208\");desc.setTextAlignment(\"center\");",
@@ -72417,9 +74394,16 @@
             "      }",
             "      ui.cards.push({path:i+1,level,locked,max,affordable,background,icon,name,cost:label});",
             "    });",
-            "    text(\"lockHint\",\"Specialization caps the other path at Lv2.\",24,593,272,11,\"167;151;195\");",
-            "  } else text(\"none\",\"NO UPGRADES AVAILABLE\",60,332,224,13,\"174;162;199\",true);",
-            "  const investment=hasUpgrades?v.get(\"TotalInvestment\").getAsNumber():v.get(\"PurchasePrice\").getAsNumber();",
+            "    if(scene.__fusion?.eligible(tower)){",
+            "      ui.fusionButton=panel('fusion',16,584,288,26,hover==='Fusion'?'207;222;255':'255;255;255','SelectedPanelPlaque',3);",
+            "      text('fusionLabel','FUSION  /  CELESTIAL ASCENSION',35,592,260,11,'207;224;255',true);",
+            "    }else{ui.fusionButton=null;text(\"lockHint\",\"Specialization caps the other path at Lv2.\",24,593,272,11,\"167;151;195\");}",
+            "  } else{",
+            "    ui.fusionButton=null;text('fusionIdentity','PURE FUSION / STARBURST',32,302,260,15,'198;223;255',true);",
+            "    text('fusionInfo','Heavy core + rapid release\\nThree alternating muzzle positions\\nSmall impact splash\\nNo further upgrades',32,344,260,14,'204;188;228');",
+            "    text(\"none\",\"ASCENSION COMPLETE\",55,462,240,14,\"174;214;239\",true);",
+            "  }",
+            "  const investment=v.get(\"TotalInvestment\").getAsNumber()||v.get(\"PurchasePrice\").getAsNumber();",
             "  const sellValue=Math.floor(investment*sv.get(\"SellRefundRate\").getAsNumber()+(isStar?1e-8:0));v.get(\"SellValue\").setNumber(sellValue);",
             "  panel(\"sell\",16,h-66,w-32,48,hover===\"Sell\"?\"187;222;255\":\"255;255;255\",\"SelectedPanelPlaque\",3);",
             "  text(\"sellText\",\"SELL\",30,h-49,90,14,\"230;222;255\",true);",
@@ -72620,7 +74604,7 @@
             "  return pick.hitPolygon(x,y,pick.spritePoints(o,scale,hull));",
             " };",
             "}",
-            "if(!pressed||!p)return;",
+            "if(!pressed||!p||scene.__fusion?.active)return;",
             "if(sv.get('AudioUIConsumesClick').getAsBoolean()||sv.get('IndexBlocksInput').getAsBoolean()||sv.get('TowerUIConsumesClick').getAsBoolean()||sv.get('SelectedPanelPointerInside').getAsBoolean()||sv.get('ObstaclePanelPointerInside').getAsBoolean())return;",
             "const [x,y]=p.cursor(),screen=scene.getLayer('').convertInverseCoords(x,y,0,[0,0]),area=scene.__towerShopUI.gameArea;",
             "if(screen[0]<area.left||screen[0]>=area.right||screen[1]<area.top||screen[1]>=area.bottom)return;",
@@ -73159,7 +75143,7 @@
         "  p.blockers=[...get('Ground_Decoration').filter(o=>o.getVariables().get('Blocking').getAsBoolean()),...get('SpawnMarker'),...get('BaseMarker')].map(p.blockedCircle);",
         "",
         " };",
-        " p.validate=(type,x,y)=>{",
+        " p.validate=(type,x,y,options={})=>{",
         "  const conf=p.config(type);if(!conf||!conf.Radius)return {valid:false,reason:'type'};",
         "  const r=conf.Radius,ground=get('Ground_Map')[0],map=scene.getLayer(''),ui=scene.__towerShopUI.gameArea;",
         "  if(x-r<ground.getX()||x+r>ground.getX()+ground.getWidth()||y-r<ground.getY()||y+r>ground.getY()+ground.getHeight())return {valid:false,reason:'bounds'};",
@@ -73172,15 +75156,16 @@
         "  const screen=map.convertInverseCoords(x,y,0,[0,0]),z=map.getCameraZoom(),sr=r*z;",
         "  if(screen[0]-sr<ui.left||screen[0]+sr>ui.right||screen[1]-sr<ui.top||screen[1]+sr>ui.bottom)return {valid:false,reason:'bounds'};",
         "  if(p.roads.some(poly=>p.polygon(x,y,r,poly)))return {valid:false,reason:'path'};",
-        "  if(p.towers().some(o=>{const c=p.center(o);return Math.hypot(x-c[0],y-c[1])<r+p.radius(o)+sv.get('TowerFootprintPadding').getAsNumber()-1e-6;}))return {valid:false,reason:'tower'};",
+        "  if(p.towers().some(o=>{if(options.ignoreTowers?.has(o))return false;const c=p.center(o);return Math.hypot(x-c[0],y-c[1])<r+p.radius(o)+sv.get('TowerFootprintPadding').getAsNumber()-1e-6;}))return {valid:false,reason:'tower'};",
         "  if(p.blockers.some(o=>Math.hypot(x-o.x,y-o.y)<=r+o.r+1e-6))return {valid:false,reason:'obstacle'};",
         "  const item=sv.get('TowerShopCatalog').toJSObject().find(i=>i.Type===type);",
-        "  if(!item||sv.get('Money').getAsNumber()<item.Cost)return {valid:false,reason:'gold'};",
+        "  const cost=options.cost??item?.Cost;",
+        "  if(!item||sv.get('Money').getAsNumber()<cost)return {valid:false,reason:'gold'};",
         "  const obstaclePanel=scene.__obstaclePanel?.screenRect,panel=scene.__selectedPanel&&scene.__selectedPanel.screenRect,hud=get('HUDPanel')[0],layer=scene.getLayer('UI');",
         "  const a=layer.convertInverseCoords(hud.getX(),hud.getY(),0,[0,0]),b=layer.convertInverseCoords(hud.getX()+hud.getWidth(),hud.getY()+hud.getHeight(),0,[0,0]);",
         "  const rectHit=(a,b,c,d)=>{const nx=Math.max(a,Math.min(a+c,screen[0])),ny=Math.max(b,Math.min(b+d,screen[1]));return Math.hypot(screen[0]-nx,screen[1]-ny)<=sr;};",
         "  if(sv.get('AudioUIConsumesClick').getAsBoolean()||sv.get('IndexBlocksInput').getAsBoolean()||sv.get('TowerUIConsumesClick').getAsBoolean()||sv.get('SelectedPanelPointerInside').getAsBoolean()||screen[0]>=ui.sidebarX||rectHit(a[0],a[1],b[0]-a[0],b[1]-a[1])||(panel&&rectHit(panel.x,panel.y,panel.w,panel.h))||(obstaclePanel&&rectHit(obstaclePanel.x,obstaclePanel.y,obstaclePanel.w,obstaclePanel.h)))return {valid:false,reason:'ui'};",
-        "  return {valid:true,reason:'',cost:item.Cost,radius:r};",
+        "  return {valid:true,reason:'',cost,radius:r};",
         " };",
         " p.cursor=()=>[gdjs.evtTools.input.getCursorX(scene,'',0),gdjs.evtTools.input.getCursorY(scene,'',0)];",
         "}",
@@ -73254,7 +75239,7 @@
             "const scene=runtimeScene,p=scene.__freePlacement,sv=scene.getVariables(),input=scene.getGame().getInputManager();",
             "const down=input.isMouseButtonPressed(0),pressed=down&&!p.wasDown;p.wasDown=down;",
             "sv.get('PlacementCommitted').setBoolean(false);",
-            "if(sv.get('AudioUIConsumesClick').getAsBoolean())return;",
+            "if(sv.get('AudioUIConsumesClick').getAsBoolean()||scene.__fusion?.active)return;",
             "const indicator=scene.getObjects('TilePlacement_Indicator')[0];",
             "const right=gdjs.evtTools.input.isMouseButtonPressed(scene,'Right'),cancel=right&&!p.rightWasDown;p.rightWasDown=right;",
             "if(cancel&&p.active){p.stop();return;}",
@@ -73560,6 +75545,7 @@
                 "  if(health.FlatDamageReduction()!==value)health.SetFlatDamageReduction(value);",
                 " };",
                 " f.end=rec=>{",
+                "  scene.__enemyStatusIcons?.remove(rec.enemy,f.name,rec.id);",
                 "  if(owns(rec.vfx,rec.vfxId,rec.id,'OwnerEnemyId'))rec.vfx.deleteFromScene();rec.vfx=null;",
                 "  rec.active=false;rec.expires=0;",
                 "  if(rec.enemy.getUniqueId()===rec.id){",
@@ -73609,10 +75595,10 @@
                 "   if(!owns(rec.vfx,rec.vfxId,rec.id,'OwnerEnemyId')||!liveIcons.has(rec.vfx)){",
                 "    const icon=scene.createObject('VoidFortificationVFX');icon.getVariables().get('OwnerEnemyId').setNumber(rec.id);rec.vfx=icon;rec.vfxId=icon.getUniqueId();f.createdVFX++;",
                 "   }",
-                "   const e=rec.enemy,icon=rec.vfx,type=e.getVariables().get('EnemyType').getAsString(),hp=sv.get('EnemyHPBarConfig').getChild('Types').getChild(type);",
+                "   const e=rec.enemy,icon=rec.vfx,type=e.getVariables().get('EnemyType').getAsString();",
                 "   const size=type==='VoidGolem'?config.Skill.EliteIconSize:config.Skill.CommonIconSize;",
-                "   icon.setLayer(e.getLayer());icon.setZOrder(14990);icon.setWidth(size);icon.setHeight(size);",
-                "   icon.setPosition(e.getCenterXInScene()+hp.getChild('Width').getAsNumber()/2+3,e.getCenterYInScene()-hp.getChild('HeadOffset').getAsNumber()-7);",
+                "   icon.setLayer(e.getLayer());icon.setWidth(size);icon.setHeight(size);",
+                "   scene.__enemyStatusIcons?.set(e,f.name,icon,size,scene.__enemyStatusIcons.config.FortificationOrder);",
                 "   icon.setOpacity(Math.round(224+25*Math.sin(g.frameTime*3+rec.id)));icon.hide(e.isHidden());",
                 "  }",
                 "  for(const [id,p]of f.pulses){",
@@ -73972,8 +75958,9 @@
             "const scene=runtimeScene,sv=scene.getVariables(),get=n=>scene.getObjects(n);",
             "let star=scene.__starCannon;",
             "if(!star){",
-            " const config=sv.get('StarCannonConfig').toJSObject(),componentConfig=sv.get('StarComponentConfig').toJSObject();",
-            " star=scene.__starCannon={config,componentConfig,time:0,visuals:new Map(),textures:new Map(),fractures:new Map()};",
+            " const config=sv.get('StarCannonConfig').toJSObject(),componentConfig=sv.get('StarComponentConfig').toJSObject(),vfxConfig=sv.get('StarCannonVFXConfig').toJSObject();",
+            " star=scene.__starCannon={config,componentConfig,vfxConfig,fusionConfig:sv.get('StarburstConfig').toJSObject(),time:0,visuals:new Map(),textures:new Map(),fractures:new Map()};",
+            " star.isFusion=t=>t.getVariables().get('TowerType').getAsString()==='StarburstCannon';",
             " star.rotationSpeed=componentConfig.RotationDegreesPerSecond;",
             " star.wrap=degrees=>(degrees+540)%360-180;",
             " star.valid=(a,b)=>Number.isInteger(a)&&Number.isInteger(b)&&a>=0&&b>=0&&a<=config.MaxLevel&&b<=config.MaxLevel&&!(a>=3&&b>=3);",
@@ -73987,7 +75974,7 @@
             " };",
             " star.texture=(kit,slot)=>{",
             "  const key=kit+':'+slot;if(star.textures.has(key))return star.textures.get(key);",
-            "  const meta=componentConfig.Kits[kit],source=scene.getGame().getImageManager().getPIXITexture(meta.Image);",
+            "  const meta=kit==='Starburst'?star.fusionConfig.Kit:componentConfig.Kits[kit],source=scene.getGame().getImageManager().getPIXITexture(meta.Image);",
             "  const texture=new PIXI.Texture(source.baseTexture,new PIXI.Rectangle(...meta.Frames[slot]));star.textures.set(key,texture);return texture;",
             " };",
             " star.ensureState=tower=>{",
@@ -74010,11 +75997,11 @@
             "   tower.registerDestroyCallback(cleanup);pair.cleanup=cleanup;star.visuals.set(id,pair);",
             "  }",
             "  if(pair.key!==key){",
-            "   pair.key=key;pair.meta=componentConfig.States[key];pair.Base.setAnimationName(key);pair.Turret.setAnimationName(key);",
+            "   pair.key=key;pair.meta=key==='Fusion'?star.fusionConfig.State:componentConfig.States[key];pair.Base.setAnimationName(key);pair.Turret.setAnimationName(key);",
             "   for(const rig of [pair.baseRig,pair.turretRig])for(const child of rig.removeChildren())child.destroy({children:true,texture:false,baseTexture:false});",
             "   pair.nodes=[];pair.barrels=[];",
             "   const add=(rig,kit,slot,rect,role)=>{const sp=new PIXI.Sprite(star.texture(kit,slot));const [x,y,w,h]=rect;sp.position.set(x-44,y-44);sp.width=w;sp.height=h;rig.addChild(sp);const node={sprite:sp,role,x:x-44,y:y-44,w,h};pair.nodes.push(node);if(role.startsWith('Barrel'))pair.barrels.push(node);return node;};",
-            "   add(pair.baseRig,componentConfig.BaseKit,'Base',componentConfig.BaseRect,'Base');",
+            "   add(pair.baseRig,pair.meta.BaseKit||componentConfig.BaseKit,'Base',pair.meta.BaseRect||componentConfig.BaseRect,'Base');",
             "   for(const p of pair.meta.Parts)add(pair.turretRig,p.Kit,p.Slot,p.Rect,p.Role);",
             "   pair.energy=new PIXI.Graphics();pair.turretRig.addChild(pair.energy);",
             "  }",
@@ -74051,20 +76038,21 @@
             "   pair.barrels.forEach((node,i)=>node.sprite.y=node.y+star.recoil(tower,i));",
             "   const remaining=tower.__starCooldown||0,chargeDuration=Math.min(componentConfig.ChargeMaxDuration,v.get('AttackInterval').getAsNumber()*componentConfig.ChargeIntervalFraction);",
             "   const charge=tower.__starTargetId?Math.max(0,1-remaining/Math.max(.001,chargeDuration)):0;",
-            "   const stacks=v.get('RhythmStacks').getAsNumber(),active=!!tower.__starOverdrive,specialReady=a>=3&&(tower.__starShotCount||0)%config.Nova.EveryShots===config.Nova.EveryShots-1,pulse=.5+.5*Math.sin(star.time*3),energy=pair.energy;",
+            "   const fusion=star.isFusion(tower),stacks=v.get('RhythmStacks').getAsNumber(),active=!!tower.__starOverdrive,specialReady=!fusion&&a>=3&&(tower.__starShotCount||0)%config.Nova.EveryShots===config.Nova.EveryShots-1,pulse=.5+.5*Math.sin(star.time*3),energy=pair.energy;",
             "   energy.clear();energy.beginFill(active?0xb7eeff:specialReady?0xd39aff:0x8aa7ff,.12+.12*pulse+charge*.2).drawCircle(0,12,8+charge*(specialReady?5:2)).endFill();",
             "   for(let i=0;i<pair.barrels.length;i++){",
             "    const mouth=pair.meta.Turret.Muzzles[i],x=(mouth[0]-.5)*88,y=(mouth[1]-.5)*88+star.recoil(tower,i);",
             "    energy.lineStyle(specialReady?1.4:1,active?0xd7fcff:specialReady?0xe5b4ff:0xa8bfff,.3+charge*.6).drawCircle(x,y,2+charge*(specialReady?4:2));",
             "    if(specialReady&&charge>0)energy.lineStyle(1,0xcaaaff,charge*.65).moveTo(x,10).lineTo(x,y+3);",
             "   }",
-            "   if(a>=3)for(let n=0;n<config.Nova.EveryShots;n++)energy.beginFill(n<(tower.__starShotCount||0)%config.Nova.EveryShots?0xe2bcff:0x51446f,.9).drawCircle(-9+n*6,29,1.5).endFill();",
+            "   if(!fusion&&a>=3)for(let n=0;n<config.Nova.EveryShots;n++)energy.beginFill(n<(tower.__starShotCount||0)%config.Nova.EveryShots?0xe2bcff:0x51446f,.9).drawCircle(-9+n*6,29,1.5).endFill();",
+            "   if(fusion)energy.lineStyle(1.2,0xcbb1ff,.35+.2*pulse).drawEllipse(0,12,21,15);",
             "   if(b>=4)for(let n=0;n<config.Rhythm.MaxStacks;n++)energy.beginFill(n<stacks?0xbdefff:0x51446f,n<stacks?.65+.25*pulse:.6).drawCircle(-12+n*6,29,1.5+(n<stacks?.25*pulse:0)).endFill();",
             "   if(active)energy.lineStyle(1.2,0xb1e9ff,.4+.2*pulse).drawEllipse(0,9,26,18);",
             "  }",
             " };",
             " star.syncStats=tower=>{",
-            "  const v=tower.getVariables(),stats=star.stats(v.get('Path1Level').getAsNumber(),v.get('Path2Level').getAsNumber(),v.get('RhythmStacks').getAsNumber());if(!stats)return false;",
+            "  const v=tower.getVariables(),f=star.fusionConfig,stats=star.isFusion(tower)?{Damage:f.Damage,AttackRange:f.AttackRange,AttackInterval:f.AttackInterval,ProjectileSpeed:f.ProjectileSpeed,ProjectileCount:1,ProjectileDamage:f.Damage,SplashRatio:f.SplashRatio,SplashRadius:f.SplashRadius,ProjectileKind:'Starburst'}:star.stats(v.get('Path1Level').getAsNumber(),v.get('Path2Level').getAsNumber(),v.get('RhythmStacks').getAsNumber());if(!stats)return false;",
             "  for(const [key,value]of Object.entries(stats))typeof value==='string'?v.get(key).setString(value):v.get(key).setNumber(value);",
             "  v.get('CurrentDamage').setNumber(stats.Damage);v.get('CurrentRange').setNumber(stats.AttackRange);v.get('CurrentAttackInterval').setNumber(stats.AttackInterval);v.get('CurrentProjectileSpeed').setNumber(stats.ProjectileSpeed);return true;",
             " };",
@@ -74072,14 +76060,14 @@
             "  star.ensureState(tower);",
             "  if(!star.syncStats(tower))return false;",
             "  const v=tower.getVariables(),a=v.get('Path1Level').getAsNumber(),b=v.get('Path2Level').getAsNumber();",
-            "  v.get('VisualKey').setString(a+'_'+b);tower.setAnimationName(a+'_'+b);tower.setWidth(64);tower.setHeight(64);",
+            "  const key=star.isFusion(tower)?'Fusion':a+'_'+b;v.get('VisualKey').setString(key);tower.setAnimationName(key);tower.setWidth(64);tower.setHeight(64);",
             "  // Canonical ground position is unchanged through every component replacement.",
             "  tower.setPosition(v.get('FootprintX').getAsNumber()-32,v.get('FootprintY').getAsNumber()-32);v.get('FootprintOffsetX').setNumber(0);v.get('FootprintOffsetY').setNumber(0);",
             "  if(b>=5&&tower.__starNextOverdrive===undefined)tower.__starNextOverdrive=star.time+config.Overdrive.CooldownAfterEnd;",
             "  star.visual(tower);return true;",
             " };",
             " star.upgrade=(tower,path)=>{",
-            "  if(!get('StarCannonTower').includes(tower)||![1,2].includes(path)||sv.get('IndexBlocksInput').getAsBoolean())return false;",
+            "  if(!get('StarCannonTower').includes(tower)||star.isFusion(tower)||scene.__fusion?.active||![1,2].includes(path)||sv.get('IndexBlocksInput').getAsBoolean())return false;",
             "  const v=tower.getVariables(),a=v.get('Path1Level').getAsNumber(),b=v.get('Path2Level').getAsNumber();if(!star.valid(a,b))return false;",
             "  const level=path===1?a:b,other=path===1?b:a;if(level>=config.MaxLevel||(level+1>=3&&other>=3))return false;",
             "  const cost=config.Paths[path-1].Upgrades[level].Cost;if(sv.get('Money').getAsNumber()<cost)return false;",
@@ -74087,8 +76075,17 @@
             " };",
             " star.effect=(kind,x,y,size)=>{",
             "  const o=scene.createObject('StarCannonImpact');o.setLayer('');o.setZOrder(15002);o.setAnimationName(kind);o.setWidth(size);o.setHeight(size);o.setPosition(x-size/2,y-size/2);",
-            "  o.__starDebuff=false;o.__muzzleFlash=false;o.__ownerId=0;o.__muzzleIndex=0;o.setOpacity(255);o.setAnimationFrame(0);o.playAnimation();",
-            "  o.__starEffect={x,y,size,age:0,life:kind==='Explosion'?.48:kind==='Surge'?.6:.28};return o;",
+            "  o.__starDebuff=false;o.__muzzleFlash=false;o.__ownerId=0;o.__muzzleIndex=0;o.__novaFrame=undefined;o.__novaTexture=null;o.setOpacity(255);o.setAnimationFrame(0);o.playAnimation();",
+            "  o.__starEffect={x,y,size,age:0,life:kind==='Explosion'?vfxConfig.NovaExplosion.Duration:kind==='Surge'?.6:.28};return o;",
+            " };",
+            " star.renderExplosion=(effect,t)=>{",
+            "  const cfg=vfxConfig.NovaExplosion,frame=Math.min(cfg.Frames.length-1,Math.floor(t*cfg.Frames.length)),key='NovaExplosion:'+frame;",
+            "  if(!star.textures.has(key)){",
+            "   const atlas=scene.getGame().getImageManager().getPIXITexture(cfg.Image);star.textures.set(key,new PIXI.Texture(atlas.baseTexture,new PIXI.Rectangle(...cfg.Frames[frame])));",
+            "  }",
+            "  const a=effect.__starEffect,opacity=cfg.PeakOpacity*(t<.55?1:Math.max(0,(1-t)/.45));effect.setOpacity(opacity);effect.setZOrder(cfg.ZOrder);effect.updatePreRender(scene);",
+            "  const sprite=effect.getRendererObject(),texture=star.textures.get(key);sprite.texture=texture;sprite.anchor.set(.5,.5);sprite.position.set(a.x,a.y);sprite.scale.set(a.size*cfg.SizeMultiplier/texture.width,a.size*cfg.SizeMultiplier/texture.height);",
+            "  effect.__novaFrame=frame;effect.__novaTexture=texture;",
             " };",
             " star.fractureReduction=enemy=>{",
             "  const rec=star.fractures.get(enemy.getUniqueId());return rec&&rec.enemy===enemy&&star.time<rec.expires?rec.baseArmor*config.Fracture.BaseArmorReduction:0;",
@@ -74100,10 +76097,12 @@
             "  const armor=Math.max(0,base-star.fractureReduction(enemy));v.get('EffectiveArmor').setNumber(armor);v.get('Armor').setNumber(armor);enemy.getBehavior('Health').SetFlatDamageReduction(armor);",
             " };",
             " star.endFracture=(rec,visual=true)=>{",
-            "  star.fractures.delete(rec.id);if(rec.icon&&get('StarCannonImpact').includes(rec.icon))rec.icon.deleteFromScene();",
+            "  const point=rec.icon?[rec.icon.getCenterXInScene(),rec.icon.getCenterYInScene()]:[rec.enemy.getCenterXInScene(),rec.enemy.getCenterYInScene()];",
+            "  scene.__enemyStatusIcons?.remove(rec.enemy,'ArmorFracture',rec.id);",
+            "  star.fractures.delete(rec.id);if(rec.icon&&rec.icon.getUniqueId()===rec.iconId&&get('StarCannonImpact').includes(rec.icon))rec.icon.deleteFromScene();",
             "  if(rec.enemy.getUniqueId()===rec.id){",
             "   const s=rec.enemy.getVariables().get('StatusEffects').getChild('ArmorFracture');s.getChild('Active').setBoolean(false);s.getChild('ExpiresAt').setNumber(0);s.getChild('ArmorReduction').setNumber(0);",
-            "   star.refreshArmor(rec.enemy);if(visual&&!rec.enemy.getBehavior('Health').IsDead())star.effect('Stabilize',rec.enemy.getCenterXInScene()-18,rec.enemy.getCenterYInScene()+12,18);",
+            "   star.refreshArmor(rec.enemy);if(visual&&!rec.enemy.getBehavior('Health').IsDead())star.effect('Stabilize',...point,18);",
             "   rec.enemy.unregisterDestroyCallback(rec.cleanup);",
             "  }",
             " };",
@@ -74113,8 +76112,10 @@
             "   const type=enemy.getVariables().get('EnemyType').getAsString(),fort=scene.__voidGolem?.fort.ensure(enemy);",
             "   rec={id,enemy,baseArmor:fort?.baseArmor??sv.get('EnemyTypes').toJSObject()[type]?.Armor??enemy.getBehavior('Health').FlatDamageReduction()};",
             "   rec.cleanup=()=>star.endFracture(rec,false);enemy.registerDestroyCallback(rec.cleanup);star.fractures.set(id,rec);",
-            "   rec.icon=star.effect('FractureIcon',enemy.getCenterXInScene()-18,enemy.getCenterYInScene()+12,17);rec.icon.__starDebuff=true;",
+            "   const size=sv.get('EnemyStatusIconConfig').getChild('ArmorFractureSize').getAsNumber();",
+            "   rec.icon=star.effect('FractureIcon',enemy.getCenterXInScene(),enemy.getCenterYInScene(),size);rec.iconId=rec.icon.getUniqueId();rec.icon.__starDebuff=true;rec.icon.pauseAnimation();",
             "  }",
+            "  scene.__enemyStatusIcons?.set(enemy,'ArmorFracture',rec.icon,scene.__enemyStatusIcons.config.ArmorFractureSize,scene.__enemyStatusIcons.config.FractureOrder);",
             "  rec.expires=star.time+config.Fracture.Duration;",
             "  const s=enemy.getVariables().get('StatusEffects').getChild('ArmorFracture');s.getChild('Active').setBoolean(true);s.getChild('ExpiresAt').setNumber(rec.expires);s.getChild('ArmorReduction').setNumber(rec.baseArmor*config.Fracture.BaseArmorReduction);",
             "  star.refreshArmor(enemy);return rec;",
@@ -74138,22 +76139,36 @@
             "  if(a>0&&b>0&&b<3){accent.lineStyle(1,0x9ceeff,.8).moveTo(18,17).lineTo(76,20).lineTo(113,24);if(b>=2)accent.moveTo(10,31).lineTo(78,28).lineTo(113,24);}",
             "  if(a>0&&b>=3){accent.lineStyle(a>=2?2:1,0xffdf9e,.85).drawEllipse(96,24,3,a>=2?9:7);if(a>=2)accent.lineStyle(1,0xe5d2ff,.8).drawEllipse(86,24,2,7);}",
             " };",
+            " // Nova and Lance use the same impact damage/VFX. Only Lance retains a splash",
+            " // ledger across impacts; direct-hit targets already visited are excluded.",
+            " star.explode=(p,owner,primary,enemies)=>{",
+            "  const v=p.getVariables(),ratio=v.get('SplashRatio').getAsNumber(),radius=v.get('SplashRadius').getAsNumber();if(ratio<=0)return;",
+            "  const x=primary.getCenterXInScene(),y=primary.getCenterYInScene(),damage=v.get('Damage').getAsNumber()*ratio;",
+            "  for(const enemy of enemies){",
+            "   const id=enemy.getUniqueId();",
+            "   if(enemy===primary||enemy.getBehavior('Health').IsDead()||p.__starLance&&(p.__starHitTargets.has(id)||p.__starAoETargets.has(id))||Math.hypot(enemy.getCenterXInScene()-x,enemy.getCenterYInScene()-y)>radius)continue;",
+            "   if(p.__starLance)p.__starAoETargets.add(id);",
+            "   if(p.__starFracture)star.fracture(enemy);star.deal(owner,enemy,damage);",
+            "  }",
+            "  star.effect('Explosion',x,y,radius*2);",
+            " };",
             " star.fire=(tower,target)=>{",
             "  if(!star.canFire(tower,target))return false;",
             "  const v=tower.getVariables(),a=v.get('Path1Level').getAsNumber(),b=v.get('Path2Level').getAsNumber();",
             "  tower.__starShotCount=(tower.__starShotCount||0)+1;v.get('ShotCounter').setNumber(tower.__starShotCount);",
-            "  const special=a>=3&&tower.__starShotCount%config.Nova.EveryShots===0,lance=special&&a>=5;",
-            "  const kind=special?(lance?'Lance':a>=4?'Fractured':'Nova'):v.get('ProjectileKind').getAsString();",
-            "  const dual=b>=3,overdrive=b>=5&&tower.__starOverdrive,indices=overdrive?[0,1]:[dual?(tower.__starNextMuzzle||0):0];",
+            "  const fusion=star.isFusion(tower),special=!fusion&&a>=3&&tower.__starShotCount%config.Nova.EveryShots===0,lance=special&&a>=5;",
+            "  const kind=fusion?'Starburst':special?(lance?'Lance':a>=4?'Fractured':'Nova'):v.get('ProjectileKind').getAsString();",
+            "  const dual=b>=3,overdrive=b>=5&&tower.__starOverdrive,indices=fusion?[tower.__starNextMuzzle||0]:overdrive?[0,1]:[dual?(tower.__starNextMuzzle||0):0];",
+            "  if(fusion)tower.__starNextMuzzle=((tower.__starNextMuzzle||0)+1)%3;",
             "  if(dual&&!overdrive)tower.__starNextMuzzle=1-indices[0];",
-            "  const width=lance?56:special?46:34,height=lance?16:18;",
+            "  const width=lance?56:fusion?44:special?46:34,height=lance?16:18;",
             "  for(const i of indices){",
             "   const p=scene.createObject('StarCannonProjectile'),pv=p.getVariables(),[x,y]=star.muzzle(tower,i);",
             "   p.setLayer('');p.setZOrder(15000);p.setAnimationName(kind);p.setWidth(width);p.setHeight(height);p.setPosition(x-width/2,y-height/2);p.setAngle(tower.__starFacing);",
             "   pv.get('OwnerTowerId').setNumber(v.get('TowerId').getAsNumber());pv.get('TargetId').setNumber(target.getUniqueId());pv.get('Damage').setNumber(v.get('Damage').getAsNumber()*(special?config.Nova.DamageMultiplier:1));",
-            "   pv.get('SplashRatio').setNumber(special&&!lance?config.Nova.SplashRatio:0);pv.get('SplashRadius').setNumber(special&&!lance?config.Nova.SplashRadius:0);pv.get('Speed').setNumber(v.get('ProjectileSpeed').getAsNumber());",
+            "   pv.get('SplashRatio').setNumber(fusion?star.fusionConfig.SplashRatio:special?config.Nova.SplashRatio:0);pv.get('SplashRadius').setNumber(fusion?star.fusionConfig.SplashRadius:special?config.Nova.SplashRadius:0);pv.get('Speed').setNumber(v.get('ProjectileSpeed').getAsNumber());",
             "   const heading=p.getAngle()*Math.PI/180;p.__starAge=0;p.__starHit=false;p.__starNew=true;p.__muzzleIndex=i;p.__spawnPoint=[x,y];p.__starDirection=[Math.cos(heading),Math.sin(heading)];",
-            "   p.__starLance=lance;p.__starHitTargets=new Set();p.__starTravel=0;p.__starRange=v.get('AttackRange').getAsNumber();p.__starFracture=special&&a>=4;p.__starCrossSpeed=b;p.__starCompression=a;",
+            "   p.__starLance=lance;p.__starHitTargets=new Set();p.__starAoETargets=lance?new Set():null;p.__starTravel=0;p.__starRange=v.get('AttackRange').getAsNumber();p.__starFracture=special&&a>=4;p.__starCrossSpeed=b;p.__starCompression=a;",
             "   star.projectileAccent(p,a,b);",
             "   p.__starContactHit=!lance&&(target.getCenterXInScene()-x)*Math.cos(heading)+(target.getCenterYInScene()-y)*Math.sin(heading)<=0;",
             "   const flash=star.effect(lance?'Pierce':special?'Fracture':'Base',x,y,special?30:22);flash.__starEffect.life=.10;flash.__muzzleFlash=true;flash.__muzzleIndex=i;flash.__ownerId=tower.getUniqueId();",
@@ -74171,7 +76186,8 @@
             "const dt=gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(scene),enemies=get('Enemy'),liveSet=new Set(enemies);star.time+=dt;",
             "for(const rec of [...star.fractures.values()]){",
             " if(!liveSet.has(rec.enemy)||rec.enemy.getUniqueId()!==rec.id||rec.enemy.getBehavior('Health').IsDead()||star.time+1e-8>=rec.expires){star.endFracture(rec);continue;}",
-            " const icon=rec.icon;icon.setPosition(rec.enemy.getCenterXInScene()-26,rec.enemy.getCenterYInScene()+4);icon.setOpacity(200+Math.round(35*Math.sin(star.time*4)));icon.hide(rec.enemy.isHidden());icon.setAnimationFrame(1);",
+            " const icon=rec.icon;icon.setOpacity(230+Math.round(25*Math.sin(star.time*4)));icon.hide(rec.enemy.isHidden());icon.setAnimationFrame(0);",
+            " scene.__enemyStatusIcons?.set(rec.enemy,'ArmorFracture',icon,scene.__enemyStatusIcons.config.ArmorFractureSize,scene.__enemyStatusIcons.config.FractureOrder);",
             "}",
             "for(const tower of get('StarCannonTower')){",
             " const v=tower.getVariables();",
@@ -74196,7 +76212,7 @@
             "  tower.__starTargetId=target?target.getUniqueId():0;",
             " }",
             " if(!target)continue;",
-            " const difference=star.wrap(star.bearing(tower,target)-tower.__starFacing),limit=star.rotationSpeed*dt;",
+            " const difference=star.wrap(star.bearing(tower,target)-tower.__starFacing),limit=(star.isFusion(tower)?star.fusionConfig.RotationDegreesPerSecond:star.rotationSpeed)*dt;",
             " tower.__starFacing=star.wrap(tower.__starFacing+Math.max(-limit,Math.min(limit,difference)));v.get('TurretFacing').setNumber(tower.__starFacing);v.get('TargetId').setNumber(tower.__starTargetId);",
             " if(tower.__starCooldown<=0&&star.fire(tower,target))tower.__starCooldown=v.get('AttackInterval').getAsNumber();",
             "}",
@@ -74216,11 +76232,15 @@
             "   if(along>=-radius&&along<=step+radius&&Math.abs(dx*uy-dy*ux)<=radius)hits.push({enemy,along});",
             "  }",
             "  hits.sort((a,b)=>a.along-b.along);",
+            "  let advance=step;",
             "  for(const {enemy,along}of hits){",
             "   if(p.__starHitTargets.size>=star.config.Lance.MaxTargets)break;",
-            "   p.__starHitTargets.add(enemy.getUniqueId());if(p.__starFracture)star.fracture(enemy);star.deal(owner,enemy,damage);star.effect('Pierce',x+ux*Math.max(0,along),y+uy*Math.max(0,along),32);",
+            "   // Earlier explosions may kill a later candidate in this same sweep.",
+            "   if(enemy.getBehavior('Health').IsDead())continue;",
+            "   p.__starHitTargets.add(enemy.getUniqueId());if(p.__starFracture)star.fracture(enemy);star.deal(owner,enemy,damage);star.explode(p,owner,enemy,enemies);",
+            "   if(p.__starHitTargets.size>=star.config.Lance.MaxTargets){advance=Math.min(step,Math.max(0,along));break;}",
             "  }",
-            "  p.__starTravel+=step;p.setPosition(p.getX()+ux*step,p.getY()+uy*step);",
+            "  p.__starTravel+=advance;p.setPosition(p.getX()+ux*advance,p.getY()+uy*advance);",
             "  if(p.__starHitTargets.size>=star.config.Lance.MaxTargets||p.__starTravel+1e-8>=p.__starRange||p.__starAge>=star.config.Lance.Lifetime){star.effect('Dissipate',p.getCenterXInScene(),p.getCenterYInScene(),40);p.deleteFromScene();}",
             "  continue;",
             " }",
@@ -74231,15 +76251,16 @@
             " if(!p.__starContactHit&&distance>travel+star.config.ProjectileContactRadius){p.setPosition(p.getX()+dx/distance*travel,p.getY()+dy/distance*travel);continue;}",
             " if(p.__starHit)continue;p.__starHit=true;",
             " if(p.__starFracture)star.fracture(target);star.deal(owner,target,damage);",
-            " const ratio=v.get('SplashRatio').getAsNumber(),radius=v.get('SplashRadius').getAsNumber();",
-            " if(ratio>0)for(const enemy of enemies)if(enemy!==target&&!enemy.getBehavior('Health').IsDead()&&Math.hypot(enemy.getCenterXInScene()-tx,enemy.getCenterYInScene()-ty)<=radius){if(p.__starFracture)star.fracture(enemy);star.deal(owner,enemy,damage*ratio);}",
-            " star.effect(ratio>0?'Explosion':p.__starFracture?'Fracture':'Base',tx,ty,ratio>0?radius*2:30);p.deleteFromScene();",
+            " if(v.get('SplashRatio').getAsNumber()>0)star.explode(p,owner,target,enemies);",
+            " else star.effect(p.__starFracture?'Fracture':'Base',tx,ty,30);",
+            " p.deleteFromScene();",
             "}",
             "for(const effect of get('StarCannonImpact').slice()){",
             " if(effect.__starDebuff)continue;",
             " const a=effect.__starEffect;if(!a){effect.deleteFromScene();continue;}a.age+=dt;",
             " if(a.age>=a.life){effect.deleteFromScene();continue;}",
-            " const t=a.age/a.life,size=a.size;effect.setAnimationFrame(Math.min(5,Math.floor(t*6)));effect.pauseAnimation();effect.setOpacity(255*(1-t*.45));effect.setWidth(size);effect.setHeight(size);effect.setPosition(a.x-size/2,a.y-size/2);",
+            " const t=a.age/a.life,size=a.size,nova=effect.getAnimationName()==='Explosion';effect.setAnimationFrame(nova?0:Math.min(5,Math.floor(t*6)));effect.pauseAnimation();effect.setOpacity(255*(1-t*.45));effect.setWidth(size);effect.setHeight(size);effect.setPosition(a.x-size/2,a.y-size/2);",
+            " if(nova)star.renderExplosion(effect,t);",
             "}"
           ],
           "parameterObjects": "",
@@ -74674,6 +76695,46 @@
             "if(!bars)bars=scene.__enemyHealthBars=new Map();",
             "let state=scene.__enemyHealthBarState;",
             "if(!state)state=scene.__enemyHealthBarState={config:scene.getVariables().get('EnemyHPBarConfig').toJSObject(),createdPairs:0};",
+            "// Status owners retain their own durations/icons. This registry only arranges",
+            "// every registered buff/debuff in one centered row above the native HP track.",
+            "if(!scene.__enemyStatusIcons){",
+            " const cfg=scene.getVariables().get('EnemyStatusIconConfig').toJSObject();",
+            " const row=scene.__enemyStatusIcons={config:cfg,owners:new Map()};",
+            " row.removeOwner=record=>{",
+            "  if(record.enemy.getUniqueId()===record.id)record.enemy.unregisterDestroyCallback(record.cleanup);",
+            "  if(row.owners.get(record.id)===record)row.owners.delete(record.id);",
+            " };",
+            " row.set=(enemy,key,icon,size,order=100)=>{",
+            "  const id=enemy.getUniqueId();let owner=row.owners.get(id);",
+            "  if(!owner){owner={id,enemy,icons:new Map()};owner.cleanup=()=>row.removeOwner(owner);enemy.registerDestroyCallback(owner.cleanup);row.owners.set(id,owner);}",
+            "  let item=owner.icons.get(key);if(!item){item={key};owner.icons.set(key,item);}",
+            "  item.icon=icon;item.uid=icon.getUniqueId();item.size=size;item.order=order;icon.getVariables().get('OwnerEnemyId').setNumber(id);",
+            "  return item;",
+            " };",
+            " row.remove=(enemy,key,ownerId=enemy.getUniqueId())=>{",
+            "  const owner=row.owners.get(ownerId);if(!owner||owner.enemy!==enemy)return;owner.icons.delete(key);if(!owner.icons.size)row.removeOwner(owner);",
+            " };",
+            " row.render=()=>{",
+            "  const live=new Set(scene.getObjects('Enemy')),objects=new Map();",
+            "  const present=icon=>{const name=icon.getName();if(!objects.has(name))objects.set(name,new Set(scene.getObjects(name)));return objects.get(name).has(icon);};",
+            "  for(const owner of [...row.owners.values()]){",
+            "   const enemy=owner.enemy,pair=scene.__enemyHealthBars.get(owner.id);",
+            "   if(enemy.getUniqueId()!==owner.id||!live.has(enemy)||enemy.getBehavior('Health').IsDead()||!pair){row.removeOwner(owner);continue;}",
+            "   for(const [key,item]of owner.icons)if(item.icon.getUniqueId()!==item.uid||!present(item.icon)||item.icon.getVariables().get('OwnerEnemyId').getAsNumber()!==owner.id)owner.icons.delete(key);",
+            "   const items=[...owner.icons.values()].sort((a,b)=>a.order-b.order||a.key.localeCompare(b.key));",
+            "   if(!items.length){row.removeOwner(owner);continue;}",
+            "   const total=items.reduce((sum,item)=>sum+item.size,0)+(items.length-1)*cfg.HorizontalSpacing;",
+            "   const center=pair.background.getCenterXInScene(),bottom=pair.background.getY()-cfg.GapAboveHealthBar;let x=center-total/2;",
+            "   owner.layout={center,bottom,width:total,count:items.length};",
+            "   for(const [i,item]of items.entries()){",
+            "    const icon=item.icon;icon.setLayer(enemy.getLayer());icon.setWidth(item.size);icon.setHeight(item.size);icon.setPosition(x,bottom-item.size);",
+            "    icon.setZOrder(pair.fill.getZOrder()+cfg.ZOrderOffset+i);icon.hide(enemy.isHidden());x+=item.size+cfg.HorizontalSpacing;",
+            "   }",
+            "  }",
+            " };",
+            " row.dispose=()=>{for(const owner of [...row.owners.values()])row.removeOwner(owner);};",
+            " if(!gdjs.__celestialStatusLayoutCallback){gdjs.__celestialStatusLayoutCallback=true;gdjs.callbacksRuntimeSceneUnloading.push(s=>s.__enemyStatusIcons?.dispose());}",
+            "}",
             "const backgrounds=new Set(scene.getObjects('HealthBarBackground'));",
             "const fills=new Set(scene.getObjects('HealthBarFill'));",
             "const living=new Set();",
@@ -74774,7 +76835,8 @@
             "if(runtimeScene.__novaWisp)runtimeScene.__novaWisp.render();",
             "",
             "if(runtimeScene.__voidHound)runtimeScene.__voidHound.render();",
-            "if(runtimeScene.__voidGolem)runtimeScene.__voidGolem.render();"
+            "if(runtimeScene.__voidGolem)runtimeScene.__voidGolem.render();",
+            "if(runtimeScene.__enemyStatusIcons)runtimeScene.__enemyStatusIcons.render();"
           ],
           "parameterObjects": "",
           "useStrict": true,
@@ -75013,9 +77075,9 @@
             "  if(a.disposed)return;const dt=scene.getTimeManager().getElapsedTime()/Math.max(.001,scene.getTimeManager().getTimeScale())/1000;a.dt=Math.min(.2,Math.max(0,dt));a.now+=a.dt;",
             "  const input=game.getInputManager(),down=input.isMouseButtonPressed(0),released=!down&&a.ui.down,pressed=down&&!a.ui.down;",
             "  const geometry=a.geometry(),mx=gdjs.evtTools.input.getCursorX(scene,'AudioUI',0),my=gdjs.evtTools.input.getCursorY(scene,'AudioUI',0),inside=r=>mx>=r.x&&mx<r.x+r.w&&my>=r.y&&my<r.y+r.h;",
-            "  if(sv.get('IndexBlocksInput').getAsBoolean()){a.ui.open=false;a.ui.drag='';}",
+            "  if(sv.get('IndexBlocksInput').getAsBoolean()||sv.get('FusionActive').getAsBoolean()){a.ui.open=false;a.ui.drag='';}",
             "  let consume=false,key='';const b=geometry.button,p=geometry.panel;",
-            "  if(!sv.get('IndexBlocksInput').getAsBoolean()){",
+            "  if(!sv.get('IndexBlocksInput').getAsBoolean()&&!sv.get('FusionActive').getAsBoolean()){",
             "   if(inside(b))key='Speaker';",
             "   if(a.ui.open){consume=true;if(inside({x:p.x+p.w-36,y:p.y+8,w:28,h:28}))key='Close';",
             "    for(const [i,label]of ['Master','Music','SFX','UI'].entries())if(inside({x:p.x+114,y:p.y+51+i*37,w:136,h:26}))key=label;",
@@ -75260,6 +77322,24 @@
       "name": "DiscoveryUI",
       "renderingType": "",
       "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera2DPlaneMaxDrawingDistance": 5000,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": true,
+      "name": "FusionUI",
+      "renderingType": "",
+      "visibility": false,
       "cameras": [],
       "effects": []
     }

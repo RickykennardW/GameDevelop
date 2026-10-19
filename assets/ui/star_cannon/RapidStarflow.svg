@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+<defs>
+<linearGradient id="gold" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#fff2bd"/><stop offset=".42" stop-color="#e7bc5d"/><stop offset=".72" stop-color="#a9702b"/><stop offset="1" stop-color="#f8d990"/></linearGradient>
+<linearGradient id="ice" x1="0" y1="0" x2=".7" y2="1"><stop stop-color="#f8ffff"/><stop offset=".44" stop-color="#9be4ff"/><stop offset="1" stop-color="#638bf7"/></linearGradient>
+<linearGradient id="violet" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e2d5ff"/><stop offset=".48" stop-color="#9471e9"/><stop offset="1" stop-color="#5838ad"/></linearGradient>
+<radialGradient id="pearl"><stop stop-color="#fffaff"/><stop offset=".3" stop-color="#d4e8ff"/><stop offset=".7" stop-color="#8f83ff"/><stop offset="1" stop-color="#7163df" stop-opacity=".12"/></radialGradient>
+<radialGradient id="halo"><stop stop-color="#a79bff" stop-opacity=".18"/><stop offset="1" stop-color="#9783ff" stop-opacity="0"/></radialGradient>
+</defs><circle cx="64" cy="64" r="58" fill="url(#halo)"/><path d="M 42 27 L 75 64 L 42 101 L 23 101 L 56 64 L 23 27 Z" fill="url(#ice)" stroke="#e5f7ff" stroke-width="2.4" stroke-linejoin="round"/><path d="M 79 27 L 112 64 L 79 101 L 60 101 L 93 64 L 60 27 Z" fill="url(#gold)" stroke="#fff0c4" stroke-width="2.4" stroke-linejoin="round"/><path d="M 11 48 L 31 48 M 5 64 L 26 64 M 11 80 L 31 80" fill="none" stroke="#a49eff" stroke-width="5" stroke-linecap="round"/></svg>

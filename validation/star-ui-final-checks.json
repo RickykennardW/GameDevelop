@@ -1,0 +1,36 @@
+{
+  "ui": {
+    "star-ui-qa": {
+      "checks": 112,
+      "viewport": [
+        1920,
+        1080
+      ],
+      "consoleErrors": 0
+    },
+    "star-ui-qa-1280": {
+      "checks": 112,
+      "viewport": [
+        1280,
+        720
+      ],
+      "consoleErrors": 0
+    },
+    "star-ui-qa-960": {
+      "checks": 112,
+      "viewport": [
+        960,
+        640
+      ],
+      "consoleErrors": 0
+    }
+  },
+  "native": {
+    "test-clean-project": 354,
+    "test-nova-spike": 731
+  },
+  "newResources": 13,
+  "gameplayUnchanged": true,
+  "noBackupCreated": true,
+  "staticChecks": 5464
+}

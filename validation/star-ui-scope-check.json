@@ -1,0 +1,26 @@
+{
+  "changedNativeObjects": [
+    "TileType_Button",
+    "StarUpgradeIcon"
+  ],
+  "changedInlineEvents": [
+    "/0/events/0",
+    "/1/events/1"
+  ],
+  "allSceneVariablesUnchanged": true,
+  "allInstancesAndLayersUnchanged": true,
+  "allExistingResourceEntriesPreserved": true,
+  "gameplaySourcesAndTopDownArtUnchanged": true,
+  "newResourceCount": 13,
+  "portraitSize": [
+    1254,
+    1254
+  ],
+  "portraitAlphaBounds": [
+    140,
+    128,
+    1138,
+    1138
+  ],
+  "noBackupCreated": true
+}

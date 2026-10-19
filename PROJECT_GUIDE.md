@@ -8,7 +8,8 @@ Project utama adalah `Tower Defense.json`; scene terpisah berada di `layouts/gam
 
 ## Sistem yang dipertahankan
 
-- Satu Star Cannon resmi, harga 300 Gold, desain Nova Spike, 27 kombinasi upgrade valid dari dua path sampai Lv5. Base tetap diam, chassis dan core mengikuti pivot bersama, barrel recoil independen. Path 1 memakai Nova setiap tembakan keempat, Armor Fracture dan Lance lurus; Path 2 memakai muzzle bergantian, Rhythm dan Overdrive. Targeting, sell dan footprint tetap pada sistem existing.
+- Satu Star Cannon resmi, harga 300 Gold, desain Nova Spike, 27 kombinasi upgrade valid dari dua path sampai Lv5. Base tetap diam, chassis dan core mengikuti pivot bersama, barrel recoil independen. Path 1 memakai Nova setiap tembakan keempat, Armor Fracture dan Lance lurus maksimal 3 target dengan ledakan per hit; Path 2 memakai muzzle bergantian, Rhythm dan Overdrive. Targeting, sell dan footprint tetap pada sistem existing.
+- Prototype Pure Fusion **Starburst Cannon** tersedia dari pasangan **5-2 + 2-5**, melalui tombol Fusion di Selected Panel. Pilih pasangan, lalu tempatkan ghost dalam radius 96 dari salah satu sumber; Cancel/Esc mempertahankan kedua sumber. Konfirmasi valid baru mengonsumsi sumber. Mode berjalan 0,5x, lalu memulihkan speed sebelumnya. `StarburstConfig` mengatur biaya test 0, damage90, interval0.4s, range227, splash64/20%, dan artwork. Varian `TowerType=StarburstCannon` memakai object `StarCannonTower` existing; shop tetap satu entry. Saat placement semua footprint terlihat; Index memiliki tab Fusion tersendiri dan discovery Fusion permanen sesudah konfirmasi sukses. Lihat `STARBURST_FUSION_REPORT.md` dan `FUSION_FIXES_REPORT.md`.
 - Nova Wisp, Void Hound, Void Guard, Void Sentinel, Void Brute dan elite Void Golem menggunakan object Enemy bersama. Animasi arah/state, armor, HP, movement, death dan HP bars tetap tersedia.
 - Golem memakai stationary cast dan Void Fortification: konfigurasi authoritative ada pada `VoidGolemConfig`, bukan file metadata eksperimen lama.
 - Map Celestial Void, waypoints, Spawn/Base, obstacle blockers/removal, Tower Shop, Selected Upgrade Panel, Index, HUD dan camera tetap.
@@ -21,6 +22,8 @@ Gunakan scene variables sebagai sumber authoritative:
 | Variable | Fungsi |
 |---|---|
 | `StarCannonConfig` | Stats, additive modifiers, harga, Nova, Fracture, Rhythm, Overdrive dan Lance |
+| `StarburstConfig` | Fusion test fee/region/time scale, stats Starburst, four-part artwork metadata |
+| `FusionCatalog` | Stable discovery ID, Pure/Hybrid metadata, original portrait, cryptic hint dan independent variant recipes |
 | `StarComponentConfig` | Atlas frames, modular parts, pivot, muzzle, hull, scale dan recoil 27 kombinasi |
 | `NovaWispConfig.Views` | Atlas/crop/anchor Nova Wisp |
 | `VoidHoundConfig.Views` | Atlas/crop/anchor Hound |
@@ -51,6 +54,10 @@ Runtime memakai crossfade 3s, looping native, maksimal 2 BGM dan 12 SFX, rate li
 
 `tools/build-nova-spike.py` menyusun preview dan konfigurasi frame dari sebelas atlas artwork final di `assets/towers/star_cannon/nova_spike/atlases/`. Seluruh 27 komposit PNG dipakai oleh object native untuk editor/shop/ghost/Index/Selected Panel; renderer world menyusun bagian atlas yang sama. Perulangan build mempertahankan balancing Nova Spike yang sudah ada. `tools/nova-spike-prompts.json` menyimpan prompt produksi image_gen, termasuk koreksi unit barrel Rhythm. Jalankan embedding dan compile ulang setelah perubahan source. Rincian parameter, file dan pengujian ada di `NOVA_SPIKE_REPORT.md`.
 
+Build/shop kini memakai portrait 3/4 khusus `assets/ui/star_cannon/StarCannon_UI_Portrait.png` melalui `TileType_Button`. Ghost dan preview state tower tetap top-down. `StarUpgradeIcon` memakai sepuluh simbol upgrade SVG dan dua badge path, tanpa miniatur tower. `tools/build-star-cannon-ui.py` membangun simbol/referensi UI tanpa mengubah gameplay; `build-nova-spike.py` mempertahankan koneksi ini saat rebuild. Prompt portrait: `tools/star-cannon-ui-art.json`; pengujian UI: `tools/star-cannon-ui-qa.js`. Laporan: `STAR_CANNON_UI_REPORT.md`.
+
+Nova explosion kini memakai delapan frame dari `assets/effects/star_cannon/StarCannon_VFX_NovaExplosion.png`, diatur oleh `StarCannonVFXConfig`; armor fracture memakai SVG tameng retak khusus. `EnemyStatusIconConfig` mengatur gap/spacing/size status. Registry `scene.__enemyStatusIcons` pada source HP bar menyusun semua buff/debuff di atas tengah HP track; panggil `set(enemy,key,icon,size,order)` / `remove(enemy,key,lifetimeId)` untuk status baru. Layout dijalankan setelah renderer monster/status owner. HP bar geometry dan durasi/armor tetap pada konfigurasi existing. Gold awal saat ini **50000** pada scene variable `Money`; builder artwork tidak mengisi ulang atau menimpa nilainya. Detail dan pengujian: `STAR_CANNON_VFX_STATUS_REPORT.md` dan `SUPERNOVA_LANCE_REPORT.md`.
+
 `preview-smoke.js`, fixture audio, dan driver `balance-browser.py` dipertahankan karena benar-benar dipakai untuk pemeriksaan preview/loop/volume/SFX. Artefak pengembangan dan hasil test historis dihapus; `validation/` berisi bukti terbaru. Cache/toolchain bersama di luar project bukan dependency folder yang disalin ke project dan tidak dihapus.
 
 Excel final di `data/` adalah deliverable pengguna yang dipertahankan byte-identik. Ia tidak mengendalikan balancing game dan harus diperbarui bila konfigurasi gameplay kelak berubah.
@@ -66,3 +73,17 @@ Index menampilkan siluet hitam lewat tint per sprite, dengan salinan texture ber
 Layer `DiscoveryUI` memakai graphics/text/sprite PIXI yang reusable dan tidak interaktif. Animasi empat detik memakai waktu tanpa multiplier gameplay, queue maksimal satu entry per jenis, dan geometry menghindari HUD, sidebar serta Selected Tower Panel. Cue `DiscoveryUnlock` memakai chime WaveComplete existing pada volume UI yang lebih rendah; BGM tetap berjalan. Source ada pada mapping runtime ke-24.
 
 Pengujian: `python tools/balance-browser.py tools/discovery-qa.js validation/discovery-full.json --gesture`. `--viewport=960x640` memeriksa layout responsif. `python tools/balance-browser.py tools/discovery-beta-qa.js validation/discovery-beta.json --gesture --discovery-relaunch-check` menguji ordinary scene reload, reset New Game eksplisit, lalu benar-benar menutup dan meluncurkan kembali browser dengan profile test yang sama. Discovery harus kosong lagi, preferensi audio dan key lain harus tetap. Gunakan profile test terisolasi, bukan storage pengguna.
+
+## Fusion Index dan discovery permanen
+
+Index memiliki tiga tab utama **Towers / Monsters / Fusion**. Towers mengikuti shop catalog normal; Starburst hanya muncul di Fusion. `FusionCatalog` menyimpan metadata setiap evolution dan daftar `Variants`. Tambahkan definisi/art portrait yang valid ke catalog untuk konten baru; UI tidak bergantung pada satu nama Fusion. Hybrid dapat mempunyai empat recipe/variant ID independen. Undiscovered memakai tint hitam pada asset asli, nama `???`, hint, serta detail terkunci. Setelah ditemukan, nama/art, stats dari konfigurasi aktif dan hanya resep varian yang ditemukan dibuka.
+
+`tools/fusion-archive-runtime.js` pada event scene `[0].events[4]` menyediakan **`game.__fusionArchive`**. `has`, `hasVariant`, `progress`, `resolve`, `discover` dan `discoverRecipe` dipakai bersama oleh controller, notifikasi dan Index. Key **`celestialVoidFusionDiscovery.v1`** memakai localStorage existing seperti audio; key lain tidak dibersihkan. Pure recipe dinormalisasi tanpa urutan sehingga 5-2 + 2-5 dan kebalikannya mempunyai satu ID `pure_52_25`. Controller memanggil unlock sesudah kandidat berhasil diterapkan dan transaksi mengonsumsi sumber; preview/cancel tidak menyimpan discovery. `revision` memicu redraw Index segera.
+
+Record discovery tersimpan sebagai `{version:1,entries:{id:{discovered:true,variants:{variantId:true}}}}`. Metadata/entry/varian yang tidak dikenal dipertahankan. Legacy boolean Pure atau daftar `found` diimpor tanpa notifikasi ulang; satu unlock Hybrid tidak membuka varian lain. State monster beta tetap berbasis sesi sesuai aturan sebelumnya. Tidak ada tombol reset Fusion baru.
+
+Notifikasi Fusion memakai layer **DiscoveryUI** dan sprite Starburst asli, animasi empat detik tanpa multiplier speed, queue, chime **DiscoveryUnlock** existing dan geometry yang sama dengan notifikasi monster. Panel noninteraktif menunggu ketika Fusion/Index/notifikasi monster aktif. Scene unload melepas graphics UI, bukan shared texture atau discovery.
+
+Pada Fusion placement, renderer existing menggambar seluruh footprint di atas shade25% dari `p.center` dan `p.radius`; cyan untuk A/B yang diabaikan collision, merah lembut untuk tower lain yang tetap memblokir. Non-Max tidak memperoleh logo kandidat. Marker/footprint dibersihkan saat Cancel/sukses. Collision, fee, stats, camera dan source gameplay tetap sama.
+
+Validasi: `python tools/balance-browser.py tools/fusion-fixes-qa.js validation/fusion-fixes-qa.json --gesture --fusion-relaunch-check`. Opsi `--viewport=960x640` menguji UI kecil; `--mode=migration` memakai save legacy hanya dalam profile uji terisolasi. Driver benar-benar reload halaman serta menutup/meluncurkan browser yang sama untuk memeriksa persistence. `tools/starburst-fusion-qa.js` tetap menguji transaksi dan combat native.

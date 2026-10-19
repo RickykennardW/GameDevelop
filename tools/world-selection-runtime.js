@@ -21,7 +21,7 @@ if(!pick){
   return pick.hitPolygon(x,y,pick.spritePoints(o,scale,hull));
  };
 }
-if(!pressed||!p)return;
+if(!pressed||!p||scene.__fusion?.active)return;
 if(sv.get('AudioUIConsumesClick').getAsBoolean()||sv.get('IndexBlocksInput').getAsBoolean()||sv.get('TowerUIConsumesClick').getAsBoolean()||sv.get('SelectedPanelPointerInside').getAsBoolean()||sv.get('ObstaclePanelPointerInside').getAsBoolean())return;
 const [x,y]=p.cursor(),screen=scene.getLayer('').convertInverseCoords(x,y,0,[0,0]),area=scene.__towerShopUI.gameArea;
 if(screen[0]<area.left||screen[0]>=area.right||screen[1]<area.top||screen[1]>=area.bottom)return;

@@ -1,0 +1,185 @@
+{
+  "result": {
+    "checks": [
+      "shop/build uses dedicated angled portrait",
+      "placement ghost retains gameplay top-down sprite",
+      "all 27 world states retain original top-down art",
+      "selected tower identity preview retains actual upgrade state",
+      "two path symbols and ten distinct upgrade symbols",
+      "native symbolic icon loads: SC_Nova_P1_1",
+      "native symbolic icon loads: SC_Nova_P1_2",
+      "native symbolic icon loads: SC_Nova_P1_3",
+      "native symbolic icon loads: SC_Nova_P1_4",
+      "native symbolic icon loads: SC_Nova_P1_5",
+      "native symbolic icon loads: SC_Nova_P2_1",
+      "native symbolic icon loads: SC_Nova_P2_2",
+      "native symbolic icon loads: SC_Nova_P2_3",
+      "native symbolic icon loads: SC_Nova_P2_4",
+      "native symbolic icon loads: SC_Nova_P2_5",
+      "native symbolic icon loads: PathDamage",
+      "native symbolic icon loads: PathSpeed",
+      "one original small card /300 Gold",
+      "shop portrait centered between title and price",
+      "real shop card builds Star Cannon for300",
+      "fixed damage/speed identity 0-0/0",
+      "large centered specific upgrade icon 0-0/0",
+      "path label badge progress do not overlap 0-0/0",
+      "icon title description purchase do not overlap 0-0/0",
+      "fixed damage/speed identity 0-0/1",
+      "large centered specific upgrade icon 0-0/1",
+      "path label badge progress do not overlap 0-0/1",
+      "icon title description purchase do not overlap 0-0/1",
+      "real damage upgrade button preserves price/stat",
+      "fixed damage/speed identity 1-0/0",
+      "large centered specific upgrade icon 1-0/0",
+      "path label badge progress do not overlap 1-0/0",
+      "icon title description purchase do not overlap 1-0/0",
+      "fixed damage/speed identity 1-0/1",
+      "large centered specific upgrade icon 1-0/1",
+      "path label badge progress do not overlap 1-0/1",
+      "icon title description purchase do not overlap 1-0/1",
+      "real speed upgrade button preserves price/stat",
+      "fixed damage/speed identity 1-1/0",
+      "large centered specific upgrade icon 1-1/0",
+      "path label badge progress do not overlap 1-1/0",
+      "icon title description purchase do not overlap 1-1/0",
+      "fixed damage/speed identity 1-1/1",
+      "large centered specific upgrade icon 1-1/1",
+      "path label badge progress do not overlap 1-1/1",
+      "icon title description purchase do not overlap 1-1/1",
+      "fixed damage/speed identity 2-0/0",
+      "large centered specific upgrade icon 2-0/0",
+      "path label badge progress do not overlap 2-0/0",
+      "icon title description purchase do not overlap 2-0/0",
+      "fixed damage/speed identity 2-0/1",
+      "large centered specific upgrade icon 2-0/1",
+      "path label badge progress do not overlap 2-0/1",
+      "icon title description purchase do not overlap 2-0/1",
+      "fixed damage/speed identity 3-0/0",
+      "large centered specific upgrade icon 3-0/0",
+      "path label badge progress do not overlap 3-0/0",
+      "icon title description purchase do not overlap 3-0/0",
+      "fixed damage/speed identity 3-0/1",
+      "large centered specific upgrade icon 3-0/1",
+      "path label badge progress do not overlap 3-0/1",
+      "icon title description purchase do not overlap 3-0/1",
+      "fixed damage/speed identity 4-0/0",
+      "large centered specific upgrade icon 4-0/0",
+      "path label badge progress do not overlap 4-0/0",
+      "icon title description purchase do not overlap 4-0/0",
+      "fixed damage/speed identity 4-0/1",
+      "large centered specific upgrade icon 4-0/1",
+      "path label badge progress do not overlap 4-0/1",
+      "icon title description purchase do not overlap 4-0/1",
+      "fixed damage/speed identity 5-2/0",
+      "large centered specific upgrade icon 5-2/0",
+      "path label badge progress do not overlap 5-2/0",
+      "icon title description purchase do not overlap 5-2/0",
+      "fixed damage/speed identity 5-2/1",
+      "large centered specific upgrade icon 5-2/1",
+      "path label badge progress do not overlap 5-2/1",
+      "icon title description purchase do not overlap 5-2/1",
+      "fixed damage/speed identity 0-2/0",
+      "large centered specific upgrade icon 0-2/0",
+      "path label badge progress do not overlap 0-2/0",
+      "icon title description purchase do not overlap 0-2/0",
+      "fixed damage/speed identity 0-2/1",
+      "large centered specific upgrade icon 0-2/1",
+      "path label badge progress do not overlap 0-2/1",
+      "icon title description purchase do not overlap 0-2/1",
+      "fixed damage/speed identity 0-3/0",
+      "large centered specific upgrade icon 0-3/0",
+      "path label badge progress do not overlap 0-3/0",
+      "icon title description purchase do not overlap 0-3/0",
+      "fixed damage/speed identity 0-3/1",
+      "large centered specific upgrade icon 0-3/1",
+      "path label badge progress do not overlap 0-3/1",
+      "icon title description purchase do not overlap 0-3/1",
+      "fixed damage/speed identity 0-4/0",
+      "large centered specific upgrade icon 0-4/0",
+      "path label badge progress do not overlap 0-4/0",
+      "icon title description purchase do not overlap 0-4/0",
+      "fixed damage/speed identity 0-4/1",
+      "large centered specific upgrade icon 0-4/1",
+      "path label badge progress do not overlap 0-4/1",
+      "icon title description purchase do not overlap 0-4/1",
+      "fixed damage/speed identity 2-5/0",
+      "large centered specific upgrade icon 2-5/0",
+      "path label badge progress do not overlap 2-5/0",
+      "icon title description purchase do not overlap 2-5/0",
+      "fixed damage/speed identity 2-5/1",
+      "large centered specific upgrade icon 2-5/1",
+      "path label badge progress do not overlap 2-5/1",
+      "icon title description purchase do not overlap 2-5/1",
+      "Index reuses the ten symbolic upgrade assets",
+      "gameplay balancing and component/animation config unchanged"
+    ],
+    "viewport": [
+      960,
+      640
+    ],
+    "portrait": "assets/ui/star_cannon/StarCannon_UI_Portrait.png",
+    "upgradeSymbols": [
+      {
+        "animation": "SC_Nova_P1_1",
+        "file": "assets/ui/star_cannon/StarCompression.svg"
+      },
+      {
+        "animation": "SC_Nova_P1_2",
+        "file": "assets/ui/star_cannon/DenseStellarCore.svg"
+      },
+      {
+        "animation": "SC_Nova_P1_3",
+        "file": "assets/ui/star_cannon/NovaImpact.svg"
+      },
+      {
+        "animation": "SC_Nova_P1_4",
+        "file": "assets/ui/star_cannon/Starbreaker.svg"
+      },
+      {
+        "animation": "SC_Nova_P1_5",
+        "file": "assets/ui/star_cannon/SupernovaCannon.svg"
+      },
+      {
+        "animation": "SC_Nova_P2_1",
+        "file": "assets/ui/star_cannon/AstralAccelerator.svg"
+      },
+      {
+        "animation": "SC_Nova_P2_2",
+        "file": "assets/ui/star_cannon/RapidStarflow.svg"
+      },
+      {
+        "animation": "SC_Nova_P2_3",
+        "file": "assets/ui/star_cannon/TwinStarMuzzle.svg"
+      },
+      {
+        "animation": "SC_Nova_P2_4",
+        "file": "assets/ui/star_cannon/CosmicRhythm.svg"
+      },
+      {
+        "animation": "SC_Nova_P2_5",
+        "file": "assets/ui/star_cannon/CelestialOverdrive.svg"
+      },
+      {
+        "animation": "PathDamage",
+        "file": "assets/ui/star_cannon/Path_StellarDestruction.svg"
+      },
+      {
+        "animation": "PathSpeed",
+        "file": "assets/ui/star_cannon/Path_CelestialBarrage.svg"
+      }
+    ],
+    "shopCard": [
+      84,
+      112
+    ],
+    "panelRect": {
+      "x": 444.5882352941176,
+      "y": 68,
+      "w": 265.4117647058824,
+      "h": 564
+    }
+  },
+  "progress": [],
+  "consoleErrors": []
+}

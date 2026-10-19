@@ -72,7 +72,7 @@ if(!p){
   p.blockers=[...get('Ground_Decoration').filter(o=>o.getVariables().get('Blocking').getAsBoolean()),...get('SpawnMarker'),...get('BaseMarker')].map(p.blockedCircle);
 
  };
- p.validate=(type,x,y)=>{
+ p.validate=(type,x,y,options={})=>{
   const conf=p.config(type);if(!conf||!conf.Radius)return {valid:false,reason:'type'};
   const r=conf.Radius,ground=get('Ground_Map')[0],map=scene.getLayer(''),ui=scene.__towerShopUI.gameArea;
   if(x-r<ground.getX()||x+r>ground.getX()+ground.getWidth()||y-r<ground.getY()||y+r>ground.getY()+ground.getHeight())return {valid:false,reason:'bounds'};
@@ -85,15 +85,16 @@ if(!p){
   const screen=map.convertInverseCoords(x,y,0,[0,0]),z=map.getCameraZoom(),sr=r*z;
   if(screen[0]-sr<ui.left||screen[0]+sr>ui.right||screen[1]-sr<ui.top||screen[1]+sr>ui.bottom)return {valid:false,reason:'bounds'};
   if(p.roads.some(poly=>p.polygon(x,y,r,poly)))return {valid:false,reason:'path'};
-  if(p.towers().some(o=>{const c=p.center(o);return Math.hypot(x-c[0],y-c[1])<r+p.radius(o)+sv.get('TowerFootprintPadding').getAsNumber()-1e-6;}))return {valid:false,reason:'tower'};
+  if(p.towers().some(o=>{if(options.ignoreTowers?.has(o))return false;const c=p.center(o);return Math.hypot(x-c[0],y-c[1])<r+p.radius(o)+sv.get('TowerFootprintPadding').getAsNumber()-1e-6;}))return {valid:false,reason:'tower'};
   if(p.blockers.some(o=>Math.hypot(x-o.x,y-o.y)<=r+o.r+1e-6))return {valid:false,reason:'obstacle'};
   const item=sv.get('TowerShopCatalog').toJSObject().find(i=>i.Type===type);
-  if(!item||sv.get('Money').getAsNumber()<item.Cost)return {valid:false,reason:'gold'};
+  const cost=options.cost??item?.Cost;
+  if(!item||sv.get('Money').getAsNumber()<cost)return {valid:false,reason:'gold'};
   const obstaclePanel=scene.__obstaclePanel?.screenRect,panel=scene.__selectedPanel&&scene.__selectedPanel.screenRect,hud=get('HUDPanel')[0],layer=scene.getLayer('UI');
   const a=layer.convertInverseCoords(hud.getX(),hud.getY(),0,[0,0]),b=layer.convertInverseCoords(hud.getX()+hud.getWidth(),hud.getY()+hud.getHeight(),0,[0,0]);
   const rectHit=(a,b,c,d)=>{const nx=Math.max(a,Math.min(a+c,screen[0])),ny=Math.max(b,Math.min(b+d,screen[1]));return Math.hypot(screen[0]-nx,screen[1]-ny)<=sr;};
   if(sv.get('AudioUIConsumesClick').getAsBoolean()||sv.get('IndexBlocksInput').getAsBoolean()||sv.get('TowerUIConsumesClick').getAsBoolean()||sv.get('SelectedPanelPointerInside').getAsBoolean()||screen[0]>=ui.sidebarX||rectHit(a[0],a[1],b[0]-a[0],b[1]-a[1])||(panel&&rectHit(panel.x,panel.y,panel.w,panel.h))||(obstaclePanel&&rectHit(obstaclePanel.x,obstaclePanel.y,obstaclePanel.w,obstaclePanel.h)))return {valid:false,reason:'ui'};
-  return {valid:true,reason:'',cost:item.Cost,radius:r};
+  return {valid:true,reason:'',cost,radius:r};
  };
  p.cursor=()=>[gdjs.evtTools.input.getCursorX(scene,'',0),gdjs.evtTools.input.getCursorY(scene,'',0)];
 }

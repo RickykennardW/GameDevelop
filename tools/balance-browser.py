@@ -70,6 +70,13 @@ async def main():
             reloaded=await js('({settings:testGame.getSceneStack().getCurrentScene().__audio.settings,unlocked:testGame.getSceneStack().getCurrentScene().__audio.unlocked})')
             if reloaded['settings']!=result['saved'] or reloaded['unlocked']:raise RuntimeError('Audio settings/autoplay reload check failed')
             result['reload']=reloaded
+        if '--fusion-relaunch-check' in sys.argv:
+            await call('Page.reload')
+            for _ in range(300):
+                if await js('!!(window.testGame&&testGame.getSceneStack().getCurrentScene()?.__fusion&&testGame.__fusionArchive?.persistent)'): break
+                await asyncio.sleep(.1)
+            await js('globalThis.FUSION_PERSISTENCE_EXPECTATION='+json.dumps(result))
+            result['pageReload']=await js((ROOT/'tools/fusion-persistence-qa.js').read_text(encoding='utf-8'))
         screenshot_data=None
         screenshot=next((a for a in sys.argv[3:] if not a.startswith('--')),None)
         pixel_sha=next((a.split('=',1)[1] for a in sys.argv[3:] if a.startswith('--pixel-sha=')),None)
@@ -85,10 +92,31 @@ async def main():
                 result['pixelComparison']={'matchesPreviousPreview':True,'sha256':actual,'size':list(pixels.size)}
             if not screenshot:screenshot_data=None
         print('RESULT', json.dumps(result)[:3500]); print('CONSOLE ERRORS',len(errors))
-        if '--discovery-relaunch-check' in sys.argv:
+        if '--discovery-relaunch-check' in sys.argv or '--fusion-relaunch-check' in sys.argv:
             await ws.send(json.dumps(dict(id=count+1,method='Browser.close')))
             await asyncio.sleep(.1)
         return dict(result=result,progress=progress,consoleErrors=errors),screenshot,screenshot_data
+async def verify_fusion_relaunch(expected):
+    target=None
+    for _ in range(100):
+        try:target=next(t for t in json.load(urllib.request.urlopen(f'http://127.0.0.1:{port}/json',timeout=1)) if t['type']=='page');break
+        except Exception:await asyncio.sleep(.1)
+    if not target:raise RuntimeError('Relaunched Fusion browser endpoint unavailable')
+    async with websockets.connect(target['webSocketDebuggerUrl'],max_size=40000000) as ws:
+        counter=0
+        async def evaluate(code):
+            nonlocal counter
+            counter+=1;await ws.send(json.dumps(dict(id=counter,method='Runtime.evaluate',params=dict(expression=code,returnByValue=True,awaitPromise=True))))
+            while True:
+                r=json.loads(await ws.recv())
+                if r.get('id')==counter:
+                    if 'error' in r or 'exceptionDetails' in r.get('result',{}):raise RuntimeError(str(r))
+                    return r.get('result',{}).get('result',{}).get('value')
+        for _ in range(300):
+            if await evaluate('!!(window.testGame&&testGame.getSceneStack().getCurrentScene()?.__fusion&&testGame.__fusionArchive?.persistent)'):break
+            await asyncio.sleep(.1)
+        await evaluate('globalThis.FUSION_PERSISTENCE_EXPECTATION='+json.dumps(expected))
+        return await evaluate((ROOT/'tools/fusion-persistence-qa.js').read_text(encoding='utf-8'))
 async def verify_discovery_relaunch():
     target=None
     for _ in range(100):
@@ -118,6 +146,11 @@ try:
         if before['found'] or before['queue'] or before['active'] or before['legacy'] is not None or before['scope']!='session' or before['unrelated']!='preserve' or before['audio']!=report['result']['sessionAudioSettings'] or not relaunched['encounterAgain']:raise RuntimeError('Discovery fresh-session/audio-preference relaunch check failed: '+str(relaunched))
         report['result']['applicationRelaunch']=relaunched
         print('APPLICATION RELAUNCH PASS: discovery reset; encounter announces again; audio/unrelated storage preserved')
+    if '--fusion-relaunch-check' in sys.argv:
+        proc.wait(timeout=15)
+        proc=start_browser()
+        report['result']['applicationRelaunch']=asyncio.run(verify_fusion_relaunch(report['result']))
+        print('FUSION APPLICATION RELAUNCH PASS: unlock/recipe restored; no duplicate notification; other storage preserved')
 finally:
     # Stop this uniquely profiled browser and its descendants before deleting cache.
     if proc.poll() is None:
