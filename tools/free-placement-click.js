@@ -7,9 +7,11 @@ const indicator=scene.getObjects('TilePlacement_Indicator')[0];
 const right=gdjs.evtTools.input.isMouseButtonPressed(scene,'Right'),cancel=right&&!p.rightWasDown;p.rightWasDown=right;
 if(cancel&&p.active){p.stop();return;}
 if(!pressed||!p.active||!p.type||indicator.isHidden())return;
-const type=indicator.getAnimationName(),[x,y]=p.cursor();p.refresh();const result=p.validate(type,x,y);
+const type=indicator.getAnimationName(),[x,y]=p.cursor();p.refresh();const result=p.validate(type,x,y,{ignoreGold:true});
 sv.get('PlacementValid').setBoolean(result.valid);sv.get('PlacementBlockReason').setString(result.reason);
 if(!result.valid)return;
+// Spatial rejection takes priority; a money failure preserves this builder.
+if(sv.get('Money').getAsNumber()<result.cost){p.rejectGold(result.cost);return;}
 const conf=p.config(type),tower=scene.createObject(type);if(!tower)return;
 tower.setLayer('');const [ox,oy]=p.offsets(type);p.positionSprite(tower,type,x,y);tower.setZOrder(2);
 const tv=tower.getVariables();sv.get('NextTowerId').add(1);tv.get('TowerId').setNumber(sv.get('NextTowerId').getAsNumber());tv.get('PurchasePrice').setNumber(result.cost);

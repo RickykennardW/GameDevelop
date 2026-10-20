@@ -3,6 +3,33 @@ const scene=runtimeScene,sv=scene.getVariables(),get=n=>scene.getObjects(n);
 let p=scene.__freePlacement;
 if(!p){
  p=scene.__freePlacement={wasDown:false,active:false,type:'',rightWasDown:false};
+ const feedback=p.feedback={config:sv.get('PlacementFeedbackConfig').toJSObject(),now:0,next:0,remaining:0,cost:0,shown:0,sounds:0};
+ p.rejectGold=cost=>{
+  feedback.cost=cost;if(feedback.now<feedback.next)return false;
+  feedback.next=feedback.now+feedback.config.Cooldown;feedback.remaining=feedback.config.Duration;feedback.shown++;
+  if(scene.__audio?.play(feedback.config.Sound))feedback.sounds++;return true;
+ };
+ p.paintGold=()=>{
+  const scale=scene.getTimeManager().getTimeScale(),dt=scale>0?Math.max(0,scene.getTimeManager().getElapsedTime()/scale/1000):0;feedback.now+=dt;feedback.remaining=Math.max(0,feedback.remaining-dt);
+  if(!p.active||sv.get('Money').getAsNumber()>=feedback.cost||sv.get('FusionActive').getAsBoolean())feedback.remaining=0;
+  const money=get('MoneyText')[0],hud=get('HUDPanel')[0];
+  if(feedback.root)feedback.root.visible=false;
+  if(money&&feedback.moneyColor!==undefined)money.setColor(feedback.moneyColor);
+  if(!feedback.remaining||!money||!hud)return;
+  if(feedback.moneyColor===undefined)feedback.moneyColor=money.getColor();
+  if(!feedback.root){
+   const root=feedback.root=new PIXI.Container();root.interactive=false;root.interactiveChildren=false;root.zIndex=30010;scene.getLayer('UI').getRenderer().getRendererObject().addChild(root);
+   const title=feedback.title=new PIXI.Text('NOT ENOUGH GOLD',{fontFamily:'Arial',fontSize:10,fontWeight:'bold',fill:0xffa1a8,stroke:0x100c24,strokeThickness:2}),detail=feedback.detail=new PIXI.Text('',{fontFamily:'Arial',fontSize:10,fill:0xffd1d5,stroke:0x100c24,strokeThickness:2});title.position.set(0,0);detail.position.set(0,13);root.addChild(title,detail);
+  }
+  feedback.detail.text='Need '+Math.max(0,Math.ceil(feedback.cost-sv.get('Money').getAsNumber()))+' More Gold';
+  const age=feedback.config.Duration-feedback.remaining,smooth=x=>{x=Math.max(0,Math.min(1,x));return x*x*(3-2*x);};
+  // Follow the native HUD, never the shop list or a fixed screen coordinate.
+  const x=money.getX(),y=hud.getY()+hud.getHeight()+4;
+  feedback.root.position.set(x,y);feedback.root.scale.set(1);feedback.root.alpha=smooth(age/.10)*smooth(feedback.remaining/.22);feedback.root.visible=true;
+  money.setColor(Math.sin(age*26)>0?'255;140;152':feedback.moneyColor);
+  const corner=scene.getLayer('UI').convertInverseCoords(x,y,0,[0,0]);feedback.screenRect={x:corner[0],y:corner[1],w:feedback.root.width,h:feedback.root.height};
+ };
+ if(!gdjs.__placementGoldFeedbackCallbacks){gdjs.__placementGoldFeedbackCallbacks=true;gdjs.callbacksRuntimeScenePostEvents.push(s=>s.__freePlacement?.paintGold());gdjs.callbacksRuntimeSceneUnloading.push(s=>s.__freePlacement?.feedback.root?.destroy({children:true}));}
  p.stop=()=>{
   p.active=false;p.type='';get('TilePlacement_Indicator').forEach(o=>o.hide());
   if(scene.__placementBaseRing)scene.__placementBaseRing.hide();
@@ -12,6 +39,7 @@ if(!p){
   sv.get('PlacementValid').setBoolean(false);sv.get('MapPlacementFits').setBoolean(false);
   sv.get('TowerCost').setNumber(0);sv.get('TowerShopRequestedType').setString('');sv.get('PlacementBlockReason').setString('');
   if(p.preview){p.preview.valid=false;p.preview.type='';}
+  feedback.remaining=0;if(feedback.root)feedback.root.visible=false;
   get('TileType_Button').forEach(o=>{if(o.hasBehavior('Effect'))o.getBehavior('Effect').enableEffect('Outline',false);});
  };
  p.types=['StarCannonTower'];
@@ -89,12 +117,13 @@ if(!p){
   if(p.blockers.some(o=>Math.hypot(x-o.x,y-o.y)<=r+o.r+1e-6))return {valid:false,reason:'obstacle'};
   const item=sv.get('TowerShopCatalog').toJSObject().find(i=>i.Type===type);
   const cost=options.cost??item?.Cost;
-  if(!item||sv.get('Money').getAsNumber()<cost)return {valid:false,reason:'gold'};
+  if(!item)return {valid:false,reason:'type'};
   const obstaclePanel=scene.__obstaclePanel?.screenRect,panel=scene.__selectedPanel&&scene.__selectedPanel.screenRect,hud=get('HUDPanel')[0],layer=scene.getLayer('UI');
   const a=layer.convertInverseCoords(hud.getX(),hud.getY(),0,[0,0]),b=layer.convertInverseCoords(hud.getX()+hud.getWidth(),hud.getY()+hud.getHeight(),0,[0,0]);
   const rectHit=(a,b,c,d)=>{const nx=Math.max(a,Math.min(a+c,screen[0])),ny=Math.max(b,Math.min(b+d,screen[1]));return Math.hypot(screen[0]-nx,screen[1]-ny)<=sr;};
   if(sv.get('AudioUIConsumesClick').getAsBoolean()||sv.get('IndexBlocksInput').getAsBoolean()||sv.get('TowerUIConsumesClick').getAsBoolean()||sv.get('SelectedPanelPointerInside').getAsBoolean()||screen[0]>=ui.sidebarX||rectHit(a[0],a[1],b[0]-a[0],b[1]-a[1])||(panel&&rectHit(panel.x,panel.y,panel.w,panel.h))||(obstaclePanel&&rectHit(obstaclePanel.x,obstaclePanel.y,obstaclePanel.w,obstaclePanel.h)))return {valid:false,reason:'ui'};
-  return {valid:true,reason:'',cost,radius:r};
+  if(!options.ignoreGold&&sv.get('Money').getAsNumber()<cost)return {valid:false,reason:'gold',cost,radius:r};
+  return {valid:true,reason:'',cost,radius:r,affordable:sv.get('Money').getAsNumber()>=cost};
  };
  p.cursor=()=>[gdjs.evtTools.input.getCursorX(scene,'',0),gdjs.evtTools.input.getCursorY(scene,'',0)];
 }
@@ -108,6 +137,6 @@ if(conf&&conf.Radius)p.positionSprite(indicator,type,x,y);
 // Shop selection shows the indicator; every exit clears the actual build state.
 if(indicator.isHidden()){if(p.active)p.stop();p.preview={x,y,type:'',valid:false};sv.get('PlacementValid').setBoolean(false);sv.get('MapPlacementFits').setBoolean(false);return;}
 p.active=true;p.type=type;
-const result=p.validate(type,x,y);p.preview={x,y,type,...result};
+const result=p.validate(type,x,y,{ignoreGold:true});p.preview={x,y,type,...result};
 sv.get('PlacementValid').setBoolean(!indicator.isHidden()&&result.valid);sv.get('MapPlacementFits').setBoolean(result.valid);sv.get('TowerCost').setNumber(result.cost||sv.get('TowerShopCatalog').toJSObject().find(i=>i.Type===type)?.Cost||0);
 sv.get('PlacementBlockReason').setString(result.reason);

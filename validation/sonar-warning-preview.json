@@ -1,0 +1,18 @@
+{
+  "result": {
+    "checks": [
+      "no enemy means no warning graphics",
+      "real zigzag has an upstream lane close to Finish",
+      "nearby earlier lane does not trigger false Euclidean warning",
+      "seven seconds away remains normal",
+      "real movement enters warning before reaching Finish",
+      "first threat produces one global sonar",
+      "warning sonar actually plays on native channel",
+      "warning uses one radar ring and Lives marker"
+    ],
+    "state": "WARNING",
+    "eta": 5.816643000000026
+  },
+  "progress": [],
+  "consoleErrors": []
+}

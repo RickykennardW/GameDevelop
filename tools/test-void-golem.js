@@ -70,7 +70,7 @@ ok(get('VoidFortificationVFX').length===200,'200 recipients use same shared VFX 
 ok(F.createdVFX===created&&get('VoidFortificationVFX').length===200,'200 shields are not created every frame');clear();
 ok(!F.members.size&&!F.pulses.size&&!G.actors.size&&!get('VoidFortificationVFX').length&&!get('VoidFortificationCastPulse').length&&!scene.__enemyHealthBars.size,'all owned bodies/shields/pulses/bars clean up');
 vars.get('IndexOpen').setBoolean(true);step();scene.__unitIndex.category='Monsters';step();scene.__unitIndex.scroll=scene.__unitIndex.maxScroll;step();
-ok(scene.__unitIndex.entries.length===6&&scene.__unitIndex.entries[5].Name==='Void Golem'&&get('IndexMonsterImage').some(o=>o.__golemPortraitRig?.visible),'Index preserves five and shows sixth elite cropped portrait');
+ok(scene.__unitIndex.entries.length===6&&scene.__unitIndex.entries[5].Name==='Void Golem'&&get('IndexMonsterImage').some(o=>o.__archivePortrait?.root.visible&&o.__archivePortrait.id==='VoidGolem'&&o.__archivePortrait.sprite.texture===scene.__monsterDiscovery.texture('VoidGolem')),'Index preserves five and shows sixth elite cropped portrait through its single owner');
 vars.get('IndexOpen').setBoolean(false);step();ok(scene.__towerShopUI.cards.length===1&&scene.__towerShopUI.cards[0].background.getWidth()===84,'unchanged Star-only small shop');
 // Real homing volleys verify existing armor damage and both upgrade paths.
 clear();const tank=make('VoidGolem',930,600),tower=scene.createObject('StarCannonTower'),tv=tower.getVariables(),placement=scene.__freePlacement;

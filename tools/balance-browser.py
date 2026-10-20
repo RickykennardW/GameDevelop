@@ -59,7 +59,16 @@ async def main():
             await js('globalThis.audioGateBeforeGesture=!!testGame.getSceneStack().getCurrentScene().__audio&&!testGame.getSceneStack().getCurrentScene().__audio.unlocked')
             await call('Input.dispatchMouseEvent',dict(type='mousePressed',x=10,y=10,button='left',clickCount=1))
             await call('Input.dispatchMouseEvent',dict(type='mouseReleased',x=10,y=10,button='left',clickCount=1))
-        try: result = await js(Path(sys.argv[1]).read_text(encoding='utf-8'))
+        try:
+            sequence=next((a.split('=',1)[1] for a in sys.argv[3:] if a.startswith('--resize-sequence=')),None)
+            if sequence:
+                result={'resizeSequence':[]}
+                for dimensions in sequence.split(','):
+                    rw,rh=map(int,dimensions.split('x'))
+                    await call('Emulation.setDeviceMetricsOverride',dict(width=rw,height=rh,deviceScaleFactor=1,mobile=False))
+                    await asyncio.sleep(.2)
+                    result['resizeSequence'].append(await js(Path(sys.argv[1]).read_text(encoding='utf-8')))
+            else: result = await js(Path(sys.argv[1]).read_text(encoding='utf-8'))
         except Exception as exc:
             Path(sys.argv[2]).write_text(json.dumps(dict(failure=str(exc),progress=progress,consoleErrors=errors),indent=2),encoding='utf-8'); raise
         if '--reload-check' in sys.argv:

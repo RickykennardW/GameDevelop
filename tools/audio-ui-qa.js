@@ -5,7 +5,7 @@
  const screen=(x,y,layer='')=>S.getLayer(layer).convertInverseCoords(x,y,0,[0,0]),card=S.__towerShopUI.cards[0].background;
  const clickCard=()=>click(...screen(card.getCenterXInScene(),card.getCenterYInScene(),card.getLayer()));
  await wait(500);ok(A.unlocked,'trusted audio context ready');
- V.get('Money').setNumber(299);let rejected=A.stats.requested.InvalidAction||0;await clickCard();ok((A.stats.requested.InvalidAction||0)===rejected+1&&V.get('Money').getAsNumber()===299,'shop insufficient Gold feedback preserves balance');P.stop();
+ V.get('Money').setNumber(299);let rejected=A.stats.requested.InvalidAction||0;await clickCard();ok((A.stats.requested.InvalidAction||0)===rejected&&V.get('Money').getAsNumber()===299&&P.active,'shop selection ignores Gold and does not emit rejection');P.stop();
  V.get('Money').setNumber(650);await clickCard();ok(P.active,'native builder started');
  const path=S.getObjects('Monster_Path').find(o=>P.validate('StarCannonTower',o.getCenterXInScene(),o.getCenterYInScene()).reason==='path');ok(!!path,'actual path rejects tower footprint');rejected=A.stats.requested.InvalidAction||0;
  await click(...screen(path.getCenterXInScene(),path.getCenterYInScene()));ok((A.stats.requested.InvalidAction||0)===rejected+1&&V.get('Money').getAsNumber()===650&&!S.getObjects('StarCannonTower').length,'invalid road placement emits one rejection /no charge');
@@ -19,5 +19,6 @@
  V.get('Money').setNumber(0);const t=S.getObjects('StarCannonTower')[0],level=t.getVariables().get('Path1Level').getAsNumber();rejected=A.stats.requested.InvalidAction||0;
  ok(!S.__starCannon.upgrade(t,1)&&(A.stats.requested.InvalidAction||0)===rejected+1&&t.getVariables().get('Path1Level').getAsNumber()===level,'insufficient upgrade Gold cue leaves upgrade level unchanged');
  A.setSetting('Music',35);const speaker=A.geometry().button;await click(speaker.x+16,speaker.y+16);
- return{checks,geometry:A.geometry(),settings:A.settings,stats:A.stats};
+ A.persist();ok(JSON.stringify(JSON.parse(localStorage.getItem(A.config.StorageKey)))===JSON.stringify(A.settings),'audio settings persist through existing storage');
+ return{checks,geometry:A.geometry(),settings:A.settings,saved:{...A.settings},stats:A.stats};
 })()

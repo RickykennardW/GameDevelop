@@ -1,0 +1,45 @@
+{
+  "result": {
+    "checks": [
+      "underfunded shop selection keeps ghost and range",
+      "selection does not emit either error cue",
+      "spatially clear preview stays green when unaffordable",
+      "shared validator retains strict default for Fusion and optional spatial preview",
+      "purchase fails without spawning/charging or closing builder",
+      "one lightweight notice uses current deficit",
+      "one purchase cue and no duplicate generic invalid sound",
+      "original double buzz actually plays on native SFX channel",
+      "SFX volume independently controls purchase-denied cue",
+      "eight rapid clicks reuse notice and obey global feedback cooldown",
+      "deficit refreshes from current money even during feedback cooldown",
+      "actual enemy reward makes same preview affordable and clears stale deficit",
+      "newly affordable held click buys once at unchanged price300",
+      "successful purchase plays placement cue once and removes range",
+      "investment initialization remains unchanged",
+      "path collision wins over insufficient Gold",
+      "real Ruin collider test point exists",
+      "real Ruin remains blocked with no money error",
+      "other tower collider remains blocked",
+      "ESC cancels ghost/range/feedback without spending or rejection cue",
+      "second denied attempt may show after cooldown",
+      "notice expires near one second while preview remains",
+      "Mute SFX suppresses purchase sound but preserves visual feedback",
+      "tower/enemy/wave configuration and path/camera unchanged",
+      "actual scene replacement releases notice graphics and starts with no stale builder"
+    ],
+    "feedback": {
+      "shown": 3,
+      "sounds": 2
+    },
+    "audio": {
+      "denied": 2,
+      "placed": 1
+    },
+    "viewport": [
+      1280,
+      720
+    ]
+  },
+  "progress": [],
+  "consoleErrors": []
+}

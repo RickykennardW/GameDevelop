@@ -1,0 +1,717 @@
+{
+  "result": {
+    "resizeSequence": [
+      {
+        "viewport": [
+          1280,
+          720
+        ],
+        "resolution": [
+          1280,
+          720
+        ],
+        "shop": {
+          "x": 1048,
+          "y": 8,
+          "w": 224,
+          "h": 704
+        },
+        "card": {
+          "x": 1064,
+          "y": 80,
+          "w": 84,
+          "h": 112
+        },
+        "hud": {
+          "x": 16,
+          "y": 16,
+          "w": 316,
+          "h": 44
+        },
+        "index": {
+          "x": 16,
+          "y": 16,
+          "w": 1248,
+          "h": 688,
+          "content": {
+            "x": 330,
+            "y": 142,
+            "w": 916,
+            "h": 524
+          },
+          "collection": {
+            "x": 34,
+            "y": 142,
+            "w": 280,
+            "h": 524
+          },
+          "detail": {
+            "x": 330,
+            "y": 142,
+            "w": 916,
+            "h": 524
+          },
+          "mobile": false
+        },
+        "indexObjects": 70,
+        "checks": [
+          "finite resolution",
+          "small card never grows beyond design",
+          "shop right anchor stays inside viewport",
+          "HUD anchor returns to reference position",
+          "physical card shrinks proportionally in a small window",
+          "renderer preserves aspect ratio",
+          "positive clipped Index detail: Towers",
+          "portrait aspect fit: Towers",
+          "portrait aspect fit: Towers",
+          "unchanged Index uses cached layout: Towers",
+          "positive clipped Index detail: Monsters",
+          "unchanged Index uses cached layout: Monsters",
+          "positive clipped Index detail: Fusion",
+          "portrait aspect fit: Fusion",
+          "portrait aspect fit: Fusion",
+          "unchanged Index uses cached layout: Fusion",
+          "Selected Tower panel remains in gameplay viewport",
+          "compact toast avoids HUD, shop and Selected Tower panel",
+          "toast does not capture mouse",
+          "Fusion sidebar and placement HUD stay bounded at tactical speed",
+          "Cancel does not cover Play/Index controls",
+          "audio settings panel fits",
+          "invalid/minimized viewport preserves last layout: 0/0",
+          "invalid/minimized viewport preserves last layout: NaN/Infinity",
+          "invalid/minimized viewport preserves last layout: 1/1",
+          "CSS pointer maps to shop card after resize and restore"
+        ],
+        "physicalCard": [
+          84,
+          112
+        ],
+        "viewportRevision": 2,
+        "invalidViewportSimulation": true
+      },
+      {
+        "viewport": [
+          960,
+          600
+        ],
+        "resolution": [
+          960,
+          600
+        ],
+        "shop": {
+          "x": 728,
+          "y": 8,
+          "w": 224,
+          "h": 584
+        },
+        "card": {
+          "x": 744,
+          "y": 80,
+          "w": 84,
+          "h": 112
+        },
+        "hud": {
+          "x": 16,
+          "y": 16,
+          "w": 316,
+          "h": 44
+        },
+        "index": {
+          "x": 16,
+          "y": 16,
+          "w": 928,
+          "h": 568,
+          "content": {
+            "x": 258.8,
+            "y": 142,
+            "w": 667.2,
+            "h": 404
+          },
+          "collection": {
+            "x": 34,
+            "y": 142,
+            "w": 208.8,
+            "h": 404
+          },
+          "detail": {
+            "x": 258.8,
+            "y": 142,
+            "w": 667.2,
+            "h": 404
+          },
+          "mobile": false
+        },
+        "indexObjects": 92,
+        "checks": [
+          "finite resolution",
+          "small card never grows beyond design",
+          "shop right anchor stays inside viewport",
+          "HUD anchor returns to reference position",
+          "physical card shrinks proportionally in a small window",
+          "renderer preserves aspect ratio",
+          "positive clipped Index detail: Towers",
+          "portrait aspect fit: Towers",
+          "portrait aspect fit: Towers",
+          "unchanged Index uses cached layout: Towers",
+          "positive clipped Index detail: Monsters",
+          "unchanged Index uses cached layout: Monsters",
+          "positive clipped Index detail: Fusion",
+          "portrait aspect fit: Fusion",
+          "portrait aspect fit: Fusion",
+          "unchanged Index uses cached layout: Fusion",
+          "Selected Tower panel remains in gameplay viewport",
+          "compact toast avoids HUD, shop and Selected Tower panel",
+          "toast does not capture mouse",
+          "Fusion sidebar and placement HUD stay bounded at tactical speed",
+          "Cancel does not cover Play/Index controls",
+          "audio settings panel fits",
+          "invalid/minimized viewport preserves last layout: 0/0",
+          "invalid/minimized viewport preserves last layout: NaN/Infinity",
+          "invalid/minimized viewport preserves last layout: 1/1",
+          "CSS pointer maps to shop card after resize and restore"
+        ],
+        "physicalCard": [
+          84,
+          112
+        ],
+        "viewportRevision": 3,
+        "invalidViewportSimulation": true
+      },
+      {
+        "viewport": [
+          480,
+          300
+        ],
+        "resolution": [
+          960,
+          600
+        ],
+        "shop": {
+          "x": 728,
+          "y": 8,
+          "w": 224,
+          "h": 584
+        },
+        "card": {
+          "x": 744,
+          "y": 80,
+          "w": 84,
+          "h": 112
+        },
+        "hud": {
+          "x": 16,
+          "y": 16,
+          "w": 316,
+          "h": 44
+        },
+        "index": {
+          "x": 16,
+          "y": 16,
+          "w": 928,
+          "h": 568,
+          "content": {
+            "x": 258.8,
+            "y": 142,
+            "w": 667.2,
+            "h": 404
+          },
+          "collection": {
+            "x": 34,
+            "y": 142,
+            "w": 208.8,
+            "h": 404
+          },
+          "detail": {
+            "x": 258.8,
+            "y": 142,
+            "w": 667.2,
+            "h": 404
+          },
+          "mobile": false
+        },
+        "indexObjects": 92,
+        "checks": [
+          "finite resolution",
+          "small card never grows beyond design",
+          "shop right anchor stays inside viewport",
+          "HUD anchor returns to reference position",
+          "physical card shrinks proportionally in a small window",
+          "renderer preserves aspect ratio",
+          "positive clipped Index detail: Towers",
+          "portrait aspect fit: Towers",
+          "portrait aspect fit: Towers",
+          "unchanged Index uses cached layout: Towers",
+          "positive clipped Index detail: Monsters",
+          "unchanged Index uses cached layout: Monsters",
+          "positive clipped Index detail: Fusion",
+          "portrait aspect fit: Fusion",
+          "portrait aspect fit: Fusion",
+          "unchanged Index uses cached layout: Fusion",
+          "Selected Tower panel remains in gameplay viewport",
+          "compact toast avoids HUD, shop and Selected Tower panel",
+          "toast does not capture mouse",
+          "Fusion sidebar and placement HUD stay bounded at tactical speed",
+          "Cancel does not cover Play/Index controls",
+          "audio settings panel fits",
+          "invalid/minimized viewport preserves last layout: 0/0",
+          "invalid/minimized viewport preserves last layout: NaN/Infinity",
+          "invalid/minimized viewport preserves last layout: 1/1",
+          "CSS pointer maps to shop card after resize and restore",
+          "restore has identical geometry without cumulative scaling"
+        ],
+        "physicalCard": [
+          42,
+          56
+        ],
+        "viewportRevision": 4,
+        "invalidViewportSimulation": true
+      },
+      {
+        "viewport": [
+          320,
+          240
+        ],
+        "resolution": [
+          960,
+          720
+        ],
+        "shop": {
+          "x": 728,
+          "y": 8,
+          "w": 224,
+          "h": 704
+        },
+        "card": {
+          "x": 744,
+          "y": 80,
+          "w": 84,
+          "h": 112
+        },
+        "hud": {
+          "x": 16,
+          "y": 16,
+          "w": 316,
+          "h": 44
+        },
+        "index": {
+          "x": 16,
+          "y": 16,
+          "w": 928,
+          "h": 688,
+          "content": {
+            "x": 258.8,
+            "y": 142,
+            "w": 667.2,
+            "h": 524
+          },
+          "collection": {
+            "x": 34,
+            "y": 142,
+            "w": 208.8,
+            "h": 524
+          },
+          "detail": {
+            "x": 258.8,
+            "y": 142,
+            "w": 667.2,
+            "h": 524
+          },
+          "mobile": false
+        },
+        "indexObjects": 92,
+        "checks": [
+          "finite resolution",
+          "small card never grows beyond design",
+          "shop right anchor stays inside viewport",
+          "HUD anchor returns to reference position",
+          "physical card shrinks proportionally in a small window",
+          "renderer preserves aspect ratio",
+          "positive clipped Index detail: Towers",
+          "portrait aspect fit: Towers",
+          "portrait aspect fit: Towers",
+          "unchanged Index uses cached layout: Towers",
+          "positive clipped Index detail: Monsters",
+          "unchanged Index uses cached layout: Monsters",
+          "positive clipped Index detail: Fusion",
+          "portrait aspect fit: Fusion",
+          "portrait aspect fit: Fusion",
+          "unchanged Index uses cached layout: Fusion",
+          "Selected Tower panel remains in gameplay viewport",
+          "compact toast avoids HUD, shop and Selected Tower panel",
+          "toast does not capture mouse",
+          "Fusion sidebar and placement HUD stay bounded at tactical speed",
+          "Cancel does not cover Play/Index controls",
+          "audio settings panel fits",
+          "invalid/minimized viewport preserves last layout: 0/0",
+          "invalid/minimized viewport preserves last layout: NaN/Infinity",
+          "invalid/minimized viewport preserves last layout: 1/1",
+          "CSS pointer maps to shop card after resize and restore"
+        ],
+        "physicalCard": [
+          28,
+          37.33333333333333
+        ],
+        "viewportRevision": 5,
+        "invalidViewportSimulation": true
+      },
+      {
+        "viewport": [
+          1280,
+          720
+        ],
+        "resolution": [
+          1280,
+          720
+        ],
+        "shop": {
+          "x": 1048,
+          "y": 8,
+          "w": 224,
+          "h": 704
+        },
+        "card": {
+          "x": 1064,
+          "y": 80,
+          "w": 84,
+          "h": 112
+        },
+        "hud": {
+          "x": 16,
+          "y": 16,
+          "w": 316,
+          "h": 44
+        },
+        "index": {
+          "x": 16,
+          "y": 16,
+          "w": 1248,
+          "h": 688,
+          "content": {
+            "x": 330,
+            "y": 142,
+            "w": 916,
+            "h": 524
+          },
+          "collection": {
+            "x": 34,
+            "y": 142,
+            "w": 280,
+            "h": 524
+          },
+          "detail": {
+            "x": 330,
+            "y": 142,
+            "w": 916,
+            "h": 524
+          },
+          "mobile": false
+        },
+        "indexObjects": 92,
+        "checks": [
+          "finite resolution",
+          "small card never grows beyond design",
+          "shop right anchor stays inside viewport",
+          "HUD anchor returns to reference position",
+          "physical card shrinks proportionally in a small window",
+          "renderer preserves aspect ratio",
+          "positive clipped Index detail: Towers",
+          "portrait aspect fit: Towers",
+          "portrait aspect fit: Towers",
+          "unchanged Index uses cached layout: Towers",
+          "positive clipped Index detail: Monsters",
+          "unchanged Index uses cached layout: Monsters",
+          "positive clipped Index detail: Fusion",
+          "portrait aspect fit: Fusion",
+          "portrait aspect fit: Fusion",
+          "unchanged Index uses cached layout: Fusion",
+          "Selected Tower panel remains in gameplay viewport",
+          "compact toast avoids HUD, shop and Selected Tower panel",
+          "toast does not capture mouse",
+          "Fusion sidebar and placement HUD stay bounded at tactical speed",
+          "Cancel does not cover Play/Index controls",
+          "audio settings panel fits",
+          "invalid/minimized viewport preserves last layout: 0/0",
+          "invalid/minimized viewport preserves last layout: NaN/Infinity",
+          "invalid/minimized viewport preserves last layout: 1/1",
+          "CSS pointer maps to shop card after resize and restore",
+          "restore has identical geometry without cumulative scaling"
+        ],
+        "physicalCard": [
+          84,
+          112
+        ],
+        "viewportRevision": 6,
+        "invalidViewportSimulation": true
+      },
+      {
+        "viewport": [
+          640,
+          400
+        ],
+        "resolution": [
+          960,
+          600
+        ],
+        "shop": {
+          "x": 728,
+          "y": 8,
+          "w": 224,
+          "h": 584
+        },
+        "card": {
+          "x": 744,
+          "y": 80,
+          "w": 84,
+          "h": 112
+        },
+        "hud": {
+          "x": 16,
+          "y": 16,
+          "w": 316,
+          "h": 44
+        },
+        "index": {
+          "x": 16,
+          "y": 16,
+          "w": 928,
+          "h": 568,
+          "content": {
+            "x": 258.8,
+            "y": 142,
+            "w": 667.2,
+            "h": 404
+          },
+          "collection": {
+            "x": 34,
+            "y": 142,
+            "w": 208.8,
+            "h": 404
+          },
+          "detail": {
+            "x": 258.8,
+            "y": 142,
+            "w": 667.2,
+            "h": 404
+          },
+          "mobile": false
+        },
+        "indexObjects": 92,
+        "checks": [
+          "finite resolution",
+          "small card never grows beyond design",
+          "shop right anchor stays inside viewport",
+          "HUD anchor returns to reference position",
+          "physical card shrinks proportionally in a small window",
+          "renderer preserves aspect ratio",
+          "positive clipped Index detail: Towers",
+          "portrait aspect fit: Towers",
+          "portrait aspect fit: Towers",
+          "unchanged Index uses cached layout: Towers",
+          "positive clipped Index detail: Monsters",
+          "unchanged Index uses cached layout: Monsters",
+          "positive clipped Index detail: Fusion",
+          "portrait aspect fit: Fusion",
+          "portrait aspect fit: Fusion",
+          "unchanged Index uses cached layout: Fusion",
+          "Selected Tower panel remains in gameplay viewport",
+          "compact toast avoids HUD, shop and Selected Tower panel",
+          "toast does not capture mouse",
+          "Fusion sidebar and placement HUD stay bounded at tactical speed",
+          "Cancel does not cover Play/Index controls",
+          "audio settings panel fits",
+          "invalid/minimized viewport preserves last layout: 0/0",
+          "invalid/minimized viewport preserves last layout: NaN/Infinity",
+          "invalid/minimized viewport preserves last layout: 1/1",
+          "CSS pointer maps to shop card after resize and restore",
+          "restore has identical geometry without cumulative scaling"
+        ],
+        "physicalCard": [
+          56,
+          74.66666666666666
+        ],
+        "viewportRevision": 7,
+        "invalidViewportSimulation": true
+      },
+      {
+        "viewport": [
+          1280,
+          720
+        ],
+        "resolution": [
+          1280,
+          720
+        ],
+        "shop": {
+          "x": 1048,
+          "y": 8,
+          "w": 224,
+          "h": 704
+        },
+        "card": {
+          "x": 1064,
+          "y": 80,
+          "w": 84,
+          "h": 112
+        },
+        "hud": {
+          "x": 16,
+          "y": 16,
+          "w": 316,
+          "h": 44
+        },
+        "index": {
+          "x": 16,
+          "y": 16,
+          "w": 1248,
+          "h": 688,
+          "content": {
+            "x": 330,
+            "y": 142,
+            "w": 916,
+            "h": 524
+          },
+          "collection": {
+            "x": 34,
+            "y": 142,
+            "w": 280,
+            "h": 524
+          },
+          "detail": {
+            "x": 330,
+            "y": 142,
+            "w": 916,
+            "h": 524
+          },
+          "mobile": false
+        },
+        "indexObjects": 92,
+        "checks": [
+          "finite resolution",
+          "small card never grows beyond design",
+          "shop right anchor stays inside viewport",
+          "HUD anchor returns to reference position",
+          "physical card shrinks proportionally in a small window",
+          "renderer preserves aspect ratio",
+          "positive clipped Index detail: Towers",
+          "portrait aspect fit: Towers",
+          "portrait aspect fit: Towers",
+          "unchanged Index uses cached layout: Towers",
+          "positive clipped Index detail: Monsters",
+          "unchanged Index uses cached layout: Monsters",
+          "positive clipped Index detail: Fusion",
+          "portrait aspect fit: Fusion",
+          "portrait aspect fit: Fusion",
+          "unchanged Index uses cached layout: Fusion",
+          "Selected Tower panel remains in gameplay viewport",
+          "compact toast avoids HUD, shop and Selected Tower panel",
+          "toast does not capture mouse",
+          "Fusion sidebar and placement HUD stay bounded at tactical speed",
+          "Cancel does not cover Play/Index controls",
+          "audio settings panel fits",
+          "invalid/minimized viewport preserves last layout: 0/0",
+          "invalid/minimized viewport preserves last layout: NaN/Infinity",
+          "invalid/minimized viewport preserves last layout: 1/1",
+          "CSS pointer maps to shop card after resize and restore",
+          "restore has identical geometry without cumulative scaling"
+        ],
+        "physicalCard": [
+          84,
+          112
+        ],
+        "viewportRevision": 8,
+        "invalidViewportSimulation": true
+      },
+      {
+        "viewport": [
+          640,
+          400
+        ],
+        "resolution": [
+          960,
+          600
+        ],
+        "shop": {
+          "x": 728,
+          "y": 8,
+          "w": 224,
+          "h": 584
+        },
+        "card": {
+          "x": 744,
+          "y": 80,
+          "w": 84,
+          "h": 112
+        },
+        "hud": {
+          "x": 16,
+          "y": 16,
+          "w": 316,
+          "h": 44
+        },
+        "index": {
+          "x": 16,
+          "y": 16,
+          "w": 928,
+          "h": 568,
+          "content": {
+            "x": 258.8,
+            "y": 142,
+            "w": 667.2,
+            "h": 404
+          },
+          "collection": {
+            "x": 34,
+            "y": 142,
+            "w": 208.8,
+            "h": 404
+          },
+          "detail": {
+            "x": 258.8,
+            "y": 142,
+            "w": 667.2,
+            "h": 404
+          },
+          "mobile": false
+        },
+        "indexObjects": 92,
+        "checks": [
+          "finite resolution",
+          "small card never grows beyond design",
+          "shop right anchor stays inside viewport",
+          "HUD anchor returns to reference position",
+          "physical card shrinks proportionally in a small window",
+          "renderer preserves aspect ratio",
+          "positive clipped Index detail: Towers",
+          "portrait aspect fit: Towers",
+          "portrait aspect fit: Towers",
+          "unchanged Index uses cached layout: Towers",
+          "positive clipped Index detail: Monsters",
+          "unchanged Index uses cached layout: Monsters",
+          "positive clipped Index detail: Fusion",
+          "portrait aspect fit: Fusion",
+          "portrait aspect fit: Fusion",
+          "unchanged Index uses cached layout: Fusion",
+          "Selected Tower panel remains in gameplay viewport",
+          "compact toast avoids HUD, shop and Selected Tower panel",
+          "toast does not capture mouse",
+          "Fusion sidebar and placement HUD stay bounded at tactical speed",
+          "Cancel does not cover Play/Index controls",
+          "audio settings panel fits",
+          "invalid/minimized viewport preserves last layout: 0/0",
+          "invalid/minimized viewport preserves last layout: NaN/Infinity",
+          "invalid/minimized viewport preserves last layout: 1/1",
+          "CSS pointer maps to shop card after resize and restore",
+          "restore has identical geometry without cumulative scaling"
+        ],
+        "physicalCard": [
+          56,
+          74.66666666666666
+        ],
+        "viewportRevision": 9,
+        "invalidViewportSimulation": true
+      }
+    ]
+  },
+  "progress": [],
+  "consoleErrors": []
+}

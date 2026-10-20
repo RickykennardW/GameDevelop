@@ -1,0 +1,1155 @@
+{
+  "result": {
+    "observed": [
+      {
+        "selected": "VoidHound",
+        "portraits": [
+          {
+            "id": "Basic",
+            "layer": "IndexList",
+            "native": [
+              1254,
+              1254
+            ],
+            "tint": 0,
+            "scale": [
+              0.05970149253731343,
+              0.05970149253731343
+            ],
+            "visible": true,
+            "frame": {
+              "id": "Basic",
+              "x": 71,
+              "y": 182,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 43,
+              "y": 152.26865671641792,
+              "w": 56,
+              "h": 59.46268656716418
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 368316
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidHound",
+            "layer": "IndexList",
+            "native": [
+              1536,
+              1024
+            ],
+            "tint": 0,
+            "scale": [
+              0.2510460251046025,
+              0.2510460251046025
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidHound",
+              "x": 71,
+              "y": 272,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 45.51882845188285,
+              "y": 242,
+              "w": 50.96234309623431,
+              "h": 60
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 28704
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidGuard",
+            "layer": "IndexList",
+            "native": [
+              128,
+              128
+            ],
+            "tint": 0,
+            "scale": [
+              0.6511627906976745,
+              0.6511627906976745
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidGuard",
+              "x": 71,
+              "y": 362,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 43,
+              "y": 334.3255813953488,
+              "w": 56.00000000000001,
+              "h": 55.34883720930233
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 4277
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidSentinel",
+            "layer": "IndexList",
+            "native": [
+              128,
+              128
+            ],
+            "tint": 0,
+            "scale": [
+              0.7368421052631579,
+              0.7368421052631579
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidSentinel",
+              "x": 71,
+              "y": 452,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 43,
+              "y": 424.7368421052632,
+              "w": 56,
+              "h": 54.52631578947368
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 2720
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidBrute",
+            "layer": "IndexList",
+            "native": [
+              128,
+              128
+            ],
+            "tint": 0,
+            "scale": [
+              0.8,
+              0.8
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidBrute",
+              "x": 71,
+              "y": 542,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 43,
+              "y": 514.4,
+              "w": 56,
+              "h": 55.2
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 3183
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidGolem",
+            "layer": "IndexList",
+            "native": [
+              1024,
+              1536
+            ],
+            "tint": 0,
+            "scale": [
+              0.22988505747126436,
+              0.22988505747126436
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidGolem",
+              "x": 71,
+              "y": 632,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 44.103448275862064,
+              "y": 602,
+              "w": 53.793103448275865,
+              "h": 60
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 40933
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidHound",
+            "layer": "IndexDetail",
+            "native": [
+              1536,
+              1024
+            ],
+            "tint": 0,
+            "scale": [
+              1.2468619246861925,
+              1.2468619246861925
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidHound",
+              "x": 523,
+              "y": 323,
+              "w": 318,
+              "h": 298
+            },
+            "visual": {
+              "x": 396.44351464435147,
+              "y": 174,
+              "w": 253.11297071129707,
+              "h": 298
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 28704
+            },
+            "legacyRig": false
+          }
+        ]
+      },
+      {
+        "selected": "VoidGolem",
+        "portraits": [
+          {
+            "id": "Basic",
+            "layer": "IndexList",
+            "native": [
+              1254,
+              1254
+            ],
+            "tint": 0,
+            "scale": [
+              0.05970149253731343,
+              0.05970149253731343
+            ],
+            "visible": true,
+            "frame": {
+              "id": "Basic",
+              "x": 71,
+              "y": 182,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 43,
+              "y": 152.26865671641792,
+              "w": 56,
+              "h": 59.46268656716418
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 368316
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidHound",
+            "layer": "IndexList",
+            "native": [
+              1536,
+              1024
+            ],
+            "tint": 0,
+            "scale": [
+              0.2510460251046025,
+              0.2510460251046025
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidHound",
+              "x": 71,
+              "y": 272,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 45.51882845188285,
+              "y": 242,
+              "w": 50.96234309623431,
+              "h": 60
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 28704
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidGuard",
+            "layer": "IndexList",
+            "native": [
+              128,
+              128
+            ],
+            "tint": 0,
+            "scale": [
+              0.6511627906976745,
+              0.6511627906976745
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidGuard",
+              "x": 71,
+              "y": 362,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 43,
+              "y": 334.3255813953488,
+              "w": 56.00000000000001,
+              "h": 55.34883720930233
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 4277
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidSentinel",
+            "layer": "IndexList",
+            "native": [
+              128,
+              128
+            ],
+            "tint": 0,
+            "scale": [
+              0.7368421052631579,
+              0.7368421052631579
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidSentinel",
+              "x": 71,
+              "y": 452,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 43,
+              "y": 424.7368421052632,
+              "w": 56,
+              "h": 54.52631578947368
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 2720
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidBrute",
+            "layer": "IndexList",
+            "native": [
+              128,
+              128
+            ],
+            "tint": 0,
+            "scale": [
+              0.8,
+              0.8
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidBrute",
+              "x": 71,
+              "y": 542,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 43,
+              "y": 514.4,
+              "w": 56,
+              "h": 55.2
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 3183
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidGolem",
+            "layer": "IndexList",
+            "native": [
+              1024,
+              1536
+            ],
+            "tint": 0,
+            "scale": [
+              0.22988505747126436,
+              0.22988505747126436
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidGolem",
+              "x": 71,
+              "y": 632,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 44.103448275862064,
+              "y": 602,
+              "w": 53.793103448275865,
+              "h": 60
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 40933
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidGolem",
+            "layer": "IndexDetail",
+            "native": [
+              1024,
+              1536
+            ],
+            "tint": 0,
+            "scale": [
+              1.1417624521072798,
+              1.1417624521072798
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidGolem",
+              "x": 523,
+              "y": 323,
+              "w": 318,
+              "h": 298
+            },
+            "visual": {
+              "x": 389.41379310344826,
+              "y": 174,
+              "w": 267.1724137931035,
+              "h": 298
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 40933
+            },
+            "legacyRig": false
+          }
+        ]
+      },
+      {
+        "selected": "Basic",
+        "portraits": [
+          {
+            "id": "Basic",
+            "layer": "IndexList",
+            "native": [
+              1254,
+              1254
+            ],
+            "tint": 0,
+            "scale": [
+              0.05970149253731343,
+              0.05970149253731343
+            ],
+            "visible": true,
+            "frame": {
+              "id": "Basic",
+              "x": 71,
+              "y": 182,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 43,
+              "y": 152.26865671641792,
+              "w": 56,
+              "h": 59.46268656716418
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 368316
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidHound",
+            "layer": "IndexList",
+            "native": [
+              1536,
+              1024
+            ],
+            "tint": 0,
+            "scale": [
+              0.2510460251046025,
+              0.2510460251046025
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidHound",
+              "x": 71,
+              "y": 272,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 45.51882845188285,
+              "y": 242,
+              "w": 50.96234309623431,
+              "h": 60
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 28704
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidGuard",
+            "layer": "IndexList",
+            "native": [
+              128,
+              128
+            ],
+            "tint": 0,
+            "scale": [
+              0.6511627906976745,
+              0.6511627906976745
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidGuard",
+              "x": 71,
+              "y": 362,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 43,
+              "y": 334.3255813953488,
+              "w": 56.00000000000001,
+              "h": 55.34883720930233
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 4277
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidSentinel",
+            "layer": "IndexList",
+            "native": [
+              128,
+              128
+            ],
+            "tint": 0,
+            "scale": [
+              0.7368421052631579,
+              0.7368421052631579
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidSentinel",
+              "x": 71,
+              "y": 452,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 43,
+              "y": 424.7368421052632,
+              "w": 56,
+              "h": 54.52631578947368
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 2720
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidBrute",
+            "layer": "IndexList",
+            "native": [
+              128,
+              128
+            ],
+            "tint": 0,
+            "scale": [
+              0.8,
+              0.8
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidBrute",
+              "x": 71,
+              "y": 542,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 43,
+              "y": 514.4,
+              "w": 56,
+              "h": 55.2
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 3183
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidGolem",
+            "layer": "IndexList",
+            "native": [
+              1024,
+              1536
+            ],
+            "tint": 0,
+            "scale": [
+              0.22988505747126436,
+              0.22988505747126436
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidGolem",
+              "x": 71,
+              "y": 632,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 44.103448275862064,
+              "y": 602,
+              "w": 53.793103448275865,
+              "h": 60
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 40933
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "Basic",
+            "layer": "IndexDetail",
+            "native": [
+              1254,
+              1254
+            ],
+            "tint": 0,
+            "scale": [
+              0.2991967871485944,
+              0.2991967871485944
+            ],
+            "visible": true,
+            "frame": {
+              "id": "Basic",
+              "x": 523,
+              "y": 323,
+              "w": 318,
+              "h": 298
+            },
+            "visual": {
+              "x": 382.6767068273092,
+              "y": 174,
+              "w": 280.64658634538154,
+              "h": 298
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 368316
+            },
+            "legacyRig": false
+          }
+        ]
+      },
+      {
+        "selected": "VoidGuard",
+        "portraits": [
+          {
+            "id": "Basic",
+            "layer": "IndexList",
+            "native": [
+              1254,
+              1254
+            ],
+            "tint": 0,
+            "scale": [
+              0.05970149253731343,
+              0.05970149253731343
+            ],
+            "visible": true,
+            "frame": {
+              "id": "Basic",
+              "x": 71,
+              "y": 182,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 43,
+              "y": 152.26865671641792,
+              "w": 56,
+              "h": 59.46268656716418
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 368316
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidHound",
+            "layer": "IndexList",
+            "native": [
+              1536,
+              1024
+            ],
+            "tint": 0,
+            "scale": [
+              0.2510460251046025,
+              0.2510460251046025
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidHound",
+              "x": 71,
+              "y": 272,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 45.51882845188285,
+              "y": 242,
+              "w": 50.96234309623431,
+              "h": 60
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 28704
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidGuard",
+            "layer": "IndexList",
+            "native": [
+              128,
+              128
+            ],
+            "tint": 0,
+            "scale": [
+              0.6511627906976745,
+              0.6511627906976745
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidGuard",
+              "x": 71,
+              "y": 362,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 43,
+              "y": 334.3255813953488,
+              "w": 56.00000000000001,
+              "h": 55.34883720930233
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 4277
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidSentinel",
+            "layer": "IndexList",
+            "native": [
+              128,
+              128
+            ],
+            "tint": 0,
+            "scale": [
+              0.7368421052631579,
+              0.7368421052631579
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidSentinel",
+              "x": 71,
+              "y": 452,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 43,
+              "y": 424.7368421052632,
+              "w": 56,
+              "h": 54.52631578947368
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 2720
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidBrute",
+            "layer": "IndexList",
+            "native": [
+              128,
+              128
+            ],
+            "tint": 0,
+            "scale": [
+              0.8,
+              0.8
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidBrute",
+              "x": 71,
+              "y": 542,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 43,
+              "y": 514.4,
+              "w": 56,
+              "h": 55.2
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 3183
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidGolem",
+            "layer": "IndexList",
+            "native": [
+              1024,
+              1536
+            ],
+            "tint": 0,
+            "scale": [
+              0.22988505747126436,
+              0.22988505747126436
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidGolem",
+              "x": 71,
+              "y": 632,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 44.103448275862064,
+              "y": 602,
+              "w": 53.793103448275865,
+              "h": 60
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 40933
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidGuard",
+            "layer": "IndexDetail",
+            "native": [
+              128,
+              128
+            ],
+            "tint": 0,
+            "scale": [
+              3.5058823529411764,
+              3.5058823529411764
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidGuard",
+              "x": 523,
+              "y": 323,
+              "w": 318,
+              "h": 298
+            },
+            "visual": {
+              "x": 372.2470588235294,
+              "y": 174,
+              "w": 301.50588235294117,
+              "h": 298
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 4277
+            },
+            "legacyRig": false
+          }
+        ]
+      },
+      {
+        "selected": "VoidHound",
+        "portraits": [
+          {
+            "id": "Basic",
+            "layer": "IndexList",
+            "native": [
+              1254,
+              1254
+            ],
+            "tint": 0,
+            "scale": [
+              0.05970149253731343,
+              0.05970149253731343
+            ],
+            "visible": true,
+            "frame": {
+              "id": "Basic",
+              "x": 71,
+              "y": 182,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 43,
+              "y": 152.26865671641792,
+              "w": 56,
+              "h": 59.46268656716418
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 368316
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidHound",
+            "layer": "IndexList",
+            "native": [
+              1536,
+              1024
+            ],
+            "tint": 0,
+            "scale": [
+              0.2510460251046025,
+              0.2510460251046025
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidHound",
+              "x": 71,
+              "y": 272,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 45.51882845188285,
+              "y": 242,
+              "w": 50.96234309623431,
+              "h": 60
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 28704
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidGuard",
+            "layer": "IndexList",
+            "native": [
+              128,
+              128
+            ],
+            "tint": 0,
+            "scale": [
+              0.6511627906976745,
+              0.6511627906976745
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidGuard",
+              "x": 71,
+              "y": 362,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 43,
+              "y": 334.3255813953488,
+              "w": 56.00000000000001,
+              "h": 55.34883720930233
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 4277
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidSentinel",
+            "layer": "IndexList",
+            "native": [
+              128,
+              128
+            ],
+            "tint": 0,
+            "scale": [
+              0.7368421052631579,
+              0.7368421052631579
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidSentinel",
+              "x": 71,
+              "y": 452,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 43,
+              "y": 424.7368421052632,
+              "w": 56,
+              "h": 54.52631578947368
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 2720
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidBrute",
+            "layer": "IndexList",
+            "native": [
+              128,
+              128
+            ],
+            "tint": 0,
+            "scale": [
+              0.8,
+              0.8
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidBrute",
+              "x": 71,
+              "y": 542,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 43,
+              "y": 514.4,
+              "w": 56,
+              "h": 55.2
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 3183
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidGolem",
+            "layer": "IndexList",
+            "native": [
+              1024,
+              1536
+            ],
+            "tint": 0,
+            "scale": [
+              0.22988505747126436,
+              0.22988505747126436
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidGolem",
+              "x": 71,
+              "y": 632,
+              "w": 56,
+              "h": 60
+            },
+            "visual": {
+              "x": 44.103448275862064,
+              "y": 602,
+              "w": 53.793103448275865,
+              "h": 60
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 40933
+            },
+            "legacyRig": false
+          },
+          {
+            "id": "VoidHound",
+            "layer": "IndexDetail",
+            "native": [
+              1536,
+              1024
+            ],
+            "tint": 0,
+            "scale": [
+              1.2468619246861925,
+              1.2468619246861925
+            ],
+            "visible": true,
+            "frame": {
+              "id": "VoidHound",
+              "x": 523,
+              "y": 323,
+              "w": 318,
+              "h": 298
+            },
+            "visual": {
+              "x": 396.44351464435147,
+              "y": 174,
+              "w": 253.11297071129707,
+              "h": 298
+            },
+            "pixels": {
+              "colored": 0,
+              "opaque": 28704
+            },
+            "legacyRig": false
+          }
+        ]
+      }
+    ],
+    "found": [],
+    "outlines": 7
+  },
+  "progress": [],
+  "consoleErrors": []
+}

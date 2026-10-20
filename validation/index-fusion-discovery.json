@@ -1,0 +1,137 @@
+{
+  "result": {
+    "checks": [
+      "fresh Fusion archive starts undiscovered",
+      "three primary Index categories",
+      "actual Fusion tab navigates",
+      "unknown Fusion listed with hidden name/status",
+      "silhouette uses dedicated Fusion showcase portrait with black per-sprite tint",
+      "cryptic hint visible; recipe and stats locked",
+      "actual Towers tab navigates",
+      "normal Tower Index unchanged and no Starburst duplicate",
+      "actual Monsters tab navigates",
+      "six Monster entries and session behavior preserved",
+      "actual Fusion tab navigates",
+      "eligible source enters partner selection",
+      "partner phase keeps Max-only candidate logos; no non-Max glow",
+      "opposite path enters placement",
+      "placement renders every tower footprint including non-Max",
+      "footprint follows actual center/radius for tower 284",
+      "source cyan/ignored versus occupied soft red 284",
+      "footprint follows actual center/radius for tower 288",
+      "source cyan/ignored versus occupied soft red 288",
+      "footprint follows actual center/radius for tower 292",
+      "source cyan/ignored versus occupied soft red 292",
+      "footprint follows actual center/radius for tower 296",
+      "source cyan/ignored versus occupied soft red 296",
+      "placement logos limited to the two chosen source towers",
+      "green ghost can overlap either source only",
+      "footprint graphics and ghost remain below Cancel/UI",
+      "240 frames reuse one renderer and footprint records without child growth",
+      "preview does not unlock, save or announce discovery",
+      "red ghost matches collision with non-Max footprint",
+      "occupied click consumes nothing and never unlocks",
+      "outside union of source regions remains invalid",
+      "real road polygon still blocks Fusion",
+      "existing obstacle remains blocked",
+      "Cancel cleans footprints/markers and leaves archive locked",
+      "eight repeated cancels leave no extra outline/logo children",
+      "reversed Pure recipe resolves to one stable variant",
+      "successful native click creates Fusion then consumes only sources",
+      "only successful transaction unlocks shared state and saves once",
+      "notification and Fusion logic share exactly one archive",
+      "discovery panel never captures mouse input",
+      "successful unlock is actually written to persistent storage",
+      "actual Fusion tab navigates",
+      "Index reveals original art/name/status immediately without restart",
+      "known canonical recipe and live stats displayed",
+      "actual Towers tab navigates",
+      "actual Fusion tab navigates",
+      "close/reopen preserves unlock and no duplicate",
+      "notification fixture uses actual2x wave mode",
+      "notification advances half a second during 30 frames at2x",
+      "silhouette animates into actual sprite and correct name",
+      "notice geometry stays below HUD and out of Tower Shop",
+      "four-second first discovery completes and cleans visible panel",
+      "second reverse-order Fusion succeeds without duplicate first notification/save",
+      "one Hybrid variant unlocks1/4 and cannot repeat",
+      "three other Adaptive variants stay individually locked",
+      "actual Fusion tab navigates",
+      "generic Fusion Index renders Hybrid progress and hides undiscovered recipes",
+      "unrelated persistent key and audio preferences untouched",
+      "actual Fusion tab navigates"
+    ],
+    "audioSettings": {
+      "Master": 100,
+      "Music": 35,
+      "SFX": 70,
+      "UI": 45,
+      "MuteMusic": false,
+      "MuteSFX": false
+    },
+    "expectation": "current",
+    "unknown": {
+      "discovered": true,
+      "variants": {
+        "future_variant": true
+      },
+      "extra": "keep"
+    },
+    "notifications": {
+      "firstShown": 1,
+      "firstCompleted": 1
+    },
+    "footprints": 4,
+    "storageKey": "celestialVoidFusionDiscovery.v1",
+    "viewport": [
+      1920,
+      1080
+    ],
+    "pageReload": {
+      "checks": [
+        "Fusion entry and canonical Pure variant restored",
+        "loading known progress does not announce first discovery again",
+        "audio settings and unrelated storage survive",
+        "unknown saved entries and top-level metadata preserved",
+        "partial Hybrid save never unlocks remaining variants",
+        "existing fresh-session Monster discovery behavior retained",
+        "Fusion Index actually opens with revealed original art/name",
+        "canonical recipe still visible after loading"
+      ],
+      "storageOK": true,
+      "discovered": [
+        "StarburstCannon",
+        "FutureHybrid",
+        "FutureFusion"
+      ],
+      "variant": {
+        "found": 1,
+        "total": 1
+      }
+    },
+    "applicationRelaunch": {
+      "checks": [
+        "Fusion entry and canonical Pure variant restored",
+        "loading known progress does not announce first discovery again",
+        "audio settings and unrelated storage survive",
+        "unknown saved entries and top-level metadata preserved",
+        "partial Hybrid save never unlocks remaining variants",
+        "existing fresh-session Monster discovery behavior retained",
+        "Fusion Index actually opens with revealed original art/name",
+        "canonical recipe still visible after loading"
+      ],
+      "storageOK": true,
+      "discovered": [
+        "StarburstCannon",
+        "FutureHybrid",
+        "FutureFusion"
+      ],
+      "variant": {
+        "found": 1,
+        "total": 1
+      }
+    }
+  },
+  "progress": [],
+  "consoleErrors": []
+}

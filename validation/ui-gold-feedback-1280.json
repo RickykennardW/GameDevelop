@@ -1,0 +1,33 @@
+{
+  "result": {
+    "checks": [
+      "underfunded shop selection keeps ghost and range",
+      "selection does not emit either error cue",
+      "spatially clear preview stays green when unaffordable",
+      "shared validator retains strict default for Fusion and optional spatial preview",
+      "purchase fails without spawning/charging or closing builder",
+      "one lightweight notice uses current deficit",
+      "one purchase cue and no duplicate generic invalid sound",
+      "original double buzz actually plays on native SFX channel",
+      "SFX volume independently controls purchase-denied cue",
+      "eight rapid clicks reuse notice and obey global feedback cooldown",
+      "deficit refreshes from current money even during feedback cooldown"
+    ],
+    "preview": {
+      "x": 300,
+      "y": 352,
+      "type": "StarCannonTower",
+      "valid": true,
+      "reason": "",
+      "cost": 300,
+      "radius": 46,
+      "affordable": false
+    },
+    "feedback": {
+      "shown": 1,
+      "detail": "Need 100 More Gold"
+    }
+  },
+  "progress": [],
+  "consoleErrors": []
+}

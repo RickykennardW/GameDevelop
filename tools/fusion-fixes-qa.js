@@ -21,8 +21,8 @@
  open();ok(index.categories.join('|')==='Towers|Monsters|Fusion','three primary Index categories');tab('Fusion');
  ok(index.entries.length===1&&index.cards[0].locked&&index.cards[0].name.getString()==='???'&&index.cards[0].status.getString()==='UNDISCOVERED','unknown Fusion listed with hidden name/status');
  const portrait=index.cards[0].sprite,animation=portrait.getAnimationName();
- ok(animation==='StarburstCannon'&&portrait.getColor()==='0;0;0','silhouette uses original Fusion asset with black per-sprite tint');
- ok(index.cards[0].special.getString().includes('CRYPTIC HINT')&&!index.objects.fusionRecipe0.getString().includes('5-2')&&index.cards[0].stats.getString().includes('locked'),'cryptic hint visible; recipe and stats locked');
+ ok(animation==='StarburstCannon_IndexPortrait'&&portrait.getColor()==='0;0;0','silhouette uses dedicated Fusion showcase portrait with black per-sprite tint');
+ ok(index.detail.description.getString().includes('CRYPTIC HINT')&&!index.objects.fusionRecipe0.getString().includes('5-2')&&index.detail.statValues.length===0,'cryptic hint visible; recipe and stats locked');
  if(globalThis.BALANCE_MODE==='unknown')return{checks,status:'undiscovered'};
  tab('Towers');ok(index.entries.length===1&&index.entries[0].type==='StarCannonTower','normal Tower Index unchanged and no Starburst duplicate');
  tab('Monsters');ok(index.entries.length===6&&S.__monsterDiscovery.scope==='session','six Monster entries and session behavior preserved');tab('Fusion');close();
@@ -66,22 +66,22 @@
  ok(!N.root.interactive&&!N.root.interactiveChildren,'discovery panel never captures mouse input');
  ok(JSON.parse(localStorage.getItem(A.storageKey)).entries.StarburstCannon.variants.pure_52_25===true,'successful unlock is actually written to persistent storage');
  open();tab('Fusion');ok(!index.cards[0].locked&&index.cards[0].name.getString()==='Starburst Cannon'&&index.cards[0].status.getString()==='DISCOVERED'&&portrait.getColor()==='255;255;255','Index reveals original art/name/status immediately without restart');
- ok(index.objects.fusionRecipe0.getString()==='Star Cannon 5-2 + Star Cannon 2-5'&&index.cards[0].stats.getString().includes('DAMAGE 90'),'known canonical recipe and live stats displayed');
+ ok(index.objects.fusionRecipe0.getString()==='Star Cannon 5-2 + Star Cannon 2-5'&&index.detail.statValues.some(([label,value])=>label==='DAMAGE'&&value===90),'known canonical recipe and live stats displayed');
  close();open();tab('Towers');tab('Fusion');ok(!index.cards[0].locked&&index.cards.length===1,'close/reopen preserves unlock and no duplicate');close();
  // Notifications use real UI time under both 1x/2x and wait while Index/modal is open.
  const frozen=S.createObject('Enemy');frozen.getVariables().get('EnemyType').setString('Basic');S.__novaWisp.ensure(frozen);frozen.getVariables().get('MoveSpeed').setNumber(0);frozen.setPosition(1400,700);V.get('WaveMode').setString('ManualFast');step(2);
  ok(S.getTimeManager().getTimeScale()===2,'notification fixture uses actual2x wave mode');const age=A.active.age;step(30);ok(near(A.active.age-age,.50001),'notification advances half a second during 30 frames at2x');
  step(45);ok(N.icon.tint===0xffffff&&N.name.text==='Starburst Cannon'&&N.name.alpha===1,'silhouette animates into actual sprite and correct name');
- const g=N.screenRect,area=S.__towerShopUI.gameArea;ok(g.x>=area.left&&g.x+g.w<=area.right+1&&g.y>=area.top,'notice geometry stays below HUD and out of Tower Shop');
+ const g=N.screenRect,area=S.__towerShopUI.gameArea;ok(g.x>=0&&g.x+g.w<=area.right-8&&g.y>=area.top&&g.w===272&&g.h===60,'compact notice stays at the top-right gameplay edge outside the sidebar');
  if(globalThis.BALANCE_MODE==='notification')return{checks,notification:{age:A.active.age,first:A.active.first,shown:A.stats.shown}};
- frozen.deleteFromScene();V.get('WaveMode').setString('Waiting');step(260);ok(!A.active&&!A.queue.length&&!N.root.visible&&A.stats.shown===1&&A.stats.completed===1,'four-second first discovery completes and cleans visible panel');
+ frozen.deleteFromScene();V.get('WaveMode').setString('Waiting');step(260);ok(!A.active&&!A.queue.length&&!N.root.visible&&A.stats.shown===1&&A.stats.completed===1,'compact first discovery completes and cleans visible panel');
  const c=make(2,5,900,352),d=make(5,2,1300,800);F.begin(c);F.choose(d);step(2);const t=F.confirm(900,352);step(3);
  ok(t&&!A.queue.length&&!A.active&&A.stats.shown===1&&A.stats.unlockedVariants===1&&A.stats.writes===writes+1,'second reverse-order Fusion succeeds without duplicate first notification/save');t.__starCooldown=100000;
  // Extensibility fixture: future Hybrid needs four independent recipe discoveries.
  const hybrid={Id:'FutureHybrid',Name:'Future Hybrid',Kind:'Hybrid',Animation:'StarburstCannon',Stats:{Damage:90,AttackRange:227,AttackInterval:.4},Description:'Fixture only',Hint:'Future paths await.',AdaptiveVariants:true,Variants:Array.from({length:4},(_,i)=>({Id:'h'+i,Name:'Variant '+i,Recipe:[{Type:'FutureA',Path1:i,Path2:0,Label:'A'+i},{Type:'FutureB',Path1:0,Path2:i,Label:'B'+i}]}))};
  A.catalog.push(hybrid);ok(A.discover('FutureHybrid','h2')&&!A.discover('FutureHybrid','h2')&&A.progress('FutureHybrid').found===1&&A.progress('FutureHybrid').total===4,'one Hybrid variant unlocks1/4 and cannot repeat');
  ok(!A.hasVariant('FutureHybrid','h0')&&!A.hasVariant('FutureHybrid','h1')&&!A.hasVariant('FutureHybrid','h3'),'three other Adaptive variants stay individually locked');
- open();tab('Fusion');ok(index.cards.length===2&&index.objects.fusionProgress1.getString().endsWith('1 / 4')&&index.objects.fusionVariant01.getString().includes('UNDISCOVERED')&&index.objects.fusionVariant21.getString().includes('Variant 2'),'generic Fusion Index renders Hybrid progress and hides undiscovered recipes');close();
+ open();tab('Fusion');index.select('FutureHybrid');step(2);ok(index.cards.length===2&&index.objects.fusionProgress1.getString().endsWith('1 / 4')&&index.objects.fusionVariant01.getString().includes('UNDISCOVERED')&&index.objects.fusionVariant21.getString().includes('Variant 2'),'generic Fusion Index renders Hybrid progress and hides undiscovered recipes');close();
  A.catalog.pop();A.queue.length=0;A.active=null;A.state.entries.FutureFusion=unknown;A.state.metadata={keep:'current'};A.save();
  ok(localStorage.getItem('celestialVoidFusionUnrelatedCheck')==='preserve'&&JSON.stringify(S.__audio.settings)===JSON.stringify(audioSettings),'unrelated persistent key and audio preferences untouched');
  open();tab('Fusion');

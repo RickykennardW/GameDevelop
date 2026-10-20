@@ -839,7 +839,61 @@
         "edgeRMS": 0.11215973938558858
       },
       "resourceName": "assets/audio/ui/tower_select.ogg"
+    },
+    {
+      "id": "PurchaseDenied",
+      "file": "assets/audio/ui/purchase_denied.ogg",
+      "resourceName": "assets/audio/ui/purchase_denied.ogg",
+      "kind": "sfx",
+      "bytes": 3680,
+      "sha256": "0055d5b86b4af035b0d6bfb6156e1d623006ba764cb2f889e9e78bcb0d2374ec",
+      "decoded": {
+        "duration": 0.34,
+        "samples": 16320,
+        "channels": 1,
+        "rms": 0.0997532339652264,
+        "peak": 0.22194966673851013,
+        "loopJump": 4.220848217559303e-05,
+        "edgeRMS": 0.09760845683810879
+      },
+      "method": "Original additive resonant pulses, shaped envelopes, diffuse echo; no samples or downloads"
+    },
+    {
+      "id": "SonarWarning",
+      "file": "assets/audio/gameplay/sonar_warning.ogg",
+      "resourceName": "assets/audio/gameplay/sonar_warning.ogg",
+      "kind": "sfx",
+      "bytes": 10981,
+      "sha256": "deb3557a9f98dcdb89a361c84042f7c06666f57340434ee35e85f753d4b82ded",
+      "decoded": {
+        "duration": 1.12,
+        "samples": 53760,
+        "channels": 1,
+        "rms": 0.09453548056232698,
+        "peak": 0.3428358733654022,
+        "loopJump": 7.927133265184239e-05,
+        "edgeRMS": 0.09483457933309843
+      },
+      "method": "Original additive resonant pulses, shaped envelopes, diffuse echo; no samples or downloads"
+    },
+    {
+      "id": "SonarCritical",
+      "file": "assets/audio/gameplay/sonar_critical.ogg",
+      "resourceName": "assets/audio/gameplay/sonar_critical.ogg",
+      "kind": "sfx",
+      "bytes": 8523,
+      "sha256": "57e84cfd5e2ecfacf622ea5bb5be62438bca4e2e83d48edc9bf770b0b7d8133c",
+      "decoded": {
+        "duration": 0.86,
+        "samples": 41280,
+        "channels": 1,
+        "rms": 0.09603534160299769,
+        "peak": 0.33149123191833496,
+        "loopJump": 6.853335435152985e-05,
+        "edgeRMS": 0.10988891551222134
+      },
+      "method": "Original additive resonant pulses, shaped envelopes, diffuse echo; no samples or downloads"
     }
   ],
-  "totalBytes": 7704588
+  "totalBytes": 7727772
 }

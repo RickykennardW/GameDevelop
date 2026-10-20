@@ -5,9 +5,9 @@
   ok(Math.abs(buffer.duration-asset.decoded.duration)<.001&&peak<.8&&sum>0,'valid non-silent/unclipped '+asset.id);results.push({id:asset.id,duration:buffer.duration,peak,rms:Math.sqrt(sum/(buffer.length*buffer.numberOfChannels)),edgeJump});
  }
  const offline=new OfflineAudioContext(2,48000*4,48000),limiter=offline.createDynamicsCompressor();limiter.threshold.value=-6;limiter.knee.value=6;limiter.ratio.value=12;limiter.attack.value=.003;limiter.release.value=.12;limiter.connect(offline.destination);
- const ids=['StarCannonFire','ProjectileImpact','EnemyHit','CommonEnemyDeath','TowerPlace','TowerUpgrade','TowerSell','EliteEnemyDeath','VoidGolemSkillCast','BaseDamage','UIClick','TowerSelect'];
+ const ids=['StarCannonFire','ProjectileImpact','EnemyHit','CommonEnemyDeath','TowerPlace','TowerUpgrade','TowerSell','EliteEnemyDeath','VoidGolemSkillCast','BaseDamage','UIClick','TowerSelect','PurchaseDenied','SonarWarning','SonarCritical'];
  for(const id of ids){const node=offline.createBufferSource(),gain=offline.createGain(),d=A.config.SFX[id];node.buffer=buffers[id];gain.gain.value=(d.Group==='ui'?.45:.7)*d.Gain;node.connect(gain);gain.connect(limiter);node.start(.05);}
  for(const id of ['CosmicDefense','VoidAwakening']){const node=offline.createBufferSource(),gain=offline.createGain();node.buffer=buffers[id];gain.gain.value=.35*.5;node.connect(gain);gain.connect(limiter);node.start();}
- const mixed=await offline.startRendering();let peak=0,clipped=0;for(let c=0;c<2;c++)for(const x of mixed.getChannelData(c)){peak=Math.max(peak,Math.abs(x));if(Math.abs(x)>=1)clipped++;}ok(peak<1&&clipped===0,'12 simultaneous default-mix SFX plus2BGM do not clip after limiter');
- return{checks,assets:results,mixStress:{voices:12,bgm:2,peak,clipped},method:'Decode every exported registered audio resource;native OfflineAudioContext/rendered mix with production limiter settings'};
+ const mixed=await offline.startRendering();let peak=0,clipped=0;for(let c=0;c<2;c++)for(const x of mixed.getChannelData(c)){peak=Math.max(peak,Math.abs(x));if(Math.abs(x)>=1)clipped++;}ok(peak<1&&clipped===0,'15 simultaneous default-mix SFX plus2BGM do not clip after limiter');
+ return{checks,assets:results,mixStress:{voices:ids.length,bgm:2,peak,clipped},method:'Decode every exported registered audio resource;native OfflineAudioContext/rendered mix with production limiter settings'};
 })()

@@ -2,6 +2,10 @@
 
 Perbaikan langsung pada project aktif. **Tidak ada backup, salinan JSON/asset, snapshot, branch cadangan, perubahan Git history, asset baru atau balancing baru.**
 
+Catatan versi: laporan ini mencatat task19 Oktober. Pada20 Oktober tampilan Index dan dua portrait showcase diperbarui; lihat **[INDEX_REDESIGN_REPORT.md](INDEX_REDESIGN_REPORT.md)**. Logic discovery/placement yang dijelaskan di sini tetap dipertahankan.
+
+Koreksi UX berikutnya: [TACTICAL_FUSION_UX_REPORT.md](TACTICAL_FUSION_UX_REPORT.md) menambahkan footprint collider lingkungan dan memindahkan instruksi/toast Fusion ke sidebar. Deskripsi posisi notifikasi lama di bawah merupakan catatan historis; aturan transaksi/discovery tetap sama.
+
 ## Temuan dari project nyata
 
 1. `starburst-fusion-runtime.js` melewati tower non-Max sebelum menggambar highlight. Akibatnya renderer tidak pernah menggambar area occupied mereka. Collision sudah benar melalui `p.validate`; sumber masalah berada pada visibility renderer.

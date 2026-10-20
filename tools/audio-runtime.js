@@ -133,13 +133,14 @@ if(!a){
   }
   sv.get('AudioUIConsumesClick').setBoolean(consume);sv.get('AudioPanelOpen').setBoolean(a.ui.open);a.ui.pointer=consume;
   const shop=scene.__towerShopUI;
-  if(released&&!consume&&shop?.pressedCard>=0&&shop.pressedCard===shop.hovered){const item=shop.cards[shop.pressedCard].item;a.play(sv.get('Money').getAsNumber()<item.Cost?'InvalidAction':'UIClick');}
+  if(released&&!consume&&shop?.pressedCard>=0&&shop.pressedCard===shop.hovered)a.play('UIClick');
   const panel=scene.__selectedPanel;
   if(released&&!consume&&panel?.pressed==='Sell'&&panel.tower&&panel.pressedTower===panel.tower.getVariables().get('TowerId').getAsNumber()){
    const x=gdjs.evtTools.input.getCursorX(scene,'SelectedTowerUI',0),y=gdjs.evtTools.input.getCursorY(scene,'SelectedTowerUI',0);if(x>=16&&x<304&&y>=614&&y<662)a.pendingSell=panel.pressedTower;
   }
   if(pressed&&!consume&&scene.__freePlacement?.active&&!scene.getObjects('TilePlacement_Indicator')[0].isHidden()){
-   const [x,y]=scene.__freePlacement.cursor(),valid=scene.__freePlacement.validate(scene.__freePlacement.type,x,y);if(!valid.valid&&valid.reason!=='ui')a.play('InvalidAction');
+   const p=scene.__freePlacement,[x,y]=p.cursor(),point=scene.getLayer('').convertInverseCoords(x,y,0,[0,0]),area=shop.gameArea;
+   if(point[0]>=area.left&&point[0]<area.right&&point[1]>=area.top&&point[1]<area.bottom){const valid=p.validate(p.type,x,y,{ignoreGold:true});if(!valid.valid&&valid.reason!=='ui')a.play('InvalidAction');}
   }
   a.ui.down=down;
  };

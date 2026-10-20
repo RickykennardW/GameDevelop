@@ -529,7 +529,7 @@ PASS base arrival disables casting/buff/VFX/no kill reward
 PASS 200 recipients use same shared VFX assets
 PASS 200 shields are not created every frame
 PASS all owned bodies/shields/pulses/bars clean up
-PASS Index preserves five and shows sixth elite cropped portrait
+PASS Index preserves five and shows sixth elite cropped portrait through its single owner
 PASS unchanged Star-only small shop
 PASS actual aligned Golem volley launched
 PASS bounded native timeline

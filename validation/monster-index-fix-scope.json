@@ -1,0 +1,48 @@
+{
+  "projectSHA256": "5f3fac35a3063f8493f2e7cdb5dc46418306c2a34353f40952d3e2e36c0df903",
+  "sceneDataSHA256": "de302b3ae457202c7845fe13498c8e1be229faecd1ebc8753a437812ad975992",
+  "runtimeSHA256": {
+    "audio-runtime.js": "f16f6acc3a2f11eefe10ccb91c7c3e4c952a33ead22f6084c4718519b99be658",
+    "enemy-healthbar-runtime.js": "045d0f5b7f23503c1388cfb05384192be9e0cf8db3e375e177eff420e3a2986f",
+    "free-placement-runtime.js": "6e534e8e6ee87affdb30c3ab659f478a4628a2e911a4d4d559b9bbe688e8ebde",
+    "fusion-archive-runtime.js": "dd7429e2183c8ce03390369c34fc43996e4c128010b7cf05a3a83b165a45b2d3",
+    "gold-budget-runtime.js": "db62fc90588f325b6c3fc70d5478e3deb7ed6c5cd0c8dd519a63d9843e7a99db",
+    "island-map-runtime.js": "88e1905f541bc5e966dc4afae09ac9fcabe039ffb764a96ddaa393f5e1b0bc20",
+    "island-render-runtime.js": "da38517b485d19a2631bedbb0dc642d44b716ac532ef2cfb97cb0a5c8ecc8e3c",
+    "monster-discovery-runtime.js": "b560ddc4c4890d16e1a06bdbf9bda1aa48b0629eafac08a1b8a6d0a236b08fad",
+    "nova-death-runtime.js": "8f588d9fc80aafd2c5cda9650b05ea8a03b54df100893d0edcde57503fa77de6",
+    "nova-movement-runtime.js": "1a3bcdf8ca9b5feba02940e842e00c8f7beb876b0b481dab0166d7ee8fddcb8e",
+    "nova-spawn-runtime.js": "490d5aef860c8dc235f94abb9f2706edcc71c6f7a0b8571b2267ebc9acad6045",
+    "nova-wisp-runtime.js": "ee092ae2a67100bf206d5d784f744f577ad2000635290c7144f6b7d53f6a4007",
+    "obstacle-panel-runtime.js": "7d1790ea548d88500942b4613451495dbc34aa3d796e990dec8a231d9f59f1b6",
+    "responsive-map-runtime.js": "b03f87fc9562e0d2241d35c0885611afb328b812212a93e2904f46ad0f3a2a73",
+    "selected-panel-runtime.js": "aafe0595ac8905012e9ee6c621eed2c528e2d4a191d66b1b8e75799ca340351c",
+    "selected-range-runtime.js": "311c9b0df97d04c10e384acdc8cb15b4dd7192d0932876e0abdcbae21fe66753",
+    "star-cannon-runtime.js": "9d2be794ec688de87c737526cabfa60f4ee98fd61a50288fd5371292b7a73aec",
+    "starburst-fusion-runtime.js": "7e2c23aa0ede3e98a22a732721340ffd6eb30b00a39ca844237fd563922ef0c9",
+    "unit-index-runtime.js": "90f6297c850fe7b00c597cdae9146330fbae606679109c1cf16492cd6a570a1e",
+    "void-common-runtime.js": "1f9588afa68af7555a0d16bb31855b957ec371b140108d1656ea929ec7124bbf",
+    "void-golem-runtime.js": "945fbd0d30601e416a903cac1922f377e95cc6d5f03cad4c8ab486dbcb4b580d",
+    "void-hound-runtime.js": "01d13c6757d4473d609f6152819ca94c38a5280e23ffa90cdbaba1902c70b5c9",
+    "world-selection-runtime.js": "dff0fdc5b1ef18ec816f208db5cae79a0a255a911fa7b16653f1596115692ec8"
+  },
+  "autosavePreexisting": {
+    "file": "Tower Defense.json.autosave",
+    "sha256": "61f7dbb44cc0a30df8e907deb5157bdf0f5439010df801e7f7f3d36d41f9936d"
+  },
+  "finalChecks": {
+    "mainProjectUnchanged": true,
+    "allSceneDataExceptEventsUnchanged": true,
+    "otherRuntimeSourcesUnchanged": true,
+    "preexistingAutosaveUntouched": true,
+    "void-hound-runtime.jsOnlyIndexGuardChanged": true,
+    "void-golem-runtime.jsOnlyIndexGuardChanged": true,
+    "projectAndSplitJSONParse": true,
+    "runtimeSourceMatchesAll26Events": true
+  },
+  "strictValidation": {
+    "passed": false,
+    "completedChecks": 3674,
+    "stoppedAt": "No backup file: Tower Defense.json.autosave"
+  }
+}

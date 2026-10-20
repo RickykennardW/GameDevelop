@@ -3356,6 +3356,52 @@
         "name": "assets/towers/starburst_cannon/Starburst_Bolt_2.svg",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "assets/ui/index/portraits/StarCannon_IndexPortrait.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/index/portraits/StarCannon_IndexPortrait.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/ui/index/portraits/StarburstCannon_IndexPortrait.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/ui/index/portraits/StarburstCannon_IndexPortrait.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/ui/purchase_denied.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/audio/ui/purchase_denied.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/gameplay/sonar_warning.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/audio/gameplay/sonar_warning.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/audio/gameplay/sonar_critical.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/audio/gameplay/sonar_critical.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
       }
     ]
   },

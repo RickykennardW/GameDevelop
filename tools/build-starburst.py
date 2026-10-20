@@ -82,6 +82,7 @@ def apply_starburst(project,scene):
   child=len(scene['events'][0]['events']);scene['events'][0]['events'].append(event);mapping.append([0,[child],'starburst-fusion-runtime.js']);mapping_path.write_text(json.dumps(mapping,indent=2)+'\n')
  import runpy
  runpy.run_path(str(ROOT/'tools/build-fusion-archive.py'))['apply_archive'](scene)
+ if (ROOT/'tools/build-index-showcase.py').is_file():runpy.run_path(str(ROOT/'tools/build-index-showcase.py'))['apply_index'](project,scene)
  return cfg
 if __name__=='__main__':
  project=json.loads((ROOT/'Tower Defense.json').read_text());scene=json.loads((ROOT/'layouts/game-scene.json').read_text())

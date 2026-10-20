@@ -155,6 +155,7 @@ if(!g){
    rig.body.position.set(0,0);rig.body.tint=g.frameTime<state.hitUntil?0xeee3ff:0xffffff;rig.body.alpha=state.dying?Math.max(0,1-(g.frameTime-state.deathStart)/config.DeathDuration):1;
   }
   for(const o of scene.getObjects('IndexMonsterImage')){
+   if(o.__archivePortraitOwned){if(o.__golemPortraitRig)o.__golemPortraitRig.visible=false;continue;}
    if(o.isHidden()||!o.getAnimationName().startsWith('VoidGolem')){if(o.__golemPortraitRig)o.__golemPortraitRig.visible=false;continue;}
    let rig=o.__golemPortraitRig;
    if(!rig||rig.destroyed){rig=o.__golemPortraitRig=new PIXI.Sprite(g.texture('Down','Idle',0));const cleanup=()=>{if(!rig.destroyed)rig.destroy({texture:false,baseTexture:false});o.unregisterDestroyCallback(cleanup);};o.registerDestroyCallback(cleanup);}

@@ -8,7 +8,7 @@
  const resourceHashes=game.getGameData().resources.resources.length,observed=[];
  open();
  for(let i=0;i<D.ids.length;i++){
-  const id=D.ids[i],meta=D.portraits[id],texture=D.texture(id),object=S.__unitIndex.cards[i].sprite,sprite=object.__golemPortraitRig?.visible?object.__golemPortraitRig:object.getRendererObject();
+  const id=D.ids[i],meta=D.portraits[id],texture=D.texture(id),object=S.__unitIndex.cards[i].sprite,sprite=object.__archivePortrait?.sprite||(object.__golemPortraitRig?.visible?object.__golemPortraitRig:object.getRendererObject());
   ok(meta.Animation.endsWith('Idle_Down'),'existing front/down Idle chosen for '+id);
   ok(sprite.texture===texture,'Index shares canonical single-frame portrait '+id);
   ok(sprite.tint===0,'locked portrait remains a solid black silhouette '+id);

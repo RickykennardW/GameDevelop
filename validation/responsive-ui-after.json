@@ -1,0 +1,414 @@
+{
+  "result": {
+    "resizeSequence": [
+      {
+        "viewport": [
+          1280,
+          720
+        ],
+        "resolution": [
+          1280,
+          720
+        ],
+        "shop": {
+          "x": 1048,
+          "y": 8,
+          "w": 224,
+          "h": 704
+        },
+        "card": {
+          "x": 1064,
+          "y": 80,
+          "w": 84,
+          "h": 112
+        },
+        "hud": {
+          "x": 16,
+          "y": 16,
+          "w": 316,
+          "h": 44
+        },
+        "index": {
+          "x": 16,
+          "y": 16,
+          "w": 1248,
+          "h": 688,
+          "content": {
+            "x": 330,
+            "y": 142,
+            "w": 916,
+            "h": 524
+          },
+          "collection": {
+            "x": 34,
+            "y": 142,
+            "w": 280,
+            "h": 524
+          },
+          "detail": {
+            "x": 330,
+            "y": 142,
+            "w": 916,
+            "h": 524
+          },
+          "mobile": false
+        },
+        "indexObjects": 70,
+        "checks": [
+          "finite resolution",
+          "small card never grows beyond design"
+        ]
+      },
+      {
+        "viewport": [
+          960,
+          600
+        ],
+        "resolution": [
+          960,
+          600
+        ],
+        "shop": {
+          "x": 728,
+          "y": 8,
+          "w": 224,
+          "h": 584
+        },
+        "card": {
+          "x": 744,
+          "y": 80,
+          "w": 84,
+          "h": 112
+        },
+        "hud": {
+          "x": 16,
+          "y": 16,
+          "w": 316,
+          "h": 44
+        },
+        "index": {
+          "x": 16,
+          "y": 16,
+          "w": 928,
+          "h": 568,
+          "content": {
+            "x": 258.8,
+            "y": 142,
+            "w": 667.2,
+            "h": 404
+          },
+          "collection": {
+            "x": 34,
+            "y": 142,
+            "w": 208.8,
+            "h": 404
+          },
+          "detail": {
+            "x": 258.8,
+            "y": 142,
+            "w": 667.2,
+            "h": 404
+          },
+          "mobile": false
+        },
+        "indexObjects": 70,
+        "checks": [
+          "finite resolution",
+          "small card never grows beyond design"
+        ]
+      },
+      {
+        "viewport": [
+          640,
+          400
+        ],
+        "resolution": [
+          960,
+          600
+        ],
+        "shop": {
+          "x": 728,
+          "y": 8,
+          "w": 224,
+          "h": 584
+        },
+        "card": {
+          "x": 744,
+          "y": 80,
+          "w": 84,
+          "h": 112
+        },
+        "hud": {
+          "x": 16,
+          "y": 16,
+          "w": 316,
+          "h": 44
+        },
+        "index": {
+          "x": 16,
+          "y": 16,
+          "w": 928,
+          "h": 568,
+          "content": {
+            "x": 258.8,
+            "y": 142,
+            "w": 667.2,
+            "h": 404
+          },
+          "collection": {
+            "x": 34,
+            "y": 142,
+            "w": 208.8,
+            "h": 404
+          },
+          "detail": {
+            "x": 258.8,
+            "y": 142,
+            "w": 667.2,
+            "h": 404
+          },
+          "mobile": false
+        },
+        "indexObjects": 70,
+        "checks": [
+          "finite resolution",
+          "small card never grows beyond design"
+        ]
+      },
+      {
+        "viewport": [
+          480,
+          300
+        ],
+        "resolution": [
+          960,
+          600
+        ],
+        "shop": {
+          "x": 728,
+          "y": 8,
+          "w": 224,
+          "h": 584
+        },
+        "card": {
+          "x": 744,
+          "y": 80,
+          "w": 84,
+          "h": 112
+        },
+        "hud": {
+          "x": 16,
+          "y": 16,
+          "w": 316,
+          "h": 44
+        },
+        "index": {
+          "x": 16,
+          "y": 16,
+          "w": 928,
+          "h": 568,
+          "content": {
+            "x": 258.8,
+            "y": 142,
+            "w": 667.2,
+            "h": 404
+          },
+          "collection": {
+            "x": 34,
+            "y": 142,
+            "w": 208.8,
+            "h": 404
+          },
+          "detail": {
+            "x": 258.8,
+            "y": 142,
+            "w": 667.2,
+            "h": 404
+          },
+          "mobile": false
+        },
+        "indexObjects": 70,
+        "checks": [
+          "finite resolution",
+          "small card never grows beyond design"
+        ]
+      },
+      {
+        "viewport": [
+          1280,
+          720
+        ],
+        "resolution": [
+          1280,
+          720
+        ],
+        "shop": {
+          "x": 1048,
+          "y": 8,
+          "w": 224,
+          "h": 704
+        },
+        "card": {
+          "x": 1064,
+          "y": 80,
+          "w": 84,
+          "h": 112
+        },
+        "hud": {
+          "x": 16,
+          "y": 16,
+          "w": 316,
+          "h": 44
+        },
+        "index": {
+          "x": 16,
+          "y": 16,
+          "w": 1248,
+          "h": 688,
+          "content": {
+            "x": 330,
+            "y": 142,
+            "w": 916,
+            "h": 524
+          },
+          "collection": {
+            "x": 34,
+            "y": 142,
+            "w": 280,
+            "h": 524
+          },
+          "detail": {
+            "x": 330,
+            "y": 142,
+            "w": 916,
+            "h": 524
+          },
+          "mobile": false
+        },
+        "indexObjects": 70,
+        "checks": [
+          "finite resolution",
+          "small card never grows beyond design"
+        ]
+      },
+      {
+        "viewport": [
+          640,
+          400
+        ],
+        "resolution": [
+          960,
+          600
+        ],
+        "shop": {
+          "x": 728,
+          "y": 8,
+          "w": 224,
+          "h": 584
+        },
+        "card": {
+          "x": 744,
+          "y": 80,
+          "w": 84,
+          "h": 112
+        },
+        "hud": {
+          "x": 16,
+          "y": 16,
+          "w": 316,
+          "h": 44
+        },
+        "index": {
+          "x": 16,
+          "y": 16,
+          "w": 928,
+          "h": 568,
+          "content": {
+            "x": 258.8,
+            "y": 142,
+            "w": 667.2,
+            "h": 404
+          },
+          "collection": {
+            "x": 34,
+            "y": 142,
+            "w": 208.8,
+            "h": 404
+          },
+          "detail": {
+            "x": 258.8,
+            "y": 142,
+            "w": 667.2,
+            "h": 404
+          },
+          "mobile": false
+        },
+        "indexObjects": 70,
+        "checks": [
+          "finite resolution",
+          "small card never grows beyond design"
+        ]
+      },
+      {
+        "viewport": [
+          1280,
+          720
+        ],
+        "resolution": [
+          1280,
+          720
+        ],
+        "shop": {
+          "x": 1048,
+          "y": 8,
+          "w": 224,
+          "h": 704
+        },
+        "card": {
+          "x": 1064,
+          "y": 80,
+          "w": 84,
+          "h": 112
+        },
+        "hud": {
+          "x": 16,
+          "y": 16,
+          "w": 316,
+          "h": 44
+        },
+        "index": {
+          "x": 16,
+          "y": 16,
+          "w": 1248,
+          "h": 688,
+          "content": {
+            "x": 330,
+            "y": 142,
+            "w": 916,
+            "h": 524
+          },
+          "collection": {
+            "x": 34,
+            "y": 142,
+            "w": 280,
+            "h": 524
+          },
+          "detail": {
+            "x": 330,
+            "y": 142,
+            "w": 916,
+            "h": 524
+          },
+          "mobile": false
+        },
+        "indexObjects": 70,
+        "checks": [
+          "finite resolution",
+          "small card never grows beyond design"
+        ]
+      }
+    ]
+  },
+  "progress": [],
+  "consoleErrors": []
+}

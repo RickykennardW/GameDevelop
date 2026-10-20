@@ -61,6 +61,7 @@ if(!hound){
   }
   // Index portrait uses a single atlas cell, never the entire sprite sheet.
   for(const o of get('IndexMonsterImage')){
+   if(o.__archivePortraitOwned)continue;
    if(o.isHidden()||!o.getAnimationName().startsWith('Hound'))continue;
    o.updatePreRender(scene);const sprite=o.getRendererObject(),texture=hound.texture('Down',0,0);sprite.texture=texture;sprite.anchor.set(.5);sprite.position.set(o.getCenterXInScene(),o.getCenterYInScene());sprite.scale.set(o.getWidth()/texture.width,o.getHeight()/texture.height);sprite.rotation=0;
   }

@@ -1,0 +1,23 @@
+{
+  "method": "built-in image_gen",
+  "useCase": "stylized-concept",
+  "assets": [
+    {
+      "id": "starcannon",
+      "prompt": "Use case: stylized-concept. Asset type: final high-resolution transparent Index Portrait for Star Cannon in Celestial Void, a premium fantasy cosmic tower-defense encyclopedia. Input image 1 is an IDENTITY reference of the existing base Star Cannon, not an edit target. Draw a NEW three-quarter low isometric showcase of exactly this same single-barrel tower, camera around 25 to 30 degrees above horizontal so the barrel side faces, support, energy core and circular pedestal have clear dimensional depth. Ivory silver armor, polished celestial gold frame and trim, cobalt and violet crystal fins, bright violet-blue nebula core. ONE SINGLE barrel, not twin/triple: pointed stellar muzzle silhouette with readable energy bore; retain the reference identity and compact circular ancient-tech base. Painted polished fantasy game illustration, crisp material planes, restrained luminous energy, high detail suitable at 300px. The entire muzzle, crystals and pedestal fully visible with generous 12 percent clear transparent margin on all sides. One isolated complete tower, aimed diagonally to the upper right, composition balanced and centered. TRUE TRANSPARENT RGBA background, no scene, no starfield, no shadow plate, no card/UI/frame, no text/labels/numbers, no watermark. Do not rotate/stretch/reproject the existing top-down sprite; create genuine new perspective artwork. No flying debris or floating extra objects, no projectile, no additional barrels.",
+      "referenceFiles": [
+        "assets/ui/star_cannon/StarCannon_UI_Portrait.png"
+      ],
+      "finalFile": "assets/ui/index/portraits/StarCannon_IndexPortrait.png"
+    },
+    {
+      "id": "starburst",
+      "prompt": "Use case: stylized-concept. Asset type: final high-resolution transparent Index Portrait for STARBURST CANNON Pure Fusion, Celestial Void tower-defense encyclopedia. Image 1 is the actual current top-down Fusion tower identity reference. Image 2 is its original single-barrel parent tower's material/style reference. Generate a NEW three-quarter low isometric showcase of the SAME Starburst, NOT overhead and not a perspective warp of image1. Camera 25 to 30 degrees above horizontal; reveal substantial side faces, barrel lengths, mounting structure and pedestal thickness. Preserve exactly THREE weapon barrels on ONE shared symmetric turret: one noticeably heavy long central stellar lance cannon plus two slimmer rapid-fire side cannons, one each side, all parallel forward and distinct. Each has a pointed blue-violet crystalline stellar muzzle, gold collars and ivory angular armor. The front central heavy muzzle is longest; the two flanking muzzle tips sit slightly behind. Bright round violet-blue fusion energy core centered in the turret mount, swept sapphire-violet crystal fins, ornate ancient celestial gold and silver-white armor, a low circular segmented white-gold pedestal. Clearly more evolved than the single Star Cannon but same family, sacred ancient galaxy technology. Aim diagonally to the upper right; all three barrels discernible with no overlapping muzzle tips. Premium polished painterly fantasy game render, crisp dimensional material planes, controlled blue-violet glow, readable at 300px. Entire object fully contained with 12 percent transparent padding on every side. TRUE TRANSPARENT RGBA background, no stage/scene, no background, no starfield, no cast-shadow rectangle, no text, no captions, no card/frame, no watermark, no additional objects or projectiles. Do not add a fourth barrel, do not turn the pedestal into legs or a vehicle. Static showcase portrait only; the actual gameplay sprite will be kept unchanged.",
+      "referenceFiles": [
+        "assets/towers/starburst_cannon/Starburst_Preview.png",
+        "assets/ui/star_cannon/StarCannon_UI_Portrait.png"
+      ],
+      "finalFile": "assets/ui/index/portraits/StarburstCannon_IndexPortrait.png"
+    }
+  ]
+}

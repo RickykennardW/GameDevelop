@@ -50,12 +50,23 @@ if (!ui || ui.root !== first("TowerShopBox")) {
   container.addChild(ui.mask);
   container.mask = ui.mask;
 }
-// Match the actual Preview/window viewport; keep UI pixels and camera zoom at 1.
+// One resize owner. A bounded design canvas scales once through the renderer,
+// never from an object's previous size or zoom. Retain the last valid canvas
+// while minimized/hidden: native adaptWidth otherwise divides by window height.
 const game = scene.getGame();
 const viewportWidth = Math.round(gdjs.RuntimeGameRenderer.getWindowInnerWidth());
 const viewportHeight = Math.round(gdjs.RuntimeGameRenderer.getWindowInnerHeight());
-if (viewportWidth > 0 && viewportHeight > 0 && (game.getGameResolutionWidth() !== viewportWidth || game.getGameResolutionHeight() !== viewportHeight)) {
-  game.setGameResolutionSize(viewportWidth, viewportHeight);
+const viewport = game.__celestialViewport || (game.__celestialViewport = {minWidth:960,minHeight:540,revision:0});
+if(game.getAdaptGameResolutionAtRuntime())game.setAdaptGameResolutionAtRuntime(false);
+const validViewport=Number.isFinite(viewportWidth)&&Number.isFinite(viewportHeight)&&viewportWidth>=64&&viewportHeight>=64&&!(typeof document!=='undefined'&&document.hidden);
+if (validViewport && (viewport.width!==viewportWidth || viewport.height!==viewportHeight)) {
+  const factor=Math.max(1,viewport.minWidth/viewportWidth,viewport.minHeight/viewportHeight);
+  viewport.width=viewportWidth;viewport.height=viewportHeight;
+  viewport.logicalWidth=Math.round(viewportWidth*factor);viewport.logicalHeight=Math.round(viewportHeight*factor);
+  viewport.revision++;
+}
+if(viewport.logicalWidth && (game.getGameResolutionWidth()!==viewport.logicalWidth || game.getGameResolutionHeight()!==viewport.logicalHeight)){
+  game.setGameResolutionSize(viewport.logicalWidth,viewport.logicalHeight);
   scene.onGameResolutionResized();
 }
 const width = game.getGameResolutionWidth();
@@ -252,13 +263,14 @@ if (!down && ui.wasDown) {
       syncWaveControl();
     }
   }
-  if (!ui.dragging && ui.pressedCard >= 0 && ui.pressedCard === hovered && number("Money") >= catalog[hovered].Cost) variables.get("TowerShopRequestedType").setString(catalog[hovered].Type);
+  if (!ui.dragging && ui.pressedCard >= 0 && ui.pressedCard === hovered) variables.get("TowerShopRequestedType").setString(catalog[hovered].Type);
   ui.pressedCard = -1; ui.pressedControl = ""; ui.dragging = false;
 }
 ui.wasDown = down;
 variables.get("TowerShopScroll").setNumber(scroll);
 hovered = hoveredIndex();
-ui.mask.clear().beginFill(0xffffff).drawRect(geometry.listX, geometry.listY, geometry.listWidth, geometry.listHeight).endFill();
+const listMaskKey=[geometry.listX,geometry.listY,geometry.listWidth,geometry.listHeight].join(':');
+if(ui.listMaskKey!==listMaskKey){ui.mask.clear().beginFill(0xffffff).drawRect(geometry.listX,geometry.listY,geometry.listWidth,geometry.listHeight).endFill();ui.listMaskKey=listMaskKey;}
 ui.cards.forEach((card, i) => {
   const x = geometry.listX + (i % 2) * 92, y = geometry.listY + Math.floor(i / 2) * 120 - scroll;
   card.background.setPosition(x, y); card.background.setWidth(84); card.background.setHeight(112);
@@ -274,7 +286,11 @@ rect("ShopScrollThumb", geometry.trackX, geometry.listY + (maxScroll > 0 ? scrol
 ui.scrollMax = maxScroll; ui.hovered = hovered; ui.ready = ready; ui.overPlay = overPlay;
 ui.refresh = () => {
   const selectedTower = number("SelectedTower") > 0;
-  scene.getLayer("TowerShopList").show(true);
+  const fusion = boolean('FusionActive');
+  scene.getLayer("TowerShopList").show(!fusion);
+  first('AssetPanelTitle').setString(fusion ? 'FUSION' : 'TOWERS');
+  first('AssetPanelSubtitle').setString(fusion ? 'TACTICAL  /  '+scene.getTimeManager().getTimeScale()+'\u00d7' : 'BUILD DEFENSE');
+  first('ShopScrollTrack').hide(fusion);first('ShopScrollThumb').hide(fusion);
   const indicator = first("TilePlacement_Indicator");
   ui.cards.forEach((card, i) => {
     const affordable = number("Money") >= card.item.Cost;
@@ -286,7 +302,7 @@ ui.refresh = () => {
     card.icon.setOpacity(affordable ? 255 : 190);
     card.price.setColor(affordable ? "244;232;255" : "255;120;155");
     card.name.setColor(affordable ? "245;233;255" : "173;150;203");
-    for (const part of [card.background,card.icon,card.name,card.price,card.coin]) part.hide(false);
+    for (const part of [card.background,card.icon,card.name,card.price,card.coin]) part.hide(fusion);
   });
   syncWaveControl();
   const ended = boolean("GameOver"), current = mode();
