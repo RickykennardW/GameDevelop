@@ -1,0 +1,52 @@
+{
+  "result": {
+    "checks": [
+      "MainMenu is configured startup scene",
+      "gameplay does not run behind menu",
+      "exactly one native button per action",
+      "title centered above buttons without overlap",
+      "button centered inside viewport: Start",
+      "button artwork keeps aspect ratio: Start",
+      "button centered inside viewport: Exit",
+      "button artwork keeps aspect ratio: Exit",
+      "background covers viewport without stretching",
+      "original background aspect ratio preserved",
+      "unchanged viewport does not rebuild layout",
+      "zero/minimized viewport retains last valid layout",
+      "hover interpolates smoothly from base: Start",
+      "hover reaches stable1.06 and highlights: Start",
+      "twenty hover cycles restore exact base: Start",
+      "hover interpolates smoothly from base: Exit",
+      "hover reaches stable1.06 and highlights: Exit",
+      "twenty hover cycles restore exact base: Exit",
+      "menu music is started at most once per scene",
+      "native Sacred Void Temple plays at saved mix level",
+      "Exit invokes actual supported GDevelop quit path once",
+      "browser no-op quit stays on menu with honest close-tab message",
+      "Start enters one guarded fade transition",
+      "Start enters existing Game Scene via native scene request",
+      "menu nodes/audio/listeners released and transition requested once",
+      "original map and one-card shop initialize once",
+      "gameplay keeps current Gold/Lives/Wave initialization",
+      "Start preserves archive and unrelated saved progress",
+      "trusted menu audio gesture transfers to existing gameplay mixer"
+    ],
+    "exit": {
+      "nativeQuitCalls": 1,
+      "actualPlatform": "browser",
+      "desktopCloseNotTested": true
+    },
+    "transition": {
+      "scene": "Game Scene",
+      "requests": 1
+    },
+    "audio": {
+      "menuStarts": 1,
+      "clicks": 2,
+      "gameplayUnlocked": true
+    },
+    "nodes": 0
+  },
+  "progress": [],
+  "consoleErrors": []
+}

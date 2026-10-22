@@ -47,8 +47,9 @@ async def main():
             if 'exceptionDetails' in r: raise RuntimeError(r['exceptionDetails'])
             return r.get('result', {}).get('value')
         await call('Runtime.enable'); await call('Log.enable'); await call('Page.reload')
+        ready='__mainMenu' if '--menu' in sys.argv else '__starCannon'
         for _ in range(300):
-            if await js('!!(window.testGame&&testGame.getSceneStack().getCurrentScene()?.__starCannon)'): break
+            if await js('!!(window.testGame&&testGame.getSceneStack().getCurrentScene()?.'+ready+')'): break
             await asyncio.sleep(.1)
         viewport=next((a.split('=',1)[1] for a in sys.argv[3:] if a.startswith('--viewport=')),'1920x1080')
         vw,vh=map(int,viewport.split('x'))

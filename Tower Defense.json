@@ -1,5 +1,5 @@
 {
-  "firstLayout": "",
+  "firstLayout": "MainMenu",
   "gdVersion": {
     "build": 284,
     "major": 5,
@@ -19,7 +19,7 @@
     "sizeOnStartupMode": "",
     "templateSlug": "starting-tile-placement",
     "version": "1.0.0",
-    "name": "Tower Defense",
+    "name": "Starfall Bastion",
     "description": "",
     "author": "",
     "windowWidth": 1280,
@@ -3402,6 +3402,54 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": true
+      },
+      {
+        "name": "assets/ui/main_menu/starfall_bastion_background.png",
+        "file": "assets/ui/main_menu/starfall_bastion_background.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/ui/main_menu/starfall_title.svg",
+        "file": "assets/ui/main_menu/starfall_title.svg",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/ui/main_menu/start_normal.svg",
+        "file": "assets/ui/main_menu/start_normal.svg",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/ui/main_menu/start_hover.svg",
+        "file": "assets/ui/main_menu/start_hover.svg",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/ui/main_menu/exit_normal.svg",
+        "file": "assets/ui/main_menu/exit_normal.svg",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/ui/main_menu/exit_hover.svg",
+        "file": "assets/ui/main_menu/exit_hover.svg",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
       }
     ]
   },
@@ -3412,6 +3460,10 @@
   "objectsGroups": [],
   "variables": [],
   "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/main-menu"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/game-scene"

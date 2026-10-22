@@ -1,0 +1,50 @@
+{
+  "result": {
+    "checks": [
+      "MainMenu is configured startup scene",
+      "gameplay does not run behind menu",
+      "exactly one native button per action",
+      "title centered above buttons without overlap",
+      "button centered inside viewport: Start",
+      "button artwork keeps aspect ratio: Start",
+      "button centered inside viewport: Exit",
+      "button artwork keeps aspect ratio: Exit",
+      "background covers viewport without stretching",
+      "original background aspect ratio preserved",
+      "unchanged viewport does not rebuild layout",
+      "zero/minimized viewport retains last valid layout"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "logical": [
+      1280,
+      720
+    ],
+    "title": [
+      140,
+      125,
+      1000,
+      170
+    ],
+    "buttons": [
+      {
+        "x": 480,
+        "y": 396,
+        "w": 320,
+        "h": 72
+      },
+      {
+        "x": 480,
+        "y": 479,
+        "w": 320,
+        "h": 72
+      }
+    ],
+    "layoutCount": 2,
+    "invalidSizeSimulation": true
+  },
+  "progress": [],
+  "consoleErrors": []
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="72" viewBox="0 0 320 72">
+<defs><linearGradient id="surface" x2="0" y2="1"><stop stop-color="#201c36"/><stop offset="1" stop-color="#0d1124" stop-opacity=".96"/></linearGradient><filter id="glow" x="-20%" y="-70%" width="140%" height="240%"><feGaussianBlur stdDeviation="2.5"/></filter></defs>
+<path d="M18 7H302L313 18V54L302 65H18L7 54V18Z" fill="none" stroke="#8b90bd" stroke-width="3" opacity=".14" filter="url(#glow)"/>
+<path d="M18 7H302L313 18V54L302 65H18L7 54V18Z" fill="url(#surface)" stroke="#ba9a69" stroke-width="1.25"/>
+<path d="M23 12H297L308 22V50L297 60H23L12 50V22Z" fill="none" stroke="#8b90bd" stroke-width=".65" opacity=".35"/>
+<path d="M32 7H82M238 7H288M32 65H82M238 65H288" stroke="#ba9a69" stroke-width="2"/>
+<path d="M27 32L31 36L27 40L23 36Z M293 32L297 36L293 40L289 36Z" fill="#ba9a69" opacity=".8"/></svg>

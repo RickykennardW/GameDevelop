@@ -24,3 +24,9 @@ while cursor<len(source):
         if result!=source:path.write_text(result,encoding='utf-8')
         break
     cursor+=length
+menu_path=ROOT/'layouts/main-menu.json'
+if menu_path.exists():
+    menu_source=menu_path.read_text(encoding='utf-8');menu=json.loads(menu_source)
+    menu['events'][0]['inlineCode']=(ROOT/'tools/main-menu-runtime.js').read_text(encoding='utf-8-sig').splitlines()
+    updated=json.dumps(menu,ensure_ascii=False,indent=2)+'\n'
+    if updated!=menu_source:menu_path.write_text(updated,encoding='utf-8')

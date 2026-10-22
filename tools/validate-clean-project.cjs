@@ -26,7 +26,11 @@ require(path.join(dir,'libGD.js'))({locateFile:f=>path.join(dir,f)}).then(gd=>{t
  }
  console.log('PARSER: scenes='+project.getLayoutsCount()+', objects='+project.getLayoutAt(0).getObjects().getObjectsCount());
  const diagnostics=new gd.DiagnosticReport(),includes=new gd.SetString(),gen=new gd.LayoutCodeGenerator(project);
- const code=gen.generateLayoutCompleteCode(project.getLayoutAt(0),includes,diagnostics,true);fs.writeFileSync(path.join(dir,'scene.js'),code);new vm.Script(code);
+ for(let i=0;i<project.getLayoutsCount();i++){
+  const layout=project.getLayoutAt(i),code=gen.generateLayoutCompleteCode(layout,includes,diagnostics,true);
+  fs.writeFileSync(path.join(dir,layout.getName()==='Game Scene'?'scene.js':'main-menu-scene.js'),code);new vm.Script(code);
+  console.log('COMPILED',layout.getName());
+ }
  console.log('SCENE COMPILE diagnostics',diagnostics.count());if(diagnostics.count())throw new Error('Scene diagnostics must be zero');for(let i=0;i<diagnostics.count();i++){const d=diagnostics.get(i);console.log(d.getMessage(),d.getObjectName(),d.getActualValue(),d.getExpectedValue());}
  const bg=new gd.BehaviorCodeGenerator(project);
  for(const {ext,b,map} of maps){const ns=gd.MetadataDeclarationHelper.getBehaviorFunctionCodeNamespace(b,gd.MetadataDeclarationHelper.getExtensionCodeNamespacePrefix(ext));const code=bg.generateRuntimeBehaviorCompleteCode(ext,b,ns,map,includes,true);new vm.Script(code);fs.writeFileSync(path.join(dir,ext.getName()+'_'+b.getName()+'.js'),code);fs.writeFileSync(path.join(dir,'gdjs-evtsext__'+ext.getName().toLowerCase()+'__'+b.getName().toLowerCase()+'.js'),code);}
@@ -41,7 +45,8 @@ require(path.join(dir,'libGD.js'))({locateFile:f=>path.join(dir,f)}).then(gd=>{t
  adapter.copyFile=(a,b)=>{try{fs.mkdirSync(path.dirname(b),{recursive:true});fs.copyFileSync(a,b);return true;}catch(e){console.log('COPY FAIL',a,b);return false;}};
  adapter.writeToFile=(a,b)=>{fs.mkdirSync(path.dirname(a),{recursive:true});fs.writeFileSync(a,b);return true;};adapter.readFile=d=>fs.existsSync(d)?fs.readFileSync(d,'utf8'):'';
  adapter.makeAbsolute=(a,b)=>path.resolve(b||root,a);adapter.makeRelative=(a,b)=>path.relative(b,a);adapter.fileExists=d=>fs.existsSync(d);adapter.readDir=d=>{const v=new gd.VectorString();for(const n of fs.readdirSync(d))v.push_back(n);return v;};
- const exporter=new gd.Exporter(adapter,path.dirname(runtime)),opts=new gd.PreviewExportOptions(project,out);opts.setLayoutName('Game Scene');opts.setShouldClearExportFolder(true);exporter.setCodeOutputDirectory(dir);
+ const exporter=new gd.Exporter(adapter,path.dirname(runtime)),opts=new gd.PreviewExportOptions(project,out);
+ const requested=process.argv.find(a=>a.startsWith('--scene='));opts.setLayoutName(requested?requested.slice(8):'Game Scene');opts.setShouldClearExportFolder(true);exporter.setCodeOutputDirectory(dir);
  project.setProjectFile(path.join(root,'Tower Defense.json'));console.log('EXPORT',exporter.exportProjectForPixiPreview(opts),exporter.getLastError());
  // The headless native exporter lacks the IDE's extension bundling coordinator.
  // Supply native-generated behavior code, with no gameplay shims or legacy libraries.
