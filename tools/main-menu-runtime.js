@@ -7,7 +7,7 @@ if(!menu){
  menu.objects=Object.fromEntries(['MenuBackground','MenuTitle','MenuStart','MenuExit','MenuStartLabel','MenuExitLabel','MenuSubtitle','MenuStatus'].map(n=>[n,scene.getObjects(n)[0]||scene.createObject(n)]));
  menu.buttons=['Start','Exit'].map(id=>({id,frame:menu.objects['Menu'+id],label:menu.objects['Menu'+id+'Label'],scale:1}));
  const gameplay=game.getSceneAndExtensionsData(config.GameplayScene).sceneData;
- const audio=new gdjs.VariablesContainer(gameplay.variables).get('AudioConfig').toJSObject();
+ const audio=new gdjs.VariablesContainer(gameplay.variables.filter(v=>v.name==='AudioConfig')).get('AudioConfig').toJSObject();
  let saved=game.__celestialAudioSettings;try{if(!saved)saved=JSON.parse(localStorage.getItem(audio.StorageKey)||'null');}catch(e){}
  menu.settings={Master:audio.Master,Music:audio.MusicVolume,SFX:audio.SFXVolume,UI:audio.UIVolume,MuteMusic:false,MuteSFX:false,...saved};
  menu.audioConfig=audio;menu.audio={music:null,unlocked:false,starts:0,clicks:0,gain:0};
@@ -56,15 +56,22 @@ const dt=Math.min(.1,Math.max(0,scene.getTimeManager().getElapsedTime()/1000));m
 const vw=Math.round(gdjs.RuntimeGameRenderer.getWindowInnerWidth()),vh=Math.round(gdjs.RuntimeGameRenderer.getWindowInnerHeight());
 if(game.getAdaptGameResolutionAtRuntime())game.setAdaptGameResolutionAtRuntime(false);
 if(Number.isFinite(vw)&&Number.isFinite(vh)&&vw>=64&&vh>=64&&!document.hidden){
+ menu.viewport={w:vw,h:vh};
  const factor=Math.max(1,960/vw,540/vh),w=Math.round(vw*factor),h=Math.round(vh*factor);
  if(game.getGameResolutionWidth()!==w||game.getGameResolutionHeight()!==h){game.setGameResolutionSize(w,h);scene.onGameResolutionResized();}
 }
-const W=game.getGameResolutionWidth(),H=game.getGameResolutionHeight(),scale=Math.min(W/1280,H/720,1.5),key=W+':'+H;
+const W=game.getGameResolutionWidth(),H=game.getGameResolutionHeight(),scale=Math.min(W/1280,H/720,1.5),key=[W,H,menu.viewport?.w,menu.viewport?.h].join(':');
 const layer=scene.getLayer('MenuUI');layer.setCameraZoom(1);layer.setCameraX(W/2);layer.setCameraY(H/2);
 scene.getLayer('').setCameraZoom(1);scene.getLayer('').setCameraX(W/2);scene.getLayer('').setCameraY(H/2);
 const O=menu.objects;
 if(menu.layoutKey!==key){
  menu.layoutKey=key;menu.layoutCount++;menu.geometry={w:W,h:H,scale};
+ const displayScale=Math.min((menu.viewport?.w||W)/W,(menu.viewport?.h||H)/H);
+ // Keep action labels readable even when the renderer scales a small window.
+ O.MenuStartLabel.setCharacterSize(Math.max(18,Math.ceil(12/(scale*displayScale))));
+ O.MenuExitLabel.setCharacterSize(Math.max(15,Math.ceil(11/(scale*displayScale))));
+ O.MenuSubtitle.setCharacterSize(Math.max(10,Math.ceil(8/(scale*displayScale))));
+ O.MenuStatus.setCharacterSize(Math.max(12,Math.ceil(11/(scale*displayScale))));
  O.MenuBackground.setScale(1);const fit=Math.max(W/O.MenuBackground.getWidth(),H/O.MenuBackground.getHeight());O.MenuBackground.setScale(fit);O.MenuBackground.setPosition((W-O.MenuBackground.getWidth())/2,(H-O.MenuBackground.getHeight())/2);
  O.MenuTitle.setScale(scale);O.MenuTitle.setPosition((W-O.MenuTitle.getWidth())/2,H/2-150*scale-O.MenuTitle.getHeight()/2);
  for(const button of menu.buttons){button.x=W/2;button.y=H/2+(button.id==='Start'?72:155)*scale;button.baseScale=scale;button.rect={x:button.x-160*scale,y:button.y-36*scale,w:320*scale,h:72*scale};}

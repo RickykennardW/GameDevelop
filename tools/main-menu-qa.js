@@ -10,6 +10,8 @@
  ok(Math.abs(O.MenuTitle.getCenterXInScene()-W/2)<.1&&O.MenuTitle.getY()>0&&O.MenuTitle.getY()+O.MenuTitle.getHeight()<M.buttons[0].rect.y,'title centered above buttons without overlap');
  for(const b of M.buttons){ok(Math.abs(b.x-W/2)<.1&&b.rect.x>=0&&b.rect.y>=0&&b.rect.x+b.rect.w<=W&&b.rect.y+b.rect.h<=H,'button centered inside viewport: '+b.id);ok(Math.abs(b.frame.getScaleX()-b.frame.getScaleY())<.00001,'button artwork keeps aspect ratio: '+b.id);}
  ok(O.MenuBackground.getWidth()>=W-.1&&O.MenuBackground.getHeight()>=H-.1,'background covers viewport without stretching');
+ const physical=G.getRenderer().getCanvas().getBoundingClientRect().width/W;
+ ok(O.MenuStartLabel.getCharacterSize()*O.MenuStartLabel.getScaleX()*physical>=11.99&&O.MenuExitLabel.getCharacterSize()*O.MenuExitLabel.getScaleX()*physical>=10.99,'action labels preserve readable minimum font in small windows');
  ok(Math.abs(O.MenuBackground.getWidth()/O.MenuBackground.getHeight()-1672/941)<.002,'original background aspect ratio preserved');
  const layout=M.layoutCount;step(10);ok(M.layoutCount===layout,'unchanged viewport does not rebuild layout');
  const vw=gdjs.RuntimeGameRenderer.getWindowInnerWidth,vh=gdjs.RuntimeGameRenderer.getWindowInnerHeight;
@@ -26,7 +28,7 @@
  const renderer=G.getRenderer(),stop=renderer.stopGame;let quits=0;renderer.stopGame=function(...args){quits++;return stop.apply(this,args);};
  try{click(M.buttons[1]);step(12);ok(quits===1&&M.exitAttempts===1,'Exit invokes actual supported GDevelop quit path once');ok(G.getSceneStack().getCurrentScene()===S&&M.exitPlatform==='browser'&&O.MenuStatus.getString().includes('cannot close'),'browser no-op quit stays on menu with honest close-tab message');}finally{renderer.stopGame=stop;}
  localStorage.setItem('starfallMenuUnrelatedCheck','preserve');
- localStorage.setItem('celestialVoidFusionDiscovery.v1',JSON.stringify({version:1,entries:{StarburstCannon:{discovered:true,variants:{pure_52_25:true}}}}));
+ if(mode!=='regression')localStorage.setItem('celestialVoidFusionDiscovery.v1',JSON.stringify({version:1,entries:{StarburstCannon:{discovered:true,variants:{pure_52_25:true}}}}));
  click(M.buttons[0]);ok(!!M.transition&&M.sceneRequests===0,'Start enters one guarded fade transition');I.onMouseButtonPressed(0);step(5);I.onMouseButtonReleased(0);step();G.pause(false);
  for(let i=0;i<200;i++){if(G.getSceneStack().getCurrentScene()?.__starCannon)break;await wait(25);}G.pause(true);
  const next=G.getSceneStack().getCurrentScene();ok(next.getName()==='Game Scene'&&!!next.__starCannon,'Start enters existing Game Scene via native scene request');
@@ -34,7 +36,7 @@
  ok(M.disposed&&M.fade.destroyed&&M.particles.destroyed&&M.sceneRequests===1,'menu nodes/audio/listeners released and transition requested once');
  ok(next.getObjects('Monster_Path').length===82&&next.__towerShopUI.cards.length===1&&next.getObjects('StarCannonTower').length===0,'original map and one-card shop initialize once');
  ok(next.getVariables().get('Money').getAsNumber()===50000&&next.getVariables().get('Lives').getAsNumber()===10&&next.getVariables().get('Wave').getAsNumber()===0,'gameplay keeps current Gold/Lives/Wave initialization');
- ok(G.__fusionArchive.has('StarburstCannon')&&localStorage.getItem('starfallMenuUnrelatedCheck')==='preserve','Start preserves archive and unrelated saved progress');
+ ok(G.__fusionArchive.has('StarburstCannon')===(mode!=='regression')&&localStorage.getItem('starfallMenuUnrelatedCheck')==='preserve','Start preserves archive and unrelated saved progress');
  ok(next.__audio.unlocked,'trusted menu audio gesture transfers to existing gameplay mixer');
  return{checks,exit:{nativeQuitCalls:quits,actualPlatform:M.exitPlatform,desktopCloseNotTested:true},transition:{scene:next.getName(),requests:M.sceneRequests},audio:{menuStarts:M.audio.starts,clicks:M.audio.clicks,gameplayUnlocked:next.__audio.unlocked},nodes:M.particles.children?.length||0};
 })()

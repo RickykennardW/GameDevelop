@@ -1,0 +1,20 @@
+{
+  "gameplayUnchanged": true,
+  "existingResourceMappingsUnchanged": true,
+  "audioFilesUnchanged": true,
+  "firstLayout": "MainMenu",
+  "sceneOrder": [
+    "/layouts/main-menu",
+    "/layouts/game-scene"
+  ],
+  "resources": 413,
+  "newResources": [
+    "assets/ui/main_menu/starfall_bastion_background.png",
+    "assets/ui/main_menu/starfall_title.svg",
+    "assets/ui/main_menu/start_normal.svg",
+    "assets/ui/main_menu/start_hover.svg",
+    "assets/ui/main_menu/exit_normal.svg",
+    "assets/ui/main_menu/exit_hover.svg"
+  ],
+  "backupFilesCreated": false
+}

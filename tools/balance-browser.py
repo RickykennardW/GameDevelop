@@ -70,6 +70,8 @@ async def main():
                     await asyncio.sleep(.2)
                     result['resizeSequence'].append(await js(Path(sys.argv[1]).read_text(encoding='utf-8')))
             else: result = await js(Path(sys.argv[1]).read_text(encoding='utf-8'))
+            followup=next((a.split('=',1)[1] for a in sys.argv[3:] if a.startswith('--then=')),None)
+            if followup:result['followup']=await js(Path(followup).read_text(encoding='utf-8'))
         except Exception as exc:
             Path(sys.argv[2]).write_text(json.dumps(dict(failure=str(exc),progress=progress,consoleErrors=errors),indent=2),encoding='utf-8'); raise
         if '--reload-check' in sys.argv:

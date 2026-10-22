@@ -40,28 +40,29 @@ for scene in scenes:
         if v['type']=='structure':return {c['name']:variable_value(c) for c in v.get('children',[])}
         return v.get('value')
     variables={v['name']:variable_value(v) for v in scene['variables']}
-    component=variables['StarComponentConfig'];star=variables['StarCannonConfig']
-    expected={f'{a}_{b}' for a in range(6) for b in range(6) if not(a>=3 and b>=3)}
-    ok(set(component['States'])==expected and star['MaxLevel']==5,'Nova Spike complete 27-state matrix / cap5')
-    for key,meta in component['States'].items():
-        for part in ['Base','Turret']:
-            ok(all(isinstance(q,list) and len(q)==2 and all(isinstance(n,(int,float)) for n in q) for q in meta[part]['Hull']),'Native numeric selection hull pairs: '+key+'/'+part)
-        ok(len(meta['Turret']['Muzzles'])==(2 if int(key.split('_')[1])>=3 else 1),'Nova muzzle count: '+key)
-    portraits=variables.get('MonsterPortraitConfig',{})
-    portrait_object=next(o for o in scene['objects'] if o['name']=='IndexMonsterImage')
-    for id,meta in portraits.items():
-        animation=next(a for a in portrait_object['animations'] if a['name']==meta['Animation'])
-        ok(meta['Animation']==variables['EnemyTypes'][id]['Animation'] and 'Idle' in meta['Animation'],'Portrait uses existing canonical idle animation: '+id)
-        ok(meta['Image']==animation['directions'][0]['sprites'][0]['image'] and meta['Image'] in byname,'Portrait uses original first idle frame resource: '+id)
-        with Image.open(ROOT/byname[meta['Image']]['file']) as original:
-            im=original.convert('RGBA')
-            if 'Frame' in meta:
-                x,y,w,h=meta['Frame'];ok(x>=0 and y>=0 and x+w<=im.width and y+h<=im.height,'Portrait crop stays inside atlas: '+id)
-                im=im.crop((x,y,x+w,y+h))
-            alpha=im.getchannel('A');ok(alpha.getextrema()[0]==0 and alpha.getextrema()[1]>0,'Portrait preserves actual transparent background: '+id)
-            l,t,r,b=alpha.point(lambda a:255 if a>=8 else 0).getbbox()
-            ok(meta['VisualBounds']==[l,t,r-l,b-t],'Portrait visual bounds match original alpha pixels: '+id)
-    ok(set(portraits)=={id for id,stats in variables['EnemyTypes'].items() if stats.get('Animation') in {a['name'] for a in portrait_object['animations']}},'Every active Index monster has one portrait configuration')
+    if 'StarComponentConfig' in variables:
+        component=variables['StarComponentConfig'];star=variables['StarCannonConfig']
+        expected={f'{a}_{b}' for a in range(6) for b in range(6) if not(a>=3 and b>=3)}
+        ok(set(component['States'])==expected and star['MaxLevel']==5,'Nova Spike complete 27-state matrix / cap5')
+        for key,meta in component['States'].items():
+            for part in ['Base','Turret']:
+                ok(all(isinstance(q,list) and len(q)==2 and all(isinstance(n,(int,float)) for n in q) for q in meta[part]['Hull']),'Native numeric selection hull pairs: '+key+'/'+part)
+            ok(len(meta['Turret']['Muzzles'])==(2 if int(key.split('_')[1])>=3 else 1),'Nova muzzle count: '+key)
+        portraits=variables.get('MonsterPortraitConfig',{})
+        portrait_object=next(o for o in scene['objects'] if o['name']=='IndexMonsterImage')
+        for id,meta in portraits.items():
+            animation=next(a for a in portrait_object['animations'] if a['name']==meta['Animation'])
+            ok(meta['Animation']==variables['EnemyTypes'][id]['Animation'] and 'Idle' in meta['Animation'],'Portrait uses existing canonical idle animation: '+id)
+            ok(meta['Image']==animation['directions'][0]['sprites'][0]['image'] and meta['Image'] in byname,'Portrait uses original first idle frame resource: '+id)
+            with Image.open(ROOT/byname[meta['Image']]['file']) as original:
+                im=original.convert('RGBA')
+                if 'Frame' in meta:
+                    x,y,w,h=meta['Frame'];ok(x>=0 and y>=0 and x+w<=im.width and y+h<=im.height,'Portrait crop stays inside atlas: '+id)
+                    im=im.crop((x,y,x+w,y+h))
+                alpha=im.getchannel('A');ok(alpha.getextrema()[0]==0 and alpha.getextrema()[1]>0,'Portrait preserves actual transparent background: '+id)
+                l,t,r,b=alpha.point(lambda a:255 if a>=8 else 0).getbbox()
+                ok(meta['VisualBounds']==[l,t,r-l,b-t],'Portrait visual bounds match original alpha pixels: '+id)
+        ok(set(portraits)=={id for id,stats in variables['EnemyTypes'].items() if stats.get('Animation') in {a['name'] for a in portrait_object['animations']}},'Every active Index monster has one portrait configuration')
     names={o['name'] for o in scene['objects']}|{o['name'] for o in p['objects']}
     layers={l['name'] for l in scene['layers']}
     ok(len(names)==len(scene['objects'])+len(p['objects']),'Object names unique')
@@ -85,11 +86,19 @@ for scene in scenes:
             for v in value:media(v)
     media(scene['objects'])
 mapping=read('tools/source-mapping.json')
+gameplay=next(s for s in scenes if s['name']=='Game Scene')
 for index,path,name in mapping:
-    event=scenes[0]['events'][index]
+    event=gameplay['events'][index]
     for n in path:event=event['events'][n]
     source=ROOT/'tools'/name
     ok(source.is_file() and event['inlineCode']==source.read_text(encoding='utf-8-sig').splitlines(),'Runtime source/event match: '+name)
+menu=next((s for s in scenes if s['name']=='MainMenu'),None)
+if menu:
+    ok(p['firstLayout']=='MainMenu' and scenes[0]['name']=='MainMenu','MainMenu is explicit first layout')
+    ok(menu['events'][0]['inlineCode']==(ROOT/'tools/main-menu-runtime.js').read_text(encoding='utf-8-sig').splitlines(),'MainMenu maintained event/source match')
+    menu_variables={v['name']:v for v in menu['variables']}
+    target=next(v['value'] for v in menu_variables['MenuConfig']['children'] if v['name']=='GameplayScene')
+    ok(target==gameplay['name'],'MainMenu Start target is the preserved gameplay scene')
 ok(all(r['name'] in all_strings for r in resources),'Every resource is referenced by the active scene/configuration')
 manifest=read('assets/audio/manifest.json')
 for asset in manifest['assets']:
@@ -110,7 +119,7 @@ for f in ROOT.rglob('*'):
             d=json.loads(f.read_text(encoding='utf-8-sig'))
             ok(not(isinstance(d,dict) and {'gdVersion','layouts','resources'}<=set(d)),'No duplicate project JSON: '+str(f.relative_to(ROOT)))
 ok('NO BACKUP' in (ROOT/'AGENTS.md').read_text(),'Permanent user rule recorded in AGENTS.md')
-report={'checksPassed':len(checks),'sceneCount':len(scenes),'resourceCount':len(resources),'resourceKinds':dict(Counter(r['kind'] for r in resources)),'objectCount':len(scenes[0]['objects']),'instanceCount':len(scenes[0]['instances']),'variableCount':len(scenes[0]['variables']),'runtimeSourceCount':len(mapping),'noBackupFiles':True,'checks':checks}
+report={'checksPassed':len(checks),'sceneCount':len(scenes),'resourceCount':len(resources),'resourceKinds':dict(Counter(r['kind'] for r in resources)),'objectCount':sum(len(s['objects']) for s in scenes),'instanceCount':sum(len(s['instances']) for s in scenes),'variableCount':sum(len(s['variables']) for s in scenes),'objectsByScene':{s['name']:len(s['objects']) for s in scenes},'runtimeSourceCount':len(mapping),'noBackupFiles':True,'checks':checks}
 out=ROOT/'validation';out.mkdir(exist_ok=True)
 (out/'static-checks.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
 print(json.dumps({k:v for k,v in report.items() if k!='checks'}))

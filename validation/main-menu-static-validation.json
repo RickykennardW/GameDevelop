@@ -1,0 +1,9 @@
+{
+  "status": "FAIL",
+  "reason": "No backup file: Tower Defense.json.autosave",
+  "checksPassedBeforeFailure": 3759,
+  "sceneCount": 2,
+  "resourceCount": 413,
+  "activeResourcesAndPathsChecked": true,
+  "existingAutosaveRetained": true
+}

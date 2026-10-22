@@ -10,6 +10,7 @@
       "button centered inside viewport: Exit",
       "button artwork keeps aspect ratio: Exit",
       "background covers viewport without stretching",
+      "action labels preserve readable minimum font in small windows",
       "original background aspect ratio preserved",
       "unchanged viewport does not rebuild layout",
       "zero/minimized viewport retains last valid layout",

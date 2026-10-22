@@ -126,3 +126,13 @@ Stats/upgrade/cost dibaca dari config asli; resep dan unlock memakai fusion arch
 `game.__celestialViewport` menyimpan ukuran terakhir yang valid dan revision. Dimensi nol, nonfinite, sangat kecil (<64), atau document hidden tidak mengubah layout. Saat restore, ukuran dihitung ulang dari referensi, bukan scale object sebelumnya. Invalid viewport tidak boleh disimpan. Mask list dan map hanya digambar ulang ketika geometry berubah; Index mempertahankan render-key cache. Root/portrait/object UI tetap digunakan ulang.
 
 Validasi resize dalam satu sesi: `python tools/balance-browser.py tools/responsive-ui-qa.js validation/responsive-ui-complete.json --resize-sequence=1280x720,960x600,480x300,320x240,1280x720,640x400,1280x720,640x400`. Test memeriksa CSS mouse conversion melalui renderer asli, clipping, panel, restore dan simulasi dimensi invalid. Laporan perubahan terakhir: `UI_RESPONSIVENESS_SONAR_REPORT.md`.
+
+## Starfall Bastion MainMenu
+
+Entry scene project adalah `MainMenu` (`firstLayout` dan urutan pertama pada layouts). Start memakai transisi scene native ke `Game Scene`; scene gameplay tetap utuh. Preview khusus Game Scene di editor masih dapat melewati menu, sedangkan preview MainMenu menunjukkan alur pembukaan. Project display name kini Starfall Bastion.
+
+Menu memakai delapan object native, layer dasar/MenuUI dan satu event dari `tools/main-menu-runtime.js`. MenuConfig menyimpan GameplayScene, HoverScale 1.06 dan TransitionSeconds 0.28. Background original, judul vector dan empat state bingkai tombol berada di `assets/ui/main_menu/`. Label tombol tetap Text Object editable. Pembuat vector/scene: `tools/build-main-menu.py`; source event disinkronkan melalui `tools/embed-free-placement.py`. Prompt background ada di `tools/main-menu-art-prompt.md`.
+
+Sacred Void Temple dan UIClick memakai AudioConfig existing dan preferensi volume/mute yang tersimpan. Browser membutuhkan gesture pengguna. Handoff audio ke gameplay dilakukan sekali tanpa mengubah mixer. Exit menggunakan aksi stopGame GDevelop; Chrome mempertahankan tab dan menampilkan pesan untuk menutup tab sendiri. Penutupan desktop build perlu diuji pada export desktop.
+
+Validasi: `node tools/validate-clean-project.cjs --scene=MainMenu`, `python tools/run-clean-validation.py --prepare`, lalu `python tools/balance-browser.py tools/main-menu-qa.js validation/main-menu-native-tests.json --menu --gesture --viewport=1280x720`. Opsi `--mode=resize --resize-sequence=1280x720,640x400,480x300,1280x720` menguji resize satu sesi. `--mode=regression --then=tools/starburst-fusion-qa.js` menguji gameplay sesudah Start. Rincian hasil dan keterbatasan ada di `STARFALL_MAIN_MENU_REPORT.md`.
