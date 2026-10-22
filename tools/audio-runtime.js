@@ -111,6 +111,10 @@ if(!a){
  a.geometry=()=>{const width=game.getGameResolutionWidth(),height=game.getGameResolutionHeight(),hud=scene.getObjects('HUDPanel')[0];const point=hud?scene.getLayer('UI').convertInverseCoords(hud.getX()+hud.getWidth(),hud.getY()+6,0,[0,0]):[8,16];const x=Math.max(8,Math.min(width-40,point[0]+8)),y=point[1];return{button:{x,y,w:32,h:32},panel:{x:Math.max(8,Math.min(width-316,x)),y:Math.max(8,Math.min(height-292,y+40)),w:308,h:276}};};
  a.pre=()=>{
   if(a.disposed)return;const dt=scene.getTimeManager().getElapsedTime()/Math.max(.001,scene.getTimeManager().getTimeScale())/1000;a.dt=Math.min(.2,Math.max(0,dt));a.now+=a.dt;
+  if(sv.get('DefeatActive').getAsBoolean()){
+   a.ui.open=false;a.ui.drag='';a.ui.pressed='';a.ui.down=game.getInputManager().isMouseButtonPressed(0);a.ui.pointer=true;
+   sv.get('AudioUIConsumesClick').setBoolean(true);sv.get('AudioPanelOpen').setBoolean(false);return;
+  }
   const input=game.getInputManager(),down=input.isMouseButtonPressed(0),released=!down&&a.ui.down,pressed=down&&!a.ui.down;
   const geometry=a.geometry(),mx=gdjs.evtTools.input.getCursorX(scene,'AudioUI',0),my=gdjs.evtTools.input.getCursorY(scene,'AudioUI',0),inside=r=>mx>=r.x&&mx<r.x+r.w&&my>=r.y&&my<r.y+r.h;
   if(sv.get('IndexBlocksInput').getAsBoolean()||sv.get('FusionActive').getAsBoolean()){a.ui.open=false;a.ui.drag='';}
@@ -166,7 +170,7 @@ if(!a){
   if(reward>last.reward&&composition?.wave===reward&&flow!=='GAME_OVER')a.play('WaveComplete');
   if(lives<last.lives){const lost=Math.min(a.pendingBase||0,Math.ceil(last.lives-lives));a.stats.baseEvents+=lost;for(let i=0;i<lost;i++)a.play('BaseDamage');}a.pendingBase=0;
   const index=sv.get('IndexOpen').getAsBoolean(),category=scene.__unitIndex?.category||'Towers',selected=sv.get('SelectedTower').getAsNumber(),mode=sv.get('WaveMode').getAsString();
-  if(index!==last.index||(index&&category!==last.category)||(mode!==last.mode&&wave===last.wave))a.play('UIClick');
+  if(!sv.get('DefeatActive').getAsBoolean()&&(index!==last.index||(index&&category!==last.category)||(mode!==last.mode&&wave===last.wave)))a.play('UIClick');
   if(selected>0&&selected!==last.selected)a.play('TowerSelect');
   if(flow!==a.flow){if(flow==='GAME_OVER'||flow==='VICTORY'){for(const v of a.voices)if(v.group==='low'){v.sound?.stop();v.end=0;}a.play(flow==='VICTORY'?'Victory':'GameOver');}a.flow=flow;}
   const mapping={MENU:'SacredVoidTemple',PREPARATION:'AncientGalaxyAmbience',NORMAL_COMBAT:'CosmicDefense',MILESTONE_COMBAT:'VoidAwakening',GAME_OVER:'',VICTORY:''};

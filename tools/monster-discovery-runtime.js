@@ -120,7 +120,7 @@ if(!d){
   if(d.disposed)return;
   const uiLayer=scene.getLayer('DiscoveryUI');uiLayer.setCameraZoom(1);uiLayer.setCameraX(game.getGameResolutionWidth()/2);uiLayer.setCameraY(game.getGameResolutionHeight()/2);
   // Keep queued announcements intact while the encyclopedia owns the screen.
-  if(sv.get('IndexOpen').getAsBoolean()||!d.active&&(game.__fusionArchive?.active||!toast.canBegin('monster'))){root.visible=false;mask.visible=false;d.paintIndex();return;}
+  if(sv.get('DefeatActive').getAsBoolean()||sv.get('IndexOpen').getAsBoolean()||!d.active&&(game.__fusionArchive?.active||!toast.canBegin('monster'))){root.visible=false;mask.visible=false;d.paintIndex();return;}
   const dt=Math.max(0,scene.getTimeManager().getElapsedTime()/Math.max(.001,scene.getTimeManager().getTimeScale())/1000);
   if(d.active){d.active.age+=dt;if(d.active.age>=toast.duration){d.active=null;d.stats.completed++;}}
   if(!d.active&&d.queue.length&&toast.canBegin('monster')){if(d.begin(d.queue[0]))d.queue.shift();}

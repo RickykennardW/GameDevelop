@@ -1,5 +1,6 @@
 // Starfall Bastion title scene. The gameplay scene remains its own initializer.
 const scene=runtimeScene,game=scene.getGame(),input=game.getInputManager();
+game.__starfallHoverStep ||= ((current,target,dt)=>current+(target-current)*(1-Math.exp(-dt*16)));
 let menu=scene.__mainMenu;
 if(!menu){
  const config=scene.getVariables().get('MenuConfig').toJSObject();
@@ -88,7 +89,7 @@ if(!down&&menu.down&&!menu.transition&&menu.pressed&&menu.pressed===hit){if(hit=
 if(!down)menu.pressed='';menu.down=down;
 if(!menu.transition&&gdjs.evtTools.input.wasKeyJustPressed(scene,'Return'))menu.begin();
 for(const b of menu.buttons){
- const target=menu.hover===b.id?menu.config.HoverScale:1;b.scale+=(target-b.scale)*(1-Math.exp(-dt*16));
+ const target=menu.hover===b.id?menu.config.HoverScale:1;b.scale=game.__starfallHoverStep(b.scale,target,dt);
  b.frame.setAnimationName(menu.hover===b.id?'Hover':'Normal');b.frame.setScale(b.baseScale*b.scale);b.frame.setPosition(b.x-b.frame.getWidth()/2,b.y-b.frame.getHeight()/2);
  b.label.setWrapping(true);b.label.setWrappingWidth(320);b.label.setTextAlignment('center');b.label.setScale(b.baseScale*b.scale);b.label.setPosition(b.x-160*b.baseScale*b.scale,b.y-b.label.getHeight()/2);
 }

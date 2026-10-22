@@ -1,0 +1,31 @@
+{
+  "result": {
+    "checks": [
+      "native audio unlocked by browser gesture",
+      "real-time Finish triggers actual defeat",
+      "real-time red fade precedes title",
+      "native defeat audio actually plays at configured volume",
+      "real-time title and instruction complete",
+      "one defeat sound and no repeated Lives damage",
+      "real-time click reveals black menu",
+      "black menu stays translucent and world frozen",
+      "Restart performs native scene replacement",
+      "Restart retains audio unlock",
+      "new run starts without defeat overlay",
+      "second real-time Finish works",
+      "defeat respects saved SFX mute",
+      "muted defeat still animates",
+      "second menu becomes interactive",
+      "Main Menu performs native scene replacement",
+      "lobby has no defeat overlay and preserves mute",
+      "lobby Start enters gameplay again",
+      "complete real-time round trip preserves preferences"
+    ],
+    "actualWallClockFrames": true,
+    "audioPlayed": true,
+    "muteVerified": true,
+    "scene": "Game Scene"
+  },
+  "progress": [],
+  "consoleErrors": []
+}

@@ -1,0 +1,29 @@
+{
+  "result": {
+    "checks": [
+      "fresh game has no visible or duplicate defeat menu",
+      "real wave spawn supplies discovery to preserve",
+      "defeat fixture begins during real Tactical Fusion",
+      "actual native Finish deletes enemy, removes last Life and activates defeat",
+      "defeat locks once in loss-only state",
+      "red begins gently with no instant title or buttons",
+      "defeat cancels tactical/ghost placement without consuming either source",
+      "world freezes while UI scene clock keeps running",
+      "existing defeat sound actually plays on native SFX channel",
+      "crimson opacity grows smoothly before title delay",
+      "fresh click during initial fade is ignored",
+      "native phase advances",
+      "held early/defeat click cannot continue after title appears",
+      "red remains translucent60percent with buttons hidden",
+      "enemy/projectile/wave/economy clocks and queued discovery stay frozen",
+      "existing defeat sound requested once despite Lives staying zero",
+      "sonar stops after defeat",
+      "normal upgrade and Fusion APIs reject defeat input"
+    ],
+    "phase": "AWAIT_CONTINUE",
+    "age": 2.5083834999999985,
+    "opacity": 0.6
+  },
+  "progress": [],
+  "consoleErrors": []
+}

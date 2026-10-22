@@ -16,6 +16,7 @@
   [
     1,
     [
+      0,
       0
     ],
     "unit-index-runtime.js"
@@ -23,6 +24,7 @@
   [
     1,
     [
+      0,
       1
     ],
     "selected-panel-runtime.js"
@@ -30,6 +32,7 @@
   [
     1,
     [
+      0,
       2
     ],
     "obstacle-panel-runtime.js"
@@ -37,6 +40,7 @@
   [
     3,
     [
+      0,
       0
     ],
     "world-selection-runtime.js"
@@ -57,6 +61,7 @@
     10,
     [
       0,
+      0,
       1
     ],
     "nova-wisp-runtime.js"
@@ -64,6 +69,7 @@
   [
     10,
     [
+      0,
       1
     ],
     "nova-wave-manager.js"
@@ -71,6 +77,7 @@
   [
     10,
     [
+      0,
       2
     ],
     "nova-spawn-runtime.js"
@@ -78,6 +85,7 @@
   [
     10,
     [
+      0,
       3,
       0
     ],
@@ -86,6 +94,7 @@
   [
     10,
     [
+      0,
       5
     ],
     "star-cannon-runtime.js"
@@ -93,6 +102,7 @@
   [
     10,
     [
+      0,
       6
     ],
     "nova-death-runtime.js"
@@ -129,6 +139,7 @@
     10,
     [
       0,
+      0,
       2
     ],
     "void-hound-runtime.js"
@@ -136,6 +147,7 @@
   [
     10,
     [
+      0,
       0,
       3
     ],
@@ -145,6 +157,7 @@
     10,
     [
       0,
+      0,
       4
     ],
     "void-golem-runtime.js"
@@ -152,6 +165,7 @@
   [
     10,
     [
+      0,
       0,
       5
     ],
@@ -191,5 +205,12 @@
       0
     ],
     "celestial-sonar-runtime.js"
+  ],
+  [
+    19,
+    [
+      0
+    ],
+    "game-over-runtime.js"
   ]
 ]

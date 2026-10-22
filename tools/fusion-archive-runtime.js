@@ -50,7 +50,7 @@ if(!view){
  };
  view.update=()=>{
   if(view.disposed)return;
-  if(sv.get('IndexOpen').getAsBoolean()||scene.__monsterDiscovery?.active||!archive.active&&!shared.canBegin('fusion')){root.visible=false;mask.visible=false;return;}
+  if(sv.get('DefeatActive').getAsBoolean()||sv.get('IndexOpen').getAsBoolean()||scene.__monsterDiscovery?.active||!archive.active&&!shared.canBegin('fusion')){root.visible=false;mask.visible=false;return;}
   const dt=Math.max(0,scene.getTimeManager().getElapsedTime()/Math.max(.001,scene.getTimeManager().getTimeScale())/1000);
   if(archive.active){archive.active.age+=dt;if(archive.active.age>=shared.duration){archive.active=null;archive.stats.completed++;}}
   if(!archive.active&&archive.queue.length&&shared.canBegin('fusion')){const event=archive.queue.shift();shared.take('fusion',event);archive.active={...event,age:0};archive.stats.shown++;if(scene.__audio?.play('DiscoveryUnlock'))archive.stats.sounds++;}

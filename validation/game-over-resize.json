@@ -1,0 +1,346 @@
+{
+  "result": {
+    "resizeSequence": [
+      {
+        "checks": [
+          "defeat animation finishes while world is inactive",
+          "native touch continues exactly once",
+          "title stays centered inside actual viewport",
+          "single overlay covers actual logical viewport",
+          "button centered and bounded: Restart",
+          "base size and artwork aspect ratio stable: Restart",
+          "physical text remains readable: Restart",
+          "button centered and bounded: MainMenu",
+          "base size and artwork aspect ratio stable: MainMenu",
+          "physical text remains readable: MainMenu",
+          "menu buttons never overlap",
+          "resize reuses one overlay and one button pair",
+          "unchanged viewport does not rebuild geometry",
+          "invalid viewport retains last layout: 0",
+          "invalid viewport retains last layout: NaN",
+          "resize never advances gameplay or retriggers defeat"
+        ],
+        "physical": [
+          1280,
+          720
+        ],
+        "logical": [
+          1280,
+          720
+        ],
+        "layoutCount": 1,
+        "buttons": [
+          {
+            "x": 480,
+            "y": 336,
+            "w": 320,
+            "h": 72
+          },
+          {
+            "x": 480,
+            "y": 419,
+            "w": 320,
+            "h": 72
+          }
+        ],
+        "invalidSizeSimulation": true
+      },
+      {
+        "checks": [
+          "title stays centered inside actual viewport",
+          "single overlay covers actual logical viewport",
+          "button centered and bounded: Restart",
+          "base size and artwork aspect ratio stable: Restart",
+          "physical text remains readable: Restart",
+          "button centered and bounded: MainMenu",
+          "base size and artwork aspect ratio stable: MainMenu",
+          "physical text remains readable: MainMenu",
+          "menu buttons never overlap",
+          "resize reuses one overlay and one button pair",
+          "unchanged viewport does not rebuild geometry",
+          "invalid viewport retains last layout: 0",
+          "invalid viewport retains last layout: NaN",
+          "resize never advances gameplay or retriggers defeat"
+        ],
+        "physical": [
+          960,
+          600
+        ],
+        "logical": [
+          960,
+          600
+        ],
+        "layoutCount": 2,
+        "buttons": [
+          {
+            "x": 360,
+            "y": 282,
+            "w": 240,
+            "h": 54
+          },
+          {
+            "x": 360,
+            "y": 344.25,
+            "w": 240,
+            "h": 54
+          }
+        ],
+        "invalidSizeSimulation": true
+      },
+      {
+        "checks": [
+          "title stays centered inside actual viewport",
+          "single overlay covers actual logical viewport",
+          "button centered and bounded: Restart",
+          "base size and artwork aspect ratio stable: Restart",
+          "physical text remains readable: Restart",
+          "button centered and bounded: MainMenu",
+          "base size and artwork aspect ratio stable: MainMenu",
+          "physical text remains readable: MainMenu",
+          "menu buttons never overlap",
+          "resize reuses one overlay and one button pair",
+          "unchanged viewport does not rebuild geometry",
+          "invalid viewport retains last layout: 0",
+          "invalid viewport retains last layout: NaN",
+          "resize never advances gameplay or retriggers defeat"
+        ],
+        "physical": [
+          640,
+          400
+        ],
+        "logical": [
+          960,
+          600
+        ],
+        "layoutCount": 3,
+        "buttons": [
+          {
+            "x": 360,
+            "y": 282,
+            "w": 240,
+            "h": 54
+          },
+          {
+            "x": 360,
+            "y": 344.25,
+            "w": 240,
+            "h": 54
+          }
+        ],
+        "invalidSizeSimulation": true
+      },
+      {
+        "checks": [
+          "title stays centered inside actual viewport",
+          "single overlay covers actual logical viewport",
+          "button centered and bounded: Restart",
+          "base size and artwork aspect ratio stable: Restart",
+          "physical text remains readable: Restart",
+          "button centered and bounded: MainMenu",
+          "base size and artwork aspect ratio stable: MainMenu",
+          "physical text remains readable: MainMenu",
+          "menu buttons never overlap",
+          "resize reuses one overlay and one button pair",
+          "unchanged viewport does not rebuild geometry",
+          "invalid viewport retains last layout: 0",
+          "invalid viewport retains last layout: NaN",
+          "resize never advances gameplay or retriggers defeat"
+        ],
+        "physical": [
+          480,
+          300
+        ],
+        "logical": [
+          960,
+          600
+        ],
+        "layoutCount": 4,
+        "buttons": [
+          {
+            "x": 360,
+            "y": 282,
+            "w": 240,
+            "h": 54
+          },
+          {
+            "x": 360,
+            "y": 344.25,
+            "w": 240,
+            "h": 54
+          }
+        ],
+        "invalidSizeSimulation": true
+      },
+      {
+        "checks": [
+          "title stays centered inside actual viewport",
+          "single overlay covers actual logical viewport",
+          "button centered and bounded: Restart",
+          "base size and artwork aspect ratio stable: Restart",
+          "physical text remains readable: Restart",
+          "button centered and bounded: MainMenu",
+          "base size and artwork aspect ratio stable: MainMenu",
+          "physical text remains readable: MainMenu",
+          "menu buttons never overlap",
+          "resize reuses one overlay and one button pair",
+          "unchanged viewport does not rebuild geometry",
+          "invalid viewport retains last layout: 0",
+          "invalid viewport retains last layout: NaN",
+          "resize never advances gameplay or retriggers defeat"
+        ],
+        "physical": [
+          1280,
+          720
+        ],
+        "logical": [
+          1280,
+          720
+        ],
+        "layoutCount": 5,
+        "buttons": [
+          {
+            "x": 480,
+            "y": 336,
+            "w": 320,
+            "h": 72
+          },
+          {
+            "x": 480,
+            "y": 419,
+            "w": 320,
+            "h": 72
+          }
+        ],
+        "invalidSizeSimulation": true
+      },
+      {
+        "checks": [
+          "title stays centered inside actual viewport",
+          "single overlay covers actual logical viewport",
+          "button centered and bounded: Restart",
+          "base size and artwork aspect ratio stable: Restart",
+          "physical text remains readable: Restart",
+          "button centered and bounded: MainMenu",
+          "base size and artwork aspect ratio stable: MainMenu",
+          "physical text remains readable: MainMenu",
+          "menu buttons never overlap",
+          "resize reuses one overlay and one button pair",
+          "unchanged viewport does not rebuild geometry",
+          "invalid viewport retains last layout: 0",
+          "invalid viewport retains last layout: NaN",
+          "resize never advances gameplay or retriggers defeat"
+        ],
+        "physical": [
+          640,
+          400
+        ],
+        "logical": [
+          960,
+          600
+        ],
+        "layoutCount": 6,
+        "buttons": [
+          {
+            "x": 360,
+            "y": 282,
+            "w": 240,
+            "h": 54
+          },
+          {
+            "x": 360,
+            "y": 344.25,
+            "w": 240,
+            "h": 54
+          }
+        ],
+        "invalidSizeSimulation": true
+      },
+      {
+        "checks": [
+          "title stays centered inside actual viewport",
+          "single overlay covers actual logical viewport",
+          "button centered and bounded: Restart",
+          "base size and artwork aspect ratio stable: Restart",
+          "physical text remains readable: Restart",
+          "button centered and bounded: MainMenu",
+          "base size and artwork aspect ratio stable: MainMenu",
+          "physical text remains readable: MainMenu",
+          "menu buttons never overlap",
+          "resize reuses one overlay and one button pair",
+          "unchanged viewport does not rebuild geometry",
+          "invalid viewport retains last layout: 0",
+          "invalid viewport retains last layout: NaN",
+          "resize never advances gameplay or retriggers defeat"
+        ],
+        "physical": [
+          1280,
+          720
+        ],
+        "logical": [
+          1280,
+          720
+        ],
+        "layoutCount": 7,
+        "buttons": [
+          {
+            "x": 480,
+            "y": 336,
+            "w": 320,
+            "h": 72
+          },
+          {
+            "x": 480,
+            "y": 419,
+            "w": 320,
+            "h": 72
+          }
+        ],
+        "invalidSizeSimulation": true
+      },
+      {
+        "checks": [
+          "title stays centered inside actual viewport",
+          "single overlay covers actual logical viewport",
+          "button centered and bounded: Restart",
+          "base size and artwork aspect ratio stable: Restart",
+          "physical text remains readable: Restart",
+          "button centered and bounded: MainMenu",
+          "base size and artwork aspect ratio stable: MainMenu",
+          "physical text remains readable: MainMenu",
+          "menu buttons never overlap",
+          "resize reuses one overlay and one button pair",
+          "unchanged viewport does not rebuild geometry",
+          "invalid viewport retains last layout: 0",
+          "invalid viewport retains last layout: NaN",
+          "resize never advances gameplay or retriggers defeat"
+        ],
+        "physical": [
+          480,
+          300
+        ],
+        "logical": [
+          960,
+          600
+        ],
+        "layoutCount": 8,
+        "buttons": [
+          {
+            "x": 360,
+            "y": 282,
+            "w": 240,
+            "h": 54
+          },
+          {
+            "x": 360,
+            "y": 344.25,
+            "w": 240,
+            "h": 54
+          }
+        ],
+        "invalidSizeSimulation": true
+      }
+    ]
+  },
+  "progress": [],
+  "consoleErrors": []
+}
