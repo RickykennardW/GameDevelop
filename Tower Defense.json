@@ -3450,6 +3450,46 @@
         "smoothed": true,
         "userAdded": true,
         "metadata": ""
+      },
+      {
+        "name": "assets/ui/campaign/chapter_1.svg",
+        "file": "assets/ui/campaign/chapter_1.svg",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/ui/campaign/chapter_2.svg",
+        "file": "assets/ui/campaign/chapter_2.svg",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/ui/campaign/chapter_3.svg",
+        "file": "assets/ui/campaign/chapter_3.svg",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/ui/campaign/chapter_4.svg",
+        "file": "assets/ui/campaign/chapter_4.svg",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/ui/campaign/chapter_5.svg",
+        "file": "assets/ui/campaign/chapter_5.svg",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
       }
     ]
   },
@@ -3467,6 +3507,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/game-scene"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/levels"
     }
   ],
   "externalEvents": [],

@@ -31,7 +31,8 @@ if(!go){
   if(scene.__audio){scene.__audio.ui.open=false;scene.__audio.ui.drag='';scene.__audio.ui.pressed='';if(scene.__audio.dirty)scene.__audio.persist();}
   for(const name of ['MessageText','WaveBannerPanel','WaveBannerTitle','WaveBannerDetail','WaveBannerReward'])for(const o of scene.getObjects(name))o.hide();
   const lives=scene.getObjects('LivesText')[0];if(lives)lives.setString(String(sv.get('Lives').getAsNumber()));
-  for(const [id,frameName,labelName]of [['Restart','DefeatRestart','DefeatRestartLabel'],['MainMenu','DefeatMainMenu','DefeatMainMenuLabel']]){
+  const buttons=[['Restart','DefeatRestart','DefeatRestartLabel'],['MainMenu','DefeatMainMenu','DefeatMainMenuLabel']];if(scene.__campaignRun)buttons.push(['Levels','DefeatLevels','DefeatLevelsLabel']);
+  for(const [id,frameName,labelName]of buttons){
    const frame=scene.createObject(frameName),label=scene.createObject(labelName);frame.setLayer('GameOverUI');label.setLayer('GameOverUI');frame.setZOrder(3);label.setZOrder(4);frame.hide();label.hide();go.buttons.push({id,frame,label,scale:1});
   }
   go.block();root.visible=true;layer.show(true);return true;
@@ -51,7 +52,7 @@ if(!go){
    go.layoutKey=key;go.layoutCount=(go.layoutCount||0)+1;overlay.clear().beginFill(0xffffff).drawRect(0,0,W,H).endFill();
    ornament.clear().lineStyle(1,0xc2a5aa,.55).moveTo(-146,0).lineTo(-18,0).moveTo(18,0).lineTo(146,0).beginFill(0xd6b7bd,.7).drawPolygon([0,-4,4,0,0,4,-4,0]).endFill();
    title.style.fontSize=52*scale;title.style.letterSpacing=3*scale;prompt.style.fontSize=Math.max(11*scale,10/display);prompt.style.letterSpacing=1.5*scale;
-   for(const b of go.buttons){b.label.setCharacterSize(Math.max(b.id==='Restart'?18:15,Math.ceil((b.id==='Restart'?12:11)/(scale*display))));b.label.setWrapping(true);b.label.setWrappingWidth(320);b.label.setTextAlignment('center');}
+   for(const b of go.buttons){b.label.setCharacterSize(Math.max(b.id==='Restart'?18:15,Math.ceil((b.id==='Restart'?12:11)/(scale*display))));b.label.setWrapping(true);b.label.setWrappingWidth(320*scale);b.label.setTextAlignment('center');}
   }
   const black=go.blackStart!==undefined?smooth((go.age-go.blackStart)/config.BlackSeconds):0;
   go.blackProgress=black;go.overlayTint=mix(config.RedTint,config.BlackTint,black);overlay.tint=go.overlayTint;
@@ -67,13 +68,14 @@ if(!go){
   const mx=gdjs.evtTools.input.getCursorX(scene,'GameOverUI',0),my=gdjs.evtTools.input.getCursorY(scene,'GameOverUI',0);
   go.hover='';
   for(const [i,b]of go.buttons.entries()){
-   b.x=W/2;b.y=H/2+(i?95:12)*scale;
+   b.x=W/2;b.y=H/2+(12+83*i)*scale;
    const current=320*scale*b.scale,height=72*scale*b.scale;
    const hot=go.phase==='MENU'&&mx>=b.x-current/2&&mx<b.x+current/2&&my>=b.y-height/2&&my<b.y+height/2;
    if(hot)go.hover=b.id;
    b.scale=game.__starfallHoverStep(b.scale,hot?hoverScale:1,go.dt||0);
    b.frame.setAnimationName(hot?'Hover':'Normal');b.frame.setScale(scale*b.scale);b.frame.setPosition(b.x-b.frame.getWidth()/2,b.y-b.frame.getHeight()/2);
-   b.label.setScale(scale*b.scale);b.label.setPosition(b.x-160*scale*b.scale,b.y-b.label.getHeight()/2);
+   // Match native wrapped Text's width, independent of the frame's hover scale.
+   b.label.setScale(scale);b.label.setPosition(b.x-b.label.getWidth()/2,b.y-b.label.getHeight()/2);
    for(const o of [b.frame,b.label]){o.hide(buttonsAlpha<=0);o.setOpacity(255*buttonsAlpha);}
    b.rect={x:b.frame.getX(),y:b.frame.getY(),w:b.frame.getWidth(),h:b.frame.getHeight()};
   }
@@ -96,7 +98,7 @@ if(!go){
   if(go.phase==='MENU'){
    if(!down)go.menuArmed=true;
    if(fresh&&go.menuArmed)go.pressed=go.hover;
-   if(!down&&go.wasDown&&go.pressed&&go.pressed===go.hover)go.leave(go.pressed==='Restart'?scene.getName():'MainMenu');
+   if(!down&&go.wasDown&&go.pressed&&go.pressed===go.hover)go.leave(go.pressed==='Restart'?scene.getName():go.pressed==='Levels'?'Levels':'MainMenu');
    if(!down)go.pressed='';
   }
   if(go.leaving){go.leaving.age+=go.dt;if(go.leaving.age>=config.LeaveSeconds&&!go.leaving.requested){go.leaving.requested=true;go.requests++;gdjs.evtTools.runtimeScene.replaceScene(scene,go.leaving.target,false);}}

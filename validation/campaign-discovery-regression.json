@@ -1,0 +1,48 @@
+{
+  "result": {
+    "checks": [
+      "first native encounter begins monster toast",
+      "actual archive API discovers canonical Pure Fusion",
+      "new Fusion and later monster wait in bounded queues",
+      "queued presentation advances",
+      "FIFO displays Fusion before later monster",
+      "Index pauses presentation without dropping notifications",
+      "queued presentation advances",
+      "monster resumes after Fusion, never two panels",
+      "queued presentation advances",
+      "all native discoveries shown once with one panel",
+      "known enemy/Fusion never repeat",
+      "future Hybrid variants enqueue separately without changing real catalog JSON",
+      "adaptive progress and notification order share existing archive",
+      "queued presentation advances",
+      "variant toast uses actual variant name",
+      "toast runs on real-time clock during actual Tactical Fusion0.5x",
+      "queued presentation advances",
+      "mixed queue drains and presentation tickets are released"
+    ],
+    "maxVisible": 1,
+    "toast": {
+      "x": 754,
+      "y": 8,
+      "w": 272,
+      "h": 60,
+      "scale": 1
+    },
+    "monster": {
+      "unlocks": 2,
+      "shown": 2,
+      "sounds": 0,
+      "completed": 2
+    },
+    "fusion": {
+      "unlockedVariants": 3,
+      "shown": 3,
+      "completed": 3,
+      "sounds": 0,
+      "writes": 3
+    },
+    "frameClock": "native controlled frames / no balancing changes"
+  },
+  "progress": [],
+  "consoleErrors": []
+}

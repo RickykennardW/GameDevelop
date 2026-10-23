@@ -1,0 +1,91 @@
+// Initialized only for a mission launched by Levels. Direct gameplay preview
+// retains the existing 45-wave sandbox and its authored starting values.
+const scene=runtimeScene,game=scene.getGame(),C=game.__campaign,sv=scene.getVariables();
+if(!C?.active||!C.available(C.active))return;
+let r=scene.__campaignRun;
+if(!r){
+ const level=C.known.get(C.active),chapter=C.config.Chapters[level.Chapter-1],u=game.__campaignWidgets(scene),destroyUI=u.dispose;
+ r=scene.__campaignRun=Object.assign(u,{scene,level,chapter,stage:level.Tutorial&&!C.save.GameTutorialDone?0:-1,now:0,realAge:0,killCount:0,started:new Set(),pendingWave:false,boss:null,bossKilled:false,bossEscaped:false,finished:false,resultAge:0,transition:null,disposed:false});
+ sv.get('Money').setNumber(level.StartingGold);sv.get('Lives').setNumber(level.StartingLives);sv.get('MaximumWave').setNumber(level.Waves.length);sv.get('CampaignLevelId').setString(level.Id);sv.get('WaveMode').setString('Waiting');
+ r.coach=new PIXI.Container();u.root.addChild(r.coach);r.shade=new PIXI.Graphics();r.plate=new PIXI.Graphics();r.coach.addChild(r.shade,r.plate);r.title=u.text('',17,0xead5a5,true,r.coach);r.body=u.text('',13,0xc7cde1,false,r.coach);r.next=u.button('next','CONTINUE',r.coach);r.skip=u.button('skip','SKIP',r.coach);
+ r.result=new PIXI.Container();u.root.addChild(r.result);r.resultShade=new PIXI.Graphics();r.result.addChild(r.resultShade);r.resultTitle=u.text('',33,0xf0e1b3,true,r.result);r.resultInfo=u.text('',15,0xbdcce1,false,r.result);r.resultProgress=u.text('',12,0xc8ba94,false,r.result);r.resultButtons=[u.button('nextmission','NEXT MISSION',r.result),u.button('levels','RETURN TO LEVELS',r.result),u.button('menu','MAIN MENU',r.result)];
+ r.bossUI=new PIXI.Container();u.root.addChild(r.bossUI);r.bossPanel=new PIXI.Graphics();r.bossUI.addChild(r.bossPanel);r.bossName=u.text('',14,0xe9cb97,true,r.bossUI);r.bossHealth=u.text('',10,0xcdd6ed,false,r.bossUI);r.bossHint=u.text('',11,0xc0c4dc,false,r.bossUI);r.bossRing=new PIXI.Graphics();r.bossRing.zIndex=11980;scene.getLayer('').getRenderer().getRendererObject().addChild(r.bossRing);
+ r.wavePlan=wave=>{
+  const spec=level.Waves[wave-1];if(!spec)throw Error('Campaign wave outside mission configuration');const queue=[];for(const [type,count]of Object.entries(spec.Enemies))for(let i=0;i<count;i++)queue.push(type);
+  let seed=level.Index*777+wave;for(let i=queue.length-1;i>0;i--){seed=(Math.imul(seed,1664525)+1013904223)>>>0;const j=seed%(i+1);[queue[i],queue[j]]=[queue[j],queue[i]];}
+  if(spec.Boss)queue.unshift('VoidGolem');r.started.add(wave);const budget=queue.reduce((n,t,i)=>n+(spec.Boss&&i===0?chapter.Boss.Reward:sv.get('EnemyTypes').getChild(t).getChild('Reward').getAsNumber()),0);return{wave,queue,budget,spent:budget,unused:0,milestone:spec.Boss||wave%5===0,bossIndex:spec.Boss?0:-1,campaign:true,expectedIncome:spec.ExpectedGold};
+ };
+ r.canStart=wave=>r.stage<0||r.stage>=5&&wave===1;
+ r.spawned=(enemy,type,index)=>{
+  const spec=level.Waves[sv.get('Wave').getAsNumber()-1];if(!spec)return;const v=enemy.getVariables(),health=enemy.getBehavior('Health'),stats=sv.get('EnemyTypes').getChild(type).toJSObject();
+  const hp=Math.ceil(stats.HP*spec.HealthScale);v.get('CampaignBoss').setBoolean(false);health.SetMaxHealth(hp);health.SetHealth(hp);v.get('MoveSpeed').setNumber(stats.Speed*spec.SpeedScale);for(const key of ['__novaState','__houndState','__voidCommonState','__golemState'])if(enemy[key])enemy[key].lastHP=hp;
+  if(!spec.Boss||index!==0)return;
+  const boss=chapter.Boss;health.SetMaxHealth(boss.HP);health.SetHealth(boss.HP);health.SetFlatDamageReduction(boss.Armor);v.get('MoveSpeed').setNumber(boss.Speed);v.get('GoldReward').setNumber(boss.Reward);v.get('EnemyName').setString(boss.Name);v.get('CampaignBoss').setBoolean(true);v.get('BaseArmor').setNumber(boss.Armor);v.get('Armor').setNumber(boss.Armor);
+  const rec=scene.__voidGolem.fort.members.get(enemy.getUniqueId());if(rec){rec.baseArmor=boss.Armor;scene.__voidGolem.fort.armor(rec);}const state=enemy.__golemState;state.lastHP=boss.HP;state.nextCast=scene.__voidGolem.frameTime+boss.CastCooldown;
+  r.boss={id:enemy.getUniqueId(),enemy,config:boss,shieldUntil:0,surgeUntil:0,castCount:0,releaseCount:0,reservesQueued:false,age:0};
+  const cleanup=()=>{if(!health.IsDead()&&v.get('PathFinished').getAsBoolean()){r.bossEscaped=true;sv.get('Lives').setNumber(0);}enemy.unregisterDestroyCallback(cleanup);};enemy.registerDestroyCallback(cleanup);
+  // Existing milestone-wave audio introduces the encounter once.
+  if(!r.bossPortrait){r.bossPortrait=new PIXI.Sprite(scene.__voidGolem.texture('Down','Idle',0));r.bossPortrait.anchor.set(.5);r.bossUI.addChild(r.bossPortrait);}
+ };
+ r.defeated=enemy=>{r.killCount++;if(enemy.getUniqueId()===r.boss?.id&&enemy.getVariables().get('CampaignBoss').getAsBoolean())r.bossKilled=true;};
+ r.validVictory=()=>sv.get('GameOver').getAsBoolean()&&sv.get('Lives').getAsNumber()>0&&sv.get('Wave').getAsNumber()>=level.Waves.length&&sv.get('LastRewardedWave').getAsNumber()>=level.Waves.length&&r.started.size===level.Waves.length&&!scene.getObjects('Enemy').length&&scene.__waveManager?.index>=scene.__waveManager?.queue.length&&(!level.Boss||r.bossKilled)&&!r.bossEscaped;
+ r.leave=(target,id)=>{if(r.transition)return false;if(id&&!C.launch(id))return false;scene.__audio?.play('UIClick');r.transition={target,age:0};return true;};
+ r.before=()=>{
+  const tutorial=r.stage>=0&&!r.finished&&!sv.get('DefeatActive').getAsBoolean(),modal=r.finished||tutorial&&[0,3,4,6,8].includes(r.stage),paused=r.finished||tutorial&&[0,3,4,6,7,8].includes(r.stage);
+  sv.get('CampaignTutorialActive').setBoolean(tutorial);sv.get('CampaignModal').setBoolean(modal);sv.get('CampaignCombatPaused').setBoolean(paused&&!!scene.__starCannon);sv.get('MaximumWave').setNumber(level.Waves.length);
+  const mx=gdjs.evtTools.input.getCursorX(scene,'CampaignUI',0),my=gdjs.evtTools.input.getCursorY(scene,'CampaignUI',0),p=r.panelRect;sv.get('CampaignUIConsumesClick').setBoolean(tutorial&&!!p&&mx>=p.x&&mx<p.x+p.w&&my>=p.y&&my<p.y+p.h||r.finished);
+  if(modal||sv.get('CampaignUIConsumesClick').getAsBoolean()){const down=game.getInputManager().isMouseButtonPressed(0);if(scene.__freePlacement)scene.__freePlacement.wasDown=down;sv.get('TowerPointerWasDown').setBoolean(down);}
+  if(!sv.get('DefeatActive').getAsBoolean())scene.getLayer('').setTimeScale(paused?0:1);
+  if(tutorial&&r.stage===7&&!sv.get('IndexOpen').getAsBoolean()&&scene.getObjects('StarCannonTower').length)sv.get('SelectedTower').setNumber(scene.getObjects('StarCannonTower')[0].getVariables().get('TowerId').getAsNumber());
+  // Reserve the opening defense budget until the required first placement.
+  if(tutorial&&r.stage<=2)scene.__obstaclePanel?.close();
+ };
+ r.bossTick=dt=>{
+  const b=r.boss;r.bossRing.clear();if(!b||b.enemy.getUniqueId()!==b.id)return;const e=b.enemy,h=e.getBehavior('Health'),state=e.__golemState,c=b.config;if(h.IsDead()||!scene.getObjects('Enemy').includes(e)){if(h.IsDead())r.bossKilled=true;return;}
+  b.age+=dt;if(state.castCount>b.castCount){b.castCount=state.castCount;state.nextCast=state.castStart+c.CastCooldown;}
+  if(state.releaseCount>b.releaseCount){b.releaseCount=state.releaseCount;b.shieldUntil=r.now+c.ShieldSeconds;b.surgeUntil=r.now+c.SurgeSeconds;}
+  h.SetPercentDamageReduction(r.now<b.shieldUntil?c.ShieldPercent/100:0);e.getVariables().get('MoveSpeed').setNumber(c.Speed*(r.now<b.surgeUntil?c.SurgeMultiplier:1));
+  if(!b.reservesQueued&&c.Reserves.length&&h.Health()/h.MaxHealth()<=c.ReserveThreshold){b.reservesQueued=true;b.reservesNoticeUntil=r.now+3;const m=scene.__waveManager,price=c.Reserves.reduce((n,t)=>n+sv.get('EnemyTypes').getChild(t).getChild('Reward').getAsNumber(),0);m.queue.push(...c.Reserves);m.elapsed=0;m.composition.budget+=price;m.composition.spent+=price;sv.get('WaveBudget').add(price);sv.get('WaveBudgetSpent').add(price);sv.get('EnemiesToSpawn').setNumber(m.queue.length-m.index);sv.get('WaveSpawningFinished').setBoolean(false);sv.get('WaveEnemyCount').add(c.Reserves.length);}
+  if(state.casting||r.now<b.shieldUntil||b.age<1.3){const x=e.getCenterXInScene(),y=e.getCenterYInScene(),entrance=b.age<1.3;r.bossRing.lineStyle(2,state.casting?0xd4a3ed:0x91cce4,entrance?1-b.age/1.3:.75).beginFill(0x8d6bc9,.05).drawCircle(x,y,entrance?30+75*b.age/1.3:state.casting?100:74).endFill();}
+ };
+ r.advance=()=>{scene.__audio?.play('UIClick');if(r.stage===4)r.pendingWave=true;if(r.stage===8){C.tutorialDone('GameTutorialDone');r.stage=-1;}else r.stage++;};
+ r.after=()=>{
+  if(r.disposed)return;const time=scene.getTimeManager(),dt=Math.min(.2,Math.max(0,time.getElapsedTime()/1000)),real=time.getTimeScale()>0?dt/time.getTimeScale():0;r.realAge+=real;
+  if(r.bossEscaped){sv.get('Lives').setNumber(0);scene.getObjects('LivesText')[0]?.setString('0');}
+  if(sv.get('CampaignCombatPaused').getAsBoolean()){scene.getObjects('MoneyText')[0]?.setString(String(sv.get('Money').getAsNumber()));scene.getObjects('LivesText')[0]?.setString(String(sv.get('Lives').getAsNumber()));}
+  if(sv.get('DefeatActive').getAsBoolean()){r.coach.visible=false;r.bossUI.visible=false;r.result.visible=false;r.bossRing.clear();return;}
+  if(!sv.get('CampaignCombatPaused').getAsBoolean()){r.now+=dt;r.bossTick(dt);}
+  if(!r.finished&&r.validVictory()){r.finished=true;C.complete(r);scene.__fusion?.finish();scene.__freePlacement?.stop();sv.get('SelectedTower').setNumber(0);sv.get('IndexOpen').setBoolean(false);for(const o of scene.getObjects('MessageText'))o.hide();r.before();}
+  const {W,H,s,display}=r.screen(),font=(n,min=9)=>Math.max(n*s,min/display),layer=scene.getLayer('CampaignUI');layer.show(true);layer.setCameraZoom(1);layer.setCameraX(W/2);layer.setCameraY(H/2);
+  if(r.stage===1&&scene.__freePlacement?.active&&scene.__freePlacement.type==='StarCannonTower')r.stage=2;
+  if(r.stage===2&&sv.get('PlacementCommitted').getAsBoolean()&&scene.getObjects('StarCannonTower').length)r.stage=3;
+  if(r.stage===5&&r.killCount>0)r.stage=6;
+  r.bossUI.visible=!!r.boss&&!r.bossKilled&&!r.finished&&r.boss.enemy.getUniqueId()===r.boss.id;r.coach.visible=r.stage>=0&&!r.finished&&!sv.get('IndexOpen').getAsBoolean()&&!sv.get('AudioPanelOpen').getAsBoolean();r.result.visible=r.finished;
+  if(r.bossUI.visible){const b=r.boss,e=b.enemy,h=e.getBehavior('Health'),mw=scene.__towerShopUI?.sidebarX||W,bw=Math.min(400*s,mw*.55),cx=mw/2,hud=scene.getObjects('HUDPanel')[0],hudBottom=hud?scene.getLayer('UI').convertInverseCoords(hud.getX(),hud.getY()+hud.getHeight(),0,[0,0])[1]:56,notices=[scene.__monsterDiscovery?.root,scene.__fusionDiscovery?.root].filter(n=>n?.visible).map(n=>n.getBounds().bottom).filter(Number.isFinite),y=Math.max(83*s,hudBottom+28*s,...notices.map(bottom=>bottom+32*s));const ratio=Math.max(0,h.Health()/h.MaxHealth());r.bossPanel.clear().lineStyle(1,0xb59c69,.75).beginFill(0x0c1025,.92).drawRoundedRect(cx-bw/2-14*s,y-24*s,bw+28*s,70*s,6*s).endFill().beginFill(0x332b47).drawRoundedRect(cx-bw/2,y+6*s,bw,9*s,3*s).endFill().beginFill(0xb59bda).drawRoundedRect(cx-bw/2,y+6*s,Math.max(1,bw*ratio),9*s,3*s).endFill();r.bossName.text=b.config.Name.toUpperCase();r.bossName.style.fontSize=font(14,10);r.bossName.position.set(cx,y-9*s);r.bossHealth.text=Math.max(0,Math.ceil(h.Health()))+' / '+h.MaxHealth();r.bossHealth.style.fontSize=font(10,8);r.bossHealth.position.set(cx,y+11*s);r.bossHint.text=e.__golemState.casting?'VOID PULSE - CASTING':r.now<b.shieldUntil?'NEBULA SHIELD ACTIVE':r.now<b.surgeUntil&&b.config.SurgeMultiplier>1?'HORIZON SURGE':b.age<3?'BOSS INBOUND - HOLD THE FINISH':r.now<(b.reservesNoticeUntil||0)?'REINFORCEMENTS INBOUND':b.config.Reserves.length&&!b.reservesQueued?'REINFORCEMENTS AT 50% HP':'DESTROY BEFORE IT REACHES THE FINISH';r.bossHint.style.fontSize=font(10,8);r.bossHint.position.set(cx,y+31*s);r.bossPortrait.position.set(cx-bw/2-35*s,y);r.bossPortrait.scale.set(52*s/r.bossPortrait.texture.height);}
+  const allowed=[];
+  if(r.coach.visible){
+   const steps=[['DEFEND THE COSMOS','Enemies follow the path toward the Finish. Stop them before they escape.'],['STEP 1 - SELECT YOUR TOWER','Choose the Star Cannon in the Tower Shop to prepare your first defense.'],['STEP 2 - PLACE YOUR DEFENSE','Deploy on clear ground. Roads, ruins and other towers remain blocked.'],['STEP 3 - TARGET ACQUIRED','Your Tower tracks enemies in range and attacks automatically.'],['INCOMING CONTACT','Watch your Star Cannon aim, fire and defend the path.'],['FIRST ENGAGEMENT','Defeat an enemy to observe its real Gold reward.'],['RESOURCE ACQUIRED','Defeating enemies earns Gold. Spend it wisely to strengthen your defenses.'],['UPGRADE YOUR DEFENSE','Use the selected Tower panel to upgrade. You can also continue when ready.'],['TRAINING COMPLETE','Your campaign begins now, Commander. Use PLAY to begin each remaining wave.']];const [title,defaultBody]=steps[r.stage];let body=defaultBody,upgradePath=-1;if(r.stage===7){const t=scene.getObjects('StarCannonTower')[0];if(t){const v=t.getVariables();for(const [i,name]of ['Path1Level','Path2Level'].entries()){const next=scene.__starCannon.config.Paths[i].Upgrades[v.get(name).getAsNumber()];if(next&&next.Cost<=sv.get('Money').getAsNumber()){upgradePath=i;break;}}}if(upgradePath<0)body='Upgrades cost Gold. Earn more from enemies, then improve your Tower. You can continue now.';}
+   const panelW=Math.min(480*s,W-36*s),panelH=Math.max(142*s,91/display),x=18*s,y=H-panelH-20*s;r.panelRect={x,y,w:panelW,h:panelH};r.shade.clear();let target;
+   const screenRect=o=>{const l=scene.getLayer(o.getLayer()),a=l.convertInverseCoords(o.getX(),o.getY(),0,[0,0]),b=l.convertInverseCoords(o.getX()+o.getWidth(),o.getY()+o.getHeight(),0,[0,0]);return{x:a[0],y:a[1],w:b[0]-a[0],h:b[1]-a[1]};};
+   if(r.stage===1)target=screenRect(scene.__towerShopUI.cards[0].background);
+   else if(r.stage===2&&scene.__freePlacement?.active){const o=scene.getObjects('TilePlacement_Indicator')[0];if(o)target=screenRect(o);}
+   else if(r.stage===3&&scene.getObjects('StarCannonTower')[0]){target=screenRect(scene.getObjects('StarCannonTower')[0]);}
+   else if(r.stage===7&&upgradePath>=0&&scene.__selectedPanel?.cards[upgradePath]?.background)target=screenRect(scene.__selectedPanel.cards[upgradePath].background);
+   else if(r.stage===0){const map=scene.__towerShopUI;target={x:map.left,y:map.top,w:map.right-map.left,h:map.bottom-map.top};}
+   if([0,1,2,3,7].includes(r.stage)){r.shade.beginFill(0x030512,[1,2].includes(r.stage)?.26:.5).drawRect(0,0,W,H);if(target&&target.w>0&&target.h>0)r.shade.beginHole().drawRoundedRect(target.x-7*s,target.y-7*s,target.w+14*s,target.h+14*s,8*s).endHole();r.shade.endFill();}
+   if(r.stage===0){const map=scene.getLayer(''),points=sv.get('MonsterPathPoints').toJSObject().map(p=>map.convertInverseCoords(p.X,p.Y,0,[0,0]));r.shade.lineStyle(2*s,0x9ccfeb,.65);points.forEach((p,i)=>i?r.shade.lineTo(p[0],p[1]):r.shade.moveTo(p[0],p[1]));const finish=points.at(-1);if(finish)r.shade.drawCircle(finish[0],finish[1],22*s);}
+   if(r.stage===3&&scene.getObjects('StarCannonTower')[0]){const t=scene.getObjects('StarCannonTower')[0],v=t.getVariables(),map=scene.getLayer(''),center=scene.__freePlacement.center(t),p=map.convertInverseCoords(center[0],center[1],0,[0,0]),stats=scene.__starCannon.stats(v.get('Path1Level').getAsNumber(),v.get('Path2Level').getAsNumber());r.shade.lineStyle(1.5*s,0x9ccfeb,.6).drawCircle(p[0],p[1],stats.AttackRange*map.getCameraZoom());}
+   r.plate.clear().lineStyle(1,0xb99d69,.9).beginFill(0x0f1329,.97).drawRoundedRect(x,y,panelW,panelH,8*s).endFill();r.title.text=title;r.title.style.fontSize=font(16,11);r.title.position.set(x+panelW/2,y+panelH*.18);r.body.text=body;r.body.style.fontSize=font(13,9);r.body.style.wordWrap=true;r.body.style.wordWrapWidth=panelW-28*s;r.body.position.set(x+panelW/2,y+panelH*.47);
+   r.place(r.next,x+panelW*.72,y+panelH*.82,panelW*.46,Math.max(28*s,22/display),font(11,9));r.next.text.text=r.stage===4?'BEGIN WAVE':r.stage===8?'CONTINUE MISSION':'CONTINUE';r.next.visible=![1,2,5].includes(r.stage);r.place(r.skip,x+panelW*.23,y+panelH*.82,panelW*.25,Math.max(28*s,22/display),font(10,8));r.skip.visible=true;if(r.next.visible)allowed.push(r.next);allowed.push(r.skip);
+  }else r.panelRect=null;
+  if(r.finished){
+   r.resultAge+=real;r.result.alpha=Math.min(1,r.resultAge/.4);r.resultShade.clear().beginFill(0x050719,.78).drawRect(0,0,W,H).endFill();r.resultTitle.text=level.Index===C.config.Levels.length?'CAMPAIGN COMPLETE':level.Boss?'BOSS DEFEATED':'MISSION COMPLETE';r.resultTitle.position.set(W/2,H/2-133*s);r.resultTitle.style.fontSize=font(32,18);r.resultInfo.text=level.Id+'  /  '+level.Name;r.resultInfo.position.set(W/2,H/2-85*s);r.resultInfo.style.fontSize=font(16,11);r.resultProgress.text=sv.get('Lives').getAsNumber()+' LIVES REMAINING  /  '+Object.keys(C.save.Completed).length+' OF '+C.config.Levels.length+' MISSIONS COMPLETE';r.resultProgress.position.set(W/2,H/2-48*s);r.resultProgress.style.fontSize=font(12,9);r.resultButtons.forEach((b,i)=>{r.place(b,W/2,H/2+(20+72*i)*s,300*s,Math.max(48*s,28/display),font(14,10));b.visible=i!==0||level.Index<C.config.Levels.length;b.enabled=i!==0||C.available(C.config.Levels[level.Index]?.Id);if(b.visible)allowed.push(b);});
+  }
+  const action=r.input(r.transition?[]:allowed);for(const b of [r.next,r.skip,...r.resultButtons])r.paint(b,r.hover===b.id);
+  if(action==='next')r.advance();else if(action==='skip'){C.tutorialDone('GameTutorialDone');r.stage=-1;scene.__audio?.play('UIClick');}else if(action==='levels')r.leave(C.config.LevelsScene);else if(action==='menu')r.leave(C.config.MenuScene);else if(action==='nextmission')r.leave(C.config.GameplayScene,C.config.Levels[level.Index].Id);
+  if(r.transition){r.transition.age+=real;r.root.alpha=Math.max(0,1-r.transition.age/.3);if(r.transition.age>=.3&&!r.transition.requested){r.transition.requested=true;gdjs.evtTools.runtimeScene.replaceScene(scene,r.transition.target,false);}}
+  r.before();
+ };
+ r.dispose=()=>{if(r.disposed)return;r.disposed=true;if(r.transition)game.__starfallMenuAudioReady=!!scene.__audio?.unlocked;r.bossRing.destroy();destroyUI();};
+}
+r.before();

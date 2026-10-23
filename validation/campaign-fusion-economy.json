@@ -1,0 +1,34 @@
+{
+  "result": {
+    "checks": [
+      "actual campaign shop buys source tower",
+      "actual Path1 upgrade spends configured cost",
+      "actual Path1 upgrade spends configured cost",
+      "actual Path1 upgrade spends configured cost",
+      "actual Path1 upgrade spends configured cost",
+      "actual Path1 upgrade spends configured cost",
+      "actual Path2 upgrade spends configured cost",
+      "actual Path2 upgrade spends configured cost",
+      "actual campaign shop buys source tower",
+      "actual Path1 upgrade spends configured cost",
+      "actual Path1 upgrade spends configured cost",
+      "actual Path2 upgrade spends configured cost",
+      "actual Path2 upgrade spends configured cost",
+      "actual Path2 upgrade spends configured cost",
+      "actual Path2 upgrade spends configured cost",
+      "actual Path2 upgrade spends configured cost",
+      "finite earned pre-boss budget can fund unchanged22,490Gold pair",
+      "existing Tactical Fusion works in campaign at0.5x",
+      "real regional placement consumes both sources into Starburst",
+      "Fusion discovery persists without granting mission victory"
+    ],
+    "mission": "5-5",
+    "finitePreBossFunds": 27307,
+    "actualPairCost": 22490,
+    "remainingGold": 4817,
+    "recipesOrTowerStatsChanged": false,
+    "priorIncomeFixture": true
+  },
+  "progress": [],
+  "consoleErrors": []
+}

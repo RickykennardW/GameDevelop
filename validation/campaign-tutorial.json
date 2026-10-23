@@ -1,0 +1,40 @@
+{
+  "result": {
+    "checks": [
+      "one functional Levels scene with25missions /5chapters",
+      "cold save unlocks only1-1; invalid/locked launches reject",
+      "locked chapter cannot bypass prerequisite",
+      "five hex pads / fifth boss / two reusable background layers",
+      "first entry starts welcome tutorial",
+      "welcome advances to Chapter1 highlight",
+      "chapter introduction advances to actual mission selection",
+      "tutorial blocks locked node and never launches automatically",
+      "real1-1 selection shows confirmation before launching",
+      "native transition reaches Game Scene",
+      "mission configuration applied before first wave",
+      "selection tutorial persists; gameplay tutorial begins once",
+      "first wave cannot start before successful tutorial placement",
+      "battlefield acknowledgment teaches actual Tower selection",
+      "real shop selection advances to placement",
+      "invalid road placement neither advances nor charges",
+      "valid native placement costs300 once and advances tutorial",
+      "targeting explanation precedes first wave",
+      "first manageable wave uses6real Nova Wisps",
+      "real aiming/projectiles kill first enemy and pay actual Gold reward",
+      "reward explanation pauses combat without duplicate rewards",
+      "upgrade tutorial opens actual selected Tower panel",
+      "actual upgrade keeps established cost160 and stat transaction",
+      "training completion persists and releases normal gameplay"
+    ],
+    "naturalEngagementFrames": 170,
+    "campaign": {
+      "Version": 1,
+      "Completed": {},
+      "SelectTutorialDone": true,
+      "GameTutorialDone": true
+    },
+    "tutorial": true
+  },
+  "progress": [],
+  "consoleErrors": []
+}

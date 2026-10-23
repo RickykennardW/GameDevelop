@@ -28,7 +28,7 @@ require(path.join(dir,'libGD.js'))({locateFile:f=>path.join(dir,f)}).then(gd=>{t
  const diagnostics=new gd.DiagnosticReport(),includes=new gd.SetString(),gen=new gd.LayoutCodeGenerator(project);
  for(let i=0;i<project.getLayoutsCount();i++){
   const layout=project.getLayoutAt(i),code=gen.generateLayoutCompleteCode(layout,includes,diagnostics,true);
-  fs.writeFileSync(path.join(dir,layout.getName()==='Game Scene'?'scene.js':'main-menu-scene.js'),code);new vm.Script(code);
+  fs.writeFileSync(path.join(dir,layout.getName()==='Game Scene'?'scene.js':layout.getName()==='MainMenu'?'main-menu-scene.js':'levels-scene.js'),code);new vm.Script(code);
   console.log('COMPILED',layout.getName());
  }
  console.log('SCENE COMPILE diagnostics',diagnostics.count());if(diagnostics.count())throw new Error('Scene diagnostics must be zero');for(let i=0;i<diagnostics.count();i++){const d=diagnostics.get(i);console.log(d.getMessage(),d.getObjectName(),d.getActualValue(),d.getExpectedValue());}

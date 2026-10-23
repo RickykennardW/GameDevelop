@@ -1,0 +1,234 @@
+{
+  "result": {
+    "checks": [
+      "background hover enlargement/glow retained: Start",
+      "repeated hover restores frame without triggering click: Start",
+      "press/release outside does not trigger action: Start",
+      "background hover enlargement/glow retained: Exit",
+      "repeated hover restores frame without triggering click: Exit",
+      "press/release outside does not trigger action: Exit"
+    ],
+    "scene": "MainMenu",
+    "physical": [
+      1280,
+      720
+    ],
+    "logical": [
+      1280,
+      720
+    ],
+    "baseline": true,
+    "results": [
+      {
+        "button": "Start",
+        "maxShift": 9.600006103515625,
+        "maxCenterError": 9.600006103515625,
+        "maxSizeChange": 4.1400146484375,
+        "states": [
+          {
+            "state": "outside",
+            "x": 640,
+            "y": 432,
+            "w": 69,
+            "h": 31,
+            "labelX": 480,
+            "labelY": 421.5,
+            "scale": 1,
+            "frameScale": 1,
+            "highlight": "Normal"
+          },
+          {
+            "state": "entering",
+            "x": 637.7528686523438,
+            "y": 432,
+            "w": 69.9691162109375,
+            "h": 31.43536376953125,
+            "labelX": 477.75287283287423,
+            "labelY": 421.3525322796574,
+            "scale": 1.0140445447945359,
+            "frameScale": 1.0140445447945359,
+            "highlight": "Hover"
+          },
+          {
+            "state": "hover",
+            "x": 630.3999938964844,
+            "y": 432,
+            "w": 73.13995361328125,
+            "h": 32.8599853515625,
+            "labelX": 470.4000002180396,
+            "labelY": 420.87000001430886,
+            "scale": 1.0599999986372521,
+            "frameScale": 1.0599999986372521,
+            "highlight": "Hover"
+          },
+          {
+            "state": "pressed",
+            "x": 630.3999938964844,
+            "y": 432,
+            "w": 73.13995361328125,
+            "h": 32.8599853515625,
+            "labelX": 470.40000000888716,
+            "labelY": 420.8700000005832,
+            "scale": 1.0599999999444552,
+            "frameScale": 1.0599999999444552,
+            "highlight": "Hover"
+          },
+          {
+            "state": "leaving-pressed",
+            "x": 632.6471252441406,
+            "y": 432,
+            "w": 72.17095947265625,
+            "h": 32.42462158203125,
+            "labelX": 472.64712717393263,
+            "labelY": 421.01746772078934,
+            "scale": 1.045955455162921,
+            "frameScale": 1.045955455162921,
+            "highlight": "Normal"
+          },
+          {
+            "state": "outside-after-release",
+            "x": 640,
+            "y": 432,
+            "w": 69,
+            "h": 31,
+            "labelX": 479.99999978196035,
+            "labelY": 421.49999998569115,
+            "scale": 1.000000001362748,
+            "frameScale": 1.000000001362748,
+            "highlight": "Normal"
+          },
+          {
+            "state": "repeat-enter",
+            "x": 630.4463500976562,
+            "y": 432,
+            "w": 73.1199951171875,
+            "h": 32.85101318359375,
+            "labelX": 470.4463433753311,
+            "labelY": 420.8730412840061,
+            "scale": 1.0597103539041808,
+            "frameScale": 1.0597103539041808,
+            "highlight": "Hover"
+          }
+        ],
+        "last": {
+          "state": "last",
+          "x": 640,
+          "y": 432,
+          "w": 69,
+          "h": 31,
+          "labelX": 479.9999999996395,
+          "labelY": 421.49999999997635,
+          "scale": 1.000000000002253,
+          "frameScale": 1.000000000002253,
+          "highlight": "Normal"
+        }
+      },
+      {
+        "button": "Exit",
+        "maxShift": 9.600006103515625,
+        "maxCenterError": 9.600006103515625,
+        "maxSizeChange": 5.52001953125,
+        "states": [
+          {
+            "state": "outside",
+            "x": 640,
+            "y": 515,
+            "w": 92,
+            "h": 27,
+            "labelX": 480,
+            "labelY": 506.5,
+            "scale": 1,
+            "frameScale": 1,
+            "highlight": "Normal"
+          },
+          {
+            "state": "entering",
+            "x": 637.7528686523438,
+            "y": 514.9999847412109,
+            "w": 93.2921142578125,
+            "h": 27.379180908203125,
+            "labelX": 477.75287283287423,
+            "labelY": 506.38062136924646,
+            "scale": 1.0140445447945359,
+            "frameScale": 1.0140445447945359,
+            "highlight": "Hover"
+          },
+          {
+            "state": "hover",
+            "x": 630.3999938964844,
+            "y": 515,
+            "w": 97.51995849609375,
+            "h": 28.6199951171875,
+            "labelX": 470.4000002180396,
+            "labelY": 505.99000001158333,
+            "scale": 1.0599999986372521,
+            "frameScale": 1.0599999986372521,
+            "highlight": "Hover"
+          },
+          {
+            "state": "pressed",
+            "x": 630.3999938964844,
+            "y": 515,
+            "w": 97.51995849609375,
+            "h": 28.6199951171875,
+            "labelX": 470.40000000888716,
+            "labelY": 505.99000000047215,
+            "scale": 1.0599999999444552,
+            "frameScale": 1.0599999999444552,
+            "highlight": "Hover"
+          },
+          {
+            "state": "leaving-pressed",
+            "x": 632.6471557617188,
+            "y": 515.0000152587891,
+            "w": 96.2279052734375,
+            "h": 28.240814208984375,
+            "labelX": 472.64712717393263,
+            "labelY": 506.1093786311152,
+            "scale": 1.045955455162921,
+            "frameScale": 1.045955455162921,
+            "highlight": "Normal"
+          },
+          {
+            "state": "outside-after-release",
+            "x": 640,
+            "y": 515,
+            "w": 92,
+            "h": 27,
+            "labelX": 479.99999978196035,
+            "labelY": 506.4999999884166,
+            "scale": 1.000000001362748,
+            "frameScale": 1.000000001362748,
+            "highlight": "Normal"
+          },
+          {
+            "state": "repeat-enter",
+            "x": 630.4463195800781,
+            "y": 515,
+            "w": 97.49334716796875,
+            "h": 28.6121826171875,
+            "labelX": 470.4463433753311,
+            "labelY": 505.9924619918145,
+            "scale": 1.0597103539041808,
+            "frameScale": 1.0597103539041808,
+            "highlight": "Hover"
+          }
+        ],
+        "last": {
+          "state": "last",
+          "x": 640,
+          "y": 515,
+          "w": 92,
+          "h": 27,
+          "labelX": 479.9999999996395,
+          "labelY": 506.49999999998084,
+          "scale": 1.000000000002253,
+          "frameScale": 1.000000000002253,
+          "highlight": "Normal"
+        }
+      }
+    ]
+  },
+  "progress": [],
+  "consoleErrors": []
+}

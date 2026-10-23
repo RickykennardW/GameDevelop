@@ -1,0 +1,3561 @@
+{
+  "Version": 1,
+  "StorageKey": "starfallBastionCampaign.v1",
+  "GameplayScene": "Game Scene",
+  "LevelsScene": "Levels",
+  "MenuScene": "MainMenu",
+  "Chapters": [
+    {
+      "Id": 1,
+      "Name": "Stellar Frontier",
+      "ShortName": "Frontier",
+      "Description": "The edge of known space. Establish your first line of defense.",
+      "Background": "assets/ui/campaign/chapter_1.svg",
+      "Boss": {
+        "Name": "The Rift Devourer",
+        "HP": 1200,
+        "Armor": 5,
+        "Speed": 36,
+        "Reward": 250,
+        "CastCooldown": 14,
+        "ShieldPercent": 0,
+        "ShieldSeconds": 0,
+        "SurgeMultiplier": 1,
+        "SurgeSeconds": 4,
+        "Reserves": [],
+        "ReserveThreshold": 0.5,
+        "Pattern": "Rift pulse: a telegraphed pause before fortification. Keep firing."
+      }
+    },
+    {
+      "Id": 2,
+      "Name": "Nebula Expanse",
+      "ShortName": "Nebula",
+      "Description": "Read the currents. Adapt to fast and shielded enemy formations.",
+      "Background": "assets/ui/campaign/chapter_2.svg",
+      "Boss": {
+        "Name": "The Nebula Warden",
+        "HP": 3600,
+        "Armor": 10,
+        "Speed": 39,
+        "Reward": 450,
+        "CastCooldown": 12,
+        "ShieldPercent": 18,
+        "ShieldSeconds": 4,
+        "SurgeMultiplier": 1,
+        "SurgeSeconds": 4,
+        "Reserves": [],
+        "ReserveThreshold": 0.5,
+        "Pattern": "Nebula shield: a brief, visible defense after each cast."
+      }
+    },
+    {
+      "Id": 3,
+      "Name": "Ancient Celestial Ruins",
+      "ShortName": "Ruins",
+      "Description": "Awaken the ruins. Hold your ground against ancient constructs.",
+      "Background": "assets/ui/campaign/chapter_3.svg",
+      "Boss": {
+        "Name": "The Astral Colossus",
+        "HP": 4400,
+        "Armor": 15,
+        "Speed": 37,
+        "Reward": 750,
+        "CastCooldown": 11,
+        "ShieldPercent": 0,
+        "ShieldSeconds": 0,
+        "SurgeMultiplier": 1,
+        "SurgeSeconds": 4,
+        "Reserves": [
+          "VoidGuard",
+          "VoidGuard",
+          "VoidGuard",
+          "VoidGuard"
+        ],
+        "ReserveThreshold": 0.5,
+        "Pattern": "Ancient procession: reinforcements arrive once at half health."
+      }
+    },
+    {
+      "Id": 4,
+      "Name": "Event Horizon",
+      "ShortName": "Horizon",
+      "Description": "Where light bends. Watch the Finish and prepare for pressure.",
+      "Background": "assets/ui/campaign/chapter_4.svg",
+      "Boss": {
+        "Name": "The Void Sovereign",
+        "HP": 6500,
+        "Armor": 18,
+        "Speed": 41,
+        "Reward": 1100,
+        "CastCooldown": 10,
+        "ShieldPercent": 10,
+        "ShieldSeconds": 3,
+        "SurgeMultiplier": 1.3,
+        "SurgeSeconds": 4,
+        "Reserves": [
+          "VoidGuard",
+          "VoidGuard",
+          "VoidGuard",
+          "VoidGuard",
+          "VoidGuard",
+          "VoidHound",
+          "VoidHound",
+          "VoidHound",
+          "VoidHound",
+          "VoidHound"
+        ],
+        "ReserveThreshold": 0.5,
+        "Pattern": "Horizon surge: a telegraphed burst of speed after casting."
+      }
+    },
+    {
+      "Id": 5,
+      "Name": "Cosmic Singularity",
+      "ShortName": "Singularity",
+      "Description": "The final fracture. Unite every lesson against the heart of the Void.",
+      "Background": "assets/ui/campaign/chapter_5.svg",
+      "Boss": {
+        "Name": "The Entropy Architect",
+        "HP": 9000,
+        "Armor": 20,
+        "Speed": 42,
+        "Reward": 1800,
+        "CastCooldown": 9,
+        "ShieldPercent": 15,
+        "ShieldSeconds": 4,
+        "SurgeMultiplier": 1.2,
+        "SurgeSeconds": 4,
+        "Reserves": [
+          "VoidGuard",
+          "VoidGuard",
+          "VoidGuard",
+          "VoidGuard",
+          "VoidGuard",
+          "VoidGuard",
+          "VoidHound",
+          "VoidHound",
+          "VoidHound",
+          "VoidHound",
+          "VoidHound",
+          "VoidHound"
+        ],
+        "ReserveThreshold": 0.5,
+        "Pattern": "Entropy convergence: shields, surges and one final reinforcement group."
+      }
+    }
+  ],
+  "Levels": [
+    {
+      "Id": "1-1",
+      "Index": 1,
+      "Chapter": 1,
+      "Number": 1,
+      "Name": "First Contact",
+      "StartingGold": 600,
+      "StartingLives": 20,
+      "Intermission": 5,
+      "Tutorial": true,
+      "Boss": false,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "Basic": 6
+          },
+          "SpawnInterval": 1.5,
+          "HealthScale": 0.85,
+          "SpeedScale": 0.9,
+          "Boss": false,
+          "ExpectedGold": 30
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "Basic": 10
+          },
+          "SpawnInterval": 1.475,
+          "HealthScale": 0.87,
+          "SpeedScale": 0.9,
+          "Boss": false,
+          "ExpectedGold": 50
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "Basic": 12
+          },
+          "SpawnInterval": 1.45,
+          "HealthScale": 0.89,
+          "SpeedScale": 0.9,
+          "Boss": false,
+          "ExpectedGold": 60
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "Basic": 14
+          },
+          "SpawnInterval": 1.425,
+          "HealthScale": 0.91,
+          "SpeedScale": 0.9,
+          "Boss": false,
+          "ExpectedGold": 70
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "Basic": 16
+          },
+          "SpawnInterval": 1.4,
+          "HealthScale": 0.93,
+          "SpeedScale": 0.9,
+          "Boss": false,
+          "ExpectedGold": 80
+        }
+      ],
+      "ExpectedKillGold": 290
+    },
+    {
+      "Id": "1-2",
+      "Index": 2,
+      "Chapter": 1,
+      "Number": 2,
+      "Name": "Drifting Signals",
+      "StartingGold": 675,
+      "StartingLives": 20,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": false,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "Basic": 9,
+            "VoidHound": 1
+          },
+          "SpawnInterval": 1.475,
+          "HealthScale": 0.875,
+          "SpeedScale": 0.908,
+          "Boss": false,
+          "ExpectedGold": 52
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "VoidHound": 3,
+            "Basic": 9
+          },
+          "SpawnInterval": 1.45,
+          "HealthScale": 0.895,
+          "SpeedScale": 0.908,
+          "Boss": false,
+          "ExpectedGold": 66
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "Basic": 11,
+            "VoidHound": 3
+          },
+          "SpawnInterval": 1.425,
+          "HealthScale": 0.915,
+          "SpeedScale": 0.908,
+          "Boss": false,
+          "ExpectedGold": 76
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "Basic": 14,
+            "VoidHound": 2
+          },
+          "SpawnInterval": 1.4,
+          "HealthScale": 0.935,
+          "SpeedScale": 0.908,
+          "Boss": false,
+          "ExpectedGold": 84
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "VoidHound": 5,
+            "Basic": 13
+          },
+          "SpawnInterval": 1.375,
+          "HealthScale": 0.955,
+          "SpeedScale": 0.908,
+          "Boss": false,
+          "ExpectedGold": 100
+        }
+      ],
+      "ExpectedKillGold": 378
+    },
+    {
+      "Id": "1-3",
+      "Index": 3,
+      "Chapter": 1,
+      "Number": 3,
+      "Name": "Astral Crossing",
+      "StartingGold": 750,
+      "StartingLives": 20,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": false,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "Basic": 8,
+            "VoidSentinel": 1,
+            "VoidHound": 3
+          },
+          "SpawnInterval": 1.45,
+          "HealthScale": 0.9,
+          "SpeedScale": 0.916,
+          "Boss": false,
+          "ExpectedGold": 67
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "Basic": 8,
+            "VoidSentinel": 4,
+            "VoidHound": 2
+          },
+          "SpawnInterval": 1.425,
+          "HealthScale": 0.92,
+          "SpeedScale": 0.916,
+          "Boss": false,
+          "ExpectedGold": 78
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "VoidSentinel": 6,
+            "Basic": 9,
+            "VoidHound": 1
+          },
+          "SpawnInterval": 1.4,
+          "HealthScale": 0.94,
+          "SpeedScale": 0.916,
+          "Boss": false,
+          "ExpectedGold": 88
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "VoidSentinel": 5,
+            "Basic": 9,
+            "VoidHound": 4
+          },
+          "SpawnInterval": 1.375,
+          "HealthScale": 0.96,
+          "SpeedScale": 0.916,
+          "Boss": false,
+          "ExpectedGold": 103
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "Basic": 11,
+            "VoidHound": 4,
+            "VoidSentinel": 5
+          },
+          "SpawnInterval": 1.35,
+          "HealthScale": 0.98,
+          "SpeedScale": 0.916,
+          "Boss": false,
+          "ExpectedGold": 113
+        },
+        {
+          "Number": 6,
+          "Enemies": {
+            "Basic": 15,
+            "VoidHound": 3,
+            "VoidSentinel": 4
+          },
+          "SpawnInterval": 1.325,
+          "HealthScale": 1.0,
+          "SpeedScale": 0.916,
+          "Boss": false,
+          "ExpectedGold": 120
+        }
+      ],
+      "ExpectedKillGold": 569
+    },
+    {
+      "Id": "1-4",
+      "Index": 4,
+      "Chapter": 1,
+      "Number": 4,
+      "Name": "Frontier Watch",
+      "StartingGold": 825,
+      "StartingLives": 20,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": false,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "Basic": 7,
+            "VoidSentinel": 4,
+            "VoidGuard": 2,
+            "VoidHound": 1
+          },
+          "SpawnInterval": 1.425,
+          "HealthScale": 0.925,
+          "SpeedScale": 0.924,
+          "Boss": false,
+          "ExpectedGold": 82
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "VoidHound": 4,
+            "VoidGuard": 3,
+            "Basic": 2,
+            "VoidSentinel": 7
+          },
+          "SpawnInterval": 1.4,
+          "HealthScale": 0.945,
+          "SpeedScale": 0.924,
+          "Boss": false,
+          "ExpectedGold": 104
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "Basic": 13,
+            "VoidGuard": 1,
+            "VoidSentinel": 3,
+            "VoidHound": 1
+          },
+          "SpawnInterval": 1.375,
+          "HealthScale": 0.965,
+          "SpeedScale": 0.924,
+          "Boss": false,
+          "ExpectedGold": 98
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "VoidHound": 3,
+            "VoidGuard": 3,
+            "Basic": 10,
+            "VoidSentinel": 4
+          },
+          "SpawnInterval": 1.35,
+          "HealthScale": 0.985,
+          "SpeedScale": 0.924,
+          "Boss": false,
+          "ExpectedGold": 119
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "VoidHound": 6,
+            "VoidSentinel": 7,
+            "Basic": 9
+          },
+          "SpawnInterval": 1.325,
+          "HealthScale": 1.005,
+          "SpeedScale": 0.924,
+          "Boss": false,
+          "ExpectedGold": 129
+        },
+        {
+          "Number": 6,
+          "Enemies": {
+            "VoidGuard": 6,
+            "VoidHound": 5,
+            "Basic": 10,
+            "VoidSentinel": 3
+          },
+          "SpawnInterval": 1.3,
+          "HealthScale": 1.025,
+          "SpeedScale": 0.924,
+          "Boss": false,
+          "ExpectedGold": 151
+        }
+      ],
+      "ExpectedKillGold": 683
+    },
+    {
+      "Id": "1-5",
+      "Index": 5,
+      "Chapter": 1,
+      "Number": 5,
+      "Name": "The Rift Devourer",
+      "StartingGold": 900,
+      "StartingLives": 20,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": true,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "VoidGuard": 3,
+            "VoidSentinel": 4,
+            "Basic": 7,
+            "VoidBrute": 2
+          },
+          "SpawnInterval": 1.4,
+          "HealthScale": 0.95,
+          "SpeedScale": 0.932,
+          "Boss": false,
+          "ExpectedGold": 103
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "VoidBrute": 3,
+            "Basic": 9,
+            "VoidGuard": 2,
+            "VoidSentinel": 3,
+            "VoidHound": 1
+          },
+          "SpawnInterval": 1.375,
+          "HealthScale": 0.97,
+          "SpeedScale": 0.932,
+          "Boss": false,
+          "ExpectedGold": 116
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "VoidHound": 3,
+            "VoidSentinel": 3,
+            "VoidBrute": 2,
+            "Basic": 10,
+            "VoidGuard": 2
+          },
+          "SpawnInterval": 1.35,
+          "HealthScale": 0.99,
+          "SpeedScale": 0.932,
+          "Boss": false,
+          "ExpectedGold": 125
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "Basic": 9,
+            "VoidGuard": 3,
+            "VoidBrute": 3,
+            "VoidHound": 2,
+            "VoidSentinel": 5
+          },
+          "SpawnInterval": 1.325,
+          "HealthScale": 1.01,
+          "SpeedScale": 0.932,
+          "Boss": false,
+          "ExpectedGold": 143
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "VoidHound": 3,
+            "VoidBrute": 4,
+            "VoidSentinel": 7,
+            "Basic": 8,
+            "VoidGuard": 2
+          },
+          "SpawnInterval": 1.3,
+          "HealthScale": 1.03,
+          "SpeedScale": 0.932,
+          "Boss": false,
+          "ExpectedGold": 159
+        },
+        {
+          "Number": 6,
+          "Enemies": {
+            "VoidGuard": 5,
+            "Basic": 11,
+            "VoidHound": 4,
+            "VoidBrute": 2,
+            "VoidSentinel": 4
+          },
+          "SpawnInterval": 1.275,
+          "HealthScale": 1.05,
+          "SpeedScale": 0.932,
+          "Boss": false,
+          "ExpectedGold": 167
+        },
+        {
+          "Number": 7,
+          "Enemies": {
+            "VoidGuard": 4,
+            "VoidBrute": 4,
+            "VoidHound": 6,
+            "Basic": 6,
+            "VoidSentinel": 8
+          },
+          "SpawnInterval": 1.25,
+          "HealthScale": 1.07,
+          "SpeedScale": 0.932,
+          "Boss": true,
+          "ExpectedGold": 442
+        }
+      ],
+      "ExpectedKillGold": 1255
+    },
+    {
+      "Id": "2-1",
+      "Index": 6,
+      "Chapter": 2,
+      "Number": 1,
+      "Name": "Violet Passage",
+      "StartingGold": 1200,
+      "StartingLives": 18,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": false,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "VoidSentinel": 1,
+            "Basic": 8,
+            "VoidBrute": 3,
+            "VoidGuard": 4
+          },
+          "SpawnInterval": 1.15,
+          "HealthScale": 1.0,
+          "SpeedScale": 0.95,
+          "Boss": false,
+          "ExpectedGold": 108
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "VoidSentinel": 5,
+            "VoidHound": 2,
+            "Basic": 7,
+            "VoidBrute": 3,
+            "VoidGuard": 2
+          },
+          "SpawnInterval": 1.125,
+          "HealthScale": 1.02,
+          "SpeedScale": 0.95,
+          "Boss": false,
+          "ExpectedGold": 125
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "Basic": 12,
+            "VoidSentinel": 4,
+            "VoidHound": 3,
+            "VoidGuard": 3
+          },
+          "SpawnInterval": 1.1,
+          "HealthScale": 1.04,
+          "SpeedScale": 0.95,
+          "Boss": false,
+          "ExpectedGold": 129
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "VoidGuard": 6,
+            "Basic": 10,
+            "VoidSentinel": 3,
+            "VoidHound": 3,
+            "VoidBrute": 3
+          },
+          "SpawnInterval": 1.075,
+          "HealthScale": 1.06,
+          "SpeedScale": 0.95,
+          "Boss": false,
+          "ExpectedGold": 167
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "Basic": 13,
+            "VoidGuard": 6,
+            "VoidHound": 4,
+            "VoidBrute": 2,
+            "VoidSentinel": 3
+          },
+          "SpawnInterval": 1.05,
+          "HealthScale": 1.08,
+          "SpeedScale": 0.95,
+          "Boss": false,
+          "ExpectedGold": 179
+        },
+        {
+          "Number": 6,
+          "Enemies": {
+            "Basic": 11,
+            "VoidSentinel": 3,
+            "VoidHound": 7,
+            "VoidBrute": 5,
+            "VoidGuard": 5
+          },
+          "SpawnInterval": 1.025,
+          "HealthScale": 1.1,
+          "SpeedScale": 0.95,
+          "Boss": false,
+          "ExpectedGold": 212
+        }
+      ],
+      "ExpectedKillGold": 920
+    },
+    {
+      "Id": "2-2",
+      "Index": 7,
+      "Chapter": 2,
+      "Number": 2,
+      "Name": "Dust Runners",
+      "StartingGold": 1350,
+      "StartingLives": 18,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": false,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "VoidBrute": 4,
+            "Basic": 10,
+            "VoidSentinel": 3,
+            "VoidGuard": 1,
+            "VoidHound": 1
+          },
+          "SpawnInterval": 1.125,
+          "HealthScale": 1.025,
+          "SpeedScale": 0.958,
+          "Boss": false,
+          "ExpectedGold": 123
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "VoidGuard": 6,
+            "Basic": 5,
+            "VoidSentinel": 6,
+            "VoidBrute": 2,
+            "VoidHound": 3
+          },
+          "SpawnInterval": 1.1,
+          "HealthScale": 1.045,
+          "SpeedScale": 0.958,
+          "Boss": false,
+          "ExpectedGold": 150
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "VoidBrute": 5,
+            "VoidSentinel": 3,
+            "Basic": 11,
+            "VoidHound": 3,
+            "VoidGuard": 3
+          },
+          "SpawnInterval": 1.075,
+          "HealthScale": 1.065,
+          "SpeedScale": 0.958,
+          "Boss": false,
+          "ExpectedGold": 168
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "VoidGuard": 2,
+            "VoidBrute": 5,
+            "Basic": 11,
+            "VoidHound": 8,
+            "VoidSentinel": 2
+          },
+          "SpawnInterval": 1.05,
+          "HealthScale": 1.085,
+          "SpeedScale": 0.958,
+          "Boss": false,
+          "ExpectedGold": 189
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "Basic": 14,
+            "VoidSentinel": 3,
+            "VoidBrute": 6,
+            "VoidHound": 5,
+            "VoidGuard": 3
+          },
+          "SpawnInterval": 1.025,
+          "HealthScale": 1.105,
+          "SpeedScale": 0.958,
+          "Boss": false,
+          "ExpectedGold": 207
+        },
+        {
+          "Number": 6,
+          "Enemies": {
+            "VoidHound": 4,
+            "VoidGuard": 6,
+            "VoidSentinel": 8,
+            "Basic": 14,
+            "VoidBrute": 2
+          },
+          "SpawnInterval": 1.0,
+          "HealthScale": 1.125,
+          "SpeedScale": 0.958,
+          "Boss": false,
+          "ExpectedGold": 214
+        },
+        {
+          "Number": 7,
+          "Enemies": {
+            "VoidSentinel": 3,
+            "Basic": 15,
+            "VoidGuard": 6,
+            "VoidBrute": 5,
+            "VoidHound": 8
+          },
+          "SpawnInterval": 0.975,
+          "HealthScale": 1.145,
+          "SpeedScale": 0.958,
+          "Boss": false,
+          "ExpectedGold": 247
+        }
+      ],
+      "ExpectedKillGold": 1298
+    },
+    {
+      "Id": "2-3",
+      "Index": 8,
+      "Chapter": 2,
+      "Number": 3,
+      "Name": "Veil of Stone",
+      "StartingGold": 1500,
+      "StartingLives": 18,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": false,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "VoidHound": 5,
+            "VoidBrute": 3,
+            "Basic": 6,
+            "VoidGuard": 3,
+            "VoidSentinel": 5
+          },
+          "SpawnInterval": 1.1,
+          "HealthScale": 1.05,
+          "SpeedScale": 0.966,
+          "Boss": false,
+          "ExpectedGold": 149
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "Basic": 12,
+            "VoidBrute": 4,
+            "VoidGuard": 3,
+            "VoidSentinel": 4,
+            "VoidHound": 2
+          },
+          "SpawnInterval": 1.075,
+          "HealthScale": 1.07,
+          "SpeedScale": 0.966,
+          "Boss": false,
+          "ExpectedGold": 162
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "VoidHound": 3,
+            "VoidBrute": 2,
+            "Basic": 12,
+            "VoidGuard": 5,
+            "VoidSentinel": 6,
+            "VoidGolem": 1
+          },
+          "SpawnInterval": 1.05,
+          "HealthScale": 1.09,
+          "SpeedScale": 0.966,
+          "Boss": false,
+          "ExpectedGold": 197
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "VoidHound": 6,
+            "VoidSentinel": 4,
+            "VoidBrute": 6,
+            "VoidGuard": 5,
+            "Basic": 10
+          },
+          "SpawnInterval": 1.025,
+          "HealthScale": 1.11,
+          "SpeedScale": 0.966,
+          "Boss": false,
+          "ExpectedGold": 216
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "VoidSentinel": 6,
+            "Basic": 17,
+            "VoidGuard": 4,
+            "VoidBrute": 3,
+            "VoidHound": 4
+          },
+          "SpawnInterval": 1.0,
+          "HealthScale": 1.13,
+          "SpeedScale": 0.966,
+          "Boss": false,
+          "ExpectedGold": 211
+        },
+        {
+          "Number": 6,
+          "Enemies": {
+            "VoidSentinel": 7,
+            "VoidBrute": 4,
+            "VoidGuard": 4,
+            "Basic": 13,
+            "VoidHound": 9,
+            "VoidGolem": 1
+          },
+          "SpawnInterval": 0.975,
+          "HealthScale": 1.15,
+          "SpeedScale": 0.966,
+          "Boss": false,
+          "ExpectedGold": 262
+        },
+        {
+          "Number": 7,
+          "Enemies": {
+            "Basic": 16,
+            "VoidBrute": 6,
+            "VoidSentinel": 4,
+            "VoidHound": 7,
+            "VoidGuard": 7
+          },
+          "SpawnInterval": 0.95,
+          "HealthScale": 1.17,
+          "SpeedScale": 0.966,
+          "Boss": false,
+          "ExpectedGold": 269
+        }
+      ],
+      "ExpectedKillGold": 1466
+    },
+    {
+      "Id": "2-4",
+      "Index": 9,
+      "Chapter": 2,
+      "Number": 4,
+      "Name": "Nebula Vigil",
+      "StartingGold": 1650,
+      "StartingLives": 18,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": false,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "VoidBrute": 3,
+            "VoidHound": 2,
+            "VoidGuard": 3,
+            "Basic": 13,
+            "VoidSentinel": 4
+          },
+          "SpawnInterval": 1.075,
+          "HealthScale": 1.075,
+          "SpeedScale": 0.974,
+          "Boss": false,
+          "ExpectedGold": 157
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "Basic": 14,
+            "VoidHound": 6,
+            "VoidSentinel": 4,
+            "VoidBrute": 2,
+            "VoidGuard": 2
+          },
+          "SpawnInterval": 1.05,
+          "HealthScale": 1.095,
+          "SpeedScale": 0.974,
+          "Boss": false,
+          "ExpectedGold": 172
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "Basic": 10,
+            "VoidBrute": 3,
+            "VoidGuard": 4,
+            "VoidSentinel": 8,
+            "VoidHound": 6,
+            "VoidGolem": 1
+          },
+          "SpawnInterval": 1.025,
+          "HealthScale": 1.115,
+          "SpeedScale": 0.974,
+          "Boss": false,
+          "ExpectedGold": 222
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "Basic": 14,
+            "VoidSentinel": 8,
+            "VoidGuard": 8,
+            "VoidHound": 3,
+            "VoidBrute": 1
+          },
+          "SpawnInterval": 1.0,
+          "HealthScale": 1.135,
+          "SpeedScale": 0.974,
+          "Boss": false,
+          "ExpectedGold": 213
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "Basic": 19,
+            "VoidBrute": 8,
+            "VoidGuard": 3,
+            "VoidSentinel": 6,
+            "VoidHound": 1
+          },
+          "SpawnInterval": 0.975,
+          "HealthScale": 1.155,
+          "SpeedScale": 0.974,
+          "Boss": false,
+          "ExpectedGold": 242
+        },
+        {
+          "Number": 6,
+          "Enemies": {
+            "Basic": 18,
+            "VoidSentinel": 7,
+            "VoidGuard": 6,
+            "VoidBrute": 4,
+            "VoidHound": 5,
+            "VoidGolem": 1
+          },
+          "SpawnInterval": 0.95,
+          "HealthScale": 1.175,
+          "SpeedScale": 0.974,
+          "Boss": false,
+          "ExpectedGold": 275
+        },
+        {
+          "Number": 7,
+          "Enemies": {
+            "Basic": 18,
+            "VoidGuard": 11,
+            "VoidSentinel": 6,
+            "VoidHound": 4,
+            "VoidBrute": 4
+          },
+          "SpawnInterval": 0.925,
+          "HealthScale": 1.195,
+          "SpeedScale": 0.974,
+          "Boss": false,
+          "ExpectedGold": 282
+        },
+        {
+          "Number": 8,
+          "Enemies": {
+            "VoidHound": 4,
+            "VoidGuard": 7,
+            "VoidBrute": 10,
+            "Basic": 9,
+            "VoidSentinel": 16
+          },
+          "SpawnInterval": 0.9,
+          "HealthScale": 1.215,
+          "SpeedScale": 0.974,
+          "Boss": false,
+          "ExpectedGold": 325
+        }
+      ],
+      "ExpectedKillGold": 1888
+    },
+    {
+      "Id": "2-5",
+      "Index": 10,
+      "Chapter": 2,
+      "Number": 5,
+      "Name": "The Nebula Warden",
+      "StartingGold": 1800,
+      "StartingLives": 18,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": true,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "Basic": 12,
+            "VoidGuard": 3,
+            "VoidSentinel": 7,
+            "VoidBrute": 3,
+            "VoidHound": 3
+          },
+          "SpawnInterval": 1.05,
+          "HealthScale": 1.1,
+          "SpeedScale": 0.982,
+          "Boss": false,
+          "ExpectedGold": 177
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "Basic": 15,
+            "VoidSentinel": 4,
+            "VoidHound": 5,
+            "VoidGuard": 4,
+            "VoidBrute": 3
+          },
+          "SpawnInterval": 1.025,
+          "HealthScale": 1.12,
+          "SpeedScale": 0.982,
+          "Boss": false,
+          "ExpectedGold": 196
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "Basic": 16,
+            "VoidBrute": 6,
+            "VoidHound": 2,
+            "VoidSentinel": 8,
+            "VoidGuard": 2,
+            "VoidGolem": 1
+          },
+          "SpawnInterval": 1.0,
+          "HealthScale": 1.14,
+          "SpeedScale": 0.982,
+          "Boss": false,
+          "ExpectedGold": 238
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "VoidBrute": 6,
+            "Basic": 10,
+            "VoidSentinel": 9,
+            "VoidHound": 5,
+            "VoidGuard": 7
+          },
+          "SpawnInterval": 0.975,
+          "HealthScale": 1.16,
+          "SpeedScale": 0.982,
+          "Boss": false,
+          "ExpectedGold": 255
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "Basic": 18,
+            "VoidSentinel": 7,
+            "VoidGuard": 5,
+            "VoidHound": 8,
+            "VoidBrute": 2
+          },
+          "SpawnInterval": 0.95,
+          "HealthScale": 1.18,
+          "SpeedScale": 0.982,
+          "Boss": false,
+          "ExpectedGold": 248
+        },
+        {
+          "Number": 6,
+          "Enemies": {
+            "VoidSentinel": 10,
+            "VoidHound": 4,
+            "Basic": 18,
+            "VoidGuard": 5,
+            "VoidBrute": 6,
+            "VoidGolem": 1
+          },
+          "SpawnInterval": 0.925,
+          "HealthScale": 1.2,
+          "SpeedScale": 0.982,
+          "Boss": false,
+          "ExpectedGold": 298
+        },
+        {
+          "Number": 7,
+          "Enemies": {
+            "VoidBrute": 5,
+            "VoidHound": 11,
+            "Basic": 20,
+            "VoidSentinel": 8,
+            "VoidGuard": 2
+          },
+          "SpawnInterval": 0.9,
+          "HealthScale": 1.22,
+          "SpeedScale": 0.982,
+          "Boss": false,
+          "ExpectedGold": 291
+        },
+        {
+          "Number": 8,
+          "Enemies": {
+            "VoidHound": 6,
+            "Basic": 17,
+            "VoidSentinel": 15,
+            "VoidBrute": 6,
+            "VoidGuard": 5
+          },
+          "SpawnInterval": 0.875,
+          "HealthScale": 1.24,
+          "SpeedScale": 0.982,
+          "Boss": true,
+          "ExpectedGold": 767
+        }
+      ],
+      "ExpectedKillGold": 2470
+    },
+    {
+      "Id": "3-1",
+      "Index": 11,
+      "Chapter": 3,
+      "Number": 1,
+      "Name": "Forgotten Beacon",
+      "StartingGold": 2100,
+      "StartingLives": 16,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": false,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "VoidSentinel": 4,
+            "Basic": 13,
+            "VoidHound": 2,
+            "VoidGuard": 3,
+            "VoidBrute": 4
+          },
+          "SpawnInterval": 0.95,
+          "HealthScale": 1.1,
+          "SpeedScale": 1.0,
+          "Boss": false,
+          "ExpectedGold": 167
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "Basic": 14,
+            "VoidGuard": 6,
+            "VoidSentinel": 5,
+            "VoidBrute": 2,
+            "VoidHound": 3
+          },
+          "SpawnInterval": 0.925,
+          "HealthScale": 1.12,
+          "SpeedScale": 1.0,
+          "Boss": false,
+          "ExpectedGold": 189
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "Basic": 14,
+            "VoidGuard": 7,
+            "VoidSentinel": 7,
+            "VoidHound": 4,
+            "VoidBrute": 2
+          },
+          "SpawnInterval": 0.9,
+          "HealthScale": 1.14,
+          "SpeedScale": 1.0,
+          "Boss": false,
+          "ExpectedGold": 216
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "VoidGuard": 9,
+            "VoidSentinel": 7,
+            "VoidBrute": 7,
+            "Basic": 12,
+            "VoidHound": 3
+          },
+          "SpawnInterval": 0.875,
+          "HealthScale": 1.16,
+          "SpeedScale": 1.0,
+          "Boss": false,
+          "ExpectedGold": 265
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "VoidSentinel": 13,
+            "Basic": 17,
+            "VoidHound": 8,
+            "VoidBrute": 3,
+            "VoidGuard": 1
+          },
+          "SpawnInterval": 0.85,
+          "HealthScale": 1.18,
+          "SpeedScale": 1.0,
+          "Boss": false,
+          "ExpectedGold": 257
+        },
+        {
+          "Number": 6,
+          "Enemies": {
+            "VoidSentinel": 7,
+            "Basic": 24,
+            "VoidHound": 5,
+            "VoidGuard": 5,
+            "VoidBrute": 5
+          },
+          "SpawnInterval": 0.825,
+          "HealthScale": 1.2,
+          "SpeedScale": 1.0,
+          "Boss": false,
+          "ExpectedGold": 287
+        },
+        {
+          "Number": 7,
+          "Enemies": {
+            "Basic": 17,
+            "VoidBrute": 8,
+            "VoidHound": 8,
+            "VoidGuard": 7,
+            "VoidSentinel": 10
+          },
+          "SpawnInterval": 0.8,
+          "HealthScale": 1.22,
+          "SpeedScale": 1.0,
+          "Boss": false,
+          "ExpectedGold": 337
+        }
+      ],
+      "ExpectedKillGold": 1718
+    },
+    {
+      "Id": "3-2",
+      "Index": 12,
+      "Chapter": 3,
+      "Number": 2,
+      "Name": "Temple Approach",
+      "StartingGold": 2300,
+      "StartingLives": 16,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": false,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "Basic": 16,
+            "VoidHound": 3,
+            "VoidBrute": 2,
+            "VoidSentinel": 7,
+            "VoidGuard": 2
+          },
+          "SpawnInterval": 0.925,
+          "HealthScale": 1.125,
+          "SpeedScale": 1.008,
+          "Boss": false,
+          "ExpectedGold": 179
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "VoidSentinel": 10,
+            "Basic": 15,
+            "VoidGuard": 2,
+            "VoidHound": 3,
+            "VoidBrute": 4
+          },
+          "SpawnInterval": 0.9,
+          "HealthScale": 1.145,
+          "SpeedScale": 1.008,
+          "Boss": false,
+          "ExpectedGold": 212
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "VoidHound": 7,
+            "Basic": 14,
+            "VoidGuard": 5,
+            "VoidBrute": 6,
+            "VoidSentinel": 6
+          },
+          "SpawnInterval": 0.875,
+          "HealthScale": 1.165,
+          "SpeedScale": 1.008,
+          "Boss": false,
+          "ExpectedGold": 255
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "Basic": 15,
+            "VoidSentinel": 8,
+            "VoidBrute": 8,
+            "VoidGuard": 5,
+            "VoidHound": 6
+          },
+          "SpawnInterval": 0.85,
+          "HealthScale": 1.185,
+          "SpeedScale": 1.008,
+          "Boss": false,
+          "ExpectedGold": 285
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "VoidGuard": 6,
+            "VoidBrute": 11,
+            "Basic": 22,
+            "VoidSentinel": 6,
+            "VoidHound": 1
+          },
+          "SpawnInterval": 0.825,
+          "HealthScale": 1.205,
+          "SpeedScale": 1.008,
+          "Boss": false,
+          "ExpectedGold": 311
+        },
+        {
+          "Number": 6,
+          "Enemies": {
+            "VoidBrute": 11,
+            "VoidHound": 7,
+            "VoidSentinel": 9,
+            "Basic": 17,
+            "VoidGuard": 6
+          },
+          "SpawnInterval": 0.8,
+          "HealthScale": 1.225,
+          "SpeedScale": 1.008,
+          "Boss": false,
+          "ExpectedGold": 346
+        },
+        {
+          "Number": 7,
+          "Enemies": {
+            "VoidSentinel": 7,
+            "Basic": 23,
+            "VoidBrute": 8,
+            "VoidHound": 11,
+            "VoidGuard": 5
+          },
+          "SpawnInterval": 0.775,
+          "HealthScale": 1.245,
+          "SpeedScale": 1.008,
+          "Boss": false,
+          "ExpectedGold": 354
+        },
+        {
+          "Number": 8,
+          "Enemies": {
+            "VoidBrute": 5,
+            "VoidHound": 13,
+            "VoidSentinel": 14,
+            "Basic": 23,
+            "VoidGuard": 3
+          },
+          "SpawnInterval": 0.75,
+          "HealthScale": 1.265,
+          "SpeedScale": 1.008,
+          "Boss": false,
+          "ExpectedGold": 364
+        }
+      ],
+      "ExpectedKillGold": 2306
+    },
+    {
+      "Id": "3-3",
+      "Index": 13,
+      "Chapter": 3,
+      "Number": 3,
+      "Name": "Ancient Procession",
+      "StartingGold": 2500,
+      "StartingLives": 16,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": false,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "Basic": 20,
+            "VoidBrute": 3,
+            "VoidGuard": 2,
+            "VoidSentinel": 5,
+            "VoidHound": 4
+          },
+          "SpawnInterval": 0.9,
+          "HealthScale": 1.15,
+          "SpeedScale": 1.016,
+          "Boss": false,
+          "ExpectedGold": 204
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "Basic": 14,
+            "VoidGuard": 6,
+            "VoidHound": 8,
+            "VoidSentinel": 7,
+            "VoidBrute": 3
+          },
+          "SpawnInterval": 0.875,
+          "HealthScale": 1.17,
+          "SpeedScale": 1.016,
+          "Boss": false,
+          "ExpectedGold": 246
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "VoidSentinel": 11,
+            "Basic": 15,
+            "VoidHound": 9,
+            "VoidBrute": 5,
+            "VoidGuard": 2,
+            "VoidGolem": 1
+          },
+          "SpawnInterval": 0.85,
+          "HealthScale": 1.19,
+          "SpeedScale": 1.016,
+          "Boss": false,
+          "ExpectedGold": 290
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "VoidHound": 9,
+            "VoidBrute": 5,
+            "Basic": 13,
+            "VoidGuard": 8,
+            "VoidSentinel": 11
+          },
+          "SpawnInterval": 0.825,
+          "HealthScale": 1.21,
+          "SpeedScale": 1.016,
+          "Boss": false,
+          "ExpectedGold": 308
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "Basic": 18,
+            "VoidGuard": 14,
+            "VoidSentinel": 6,
+            "VoidBrute": 5,
+            "VoidHound": 7
+          },
+          "SpawnInterval": 0.8,
+          "HealthScale": 1.23,
+          "SpeedScale": 1.016,
+          "Boss": false,
+          "ExpectedGold": 337
+        },
+        {
+          "Number": 6,
+          "Enemies": {
+            "VoidBrute": 6,
+            "VoidHound": 7,
+            "Basic": 20,
+            "VoidGuard": 8,
+            "VoidSentinel": 13,
+            "VoidGolem": 1
+          },
+          "SpawnInterval": 0.775,
+          "HealthScale": 1.25,
+          "SpeedScale": 1.016,
+          "Boss": false,
+          "ExpectedGold": 371
+        },
+        {
+          "Number": 7,
+          "Enemies": {
+            "Basic": 26,
+            "VoidHound": 9,
+            "VoidGuard": 8,
+            "VoidSentinel": 10,
+            "VoidBrute": 5
+          },
+          "SpawnInterval": 0.75,
+          "HealthScale": 1.27,
+          "SpeedScale": 1.016,
+          "Boss": false,
+          "ExpectedGold": 367
+        },
+        {
+          "Number": 8,
+          "Enemies": {
+            "VoidBrute": 7,
+            "Basic": 26,
+            "VoidSentinel": 9,
+            "VoidGuard": 7,
+            "VoidHound": 13
+          },
+          "SpawnInterval": 0.725,
+          "HealthScale": 1.29,
+          "SpeedScale": 1.016,
+          "Boss": false,
+          "ExpectedGold": 401
+        }
+      ],
+      "ExpectedKillGold": 2524
+    },
+    {
+      "Id": "3-4",
+      "Index": 14,
+      "Chapter": 3,
+      "Number": 4,
+      "Name": "Sanctum Siege",
+      "StartingGold": 2700,
+      "StartingLives": 16,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": false,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "VoidBrute": 5,
+            "VoidGuard": 8,
+            "Basic": 14,
+            "VoidSentinel": 9,
+            "VoidHound": 2
+          },
+          "SpawnInterval": 0.875,
+          "HealthScale": 1.175,
+          "SpeedScale": 1.024,
+          "Boss": false,
+          "ExpectedGold": 252
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "VoidSentinel": 6,
+            "VoidHound": 5,
+            "Basic": 16,
+            "VoidGuard": 7,
+            "VoidBrute": 8
+          },
+          "SpawnInterval": 0.85,
+          "HealthScale": 1.195,
+          "SpeedScale": 1.024,
+          "Boss": false,
+          "ExpectedGold": 287
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "VoidBrute": 5,
+            "Basic": 22,
+            "VoidHound": 9,
+            "VoidGuard": 7,
+            "VoidSentinel": 3,
+            "VoidGolem": 1
+          },
+          "SpawnInterval": 0.825,
+          "HealthScale": 1.215,
+          "SpeedScale": 1.024,
+          "Boss": false,
+          "ExpectedGold": 317
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "VoidGuard": 6,
+            "Basic": 24,
+            "VoidBrute": 6,
+            "VoidSentinel": 9,
+            "VoidHound": 5
+          },
+          "SpawnInterval": 0.8,
+          "HealthScale": 1.235,
+          "SpeedScale": 1.024,
+          "Boss": false,
+          "ExpectedGold": 317
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "VoidSentinel": 13,
+            "VoidGuard": 9,
+            "Basic": 22,
+            "VoidHound": 7,
+            "VoidBrute": 3
+          },
+          "SpawnInterval": 0.775,
+          "HealthScale": 1.255,
+          "SpeedScale": 1.024,
+          "Boss": false,
+          "ExpectedGold": 339
+        },
+        {
+          "Number": 6,
+          "Enemies": {
+            "VoidSentinel": 13,
+            "VoidBrute": 7,
+            "Basic": 24,
+            "VoidGuard": 9,
+            "VoidHound": 5,
+            "VoidGolem": 1
+          },
+          "SpawnInterval": 0.75,
+          "HealthScale": 1.275,
+          "SpeedScale": 1.024,
+          "Boss": false,
+          "ExpectedGold": 395
+        },
+        {
+          "Number": 7,
+          "Enemies": {
+            "VoidHound": 7,
+            "Basic": 25,
+            "VoidGuard": 7,
+            "VoidBrute": 7,
+            "VoidSentinel": 16
+          },
+          "SpawnInterval": 0.725,
+          "HealthScale": 1.295,
+          "SpeedScale": 1.024,
+          "Boss": false,
+          "ExpectedGold": 396
+        },
+        {
+          "Number": 8,
+          "Enemies": {
+            "VoidBrute": 14,
+            "VoidGuard": 5,
+            "VoidSentinel": 16,
+            "Basic": 25,
+            "VoidHound": 6
+          },
+          "SpawnInterval": 0.7,
+          "HealthScale": 1.315,
+          "SpeedScale": 1.024,
+          "Boss": false,
+          "ExpectedGold": 443
+        },
+        {
+          "Number": 9,
+          "Enemies": {
+            "Basic": 25,
+            "VoidGuard": 14,
+            "VoidSentinel": 13,
+            "VoidHound": 10,
+            "VoidBrute": 8,
+            "VoidGolem": 1
+          },
+          "SpawnInterval": 0.675,
+          "HealthScale": 1.335,
+          "SpeedScale": 1.024,
+          "Boss": false,
+          "ExpectedGold": 485
+        }
+      ],
+      "ExpectedKillGold": 3231
+    },
+    {
+      "Id": "3-5",
+      "Index": 15,
+      "Chapter": 3,
+      "Number": 5,
+      "Name": "The Astral Colossus",
+      "StartingGold": 2900,
+      "StartingLives": 16,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": true,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "Basic": 17,
+            "VoidHound": 6,
+            "VoidSentinel": 8,
+            "VoidGuard": 5,
+            "VoidBrute": 6
+          },
+          "SpawnInterval": 0.85,
+          "HealthScale": 1.2,
+          "SpeedScale": 1.032,
+          "Boss": false,
+          "ExpectedGold": 275
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "VoidHound": 7,
+            "Basic": 17,
+            "VoidSentinel": 10,
+            "VoidGuard": 6,
+            "VoidBrute": 6
+          },
+          "SpawnInterval": 0.825,
+          "HealthScale": 1.22,
+          "SpeedScale": 1.032,
+          "Boss": false,
+          "ExpectedGold": 302
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "Basic": 24,
+            "VoidSentinel": 9,
+            "VoidHound": 4,
+            "VoidGuard": 4,
+            "VoidBrute": 9,
+            "VoidGolem": 1
+          },
+          "SpawnInterval": 0.8,
+          "HealthScale": 1.24,
+          "SpeedScale": 1.032,
+          "Boss": false,
+          "ExpectedGold": 344
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "VoidSentinel": 11,
+            "Basic": 25,
+            "VoidBrute": 6,
+            "VoidHound": 2,
+            "VoidGuard": 10
+          },
+          "SpawnInterval": 0.775,
+          "HealthScale": 1.26,
+          "SpeedScale": 1.032,
+          "Boss": false,
+          "ExpectedGold": 345
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "Basic": 29,
+            "VoidSentinel": 12,
+            "VoidGuard": 5,
+            "VoidHound": 8,
+            "VoidBrute": 4
+          },
+          "SpawnInterval": 0.75,
+          "HealthScale": 1.28,
+          "SpeedScale": 1.032,
+          "Boss": false,
+          "ExpectedGold": 353
+        },
+        {
+          "Number": 6,
+          "Enemies": {
+            "Basic": 23,
+            "VoidSentinel": 11,
+            "VoidBrute": 9,
+            "VoidGuard": 9,
+            "VoidHound": 10,
+            "VoidGolem": 1
+          },
+          "SpawnInterval": 0.725,
+          "HealthScale": 1.3,
+          "SpeedScale": 1.032,
+          "Boss": false,
+          "ExpectedGold": 433
+        },
+        {
+          "Number": 7,
+          "Enemies": {
+            "VoidSentinel": 17,
+            "VoidGuard": 9,
+            "Basic": 22,
+            "VoidHound": 13,
+            "VoidBrute": 5
+          },
+          "SpawnInterval": 0.7,
+          "HealthScale": 1.32,
+          "SpeedScale": 1.032,
+          "Boss": false,
+          "ExpectedGold": 425
+        },
+        {
+          "Number": 8,
+          "Enemies": {
+            "VoidSentinel": 19,
+            "Basic": 30,
+            "VoidBrute": 6,
+            "VoidGuard": 10,
+            "VoidHound": 5
+          },
+          "SpawnInterval": 0.675,
+          "HealthScale": 1.34,
+          "SpeedScale": 1.032,
+          "Boss": false,
+          "ExpectedGold": 439
+        },
+        {
+          "Number": 9,
+          "Enemies": {
+            "VoidHound": 15,
+            "Basic": 26,
+            "VoidBrute": 12,
+            "VoidGuard": 5,
+            "VoidSentinel": 16,
+            "VoidGolem": 1
+          },
+          "SpawnInterval": 0.65,
+          "HealthScale": 1.36,
+          "SpeedScale": 1.032,
+          "Boss": true,
+          "ExpectedGold": 1293
+        }
+      ],
+      "ExpectedKillGold": 4209
+    },
+    {
+      "Id": "4-1",
+      "Index": 16,
+      "Chapter": 4,
+      "Number": 1,
+      "Name": "Falling Light",
+      "StartingGold": 3300,
+      "StartingLives": 14,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": false,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "Basic": 18,
+            "VoidSentinel": 8,
+            "VoidGuard": 4,
+            "VoidBrute": 7,
+            "VoidHound": 3
+          },
+          "SpawnInterval": 0.8,
+          "HealthScale": 1.25,
+          "SpeedScale": 1.04,
+          "Boss": false,
+          "ExpectedGold": 261
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "VoidGuard": 8,
+            "Basic": 11,
+            "VoidBrute": 8,
+            "VoidHound": 10,
+            "VoidSentinel": 8
+          },
+          "SpawnInterval": 0.775,
+          "HealthScale": 1.27,
+          "SpeedScale": 1.04,
+          "Boss": false,
+          "ExpectedGold": 317
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "Basic": 20,
+            "VoidGuard": 6,
+            "VoidHound": 8,
+            "VoidSentinel": 7,
+            "VoidBrute": 9
+          },
+          "SpawnInterval": 0.75,
+          "HealthScale": 1.29,
+          "SpeedScale": 1.04,
+          "Boss": false,
+          "ExpectedGold": 336
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "Basic": 24,
+            "VoidSentinel": 4,
+            "VoidGuard": 5,
+            "VoidBrute": 14,
+            "VoidHound": 8
+          },
+          "SpawnInterval": 0.725,
+          "HealthScale": 1.31,
+          "SpeedScale": 1.04,
+          "Boss": false,
+          "ExpectedGold": 380
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "VoidBrute": 12,
+            "Basic": 18,
+            "VoidHound": 13,
+            "VoidGuard": 7,
+            "VoidSentinel": 10
+          },
+          "SpawnInterval": 0.7,
+          "HealthScale": 1.33,
+          "SpeedScale": 1.04,
+          "Boss": false,
+          "ExpectedGold": 417
+        },
+        {
+          "Number": 6,
+          "Enemies": {
+            "VoidBrute": 6,
+            "Basic": 20,
+            "VoidSentinel": 19,
+            "VoidGuard": 12,
+            "VoidHound": 8
+          },
+          "SpawnInterval": 0.675,
+          "HealthScale": 1.35,
+          "SpeedScale": 1.04,
+          "Boss": false,
+          "ExpectedGold": 426
+        },
+        {
+          "Number": 7,
+          "Enemies": {
+            "VoidHound": 9,
+            "VoidGuard": 9,
+            "VoidSentinel": 12,
+            "VoidBrute": 8,
+            "Basic": 32
+          },
+          "SpawnInterval": 0.65,
+          "HealthScale": 1.37,
+          "SpeedScale": 1.04,
+          "Boss": false,
+          "ExpectedGold": 447
+        },
+        {
+          "Number": 8,
+          "Enemies": {
+            "Basic": 31,
+            "VoidBrute": 10,
+            "VoidSentinel": 13,
+            "VoidGuard": 11,
+            "VoidHound": 10
+          },
+          "SpawnInterval": 0.625,
+          "HealthScale": 1.39,
+          "SpeedScale": 1.04,
+          "Boss": false,
+          "ExpectedGold": 491
+        }
+      ],
+      "ExpectedKillGold": 3075
+    },
+    {
+      "Id": "4-2",
+      "Index": 17,
+      "Chapter": 4,
+      "Number": 2,
+      "Name": "Gravity Wake",
+      "StartingGold": 3600,
+      "StartingLives": 14,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": false,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "VoidHound": 7,
+            "Basic": 21,
+            "VoidSentinel": 7,
+            "VoidGuard": 6,
+            "VoidBrute": 4
+          },
+          "SpawnInterval": 0.775,
+          "HealthScale": 1.275,
+          "SpeedScale": 1.048,
+          "Boss": false,
+          "ExpectedGold": 284
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "VoidHound": 11,
+            "Basic": 20,
+            "VoidGuard": 5,
+            "VoidBrute": 10,
+            "VoidSentinel": 4
+          },
+          "SpawnInterval": 0.75,
+          "HealthScale": 1.295,
+          "SpeedScale": 1.048,
+          "Boss": false,
+          "ExpectedGold": 341
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "Basic": 23,
+            "VoidBrute": 9,
+            "VoidGuard": 9,
+            "VoidSentinel": 12,
+            "VoidHound": 2
+          },
+          "SpawnInterval": 0.725,
+          "HealthScale": 1.315,
+          "SpeedScale": 1.048,
+          "Boss": false,
+          "ExpectedGold": 363
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "VoidGuard": 10,
+            "Basic": 24,
+            "VoidSentinel": 9,
+            "VoidBrute": 11,
+            "VoidHound": 6
+          },
+          "SpawnInterval": 0.7,
+          "HealthScale": 1.335,
+          "SpeedScale": 1.048,
+          "Boss": false,
+          "ExpectedGold": 406
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "VoidSentinel": 12,
+            "VoidHound": 10,
+            "Basic": 25,
+            "VoidBrute": 9,
+            "VoidGuard": 9
+          },
+          "SpawnInterval": 0.675,
+          "HealthScale": 1.355,
+          "SpeedScale": 1.048,
+          "Boss": false,
+          "ExpectedGold": 429
+        },
+        {
+          "Number": 6,
+          "Enemies": {
+            "VoidGuard": 10,
+            "Basic": 26,
+            "VoidHound": 11,
+            "VoidSentinel": 17,
+            "VoidBrute": 6
+          },
+          "SpawnInterval": 0.65,
+          "HealthScale": 1.375,
+          "SpeedScale": 1.048,
+          "Boss": false,
+          "ExpectedGold": 449
+        },
+        {
+          "Number": 7,
+          "Enemies": {
+            "VoidGuard": 14,
+            "Basic": 34,
+            "VoidSentinel": 11,
+            "VoidBrute": 8,
+            "VoidHound": 8
+          },
+          "SpawnInterval": 0.625,
+          "HealthScale": 1.395,
+          "SpeedScale": 1.048,
+          "Boss": false,
+          "ExpectedGold": 484
+        },
+        {
+          "Number": 8,
+          "Enemies": {
+            "VoidGuard": 13,
+            "VoidBrute": 14,
+            "Basic": 31,
+            "VoidSentinel": 16,
+            "VoidHound": 6
+          },
+          "SpawnInterval": 0.6,
+          "HealthScale": 1.415,
+          "SpeedScale": 1.048,
+          "Boss": false,
+          "ExpectedGold": 537
+        },
+        {
+          "Number": 9,
+          "Enemies": {
+            "Basic": 40,
+            "VoidHound": 12,
+            "VoidGuard": 14,
+            "VoidBrute": 10,
+            "VoidSentinel": 9
+          },
+          "SpawnInterval": 0.575,
+          "HealthScale": 1.435,
+          "SpeedScale": 1.048,
+          "Boss": false,
+          "ExpectedGold": 550
+        }
+      ],
+      "ExpectedKillGold": 3843
+    },
+    {
+      "Id": "4-3",
+      "Index": 18,
+      "Chapter": 4,
+      "Number": 3,
+      "Name": "Shadow Convergence",
+      "StartingGold": 3900,
+      "StartingLives": 14,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": false,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "VoidHound": 5,
+            "VoidSentinel": 8,
+            "VoidBrute": 9,
+            "Basic": 21,
+            "VoidGuard": 7
+          },
+          "SpawnInterval": 0.75,
+          "HealthScale": 1.3,
+          "SpeedScale": 1.056,
+          "Boss": false,
+          "ExpectedGold": 334
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "VoidSentinel": 10,
+            "VoidBrute": 9,
+            "VoidHound": 12,
+            "Basic": 19,
+            "VoidGuard": 5
+          },
+          "SpawnInterval": 0.725,
+          "HealthScale": 1.32,
+          "SpeedScale": 1.056,
+          "Boss": false,
+          "ExpectedGold": 369
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "VoidSentinel": 18,
+            "VoidHound": 10,
+            "Basic": 14,
+            "VoidGuard": 11,
+            "VoidBrute": 7,
+            "VoidGolem": 2
+          },
+          "SpawnInterval": 0.7,
+          "HealthScale": 1.34,
+          "SpeedScale": 1.056,
+          "Boss": false,
+          "ExpectedGold": 446
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "VoidHound": 10,
+            "Basic": 23,
+            "VoidGuard": 10,
+            "VoidSentinel": 12,
+            "VoidBrute": 10
+          },
+          "SpawnInterval": 0.675,
+          "HealthScale": 1.36,
+          "SpeedScale": 1.056,
+          "Boss": false,
+          "ExpectedGold": 437
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "VoidSentinel": 16,
+            "VoidHound": 13,
+            "Basic": 27,
+            "VoidBrute": 8,
+            "VoidGuard": 6
+          },
+          "SpawnInterval": 0.65,
+          "HealthScale": 1.38,
+          "SpeedScale": 1.056,
+          "Boss": false,
+          "ExpectedGold": 450
+        },
+        {
+          "Number": 6,
+          "Enemies": {
+            "VoidGuard": 6,
+            "VoidSentinel": 18,
+            "Basic": 32,
+            "VoidBrute": 10,
+            "VoidHound": 9,
+            "VoidGolem": 2
+          },
+          "SpawnInterval": 0.625,
+          "HealthScale": 1.4,
+          "SpeedScale": 1.056,
+          "Boss": false,
+          "ExpectedGold": 519
+        },
+        {
+          "Number": 7,
+          "Enemies": {
+            "Basic": 38,
+            "VoidGuard": 10,
+            "VoidSentinel": 16,
+            "VoidBrute": 9,
+            "VoidHound": 7
+          },
+          "SpawnInterval": 0.6,
+          "HealthScale": 1.42,
+          "SpeedScale": 1.056,
+          "Boss": false,
+          "ExpectedGold": 505
+        },
+        {
+          "Number": 8,
+          "Enemies": {
+            "VoidHound": 19,
+            "VoidBrute": 12,
+            "Basic": 27,
+            "VoidSentinel": 17,
+            "VoidGuard": 10
+          },
+          "SpawnInterval": 0.575,
+          "HealthScale": 1.44,
+          "SpeedScale": 1.056,
+          "Boss": false,
+          "ExpectedGold": 570
+        },
+        {
+          "Number": 9,
+          "Enemies": {
+            "Basic": 34,
+            "VoidBrute": 12,
+            "VoidGuard": 13,
+            "VoidSentinel": 18,
+            "VoidHound": 13,
+            "VoidGolem": 2
+          },
+          "SpawnInterval": 0.55,
+          "HealthScale": 1.46,
+          "SpeedScale": 1.056,
+          "Boss": false,
+          "ExpectedGold": 633
+        }
+      ],
+      "ExpectedKillGold": 4263
+    },
+    {
+      "Id": "4-4",
+      "Index": 19,
+      "Chapter": 4,
+      "Number": 4,
+      "Name": "Last Horizon",
+      "StartingGold": 4200,
+      "StartingLives": 14,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": false,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "Basic": 22,
+            "VoidHound": 6,
+            "VoidBrute": 14,
+            "VoidSentinel": 8,
+            "VoidGuard": 5
+          },
+          "SpawnInterval": 0.725,
+          "HealthScale": 1.325,
+          "SpeedScale": 1.064,
+          "Boss": false,
+          "ExpectedGold": 380
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "VoidHound": 8,
+            "VoidGuard": 14,
+            "VoidSentinel": 13,
+            "Basic": 18,
+            "VoidBrute": 7
+          },
+          "SpawnInterval": 0.7,
+          "HealthScale": 1.345,
+          "SpeedScale": 1.064,
+          "Boss": false,
+          "ExpectedGold": 406
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "Basic": 27,
+            "VoidSentinel": 13,
+            "VoidBrute": 5,
+            "VoidGuard": 11,
+            "VoidHound": 9,
+            "VoidGolem": 2
+          },
+          "SpawnInterval": 0.675,
+          "HealthScale": 1.365,
+          "SpeedScale": 1.064,
+          "Boss": false,
+          "ExpectedGold": 454
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "VoidSentinel": 17,
+            "Basic": 24,
+            "VoidGuard": 10,
+            "VoidBrute": 10,
+            "VoidHound": 9
+          },
+          "SpawnInterval": 0.65,
+          "HealthScale": 1.385,
+          "SpeedScale": 1.064,
+          "Boss": false,
+          "ExpectedGold": 465
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "VoidSentinel": 11,
+            "Basic": 28,
+            "VoidHound": 14,
+            "VoidGuard": 12,
+            "VoidBrute": 10
+          },
+          "SpawnInterval": 0.625,
+          "HealthScale": 1.405,
+          "SpeedScale": 1.064,
+          "Boss": false,
+          "ExpectedGold": 500
+        },
+        {
+          "Number": 6,
+          "Enemies": {
+            "VoidBrute": 12,
+            "VoidHound": 8,
+            "Basic": 30,
+            "VoidSentinel": 14,
+            "VoidGuard": 16,
+            "VoidGolem": 2
+          },
+          "SpawnInterval": 0.6,
+          "HealthScale": 1.425,
+          "SpeedScale": 1.064,
+          "Boss": false,
+          "ExpectedGold": 578
+        },
+        {
+          "Number": 7,
+          "Enemies": {
+            "VoidHound": 9,
+            "VoidGuard": 11,
+            "Basic": 38,
+            "VoidSentinel": 15,
+            "VoidBrute": 12
+          },
+          "SpawnInterval": 0.575,
+          "HealthScale": 1.445,
+          "SpeedScale": 1.064,
+          "Boss": false,
+          "ExpectedGold": 551
+        },
+        {
+          "Number": 8,
+          "Enemies": {
+            "Basic": 34,
+            "VoidGuard": 15,
+            "VoidSentinel": 13,
+            "VoidHound": 19,
+            "VoidBrute": 9
+          },
+          "SpawnInterval": 0.55,
+          "HealthScale": 1.465,
+          "SpeedScale": 1.064,
+          "Boss": false,
+          "ExpectedGold": 591
+        },
+        {
+          "Number": 9,
+          "Enemies": {
+            "Basic": 35,
+            "VoidGuard": 16,
+            "VoidSentinel": 18,
+            "VoidHound": 15,
+            "VoidBrute": 11,
+            "VoidGolem": 2
+          },
+          "SpawnInterval": 0.525,
+          "HealthScale": 1.485,
+          "SpeedScale": 1.064,
+          "Boss": false,
+          "ExpectedGold": 666
+        },
+        {
+          "Number": 10,
+          "Enemies": {
+            "Basic": 27,
+            "VoidSentinel": 21,
+            "VoidHound": 18,
+            "VoidGuard": 17,
+            "VoidBrute": 17
+          },
+          "SpawnInterval": 0.5,
+          "HealthScale": 1.505,
+          "SpeedScale": 1.064,
+          "Boss": false,
+          "ExpectedGold": 693
+        }
+      ],
+      "ExpectedKillGold": 5284
+    },
+    {
+      "Id": "4-5",
+      "Index": 20,
+      "Chapter": 4,
+      "Number": 5,
+      "Name": "The Void Sovereign",
+      "StartingGold": 4500,
+      "StartingLives": 14,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": true,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "Basic": 26,
+            "VoidGuard": 9,
+            "VoidSentinel": 12,
+            "VoidBrute": 9,
+            "VoidHound": 4
+          },
+          "SpawnInterval": 0.7,
+          "HealthScale": 1.35,
+          "SpeedScale": 1.072,
+          "Boss": false,
+          "ExpectedGold": 392
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "Basic": 28,
+            "VoidBrute": 9,
+            "VoidHound": 11,
+            "VoidSentinel": 9,
+            "VoidGuard": 8
+          },
+          "SpawnInterval": 0.675,
+          "HealthScale": 1.37,
+          "SpeedScale": 1.072,
+          "Boss": false,
+          "ExpectedGold": 425
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "VoidSentinel": 18,
+            "Basic": 17,
+            "VoidGuard": 9,
+            "VoidBrute": 13,
+            "VoidHound": 13,
+            "VoidGolem": 2
+          },
+          "SpawnInterval": 0.65,
+          "HealthScale": 1.39,
+          "SpeedScale": 1.072,
+          "Boss": false,
+          "ExpectedGold": 526
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "VoidSentinel": 16,
+            "VoidGuard": 14,
+            "VoidBrute": 11,
+            "VoidHound": 6,
+            "Basic": 28
+          },
+          "SpawnInterval": 0.625,
+          "HealthScale": 1.41,
+          "SpeedScale": 1.072,
+          "Boss": false,
+          "ExpectedGold": 500
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "VoidHound": 12,
+            "Basic": 34,
+            "VoidSentinel": 19,
+            "VoidBrute": 9,
+            "VoidGuard": 6
+          },
+          "SpawnInterval": 0.6,
+          "HealthScale": 1.43,
+          "SpeedScale": 1.072,
+          "Boss": false,
+          "ExpectedGold": 506
+        },
+        {
+          "Number": 6,
+          "Enemies": {
+            "VoidSentinel": 21,
+            "Basic": 33,
+            "VoidHound": 8,
+            "VoidGuard": 11,
+            "VoidBrute": 12,
+            "VoidGolem": 2
+          },
+          "SpawnInterval": 0.575,
+          "HealthScale": 1.45,
+          "SpeedScale": 1.072,
+          "Boss": false,
+          "ExpectedGold": 595
+        },
+        {
+          "Number": 7,
+          "Enemies": {
+            "VoidBrute": 14,
+            "VoidHound": 10,
+            "VoidSentinel": 17,
+            "Basic": 38,
+            "VoidGuard": 11
+          },
+          "SpawnInterval": 0.55,
+          "HealthScale": 1.47,
+          "SpeedScale": 1.072,
+          "Boss": false,
+          "ExpectedGold": 590
+        },
+        {
+          "Number": 8,
+          "Enemies": {
+            "Basic": 41,
+            "VoidGuard": 10,
+            "VoidSentinel": 21,
+            "VoidBrute": 14,
+            "VoidHound": 9
+          },
+          "SpawnInterval": 0.525,
+          "HealthScale": 1.49,
+          "SpeedScale": 1.072,
+          "Boss": false,
+          "ExpectedGold": 614
+        },
+        {
+          "Number": 9,
+          "Enemies": {
+            "Basic": 38,
+            "VoidHound": 17,
+            "VoidSentinel": 15,
+            "VoidBrute": 15,
+            "VoidGuard": 15,
+            "VoidGolem": 2
+          },
+          "SpawnInterval": 0.5,
+          "HealthScale": 1.51,
+          "SpeedScale": 1.072,
+          "Boss": false,
+          "ExpectedGold": 709
+        },
+        {
+          "Number": 10,
+          "Enemies": {
+            "Basic": 48,
+            "VoidGuard": 13,
+            "VoidSentinel": 23,
+            "VoidBrute": 10,
+            "VoidHound": 11
+          },
+          "SpawnInterval": 0.475,
+          "HealthScale": 1.53,
+          "SpeedScale": 1.072,
+          "Boss": true,
+          "ExpectedGold": 1834
+        }
+      ],
+      "ExpectedKillGold": 6691
+    },
+    {
+      "Id": "5-1",
+      "Index": 21,
+      "Chapter": 5,
+      "Number": 1,
+      "Name": "Celestial Fracture",
+      "StartingGold": 9000,
+      "StartingLives": 12,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": false,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "VoidGuard": 7,
+            "Basic": 22,
+            "VoidBrute": 15,
+            "VoidHound": 8,
+            "VoidSentinel": 22
+          },
+          "SpawnInterval": 0.7,
+          "HealthScale": 1.45,
+          "SpeedScale": 1.08,
+          "Boss": false,
+          "ExpectedGold": 504
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "VoidSentinel": 11,
+            "VoidHound": 8,
+            "Basic": 38,
+            "VoidBrute": 14,
+            "VoidGuard": 9
+          },
+          "SpawnInterval": 0.675,
+          "HealthScale": 1.47,
+          "SpeedScale": 1.08,
+          "Boss": false,
+          "ExpectedGold": 524
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "Basic": 34,
+            "VoidSentinel": 23,
+            "VoidHound": 12,
+            "VoidGuard": 8,
+            "VoidBrute": 9
+          },
+          "SpawnInterval": 0.65,
+          "HealthScale": 1.49,
+          "SpeedScale": 1.08,
+          "Boss": false,
+          "ExpectedGold": 546
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "VoidHound": 13,
+            "VoidBrute": 15,
+            "VoidSentinel": 18,
+            "Basic": 36,
+            "VoidGuard": 10
+          },
+          "SpawnInterval": 0.625,
+          "HealthScale": 1.51,
+          "SpeedScale": 1.08,
+          "Boss": false,
+          "ExpectedGold": 609
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "VoidBrute": 15,
+            "VoidSentinel": 20,
+            "VoidHound": 11,
+            "Basic": 41,
+            "VoidGuard": 11
+          },
+          "SpawnInterval": 0.6,
+          "HealthScale": 1.53,
+          "SpeedScale": 1.08,
+          "Boss": false,
+          "ExpectedGold": 640
+        },
+        {
+          "Number": 6,
+          "Enemies": {
+            "VoidSentinel": 21,
+            "VoidGuard": 13,
+            "Basic": 36,
+            "VoidHound": 15,
+            "VoidBrute": 19
+          },
+          "SpawnInterval": 0.575,
+          "HealthScale": 1.55,
+          "SpeedScale": 1.08,
+          "Boss": false,
+          "ExpectedGold": 705
+        },
+        {
+          "Number": 7,
+          "Enemies": {
+            "VoidGuard": 22,
+            "VoidSentinel": 22,
+            "Basic": 35,
+            "VoidBrute": 16,
+            "VoidHound": 15
+          },
+          "SpawnInterval": 0.55,
+          "HealthScale": 1.57,
+          "SpeedScale": 1.08,
+          "Boss": false,
+          "ExpectedGold": 748
+        },
+        {
+          "Number": 8,
+          "Enemies": {
+            "VoidHound": 17,
+            "VoidBrute": 14,
+            "Basic": 48,
+            "VoidGuard": 13,
+            "VoidSentinel": 24
+          },
+          "SpawnInterval": 0.525,
+          "HealthScale": 1.59,
+          "SpeedScale": 1.08,
+          "Boss": false,
+          "ExpectedGold": 747
+        },
+        {
+          "Number": 9,
+          "Enemies": {
+            "VoidGuard": 19,
+            "VoidSentinel": 27,
+            "Basic": 53,
+            "VoidHound": 12,
+            "VoidBrute": 11
+          },
+          "SpawnInterval": 0.5,
+          "HealthScale": 1.61,
+          "SpeedScale": 1.08,
+          "Boss": false,
+          "ExpectedGold": 773
+        }
+      ],
+      "ExpectedKillGold": 5796
+    },
+    {
+      "Id": "5-2",
+      "Index": 22,
+      "Chapter": 5,
+      "Number": 2,
+      "Name": "Convergent Stars",
+      "StartingGold": 11000,
+      "StartingLives": 12,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": false,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "VoidHound": 5,
+            "VoidSentinel": 17,
+            "Basic": 30,
+            "VoidBrute": 15,
+            "VoidGuard": 13
+          },
+          "SpawnInterval": 0.675,
+          "HealthScale": 1.475,
+          "SpeedScale": 1.088,
+          "Boss": false,
+          "ExpectedGold": 541
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "VoidGuard": 13,
+            "VoidHound": 18,
+            "Basic": 26,
+            "VoidSentinel": 19,
+            "VoidBrute": 10
+          },
+          "SpawnInterval": 0.65,
+          "HealthScale": 1.495,
+          "SpeedScale": 1.088,
+          "Boss": false,
+          "ExpectedGold": 574
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "Basic": 38,
+            "VoidGuard": 11,
+            "VoidBrute": 21,
+            "VoidSentinel": 16,
+            "VoidHound": 6
+          },
+          "SpawnInterval": 0.625,
+          "HealthScale": 1.515,
+          "SpeedScale": 1.088,
+          "Boss": false,
+          "ExpectedGold": 626
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "VoidSentinel": 19,
+            "Basic": 38,
+            "VoidBrute": 19,
+            "VoidGuard": 12,
+            "VoidHound": 10
+          },
+          "SpawnInterval": 0.6,
+          "HealthScale": 1.535,
+          "SpeedScale": 1.088,
+          "Boss": false,
+          "ExpectedGold": 660
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "VoidSentinel": 19,
+            "Basic": 43,
+            "VoidHound": 13,
+            "VoidBrute": 16,
+            "VoidGuard": 13
+          },
+          "SpawnInterval": 0.575,
+          "HealthScale": 1.555,
+          "SpeedScale": 1.088,
+          "Boss": false,
+          "ExpectedGold": 684
+        },
+        {
+          "Number": 6,
+          "Enemies": {
+            "VoidSentinel": 31,
+            "Basic": 45,
+            "VoidGuard": 11,
+            "VoidHound": 11,
+            "VoidBrute": 12
+          },
+          "SpawnInterval": 0.55,
+          "HealthScale": 1.575,
+          "SpeedScale": 1.088,
+          "Boss": false,
+          "ExpectedGold": 696
+        },
+        {
+          "Number": 7,
+          "Enemies": {
+            "VoidSentinel": 22,
+            "Basic": 51,
+            "VoidBrute": 13,
+            "VoidHound": 11,
+            "VoidGuard": 19
+          },
+          "SpawnInterval": 0.525,
+          "HealthScale": 1.595,
+          "SpeedScale": 1.088,
+          "Boss": false,
+          "ExpectedGold": 746
+        },
+        {
+          "Number": 8,
+          "Enemies": {
+            "Basic": 48,
+            "VoidSentinel": 22,
+            "VoidBrute": 17,
+            "VoidHound": 19,
+            "VoidGuard": 16
+          },
+          "SpawnInterval": 0.5,
+          "HealthScale": 1.615,
+          "SpeedScale": 1.088,
+          "Boss": false,
+          "ExpectedGold": 803
+        },
+        {
+          "Number": 9,
+          "Enemies": {
+            "VoidGuard": 21,
+            "VoidBrute": 18,
+            "Basic": 54,
+            "VoidSentinel": 19,
+            "VoidHound": 16
+          },
+          "SpawnInterval": 0.475,
+          "HealthScale": 1.635,
+          "SpeedScale": 1.088,
+          "Boss": false,
+          "ExpectedGold": 844
+        },
+        {
+          "Number": 10,
+          "Enemies": {
+            "VoidSentinel": 35,
+            "Basic": 47,
+            "VoidBrute": 12,
+            "VoidGuard": 18,
+            "VoidHound": 22
+          },
+          "SpawnInterval": 0.45,
+          "HealthScale": 1.655,
+          "SpeedScale": 1.088,
+          "Boss": false,
+          "ExpectedGold": 863
+        }
+      ],
+      "ExpectedKillGold": 7037
+    },
+    {
+      "Id": "5-3",
+      "Index": 23,
+      "Chapter": 5,
+      "Number": 3,
+      "Name": "Entropy Rising",
+      "StartingGold": 13000,
+      "StartingLives": 12,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": false,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "VoidSentinel": 17,
+            "Basic": 30,
+            "VoidHound": 15,
+            "VoidGuard": 15,
+            "VoidBrute": 9
+          },
+          "SpawnInterval": 0.65,
+          "HealthScale": 1.5,
+          "SpeedScale": 1.096,
+          "Boss": false,
+          "ExpectedGold": 567
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "VoidGuard": 6,
+            "Basic": 33,
+            "VoidBrute": 20,
+            "VoidSentinel": 17,
+            "VoidHound": 16
+          },
+          "SpawnInterval": 0.625,
+          "HealthScale": 1.52,
+          "SpeedScale": 1.096,
+          "Boss": false,
+          "ExpectedGold": 627
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "VoidGuard": 17,
+            "Basic": 43,
+            "VoidSentinel": 17,
+            "VoidBrute": 11,
+            "VoidHound": 10,
+            "VoidGolem": 2
+          },
+          "SpawnInterval": 0.6,
+          "HealthScale": 1.54,
+          "SpeedScale": 1.096,
+          "Boss": false,
+          "ExpectedGold": 673
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "Basic": 39,
+            "VoidGuard": 12,
+            "VoidBrute": 15,
+            "VoidSentinel": 24,
+            "VoidHound": 14
+          },
+          "SpawnInterval": 0.575,
+          "HealthScale": 1.56,
+          "SpeedScale": 1.096,
+          "Boss": false,
+          "ExpectedGold": 683
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "Basic": 37,
+            "VoidBrute": 21,
+            "VoidSentinel": 18,
+            "VoidGuard": 19,
+            "VoidHound": 15
+          },
+          "SpawnInterval": 0.55,
+          "HealthScale": 1.58,
+          "SpeedScale": 1.096,
+          "Boss": false,
+          "ExpectedGold": 760
+        },
+        {
+          "Number": 6,
+          "Enemies": {
+            "VoidBrute": 17,
+            "Basic": 44,
+            "VoidSentinel": 25,
+            "VoidGuard": 11,
+            "VoidHound": 19,
+            "VoidGolem": 2
+          },
+          "SpawnInterval": 0.525,
+          "HealthScale": 1.6,
+          "SpeedScale": 1.096,
+          "Boss": false,
+          "ExpectedGold": 801
+        },
+        {
+          "Number": 7,
+          "Enemies": {
+            "VoidHound": 17,
+            "VoidGuard": 20,
+            "Basic": 41,
+            "VoidSentinel": 27,
+            "VoidBrute": 17
+          },
+          "SpawnInterval": 0.5,
+          "HealthScale": 1.62,
+          "SpeedScale": 1.096,
+          "Boss": false,
+          "ExpectedGold": 816
+        },
+        {
+          "Number": 8,
+          "Enemies": {
+            "Basic": 46,
+            "VoidHound": 23,
+            "VoidSentinel": 27,
+            "VoidGuard": 15,
+            "VoidBrute": 17
+          },
+          "SpawnInterval": 0.475,
+          "HealthScale": 1.64,
+          "SpeedScale": 1.096,
+          "Boss": false,
+          "ExpectedGold": 843
+        },
+        {
+          "Number": 9,
+          "Enemies": {
+            "Basic": 58,
+            "VoidHound": 14,
+            "VoidBrute": 17,
+            "VoidGuard": 18,
+            "VoidSentinel": 27,
+            "VoidGolem": 2
+          },
+          "SpawnInterval": 0.45,
+          "HealthScale": 1.66,
+          "SpeedScale": 1.096,
+          "Boss": false,
+          "ExpectedGold": 904
+        },
+        {
+          "Number": 10,
+          "Enemies": {
+            "VoidGuard": 22,
+            "Basic": 53,
+            "VoidSentinel": 25,
+            "VoidHound": 22,
+            "VoidBrute": 18
+          },
+          "SpawnInterval": 0.425,
+          "HealthScale": 1.68,
+          "SpeedScale": 1.096,
+          "Boss": false,
+          "ExpectedGold": 925
+        }
+      ],
+      "ExpectedKillGold": 7599
+    },
+    {
+      "Id": "5-4",
+      "Index": 24,
+      "Chapter": 5,
+      "Number": 4,
+      "Name": "Bastion of Light",
+      "StartingGold": 15500,
+      "StartingLives": 12,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": false,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "VoidGuard": 12,
+            "Basic": 31,
+            "VoidHound": 16,
+            "VoidBrute": 14,
+            "VoidSentinel": 19
+          },
+          "SpawnInterval": 0.625,
+          "HealthScale": 1.525,
+          "SpeedScale": 1.104,
+          "Boss": false,
+          "ExpectedGold": 617
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "VoidGuard": 11,
+            "VoidHound": 16,
+            "VoidSentinel": 20,
+            "Basic": 41,
+            "VoidBrute": 10
+          },
+          "SpawnInterval": 0.6,
+          "HealthScale": 1.545,
+          "SpeedScale": 1.104,
+          "Boss": false,
+          "ExpectedGold": 625
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "Basic": 37,
+            "VoidBrute": 20,
+            "VoidSentinel": 11,
+            "VoidHound": 16,
+            "VoidGuard": 20,
+            "VoidGolem": 2
+          },
+          "SpawnInterval": 0.575,
+          "HealthScale": 1.565,
+          "SpeedScale": 1.104,
+          "Boss": false,
+          "ExpectedGold": 763
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "Basic": 36,
+            "VoidHound": 20,
+            "VoidSentinel": 26,
+            "VoidBrute": 15,
+            "VoidGuard": 13
+          },
+          "SpawnInterval": 0.55,
+          "HealthScale": 1.585,
+          "SpeedScale": 1.104,
+          "Boss": false,
+          "ExpectedGold": 730
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "VoidSentinel": 27,
+            "VoidHound": 17,
+            "Basic": 44,
+            "VoidBrute": 13,
+            "VoidGuard": 15
+          },
+          "SpawnInterval": 0.525,
+          "HealthScale": 1.605,
+          "SpeedScale": 1.104,
+          "Boss": false,
+          "ExpectedGold": 751
+        },
+        {
+          "Number": 6,
+          "Enemies": {
+            "VoidSentinel": 20,
+            "Basic": 55,
+            "VoidBrute": 13,
+            "VoidHound": 18,
+            "VoidGuard": 16,
+            "VoidGolem": 2
+          },
+          "SpawnInterval": 0.5,
+          "HealthScale": 1.625,
+          "SpeedScale": 1.104,
+          "Boss": false,
+          "ExpectedGold": 819
+        },
+        {
+          "Number": 7,
+          "Enemies": {
+            "VoidBrute": 16,
+            "Basic": 57,
+            "VoidHound": 12,
+            "VoidSentinel": 26,
+            "VoidGuard": 17
+          },
+          "SpawnInterval": 0.475,
+          "HealthScale": 1.645,
+          "SpeedScale": 1.104,
+          "Boss": false,
+          "ExpectedGold": 821
+        },
+        {
+          "Number": 8,
+          "Enemies": {
+            "Basic": 61,
+            "VoidHound": 19,
+            "VoidGuard": 14,
+            "VoidSentinel": 21,
+            "VoidBrute": 19
+          },
+          "SpawnInterval": 0.45,
+          "HealthScale": 1.665,
+          "SpeedScale": 1.104,
+          "Boss": false,
+          "ExpectedGold": 866
+        },
+        {
+          "Number": 9,
+          "Enemies": {
+            "VoidSentinel": 30,
+            "Basic": 67,
+            "VoidBrute": 17,
+            "VoidGuard": 12,
+            "VoidHound": 14,
+            "VoidGolem": 2
+          },
+          "SpawnInterval": 0.425,
+          "HealthScale": 1.685,
+          "SpeedScale": 1.104,
+          "Boss": false,
+          "ExpectedGold": 919
+        },
+        {
+          "Number": 10,
+          "Enemies": {
+            "Basic": 56,
+            "VoidSentinel": 22,
+            "VoidGuard": 24,
+            "VoidBrute": 24,
+            "VoidHound": 20
+          },
+          "SpawnInterval": 0.4,
+          "HealthScale": 1.705,
+          "SpeedScale": 1.104,
+          "Boss": false,
+          "ExpectedGold": 984
+        },
+        {
+          "Number": 11,
+          "Enemies": {
+            "VoidHound": 19,
+            "Basic": 64,
+            "VoidSentinel": 28,
+            "VoidBrute": 29,
+            "VoidGuard": 12
+          },
+          "SpawnInterval": 0.38,
+          "HealthScale": 1.725,
+          "SpeedScale": 1.104,
+          "Boss": false,
+          "ExpectedGold": 1007
+        }
+      ],
+      "ExpectedKillGold": 8902
+    },
+    {
+      "Id": "5-5",
+      "Index": 25,
+      "Chapter": 5,
+      "Number": 5,
+      "Name": "The Entropy Architect",
+      "StartingGold": 18000,
+      "StartingLives": 12,
+      "Intermission": 5,
+      "Tutorial": false,
+      "Boss": true,
+      "Waves": [
+        {
+          "Number": 1,
+          "Enemies": {
+            "Basic": 41,
+            "VoidBrute": 10,
+            "VoidSentinel": 19,
+            "VoidGuard": 12,
+            "VoidHound": 16
+          },
+          "SpawnInterval": 0.6,
+          "HealthScale": 1.55,
+          "SpeedScale": 1.112,
+          "Boss": false,
+          "ExpectedGold": 627
+        },
+        {
+          "Number": 2,
+          "Enemies": {
+            "VoidSentinel": 16,
+            "VoidBrute": 17,
+            "Basic": 46,
+            "VoidHound": 10,
+            "VoidGuard": 15
+          },
+          "SpawnInterval": 0.575,
+          "HealthScale": 1.57,
+          "SpeedScale": 1.112,
+          "Boss": false,
+          "ExpectedGold": 686
+        },
+        {
+          "Number": 3,
+          "Enemies": {
+            "Basic": 45,
+            "VoidBrute": 13,
+            "VoidSentinel": 21,
+            "VoidHound": 16,
+            "VoidGuard": 15,
+            "VoidGolem": 2
+          },
+          "SpawnInterval": 0.55,
+          "HealthScale": 1.59,
+          "SpeedScale": 1.112,
+          "Boss": false,
+          "ExpectedGold": 753
+        },
+        {
+          "Number": 4,
+          "Enemies": {
+            "Basic": 47,
+            "VoidSentinel": 25,
+            "VoidGuard": 17,
+            "VoidHound": 12,
+            "VoidBrute": 15
+          },
+          "SpawnInterval": 0.525,
+          "HealthScale": 1.61,
+          "SpeedScale": 1.112,
+          "Boss": false,
+          "ExpectedGold": 755
+        },
+        {
+          "Number": 5,
+          "Enemies": {
+            "VoidSentinel": 28,
+            "Basic": 41,
+            "VoidHound": 18,
+            "VoidGuard": 21,
+            "VoidBrute": 14
+          },
+          "SpawnInterval": 0.5,
+          "HealthScale": 1.63,
+          "SpeedScale": 1.112,
+          "Boss": false,
+          "ExpectedGold": 807
+        },
+        {
+          "Number": 6,
+          "Enemies": {
+            "VoidSentinel": 28,
+            "VoidBrute": 19,
+            "Basic": 50,
+            "VoidGuard": 13,
+            "VoidHound": 18,
+            "VoidGolem": 2
+          },
+          "SpawnInterval": 0.475,
+          "HealthScale": 1.65,
+          "SpeedScale": 1.112,
+          "Boss": false,
+          "ExpectedGold": 878
+        },
+        {
+          "Number": 7,
+          "Enemies": {
+            "VoidHound": 16,
+            "VoidGuard": 21,
+            "Basic": 58,
+            "VoidBrute": 22,
+            "VoidSentinel": 17
+          },
+          "SpawnInterval": 0.45,
+          "HealthScale": 1.67,
+          "SpeedScale": 1.112,
+          "Boss": false,
+          "ExpectedGold": 892
+        },
+        {
+          "Number": 8,
+          "Enemies": {
+            "Basic": 56,
+            "VoidHound": 29,
+            "VoidGuard": 16,
+            "VoidSentinel": 22,
+            "VoidBrute": 17
+          },
+          "SpawnInterval": 0.425,
+          "HealthScale": 1.69,
+          "SpeedScale": 1.112,
+          "Boss": false,
+          "ExpectedGold": 913
+        },
+        {
+          "Number": 9,
+          "Enemies": {
+            "VoidSentinel": 33,
+            "VoidHound": 27,
+            "Basic": 50,
+            "VoidGuard": 20,
+            "VoidBrute": 16,
+            "VoidGolem": 2
+          },
+          "SpawnInterval": 0.4,
+          "HealthScale": 1.71,
+          "SpeedScale": 1.112,
+          "Boss": false,
+          "ExpectedGold": 997
+        },
+        {
+          "Number": 10,
+          "Enemies": {
+            "VoidGuard": 14,
+            "Basic": 60,
+            "VoidSentinel": 37,
+            "VoidHound": 21,
+            "VoidBrute": 20
+          },
+          "SpawnInterval": 0.38,
+          "HealthScale": 1.73,
+          "SpeedScale": 1.112,
+          "Boss": false,
+          "ExpectedGold": 981
+        },
+        {
+          "Number": 11,
+          "Enemies": {
+            "Basic": 63,
+            "VoidHound": 21,
+            "VoidSentinel": 36,
+            "VoidGuard": 20,
+            "VoidBrute": 18
+          },
+          "SpawnInterval": 0.38,
+          "HealthScale": 1.75,
+          "SpeedScale": 1.112,
+          "Boss": false,
+          "ExpectedGold": 1018
+        },
+        {
+          "Number": 12,
+          "Enemies": {
+            "Basic": 69,
+            "VoidBrute": 25,
+            "VoidGuard": 24,
+            "VoidSentinel": 29,
+            "VoidHound": 17,
+            "VoidGolem": 2
+          },
+          "SpawnInterval": 0.38,
+          "HealthScale": 1.77,
+          "SpeedScale": 1.112,
+          "Boss": true,
+          "ExpectedGold": 3010
+        }
+      ],
+      "ExpectedKillGold": 12317
+    }
+  ]
+}

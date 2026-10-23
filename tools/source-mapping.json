@@ -212,5 +212,19 @@
       0
     ],
     "game-over-runtime.js"
+  ],
+  [
+    0,
+    [
+      5
+    ],
+    "campaign-game-runtime.js"
+  ],
+  [
+    20,
+    [
+      0
+    ],
+    "campaign-game-after.js"
   ]
 ]

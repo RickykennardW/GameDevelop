@@ -47,7 +47,7 @@ async def main():
             if 'exceptionDetails' in r: raise RuntimeError(r['exceptionDetails'])
             return r.get('result', {}).get('value')
         await call('Runtime.enable'); await call('Log.enable'); await call('Page.reload')
-        ready='__mainMenu' if '--menu' in sys.argv else '__starCannon'
+        ready='__levelsUI' if '--levels' in sys.argv else '__mainMenu' if '--menu' in sys.argv else '__starCannon'
         for _ in range(300):
             if await js('!!(window.testGame&&testGame.getSceneStack().getCurrentScene()?.'+ready+')'): break
             await asyncio.sleep(.1)
@@ -74,6 +74,15 @@ async def main():
             if followup:result['followup']=await js(Path(followup).read_text(encoding='utf-8'))
         except Exception as exc:
             Path(sys.argv[2]).write_text(json.dumps(dict(failure=str(exc),progress=progress,consoleErrors=errors),indent=2),encoding='utf-8'); raise
+        if '--campaign-reload-check' in sys.argv:
+            expected=await js('({campaign:testGame.__campaign.save,audio:testGame.__celestialAudioSettings,archive:localStorage.getItem("celestialVoidFusionDiscovery.v1")})')
+            await call('Page.reload')
+            for _ in range(300):
+                if await js('!!(window.testGame&&testGame.getSceneStack().getCurrentScene()?.__levelsUI)'):break
+                await asyncio.sleep(.1)
+            actual=await js('({save:testGame.__campaign.save,audio:testGame.getSceneStack().getCurrentScene().__levelsUI.settings,archive:localStorage.getItem("celestialVoidFusionDiscovery.v1"),stage:testGame.getSceneStack().getCurrentScene().__levelsUI.stage,unrelated:localStorage.getItem("campaignUnrelatedCheck")})')
+            if actual['save']!=expected['campaign'] or actual['audio']!=expected['audio'] or actual['archive']!=expected['archive'] or actual['stage']!=-1 or actual['unrelated']!='preserve':raise RuntimeError('Campaign save/tutorial/audio/archive reload check failed')
+            result['pageReload']=actual
         if '--reload-check' in sys.argv:
             await call('Page.reload')
             for _ in range(300):

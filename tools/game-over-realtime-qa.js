@@ -22,7 +22,8 @@
  await until(()=>second.phase==='AWAIT_CONTINUE','muted defeat still animates');await click(20,20,'GameOverUI');await until(()=>second.phase==='MENU','second menu becomes interactive');
  const back=second.buttons[1];await click(back.x,back.y,'GameOverUI');await until(()=>G.getSceneStack().getCurrentScene()!==S,'Main Menu performs native scene replacement');S=G.getSceneStack().getCurrentScene();await wait(1000);
  ok(S.getName()==='MainMenu'&&!S.__gameOverUI&&S.__mainMenu.settings.MuteSFX,'lobby has no defeat overlay and preserves mute');
- const start=S.__mainMenu.buttons[0];await click(start.x,start.y,'MenuUI');await until(()=>G.getSceneStack().getCurrentScene()!==S,'lobby Start enters gameplay again');S=G.getSceneStack().getCurrentScene();await wait(700);
- ok(S.getVariables().get('Lives').getAsNumber()===10&&!S.__gameOverUI.active&&S.__audio.settings.MuteSFX,'complete real-time round trip preserves preferences');G.pause(true);
+ const start=S.__mainMenu.buttons[0];await click(start.x,start.y,'MenuUI');await until(()=>G.getSceneStack().getCurrentScene()?.__levelsUI,'lobby Start opens Levels');S=G.getSceneStack().getCurrentScene();await wait(700);const U=S.__levelsUI;
+ await click(U.skip.rect.x+U.skip.rect.w/2,U.skip.rect.y+U.skip.rect.h/2,'CampaignUI');await click(U.launch.rect.x+U.launch.rect.w/2,U.launch.rect.y+U.launch.rect.h/2,'CampaignUI');await until(()=>!!G.getSceneStack().getCurrentScene()?.__campaignRun,'explicit launch enters gameplay');S=G.getSceneStack().getCurrentScene();await wait(700);
+ ok(S.getVariables().get('Lives').getAsNumber()===S.__campaignRun.level.StartingLives&&!S.__gameOverUI.active&&S.__audio.settings.MuteSFX,'complete real-time round trip preserves preferences');G.pause(true);
  return{checks,actualWallClockFrames:true,audioPlayed:true,muteVerified:true,scene:S.getName()};
 })()

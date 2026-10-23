@@ -27,6 +27,7 @@ if(!menu){
  };
  menu.clickSound=()=>{const s=menu.settings,d=audio.SFX.UIClick;if(!menu.audio.unlocked||s.MuteSFX||!s.Master)return;sound.playSoundOnChannel(d.File,1020,false,s.Master/100*s.UI/100*d.Gain*100,1);menu.audio.clicks++;};
  document.addEventListener('pointerdown',menu.unlock);document.addEventListener('keydown',menu.unlock);document.addEventListener('touchstart',menu.unlock,{passive:true});
+ if(game.__starfallMenuAudioReady)menu.unlock();
  const parent=scene.getLayer('MenuUI').getRenderer().getRendererObject();
  menu.fade=new PIXI.Graphics();menu.fade.interactive=false;menu.fade.zIndex=100;parent.addChild(menu.fade);
  menu.particles=new PIXI.Container();menu.particles.interactive=false;menu.particles.interactiveChildren=false;menu.particles.zIndex=1;parent.addChild(menu.particles);
@@ -91,11 +92,13 @@ if(!menu.transition&&gdjs.evtTools.input.wasKeyJustPressed(scene,'Return'))menu.
 for(const b of menu.buttons){
  const target=menu.hover===b.id?menu.config.HoverScale:1;b.scale=game.__starfallHoverStep(b.scale,target,dt);
  b.frame.setAnimationName(menu.hover===b.id?'Hover':'Normal');b.frame.setScale(b.baseScale*b.scale);b.frame.setPosition(b.x-b.frame.getWidth()/2,b.y-b.frame.getHeight()/2);
- b.label.setWrapping(true);b.label.setWrappingWidth(320);b.label.setTextAlignment('center');b.label.setScale(b.baseScale*b.scale);b.label.setPosition(b.x-160*b.baseScale*b.scale,b.y-b.label.getHeight()/2);
+ // Native wrapped Text centers in its unscaled wrapping width. Keep labels at
+ // the viewport's base scale; only the frame receives animated hover scale.
+ b.label.setWrapping(true);b.label.setWrappingWidth(320*b.baseScale);b.label.setTextAlignment('center');b.label.setScale(b.baseScale);b.label.setPosition(b.x-b.label.getWidth()/2,b.y-b.label.getHeight()/2);
 }
 const canvas=game.getRenderer().getCanvas();if(canvas)canvas.style.cursor=menu.hover&&!menu.transition?'pointer':'default';
 const reduced=typeof matchMedia==='function'&&matchMedia('(prefers-reduced-motion: reduce)').matches;
 menu.particles.children.forEach((star,i)=>{star.position.set(((i*137+71)%1280)/1280*W,((i*79+31)%720)/720*H+(reduced?0:Math.sin(menu.age*.12+i)*5*scale));star.alpha=.08+(reduced?.12:.16*(.5+.5*Math.sin(menu.age*.4+i)));});
 menu.fade.alpha=Math.max(0,1-menu.age/.5);
-if(menu.transition){menu.transition.age+=dt;menu.fade.alpha=Math.min(1,menu.transition.age/menu.config.TransitionSeconds);if(menu.transition.age>=menu.config.TransitionSeconds&&!menu.transition.requested){menu.transition.requested=true;menu.sceneRequests++;gdjs.evtTools.runtimeScene.replaceScene(scene,menu.config.GameplayScene,false);}}
+if(menu.transition){menu.transition.age+=dt;menu.fade.alpha=Math.min(1,menu.transition.age/menu.config.TransitionSeconds);if(menu.transition.age>=menu.config.TransitionSeconds&&!menu.transition.requested){menu.transition.requested=true;menu.sceneRequests++;gdjs.evtTools.runtimeScene.replaceScene(scene,menu.config.StartScene||menu.config.GameplayScene,false);}}
 if(menu.audio.music){const s=menu.settings,target=s.MuteMusic?0:s.Master/100*s.Music/100;menu.audio.gain+=(target-menu.audio.gain)*(1-Math.exp(-dt*2));menu.audio.music.setVolume(menu.audio.gain*(menu.transition?1-menu.fade.alpha:1));}

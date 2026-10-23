@@ -1,0 +1,14 @@
+{
+  "result": {
+    "checks": [
+      "one functional Levels scene with25missions /5chapters",
+      "cold save unlocks only1-1; invalid/locked launches reject",
+      "locked chapter cannot bypass prerequisite",
+      "five hex pads / fifth boss / two reusable background layers"
+    ],
+    "chapter": 1,
+    "stage": -1
+  },
+  "progress": [],
+  "consoleErrors": []
+}

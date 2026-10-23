@@ -75,8 +75,9 @@
  I.onMouseButtonReleased(0);until(()=>newGo.phase==='AWAIT_CONTINUE');click(15,15,'GameOverUI');until(()=>newGo.phase==='MENU');const back=newGo.buttons[1];click(back.x,back.y,'GameOverUI');step(25);await enter('MainMenu');
  ok(newGo.disposed&&newGo.root.destroyed&&newGo.requests===1&&!S.__gameOverUI&&S.__mainMenu.objects.MenuStart,'Main Menu returns to existing lobby with no defeat UI carried over');
  await wait(600);
- const main=S.__mainMenu;click(main.buttons[0].x,main.buttons[0].y,'MenuUI');step(25);await enter('Game Scene');
- ok(!S.__gameOverUI.active&&S.getVariables().get('Lives').getAsNumber()===defaults.Lives&&S.getObjects('StarCannonTower').length===0,'lobby Start works again and initializes one clean run');
+ const main=S.__mainMenu;click(main.buttons[0].x,main.buttons[0].y,'MenuUI');step(25);await enter('Levels');ok(!S.__starCannon,'lobby Start requires mission selection');await wait(350);
+ const U=S.__levelsUI;click(U.skip.rect.x+U.skip.rect.w/2,U.skip.rect.y+U.skip.rect.h/2,'CampaignUI');click(U.launch.rect.x+U.launch.rect.w/2,U.launch.rect.y+U.launch.rect.h/2,'CampaignUI');step(25);await enter('Game Scene');
+ ok(!S.__gameOverUI.active&&S.getVariables().get('Lives').getAsNumber()===S.__campaignRun.level.StartingLives&&S.getObjects('StarCannonTower').length===0,'explicit mission launch initializes one clean run');
  ok(S.__monsterDiscovery.has('Basic')&&G.__fusionArchive.has('StarburstCannon')&&JSON.stringify(S.__audio.settings)===JSON.stringify(settings),'lobby round trip preserves progression and settings');
  // Existing positive-Lives victory is deliberately outside the loss sequence.
  S.getVariables().get('GameOver').setBoolean(true);S.getVariables().get('Wave').setNumber(S.getVariables().get('MaximumWave').getAsNumber());step(3);ok(!S.__gameOverUI.active&&!S.getVariables().get('DefeatActive').getAsBoolean(),'positive-Lives victory never activates defeat overlay');

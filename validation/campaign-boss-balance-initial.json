@@ -1,0 +1,82 @@
+{
+  "result": {
+    "checks": [
+      "native boss scene transition Game Scene",
+      "boss is actual configured native enemy: 1-5",
+      "boss has dedicated name/health display: 1",
+      "native boss scene transition Levels",
+      "native boss scene transition Game Scene",
+      "boss is actual configured native enemy: 2-5",
+      "boss has dedicated name/health display: 2",
+      "native boss scene transition Levels",
+      "native boss scene transition Game Scene",
+      "boss is actual configured native enemy: 3-5",
+      "boss has dedicated name/health display: 3",
+      "native boss scene transition Levels",
+      "native boss scene transition Game Scene",
+      "boss is actual configured native enemy: 4-5",
+      "boss has dedicated name/health display: 4",
+      "native boss scene transition Levels",
+      "native boss scene transition Game Scene",
+      "boss is actual configured native enemy: 5-5",
+      "boss has dedicated name/health display: 5"
+    ],
+    "balance": true,
+    "results": [
+      {
+        "level": "1-5",
+        "bossHP": 1200,
+        "killed": true,
+        "escaped": false,
+        "simulatedSeconds": 114.19999999999565,
+        "towers": 4,
+        "lives": 20,
+        "goldLeft": 475
+      },
+      {
+        "level": "2-5",
+        "bossHP": 3600,
+        "killed": true,
+        "escaped": false,
+        "simulatedSeconds": 144.4499999999986,
+        "towers": 8,
+        "lives": 18,
+        "goldLeft": 910
+      },
+      {
+        "level": "3-5",
+        "bossHP": 7500,
+        "killed": false,
+        "escaped": true,
+        "simulatedSeconds": 207.95000000001303,
+        "towers": 14,
+        "lives": -1,
+        "goldLeft": 549
+      },
+      {
+        "level": "4-5",
+        "bossHP": 15000,
+        "killed": false,
+        "escaped": true,
+        "simulatedSeconds": 169.0500000000042,
+        "towers": 20,
+        "lives": -1,
+        "goldLeft": 733
+      },
+      {
+        "level": "5-5",
+        "bossHP": 27000,
+        "killed": false,
+        "escaped": true,
+        "simulatedSeconds": 172.05000000000487,
+        "towers": 26,
+        "lives": -1,
+        "goldLeft": 4087
+      }
+    ],
+    "fixture": "finite configured pre-boss budget / native towers and full boss wave",
+    "notWholeMissionWinRate": true
+  },
+  "progress": [],
+  "consoleErrors": []
+}

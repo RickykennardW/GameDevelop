@@ -30,3 +30,10 @@ if menu_path.exists():
     menu['events'][0]['inlineCode']=(ROOT/'tools/main-menu-runtime.js').read_text(encoding='utf-8-sig').splitlines()
     updated=json.dumps(menu,ensure_ascii=False,indent=2)+'\n'
     if updated!=menu_source:menu_path.write_text(updated,encoding='utf-8')
+levels_path=ROOT/'layouts/levels.json'
+if levels_path.exists():
+    levels_source=levels_path.read_text(encoding='utf-8');levels=json.loads(levels_source)
+    for index,name in enumerate(['campaign-service.js','levels-runtime.js']):
+        levels['events'][index]['inlineCode']=(ROOT/'tools'/name).read_text(encoding='utf-8-sig').splitlines()
+    updated=json.dumps(levels,ensure_ascii=False,indent=2)+'\n'
+    if updated!=levels_source:levels_path.write_text(updated,encoding='utf-8')

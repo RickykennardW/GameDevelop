@@ -98,7 +98,13 @@ if menu:
     ok(menu['events'][0]['inlineCode']==(ROOT/'tools/main-menu-runtime.js').read_text(encoding='utf-8-sig').splitlines(),'MainMenu maintained event/source match')
     menu_variables={v['name']:v for v in menu['variables']}
     target=next(v['value'] for v in menu_variables['MenuConfig']['children'] if v['name']=='GameplayScene')
-    ok(target==gameplay['name'],'MainMenu Start target is the preserved gameplay scene')
+    ok(target==gameplay['name'],'MainMenu gameplay/audio configuration reference resolves')
+campaign=next((s for s in scenes if s['name']=='Levels'),None)
+if campaign:
+    for index,name in enumerate(['campaign-service.js','levels-runtime.js']):
+        ok(campaign['events'][index]['inlineCode']==(ROOT/'tools'/name).read_text(encoding='utf-8-sig').splitlines(),'Levels maintained event/source match: '+name)
+    start=next(v['value'] for v in menu_variables['MenuConfig']['children'] if v['name']=='StartScene')
+    ok(start=='Levels','MainMenu Start explicitly routes to Levels')
 ok(all(r['name'] in all_strings for r in resources),'Every resource is referenced by the active scene/configuration')
 manifest=read('assets/audio/manifest.json')
 for asset in manifest['assets']:

@@ -16,6 +16,7 @@ if (state && sv.get("WaveActive").getAsBoolean() && !sv.get("GameOver").getAsBoo
     enemy.setPosition(point.getChild("X").getAsNumber()-size/2,point.getChild("Y").getAsNumber()-size/2);
     enemy.getBehavior("Health").SetMaxHealth(stats.HP);enemy.getBehavior("Health").SetHealth(stats.HP);enemy.getBehavior("Health").SetFlatDamageReduction(stats.Armor);enemy.getBehavior("Health").SetPercentDamageReduction(0);
     runtimeScene.__novaWisp.ensure(enemy);runtimeScene.__voidGolem.fort.ensure(enemy);
+    runtimeScene.__campaignRun?.spawned(enemy,type,state.index-1);
     runtimeScene.__monsterDiscovery?.onWaveSpawn(enemy,type);
     sv.get("EnemiesToSpawn").setNumber(state.queue.length-state.index);
   }
