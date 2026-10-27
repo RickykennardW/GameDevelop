@@ -1,0 +1,19 @@
+{
+  "result": {
+    "checks": [
+      "real Levels launch keeps configured1-1 opening600Gold",
+      "onboarding modal hides and guards DEV / no tutorial Gold grant",
+      "normal Skip Tutorial releases DEV without changing unlocks",
+      "actual campaign DEV preset adds1000 to current mission Gold",
+      "funding does not grant completion / level unlock / boss proof",
+      "campaign Restart disposes overlay and input",
+      "Restart restores same mission opening / DEV funds are not persistent currency"
+    ],
+    "mission": "1-1",
+    "openingGold": 600,
+    "cheatSessionOnly": true,
+    "unlocksUnchanged": true
+  },
+  "progress": [],
+  "consoleErrors": []
+}

@@ -25,7 +25,12 @@ if sys.argv[1:] == ['--prepare']:
         page = page.replace('    (function() {', prefix + body + footer + '\n    (function() {')
         page = page.replace('game.startGameLoop();', 'runTowerTests(game);')
         (W / 'preview' / (name + '.html')).write_text(page, encoding='utf-8')
-    (W / 'preview/clean-sidebar-live.html').write_text(template.replace('game.startGameLoop();', 'window.testGame=game;game.startGameLoop();'), encoding='utf-8')
+    live=template.replace('game.startGameLoop();', 'window.testGame=game;game.startGameLoop();')
+    (W / 'preview/clean-sidebar-live.html').write_text(live, encoding='utf-8')
+    # Native build-mode gate validation, using the same compiled events/resources.
+    release=live.replace('var game = new gdjs.RuntimeGame', 'gdjs.runtimeGameOptions.isPreview=false;gdjs.runtimeGameOptions.disableMetrics=true;\n        var game = new gdjs.RuntimeGame')
+    assert release!=live
+    (W / 'preview/clean-sidebar-release-check.html').write_text(release,encoding='utf-8')
     print('Prepared fresh native preview harnesses')
 else:
     name = sys.argv[1]

@@ -1,0 +1,260 @@
+{
+  "result": {
+    "resizeSequence": [
+      {
+        "checks": [
+          "DEV launcher clickable after physical viewport change",
+          "button / panel dimensions finite",
+          "launcher bounded outside Tower Shop",
+          "panel inside viewport and outside Tower Shop",
+          "developer button and text remain usable at small physical sizes",
+          "DEV launcher does not overlap Gold / Lives / Wave / Audio",
+          "preset click converts physical / logical coordinates once",
+          "real input follows scrolled UI and stays on canvas",
+          "idle / resize reuse one input and stable UI counts",
+          "zero / nonfinite minimize-like dimensions preserve last valid geometry",
+          "scroll reveals full native Fusion shortcut"
+        ],
+        "physical": [
+          1280,
+          720
+        ],
+        "logical": [
+          1280,
+          720
+        ],
+        "shape": [
+          2,
+          12,
+          1
+        ],
+        "panel": {
+          "x": 380,
+          "y": 66,
+          "w": 300,
+          "h": 470
+        },
+        "display": 1,
+        "invalidViewportSimulation": true
+      },
+      {
+        "checks": [
+          "DEV launcher clickable after physical viewport change",
+          "button / panel dimensions finite",
+          "launcher bounded outside Tower Shop",
+          "panel inside viewport and outside Tower Shop",
+          "developer button and text remain usable at small physical sizes",
+          "DEV launcher does not overlap Gold / Lives / Wave / Audio",
+          "preset click converts physical / logical coordinates once",
+          "real input follows scrolled UI and stays on canvas",
+          "idle / resize reuse one input and stable UI counts",
+          "zero / nonfinite minimize-like dimensions preserve last valid geometry",
+          "scroll reveals full native Fusion shortcut"
+        ],
+        "physical": [
+          960,
+          600
+        ],
+        "logical": [
+          960,
+          600
+        ],
+        "shape": [
+          2,
+          12,
+          1
+        ],
+        "panel": {
+          "x": 380,
+          "y": 66,
+          "w": 300,
+          "h": 470
+        },
+        "display": 1,
+        "invalidViewportSimulation": true
+      },
+      {
+        "checks": [
+          "DEV launcher clickable after physical viewport change",
+          "button / panel dimensions finite",
+          "launcher bounded outside Tower Shop",
+          "panel inside viewport and outside Tower Shop",
+          "developer button and text remain usable at small physical sizes",
+          "DEV launcher does not overlap Gold / Lives / Wave / Audio",
+          "preset click converts physical / logical coordinates once",
+          "real input follows scrolled UI and stays on canvas",
+          "idle / resize reuse one input and stable UI counts",
+          "zero / nonfinite minimize-like dimensions preserve last valid geometry",
+          "scroll reveals full native Fusion shortcut"
+        ],
+        "physical": [
+          640,
+          400
+        ],
+        "logical": [
+          960,
+          600
+        ],
+        "shape": [
+          2,
+          12,
+          1
+        ],
+        "panel": {
+          "x": 256,
+          "y": 88,
+          "w": 450,
+          "h": 500
+        },
+        "display": 0.6666666666666666,
+        "invalidViewportSimulation": true
+      },
+      {
+        "checks": [
+          "DEV launcher clickable after physical viewport change",
+          "button / panel dimensions finite",
+          "launcher bounded outside Tower Shop",
+          "panel inside viewport and outside Tower Shop",
+          "developer button and text remain usable at small physical sizes",
+          "DEV launcher does not overlap Gold / Lives / Wave / Audio",
+          "preset click converts physical / logical coordinates once",
+          "real input follows scrolled UI and stays on canvas",
+          "idle / resize reuse one input and stable UI counts",
+          "zero / nonfinite minimize-like dimensions preserve last valid geometry",
+          "scroll reveals full native Fusion shortcut"
+        ],
+        "physical": [
+          480,
+          300
+        ],
+        "logical": [
+          960,
+          600
+        ],
+        "shape": [
+          2,
+          12,
+          1
+        ],
+        "panel": {
+          "x": 102,
+          "y": 110,
+          "w": 600,
+          "h": 474
+        },
+        "display": 0.5,
+        "invalidViewportSimulation": true
+      },
+      {
+        "checks": [
+          "DEV launcher clickable after physical viewport change",
+          "button / panel dimensions finite",
+          "launcher bounded outside Tower Shop",
+          "panel inside viewport and outside Tower Shop",
+          "developer button and text remain usable at small physical sizes",
+          "DEV launcher does not overlap Gold / Lives / Wave / Audio",
+          "preset click converts physical / logical coordinates once",
+          "real input follows scrolled UI and stays on canvas",
+          "idle / resize reuse one input and stable UI counts",
+          "zero / nonfinite minimize-like dimensions preserve last valid geometry",
+          "scroll reveals full native Fusion shortcut"
+        ],
+        "physical": [
+          320,
+          240
+        ],
+        "logical": [
+          960,
+          720
+        ],
+        "shape": [
+          2,
+          12,
+          1
+        ],
+        "panel": {
+          "x": 24,
+          "y": 156,
+          "w": 670,
+          "h": 540
+        },
+        "display": 0.3333333333333333,
+        "invalidViewportSimulation": true
+      },
+      {
+        "checks": [
+          "DEV launcher clickable after physical viewport change",
+          "button / panel dimensions finite",
+          "launcher bounded outside Tower Shop",
+          "panel inside viewport and outside Tower Shop",
+          "developer button and text remain usable at small physical sizes",
+          "DEV launcher does not overlap Gold / Lives / Wave / Audio",
+          "preset click converts physical / logical coordinates once",
+          "real input follows scrolled UI and stays on canvas",
+          "idle / resize reuse one input and stable UI counts",
+          "zero / nonfinite minimize-like dimensions preserve last valid geometry",
+          "scroll reveals full native Fusion shortcut"
+        ],
+        "physical": [
+          1280,
+          720
+        ],
+        "logical": [
+          1280,
+          720
+        ],
+        "shape": [
+          2,
+          12,
+          1
+        ],
+        "panel": {
+          "x": 380,
+          "y": 66,
+          "w": 300,
+          "h": 470
+        },
+        "display": 1,
+        "invalidViewportSimulation": true
+      },
+      {
+        "checks": [
+          "DEV launcher clickable after physical viewport change",
+          "button / panel dimensions finite",
+          "launcher bounded outside Tower Shop",
+          "panel inside viewport and outside Tower Shop",
+          "developer button and text remain usable at small physical sizes",
+          "DEV launcher does not overlap Gold / Lives / Wave / Audio",
+          "preset click converts physical / logical coordinates once",
+          "real input follows scrolled UI and stays on canvas",
+          "idle / resize reuse one input and stable UI counts",
+          "zero / nonfinite minimize-like dimensions preserve last valid geometry",
+          "scroll reveals full native Fusion shortcut"
+        ],
+        "physical": [
+          480,
+          300
+        ],
+        "logical": [
+          960,
+          600
+        ],
+        "shape": [
+          2,
+          12,
+          1
+        ],
+        "panel": {
+          "x": 102,
+          "y": 110,
+          "w": 600,
+          "h": 474
+        },
+        "display": 0.5,
+        "invalidViewportSimulation": true
+      }
+    ]
+  },
+  "progress": [],
+  "consoleErrors": []
+}

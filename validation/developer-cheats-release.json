@@ -1,0 +1,19 @@
+{
+  "result": {
+    "checks": [
+      "actual non-preview RuntimeGame constructed with authored DEV flag still true",
+      "non-preview mode never creates controller, cheat UI or custom input",
+      "release idle cannot grant Gold or consume ordinary input",
+      "normal Tower purchase remains valid in non-preview mode",
+      "normal upgrade / price / statistics unaffected in release mode",
+      "ordinary gameplay does not lazily expose a release cheat action"
+    ],
+    "nativeRuntimeOptions": {
+      "isPreview": false
+    },
+    "configuredDeveloperFlag": true,
+    "cheatControllerAbsent": true
+  },
+  "progress": [],
+  "consoleErrors": []
+}

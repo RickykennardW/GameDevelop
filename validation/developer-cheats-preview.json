@@ -1,0 +1,41 @@
+{
+  "result": {
+    "checks": [
+      "development-enabled Game Scene has one closed DEV launcher",
+      "scene load / idle grants no developer Gold or automatic wave",
+      "actual DEV click opens compact panel and one input",
+      "preset 1000 updates real Money and HUD exactly once",
+      "preset 5000 updates real Money and HUD exactly once",
+      "preset 10000 updates real Money and HUD exactly once",
+      "preset 50000 updates real Money and HUD exactly once",
+      "custom input / Add Gold uses real balance",
+      "invalid custom amount rejected: \"\"",
+      "invalid custom amount rejected: \"0\"",
+      "invalid custom amount rejected: \"-1\"",
+      "invalid custom amount rejected: \"abc\"",
+      "invalid custom amount rejected: \"1.5\"",
+      "invalid custom amount rejected: \"1e6\"",
+      "invalid custom amount rejected: \"Infinity\"",
+      "invalid custom amount rejected: \"1000000000000\"",
+      "invalid custom amount rejected: \"  \"",
+      "Set Balance is explicitly separate and respects configured limit",
+      "addition cannot overflow configured maximum balance",
+      "Set Balance restores a valid positive testing balance",
+      "no-selection Max cannot spend Gold or fabricate a Tower",
+      "developer Gold writes no reward events or persistent player save",
+      "visible X closes input and panel",
+      "developer button and preset never place a ghost through the panel",
+      "holding a developer-panel press and dragging onto valid ground cannot buy a Tower",
+      "normal paid Star Cannon placement after developer funding",
+      "unaffordable max refuses before any upgrade / never grants free upgrades",
+      "Max Selected uses native purchases for5-2 at unchanged11770 upgrade cost",
+      "max preserves identity, footprint and native investment",
+      "real statistics, component rig and selected panel reflect max upgrade"
+    ],
+    "shot": true,
+    "maxedTower": "5-2",
+    "gold": 38930
+  },
+  "progress": [],
+  "consoleErrors": []
+}

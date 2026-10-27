@@ -14,7 +14,8 @@ profile=tempfile.TemporaryDirectory(prefix='balance-browser-profile-',dir=W)
 profile_path=Path(profile.name).resolve()
 assert profile_path.parent==W.resolve() and profile_path.name.startswith('balance-browser-profile-')
 def start_browser():
-    return subprocess.Popen(['C:/Program Files/Google/Chrome/Application/chrome.exe', '--headless', '--disable-extensions', '--disable-background-networking', '--disable-component-update', '--disable-sync', '--no-first-run', '--allow-file-access-from-files', '--remote-debugging-port='+str(port), '--user-data-dir='+profile.name, '--window-size=1920,1080', '--hide-scrollbars', (W/'preview/clean-sidebar-live.html').as_uri()], stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
+    page='clean-sidebar-release-check.html' if '--non-preview' in sys.argv else 'clean-sidebar-live.html'
+    return subprocess.Popen(['C:/Program Files/Google/Chrome/Application/chrome.exe', '--headless', '--disable-extensions', '--disable-background-networking', '--disable-component-update', '--disable-sync', '--no-first-run', '--allow-file-access-from-files', '--remote-debugging-port='+str(port), '--user-data-dir='+profile.name, '--window-size=1920,1080', '--hide-scrollbars', (W/'preview'/page).as_uri()], stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
 proc = start_browser()
 
 async def main():
@@ -74,6 +75,22 @@ async def main():
             if followup:result['followup']=await js(Path(followup).read_text(encoding='utf-8'))
         except Exception as exc:
             Path(sys.argv[2]).write_text(json.dumps(dict(failure=str(exc),progress=progress,consoleErrors=errors),indent=2),encoding='utf-8'); raise
+        if '--dev-keyboard-check' in sys.argv:
+            bounds=await js('(()=>{const d=testGame.getSceneStack().getCurrentScene().__devCheats;d.input.blur();const r=d.input.getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+r.height/2};})()')
+            await call('Input.dispatchMouseEvent',dict(type='mousePressed',x=bounds['x'],y=bounds['y'],button='left',clickCount=1))
+            await call('Input.dispatchMouseEvent',dict(type='mouseReleased',x=bounds['x'],y=bounds['y'],button='left',clickCount=1))
+            before=await js('(()=>{const s=testGame.getSceneStack().getCurrentScene();s.renderAndStep(16.667);testGame.getInputManager().onFrameEnded();return{gold:s.getVariables().get("Money").getAsNumber(),wave:s.getVariables().get("Wave").getAsNumber(),focused:document.activeElement===s.__devCheats.input};})()')
+            if not before['focused']:raise RuntimeError('Native pointer did not focus developer input')
+            await call('Input.insertText',dict(text='250000'))
+            await call('Input.dispatchKeyEvent',dict(type='keyDown',key='Enter',code='Enter',windowsVirtualKeyCode=13))
+            await call('Input.dispatchKeyEvent',dict(type='keyUp',key='Enter',code='Enter',windowsVirtualKeyCode=13))
+            entered=await js('(()=>{const s=testGame.getSceneStack().getCurrentScene();s.renderAndStep(16.667);testGame.getInputManager().onFrameEnded();return{gold:s.getVariables().get("Money").getAsNumber(),hud:s.getObjects("MoneyText")[0].getString()};})()')
+            if entered['gold']!=before['gold']+250000 or entered['hud']!=str(entered['gold']):raise RuntimeError('Native input / Enter failed developer Gold transaction')
+            await call('Input.dispatchKeyEvent',dict(type='keyDown',key=' ',code='Space',windowsVirtualKeyCode=32))
+            await call('Input.dispatchKeyEvent',dict(type='keyUp',key=' ',code='Space',windowsVirtualKeyCode=32))
+            actual=await js('(()=>{const s=testGame.getSceneStack().getCurrentScene();s.renderAndStep(16.667);testGame.getInputManager().onFrameEnded();return{wave:s.getVariables().get("Wave").getAsNumber(),space:testGame.getInputManager().isKeyPressed(32)};})()')
+            if actual['wave']!=before['wave'] or actual['space']:raise RuntimeError('Developer text field leaked gameplay Space input')
+            result['nativeKeyboard']={'nativePointerFocus':True,'typedGold':250000,'enterAddedExactlyOnce':True,'hudImmediate':True,'spaceDidNotStartWave':True}
         if '--campaign-reload-check' in sys.argv:
             expected=await js('({campaign:testGame.__campaign.save,audio:testGame.__celestialAudioSettings,archive:localStorage.getItem("celestialVoidFusionDiscovery.v1")})')
             await call('Page.reload')

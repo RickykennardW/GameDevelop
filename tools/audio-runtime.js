@@ -118,7 +118,7 @@ if(!a){
   const input=game.getInputManager(),down=input.isMouseButtonPressed(0),released=!down&&a.ui.down,pressed=down&&!a.ui.down;
   const geometry=a.geometry(),mx=gdjs.evtTools.input.getCursorX(scene,'AudioUI',0),my=gdjs.evtTools.input.getCursorY(scene,'AudioUI',0),inside=r=>mx>=r.x&&mx<r.x+r.w&&my>=r.y&&my<r.y+r.h;
   if(sv.get('IndexBlocksInput').getAsBoolean()||sv.get('FusionActive').getAsBoolean()){a.ui.open=false;a.ui.drag='';}
-  let consume=false,key='';const b=geometry.button,p=geometry.panel;
+  let consume=sv.get('DevUIConsumesClick').getAsBoolean(),key='';const b=geometry.button,p=geometry.panel;
   if(!sv.get('IndexBlocksInput').getAsBoolean()&&!sv.get('FusionActive').getAsBoolean()){
    if(inside(b))key='Speaker';
    if(a.ui.open){consume=true;if(inside({x:p.x+p.w-36,y:p.y+8,w:28,h:28}))key='Close';

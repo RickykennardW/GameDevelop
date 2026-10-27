@@ -18,7 +18,7 @@ else if (num("Wave") > 0 && num("Wave") < num("MaximumWave") && !yes("GameOver")
 }
 if (idle && !auto() && num("Wave") > 0 && !yes("GameOver")) { message.setString("Wave " + num("Wave") + " Complete! Press PLAY"); message.hide(false); }
 sv.get("IntermissionRemaining").setNumber(state.wait);
-const manual = !yes("IndexBlocksInput") && sv.get("WaveMode").getAsString() === "Waiting" && (yes("PlayWaveRequested") || gdjs.evtTools.input.wasKeyJustPressed(runtimeScene, "Space"));
+const manual = !yes("IndexBlocksInput") && !yes('DevGoldInputFocused') && sv.get("WaveMode").getAsString() === "Waiting" && (yes("PlayWaveRequested") || gdjs.evtTools.input.wasKeyJustPressed(runtimeScene, "Space"));
 if (idle && !yes("GameOver") && num("Lives") > 0 && num("Wave") < num("MaximumWave") && (!mission||mission.canStart(num('Wave')+1)) && (manual || mission?.pendingWave || (auto() && num("Wave") > 0 && state.wait <= 0))) {
   if (!auto()) sv.get("WaveMode").setString("Manual");
   const wave = num("Wave") + 1;
