@@ -277,7 +277,7 @@ ui.cards.forEach((card, i) => {
   const pressed = down && ui.pressedCard === i && hovered === i;
   const scale = pressed ? 0.94 : hovered === i ? 1.04 : 1;
   card.icon.setWidth(card.iconWidth * scale); card.icon.setHeight(card.iconHeight * scale);
-  card.icon.setPosition(x + 42 - card.icon.getWidth()/2, y + (card.item.Type === "StarCannonTower" ? 57 : 51) - card.icon.getHeight()/2);
+  card.icon.setPosition(x + 42 - card.icon.getWidth()/2, y + (["StarCannonTower","NebulaBloomTower"].includes(card.item.Type) ? 57 : 51) - card.icon.getHeight()/2);
   card.name.setPosition(x + 4, y + 5); card.name.setWidth(76); card.name.setHeight(18);
   card.coin.setPosition(x + 13, y + 91); card.coin.setWidth(15); card.coin.setHeight(15);
   card.price.setPosition(x + 31, y + 91); card.price.setWidth(46); card.price.setHeight(20);

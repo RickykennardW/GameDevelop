@@ -1,0 +1,171 @@
+{
+  "method": "alpha>=12 at pixel centers; exact static transforms; full head rotation; max charge scale1.035; max core scale1.2; recoil/bob offset3.6canvas; rootScale1.1",
+  "restoredFoundationSize": 112,
+  "maximumWorldRadius": 67.46459876328223,
+  "recommendedRadius": 68,
+  "safetyGap": 8,
+  "states": [
+    {
+      "state": "0_0",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 60.82841968708225,
+      "requiredWorldRadius": 66.5803774958759
+    },
+    {
+      "state": "0_1",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 59.18491276041151,
+      "requiredWorldRadius": 66.5803774958759
+    },
+    {
+      "state": "0_2",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 60.35523056802008,
+      "requiredWorldRadius": 66.5803774958759
+    },
+    {
+      "state": "0_3",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 62.834162120475575,
+      "requiredWorldRadius": 66.5803774958759
+    },
+    {
+      "state": "0_4",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 65.6283339583228,
+      "requiredWorldRadius": 66.5803774958759
+    },
+    {
+      "state": "0_5",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 67.46459876328223,
+      "requiredWorldRadius": 67.46459876328223
+    },
+    {
+      "state": "1_0",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 55.79317131602907,
+      "requiredWorldRadius": 66.5803774958759
+    },
+    {
+      "state": "1_1",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 55.79317131602907,
+      "requiredWorldRadius": 66.5803774958759
+    },
+    {
+      "state": "1_2",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 56.38895489437422,
+      "requiredWorldRadius": 66.5803774958759
+    },
+    {
+      "state": "1_3",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 62.834162120475575,
+      "requiredWorldRadius": 66.5803774958759
+    },
+    {
+      "state": "1_4",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 65.6283339583228,
+      "requiredWorldRadius": 66.5803774958759
+    },
+    {
+      "state": "1_5",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 67.46459876328223,
+      "requiredWorldRadius": 67.46459876328223
+    },
+    {
+      "state": "2_0",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 58.540445059587036,
+      "requiredWorldRadius": 66.5803774958759
+    },
+    {
+      "state": "2_1",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 58.540445059587036,
+      "requiredWorldRadius": 66.5803774958759
+    },
+    {
+      "state": "2_2",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 58.540445059587036,
+      "requiredWorldRadius": 66.5803774958759
+    },
+    {
+      "state": "2_3",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 62.834162120475575,
+      "requiredWorldRadius": 66.5803774958759
+    },
+    {
+      "state": "2_4",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 65.6283339583228,
+      "requiredWorldRadius": 66.5803774958759
+    },
+    {
+      "state": "2_5",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 67.46459876328223,
+      "requiredWorldRadius": 67.46459876328223
+    },
+    {
+      "state": "3_0",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 65.33733273665189,
+      "requiredWorldRadius": 66.5803774958759
+    },
+    {
+      "state": "3_1",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 65.33733273665189,
+      "requiredWorldRadius": 66.5803774958759
+    },
+    {
+      "state": "3_2",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 65.33733273665189,
+      "requiredWorldRadius": 66.5803774958759
+    },
+    {
+      "state": "4_0",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 62.3079388946749,
+      "requiredWorldRadius": 66.5803774958759
+    },
+    {
+      "state": "4_1",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 62.3079388946749,
+      "requiredWorldRadius": 66.5803774958759
+    },
+    {
+      "state": "4_2",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 62.3079388946749,
+      "requiredWorldRadius": 66.5803774958759
+    },
+    {
+      "state": "5_0",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 60.754099270026266,
+      "requiredWorldRadius": 66.5803774958759
+    },
+    {
+      "state": "5_1",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 60.754099270026266,
+      "requiredWorldRadius": 66.5803774958759
+    },
+    {
+      "state": "5_2",
+      "staticWorldRadius": 66.5803774958759,
+      "animatedSweptWorldRadius": 60.754099270026266,
+      "requiredWorldRadius": 66.5803774958759
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+runtimeScene.__nebulaBloom?.tick();

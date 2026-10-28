@@ -1,5 +1,6 @@
 """Campaign data, native references and preserved gameplay audit; hashes only."""
-import hashlib,json,xml.etree.ElementTree as ET
+import hashlib,json,sys,xml.etree.ElementTree as ET
+from importlib.machinery import SourceFileLoader
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent.parent
 read=lambda f:json.loads((ROOT/f).read_text(encoding='utf-8-sig'))
@@ -33,8 +34,10 @@ for i,level in enumerate(cfg['Levels']):
             b=cfg['Chapters'][level['Chapter']-1]['Boss'];expected+=b['Reward']+sum(vars['EnemyTypes'][t]['Reward'] for t in b['Reserves'])
         ok(expected==w['ExpectedGold'],'Auditable real kill income: '+level['Id']+'/'+str(j+1))
     ok(sum(w['ExpectedGold'] for w in level['Waves'])==level['ExpectedKillGold'],'Mission income total: '+level['Id'])
-ok(hash_json(g['objects'][:67])==before['objectsHash'] and hash_json(g['instances'])==before['instancesHash'],'All67original definitions and157map/UI instances unchanged')
-for name,expected in before['variables'].items():ok(hash_json(next(v for v in g['variables'] if v['name']==name))==expected,'Original gameplay config/variable unchanged: '+name)
+sys.dont_write_bytecode=True
+scope=SourceFileLoader('nebula_scope',str(ROOT/'tools/nebula-bloom-scope.py')).load_module()
+ok(hash_json(scope.original_objects(g['objects'][:67]))==before['objectsHash'] and hash_json(g['instances'])==before['instancesHash'],'All67original definitions preserved apart from additive Nebula UI frames;157instances unchanged')
+for name,expected in before['variables'].items():ok(hash_json(scope.original_variable(next(v for v in g['variables'] if v['name']==name)))==expected,'Original gameplay config preserved apart from additive Nebula catalog: '+name)
 for file,expected in before['audioHashes'].items():ok(hashlib.sha256((ROOT/file).read_bytes()).hexdigest()==expected,'Audio asset unchanged: '+file)
 for index,source in enumerate(['campaign-service.js','levels-runtime.js']):ok(l['events'][index]['inlineCode']==(ROOT/'tools'/source).read_text(encoding='utf-8-sig').splitlines(),'Levels embedded source match: '+source)
 background_hashes=[]

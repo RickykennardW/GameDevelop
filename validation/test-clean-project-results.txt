@@ -1,4 +1,4 @@
-PASS one official Star shop card and footprint type
+PASS original Star first / additive Nebula second with independent footprint types
 PASS native upgrade panel buys both component states 0_0
 PASS additive damage/speed and preserved range 0_0
 PASS base contact and canonical footprint stable 0_0
@@ -322,8 +322,11 @@ PASS contact resolves reviewed damage once without backward travel
 PASS 240-degree rotation follows existing 2x game clock
 PASS visible base/body selection StarCannonTower
 PASS rotated visible star muzzle selects owner
-PASS selection silhouette excludes empty footprint area StarCannonTower
-PASS empty outer footprint never selects StarCannonTower
+PASS selection rejects empty point outside visible body StarCannonTower
+PASS empty point never selects StarCannonTower
+PASS visible base/body selection NebulaBloomTower
+PASS selection rejects empty point outside visible body NebulaBloomTower
+PASS empty point never selects NebulaBloomTower
 PASS 12 interior solid obstacles removable; edge crystal permanent
 PASS nonblocking foliage never sold as a clearable blocker
 PASS spawn base road cliffs and cosmic background permanent
@@ -348,8 +351,8 @@ PASS Escape closes Clear panel
 PASS Index closes Clear and blocks map input
 PASS empty ground closes obstacle and tower selection
 PASS no leaked component objects after priority fixtures
-PASS Index one official Star entry with300 price
+PASS Index retains original Star300 and adds Nebula entry
 PASS Index displays all ten Star upgrade icons
 PASS Index preserves Nova/Hound plus four Void archetypes
-PASS single small first card in original two-column shop, no empty cards or upgrade guide, price300
+PASS two small cards in original grid; Star Cannon first unchanged84x112 /300Gold
 ALL TURRET / SELECTION / OBSTACLE TESTS PASSED

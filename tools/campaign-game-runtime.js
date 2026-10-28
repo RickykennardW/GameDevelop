@@ -38,7 +38,7 @@ if(!r){
   if(!sv.get('DefeatActive').getAsBoolean())scene.getLayer('').setTimeScale(paused?0:1);
   if(tutorial&&r.stage===7&&!sv.get('IndexOpen').getAsBoolean()&&scene.getObjects('StarCannonTower').length)sv.get('SelectedTower').setNumber(scene.getObjects('StarCannonTower')[0].getVariables().get('TowerId').getAsNumber());
   // Reserve the opening defense budget until the required first placement.
-  if(tutorial&&r.stage<=2)scene.__obstaclePanel?.close();
+  if(tutorial&&r.stage<=2){scene.__obstaclePanel?.close();const request=sv.get('TowerShopRequestedType').getAsString();if(request&&request!=='StarCannonTower')sv.get('TowerShopRequestedType').setString('');}
  };
  r.bossTick=dt=>{
   const b=r.boss;r.bossRing.clear();if(!b||b.enemy.getUniqueId()!==b.id)return;const e=b.enemy,h=e.getBehavior('Health'),state=e.__golemState,c=b.config;if(h.IsDead()||!scene.getObjects('Enemy').includes(e)){if(h.IsDead())r.bossKilled=true;return;}

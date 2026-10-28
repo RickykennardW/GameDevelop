@@ -98,6 +98,8 @@ if(!a){
   a.hook(scene.__novaWisp,'ensure',(fn,obj,args)=>{const result=fn.apply(obj,args);a.attachEnemy(args[0]);return result;});
   for(const e of scene.getObjects('Enemy'))a.attachEnemy(e);
   a.hook(star,'upgrade',(fn,obj,args)=>{const result=fn.apply(obj,args);if(result){const level=args[0].getVariables().get(args[1]===1?'Path1Level':'Path2Level').getAsNumber();a.play(level>=3?'TowerMajorUpgrade':'TowerUpgrade');}else a.play('InvalidAction');return result;});
+  a.hook(scene.__nebulaBloom,'upgrade',(fn,obj,args)=>{const result=fn.apply(obj,args);if(result){const level=args[0].getVariables().get(args[1]===1?'Path1Level':'Path2Level').getAsNumber();a.play(level>=3?'TowerMajorUpgrade':'TowerUpgrade');}else a.play('InvalidAction');return result;});
+  a.hook(scene.__nebulaBloom,'impact',(fn,obj,args)=>{const result=fn.apply(obj,args);a.play('ProjectileImpact');return result;});
   a.hook(star,'fire',(fn,obj,args)=>{a.firing=(a.firing||0)+1;let result;try{result=fn.apply(obj,args);}finally{a.firing--;}if(result)a.play('StarCannonFire');return result;});
   a.hook(star,'effect',(fn,obj,args)=>{const result=fn.apply(obj,args);if(!a.firing)a.play('ProjectileImpact');return result;});
   a.hook(star,'deal',(fn,obj,args)=>{const result=fn.apply(obj,args);if(result>0&&!args[1].getBehavior('Health').IsDead())a.play('EnemyHit');return result;});

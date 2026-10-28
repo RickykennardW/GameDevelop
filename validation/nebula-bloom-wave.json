@@ -1,0 +1,29 @@
+{
+  "result": {
+    "checks": [
+      "three real base mortars purchased at500 each",
+      "original native wave1 starts20unmodified enemies",
+      "three base mortars clear actual moving wave1 without forced damage {\"elapsed\":52.499999999999154,\"lives\":10,\"gameOver\":false,\"wave\":1,\"reward\":1,\"metrics\":{\"shots\":40,\"impacts\":40,\"directHits\":40,\"poisonTicks\":0,\"poisonsApplied\":0,\"zonesCreated\":0,\"visualsDropped\":0},\"enemies\":[]}",
+      "native kills award exactly100Gold / all10Lives intact",
+      "native mortar shots / ground impacts actually defeat wave enemies",
+      "wave completion drains mortar projectile / impact objects",
+      "wave movement / enemy roster statistics unchanged"
+    ],
+    "nativeWave": 1,
+    "simulatedSeconds": 52.499999999999154,
+    "lives": 10,
+    "money": 48600,
+    "metrics": {
+      "shots": 40,
+      "impacts": 40,
+      "directHits": 40,
+      "poisonTicks": 0,
+      "poisonsApplied": 0,
+      "zonesCreated": 0,
+      "visualsDropped": 0
+    },
+    "nativeCombatOnly": true
+  },
+  "progress": [],
+  "consoleErrors": []
+}

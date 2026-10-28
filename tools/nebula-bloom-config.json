@@ -1,0 +1,59 @@
+{
+  "Name": "Nebula Bloom",
+  "Cost": 500,
+  "MaxLevel": 5,
+  "BaseDamage": 50,
+  "BaseRange": 340,
+  "BaseInterval": 2.8,
+  "BaseRadius": 52,
+  "RenderScale": 2.2,
+  "FoundationSize": 112,
+  "FootprintRadius": 68,
+  "FootprintSafetyGap": 8,
+  "FlightMin": 0.72,
+  "FlightMax": 1.12,
+  "ArcHeight": 105,
+  "LaunchHeight": 25,
+  "ChargeSeconds": 0.38,
+  "RecoilSeconds": 0.32,
+  "AimDegreesPerSecond": 150,
+  "PoisonTickSeconds": 1.0,
+  "CloudApplyIntervalSeconds": 0.6,
+  "CloudVariants": ["PoisonCloud", "PoisonCloud_B", "PoisonCloud_C", "PoisonCloud_D"],
+  "CloudRotationStep": 73,
+  "PoisonDamage": [0, 8, 14, 25, 40, 60],
+  "PoisonDuration": [0, 2, 3, 3.6, 4.2, 5],
+  "ZoneDuration": [0, 0, 0, 3, 4, 6],
+  "ZoneRadius": [0, 0, 0, 60, 70, 82],
+  "ToxicRange": [1, 1, 1.03, 1.05, 1.08, 1.12],
+  "BurstDamage": [1, 1.25, 1.5, 2.4, 4.4, 7.5],
+  "BurstRadius": [1, 1, 1.2, 1.5, 1.9, 2.45],
+  "PodSize": 22,
+  "StatusIconSize": 16,
+  "StatusIconOrder": 30,
+  "MaxImpactVisuals": 128,
+  "Paths": [
+    {
+      "Name": "TOXIC SPOREBLOOM",
+      "Icon": "NB_ToxicPath",
+      "Upgrades": [
+        {"Name":"Irritant Spores","Cost":180,"Icon":"NB_Toxic1","PanelDescription":"2s spore poison.\nStrongest refreshes;\nnever stacks.","Description":"Impacts poison enemies for 2s. Strongest spore poison refreshes without stacking."},
+        {"Name":"Virulent Pollen","Cost":420,"Icon":"NB_Toxic2","PanelDescription":"Stronger poison.\nLasts 3s.\nSlightly more range.","Description":"Stronger poison, 3s duration and a modest range increase."},
+        {"Name":"Blight Bloom","Cost":900,"Icon":"NB_Toxic3","PanelDescription":"3s toxic cloud.\nPoisons enemies\ninside its area.","Description":"Leaves a 3s toxic cloud. Its pulses apply poison; damage ticks remain separate."},
+        {"Name":"Caustic Canopy","Cost":2300,"Icon":"NB_Toxic4","PanelDescription":"Stronger spores.\nWider toxic area.\nCloud lasts 4s.","Description":"Stronger spores, a wider contaminated zone and 4s cloud duration."},
+        {"Name":"Pestilent Superbloom","Cost":6200,"Icon":"NB_Toxic5","PanelDescription":"Final spore crown.\nPowerful poison.\nCloud lasts 6s.","Description":"Final spore crown. Powerful poison and a 6s lingering bloom zone."}
+      ]
+    },
+    {
+      "Name": "CATACLYSM BLOOM",
+      "Icon": "NB_CataclysmPath",
+      "Upgrades": [
+        {"Name":"Heavy Seed Pod","Cost":200,"Icon":"NB_Burst1","PanelDescription":"Heavy seed shell.\nMore impact damage.","Description":"Heavier seed shells increase direct area damage."},
+        {"Name":"Enlarged Burst Core","Cost":460,"Icon":"NB_Burst2","PanelDescription":"Larger splash area.\nStronger impact.","Description":"A larger splash radius and stronger impact."},
+        {"Name":"Bloom Detonation","Cost":1050,"Icon":"NB_Burst3","PanelDescription":"Heavy floral blast.\nExpanding shockwave.","Description":"A heavy floral detonation with a clear expanding shockwave."},
+        {"Name":"Stellar Overbloom","Cost":2600,"Icon":"NB_Burst4","PanelDescription":"Reinforced petals.\nMore damage.\nWider blast radius.","Description":"Reinforced mortar petals amplify damage and blast radius."},
+        {"Name":"Nebula Cataclysm","Cost":7000,"Icon":"NB_Burst5","PanelDescription":"Final burst form.\nMaximum damage.\nWidest blossom blast.","Description":"Final burst artillery. The strongest and widest blossom detonation."}
+      ]
+    }
+  ]
+}

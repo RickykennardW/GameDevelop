@@ -39,7 +39,7 @@
  const next=G.getSceneStack().getCurrentScene();ok(next.getName()==='Game Scene'&&next.__campaignRun?.level.Id==='1-1','explicit Launch Mission enters configured gameplay');
  next.renderAndStep(16.667);I.onFrameEnded();await wait(30);
  ok(M.disposed&&M.fade.destroyed&&M.particles.destroyed&&M.sceneRequests===1,'menu nodes/audio/listeners released and transition requested once');
- ok(next.getObjects('Monster_Path').length===82&&next.__towerShopUI.cards.length===1&&next.getObjects('StarCannonTower').length===0,'original map and one-card shop initialize once');
+ ok(next.getObjects('Monster_Path').length===82&&next.__towerShopUI.cards.length===2&&next.getObjects('StarCannonTower').length===0,'original map and two small Tower cards initialize once');
  ok(next.getVariables().get('Money').getAsNumber()===next.__campaignRun.level.StartingGold&&next.getVariables().get('Lives').getAsNumber()===next.__campaignRun.level.StartingLives&&next.getVariables().get('Wave').getAsNumber()===0,'gameplay uses chosen mission Gold/Lives/Wave initialization');
  ok(G.__fusionArchive.has('StarburstCannon')===(mode!=='regression')&&localStorage.getItem('starfallMenuUnrelatedCheck')==='preserve','Start preserves archive and unrelated saved progress');
  ok(next.__audio.unlocked,'trusted menu audio gesture transfers to existing gameplay mixer');

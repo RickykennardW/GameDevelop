@@ -103,7 +103,7 @@
     10,
     [
       0,
-      6
+      7
     ],
     "nova-death-runtime.js"
   ],
@@ -240,5 +240,27 @@
       0
     ],
     "developer-cheats-after.js"
+  ],
+  [
+    0,
+    [
+      7
+    ],
+    "nebula-bloom-runtime.js"
+  ],
+  [
+    10,
+    [
+      0,
+      6
+    ],
+    "nebula-bloom-combat.js"
+  ],
+  [
+    14,
+    [
+      1
+    ],
+    "nebula-bloom-render.js"
   ]
 ]

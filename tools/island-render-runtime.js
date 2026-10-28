@@ -23,7 +23,7 @@ for(const o of runtimeScene.getObjects('Ground_Decoration')){
  const k=o.getVariables().get('Kind').getAsString(),s=(style.props[k]||1)*(o.getVariables().get('LocalScale').getAsNumber()||1);
  o.setZOrder(100+Math.round(o.getCenterYInScene()+o.getHeight()*s*.30));
 }
-for(const n of ['StarCannonTower'])for(const o of runtimeScene.getObjects(n))o.setZOrder(100+Math.round(runtimeScene.__freePlacement.center(o)[1]));
+for(const o of runtimeScene.__freePlacement.towers())o.setZOrder(100+Math.round(runtimeScene.__freePlacement.center(o)[1]));
 for(const o of runtimeScene.getObjects('Enemy')){
  o.setZOrder(100+Math.round(o.getCenterYInScene()+o.getHeight()*style.enemy/2));
  const pair=runtimeScene.__enemyHealthBars?.get(o.getUniqueId());if(pair){pair.background.setZOrder(20000);pair.fill.setZOrder(20001);}

@@ -42,14 +42,17 @@ if(!p){
   feedback.remaining=0;if(feedback.root)feedback.root.visible=false;
   get('TileType_Button').forEach(o=>{if(o.hasBehavior('Effect'))o.getBehavior('Effect').enableEffect('Outline',false);});
  };
- p.types=['StarCannonTower'];
+ p.types=['StarCannonTower','NebulaBloomTower'];
  p.config=type=>p.types.includes(type)?sv.get('TowerFootprints').getChild(type).toJSObject():{};
  p.towers=()=>p.types.flatMap(get);
  p.offsets=type=>{const c=p.config(type);return [(c.AnchorX-.5)*c.Width*c.RenderScale,(c.AnchorY-.5)*c.Height*c.RenderScale];};
  // Persisted world placement center is authoritative; image centers never drive circles.
  p.center=o=>[o.getVariables().get('FootprintX').getAsNumber(),o.getVariables().get('FootprintY').getAsNumber()];
  p.positionSprite=(o,type,x,y)=>{const c=p.config(type),[ox,oy]=p.offsets(type);o.setWidth(c.Width);o.setHeight(c.Height);o.setPosition(x-c.Width/2-ox,y-c.Height/2-oy);};
- p.radius=o=>o.getVariables().get('FootprintRadius').getAsNumber()||p.config(o.getName()).Radius;
+ p.radius=o=>{const stored=o.getVariables().get('FootprintRadius').getAsNumber(),configured=p.config(o.getName()).Radius;return o.getName()==='NebulaBloomTower'?Math.max(stored,configured):stored||configured;};
+ // A type-specific gap applies symmetrically; Star/Star keeps its original gap.
+ p.gap=(type,other)=>Math.max(sv.get('TowerFootprintPadding').getAsNumber(),p.config(type).SafetyGap||0,p.config(other.getName()).SafetyGap||0);
+ p.minimumDistance=(type,other)=>p.config(type).Radius+p.radius(other)+p.gap(type,other);
  p.segment=(x,y,a,b)=>{const dx=b[0]-a[0],dy=b[1]-a[1],d=dx*dx+dy*dy,t=d?Math.max(0,Math.min(1,((x-a[0])*dx+(y-a[1])*dy)/d)):0;return Math.hypot(x-a[0]-t*dx,y-a[1]-t*dy);};
  p.polygon=(x,y,r,points)=>{
   let inside=false;
@@ -113,7 +116,7 @@ if(!p){
   const screen=map.convertInverseCoords(x,y,0,[0,0]),z=map.getCameraZoom(),sr=r*z;
   if(screen[0]-sr<ui.left||screen[0]+sr>ui.right||screen[1]-sr<ui.top||screen[1]+sr>ui.bottom)return {valid:false,reason:'bounds'};
   if(p.roads.some(poly=>p.polygon(x,y,r,poly)))return {valid:false,reason:'path'};
-  if(p.towers().some(o=>{if(options.ignoreTowers?.has(o))return false;const c=p.center(o);return Math.hypot(x-c[0],y-c[1])<r+p.radius(o)+sv.get('TowerFootprintPadding').getAsNumber()-1e-6;}))return {valid:false,reason:'tower'};
+  if(p.towers().some(o=>{if(options.ignoreTowers?.has(o))return false;const c=p.center(o);return Math.hypot(x-c[0],y-c[1])<p.minimumDistance(type,o)-1e-6;}))return {valid:false,reason:'tower'};
   if(p.blockers.some(o=>Math.hypot(x-o.x,y-o.y)<=r+o.r+1e-6))return {valid:false,reason:'obstacle'};
   const item=sv.get('TowerShopCatalog').toJSObject().find(i=>i.Type===type);
   const cost=options.cost??item?.Cost;
@@ -127,9 +130,13 @@ if(!p){
  };
  p.cursor=()=>[gdjs.evtTools.input.getCursorX(scene,'',0),gdjs.evtTools.input.getCursorY(scene,'',0)];
 }
-// Existing towers retain an instance footprint across upgrades.
-for(const o of p.towers())if(!o.getVariables().get('FootprintRadius').getAsNumber()){
- o.getVariables().get('FootprintRadius').setNumber(p.config(o.getName()).Radius);const [ox,oy]=p.offsets(o.getName());o.getVariables().get('FootprintOffsetX').setNumber(ox);o.getVariables().get('FootprintOffsetY').setNumber(oy);o.getVariables().get('FootprintX').setNumber(o.getCenterXInScene()+ox);o.getVariables().get('FootprintY').setNumber(o.getCenterYInScene()+oy);
+// Legacy Nebula occupancy is widened without moving, deleting or charging its owner.
+// Existing crowded towers remain; only subsequent placement is validated anew.
+for(const o of p.towers()){
+ const stored=o.getVariables().get('FootprintRadius').getAsNumber(),configured=p.config(o.getName()).Radius;
+ if(!stored){
+  o.getVariables().get('FootprintRadius').setNumber(configured);const [ox,oy]=p.offsets(o.getName());o.getVariables().get('FootprintOffsetX').setNumber(ox);o.getVariables().get('FootprintOffsetY').setNumber(oy);o.getVariables().get('FootprintX').setNumber(o.getCenterXInScene()+ox);o.getVariables().get('FootprintY').setNumber(o.getCenterYInScene()+oy);
+ }else if(o.getName()==='NebulaBloomTower'&&stored<configured)o.getVariables().get('FootprintRadius').setNumber(configured);
 }
 p.refresh();
 const indicator=get('TilePlacement_Indicator')[0],type=indicator.getAnimationName(),conf=p.config(type),[x,y]=p.cursor();

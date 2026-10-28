@@ -8,7 +8,7 @@ if(!ui) {
     return ui.objects[key];
   };
 }
-const towers=scene.getObjects("StarCannonTower");
+const towers=[...scene.getObjects("StarCannonTower"),...scene.getObjects('NebulaBloomTower')];
 let selected=towers.find(t=>t.getVariables().get("TowerId").getAsNumber()===sv.get("SelectedTower").getAsNumber());
 if(!selected&&sv.get("SelectedTower").getAsNumber()>0)sv.get("SelectedTower").setNumber(0);
 const input=game.getInputManager(),down=input.isMouseButtonPressed(0),modal=sv.get("IndexBlocksInput").getAsBoolean()||sv.get("AudioUIConsumesClick").getAsBoolean()||sv.get('FusionActive').getAsBoolean()||sv.get('CampaignModal').getAsBoolean()||sv.get('CampaignUIConsumesClick').getAsBoolean();
@@ -47,7 +47,7 @@ if(!down&&ui.wasDown&&selected&&!modal&&ui.pressed===hover&&ui.pressedTower===se
     selected.deleteFromScene();sv.get("SelectedTower").setNumber(0);selected=null;
   } else if(hover==='Fusion'){scene.__fusion?.begin(selected);selected=null;}
   else if(hover==="Close") {sv.get("SelectedTower").setNumber(0);selected=null;}
-  else if((hover==="Path1"||hover==="Path2"))scene.__starCannon?.upgrade(selected,hover==="Path1"?1:2);
+  else if((hover==="Path1"||hover==="Path2"))(selected.getName()==='NebulaBloomTower'?scene.__nebulaBloom:scene.__starCannon)?.upgrade(selected,hover==="Path1"?1:2);
 }
 if(!down)ui.pressed="";ui.wasDown=down;
 ui.render=()=>{
@@ -55,14 +55,14 @@ ui.render=()=>{
   const tower=towers.find(t=>t.getVariables().get("TowerId").getAsNumber()===sv.get("SelectedTower").getAsNumber()&&scene.getObjects(t.getName()).includes(t));
   positionPanel(tower);layer.show(!!tower);ui.tower=tower;ui.cards=[];
   if(!tower){ui.screenRect=null;return;}
-  const v=tower.getVariables(),isStar=true,isFusion=scene.__starCannon.isFusion(tower),hasUpgrades=!isFusion,cfg=sv.get("StarCannonConfig").toJSObject();
+  const v=tower.getVariables(),isStar=true,isNebula=tower.getName()==='NebulaBloomTower',isFusion=scene.__starCannon.isFusion(tower),hasUpgrades=!isFusion,cfg=sv.get(isNebula?'NebulaBloomConfig':'StarCannonConfig').toJSObject();
   const panel=(key,x,y,width,height,color="255;255;255",name="SelectedPanelBackground",z=1)=>{const o=ui.ensure(key,name,z);o.setPosition(x,y);o.setWidth(width);o.setHeight(height);o.setColor(color);o.setOpacity(255);o.hide(false);return o;};
   const text=(key,value,x,y,width,size=13,color="240;230;255",bold=false)=>{const o=ui.ensure(key,"SelectedPanelText",4);o.setPosition(x,y);o.setWrapping(true);o.setWrappingWidth(width);o.setTextAlignment("left");o.setString(String(value));o.setCharacterSize(size);o.setBold(bold);o.setColor(color);o.hide(false);return o;};
   panel("frame",0,0,w,h);
   panel("header",12,10,w-24,42,"255;255;255","SelectedPanelPlaque",2);
   text("title",v.get("TowerName").getAsString().toUpperCase(),22,22,w-66,17,"243;234;255",true);
   text("close","X",286,20,16,14,"194;171;233",true);
-  const preview=ui.ensure("preview","SelectedTowerPreview",3);preview.setAnimationName("SC_"+v.get("VisualKey").getAsString());preview.setScale(1);const ratio=preview.getWidth()/Math.max(1,preview.getHeight());preview.setWidth(ratio>=1?84:84*ratio);preview.setHeight(ratio>=1?84/ratio:84);preview.setPosition((w-preview.getWidth())/2,62+(84-preview.getHeight())/2);preview.hide(false);
+  const preview=ui.ensure("preview","SelectedTowerPreview",3);preview.setAnimationName((isNebula?'NB_':'SC_')+v.get("VisualKey").getAsString());preview.setScale(1);const ratio=preview.getWidth()/Math.max(1,preview.getHeight());preview.setWidth(ratio>=1?84:84*ratio);preview.setHeight(ratio>=1?84/ratio:84);preview.setPosition((w-preview.getWidth())/2,62+(84-preview.getHeight())/2);preview.hide(false);
   if(hasUpgrades)text("build",v.get("Path1Level").getAsNumber()+" - "+v.get("Path2Level").getAsNumber(),138,148,64,12,"163;224;251",true);
   const stats=[["DAMAGE",Number(v.get("Damage").getAsNumber().toFixed(2))],["FIRE INTERVAL",Number(v.get("AttackInterval").getAsNumber()).toFixed(2)+" s"],["ATTACK RANGE",Number(v.get("AttackRange").getAsNumber().toFixed(2))+" px"],["DAMAGE DEALT",Math.round(v.get("DamageDealt").getAsNumber())]];
   stats.forEach(([label,value],i)=>{
@@ -70,7 +70,9 @@ ui.render=()=>{
     panel("rule"+i,24,y+20,272,1,"93;66;125","SelectedProgressBlock",2);
   });
   if(hasUpgrades) {
-    if(isStar){
+    if(isNebula){
+      const s=scene.__nebulaBloom.stats(v.get('Path1Level').getAsNumber(),v.get('Path2Level').getAsNumber());text('starMode','AOE '+s.BlastRadius.toFixed(0)+'px'+(s.PoisonDamage?' / SPORES '+s.PoisonDamage+' PER '+cfg.PoisonTickSeconds+'s':' / LOCKED IMPACT POINT'),24,276,272,10,'184;211;239');
+    }else if(isStar){
       const a=v.get('Path1Level').getAsNumber(),b=v.get('Path2Level').getAsNumber();
       const mode=a>=5?'EVERY 4TH: LANCE / '+cfg.Lance.MaxTargets+' IMPACTS':a>=3?'EVERY 4TH: NOVA / 175% DAMAGE':b>=5?(v.get('OverdriveActive').getAsBoolean()?'OVERDRIVE: DUAL FIRE':'ALTERNATING / OVERDRIVE '+v.get('OverdriveRemaining').getAsNumber().toFixed(1)+'s'):b>=3?'ALTERNATING MUZZLES':'SINGLE STELLAR BOLT';
       text('starMode',mode+(b>=4?' / RHYTHM '+v.get('RhythmStacks').getAsNumber()+'/5':''),24,276,272,10,'184;211;239');
@@ -81,13 +83,13 @@ ui.render=()=>{
       const locked=level>=2&&other>=3,max=level>=cfg.MaxLevel,upgrade=path.Upgrades[max?cfg.MaxLevel-1:level],affordable=sv.get("Money").getAsNumber()>=upgrade.Cost;
       const x=16+i*148,y=314,active=!locked&&!max;
       const background=panel("card"+i,x,y,140,270,locked?"116;95;148":active&&hover==="Path"+(i+1)?"230;210;255":"240;224;255","SelectedUpgradeCard",2);
-      const badge=ui.ensure("pathBadge"+i,"StarUpgradeIcon",3);badge.setAnimationName(i===0?"PathDamage":"PathSpeed");badge.setWidth(24);badge.setHeight(24);badge.setPosition(x+10,y+12);badge.setOpacity(locked?170:255);badge.hide(false);
+      const badge=ui.ensure("pathBadge"+i,"StarUpgradeIcon",3);badge.setAnimationName(path.Icon||(i===0?"PathDamage":"PathSpeed"));badge.setWidth(24);badge.setHeight(24);badge.setPosition(x+10,y+12);badge.setOpacity(locked?170:255);badge.hide(false);
       text("path"+i,isStar?path.Name:"PATH "+(i+1),x+40,y+12,90,isStar?10:13,"193;224;255",true);
       for(let n=0;n<cfg.MaxLevel;n++)panel("progress"+i+"_"+n,x+12+n*23,y+46,20,8,n<level?"151;232;255":"112;93;146","SelectedProgressBlock",3);
       const icon=ui.ensure("icon"+i,"StarUpgradeIcon",3);icon.setAnimationName(upgrade.Icon);icon.setWidth(72);icon.setHeight(72);icon.setPosition(x+34,y+61);icon.setOpacity(locked?165:255);icon.hide(false);
       const title=upgrade.Name;
       const name=text("upgradeName"+i,title,x+10,y+138,120,12,"237;224;255",true);name.setTextAlignment("center");
-      const desc=text("description"+i,upgrade.Description,x+10,y+174,120,11,"184;174;208");desc.setTextAlignment("center");
+      const desc=text("description"+i,upgrade.PanelDescription||upgrade.Description,x+10,y+174,120,11,"184;174;208");desc.setTextAlignment("center");
       panel("purchase"+i,x+10,y+222,120,34,locked?"130;105;157":"255;255;255","SelectedPanelPlaque",3);
       const status=max?"MAX LEVEL":locked?"LOCKED":upgrade.Cost+" GOLD";
       const label=text("cost"+i,status,x+14,y+232,112,12,locked?"201;181;224":!max&&!affordable?"255;130;164":"229;226;255",true);label.setTextAlignment("center");

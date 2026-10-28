@@ -8,7 +8,7 @@
  V.get('IndexOpen').setBoolean(true);step(3);
  const tab=name=>{click(index.tabRects.find(r=>r.name===name));ok(index.category===name,'native '+name+' navigation');};
  ok(index.categories.join('|')==='Towers|Monsters|Fusion'&&S.getLayer('IndexDetail').isVisible(),'three categories and dedicated detail layer');
- ok(index.entries.length===1&&index.detail.id==='StarCannonTower'&&index.detail.sprite.getAnimationName()==='StarCannon_IndexPortrait','Tower detail uses dedicated showcase portrait');
+ ok(index.entries.length===2&&index.detail.id==='StarCannonTower'&&index.detail.sprite.getAnimationName()==='StarCannon_IndexPortrait','Tower detail uses dedicated showcase portrait');
  ok(index.cards[0].sprite.getName()==='IndexShowcase'&&index.cards[0].sprite.getAnimationName()==='StarCannon_IndexPortrait','collection thumbnail also uses showcase artwork');
  ok(index.statValues.find(([k])=>k==='DAMAGE')[1]===50&&index.statValues.find(([k])=>k==='RANGE')[1]==='210 px'&&index.statValues.find(([k])=>k==='INTERVAL')[1]==='0.90 s','base stats read from live authoritative config');
  ok(Object.keys(index.objects).filter(k=>/^starUpgrade[01][0-4]$/.test(k)).length===10,'all ten upgrade tiers and existing icons retained');

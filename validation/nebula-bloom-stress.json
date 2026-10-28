@@ -1,0 +1,30 @@
+{
+  "result": {
+    "checks": [
+      "eight valid non-overlapping stress mortars on actual map",
+      "many mortars produce real arcs / area impacts / poison ticks",
+      "visual cap / one poison per enemy / bounded simultaneous pods and zones",
+      "one live poison icon per status and one rig per planted mortar",
+      "12 seconds without enemies drains every temporary owner / icon / VFX",
+      "tower deletion releases all modular rigs"
+    ],
+    "frames": 900,
+    "fixtureEnemies": 64,
+    "fixtureTowers": 8,
+    "simulatedCombatSeconds": 15,
+    "maximum": {
+      "pods": 8,
+      "effects": 128,
+      "poisons": 48,
+      "zones": 12
+    },
+    "nativeStepMilliseconds": {
+      "median": 6.200000002980232,
+      "p95": 9.599999994039536
+    },
+    "notLongDurationSoak": true,
+    "notWinRateStudy": true
+  },
+  "progress": [],
+  "consoleErrors": []
+}

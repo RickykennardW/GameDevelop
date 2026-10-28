@@ -1,0 +1,16 @@
+{
+  "result": {
+    "states": [
+      "5-2",
+      "2-5"
+    ],
+    "actualArc": true,
+    "actualAreaDamage": true,
+    "clouds": 1,
+    "poisons": 4,
+    "impactEffects": 12,
+    "fixture": "stationary high-HP visual targets; no gameplay balance claim"
+  },
+  "progress": [],
+  "consoleErrors": []
+}

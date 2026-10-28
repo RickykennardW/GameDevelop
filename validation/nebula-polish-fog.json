@@ -1,0 +1,19 @@
+{
+  "result": {
+    "mode": "fog",
+    "captures": [
+      "PoisonCloud",
+      "PoisonCloud_B",
+      "PoisonCloud_C",
+      "PoisonCloud_D"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "nativeTextures": true,
+    "gameplayModified": false
+  },
+  "progress": [],
+  "consoleErrors": []
+}

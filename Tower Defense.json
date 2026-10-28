@@ -3490,6 +3490,542 @@
         "smoothed": true,
         "userAdded": true,
         "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/atlases/NB_CataclysmHeads.png",
+        "file": "assets/towers/nebula_bloom/atlases/NB_CataclysmHeads.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/atlases/NB_Components.png",
+        "file": "assets/towers/nebula_bloom/atlases/NB_Components.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/atlases/NB_Effects.png",
+        "file": "assets/towers/nebula_bloom/atlases/NB_Effects.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/atlases/NB_Pods.png",
+        "file": "assets/towers/nebula_bloom/atlases/NB_Pods.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/atlases/NB_ToxicHeads.png",
+        "file": "assets/towers/nebula_bloom/atlases/NB_ToxicHeads.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/effects/BaseImpact.png",
+        "file": "assets/towers/nebula_bloom/effects/BaseImpact.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/effects/HeavyBurst.png",
+        "file": "assets/towers/nebula_bloom/effects/HeavyBurst.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/effects/PoisonCloud.png",
+        "file": "assets/towers/nebula_bloom/effects/PoisonCloud.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/effects/PoisonIcon.png",
+        "file": "assets/towers/nebula_bloom/effects/PoisonIcon.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/effects/Shockwave.png",
+        "file": "assets/towers/nebula_bloom/effects/Shockwave.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/effects/SporeApply.png",
+        "file": "assets/towers/nebula_bloom/effects/SporeApply.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/effects/ToxicBurst.png",
+        "file": "assets/towers/nebula_bloom/effects/ToxicBurst.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/effects/ToxicPatch.png",
+        "file": "assets/towers/nebula_bloom/effects/ToxicPatch.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/projectiles/BasePod.png",
+        "file": "assets/towers/nebula_bloom/projectiles/BasePod.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/projectiles/BlightPod.png",
+        "file": "assets/towers/nebula_bloom/projectiles/BlightPod.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/projectiles/BloomDetonationShell.png",
+        "file": "assets/towers/nebula_bloom/projectiles/BloomDetonationShell.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/projectiles/CausticPod.png",
+        "file": "assets/towers/nebula_bloom/projectiles/CausticPod.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/projectiles/EnlargedBurstPod.png",
+        "file": "assets/towers/nebula_bloom/projectiles/EnlargedBurstPod.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/projectiles/HeavySeedPod.png",
+        "file": "assets/towers/nebula_bloom/projectiles/HeavySeedPod.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/projectiles/NebulaCataclysmShell.png",
+        "file": "assets/towers/nebula_bloom/projectiles/NebulaCataclysmShell.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/projectiles/PestilentPod.png",
+        "file": "assets/towers/nebula_bloom/projectiles/PestilentPod.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/projectiles/StellarOverbloomShell.png",
+        "file": "assets/towers/nebula_bloom/projectiles/StellarOverbloomShell.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/projectiles/ToxicPod.png",
+        "file": "assets/towers/nebula_bloom/projectiles/ToxicPod.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/projectiles/VirulentPod.png",
+        "file": "assets/towers/nebula_bloom/projectiles/VirulentPod.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_0_0.png",
+        "file": "assets/towers/nebula_bloom/states/NB_0_0.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_0_1.png",
+        "file": "assets/towers/nebula_bloom/states/NB_0_1.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_0_2.png",
+        "file": "assets/towers/nebula_bloom/states/NB_0_2.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_0_3.png",
+        "file": "assets/towers/nebula_bloom/states/NB_0_3.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_0_4.png",
+        "file": "assets/towers/nebula_bloom/states/NB_0_4.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_0_5.png",
+        "file": "assets/towers/nebula_bloom/states/NB_0_5.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_1_0.png",
+        "file": "assets/towers/nebula_bloom/states/NB_1_0.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_1_1.png",
+        "file": "assets/towers/nebula_bloom/states/NB_1_1.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_1_2.png",
+        "file": "assets/towers/nebula_bloom/states/NB_1_2.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_1_3.png",
+        "file": "assets/towers/nebula_bloom/states/NB_1_3.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_1_4.png",
+        "file": "assets/towers/nebula_bloom/states/NB_1_4.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_1_5.png",
+        "file": "assets/towers/nebula_bloom/states/NB_1_5.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_2_0.png",
+        "file": "assets/towers/nebula_bloom/states/NB_2_0.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_2_1.png",
+        "file": "assets/towers/nebula_bloom/states/NB_2_1.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_2_2.png",
+        "file": "assets/towers/nebula_bloom/states/NB_2_2.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_2_3.png",
+        "file": "assets/towers/nebula_bloom/states/NB_2_3.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_2_4.png",
+        "file": "assets/towers/nebula_bloom/states/NB_2_4.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_2_5.png",
+        "file": "assets/towers/nebula_bloom/states/NB_2_5.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_3_0.png",
+        "file": "assets/towers/nebula_bloom/states/NB_3_0.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_3_1.png",
+        "file": "assets/towers/nebula_bloom/states/NB_3_1.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_3_2.png",
+        "file": "assets/towers/nebula_bloom/states/NB_3_2.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_4_0.png",
+        "file": "assets/towers/nebula_bloom/states/NB_4_0.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_4_1.png",
+        "file": "assets/towers/nebula_bloom/states/NB_4_1.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_4_2.png",
+        "file": "assets/towers/nebula_bloom/states/NB_4_2.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_5_0.png",
+        "file": "assets/towers/nebula_bloom/states/NB_5_0.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_5_1.png",
+        "file": "assets/towers/nebula_bloom/states/NB_5_1.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/states/NB_5_2.png",
+        "file": "assets/towers/nebula_bloom/states/NB_5_2.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/ui/NB_Burst1.svg",
+        "file": "assets/towers/nebula_bloom/ui/NB_Burst1.svg",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/ui/NB_Burst2.svg",
+        "file": "assets/towers/nebula_bloom/ui/NB_Burst2.svg",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/ui/NB_Burst3.svg",
+        "file": "assets/towers/nebula_bloom/ui/NB_Burst3.svg",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/ui/NB_Burst4.svg",
+        "file": "assets/towers/nebula_bloom/ui/NB_Burst4.svg",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/ui/NB_Burst5.svg",
+        "file": "assets/towers/nebula_bloom/ui/NB_Burst5.svg",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/ui/NB_CataclysmPath.svg",
+        "file": "assets/towers/nebula_bloom/ui/NB_CataclysmPath.svg",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/ui/NB_Toxic1.svg",
+        "file": "assets/towers/nebula_bloom/ui/NB_Toxic1.svg",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/ui/NB_Toxic2.svg",
+        "file": "assets/towers/nebula_bloom/ui/NB_Toxic2.svg",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/ui/NB_Toxic3.svg",
+        "file": "assets/towers/nebula_bloom/ui/NB_Toxic3.svg",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/ui/NB_Toxic4.svg",
+        "file": "assets/towers/nebula_bloom/ui/NB_Toxic4.svg",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/ui/NB_Toxic5.svg",
+        "file": "assets/towers/nebula_bloom/ui/NB_Toxic5.svg",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/ui/NB_ToxicPath.svg",
+        "file": "assets/towers/nebula_bloom/ui/NB_ToxicPath.svg",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/ui/nebula_bloom/NebulaBloom_Portrait.png",
+        "file": "assets/ui/nebula_bloom/NebulaBloom_Portrait.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/effects/PoisonCloud_B.png",
+        "file": "assets/towers/nebula_bloom/effects/PoisonCloud_B.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/effects/PoisonCloud_C.png",
+        "file": "assets/towers/nebula_bloom/effects/PoisonCloud_C.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
+      },
+      {
+        "name": "assets/towers/nebula_bloom/effects/PoisonCloud_D.png",
+        "file": "assets/towers/nebula_bloom/effects/PoisonCloud_D.png",
+        "kind": "image",
+        "smoothed": true,
+        "userAdded": true,
+        "metadata": ""
       }
     ]
   },

@@ -1,0 +1,15 @@
+// Bounded native-object stress fixture; not a human win-rate or long-duration soak.
+(async()=>{
+ const G=testGame,S=G.getSceneStack().getCurrentScene(),V=S.getVariables(),I=G.getInputManager(),nb=S.__nebulaBloom,P=S.__freePlacement,checks=[];G.pause(true);
+ const ok=(v,m)=>{if(!v)throw Error(m);checks.push(m);},step=(n=1)=>{for(let i=0;i<n;i++){S.renderAndStep(16.667);I.onFrameEnded();}};step(4);V.get('SelectedTower').setNumber(0);
+ const points=[];P.refresh();for(let y=340;y<1350&&points.length<8;y+=120)for(let x=280;x<1700&&points.length<8;x+=180)if(P.validate('NebulaBloomTower',x,y).valid){const t=S.createObject('NebulaBloomTower'),v=t.getVariables();for(const [n,value]of Object.entries({FootprintX:x,FootprintY:y,FootprintRadius:46,TowerId:700000+t.getUniqueId(),Path1Level:points.length%2?2:5,Path2Level:points.length%2?5:2}))v.get(n).setNumber(value);P.positionSprite(t,'NebulaBloomTower',x,y);nb.apply(t);points.push([x,y]);}
+ ok(points.length===8,'eight valid non-overlapping stress mortars on actual map');
+ for(let i=0;i<64;i++){const [x,y]=points[i%points.length],e=S.createObject('Enemy'),v=e.getVariables();v.get('EnemyType').setString('Basic');S.__novaWisp.ensure(e);v.get('MoveSpeed').setNumber(0);v.get('GoldReward').setNumber(0);e.setPosition(x+80+(i%4)*7-e.getWidth()/2,y+(Math.floor(i/8)%4)*8-e.getHeight()/2);e.getBehavior('Health').SetMaxHealth(1000000);e.getBehavior('Health').SetHealth(1000000);}
+ let maxPods=0,maxFx=0,maxPoisons=0,maxZones=0;const timing=[];
+ for(let frame=0;frame<900;frame++){const start=performance.now();step();timing.push(performance.now()-start);maxPods=Math.max(maxPods,nb.pods.size);maxFx=Math.max(maxFx,nb.effects.length);maxPoisons=Math.max(maxPoisons,nb.poisons.size);maxZones=Math.max(maxZones,nb.zones.length);if(frame%120===0)await new Promise(r=>setTimeout(r,1));}
+ ok(nb.metrics.shots>=32&&nb.metrics.poisonTicks>0&&maxZones>0,'many mortars produce real arcs / area impacts / poison ticks');ok(maxFx<=nb.config.MaxImpactVisuals&&maxPoisons<=64&&maxPods<=16&&maxZones<=24,'visual cap / one poison per enemy / bounded simultaneous pods and zones');
+ const iconCount=S.getObjects('NebulaPoisonIcon').length;ok(iconCount===nb.poisons.size&&nb.rigs.size===8,'one live poison icon per status and one rig per planted mortar');
+ S.getObjects('Enemy').slice().forEach(e=>e.deleteFromScene());step(720);ok(!nb.pods.size&&!nb.zones.length&&!nb.effects.length&&!nb.poisons.size&&!S.getObjects('NebulaPoisonIcon').length&&!S.getObjects('NebulaBloomVFX').length,'12 seconds without enemies drains every temporary owner / icon / VFX');
+ S.getObjects('NebulaBloomTower').slice().forEach(t=>t.deleteFromScene());step(3);ok(!nb.rigs.size&&!S.getObjects('NebulaBloomPod').length,'tower deletion releases all modular rigs');timing.sort((a,b)=>a-b);
+ return{checks,frames:900,fixtureEnemies:64,fixtureTowers:8,simulatedCombatSeconds:15,maximum:{pods:maxPods,effects:maxFx,poisons:maxPoisons,zones:maxZones},nativeStepMilliseconds:{median:timing[Math.floor(timing.length*.5)],p95:timing[Math.floor(timing.length*.95)]},notLongDurationSoak:true,notWinRateStudy:true};
+})()

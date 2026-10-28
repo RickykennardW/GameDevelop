@@ -1,0 +1,7 @@
+{
+  "idempotentBuild": true,
+  "filesCompared": 67,
+  "distinctStates": 27,
+  "transparentPNGs": 52,
+  "backupCreated": false
+}

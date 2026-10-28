@@ -530,7 +530,7 @@ PASS 200 recipients use same shared VFX assets
 PASS 200 shields are not created every frame
 PASS all owned bodies/shields/pulses/bars clean up
 PASS Index preserves five and shows sixth elite cropped portrait through its single owner
-PASS unchanged Star-only small shop
+PASS original small Star card retained beside additive Nebula card
 PASS actual aligned Golem volley launched
 PASS bounded native timeline
 PASS native50 projectile minus base25 armor

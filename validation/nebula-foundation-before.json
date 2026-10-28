@@ -1,0 +1,57 @@
+{
+  "result": {
+    "checks": [
+      "actual placement on map 300,352",
+      "normal body selection 300,352",
+      "paid upgrade state 0-0",
+      "actual placement on map 900,352",
+      "normal body selection 900,352",
+      "paid upgrade state 3-2",
+      "actual placement on map 1500,352",
+      "normal body selection 1500,352",
+      "paid upgrade state 5-2",
+      "actual placement on map 900,616",
+      "normal body selection 900,616",
+      "paid upgrade state 2-5"
+    ],
+    "states": [
+      "0-0",
+      "3-2",
+      "5-2",
+      "2-5"
+    ],
+    "centers": [
+      [
+        300,
+        352
+      ],
+      [
+        900,
+        352
+      ],
+      [
+        1500,
+        352
+      ],
+      [
+        900,
+        616
+      ]
+    ],
+    "footprints": [
+      46,
+      46,
+      46,
+      46
+    ],
+    "foundationAtlas": "NB_Components",
+    "logicalSize": [
+      64,
+      64
+    ],
+    "fixture": "native purchases and paid upgrades; labels for validation only",
+    "noSourceProjectCopy": true
+  },
+  "progress": [],
+  "consoleErrors": []
+}

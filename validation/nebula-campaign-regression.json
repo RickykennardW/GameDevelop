@@ -1,0 +1,2422 @@
+{
+  "result": {
+    "checks": [
+      "one functional Levels scene with25missions /5chapters",
+      "cold save unlocks only1-1; invalid/locked launches reject",
+      "locked chapter cannot bypass prerequisite",
+      "five hex pads / fifth boss / two reusable background layers",
+      "first entry starts welcome tutorial",
+      "welcome advances to Chapter1 highlight",
+      "chapter introduction advances to actual mission selection",
+      "tutorial blocks locked node and never launches automatically",
+      "real1-1 selection shows confirmation before launching",
+      "native transition reaches Game Scene",
+      "mission configuration applied before first wave",
+      "selection tutorial persists; gameplay tutorial begins once",
+      "first wave cannot start before successful tutorial placement",
+      "battlefield acknowledgment teaches actual Tower selection",
+      "new Tower cannot consume the mandatory first Star Cannon training budget",
+      "real shop selection advances to placement",
+      "new Tower request cannot replace required tutorial ghost",
+      "invalid road placement neither advances nor charges",
+      "dragging a held tutorial-button press onto the map cannot buy a tower",
+      "valid native placement costs300 once and advances tutorial",
+      "targeting explanation precedes first wave",
+      "first manageable wave uses6real Nova Wisps",
+      "real aiming/projectiles kill first enemy and pay actual Gold reward",
+      "reward explanation pauses combat without duplicate rewards",
+      "upgrade tutorial opens actual selected Tower panel",
+      "actual upgrade keeps established cost160 and stat transaction",
+      "training completion persists and releases normal gameplay",
+      "native victory unlocks only after all configured waves: 1-1",
+      "one completion save; no per-frame unlock writes",
+      "actual1-1 victory unlocks exactly1-2",
+      "native transition reaches Levels",
+      "return shows completed marker and no repeated selection tutorial",
+      "native transition reaches Game Scene",
+      "later missions do not replay gameplay tutorial",
+      "defeat preserves unlocks and includes Return to Levels",
+      "native transition reaches Game Scene",
+      "Restart reloads same mission with clean per-run configuration",
+      "native victory unlocks only after all configured waves: 1-2",
+      "native transition reaches Game Scene",
+      "Next Mission loads configured ID 1-3",
+      "native victory unlocks only after all configured waves: 1-3",
+      "native transition reaches Game Scene",
+      "Next Mission loads configured ID 1-4",
+      "native victory unlocks only after all configured waves: 1-4",
+      "native transition reaches Game Scene",
+      "Next Mission loads configured ID 1-5",
+      "native victory unlocks only after all configured waves: 1-5",
+      "boss kill unlocks next chapter: 1-5",
+      "native transition reaches Game Scene",
+      "Next Mission loads configured ID 2-1",
+      "native victory unlocks only after all configured waves: 2-1",
+      "native transition reaches Game Scene",
+      "Next Mission loads configured ID 2-2",
+      "native victory unlocks only after all configured waves: 2-2",
+      "native transition reaches Game Scene",
+      "Next Mission loads configured ID 2-3",
+      "native victory unlocks only after all configured waves: 2-3",
+      "native transition reaches Game Scene",
+      "Next Mission loads configured ID 2-4",
+      "native victory unlocks only after all configured waves: 2-4",
+      "native transition reaches Game Scene",
+      "Next Mission loads configured ID 2-5",
+      "native victory unlocks only after all configured waves: 2-5",
+      "boss kill unlocks next chapter: 2-5",
+      "native transition reaches Game Scene",
+      "Next Mission loads configured ID 3-1",
+      "native victory unlocks only after all configured waves: 3-1",
+      "native transition reaches Game Scene",
+      "Next Mission loads configured ID 3-2",
+      "native victory unlocks only after all configured waves: 3-2",
+      "native transition reaches Game Scene",
+      "Next Mission loads configured ID 3-3",
+      "native victory unlocks only after all configured waves: 3-3",
+      "native transition reaches Game Scene",
+      "Next Mission loads configured ID 3-4",
+      "native victory unlocks only after all configured waves: 3-4",
+      "native transition reaches Game Scene",
+      "Next Mission loads configured ID 3-5",
+      "native victory unlocks only after all configured waves: 3-5",
+      "boss kill unlocks next chapter: 3-5",
+      "native transition reaches Game Scene",
+      "Next Mission loads configured ID 4-1",
+      "native victory unlocks only after all configured waves: 4-1",
+      "native transition reaches Game Scene",
+      "Next Mission loads configured ID 4-2",
+      "native victory unlocks only after all configured waves: 4-2",
+      "native transition reaches Game Scene",
+      "Next Mission loads configured ID 4-3",
+      "native victory unlocks only after all configured waves: 4-3",
+      "native transition reaches Game Scene",
+      "Next Mission loads configured ID 4-4",
+      "native victory unlocks only after all configured waves: 4-4",
+      "native transition reaches Game Scene",
+      "Next Mission loads configured ID 4-5",
+      "native victory unlocks only after all configured waves: 4-5",
+      "boss kill unlocks next chapter: 4-5",
+      "native transition reaches Game Scene",
+      "Next Mission loads configured ID 5-1",
+      "native victory unlocks only after all configured waves: 5-1",
+      "native transition reaches Game Scene",
+      "Next Mission loads configured ID 5-2",
+      "native victory unlocks only after all configured waves: 5-2",
+      "native transition reaches Game Scene",
+      "Next Mission loads configured ID 5-3",
+      "native victory unlocks only after all configured waves: 5-3",
+      "native transition reaches Game Scene",
+      "Next Mission loads configured ID 5-4",
+      "native victory unlocks only after all configured waves: 5-4",
+      "native transition reaches Game Scene",
+      "Next Mission loads configured ID 5-5",
+      "native victory unlocks only after all configured waves: 5-5",
+      "boss kill unlocks next chapter: 5-5",
+      "all25native completion contracts mark entire campaign complete",
+      "campaign and tutorials serialized to one namespaced save",
+      "native transition reaches Levels",
+      "completed missions remain replayable",
+      "chapter switching changes actual art and all five node labels",
+      "native transition reaches Game Scene",
+      "replay does not reset completion data or leak previous mission",
+      "native transition reaches Levels",
+      "defeat Return to Levels keeps correct chapter, selected mission and prior completion markers",
+      "campaign transitions preserve Fusion archive, custom audio and unrelated storage"
+    ],
+    "naturalEngagementFrames": 170,
+    "missions": 25,
+    "fastClearFixture": true,
+    "notWinRatePlaytest": true,
+    "save": {
+      "Version": 1,
+      "Completed": {
+        "1-1": true,
+        "1-2": true,
+        "1-3": true,
+        "1-4": true,
+        "1-5": true,
+        "2-1": true,
+        "2-2": true,
+        "2-3": true,
+        "2-4": true,
+        "2-5": true,
+        "3-1": true,
+        "3-2": true,
+        "3-3": true,
+        "3-4": true,
+        "3-5": true,
+        "4-1": true,
+        "4-2": true,
+        "4-3": true,
+        "4-4": true,
+        "4-5": true,
+        "5-1": true,
+        "5-2": true,
+        "5-3": true,
+        "5-4": true,
+        "5-5": true
+      },
+      "SelectTutorialDone": true,
+      "GameTutorialDone": true
+    },
+    "unrelatedSavesPreserved": true
+  },
+  "progress": [],
+  "consoleErrors": [
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187670476.726,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187671774.565,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187671780.121,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187672271.999,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187672275.591,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187672812.369,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187672815.865,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187673284.913,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187673288.413,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187673816.644,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187673821.062,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187674335.881,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187674335.969,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187675139.764,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187675148.129,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187676164.288,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187676164.486,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187676885.07,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187676892.1,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187677609.16,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187677613.003,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187678368.195,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187678372.85,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187679212.285,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187679218.74,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187680061.835,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187680066.216,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187680801.39,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187680809.219,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187681748.547,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187681753.911,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187682406.584,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187682410.579,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187683141.334,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187683145.649,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187683940.071,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187683944.671,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187684726.742,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187684730.721,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187685851.163,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187685856.291,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187686809.557,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187686813.239,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187687754.121,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187687757.684,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187688890.203,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187688895.248,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"cosmic_defense.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187689174.654,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"ancient_galaxy_ambience.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793187689187.473,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

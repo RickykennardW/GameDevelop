@@ -12,6 +12,7 @@ if(!pick){
   return hull.map(([a,b])=>[x+(a-.5)*w*c-(b-.5)*h*s,y+(a-.5)*w*s+(b-.5)*h*c]);
  };
  pick.towerHit=(o,x,y)=>{
+  if(o.getName()==='NebulaBloomTower'){const placement=scene.__freePlacement,c=placement.center(o);return Math.hypot(x-c[0],y-c[1])<=placement.radius(o)+14;}
   const visual=scene.__starCannon?.visual(o);if(!visual)return false;
   return ['Base','Turret'].some(part=>pick.hitPolygon(x,y,scene.__starCannon.componentPoints(o,part,visual.meta[part].Hull)));
  };

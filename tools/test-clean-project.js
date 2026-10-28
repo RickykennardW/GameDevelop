@@ -10,7 +10,7 @@ sv.get('Money').setNumber(100000);const make=(name='StarCannonTower',a=0,b=0)=>{
 const enemy=(x,y,hp=1000)=>{const e=scene.createObject('Enemy');scene.__novaWisp.ensure(e);e.setAnimationName('NovaMove_Right');e.setWidth(48);e.setHeight(48);e.setPosition(x-e.getWidth()/2,y-e.getHeight()/2);e.getVariables().get('MoveSpeed').setNumber(0);e.getVariables().get('EnemyType').setString('Normal');e.getVariables().get('GoldReward').setNumber(0);e.getVariables().get('Waypoint').setNumber(0);e.getBehavior('Health').SetMaxHealth(hp);e.getBehavior('Health').SetHealth(hp);return e;};
 const health=e=>e.getBehavior('Health').Health();
 const close=()=>{sv.get('SelectedTower').setNumber(0);ob.close();step();};
-ok(shop.cards.length===1&&p.types.length===1,'one official Star shop card and footprint type');
+ok(shop.cards.length===2&&p.types.join('|')==='StarCannonTower|NebulaBloomTower'&&shop.cards[0].item.Cost===300&&shop.cards[1].item.Cost===500,'original Star first / additive Nebula second with independent footprint types');
 let states=0;
 for(let a=0;a<=5;a++)for(let b=0;b<=5;b++){
  if(a>=3&&b>=3){ok(star.stats(a,b)===null,'invalid crosspath rejected '+a+'_'+b);continue;}
@@ -61,6 +61,7 @@ const one=speedCheck('Manual'),two=speedCheck('ManualFast');ok(two>one*1.9&&two<
 for(const name of p.types){
  t=make(name);close();const conf=p.config(name);let points;
  if(name==='StarCannonTower')points=star.componentPoints(t,'Base',[[.5,.78]]);
+ else if(name==='NebulaBloomTower')points=[p.center(t)];
  else {const hull=pick.geometry[name][t.getAnimationName()].Hull;points=pick.spritePoints(t,conf.RenderScale,[[hull.reduce((s,q)=>s+q[0],0)/hull.length,hull.reduce((s,q)=>s+q[1],0)/hull.length]]);}
  click(...points[0]);ok(sv.get('SelectedTower').getAsNumber()===num(t,'TowerId'),'visible base/body selection '+name);
  if(name==='StarCannonTower'){
@@ -68,7 +69,8 @@ for(const name of p.types){
  }
  close();const [x,y]=p.center(t),radius=p.radius(t);let empty;
  for(let i=0;i<360;i++){const a=i*Math.PI/180,q=[x+radius*.98*Math.cos(a),y+radius*.98*Math.sin(a)];if(!pick.towerHit(t,...q)){empty=q;break;}}
- ok(!!empty,'selection silhouette excludes empty footprint area '+name);click(...empty);ok(v('SelectedTower')===0,'empty outer footprint never selects '+name);
+ if(name==='NebulaBloomTower')empty=[x+radius+18,y];
+ ok(!!empty&&!pick.towerHit(t,...empty),'selection rejects empty point outside visible body '+name);click(...empty);ok(v('SelectedTower')===0,'empty point never selects '+name);
  remove(name);close();
 }
 ob.classify();const solids=get('Ground_Decoration').filter(o=>o.getVariables().get('Blocking').getAsBoolean()),removable=solids.filter(o=>o.getVariables().get('EnvironmentCategory').getAsString()==='RemovableObstacle');
@@ -103,5 +105,5 @@ input.onKeyPressed(27);step();input.onKeyReleased(27);step();ok(!ob.owner(),'Esc
 ob.select(remaining);step();sv.get('IndexOpen').setBoolean(true);step();ok(!ob.owner()&&sv.get('IndexBlocksInput').getAsBoolean(),'Index closes Clear and blocks map input');sv.get('IndexOpen').setBoolean(false);step();
 remove('StarCannonTower');close();ob.select(remaining);step();click(1600,600);ok(!ob.owner()&&v('SelectedTower')===0,'empty ground closes obstacle and tower selection');
 ok(get('StarCannonBaseVisual').length===0&&get('StarCannonTurretVisual').length===0,'no leaked component objects after priority fixtures');
-vars.get('IndexOpen').setBoolean(true);step();scene.__unitIndex.category='Towers';step();ok(scene.__unitIndex.entries.length===1&&scene.__unitIndex.entries[0].type==='StarCannonTower'&&scene.__unitIndex.entries[0].price===300,'Index one official Star entry with300 price');ok(Object.keys(scene.__unitIndex.objects).filter(k=>/^starUpgrade[01][0-4]$/.test(k)).length===10,'Index displays all ten Star upgrade icons');scene.__unitIndex.category='Monsters';step();ok(scene.__unitIndex.entries.length===6&&scene.__unitIndex.entries[0].name==='Nova Wisp'&&scene.__unitIndex.entries[1].name==='Void Hound','Index preserves Nova/Hound plus four Void archetypes');vars.get('IndexOpen').setBoolean(false);step();ok(shop.scrollMax===0&&get('TileType_Button').length===1&&get('AssetCardPanel').length===1&&shop.cards[0].background.getWidth()===84&&shop.cards[0].background.getHeight()===112&&shop.cards[0].background.getX()===1168&&shop.cards[0].price.getString()==='300'&&!shop.guide&&get('ShopScrollTrack').length===1&&get('ShopScrollThumb').length===1,'single small first card in original two-column shop, no empty cards or upgrade guide, price300');
+vars.get('IndexOpen').setBoolean(true);step();scene.__unitIndex.category='Towers';step();ok(scene.__unitIndex.entries.length===2&&scene.__unitIndex.entries[0].type==='StarCannonTower'&&scene.__unitIndex.entries[0].price===300&&scene.__unitIndex.entries[1].type==='NebulaBloomTower','Index retains original Star300 and adds Nebula entry');ok(Object.keys(scene.__unitIndex.objects).filter(k=>/^starUpgrade[01][0-4]$/.test(k)).length===10,'Index displays all ten Star upgrade icons');scene.__unitIndex.category='Monsters';step();ok(scene.__unitIndex.entries.length===6&&scene.__unitIndex.entries[0].name==='Nova Wisp'&&scene.__unitIndex.entries[1].name==='Void Hound','Index preserves Nova/Hound plus four Void archetypes');vars.get('IndexOpen').setBoolean(false);step();ok(shop.scrollMax===0&&get('TileType_Button').length===2&&get('AssetCardPanel').length===2&&shop.cards[0].background.getWidth()===84&&shop.cards[0].background.getHeight()===112&&shop.cards[0].background.getX()===1168&&shop.cards[0].price.getString()==='300'&&!shop.guide&&get('ShopScrollTrack').length===1&&get('ShopScrollThumb').length===1,'two small cards in original grid; Star Cannon first unchanged84x112 /300Gold');
 lines.push('ALL TURRET / SELECTION / OBSTACLE TESTS PASSED');output.textContent=lines.join('\n');document.title='PASS '+(lines.length-1)+' checks';

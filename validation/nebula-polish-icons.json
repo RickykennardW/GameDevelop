@@ -1,0 +1,25 @@
+{
+  "result": {
+    "mode": "icons",
+    "captures": [
+      "NB_Toxic1",
+      "NB_Toxic2",
+      "NB_Toxic3",
+      "NB_Toxic4",
+      "NB_Toxic5",
+      "NB_Burst1",
+      "NB_Burst2",
+      "NB_Burst3",
+      "NB_Burst4",
+      "NB_Burst5"
+    ],
+    "viewport": [
+      1280,
+      720
+    ],
+    "nativeTextures": true,
+    "gameplayModified": false
+  },
+  "progress": [],
+  "consoleErrors": []
+}

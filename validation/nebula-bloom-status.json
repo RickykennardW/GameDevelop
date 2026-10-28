@@ -1,0 +1,26 @@
+{
+  "result": {
+    "checks": [
+      "native Fortification and spore poison share one status row",
+      "buff / poison icons stay separated and centered above HP",
+      "actual Fortification armor reduces60poison to50 exactly once",
+      "poison cleanup preserves other native buff/icon/armor",
+      "existing campaign combat pause freezes poison / lob timers without accumulating ticks",
+      "2x native game speed advances mortar / poison by game time",
+      "real Star Cannon Tactical Fusion starts0.5x while Nebula remains independent",
+      "mortar / poison clocks follow native Tactical Fusion0.5x",
+      "poison lethal tick enters original one-time enemy reward / death handler",
+      "death visual / expired poison cannot award Gold twice",
+      "in-flight snapshot survives source removal without crediting a pooled replacement",
+      "victory / defeat cleanup clears all temporary mortar objects without damage"
+    ],
+    "nativeArmor": true,
+    "nativeKillReward": 5,
+    "normalSpeed": 1,
+    "fastSpeed": 2,
+    "tacticalSpeed": 0.5,
+    "pooledOwnerLifetimeGuard": true
+  },
+  "progress": [],
+  "consoleErrors": []
+}

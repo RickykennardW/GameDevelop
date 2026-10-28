@@ -1,0 +1,75 @@
+{
+  "result": {
+    "site": [
+      728,
+      352
+    ],
+    "rows": [
+      352,
+      616,
+      880
+    ],
+    "points": [
+      {
+        "x": 300,
+        "y": 352,
+        "result": {
+          "valid": true,
+          "reason": "",
+          "cost": 500,
+          "radius": 68,
+          "affordable": true
+        }
+      },
+      {
+        "x": 900,
+        "y": 352,
+        "result": {
+          "valid": false,
+          "reason": "obstacle"
+        }
+      },
+      {
+        "x": 1500,
+        "y": 352,
+        "result": {
+          "valid": true,
+          "reason": "",
+          "cost": 500,
+          "radius": 68,
+          "affordable": true
+        }
+      },
+      {
+        "x": 900,
+        "y": 616,
+        "result": {
+          "valid": true,
+          "reason": "",
+          "cost": 500,
+          "radius": 68,
+          "affordable": true
+        }
+      }
+    ],
+    "nebula": {
+      "AnchorX": 0.5,
+      "AnchorY": 0.5,
+      "Height": 64,
+      "Radius": 68,
+      "RenderScale": 2.2,
+      "SafetyGap": 8,
+      "Width": 64
+    },
+    "star": {
+      "AnchorX": 0.5,
+      "AnchorY": 0.5,
+      "Height": 64,
+      "Radius": 46,
+      "RenderScale": 2.5,
+      "Width": 64
+    }
+  },
+  "progress": [],
+  "consoleErrors": []
+}

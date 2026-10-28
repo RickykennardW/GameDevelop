@@ -24,8 +24,8 @@ const archive=game.__fusionArchive,discovery=scene.__monsterDiscovery,portraits=
 const archetypes=sv.get('EnemyTypes').toJSObject(),catalog=sv.get('TowerShopCatalog').toJSObject(),categories=['Towers','Monsters','Fusion'];
 if(!categories.includes(index.category))index.category='Towers';
 const entries=index.category==='Towers'?catalog.flatMap(item=>{
- const def=data.objects.find(o=>o.name===item.Type);if(!def)return[];const v=Object.fromEntries(def.variables.map(v=>[v.name,v.value])),isStar=item.Type==='StarCannonTower';
- return[{id:item.Type,type:item.Type,name:v.TowerName||item.Name,price:item.Cost,damage:isStar?star.BaseDamage:v.Damage,range:isStar?star.BaseRange:v.AttackRange,cooldown:isStar?star.BaseInterval:v.AttackInterval,projectileSpeed:isStar?star.ProjectileSpeed:v.ProjectileSpeed,locked:false}];
+ const def=data.objects.find(o=>o.name===item.Type);if(!def)return[];const v=Object.fromEntries(def.variables.map(v=>[v.name,v.value])),isStar=item.Type==='StarCannonTower',isNebula=item.Type==='NebulaBloomTower',cfg=isNebula?sv.get('NebulaBloomConfig').toJSObject():star;
+ return[{id:item.Type,type:item.Type,name:v.TowerName||item.Name,price:item.Cost,damage:isStar||isNebula?cfg.BaseDamage:v.Damage,range:isStar||isNebula?cfg.BaseRange:v.AttackRange,cooldown:isStar||isNebula?cfg.BaseInterval:v.AttackInterval,projectileSpeed:isNebula?undefined:isStar?star.ProjectileSpeed:v.ProjectileSpeed,locked:false}];
 }):index.category==='Monsters'?discovery.ids.map(id=>({id,typeId:id,name:archetypes[id].Name||id,...archetypes[id],locked:!discovery.has(id),monster:true})):archive.catalog.map(def=>({id:def.Id,type:def.Id,name:def.Name,definition:def,fusion:true,locked:!archive.has(def.Id)}));
 index.entries=entries;index.categories=categories;
 const categoryChanged=index.lastCategory!==index.category;
@@ -113,7 +113,7 @@ if(selected){
  label('detailType',locked?'UNIDENTIFIED ARCHIVE':e.fusion?e.definition.Kind.toUpperCase()+' FUSION':e.monster?(e.Classification||'COMMON')+' ENEMY':'CELESTIAL ARTILLERY',tx,ty,tw);
  const title=text('detailName',locked?'???':e.name,tx,ty+20,tw,tw<250?24:30,C.white,true,'IndexDetail');
  let yy=ty+20+title.getHeight()+10;
- const desc=locked?(e.fusion?'CRYPTIC HINT\n'+e.definition.Hint:'An unknown presence moves through the Void. Encounter this enemy to reveal its archive.'):(e.fusion?e.definition.Description:e.monster?(e.Role||(e.id==='Basic'?'A wandering cosmic entity.':'Fast Void creature.')):'A single stellar cannon, forged in ivory and gold. Shape its energy through two upgrade paths.');
+ const desc=locked?(e.fusion?'CRYPTIC HINT\n'+e.definition.Hint:'An unknown presence moves through the Void. Encounter this enemy to reveal its archive.'):(e.fusion?e.definition.Description:e.monster?(e.Role||(e.id==='Basic'?'A wandering cosmic entity.':'Fast Void creature.')):e.type==='NebulaBloomTower'?'A celestial flower mortar that lobs nebula seed pods at a predicted impact point. Specialize in lingering spore poison or heavy area detonation. No Fusion path.':'A single stellar cannon, forged in ivory and gold. Shape its energy through two upgrade paths.');
  const description=text('detailDescription',desc,tx,yy,tw,13,C.muted,false,'IndexDetail');yy+=description.getHeight()+18;
  const config=e.fusion?(data.variables.some(v=>v.name===e.definition.StatsConfig)?sv.get(e.definition.StatsConfig).toJSObject():e.definition.Stats||{}):null;
  const stats=locked?[]:e.monster?[['HP',e.HP],['ARMOR',e.Armor],['SPEED',e.Speed+' px/s'],['REWARD',e.Reward+' Gold']]:[['DAMAGE',e.fusion?config.Damage:e.damage],['INTERVAL',Number(e.fusion?config.AttackInterval:e.cooldown).toFixed(2)+' s'],['RANGE',(e.fusion?config.AttackRange:e.range)+' px'],[e.fusion?'RATE':'COST',e.fusion?(1/config.AttackInterval).toFixed(2)+' /s':e.price+' Gold']];
@@ -129,15 +129,16 @@ if(selected){
   label('statLabel'+i,name,sx+26,sy+8,cellW-36,'IndexDetail','151;164;192');text('statValue'+i,value,sx+10,sy+24,cellW-20,18,C.white,true,'IndexDetail');
  }
  yy+=stats.length?128:0;
- if(!locked&&!e.monster){const property=e.fusion?(Number.isFinite(config.SplashRadius)&&Number.isFinite(config.SplashRatio)?'SPLASH  /  '+config.SplashRadius+' px  /  '+Math.round(config.SplashRatio*100)+'% damage':''):(Number.isFinite(e.projectileSpeed)?'PROJECTILE SPEED  /  '+e.projectileSpeed+' px/s':'');if(property){const properties=text('detailProperties',property,tx,yy,tw,11,'151;170;198',false,'IndexDetail');yy+=properties.getHeight()+14;}}
+ if(!locked&&!e.monster){const property=e.fusion?(Number.isFinite(config.SplashRadius)&&Number.isFinite(config.SplashRatio)?'SPLASH  /  '+config.SplashRadius+' px  /  '+Math.round(config.SplashRatio*100)+'% damage':''):e.type==='NebulaBloomTower'?'ARC FLIGHT / '+sv.get('NebulaBloomConfig').getChild('FlightMin').getAsNumber()+'-'+sv.get('NebulaBloomConfig').getChild('FlightMax').getAsNumber()+' s / SPLASH '+sv.get('NebulaBloomConfig').getChild('BaseRadius').getAsNumber()+' px':(Number.isFinite(e.projectileSpeed)?'PROJECTILE SPEED  /  '+e.projectileSpeed+' px/s':'');if(property){const properties=text('detailProperties',property,tx,yy,tw,11,'151;170;198',false,'IndexDetail');yy+=properties.getHeight()+14;}}
  if(locked){label('detailLock','UNDISCOVERED  /  DETAILS LOCKED',tx,yy,tw,'IndexDetail','163;144;188');yy+=32;}
  let sectionY=Math.max(top+artH+24,yy+8);
  const section=(key,title)=>{line('IndexDetail',dx,sectionY,dx+dw,sectionY,0x655470);label(key,title,dx,sectionY+14,dw);sectionY+=40;};
  const paragraph=(key,value)=>{const t=text(key,value,dx,sectionY,dw,13,C.muted,false,'IndexDetail');sectionY+=t.getHeight()+18;return t;};
  index.detail={id:e.id,entry:e,locked,sprite:art,name:title,description,statValues:stats};
- if(e.type==='StarCannonTower'){
+ if(e.type==='StarCannonTower'||e.type==='NebulaBloomTower'){
+  const upgradeConfig=e.type==='NebulaBloomTower'?sv.get('NebulaBloomConfig').toJSObject():star;
   section('upgradesTitle','UPGRADE PATHS');const cols=dw>=580?2:1,colW=cols===2?(dw-16)/2:dw,starts=[];
-  for(const [p,path]of star.Paths.entries()){
+  for(const [p,path]of upgradeConfig.Paths.entries()){
    const px=dx+(p%cols)*(colW+16);let py=cols===2?sectionY:sectionY+(p?starts[0]:0);const start=py;
    box('IndexDetail',{x:px,y:py,w:colW,h:50},p?0x20203c:0x292038,p?0x586e94:0x8a7052,7);label('pathNumber'+p,'PATH '+(p+1),px+12,py+8,colW-24,'IndexDetail',p?'158;204;229':'225;193;130');text('starPath'+p,path.Name,px+12,py+23,colW-24,12,C.white,true,'IndexDetail');py+=64;
    for(const [n,u]of path.Upgrades.entries()){
@@ -148,7 +149,7 @@ if(selected){
    }
    starts[p]=py-start+18;
   }
-  sectionY+=cols===2?Math.max(...starts):starts.reduce((a,b)=>a+b,0);paragraph('starRule','Level 3 specializes one path. The other path can reach level 2. Maximum level '+star.MaxLevel+'.');
+  sectionY+=cols===2?Math.max(...starts):starts.reduce((a,b)=>a+b,0);paragraph('starRule','Level 3 specializes one path. The other path can reach level 2. Maximum level '+upgradeConfig.MaxLevel+'.');
  }else if(e.monster&&!locked){
   section('abilityHeading','ENEMY PROFILE');paragraph('monsterProfile',!e.SpecialAbility||e.SpecialAbility==='None'?'No special ability.':'SPECIAL ABILITY  /  '+e.SpecialAbility);
   if(e.id==='VoidGolem'){const skill=sv.get('VoidGolemConfig').toJSObject().Skill;paragraph('golemSkill','Stops to cast '+skill.Name+'. Grants +'+skill.ArmorBonus+' armor within '+skill.Radius+' px for '+skill.Duration+' s. Cooldown: '+skill.Cooldown+' s.');}
