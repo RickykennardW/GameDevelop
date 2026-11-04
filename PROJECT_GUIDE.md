@@ -4,7 +4,7 @@
 
 Project utama adalah `Tower Defense.json`; scene terpisah berada di `layouts/game-scene.json`. Seluruh property, ukuran, instance, camera, object folder, gameplay variable dan event berada pada kedua file ini. Extension Health berada di `eventsFunctionsExtensions/health.json`.
 
-`tools/source-mapping.json` memetakan 35 source JavaScript ke event scene. `python tools/embed-free-placement.py` melakukan embedding langsung, tanpa membuat salinan. Jangan mengembalikan script migrasi lama atau file konfigurasi hasil eksperimen yang sudah dihapus. Semua perubahan harus mengikuti **NO BACKUP** pada `AGENTS.md`.
+`tools/source-mapping.json` memetakan 36 source JavaScript ke event scene. `python tools/embed-free-placement.py` melakukan embedding langsung, tanpa membuat salinan. Jangan mengembalikan script migrasi lama atau file konfigurasi hasil eksperimen yang sudah dihapus. Semua perubahan harus mengikuti **NO BACKUP** pada `AGENTS.md`.
 
 ## Sistem yang dipertahankan
 
@@ -203,3 +203,10 @@ Artwork final: `assets/towers/nebula_bloom/` dan `assets/ui/nebula_bloom/`. Sebe
 Shop/selected panel/Index membaca catalog dan konfigurasi baru secara additive. `PanelDescription` menyediakan teks singkat khusus kartu upgrade; `Description` tetap lengkap untuk Index. Tutorial pertama tetap mensyaratkan Star Cannon dan menahan request Nebula sebelum first placement, supaya budget600 tidak habis pada tower500 yang belum sesuai langkah training. Sesudah tutorial selesai/di-skip, Nebula bisa dibeli normal.
 
 Laporan implementasi, tuning awal, hasil native QA dan batasan: `NEBULA_BLOOM_REPORT.md`. Native QA: `nebula-bloom-qa.js`, `nebula-bloom-status-qa.js`, `nebula-bloom-ui-qa.js`, `nebula-bloom-wave-qa.js`, `nebula-bloom-stress-qa.js`, dan fixture capture `nebula-bloom-visual-qa.js`. Semua berada dalam `tools/`; output bukti di `validation/`. Jangan menganggap uji stress singkat sebagai sertifikasi FPS, studi win rate, atau full campaign balancing.
+
+
+## Fresh Start pada Cheat Panel
+
+DEV panel memiliki opsi **Fresh Start** di bagian bawah scroll. Cancel/Escape tidak mengubah progress; Confirm menghapus save Campaign, Fusion/Recipe/Adaptive Discovery dan key monster lama, membersihkan state discovery sesi, lalu kembali ke tutorial Levels tahap 0. Tutorial gameplay mission 1-1 dimulai melalui alur existing. Gold awal sandbox, statistik, catalog, map dan audio tidak diubah.
+
+`tools/fresh-start-service.js` wajib berjalan sebelum pemilik save/discovery: event awal game dan event 0 Levels. Key `starfallBastionFreshStart.v1` hanya menyimpan intent bernilai 1 (tanpa salinan progress); jika reset terputus, recovery menyelesaikannya sebelum save dimuat. Settings/audio dan seluruh key lain dipertahankan. Jangan menghapus intent secara manual ketika reset belum lengkap. Registration/embedding idempotent berada pada tooling existing. Rincian file, key, hasil pengujian dan batasan: `FRESH_START_REPORT.md`.

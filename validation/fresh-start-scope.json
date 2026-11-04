@@ -1,0 +1,27 @@
+{
+  "baselineCommit": "446f468",
+  "checksPassed": 17,
+  "checks": [
+    "All Game Scene objects,157instances,layers,variables,stats and configuration unchanged",
+    "Only reset initialization and developer JS changed in gameplay events",
+    "Levels layout,objects and campaign configuration unchanged",
+    "Only reset initialization and campaign input guard changed in Levels events",
+    "Source unchanged (line endings normalized): Tower Defense.json",
+    "Source unchanged (line endings normalized): layouts/main-menu.json",
+    "Source unchanged (line endings normalized): tools/campaign-game-runtime.js",
+    "Source unchanged (line endings normalized): tools/levels-runtime.js",
+    "Source unchanged (line endings normalized): tools/monster-discovery-runtime.js",
+    "Source unchanged (line endings normalized): tools/fusion-archive-runtime.js",
+    "Source unchanged (line endings normalized): tools/star-cannon-runtime.js",
+    "Source unchanged (line endings normalized): tools/nebula-bloom-runtime.js",
+    "Source unchanged (line endings normalized): tools/starburst-fusion-runtime.js",
+    "Source unchanged (line endings normalized): tools/audio-runtime.js",
+    "No artwork,animation or audio assets changed",
+    "Embedding idempotent with no duplicate registration",
+    "No new backup paths"
+  ],
+  "resources": 485,
+  "gameplayObjects": 78,
+  "authoredInstances": 157,
+  "runtimeSources": 36
+}
