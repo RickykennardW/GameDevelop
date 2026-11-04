@@ -62,8 +62,8 @@
     "nativeFusionOnly": true,
     "recipeOverride": false,
     "viewport": [
-      1280,
-      720
+      1920,
+      1080
     ],
     "nativeKeyboard": {
       "nativePointerFocus": true,
@@ -74,5 +74,52 @@
     }
   },
   "progress": [],
-  "consoleErrors": []
+  "consoleErrors": [
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "error",
+        "args": [
+          {
+            "type": "string",
+            "value": "[Audio manager] Error while loading audio file \"sacred_void_temple.ogg\": Decoding audio data failed."
+          }
+        ],
+        "executionContextId": 2,
+        "timestamp": 1793755347232.136,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "log",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 334
+            },
+            {
+              "functionName": "error",
+              "scriptId": "4",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/logger.js",
+              "lineNumber": 0,
+              "columnNumber": 680
+            },
+            {
+              "functionName": "onloaderror",
+              "scriptId": "64",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler-sound-manager.js",
+              "lineNumber": 0,
+              "columnNumber": 488
+            },
+            {
+              "functionName": "",
+              "scriptId": "63",
+              "url": "file:///C:/Users/My%20ASUS/.codex/visualizations/2026/10/06/01a11249-1cf3-7f03-9834-01083d6fb50c/gdevelop-shop-rework-validation/preview/howler-sound-manager/howler.min.js",
+              "lineNumber": 2,
+              "columnNumber": 19769
+            }
+          ]
+        }
+      }
+    }
+  ]
 }

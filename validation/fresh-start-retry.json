@@ -1,0 +1,38 @@
+{
+  "result": {
+    "checks": [
+      "test begins at the actual MainMenu entry",
+      "native scene reaches Levels",
+      "earlier-session completion and tutorial save actually loaded",
+      "existing campaign launch permits unlocked later mission",
+      "native scene reaches Game Scene",
+      "saved recipe discovery restored before reset",
+      "two actual wave spawns discover two monster types",
+      "ordinary Gold cheat still works before reset",
+      "Fresh Start click opens confirmation without deleting anything",
+      "Gold DOM input cannot overlay confirmation",
+      "dialog stays inside viewport",
+      "destructive confirm is distinct from Cancel",
+      "Cancel preserves every saved key and in-memory discovery/progression",
+      "Escape cancels confirmation without closing or resetting the panel",
+      "failed intent write reports error with no partial deletion or success",
+      "interrupted reset retains durable intent and blocks old gameplay with retry feedback",
+      "incomplete reset never reports a fresh in-memory campaign",
+      "native scene reaches Levels",
+      "Retry completes the interrupted reset and removes its blocking UI",
+      "Retry preserves audio settings"
+    ],
+    "settings": {
+      "Master": 67,
+      "Music": 23,
+      "SFX": 52,
+      "UI": 31,
+      "MuteMusic": true,
+      "MuteSFX": false
+    },
+    "audioKey": "celestialVoidAudio.v1",
+    "pending": false
+  },
+  "progress": [],
+  "consoleErrors": []
+}

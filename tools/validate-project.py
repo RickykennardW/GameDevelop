@@ -101,7 +101,7 @@ if menu:
     ok(target==gameplay['name'],'MainMenu gameplay/audio configuration reference resolves')
 campaign=next((s for s in scenes if s['name']=='Levels'),None)
 if campaign:
-    for index,name in enumerate(['campaign-service.js','levels-runtime.js']):
+    for index,name in enumerate(['fresh-start-service.js','campaign-service.js','levels-runtime.js']):
         ok(campaign['events'][index]['inlineCode']==(ROOT/'tools'/name).read_text(encoding='utf-8-sig').splitlines(),'Levels maintained event/source match: '+name)
     start=next(v['value'] for v in menu_variables['MenuConfig']['children'] if v['name']=='StartScene')
     ok(start=='Levels','MainMenu Start explicitly routes to Levels')

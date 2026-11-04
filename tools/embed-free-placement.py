@@ -6,6 +6,13 @@ path=ROOT/'layouts/game-scene.json'
 source=path.read_text(encoding='utf-8')
 scene=json.loads(source)
 mapping=json.loads((ROOT/'tools/source-mapping.json').read_text(encoding='utf-8'))
+if not any(entry[2]=='fresh-start-service.js' for entry in mapping):
+    # Recover a confirmed reset before any old campaign/discovery owner loads.
+    scene['events'][0]['events'].insert(0,{'type':'BuiltinCommonInstructions::JsCode','parameterObjects':'','useStrict':True,'inlineCode':[]})
+    for root,children,_ in mapping:
+        if root==0:children[0]+=1
+    mapping.append([0,[0],'fresh-start-service.js'])
+    (ROOT/'tools/source-mapping.json').write_text(json.dumps(mapping,indent=2)+'\n',encoding='utf-8')
 for root,children,filename in mapping:
     event=scene['events'][root]
     for child in children:event=event['events'][child]
@@ -33,7 +40,9 @@ if menu_path.exists():
 levels_path=ROOT/'layouts/levels.json'
 if levels_path.exists():
     levels_source=levels_path.read_text(encoding='utf-8');levels=json.loads(levels_source)
-    for index,name in enumerate(['campaign-service.js','levels-runtime.js']):
+    if len(levels['events'])==2:
+        levels['events'].insert(0,{'type':'BuiltinCommonInstructions::JsCode','parameterObjects':'','useStrict':True,'inlineCode':[]})
+    for index,name in enumerate(['fresh-start-service.js','campaign-service.js','levels-runtime.js']):
         levels['events'][index]['inlineCode']=(ROOT/'tools'/name).read_text(encoding='utf-8-sig').splitlines()
     updated=json.dumps(levels,ensure_ascii=False,indent=2)+'\n'
     if updated!=levels_source:levels_path.write_text(updated,encoding='utf-8')

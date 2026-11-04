@@ -70,10 +70,10 @@ for c in cfg['Chapters']:
     sprite=copy.deepcopy(frame);sprite['image']=c['Background'];obj['animations'].append({'name':'Chapter'+str(c['Id']),'useMultipleDirections':False,'directions':[{'looping':False,'timeBetweenFrames':.1,'sprites':[sprite]}]})
 event=lambda source:{'type':'BuiltinCommonInstructions::JsCode','parameterObjects':'','useStrict':True,'inlineCode':(ROOT/'tools'/source).read_text(encoding='utf-8-sig').splitlines()}
 levels_path=ROOT/'layouts/levels.json'
-if levels_path.exists():levels=load('layouts/levels.json');levels['variables']=[var('CampaignConfig',cfg)];levels['events']=[event('campaign-service.js'),event('levels-runtime.js')]
+if levels_path.exists():levels=load('layouts/levels.json');levels['variables']=[var('CampaignConfig',cfg)];levels['events']=[event('fresh-start-service.js'),event('campaign-service.js'),event('levels-runtime.js')]
 else:
     levels={k:copy.deepcopy(v) for k,v in m.items() if k not in ['objects','instances','events','variables','objectsFolderStructure']}
-    levels.update(name='Levels',mangledName='Levels',title='Galactic Campaign',objects=[obj],instances=[],variables=[var('CampaignConfig',cfg)],events=[event('campaign-service.js'),event('levels-runtime.js')],objectsGroups=[],objectsFolderStructure={'folderName':'__ROOT','children':[{'folderName':'CAMPAIGN','children':[{'objectName':'CampaignBackdrop'}]}]})
+    levels.update(name='Levels',mangledName='Levels',title='Galactic Campaign',objects=[obj],instances=[],variables=[var('CampaignConfig',cfg)],events=[event('fresh-start-service.js'),event('campaign-service.js'),event('levels-runtime.js')],objectsGroups=[],objectsFolderStructure={'folderName':'__ROOT','children':[{'folderName':'CAMPAIGN','children':[{'objectName':'CampaignBackdrop'}]}]})
     levels['layers'][1]['name']='CampaignUI'
     levels['uiSettings']['selectedLayer']='CampaignUI'
 save('layouts/levels.json',levels)

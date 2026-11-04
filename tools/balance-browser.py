@@ -130,7 +130,7 @@ async def main():
                 result['pixelComparison']={'matchesPreviousPreview':True,'sha256':actual,'size':list(pixels.size)}
             if not screenshot:screenshot_data=None
         print('RESULT', json.dumps(result)[:3500]); print('CONSOLE ERRORS',len(errors))
-        if '--discovery-relaunch-check' in sys.argv or '--fusion-relaunch-check' in sys.argv:
+        if '--discovery-relaunch-check' in sys.argv or '--fusion-relaunch-check' in sys.argv or '--fresh-start-relaunch-check' in sys.argv:
             await ws.send(json.dumps(dict(id=count+1,method='Browser.close')))
             await asyncio.sleep(.1)
         return dict(result=result,progress=progress,consoleErrors=errors),screenshot,screenshot_data
@@ -175,6 +175,30 @@ async def verify_discovery_relaunch():
             if await evaluate('!!(window.testGame&&testGame.getSceneStack().getCurrentScene()?.__monsterDiscovery?.ready)'):break
             await asyncio.sleep(.1)
         return await evaluate("""(()=>{const g=testGame,s=g.getSceneStack().getCurrentScene(),d=s.__monsterDiscovery,v=s.getVariables();g.pause(true);const before={found:[...d.found],queue:d.queue.length,active:d.active,scope:d.scope,legacy:localStorage.getItem('celestialVoidMonsterDiscovery.v1'),unrelated:localStorage.getItem('celestialVoidBetaUnrelatedCheck'),audio:{...s.__audio.settings}};v.get('Wave').setNumber(1);v.get('WaveActive').setBoolean(true);v.get('WaveMode').setString('Manual');const w=s.__waveManager;w.queue=['Basic'];w.index=0;w.elapsed=v.get('SpawnInterval').getAsNumber();v.get('EnemiesToSpawn').setNumber(1);s.renderAndStep(16.667);return{before,encounterAgain:d.has('Basic')&&d.stats.shown===1&&d.stats.unlocks===1};})()""")
+async def verify_fresh_start_relaunch(expected):
+    target=None
+    for _ in range(100):
+        try:target=next(t for t in json.load(urllib.request.urlopen(f'http://127.0.0.1:{port}/json',timeout=1)) if t['type']=='page');break
+        except Exception:await asyncio.sleep(.1)
+    if not target:raise RuntimeError('Fresh Start relaunch endpoint unavailable')
+    async with websockets.connect(target['webSocketDebuggerUrl'],max_size=40000000) as ws:
+        counter=0
+        async def evaluate(code):
+            nonlocal counter
+            counter+=1;await ws.send(json.dumps(dict(id=counter,method='Runtime.evaluate',params=dict(expression=code,returnByValue=True,awaitPromise=True))))
+            while True:
+                r=json.loads(await ws.recv())
+                if r.get('method')=='Runtime.exceptionThrown':raise RuntimeError(str(r))
+                if r.get('id')==counter:
+                    if 'error' in r or 'exceptionDetails' in r.get('result',{}):raise RuntimeError(str(r))
+                    return r.get('result',{}).get('result',{}).get('value')
+        await ws.send(json.dumps(dict(id=0,method='Runtime.enable')))
+        for _ in range(300):
+            if await evaluate('!!(window.testGame&&testGame.getSceneStack().getCurrentScene()?.__mainMenu)'):break
+            await asyncio.sleep(.1)
+        await evaluate('globalThis.FRESH_START_EXPECTATION='+json.dumps(expected))
+        return await evaluate((ROOT/'tools/fresh-start-relaunch-qa.js').read_text(encoding='utf-8'))
+
 try:
     report,screenshot,screenshot_data=asyncio.run(main())
     if '--discovery-relaunch-check' in sys.argv:
@@ -189,6 +213,11 @@ try:
         proc=start_browser()
         report['result']['applicationRelaunch']=asyncio.run(verify_fusion_relaunch(report['result']))
         print('FUSION APPLICATION RELAUNCH PASS: unlock/recipe restored; no duplicate notification; other storage preserved')
+    if '--fresh-start-relaunch-check' in sys.argv:
+        proc.wait(timeout=15)
+        proc=start_browser()
+        report['result']['applicationRelaunch']=asyncio.run(verify_fresh_start_relaunch(report['result']))
+        print('FRESH START APPLICATION RELAUNCH PASS: first tutorial, empty progression, preferences preserved')
 finally:
     # Stop this uniquely profiled browser and its descendants before deleting cache.
     if proc.poll() is None:

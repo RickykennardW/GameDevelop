@@ -1019,6 +1019,7 @@
     "Audio asset unchanged: assets\\audio\\waves\\milestone_wave.ogg",
     "Audio asset unchanged: assets\\audio\\waves\\wave_complete.ogg",
     "Audio asset unchanged: assets\\audio\\waves\\wave_start.ogg",
+    "Levels embedded source match: fresh-start-service.js",
     "Levels embedded source match: campaign-service.js",
     "Levels embedded source match: levels-runtime.js",
     "Chapter resource identifier/file resolves: 1",
@@ -1032,10 +1033,10 @@
     "Chapter resource identifier/file resolves: 5",
     "Final SVG background dimensions: 5",
     "Five distinct vector background compositions",
-    "Maintained structural/resource/source checks: 4259"
+    "Maintained structural/resource/source checks: 4261"
   ],
-  "count": 1033,
-  "structuralChecks": 4259,
+  "count": 1034,
+  "structuralChecks": 4261,
   "levels": 25,
   "chapters": 5,
   "waves": 204,

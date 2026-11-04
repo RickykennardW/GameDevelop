@@ -1,0 +1,70 @@
+{
+  "result": {
+    "checks": [
+      "test begins at the actual MainMenu entry",
+      "native scene reaches Levels",
+      "earlier-session completion and tutorial save actually loaded",
+      "existing campaign launch permits unlocked later mission",
+      "native scene reaches Game Scene",
+      "saved recipe discovery restored before reset",
+      "two actual wave spawns discover two monster types",
+      "ordinary Gold cheat still works before reset",
+      "Fresh Start click opens confirmation without deleting anything",
+      "Gold DOM input cannot overlay confirmation",
+      "dialog stays inside viewport",
+      "destructive confirm is distinct from Cancel",
+      "Cancel preserves every saved key and in-memory discovery/progression",
+      "Escape cancels confirmation without closing or resetting the panel",
+      "failed intent write reports error with no partial deletion or success",
+      "native scene reaches Levels",
+      "confirmed reset: campaign and both tutorials reset",
+      "confirmed reset: all progress keys and completed reset intent absent",
+      "confirmed reset: all recipes/adaptive records and queued Fusion notifications reset",
+      "confirmed reset: monster discoveries and shared notification queue cleared",
+      "confirmed reset: audio/control/display preferences preserved",
+      "one activation unloads old UI/DOM and only resets once",
+      "native unload discards battle and starts selection tutorial at step zero",
+      "later missions and chapters locked like a new player",
+      "existing selection tutorial advances normally",
+      "actual first mission selection advances tutorial",
+      "native scene reaches Game Scene",
+      "existing gameplay tutorial automatically starts at step zero after selection tutorial",
+      "first mission restores its real starting economy, wave, lives and empty battlefield",
+      "recreated archives cannot read old discoveries",
+      "Fresh Start is reachable during the native paused tutorial",
+      "tutorial still blocks ordinary economy cheats",
+      "confirmation captures input over tutorial Skip and cannot complete stale tutorial",
+      "cancel during paused tutorial preserves first step",
+      "native scene reaches Levels",
+      "reset while tutorial paused: campaign and both tutorials reset",
+      "reset while tutorial paused: all progress keys and completed reset intent absent",
+      "reset while tutorial paused: all recipes/adaptive records and queued Fusion notifications reset",
+      "reset while tutorial paused: monster discoveries and shared notification queue cleared",
+      "reset while tutorial paused: audio/control/display preferences preserved",
+      "second confirmed reset restarts first-time selection, not old tutorial step"
+    ],
+    "settings": {
+      "Master": 67,
+      "Music": 23,
+      "SFX": 52,
+      "UI": 31,
+      "MuteMusic": true,
+      "MuteSFX": false
+    },
+    "audioKey": "celestialVoidAudio.v1",
+    "pending": false,
+    "resetCount": 2,
+    "applicationRelaunch": {
+      "checks": [
+        "application actually relaunched at intended MainMenu",
+        "after full process relaunch, Start opens first tutorial with no restored progress",
+        "all old save/discovery keys remain cleared after relaunch",
+        "audio and unrelated preferences survive full process relaunch",
+        "completed reset is not unnecessarily performed again"
+      ],
+      "completedInterruptedReset": false
+    }
+  },
+  "progress": [],
+  "consoleErrors": []
+}

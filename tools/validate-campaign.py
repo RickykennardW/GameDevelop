@@ -39,7 +39,7 @@ scope=SourceFileLoader('nebula_scope',str(ROOT/'tools/nebula-bloom-scope.py')).l
 ok(hash_json(scope.original_objects(g['objects'][:67]))==before['objectsHash'] and hash_json(g['instances'])==before['instancesHash'],'All67original definitions preserved apart from additive Nebula UI frames;157instances unchanged')
 for name,expected in before['variables'].items():ok(hash_json(scope.original_variable(next(v for v in g['variables'] if v['name']==name)))==expected,'Original gameplay config preserved apart from additive Nebula catalog: '+name)
 for file,expected in before['audioHashes'].items():ok(hashlib.sha256((ROOT/file).read_bytes()).hexdigest()==expected,'Audio asset unchanged: '+file)
-for index,source in enumerate(['campaign-service.js','levels-runtime.js']):ok(l['events'][index]['inlineCode']==(ROOT/'tools'/source).read_text(encoding='utf-8-sig').splitlines(),'Levels embedded source match: '+source)
+for index,source in enumerate(['fresh-start-service.js','campaign-service.js','levels-runtime.js']):ok(l['events'][index]['inlineCode']==(ROOT/'tools'/source).read_text(encoding='utf-8-sig').splitlines(),'Levels embedded source match: '+source)
 background_hashes=[]
 for chapter in cfg['Chapters']:
     r=byname[chapter['Background']];ok(r['file']==chapter['Background'] and (ROOT/r['file']).is_file(),'Chapter resource identifier/file resolves: '+str(chapter['Id']))

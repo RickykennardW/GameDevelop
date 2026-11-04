@@ -1,0 +1,44 @@
+{
+  "result": {
+    "checks": [
+      "test begins at the actual MainMenu entry",
+      "native scene reaches Levels",
+      "earlier-session completion and tutorial save actually loaded",
+      "existing campaign launch permits unlocked later mission",
+      "native scene reaches Game Scene",
+      "saved recipe discovery restored before reset",
+      "two actual wave spawns discover two monster types",
+      "ordinary Gold cheat still works before reset",
+      "Fresh Start click opens confirmation without deleting anything",
+      "Gold DOM input cannot overlay confirmation",
+      "dialog stays inside viewport",
+      "destructive confirm is distinct from Cancel"
+    ],
+    "dialog": true,
+    "settings": {
+      "Master": 67,
+      "Music": 23,
+      "SFX": 52,
+      "UI": 31,
+      "MuteMusic": true,
+      "MuteSFX": false
+    },
+    "physical": [
+      1280,
+      720
+    ],
+    "logical": [
+      1280,
+      720
+    ],
+    "dialogRect": {
+      "x": 448,
+      "y": 254.5,
+      "w": 384,
+      "h": 211
+    },
+    "unit": 1
+  },
+  "progress": [],
+  "consoleErrors": []
+}

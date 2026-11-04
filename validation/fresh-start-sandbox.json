@@ -1,0 +1,15 @@
+{
+  "result": {
+    "checks": [
+      "direct gameplay preview starts without a campaign owner",
+      "real paid tower exists before reset",
+      "direct preview Fresh Start is confirmed separately",
+      "disabled development gate blocks cached destructive action",
+      "direct sandbox reset initializes the real first-time campaign/tutorial",
+      "native replacement unloads paid tower and cheat UI",
+      "placement and discoveries cannot leak into a fresh campaign"
+    ]
+  },
+  "progress": [],
+  "consoleErrors": []
+}

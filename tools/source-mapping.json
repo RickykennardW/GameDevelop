@@ -2,14 +2,14 @@
   [
     0,
     [
-      0
+      1
     ],
     "responsive-map-runtime.js"
   ],
   [
     0,
     [
-      1
+      2
     ],
     "island-map-runtime.js"
   ],
@@ -181,21 +181,21 @@
   [
     0,
     [
-      2
+      3
     ],
     "monster-discovery-runtime.js"
   ],
   [
     0,
     [
-      3
+      4
     ],
     "starburst-fusion-runtime.js"
   ],
   [
     0,
     [
-      4
+      5
     ],
     "fusion-archive-runtime.js"
   ],
@@ -216,7 +216,7 @@
   [
     0,
     [
-      5
+      6
     ],
     "campaign-game-runtime.js"
   ],
@@ -230,7 +230,7 @@
   [
     0,
     [
-      6
+      7
     ],
     "developer-cheats-runtime.js"
   ],
@@ -244,7 +244,7 @@
   [
     0,
     [
-      7
+      8
     ],
     "nebula-bloom-runtime.js"
   ],
@@ -262,5 +262,12 @@
       1
     ],
     "nebula-bloom-render.js"
+  ],
+  [
+    0,
+    [
+      0
+    ],
+    "fresh-start-service.js"
   ]
 ]
