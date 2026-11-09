@@ -97,7 +97,9 @@ if(!star){
   }
  };
  star.syncStats=tower=>{
-  const v=tower.getVariables(),f=star.fusionConfig,stats=star.isFusion(tower)?{Damage:f.Damage,AttackRange:f.AttackRange,AttackInterval:f.AttackInterval,ProjectileSpeed:f.ProjectileSpeed,ProjectileCount:1,ProjectileDamage:f.Damage,SplashRatio:f.SplashRatio,SplashRadius:f.SplashRadius,ProjectileKind:'Starburst'}:star.stats(v.get('Path1Level').getAsNumber(),v.get('Path2Level').getAsNumber(),v.get('RhythmStacks').getAsNumber());if(!stats)return false;
+  const v=tower.getVariables(),fusion=star.isFusion(tower),ev=scene.__fusionEvolution;
+  const f=fusion?(ev?.stats('StarburstCannon',ev.tier(tower))||star.fusionConfig):null;
+  const stats=f?{Damage:f.Damage,AttackRange:f.AttackRange,AttackInterval:f.AttackInterval,ProjectileSpeed:f.ProjectileSpeed,ProjectileCount:1,ProjectileDamage:f.Damage,SplashRatio:f.SplashRatio,SplashRadius:f.SplashRadius,ProjectileKind:'Starburst'}:star.stats(v.get('Path1Level').getAsNumber(),v.get('Path2Level').getAsNumber(),v.get('RhythmStacks').getAsNumber());if(!stats)return false;
   for(const [key,value]of Object.entries(stats))typeof value==='string'?v.get(key).setString(value):v.get(key).setNumber(value);
   v.get('CurrentDamage').setNumber(stats.Damage);v.get('CurrentRange').setNumber(stats.AttackRange);v.get('CurrentAttackInterval').setNumber(stats.AttackInterval);v.get('CurrentProjectileSpeed').setNumber(stats.ProjectileSpeed);return true;
  };
@@ -211,7 +213,7 @@ if(!star){
    const p=scene.createObject('StarCannonProjectile'),pv=p.getVariables(),[x,y]=star.muzzle(tower,i);
    p.setLayer('');p.setZOrder(15000);p.setAnimationName(kind);p.setWidth(width);p.setHeight(height);p.setPosition(x-width/2,y-height/2);p.setAngle(tower.__starFacing);
    pv.get('OwnerTowerId').setNumber(v.get('TowerId').getAsNumber());pv.get('TargetId').setNumber(target.getUniqueId());pv.get('Damage').setNumber(v.get('Damage').getAsNumber()*(special?config.Nova.DamageMultiplier:1));
-   pv.get('SplashRatio').setNumber(fusion?star.fusionConfig.SplashRatio:special?config.Nova.SplashRatio:0);pv.get('SplashRadius').setNumber(fusion?star.fusionConfig.SplashRadius:special?config.Nova.SplashRadius:0);pv.get('Speed').setNumber(v.get('ProjectileSpeed').getAsNumber());
+   pv.get('SplashRatio').setNumber(fusion?v.get('SplashRatio').getAsNumber():special?config.Nova.SplashRatio:0);pv.get('SplashRadius').setNumber(fusion?v.get('SplashRadius').getAsNumber():special?config.Nova.SplashRadius:0);pv.get('Speed').setNumber(v.get('ProjectileSpeed').getAsNumber());
    const heading=p.getAngle()*Math.PI/180;p.__starAge=0;p.__starHit=false;p.__starNew=true;p.__muzzleIndex=i;p.__spawnPoint=[x,y];p.__starDirection=[Math.cos(heading),Math.sin(heading)];
    p.__starLance=lance;p.__starHitTargets=new Set();p.__starAoETargets=lance?new Set():null;p.__starTravel=0;p.__starRange=v.get('AttackRange').getAsNumber();p.__starFracture=special&&a>=4;p.__starCrossSpeed=b;p.__starCompression=a;
    star.projectileAccent(p,a,b);

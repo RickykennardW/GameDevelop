@@ -4,6 +4,7 @@ if(!scene.__devCheats&&sv.get('DEV_CHEATS_ENABLED').getAsBoolean()&&game.isPrevi
  const config=sv.get('DevCheatConfig').toJSObject(),layer=scene.getLayer('DeveloperUI'),root=new PIXI.Container();root.interactive=false;root.interactiveChildren=false;layer.getRenderer().getRendererObject().addChild(root);
  const d=scene.__devCheats={config,root,open:false,disposed:false,scroll:0,down:game.getInputManager().isMouseButtonPressed(0),captured:false,pressed:'',pending:'',path:1,selectedId:0,notice:'Session tools / normal prices apply',noticeAge:0,buttons:[],lastDisplay:1};
  d.enabled=()=>!d.disposed&&sv.get('DEV_CHEATS_ENABLED').getAsBoolean()&&game.isPreview?.()===true;
+ d.testRun=()=>game.__fusionArchive?.beginTest(scene);
  d.obscured=()=>sv.get('GameOver').getAsBoolean()||sv.get('DefeatActive').getAsBoolean()||sv.get('IndexOpen').getAsBoolean()||sv.get('AudioPanelOpen').getAsBoolean()||sv.get('FusionActive').getAsBoolean();
  d.feedback=(message,error=false)=>{d.notice=message;d.error=error;d.noticeAge=config.FeedbackSeconds;};
  d.guard=(allowTutorial=false)=>{if(!d.enabled()){d.feedback('Developer Cheats Disabled',true);return false;}if(d.obscured()||!allowTutorial&&sv.get('CampaignTutorialActive').getAsBoolean()){d.feedback('Close the active modal / testing flow first',true);return false;}return !d.resetting;};
@@ -12,11 +13,11 @@ if(!scene.__devCheats&&sv.get('DEV_CHEATS_ENABLED').getAsBoolean()&&game.isPrevi
  d.gold=(raw,set=false)=>{
   if(!d.guard())return false;const n=d.amount(raw),before=sv.get('Money').getAsNumber(),limit=Math.min(Number.MAX_SAFE_INTEGER,Number(config.GoldLimit));
   if(n===null||!Number.isSafeInteger(before)||before<0||!Number.isSafeInteger(set?n:before+n)||(set?n:before+n)>limit){d.feedback('Invalid Gold Amount / limit '+Number(limit).toLocaleString('en-US'),true);return false;}
-  sv.get('Money').setNumber(set?n:before+n);d.moneyHUD();d.feedback((set?'SET ': '+')+n.toLocaleString('en-US')+' DEV GOLD');scene.__audio?.play('UIClick');return true;
+  d.testRun();sv.get('Money').setNumber(set?n:before+n);d.moneyHUD();d.feedback((set?'SET ': '+')+n.toLocaleString('en-US')+' DEV GOLD');scene.__audio?.play('UIClick');return true;
  };
  d.addGold=raw=>d.gold(raw,false);d.setGold=raw=>d.gold(raw,true);
- d.selected=()=>[...scene.getObjects('StarCannonTower'),...scene.getObjects('NebulaBloomTower')].find(t=>t.getVariables().get('TowerId').getAsNumber()===sv.get('SelectedTower').getAsNumber());
- d.controller=t=>t?.getName()==='NebulaBloomTower'?scene.__nebulaBloom:scene.__starCannon;
+ d.selected=()=>scene.__freePlacement?.towers().find(t=>t.getVariables().get('TowerId').getAsNumber()===sv.get('SelectedTower').getAsNumber());
+ d.controller=t=>t?.getName()==='NebulaBloomTower'?scene.__nebulaBloom:t?.getName()==='StarCannonTower'?scene.__starCannon:null;
  d.target=()=>{const star=d.controller(d.selected()),max=star?.config.MaxLevel;if(!Number.isInteger(max))return null;let cross=-1;for(let n=0;n<=max;n++)if(star.valid(max,n)&&star.valid(n,max))cross=n;return cross<0?null:d.path===1?[max,cross]:[cross,max];};
  d.setPath=path=>{if(!d.guard()||![1,2].includes(path))return false;d.path=path;return true;};
  d.maxSelected=()=>{
@@ -29,10 +30,38 @@ if(!scene.__devCheats&&sv.get('DEV_CHEATS_ENABLED').getAsBoolean()&&game.isPrevi
   let cost=0;const sequence=[];
   for(let path=0;path<2;path++)for(let n=current[path];n<target[path];n++){const upgrade=star.config.Paths[path]?.Upgrades[n];if(!Number.isSafeInteger(upgrade?.Cost)||upgrade.Cost<0){d.feedback('Unsupported Tower upgrade configuration',true);return false;}cost+=upgrade.Cost;sequence.push(path+1);}
   if(sv.get('Money').getAsNumber()<cost){d.feedback('Need '+(cost-sv.get('Money').getAsNumber()).toLocaleString('en-US')+' more Gold',true);return false;}
+  d.testRun();
   for(const path of sequence){if(!d.enabled()||!star.upgrade(tower,path)){d.moneyHUD();d.feedback('Upgrade stopped by native validation',true);return false;}}
   d.moneyHUD();star.render();scene.__selectedPanel?.render();d.feedback('Tower Maxed / '+target.join('-')+' / '+cost.toLocaleString('en-US')+' Gold spent');return true;
  };
- d.startFusion=()=>{if(!d.guard())return false;const tower=d.selected();if(!tower){d.feedback('No Tower Selected',true);return false;}if(tower.getName()==='NebulaBloomTower'){d.feedback('Nebula Bloom has no Fusion in this build',true);return false;}if(!scene.__fusion?.eligible(tower)){d.feedback('Fusion needs a legal 5-2 or 2-5 source',true);return false;}if(!scene.__fusion.begin(tower)){d.feedback('Fusion unavailable',true);return false;}d.close();return true;};
+ d.startFusion=()=>{if(!d.guard())return false;const tower=d.selected();if(!tower){d.feedback('No Tower Selected',true);return false;}if(!scene.__fusion?.eligible(tower)){d.feedback('Fusion needs a legal 5-2 or 2-5 source',true);return false;}if(!scene.__fusion.begin(tower)){d.feedback('Fusion unavailable',true);return false;}d.testRun();d.close();return true;};
+ d.clearDummies=()=>{
+  if(!d.hasDummies)return;
+  for(const enemy of scene.getObjects('Enemy').slice())if(enemy.__devDummy===enemy.getUniqueId())enemy.deleteFromScene();
+  d.hasDummies=false;
+ };
+ d.spawn=kind=>{
+  if(!d.guard()||!['dummy','heavy','pack'].includes(kind))return false;
+  if(sv.get('WaveActive').getAsBoolean()){d.feedback('Test encounters are available between waves',true);return false;}
+  const rules=scene.__fusionEvolution.rules,path=sv.get('MonsterPathPoints').toJSObject().slice(0,-1);
+  if(!path.length){d.feedback('No test encounter position is available',true);return false;}
+  const tower=d.selected(),point=path[Math.min(3,path.length-1)],center=tower?scene.__freePlacement.center(tower):[point.X,point.Y];
+  const site=path.reduce((a,b)=>Math.hypot(b.X-center[0],b.Y-center[1])<Math.hypot(a.X-center[0],a.Y-center[1])?b:a);
+  const count=kind==='pack'?rules.DevPackCount:1,hp=kind==='pack'?rules.DevPackHP:kind==='heavy'?rules.DevHeavyHP:rules.DevDummyHP;
+  const existing=scene.getObjects('Enemy').filter(e=>e.__devDummy===e.getUniqueId()).length;
+  if(existing+count>rules.DevMaxEnemies){d.feedback('Test enemy limit reached',true);return false;}
+  d.testRun();d.hasDummies=true;
+  for(let i=0;i<count;i++){
+   const enemy=scene.createObject('Enemy'),v=enemy.getVariables(),health=enemy.getBehavior('Health');
+   enemy.__devDummy=enemy.getUniqueId();v.get('EnemyType').setString('Basic');
+   enemy.setAnimationName('NovaIdle_Right');enemy.setWidth(48);enemy.setHeight(48);
+   const x=kind==='pack'?(i%3-1)*26:0,y=kind==='pack'?(Math.floor(i/3)-1)*19:0;
+   enemy.setPosition(site.X+x-24,site.Y+y-24);v.get('Waypoint').setNumber(path.indexOf(site));v.get('MoveSpeed').setNumber(0);v.get('GoldReward').setNumber(0);
+   health.SetMaxHealth(hp);health.SetHealth(hp);health.SetFlatDamageReduction(0);health.SetPercentDamageReduction(0);
+   scene.__novaWisp.ensure(enemy);
+  }
+  d.feedback(count+' test target'+(count===1?'':'s')+' / '+hp+' HP');return true;
+ };
  d.text=(value,size=12,color=0xcdd2e8,bold=false,parent=root)=>{const t=new PIXI.Text(value,{fontFamily:'Arial',fontSize:size,fill:color,fontWeight:bold?'bold':'normal'});parent.addChild(t);return t;};
  d.button=(id,label,parent=root)=>{const container=new PIXI.Container(),frame=new PIXI.Graphics();container.addChild(frame);parent.addChild(container);const text=d.text(label,12,0xe2e2f0,true,container);text.anchor.set(.5);const b={id,container,frame,text};d.buttons.push(b);return b;};
  d.place=(b,x,y,w,h)=>{b.r={x,y,w,h};b.container.position.set(x,y);b.text.position.set(w/2,h/2);};
@@ -43,7 +72,10 @@ if(!scene.__devCheats&&sv.get('DEV_CHEATS_ENABLED').getAsBoolean()&&game.isPrevi
  d.balance=d.text('',13,0xe5d7a7,true,d.content);d.goldLabel=d.text('GOLD CONTROLS',10,0x91c6da,true,d.content);d.presets=[1000,5000,10000,50000].map(n=>d.button('gold'+n,'+'+n.toLocaleString('en-US'),d.content));
  d.customLabel=d.text('CUSTOM AMOUNT',10,0xaeb7d3,true,d.content);d.inputFrame=new PIXI.Graphics();d.content.addChild(d.inputFrame);d.add=d.button('add','ADD GOLD',d.content);d.set=d.button('set','SET BALANCE',d.content);d.limit=d.text('',9,0x9399b5,false,d.content);
  d.towerLabel=d.text('TOWER TESTING',10,0x91c6da,true,d.content);d.towerName=d.text('',12,0xd9d8e6,false,d.content);d.paths=[d.button('path1','5 - 2',d.content),d.button('path2','2 - 5',d.content)];d.max=d.button('max','MAX SELECTED TOWER',d.content);d.costNote=d.text('Uses real upgrade costs and legal path locks.',10,0x999fbb,false,d.content);
- d.fusionLabel=d.text('FUSION TESTING',10,0x91c6da,true,d.content);d.fusion=d.button('fusion','START NORMAL FUSION',d.content);d.fusionNote=d.text('Use the real recipe, partner and placement controls.\nDiscovery overrides are not applied.',10,0x999fbb,false,d.content);
+ d.fusionLabel=d.text('FUSION TESTING',10,0x91c6da,true,d.content);d.fusion=d.button('fusion','START TEST FUSION',d.content);d.fusionNote=d.text('Uses real recipes and placement. DEV discoveries reset when you leave this scene.',10,0x999fbb,false,d.content);
+ d.encounterLabel=d.text('TEST ENCOUNTERS',10,0x91c6da,true,d.content);
+ d.encounters=[['dummy','DUMMY'],['heavy','HIGH HP'],['pack','AOE PACK'],['clearDummy','CLEAR TEST']].map(([id,label])=>d.button(id,label,d.content));
+ const contentHeight=725;
  d.freshLabel=d.text('PROGRESS RESET',10,0xe3ae9f,true,d.content);d.fresh=d.button('fresh','FRESH START',d.content);d.fresh.danger=true;
  d.dialog=new PIXI.Container();root.addChild(d.dialog);d.dialog.visible=false;d.shade=new PIXI.Graphics();d.dialogFrame=new PIXI.Graphics();d.dialog.addChild(d.shade,d.dialogFrame);d.dialogTitle=d.text('Start a Fresh Game?',18,0xf1ddbd,true,d.dialog);d.dialogBody=d.text('This will erase your current game progress and return you to the beginning. All unlocked content and discoveries will be reset, and the tutorial will play again. This action cannot be undone.',13,0xcdd2e8,false,d.dialog);d.dialogBody.style.wordWrap=true;
  d.dialogNote=d.text('Audio and other player settings are kept.',11,0x94ccdc,false,d.dialog);d.dialogNote.style.wordWrap=true;d.cancelReset=d.button('cancelReset','CANCEL',d.dialog);d.confirmReset=d.button('confirmReset','CONFIRM FRESH START',d.dialog);d.confirmReset.danger=true;
@@ -75,13 +107,14 @@ if(!scene.__devCheats&&sv.get('DEV_CHEATS_ENABLED').getAsBoolean()&&game.isPrevi
  d.layout=()=>{
   const g=d.geometry(),{unit,button,panel:p}=g;d.g=g;layer.setCameraZoom(1);layer.setCameraX(g.W/2);layer.setCameraY(g.H/2);d.launcher.container.position.set(button.x,button.y);d.launcher.container.scale.set(unit);d.place(d.launcher,0,0,36,36);d.launcher.container.position.set(button.x,button.y);
   d.panel.position.set(p.x,p.y);d.panel.scale.set(unit);const w=p.w/unit,h=p.h/unit,bodyH=h-96;d.panel.visible=d.open;d.frame.clear().lineStyle(1,0x9a82b6,.9).beginFill(0x0e1329,.97).drawRoundedRect(0,0,w,h,8).endFill().lineStyle(1,0xb5a575,.35).moveTo(12,43).lineTo(w-12,43).moveTo(12,h-46).lineTo(w-12,h-46);d.title.position.set(14,10);d.subtitle.position.set(14,28);d.place(d.exit,w-38,8,28,28);
-  d.body.position.set(0,48);d.mask.clear().beginFill(0xffffff).drawRect(0,48,w,bodyH).endFill();d.maxScroll=Math.max(0,604-bodyH);d.subtitle.text=d.maxScroll?'SESSION TESTING / SCROLL':'SESSION TESTING';d.scroll=Math.max(0,Math.min(d.maxScroll,d.scroll));d.content.position.set(0,-d.scroll);
+  d.body.position.set(0,48);d.mask.clear().beginFill(0xffffff).drawRect(0,48,w,bodyH).endFill();d.maxScroll=Math.max(0,contentHeight-bodyH);d.subtitle.text=d.maxScroll?'SESSION TESTING / SCROLL':'SESSION TESTING';d.scroll=Math.max(0,Math.min(d.maxScroll,d.scroll));d.content.position.set(0,-d.scroll);
   d.goldLabel.position.set(14,3);d.balance.position.set(14,21);d.balance.text=sv.get('Money').getAsNumber().toLocaleString('en-US')+' GOLD';const cell=(w-36)/2;
   d.presets.forEach((b,i)=>d.place(b,12+(i%2)*(cell+12),45+Math.floor(i/2)*38,cell,30));d.customLabel.position.set(14,127);d.inputRect={x:12,y:146,w:w-24,h:32};d.inputFrame.clear().lineStyle(1,0x60527e).beginFill(0x11172d).drawRoundedRect(12,146,w-24,32,4).endFill();d.place(d.add,12,186,cell,30);d.place(d.set,24+cell,186,cell,30);d.limit.text='MAX BALANCE '+Number(config.GoldLimit).toLocaleString('en-US');d.limit.position.set(14,224);
-  d.towerLabel.position.set(14,260);d.towerName.position.set(14,278);const tower=d.selected(),v=tower?.getVariables(),id=tower?.getUniqueId()||0;if(id!==d.selectedId){d.selectedId=id;d.path=v?.get('Path2Level').getAsNumber()>=3?2:1;}d.towerName.text=tower?(scene.__starCannon?.isFusion(tower)?'Starburst / no upgrade paths':v.get('TowerName').getAsString()+' / '+v.get('Path1Level').getAsNumber()+'-'+v.get('Path2Level').getAsNumber()):'No Tower Selected';d.paths.forEach((b,i)=>d.place(b,12+i*(cell+12),301,cell,28));d.place(d.max,12,337,w-24,34);d.costNote.position.set(14,380);d.costNote.style.wordWrap=true;d.costNote.style.wordWrapWidth=w-28;
+  d.towerLabel.position.set(14,260);d.towerName.position.set(14,278);const tower=d.selected(),v=tower?.getVariables(),id=tower?.getUniqueId()||0;if(id!==d.selectedId){d.selectedId=id;d.path=v?.get('Path2Level').getAsNumber()>=3?2:1;}const ev=scene.__fusionEvolution;d.towerName.text=tower?v.get('TowerName').getAsString()+' / '+(ev.type(tower)?'E'+ev.tier(tower):v.get('Path1Level').getAsNumber()+'-'+v.get('Path2Level').getAsNumber()):'No Tower Selected';d.paths.forEach((b,i)=>d.place(b,12+i*(cell+12),301,cell,28));d.place(d.max,12,337,w-24,34);d.costNote.position.set(14,380);d.costNote.style.wordWrap=true;d.costNote.style.wordWrapWidth=w-28;
   d.fusionLabel.position.set(14,421);d.place(d.fusion,12,442,w-24,32);d.fusionNote.position.set(14,483);d.fusionNote.style.wordWrap=true;d.fusionNote.style.wordWrapWidth=w-28;d.rules.clear().lineStyle(1,0x4d435e,.7).moveTo(12,247).lineTo(w-12,247).moveTo(12,408).lineTo(w-12,408);d.status.text=d.notice;d.status.style.fill=d.error?0xf3a1ae:0x9ad3de;d.status.style.wordWrapWidth=w-28;d.status.position.set(14,h-36);
-  d.freshLabel.position.set(14,546);d.place(d.fresh,12,565,w-24,32);d.rules.moveTo(12,531).lineTo(w-12,531);
-  if(d.maxScroll>0){d.frame.lineStyle(2,0x544866).moveTo(w-5,50).lineTo(w-5,h-50);const len=Math.max(20,bodyH*bodyH/604),sy=48+d.scroll/d.maxScroll*(bodyH-len);d.frame.lineStyle(2,0x9d8fbb).moveTo(w-5,sy).lineTo(w-5,sy+len);}
+  d.encounterLabel.position.set(14,537);d.encounters.forEach((b,i)=>d.place(b,12+(i%2)*(cell+12),558+Math.floor(i/2)*36,cell,28));
+  d.freshLabel.position.set(14,663);d.place(d.fresh,12,684,w-24,32);d.rules.moveTo(12,522).lineTo(w-12,522).moveTo(12,649).lineTo(w-12,649);
+  if(d.maxScroll>0){d.frame.lineStyle(2,0x544866).moveTo(w-5,50).lineTo(w-5,h-50);const len=Math.max(20,bodyH*bodyH/contentHeight),sy=48+d.scroll/d.maxScroll*(bodyH-len);d.frame.lineStyle(2,0x9d8fbb).moveTo(w-5,sy).lineTo(w-5,sy+len);}
   d.dialog.visible=!!d.confirming;
   if(d.confirming){
    const dw=Math.min(384,g.W/unit-24),dx=(g.W/unit-dw)/2;d.dialog.scale.set(unit);d.shade.clear().beginFill(0x030615,.84).drawRect(0,0,g.W/unit,g.H/unit).endFill();d.dialogBody.style.wordWrapWidth=dw-36;d.dialogNote.style.wordWrapWidth=dw-36;d.dialogNote.text=d.resetError||'Audio and other player settings are kept.';d.dialogNote.style.fill=d.resetError?0xf3a1ae:0x94ccdc;const dh=134+d.dialogBody.height+d.dialogNote.height,dy=Math.max(8,(g.H/unit-dh)/2);d.dialogRect={x:dx,y:dy,w:dw,h:dh};d.dialogFrame.clear().lineStyle(1,0xc5a171,.95).beginFill(0x101329,.99).drawRoundedRect(dx,dy,dw,dh,8).endFill();d.dialogTitle.position.set(dx+18,dy+16);d.dialogBody.position.set(dx+18,dy+49);d.dialogNote.position.set(dx+18,dy+57+d.dialogBody.height);const cw=(dw-44)/3;d.place(d.cancelReset,dx+18,dy+dh-49,cw,32);d.place(d.confirmReset,dx+26+cw,dy+dh-49,dw-44-cw,32);d.cancelReset.text.style.fontSize=11;d.confirmReset.text.style.fontSize=11;
@@ -92,11 +125,11 @@ if(!scene.__devCheats&&sv.get('DEV_CHEATS_ENABLED').getAsBoolean()&&game.isPrevi
   const x=gdjs.evtTools.input.getCursorX(scene,'DeveloperUI',0),y=gdjs.evtTools.input.getCursorY(scene,'DeveloperUI',0),g=d.g;
   if(d.confirming){for(const b of [d.cancelReset,d.confirmReset])if(d.contains(b.r,x/g.unit,y/g.unit))return b.id;return'dialog';}
   if(d.contains(g.button,x,y))return'toggle';if(!d.open||!d.contains(g.panel,x,y))return'';const px=(x-g.panel.x)/g.unit,py=(y-g.panel.y)/g.unit;if(d.contains(d.exit.r,px,py))return'close';
-  if(d.contains(g.body,x,y)){for(const b of [...d.presets,d.add,d.set,...d.paths,d.max,d.fusion,d.fresh])if(d.contains(b.r,px,py-48+d.scroll))return b.id;}return'panel';
+  if(d.contains(g.body,x,y)){for(const b of [...d.presets,d.add,d.set,...d.paths,d.max,d.fusion,...d.encounters,d.fresh])if(d.contains(b.r,px,py-48+d.scroll))return b.id;}return'panel';
  };
  d.pre=()=>{
   if(d.disposed)return;sv.get('DevUIConsumesClick').setBoolean(false);sv.get('DevGoldInputFocused').setBoolean(false);root.visible=d.enabled()&&!d.obscured();const down=game.getInputManager().isMouseButtonPressed(0);d.pending='';
-  if(!root.visible){d.close();d.down=down;d.captured=false;return;}d.layout();const hit=d.hit(),inside=hit!=='',focused=document.activeElement===d.input;
+  if(!root.visible){if(!d.enabled())d.clearDummies();d.close();d.down=down;d.captured=false;return;}d.layout();const hit=d.hit(),inside=hit!=='',focused=document.activeElement===d.input;
   const wasDialog=!!d.confirming;
   if(d.open&&gdjs.evtTools.input.wasKeyJustPressed(scene,'Escape')){if(d.confirming)d.cancelFresh();else d.close();d.captured=true;}
   if(down&&!d.down){d.pressed=hit;d.captured=inside||focused;if(d.input&&hit!=='panel')d.input.blur();}
@@ -107,7 +140,7 @@ if(!scene.__devCheats&&sv.get('DEV_CHEATS_ENABLED').getAsBoolean()&&game.isPrevi
   if(!down)d.captured=false;d.down=down;d.hover=hit;
  };
  d.after=()=>{
-  if(d.disposed)return;if(!d.enabled()||d.obscured()){d.close();root.visible=false;return;}root.visible=true;const action=d.pending;d.pending='';if(action==='fresh')d.askFresh();else if(action==='cancelReset')d.cancelFresh();else if(action==='confirmReset'){d.freshStart();if(d.resetting)return;}else if(!d.confirming){if(action==='toggle')d.toggle();else if(action==='close')d.close();else if(action.startsWith('gold'))d.addGold(action.slice(4));else if(action==='add')d.addGold(d.input?.value);else if(action==='set')d.setGold(d.input?.value);else if(action==='path1'||action==='path2')d.setPath(Number(action.at(-1)));else if(action==='max')d.maxSelected();else if(action==='fusion')d.startFusion();}
+  if(d.disposed)return;if(!d.enabled()||d.obscured()){d.close();root.visible=false;return;}root.visible=true;const action=d.pending;d.pending='';if(action==='fresh')d.askFresh();else if(action==='cancelReset')d.cancelFresh();else if(action==='confirmReset'){d.freshStart();if(d.resetting)return;}else if(!d.confirming){if(action==='toggle')d.toggle();else if(action==='close')d.close();else if(action.startsWith('gold'))d.addGold(action.slice(4));else if(action==='add')d.addGold(d.input?.value);else if(action==='set')d.setGold(d.input?.value);else if(action==='path1'||action==='path2')d.setPath(Number(action.at(-1)));else if(action==='max')d.maxSelected();else if(action==='fusion')d.startFusion();else if(action==='clearDummy')d.clearDummies();else if(['dummy','heavy','pack'].includes(action))d.spawn(action);}
   d.layout();for(const b of d.buttons)d.paint(b,d.hover===b.id,b.id==='path'+d.path);const tm=scene.getTimeManager(),dt=Math.min(.2,Math.max(0,tm.getElapsedTime()/Math.max(.001,tm.getTimeScale())/1000));d.noticeAge=Math.max(0,d.noticeAge-dt);if(d.noticeAge===0){d.notice='Session tools / normal prices apply';d.error=false;}
  };
  d.dispose=()=>{if(d.disposed)return;d.close();d.disposed=true;d.input?.remove();if(d.keyGuard)for(const name of ['keydown','keyup','keypress'])window.removeEventListener(name,d.keyGuard,true);d.body.mask=null;const texts=[];const visit=n=>{if(n instanceof PIXI.Text)texts.push(n);else for(const c of n.children||[])visit(c);};visit(root);for(const text of texts)text.destroy({texture:true,baseTexture:true});root.destroy({children:true,texture:false,baseTexture:false});};

@@ -10,7 +10,7 @@ const intermission=mission?.level.Intermission??3;
 let state = runtimeScene.__waveManager;
 if (!state) state = runtimeScene.__waveManager = { queue: [], index: 0, elapsed: 0, wait: 3 };
 const message = runtimeScene.getObjects("MessageText")[0];
-const idle = !yes("WaveActive") && num("EnemiesToSpawn") === 0 && enemies.length === 0 && state.index >= state.queue.length;
+const idle = !yes("WaveActive") && num("EnemiesToSpawn") === 0 && enemies.every(e=>e.__devDummy===e.getUniqueId()) && state.index >= state.queue.length;
 if (!auto() || !idle) state.wait = intermission;
 else if (num("Wave") > 0 && num("Wave") < num("MaximumWave") && !yes("GameOver")) {
   state.wait = Math.max(0, state.wait - dt);
@@ -20,6 +20,7 @@ if (idle && !auto() && num("Wave") > 0 && !yes("GameOver")) { message.setString(
 sv.get("IntermissionRemaining").setNumber(state.wait);
 const manual = !yes("IndexBlocksInput") && !yes('DevGoldInputFocused') && sv.get("WaveMode").getAsString() === "Waiting" && (yes("PlayWaveRequested") || gdjs.evtTools.input.wasKeyJustPressed(runtimeScene, "Space"));
 if (idle && !yes("GameOver") && num("Lives") > 0 && num("Wave") < num("MaximumWave") && (!mission||mission.canStart(num('Wave')+1)) && (manual || mission?.pendingWave || (auto() && num("Wave") > 0 && state.wait <= 0))) {
+  runtimeScene.__devCheats?.clearDummies();
   if (!auto()) sv.get("WaveMode").setString("Manual");
   const wave = num("Wave") + 1;
   const config=sv.get('NovaWispConfig').toJSObject();

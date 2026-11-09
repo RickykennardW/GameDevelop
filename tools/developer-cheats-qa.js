@@ -37,8 +37,17 @@
  click(F.cancelRect.x+40,F.cancelRect.y+18,'FusionUI');ok(!F.active&&money()===funds&&towers().includes(A)&&towers().includes(B)&&G.__fusionArchive.revision===archiveBefore,'normal Fusion cancellation preserves Gold, identity and archive state');
  V().get('SelectedTower').setNumber(A.getVariables().get('TowerId').getAsNumber());step(2);button('toggle');button('fusion');click(...S.__freePlacement.center(B));click(...S.__freePlacement.center(A));const result=towers()[0];
  ok(towers().length===1&&S.__starCannon.isFusion(result)&&!towers().includes(A)&&!towers().includes(B)&&money()===funds-F.config.FusionCost,'native regional Fusion consumes two real sources, creates Starburst and charges exact recipe cost');
- ok(G.__fusionArchive.revision===archiveBefore+1&&G.__fusionArchive.has('StarburstCannon'),'only successful normal Fusion discovers recipe through existing persistent archive');
+ ok(G.__fusionArchive.revision===archiveBefore+1&&G.__fusionArchive.has('StarburstCannon')&&
+    !JSON.parse(localStorage.getItem(G.__fusionArchive.storageKey)||'{"entries":{}}').entries.StarburstCannon,'Successful DEV Fusion reveals the result in memory and preserves persistent discovery');
  button('toggle');const noUpgrades=money();button('max');ok(money()===noUpgrades&&d.notice.includes('no supported upgrade path')&&towers().length===1,'Starburst cannot receive fabricated Star Cannon path levels');
+ const waveBefore=V().get('Wave').getAsNumber(),lives=V().get('Lives').getAsNumber();
+ button('dummy');button('heavy');button('pack');
+ const dummies=S.getObjects('Enemy').filter(e=>e.__devDummy===e.getUniqueId());
+ ok(dummies.length===11&&dummies.some(e=>e.getBehavior('Health').MaxHealth()===12000)&&
+    dummies.every(e=>!e.getVariables().get('MoveSpeed').getAsNumber()&&!e.getVariables().get('GoldReward').getAsNumber()),'DEV creates one dummy, one high-HP target and nine AoE targets');
+ button('clearDummy');
+ ok(!S.getObjects('Enemy').some(e=>e.__devDummy===e.getUniqueId())&&money()===noUpgrades&&
+    V().get('Wave').getAsNumber()===waveBefore&&V().get('Lives').getAsNumber()===lives,'Clearing fixtures leaves native wave, Lives and Gold untouched');
  for(let i=0;i<10;i++){button('toggle');button('toggle');}ok(d.open&&d.root.children.length===rootChildren&&document.querySelectorAll('[data-celestial-dev-input]').length===1,'repeated open / close reuses UI and one input');
  const savedAfterFusion=storage(),releaseBalance=money(),cachedAdd=d.addGold;V().get('DEV_CHEATS_ENABLED').setBoolean(false);step(2);
  ok(!d.root.visible&&!d.open&&d.input.style.display==='none','runtime disable removes launcher, popup and input');
@@ -48,7 +57,7 @@
  await new Promise(r=>setTimeout(r,500));
  const data=G.getSceneAndExtensionsData(S.getName()).sceneData,flag=data.variables.find(v=>v.name==='DEV_CHEATS_ENABLED');flag.value=false;const previous=d,oldInput=d.input;S=G.getSceneStack().replace('Game Scene');step(4);
  ok(previous.root.destroyed&&previous.disposed&&!oldInput.isConnected&&!document.querySelector('[data-celestial-dev-input]'),'real scene unload removes UI, text textures, DOM input and listeners');
- ok(!S.__devCheats&&money()===50000&&towers().length===0,'release-disabled scene initializes with no developer controller / no money grant');
+ ok(!S.__devCheats&&money()===50000&&towers().length===0&&!G.__fusionArchive.has('StarburstCannon'),'Release-disabled scene starts clean and drops the prior DEV discovery');
  const releaseStart=money(),releaseTower=build(300,352);ok(money()===releaseStart-300&&!!releaseTower,'ordinary placement remains functional when cheats are disabled');
  await new Promise(r=>setTimeout(r,500));flag.value=true;S=G.getSceneStack().replace('Game Scene');step(4);d=S.__devCheats;button('toggle');d.input.value='';d.input.focus();step(2);
  ok(d.open&&document.activeElement===d.input&&V().get('DevGoldInputFocused').getAsBoolean(),'fresh development scene supports focused custom entry after repeated scene changes');

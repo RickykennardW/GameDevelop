@@ -21,7 +21,7 @@
  const originalScroll=index.collectionScroll;const dr=index.geometry.detail;I.onMouseMove(dr.x+dr.w/2,dr.y+dr.h/2);I.onMouseWheel(-120);step(2);ok(index.scroll>0&&index.collectionScroll===originalScroll,'actual detail wheel scroll independent from collection');index.scroll=index.maxScroll;step(2);
  ok(index.objects.starRule.getY()+index.objects.starRule.getHeight()<=index.geometry.detail.y+index.geometry.detail.h,'final tier/rule reachable at bottom of detail scroll');index.scroll=0;step(2);
  if(globalThis.BALANCE_MODE==='tower')return{checks,viewport:[G.getGameResolutionWidth(),G.getGameResolutionHeight()],layout:index.geometry};
- tab('Fusion');ok(index.cards.length===1&&index.detail.locked&&index.detail.name.getString()==='???','undiscovered Fusion detail remains sealed');
+ tab('Fusion');ok(index.entries.length===6&&index.cards.every(card=>card.locked)&&index.detail.locked&&index.detail.name.getString()==='???','Starburst and five Fusion art previews remain sealed');
  ok(index.detail.sprite.getAnimationName()==='StarburstCannon_IndexPortrait'&&index.detail.sprite.getColor()==='0;0;0','Fusion silhouette is actual new 3/4 portrait');
  ok(!index.statValues.length&&index.objects.fusionRecipe0.getString()==='Combination locked'&&index.detail.description.getString().includes('CRYPTIC HINT'),'locked recipe/skills/stats remain hidden while hint visible');checkArt();
  ok(JSON.stringify([...archive.found])===JSON.stringify(found),'opening and selecting Index never unlocks discovery');

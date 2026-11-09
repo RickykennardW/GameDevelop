@@ -8,14 +8,17 @@ if(!archive?.persistent){
  archive=game.__fusionArchive={persistent:true,storageKey:key,state,storageOK,catalog,found:new Set(),revision:0,queue:[],active:null,stats:{unlockedVariants:0,shown:0,completed:0,sounds:0,writes:0}};
  const a=archive;
  a.definition=id=>a.catalog.find(d=>d.Id===id);
- a.recipeKey=parts=>parts.map(p=>{
+ a.sourceKey=p=>{
   if(p?.getVariables){const v=p.getVariables();return(v.get('TowerType').getAsString()==='StarburstCannon'?'StarburstCannon':p.getName())+':'+v.get('Path1Level').getAsNumber()+'-'+v.get('Path2Level').getAsNumber();}
   return p.Type+':'+p.Path1+'-'+p.Path2;
- }).sort().join('|');
+ };
+ a.recipeKey=parts=>parts.map(a.sourceKey).sort().join('|');
+ a.isSource=t=>a.sourceKeys.has(a.sourceKey(t));
  a.resolve=parts=>{const k=a.recipeKey(parts);for(const d of a.catalog)for(const v of d.Variants||[])if(a.recipeKey(v.Recipe)===k)return{id:d.Id,variant:v.Id};return null;};
  a.record=id=>{let r=a.state.entries[id];if(!r||typeof r!=='object'||Array.isArray(r)){r={discovered:r===true,variants:{}};a.state.entries[id]=r;}if(!r.variants||typeof r.variants!=='object'||Array.isArray(r.variants))r.variants={};return r;};
- a.has=id=>a.found.has(id);
- a.hasVariant=(id,variant)=>a.state.entries[id]?.variants?.[variant]===true;
+ a.has=id=>a.found.has(id)||!!a.test?.entries.has(id);
+ a.hasVariant=(id,variant)=>a.state.entries[id]?.variants?.[variant]===true||!!a.test?.entries.get(id)?.has(variant);
+ a.beginTest=owner=>{if(a.test?.owner!==owner)a.test={owner,entries:new Map()};};
  a.progress=id=>{const d=a.definition(id),variants=d?.Variants||[];return{found:variants.filter(v=>a.hasVariant(id,v.Id)).length,total:variants.length};};
  a.save=()=>{try{localStorage.setItem(key,JSON.stringify(a.state));a.storageOK=true;a.stats.writes++;return true;}catch(e){a.storageOK=false;return false;}};
  const legacy=[...oldFound,...(Array.isArray(state.found)?state.found:[])];
@@ -29,9 +32,17 @@ if(!archive?.persistent){
  }
  a.discover=(id,variant)=>{
   const d=a.definition(id);if(!d)return false;
-  variant=variant||(d.Kind==='Pure'&&d.Variants.length===1?d.Variants[0].Id:'');
+  variant=variant||(!d.AdaptiveVariants&&d.Variants.length===1?d.Variants[0].Id:'');
   if(!d.Variants.some(v=>v.Id===variant)||a.hasVariant(id,variant))return false;
-  const first=!a.has(id),r=a.record(id);r.discovered=true;r.variants[variant]=true;a.found.add(id);a.revision++;a.stats.unlockedVariants++;a.save();a.queue.push({id,variant,first});scene.__discoveryToast?.enqueue('fusion',a.queue.at(-1));return true;
+  const first=!a.has(id);
+  if(a.test){
+   if(!a.test.entries.has(id))a.test.entries.set(id,new Set());
+   a.test.entries.get(id).add(variant);
+  }else{
+   const r=a.record(id);r.discovered=true;r.variants[variant]=true;a.found.add(id);a.save();
+  }
+  a.revision++;a.stats.unlockedVariants++;
+  const event={id,variant,first};a.queue.push(event);a.scene?.__discoveryToast?.enqueue('fusion',event);return true;
  };
  a.discoverRecipe=parts=>{const r=a.resolve(parts);return r?{...r,unlocked:a.discover(r.id,r.variant)}:null;};
  if(saveNeeded)a.save();
@@ -39,7 +50,8 @@ if(!archive?.persistent){
 let view=scene.__fusionDiscovery;
 if(!view){
  // Refresh definitions on scene reload; records and queue remain one shared source.
- archive.catalog=catalog;
+ archive.catalog=catalog;archive.scene=scene;
+ archive.sourceKeys=new Set(catalog.flatMap(d=>d.Variants.flatMap(v=>v.Recipe.map(archive.sourceKey))));
  view=scene.__fusionDiscovery={archive,disposed:false};
  const layer=scene.getLayer('DiscoveryUI'),shared=scene.__discoveryToast;
  const visual=shared.create(204);Object.assign(view,visual);const {root,mask}=visual;
@@ -58,6 +70,10 @@ if(!view){
   layer.setCameraZoom(1);layer.setCameraX(game.getGameResolutionWidth()/2);layer.setCameraY(game.getGameResolutionHeight()/2);
   shared.paint(view,active.age);
  };
- view.dispose=()=>{if(view.disposed)return;view.disposed=true;root.mask=null;root.destroy({children:true,texture:false,baseTexture:false});mask.destroy();};
+ view.dispose=()=>{
+  if(view.disposed)return;view.disposed=true;root.mask=null;root.destroy({children:true,texture:false,baseTexture:false});mask.destroy();
+  if(archive.scene===scene){archive.scene=null;archive.queue.length=0;archive.active=null;}
+  if(archive.test?.owner===scene)archive.test=null;
+ };
  if(!gdjs.__fusionArchiveCallbacks){gdjs.__fusionArchiveCallbacks=true;gdjs.callbacksRuntimeScenePostEvents.push(s=>s.__fusionDiscovery?.update());gdjs.callbacksRuntimeSceneUnloading.push(s=>s.__fusionDiscovery?.dispose());}
 }

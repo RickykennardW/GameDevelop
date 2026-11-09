@@ -1,0 +1,57 @@
+{
+  "baselineCommit": "3593f589003f80cf8aa938d769fcca5f9bc9abff",
+  "deleted": [
+    {
+      "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\tools\\fusion-effects.py",
+      "bytes": 27530
+    },
+    {
+      "path": "C:\\Users\\My ASUS\\OneDrive\\Documents\\GitHub\\GameDevelop\\tools\\fusion-audio.py",
+      "bytes": 11066
+    },
+    {
+      "path": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-472d265e-6007-4a45-a900-b974270d0ed7.png",
+      "bytes": 3105899
+    },
+    {
+      "path": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-ddd3c3cc-bcdf-4c13-b3e3-26e9cefdf500.png",
+      "bytes": 1501263
+    },
+    {
+      "path": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-9af367ce-b4bb-49d7-9ee1-76e6b796f277.png",
+      "bytes": 3577643
+    },
+    {
+      "path": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-33a3356f-7257-4061-9e0d-82d1bb8ea977.png",
+      "bytes": 2582994
+    },
+    {
+      "path": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-85ee5b82-e67c-4b1c-b8a0-9591e6ef27a6.png",
+      "bytes": 2079935
+    },
+    {
+      "path": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-19f50da1-8d3e-487b-91cc-c3d2978adc85.png",
+      "bytes": 1742892
+    },
+    {
+      "path": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-cff0146c-1214-4f3d-8232-4da1556f959c.png",
+      "bytes": 1418365
+    },
+    {
+      "path": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-6c6152d4-9ee5-43b5-ac29-6732df3162f9.png",
+      "bytes": 1696029
+    },
+    {
+      "path": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-994b4391-1251-4891-a77d-649179723282.png",
+      "bytes": 1935786
+    },
+    {
+      "path": "C:\\Users\\My ASUS\\.codex\\generated_images\\01a11249-1cf3-7f03-9834-01083d6fb50c\\exec-fd143f46-150d-42f3-ab21-2078b9abcb70.png",
+      "bytes": 1929367
+    }
+  ],
+  "projectResourceReferencesRemoved": 0,
+  "preexistingProjectAssetsRemoved": 0,
+  "identification": "Exact imagegen output filenames and untracked files authored in the interrupted task",
+  "count": 12
+}

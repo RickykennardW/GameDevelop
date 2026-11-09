@@ -1,17 +1,18 @@
-// Transactional Pure Fusion. Original towers remain alive until valid placement.
-const scene=runtimeScene,sv=scene.getVariables(),game=scene.getGame(),get=n=>scene.getObjects(n),p=scene.__freePlacement,star=scene.__starCannon;
-if(!p||!star)return;
+// Tactical placement is shared by every registered recipe.
+const scene=runtimeScene,sv=scene.getVariables(),game=scene.getGame(),get=n=>scene.getObjects(n),p=scene.__freePlacement,star=scene.__starCannon,ev=scene.__fusionEvolution;
+if(!p||!star||!ev)return;
 let f=scene.__fusion;
 if(!f){
  const config=sv.get('StarburstConfig').toJSObject(),layer=scene.getLayer('FusionUI');
  const archive=game.__fusionArchive;if(!archive?.persistent)return;
- f=scene.__fusion={config,archive,active:false,stage:'idle',objects:{},markers:new Map(),footprints:new Map(),obstacleFootprints:new Map(),wasDown:false,pressed:'',error:'',disposed:false};
+ f=scene.__fusion={config,archive,active:false,stage:'idle',objects:{},markers:new Map(),footprints:new Map(),obstacleFootprints:new Map(),wasDown:false,pressed:'',error:'',errorSeconds:0,disposed:false};
  f.graphics=new PIXI.Graphics();layer.getRenderer().getRendererObject().addChild(f.graphics);f.graphics.zIndex=0;
  // One reusable batch above the dimmer; clip world hints away from all sidebar UI.
  f.worldGraphics=new PIXI.Graphics();f.worldMask=new PIXI.Graphics();f.worldGraphics.zIndex=1;f.worldGraphics.interactive=false;f.worldMask.interactive=false;f.worldGraphics.mask=f.worldMask;layer.getRenderer().getRendererObject().addChild(f.worldMask,f.worldGraphics);
  f.hudGraphics=new PIXI.Graphics();f.hudGraphics.zIndex=5;f.hudGraphics.interactive=false;layer.getRenderer().getRendererObject().addChild(f.hudGraphics);
  f.ensure=(key,name,z=2)=>{if(!f.objects[key]){const o=scene.createObject(name);o.setLayer('FusionUI');o.setZOrder(z);f.objects[key]=o;}return f.objects[key];};
  f.ghost=f.ensure('ghost','StarburstGhost',3);f.ghost.hide();
+ f.ghostMask=new PIXI.filters.ColorMatrixFilter();
  f.hudSlot=height=>{
   const rect=o=>{const l=scene.getLayer(o.getLayer()),a=l.convertInverseCoords(o.getX(),o.getY(),0,[0,0]),b=l.convertInverseCoords(o.getX()+o.getWidth(),o.getY()+o.getHeight(),0,[0,0]);return{x:a[0],y:a[1],w:b[0]-a[0],h:b[1]-a[1]};};
   const box=rect(get('TowerShopBox')[0]),header=rect(get('ShopHeaderPlaque')[0]),footer=rect(get('ShopFooterFrame')[0]),x=box.x+12,w=box.w-24;
@@ -60,15 +61,15 @@ if(!f){
   text('plus','+',cw+6,54,20,22,0xc9b785);
   sidebar.result=null;
   if(placement){
-   const resolved=archive.resolve([f.a,f.b]),definition=resolved&&archive.definition(resolved.id),locked=!definition||!archive.has(definition.Id);
-   sidebar.result={id:definition?.Id||'',name:locked?'???':definition.Name,locked,cost:config.FusionCost};
+   const {definition,cost}=f.preview?.evolution||f.result,locked=!archive.has(definition.Id);
+   sidebar.result={id:definition.Id,name:locked?'???':definition.Name,locked,cost};
    g.lineStyle(1,0x655276,.55).moveTo(0,133).lineTo(w,133);text('evolution','EVOLUTION',0,140,w,10,0xc9b785,true);
    g.beginFill(0x332448,.7).drawRoundedRect(0,158,64,64,9).endFill();if(!image('result',definition?.Id,definition?.Animation,{x:4,y:162,w:56,h:56},locked))text('resultFallback','?',24,174,26,24,0xa698c4);
    text('resultName',sidebar.result.name,74,160,w-74,14,0xeee6ff,true);if(locked)text('resultLock','UNDISCOVERED',74,180,w-74,9,0xa799bb);
-   text('cost',config.FusionCost+' Gold',74,201,w-74,13,0xe3ca8d,true);
+   text('cost',cost+' Gold',74,201,w-74,13,0xe3ca8d,true);
    let status=f.preview&&!f.preview.valid?f.message(f.preview.reason):f.error||'Place near either source tower';
    if(f.preview?.reason==='obstacle'){
-    const radius=p.config('StarCannonTower').Radius,hit=p.blockers.find(c=>Math.hypot(f.preview.x-c.x,f.preview.y-c.y)<=radius+c.r+1e-6);
+    const radius=p.config(f.result.type).Radius,hit=p.blockers.find(c=>Math.hypot(f.preview.x-c.x,f.preview.y-c.y)<=radius+c.r+1e-6);
     const kind=hit?.owner.getVariables().get('Kind').getAsString();status=kind==='Ruin'?'Blocked by Ruins':kind==='Rock'?'Blocked by Rock':kind==='Crystal'?'Blocked by Crystal':f.message('obstacle');
    }
    sidebar.status=status;text('status',status,0,226,w,12,f.preview?.valid?0xafdace:0xeea1b2);
@@ -80,15 +81,24 @@ if(!f){
   f.hudGraphics.lineStyle(1,0xd8ba7d,.95).moveTo(header.x+13,header.y+21).lineTo(header.x+18,header.y+15).lineTo(header.x+23,header.y+21).lineTo(header.x+18,header.y+27).closePath();
   if(sidebar.maxScroll)f.hudGraphics.lineStyle(2,0xb9a0d6,.6).moveTo(x+w+5,y+3).lineTo(x+w+5,y+bodyHeight-3);
  };
- f.eligible=t=>!!t&&get('StarCannonTower').includes(t)&&!star.isFusion(t)&&((t.getVariables().get('Path1Level').getAsNumber()===5&&t.getVariables().get('Path2Level').getAsNumber()===2)||(t.getVariables().get('Path1Level').getAsNumber()===2&&t.getVariables().get('Path2Level').getAsNumber()===5));
- f.pair=(a,b)=>f.eligible(a)&&f.eligible(b)&&a!==b&&a.getVariables().get('Path1Level').getAsNumber()!==b.getVariables().get('Path1Level').getAsNumber();
- f.alive=(t,id)=>!!t&&t.getUniqueId()===id&&get('StarCannonTower').includes(t);
+ f.alive=(t,id)=>!!t&&t.getUniqueId()===id&&get(t.getName()).includes(t);
+ f.eligible=t=>!!t&&p.types.includes(t.getName())&&f.alive(t,t.getUniqueId())&&!ev.type(t)&&archive.isSource(t);
+ f.match=(a,b)=>{
+  if(a===b||!f.eligible(a)||!f.eligible(b))return null;
+  const recipe=archive.resolve([a,b]);if(!recipe)return null;
+  const definition=archive.definition(recipe.id),legacy=recipe.id==='StarburstCannon';
+  const spec=ev.balance.Towers[recipe.id];if(!legacy&&!spec)return null;
+  return{...recipe,definition,type:legacy?'StarCannonTower':recipe.id,cost:legacy?config.FusionCost:spec.FusionCost,legacy};
+ };
+ f.pair=(a,b)=>!!f.match(a,b);
  f.message=reason=>({region:'Outside Fusion Zone',path:'Path blocked',tower:'Occupied',obstacle:'Blocked by obstacle',bounds:'Outside build area','rocky-edge':'Outside build area',gold:'Insufficient Gold',ui:'Move onto the map',pair:'Choose a compatible tower'}[reason]||'Choose a clear spot');
+ f.reject=message=>{f.error=message;f.errorSeconds=ev.rules.FeedbackSeconds;scene.__audio?.play('InvalidAction');return false;};
  f.finish=()=>{
-  f.active=false;f.stage='idle';f.a=null;f.b=null;f.aId=0;f.bId=0;f.preview=null;f.error='';f.pressed='';sv.get('FusionActive').setBoolean(false);
+  f.active=false;f.stage='idle';f.a=null;f.b=null;f.aId=0;f.bId=0;f.preview=null;f.result=null;f.error='';f.pressed='';sv.get('FusionActive').setBoolean(false);
   f.graphics.clear();f.worldGraphics.clear();f.worldMask.clear();f.worldMaskKey='';f.hudGraphics.clear();f.footprints.clear();f.obstacleFootprints.clear();for(const m of f.markers.values())m.destroy();f.markers.clear();Object.values(f.objects).forEach(o=>o.hide());f.bannerRect=null;f.cancelRect=null;layer.show(false);
   sidebar.root.visible=false;sidebar.scroll=0;sidebar.phase='';sidebar.sourceEntries=[];sidebar.result=null;
-  scene.getTimeManager().setTimeScale(f.previousScale||1);f.previousScale=undefined;
+  f.ghost.getRendererObject().filters=null;
+  scene.getTimeManager().setTimeScale(f.previousScale??1);f.previousScale=undefined;
  };
  f.cancel=()=>{if(!f.active)return false;f.finish();scene.__audio?.play('UIClick');return true;};
  f.begin=t=>{
@@ -97,30 +107,57 @@ if(!f){
   sv.get('FusionActive').setBoolean(true);sv.get('SelectedTower').setNumber(0);sv.get('IndexOpen').setBoolean(false);scene.__obstaclePanel?.close();p.stop();
   if(scene.__audio){scene.__audio.ui.open=false;scene.__audio.ui.pressed='';}scene.getTimeManager().setTimeScale(config.FusionTimeScale);scene.__audio?.play('UIClick');return true;
  };
- f.choose=t=>{if(!f.active||f.stage!=='partner'||!f.pair(f.a,t)){f.error=f.message('pair');scene.__audio?.play('InvalidAction');return false;}f.b=t;f.bId=t.getUniqueId();f.stage='placement';f.error='';scene.__audio?.play('TowerSelect');return true;};
+ f.choose=t=>{
+  if(!f.active||f.stage!=='partner')return false;
+  const result=f.match(f.a,t);if(!result)return f.reject(f.message('pair'));
+  f.result=result;f.b=t;f.bId=t.getUniqueId();f.stage='placement';f.error='';scene.__audio?.play('TowerSelect');return true;
+ };
  f.validate=(x,y)=>{
-  if(!f.active||f.stage!=='placement'||!f.alive(f.a,f.aId)||!f.alive(f.b,f.bId)||!f.pair(f.a,f.b))return{valid:false,reason:'pair'};
+  if(!f.active||f.stage!=='placement'||sv.get('GameOver').getAsBoolean()||!f.alive(f.a,f.aId)||!f.alive(f.b,f.bId))return{valid:false,reason:'pair'};
+  const evolution=f.match(f.a,f.b);if(!evolution||evolution.id!==f.result.id)return{valid:false,reason:'pair'};
   if(![f.a,f.b].some(t=>{const c=p.center(t);return Math.hypot(x-c[0],y-c[1])<=config.RegionalRadius;}))return{valid:false,reason:'region'};
   const point=scene.getLayer('').convertInverseCoords(x,y,0,[0,0]);
   if([f.bannerRect,f.cancelRect].some(r=>r&&point[0]>=r.x&&point[0]<r.x+r.w&&point[1]>=r.y&&point[1]<r.y+r.h))return{valid:false,reason:'ui'};
-  return p.validate('StarCannonTower',x,y,{ignoreTowers:new Set([f.a,f.b]),cost:config.FusionCost});
+  return {...p.validate(evolution.type,x,y,{ignoreTowers:new Set([f.a,f.b]),cost:evolution.cost}),evolution};
  };
  f.confirm=(x,y)=>{
-  const valid=f.validate(x,y);if(!valid.valid){f.error=f.message(valid.reason);scene.__audio?.play('InvalidAction');return false;}
-  const a=f.a,b=f.b,t=scene.createObject('StarCannonTower');if(!t){f.error='Unable to create tower';return false;}
-  const v=t.getVariables(),av=a.getVariables(),bv=b.getVariables(),cost=config.FusionCost,investment=av.get('TotalInvestment').getAsNumber()+bv.get('TotalInvestment').getAsNumber()+cost;
-  const id=Math.max(sv.get('NextTowerId').getAsNumber(),...get('StarCannonTower').map(o=>o.getVariables().get('TowerId').getAsNumber()))+1;
-  for(const [name,value]of Object.entries({TowerId:id,PurchasePrice:investment,TotalInvestment:investment,DamageDealt:av.get('DamageDealt').getAsNumber()+bv.get('DamageDealt').getAsNumber(),Path1Level:5,Path2Level:2,FootprintX:x,FootprintY:y,FootprintRadius:p.config('StarCannonTower').Radius,FootprintOffsetX:0,FootprintOffsetY:0,ShotCounter:0}))v.get(name).setNumber(value);
-  v.get('TowerType').setString('StarburstCannon');v.get('TowerName').setString(config.Name);t.setLayer('');
-  try{if(!star.apply(t))throw Error('Invalid fusion stats');}catch(e){t.deleteFromScene();f.error='Fusion could not be completed';return false;}
-  const discovery=archive.resolve([a,b]);
-  sv.get('NextTowerId').setNumber(id);sv.get('Money').sub(cost);a.deleteFromScene();b.deleteFromScene();if(discovery)archive.discover(discovery.id,discovery.variant);
-  f.finish();sv.get('SelectedTower').setNumber(id);scene.__audio?.play('TowerMajorUpgrade');return t;
+  if(f.confirming||!f.active)return false;
+  p.refresh();
+  const valid=f.validate(x,y);if(!valid.valid)return f.reject(f.message(valid.reason));
+  const recipe=valid.evolution,{cost,type,legacy,definition}=recipe,a=f.a,b=f.b;
+  const sources=[p.center(a),p.center(b)];
+  f.confirming=true;
+  try{
+   // Prepare the result while the two sources and their Gold are still intact.
+   const t=scene.createObject(type);if(!t)return f.reject('Unable to create tower');
+   const v=t.getVariables(),av=a.getVariables(),bv=b.getVariables();
+   const investment=av.get('TotalInvestment').getAsNumber()+bv.get('TotalInvestment').getAsNumber()+cost;
+   const id=Math.max(sv.get('NextTowerId').getAsNumber(),...p.towers().map(o=>o.getVariables().get('TowerId').getAsNumber()))+1;
+   const numbers={TowerId:id,PurchasePrice:investment,TotalInvestment:investment,DamageDealt:av.get('DamageDealt').getAsNumber()+bv.get('DamageDealt').getAsNumber(),EvolutionTier:1,
+                  FootprintX:x,FootprintY:y,FootprintRadius:valid.radius,FootprintOffsetX:0,FootprintOffsetY:0,ShotCounter:0};
+   if(legacy)Object.assign(numbers,{Path1Level:5,Path2Level:2});
+   for(const [name,value]of Object.entries(numbers))v.get(name).setNumber(value);
+   v.get('TowerType').setString(recipe.id);v.get('TowerName').setString(definition.Name);t.setLayer('');t.setZOrder(2);
+   try{if(!(legacy?star.apply(t):ev.apply(t,1)))throw Error('Fusion initialization failed');}
+   catch(e){t.deleteFromScene();return f.reject('Fusion could not be completed');}
+   sv.get('NextTowerId').setNumber(id);sv.get('Money').sub(cost);a.deleteFromScene();b.deleteFromScene();
+   f.finish();sv.get('SelectedTower').setNumber(id);
+   archive.discover(recipe.id,recipe.variant);
+   ev.materialize(recipe.id,sources,t,definition.Kind==='Pure');
+   return t;
+  }finally{f.confirming=false;}
  };
  f.render=()=>{
   const w=game.getGameResolutionWidth(),h=game.getGameResolutionHeight();layer.setCameraZoom(1);layer.setCameraX(w/2);layer.setCameraY(h/2);layer.show(f.active);if(!f.active)return;
   const g=f.worldGraphics,map=scene.getLayer(''),zoom=map.getCameraZoom(),screen=t=>map.convertInverseCoords(...p.center(t),0,[0,0]),area=scene.__towerShopUI.gameArea;
-  f.graphics.clear().beginFill(0x09051b,config.OverlayOpacity).drawRect(area.left,area.top,area.right-area.left,area.bottom-area.top).endFill();g.clear();
+  const towers=p.towers();
+  const shade=f.graphics.clear().beginFill(0x09051b,config.OverlayOpacity).drawRect(area.left,area.top,area.right-area.left,area.bottom-area.top);
+  for(const t of towers){
+   if(f.stage==='partner'?!f.eligible(t):t!==f.a&&t!==f.b)continue;
+   const [x,y]=screen(t),r=Math.min((p.radius(t)+5)*zoom,x-area.left,area.right-x,y-area.top,area.bottom-y)-1;
+   if(r>0)shade.beginHole().drawCircle(x,y,r).endHole();
+  }
+  shade.endFill();g.clear();
   const maskKey=[area.left,area.top,area.right,area.bottom].join(':');if(f.worldMaskKey!==maskKey){f.worldMask.clear().beginFill(0xffffff).drawRect(area.left,area.top,area.right-area.left,area.bottom-area.top).endFill();f.worldMaskKey=maskKey;}
   const markerIds=new Set(),footprintIds=new Set(),obstacleIds=new Set();
   if(f.stage==='placement')for(const collider of p.blockers){
@@ -131,8 +168,8 @@ if(!f){
    const record=f.obstacleFootprints.get(id)||{};Object.assign(record,{id,owner,shape:'circle',x,y,r,screenX:point[0],screenY:point[1],screenRadius:radius,color});f.obstacleFootprints.set(id,record);obstacleIds.add(id);
   }
   for(const id of f.obstacleFootprints.keys())if(!obstacleIds.has(id))f.obstacleFootprints.delete(id);
-  for(const t of p.towers()){
-   const v=t.getVariables(),max=Math.max(v.get('Path1Level').getAsNumber(),v.get('Path2Level').getAsNumber())===5&&!star.isFusion(t);
+  for(const t of towers){
+   const max=f.eligible(t);
    const id=t.getUniqueId(),[x,y]=screen(t),valid=f.pair(f.a,t),selected=t===f.a||t===f.b;
    if(f.stage==='placement'){
     const radius=p.radius(t),color=selected?0x9de8f0:0xf49ab1;
@@ -148,16 +185,26 @@ if(!f){
   if(f.stage==='placement'){
    for(const t of [f.a,f.b]){const [x,y]=screen(t);g.lineStyle(2,0xbfa0ff,.5).beginFill(0x9470d0,.07).drawCircle(x,y,config.RegionalRadius*zoom).endFill();}
    const [x,y]=p.cursor(),result=f.validate(x,y),point=map.convertInverseCoords(x,y,0,[0,0]);if(f.preview&&(f.preview.x!==x||f.preview.y!==y))f.error='';f.preview={x,y,...result};
-   const size=88*zoom;f.ghost.setWidth(size);f.ghost.setHeight(size);f.ghost.setPosition(point[0]-size/2,point[1]-size/2);f.ghost.setOpacity(185);f.ghost.setColor(result.valid?'180;255;230':'255;80;105');f.ghost.hide(false);
-   g.lineStyle(2,result.valid?0x9aedd5:0xff5b79,.95).drawCircle(...point,p.config('StarCannonTower').Radius*zoom);
+   const id=f.result.id,style=ev.art.towers[id],size=(style?style.tiers[0].pivot[0]*2*style.scale:88)*zoom;
+   const animation=style?id:'Preview';if(f.ghost.getAnimationName()!==animation)f.ghost.setAnimationName(animation);
+   f.ghost.setWidth(size);f.ghost.setHeight(size);f.ghost.setPosition(point[0]-size/2,point[1]-size/2);f.ghost.setOpacity(185);f.ghost.setColor(result.valid?'180;255;230':'255;80;105');f.ghost.hide(false);
+   const ghost=f.ghost.getRendererObject(),locked=!archive.has(id),rgb=result.valid?[.49,.94,.78]:[1,.33,.48];
+   if(locked){f.ghostMask.matrix=[0,0,0,0,rgb[0],0,0,0,0,rgb[1],0,0,0,0,rgb[2],0,0,0,1,0];if(!ghost.filters)ghost.filters=[f.ghostMask];}else if(ghost.filters)ghost.filters=null;
+   g.lineStyle(2,result.valid?0x9aedd5:0xff5b79,.95).drawCircle(...point,p.config(f.result.type).Radius*zoom);
   }
   f.renderSidebar();
  };
- f.dispose=()=>{if(f.disposed)return;if(f.active)f.finish();for(const o of Object.values(f.objects))o.deleteFromScene();f.objects={};f.worldGraphics.mask=null;f.worldGraphics.destroy();f.worldMask.destroy();sidebar.root.mask=null;sidebar.root.destroy({children:true,texture:false,baseTexture:false});sidebar.mask.destroy();sidebar.texts.clear();sidebar.portraits.clear();f.hudGraphics.destroy();f.graphics.destroy();f.disposed=true;};
+ f.dispose=()=>{
+  if(f.disposed)return;if(f.active)f.finish();for(const o of Object.values(f.objects))o.deleteFromScene();f.objects={};f.ghostMask.destroy();
+  f.worldGraphics.mask=null;f.worldGraphics.destroy();f.worldMask.destroy();sidebar.root.mask=null;
+  for(const text of sidebar.texts.values())text.destroy({texture:true,baseTexture:true});
+  sidebar.root.destroy({children:true,texture:false,baseTexture:false});sidebar.mask.destroy();sidebar.texts.clear();sidebar.portraits.clear();f.hudGraphics.destroy();f.graphics.destroy();f.disposed=true;
+ };
  if(!gdjs.__starburstFusionCallbacks){gdjs.__starburstFusionCallbacks=true;gdjs.callbacksRuntimeSceneUnloading.push(s=>s.__fusion?.dispose());}
 }
 const input=game.getInputManager(),down=input.isMouseButtonPressed(0);
 if(f.active){
+ if(f.error){const tm=scene.getTimeManager();f.errorSeconds-=tm.getElapsedTime()/Math.max(.001,tm.getTimeScale())/1000;if(f.errorSeconds<=0)f.error='';}
  if(!f.alive(f.a,f.aId)||!f.eligible(f.a)||(f.b&&(!f.alive(f.b,f.bId)||!f.pair(f.a,f.b)))||sv.get('GameOver').getAsBoolean())f.cancel();
  else if(gdjs.evtTools.input.wasKeyJustPressed(scene,'Escape'))f.cancel();
  else{

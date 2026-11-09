@@ -86,7 +86,7 @@ if(!a){
  a.flowState=()=>{
   if(sv.get('GameOver').getAsBoolean())return sv.get('Lives').getAsNumber()>0&&sv.get('Wave').getAsNumber()>=sv.get('MaximumWave').getAsNumber()?'VICTORY':'GAME_OVER';
   if(sv.get('WaveActive').getAsBoolean())return sv.get('WaveIsMilestone').getAsBoolean()?'MILESTONE_COMBAT':'NORMAL_COMBAT';
-  return sv.get('Wave').getAsNumber()===0&&!a.preparation&&!scene.__freePlacement?.active&&!scene.getObjects('StarCannonTower').length?'MENU':'PREPARATION';
+  return sv.get('Wave').getAsNumber()===0&&!a.preparation&&!scene.__freePlacement?.active&&!scene.__freePlacement?.towers().length?'MENU':'PREPARATION';
  };
  a.hook=(object,name,around)=>{if(!object||!object[name]||object[name].__audioObserver)return;const original=object[name];const wrapped=function(...args){return around(original,this,args);};wrapped.__audioObserver=true;object[name]=wrapped;a.hooks.push({object,name,original,wrapped});};
  a.attachEnemy=e=>{const id=e.getUniqueId();if(e.__audioOwner===a&&e.__audioEnemyId===id)return;e.__audioOwner=a;e.__audioEnemyId=id;
@@ -102,7 +102,8 @@ if(!a){
   a.hook(scene.__nebulaBloom,'impact',(fn,obj,args)=>{const result=fn.apply(obj,args);a.play('ProjectileImpact');return result;});
   a.hook(star,'fire',(fn,obj,args)=>{a.firing=(a.firing||0)+1;let result;try{result=fn.apply(obj,args);}finally{a.firing--;}if(result)a.play('StarCannonFire');return result;});
   a.hook(star,'effect',(fn,obj,args)=>{const result=fn.apply(obj,args);if(!a.firing)a.play('ProjectileImpact');return result;});
-  a.hook(star,'deal',(fn,obj,args)=>{const result=fn.apply(obj,args);if(result>0&&!args[1].getBehavior('Health').IsDead())a.play('EnemyHit');return result;});
+  // Area attacks supply their own impact cue. Poison ticks stay silent.
+  a.hook(star,'deal',(fn,obj,args)=>{const result=fn.apply(obj,args);if(!args[3]&&result>0&&!args[1].getBehavior('Health').IsDead())a.play('EnemyHit');return result;});
   a.hook(scene.__novaWisp,'death',(fn,obj,args)=>{const result=fn.apply(obj,args);a.noteDeath(args[0]);return result;});
   for(const [obj,stateKey]of [[scene.__voidHound,'__houndState'],[scene.__voidCommon,'__voidCommonState'],[g,'__golemState']])a.hook(obj,'beginDeath',(fn,owner,args)=>{const before=args[0][stateKey]?.dying,result=fn.apply(owner,args);if(!before&&args[0][stateKey]?.dying)a.noteDeath(args[0]);return result;});
   a.hook(g,'beforeMove',(fn,obj,args)=>{const before=args[0].__golemState?.castCount||0,result=fn.apply(obj,args);if((args[0].__golemState?.castCount||0)>before){a.stats.casts++;a.play('VoidGolemSkillCast',scene.getTimeManager().getTimeScale());}return result;});

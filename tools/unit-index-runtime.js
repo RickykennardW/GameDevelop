@@ -113,9 +113,10 @@ if(selected){
  label('detailType',locked?'UNIDENTIFIED ARCHIVE':e.fusion?e.definition.Kind.toUpperCase()+' FUSION':e.monster?(e.Classification||'COMMON')+' ENEMY':'CELESTIAL ARTILLERY',tx,ty,tw);
  const title=text('detailName',locked?'???':e.name,tx,ty+20,tw,tw<250?24:30,C.white,true,'IndexDetail');
  let yy=ty+20+title.getHeight()+10;
- const desc=locked?(e.fusion?'CRYPTIC HINT\n'+e.definition.Hint:'An unknown presence moves through the Void. Encounter this enemy to reveal its archive.'):(e.fusion?e.definition.Description:e.monster?(e.Role||(e.id==='Basic'?'A wandering cosmic entity.':'Fast Void creature.')):e.type==='NebulaBloomTower'?'A celestial flower mortar that lobs nebula seed pods at a predicted impact point. Specialize in lingering spore poison or heavy area detonation. No Fusion path.':'A single stellar cannon, forged in ivory and gold. Shape its energy through two upgrade paths.');
+ const desc=locked?(e.fusion?'CRYPTIC HINT\n'+e.definition.Hint:'An unknown presence moves through the Void. Encounter this enemy to reveal its archive.'):(e.fusion?e.definition.Description:e.monster?(e.Role||(e.id==='Basic'?'A wandering cosmic entity.':'Fast Void creature.')):e.type==='NebulaBloomTower'?'A celestial flower mortar that lobs nebula seed pods at a predicted impact point. Specialize in lingering spores or heavy area detonation. Maxed builds can take part in Fusion.':'A single stellar cannon, forged in ivory and gold. Shape its energy through two upgrade paths.');
  const description=text('detailDescription',desc,tx,yy,tw,13,C.muted,false,'IndexDetail');yy+=description.getHeight()+18;
- const config=e.fusion?(data.variables.some(v=>v.name===e.definition.StatsConfig)?sv.get(e.definition.StatsConfig).toJSObject():e.definition.Stats||{}):null;
+ const evolution=e.fusion&&scene.__fusionEvolution;
+ const config=e.fusion?(evolution?.stats(e.id)|| (e.definition.StatsConfig?sv.get(e.definition.StatsConfig).toJSObject():e.definition.Stats||{})):null;
  const stats=locked?[]:e.monster?[['HP',e.HP],['ARMOR',e.Armor],['SPEED',e.Speed+' px/s'],['REWARD',e.Reward+' Gold']]:[['DAMAGE',e.fusion?config.Damage:e.damage],['INTERVAL',Number(e.fusion?config.AttackInterval:e.cooldown).toFixed(2)+' s'],['RANGE',(e.fusion?config.AttackRange:e.range)+' px'],[e.fusion?'RATE':'COST',e.fusion?(1/config.AttackInterval).toFixed(2)+' /s':e.price+' Gold']];
  index.statValues=stats;const statsTop=yy,cellW=(tw-10)/2;
  for(const [i,[name,value]]of stats.entries()){
@@ -158,7 +159,16 @@ if(selected){
   section('recipeHeading',locked?'SEALED COMBINATION':'FUSION COMBINATION');const recipe=v=>v.Recipe.map(p=>p.Label||p.Type+' '+p.Path1+'-'+p.Path2).join(' + '),known=e.definition.Variants.filter(v=>archive.hasVariant(e.id,v.Id));
   paragraph('fusionRecipe'+selectedIndex,locked?'Combination locked':e.definition.AdaptiveVariants?'Each adaptive variant is discovered separately.':known.map(recipe).join('\n')||'Combination not yet recorded');
   if(e.definition.AdaptiveVariants){const progress=archive.progress(e.id);section('fusionProgress'+selectedIndex,'ADAPTIVE VARIANTS  /  '+progress.found+' / '+progress.total);e.definition.Variants.forEach((v,n)=>paragraph('fusionVariant'+n+selectedIndex,archive.hasVariant(e.id,v.Id)?v.Name+'\n'+recipe(v):'???  /  UNDISCOVERED'));}
-  else if(!locked)paragraph('fusionIdentity','PURE EVOLUTION  /  One canonical recipe. Source order does not change the result.');
+  else if(!locked&&evolution?.stats(e.id)){
+   section('evolutionHeading','EVOLUTION TIERS');
+   for(let tier=1;tier<=3;tier++){
+    const stats=evolution.stats(e.id,tier),id=portraits[e.id+'_E'+tier]?e.id+'_E'+tier:e.id;
+    portrait('evolutionArt'+tier,{id,locked:false},{x:dx+4,y:sectionY,w:58,h:54},'IndexDetail');
+    text('evolutionName'+tier,'E'+tier+'  /  '+stats.Name,dx+72,sectionY,dw-72,13,C.white,true,'IndexDetail');
+    const detailText=text('evolutionDesc'+tier,stats.Description,dx+72,sectionY+20,dw-72,12,C.muted,false,'IndexDetail');
+    sectionY+=Math.max(66,detailText.getHeight()+30);
+   }
+  }
  }
  index.detailHeight=sectionY+index.scroll-detail.y;index.maxScroll=Math.max(0,index.detailHeight-detail.h+12);scrollBar('IndexUI',detailTrack,index.maxScroll,index.scroll);
 }else{text('emptyArchive','No entries available.',detail.x+20,detail.y+30,detail.w-40,16,C.muted);index.maxScroll=0;}

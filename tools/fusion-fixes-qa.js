@@ -14,17 +14,18 @@
   localStorage.setItem(A.storageKey,JSON.stringify({version:1,metadata:{keep:'legacy'},entries:{StarburstCannon:true,FutureFusion:unknown,FutureHybrid:{discovered:true,variants:{h2:true}}},found:['LegacyUnknownFusion']}));
   return{checks:['seeded valid older discovery records in isolated profile'],audioSettings,expectation:'migration',unknown};
  }
- ok(A.persistent&&A.catalog.length===1&&!A.has('StarburstCannon'),'fresh Fusion archive starts undiscovered');
+ const canonicalCount=6;
+ ok(A.persistent&&A.catalog.length===canonicalCount&&A.catalog.every(entry=>!A.has(entry.Id)),'fresh Fusion archive starts undiscovered with five sealed art previews');
  const open=()=>{V.get('IndexOpen').setBoolean(true);step(3);};
  const close=()=>{V.get('IndexOpen').setBoolean(false);step(3);};
  const tab=name=>{const r=index.tabRects.find(r=>r.name===name);click(r.x+r.w/2,r.y+r.h/2,'IndexUI');ok(index.category===name,'actual '+name+' tab navigates');};
  open();ok(index.categories.join('|')==='Towers|Monsters|Fusion','three primary Index categories');tab('Fusion');
- ok(index.entries.length===1&&index.cards[0].locked&&index.cards[0].name.getString()==='???'&&index.cards[0].status.getString()==='UNDISCOVERED','unknown Fusion listed with hidden name/status');
+ ok(index.entries.length===canonicalCount&&index.cards.every(card=>card.locked&&card.name.getString()==='???'&&card.status.getString()==='UNDISCOVERED'),'unknown Fusion entries listed with hidden names/status');
  const portrait=index.cards[0].sprite,animation=portrait.getAnimationName();
  ok(animation==='StarburstCannon_IndexPortrait'&&portrait.getColor()==='0;0;0','silhouette uses dedicated Fusion showcase portrait with black per-sprite tint');
  ok(index.detail.description.getString().includes('CRYPTIC HINT')&&!index.objects.fusionRecipe0.getString().includes('5-2')&&index.detail.statValues.length===0,'cryptic hint visible; recipe and stats locked');
  if(globalThis.BALANCE_MODE==='unknown')return{checks,status:'undiscovered'};
- tab('Towers');ok(index.entries.length===1&&index.entries[0].type==='StarCannonTower','normal Tower Index unchanged and no Starburst duplicate');
+ tab('Towers');ok(index.entries.map(entry=>entry.type).join(',')==='StarCannonTower,NebulaBloomTower','normal Tower Index unchanged and no Starburst duplicate');
  tab('Monsters');ok(index.entries.length===6&&S.__monsterDiscovery.scope==='session','six Monster entries and session behavior preserved');tab('Fusion');close();
  const make=(a,b,x,y)=>{const t=S.createObject('StarCannonTower'),v=t.getVariables();for(const [key,value]of Object.entries({TowerId:900000+t.getUniqueId(),PurchasePrice:300,TotalInvestment:300,Path1Level:a,Path2Level:b,FootprintX:x,FootprintY:y,FootprintRadius:46}))v.get(key).setNumber(value);step();star.apply(t);t.__starCooldown=100000;return t;};
  const a=make(5,2,300,352),b=make(2,5,900,352),ordinary=make(0,0,420,352),otherMax=make(5,2,1120,800);
@@ -67,7 +68,7 @@
  ok(JSON.parse(localStorage.getItem(A.storageKey)).entries.StarburstCannon.variants.pure_52_25===true,'successful unlock is actually written to persistent storage');
  open();tab('Fusion');ok(!index.cards[0].locked&&index.cards[0].name.getString()==='Starburst Cannon'&&index.cards[0].status.getString()==='DISCOVERED'&&portrait.getColor()==='255;255;255','Index reveals original art/name/status immediately without restart');
  ok(index.objects.fusionRecipe0.getString()==='Star Cannon 5-2 + Star Cannon 2-5'&&index.detail.statValues.some(([label,value])=>label==='DAMAGE'&&value===90),'known canonical recipe and live stats displayed');
- close();open();tab('Towers');tab('Fusion');ok(!index.cards[0].locked&&index.cards.length===1,'close/reopen preserves unlock and no duplicate');close();
+ close();open();tab('Towers');tab('Fusion');ok(!index.cards[0].locked&&index.cards.length===canonicalCount&&index.cards.slice(1).every(card=>card.locked),'close/reopen preserves the Starburst unlock and sealed previews');close();
  // Notifications use real UI time under both 1x/2x and wait while Index/modal is open.
  const frozen=S.createObject('Enemy');frozen.getVariables().get('EnemyType').setString('Basic');S.__novaWisp.ensure(frozen);frozen.getVariables().get('MoveSpeed').setNumber(0);frozen.setPosition(1400,700);V.get('WaveMode').setString('ManualFast');step(2);
  ok(S.getTimeManager().getTimeScale()===2,'notification fixture uses actual2x wave mode');const age=A.active.age;step(30);ok(near(A.active.age-age,.50001),'notification advances half a second during 30 frames at2x');
@@ -81,7 +82,12 @@
  const hybrid={Id:'FutureHybrid',Name:'Future Hybrid',Kind:'Hybrid',Animation:'StarburstCannon',Stats:{Damage:90,AttackRange:227,AttackInterval:.4},Description:'Fixture only',Hint:'Future paths await.',AdaptiveVariants:true,Variants:Array.from({length:4},(_,i)=>({Id:'h'+i,Name:'Variant '+i,Recipe:[{Type:'FutureA',Path1:i,Path2:0,Label:'A'+i},{Type:'FutureB',Path1:0,Path2:i,Label:'B'+i}]}))};
  A.catalog.push(hybrid);ok(A.discover('FutureHybrid','h2')&&!A.discover('FutureHybrid','h2')&&A.progress('FutureHybrid').found===1&&A.progress('FutureHybrid').total===4,'one Hybrid variant unlocks1/4 and cannot repeat');
  ok(!A.hasVariant('FutureHybrid','h0')&&!A.hasVariant('FutureHybrid','h1')&&!A.hasVariant('FutureHybrid','h3'),'three other Adaptive variants stay individually locked');
- open();tab('Fusion');index.select('FutureHybrid');step(2);ok(index.cards.length===2&&index.objects.fusionProgress1.getString().endsWith('1 / 4')&&index.objects.fusionVariant01.getString().includes('UNDISCOVERED')&&index.objects.fusionVariant21.getString().includes('Variant 2'),'generic Fusion Index renders Hybrid progress and hides undiscovered recipes');close();
+ open();tab('Fusion');index.select('FutureHybrid');step(2);
+ const hybridSlot=index.entries.findIndex(entry=>entry.id==='FutureHybrid');
+ ok(index.entries.length===canonicalCount+1&&hybridSlot>=0&&index.detail.id==='FutureHybrid'&&
+    index.objects['fusionProgress'+hybridSlot].getString().endsWith('1 / 4')&&
+    index.objects['fusionVariant0'+hybridSlot].getString().includes('UNDISCOVERED')&&
+    index.objects['fusionVariant2'+hybridSlot].getString().includes('Variant 2'),'generic Fusion Index renders Hybrid progress and hides undiscovered recipes');close();
  A.catalog.pop();A.queue.length=0;A.active=null;A.state.entries.FutureFusion=unknown;A.state.metadata={keep:'current'};A.save();
  ok(localStorage.getItem('celestialVoidFusionUnrelatedCheck')==='preserve'&&JSON.stringify(S.__audio.settings)===JSON.stringify(audioSettings),'unrelated persistent key and audio preferences untouched');
  open();tab('Fusion');

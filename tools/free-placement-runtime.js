@@ -42,9 +42,10 @@ if(!p){
   feedback.remaining=0;if(feedback.root)feedback.root.visible=false;
   get('TileType_Button').forEach(o=>{if(o.hasBehavior('Effect'))o.getBehavior('Effect').enableEffect('Outline',false);});
  };
- p.types=['StarCannonTower','NebulaBloomTower'];
- p.config=type=>p.types.includes(type)?sv.get('TowerFootprints').getChild(type).toJSObject():{};
- p.towers=()=>p.types.flatMap(get);
+ p.types=sv.get('TowerShopCatalog').toJSObject().map(item=>item.Type);
+ p.towerTypes=[...p.types,...Object.keys(sv.get('FusionEvolutionConfig').getChild('Towers').toJSObject())];
+ p.config=type=>p.towerTypes.includes(type)?sv.get('TowerFootprints').getChild(type).toJSObject():{};
+ p.towers=()=>p.towerTypes.flatMap(get);
  p.offsets=type=>{const c=p.config(type);return [(c.AnchorX-.5)*c.Width*c.RenderScale,(c.AnchorY-.5)*c.Height*c.RenderScale];};
  // Persisted world placement center is authoritative; image centers never drive circles.
  p.center=o=>[o.getVariables().get('FootprintX').getAsNumber(),o.getVariables().get('FootprintY').getAsNumber()];
@@ -118,9 +119,8 @@ if(!p){
   if(p.roads.some(poly=>p.polygon(x,y,r,poly)))return {valid:false,reason:'path'};
   if(p.towers().some(o=>{if(options.ignoreTowers?.has(o))return false;const c=p.center(o);return Math.hypot(x-c[0],y-c[1])<p.minimumDistance(type,o)-1e-6;}))return {valid:false,reason:'tower'};
   if(p.blockers.some(o=>Math.hypot(x-o.x,y-o.y)<=r+o.r+1e-6))return {valid:false,reason:'obstacle'};
-  const item=sv.get('TowerShopCatalog').toJSObject().find(i=>i.Type===type);
-  const cost=options.cost??item?.Cost;
-  if(!item)return {valid:false,reason:'type'};
+  const cost=options.cost??sv.get('TowerShopCatalog').toJSObject().find(i=>i.Type===type)?.Cost;
+  if(!Number.isFinite(cost)||cost<0)return {valid:false,reason:'type'};
   const obstaclePanel=scene.__obstaclePanel?.screenRect,panel=scene.__selectedPanel&&scene.__selectedPanel.screenRect,hud=get('HUDPanel')[0],layer=scene.getLayer('UI');
   const a=layer.convertInverseCoords(hud.getX(),hud.getY(),0,[0,0]),b=layer.convertInverseCoords(hud.getX()+hud.getWidth(),hud.getY()+hud.getHeight(),0,[0,0]);
   const rectHit=(a,b,c,d)=>{const nx=Math.max(a,Math.min(a+c,screen[0])),ny=Math.max(b,Math.min(b+d,screen[1]));return Math.hypot(screen[0]-nx,screen[1]-ny)<=sr;};

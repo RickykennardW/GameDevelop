@@ -8,7 +8,8 @@ if(!ui) {
     return ui.objects[key];
   };
 }
-const towers=[...scene.getObjects("StarCannonTower"),...scene.getObjects('NebulaBloomTower')];
+const towers=scene.__freePlacement?.towers()||[];
+const evolution=scene.__fusionEvolution;
 let selected=towers.find(t=>t.getVariables().get("TowerId").getAsNumber()===sv.get("SelectedTower").getAsNumber());
 if(!selected&&sv.get("SelectedTower").getAsNumber()>0)sv.get("SelectedTower").setNumber(0);
 const input=game.getInputManager(),down=input.isMouseButtonPressed(0),modal=sv.get("IndexBlocksInput").getAsBoolean()||sv.get("AudioUIConsumesClick").getAsBoolean()||sv.get('FusionActive').getAsBoolean()||sv.get('CampaignModal').getAsBoolean()||sv.get('CampaignUIConsumesClick').getAsBoolean();
@@ -38,7 +39,9 @@ sv.get("SelectedPanelPointerInside").setBoolean(pointer);
 sv.get("TowerUIConsumesClick").setBoolean(pointer);
 ui.screenRect=selected?{x:sx,y:sy,w:w*scale,h:h*scale}:null;
 const canFuse=scene.__fusion?.eligible(selected)||false;
-const hover=!selected||modal?"":canFuse&&inside(16,584,288,26)?'Fusion':inside(16,h-66,w-32,48)?"Sell":inside(278,12,26,26)?"Close":inside(16,314,140,270)?"Path1":inside(164,314,140,270)?"Path2":pointer?"Panel":"";
+const evolved=!!evolution?.type(selected);
+const hover=!selected||modal?"":canFuse&&inside(16,584,288,26)?'Fusion':inside(16,h-66,w-32,48)?"Sell":inside(278,12,26,26)?"Close":
+ evolved&&evolution.tier(selected)<3&&inside(16,470,288,110)?'Evolve':!evolved&&inside(16,314,140,270)?"Path1":!evolved&&inside(164,314,140,270)?"Path2":pointer?"Panel":"";
 if(down&&!ui.wasDown){ui.pressed=hover;ui.pressedTower=selected?selected.getVariables().get("TowerId").getAsNumber():0;}
 if(!down&&ui.wasDown&&selected&&!modal&&ui.pressed===hover&&ui.pressedTower===selected.getVariables().get("TowerId").getAsNumber()) {
   if(hover==="Sell") {
@@ -46,6 +49,7 @@ if(!down&&ui.wasDown&&selected&&!modal&&ui.pressed===hover&&ui.pressedTower===se
     sv.get("Money").setNumber(sv.get("Money").getAsNumber()+Math.floor(investment*sv.get("SellRefundRate").getAsNumber()+1e-8));
     selected.deleteFromScene();sv.get("SelectedTower").setNumber(0);selected=null;
   } else if(hover==='Fusion'){scene.__fusion?.begin(selected);selected=null;}
+  else if(hover==='Evolve')evolution.upgrade(selected);
   else if(hover==="Close") {sv.get("SelectedTower").setNumber(0);selected=null;}
   else if((hover==="Path1"||hover==="Path2"))(selected.getName()==='NebulaBloomTower'?scene.__nebulaBloom:scene.__starCannon)?.upgrade(selected,hover==="Path1"?1:2);
 }
@@ -53,16 +57,20 @@ if(!down)ui.pressed="";ui.wasDown=down;
 ui.render=()=>{
   Object.values(ui.objects).forEach(o=>o.hide());
   const tower=towers.find(t=>t.getVariables().get("TowerId").getAsNumber()===sv.get("SelectedTower").getAsNumber()&&scene.getObjects(t.getName()).includes(t));
-  positionPanel(tower);layer.show(!!tower);ui.tower=tower;ui.cards=[];
+  positionPanel(tower);layer.show(!!tower);ui.tower=tower;ui.cards=[];ui.fusionButton=null;ui.evolutionCard=null;
   if(!tower){ui.screenRect=null;return;}
-  const v=tower.getVariables(),isStar=true,isNebula=tower.getName()==='NebulaBloomTower',isFusion=scene.__starCannon.isFusion(tower),hasUpgrades=!isFusion,cfg=sv.get(isNebula?'NebulaBloomConfig':'StarCannonConfig').toJSObject();
+  const v=tower.getVariables(),isStar=true,isNebula=tower.getName()==='NebulaBloomTower';
+  const evolutionId=evolution?.type(tower),tier=evolutionId?evolution.tier(tower):0;
+  const hasUpgrades=!evolutionId,cfg=hasUpgrades?sv.get(isNebula?'NebulaBloomConfig':'StarCannonConfig').toJSObject():null;
   const panel=(key,x,y,width,height,color="255;255;255",name="SelectedPanelBackground",z=1)=>{const o=ui.ensure(key,name,z);o.setPosition(x,y);o.setWidth(width);o.setHeight(height);o.setColor(color);o.setOpacity(255);o.hide(false);return o;};
   const text=(key,value,x,y,width,size=13,color="240;230;255",bold=false)=>{const o=ui.ensure(key,"SelectedPanelText",4);o.setPosition(x,y);o.setWrapping(true);o.setWrappingWidth(width);o.setTextAlignment("left");o.setString(String(value));o.setCharacterSize(size);o.setBold(bold);o.setColor(color);o.hide(false);return o;};
   panel("frame",0,0,w,h);
   panel("header",12,10,w-24,42,"255;255;255","SelectedPanelPlaque",2);
   text("title",v.get("TowerName").getAsString().toUpperCase(),22,22,w-66,17,"243;234;255",true);
   text("close","X",286,20,16,14,"194;171;233",true);
-  const preview=ui.ensure("preview","SelectedTowerPreview",3);preview.setAnimationName((isNebula?'NB_':'SC_')+v.get("VisualKey").getAsString());preview.setScale(1);const ratio=preview.getWidth()/Math.max(1,preview.getHeight());preview.setWidth(ratio>=1?84:84*ratio);preview.setHeight(ratio>=1?84/ratio:84);preview.setPosition((w-preview.getWidth())/2,62+(84-preview.getHeight())/2);preview.hide(false);
+  const preview=ui.ensure("preview","SelectedTowerPreview",3);
+  const animation=evolutionId&&evolutionId!=='StarburstCannon'?evolutionId+'_E'+tier:(isNebula?'NB_':'SC_')+v.get("VisualKey").getAsString();
+  preview.setAnimationName(animation);preview.setScale(1);const ratio=preview.getWidth()/Math.max(1,preview.getHeight());preview.setWidth(ratio>=1?84:84*ratio);preview.setHeight(ratio>=1?84/ratio:84);preview.setPosition((w-preview.getWidth())/2,62+(84-preview.getHeight())/2);preview.hide(false);
   if(hasUpgrades)text("build",v.get("Path1Level").getAsNumber()+" - "+v.get("Path2Level").getAsNumber(),138,148,64,12,"163;224;251",true);
   const stats=[["DAMAGE",Number(v.get("Damage").getAsNumber().toFixed(2))],["FIRE INTERVAL",Number(v.get("AttackInterval").getAsNumber()).toFixed(2)+" s"],["ATTACK RANGE",Number(v.get("AttackRange").getAsNumber().toFixed(2))+" px"],["DAMAGE DEALT",Math.round(v.get("DamageDealt").getAsNumber())]];
   stats.forEach(([label,value],i)=>{
@@ -107,9 +115,26 @@ ui.render=()=>{
       text('fusionLabel','FUSION  /  CELESTIAL ASCENSION',35,592,260,11,'207;224;255',true);
     }else{ui.fusionButton=null;text("lockHint","Specialization caps the other path at Lv2.",24,593,272,11,"167;151;195");}
   } else{
-    ui.fusionButton=null;text('fusionIdentity','PURE FUSION / STARBURST',32,302,260,15,'198;223;255',true);
-    text('fusionInfo','Heavy core + rapid release\nThree alternating muzzle positions\nSmall impact splash\nNo further upgrades',32,344,260,14,'204;188;228');
-    text("none","ASCENSION COMPLETE",55,462,240,14,"174;214;239",true);
+    const current=evolution.stats(evolutionId,tier),next=tier<3?evolution.stats(evolutionId,tier+1):null;
+    const kind=game.__fusionArchive.definition(evolutionId).Kind;
+    text('fusionIdentity',kind.toUpperCase()+' FUSION  /  E'+tier,24,276,272,12,'198;223;255',true);
+    text('upgrades','EVOLUTION',24,303,272,14,'160;230;249',true);
+    for(let i=1;i<=3;i++){
+      const x=24+(i-1)*92;
+      panel('tierProgress'+i,x,329,82,27,i<=tier?'190;222;255':'130;110;160','SelectedPanelPlaque',2);
+      const label=text('tierLabel'+i,'E'+i,x,336,82,12,i<=tier?'246;234;255':'175;157;202',true);
+      label.setTextAlignment('center');
+    }
+    text('evolutionName',current.Name,24,376,272,15,'243;234;255',true);
+    text('evolutionAbility',current.Description,24,403,272,13,'204;188;228');
+    if(next){
+      const affordable=sv.get('Money').getAsNumber()>=next.Cost;
+      const background=panel('evolutionPurchase',16,470,288,110,hover==='Evolve'?'205;223;255':'255;255;255','SelectedPanelPlaque',2);
+      text('evolutionNext','E'+(tier+1)+'  /  '+next.Name,27,483,260,13,'235;226;255',true);
+      text('evolutionNextStats',next.Damage+' DMG  /  '+next.AttackInterval.toFixed(2)+' s  /  '+next.AttackRange+' px',27,510,260,11,'184;211;239');
+      text('evolutionCost',next.Cost+' GOLD',27,542,260,14,affordable?'231;220;182':'255;130;164',true);
+      ui.evolutionCard={background,next:tier+1,cost:next.Cost,affordable};
+    }else text('none','ASCENSION COMPLETE',24,491,272,14,'174;214;239',true);
   }
   const investment=v.get("TotalInvestment").getAsNumber()||v.get("PurchasePrice").getAsNumber();
   const sellValue=Math.floor(investment*sv.get("SellRefundRate").getAsNumber()+(isStar?1e-8:0));v.get("SellValue").setNumber(sellValue);

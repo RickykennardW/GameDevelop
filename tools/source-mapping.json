@@ -269,5 +269,19 @@
       0
     ],
     "fresh-start-service.js"
+  ],
+  [
+    0,
+    [
+      9
+    ],
+    "fusion-evolution-runtime.js"
+  ],
+  [
+    0,
+    [
+      10
+    ],
+    "fusion-evolution-combat.js"
   ]
 ]

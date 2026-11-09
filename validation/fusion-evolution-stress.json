@@ -1,0 +1,42 @@
+{
+  "result": {
+    "checks": [
+      "2x sustained battle processes projectiles, impacts and Meteor Rain",
+      "Many poison zones are bounded globally and per tower",
+      "Projectiles, visual effects and scheduled attacks respect their capacity",
+      "Every enemy has at most one live shared poison record",
+      "One rig per owner and a bounded shared frame cache",
+      "Rapid fire shares the existing audio voice cap",
+      "All owners and transient combat records drain after battle",
+      "Actual scene restart disposes every cropped texture and pooled sprite"
+    ],
+    "metrics": {
+      "shots": 709,
+      "impacts": 709,
+      "zones": 301,
+      "collapses": 13,
+      "detonations": 7,
+      "shocks": 12,
+      "chains": 0,
+      "links": 0,
+      "fragments": 56,
+      "rainDrops": 48,
+      "materializations": 0,
+      "upgrades": 0,
+      "peakProjectiles": 17,
+      "peakZones": 19,
+      "peakEffects": 70,
+      "peakScheduled": 32,
+      "visualsDropped": 0
+    },
+    "frames": 679,
+    "pooledSpritesDuringFight": 58,
+    "fixtureEnemies": 48,
+    "fixtureTowers": 11,
+    "simulatedFrames": 720,
+    "headlessElapsedMs": 13784,
+    "headlessMsPerStep": 19.14
+  },
+  "progress": [],
+  "consoleErrors": []
+}

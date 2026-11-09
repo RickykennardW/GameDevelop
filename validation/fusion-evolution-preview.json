@@ -1,0 +1,28 @@
+{
+  "result": {
+    "checks": [
+      "Active Fusion gameplay with the E3 Evolution panel"
+    ],
+    "metrics": {
+      "shots": 17,
+      "impacts": 16,
+      "zones": 7,
+      "collapses": 0,
+      "detonations": 0,
+      "shocks": 1,
+      "chains": 0,
+      "links": 0,
+      "fragments": 0,
+      "rainDrops": 0,
+      "materializations": 0,
+      "upgrades": 0,
+      "peakProjectiles": 4,
+      "peakZones": 5,
+      "peakEffects": 14,
+      "peakScheduled": 2,
+      "visualsDropped": 0
+    }
+  },
+  "progress": [],
+  "consoleErrors": []
+}

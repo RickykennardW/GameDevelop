@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fusion Atelier · Starfall Bastion</title>
+<style>
+:root{color-scheme:dark;--bg:#0b0a18;--panel:#151126;--edge:#413353;--gold:#ecd4a2;--muted:#b4a7cc;--text:#f2edf8;--accent:#bc9cf0}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at 70% 0,#261941 0,transparent 54%),var(--bg);font:15px/1.5 'Segoe UI',sans-serif;color:var(--text)}
+main{max-width:1400px;margin:auto;padding:34px 30px 52px}
+header{display:flex;align-items:end;justify-content:space-between;gap:25px;border-bottom:1px solid var(--edge);padding-bottom:22px;margin-bottom:24px}
+h1,h2,h3,p{margin:0} h1{font:600 clamp(34px,5vw,59px)/1.06 Georgia,serif;color:var(--gold);margin:.22em 0}
+h2{font-size:27px;line-height:1.15} h3{font-size:15px;font-weight:600;margin-bottom:10px}
+.kicker{font-size:11px;letter-spacing:.2em;color:var(--accent);font-weight:700;text-transform:uppercase}
+.muted{color:var(--muted)} a{color:var(--gold);text-underline-offset:3px}
+.lineup{display:grid;grid-template-columns:repeat(5,1fr);gap:9px;margin-bottom:18px}
+button,select{background:#201832;color:var(--text);border:1px solid #574666;border-radius:7px;padding:9px 11px;font:inherit}
+button{cursor:pointer} button:hover,button:focus-visible,select:focus-visible{border-color:var(--gold)}
+button[aria-pressed=true]{color:var(--gold);border-color:#ad8b59;background:#32243b}
+.family{display:flex;align-items:center;text-align:left;gap:8px;font-size:13px;font-weight:600;min-height:66px}
+.family img{width:45px;height:45px;object-fit:contain;flex:none}
+.workbench{display:grid;grid-template-columns:minmax(0,1.9fr) minmax(235px,.85fr);gap:15px}
+.panel{background:var(--panel);border:1px solid var(--edge);border-radius:12px;overflow:hidden}
+.inner{padding:18px}
+.identity{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px}
+.tiers{display:flex;gap:5px}
+.stage{position:relative;background:radial-gradient(ellipse at 45% 36%,#302047,#111023 75%);border-block:1px solid var(--edge)}
+canvas{display:block;width:100%;aspect-ratio:2/1}
+.stage .kicker{position:absolute;left:16px;top:12px;pointer-events:none;color:#c0b1d1}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+label{display:block;color:var(--muted);font-size:12px}
+select,input[type=range]{width:100%;margin-top:4px;accent-color:#cda7f0}
+.bar{display:flex;align-items:center;gap:9px;margin-top:15px;flex-wrap:wrap}
+.bar label{margin-left:auto}
+.portrait{display:block;width:100%;aspect-ratio:1;object-fit:contain;margin:8px 0;background:#111023;border:1px solid var(--edge);border-radius:9px}
+.audio{border-top:1px solid var(--edge);padding-top:14px;margin-top:18px}
+.audio select{margin-bottom:9px}.audio p{min-height:34px;font-size:12px;margin-top:8px}
+footer{color:var(--muted);font-size:12px;margin-top:18px}
+@media(max-width:950px){.lineup{grid-template-columns:repeat(3,1fr)}.family img{width:37px;height:37px}}
+@media(max-width:700px){main{padding:22px 14px}header{align-items:start;flex-direction:column}.workbench{grid-template-columns:1fr}.lineup{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr 1fr}.portrait{max-height:275px}}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <div><p class="kicker">Starfall Bastion / Asset production</p><h1>Fusion Atelier</h1><p class="muted">Inspect the rig, evolution, effects and original cues.</p></div>
+  <a href="../assets/towers/fusion/manifest.json">Open asset manifest</a>
+</header>
+<nav class="lineup" id="lineup" aria-label="Fusion families"></nav>
+<div class="workbench">
+  <section class="panel">
+    <div class="inner identity"><div><p class="kicker" id="category"></p><h2 id="name"></h2><p class="muted" id="evolution"></p></div><div class="tiers" id="tiers" aria-label="Evolution"></div></div>
+    <div class="stage"><p class="kicker">Rig / flight / effect</p><canvas id="stage" width="960" height="480" aria-label="Animated Fusion asset preview"></canvas></div>
+    <div class="inner">
+      <div class="grid">
+        <label>Rig motion<select id="motion"></select></label>
+        <label>Projectile<select id="projectile"></select></label>
+        <label>Effect<select id="effect"></select></label>
+        <label>Heading <span id="heading">0°</span><input id="angle" type="range" min="0" max="360" value="0"></label>
+        <label>Playback<select id="speed"><option value="1">Normal</option><option value=".5">Half speed</option><option value=".25">Quarter speed</option></select></label>
+        <label>Motion detail<div class="muted" id="timing"></div></label>
+      </div>
+      <div class="bar"><button id="replay">Replay clips</button><button id="pause" aria-pressed="false">Pause</button><label><input id="muzzles" type="checkbox"> Show muzzle anchors</label></div>
+    </div>
+  </section>
+  <aside class="panel inner">
+    <p class="kicker">Galactic Archives / Showcase</p>
+    <img class="portrait" id="portrait" alt="Fusion three-quarter portrait">
+    <button id="silhouette" aria-pressed="false">Show silhouette</button>
+    <section class="audio">
+      <h3>Original SFX</h3>
+      <label>Choose cue<select id="audio"></select></label>
+      <button id="listen">Play cue</button>
+      <p id="audioStatus" class="muted" aria-live="polite"></p>
+    </section>
+  </aside>
+</div>
+<footer>Asset bench. The pedestal stays fixed as the head and muzzle anchors rotate. The preview uses authored animation timing and presentation scales.</footer>
+</main>
+<script type="application/json" id="production-data">__FUSION_MANIFEST__</script>
+<script>
+const data = JSON.parse(document.querySelector('#production-data').textContent);
+const records = Object.values(data.towers);
+const assets = data.assets;
+const ui = Object.fromEntries([...document.querySelectorAll('[id]')].map(element=>[element.id,element]));
+const canvas = ui.stage;
+const context = canvas.getContext('2d');
+const images = new Map();
+const player = new Audio();
+const state = {family:0,tier:'E1',heading:0,elapsed:0,playing:true,silhouette:false};
+const tidy = name => name.replace(/([a-z])([A-Z])/g,'$1 $2').replaceAll('_',' ');
+const path = file => '../'+file;
+
+function image(file) {
+ if (!images.has(file)) {
+  const result = new Image();
+  result.src = path(file);
+  images.set(file,result);
+ }
+ return images.get(file);
+}
+function setOptions(select, options) {
+ select.replaceChildren(...options.map(([value,name])=>new Option(name,value)));
+}
+function updatePortrait() {
+ const key = state.silhouette?'silhouette':'portrait';
+ ui.portrait.src=path(records[state.family].tiers[state.tier].index[key]);
+ ui.portrait.alt=records[state.family].name+' '+state.tier+' '+key;
+ ui.silhouette.setAttribute('aria-pressed',String(state.silhouette));
+ ui.silhouette.textContent=state.silhouette?'Show portrait':'Show silhouette';
+}
+function setTier(tier) {
+ state.tier=tier;
+ const family=records[state.family];
+ const details=family.tiers[tier];
+ ui.evolution.textContent=tier+' / '+details.name;
+ ui.tiers.replaceChildren(...Object.keys(family.tiers).map(key=>{
+  const button=document.createElement('button');
+  button.textContent=key;
+  button.setAttribute('aria-pressed',String(key===tier));
+  button.onclick=()=>setTier(key);
+  return button;
+ }));
+ setOptions(ui.motion,Object.keys(assets[details.motionAtlas].clips).map(name=>[name,tidy(name)]));
+ updatePortrait();
+ state.elapsed=0;
+}
+function setFamily(index) {
+ state.family=index;
+ const family=records[index];
+ for (const [i,node] of [...ui.lineup.children].entries()) node.setAttribute('aria-pressed',String(i===index));
+ ui.name.textContent=family.name;
+ ui.category.textContent=family.category+' Fusion';
+ setOptions(ui.projectile,family.projectiles.map(file=>[file,tidy(assets[file].clip.animationName)]));
+ setOptions(ui.effect,[...family.effects,...data.shared.effects].map(file=>[file,tidy(assets[file].clip.animationName)]));
+ setOptions(ui.audio,[...family.audio,...data.shared.audio].map(file=>[file,tidy(assets[file].sfxName)]));
+ player.pause();
+ ui.audioStatus.textContent=assets[ui.audio.value].purpose;
+ setTier('E1');
+}
+for (const [i,family] of records.entries()) {
+ const button=document.createElement('button');
+ const thumb=document.createElement('img');
+ thumb.src=path(family.tiers.E1.index.thumbnail);
+ thumb.alt='';
+ button.className='family';
+ button.append(thumb,document.createTextNode(family.name));
+ button.onclick=()=>setFamily(i);
+ ui.lineup.append(button);
+}
+ui.silhouette.onclick=()=>{state.silhouette=!state.silhouette;updatePortrait();};
+ui.pause.onclick=()=>{
+ state.playing=!state.playing;
+ ui.pause.textContent=state.playing?'Pause':'Play';
+ ui.pause.setAttribute('aria-pressed',String(!state.playing));
+};
+ui.replay.onclick=()=>{state.elapsed=0;};
+for (const name of ['motion','projectile','effect']) ui[name].onchange=()=>{state.elapsed=0;};
+ui.angle.oninput=()=>{
+ state.heading=Number(ui.angle.value)*Math.PI/180;
+ ui.heading.textContent=ui.angle.value+'°';
+};
+ui.audio.onchange=()=>{ui.audioStatus.textContent=assets[ui.audio.value].purpose;};
+ui.listen.onclick=async ()=>{
+ const cue=assets[ui.audio.value];
+ player.src=path(cue.file);
+ player.volume=cue.recommendedGain;
+ try {
+  await player.play();
+  ui.audioStatus.textContent=cue.purpose+' / '+cue.durationSeconds.toFixed(2)+' s';
+ } catch (error) {ui.audioStatus.textContent='Could not play this cue: '+error.message;}
+};
+function frameIndex(clip) {
+ const frame=Math.floor(state.elapsed*clip.fps);
+ return clip.loop?frame%clip.frameCount:Math.min(frame,clip.frameCount-1);
+}
+function draw(file,rect,x,y,scale) {
+ const source=image(file);
+ if (!source.complete || !source.naturalWidth) return;
+ if (!rect) {
+  context.drawImage(source,x-source.width*scale/2,y-source.height*scale/2,source.width*scale,source.height*scale);
+  return;
+ }
+ const [sx,sy,w,h]=rect;
+ context.drawImage(source,sx,sy,w,h,x-w*scale/2,y-h*scale/2,w*scale,h*scale);
+}
+function tile(asset,x,y,width) {
+ const rect=asset.clip.frameRects[frameIndex(asset.clip)];
+ draw(asset.file,rect,x,y,width/rect[2]);
+}
+function scene() {
+ const family=records[state.family];
+ const details=family.tiers[state.tier];
+ const clip=assets[details.motionAtlas].clips[ui.motion.value];
+ const frame=frameIndex(clip);
+ context.clearRect(0,0,960,480);
+ context.strokeStyle='#70608a42';
+ context.lineWidth=1;
+ context.beginPath();
+ context.moveTo(403,47);
+ context.lineTo(403,432);
+ context.moveTo(645,47);
+ context.lineTo(645,432);
+ context.stroke();
+ const center=[196,243];
+ draw(family.accessories.shadow,null,center[0],center[1]+6,1.55);
+ draw(details.parts.base,null,...center,1.55);
+ context.save();
+ context.translate(...center);
+ context.rotate(state.heading);
+ draw(details.motionAtlas,clip.frameRects[frame],0,0,1.55);
+ if (ui.muzzles.checked) {
+  context.fillStyle='#f4d990';
+  context.font='13px Segoe UI';
+  for (const [i,[x,y]] of clip.muzzlePointsByFrame[frame].entries()) {
+   const px=(x-96)*1.55,py=(y-96)*1.55;
+   context.beginPath();
+   context.arc(px,py,4,0,Math.PI*2);
+   context.fill();
+   context.fillText('M'+(i+1),px+7,py-5);
+  }
+ }
+ context.restore();
+ tile(assets[ui.projectile.value],524,239,140);
+ tile(assets[ui.effect.value],804,238,249);
+ context.fillStyle='#c4b2da';
+ context.font='12px Segoe UI';
+ context.textAlign='center';
+ context.fillText('STATIONARY BASE + ROTATING HEAD',196,444);
+ context.fillText('PROJECTILE',524,444);
+ context.fillText('TRANSPARENT VFX',804,444);
+ const detail=clip.frameCount+' frames · '+clip.fps+' FPS';
+ if(ui.timing.textContent!==detail) ui.timing.textContent=detail;
+ if (images.get(details.motionAtlas)?.naturalWidth && images.get(details.parts.base)?.naturalWidth) {
+  document.body.dataset.previewReady='true';
+ }
+}
+let last=performance.now();
+function render(now) {
+ if (state.playing) state.elapsed+=Math.min(.05,(now-last)/1000)*Number(ui.speed.value);
+ last=now;
+ scene();
+ requestAnimationFrame(render);
+}
+setFamily(0);
+requestAnimationFrame(render);
+</script>
+</body>
+</html>

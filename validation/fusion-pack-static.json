@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "checks": 14037,
+  "families": 5,
+  "tiers": 15,
+  "assets": 312,
+  "assetTypes": {
+    "towerPart": 75,
+    "towerPreview": 15,
+    "towerMotionAtlas": 15,
+    "index_portrait": 15,
+    "index_silhouette": 15,
+    "index_thumbnail": 15,
+    "index_icon": 15,
+    "selection": 5,
+    "shadow": 5,
+    "projectileAtlas": 12,
+    "effectAtlas": 72,
+    "audio": 53
+  },
+  "totalBytes": 43381417,
+  "animationClips": 245,
+  "framesChecked": 2172,
+  "audioCount": 53,
+  "audioPeakDbFS": [
+    -8.87,
+    -2.73
+  ],
+  "audioRmsDbFS": [
+    -20.52,
+    -13.08
+  ],
+  "audioDurationSeconds": [
+    0.102,
+    0.81
+  ],
+  "referenceArtRadiusWorldPx": {
+    "VenomCataclysm": {
+      "E1": 52.7,
+      "E2": 52.7,
+      "E3": 52.95
+    },
+    "PlaguebreakerCannon": {
+      "E1": 51.48,
+      "E2": 51.48,
+      "E3": 51.48
+    },
+    "SupernovaObliterator": {
+      "E1": 53.87,
+      "E2": 53.79,
+      "E3": 53.87
+    },
+    "ToxicConstellation": {
+      "E1": 47.53,
+      "E2": 49.5,
+      "E3": 49.5
+    },
+    "MeteorStormArray": {
+      "E1": 50.48,
+      "E2": 50.48,
+      "E3": 50.48
+    }
+  },
+  "registeredIndexResources": 15,
+  "registeredGameplayResources": 187,
+  "baselineCommit": "3593f589003f80cf8aa938d769fcca5f9bc9abff"
+}

@@ -57,6 +57,8 @@ async def main():
         await call('Emulation.setDeviceMetricsOverride', dict(width=vw,height=vh,deviceScaleFactor=1,mobile=False))
         mode=next((a.split('=',1)[1] for a in sys.argv[3:] if a.startswith('--mode=')),None)
         if mode: await js('globalThis.BALANCE_MODE='+json.dumps(mode))
+        if '--workspace-fixture' in sys.argv:
+            await js('globalThis.TEST_WORKSPACE_URI='+json.dumps(ROOT.as_uri()+'/'))
         if '--gesture' in sys.argv:
             await js('globalThis.audioGateBeforeGesture=!!testGame.getSceneStack().getCurrentScene().__audio&&!testGame.getSceneStack().getCurrentScene().__audio.unlocked')
             await call('Input.dispatchMouseEvent',dict(type='mousePressed',x=10,y=10,button='left',clickCount=1))
@@ -75,6 +77,21 @@ async def main():
             if followup:result['followup']=await js(Path(followup).read_text(encoding='utf-8'))
         except Exception as exc:
             Path(sys.argv[2]).write_text(json.dumps(dict(failure=str(exc),progress=progress,consoleErrors=errors),indent=2),encoding='utf-8'); raise
+        if '--minimize-check' in sys.argv:
+            window = await call('Browser.getWindowForTarget')
+            window_id = window['windowId']
+            try:
+                await call('Browser.setWindowBounds', dict(windowId=window_id,bounds={'windowState':'minimized'}))
+                await asyncio.sleep(.2)
+                minimized = await call('Browser.getWindowBounds',dict(windowId=window_id))
+                hidden = await js('document.hidden')
+            finally:
+                await call('Browser.setWindowBounds',dict(windowId=window_id,bounds={'windowState':'normal'}))
+            await asyncio.sleep(.2)
+            restored = await call('Browser.getWindowBounds',dict(windowId=window_id))
+            result['windowMinimize']={'minimized':minimized['bounds']['windowState'],
+                'hidden':hidden,'restored':restored['bounds']['windowState'],
+                'afterRestore':await js(Path(sys.argv[1]).read_text(encoding='utf-8'))}
         if '--dev-keyboard-check' in sys.argv:
             bounds=await js('(()=>{const d=testGame.getSceneStack().getCurrentScene().__devCheats;d.input.blur();const r=d.input.getBoundingClientRect();return{x:r.x+r.width/2,y:r.y+r.height/2};})()')
             await call('Input.dispatchMouseEvent',dict(type='mousePressed',x=bounds['x'],y=bounds['y'],button='left',clickCount=1))

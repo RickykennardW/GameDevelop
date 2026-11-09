@@ -8,7 +8,7 @@ if(!scene.__nebulaBloom){
  nb.stats=(a,b)=>nb.valid(a,b)?{Damage:config.BaseDamage*config.BurstDamage[b],AttackRange:config.BaseRange*config.ToxicRange[a],AttackInterval:config.BaseInterval,ProjectileSpeed:0,BlastRadius:config.BaseRadius*config.BurstRadius[b],SplashRadius:config.BaseRadius*config.BurstRadius[b],PoisonDamage:config.PoisonDamage[a],PoisonDuration:config.PoisonDuration[a],ZoneRadius:config.ZoneRadius[a]*config.BurstRadius[b],ZoneDuration:config.ZoneDuration[a],Path1:a,Path2:b,PodSize:config.PodSize+a+2*b,Pod:b>=3?['BloomDetonationShell','StellarOverbloomShell','NebulaCataclysmShell'][b-3]:a>0?['ToxicPod','VirulentPod','BlightPod','CausticPod','PestilentPod'][a-1]:b>0?['HeavySeedPod','EnlargedBurstPod'][b-1]:'BasePod'}:null;
  nb.texture=(atlas,frame)=>{const key=atlas+':'+frame;if(!nb.textures.has(key)){const a=config.Atlases[atlas],t=game.getImageManager().getPIXITexture(a.Image);nb.textures.set(key,new PIXI.Texture(t.baseTexture,new PIXI.Rectangle(...a.Frames[frame])));}return nb.textures.get(key);};
  nb.alive=e=>!!e&&(nb.liveSet?nb.liveSet.has(e):get('Enemy').includes(e))&&!e.getBehavior('Health').IsDead()&&!e.getVariables().get('PathFinished').getAsBoolean();
- nb.owner=r=>r.owner&&r.owner.getUniqueId()===r.ownerId&&get('NebulaBloomTower').includes(r.owner)?r.owner:null;
+ nb.owner=r=>r.owner&&r.owner.getUniqueId()===r.ownerId&&get(r.owner.getName()).includes(r.owner)?r.owner:null;
  nb.apply=tower=>{
   if(!get('NebulaBloomTower').includes(tower))return false;const v=tower.getVariables(),a=v.get('Path1Level').getAsNumber(),b=v.get('Path2Level').getAsNumber(),s=nb.stats(a,b);if(!s)return false;
   for(const [key,val]of Object.entries(s))if(typeof val==='number')v.get(key).setNumber(val);v.get('CurrentDamage').setNumber(s.Damage);v.get('CurrentRange').setNumber(s.AttackRange);v.get('CurrentAttackInterval').setNumber(s.AttackInterval);v.get('CurrentProjectileSpeed').setNumber(0);v.get('VisualKey').setString(a+'_'+b);tower.setAnimationName(a+'_'+b);tower.setWidth(64);tower.setHeight(64);const [x,y]=scene.__freePlacement.center(tower);tower.setPosition(x-32,y-32);tower.setOpacity(0);return true;
@@ -36,7 +36,8 @@ if(!scene.__nebulaBloom){
  nb.poison=(enemy,snapshot,owner,ownerId)=>{
   if(!snapshot.PoisonDamage||!nb.alive(enemy))return false;const id=enemy.getUniqueId();let r=nb.poisons.get(id);
   if(r&&r.damage>snapshot.PoisonDamage)return false;
-  if(!r){const icon=scene.createObject('NebulaPoisonIcon');r={id,enemy,icon,iconId:icon.getUniqueId(),nextTick:nb.time+config.PoisonTickSeconds,bound:false};r.cleanup=()=>nb.clearPoison(r);enemy.registerDestroyCallback(r.cleanup);nb.poisons.set(id,r);nb.metrics.poisonsApplied++;nb.fx('SporeApply',enemy.getCenterXInScene(),enemy.getCenterYInScene(),24,.3,.55);}
+  if(!r){const icon=scene.createObject('NebulaPoisonIcon');r={id,enemy,icon,iconId:icon.getUniqueId(),nextTick:nb.time+config.PoisonTickSeconds,bound:false};r.cleanup=()=>nb.clearPoison(r);enemy.registerDestroyCallback(r.cleanup);nb.poisons.set(id,r);nb.metrics.poisonsApplied++;if(!snapshot.PoisonIcon)nb.fx('SporeApply',enemy.getCenterXInScene(),enemy.getCenterYInScene(),24,.3,.55);}
+  const iconName=snapshot.PoisonIcon||'Poison';if(r.icon.getAnimationName()!==iconName)r.icon.setAnimationName(iconName);
   r.damage=snapshot.PoisonDamage;r.expires=nb.time+snapshot.PoisonDuration;r.owner=owner;r.ownerId=ownerId;
   if(scene.__enemyStatusIcons){scene.__enemyStatusIcons.set(enemy,'NebulaPoison',r.icon,config.StatusIconSize,config.StatusIconOrder);r.bound=true;}return true;
  };
@@ -72,9 +73,10 @@ if(!scene.__nebulaBloom){
    if(nb.time>=z.expires){nb.removeObject(z.patch,z.patchId);nb.removeObject(z.cloud,z.cloudId);nb.zones.splice(nb.zones.indexOf(z),1);continue;}
    if(nb.time+1e-8>=z.nextPulse){z.nextPulse=nb.time+config.CloudApplyIntervalSeconds;for(const e of enemies)if(nb.alive(e)&&Math.hypot(e.getCenterXInScene()-z.x,e.getCenterYInScene()-z.y)<=z.radius)nb.poison(e,z.stats,z.owner,z.ownerId);}
   }
+  scene.__fusionEvolution?.tick(dt,enemies);
   for(const r of [...nb.poisons.values()]){
    if(r.enemy.getUniqueId()!==r.id||!nb.alive(r.enemy)){nb.clearPoison(r);continue;}
-   while(r.nextTick<=nb.time+1e-8&&r.nextTick<=r.expires+1e-8&&nb.alive(r.enemy)){scene.__starCannon.deal(nb.owner(r),r.enemy,r.damage);nb.metrics.poisonTicks++;r.nextTick+=config.PoisonTickSeconds;}
+   while(r.nextTick<=nb.time+1e-8&&r.nextTick<=r.expires+1e-8&&nb.alive(r.enemy)){scene.__starCannon.deal(nb.owner(r),r.enemy,r.damage,true);nb.metrics.poisonTicks++;r.nextTick+=config.PoisonTickSeconds;}
    if(nb.time>=r.expires||!nb.alive(r.enemy))nb.clearPoison(r);
   }
   for(const r of [...nb.effects]){r.age+=dt;if(r.object.getUniqueId()!==r.id||!get('NebulaBloomVFX').includes(r.object)||r.age>=r.life){nb.removeObject(r.object,r.id);nb.effects.splice(nb.effects.indexOf(r),1);}}nb.liveSet=null;

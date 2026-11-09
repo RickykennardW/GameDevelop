@@ -1,0 +1,75 @@
+{
+  "Rules": {
+    "FireToleranceDegrees": 12,
+    "ContactRadius": 13,
+    "ProjectileLifetime": 2.8,
+    "MaxProjectiles": 256,
+    "MaxEffects": 144,
+    "MaxZones": 40,
+    "MaxScheduled": 240,
+    "FlightCueAt": 0.12,
+    "FireAudioGap": 0.072,
+    "ImpactAudioGap": 0.065,
+    "ChargeAudioGap": 0.18,
+    "MaterializationSeconds": 0.46,
+    "FeedbackSeconds": 1.4,
+    "DevDummyHP": 1200,
+    "DevHeavyHP": 12000,
+    "DevPackCount": 9,
+    "DevPackHP": 700,
+    "DevMaxEnemies": 24
+  },
+  "StarburstTiers": [
+    {"Name": "Starburst Cannon", "Description": "Three alternating muzzles fire stellar bolts with a small splash."},
+    {"Name": "Stellar Resonance", "Cost": 4800, "Damage": 104, "AttackInterval": 0.38, "AttackRange": 238, "Description": "A denser stellar core increases damage, range and firing speed."},
+    {"Name": "Celestial Convergence", "Cost": 8200, "Damage": 121, "AttackInterval": 0.35, "AttackRange": 250, "Description": "Further refines the three-muzzle cycle and its stellar bolts."}
+  ],
+  "Towers": {
+    "VenomCataclysm": {
+      "Kit": "venom", "FusionCost": 1500, "Radius": 64, "SafetyGap": 8,
+      "AimDegreesPerSecond": 290, "ProjectileSpeed": 480, "ArcHeight": 62,
+      "MinFlight": 0.36, "MaxFlight": 0.96, "Windup": 0.32,
+      "Tiers": [
+        {"Cost": 0, "Damage": 155, "AttackInterval": 2.05, "AttackRange": 358, "BlastRadius": 67, "PoisonDamage": 22, "PoisonDuration": 2.0, "ZoneRadius": 62, "ZoneDuration": 3.6, "ZoneLimit": 3, "Description": "Arc a seed into a group, then poison enemies inside its lingering zone."},
+        {"Cost": 4800, "Damage": 174, "AttackInterval": 1.98, "AttackRange": 375, "BlastRadius": 73, "PoisonDamage": 28, "PoisonDuration": 2.3, "ZoneRadius": 78, "ZoneDuration": 4.6, "ZoneLimit": 4, "Description": "The poison zone covers a wider area and lasts longer."},
+        {"Cost": 8300, "Damage": 194, "AttackInterval": 1.92, "AttackRange": 390, "BlastRadius": 78, "PoisonDamage": 34, "PoisonDuration": 2.5, "ZoneRadius": 84, "ZoneDuration": 5.1, "ZoneLimit": 4, "CollapseDamage": 118, "Description": "A zone explodes once when its duration expires naturally."}
+      ]
+    },
+    "PlaguebreakerCannon": {
+      "Kit": "plague", "FusionCost": 1800, "Radius": 56, "SafetyGap": 6,
+      "AimDegreesPerSecond": 330, "ProjectileSpeed": 710, "Windup": 0.23,
+      "Tiers": [
+        {"Cost": 0, "Damage": 148, "AttackInterval": 0.94, "AttackRange": 264, "PoisonDamage": 23, "PoisonDuration": 3.0, "Description": "Targets the highest-HP enemy in range and infuses the hit with poison."},
+        {"Cost": 5000, "Damage": 166, "AttackInterval": 0.90, "AttackRange": 277, "PoisonDamage": 27, "PoisonDuration": 3.3, "PoisonedBonus": 0.18, "Description": "A hit deals 18% bonus damage if its target is already poisoned."},
+        {"Cost": 8600, "Damage": 184, "AttackInterval": 0.86, "AttackRange": 290, "PoisonDamage": 31, "PoisonDuration": 3.6, "PoisonedBonus": 0.18, "DetonateEvery": 4, "DetonationRadius": 58, "DetonationRatio": 0.55, "DetonationPoisonScale": 1, "Description": "Every fourth bolt can consume one active poison to detonate around its target."}
+      ]
+    },
+    "SupernovaObliterator": {
+      "Kit": "supernova", "FusionCost": 2200, "Radius": 64, "SafetyGap": 8,
+      "AimDegreesPerSecond": 260, "ProjectileSpeed": 560, "Windup": 0.56,
+      "Tiers": [
+        {"Cost": 0, "Damage": 215, "AttackInterval": 2.28, "AttackRange": 303, "BlastRadius": 88, "Description": "Charges a stellar shell that hits every enemy in the impact area once."},
+        {"Cost": 5400, "Damage": 243, "AttackInterval": 2.19, "AttackRange": 318, "BlastRadius": 94, "ShockRadius": 118, "ShockDamage": 74, "ShockDelay": 0.23, "Description": "A secondary shockwave reaches enemies missed by the initial blast."},
+        {"Cost": 9300, "Damage": 272, "AttackInterval": 2.10, "AttackRange": 332, "BlastRadius": 100, "ShockRadius": 124, "ShockDamage": 88, "ShockDelay": 0.23, "ChainMax": 2, "ChainCooldown": 7.5, "ChainDelay": 0.32, "ChainReach": 151, "ChainRadius": 64, "ChainDamage": 123, "Description": "Every 7.5s, an impact can chain into up to two nearby groups of fresh targets."}
+      ]
+    },
+    "ToxicConstellation": {
+      "Kit": "toxic", "FusionCost": 1600, "Radius": 54, "SafetyGap": 6,
+      "AimDegreesPerSecond": 430, "ProjectileSpeed": 780, "Windup": 0.12,
+      "Tiers": [
+        {"Cost": 0, "Damage": 33, "AttackInterval": 0.38, "AttackRange": 253, "PoisonDamage": 17, "PoisonDuration": 1.65, "ZoneRadius": 34, "ZoneDuration": 2.25, "ZoneLimit": 2, "Description": "Alternates emitters and leaves up to two small poison zones."},
+        {"Cost": 4700, "Damage": 39, "AttackInterval": 0.35, "AttackRange": 265, "PoisonDamage": 21, "PoisonDuration": 1.8, "ZoneRadius": 39, "ZoneDuration": 2.65, "ZoneLimit": 4, "Description": "Unlocks a third emitter and supports up to four active zones."},
+        {"Cost": 8000, "Damage": 46, "AttackInterval": 0.32, "AttackRange": 277, "PoisonDamage": 25, "PoisonDuration": 2.0, "ZoneRadius": 43, "ZoneDuration": 2.9, "ZoneLimit": 4, "LinkMinDistance": 24, "LinkRange": 128, "LinkBonus": 0.32, "Description": "Pairs nearby zones for 32% stronger poison. Each enemy still takes one poison tick."}
+      ]
+    },
+    "MeteorStormArray": {
+      "Kit": "meteor", "FusionCost": 2000, "Radius": 60, "SafetyGap": 8,
+      "AimDegreesPerSecond": 385, "ProjectileSpeed": 660, "Windup": 0.19, "SalvoSize": 3, "SalvoSpacing": 0.14,
+      "Tiers": [
+        {"Cost": 0, "Damage": 44, "AttackInterval": 1.23, "AttackRange": 287, "BlastRadius": 35, "Description": "Fires a three-meteor salvo. Each meteor splashes a small area."},
+        {"Cost": 5200, "Damage": 50, "AttackInterval": 1.16, "AttackRange": 300, "BlastRadius": 38, "ClusterEvery": 3, "FragmentLimit": 2, "FragmentReach": 119, "FragmentDamage": 30, "FragmentRadius": 25, "Description": "Every third salvo ends with a cluster meteor. It sends up to two fragments to other enemies."},
+        {"Cost": 8900, "Damage": 57, "AttackInterval": 1.09, "AttackRange": 313, "BlastRadius": 41, "ClusterEvery": 3, "FragmentLimit": 2, "FragmentReach": 132, "FragmentDamage": 36, "FragmentRadius": 27, "RainCooldown": 10, "RainCount": 6, "RainSpacing": 0.21, "RainSpread": 72, "RainDamage": 60, "RainRadius": 41, "RainDropHeight": 95, "RainFlight": 0.34, "Description": "Every 10s while attacking, calls a six-meteor shower over the target area."}
+      ]
+    }
+  }
+}

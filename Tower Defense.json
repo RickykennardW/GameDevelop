@@ -4026,6 +4026,1728 @@
         "smoothed": true,
         "userAdded": true,
         "metadata": ""
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/index/e1_portrait.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/index/e1_portrait.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/index/e1_portrait.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/index/e1_portrait.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/index/e1_portrait.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/index/e1_portrait.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/index/e1_portrait.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/index/e1_portrait.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/index/e1_portrait.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/index/e1_portrait.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "file": "assets/towers/fusion/shared/vfx/SourceDissolve.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/shared/vfx/SourceDissolve.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/shared/vfx/EnergyTransfer.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/shared/vfx/EnergyTransfer.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/shared/vfx/CosmicConvergence.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/shared/vfx/CosmicConvergence.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/shared/vfx/FusionCoreFormation.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/shared/vfx/FusionCoreFormation.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/shared/vfx/TowerMaterialization.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/shared/vfx/TowerMaterialization.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/shared/vfx/FinalEnergyPulse.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/shared/vfx/FinalEnergyPulse.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/shared/vfx/PureAscensionAura.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/shared/vfx/PureAscensionAura.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/shared/audio/fusion_complete.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/shared/audio/fusion_complete.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/projectiles/VenomSeedPod.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/projectiles/VenomSeedPod.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/projectiles/CataclysmSeedPod.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/projectiles/CataclysmSeedPod.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/vfx/SeedPodLaunch.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/vfx/SeedPodLaunch.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/vfx/FlowerCorePulse.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/vfx/FlowerCorePulse.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/vfx/VenomSeedImpact.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/vfx/VenomSeedImpact.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/vfx/CataclysmSeedExplosion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/vfx/CataclysmSeedExplosion.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/vfx/PoisonGround.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/vfx/PoisonGround.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/vfx/CosmicPoisonCloud.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/vfx/CosmicPoisonCloud.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/vfx/FloatingSpores.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/vfx/FloatingSpores.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/vfx/PoisonZoneBoundary.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/vfx/PoisonZoneBoundary.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/vfx/PoisonEnergySwirl.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/vfx/PoisonEnergySwirl.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/vfx/PoisonZoneFade.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/vfx/PoisonZoneFade.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/vfx/PoisonStatus.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/vfx/PoisonStatus.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/vfx/ToxicCollapse.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/vfx/ToxicCollapse.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/vfx/SeedExpiration.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/vfx/SeedExpiration.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/vfx/AscendToE2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/vfx/AscendToE2.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/vfx/AscendToE3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/vfx/AscendToE3.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/audio/petal_launch.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/audio/petal_launch.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/audio/seed_release.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/audio/seed_release.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/audio/seed_flight.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/audio/seed_flight.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/audio/venom_seed_impact.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/audio/venom_seed_impact.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/audio/cataclysm_seed_burst.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/audio/cataclysm_seed_burst.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/audio/flower_core_charge.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/audio/flower_core_charge.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/audio/spore_sizzle.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/audio/spore_sizzle.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/audio/toxic_collapse.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/audio/toxic_collapse.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/audio/venom_ascension.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/audio/venom_ascension.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/audio/venom_materialization.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/audio/venom_materialization.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/shadow.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/e1/preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/e1/preview.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/e1/base.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/e1/base.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/e1/motion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/e1/motion.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/index/e2_portrait.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/index/e2_portrait.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/e2/preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/e2/preview.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/e2/base.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/e2/base.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/e2/motion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/e2/motion.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/index/e3_portrait.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/index/e3_portrait.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/e3/preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/e3/preview.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/e3/base.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/e3/base.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/venom_cataclysm/e3/motion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/venom_cataclysm/e3/motion.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/projectiles/PlaguebreakerBolt.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/projectiles/PlaguebreakerBolt.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/projectiles/VenomDetonationShot.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/projectiles/VenomDetonationShot.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/vfx/StellarCharge.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/vfx/StellarCharge.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/vfx/MuzzleFlash.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/vfx/MuzzleFlash.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/vfx/HeavyHitFlash.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/vfx/HeavyHitFlash.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/vfx/SporeInfusion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/vfx/SporeInfusion.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/vfx/PoisonApplication.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/vfx/PoisonApplication.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/vfx/PoisonStatus.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/vfx/PoisonStatus.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/vfx/PoisonIntensity.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/vfx/PoisonIntensity.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/vfx/CorruptedStellarExplosion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/vfx/CorruptedStellarExplosion.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/vfx/VenomDetonation.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/vfx/VenomDetonation.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/vfx/PoisonFragments.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/vfx/PoisonFragments.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/vfx/BoltExpiration.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/vfx/BoltExpiration.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/vfx/AscendToE2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/vfx/AscendToE2.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/vfx/AscendToE3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/vfx/AscendToE3.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/audio/stellar_lance_fire.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/audio/stellar_lance_fire.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/audio/lance_release.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/audio/lance_release.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/audio/plaguebolt_flight.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/audio/plaguebolt_flight.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/audio/poison_hit.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/audio/poison_hit.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/audio/spore_infusion.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/audio/spore_infusion.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/audio/stellar_charge.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/audio/stellar_charge.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/audio/corrupted_stellar_burst.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/audio/corrupted_stellar_burst.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/audio/venom_detonation.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/audio/venom_detonation.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/audio/plague_ascension.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/audio/plague_ascension.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/audio/plague_materialization.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/audio/plague_materialization.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/shadow.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/e1/preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/e1/preview.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/e1/base.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/e1/base.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/e1/motion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/e1/motion.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/index/e2_portrait.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/index/e2_portrait.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/e2/preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/e2/preview.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/e2/base.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/e2/base.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/e2/motion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/e2/motion.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/index/e3_portrait.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/index/e3_portrait.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/e3/preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/e3/preview.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/e3/base.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/e3/base.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/plaguebreaker_cannon/e3/motion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/plaguebreaker_cannon/e3/motion.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/projectiles/CompressedSupernovaCore.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/projectiles/CompressedSupernovaCore.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/projectiles/SupernovaShell.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/projectiles/SupernovaShell.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/vfx/SupernovaCharge.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/vfx/SupernovaCharge.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/vfx/ReactorBloom.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/vfx/ReactorBloom.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/vfx/MuzzleRelease.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/vfx/MuzzleRelease.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/vfx/CoreHit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/vfx/CoreHit.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/vfx/LargeCelestialExplosion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/vfx/LargeCelestialExplosion.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/vfx/PrimaryShockwave.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/vfx/PrimaryShockwave.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/vfx/SecondaryShockwave.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/vfx/SecondaryShockwave.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/vfx/StellarFragments.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/vfx/StellarFragments.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/vfx/CosmicDissipation.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/vfx/CosmicDissipation.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/vfx/SupernovaChainBurst.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/vfx/SupernovaChainBurst.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/vfx/SupernovaChainLink.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/vfx/SupernovaChainLink.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/vfx/AscendToE2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/vfx/AscendToE2.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/vfx/AscendToE3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/vfx/AscendToE3.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/audio/supernova_discharge.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/audio/supernova_discharge.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/audio/stellar_core_release.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/audio/stellar_core_release.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/audio/compressed_core_flight.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/audio/compressed_core_flight.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/audio/core_impact.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/audio/core_impact.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/audio/supernova_explosion.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/audio/supernova_explosion.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/audio/reactor_bloom_charge.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/audio/reactor_bloom_charge.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/audio/secondary_shockwave.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/audio/secondary_shockwave.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/audio/supernova_chain.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/audio/supernova_chain.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/audio/supernova_ascension.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/audio/supernova_ascension.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/audio/supernova_materialization.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/audio/supernova_materialization.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/shadow.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/e1/preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/e1/preview.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/e1/base.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/e1/base.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/e1/motion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/e1/motion.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/index/e2_portrait.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/index/e2_portrait.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/e2/preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/e2/preview.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/e2/base.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/e2/base.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/e2/motion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/e2/motion.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/index/e3_portrait.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/index/e3_portrait.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/e3/preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/e3/preview.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/e3/base.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/e3/base.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/supernova_obliterator/e3/motion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/supernova_obliterator/e3/motion.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/projectiles/ToxicStarShard.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/projectiles/ToxicStarShard.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/projectiles/ConstellationVenomSeed.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/projectiles/ConstellationVenomSeed.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/vfx/RapidSeedLaunch.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/vfx/RapidSeedLaunch.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/vfx/SmallToxicImpact.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/vfx/SmallToxicImpact.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/vfx/MiniPoisonZone.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/vfx/MiniPoisonZone.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/vfx/SporeScatter.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/vfx/SporeScatter.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/vfx/MultiplePoisonZones.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/vfx/MultiplePoisonZones.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/vfx/ConstellationEnergyLine.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/vfx/ConstellationEnergyLine.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/vfx/ToxicNetwork.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/vfx/ToxicNetwork.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/vfx/PoisonZoneFade.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/vfx/PoisonZoneFade.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/vfx/PoisonStatus.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/vfx/PoisonStatus.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/vfx/ShardExpiration.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/vfx/ShardExpiration.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/vfx/AscendToE2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/vfx/AscendToE2.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/vfx/AscendToE3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/vfx/AscendToE3.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/audio/toxic_shard_a.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/audio/toxic_shard_a.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/audio/toxic_shard_b.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/audio/toxic_shard_b.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/audio/light_seed_release.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/audio/light_seed_release.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/audio/constellation_seed_flight.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/audio/constellation_seed_flight.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/audio/small_toxic_impact.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/audio/small_toxic_impact.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/audio/constellation_charge.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/audio/constellation_charge.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/audio/spore_scatter.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/audio/spore_scatter.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/audio/toxic_network.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/audio/toxic_network.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/audio/constellation_ascension.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/audio/constellation_ascension.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/audio/constellation_materialization.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/audio/constellation_materialization.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/shadow.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/e1/preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/e1/preview.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/e1/base.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/e1/base.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/e1/motion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/e1/motion.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/index/e2_portrait.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/index/e2_portrait.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/e2/preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/e2/preview.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/e2/base.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/e2/base.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/e2/motion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/e2/motion.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/index/e3_portrait.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/index/e3_portrait.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/e3/preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/e3/preview.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/e3/base.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/e3/base.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/toxic_constellation/e3/motion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/toxic_constellation/e3/motion.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/projectiles/MeteorFragment.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/projectiles/MeteorFragment.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/projectiles/MeteorFragmentSmall.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/projectiles/MeteorFragmentSmall.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/projectiles/MeteorFragmentLarge.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/projectiles/MeteorFragmentLarge.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/projectiles/ClusterMeteor.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/projectiles/ClusterMeteor.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/vfx/RapidMeteorSeedLaunch.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/vfx/RapidMeteorSeedLaunch.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/vfx/SmallMeteorExplosion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/vfx/SmallMeteorExplosion.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/vfx/CelestialBloomImpact.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/vfx/CelestialBloomImpact.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/vfx/ClusterBurst.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/vfx/ClusterBurst.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/vfx/ClusterSplit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/vfx/ClusterSplit.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/vfx/FragmentImpact.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/vfx/FragmentImpact.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/vfx/SmallShockwaves.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/vfx/SmallShockwaves.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/vfx/MeteorRain.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/vfx/MeteorRain.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/vfx/EmberDissipation.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/vfx/EmberDissipation.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/vfx/MeteorExpiration.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/vfx/MeteorExpiration.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/vfx/AscendToE2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/vfx/AscendToE2.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/vfx/AscendToE3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/vfx/AscendToE3.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/audio/meteor_seed_a.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/audio/meteor_seed_a.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/audio/meteor_seed_b.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/audio/meteor_seed_b.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/audio/meteor_seed_c.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/audio/meteor_seed_c.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/audio/meteor_seed_release.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/audio/meteor_seed_release.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/audio/meteor_flight.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/audio/meteor_flight.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/audio/meteor_fragment_hit.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/audio/meteor_fragment_hit.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/audio/cluster_split.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/audio/cluster_split.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/audio/celestial_bloom_impact.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/audio/celestial_bloom_impact.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/audio/meteor_reactor_charge.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/audio/meteor_reactor_charge.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/audio/meteor_rain_activation.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/audio/meteor_rain_activation.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/audio/meteor_ascension.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/audio/meteor_ascension.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/audio/meteor_materialization.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/audio/meteor_materialization.wav",
+        "userAdded": true,
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/shadow.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/shadow.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/e1/preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/e1/preview.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/e1/base.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/e1/base.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/e1/motion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/e1/motion.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/index/e2_portrait.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/index/e2_portrait.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/e2/preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/e2/preview.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/e2/base.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/e2/base.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/e2/motion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/e2/motion.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/index/e3_portrait.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/index/e3_portrait.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/e3/preview.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/e3/preview.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/e3/base.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/e3/base.png",
+        "userAdded": true,
+        "smoothed": true
+      },
+      {
+        "file": "assets/towers/fusion/meteor_storm_array/e3/motion.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/towers/fusion/meteor_storm_array/e3/motion.png",
+        "userAdded": true,
+        "smoothed": true
       }
     ]
   },

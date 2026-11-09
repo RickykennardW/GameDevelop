@@ -1,0 +1,164 @@
+{
+  "result": {
+    "resizeSequence": [
+      {
+        "checks": [
+          "Actual Toxic Constellation placement mode started",
+          "Resize retains finite camera and sidebar layout",
+          "Resize reuses live ghost, markers and source footprints",
+          "Ghost size recomputes from the reference without stretching",
+          "Sidebar and Cancel stay inside the logical viewport"
+        ],
+        "viewport": [
+          1280,
+          720
+        ],
+        "canvas": [
+          1280,
+          720
+        ],
+        "sidebar": {
+          "x": 1060,
+          "y": 78,
+          "w": 200,
+          "h": 254
+        },
+        "ghost": 68.09846153846154,
+        "zoom": 0.5373931623931624,
+        "hidden": false
+      },
+      {
+        "checks": [
+          "Resize retains finite camera and sidebar layout",
+          "Resize reuses live ghost, markers and source footprints",
+          "Ghost size recomputes from the reference without stretching",
+          "Sidebar and Cancel stay inside the logical viewport"
+        ],
+        "viewport": [
+          960,
+          540
+        ],
+        "canvas": [
+          960,
+          540
+        ],
+        "sidebar": {
+          "x": 740,
+          "y": 78,
+          "w": 200,
+          "h": 254
+        },
+        "ghost": 46.43692307692307,
+        "zoom": 0.36645299145299143,
+        "hidden": false
+      },
+      {
+        "checks": [
+          "Resize retains finite camera and sidebar layout",
+          "Resize reuses live ghost, markers and source footprints",
+          "Ghost size recomputes from the reference without stretching",
+          "Sidebar and Cancel stay inside the logical viewport"
+        ],
+        "viewport": [
+          960,
+          540
+        ],
+        "canvas": [
+          640,
+          360
+        ],
+        "sidebar": {
+          "x": 740,
+          "y": 78,
+          "w": 200,
+          "h": 254
+        },
+        "ghost": 46.43692307692307,
+        "zoom": 0.36645299145299143,
+        "hidden": false
+      },
+      {
+        "checks": [
+          "Resize retains finite camera and sidebar layout",
+          "Resize reuses live ghost, markers and source footprints",
+          "Ghost size recomputes from the reference without stretching",
+          "Sidebar and Cancel stay inside the logical viewport"
+        ],
+        "viewport": [
+          960,
+          540
+        ],
+        "canvas": [
+          1,
+          0.5625
+        ],
+        "sidebar": {
+          "x": 740,
+          "y": 78,
+          "w": 200,
+          "h": 254
+        },
+        "ghost": 46.43692307692307,
+        "zoom": 0.36645299145299143,
+        "hidden": false
+      },
+      {
+        "checks": [
+          "Resize retains finite camera and sidebar layout",
+          "Resize reuses live ghost, markers and source footprints",
+          "Ghost size recomputes from the reference without stretching",
+          "Sidebar and Cancel stay inside the logical viewport"
+        ],
+        "viewport": [
+          1280,
+          720
+        ],
+        "canvas": [
+          1280,
+          720
+        ],
+        "sidebar": {
+          "x": 1060,
+          "y": 78,
+          "w": 200,
+          "h": 254
+        },
+        "ghost": 68.09846153846154,
+        "zoom": 0.5373931623931624,
+        "hidden": false
+      }
+    ],
+    "windowMinimize": {
+      "minimized": "minimized",
+      "hidden": true,
+      "restored": "normal",
+      "afterRestore": {
+        "checks": [
+          "Resize retains finite camera and sidebar layout",
+          "Resize reuses live ghost, markers and source footprints",
+          "Ghost size recomputes from the reference without stretching",
+          "Sidebar and Cancel stay inside the logical viewport"
+        ],
+        "viewport": [
+          1280,
+          720
+        ],
+        "canvas": [
+          1280,
+          720
+        ],
+        "sidebar": {
+          "x": 1060,
+          "y": 78,
+          "w": 200,
+          "h": 254
+        },
+        "ghost": 68.09846153846154,
+        "zoom": 0.5373931623931624,
+        "hidden": false
+      }
+    }
+  },
+  "progress": [],
+  "consoleErrors": []
+}

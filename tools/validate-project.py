@@ -112,8 +112,22 @@ for asset in manifest['assets']:
     ok(name in byname and byname[name]['file']==asset['file'],'Audio identifier/file mapping: '+asset['id'])
     ok(hashlib.sha256((ROOT/asset['file']).read_bytes()).hexdigest()==asset['sha256'],'Audio checksum: '+asset['id'])
 allowed={r['file'] for r in resources}|{'assets/audio/manifest.json'}
+fusion_pack='assets/towers/fusion/manifest.json'
+if (ROOT/fusion_pack).is_file():
+    allowed.add(fusion_pack)
+    for file,asset in read(fusion_pack)['assets'].items():
+        path=(ROOT/file).resolve()
+        ok(file==asset['file'] and path.is_relative_to((ROOT/'assets/towers/fusion').resolve()) and path.is_file(),
+           'Fusion production asset path: '+file)
+        ok(hashlib.sha256(path.read_bytes()).hexdigest()==asset['sha256'],'Fusion production checksum: '+file)
+        if asset['importStatus'] in {'RegisteredIndex','RegisteredGameplay'}:
+            ok(asset['resourceName'] in byname and byname[asset['resourceName']]['file']==file,
+               'Fusion resource resolves: '+file)
+        else:
+            ok(asset['importStatus']=='ReadyToImport' and file not in byname,'Fusion asset staged for later gameplay import: '+file)
+        allowed.add(file)
 actual={f.relative_to(ROOT).as_posix() for f in (ROOT/'assets').rglob('*') if f.is_file()}
-ok(actual==allowed,'Only active resources and the maintained audio manifest remain in assets')
+ok(actual==allowed,'Only active resources and manifest-listed production assets remain in assets')
 for f in ROOT.rglob('*'):
     parts=f.relative_to(ROOT).parts
     if parts and parts[0]=='.git':continue
