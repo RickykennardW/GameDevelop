@@ -32,6 +32,7 @@ if (idle && !yes("GameOver") && num("Lives") > 0 && num("Wave") < num("MaximumWa
   sv.get('WaveEnemyCount').setNumber(generated.queue.length);sv.get('WaveIsMilestone').setBoolean(generated.milestone);
   const pacing=sv.get('WavePacing').toJSObject();
   const interval=mission?mission.level.Waves[wave-1].SpawnInterval:Math.max(pacing.MinimumInterval,config.SpawnInterval-Math.max(0,wave-pacing.SpeedUpAfterWave)*pacing.IntervalReductionPerWave);
+  if(mission)sv.get('WaveCompletionReward').setNumber(mission.level.Waves[wave-1].CompletionGold??0);
   sv.get("Wave").setNumber(wave);sv.get("SpawnInterval").setNumber(interval);
   sv.get("EnemiesToSpawn").setNumber(state.queue.length);sv.get("WaveActive").setBoolean(true);message.hide();
 }

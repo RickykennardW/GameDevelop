@@ -1,12 +1,12 @@
 # Galactic Campaign — Level & Wave Reference
 
-Source of truth: `tools/campaign-config.json`. Register edits with `python tools/build-campaign.py`, then `python tools/embed-free-placement.py`. No tower statistics or recipes are changed by the campaign.
+Source of truth: `tools/campaign-config.json`. Register edits with `python tools/build-campaign.py`, then `python tools/embed-free-placement.py`.
 
-Gold is per run. Kill income below includes the boss reward and its conditional reinforcement group; it is an upper bound if the boss dies before that group is triggered. Wave-completion gifts remain0. No tutorial adds free Gold.
+Gold is per run. Potential kill income includes any named boss and its conditional reinforcements. First Contact has a separate clear bonus for each completed wave.
 
 | Mission | Name | Start Gold | Lives | Waves | Potential kill Gold | Boss |
 | --- | --- | ---: | ---: | ---: | ---: | --- |
-| 1-1 | First Contact | 600 | 20 | 5 | 290 | - |
+| 1-1 | First Contact | 420 | 20 | 15 | 10781 | - |
 | 1-2 | Drifting Signals | 675 | 20 | 5 | 378 | - |
 | 1-3 | Astral Crossing | 750 | 20 | 6 | 569 | - |
 | 1-4 | Frontier Watch | 825 | 20 | 6 | 683 | - |
@@ -36,7 +36,7 @@ Gold is per run. Kill income below includes the boss reward and its conditional 
 
 The edge of known space. Establish your first line of defense.
 
-Opening:2Star Cannons cost600; the guided run places one, then demonstrates an existing160Gold upgrade.
+First Contact opens with enough Gold for one Star Cannon. The first wave funds a damage or fire-rate upgrade.
 
 Boss: **The Rift Devourer**. HP1200, armor5, speed36, kill reward250. Cast start-to-start cooldown14s; the native0.8s stationary cast/release at0.6s and Fortification armor buff are reused.
 
@@ -46,15 +46,27 @@ Temporary percent defense: 0% for0s after release. Surge: ×1 for4s. One half-he
 
 ### 1-1 — First Contact
 
-Starting Gold600; Lives20; intermission5s in Auto mode; 5waves. Victory requires every configured wave cleared with Lives>0, plus the boss killed on boss missions.
+Start with 420 Gold and 20 Lives. Clear all 15 waves to win. Auto mode waits 5 seconds between waves.
 
-| Wave | Regular enemies (type × count) | Interval s | HP × | Speed × | Potential kill Gold | Boss |
-| ---: | --- | ---: | ---: | ---: | ---: | --- |
-| 1 | Basic ×6 | 1.5 | 0.85 | 0.9 | 30 | - |
-| 2 | Basic ×10 | 1.475 | 0.87 | 0.9 | 50 | - |
-| 3 | Basic ×12 | 1.45 | 0.89 | 0.9 | 60 | - |
-| 4 | Basic ×14 | 1.425 | 0.91 | 0.9 | 70 | - |
-| 5 | Basic ×16 | 1.4 | 0.93 | 0.9 | 80 | - |
+Per-kill rewards for this mission are Basic 8g, VoidHound 13g, VoidSentinel 12g, VoidGuard 17g, VoidBrute 23g, VoidGolem 65g.
+
+| Wave | Regular enemies (type × count) | Interval s | HP × | Speed × | Potential kill Gold | Boss | Clear Gold |
+| ---: | --- | ---: | ---: | ---: | ---: | --- | ---: |
+| 1 | Basic ×8 | 1.25 | 1.0 | 0.94 | 64 | - | 15 |
+| 2 | Basic ×12 | 1.1 | 1.08 | 0.98 | 96 | - | 20 |
+| 3 | Basic ×17 | 0.9 | 1.14 | 1.0 | 136 | - | 25 |
+| 4 | Basic ×14, VoidHound ×10 | 0.82 | 1.05 | 1.0 | 242 | - | 30 |
+| 5 | Basic ×13, VoidHound ×9, VoidSentinel ×10 | 0.75 | 1.08 | 1.01 | 341 | - | 35 |
+| 6 | Basic ×10, VoidHound ×8, VoidSentinel ×9, VoidGuard ×10 | 0.7 | 1.1 | 1.03 | 462 | - | 40 |
+| 7 | Basic ×12, VoidHound ×9, VoidSentinel ×10, VoidGuard ×8, VoidBrute ×8 | 0.65 | 1.1 | 1.03 | 653 | - | 45 |
+| 8 | Basic ×11, VoidHound ×17, VoidSentinel ×12, VoidGuard ×7, VoidBrute ×5 | 0.61 | 1.12 | 1.1 | 687 | - | 50 |
+| 9 | Basic ×9, VoidHound ×11, VoidSentinel ×10, VoidGuard ×15, VoidBrute ×12 | 0.58 | 1.14 | 1.06 | 866 | - | 55 |
+| 10 | Basic ×18, VoidHound ×17, VoidSentinel ×13, VoidGuard ×11, VoidBrute ×8 | 0.54 | 1.15 | 1.09 | 892 | - | 60 |
+| 11 | Basic ×8, VoidHound ×18, VoidSentinel ×10, VoidGuard ×15, VoidBrute ×16 | 0.5 | 1.17 | 1.1 | 1041 | - | 65 |
+| 12 | Basic ×10, VoidHound ×15, VoidSentinel ×13, VoidGuard ×16, VoidBrute ×17, VoidGolem ×1 | 0.48 | 1.17 | 1.1 | 1159 | - | 70 |
+| 13 | Basic ×11, VoidHound ×26, VoidSentinel ×16, VoidGuard ×12, VoidBrute ×11 | 0.44 | 1.18 | 1.15 | 1075 | - | 75 |
+| 14 | Basic ×10, VoidHound ×19, VoidSentinel ×17, VoidGuard ×20, VoidBrute ×20, VoidGolem ×1 | 0.43 | 1.21 | 1.12 | 1396 | - | 80 |
+| 15 | Basic ×12, VoidHound ×22, VoidSentinel ×18, VoidGuard ×23, VoidBrute ×24, VoidGolem ×2 | 0.4 | 1.24 | 1.14 | 1671 | - | 90 |
 
 ### 1-2 — Drifting Signals
 

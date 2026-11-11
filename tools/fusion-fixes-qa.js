@@ -19,6 +19,20 @@
  const open=()=>{V.get('IndexOpen').setBoolean(true);step(3);};
  const close=()=>{V.get('IndexOpen').setBoolean(false);step(3);};
  const tab=name=>{const r=index.tabRects.find(r=>r.name===name);click(r.x+r.w/2,r.y+r.h/2,'IndexUI');ok(index.category===name,'actual '+name+' tab navigates');};
+ const verifyAdaptive=()=>{
+  // Extensibility fixture: future Hybrid needs four independent recipe discoveries.
+  const hybrid={Id:'FutureHybrid',Name:'Future Hybrid',Kind:'Hybrid',Animation:'StarburstCannon',Stats:{Damage:90,AttackRange:227,AttackInterval:.4},Description:'Fixture only',Hint:'Future paths await.',AdaptiveVariants:true,Variants:Array.from({length:4},(_,i)=>({Id:'h'+i,Name:'Variant '+i,Recipe:[{Type:'FutureA',Path1:i,Path2:0,Label:'A'+i},{Type:'FutureB',Path1:0,Path2:i,Label:'B'+i}]}))};
+  A.catalog.push(hybrid);ok(A.discover('FutureHybrid','h2')&&!A.discover('FutureHybrid','h2')&&A.progress('FutureHybrid').found===1&&A.progress('FutureHybrid').total===4,'one Hybrid variant unlocks1/4 and cannot repeat');
+  ok(!A.hasVariant('FutureHybrid','h0')&&!A.hasVariant('FutureHybrid','h1')&&!A.hasVariant('FutureHybrid','h3'),'three other Adaptive variants stay individually locked');
+  open();tab('Fusion');index.select('FutureHybrid');step(2);
+  const hybridSlot=index.entries.findIndex(entry=>entry.id==='FutureHybrid');
+  ok(index.entries.length===canonicalCount+1&&hybridSlot>=0&&index.detail.id==='FutureHybrid'&&
+     index.objects['fusionProgress'+hybridSlot].getString().endsWith('1 / 4')&&
+     index.objects['fusionVariant0'+hybridSlot].getString().includes('UNDISCOVERED')&&
+     index.objects['fusionVariant2'+hybridSlot].getString().includes('Variant 2'),'generic Fusion Index renders Hybrid progress and hides undiscovered recipes');close();
+  A.catalog.pop();
+ };
+ if(globalThis.BALANCE_MODE==='adaptive'){verifyAdaptive();return{checks,adaptiveArchiveFixture:true};}
  open();ok(index.categories.join('|')==='Towers|Monsters|Fusion','three primary Index categories');tab('Fusion');
  ok(index.entries.length===canonicalCount&&index.cards.every(card=>card.locked&&card.name.getString()==='???'&&card.status.getString()==='UNDISCOVERED'),'unknown Fusion entries listed with hidden names/status');
  const portrait=index.cards[0].sprite,animation=portrait.getAnimationName();
@@ -78,17 +92,7 @@
  frozen.deleteFromScene();V.get('WaveMode').setString('Waiting');step(260);ok(!A.active&&!A.queue.length&&!N.root.visible&&A.stats.shown===1&&A.stats.completed===1,'compact first discovery completes and cleans visible panel');
  const c=make(2,5,900,352),d=make(5,2,1300,800);F.begin(c);F.choose(d);step(2);const t=F.confirm(900,352);step(3);
  ok(t&&!A.queue.length&&!A.active&&A.stats.shown===1&&A.stats.unlockedVariants===1&&A.stats.writes===writes+1,'second reverse-order Fusion succeeds without duplicate first notification/save');t.__starCooldown=100000;
- // Extensibility fixture: future Hybrid needs four independent recipe discoveries.
- const hybrid={Id:'FutureHybrid',Name:'Future Hybrid',Kind:'Hybrid',Animation:'StarburstCannon',Stats:{Damage:90,AttackRange:227,AttackInterval:.4},Description:'Fixture only',Hint:'Future paths await.',AdaptiveVariants:true,Variants:Array.from({length:4},(_,i)=>({Id:'h'+i,Name:'Variant '+i,Recipe:[{Type:'FutureA',Path1:i,Path2:0,Label:'A'+i},{Type:'FutureB',Path1:0,Path2:i,Label:'B'+i}]}))};
- A.catalog.push(hybrid);ok(A.discover('FutureHybrid','h2')&&!A.discover('FutureHybrid','h2')&&A.progress('FutureHybrid').found===1&&A.progress('FutureHybrid').total===4,'one Hybrid variant unlocks1/4 and cannot repeat');
- ok(!A.hasVariant('FutureHybrid','h0')&&!A.hasVariant('FutureHybrid','h1')&&!A.hasVariant('FutureHybrid','h3'),'three other Adaptive variants stay individually locked');
- open();tab('Fusion');index.select('FutureHybrid');step(2);
- const hybridSlot=index.entries.findIndex(entry=>entry.id==='FutureHybrid');
- ok(index.entries.length===canonicalCount+1&&hybridSlot>=0&&index.detail.id==='FutureHybrid'&&
-    index.objects['fusionProgress'+hybridSlot].getString().endsWith('1 / 4')&&
-    index.objects['fusionVariant0'+hybridSlot].getString().includes('UNDISCOVERED')&&
-    index.objects['fusionVariant2'+hybridSlot].getString().includes('Variant 2'),'generic Fusion Index renders Hybrid progress and hides undiscovered recipes');close();
- A.catalog.pop();A.queue.length=0;A.active=null;A.state.entries.FutureFusion=unknown;A.state.metadata={keep:'current'};A.save();
+ verifyAdaptive();A.queue.length=0;A.active=null;A.state.entries.FutureFusion=unknown;A.state.metadata={keep:'current'};A.save();
  ok(localStorage.getItem('celestialVoidFusionUnrelatedCheck')==='preserve'&&JSON.stringify(S.__audio.settings)===JSON.stringify(audioSettings),'unrelated persistent key and audio preferences untouched');
  open();tab('Fusion');
  return{checks,audioSettings,expectation:'current',unknown,notifications:{firstShown:1,firstCompleted:1},footprints:4,storageKey:A.storageKey,viewport:[G.getGameResolutionWidth(),G.getGameResolutionHeight()]};

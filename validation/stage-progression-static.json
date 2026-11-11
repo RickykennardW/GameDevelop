@@ -1,0 +1,452 @@
+{
+  "passed": true,
+  "mission": "1-1",
+  "previousWaves": 5,
+  "waves": 15,
+  "previousStartingGold": 600,
+  "startingGold": 420,
+  "rewards": {
+    "Basic": {
+      "old": 5,
+      "new": 8,
+      "firstWave": 1
+    },
+    "VoidHound": {
+      "old": 7,
+      "new": 13,
+      "firstWave": 4
+    },
+    "VoidSentinel": {
+      "old": 6,
+      "new": 12,
+      "firstWave": 5
+    },
+    "VoidGuard": {
+      "old": 8,
+      "new": 17,
+      "firstWave": 6
+    },
+    "VoidBrute": {
+      "old": 10,
+      "new": 23,
+      "firstWave": 7
+    },
+    "VoidGolem": {
+      "old": 20,
+      "new": 65,
+      "firstWave": 12
+    }
+  },
+  "previousKillGold": 290,
+  "potentialKillGold": 10781,
+  "potentialClearGold": 755,
+  "prices": {
+    "StarCannonTower": 300,
+    "NebulaBloomTower": 500
+  },
+  "upgradePrices": {
+    "StarCannonConfig": [
+      [
+        160,
+        300,
+        1100,
+        2800,
+        7000
+      ],
+      [
+        130,
+        280,
+        1000,
+        2500,
+        5750
+      ]
+    ],
+    "NebulaBloomConfig": [
+      [
+        180,
+        420,
+        900,
+        2300,
+        6200
+      ],
+      [
+        200,
+        460,
+        1050,
+        2600,
+        7000
+      ]
+    ]
+  },
+  "otherMissionsUnchanged": true,
+  "allKills": {
+    "purchasesBeforeWave": {
+      "Star Cannon": 1,
+      "Star Compression": 2,
+      "Second Star Cannon": 4,
+      "Nebula Bloom": 6,
+      "Nebula path 1 tiers 1\u20132": 7,
+      "Star path 1 tier 2": 8,
+      "Both Star path 2 tier 1": 8,
+      "Blight Bloom": 9,
+      "Rapid Starflow": 10,
+      "Nova Impact": 11,
+      "Second Nebula and path 2 tiers 1\u20132": 12,
+      "Bloom Detonation": 13,
+      "Second Star path 2 tier 2": 13,
+      "Starbreaker": 15
+    },
+    "rows": [
+      {
+        "wave": 1,
+        "enemies": 8,
+        "openingBank": 420,
+        "killGold": 64,
+        "leakedGold": 0,
+        "clearGold": 15,
+        "spentToDate": 300,
+        "closingBank": 199,
+        "lives": 20
+      },
+      {
+        "wave": 2,
+        "enemies": 12,
+        "openingBank": 199,
+        "killGold": 96,
+        "leakedGold": 0,
+        "clearGold": 20,
+        "spentToDate": 460,
+        "closingBank": 155,
+        "lives": 20
+      },
+      {
+        "wave": 3,
+        "enemies": 17,
+        "openingBank": 155,
+        "killGold": 136,
+        "leakedGold": 0,
+        "clearGold": 25,
+        "spentToDate": 460,
+        "closingBank": 316,
+        "lives": 20
+      },
+      {
+        "wave": 4,
+        "enemies": 24,
+        "openingBank": 316,
+        "killGold": 242,
+        "leakedGold": 0,
+        "clearGold": 30,
+        "spentToDate": 760,
+        "closingBank": 288,
+        "lives": 20
+      },
+      {
+        "wave": 5,
+        "enemies": 32,
+        "openingBank": 288,
+        "killGold": 341,
+        "leakedGold": 0,
+        "clearGold": 35,
+        "spentToDate": 760,
+        "closingBank": 664,
+        "lives": 20
+      },
+      {
+        "wave": 6,
+        "enemies": 37,
+        "openingBank": 664,
+        "killGold": 462,
+        "leakedGold": 0,
+        "clearGold": 40,
+        "spentToDate": 1260,
+        "closingBank": 666,
+        "lives": 20
+      },
+      {
+        "wave": 7,
+        "enemies": 47,
+        "openingBank": 666,
+        "killGold": 653,
+        "leakedGold": 0,
+        "clearGold": 45,
+        "spentToDate": 1860,
+        "closingBank": 764,
+        "lives": 20
+      },
+      {
+        "wave": 8,
+        "enemies": 52,
+        "openingBank": 764,
+        "killGold": 687,
+        "leakedGold": 0,
+        "clearGold": 50,
+        "spentToDate": 2420,
+        "closingBank": 941,
+        "lives": 20
+      },
+      {
+        "wave": 9,
+        "enemies": 57,
+        "openingBank": 941,
+        "killGold": 866,
+        "leakedGold": 0,
+        "clearGold": 55,
+        "spentToDate": 3320,
+        "closingBank": 962,
+        "lives": 20
+      },
+      {
+        "wave": 10,
+        "enemies": 67,
+        "openingBank": 962,
+        "killGold": 892,
+        "leakedGold": 0,
+        "clearGold": 60,
+        "spentToDate": 3600,
+        "closingBank": 1634,
+        "lives": 20
+      },
+      {
+        "wave": 11,
+        "enemies": 67,
+        "openingBank": 1634,
+        "killGold": 1041,
+        "leakedGold": 0,
+        "clearGold": 65,
+        "spentToDate": 4700,
+        "closingBank": 1640,
+        "lives": 20
+      },
+      {
+        "wave": 12,
+        "enemies": 72,
+        "openingBank": 1640,
+        "killGold": 1159,
+        "leakedGold": 0,
+        "clearGold": 70,
+        "spentToDate": 5860,
+        "closingBank": 1709,
+        "lives": 20
+      },
+      {
+        "wave": 13,
+        "enemies": 76,
+        "openingBank": 1709,
+        "killGold": 1075,
+        "leakedGold": 0,
+        "clearGold": 75,
+        "spentToDate": 7190,
+        "closingBank": 1529,
+        "lives": 20
+      },
+      {
+        "wave": 14,
+        "enemies": 87,
+        "openingBank": 1529,
+        "killGold": 1396,
+        "leakedGold": 0,
+        "clearGold": 80,
+        "spentToDate": 7190,
+        "closingBank": 3005,
+        "lives": 20
+      },
+      {
+        "wave": 15,
+        "enemies": 101,
+        "openingBank": 3005,
+        "killGold": 1671,
+        "leakedGold": 0,
+        "clearGold": 90,
+        "spentToDate": 9990,
+        "closingBank": 1966,
+        "lives": 20
+      }
+    ]
+  },
+  "oneHighestRewardLeakPerWave": {
+    "purchasesBeforeWave": {
+      "Star Cannon": 1,
+      "Star Compression": 2,
+      "Second Star Cannon": 5,
+      "Nebula Bloom": 6,
+      "Nebula path 1 tiers 1\u20132": 8,
+      "Star path 1 tier 2": 8,
+      "Both Star path 2 tier 1": 8,
+      "Blight Bloom": 10,
+      "Rapid Starflow": 10,
+      "Nova Impact": 11,
+      "Second Nebula and path 2 tiers 1\u20132": 12,
+      "Bloom Detonation": 13,
+      "Second Star path 2 tier 2": 13,
+      "Caustic Canopy": 15
+    },
+    "rows": [
+      {
+        "wave": 1,
+        "enemies": 8,
+        "openingBank": 420,
+        "killGold": 56,
+        "leakedGold": 8,
+        "clearGold": 15,
+        "spentToDate": 300,
+        "closingBank": 191,
+        "lives": 19
+      },
+      {
+        "wave": 2,
+        "enemies": 12,
+        "openingBank": 191,
+        "killGold": 88,
+        "leakedGold": 8,
+        "clearGold": 20,
+        "spentToDate": 460,
+        "closingBank": 139,
+        "lives": 18
+      },
+      {
+        "wave": 3,
+        "enemies": 17,
+        "openingBank": 139,
+        "killGold": 128,
+        "leakedGold": 8,
+        "clearGold": 25,
+        "spentToDate": 460,
+        "closingBank": 292,
+        "lives": 17
+      },
+      {
+        "wave": 4,
+        "enemies": 24,
+        "openingBank": 292,
+        "killGold": 229,
+        "leakedGold": 13,
+        "clearGold": 30,
+        "spentToDate": 460,
+        "closingBank": 551,
+        "lives": 16
+      },
+      {
+        "wave": 5,
+        "enemies": 32,
+        "openingBank": 551,
+        "killGold": 328,
+        "leakedGold": 13,
+        "clearGold": 35,
+        "spentToDate": 760,
+        "closingBank": 614,
+        "lives": 15
+      },
+      {
+        "wave": 6,
+        "enemies": 37,
+        "openingBank": 614,
+        "killGold": 445,
+        "leakedGold": 17,
+        "clearGold": 40,
+        "spentToDate": 1260,
+        "closingBank": 599,
+        "lives": 14
+      },
+      {
+        "wave": 7,
+        "enemies": 47,
+        "openingBank": 599,
+        "killGold": 630,
+        "leakedGold": 23,
+        "clearGold": 45,
+        "spentToDate": 1260,
+        "closingBank": 1274,
+        "lives": 13
+      },
+      {
+        "wave": 8,
+        "enemies": 52,
+        "openingBank": 1274,
+        "killGold": 664,
+        "leakedGold": 23,
+        "clearGold": 50,
+        "spentToDate": 2420,
+        "closingBank": 828,
+        "lives": 12
+      },
+      {
+        "wave": 9,
+        "enemies": 57,
+        "openingBank": 828,
+        "killGold": 843,
+        "leakedGold": 23,
+        "clearGold": 55,
+        "spentToDate": 2420,
+        "closingBank": 1726,
+        "lives": 11
+      },
+      {
+        "wave": 10,
+        "enemies": 67,
+        "openingBank": 1726,
+        "killGold": 869,
+        "leakedGold": 23,
+        "clearGold": 60,
+        "spentToDate": 3600,
+        "closingBank": 1475,
+        "lives": 10
+      },
+      {
+        "wave": 11,
+        "enemies": 67,
+        "openingBank": 1475,
+        "killGold": 1018,
+        "leakedGold": 23,
+        "clearGold": 65,
+        "spentToDate": 4700,
+        "closingBank": 1458,
+        "lives": 9
+      },
+      {
+        "wave": 12,
+        "enemies": 72,
+        "openingBank": 1458,
+        "killGold": 1094,
+        "leakedGold": 65,
+        "clearGold": 70,
+        "spentToDate": 5860,
+        "closingBank": 1462,
+        "lives": 8
+      },
+      {
+        "wave": 13,
+        "enemies": 76,
+        "openingBank": 1462,
+        "killGold": 1052,
+        "leakedGold": 23,
+        "clearGold": 75,
+        "spentToDate": 7190,
+        "closingBank": 1259,
+        "lives": 7
+      },
+      {
+        "wave": 14,
+        "enemies": 87,
+        "openingBank": 1259,
+        "killGold": 1331,
+        "leakedGold": 65,
+        "clearGold": 80,
+        "spentToDate": 7190,
+        "closingBank": 2670,
+        "lives": 6
+      },
+      {
+        "wave": 15,
+        "enemies": 101,
+        "openingBank": 2670,
+        "killGold": 1606,
+        "leakedGold": 65,
+        "clearGold": 90,
+        "spentToDate": 9490,
+        "closingBank": 2066,
+        "lives": 5
+      }
+    ]
+  }
+}

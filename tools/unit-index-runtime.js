@@ -22,11 +22,12 @@ const down=input.isMouseButtonPressed(0);
 if(!open){for(const name of ['IndexUI','IndexList','IndexDetail'])scene.getLayer(name).show(false);index.wasDown=down;index.pressed='';index.dragging=null;index.renderKey=null;return;}
 const archive=game.__fusionArchive,discovery=scene.__monsterDiscovery,portraits=sv.get('IndexPortraitCatalog').toJSObject(),star=sv.get('StarCannonConfig').toJSObject();
 const archetypes=sv.get('EnemyTypes').toJSObject(),catalog=sv.get('TowerShopCatalog').toJSObject(),categories=['Towers','Monsters','Fusion'];
+const mission=scene.__campaignRun;
 if(!categories.includes(index.category))index.category='Towers';
 const entries=index.category==='Towers'?catalog.flatMap(item=>{
  const def=data.objects.find(o=>o.name===item.Type);if(!def)return[];const v=Object.fromEntries(def.variables.map(v=>[v.name,v.value])),isStar=item.Type==='StarCannonTower',isNebula=item.Type==='NebulaBloomTower',cfg=isNebula?sv.get('NebulaBloomConfig').toJSObject():star;
  return[{id:item.Type,type:item.Type,name:v.TowerName||item.Name,price:item.Cost,damage:isStar||isNebula?cfg.BaseDamage:v.Damage,range:isStar||isNebula?cfg.BaseRange:v.AttackRange,cooldown:isStar||isNebula?cfg.BaseInterval:v.AttackInterval,projectileSpeed:isNebula?undefined:isStar?star.ProjectileSpeed:v.ProjectileSpeed,locked:false}];
-}):index.category==='Monsters'?discovery.ids.map(id=>({id,typeId:id,name:archetypes[id].Name||id,...archetypes[id],locked:!discovery.has(id),monster:true})):archive.catalog.map(def=>({id:def.Id,type:def.Id,name:def.Name,definition:def,fusion:true,locked:!archive.has(def.Id)}));
+}):index.category==='Monsters'?discovery.ids.map(id=>({id,typeId:id,name:archetypes[id].Name||id,...archetypes[id],Reward:mission?.rewardFor(id)??archetypes[id].Reward,locked:!discovery.has(id),monster:true})):archive.catalog.map(def=>({id:def.Id,type:def.Id,name:def.Name,definition:def,fusion:true,locked:!archive.has(def.Id)}));
 index.entries=entries;index.categories=categories;
 const categoryChanged=index.lastCategory!==index.category;
 if(categoryChanged){index.scroll=0;index.collectionScroll=0;index.lastCategory=index.category;}
@@ -153,7 +154,11 @@ if(selected){
   sectionY+=cols===2?Math.max(...starts):starts.reduce((a,b)=>a+b,0);paragraph('starRule','Level 3 specializes one path. The other path can reach level 2. Maximum level '+upgradeConfig.MaxLevel+'.');
  }else if(e.monster&&!locked){
   section('abilityHeading','ENEMY PROFILE');paragraph('monsterProfile',!e.SpecialAbility||e.SpecialAbility==='None'?'No special ability.':'SPECIAL ABILITY  /  '+e.SpecialAbility);
-  if(e.id==='VoidGolem'){const skill=sv.get('VoidGolemConfig').toJSObject().Skill;paragraph('golemSkill','Stops to cast '+skill.Name+'. Grants +'+skill.ArmorBonus+' armor within '+skill.Radius+' px for '+skill.Duration+' s. Cooldown: '+skill.Cooldown+' s.');}
+  if(e.id==='VoidGolem'){
+   const skill=sv.get('VoidGolemConfig').toJSObject().Skill;
+   paragraph('golemSkill','Stops to cast '+skill.Name+'. Grants +'+skill.ArmorBonus+' armor within '+skill.Radius+' px for '+skill.Duration+' s. Cooldown: '+skill.Cooldown+' s.');
+   if(mission?.level.Boss)paragraph('bossReward',mission.chapter.Boss.Name+'  /  '+mission.rewardFor(e.id,true)+' Gold per boss defeat');
+  }
   paragraph('monsterFirstWave','FIRST APPEARANCE  /  WAVE '+e.MinimumWave+'+');
  }else if(e.fusion){
   section('recipeHeading',locked?'SEALED COMBINATION':'FUSION COMBINATION');const recipe=v=>v.Recipe.map(p=>p.Label||p.Type+' '+p.Path1+'-'+p.Path2).join(' + '),known=e.definition.Variants.filter(v=>archive.hasVariant(e.id,v.Id));

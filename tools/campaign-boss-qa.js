@@ -20,6 +20,12 @@
   }
   R.pendingWave=true;step(2);S.__waveManager.elapsed=V.get('SpawnInterval').getAsNumber();step();const B=R.boss;
   ok(!!B&&B.enemy.getVariables().get('CampaignBoss').getAsBoolean()&&B.enemy.getBehavior('Health').MaxHealth()===B.config.HP,'boss is actual configured native enemy: '+R.level.Id);ok(R.bossUI.visible&&R.bossName.text.includes(B.config.Name.toUpperCase()),'boss has dedicated name/health display: '+chapter);
+  if(!balance){
+   V.get('IndexOpen').setBoolean(true);const index=S.__unitIndex;index.category='Monsters';step(3);index.select('VoidGolem');step(3);
+   const actual=B.enemy.getVariables().get('GoldReward').getAsNumber();
+   ok(!index.detail.locked&&index.objects.statValue3.getString()===R.rewardFor('VoidGolem')+' Gold'&&index.objects.bossReward.getString()===B.config.Name+'  /  '+actual+' Gold per boss defeat','Index separates standard elite and named boss reward: '+chapter);
+   V.get('IndexOpen').setBoolean(false);step(2);
+  }
   if(balance){let elapsed=0;for(;elapsed<320&&!R.bossKilled&&!R.bossEscaped;elapsed+=.05){step(1,50);if(Math.round(elapsed*20)%400===0)await wait(1);}results.push({level:R.level.Id,bossHP:B.config.HP,remainingHP:B.enemy.getBehavior('Health').Health(),killed:R.bossKilled,escaped:R.bossEscaped,simulatedSeconds:elapsed,towers:S.getObjects('StarCannonTower').length,lives:V.get('Lives').getAsNumber(),goldLeft:V.get('Money').getAsNumber()});}
   else{
    const e=B.enemy,h=e.getBehavior('Health'),state=e.__golemState;state.nextCast=S.__voidGolem.frameTime+.03;step(4);ok(state.casting,'telegraphed stationary cast begins: '+chapter);const position=JSON.stringify([e.getX(),e.getY(),e.getVariables().get('Waypoint').getAsNumber()]);step(12);ok(JSON.stringify([e.getX(),e.getY(),e.getVariables().get('Waypoint').getAsNumber()])===position,'boss cannot drift during casting: '+chapter);step(38);ok(state.releaseCount===1&&!state.casting,'one cast releases fortification once: '+chapter);ok(S.__voidGolem.fort.members.get(e.getUniqueId()).active,'native Fortification buff applies to boss: '+chapter);ok(h.PercentDamageReduction()===(B.config.ShieldSeconds?B.config.ShieldPercent/100:0),'chapter shield uses existing Health reduction once: '+chapter);

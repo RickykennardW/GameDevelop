@@ -42,6 +42,8 @@ def unpack(value):
 def main():
     read=lambda f:json.loads((ROOT/f).read_text(encoding='utf-8-sig'))
     config=read('tools/labyrinth-layout.json')
+    stages=read('tools/campaign-config.json')['Levels']
+    progression=runpy.run_path(str(ROOT/'tools/validate-stage-progression.py')) if stages[0].get('EnemyRewards') else None
     old_scene=old('layouts/game-scene.json')
     scene=read('layouts/game-scene.json')
     layout=unpack(next(v for v in scene['variables'] if v['name']=='LabyrinthMap'))
@@ -70,8 +72,9 @@ def main():
             event=event['events'][index]
             original=original['events'][index]
         assert event['inlineCode']==(ROOT/'tools'/name).read_text(encoding='utf-8-sig').splitlines(),name
-        if name in MAP_SOURCES:
+        if name in MAP_SOURCES or progression and name in progression['STAGE_SOURCES']:
             event['inlineCode']=original['inlineCode']
+    if progression: progression['restore_clear_guards'](scene,old_scene)
     assert scene==old_scene,'Scene changes beyond the map scope'
     project=read('Tower Defense.json')
     resources=project['resources']['resources']
@@ -79,8 +82,11 @@ def main():
     project['resources']['resources']=[r for r in resources if r['name']!=RESOURCE]
     assert project==old('Tower Defense.json'),'Project changes beyond the road resource'
     for file in ('layouts/main-menu.json','layouts/levels.json','eventsFunctionsExtensions/health.json'):
-        assert read(file)==old(file),file
-    assert not subprocess.check_output(['git','diff',BASELINE,'--name-only','--','assets'],cwd=ROOT).strip(), 'Existing art/audio modified'
+        current,baseline=read(file),old(file)
+        if progression and file=='layouts/levels.json':progression['restore_first_level'](current,baseline)
+        assert current==baseline,file
+    changed_assets=subprocess.check_output(['git','diff',BASELINE,'--name-only','--','assets'],cwd=ROOT,text=True).splitlines()
+    assert set(changed_assets)<={ART}, 'Existing art/audio modified'
     report={'passed':True,'width':layout['Width'],'length':layout['Length'],'originalLength':7128,'turns':layout['Turns'],
             'waypoints':len(points),'decorations':len(config['Decorations']),'nonMapSceneDataMatchBaseline':True,'baseline':BASELINE}
     (ROOT/'validation/labyrinth-static.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf8')

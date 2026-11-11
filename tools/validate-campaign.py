@@ -24,14 +24,17 @@ ok({v['Id'] for v in cfg['Levels']}=={f'{c}-{n}' for c in range(1,6) for n in ra
 for i,level in enumerate(cfg['Levels']):
     ok(level['Index']==i+1 and level['Chapter']==i//5+1 and level['Number']==i%5+1,'Contiguous progression: '+level['Id'])
     ok(level['StartingGold']>=vars['TowerShopCatalog'][0]['Cost'] and level['StartingLives']>0,'Viable opening funds/Lives: '+level['Id'])
-    ok(5<=len(level['Waves'])<=12 and level['Boss']==(level['Number']==5),'Configured short mission and chapter boss: '+level['Id'])
+    wave_count=len(level['Waves'])
+    ok((wave_count==15 if i==0 else 5<=wave_count<=12) and level['Boss']==(level['Number']==5),'Configured mission length and chapter boss: '+level['Id'])
+    overrides=level.get('EnemyRewards',{})
+    reward=lambda t:overrides.get(t,vars['EnemyTypes'][t]['Reward'])
     for j,w in enumerate(level['Waves']):
         ok(w['Number']==j+1 and w['Boss']==(level['Boss'] and j==len(level['Waves'])-1),'Correct final boss wave: '+level['Id']+'/'+str(j+1))
         ok(.3<=w['SpawnInterval']<=2 and .5<=w['HealthScale']<=3 and .5<=w['SpeedScale']<=1.5,'Bounded spawn and enemy scaling: '+level['Id']+'/'+str(j+1))
         ok(all(t in vars['EnemyTypes'] and isinstance(n,int) and n>0 for t,n in w['Enemies'].items()),'Only actual enemy roster: '+level['Id']+'/'+str(j+1))
-        expected=sum(vars['EnemyTypes'][t]['Reward']*n for t,n in w['Enemies'].items())
+        expected=sum(reward(t)*n for t,n in w['Enemies'].items())
         if w['Boss']:
-            b=cfg['Chapters'][level['Chapter']-1]['Boss'];expected+=b['Reward']+sum(vars['EnemyTypes'][t]['Reward'] for t in b['Reserves'])
+            b=cfg['Chapters'][level['Chapter']-1]['Boss'];expected+=b['Reward']+sum(reward(t) for t in b['Reserves'])
         ok(expected==w['ExpectedGold'],'Auditable real kill income: '+level['Id']+'/'+str(j+1))
     ok(sum(w['ExpectedGold'] for w in level['Waves'])==level['ExpectedKillGold'],'Mission income total: '+level['Id'])
 sys.dont_write_bytecode=True

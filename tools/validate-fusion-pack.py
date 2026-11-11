@@ -151,6 +151,8 @@ def main():
     project = read(ROOT/"Tower Defense.json")
     scene = read(ROOT/"layouts/game-scene.json")
     labyrinth = runpy.run_path(str(ROOT/'tools/validate-labyrinth.py')) if any(v['name']=='LabyrinthMap' for v in scene['variables']) else None
+    first_level = read(ROOT/'tools/campaign-config.json')['Levels'][0]
+    progression = runpy.run_path(str(ROOT/'tools/validate-stage-progression.py')) if first_level.get('EnemyRewards') else None
     registered = {asset["resourceName"] for asset in assets.values() if asset["importStatus"]!="ReadyToImport"}
     resources = project["resources"]["resources"]
     for file in registered:
@@ -205,6 +207,7 @@ def main():
                            'star-cannon-runtime.js','nebula-bloom-runtime.js','nebula-bloom-render.js','audio-runtime.js',
                            'developer-cheats-runtime.js','nova-wave-manager.js','nova-death-runtime.js'}
         if labyrinth: changed_sources.update(labyrinth['MAP_SOURCES'])
+        if progression: changed_sources.update(progression['STAGE_SOURCES'])
         added_events = []
         for root, children, name in read(ROOT/'tools/source-mapping.json'):
             event = scene['events'][root]
@@ -217,12 +220,15 @@ def main():
             elif name in {'fusion-evolution-runtime.js','fusion-evolution-combat.js'}:
                 added_events.append(children[0])
         for index in sorted(added_events,reverse=True): del scene['events'][0]['events'][index]
+        if progression: progression['restore_clear_guards'](scene, original_scene)
         scene['variables'] = [v for v in scene['variables'] if v['name'] not in {'FusionEvolutionConfig','FusionEvolutionArt'}]
     scene['objects'] = [scope['without_fusion_object'](o) for o in scene['objects']]
     scene['variables'] = [scope['without_fusion_variable'](v) for v in scene['variables']]
     ok(scene==original_scene, "Unrelated Game Scene events, instances and settings match the original")
     for file in ("layouts/levels.json","layouts/main-menu.json","eventsFunctionsExtensions/health.json"):
-        ok(read(ROOT/file)==old(file), "Preserved "+file)
+        current, original = read(ROOT/file), old(file)
+        if progression and file=='layouts/levels.json': progression['restore_first_level'](current, original)
+        ok(current==original, "Preserved "+file)
     changed = subprocess.check_output(["git","diff",baseline,"--name-only","--","assets"], cwd=ROOT, text=True).splitlines()
     ok(all(name.startswith("assets/towers/fusion/") or labyrinth and name==labyrinth['ART'] for name in changed), "Original asset bytes are preserved")
     ok(not any((ROOT/entry["path"]).exists() for entry in read(ROOT/"validation/fusion-rebuild-cleanup.json")["deleted"]),

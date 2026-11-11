@@ -10,17 +10,25 @@ if(!r){
  r.coach=new PIXI.Container();u.root.addChild(r.coach);r.shade=new PIXI.Graphics();r.plate=new PIXI.Graphics();r.coach.addChild(r.shade,r.plate);r.title=u.text('',17,0xead5a5,true,r.coach);r.body=u.text('',13,0xc7cde1,false,r.coach);r.next=u.button('next','CONTINUE',r.coach);r.skip=u.button('skip','SKIP',r.coach);
  r.result=new PIXI.Container();u.root.addChild(r.result);r.resultShade=new PIXI.Graphics();r.result.addChild(r.resultShade);r.resultTitle=u.text('',33,0xf0e1b3,true,r.result);r.resultInfo=u.text('',15,0xbdcce1,false,r.result);r.resultProgress=u.text('',12,0xc8ba94,false,r.result);r.resultButtons=[u.button('nextmission','NEXT MISSION',r.result),u.button('levels','RETURN TO LEVELS',r.result),u.button('menu','MAIN MENU',r.result)];
  r.bossUI=new PIXI.Container();u.root.addChild(r.bossUI);r.bossPanel=new PIXI.Graphics();r.bossUI.addChild(r.bossPanel);r.bossName=u.text('',14,0xe9cb97,true,r.bossUI);r.bossHealth=u.text('',10,0xcdd6ed,false,r.bossUI);r.bossHint=u.text('',11,0xc0c4dc,false,r.bossUI);r.bossRing=new PIXI.Graphics();r.bossRing.zIndex=11980;scene.getLayer('').getRenderer().getRendererObject().addChild(r.bossRing);
+ r.rewardFor=(type,boss=false)=>boss?chapter.Boss.Reward:level.EnemyRewards?.[type]??sv.get('EnemyTypes').getChild(type).getChild('Reward').getAsNumber();
  r.wavePlan=wave=>{
   const spec=level.Waves[wave-1];if(!spec)throw Error('Campaign wave outside mission configuration');const queue=[];for(const [type,count]of Object.entries(spec.Enemies))for(let i=0;i<count;i++)queue.push(type);
   let seed=level.Index*777+wave;for(let i=queue.length-1;i>0;i--){seed=(Math.imul(seed,1664525)+1013904223)>>>0;const j=seed%(i+1);[queue[i],queue[j]]=[queue[j],queue[i]];}
-  if(spec.Boss)queue.unshift('VoidGolem');r.started.add(wave);const budget=queue.reduce((n,t,i)=>n+(spec.Boss&&i===0?chapter.Boss.Reward:sv.get('EnemyTypes').getChild(t).getChild('Reward').getAsNumber()),0);return{wave,queue,budget,spent:budget,unused:0,milestone:spec.Boss||wave%5===0,bossIndex:spec.Boss?0:-1,campaign:true,expectedIncome:spec.ExpectedGold};
+  if(spec.EliteSpawnSlots){
+   const ordinary=queue.filter(type=>type!=='VoidGolem');
+   for(const slot of spec.EliteSpawnSlots)ordinary.splice(slot-1,0,'VoidGolem');
+   queue.splice(0,queue.length,...ordinary);
+  }
+  if(spec.Boss)queue.unshift('VoidGolem');r.started.add(wave);const budget=queue.reduce((n,t,i)=>n+r.rewardFor(t,spec.Boss&&i===0),0);return{wave,queue,budget,spent:budget,unused:0,milestone:spec.Boss||wave%5===0,bossIndex:spec.Boss?0:-1,campaign:true,expectedIncome:spec.ExpectedGold};
  };
  r.canStart=wave=>r.stage<0||r.stage>=5&&wave===1;
  r.spawned=(enemy,type,index)=>{
   const spec=level.Waves[sv.get('Wave').getAsNumber()-1];if(!spec)return;const v=enemy.getVariables(),health=enemy.getBehavior('Health'),stats=sv.get('EnemyTypes').getChild(type).toJSObject();
-  const hp=Math.ceil(stats.HP*spec.HealthScale);v.get('CampaignBoss').setBoolean(false);health.SetMaxHealth(hp);health.SetHealth(hp);v.get('MoveSpeed').setNumber(stats.Speed*spec.SpeedScale);for(const key of ['__novaState','__houndState','__voidCommonState','__golemState'])if(enemy[key])enemy[key].lastHP=hp;
-  if(!spec.Boss||index!==0)return;
-  const boss=chapter.Boss;health.SetMaxHealth(boss.HP);health.SetHealth(boss.HP);health.SetFlatDamageReduction(boss.Armor);v.get('MoveSpeed').setNumber(boss.Speed);v.get('GoldReward').setNumber(boss.Reward);v.get('EnemyName').setString(boss.Name);v.get('CampaignBoss').setBoolean(true);v.get('BaseArmor').setNumber(boss.Armor);v.get('Armor').setNumber(boss.Armor);
+  const isBoss=spec.Boss&&index===0,hp=Math.ceil(stats.HP*spec.HealthScale);
+  v.get('GoldReward').setNumber(r.rewardFor(type,isBoss));v.get('CampaignBoss').setBoolean(isBoss);
+  health.SetMaxHealth(hp);health.SetHealth(hp);v.get('MoveSpeed').setNumber(stats.Speed*spec.SpeedScale);for(const key of ['__novaState','__houndState','__voidCommonState','__golemState'])if(enemy[key])enemy[key].lastHP=hp;
+  if(!isBoss)return;
+  const boss=chapter.Boss;health.SetMaxHealth(boss.HP);health.SetHealth(boss.HP);health.SetFlatDamageReduction(boss.Armor);v.get('MoveSpeed').setNumber(boss.Speed);v.get('EnemyName').setString(boss.Name);v.get('BaseArmor').setNumber(boss.Armor);v.get('Armor').setNumber(boss.Armor);
   const rec=scene.__voidGolem.fort.members.get(enemy.getUniqueId());if(rec){rec.baseArmor=boss.Armor;scene.__voidGolem.fort.armor(rec);}const state=enemy.__golemState;state.lastHP=boss.HP;state.nextCast=scene.__voidGolem.frameTime+boss.CastCooldown;
   r.boss={id:enemy.getUniqueId(),enemy,config:boss,shieldUntil:0,surgeUntil:0,castCount:0,releaseCount:0,reservesQueued:false,age:0};
   const cleanup=()=>{if(!health.IsDead()&&v.get('PathFinished').getAsBoolean()){r.bossEscaped=true;sv.get('Lives').setNumber(0);}enemy.unregisterDestroyCallback(cleanup);};enemy.registerDestroyCallback(cleanup);
@@ -45,7 +53,7 @@ if(!r){
   b.age+=dt;if(state.castCount>b.castCount){b.castCount=state.castCount;state.nextCast=state.castStart+c.CastCooldown;}
   if(state.releaseCount>b.releaseCount){b.releaseCount=state.releaseCount;b.shieldUntil=r.now+c.ShieldSeconds;b.surgeUntil=r.now+c.SurgeSeconds;}
   h.SetPercentDamageReduction(r.now<b.shieldUntil?c.ShieldPercent/100:0);e.getVariables().get('MoveSpeed').setNumber(c.Speed*(r.now<b.surgeUntil?c.SurgeMultiplier:1));
-  if(!b.reservesQueued&&c.Reserves.length&&h.Health()/h.MaxHealth()<=c.ReserveThreshold){b.reservesQueued=true;b.reservesNoticeUntil=r.now+3;const m=scene.__waveManager,price=c.Reserves.reduce((n,t)=>n+sv.get('EnemyTypes').getChild(t).getChild('Reward').getAsNumber(),0);m.queue.push(...c.Reserves);m.elapsed=0;m.composition.budget+=price;m.composition.spent+=price;sv.get('WaveBudget').add(price);sv.get('WaveBudgetSpent').add(price);sv.get('EnemiesToSpawn').setNumber(m.queue.length-m.index);sv.get('WaveSpawningFinished').setBoolean(false);sv.get('WaveEnemyCount').add(c.Reserves.length);}
+  if(!b.reservesQueued&&c.Reserves.length&&h.Health()/h.MaxHealth()<=c.ReserveThreshold){b.reservesQueued=true;b.reservesNoticeUntil=r.now+3;const m=scene.__waveManager,price=c.Reserves.reduce((n,t)=>n+r.rewardFor(t),0);m.queue.push(...c.Reserves);m.elapsed=0;m.composition.budget+=price;m.composition.spent+=price;sv.get('WaveBudget').add(price);sv.get('WaveBudgetSpent').add(price);sv.get('EnemiesToSpawn').setNumber(m.queue.length-m.index);sv.get('WaveSpawningFinished').setBoolean(false);sv.get('WaveEnemyCount').add(c.Reserves.length);}
   if(state.casting||r.now<b.shieldUntil||b.age<1.3){const x=e.getCenterXInScene(),y=e.getCenterYInScene(),entrance=b.age<1.3;r.bossRing.lineStyle(2,state.casting?0xd4a3ed:0x91cce4,entrance?1-b.age/1.3:.75).beginFill(0x8d6bc9,.05).drawCircle(x,y,entrance?30+75*b.age/1.3:state.casting?100:74).endFill();}
  };
  r.advance=()=>{scene.__audio?.play('UIClick');if(r.stage===4)r.pendingWave=true;if(r.stage===8){C.tutorialDone('GameTutorialDone');r.stage=-1;}else r.stage++;};

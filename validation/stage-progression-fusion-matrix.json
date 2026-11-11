@@ -1,0 +1,452 @@
+{
+  "result": {
+    "checks": [
+      "Six canonical Index entries start undiscovered",
+      "Locked Index uses real silhouette and hides skills/stats",
+      "Shop buys StarCannonTower",
+      "Unupgraded tower has no Fusion button",
+      "StarCannonTower 5-2 exposes native Fusion button",
+      "Shop buys StarCannonTower",
+      "Unupgraded tower has no Fusion button",
+      "StarCannonTower 2-5 exposes native Fusion button",
+      "Tactical Fusion keeps simulation at 0.5x",
+      "StarburstCannon reuses the ghost and highlights both sources",
+      "StarburstCannon sidebar resolves the ordered or reversed recipe",
+      "StarburstCannon result art and valid footprint match the recipe",
+      "StarburstCannon placement allowed at either source and rejected between them",
+      "StarburstCannon preview leaves both sources, Gold and discovery intact",
+      "StarburstCannon creates exactly one native E1 at the clicked source",
+      "StarburstCannon transfer, fee and one-time confirmation are atomic",
+      "StarburstCannon discovery writes once per result",
+      "StarburstCannon discovery does not unlock other results",
+      "StarburstCannon reveals portrait, exact recipe and tier abilities after placement",
+      "StarburstCannon selectable Evolution owns one upgrade card",
+      "StarburstCannon native sale refunds once and disposes the rig",
+      "Shop buys StarCannonTower",
+      "Unupgraded tower has no Fusion button",
+      "StarCannonTower 2-5 exposes native Fusion button",
+      "Shop buys StarCannonTower",
+      "Unupgraded tower has no Fusion button",
+      "StarCannonTower 5-2 exposes native Fusion button",
+      "Tactical Fusion keeps simulation at 0.5x",
+      "StarburstCannon reuses the ghost and highlights both sources",
+      "StarburstCannon sidebar resolves the ordered or reversed recipe",
+      "StarburstCannon result art and valid footprint match the recipe",
+      "StarburstCannon placement allowed at either source and rejected between them",
+      "StarburstCannon preview leaves both sources, Gold and discovery intact",
+      "StarburstCannon creates exactly one native E1 at the clicked source",
+      "StarburstCannon transfer, fee and one-time confirmation are atomic",
+      "StarburstCannon discovery writes once per result",
+      "StarburstCannon discovery does not unlock other results",
+      "StarburstCannon selectable Evolution owns one upgrade card",
+      "StarburstCannon native sale refunds once and disposes the rig",
+      "Shop buys NebulaBloomTower",
+      "Unupgraded tower has no Fusion button",
+      "NebulaBloomTower 5-2 exposes native Fusion button",
+      "Shop buys NebulaBloomTower",
+      "Unupgraded tower has no Fusion button",
+      "NebulaBloomTower 2-5 exposes native Fusion button",
+      "Tactical Fusion keeps simulation at 0.5x",
+      "VenomCataclysm reuses the ghost and highlights both sources",
+      "VenomCataclysm sidebar resolves the ordered or reversed recipe",
+      "VenomCataclysm result art and valid footprint match the recipe",
+      "VenomCataclysm placement allowed at either source and rejected between them",
+      "VenomCataclysm preview leaves both sources, Gold and discovery intact",
+      "Result footprint blocks the real road ribbon",
+      "Invalid path turns the result ghost red",
+      "Ruin collider and visible outline use the same geometry",
+      "Unrelated towers block the result footprint",
+      "Underfunded confirmation preserves both sources and the save",
+      "Result creation failure rolls back before either source or Gold changes",
+      "ESC clears every Fusion overlay and restores 2x",
+      "Tactical Fusion keeps simulation at 0.5x",
+      "Native Cancel preserves both source towers",
+      "Tactical Fusion keeps simulation at 0.5x",
+      "VenomCataclysm creates exactly one native E1 at the clicked source",
+      "VenomCataclysm transfer, fee and one-time confirmation are atomic",
+      "VenomCataclysm discovery writes once per result",
+      "VenomCataclysm discovery does not unlock other results",
+      "VenomCataclysm reveals portrait, exact recipe and tier abilities after placement",
+      "VenomCataclysm selectable Evolution owns one upgrade card",
+      "VenomCataclysm native sale refunds once and disposes the rig",
+      "Shop buys NebulaBloomTower",
+      "Unupgraded tower has no Fusion button",
+      "NebulaBloomTower 2-5 exposes native Fusion button",
+      "Shop buys NebulaBloomTower",
+      "Unupgraded tower has no Fusion button",
+      "NebulaBloomTower 5-2 exposes native Fusion button",
+      "Tactical Fusion keeps simulation at 0.5x",
+      "VenomCataclysm reuses the ghost and highlights both sources",
+      "VenomCataclysm sidebar resolves the ordered or reversed recipe",
+      "VenomCataclysm result art and valid footprint match the recipe",
+      "VenomCataclysm placement allowed at either source and rejected between them",
+      "VenomCataclysm preview leaves both sources, Gold and discovery intact",
+      "VenomCataclysm creates exactly one native E1 at the clicked source",
+      "VenomCataclysm transfer, fee and one-time confirmation are atomic",
+      "VenomCataclysm discovery writes once per result",
+      "VenomCataclysm discovery does not unlock other results",
+      "VenomCataclysm selectable Evolution owns one upgrade card",
+      "VenomCataclysm native sale refunds once and disposes the rig",
+      "Shop buys StarCannonTower",
+      "Unupgraded tower has no Fusion button",
+      "StarCannonTower 5-2 exposes native Fusion button",
+      "Shop buys NebulaBloomTower",
+      "Unupgraded tower has no Fusion button",
+      "NebulaBloomTower 5-2 exposes native Fusion button",
+      "Tactical Fusion keeps simulation at 0.5x",
+      "PlaguebreakerCannon reuses the ghost and highlights both sources",
+      "PlaguebreakerCannon sidebar resolves the ordered or reversed recipe",
+      "PlaguebreakerCannon result art and valid footprint match the recipe",
+      "PlaguebreakerCannon placement allowed at either source and rejected between them",
+      "PlaguebreakerCannon preview leaves both sources, Gold and discovery intact",
+      "PlaguebreakerCannon creates exactly one native E1 at the clicked source",
+      "PlaguebreakerCannon transfer, fee and one-time confirmation are atomic",
+      "PlaguebreakerCannon discovery writes once per result",
+      "PlaguebreakerCannon discovery does not unlock other results",
+      "PlaguebreakerCannon reveals portrait, exact recipe and tier abilities after placement",
+      "PlaguebreakerCannon selectable Evolution owns one upgrade card",
+      "PlaguebreakerCannon native sale refunds once and disposes the rig",
+      "Shop buys NebulaBloomTower",
+      "Unupgraded tower has no Fusion button",
+      "NebulaBloomTower 5-2 exposes native Fusion button",
+      "Shop buys StarCannonTower",
+      "Unupgraded tower has no Fusion button",
+      "StarCannonTower 5-2 exposes native Fusion button",
+      "Tactical Fusion keeps simulation at 0.5x",
+      "PlaguebreakerCannon reuses the ghost and highlights both sources",
+      "PlaguebreakerCannon sidebar resolves the ordered or reversed recipe",
+      "PlaguebreakerCannon result art and valid footprint match the recipe",
+      "PlaguebreakerCannon placement allowed at either source and rejected between them",
+      "PlaguebreakerCannon preview leaves both sources, Gold and discovery intact",
+      "PlaguebreakerCannon creates exactly one native E1 at the clicked source",
+      "PlaguebreakerCannon transfer, fee and one-time confirmation are atomic",
+      "PlaguebreakerCannon discovery writes once per result",
+      "PlaguebreakerCannon discovery does not unlock other results",
+      "PlaguebreakerCannon selectable Evolution owns one upgrade card",
+      "PlaguebreakerCannon native sale refunds once and disposes the rig",
+      "Shop buys StarCannonTower",
+      "Unupgraded tower has no Fusion button",
+      "StarCannonTower 5-2 exposes native Fusion button",
+      "Shop buys NebulaBloomTower",
+      "Unupgraded tower has no Fusion button",
+      "NebulaBloomTower 2-5 exposes native Fusion button",
+      "Tactical Fusion keeps simulation at 0.5x",
+      "SupernovaObliterator reuses the ghost and highlights both sources",
+      "SupernovaObliterator sidebar resolves the ordered or reversed recipe",
+      "SupernovaObliterator result art and valid footprint match the recipe",
+      "SupernovaObliterator placement allowed at either source and rejected between them",
+      "SupernovaObliterator preview leaves both sources, Gold and discovery intact",
+      "SupernovaObliterator creates exactly one native E1 at the clicked source",
+      "SupernovaObliterator transfer, fee and one-time confirmation are atomic",
+      "SupernovaObliterator discovery writes once per result",
+      "SupernovaObliterator discovery does not unlock other results",
+      "SupernovaObliterator reveals portrait, exact recipe and tier abilities after placement",
+      "SupernovaObliterator selectable Evolution owns one upgrade card",
+      "SupernovaObliterator native sale refunds once and disposes the rig",
+      "Shop buys NebulaBloomTower",
+      "Unupgraded tower has no Fusion button",
+      "NebulaBloomTower 2-5 exposes native Fusion button",
+      "Shop buys StarCannonTower",
+      "Unupgraded tower has no Fusion button",
+      "StarCannonTower 5-2 exposes native Fusion button",
+      "Tactical Fusion keeps simulation at 0.5x",
+      "SupernovaObliterator reuses the ghost and highlights both sources",
+      "SupernovaObliterator sidebar resolves the ordered or reversed recipe",
+      "SupernovaObliterator result art and valid footprint match the recipe",
+      "SupernovaObliterator placement allowed at either source and rejected between them",
+      "SupernovaObliterator preview leaves both sources, Gold and discovery intact",
+      "SupernovaObliterator creates exactly one native E1 at the clicked source",
+      "SupernovaObliterator transfer, fee and one-time confirmation are atomic",
+      "SupernovaObliterator discovery writes once per result",
+      "SupernovaObliterator discovery does not unlock other results",
+      "SupernovaObliterator selectable Evolution owns one upgrade card",
+      "SupernovaObliterator native sale refunds once and disposes the rig",
+      "Shop buys StarCannonTower",
+      "Unupgraded tower has no Fusion button",
+      "StarCannonTower 2-5 exposes native Fusion button",
+      "Shop buys NebulaBloomTower",
+      "Unupgraded tower has no Fusion button",
+      "NebulaBloomTower 5-2 exposes native Fusion button",
+      "Tactical Fusion keeps simulation at 0.5x",
+      "ToxicConstellation reuses the ghost and highlights both sources",
+      "ToxicConstellation sidebar resolves the ordered or reversed recipe",
+      "ToxicConstellation result art and valid footprint match the recipe",
+      "ToxicConstellation placement allowed at either source and rejected between them",
+      "ToxicConstellation preview leaves both sources, Gold and discovery intact",
+      "ToxicConstellation creates exactly one native E1 at the clicked source",
+      "ToxicConstellation transfer, fee and one-time confirmation are atomic",
+      "ToxicConstellation discovery writes once per result",
+      "ToxicConstellation discovery does not unlock other results",
+      "ToxicConstellation reveals portrait, exact recipe and tier abilities after placement",
+      "ToxicConstellation selectable Evolution owns one upgrade card",
+      "ToxicConstellation native sale refunds once and disposes the rig",
+      "Shop buys NebulaBloomTower",
+      "Unupgraded tower has no Fusion button",
+      "NebulaBloomTower 5-2 exposes native Fusion button",
+      "Shop buys StarCannonTower",
+      "Unupgraded tower has no Fusion button",
+      "StarCannonTower 2-5 exposes native Fusion button",
+      "Tactical Fusion keeps simulation at 0.5x",
+      "ToxicConstellation reuses the ghost and highlights both sources",
+      "ToxicConstellation sidebar resolves the ordered or reversed recipe",
+      "ToxicConstellation result art and valid footprint match the recipe",
+      "ToxicConstellation placement allowed at either source and rejected between them",
+      "ToxicConstellation preview leaves both sources, Gold and discovery intact",
+      "ToxicConstellation creates exactly one native E1 at the clicked source",
+      "ToxicConstellation transfer, fee and one-time confirmation are atomic",
+      "ToxicConstellation discovery writes once per result",
+      "ToxicConstellation discovery does not unlock other results",
+      "ToxicConstellation selectable Evolution owns one upgrade card",
+      "ToxicConstellation native sale refunds once and disposes the rig",
+      "Shop buys StarCannonTower",
+      "Unupgraded tower has no Fusion button",
+      "StarCannonTower 2-5 exposes native Fusion button",
+      "Shop buys NebulaBloomTower",
+      "Unupgraded tower has no Fusion button",
+      "NebulaBloomTower 2-5 exposes native Fusion button",
+      "Tactical Fusion keeps simulation at 0.5x",
+      "MeteorStormArray reuses the ghost and highlights both sources",
+      "MeteorStormArray sidebar resolves the ordered or reversed recipe",
+      "MeteorStormArray result art and valid footprint match the recipe",
+      "MeteorStormArray placement allowed at either source and rejected between them",
+      "MeteorStormArray preview leaves both sources, Gold and discovery intact",
+      "MeteorStormArray creates exactly one native E1 at the clicked source",
+      "MeteorStormArray transfer, fee and one-time confirmation are atomic",
+      "MeteorStormArray discovery writes once per result",
+      "MeteorStormArray discovery does not unlock other results",
+      "MeteorStormArray reveals portrait, exact recipe and tier abilities after placement",
+      "MeteorStormArray selectable Evolution owns one upgrade card",
+      "MeteorStormArray native sale refunds once and disposes the rig",
+      "Shop buys NebulaBloomTower",
+      "Unupgraded tower has no Fusion button",
+      "NebulaBloomTower 2-5 exposes native Fusion button",
+      "Shop buys StarCannonTower",
+      "Unupgraded tower has no Fusion button",
+      "StarCannonTower 2-5 exposes native Fusion button",
+      "Tactical Fusion keeps simulation at 0.5x",
+      "MeteorStormArray reuses the ghost and highlights both sources",
+      "MeteorStormArray sidebar resolves the ordered or reversed recipe",
+      "MeteorStormArray result art and valid footprint match the recipe",
+      "MeteorStormArray placement allowed at either source and rejected between them",
+      "MeteorStormArray preview leaves both sources, Gold and discovery intact",
+      "MeteorStormArray creates exactly one native E1 at the clicked source",
+      "MeteorStormArray transfer, fee and one-time confirmation are atomic",
+      "MeteorStormArray discovery writes once per result",
+      "MeteorStormArray discovery does not unlock other results",
+      "MeteorStormArray selectable Evolution owns one upgrade card",
+      "MeteorStormArray native sale refunds once and disposes the rig"
+    ],
+    "transactions": [
+      {
+        "id": "StarburstCannon",
+        "reversed": false,
+        "anchor": [
+          456,
+          181
+        ],
+        "cost": 0,
+        "sourceInvestment": 22490
+      },
+      {
+        "id": "StarburstCannon",
+        "reversed": true,
+        "anchor": [
+          920.0000000000001,
+          181
+        ],
+        "cost": 0,
+        "sourceInvestment": 22490
+      },
+      {
+        "id": "VenomCataclysm",
+        "reversed": false,
+        "anchor": [
+          488,
+          181
+        ],
+        "cost": 1500,
+        "sourceInvestment": 23570
+      },
+      {
+        "id": "VenomCataclysm",
+        "reversed": true,
+        "anchor": [
+          920.0000000000001,
+          181
+        ],
+        "cost": 1500,
+        "sourceInvestment": 23570
+      },
+      {
+        "id": "PlaguebreakerCannon",
+        "reversed": false,
+        "anchor": [
+          472,
+          181
+        ],
+        "cost": 1800,
+        "sourceInvestment": 23230
+      },
+      {
+        "id": "PlaguebreakerCannon",
+        "reversed": true,
+        "anchor": [
+          920.0000000000001,
+          181
+        ],
+        "cost": 1800,
+        "sourceInvestment": 23230
+      },
+      {
+        "id": "SupernovaObliterator",
+        "reversed": false,
+        "anchor": [
+          472,
+          181
+        ],
+        "cost": 2200,
+        "sourceInvestment": 24480
+      },
+      {
+        "id": "SupernovaObliterator",
+        "reversed": true,
+        "anchor": [
+          920.0000000000001,
+          181
+        ],
+        "cost": 2200,
+        "sourceInvestment": 24480
+      },
+      {
+        "id": "ToxicConstellation",
+        "reversed": false,
+        "anchor": [
+          472,
+          181
+        ],
+        "cost": 1600,
+        "sourceInvestment": 21580
+      },
+      {
+        "id": "ToxicConstellation",
+        "reversed": true,
+        "anchor": [
+          920.0000000000001,
+          181
+        ],
+        "cost": 1600,
+        "sourceInvestment": 21580
+      },
+      {
+        "id": "MeteorStormArray",
+        "reversed": false,
+        "anchor": [
+          472,
+          181
+        ],
+        "cost": 2000,
+        "sourceInvestment": 22830
+      },
+      {
+        "id": "MeteorStormArray",
+        "reversed": true,
+        "anchor": [
+          920.0000000000001,
+          181
+        ],
+        "cost": 2000,
+        "sourceInvestment": 22830
+      }
+    ],
+    "stored": [
+      [
+        "StarburstCannon",
+        [
+          "pure_52_25"
+        ]
+      ],
+      [
+        "VenomCataclysm",
+        [
+          "fusion"
+        ]
+      ],
+      [
+        "PlaguebreakerCannon",
+        [
+          "fusion"
+        ]
+      ],
+      [
+        "SupernovaObliterator",
+        [
+          "fusion"
+        ]
+      ],
+      [
+        "ToxicConstellation",
+        [
+          "fusion"
+        ]
+      ],
+      [
+        "MeteorStormArray",
+        [
+          "fusion"
+        ]
+      ]
+    ],
+    "materializations": 12,
+    "pageReload": {
+      "checks": [
+        "Canonical Fusion save opens in the fresh runtime",
+        "StarburstCannon discovery restores separately",
+        "VenomCataclysm discovery restores separately",
+        "PlaguebreakerCannon discovery restores separately",
+        "SupernovaObliterator discovery restores separately",
+        "ToxicConstellation discovery restores separately",
+        "MeteorStormArray discovery restores separately",
+        "Loading known Fusion progress does not replay discovery",
+        "All six discovered portraits and the selected Hybrid restore in Galactic Archives"
+      ],
+      "discovered": [
+        "StarburstCannon",
+        "VenomCataclysm",
+        "PlaguebreakerCannon",
+        "SupernovaObliterator",
+        "ToxicConstellation",
+        "MeteorStormArray"
+      ]
+    },
+    "applicationRelaunch": {
+      "checks": [
+        "Canonical Fusion save opens in the fresh runtime",
+        "StarburstCannon discovery restores separately",
+        "VenomCataclysm discovery restores separately",
+        "PlaguebreakerCannon discovery restores separately",
+        "SupernovaObliterator discovery restores separately",
+        "ToxicConstellation discovery restores separately",
+        "MeteorStormArray discovery restores separately",
+        "Loading known Fusion progress does not replay discovery",
+        "All six discovered portraits and the selected Hybrid restore in Galactic Archives"
+      ],
+      "discovered": [
+        "StarburstCannon",
+        "VenomCataclysm",
+        "PlaguebreakerCannon",
+        "SupernovaObliterator",
+        "ToxicConstellation",
+        "MeteorStormArray"
+      ]
+    }
+  },
+  "progress": [
+    "BALANCE PROGRESS StarburstCannon passed forward and reverse",
+    "BALANCE PROGRESS VenomCataclysm passed forward and reverse",
+    "BALANCE PROGRESS PlaguebreakerCannon passed forward and reverse",
+    "BALANCE PROGRESS SupernovaObliterator passed forward and reverse",
+    "BALANCE PROGRESS ToxicConstellation passed forward and reverse",
+    "BALANCE PROGRESS MeteorStormArray passed forward and reverse"
+  ],
+  "consoleErrors": []
+}

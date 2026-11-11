@@ -1,0 +1,14 @@
+{
+  "result": {
+    "checks": [
+      "fresh Fusion archive starts undiscovered with five sealed art previews",
+      "one Hybrid variant unlocks1/4 and cannot repeat",
+      "three other Adaptive variants stay individually locked",
+      "actual Fusion tab navigates",
+      "generic Fusion Index renders Hybrid progress and hides undiscovered recipes"
+    ],
+    "adaptiveArchiveFixture": true
+  },
+  "progress": [],
+  "consoleErrors": []
+}

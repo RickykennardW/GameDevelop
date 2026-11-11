@@ -954,7 +954,7 @@
                 {
                   "name": "StartingGold",
                   "type": "number",
-                  "value": 600
+                  "value": 420
                 },
                 {
                   "name": "StartingLives",
@@ -996,24 +996,24 @@
                             {
                               "name": "Basic",
                               "type": "number",
-                              "value": 6
+                              "value": 8
                             }
                           ]
                         },
                         {
                           "name": "SpawnInterval",
                           "type": "number",
-                          "value": 1.5
+                          "value": 1.25
                         },
                         {
                           "name": "HealthScale",
                           "type": "number",
-                          "value": 0.85
+                          "value": 1.0
                         },
                         {
                           "name": "SpeedScale",
                           "type": "number",
-                          "value": 0.9
+                          "value": 0.94
                         },
                         {
                           "name": "Boss",
@@ -1023,7 +1023,12 @@
                         {
                           "name": "ExpectedGold",
                           "type": "number",
-                          "value": 30
+                          "value": 64
+                        },
+                        {
+                          "name": "CompletionGold",
+                          "type": "number",
+                          "value": 15
                         }
                       ]
                     },
@@ -1043,24 +1048,24 @@
                             {
                               "name": "Basic",
                               "type": "number",
-                              "value": 10
+                              "value": 12
                             }
                           ]
                         },
                         {
                           "name": "SpawnInterval",
                           "type": "number",
-                          "value": 1.475
+                          "value": 1.1
                         },
                         {
                           "name": "HealthScale",
                           "type": "number",
-                          "value": 0.87
+                          "value": 1.08
                         },
                         {
                           "name": "SpeedScale",
                           "type": "number",
-                          "value": 0.9
+                          "value": 0.98
                         },
                         {
                           "name": "Boss",
@@ -1070,7 +1075,12 @@
                         {
                           "name": "ExpectedGold",
                           "type": "number",
-                          "value": 50
+                          "value": 96
+                        },
+                        {
+                          "name": "CompletionGold",
+                          "type": "number",
+                          "value": 20
                         }
                       ]
                     },
@@ -1090,24 +1100,24 @@
                             {
                               "name": "Basic",
                               "type": "number",
-                              "value": 12
+                              "value": 17
                             }
                           ]
                         },
                         {
                           "name": "SpawnInterval",
                           "type": "number",
-                          "value": 1.45
+                          "value": 0.9
                         },
                         {
                           "name": "HealthScale",
                           "type": "number",
-                          "value": 0.89
+                          "value": 1.14
                         },
                         {
                           "name": "SpeedScale",
                           "type": "number",
-                          "value": 0.9
+                          "value": 1.0
                         },
                         {
                           "name": "Boss",
@@ -1117,7 +1127,12 @@
                         {
                           "name": "ExpectedGold",
                           "type": "number",
-                          "value": 60
+                          "value": 136
+                        },
+                        {
+                          "name": "CompletionGold",
+                          "type": "number",
+                          "value": 25
                         }
                       ]
                     },
@@ -1138,23 +1153,28 @@
                               "name": "Basic",
                               "type": "number",
                               "value": 14
+                            },
+                            {
+                              "name": "VoidHound",
+                              "type": "number",
+                              "value": 10
                             }
                           ]
                         },
                         {
                           "name": "SpawnInterval",
                           "type": "number",
-                          "value": 1.425
+                          "value": 0.82
                         },
                         {
                           "name": "HealthScale",
                           "type": "number",
-                          "value": 0.91
+                          "value": 1.05
                         },
                         {
                           "name": "SpeedScale",
                           "type": "number",
-                          "value": 0.9
+                          "value": 1.0
                         },
                         {
                           "name": "Boss",
@@ -1164,7 +1184,12 @@
                         {
                           "name": "ExpectedGold",
                           "type": "number",
-                          "value": 70
+                          "value": 242
+                        },
+                        {
+                          "name": "CompletionGold",
+                          "type": "number",
+                          "value": 30
                         }
                       ]
                     },
@@ -1184,24 +1209,34 @@
                             {
                               "name": "Basic",
                               "type": "number",
-                              "value": 16
+                              "value": 13
+                            },
+                            {
+                              "name": "VoidHound",
+                              "type": "number",
+                              "value": 9
+                            },
+                            {
+                              "name": "VoidSentinel",
+                              "type": "number",
+                              "value": 10
                             }
                           ]
                         },
                         {
                           "name": "SpawnInterval",
                           "type": "number",
-                          "value": 1.4
+                          "value": 0.75
                         },
                         {
                           "name": "HealthScale",
                           "type": "number",
-                          "value": 0.93
+                          "value": 1.08
                         },
                         {
                           "name": "SpeedScale",
                           "type": "number",
-                          "value": 0.9
+                          "value": 1.01
                         },
                         {
                           "name": "Boss",
@@ -1211,7 +1246,780 @@
                         {
                           "name": "ExpectedGold",
                           "type": "number",
+                          "value": 341
+                        },
+                        {
+                          "name": "CompletionGold",
+                          "type": "number",
+                          "value": 35
+                        }
+                      ]
+                    },
+                    {
+                      "name": "5",
+                      "type": "structure",
+                      "children": [
+                        {
+                          "name": "Number",
+                          "type": "number",
+                          "value": 6
+                        },
+                        {
+                          "name": "Enemies",
+                          "type": "structure",
+                          "children": [
+                            {
+                              "name": "Basic",
+                              "type": "number",
+                              "value": 10
+                            },
+                            {
+                              "name": "VoidHound",
+                              "type": "number",
+                              "value": 8
+                            },
+                            {
+                              "name": "VoidSentinel",
+                              "type": "number",
+                              "value": 9
+                            },
+                            {
+                              "name": "VoidGuard",
+                              "type": "number",
+                              "value": 10
+                            }
+                          ]
+                        },
+                        {
+                          "name": "SpawnInterval",
+                          "type": "number",
+                          "value": 0.7
+                        },
+                        {
+                          "name": "HealthScale",
+                          "type": "number",
+                          "value": 1.1
+                        },
+                        {
+                          "name": "SpeedScale",
+                          "type": "number",
+                          "value": 1.03
+                        },
+                        {
+                          "name": "Boss",
+                          "type": "boolean",
+                          "value": false
+                        },
+                        {
+                          "name": "ExpectedGold",
+                          "type": "number",
+                          "value": 462
+                        },
+                        {
+                          "name": "CompletionGold",
+                          "type": "number",
+                          "value": 40
+                        }
+                      ]
+                    },
+                    {
+                      "name": "6",
+                      "type": "structure",
+                      "children": [
+                        {
+                          "name": "Number",
+                          "type": "number",
+                          "value": 7
+                        },
+                        {
+                          "name": "Enemies",
+                          "type": "structure",
+                          "children": [
+                            {
+                              "name": "Basic",
+                              "type": "number",
+                              "value": 12
+                            },
+                            {
+                              "name": "VoidHound",
+                              "type": "number",
+                              "value": 9
+                            },
+                            {
+                              "name": "VoidSentinel",
+                              "type": "number",
+                              "value": 10
+                            },
+                            {
+                              "name": "VoidGuard",
+                              "type": "number",
+                              "value": 8
+                            },
+                            {
+                              "name": "VoidBrute",
+                              "type": "number",
+                              "value": 8
+                            }
+                          ]
+                        },
+                        {
+                          "name": "SpawnInterval",
+                          "type": "number",
+                          "value": 0.65
+                        },
+                        {
+                          "name": "HealthScale",
+                          "type": "number",
+                          "value": 1.1
+                        },
+                        {
+                          "name": "SpeedScale",
+                          "type": "number",
+                          "value": 1.03
+                        },
+                        {
+                          "name": "Boss",
+                          "type": "boolean",
+                          "value": false
+                        },
+                        {
+                          "name": "ExpectedGold",
+                          "type": "number",
+                          "value": 653
+                        },
+                        {
+                          "name": "CompletionGold",
+                          "type": "number",
+                          "value": 45
+                        }
+                      ]
+                    },
+                    {
+                      "name": "7",
+                      "type": "structure",
+                      "children": [
+                        {
+                          "name": "Number",
+                          "type": "number",
+                          "value": 8
+                        },
+                        {
+                          "name": "Enemies",
+                          "type": "structure",
+                          "children": [
+                            {
+                              "name": "Basic",
+                              "type": "number",
+                              "value": 11
+                            },
+                            {
+                              "name": "VoidHound",
+                              "type": "number",
+                              "value": 17
+                            },
+                            {
+                              "name": "VoidSentinel",
+                              "type": "number",
+                              "value": 12
+                            },
+                            {
+                              "name": "VoidGuard",
+                              "type": "number",
+                              "value": 7
+                            },
+                            {
+                              "name": "VoidBrute",
+                              "type": "number",
+                              "value": 5
+                            }
+                          ]
+                        },
+                        {
+                          "name": "SpawnInterval",
+                          "type": "number",
+                          "value": 0.61
+                        },
+                        {
+                          "name": "HealthScale",
+                          "type": "number",
+                          "value": 1.12
+                        },
+                        {
+                          "name": "SpeedScale",
+                          "type": "number",
+                          "value": 1.1
+                        },
+                        {
+                          "name": "Boss",
+                          "type": "boolean",
+                          "value": false
+                        },
+                        {
+                          "name": "ExpectedGold",
+                          "type": "number",
+                          "value": 687
+                        },
+                        {
+                          "name": "CompletionGold",
+                          "type": "number",
+                          "value": 50
+                        }
+                      ]
+                    },
+                    {
+                      "name": "8",
+                      "type": "structure",
+                      "children": [
+                        {
+                          "name": "Number",
+                          "type": "number",
+                          "value": 9
+                        },
+                        {
+                          "name": "Enemies",
+                          "type": "structure",
+                          "children": [
+                            {
+                              "name": "Basic",
+                              "type": "number",
+                              "value": 9
+                            },
+                            {
+                              "name": "VoidHound",
+                              "type": "number",
+                              "value": 11
+                            },
+                            {
+                              "name": "VoidSentinel",
+                              "type": "number",
+                              "value": 10
+                            },
+                            {
+                              "name": "VoidGuard",
+                              "type": "number",
+                              "value": 15
+                            },
+                            {
+                              "name": "VoidBrute",
+                              "type": "number",
+                              "value": 12
+                            }
+                          ]
+                        },
+                        {
+                          "name": "SpawnInterval",
+                          "type": "number",
+                          "value": 0.58
+                        },
+                        {
+                          "name": "HealthScale",
+                          "type": "number",
+                          "value": 1.14
+                        },
+                        {
+                          "name": "SpeedScale",
+                          "type": "number",
+                          "value": 1.06
+                        },
+                        {
+                          "name": "Boss",
+                          "type": "boolean",
+                          "value": false
+                        },
+                        {
+                          "name": "ExpectedGold",
+                          "type": "number",
+                          "value": 866
+                        },
+                        {
+                          "name": "CompletionGold",
+                          "type": "number",
+                          "value": 55
+                        }
+                      ]
+                    },
+                    {
+                      "name": "9",
+                      "type": "structure",
+                      "children": [
+                        {
+                          "name": "Number",
+                          "type": "number",
+                          "value": 10
+                        },
+                        {
+                          "name": "Enemies",
+                          "type": "structure",
+                          "children": [
+                            {
+                              "name": "Basic",
+                              "type": "number",
+                              "value": 18
+                            },
+                            {
+                              "name": "VoidHound",
+                              "type": "number",
+                              "value": 17
+                            },
+                            {
+                              "name": "VoidSentinel",
+                              "type": "number",
+                              "value": 13
+                            },
+                            {
+                              "name": "VoidGuard",
+                              "type": "number",
+                              "value": 11
+                            },
+                            {
+                              "name": "VoidBrute",
+                              "type": "number",
+                              "value": 8
+                            }
+                          ]
+                        },
+                        {
+                          "name": "SpawnInterval",
+                          "type": "number",
+                          "value": 0.54
+                        },
+                        {
+                          "name": "HealthScale",
+                          "type": "number",
+                          "value": 1.15
+                        },
+                        {
+                          "name": "SpeedScale",
+                          "type": "number",
+                          "value": 1.09
+                        },
+                        {
+                          "name": "Boss",
+                          "type": "boolean",
+                          "value": false
+                        },
+                        {
+                          "name": "ExpectedGold",
+                          "type": "number",
+                          "value": 892
+                        },
+                        {
+                          "name": "CompletionGold",
+                          "type": "number",
+                          "value": 60
+                        }
+                      ]
+                    },
+                    {
+                      "name": "10",
+                      "type": "structure",
+                      "children": [
+                        {
+                          "name": "Number",
+                          "type": "number",
+                          "value": 11
+                        },
+                        {
+                          "name": "Enemies",
+                          "type": "structure",
+                          "children": [
+                            {
+                              "name": "Basic",
+                              "type": "number",
+                              "value": 8
+                            },
+                            {
+                              "name": "VoidHound",
+                              "type": "number",
+                              "value": 18
+                            },
+                            {
+                              "name": "VoidSentinel",
+                              "type": "number",
+                              "value": 10
+                            },
+                            {
+                              "name": "VoidGuard",
+                              "type": "number",
+                              "value": 15
+                            },
+                            {
+                              "name": "VoidBrute",
+                              "type": "number",
+                              "value": 16
+                            }
+                          ]
+                        },
+                        {
+                          "name": "SpawnInterval",
+                          "type": "number",
+                          "value": 0.5
+                        },
+                        {
+                          "name": "HealthScale",
+                          "type": "number",
+                          "value": 1.17
+                        },
+                        {
+                          "name": "SpeedScale",
+                          "type": "number",
+                          "value": 1.1
+                        },
+                        {
+                          "name": "Boss",
+                          "type": "boolean",
+                          "value": false
+                        },
+                        {
+                          "name": "ExpectedGold",
+                          "type": "number",
+                          "value": 1041
+                        },
+                        {
+                          "name": "CompletionGold",
+                          "type": "number",
+                          "value": 65
+                        }
+                      ]
+                    },
+                    {
+                      "name": "11",
+                      "type": "structure",
+                      "children": [
+                        {
+                          "name": "Number",
+                          "type": "number",
+                          "value": 12
+                        },
+                        {
+                          "name": "Enemies",
+                          "type": "structure",
+                          "children": [
+                            {
+                              "name": "Basic",
+                              "type": "number",
+                              "value": 10
+                            },
+                            {
+                              "name": "VoidHound",
+                              "type": "number",
+                              "value": 15
+                            },
+                            {
+                              "name": "VoidSentinel",
+                              "type": "number",
+                              "value": 13
+                            },
+                            {
+                              "name": "VoidGuard",
+                              "type": "number",
+                              "value": 16
+                            },
+                            {
+                              "name": "VoidBrute",
+                              "type": "number",
+                              "value": 17
+                            },
+                            {
+                              "name": "VoidGolem",
+                              "type": "number",
+                              "value": 1
+                            }
+                          ]
+                        },
+                        {
+                          "name": "SpawnInterval",
+                          "type": "number",
+                          "value": 0.48
+                        },
+                        {
+                          "name": "HealthScale",
+                          "type": "number",
+                          "value": 1.17
+                        },
+                        {
+                          "name": "SpeedScale",
+                          "type": "number",
+                          "value": 1.1
+                        },
+                        {
+                          "name": "Boss",
+                          "type": "boolean",
+                          "value": false
+                        },
+                        {
+                          "name": "ExpectedGold",
+                          "type": "number",
+                          "value": 1159
+                        },
+                        {
+                          "name": "CompletionGold",
+                          "type": "number",
+                          "value": 70
+                        },
+                        {
+                          "name": "EliteSpawnSlots",
+                          "type": "array",
+                          "children": [
+                            {
+                              "name": "0",
+                              "type": "number",
+                              "value": 15
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "12",
+                      "type": "structure",
+                      "children": [
+                        {
+                          "name": "Number",
+                          "type": "number",
+                          "value": 13
+                        },
+                        {
+                          "name": "Enemies",
+                          "type": "structure",
+                          "children": [
+                            {
+                              "name": "Basic",
+                              "type": "number",
+                              "value": 11
+                            },
+                            {
+                              "name": "VoidHound",
+                              "type": "number",
+                              "value": 26
+                            },
+                            {
+                              "name": "VoidSentinel",
+                              "type": "number",
+                              "value": 16
+                            },
+                            {
+                              "name": "VoidGuard",
+                              "type": "number",
+                              "value": 12
+                            },
+                            {
+                              "name": "VoidBrute",
+                              "type": "number",
+                              "value": 11
+                            }
+                          ]
+                        },
+                        {
+                          "name": "SpawnInterval",
+                          "type": "number",
+                          "value": 0.44
+                        },
+                        {
+                          "name": "HealthScale",
+                          "type": "number",
+                          "value": 1.18
+                        },
+                        {
+                          "name": "SpeedScale",
+                          "type": "number",
+                          "value": 1.15
+                        },
+                        {
+                          "name": "Boss",
+                          "type": "boolean",
+                          "value": false
+                        },
+                        {
+                          "name": "ExpectedGold",
+                          "type": "number",
+                          "value": 1075
+                        },
+                        {
+                          "name": "CompletionGold",
+                          "type": "number",
+                          "value": 75
+                        }
+                      ]
+                    },
+                    {
+                      "name": "13",
+                      "type": "structure",
+                      "children": [
+                        {
+                          "name": "Number",
+                          "type": "number",
+                          "value": 14
+                        },
+                        {
+                          "name": "Enemies",
+                          "type": "structure",
+                          "children": [
+                            {
+                              "name": "Basic",
+                              "type": "number",
+                              "value": 10
+                            },
+                            {
+                              "name": "VoidHound",
+                              "type": "number",
+                              "value": 19
+                            },
+                            {
+                              "name": "VoidSentinel",
+                              "type": "number",
+                              "value": 17
+                            },
+                            {
+                              "name": "VoidGuard",
+                              "type": "number",
+                              "value": 20
+                            },
+                            {
+                              "name": "VoidBrute",
+                              "type": "number",
+                              "value": 20
+                            },
+                            {
+                              "name": "VoidGolem",
+                              "type": "number",
+                              "value": 1
+                            }
+                          ]
+                        },
+                        {
+                          "name": "SpawnInterval",
+                          "type": "number",
+                          "value": 0.43
+                        },
+                        {
+                          "name": "HealthScale",
+                          "type": "number",
+                          "value": 1.21
+                        },
+                        {
+                          "name": "SpeedScale",
+                          "type": "number",
+                          "value": 1.12
+                        },
+                        {
+                          "name": "Boss",
+                          "type": "boolean",
+                          "value": false
+                        },
+                        {
+                          "name": "ExpectedGold",
+                          "type": "number",
+                          "value": 1396
+                        },
+                        {
+                          "name": "CompletionGold",
+                          "type": "number",
                           "value": 80
+                        },
+                        {
+                          "name": "EliteSpawnSlots",
+                          "type": "array",
+                          "children": [
+                            {
+                              "name": "0",
+                              "type": "number",
+                              "value": 15
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "name": "14",
+                      "type": "structure",
+                      "children": [
+                        {
+                          "name": "Number",
+                          "type": "number",
+                          "value": 15
+                        },
+                        {
+                          "name": "Enemies",
+                          "type": "structure",
+                          "children": [
+                            {
+                              "name": "Basic",
+                              "type": "number",
+                              "value": 12
+                            },
+                            {
+                              "name": "VoidHound",
+                              "type": "number",
+                              "value": 22
+                            },
+                            {
+                              "name": "VoidSentinel",
+                              "type": "number",
+                              "value": 18
+                            },
+                            {
+                              "name": "VoidGuard",
+                              "type": "number",
+                              "value": 23
+                            },
+                            {
+                              "name": "VoidBrute",
+                              "type": "number",
+                              "value": 24
+                            },
+                            {
+                              "name": "VoidGolem",
+                              "type": "number",
+                              "value": 2
+                            }
+                          ]
+                        },
+                        {
+                          "name": "SpawnInterval",
+                          "type": "number",
+                          "value": 0.4
+                        },
+                        {
+                          "name": "HealthScale",
+                          "type": "number",
+                          "value": 1.24
+                        },
+                        {
+                          "name": "SpeedScale",
+                          "type": "number",
+                          "value": 1.14
+                        },
+                        {
+                          "name": "Boss",
+                          "type": "boolean",
+                          "value": false
+                        },
+                        {
+                          "name": "ExpectedGold",
+                          "type": "number",
+                          "value": 1671
+                        },
+                        {
+                          "name": "CompletionGold",
+                          "type": "number",
+                          "value": 90
+                        },
+                        {
+                          "name": "EliteSpawnSlots",
+                          "type": "array",
+                          "children": [
+                            {
+                              "name": "0",
+                              "type": "number",
+                              "value": 18
+                            },
+                            {
+                              "name": "1",
+                              "type": "number",
+                              "value": 45
+                            }
+                          ]
                         }
                       ]
                     }
@@ -1220,7 +2028,43 @@
                 {
                   "name": "ExpectedKillGold",
                   "type": "number",
-                  "value": 290
+                  "value": 10781
+                },
+                {
+                  "name": "EnemyRewards",
+                  "type": "structure",
+                  "children": [
+                    {
+                      "name": "Basic",
+                      "type": "number",
+                      "value": 8
+                    },
+                    {
+                      "name": "VoidHound",
+                      "type": "number",
+                      "value": 13
+                    },
+                    {
+                      "name": "VoidSentinel",
+                      "type": "number",
+                      "value": 12
+                    },
+                    {
+                      "name": "VoidGuard",
+                      "type": "number",
+                      "value": 17
+                    },
+                    {
+                      "name": "VoidBrute",
+                      "type": "number",
+                      "value": 23
+                    },
+                    {
+                      "name": "VoidGolem",
+                      "type": "number",
+                      "value": 65
+                    }
+                  ]
                 }
               ]
             },
