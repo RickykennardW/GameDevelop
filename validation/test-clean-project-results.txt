@@ -327,10 +327,10 @@ PASS empty point never selects StarCannonTower
 PASS visible base/body selection NebulaBloomTower
 PASS selection rejects empty point outside visible body NebulaBloomTower
 PASS empty point never selects NebulaBloomTower
-PASS 12 interior solid obstacles removable; edge crystal permanent
+PASS 21 authored labyrinth solid obstacles are removable interior owners
 PASS nonblocking foliage never sold as a clearable blocker
 PASS spawn base road cliffs and cosmic background permanent
-PASS edge crystal click cannot open Clear
+PASS permanent Start portal click cannot open Clear
 PASS real removable owner has usable cleared floor
 PASS normal click opens themed Clear panel without deleting
 PASS Cancel keeps obstacle and gold

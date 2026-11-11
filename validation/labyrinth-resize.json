@@ -1,0 +1,217 @@
+{
+  "result": {
+    "resizeSequence": [
+      {
+        "checks": [
+          "Native road uses the rendered ivory labyrinth",
+          "32 px artwork, waypoints and footprint share one layout",
+          "Both portals retain their gameplay anchors",
+          "Original top surface and cliff anchors",
+          "Straight path edge is exactly 16 px from center on each side",
+          "Existing foliage remains non-blocking",
+          "All authored obstacle circles clear the route",
+          "Every normal and Evolution footprint has room in multiple corridors",
+          "World and preserved cliffs stay out of the sidebar",
+          "Existing HUD stays in its screen-space safe area"
+        ],
+        "available": {
+          "StarCannonTower": 194,
+          "NebulaBloomTower": 151,
+          "MeteorStormArray": 164,
+          "PlaguebreakerCannon": 175,
+          "SupernovaObliterator": 158,
+          "ToxicConstellation": 179,
+          "VenomCataclysm": 158
+        },
+        "length": 9776.5263,
+        "waypoints": 331,
+        "viewport": [
+          1280,
+          720
+        ],
+        "canvas": [
+          1280,
+          720
+        ],
+        "zoom": 0.5373931623931624
+      },
+      {
+        "checks": [
+          "Native road uses the rendered ivory labyrinth",
+          "32 px artwork, waypoints and footprint share one layout",
+          "Both portals retain their gameplay anchors",
+          "Original top surface and cliff anchors",
+          "Straight path edge is exactly 16 px from center on each side",
+          "Existing foliage remains non-blocking",
+          "All authored obstacle circles clear the route",
+          "Every normal and Evolution footprint has room in multiple corridors",
+          "World and preserved cliffs stay out of the sidebar",
+          "Existing HUD stays in its screen-space safe area"
+        ],
+        "available": {
+          "StarCannonTower": 194,
+          "NebulaBloomTower": 151,
+          "MeteorStormArray": 164,
+          "PlaguebreakerCannon": 175,
+          "SupernovaObliterator": 158,
+          "ToxicConstellation": 179,
+          "VenomCataclysm": 158
+        },
+        "length": 9776.5263,
+        "waypoints": 331,
+        "viewport": [
+          960,
+          540
+        ],
+        "canvas": [
+          960,
+          540
+        ],
+        "zoom": 0.36645299145299143
+      },
+      {
+        "checks": [
+          "Native road uses the rendered ivory labyrinth",
+          "32 px artwork, waypoints and footprint share one layout",
+          "Both portals retain their gameplay anchors",
+          "Original top surface and cliff anchors",
+          "Straight path edge is exactly 16 px from center on each side",
+          "Existing foliage remains non-blocking",
+          "All authored obstacle circles clear the route",
+          "Every normal and Evolution footprint has room in multiple corridors",
+          "World and preserved cliffs stay out of the sidebar",
+          "Existing HUD stays in its screen-space safe area"
+        ],
+        "available": {
+          "StarCannonTower": 194,
+          "NebulaBloomTower": 151,
+          "MeteorStormArray": 164,
+          "PlaguebreakerCannon": 175,
+          "SupernovaObliterator": 158,
+          "ToxicConstellation": 179,
+          "VenomCataclysm": 158
+        },
+        "length": 9776.5263,
+        "waypoints": 331,
+        "viewport": [
+          960,
+          540
+        ],
+        "canvas": [
+          640,
+          360
+        ],
+        "zoom": 0.36645299145299143
+      },
+      {
+        "checks": [
+          "Native road uses the rendered ivory labyrinth",
+          "32 px artwork, waypoints and footprint share one layout",
+          "Both portals retain their gameplay anchors",
+          "Original top surface and cliff anchors",
+          "Straight path edge is exactly 16 px from center on each side",
+          "Existing foliage remains non-blocking",
+          "All authored obstacle circles clear the route",
+          "Every normal and Evolution footprint has room in multiple corridors",
+          "World and preserved cliffs stay out of the sidebar",
+          "Existing HUD stays in its screen-space safe area"
+        ],
+        "available": {
+          "StarCannonTower": 194,
+          "NebulaBloomTower": 151,
+          "MeteorStormArray": 164,
+          "PlaguebreakerCannon": 175,
+          "SupernovaObliterator": 158,
+          "ToxicConstellation": 179,
+          "VenomCataclysm": 158
+        },
+        "length": 9776.5263,
+        "waypoints": 331,
+        "viewport": [
+          960,
+          540
+        ],
+        "canvas": [
+          1,
+          0.5625
+        ],
+        "zoom": 0.36645299145299143
+      },
+      {
+        "checks": [
+          "Native road uses the rendered ivory labyrinth",
+          "32 px artwork, waypoints and footprint share one layout",
+          "Both portals retain their gameplay anchors",
+          "Original top surface and cliff anchors",
+          "Straight path edge is exactly 16 px from center on each side",
+          "Existing foliage remains non-blocking",
+          "All authored obstacle circles clear the route",
+          "Every normal and Evolution footprint has room in multiple corridors",
+          "World and preserved cliffs stay out of the sidebar",
+          "Existing HUD stays in its screen-space safe area"
+        ],
+        "available": {
+          "StarCannonTower": 194,
+          "NebulaBloomTower": 151,
+          "MeteorStormArray": 164,
+          "PlaguebreakerCannon": 175,
+          "SupernovaObliterator": 158,
+          "ToxicConstellation": 179,
+          "VenomCataclysm": 158
+        },
+        "length": 9776.5263,
+        "waypoints": 331,
+        "viewport": [
+          1280,
+          720
+        ],
+        "canvas": [
+          1280,
+          720
+        ],
+        "zoom": 0.5373931623931624
+      }
+    ],
+    "windowMinimize": {
+      "minimized": "minimized",
+      "hidden": true,
+      "restored": "normal",
+      "afterRestore": {
+        "checks": [
+          "Native road uses the rendered ivory labyrinth",
+          "32 px artwork, waypoints and footprint share one layout",
+          "Both portals retain their gameplay anchors",
+          "Original top surface and cliff anchors",
+          "Straight path edge is exactly 16 px from center on each side",
+          "Existing foliage remains non-blocking",
+          "All authored obstacle circles clear the route",
+          "Every normal and Evolution footprint has room in multiple corridors",
+          "World and preserved cliffs stay out of the sidebar",
+          "Existing HUD stays in its screen-space safe area"
+        ],
+        "available": {
+          "StarCannonTower": 194,
+          "NebulaBloomTower": 151,
+          "MeteorStormArray": 164,
+          "PlaguebreakerCannon": 175,
+          "SupernovaObliterator": 158,
+          "ToxicConstellation": 179,
+          "VenomCataclysm": 158
+        },
+        "length": 9776.5263,
+        "waypoints": 331,
+        "viewport": [
+          1280,
+          720
+        ],
+        "canvas": [
+          1280,
+          720
+        ],
+        "zoom": 0.5373931623931624
+      }
+    }
+  },
+  "progress": [],
+  "consoleErrors": []
+}

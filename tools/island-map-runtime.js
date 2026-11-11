@@ -1,17 +1,5 @@
-// Directional skins reuse the same road instances, centers, masks and PathOrder.
-const scene=runtimeScene,get=n=>scene.getObjects(n),sv=scene.getVariables();
-const roads=get("Monster_Path").slice().sort((a,b)=>a.getVariables().get("PathOrder").getAsNumber()-b.getVariables().get("PathOrder").getAsNumber());
-const side=(o,n)=>n.getX()>o.getX()?"E":n.getX()<o.getX()?"W":n.getY()>o.getY()?"S":"N";
-roads.forEach((o,i)=>{
-  const sides=[i?side(o,roads[i-1]):null,i<roads.length-1?side(o,roads[i+1]):null].filter(Boolean);
-  let skin;
-  if(sides.length===1)skin="Cap_"+sides[0];
-  else if(sides.includes("E")&&sides.includes("W"))skin="H";
-  else if(sides.includes("N")&&sides.includes("S"))skin="V";
-  else skin=(sides.includes("N")?"N":"S")+(sides.includes("E")?"E":"W");
-  if(o.getAnimationName()!==skin)o.setAnimationName(skin);
-  o.pauseAnimation();o.setAnimationFrame((skin==="H"||skin==="V")?i%4:0);
-});
+// Original island border and terrain frame. The route sprite is authored in the scene.
+const scene=runtimeScene,get=n=>scene.getObjects(n);
 const kinds=["Crystal","Rock","Ruin","Shrub"];
 get("Ground_Decoration").forEach((o,i)=>{
   const kind=o.getVariables().get("Kind").getAsString()||kinds[i%4];if(o.getAnimationName()!==kind)o.setAnimationName(kind);
@@ -24,8 +12,7 @@ backdrop.setPosition(ground.getX(),ground.getY());backdrop.setWidth(ground.getWi
 // Compose the existing frame as proportionally scaled perimeter pieces outside the road.
 // No full-frame stretch, no rocky art laid beneath the bottom road.
 if(scene.__islandCliffFrame){scene.__islandCliffFrame.deleteFromScene();scene.__islandCliffFrame=null;}
-const left=Math.min(...roads.map(o=>o.getX()))-16,right=Math.max(...roads.map(o=>o.getX()+o.getWidth()))+16;
-const top=Math.min(...roads.map(o=>o.getY()))-112,bottom=Math.max(...roads.map(o=>o.getY()+o.getHeight()))+16;
+const {left,top,right,bottom}=scene.__towerShopUI.level.surface;
 const unit=scene.__worldStyle.cliffUnit,L=225,R=225,T=180,B=206,W=1448,H=1086,lw=L*unit,rw=R*unit,th=T*unit,bh=B*unit;
 const pieces=[];
 const add=(sx,sy,sw,sh,x,y,w,h)=>pieces.push({sx,sy,sw,sh,x,y,w,h});

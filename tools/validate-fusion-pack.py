@@ -150,14 +150,23 @@ def main():
     old = lambda file: json.loads(subprocess.check_output(["git","show",baseline+":"+file],cwd=ROOT).decode("utf-8-sig"))
     project = read(ROOT/"Tower Defense.json")
     scene = read(ROOT/"layouts/game-scene.json")
+    labyrinth = runpy.run_path(str(ROOT/'tools/validate-labyrinth.py')) if any(v['name']=='LabyrinthMap' for v in scene['variables']) else None
     registered = {asset["resourceName"] for asset in assets.values() if asset["importStatus"]!="ReadyToImport"}
     resources = project["resources"]["resources"]
     for file in registered:
         ok(sum(r["name"]==file and r["file"]==file for r in resources)==1, "Native resource entry: "+file)
     project["resources"]["resources"] = [r for r in resources if r["name"] not in registered]
+    if labyrinth:
+        project['resources']['resources'] = [r for r in project['resources']['resources'] if r['name']!=labyrinth['RESOURCE']]
     ok(project==old("Tower Defense.json"), "Project differences limited to new Fusion resources")
     scope = runpy.run_path(str(ROOT/'tools/nebula-bloom-scope.py'))
     original_scene = old('layouts/game-scene.json')
+    if labyrinth:
+        filter_instances=labyrinth['without_map_instances']
+        ok(filter_instances(scene['instances'])==filter_instances(original_scene['instances']), 'Original non-map scene instances preserved')
+        scene['instances']=original_scene['instances']
+        scene['objects']=labyrinth['without_map_animations'](scene['objects'])
+        scene['variables']=[v for v in scene['variables'] if v['name']!='LabyrinthMap']
     gameplay = all(t['gameplayStatus']=='Playable' for t in towers.values())
     if gameplay:
         def unpack(value):
@@ -195,6 +204,7 @@ def main():
                            'world-selection-runtime.js','selected-panel-runtime.js','unit-index-runtime.js',
                            'star-cannon-runtime.js','nebula-bloom-runtime.js','nebula-bloom-render.js','audio-runtime.js',
                            'developer-cheats-runtime.js','nova-wave-manager.js','nova-death-runtime.js'}
+        if labyrinth: changed_sources.update(labyrinth['MAP_SOURCES'])
         added_events = []
         for root, children, name in read(ROOT/'tools/source-mapping.json'):
             event = scene['events'][root]
@@ -214,7 +224,7 @@ def main():
     for file in ("layouts/levels.json","layouts/main-menu.json","eventsFunctionsExtensions/health.json"):
         ok(read(ROOT/file)==old(file), "Preserved "+file)
     changed = subprocess.check_output(["git","diff",baseline,"--name-only","--","assets"], cwd=ROOT, text=True).splitlines()
-    ok(all(name.startswith("assets/towers/fusion/") for name in changed), "Original asset bytes are preserved")
+    ok(all(name.startswith("assets/towers/fusion/") or labyrinth and name==labyrinth['ART'] for name in changed), "Original asset bytes are preserved")
     ok(not any((ROOT/entry["path"]).exists() for entry in read(ROOT/"validation/fusion-rebuild-cleanup.json")["deleted"]),
        "Rejected files remain removed")
 

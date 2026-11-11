@@ -62,26 +62,17 @@ if(!p){
    if((a[1]>y)!==(b[1]>y)&&x<(b[0]-a[0])*(y-a[1])/(b[1]-a[1])+a[0])inside=!inside;
   }return inside;
  };
- // SVG road ribbon: 64px outer stroke around radius-33 quarter arcs, clipped to each tile.
- p.clip=(poly,axis,edge,greater)=>{
-  const out=[];let a=poly.at(-1),ai=greater?a[axis]>=edge:a[axis]<=edge;
-  for(const b of poly){const bi=greater?b[axis]>=edge:b[axis]<=edge;if(ai!==bi){const t=(edge-a[axis])/(b[axis]-a[axis]);out.push([a[0]+t*(b[0]-a[0]),a[1]+t*(b[1]-a[1])]);}if(bi)out.push(b);a=b;ai=bi;}return out;
+ // A round SVG stroke is the union of the swept circles along its centerline.
+ const {points,width}=scene.__towerShopUI.level;
+ p.roadSegments=points.slice(1).map(({X,Y},i)=>{
+  const a=[points[i].X,points[i].Y],b=[X,Y];
+  return {a,b,left:Math.min(a[0],X),right:Math.max(a[0],X),top:Math.min(a[1],Y),bottom:Math.max(a[1],Y)};
+ });
+ p.pathOverlaps=(x,y,r)=>{
+  const clearance=width/2+r;
+  return p.roadSegments.some(s=>x>=s.left-clearance&&x<=s.right+clearance&&
+   y>=s.top-clearance&&y<=s.bottom+clearance&&p.segment(x,y,s.a,s.b)<=clearance);
  };
- p.roadSkin=skin=>{
-  if(['H','V'].includes(skin))return [[0,0],[64,0],[64,64],[0,64]];
-  let poly=[];
-  const turns={NE:[65,-1,Math.PI/2,Math.PI],NW:[-1,-1,0,Math.PI/2],SE:[65,65,Math.PI,Math.PI*1.5],SW:[-1,65,-Math.PI/2,0]};
-  if(turns[skin]){
-   const [cx,cy,a,b]=turns[skin];for(let i=0;i<=64;i++){const t=a+(b-a)*i/64;poly.push([cx+65*Math.cos(t),cy+65*Math.sin(t)]);}
-   for(let i=64;i>=0;i--){const t=a+(b-a)*i/64;poly.push([cx+Math.cos(t),cy+Math.sin(t)]);}
-  }else{
-   // Rounded cap plus half tile toward the neighbouring road.
-   const side=skin.slice(4),rotation={E:0,S:Math.PI/2,W:Math.PI,N:-Math.PI/2}[side]||0;
-   const local=[[66,0],[66,64],[32,64]];for(let i=1;i<=64;i++){const t=Math.PI/2+Math.PI*i/64;local.push([32+32*Math.cos(t),32+32*Math.sin(t)]);}poly=local.map(([x,y])=>[32+(x-32)*Math.cos(rotation)-(y-32)*Math.sin(rotation),32+(x-32)*Math.sin(rotation)+(y-32)*Math.cos(rotation)]);
-  }
-  for(const [a,e,g] of [[0,0,true],[0,64,false],[1,0,true],[1,64,false]])poly=p.clip(poly,a,e,g);return poly;
- };
- p.localRoads=new Map();
  // Normalised opaque contours follow each generated prop, including transparent corners.
  p.obstacleShapes={
   Crystal:[[.55,.065],[.71,.26],[.72,.51],[.81,.49],[.90,.65],[.94,.77],[.85,.86],[.63,.94],[.40,.91],[.21,.83],[.09,.73],[.12,.63],[.16,.34],[.25,.29],[.40,.48],[.42,.21]],
@@ -100,7 +91,6 @@ if(!p){
   return {owner:o,x,y,r};
  };
  p.refresh=()=>{
-  p.roads=get('Monster_Path').map(o=>{const skin=o.getAnimationName();if(!p.localRoads.has(skin))p.localRoads.set(skin,p.roadSkin(skin));return p.localRoads.get(skin).map(([x,y])=>[o.getX()+x*o.getWidth()/64,o.getY()+y*o.getHeight()/64]);});
   p.blockers=[...get('Ground_Decoration').filter(o=>o.getVariables().get('Blocking').getAsBoolean()),...get('SpawnMarker'),...get('BaseMarker')].map(p.blockedCircle);
 
  };
@@ -116,7 +106,7 @@ if(!p){
   }
   const screen=map.convertInverseCoords(x,y,0,[0,0]),z=map.getCameraZoom(),sr=r*z;
   if(screen[0]-sr<ui.left||screen[0]+sr>ui.right||screen[1]-sr<ui.top||screen[1]+sr>ui.bottom)return {valid:false,reason:'bounds'};
-  if(p.roads.some(poly=>p.polygon(x,y,r,poly)))return {valid:false,reason:'path'};
+  if(p.pathOverlaps(x,y,r))return {valid:false,reason:'path'};
   if(p.towers().some(o=>{if(options.ignoreTowers?.has(o))return false;const c=p.center(o);return Math.hypot(x-c[0],y-c[1])<p.minimumDistance(type,o)-1e-6;}))return {valid:false,reason:'tower'};
   if(p.blockers.some(o=>Math.hypot(x-o.x,y-o.y)<=r+o.r+1e-6))return {valid:false,reason:'obstacle'};
   const cost=options.cost??sv.get('TowerShopCatalog').toJSObject().find(i=>i.Type===type)?.Cost;

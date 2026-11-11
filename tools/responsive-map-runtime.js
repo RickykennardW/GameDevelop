@@ -2,7 +2,7 @@
 const scene = runtimeScene;
 const variables = scene.getVariables();
 // Independent world presentation controls; combat stats are deliberately separate.
-const style=scene.__worldStyle || (scene.__worldStyle={road:88,star:2.5,
+const style=scene.__worldStyle || (scene.__worldStyle={star:2.5,
  enemy:1.55,spawn:5.2,base:2.15,
  props:{Crystal:1.65,Rock:1.75,Ruin:2.30,Shrub:1.65},
  footprints:{StarCannonTower:46},cliffUnit:.32});
@@ -92,55 +92,16 @@ const safeTop = 16 + hudHeight + 20;
 // On narrow portrait windows reserve the taller HUD band explicitly.
 const frameTop = compactHUD ? safeTop : 16;
 const mapFrame = { left: 16, top: frameTop, right: Math.max(17,gameAreaRight-16), bottom: Math.max(frameTop+1,height-24) };
-const layoutKey = "celestial-four-lane-88";
 if (!ui.level) {
-  // Four broad lanes preserve total travel distance (7128 vs 7168 world units),
-  // while allowing wider roads and larger sprites without shrinking build pockets.
-  const cell=style.road,left=cell,right=cell*19,firstY=cell*2;
-  const rows = [2,5,8,11].map(row=>row*cell);
-  const corners = [[left,rows[0]]];
-  rows.forEach((y,i)=>{if(i)corners.push([corners[corners.length-1][0],y]);corners.push([i%2===0?right:left,y]);});
-  const positions = [corners[0]];
-  for (const [tx,ty] of corners.slice(1)) {
-    let [x,y] = positions[positions.length-1];
-    while (x!==tx || y!==ty) { x+=Math.sign(tx-x)*cell;y+=Math.sign(ty-y)*cell;positions.push([x,y]); }
-  }
-  const tiles = get("Monster_Path").slice().sort((a,b)=>a.getVariables().get("PathOrder").getAsNumber()-b.getVariables().get("PathOrder").getAsNumber());
-  positions.forEach(([x,y],i)=>{
-    const tile = tiles[i] || scene.createObject("Monster_Path");
-    tile.setLayer("");tile.setZOrder(0);tile.setWidth(cell);tile.setHeight(cell);tile.setPosition(x,y);tile.setAnimationName("Surface");tile.getVariables().get("PathOrder").setNumber(i);
-  });
-  tiles.slice(positions.length).forEach(tile=>tile.deleteFromScene());
-  const spawnPoint=[left+cell/2,firstY+cell/2],last=positions.at(-1),basePoint=[last[0]+cell/2,last[1]+cell/2];
-  const spawn = first("SpawnMarker"), base=first("BaseMarker");
-  spawn.setPosition(spawnPoint[0]-16,spawnPoint[1]-16);spawn.setWidth(32);spawn.setHeight(32);spawn.setZOrder(0);
-  base.setPosition(basePoint[0]-40,basePoint[1]-40);base.setWidth(80);base.setHeight(80);
-  const trees = get("Ground_Decoration");
-  const middle=(left+right)/2;
-  const treePoints=[];
-  // Asymmetric floor clusters: keep generous bend pockets and multiple open strips.
-  const compositions=[[.24,.32,.60,.67],[.72,.64,.30,.39],[.35,.43,.72,.79]];
-  for(let band=0;band<3;band++){
-    const y=(rows[band]+cell+rows[band+1])/2-32;
-    for(const t of compositions[band])treePoints.push([left+(right-left)*t-32,y]);
-  }
-  trees.forEach((tree,i)=>{tree.setPosition(...treePoints[i%12]);tree.getVariables().get('LocalScale').setNumber(1);tree.getVariables().get('Kind').setString(['Crystal','Rock','Ruin','Shrub'][i%4]);});
-  // Smaller satellites enrich floor clusters without adding another large obstruction.
-  for(const [kind,t,band,dy,size] of [
-    ['Rock',.21,0,40,.42],['Shrub',.29,0,46,.56],
-    ['Crystal',.75,1,42,.46],['Shrub',.67,1,50,.53],
-    ['Rock',.69,2,44,.43],['Shrub',.39,2,48,.56],
-    ['Crystal',.48,-1,0,.80],['Shrub',.54,-1,20,.72]]){
-      const o=scene.createObject('Ground_Decoration');o.setLayer('');o.getVariables().get('Kind').setString(kind);o.getVariables().get('LocalScale').setNumber(size);
-      const y=band<0?firstY-72:(rows[band]+cell+rows[band+1])/2+dy;
-      o.setPosition(left+(right-left)*t-32,y-32);
-  }
-  // Exact outer extent of the proportional perimeter in island-map-runtime.js,
-  // plus 12 world px breathing room. All frame pieces fit, including hanging rock.
-  ui.mapBounds={left:left-16-225*style.cliffUnit-12,top:firstY-112-180*style.cliffUnit-12,
-    right:right+cell+16+225*style.cliffUnit+12,bottom:rows.at(-1)+cell+16+206*style.cliffUnit+12};
-  ui.level={key:layoutKey,rows,left,right,spawn:spawnPoint,base:basePoint,tileCount:positions.length,length:(positions.length-1)*cell};
-  variables.get("MapRouteDirty").setBoolean(true);
+  const layout=variables.get("LabyrinthMap").toJSObject();
+  const surface=layout.Surface, unit=style.cliffUnit;
+  ui.level={width:layout.Width, rows:layout.MainRows, points:layout.Points,
+    surface, length:layout.Length, turns:layout.Turns,
+    spawn:[layout.Points[0].X,layout.Points[0].Y],
+    base:[layout.Points.at(-1).X,layout.Points.at(-1).Y]};
+  // Keep the original cliff extent and viewport framing independent of the route.
+  ui.mapBounds={left:surface.left-225*unit-12,top:surface.top-180*unit-12,
+    right:surface.right+225*unit+12,bottom:surface.bottom+206*unit+12};
 }
 const bounds = {...ui.mapBounds};
 // Fixed gameplay framing depends only on static map geometry, never on towers/ghosts.

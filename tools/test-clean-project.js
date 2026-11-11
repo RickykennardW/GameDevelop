@@ -74,10 +74,10 @@ for(const name of p.types){
  remove(name);close();
 }
 ob.classify();const solids=get('Ground_Decoration').filter(o=>o.getVariables().get('Blocking').getAsBoolean()),removable=solids.filter(o=>o.getVariables().get('EnvironmentCategory').getAsString()==='RemovableObstacle');
-ok(removable.length===12&&solids.length===13,'12 interior solid obstacles removable; edge crystal permanent');
+ok(removable.length===21&&solids.length===21,'21 authored labyrinth solid obstacles are removable interior owners');
 ok(get('Ground_Decoration').filter(o=>o.getVariables().get('Kind').getAsString()==='Shrub').every(o=>o.getVariables().get('EnvironmentCategory').getAsString()==='PermanentEnvironment'),'nonblocking foliage never sold as a clearable blocker');
 ok(['SpawnMarker','BaseMarker','Monster_Path','IslandCliffFrame','VoidBackdrop'].every(n=>get(n).every(o=>o.getVariables().get('EnvironmentCategory').getAsString()==='PermanentEnvironment')),'spawn base road cliffs and cosmic background permanent');
-const permanent=solids.find(o=>o.getVariables().get('EnvironmentCategory').getAsString()==='PermanentEnvironment');clickObject(permanent);ok(v('SelectedObstacleId')===0,'edge crystal click cannot open Clear');
+const permanent=get('SpawnMarker')[0];clickObject(permanent);ok(v('SelectedObstacleId')===0,'permanent Start portal click cannot open Clear');
 // Choose a real interior owner whose cleared space admits a tower circle.
 let obstacle,free;for(const o of removable){const old=p.blockers;p.blockers=old.filter(b=>b.owner!==o);const c=p.blockedCircle(o);
  for(let y=c.y-45;y<=c.y+45&&!free;y+=5)for(let x=c.x-45;x<=c.x+45;x+=5)if(p.validate('StarCannonTower',x,y).valid){obstacle=o;free=[x,y];break;}

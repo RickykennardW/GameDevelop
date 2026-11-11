@@ -1,0 +1,287 @@
+{
+  "result": {
+    "checks": [
+      "Native road uses the rendered ivory labyrinth",
+      "32 px artwork, waypoints and footprint share one layout",
+      "Both portals retain their gameplay anchors",
+      "Original top surface and cliff anchors",
+      "Straight path edge is exactly 16 px from center on each side",
+      "Existing foliage remains non-blocking",
+      "All authored obstacle circles clear the route",
+      "Every normal and Evolution footprint has room in multiple corridors",
+      "Native Play starts the original twenty-enemy wave",
+      "Full wave and all six archetypes traversed the route",
+      "Every escape deducts one Life only after reaching the Finish portal",
+      "Escapes clear the wave without awarding kill Gold"
+    ],
+    "normalWaveEnemies": 20,
+    "testEnemies": 28,
+    "archetypes": [
+      "Basic",
+      "VoidBrute",
+      "VoidGolem",
+      "VoidGuard",
+      "VoidHound",
+      "VoidSentinel"
+    ],
+    "frames": 4460,
+    "simulatedSeconds": 223.00000000001646,
+    "lives": 22,
+    "escaped": [
+      {
+        "type": "VoidHound",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "Basic",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "Basic",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "Basic",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "Basic",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "Basic",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "Basic",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "Basic",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "Basic",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "Basic",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "Basic",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "Basic",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "Basic",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "Basic",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "Basic",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "Basic",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "Basic",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "Basic",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "Basic",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "Basic",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "VoidSentinel",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "Basic",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "Basic",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "Basic",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "VoidGuard",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "VoidBrute",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "Basic",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      },
+      {
+        "type": "VoidGolem",
+        "waypoint": 331,
+        "position": [
+          132,
+          1012
+        ],
+        "finished": true
+      }
+    ]
+  },
+  "progress": [],
+  "consoleErrors": []
+}

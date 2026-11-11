@@ -15,7 +15,7 @@
  const key=code=>{input.onKeyPressed(code);step();input.onKeyReleased(code);step(2);};
  const select=t=>{vars.get('SelectedTower').setNumber(t?num(t,'TowerId'):0);step(2);};
  const same=(a,b)=>Math.hypot(a[0]-b[0],a[1]-b[1])<.1;
- const rows=shop.level.rows.slice(0,-1).map((r,i)=>(r+scene.__worldStyle.road+shop.level.rows[i+1])/2);
+ const rows=shop.level.rows.slice(0,-1).map((r,i)=>(r+shop.level.rows[i+1])/2);
  const site=(type,output,left,right)=>{
   p.refresh();
   for(const y of rows)for(let x=left;x<=right;x+=16){

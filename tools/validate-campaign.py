@@ -1,5 +1,5 @@
 """Campaign data, native references and preserved gameplay audit; hashes only."""
-import hashlib,json,sys,xml.etree.ElementTree as ET
+import hashlib,json,runpy,sys,xml.etree.ElementTree as ET
 from importlib.machinery import SourceFileLoader
 from pathlib import Path
 ROOT=Path(__file__).resolve().parent.parent
@@ -36,7 +36,14 @@ for i,level in enumerate(cfg['Levels']):
     ok(sum(w['ExpectedGold'] for w in level['Waves'])==level['ExpectedKillGold'],'Mission income total: '+level['Id'])
 sys.dont_write_bytecode=True
 scope=SourceFileLoader('nebula_scope',str(ROOT/'tools/nebula-bloom-scope.py')).load_module()
-ok(hash_json(scope.original_objects(g['objects'][:67]))==before['objectsHash'] and hash_json(g['instances'])==before['instancesHash'],'All67original definitions preserved apart from additive Nebula UI frames;157instances unchanged')
+instances=g['instances']; objects=g['objects'][:67]
+if 'LabyrinthMap' in vars:
+    labyrinth=runpy.run_path(str(ROOT/'tools/validate-labyrinth.py'))
+    prior=labyrinth['old']('layouts/game-scene.json')['instances']
+    ok(labyrinth['without_map_instances'](instances)==labyrinth['without_map_instances'](prior),'All non-map instances preserved')
+    instances=prior
+    objects=labyrinth['without_map_animations'](objects)
+ok(hash_json(scope.original_objects(objects))==before['objectsHash'] and hash_json(instances)==before['instancesHash'],'Original definitions and pre-labyrinth instances match historical scope after approved additions')
 for name,expected in before['variables'].items():ok(hash_json(scope.original_variable(next(v for v in g['variables'] if v['name']==name)))==expected,'Original gameplay config preserved apart from additive Nebula catalog: '+name)
 for file,expected in before['audioHashes'].items():ok(hashlib.sha256((ROOT/file).read_bytes()).hexdigest()==expected,'Audio asset unchanged: '+file)
 for index,source in enumerate(['fresh-start-service.js','campaign-service.js','levels-runtime.js']):ok(l['events'][index]['inlineCode']==(ROOT/'tools'/source).read_text(encoding='utf-8-sig').splitlines(),'Levels embedded source match: '+source)
@@ -47,5 +54,5 @@ for chapter in cfg['Chapters']:
 ok(len(set(background_hashes))==5,'Five distinct vector background compositions')
 namespace={'__file__':str(ROOT/'tools/validate-project.py')};source=(ROOT/'tools/validate-project.py').read_text(encoding='utf-8');exec(compile(source.split("for f in ROOT.rglob('*'):")[0],str(ROOT/'tools/validate-project.py'),'exec'),namespace)
 ok(True,'Maintained structural/resource/source checks: '+str(len(namespace['checks'])))
-report={'checks':checks,'count':len(checks),'structuralChecks':len(namespace['checks']),'levels':25,'chapters':5,'waves':sum(len(v['Waves']) for v in cfg['Levels']),'backgrounds':5,'legacyStatsUnchanged':True,'originalInstancesUnchanged':True,'audioAssetsUnchanged':True,'noBackupCreated':True,'housekeeping':'Full directory cleanliness validator still rejects existing Tower Defense.json.autosave; not created/modified by this task.'}
+report={'checks':checks,'count':len(checks),'structuralChecks':len(namespace['checks']),'levels':25,'chapters':5,'waves':sum(len(v['Waves']) for v in cfg['Levels']),'backgrounds':5,'legacyStatsUnchanged':True,'originalInstancesUnchanged':'LabyrinthMap' not in vars,'audioAssetsUnchanged':True,'noBackupCreated':True,'housekeeping':'Full directory cleanliness validator still rejects existing Tower Defense.json.autosave; not created/modified by this task.'}
 (ROOT/'validation/campaign-static.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8');print('PASS campaign static/scope',len(checks),'maintained structural/resource',len(namespace['checks']))

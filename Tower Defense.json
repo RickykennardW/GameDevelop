@@ -5748,6 +5748,14 @@
         "name": "assets/towers/fusion/meteor_storm_array/e3/motion.png",
         "userAdded": true,
         "smoothed": true
+      },
+      {
+        "file": "assets/map/monster_path/celestial_labyrinth.svg",
+        "name": "assets/celestial_void/celestial_labyrinth.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
       }
     ]
   },

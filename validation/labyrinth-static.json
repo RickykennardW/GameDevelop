@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "width": 32,
+  "length": 9776.5263,
+  "originalLength": 7128,
+  "turns": 16,
+  "waypoints": 331,
+  "decorations": 28,
+  "nonMapSceneDataMatchBaseline": true,
+  "baseline": "32e360d39c536d6f802703df736a10731caf1e08"
+}
