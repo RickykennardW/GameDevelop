@@ -2,8 +2,9 @@
 const scene=runtimeScene,get=n=>scene.getObjects(n);
 const kinds=["Crystal","Rock","Ruin","Shrub"];
 get("Ground_Decoration").forEach((o,i)=>{
-  const kind=o.getVariables().get("Kind").getAsString()||kinds[i%4];if(o.getAnimationName()!==kind)o.setAnimationName(kind);
+  const kind=o.getVariables().get("Kind").getAsString()||kinds[i%4],animation=scene.__chapterMap?.config.PropAnimations[kind]||kind;if(o.getAnimationName()!==animation)o.setAnimationName(animation);
   o.setWidth(64);o.setHeight(64);o.getVariables().get("Blocking").setBoolean(kind!=="Shrub");o.getVariables().get("Kind").setString(kind);
+  if(scene.__chapterMap)o.setColor(scene.__chapterMap.config.PropAnimations[kind]?'255;255;255':scene.__chapterMap.config.Palette.Prop);
 });
 let backdrop=scene.__voidBackdrop;
 if(!backdrop)backdrop=scene.__voidBackdrop=scene.createObject("VoidBackdrop");
@@ -42,7 +43,7 @@ for(const [i,d] of pieces.entries()){
  let e=edges[i];if(!e){e=edges[i]={sprite:new PIXI.Sprite()};root.addChild(e.sprite);}
  const key=[d.sx,d.sy,d.sw,d.sh].join(',');
  if(e.key!==key){if(e.texture)e.texture.destroy(false);e.texture=new PIXI.Texture(scene.__cliffBaseTexture,new PIXI.Rectangle(d.sx,d.sy,d.sw,d.sh));e.key=key;}
- e.sprite.texture=e.texture;e.sprite.anchor.set(0);e.sprite.position.set(d.x,d.y);e.sprite.scale.set(unit,unit);
+ e.sprite.texture=e.texture;e.sprite.anchor.set(0);e.sprite.position.set(d.x,d.y);e.sprite.scale.set(unit,unit);e.sprite.tint=scene.__chapterMap?.config.Palette.Cliff||0xffffff;
  regions.push([[d.x,d.y],[d.x+d.w,d.y],[d.x+d.w,d.y+d.h],[d.x,d.y+d.h]]);
 }
 scene.__islandRockRegions=regions;
@@ -53,4 +54,40 @@ const drawable=ground.getRendererObject();
 if(!scene.__islandSurfaceMask){scene.__islandSurfaceMask=new PIXI.Graphics();scene.getLayer('').getRenderer().getRendererObject().addChild(scene.__islandSurfaceMask);drawable.mask=scene.__islandSurfaceMask;}
 const underlap=32,mask=scene.__islandSurfaceMask,key=[left,top,right,bottom].join(',');
 if(scene.__islandSurfaceKey!==key){mask.clear().beginFill(0xffffff).drawRoundedRect(left-underlap,top-underlap,right-left+underlap*2,bottom-top+underlap*2,20).endFill();scene.__islandSurfaceKey=key;}
-ground.setColor("192;195;218");
+ground.setColor(scene.__chapterMap?'255;255;255':"192;195;218");
+// Static chapter ornament geometry is allocated once and sits behind the road.
+// Bright vents/crystals/reactors are confined to authored blocking prop clusters.
+if(scene.__chapterMap&&!scene.__chapterEnvironment){
+ const meta=scene.__chapterMap.config,accent=parseInt(meta.Palette.Accent.slice(1),16),g=scene.__chapterEnvironment=new PIXI.Graphics();
+ g.zIndex=-2;g.interactive=false;scene.getLayer('').getRenderer().getRendererObject().addChild(g);
+ if(meta.Id==='emberfall'){
+  // Lava flows occupy the non-buildable outer cliff fringe only.
+  for(const x of [left-14,right+15]){
+   const path=(line,color,alpha)=>{g.lineStyle(line,color,alpha).moveTo(x,top+25);for(let y=top+25;y<bottom;y+=65)g.lineTo(x+Math.sin(y*.023)*8,y);};
+   path(14,0x6d2638,.8);path(6,0xea7850,.7);path(1.5,0xffd791,.8);
+  }
+ }
+ for(const [kind,x,y,scale]of meta.Decorations){
+  if(kind==='Shrub')continue;
+  if(meta.Id==='emberfall'){
+   g.lineStyle(8,0x451f37,.8).moveTo(x-32,y+18).lineTo(x-12,y+10).lineTo(x+8,y+24).lineTo(x+32,y+15);
+   g.lineStyle(2,0xe88c5d,.65).moveTo(x-32,y+18).lineTo(x-12,y+10).lineTo(x+8,y+24).lineTo(x+32,y+15);
+   g.lineStyle(1,accent,.6).drawEllipse(x,y+15,35,16);
+  }else if(meta.Id==='nebula'){
+   g.beginFill(accent,.07).drawEllipse(x,y+18,46,21).endFill();
+   g.lineStyle(1,accent,.35).drawEllipse(x,y+18,36,15);
+   for(let i=0;i<4;i++)g.beginFill(0xbcdcff,.55).drawCircle(x-34+i*21,y+28+(i%2)*5,1.3).endFill();
+  }else if(meta.Id==='reliquary'){
+   g.lineStyle(1,accent,.6).beginFill(0x375768,.65).drawPolygon([x-36,y+12,x-12,y-7,x+33,y+2,x+41,y+24,x+5,y+37,x-26,y+30]).endFill();
+   g.lineStyle(1,0xb7e5ee,.6).moveTo(x-26,y+30).lineTo(x,y+12).lineTo(x+30,y+18);
+  }else if(meta.Id==='astral'){
+   g.lineStyle(2,accent,.55).beginFill(0x49403b,.6).drawRoundedRect(x-35,y-25,70,62,5).endFill();
+   g.lineStyle(1,accent,.35).drawCircle(x,y+8,27).moveTo(x-28,y+8).lineTo(x+28,y+8).moveTo(x,y-19).lineTo(x,y+35);
+  }else{
+   g.lineStyle(1,0x85818b,.6).beginFill(0x131b27,.7).drawPolygon([x-39,y+10,x-14,y-9,x+32,y-2,x+41,y+26,x+4,y+37,x-30,y+29]).endFill();
+   for(let i=0;i<3;i++)g.lineStyle(2,accent,.65).moveTo(x-30+i*7,y+24).lineTo(x-24+i*7,y+30);
+   g.lineStyle(1,0x94cbd8,.45).drawRect(x+20,y+16,13,8);
+  }
+ }
+ if(!gdjs.__chapterEnvironmentCleanup){gdjs.__chapterEnvironmentCleanup=true;gdjs.callbacksRuntimeSceneUnloading.push(s=>s.__chapterEnvironment?.destroy());}
+}

@@ -1,0 +1,43 @@
+{
+  "result": {
+    "checks": [
+      "Five playable chapters and three unlaunchable expansion definitions",
+      "Native scene transition Game Scene",
+      "Selected chapter owns one native road 2",
+      "Selected seamless terrain is loaded without a fallback texture 2",
+      "Rendering / movement / placement share one 60-unit centerline 2",
+      "Render-only enemy reduction retains both tower footprints 2",
+      "All actual blocking props clear the selected route 2",
+      "Spawn and Finish markers share route endpoints 2",
+      "Fitted world stays inside gameplay viewport 2",
+      "Every normal/Fusion footprint has at least forty legal sample sites 2"
+    ],
+    "results": [
+      {
+        "chapter": 2,
+        "map": "nebula",
+        "length": 9690.4103,
+        "turns": 14,
+        "width": 60,
+        "props": 7,
+        "sites": {
+          "StarCannonTower": 301,
+          "NebulaBloomTower": 94,
+          "MeteorStormArray": 105,
+          "PlaguebreakerCannon": 164,
+          "SupernovaObliterator": 98,
+          "ToxicConstellation": 172,
+          "VenomCataclysm": 98
+        },
+        "zoom": 0.8792735042735043,
+        "samples": {},
+        "travel": {}
+      }
+    ],
+    "visualOnly": true
+  },
+  "progress": [
+    "BALANCE PROGRESS {\"chapter\":2,\"sites\":{\"StarCannonTower\":301,\"NebulaBloomTower\":94,\"MeteorStormArray\":105,\"PlaguebreakerCannon\":164,\"SupernovaObliterator\":98,\"ToxicConstellation\":172,\"VenomCataclysm\":98}}"
+  ],
+  "consoleErrors": []
+}

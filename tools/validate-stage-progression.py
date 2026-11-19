@@ -2,6 +2,7 @@
 
 import copy
 import json
+import runpy
 import subprocess
 from pathlib import Path
 
@@ -105,12 +106,15 @@ def main():
     scene = read('layouts/game-scene.json')
     old_scene = previous('layouts/game-scene.json')
     variables = {node['name']: value(node) for node in scene['variables']}
+    chapters=runpy.run_path(str(ROOT/'tools/validate-chapter-maps.py')) if 'ChapterMaps' in variables else None
+    if chapters:chapters['main']()
     for root, children, source in read('tools/source-mapping.json'):
         target = event(scene, [root, *children])
         assert target['inlineCode'] == (ROOT / 'tools' / source).read_text(encoding='utf-8-sig').splitlines(), source
         if source in STAGE_SOURCES:
             target['inlineCode'] = event(old_scene, [root, *children])['inlineCode']
     restore_clear_guards(scene, old_scene)
+    if chapters:chapters['restore_scene_additions'](scene,old_scene)
     assert scene == old_scene, 'Game Scene scope beyond stage runtime and reward guards'
 
     config = read('tools/campaign-config.json')
@@ -119,13 +123,20 @@ def main():
     old_levels = previous('layouts/levels.json')
     assert value(next(node for node in levels['variables'] if node['name'] == 'CampaignConfig')) == config
     restore_first_level(levels, old_levels)
+    if chapters:chapters['restore_levels_metadata'](levels,old_levels)
     assert levels == old_levels
     restore = copy.deepcopy(config)
     restore['Levels'][0] = old_config['Levels'][0]
+    if chapters:
+        restore['Chapters']=old_config['Chapters']
+        for name in ['ChapterCapacity','ReleasedChapters','FutureChapters']:restore.pop(name,None)
     assert restore == old_config, 'Other 24 missions and chapter bosses must retain their exact configuration'
     for file in ('Tower Defense.json', 'layouts/main-menu.json', 'eventsFunctionsExtensions/health.json'):
-        assert read(file) == previous(file), file
-    assert not subprocess.check_output(['git', 'diff', BASELINE, '--name-only', '--', 'assets'], cwd=ROOT).strip()
+        current=read(file)
+        if chapters and file=='Tower Defense.json':current['resources']['resources']=[r for r in current['resources']['resources'] if not r['name'].startswith('assets/map/chapters/')]
+        assert current == previous(file), file
+    changed=subprocess.check_output(['git','diff',BASELINE,'--name-only','--','assets'],cwd=ROOT,text=True).splitlines()
+    assert set(changed)<=({f'assets/ui/campaign/chapter_{n}.svg' for n in range(1,6)} if chapters else set())
 
     level, old_level = config['Levels'][0], old_config['Levels'][0]
     rewards = level['EnemyRewards']

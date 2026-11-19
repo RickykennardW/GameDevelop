@@ -50,7 +50,7 @@ if(!nova){
   o.setZOrder(e.getZOrder());o.__novaDeath={age:0,life:.65,direction,phase:state.phase,bob:Math.sin(state.age*3.5+state.phase)*1.4};return o;
  };
  nova.animate=(o,direction,state,death=false)=>{
-  o.updatePreRender(scene);const rig=nova.rig(o,direction,death),a=rig.atlas,w=a.w,h=a.h,root=o.getRendererObject(),size=48*scene.__worldStyle.enemy;
+  o.updatePreRender(scene);const rig=nova.rig(o,direction,death),a=rig.atlas,w=a.w,h=a.h,root=o.getRendererObject(),size=48*scene.__worldStyle.enemy*(scene.__worldStyle.enemyVisualMultiplier||1);
   const age=state.age,phase=age*(death?7:3.5)+state.phase,bob=death?state.bob:Math.sin(phase)*1.4,hit=death?0:state.hit;
   root.texture=PIXI.Texture.EMPTY;root.anchor.set(0);root.position.set(o.getCenterXInScene(),o.getCenterYInScene()+bob);root.scale.set(size/w,size/h);root.rotation=0;
   rig.body.position.set(hit?Math.sin(age*180)*24:0,hit?Math.cos(age*140)*12:0);rig.body.scale.set(1);rig.body.alpha=1;rig.body.tint=hit?0xcceeff:0xffffff;

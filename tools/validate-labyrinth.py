@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 BASELINE = '32e360d39c536d6f802703df736a10731caf1e08'
 MAP_OBJECTS = {'Monster_Path','Ground_Decoration','SpawnMarker','BaseMarker'}
-MAP_SOURCES = {'responsive-map-runtime.js','island-map-runtime.js','free-placement-runtime.js','labyrinth-route-runtime.js'}
+MAP_SOURCES = {'responsive-map-runtime.js','island-map-runtime.js','free-placement-runtime.js','labyrinth-route-runtime.js','island-render-runtime.js','nova-wisp-runtime.js','void-hound-runtime.js','void-golem-runtime.js'}
 RESOURCE = 'assets/celestial_void/celestial_labyrinth.svg'
 ART = 'assets/map/monster_path/celestial_labyrinth.svg'
 
@@ -28,8 +28,8 @@ def without_map_instances(instances):
 def without_map_animations(objects):
     result=copy.deepcopy(objects)
     for obj in result:
-        if obj['name']=='Monster_Path':
-            obj['animations']=[a for a in obj['animations'] if a['name']!='Labyrinth']
+        if obj['name'] in {'Monster_Path','Ground_Decoration'}:
+            obj['animations']=[a for a in obj['animations'] if a['name']!='Labyrinth' and not a['name'].startswith('Chapter_')]
     return result
 
 
@@ -46,6 +46,8 @@ def main():
     progression=runpy.run_path(str(ROOT/'tools/validate-stage-progression.py')) if stages[0].get('EnemyRewards') else None
     old_scene=old('layouts/game-scene.json')
     scene=read('layouts/game-scene.json')
+    chapters=runpy.run_path(str(ROOT/'tools/validate-chapter-maps.py')) if any(v['name']=='ChapterMaps' for v in scene['variables']) else None
+    if chapters:chapters['main']()
     layout=unpack(next(v for v in scene['variables'] if v['name']=='LabyrinthMap'))
     build=runpy.run_path(str(ROOT/'tools/build-labyrinth.py'))
     points=build['centerline'](config['Corners'],config['CornerRadius'])
@@ -64,7 +66,7 @@ def main():
     assert without_map_instances(instances)==without_map_instances(old_scene['instances'])
     scene['instances']=old_scene['instances']
     scene['objects']=without_map_animations(scene['objects'])
-    scene['variables']=[v for v in scene['variables'] if v['name']!='LabyrinthMap']
+    scene['variables']=[v for v in scene['variables'] if v['name'] not in {'LabyrinthMap','ChapterMaps'}]
     for root,children,name in read('tools/source-mapping.json'):
         event=scene['events'][root]
         original=old_scene['events'][root]
@@ -80,13 +82,15 @@ def main():
     resources=project['resources']['resources']
     assert sum(r['name']==RESOURCE and r['file']==ART for r in resources)==1
     project['resources']['resources']=[r for r in resources if r['name']!=RESOURCE]
+    if chapters:project['resources']['resources']=[r for r in project['resources']['resources'] if not r['name'].startswith('assets/map/chapters/')]
     assert project==old('Tower Defense.json'),'Project changes beyond the road resource'
     for file in ('layouts/main-menu.json','layouts/levels.json','eventsFunctionsExtensions/health.json'):
         current,baseline=read(file),old(file)
+        if chapters and file=='layouts/levels.json':chapters['restore_levels_metadata'](current,baseline)
         if progression and file=='layouts/levels.json':progression['restore_first_level'](current,baseline)
         assert current==baseline,file
     changed_assets=subprocess.check_output(['git','diff',BASELINE,'--name-only','--','assets'],cwd=ROOT,text=True).splitlines()
-    assert set(changed_assets)<={ART}, 'Existing art/audio modified'
+    assert set(changed_assets)<={ART,*[f'assets/ui/campaign/chapter_{n}.svg' for n in range(1,6)]}, 'Existing art/audio modified'
     report={'passed':True,'width':layout['Width'],'length':layout['Length'],'originalLength':7128,'turns':layout['Turns'],
             'waypoints':len(points),'decorations':len(config['Decorations']),'nonMapSceneDataMatchBaseline':True,'baseline':BASELINE}
     (ROOT/'validation/labyrinth-static.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf8')

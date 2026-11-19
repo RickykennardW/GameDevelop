@@ -1,0 +1,481 @@
+{
+  "result": {
+    "checks": [
+      "Native transition Game Scene",
+      "Paid placement 4-5 StarCannonTower",
+      "Paid placement 4-5 NebulaBloomTower",
+      "Paid placement 4-5 StarCannonTower",
+      "Paid placement 4-5 StarCannonTower",
+      "Paid placement 4-5 StarCannonTower",
+      "Paid placement 4-5 NebulaBloomTower",
+      "Paid placement 4-5 StarCannonTower",
+      "Paid placement 4-5 StarCannonTower",
+      "Paid placement 4-5 NebulaBloomTower",
+      "Paid placement 4-5 StarCannonTower",
+      "Paid upgrade 4-5 Star Compression",
+      "Paid upgrade 4-5 Astral Accelerator",
+      "Paid upgrade 4-5 Star Compression",
+      "Paid upgrade 4-5 Astral Accelerator",
+      "Paid upgrade 4-5 Star Compression",
+      "Paid upgrade 4-5 Astral Accelerator",
+      "Native authored wave 4-5/1",
+      "Native reward reconciliation 4-5/1",
+      "Authored wave terminates 4-5/1",
+      "Paid upgrade 4-5 Star Compression",
+      "Paid upgrade 4-5 Astral Accelerator",
+      "Paid upgrade 4-5 Astral Accelerator",
+      "Native authored wave 4-5/2",
+      "Native reward reconciliation 4-5/2",
+      "Authored wave terminates 4-5/2",
+      "Paid upgrade 4-5 Star Compression",
+      "Paid upgrade 4-5 Star Compression",
+      "Native authored wave 4-5/3",
+      "Native reward reconciliation 4-5/3",
+      "Authored wave terminates 4-5/3",
+      "Paid upgrade 4-5 Astral Accelerator",
+      "Paid upgrade 4-5 Star Compression",
+      "Paid upgrade 4-5 Astral Accelerator",
+      "Paid upgrade 4-5 Irritant Spores",
+      "Native authored wave 4-5/4",
+      "Native reward reconciliation 4-5/4",
+      "Authored wave terminates 4-5/4",
+      "Paid upgrade 4-5 Heavy Seed Pod",
+      "Paid upgrade 4-5 Irritant Spores",
+      "Native authored wave 4-5/5",
+      "Native reward reconciliation 4-5/5",
+      "Authored wave terminates 4-5/5",
+      "Paid upgrade 4-5 Heavy Seed Pod",
+      "Paid upgrade 4-5 Irritant Spores",
+      "Paid upgrade 4-5 Heavy Seed Pod",
+      "Native authored wave 4-5/6",
+      "Native reward reconciliation 4-5/6",
+      "Authored wave terminates 4-5/6",
+      "Paid upgrade 4-5 Dense Stellar Core",
+      "Paid upgrade 4-5 Rapid Starflow",
+      "Native authored wave 4-5/7",
+      "Native reward reconciliation 4-5/7",
+      "Authored wave terminates 4-5/7",
+      "Paid upgrade 4-5 Dense Stellar Core",
+      "Paid upgrade 4-5 Rapid Starflow",
+      "Native authored wave 4-5/8",
+      "Native reward reconciliation 4-5/8",
+      "Authored wave terminates 4-5/8",
+      "Paid upgrade 4-5 Dense Stellar Core",
+      "Paid upgrade 4-5 Rapid Starflow",
+      "Native authored wave 4-5/9",
+      "Native reward reconciliation 4-5/9",
+      "Authored wave terminates 4-5/9",
+      "Paid upgrade 4-5 Dense Stellar Core",
+      "Paid upgrade 4-5 Rapid Starflow",
+      "Native authored wave 4-5/10",
+      "Native reward reconciliation 4-5/10",
+      "Authored wave terminates 4-5/10",
+      "Native transition Levels"
+    ],
+    "results": [
+      {
+        "mission": "4-5",
+        "chapter": 4,
+        "strategy": "mixed-area",
+        "won": true,
+        "startingGold": 4500,
+        "spent": 9090,
+        "killGold": 6691,
+        "clearGold": 0,
+        "finalGold": 2101,
+        "lives": 14,
+        "observed": 842,
+        "rows": [
+          {
+            "wave": 1,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 422,
+            "spent": 4470,
+            "elapsed": 72.999999999998,
+            "completed": true
+          },
+          {
+            "wave": 2,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 427,
+            "spent": 4890,
+            "elapsed": 70.54999999999814,
+            "completed": true
+          },
+          {
+            "wave": 3,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 633,
+            "spent": 5210,
+            "elapsed": 76.04999999999782,
+            "completed": true
+          },
+          {
+            "wave": 4,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 533,
+            "spent": 5810,
+            "elapsed": 77.44999999999774,
+            "completed": true
+          },
+          {
+            "wave": 5,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 659,
+            "spent": 6190,
+            "elapsed": 75.94999999999783,
+            "completed": true
+          },
+          {
+            "wave": 6,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 674,
+            "spent": 6770,
+            "elapsed": 87.0499999999972,
+            "completed": true
+          },
+          {
+            "wave": 7,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 684,
+            "spent": 7350,
+            "elapsed": 80.49999999999757,
+            "completed": true
+          },
+          {
+            "wave": 8,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 718,
+            "spent": 7930,
+            "elapsed": 80.54999999999757,
+            "completed": true
+          },
+          {
+            "wave": 9,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 847,
+            "spent": 8510,
+            "elapsed": 93.24999999999685,
+            "completed": true
+          },
+          {
+            "wave": 10,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 2101,
+            "spent": 9090,
+            "elapsed": 229.3000000000179,
+            "completed": true
+          }
+        ],
+        "purchases": [
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              376,
+              338
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "NebulaBloomTower",
+            "site": [
+              1464,
+              722
+            ],
+            "cost": 500
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1624,
+              410
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1336,
+              338
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              600,
+              530
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "NebulaBloomTower",
+            "site": [
+              1144,
+              530
+            ],
+            "cost": 500
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              600,
+              170
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              888,
+              170
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "NebulaBloomTower",
+            "site": [
+              856,
+              722
+            ],
+            "cost": 500
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              280,
+              890
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 4,
+            "type": "NebulaBloomTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 180
+          },
+          {
+            "wave": 5,
+            "type": "NebulaBloomTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 200
+          },
+          {
+            "wave": 5,
+            "type": "NebulaBloomTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 180
+          },
+          {
+            "wave": 6,
+            "type": "NebulaBloomTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 200
+          },
+          {
+            "wave": 6,
+            "type": "NebulaBloomTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 180
+          },
+          {
+            "wave": 6,
+            "type": "NebulaBloomTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 200
+          },
+          {
+            "wave": 7,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 7,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 8,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 8,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 9,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 9,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 10,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 10,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          }
+        ],
+        "fixtureGold": 0,
+        "fixtureDamage": 0
+      }
+    ],
+    "naturalCombat": true,
+    "allPurchasesUseActualPrices": true,
+    "saveUnlockFixture": true,
+    "notHumanWinRateStudy": true
+  },
+  "progress": [
+    "BALANCE PROGRESS {\"mission\":\"4-5\",\"chapter\":4,\"strategy\":\"mixed-area\",\"won\":true,\"startingGold\":4500,\"spent\":9090,\"killGold\":6691,\"clearGold\":0,\"finalGold\":2101,\"lives\":14,\"observed\":842,\"fixtureGold\":0,\"fixtureDamage\":0}"
+  ],
+  "consoleErrors": []
+}

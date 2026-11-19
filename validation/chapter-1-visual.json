@@ -1,0 +1,43 @@
+{
+  "result": {
+    "checks": [
+      "Five playable chapters and three unlaunchable expansion definitions",
+      "Native scene transition Game Scene",
+      "Selected chapter owns one native road 1",
+      "Selected seamless terrain is loaded without a fallback texture 1",
+      "Rendering / movement / placement share one 60-unit centerline 1",
+      "Render-only enemy reduction retains both tower footprints 1",
+      "All actual blocking props clear the selected route 1",
+      "Spawn and Finish markers share route endpoints 1",
+      "Fitted world stays inside gameplay viewport 1",
+      "Every normal/Fusion footprint has at least forty legal sample sites 1"
+    ],
+    "results": [
+      {
+        "chapter": 1,
+        "map": "emberfall",
+        "length": 9245.4946,
+        "turns": 12,
+        "width": 60,
+        "props": 11,
+        "sites": {
+          "StarCannonTower": 465,
+          "NebulaBloomTower": 102,
+          "MeteorStormArray": 109,
+          "PlaguebreakerCannon": 190,
+          "SupernovaObliterator": 106,
+          "ToxicConstellation": 199,
+          "VenomCataclysm": 106
+        },
+        "zoom": 0.8792735042735043,
+        "samples": {},
+        "travel": {}
+      }
+    ],
+    "visualOnly": true
+  },
+  "progress": [
+    "BALANCE PROGRESS {\"chapter\":1,\"sites\":{\"StarCannonTower\":465,\"NebulaBloomTower\":102,\"MeteorStormArray\":109,\"PlaguebreakerCannon\":190,\"SupernovaObliterator\":106,\"ToxicConstellation\":199,\"VenomCataclysm\":106}}"
+  ],
+  "consoleErrors": []
+}

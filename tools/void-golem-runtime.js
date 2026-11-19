@@ -139,7 +139,7 @@ if(!g){
    const cleanup=()=>{if(!container.destroyed)container.destroy({children:true,texture:false,baseTexture:false});e.unregisterDestroyCallback(cleanup);};e.registerDestroyCallback(cleanup);
   }
   const layer=scene.getLayer(e.getLayer()).getRenderer().getRendererObject();if(rig.container.parent!==layer)layer.addChild(rig.container);
-  rig.container.zIndex=e.getZOrder()+.25;rig.container.position.set(e.getCenterXInScene(),e.getCenterYInScene());rig.container.visible=!e.isHidden();return rig;
+  rig.container.zIndex=e.getZOrder()+.25;rig.container.position.set(e.getCenterXInScene(),e.getCenterYInScene());rig.container.scale.set(scene.__worldStyle.enemyVisualMultiplier||1);rig.container.visible=!e.isHidden();return rig;
  };
  g.portrait=(o,x,y,size)=>{o.__golemPortrait={x,y,size};o.setOpacity(0);};
  g.render=()=>{

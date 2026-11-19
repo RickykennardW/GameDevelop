@@ -32,9 +32,9 @@ Gold is per run. Potential kill income includes any named boss and its condition
 | 5-4 | Bastion of Light | 15500 | 12 | 11 | 8902 | - |
 | 5-5 | The Entropy Architect | 18000 | 12 | 12 | 12317 | Yes |
 
-## Chapter 1 — Stellar Frontier
+## Chapter 1 — The Emberfall Expanse
 
-The edge of known space. Establish your first line of defense.
+Celestial basalt terraces above geothermal channels. Learn cross-lane defense in generous clearings.
 
 First Contact opens with enough Gold for one Star Cannon. The first wave funds a damage or fire-rate upgrade.
 
@@ -120,9 +120,9 @@ Starting Gold900; Lives20; intermission5s in Auto mode; 7waves. Victory requires
 | 6 | VoidGuard ×5, Basic ×11, VoidHound ×4, VoidBrute ×2, VoidSentinel ×4 | 1.275 | 1.05 | 0.932 | 167 | - |
 | 7 | VoidGuard ×4, VoidBrute ×4, VoidHound ×6, Basic ×6, VoidSentinel ×8 | 1.25 | 1.07 | 0.932 | 442 | The Rift Devourer |
 
-## Chapter 2 — Nebula Expanse
+## Chapter 2 — The Nebula Frontier
 
-Read the currents. Adapt to fast and shielded enemy formations.
+Violet nebula shelves, floating crystals and a displaced eastern return. Cover the outer approach and inner lanes.
 
 Establish several firing positions, then use damage or speed upgrades against mixed groups.
 
@@ -203,9 +203,9 @@ Starting Gold1800; Lives18; intermission5s in Auto mode; 8waves. Victory require
 | 7 | VoidBrute ×5, VoidHound ×11, Basic ×20, VoidSentinel ×8, VoidGuard ×2 | 0.9 | 1.22 | 0.982 | 291 | - |
 | 8 | VoidHound ×6, Basic ×17, VoidSentinel ×15, VoidBrute ×6, VoidGuard ×5 | 0.875 | 1.24 | 0.982 | 767 | The Nebula Warden |
 
-## Chapter 3 — Ancient Celestial Ruins
+## Chapter 3 — The Frozen Reliquary
 
-Awaken the ruins. Hold your ground against ancient constructs.
+Cryogenic moon terraces, frost crystals and sealed alien vaults. Balance broad ice fields against hooked corridors.
 
 Use cross-lane coverage and Nova splash against armor/support formations.
 
@@ -291,9 +291,9 @@ Starting Gold2900; Lives16; intermission5s in Auto mode; 9waves. Victory require
 | 8 | VoidSentinel ×19, Basic ×30, VoidBrute ×6, VoidGuard ×10, VoidHound ×5 | 0.675 | 1.34 | 1.032 | 439 | - |
 | 9 | VoidHound ×15, Basic ×26, VoidBrute ×12, VoidGuard ×5, VoidSentinel ×16, VoidGolem ×1 | 0.65 | 1.36 | 1.032 | 1293 | The Astral Colossus |
 
-## Chapter 4 — Event Horizon
+## Chapter 4 — The Astral Ruins
 
-Where light bends. Watch the Finish and prepare for pressure.
+Golden orbital sanctums, ancient pylons and temple courtyards. Develop several strongholds around offset avenues.
 
 Prepare a developed tower network and consider higher upgrades before the boss wave.
 
@@ -384,9 +384,9 @@ Starting Gold4500; Lives14; intermission5s in Auto mode; 10waves. Victory requir
 | 9 | Basic ×38, VoidHound ×17, VoidSentinel ×15, VoidBrute ×15, VoidGuard ×15, VoidGolem ×2 | 0.5 | 1.51 | 1.072 | 709 | - |
 | 10 | Basic ×48, VoidGuard ×13, VoidSentinel ×23, VoidBrute ×10, VoidHound ×11 | 0.475 | 1.53 | 1.072 | 1834 | The Void Sovereign |
 
-## Chapter 5 — Cosmic Singularity
+## Chapter 5 — The Shattered Belt
 
-The final fracture. Unite every lesson against the heart of the Void.
+Fractured asteroid terraces, mining beacons and orbital debris. Hold dispersed defenses along broken switchbacks.
 
 Build a broad defense and use late upgrades/Fusion when the run economy supports them.
 
@@ -494,4 +494,4 @@ Starting Gold18000; Lives12; intermission5s in Auto mode; 12waves. Victory requi
 - Defeat, Restart, Return to Levels and replay a completed mission; verify no extra unlocks or erased progress.
 - Reload the application and confirm completion/tutorial flags, original audio preferences and Fusion discoveries remain.
 
-Automated integration tests cover all25mission contracts; they are not a human win-rate study. Full natural-combat coverage and boss-wave benchmark results are reported in `CAMPAIGN_REPORT.md`.
+Automated integration tests cover all25mission contracts; they are not a human win-rate study. Historical campaign results are in `CAMPAIGN_REPORT.md`; the current five-map natural-combat results and remaining limitations are in `CHAPTER_MAP_REPORT.md`. Map geometry and presentation are maintained in `tools/chapter-maps.json`.

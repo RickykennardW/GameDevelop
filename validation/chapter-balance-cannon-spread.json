@@ -1,0 +1,5272 @@
+{
+  "result": {
+    "checks": [
+      "Native transition Game Scene",
+      "Paid placement 1-3 StarCannonTower",
+      "Paid placement 1-3 StarCannonTower",
+      "Paid upgrade 1-3 Astral Accelerator",
+      "Native authored wave 1-3/1",
+      "Native reward reconciliation 1-3/1",
+      "Authored wave terminates 1-3/1",
+      "Native authored wave 1-3/2",
+      "Native reward reconciliation 1-3/2",
+      "Authored wave terminates 1-3/2",
+      "Paid upgrade 1-3 Star Compression",
+      "Native authored wave 1-3/3",
+      "Native reward reconciliation 1-3/3",
+      "Authored wave terminates 1-3/3",
+      "Native authored wave 1-3/4",
+      "Native reward reconciliation 1-3/4",
+      "Authored wave terminates 1-3/4",
+      "Paid upgrade 1-3 Astral Accelerator",
+      "Native authored wave 1-3/5",
+      "Native reward reconciliation 1-3/5",
+      "Authored wave terminates 1-3/5",
+      "Paid upgrade 1-3 Star Compression",
+      "Native authored wave 1-3/6",
+      "Native reward reconciliation 1-3/6",
+      "Authored wave terminates 1-3/6",
+      "Native transition Levels",
+      "Native transition Game Scene",
+      "Paid placement 1-5 StarCannonTower",
+      "Paid placement 1-5 StarCannonTower",
+      "Paid placement 1-5 StarCannonTower",
+      "Native authored wave 1-5/1",
+      "Native reward reconciliation 1-5/1",
+      "Authored wave terminates 1-5/1",
+      "Native authored wave 1-5/2",
+      "Native reward reconciliation 1-5/2",
+      "Authored wave terminates 1-5/2",
+      "Paid upgrade 1-5 Astral Accelerator",
+      "Native authored wave 1-5/3",
+      "Native reward reconciliation 1-5/3",
+      "Authored wave terminates 1-5/3",
+      "Paid upgrade 1-5 Star Compression",
+      "Native authored wave 1-5/4",
+      "Native reward reconciliation 1-5/4",
+      "Authored wave terminates 1-5/4",
+      "Paid upgrade 1-5 Astral Accelerator",
+      "Native authored wave 1-5/5",
+      "Native reward reconciliation 1-5/5",
+      "Authored wave terminates 1-5/5",
+      "Paid upgrade 1-5 Star Compression",
+      "Native authored wave 1-5/6",
+      "Native reward reconciliation 1-5/6",
+      "Authored wave terminates 1-5/6",
+      "Paid upgrade 1-5 Astral Accelerator",
+      "Native authored wave 1-5/7",
+      "Native reward reconciliation 1-5/7",
+      "Authored wave terminates 1-5/7",
+      "Native transition Levels",
+      "Native transition Game Scene",
+      "Paid placement 2-1 StarCannonTower",
+      "Paid placement 2-1 StarCannonTower",
+      "Paid placement 2-1 StarCannonTower",
+      "Paid placement 2-1 StarCannonTower",
+      "Native authored wave 2-1/1",
+      "Native reward reconciliation 2-1/1",
+      "Authored wave terminates 2-1/1",
+      "Native authored wave 2-1/2",
+      "Native reward reconciliation 2-1/2",
+      "Authored wave terminates 2-1/2",
+      "Paid upgrade 2-1 Astral Accelerator",
+      "Native authored wave 2-1/3",
+      "Native reward reconciliation 2-1/3",
+      "Authored wave terminates 2-1/3",
+      "Paid upgrade 2-1 Star Compression",
+      "Native authored wave 2-1/4",
+      "Native reward reconciliation 2-1/4",
+      "Authored wave terminates 2-1/4",
+      "Paid upgrade 2-1 Astral Accelerator",
+      "Native authored wave 2-1/5",
+      "Native reward reconciliation 2-1/5",
+      "Authored wave terminates 2-1/5",
+      "Paid upgrade 2-1 Star Compression",
+      "Native authored wave 2-1/6",
+      "Native reward reconciliation 2-1/6",
+      "Authored wave terminates 2-1/6",
+      "Native transition Levels",
+      "Native transition Game Scene",
+      "Paid placement 2-3 StarCannonTower",
+      "Paid placement 2-3 StarCannonTower",
+      "Paid placement 2-3 StarCannonTower",
+      "Paid placement 2-3 StarCannonTower",
+      "Paid placement 2-3 StarCannonTower",
+      "Native authored wave 2-3/1",
+      "Native reward reconciliation 2-3/1",
+      "Authored wave terminates 2-3/1",
+      "Paid upgrade 2-3 Astral Accelerator",
+      "Native authored wave 2-3/2",
+      "Native reward reconciliation 2-3/2",
+      "Authored wave terminates 2-3/2",
+      "Paid upgrade 2-3 Star Compression",
+      "Native authored wave 2-3/3",
+      "Native reward reconciliation 2-3/3",
+      "Authored wave terminates 2-3/3",
+      "Paid upgrade 2-3 Astral Accelerator",
+      "Native authored wave 2-3/4",
+      "Native reward reconciliation 2-3/4",
+      "Authored wave terminates 2-3/4",
+      "Paid placement 2-3 StarCannonTower",
+      "Native authored wave 2-3/5",
+      "Native reward reconciliation 2-3/5",
+      "Authored wave terminates 2-3/5",
+      "Paid upgrade 2-3 Star Compression",
+      "Native authored wave 2-3/6",
+      "Native reward reconciliation 2-3/6",
+      "Authored wave terminates 2-3/6",
+      "Paid upgrade 2-3 Astral Accelerator",
+      "Paid upgrade 2-3 Star Compression",
+      "Native authored wave 2-3/7",
+      "Native reward reconciliation 2-3/7",
+      "Authored wave terminates 2-3/7",
+      "Native transition Levels",
+      "Native transition Game Scene",
+      "Paid placement 2-5 StarCannonTower",
+      "Paid placement 2-5 StarCannonTower",
+      "Paid placement 2-5 StarCannonTower",
+      "Paid placement 2-5 StarCannonTower",
+      "Paid placement 2-5 StarCannonTower",
+      "Paid placement 2-5 StarCannonTower",
+      "Native authored wave 2-5/1",
+      "Native reward reconciliation 2-5/1",
+      "Authored wave terminates 2-5/1",
+      "Paid upgrade 2-5 Astral Accelerator",
+      "Native authored wave 2-5/2",
+      "Native reward reconciliation 2-5/2",
+      "Authored wave terminates 2-5/2",
+      "Paid upgrade 2-5 Star Compression",
+      "Native authored wave 2-5/3",
+      "Native reward reconciliation 2-5/3",
+      "Authored wave terminates 2-5/3",
+      "Paid upgrade 2-5 Astral Accelerator",
+      "Paid upgrade 2-5 Star Compression",
+      "Native authored wave 2-5/4",
+      "Native reward reconciliation 2-5/4",
+      "Authored wave terminates 2-5/4",
+      "Paid upgrade 2-5 Astral Accelerator",
+      "Paid upgrade 2-5 Astral Accelerator",
+      "Native authored wave 2-5/5",
+      "Native reward reconciliation 2-5/5",
+      "Authored wave terminates 2-5/5",
+      "Paid upgrade 2-5 Star Compression",
+      "Native authored wave 2-5/6",
+      "Native reward reconciliation 2-5/6",
+      "Authored wave terminates 2-5/6",
+      "Paid upgrade 2-5 Star Compression",
+      "Paid upgrade 2-5 Astral Accelerator",
+      "Native authored wave 2-5/7",
+      "Native reward reconciliation 2-5/7",
+      "Authored wave terminates 2-5/7",
+      "Paid upgrade 2-5 Star Compression",
+      "Paid upgrade 2-5 Astral Accelerator",
+      "Native authored wave 2-5/8",
+      "Native reward reconciliation 2-5/8",
+      "Authored wave terminates 2-5/8",
+      "Native transition Levels",
+      "Native transition Game Scene",
+      "Paid placement 3-1 StarCannonTower",
+      "Paid placement 3-1 StarCannonTower",
+      "Paid placement 3-1 StarCannonTower",
+      "Paid placement 3-1 StarCannonTower",
+      "Paid placement 3-1 StarCannonTower",
+      "Paid placement 3-1 StarCannonTower",
+      "Paid placement 3-1 StarCannonTower",
+      "Native authored wave 3-1/1",
+      "Native reward reconciliation 3-1/1",
+      "Authored wave terminates 3-1/1",
+      "Paid upgrade 3-1 Astral Accelerator",
+      "Native authored wave 3-1/2",
+      "Native reward reconciliation 3-1/2",
+      "Authored wave terminates 3-1/2",
+      "Paid upgrade 3-1 Star Compression",
+      "Native authored wave 3-1/3",
+      "Native reward reconciliation 3-1/3",
+      "Authored wave terminates 3-1/3",
+      "Paid upgrade 3-1 Astral Accelerator",
+      "Paid upgrade 3-1 Astral Accelerator",
+      "Native authored wave 3-1/4",
+      "Native reward reconciliation 3-1/4",
+      "Authored wave terminates 3-1/4",
+      "Paid upgrade 3-1 Star Compression",
+      "Native authored wave 3-1/5",
+      "Native reward reconciliation 3-1/5",
+      "Authored wave terminates 3-1/5",
+      "Paid placement 3-1 StarCannonTower",
+      "Native authored wave 3-1/6",
+      "Native reward reconciliation 3-1/6",
+      "Authored wave terminates 3-1/6",
+      "Paid upgrade 3-1 Star Compression",
+      "Paid upgrade 3-1 Astral Accelerator",
+      "Native authored wave 3-1/7",
+      "Native reward reconciliation 3-1/7",
+      "Authored wave terminates 3-1/7",
+      "Native transition Levels",
+      "Native transition Game Scene",
+      "Paid placement 3-3 StarCannonTower",
+      "Paid placement 3-3 StarCannonTower",
+      "Paid placement 3-3 StarCannonTower",
+      "Paid placement 3-3 StarCannonTower",
+      "Paid placement 3-3 StarCannonTower",
+      "Paid placement 3-3 StarCannonTower",
+      "Paid placement 3-3 StarCannonTower",
+      "Paid placement 3-3 StarCannonTower",
+      "Native authored wave 3-3/1",
+      "Native reward reconciliation 3-3/1",
+      "Authored wave terminates 3-3/1",
+      "Paid upgrade 3-3 Astral Accelerator",
+      "Paid upgrade 3-3 Star Compression",
+      "Native authored wave 3-3/2",
+      "Native reward reconciliation 3-3/2",
+      "Authored wave terminates 3-3/2",
+      "Paid upgrade 3-3 Astral Accelerator",
+      "Paid upgrade 3-3 Astral Accelerator",
+      "Native authored wave 3-3/3",
+      "Native reward reconciliation 3-3/3",
+      "Authored wave terminates 3-3/3",
+      "Paid upgrade 3-3 Star Compression",
+      "Paid upgrade 3-3 Astral Accelerator",
+      "Native authored wave 3-3/4",
+      "Native reward reconciliation 3-3/4",
+      "Authored wave terminates 3-3/4",
+      "Paid upgrade 3-3 Star Compression",
+      "Paid upgrade 3-3 Astral Accelerator",
+      "Native authored wave 3-3/5",
+      "Native reward reconciliation 3-3/5",
+      "Authored wave terminates 3-3/5",
+      "Paid upgrade 3-3 Star Compression",
+      "Paid upgrade 3-3 Star Compression",
+      "Native authored wave 3-3/6",
+      "Native reward reconciliation 3-3/6",
+      "Authored wave terminates 3-3/6",
+      "Paid upgrade 3-3 Astral Accelerator",
+      "Paid upgrade 3-3 Star Compression",
+      "Native authored wave 3-3/7",
+      "Native reward reconciliation 3-3/7",
+      "Authored wave terminates 3-3/7",
+      "Paid upgrade 3-3 Astral Accelerator",
+      "Paid upgrade 3-3 Star Compression",
+      "Paid upgrade 3-3 Astral Accelerator",
+      "Native authored wave 3-3/8",
+      "Native reward reconciliation 3-3/8",
+      "Authored wave terminates 3-3/8",
+      "Native transition Levels",
+      "Native transition Game Scene",
+      "Paid placement 3-5 StarCannonTower",
+      "Paid placement 3-5 StarCannonTower",
+      "Paid placement 3-5 StarCannonTower",
+      "Paid placement 3-5 StarCannonTower",
+      "Paid placement 3-5 StarCannonTower",
+      "Paid placement 3-5 StarCannonTower",
+      "Paid placement 3-5 StarCannonTower",
+      "Paid placement 3-5 StarCannonTower",
+      "Paid upgrade 3-5 Astral Accelerator",
+      "Paid upgrade 3-5 Star Compression",
+      "Paid upgrade 3-5 Astral Accelerator",
+      "Native authored wave 3-5/1",
+      "Native reward reconciliation 3-5/1",
+      "Authored wave terminates 3-5/1",
+      "Paid upgrade 3-5 Star Compression",
+      "Paid upgrade 3-5 Astral Accelerator",
+      "Native authored wave 3-5/2",
+      "Native reward reconciliation 3-5/2",
+      "Authored wave terminates 3-5/2",
+      "Paid upgrade 3-5 Star Compression",
+      "Paid upgrade 3-5 Astral Accelerator",
+      "Native authored wave 3-5/3",
+      "Native reward reconciliation 3-5/3",
+      "Authored wave terminates 3-5/3",
+      "Paid upgrade 3-5 Star Compression",
+      "Paid upgrade 3-5 Astral Accelerator",
+      "Paid upgrade 3-5 Astral Accelerator",
+      "Native authored wave 3-5/4",
+      "Native reward reconciliation 3-5/4",
+      "Authored wave terminates 3-5/4",
+      "Paid upgrade 3-5 Star Compression",
+      "Paid upgrade 3-5 Star Compression",
+      "Native authored wave 3-5/5",
+      "Native reward reconciliation 3-5/5",
+      "Authored wave terminates 3-5/5",
+      "Paid upgrade 3-5 Astral Accelerator",
+      "Paid upgrade 3-5 Star Compression",
+      "Native authored wave 3-5/6",
+      "Native reward reconciliation 3-5/6",
+      "Authored wave terminates 3-5/6",
+      "Paid upgrade 3-5 Astral Accelerator",
+      "Paid upgrade 3-5 Star Compression",
+      "Native authored wave 3-5/7",
+      "Native reward reconciliation 3-5/7",
+      "Authored wave terminates 3-5/7",
+      "Paid upgrade 3-5 Rapid Starflow",
+      "Paid upgrade 3-5 Dense Stellar Core",
+      "Native authored wave 3-5/8",
+      "Native reward reconciliation 3-5/8",
+      "Authored wave terminates 3-5/8",
+      "Paid upgrade 3-5 Rapid Starflow",
+      "Native authored wave 3-5/9",
+      "Native reward reconciliation 3-5/9",
+      "Authored wave terminates 3-5/9",
+      "Native transition Levels",
+      "Native transition Game Scene",
+      "Paid placement 4-1 StarCannonTower",
+      "Paid placement 4-1 StarCannonTower",
+      "Paid placement 4-1 StarCannonTower",
+      "Paid placement 4-1 StarCannonTower",
+      "Paid placement 4-1 StarCannonTower",
+      "Paid placement 4-1 StarCannonTower",
+      "Paid placement 4-1 StarCannonTower",
+      "Paid placement 4-1 StarCannonTower",
+      "Paid placement 4-1 StarCannonTower",
+      "Paid placement 4-1 StarCannonTower",
+      "Paid upgrade 4-1 Astral Accelerator",
+      "Paid upgrade 4-1 Star Compression",
+      "Native authored wave 4-1/1",
+      "Native reward reconciliation 4-1/1",
+      "Authored wave terminates 4-1/1",
+      "Paid upgrade 4-1 Astral Accelerator",
+      "Paid upgrade 4-1 Astral Accelerator",
+      "Native authored wave 4-1/2",
+      "Native reward reconciliation 4-1/2",
+      "Authored wave terminates 4-1/2",
+      "Paid upgrade 4-1 Star Compression",
+      "Paid upgrade 4-1 Star Compression",
+      "Native authored wave 4-1/3",
+      "Native reward reconciliation 4-1/3",
+      "Authored wave terminates 4-1/3",
+      "Paid upgrade 4-1 Astral Accelerator",
+      "Paid upgrade 4-1 Star Compression",
+      "Native authored wave 4-1/4",
+      "Native reward reconciliation 4-1/4",
+      "Authored wave terminates 4-1/4",
+      "Paid upgrade 4-1 Astral Accelerator",
+      "Paid upgrade 4-1 Star Compression",
+      "Paid upgrade 4-1 Astral Accelerator",
+      "Native authored wave 4-1/5",
+      "Native reward reconciliation 4-1/5",
+      "Authored wave terminates 4-1/5",
+      "Paid upgrade 4-1 Star Compression",
+      "Paid upgrade 4-1 Astral Accelerator",
+      "Paid upgrade 4-1 Astral Accelerator",
+      "Native authored wave 4-1/6",
+      "Native reward reconciliation 4-1/6",
+      "Authored wave terminates 4-1/6",
+      "Paid upgrade 4-1 Star Compression",
+      "Paid upgrade 4-1 Star Compression",
+      "Native authored wave 4-1/7",
+      "Native reward reconciliation 4-1/7",
+      "Authored wave terminates 4-1/7",
+      "Paid upgrade 4-1 Astral Accelerator",
+      "Paid upgrade 4-1 Star Compression",
+      "Paid upgrade 4-1 Astral Accelerator",
+      "Native authored wave 4-1/8",
+      "Native reward reconciliation 4-1/8",
+      "Authored wave terminates 4-1/8",
+      "Native transition Levels",
+      "Native transition Game Scene",
+      "Paid placement 4-3 StarCannonTower",
+      "Paid placement 4-3 StarCannonTower",
+      "Paid placement 4-3 StarCannonTower",
+      "Paid placement 4-3 StarCannonTower",
+      "Paid placement 4-3 StarCannonTower",
+      "Paid placement 4-3 StarCannonTower",
+      "Paid placement 4-3 StarCannonTower",
+      "Paid placement 4-3 StarCannonTower",
+      "Paid placement 4-3 StarCannonTower",
+      "Paid placement 4-3 StarCannonTower",
+      "Paid upgrade 4-3 Astral Accelerator",
+      "Paid upgrade 4-3 Star Compression",
+      "Paid upgrade 4-3 Astral Accelerator",
+      "Paid upgrade 4-3 Star Compression",
+      "Paid upgrade 4-3 Astral Accelerator",
+      "Paid upgrade 4-3 Star Compression",
+      "Native authored wave 4-3/1",
+      "Native reward reconciliation 4-3/1",
+      "Authored wave terminates 4-3/1",
+      "Paid upgrade 4-3 Astral Accelerator",
+      "Paid upgrade 4-3 Star Compression",
+      "Native authored wave 4-3/2",
+      "Native reward reconciliation 4-3/2",
+      "Authored wave terminates 4-3/2",
+      "Paid upgrade 4-3 Astral Accelerator",
+      "Paid upgrade 4-3 Star Compression",
+      "Paid upgrade 4-3 Astral Accelerator",
+      "Native authored wave 4-3/3",
+      "Native reward reconciliation 4-3/3",
+      "Authored wave terminates 4-3/3",
+      "Paid upgrade 4-3 Star Compression",
+      "Paid upgrade 4-3 Astral Accelerator",
+      "Paid upgrade 4-3 Star Compression",
+      "Native authored wave 4-3/4",
+      "Native reward reconciliation 4-3/4",
+      "Authored wave terminates 4-3/4",
+      "Paid upgrade 4-3 Astral Accelerator",
+      "Paid upgrade 4-3 Star Compression",
+      "Paid upgrade 4-3 Astral Accelerator",
+      "Native authored wave 4-3/5",
+      "Native reward reconciliation 4-3/5",
+      "Authored wave terminates 4-3/5",
+      "Paid upgrade 4-3 Star Compression",
+      "Paid upgrade 4-3 Astral Accelerator",
+      "Paid upgrade 4-3 Star Compression",
+      "Native authored wave 4-3/6",
+      "Native reward reconciliation 4-3/6",
+      "Authored wave terminates 4-3/6",
+      "Paid upgrade 4-3 Rapid Starflow",
+      "Native authored wave 4-3/7",
+      "Native reward reconciliation 4-3/7",
+      "Authored wave terminates 4-3/7",
+      "Paid upgrade 4-3 Dense Stellar Core",
+      "Paid upgrade 4-3 Rapid Starflow",
+      "Native authored wave 4-3/8",
+      "Native reward reconciliation 4-3/8",
+      "Authored wave terminates 4-3/8",
+      "Paid upgrade 4-3 Dense Stellar Core",
+      "Paid upgrade 4-3 Rapid Starflow",
+      "Native authored wave 4-3/9",
+      "Native reward reconciliation 4-3/9",
+      "Authored wave terminates 4-3/9",
+      "Native transition Levels",
+      "Native transition Game Scene",
+      "Paid placement 4-5 StarCannonTower",
+      "Paid placement 4-5 StarCannonTower",
+      "Paid placement 4-5 StarCannonTower",
+      "Paid placement 4-5 StarCannonTower",
+      "Paid placement 4-5 StarCannonTower",
+      "Paid placement 4-5 StarCannonTower",
+      "Paid placement 4-5 StarCannonTower",
+      "Paid placement 4-5 StarCannonTower",
+      "Paid placement 4-5 StarCannonTower",
+      "Paid placement 4-5 StarCannonTower",
+      "Paid upgrade 4-5 Astral Accelerator",
+      "Paid upgrade 4-5 Star Compression",
+      "Paid upgrade 4-5 Astral Accelerator",
+      "Paid upgrade 4-5 Star Compression",
+      "Paid upgrade 4-5 Astral Accelerator",
+      "Paid upgrade 4-5 Star Compression",
+      "Paid upgrade 4-5 Astral Accelerator",
+      "Paid upgrade 4-5 Star Compression",
+      "Paid upgrade 4-5 Astral Accelerator",
+      "Paid upgrade 4-5 Star Compression",
+      "Native authored wave 4-5/1",
+      "Native reward reconciliation 4-5/1",
+      "Authored wave terminates 4-5/1",
+      "Paid upgrade 4-5 Astral Accelerator",
+      "Paid upgrade 4-5 Star Compression",
+      "Paid upgrade 4-5 Astral Accelerator",
+      "Native authored wave 4-5/2",
+      "Native reward reconciliation 4-5/2",
+      "Authored wave terminates 4-5/2",
+      "Paid upgrade 4-5 Star Compression",
+      "Paid upgrade 4-5 Astral Accelerator",
+      "Paid upgrade 4-5 Astral Accelerator",
+      "Native authored wave 4-5/3",
+      "Native reward reconciliation 4-5/3",
+      "Authored wave terminates 4-5/3",
+      "Paid upgrade 4-5 Star Compression",
+      "Paid upgrade 4-5 Star Compression",
+      "Paid upgrade 4-5 Astral Accelerator",
+      "Native authored wave 4-5/4",
+      "Native reward reconciliation 4-5/4",
+      "Authored wave terminates 4-5/4",
+      "Paid upgrade 4-5 Star Compression",
+      "Paid upgrade 4-5 Rapid Starflow",
+      "Native authored wave 4-5/5",
+      "Native reward reconciliation 4-5/5",
+      "Authored wave terminates 4-5/5",
+      "Paid upgrade 4-5 Dense Stellar Core",
+      "Paid upgrade 4-5 Rapid Starflow",
+      "Native authored wave 4-5/6",
+      "Native reward reconciliation 4-5/6",
+      "Authored wave terminates 4-5/6",
+      "Paid upgrade 4-5 Dense Stellar Core",
+      "Paid upgrade 4-5 Rapid Starflow",
+      "Native authored wave 4-5/7",
+      "Native reward reconciliation 4-5/7",
+      "Authored wave terminates 4-5/7",
+      "Paid upgrade 4-5 Dense Stellar Core",
+      "Paid upgrade 4-5 Rapid Starflow",
+      "Native authored wave 4-5/8",
+      "Native reward reconciliation 4-5/8",
+      "Authored wave terminates 4-5/8",
+      "Paid upgrade 4-5 Dense Stellar Core",
+      "Paid upgrade 4-5 Rapid Starflow",
+      "Native authored wave 4-5/9",
+      "Native reward reconciliation 4-5/9",
+      "Authored wave terminates 4-5/9",
+      "Paid upgrade 4-5 Dense Stellar Core",
+      "Paid upgrade 4-5 Rapid Starflow",
+      "Native authored wave 4-5/10",
+      "Native reward reconciliation 4-5/10",
+      "Native transition Levels",
+      "Native transition Game Scene",
+      "Paid placement 5-1 StarCannonTower",
+      "Paid placement 5-1 StarCannonTower",
+      "Paid placement 5-1 StarCannonTower",
+      "Paid placement 5-1 StarCannonTower",
+      "Paid placement 5-1 StarCannonTower",
+      "Paid placement 5-1 StarCannonTower",
+      "Paid placement 5-1 StarCannonTower",
+      "Paid placement 5-1 StarCannonTower",
+      "Paid placement 5-1 StarCannonTower",
+      "Paid placement 5-1 StarCannonTower",
+      "Paid placement 5-1 StarCannonTower",
+      "Paid placement 5-1 StarCannonTower",
+      "Paid upgrade 5-1 Astral Accelerator",
+      "Paid upgrade 5-1 Star Compression",
+      "Paid upgrade 5-1 Astral Accelerator",
+      "Paid upgrade 5-1 Star Compression",
+      "Paid upgrade 5-1 Astral Accelerator",
+      "Paid upgrade 5-1 Star Compression",
+      "Paid upgrade 5-1 Astral Accelerator",
+      "Paid upgrade 5-1 Star Compression",
+      "Paid upgrade 5-1 Astral Accelerator",
+      "Paid upgrade 5-1 Star Compression",
+      "Paid upgrade 5-1 Astral Accelerator",
+      "Paid upgrade 5-1 Star Compression",
+      "Paid upgrade 5-1 Astral Accelerator",
+      "Paid upgrade 5-1 Star Compression",
+      "Paid upgrade 5-1 Astral Accelerator",
+      "Paid upgrade 5-1 Star Compression",
+      "Paid upgrade 5-1 Astral Accelerator",
+      "Paid upgrade 5-1 Star Compression",
+      "Paid upgrade 5-1 Astral Accelerator",
+      "Paid upgrade 5-1 Star Compression",
+      "Paid upgrade 5-1 Astral Accelerator",
+      "Paid upgrade 5-1 Star Compression",
+      "Paid upgrade 5-1 Astral Accelerator",
+      "Paid upgrade 5-1 Star Compression",
+      "Paid upgrade 5-1 Rapid Starflow",
+      "Paid upgrade 5-1 Dense Stellar Core",
+      "Paid upgrade 5-1 Rapid Starflow",
+      "Paid upgrade 5-1 Dense Stellar Core",
+      "Native authored wave 5-1/1",
+      "Native reward reconciliation 5-1/1",
+      "Authored wave terminates 5-1/1",
+      "Paid upgrade 5-1 Rapid Starflow",
+      "Paid upgrade 5-1 Dense Stellar Core",
+      "Paid upgrade 5-1 Rapid Starflow",
+      "Paid upgrade 5-1 Dense Stellar Core",
+      "Native authored wave 5-1/2",
+      "Native reward reconciliation 5-1/2",
+      "Authored wave terminates 5-1/2",
+      "Paid upgrade 5-1 Rapid Starflow",
+      "Paid upgrade 5-1 Dense Stellar Core",
+      "Native authored wave 5-1/3",
+      "Native reward reconciliation 5-1/3",
+      "Authored wave terminates 5-1/3",
+      "Paid upgrade 5-1 Rapid Starflow",
+      "Paid upgrade 5-1 Dense Stellar Core",
+      "Native authored wave 5-1/4",
+      "Native reward reconciliation 5-1/4",
+      "Authored wave terminates 5-1/4",
+      "Paid upgrade 5-1 Rapid Starflow",
+      "Paid upgrade 5-1 Dense Stellar Core",
+      "Native authored wave 5-1/5",
+      "Native reward reconciliation 5-1/5",
+      "Authored wave terminates 5-1/5",
+      "Paid upgrade 5-1 Rapid Starflow",
+      "Paid upgrade 5-1 Dense Stellar Core",
+      "Native authored wave 5-1/6",
+      "Native reward reconciliation 5-1/6",
+      "Authored wave terminates 5-1/6",
+      "Paid upgrade 5-1 Rapid Starflow",
+      "Paid upgrade 5-1 Dense Stellar Core",
+      "Native authored wave 5-1/7",
+      "Native reward reconciliation 5-1/7",
+      "Authored wave terminates 5-1/7",
+      "Paid upgrade 5-1 Rapid Starflow",
+      "Paid upgrade 5-1 Dense Stellar Core",
+      "Paid upgrade 5-1 Rapid Starflow",
+      "Native authored wave 5-1/8",
+      "Native reward reconciliation 5-1/8",
+      "Authored wave terminates 5-1/8",
+      "Paid upgrade 5-1 Dense Stellar Core",
+      "Paid upgrade 5-1 Rapid Starflow",
+      "Native authored wave 5-1/9",
+      "Native reward reconciliation 5-1/9",
+      "Authored wave terminates 5-1/9",
+      "Native transition Levels",
+      "Native transition Game Scene",
+      "Paid placement 5-3 StarCannonTower",
+      "Paid placement 5-3 StarCannonTower",
+      "Paid placement 5-3 StarCannonTower",
+      "Paid placement 5-3 StarCannonTower",
+      "Paid placement 5-3 StarCannonTower",
+      "Paid placement 5-3 StarCannonTower",
+      "Paid placement 5-3 StarCannonTower",
+      "Paid placement 5-3 StarCannonTower",
+      "Paid placement 5-3 StarCannonTower",
+      "Paid placement 5-3 StarCannonTower",
+      "Paid placement 5-3 StarCannonTower",
+      "Paid placement 5-3 StarCannonTower",
+      "Paid upgrade 5-3 Astral Accelerator",
+      "Paid upgrade 5-3 Star Compression",
+      "Paid upgrade 5-3 Astral Accelerator",
+      "Paid upgrade 5-3 Star Compression",
+      "Paid upgrade 5-3 Astral Accelerator",
+      "Paid upgrade 5-3 Star Compression",
+      "Paid upgrade 5-3 Astral Accelerator",
+      "Paid upgrade 5-3 Star Compression",
+      "Paid upgrade 5-3 Astral Accelerator",
+      "Paid upgrade 5-3 Star Compression",
+      "Paid upgrade 5-3 Astral Accelerator",
+      "Paid upgrade 5-3 Star Compression",
+      "Paid upgrade 5-3 Astral Accelerator",
+      "Paid upgrade 5-3 Star Compression",
+      "Paid upgrade 5-3 Astral Accelerator",
+      "Paid upgrade 5-3 Star Compression",
+      "Paid upgrade 5-3 Astral Accelerator",
+      "Paid upgrade 5-3 Star Compression",
+      "Paid upgrade 5-3 Astral Accelerator",
+      "Paid upgrade 5-3 Star Compression",
+      "Paid upgrade 5-3 Astral Accelerator",
+      "Paid upgrade 5-3 Star Compression",
+      "Paid upgrade 5-3 Astral Accelerator",
+      "Paid upgrade 5-3 Star Compression",
+      "Paid upgrade 5-3 Rapid Starflow",
+      "Paid upgrade 5-3 Dense Stellar Core",
+      "Paid upgrade 5-3 Rapid Starflow",
+      "Paid upgrade 5-3 Dense Stellar Core",
+      "Native authored wave 5-3/1",
+      "Native reward reconciliation 5-3/1",
+      "Authored wave terminates 5-3/1",
+      "Paid upgrade 5-3 Rapid Starflow",
+      "Paid upgrade 5-3 Dense Stellar Core",
+      "Paid upgrade 5-3 Rapid Starflow",
+      "Paid upgrade 5-3 Dense Stellar Core",
+      "Paid upgrade 5-3 Rapid Starflow",
+      "Paid upgrade 5-3 Dense Stellar Core",
+      "Paid upgrade 5-3 Rapid Starflow",
+      "Paid upgrade 5-3 Dense Stellar Core",
+      "Paid upgrade 5-3 Rapid Starflow",
+      "Paid upgrade 5-3 Dense Stellar Core",
+      "Paid upgrade 5-3 Rapid Starflow",
+      "Paid upgrade 5-3 Dense Stellar Core",
+      "Paid upgrade 5-3 Rapid Starflow",
+      "Paid upgrade 5-3 Dense Stellar Core",
+      "Paid upgrade 5-3 Rapid Starflow",
+      "Paid upgrade 5-3 Dense Stellar Core",
+      "Paid upgrade 5-3 Rapid Starflow",
+      "Paid upgrade 5-3 Dense Stellar Core",
+      "Native authored wave 5-3/2",
+      "Native reward reconciliation 5-3/2",
+      "Authored wave terminates 5-3/2",
+      "Paid upgrade 5-3 Rapid Starflow",
+      "Paid upgrade 5-3 Dense Stellar Core",
+      "Native authored wave 5-3/3",
+      "Native reward reconciliation 5-3/3",
+      "Authored wave terminates 5-3/3",
+      "Native authored wave 5-3/4",
+      "Native reward reconciliation 5-3/4",
+      "Authored wave terminates 5-3/4",
+      "Paid upgrade 5-3 Twin Star Muzzle",
+      "Native authored wave 5-3/5",
+      "Native reward reconciliation 5-3/5",
+      "Authored wave terminates 5-3/5",
+      "Paid upgrade 5-3 Twin Star Muzzle",
+      "Native authored wave 5-3/6",
+      "Native reward reconciliation 5-3/6",
+      "Authored wave terminates 5-3/6",
+      "Paid upgrade 5-3 Twin Star Muzzle",
+      "Native authored wave 5-3/7",
+      "Native reward reconciliation 5-3/7",
+      "Authored wave terminates 5-3/7",
+      "Native authored wave 5-3/8",
+      "Native reward reconciliation 5-3/8",
+      "Authored wave terminates 5-3/8",
+      "Paid upgrade 5-3 Twin Star Muzzle",
+      "Native authored wave 5-3/9",
+      "Native reward reconciliation 5-3/9",
+      "Authored wave terminates 5-3/9",
+      "Paid upgrade 5-3 Twin Star Muzzle",
+      "Native authored wave 5-3/10",
+      "Native reward reconciliation 5-3/10",
+      "Authored wave terminates 5-3/10",
+      "Native transition Levels",
+      "Native transition Game Scene",
+      "Paid placement 5-5 StarCannonTower",
+      "Paid placement 5-5 StarCannonTower",
+      "Paid placement 5-5 StarCannonTower",
+      "Paid placement 5-5 StarCannonTower",
+      "Paid placement 5-5 StarCannonTower",
+      "Paid placement 5-5 StarCannonTower",
+      "Paid placement 5-5 StarCannonTower",
+      "Paid placement 5-5 StarCannonTower",
+      "Paid placement 5-5 StarCannonTower",
+      "Paid placement 5-5 StarCannonTower",
+      "Paid placement 5-5 StarCannonTower",
+      "Paid placement 5-5 StarCannonTower",
+      "Paid upgrade 5-5 Astral Accelerator",
+      "Paid upgrade 5-5 Star Compression",
+      "Paid upgrade 5-5 Astral Accelerator",
+      "Paid upgrade 5-5 Star Compression",
+      "Paid upgrade 5-5 Astral Accelerator",
+      "Paid upgrade 5-5 Star Compression",
+      "Paid upgrade 5-5 Astral Accelerator",
+      "Paid upgrade 5-5 Star Compression",
+      "Paid upgrade 5-5 Astral Accelerator",
+      "Paid upgrade 5-5 Star Compression",
+      "Paid upgrade 5-5 Astral Accelerator",
+      "Paid upgrade 5-5 Star Compression",
+      "Paid upgrade 5-5 Astral Accelerator",
+      "Paid upgrade 5-5 Star Compression",
+      "Paid upgrade 5-5 Astral Accelerator",
+      "Paid upgrade 5-5 Star Compression",
+      "Paid upgrade 5-5 Astral Accelerator",
+      "Paid upgrade 5-5 Star Compression",
+      "Paid upgrade 5-5 Astral Accelerator",
+      "Paid upgrade 5-5 Star Compression",
+      "Paid upgrade 5-5 Astral Accelerator",
+      "Paid upgrade 5-5 Star Compression",
+      "Paid upgrade 5-5 Astral Accelerator",
+      "Paid upgrade 5-5 Star Compression",
+      "Paid upgrade 5-5 Rapid Starflow",
+      "Paid upgrade 5-5 Dense Stellar Core",
+      "Paid upgrade 5-5 Rapid Starflow",
+      "Paid upgrade 5-5 Dense Stellar Core",
+      "Native authored wave 5-5/1",
+      "Native reward reconciliation 5-5/1",
+      "Authored wave terminates 5-5/1",
+      "Paid upgrade 5-5 Rapid Starflow",
+      "Paid upgrade 5-5 Dense Stellar Core",
+      "Paid upgrade 5-5 Rapid Starflow",
+      "Paid upgrade 5-5 Dense Stellar Core",
+      "Paid upgrade 5-5 Rapid Starflow",
+      "Paid upgrade 5-5 Dense Stellar Core",
+      "Paid upgrade 5-5 Rapid Starflow",
+      "Paid upgrade 5-5 Dense Stellar Core",
+      "Paid upgrade 5-5 Rapid Starflow",
+      "Paid upgrade 5-5 Dense Stellar Core",
+      "Paid upgrade 5-5 Rapid Starflow",
+      "Paid upgrade 5-5 Dense Stellar Core",
+      "Paid upgrade 5-5 Rapid Starflow",
+      "Paid upgrade 5-5 Dense Stellar Core",
+      "Paid upgrade 5-5 Rapid Starflow",
+      "Paid upgrade 5-5 Dense Stellar Core",
+      "Paid upgrade 5-5 Rapid Starflow",
+      "Paid upgrade 5-5 Dense Stellar Core",
+      "Paid upgrade 5-5 Rapid Starflow",
+      "Paid upgrade 5-5 Dense Stellar Core",
+      "Paid upgrade 5-5 Twin Star Muzzle",
+      "Paid upgrade 5-5 Twin Star Muzzle",
+      "Paid upgrade 5-5 Twin Star Muzzle",
+      "Paid upgrade 5-5 Twin Star Muzzle",
+      "Native authored wave 5-5/2",
+      "Native reward reconciliation 5-5/2",
+      "Authored wave terminates 5-5/2",
+      "Paid upgrade 5-5 Twin Star Muzzle",
+      "Native authored wave 5-5/3",
+      "Native reward reconciliation 5-5/3",
+      "Authored wave terminates 5-5/3",
+      "Paid upgrade 5-5 Twin Star Muzzle",
+      "Native authored wave 5-5/4",
+      "Native reward reconciliation 5-5/4",
+      "Authored wave terminates 5-5/4",
+      "Native authored wave 5-5/5",
+      "Native reward reconciliation 5-5/5",
+      "Authored wave terminates 5-5/5",
+      "Paid upgrade 5-5 Twin Star Muzzle",
+      "Native authored wave 5-5/6",
+      "Native reward reconciliation 5-5/6",
+      "Authored wave terminates 5-5/6",
+      "Paid upgrade 5-5 Twin Star Muzzle",
+      "Native authored wave 5-5/7",
+      "Native reward reconciliation 5-5/7",
+      "Authored wave terminates 5-5/7",
+      "Paid upgrade 5-5 Twin Star Muzzle",
+      "Native authored wave 5-5/8",
+      "Native reward reconciliation 5-5/8",
+      "Authored wave terminates 5-5/8",
+      "Paid upgrade 5-5 Twin Star Muzzle",
+      "Native authored wave 5-5/9",
+      "Native reward reconciliation 5-5/9",
+      "Authored wave terminates 5-5/9",
+      "Paid upgrade 5-5 Twin Star Muzzle",
+      "Native authored wave 5-5/10",
+      "Native reward reconciliation 5-5/10",
+      "Authored wave terminates 5-5/10",
+      "Paid upgrade 5-5 Twin Star Muzzle",
+      "Native authored wave 5-5/11",
+      "Native reward reconciliation 5-5/11",
+      "Authored wave terminates 5-5/11",
+      "Native authored wave 5-5/12",
+      "Native reward reconciliation 5-5/12",
+      "Authored wave terminates 5-5/12",
+      "Native transition Levels"
+    ],
+    "results": [
+      {
+        "mission": "1-3",
+        "chapter": 1,
+        "strategy": "cannon-speed",
+        "won": true,
+        "startingGold": 750,
+        "spent": 1180,
+        "killGold": 569,
+        "clearGold": 0,
+        "finalGold": 139,
+        "lives": 20,
+        "observed": 102,
+        "rows": [
+          {
+            "wave": 1,
+            "lives": 20,
+            "leaks": 0,
+            "bank": 87,
+            "spent": 730,
+            "elapsed": 25.70000000000023,
+            "completed": true
+          },
+          {
+            "wave": 2,
+            "lives": 20,
+            "leaks": 0,
+            "bank": 165,
+            "spent": 730,
+            "elapsed": 31.35000000000031,
+            "completed": true
+          },
+          {
+            "wave": 3,
+            "lives": 20,
+            "leaks": 0,
+            "bank": 93,
+            "spent": 890,
+            "elapsed": 32.70000000000028,
+            "completed": true
+          },
+          {
+            "wave": 4,
+            "lives": 20,
+            "leaks": 0,
+            "bank": 196,
+            "spent": 890,
+            "elapsed": 40.24999999999985,
+            "completed": true
+          },
+          {
+            "wave": 5,
+            "lives": 20,
+            "leaks": 0,
+            "bank": 179,
+            "spent": 1020,
+            "elapsed": 38.599999999999945,
+            "completed": true
+          },
+          {
+            "wave": 6,
+            "lives": 20,
+            "leaks": 0,
+            "bank": 139,
+            "spent": 1180,
+            "elapsed": 43.39999999999967,
+            "completed": true
+          }
+        ],
+        "purchases": [
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              408,
+              242
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1464,
+              242
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 5,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 6,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          }
+        ],
+        "fixtureGold": 0,
+        "fixtureDamage": 0
+      },
+      {
+        "mission": "1-5",
+        "chapter": 1,
+        "strategy": "cannon-speed",
+        "won": true,
+        "startingGold": 900,
+        "spent": 1610,
+        "killGold": 1255,
+        "clearGold": 0,
+        "finalGold": 545,
+        "lives": 20,
+        "observed": 155,
+        "rows": [
+          {
+            "wave": 1,
+            "lives": 20,
+            "leaks": 0,
+            "bank": 103,
+            "spent": 900,
+            "elapsed": 44.89999999999959,
+            "completed": true
+          },
+          {
+            "wave": 2,
+            "lives": 20,
+            "leaks": 0,
+            "bank": 219,
+            "spent": 900,
+            "elapsed": 53.04999999999912,
+            "completed": true
+          },
+          {
+            "wave": 3,
+            "lives": 20,
+            "leaks": 0,
+            "bank": 214,
+            "spent": 1030,
+            "elapsed": 38.54999999999995,
+            "completed": true
+          },
+          {
+            "wave": 4,
+            "lives": 20,
+            "leaks": 0,
+            "bank": 197,
+            "spent": 1190,
+            "elapsed": 53.64999999999909,
+            "completed": true
+          },
+          {
+            "wave": 5,
+            "lives": 20,
+            "leaks": 0,
+            "bank": 226,
+            "spent": 1320,
+            "elapsed": 57.54999999999887,
+            "completed": true
+          },
+          {
+            "wave": 6,
+            "lives": 20,
+            "leaks": 0,
+            "bank": 233,
+            "spent": 1480,
+            "elapsed": 56.9499999999989,
+            "completed": true
+          },
+          {
+            "wave": 7,
+            "lives": 20,
+            "leaks": 0,
+            "bank": 545,
+            "spent": 1610,
+            "elapsed": 76.99999999999777,
+            "completed": true
+          }
+        ],
+        "purchases": [
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              408,
+              242
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1464,
+              242
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              440,
+              770
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 5,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 6,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 7,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          }
+        ],
+        "fixtureGold": 0,
+        "fixtureDamage": 0
+      },
+      {
+        "mission": "2-1",
+        "chapter": 2,
+        "strategy": "cannon-speed",
+        "won": true,
+        "startingGold": 1200,
+        "spent": 1780,
+        "killGold": 920,
+        "clearGold": 0,
+        "finalGold": 340,
+        "lives": 18,
+        "observed": 141,
+        "rows": [
+          {
+            "wave": 1,
+            "lives": 18,
+            "leaks": 0,
+            "bank": 108,
+            "spent": 1200,
+            "elapsed": 46.19999999999951,
+            "completed": true
+          },
+          {
+            "wave": 2,
+            "lives": 18,
+            "leaks": 0,
+            "bank": 233,
+            "spent": 1200,
+            "elapsed": 58.39999999999882,
+            "completed": true
+          },
+          {
+            "wave": 3,
+            "lives": 18,
+            "leaks": 0,
+            "bank": 232,
+            "spent": 1330,
+            "elapsed": 48.74999999999937,
+            "completed": true
+          },
+          {
+            "wave": 4,
+            "lives": 18,
+            "leaks": 0,
+            "bank": 239,
+            "spent": 1490,
+            "elapsed": 59.74999999999874,
+            "completed": true
+          },
+          {
+            "wave": 5,
+            "lives": 18,
+            "leaks": 0,
+            "bank": 288,
+            "spent": 1620,
+            "elapsed": 67.44999999999831,
+            "completed": true
+          },
+          {
+            "wave": 6,
+            "lives": 18,
+            "leaks": 0,
+            "bank": 340,
+            "spent": 1780,
+            "elapsed": 71.39999999999809,
+            "completed": true
+          }
+        ],
+        "purchases": [
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1560,
+              650
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1496,
+              218
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              536,
+              242
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              408,
+              482
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 5,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 6,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          }
+        ],
+        "fixtureGold": 0,
+        "fixtureDamage": 0
+      },
+      {
+        "mission": "2-3",
+        "chapter": 2,
+        "strategy": "cannon-speed",
+        "won": true,
+        "startingGold": 1500,
+        "spent": 2670,
+        "killGold": 1466,
+        "clearGold": 0,
+        "finalGold": 296,
+        "lives": 18,
+        "observed": 219,
+        "rows": [
+          {
+            "wave": 1,
+            "lives": 18,
+            "leaks": 0,
+            "bank": 149,
+            "spent": 1500,
+            "elapsed": 61.49999999999864,
+            "completed": true
+          },
+          {
+            "wave": 2,
+            "lives": 18,
+            "leaks": 0,
+            "bank": 181,
+            "spent": 1630,
+            "elapsed": 68.24999999999827,
+            "completed": true
+          },
+          {
+            "wave": 3,
+            "lives": 18,
+            "leaks": 0,
+            "bank": 218,
+            "spent": 1790,
+            "elapsed": 75.84999999999783,
+            "completed": true
+          },
+          {
+            "wave": 4,
+            "lives": 18,
+            "leaks": 0,
+            "bank": 304,
+            "spent": 1920,
+            "elapsed": 73.44999999999797,
+            "completed": true
+          },
+          {
+            "wave": 5,
+            "lives": 18,
+            "leaks": 0,
+            "bank": 215,
+            "spent": 2220,
+            "elapsed": 69.89999999999817,
+            "completed": true
+          },
+          {
+            "wave": 6,
+            "lives": 18,
+            "leaks": 0,
+            "bank": 317,
+            "spent": 2380,
+            "elapsed": 94.39999999999678,
+            "completed": true
+          },
+          {
+            "wave": 7,
+            "lives": 18,
+            "leaks": 0,
+            "bank": 296,
+            "spent": 2670,
+            "elapsed": 73.94999999999794,
+            "completed": true
+          }
+        ],
+        "purchases": [
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1560,
+              650
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1496,
+              218
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              536,
+              242
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              408,
+              482
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1272,
+              650
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 5,
+            "type": "StarCannonTower",
+            "site": [
+              792,
+              650
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 6,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 7,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 7,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          }
+        ],
+        "fixtureGold": 0,
+        "fixtureDamage": 0
+      },
+      {
+        "mission": "2-5",
+        "chapter": 2,
+        "strategy": "cannon-speed",
+        "won": true,
+        "startingGold": 1800,
+        "spent": 3380,
+        "killGold": 2470,
+        "clearGold": 0,
+        "finalGold": 890,
+        "lives": 18,
+        "observed": 311,
+        "rows": [
+          {
+            "wave": 1,
+            "lives": 18,
+            "leaks": 0,
+            "bank": 177,
+            "spent": 1800,
+            "elapsed": 62.64999999999858,
+            "completed": true
+          },
+          {
+            "wave": 2,
+            "lives": 18,
+            "leaks": 0,
+            "bank": 243,
+            "spent": 1930,
+            "elapsed": 63.34999999999854,
+            "completed": true
+          },
+          {
+            "wave": 3,
+            "lives": 18,
+            "leaks": 0,
+            "bank": 321,
+            "spent": 2090,
+            "elapsed": 84.39999999999735,
+            "completed": true
+          },
+          {
+            "wave": 4,
+            "lives": 18,
+            "leaks": 0,
+            "bank": 286,
+            "spent": 2380,
+            "elapsed": 76.29999999999781,
+            "completed": true
+          },
+          {
+            "wave": 5,
+            "lives": 18,
+            "leaks": 0,
+            "bank": 274,
+            "spent": 2640,
+            "elapsed": 67.99999999999828,
+            "completed": true
+          },
+          {
+            "wave": 6,
+            "lives": 18,
+            "leaks": 0,
+            "bank": 412,
+            "spent": 2800,
+            "elapsed": 97.19999999999662,
+            "completed": true
+          },
+          {
+            "wave": 7,
+            "lives": 18,
+            "leaks": 0,
+            "bank": 413,
+            "spent": 3090,
+            "elapsed": 80.39999999999758,
+            "completed": true
+          },
+          {
+            "wave": 8,
+            "lives": 18,
+            "leaks": 0,
+            "bank": 890,
+            "spent": 3380,
+            "elapsed": 154.65000000000092,
+            "completed": true
+          }
+        ],
+        "purchases": [
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1560,
+              650
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1496,
+              218
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              536,
+              242
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              408,
+              482
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1272,
+              650
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              792,
+              650
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 5,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 5,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 6,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 7,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 7,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 8,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 8,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          }
+        ],
+        "fixtureGold": 0,
+        "fixtureDamage": 0
+      },
+      {
+        "mission": "3-1",
+        "chapter": 3,
+        "strategy": "cannon-speed",
+        "won": true,
+        "startingGold": 2100,
+        "spent": 3400,
+        "killGold": 1718,
+        "clearGold": 0,
+        "finalGold": 418,
+        "lives": 16,
+        "observed": 266,
+        "rows": [
+          {
+            "wave": 1,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 167,
+            "spent": 2100,
+            "elapsed": 61.04999999999867,
+            "completed": true
+          },
+          {
+            "wave": 2,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 226,
+            "spent": 2230,
+            "elapsed": 58.24999999999883,
+            "completed": true
+          },
+          {
+            "wave": 3,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 282,
+            "spent": 2390,
+            "elapsed": 63.34999999999854,
+            "completed": true
+          },
+          {
+            "wave": 4,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 287,
+            "spent": 2650,
+            "elapsed": 72.999999999998,
+            "completed": true
+          },
+          {
+            "wave": 5,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 384,
+            "spent": 2810,
+            "elapsed": 64.0999999999985,
+            "completed": true
+          },
+          {
+            "wave": 6,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 371,
+            "spent": 3110,
+            "elapsed": 76.09999999999782,
+            "completed": true
+          },
+          {
+            "wave": 7,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 418,
+            "spent": 3400,
+            "elapsed": 73.69999999999796,
+            "completed": true
+          }
+        ],
+        "purchases": [
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1528,
+              722
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1560,
+              290
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              472,
+              818
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              728,
+              434
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              440,
+              266
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1304,
+              434
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1208,
+              818
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 5,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 6,
+            "type": "StarCannonTower",
+            "site": [
+              920,
+              818
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 7,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 7,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          }
+        ],
+        "fixtureGold": 0,
+        "fixtureDamage": 0
+      },
+      {
+        "mission": "3-3",
+        "chapter": 3,
+        "strategy": "cannon-speed",
+        "won": true,
+        "startingGold": 2500,
+        "spent": 4560,
+        "killGold": 2524,
+        "clearGold": 0,
+        "finalGold": 464,
+        "lives": 16,
+        "observed": 386,
+        "rows": [
+          {
+            "wave": 1,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 304,
+            "spent": 2400,
+            "elapsed": 60.69999999999869,
+            "completed": true
+          },
+          {
+            "wave": 2,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 260,
+            "spent": 2690,
+            "elapsed": 65.64999999999841,
+            "completed": true
+          },
+          {
+            "wave": 3,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 290,
+            "spent": 2950,
+            "elapsed": 88.94999999999709,
+            "completed": true
+          },
+          {
+            "wave": 4,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 308,
+            "spent": 3240,
+            "elapsed": 70.04999999999816,
+            "completed": true
+          },
+          {
+            "wave": 5,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 355,
+            "spent": 3530,
+            "elapsed": 82.34999999999746,
+            "completed": true
+          },
+          {
+            "wave": 6,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 406,
+            "spent": 3850,
+            "elapsed": 82.84999999999744,
+            "completed": true
+          },
+          {
+            "wave": 7,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 483,
+            "spent": 4140,
+            "elapsed": 74.5999999999979,
+            "completed": true
+          },
+          {
+            "wave": 8,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 464,
+            "spent": 4560,
+            "elapsed": 75.54999999999785,
+            "completed": true
+          }
+        ],
+        "purchases": [
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1528,
+              722
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1560,
+              290
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              472,
+              818
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              728,
+              434
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              440,
+              266
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1304,
+              434
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1208,
+              818
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              920,
+              818
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 5,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 5,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 6,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 6,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 7,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 7,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 8,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 8,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 8,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          }
+        ],
+        "fixtureGold": 0,
+        "fixtureDamage": 0
+      },
+      {
+        "mission": "3-5",
+        "chapter": 3,
+        "strategy": "cannon-speed",
+        "won": true,
+        "startingGold": 2900,
+        "spent": 5580,
+        "killGold": 4209,
+        "clearGold": 0,
+        "finalGold": 1529,
+        "lives": 16,
+        "observed": 530,
+        "rows": [
+          {
+            "wave": 1,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 355,
+            "spent": 2820,
+            "elapsed": 71.79999999999806,
+            "completed": true
+          },
+          {
+            "wave": 2,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 367,
+            "spent": 3110,
+            "elapsed": 76.29999999999781,
+            "completed": true
+          },
+          {
+            "wave": 3,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 421,
+            "spent": 3400,
+            "elapsed": 85.84999999999727,
+            "completed": true
+          },
+          {
+            "wave": 4,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 346,
+            "spent": 3820,
+            "elapsed": 78.94999999999766,
+            "completed": true
+          },
+          {
+            "wave": 5,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 379,
+            "spent": 4140,
+            "elapsed": 77.14999999999776,
+            "completed": true
+          },
+          {
+            "wave": 6,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 522,
+            "spent": 4430,
+            "elapsed": 86.44999999999723,
+            "completed": true
+          },
+          {
+            "wave": 7,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 657,
+            "spent": 4720,
+            "elapsed": 80.49999999999757,
+            "completed": true
+          },
+          {
+            "wave": 8,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 516,
+            "spent": 5300,
+            "elapsed": 86.39999999999723,
+            "completed": true
+          },
+          {
+            "wave": 9,
+            "lives": 16,
+            "leaks": 0,
+            "bank": 1529,
+            "spent": 5580,
+            "elapsed": 158.45000000000178,
+            "completed": true
+          }
+        ],
+        "purchases": [
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1528,
+              722
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1560,
+              290
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              472,
+              818
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              728,
+              434
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              440,
+              266
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1304,
+              434
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1208,
+              818
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              920,
+              818
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 5,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 5,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 6,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 6,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 7,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 7,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 8,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 8,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 9,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          }
+        ],
+        "fixtureGold": 0,
+        "fixtureDamage": 0
+      },
+      {
+        "mission": "4-1",
+        "chapter": 4,
+        "strategy": "cannon-speed",
+        "won": true,
+        "startingGold": 3300,
+        "spent": 5740,
+        "killGold": 3075,
+        "clearGold": 0,
+        "finalGold": 635,
+        "lives": 14,
+        "observed": 460,
+        "rows": [
+          {
+            "wave": 1,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 271,
+            "spent": 3290,
+            "elapsed": 58.999999999998785,
+            "completed": true
+          },
+          {
+            "wave": 2,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 328,
+            "spent": 3550,
+            "elapsed": 60.29999999999871,
+            "completed": true
+          },
+          {
+            "wave": 3,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 344,
+            "spent": 3870,
+            "elapsed": 64.0499999999985,
+            "completed": true
+          },
+          {
+            "wave": 4,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 434,
+            "spent": 4160,
+            "elapsed": 72.09999999999805,
+            "completed": true
+          },
+          {
+            "wave": 5,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 431,
+            "spent": 4580,
+            "elapsed": 68.29999999999826,
+            "completed": true
+          },
+          {
+            "wave": 6,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 437,
+            "spent": 5000,
+            "elapsed": 69.64999999999819,
+            "completed": true
+          },
+          {
+            "wave": 7,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 564,
+            "spent": 5320,
+            "elapsed": 73.19999999999798,
+            "completed": true
+          },
+          {
+            "wave": 8,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 635,
+            "spent": 5740,
+            "elapsed": 74.29999999999792,
+            "completed": true
+          }
+        ],
+        "purchases": [
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1464,
+              242
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              696,
+              218
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1080,
+              434
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              600,
+              650
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1560,
+              602
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1240,
+              650
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              984,
+              698
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1560,
+              266
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              824,
+              482
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1208,
+              194
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 5,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 5,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 5,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 6,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 6,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 6,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 7,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 7,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 8,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 8,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 8,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          }
+        ],
+        "fixtureGold": 0,
+        "fixtureDamage": 0
+      },
+      {
+        "mission": "4-3",
+        "chapter": 4,
+        "strategy": "cannon-speed",
+        "won": true,
+        "startingGold": 3900,
+        "spent": 7340,
+        "killGold": 4263,
+        "clearGold": 0,
+        "finalGold": 823,
+        "lives": 14,
+        "observed": 636,
+        "rows": [
+          {
+            "wave": 1,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 364,
+            "spent": 3870,
+            "elapsed": 66.59999999999836,
+            "completed": true
+          },
+          {
+            "wave": 2,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 443,
+            "spent": 4160,
+            "elapsed": 66.39999999999837,
+            "completed": true
+          },
+          {
+            "wave": 3,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 469,
+            "spent": 4580,
+            "elapsed": 80.59999999999756,
+            "completed": true
+          },
+          {
+            "wave": 4,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 456,
+            "spent": 5030,
+            "elapsed": 70.04999999999816,
+            "completed": true
+          },
+          {
+            "wave": 5,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 486,
+            "spent": 5450,
+            "elapsed": 70.54999999999814,
+            "completed": true
+          },
+          {
+            "wave": 6,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 555,
+            "spent": 5900,
+            "elapsed": 77.64999999999773,
+            "completed": true
+          },
+          {
+            "wave": 7,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 780,
+            "spent": 6180,
+            "elapsed": 73.19999999999798,
+            "completed": true
+          },
+          {
+            "wave": 8,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 770,
+            "spent": 6760,
+            "elapsed": 77.04999999999777,
+            "completed": true
+          },
+          {
+            "wave": 9,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 823,
+            "spent": 7340,
+            "elapsed": 86.9499999999972,
+            "completed": true
+          }
+        ],
+        "purchases": [
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1464,
+              242
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              696,
+              218
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1080,
+              434
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              600,
+              650
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1560,
+              602
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1240,
+              650
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              984,
+              698
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1560,
+              266
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              824,
+              482
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1208,
+              194
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 5,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 5,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 5,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 6,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 6,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 6,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 7,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 8,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 8,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 9,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 9,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          }
+        ],
+        "fixtureGold": 0,
+        "fixtureDamage": 0
+      },
+      {
+        "mission": "4-5",
+        "chapter": 4,
+        "strategy": "cannon-speed",
+        "won": false,
+        "startingGold": 4500,
+        "spent": 9080,
+        "killGold": 5591,
+        "clearGold": 0,
+        "finalGold": 1011,
+        "lives": 0,
+        "observed": 842,
+        "rows": [
+          {
+            "wave": 1,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 442,
+            "spent": 4450,
+            "elapsed": 69.59999999999819,
+            "completed": true
+          },
+          {
+            "wave": 2,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 447,
+            "spent": 4870,
+            "elapsed": 71.64999999999807,
+            "completed": true
+          },
+          {
+            "wave": 3,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 553,
+            "spent": 5290,
+            "elapsed": 86.69999999999722,
+            "completed": true
+          },
+          {
+            "wave": 4,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 603,
+            "spent": 5740,
+            "elapsed": 75.14999999999787,
+            "completed": true
+          },
+          {
+            "wave": 5,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 669,
+            "spent": 6180,
+            "elapsed": 75.04999999999788,
+            "completed": true
+          },
+          {
+            "wave": 6,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 684,
+            "spent": 6760,
+            "elapsed": 82.89999999999743,
+            "completed": true
+          },
+          {
+            "wave": 7,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 694,
+            "spent": 7340,
+            "elapsed": 80.89999999999755,
+            "completed": true
+          },
+          {
+            "wave": 8,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 728,
+            "spent": 7920,
+            "elapsed": 78.84999999999766,
+            "completed": true
+          },
+          {
+            "wave": 9,
+            "lives": 14,
+            "leaks": 0,
+            "bank": 857,
+            "spent": 8500,
+            "elapsed": 90.74999999999699,
+            "completed": true
+          },
+          {
+            "wave": 10,
+            "lives": 0,
+            "leaks": 14,
+            "bank": 1011,
+            "spent": 9080,
+            "elapsed": 228.80000000001777,
+            "completed": false
+          }
+        ],
+        "purchases": [
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1464,
+              242
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              696,
+              218
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1080,
+              434
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              600,
+              650
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1560,
+              602
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1240,
+              650
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              984,
+              698
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1560,
+              266
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              824,
+              482
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1208,
+              194
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 5,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 5,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 6,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 6,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 7,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 7,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 8,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 8,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 9,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 9,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 10,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 10,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          }
+        ],
+        "fixtureGold": 0,
+        "fixtureDamage": 0
+      },
+      {
+        "mission": "5-1",
+        "chapter": 5,
+        "strategy": "cannon-speed",
+        "won": true,
+        "startingGold": 9000,
+        "spent": 13740,
+        "killGold": 5796,
+        "clearGold": 0,
+        "finalGold": 1056,
+        "lives": 12,
+        "observed": 882,
+        "rows": [
+          {
+            "wave": 1,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 1264,
+            "spent": 8240,
+            "elapsed": 78.59999999999768,
+            "completed": true
+          },
+          {
+            "wave": 2,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 628,
+            "spent": 9400,
+            "elapsed": 78.89999999999766,
+            "completed": true
+          },
+          {
+            "wave": 3,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 594,
+            "spent": 9980,
+            "elapsed": 78.39999999999769,
+            "completed": true
+          },
+          {
+            "wave": 4,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 623,
+            "spent": 10560,
+            "elapsed": 76.99999999999777,
+            "completed": true
+          },
+          {
+            "wave": 5,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 683,
+            "spent": 11140,
+            "elapsed": 85.99999999999726,
+            "completed": true
+          },
+          {
+            "wave": 6,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 808,
+            "spent": 11720,
+            "elapsed": 89.44999999999706,
+            "completed": true
+          },
+          {
+            "wave": 7,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 976,
+            "spent": 12300,
+            "elapsed": 86.44999999999723,
+            "completed": true
+          },
+          {
+            "wave": 8,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 863,
+            "spent": 13160,
+            "elapsed": 89.74999999999704,
+            "completed": true
+          },
+          {
+            "wave": 9,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 1056,
+            "spent": 13740,
+            "elapsed": 85.64999999999728,
+            "completed": true
+          }
+        ],
+        "purchases": [
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1528,
+              578
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1464,
+              242
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              440,
+              458
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              440,
+              746
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1208,
+              410
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              536,
+              194
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              600,
+              746
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              728,
+              458
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1208,
+              674
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              888,
+              194
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              920,
+              650
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1176,
+              218
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 5,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 5,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 6,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 6,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 7,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 7,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 8,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 8,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 8,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 9,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 9,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          }
+        ],
+        "fixtureGold": 0,
+        "fixtureDamage": 0
+      },
+      {
+        "mission": "5-3",
+        "chapter": 5,
+        "strategy": "cannon-speed",
+        "won": true,
+        "startingGold": 13000,
+        "spent": 19040,
+        "killGold": 7599,
+        "clearGold": 0,
+        "finalGold": 1559,
+        "lives": 12,
+        "observed": 1136,
+        "rows": [
+          {
+            "wave": 1,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 5327,
+            "spent": 8240,
+            "elapsed": 72.64999999999802,
+            "completed": true
+          },
+          {
+            "wave": 2,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 734,
+            "spent": 13460,
+            "elapsed": 83.64999999999739,
+            "completed": true
+          },
+          {
+            "wave": 3,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 827,
+            "spent": 14040,
+            "elapsed": 84.04999999999737,
+            "completed": true
+          },
+          {
+            "wave": 4,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 1510,
+            "spent": 14040,
+            "elapsed": 82.19999999999747,
+            "completed": true
+          },
+          {
+            "wave": 5,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 1270,
+            "spent": 15040,
+            "elapsed": 85.99999999999726,
+            "completed": true
+          },
+          {
+            "wave": 6,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 1071,
+            "spent": 16040,
+            "elapsed": 88.29999999999713,
+            "completed": true
+          },
+          {
+            "wave": 7,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 887,
+            "spent": 17040,
+            "elapsed": 89.24999999999707,
+            "completed": true
+          },
+          {
+            "wave": 8,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 1730,
+            "spent": 17040,
+            "elapsed": 84.59999999999734,
+            "completed": true
+          },
+          {
+            "wave": 9,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 1634,
+            "spent": 18040,
+            "elapsed": 88.99999999999709,
+            "completed": true
+          },
+          {
+            "wave": 10,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 1559,
+            "spent": 19040,
+            "elapsed": 89.04999999999708,
+            "completed": true
+          }
+        ],
+        "purchases": [
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1528,
+              578
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1464,
+              242
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              440,
+              458
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              440,
+              746
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1208,
+              410
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              536,
+              194
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              600,
+              746
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              728,
+              458
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1208,
+              674
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              888,
+              194
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              920,
+              650
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1176,
+              218
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 5,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 3,
+            "cost": 1000
+          },
+          {
+            "wave": 6,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 3,
+            "cost": 1000
+          },
+          {
+            "wave": 7,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 3,
+            "cost": 1000
+          },
+          {
+            "wave": 9,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 3,
+            "cost": 1000
+          },
+          {
+            "wave": 10,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 3,
+            "cost": 1000
+          }
+        ],
+        "fixtureGold": 0,
+        "fixtureDamage": 0
+      },
+      {
+        "mission": "5-5",
+        "chapter": 5,
+        "strategy": "cannon-speed",
+        "won": true,
+        "startingGold": 18000,
+        "spent": 26040,
+        "killGold": 12317,
+        "clearGold": 0,
+        "finalGold": 4277,
+        "lives": 12,
+        "observed": 1593,
+        "rows": [
+          {
+            "wave": 1,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 10387,
+            "spent": 8240,
+            "elapsed": 81.39999999999752,
+            "completed": true
+          },
+          {
+            "wave": 2,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 1273,
+            "spent": 18040,
+            "elapsed": 88.14999999999714,
+            "completed": true
+          },
+          {
+            "wave": 3,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 1026,
+            "spent": 19040,
+            "elapsed": 87.99999999999714,
+            "completed": true
+          },
+          {
+            "wave": 4,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 781,
+            "spent": 20040,
+            "elapsed": 82.49999999999746,
+            "completed": true
+          },
+          {
+            "wave": 5,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 1588,
+            "spent": 20040,
+            "elapsed": 81.04999999999754,
+            "completed": true
+          },
+          {
+            "wave": 6,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 1466,
+            "spent": 21040,
+            "elapsed": 93.79999999999681,
+            "completed": true
+          },
+          {
+            "wave": 7,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 1358,
+            "spent": 22040,
+            "elapsed": 89.44999999999706,
+            "completed": true
+          },
+          {
+            "wave": 8,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 1271,
+            "spent": 23040,
+            "elapsed": 86.34999999999724,
+            "completed": true
+          },
+          {
+            "wave": 9,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 1268,
+            "spent": 24040,
+            "elapsed": 88.49999999999712,
+            "completed": true
+          },
+          {
+            "wave": 10,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 1249,
+            "spent": 25040,
+            "elapsed": 83.3999999999974,
+            "completed": true
+          },
+          {
+            "wave": 11,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 1267,
+            "spent": 26040,
+            "elapsed": 87.44999999999717,
+            "completed": true
+          },
+          {
+            "wave": 12,
+            "lives": 12,
+            "leaks": 0,
+            "bank": 4277,
+            "spent": 26040,
+            "elapsed": 169.75000000000435,
+            "completed": true
+          }
+        ],
+        "purchases": [
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1528,
+              578
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1464,
+              242
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              440,
+              458
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              440,
+              746
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1208,
+              410
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              536,
+              194
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              600,
+              746
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              728,
+              458
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1208,
+              674
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              888,
+              194
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              920,
+              650
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "site": [
+              1176,
+              218
+            ],
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 1,
+            "cost": 130
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 1,
+            "cost": 160
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 1,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 2,
+            "cost": 280
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 1,
+            "tier": 2,
+            "cost": 300
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 3,
+            "cost": 1000
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 3,
+            "cost": 1000
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 3,
+            "cost": 1000
+          },
+          {
+            "wave": 2,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 3,
+            "cost": 1000
+          },
+          {
+            "wave": 3,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 3,
+            "cost": 1000
+          },
+          {
+            "wave": 4,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 3,
+            "cost": 1000
+          },
+          {
+            "wave": 6,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 3,
+            "cost": 1000
+          },
+          {
+            "wave": 7,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 3,
+            "cost": 1000
+          },
+          {
+            "wave": 8,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 3,
+            "cost": 1000
+          },
+          {
+            "wave": 9,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 3,
+            "cost": 1000
+          },
+          {
+            "wave": 10,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 3,
+            "cost": 1000
+          },
+          {
+            "wave": 11,
+            "type": "StarCannonTower",
+            "path": 2,
+            "tier": 3,
+            "cost": 1000
+          }
+        ],
+        "fixtureGold": 0,
+        "fixtureDamage": 0
+      }
+    ],
+    "naturalCombat": true,
+    "allPurchasesUseActualPrices": true,
+    "saveUnlockFixture": true,
+    "notHumanWinRateStudy": true
+  },
+  "progress": [
+    "BALANCE PROGRESS {\"mission\":\"1-3\",\"chapter\":1,\"strategy\":\"cannon-speed\",\"won\":true,\"startingGold\":750,\"spent\":1180,\"killGold\":569,\"clearGold\":0,\"finalGold\":139,\"lives\":20,\"observed\":102,\"fixtureGold\":0,\"fixtureDamage\":0}",
+    "BALANCE PROGRESS {\"mission\":\"1-5\",\"chapter\":1,\"strategy\":\"cannon-speed\",\"won\":true,\"startingGold\":900,\"spent\":1610,\"killGold\":1255,\"clearGold\":0,\"finalGold\":545,\"lives\":20,\"observed\":155,\"fixtureGold\":0,\"fixtureDamage\":0}",
+    "BALANCE PROGRESS {\"mission\":\"2-1\",\"chapter\":2,\"strategy\":\"cannon-speed\",\"won\":true,\"startingGold\":1200,\"spent\":1780,\"killGold\":920,\"clearGold\":0,\"finalGold\":340,\"lives\":18,\"observed\":141,\"fixtureGold\":0,\"fixtureDamage\":0}",
+    "BALANCE PROGRESS {\"mission\":\"2-3\",\"chapter\":2,\"strategy\":\"cannon-speed\",\"won\":true,\"startingGold\":1500,\"spent\":2670,\"killGold\":1466,\"clearGold\":0,\"finalGold\":296,\"lives\":18,\"observed\":219,\"fixtureGold\":0,\"fixtureDamage\":0}",
+    "BALANCE PROGRESS {\"mission\":\"2-5\",\"chapter\":2,\"strategy\":\"cannon-speed\",\"won\":true,\"startingGold\":1800,\"spent\":3380,\"killGold\":2470,\"clearGold\":0,\"finalGold\":890,\"lives\":18,\"observed\":311,\"fixtureGold\":0,\"fixtureDamage\":0}",
+    "BALANCE PROGRESS {\"mission\":\"3-1\",\"chapter\":3,\"strategy\":\"cannon-speed\",\"won\":true,\"startingGold\":2100,\"spent\":3400,\"killGold\":1718,\"clearGold\":0,\"finalGold\":418,\"lives\":16,\"observed\":266,\"fixtureGold\":0,\"fixtureDamage\":0}",
+    "BALANCE PROGRESS {\"mission\":\"3-3\",\"chapter\":3,\"strategy\":\"cannon-speed\",\"won\":true,\"startingGold\":2500,\"spent\":4560,\"killGold\":2524,\"clearGold\":0,\"finalGold\":464,\"lives\":16,\"observed\":386,\"fixtureGold\":0,\"fixtureDamage\":0}",
+    "BALANCE PROGRESS {\"mission\":\"3-5\",\"chapter\":3,\"strategy\":\"cannon-speed\",\"won\":true,\"startingGold\":2900,\"spent\":5580,\"killGold\":4209,\"clearGold\":0,\"finalGold\":1529,\"lives\":16,\"observed\":530,\"fixtureGold\":0,\"fixtureDamage\":0}",
+    "BALANCE PROGRESS {\"mission\":\"4-1\",\"chapter\":4,\"strategy\":\"cannon-speed\",\"won\":true,\"startingGold\":3300,\"spent\":5740,\"killGold\":3075,\"clearGold\":0,\"finalGold\":635,\"lives\":14,\"observed\":460,\"fixtureGold\":0,\"fixtureDamage\":0}",
+    "BALANCE PROGRESS {\"mission\":\"4-3\",\"chapter\":4,\"strategy\":\"cannon-speed\",\"won\":true,\"startingGold\":3900,\"spent\":7340,\"killGold\":4263,\"clearGold\":0,\"finalGold\":823,\"lives\":14,\"observed\":636,\"fixtureGold\":0,\"fixtureDamage\":0}",
+    "BALANCE PROGRESS {\"mission\":\"4-5\",\"chapter\":4,\"strategy\":\"cannon-speed\",\"won\":false,\"startingGold\":4500,\"spent\":9080,\"killGold\":5591,\"clearGold\":0,\"finalGold\":1011,\"lives\":0,\"observed\":842,\"fixtureGold\":0,\"fixtureDamage\":0}",
+    "BALANCE PROGRESS {\"mission\":\"5-1\",\"chapter\":5,\"strategy\":\"cannon-speed\",\"won\":true,\"startingGold\":9000,\"spent\":13740,\"killGold\":5796,\"clearGold\":0,\"finalGold\":1056,\"lives\":12,\"observed\":882,\"fixtureGold\":0,\"fixtureDamage\":0}",
+    "BALANCE PROGRESS {\"mission\":\"5-3\",\"chapter\":5,\"strategy\":\"cannon-speed\",\"won\":true,\"startingGold\":13000,\"spent\":19040,\"killGold\":7599,\"clearGold\":0,\"finalGold\":1559,\"lives\":12,\"observed\":1136,\"fixtureGold\":0,\"fixtureDamage\":0}",
+    "BALANCE PROGRESS {\"mission\":\"5-5\",\"chapter\":5,\"strategy\":\"cannon-speed\",\"won\":true,\"startingGold\":18000,\"spent\":26040,\"killGold\":12317,\"clearGold\":0,\"finalGold\":4277,\"lives\":12,\"observed\":1593,\"fixtureGold\":0,\"fixtureDamage\":0}"
+  ],
+  "consoleErrors": []
+}

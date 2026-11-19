@@ -43,9 +43,12 @@
   const output=id==='StarburstCannon'?'StarCannonTower':id;
   let site;
   p.refresh();
-  for(let x=280;x<620&&!site;x+=12)if(p.validate(output,x,352,{cost:0}).valid)site=[x,352];
+  for(let y=170;y<980&&!site;y+=16)for(let x=280;x<620&&!site;x+=12)if(p.validate(output,x,y,{cost:0}).valid)site=[x,y];
   if(!site)throw Error('No regional anchor');
-  const a=makeSource(parts[0],...site),b=makeSource(parts[1],900,352);
+  const a=makeSource(parts[0],...site);p.refresh();let second;
+  for(let y=170;y<980&&!second;y+=16)for(let x=920;x<1540&&!second;x+=24)if(p.validate(parts[1].Type,x,y,{cost:0}).valid)second=[x,y];
+  if(!second)throw Error('No second source anchor');
+  const b=makeSource(parts[1],...second);
   step(2);
   if(!(f.begin(a)&&f.choose(b)))throw Error('Cannot begin '+id);
   const tower=f.confirm(...site);

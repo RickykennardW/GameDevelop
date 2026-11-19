@@ -5756,6 +5756,214 @@
         "metadata": "",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/emberfall_ground.svg",
+        "file": "assets/map/chapters/emberfall_ground.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/emberfall_road.svg",
+        "file": "assets/map/chapters/emberfall_road.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/nebula_ground.svg",
+        "file": "assets/map/chapters/nebula_ground.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/nebula_road.svg",
+        "file": "assets/map/chapters/nebula_road.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/reliquary_ground.svg",
+        "file": "assets/map/chapters/reliquary_ground.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/reliquary_road.svg",
+        "file": "assets/map/chapters/reliquary_road.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/astral_ground.svg",
+        "file": "assets/map/chapters/astral_ground.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/astral_road.svg",
+        "file": "assets/map/chapters/astral_road.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/belt_ground.svg",
+        "file": "assets/map/chapters/belt_ground.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/belt_road.svg",
+        "file": "assets/map/chapters/belt_road.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/emberfall_crystal.svg",
+        "file": "assets/map/chapters/emberfall_crystal.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/emberfall_rock.svg",
+        "file": "assets/map/chapters/emberfall_rock.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/emberfall_ruin.svg",
+        "file": "assets/map/chapters/emberfall_ruin.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/emberfall_shrub.svg",
+        "file": "assets/map/chapters/emberfall_shrub.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/reliquary_crystal.svg",
+        "file": "assets/map/chapters/reliquary_crystal.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/reliquary_rock.svg",
+        "file": "assets/map/chapters/reliquary_rock.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/reliquary_ruin.svg",
+        "file": "assets/map/chapters/reliquary_ruin.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/reliquary_shrub.svg",
+        "file": "assets/map/chapters/reliquary_shrub.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/astral_crystal.svg",
+        "file": "assets/map/chapters/astral_crystal.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/astral_rock.svg",
+        "file": "assets/map/chapters/astral_rock.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/astral_ruin.svg",
+        "file": "assets/map/chapters/astral_ruin.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/astral_shrub.svg",
+        "file": "assets/map/chapters/astral_shrub.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/belt_crystal.svg",
+        "file": "assets/map/chapters/belt_crystal.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/belt_rock.svg",
+        "file": "assets/map/chapters/belt_rock.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/belt_ruin.svg",
+        "file": "assets/map/chapters/belt_ruin.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "name": "assets/map/chapters/belt_shrub.svg",
+        "file": "assets/map/chapters/belt_shrub.svg",
+        "kind": "image",
+        "metadata": "",
+        "smoothed": true,
+        "userAdded": true
       }
     ]
   },

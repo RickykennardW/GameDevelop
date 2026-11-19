@@ -285,17 +285,17 @@
                 {
                   "name": "Name",
                   "type": "string",
-                  "value": "Stellar Frontier"
+                  "value": "The Emberfall Expanse"
                 },
                 {
                   "name": "ShortName",
                   "type": "string",
-                  "value": "Frontier"
+                  "value": "Emberfall"
                 },
                 {
                   "name": "Description",
                   "type": "string",
-                  "value": "The edge of known space. Establish your first line of defense."
+                  "value": "Celestial basalt terraces above geothermal channels. Learn cross-lane defense in generous clearings."
                 },
                 {
                   "name": "Background",
@@ -372,6 +372,16 @@
                       "value": "Rift pulse: a telegraphed pause before fortification. Keep firing."
                     }
                   ]
+                },
+                {
+                  "name": "MapId",
+                  "type": "string",
+                  "value": "emberfall"
+                },
+                {
+                  "name": "Status",
+                  "type": "string",
+                  "value": "IMPLEMENTED"
                 }
               ]
             },
@@ -387,7 +397,7 @@
                 {
                   "name": "Name",
                   "type": "string",
-                  "value": "Nebula Expanse"
+                  "value": "The Nebula Frontier"
                 },
                 {
                   "name": "ShortName",
@@ -397,7 +407,7 @@
                 {
                   "name": "Description",
                   "type": "string",
-                  "value": "Read the currents. Adapt to fast and shielded enemy formations."
+                  "value": "Violet nebula shelves, floating crystals and a displaced eastern return. Cover the outer approach and inner lanes."
                 },
                 {
                   "name": "Background",
@@ -474,6 +484,16 @@
                       "value": "Nebula shield: a brief, visible defense after each cast."
                     }
                   ]
+                },
+                {
+                  "name": "MapId",
+                  "type": "string",
+                  "value": "nebula"
+                },
+                {
+                  "name": "Status",
+                  "type": "string",
+                  "value": "IMPLEMENTED"
                 }
               ]
             },
@@ -489,17 +509,17 @@
                 {
                   "name": "Name",
                   "type": "string",
-                  "value": "Ancient Celestial Ruins"
+                  "value": "The Frozen Reliquary"
                 },
                 {
                   "name": "ShortName",
                   "type": "string",
-                  "value": "Ruins"
+                  "value": "Reliquary"
                 },
                 {
                   "name": "Description",
                   "type": "string",
-                  "value": "Awaken the ruins. Hold your ground against ancient constructs."
+                  "value": "Cryogenic moon terraces, frost crystals and sealed alien vaults. Balance broad ice fields against hooked corridors."
                 },
                 {
                   "name": "Background",
@@ -597,6 +617,16 @@
                       "value": "Ancient procession: reinforcements arrive once at half health."
                     }
                   ]
+                },
+                {
+                  "name": "MapId",
+                  "type": "string",
+                  "value": "reliquary"
+                },
+                {
+                  "name": "Status",
+                  "type": "string",
+                  "value": "IMPLEMENTED"
                 }
               ]
             },
@@ -612,17 +642,17 @@
                 {
                   "name": "Name",
                   "type": "string",
-                  "value": "Event Horizon"
+                  "value": "The Astral Ruins"
                 },
                 {
                   "name": "ShortName",
                   "type": "string",
-                  "value": "Horizon"
+                  "value": "Astral Ruins"
                 },
                 {
                   "name": "Description",
                   "type": "string",
-                  "value": "Where light bends. Watch the Finish and prepare for pressure."
+                  "value": "Golden orbital sanctums, ancient pylons and temple courtyards. Develop several strongholds around offset avenues."
                 },
                 {
                   "name": "Background",
@@ -750,6 +780,16 @@
                       "value": "Horizon surge: a telegraphed burst of speed after casting."
                     }
                   ]
+                },
+                {
+                  "name": "MapId",
+                  "type": "string",
+                  "value": "astral"
+                },
+                {
+                  "name": "Status",
+                  "type": "string",
+                  "value": "IMPLEMENTED"
                 }
               ]
             },
@@ -765,17 +805,17 @@
                 {
                   "name": "Name",
                   "type": "string",
-                  "value": "Cosmic Singularity"
+                  "value": "The Shattered Belt"
                 },
                 {
                   "name": "ShortName",
                   "type": "string",
-                  "value": "Singularity"
+                  "value": "Shattered Belt"
                 },
                 {
                   "name": "Description",
                   "type": "string",
-                  "value": "The final fracture. Unite every lesson against the heart of the Void."
+                  "value": "Fractured asteroid terraces, mining beacons and orbital debris. Hold dispersed defenses along broken switchbacks."
                 },
                 {
                   "name": "Background",
@@ -913,6 +953,16 @@
                       "value": "Entropy convergence: shields, surges and one final reinforcement group."
                     }
                   ]
+                },
+                {
+                  "name": "MapId",
+                  "type": "string",
+                  "value": "belt"
+                },
+                {
+                  "name": "Status",
+                  "type": "string",
+                  "value": "IMPLEMENTED"
                 }
               ]
             }
@@ -16990,6 +17040,115 @@
               ]
             }
           ]
+        },
+        {
+          "name": "ChapterCapacity",
+          "type": "number",
+          "value": 8
+        },
+        {
+          "name": "ReleasedChapters",
+          "type": "number",
+          "value": 5
+        },
+        {
+          "name": "FutureChapters",
+          "type": "array",
+          "children": [
+            {
+              "name": "0",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Id",
+                  "type": "number",
+                  "value": 6
+                },
+                {
+                  "name": "Name",
+                  "type": "string",
+                  "value": "The Void Dominion"
+                },
+                {
+                  "name": "Status",
+                  "type": "string",
+                  "value": "PLANNED"
+                },
+                {
+                  "name": "Theme",
+                  "type": "string",
+                  "value": "Dark matter, corrupted celestial structures, unstable portals"
+                },
+                {
+                  "name": "MapId",
+                  "type": "string",
+                  "value": "void-dominion"
+                }
+              ]
+            },
+            {
+              "name": "1",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Id",
+                  "type": "number",
+                  "value": 7
+                },
+                {
+                  "name": "Name",
+                  "type": "string",
+                  "value": "The Astral Deep"
+                },
+                {
+                  "name": "Status",
+                  "type": "string",
+                  "value": "PLANNED"
+                },
+                {
+                  "name": "Theme",
+                  "type": "string",
+                  "value": "Cosmic oceans, bioluminescence, submerged alien technology"
+                },
+                {
+                  "name": "MapId",
+                  "type": "string",
+                  "value": "astral-deep"
+                }
+              ]
+            },
+            {
+              "name": "2",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "Id",
+                  "type": "number",
+                  "value": 8
+                },
+                {
+                  "name": "Name",
+                  "type": "string",
+                  "value": "The Celestial Core"
+                },
+                {
+                  "name": "Status",
+                  "type": "string",
+                  "value": "PLANNED"
+                },
+                {
+                  "name": "Theme",
+                  "type": "string",
+                  "value": "Stellar energy and monumental celestial architecture"
+                },
+                {
+                  "name": "MapId",
+                  "type": "string",
+                  "value": "celestial-core"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
@@ -17147,7 +17306,7 @@
         "}",
         "const buttons=[ui.back,...ui.tabs,...ui.nodes,ui.launch];ui.coach.visible=ui.stage>=0;ui.noticeText.visible=false;const notice=ui.noticeAge>0?ui.notice:'';if(notice){if(ui.hint.visible)ui.hint.text=notice;else ui.details.text=notice;}else{ui.details.text=level.Waves.length+' WAVES   /   '+level.StartingGold+' GOLD   /   '+level.StartingLives+' LIVES';ui.hint.text=level.Boss?'BOSS: '+chapter.Boss.Name+'  /  MUST BE DEFEATED':'Deploy, upgrade and hold the Finish. Replays preserve your archive.';}",
         "if(ui.stage>=0){",
-        " const captions=[['WELCOME, COMMANDER','Your journey begins here. Complete missions, discover threats, and defend the cosmos.'],['CHAPTER 1 - STELLAR FRONTIER','Your first missions begin at the edge of known space.'],['MISSION 1-1 - FIRST CONTACT','Select the highlighted mission to begin your training.'],['MISSION SELECTED','Prepare your defenses, Commander.']][ui.stage];const panelW=Math.min(W-40*s,620*s),panelH=Math.max(148*s,90/display),bottom=H-22*s,top=bottom-panelH;",
+        " const captions=[['WELCOME, COMMANDER','Your journey begins here. Complete missions, discover threats, and defend the cosmos.'],['CHAPTER 1 - '+C.config.Chapters[0].ShortName.toUpperCase(),'Your first missions begin on the celestial basalt terraces of Emberfall.'],['MISSION 1-1 - FIRST CONTACT','Select the highlighted mission to begin your training.'],['MISSION SELECTED','Prepare your defenses, Commander.']][ui.stage];const panelW=Math.min(W-40*s,620*s),panelH=Math.max(148*s,90/display),bottom=H-22*s,top=bottom-panelH;",
         " ui.shade.clear().beginFill(0x030512,.68).drawRect(0,0,W,H);const target=ui.stage<2?ui.tabs[0].rect:ui.nodes[0].rect;ui.shade.beginHole().drawRoundedRect(target.x-7*s,target.y-7*s,target.w+14*s,target.h+14*s,10*s).endHole().endFill();",
         " ui.coachPanel.clear().lineStyle(1,0xc6ab6c,.9).beginFill(0x10142b,.98).drawRoundedRect(cx-panelW/2,top,panelW,panelH,9*s).endFill();ui.coachTitle.text=captions[0];ui.coachTitle.style.fontSize=font(17,12);ui.coachTitle.position.set(cx,top+panelH*.19);ui.coachBody.text=captions[1];ui.coachBody.style.fontSize=font(13,9);ui.coachBody.style.wordWrap=true;ui.coachBody.style.wordWrapWidth=panelW-30*s;ui.coachBody.position.set(cx,top+panelH*.48);",
         " ui.place(ui.next,cx+panelW*.19,bottom-panelH*.16,panelW*.48,Math.max(28*s,23/display),font(11,9));ui.next.text.text=ui.stage===3?'LAUNCH MISSION':'CONTINUE';ui.next.visible=ui.stage!==2;",

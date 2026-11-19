@@ -93,7 +93,33 @@ const safeTop = 16 + hudHeight + 20;
 const frameTop = compactHUD ? safeTop : 16;
 const mapFrame = { left: 16, top: frameTop, right: Math.max(17,gameAreaRight-16), bottom: Math.max(frameTop+1,height-24) };
 if (!ui.level) {
-  const layout=variables.get("LabyrinthMap").toJSObject();
+  const campaign=game.__campaign,mission=campaign?.known.get(campaign.active);
+  const chapter=mission&&campaign.config.Chapters.find(c=>c.Id===mission.Chapter);
+  const maps=variables.get('ChapterMaps').toJSObject();
+  const selected=maps.Maps[chapter?.MapId||'emberfall'];
+  const layout=selected||variables.get("LabyrinthMap").toJSObject();
+  if(selected){
+    scene.__chapterMap={config:selected,scale:maps.Scale};
+    style.enemyVisualMultiplier=maps.Scale.EnemyVisualMultiplier;
+    const road=first('Monster_Path');road.setAnimationName(selected.Animation);
+    road.setPosition(layout.Surface.left,layout.Surface.top);road.setWidth(layout.Surface.right-layout.Surface.left);road.setHeight(layout.Surface.bottom-layout.Surface.top);
+    const ground=first('Ground_Map'),owner=scene.__chapterMap;
+    // Config-held textures are not inferred by GDevelop's per-scene preloader.
+    // Load just the selected terrain through its native resource manager, keeping
+    // the existing valid terrain visible until the asynchronous load completes.
+    game.getImageManager().loadResource(selected.Ground).then(()=>{
+      if(scene.__chapterMap!==owner||owner.disposed)return;
+      ground.setTexture(selected.Ground,scene);owner.groundReady=true;
+    });
+    if(!gdjs.__chapterTerrainCleanup){gdjs.__chapterTerrainCleanup=true;gdjs.callbacksRuntimeSceneUnloading.push(s=>{if(s.__chapterMap)s.__chapterMap.disposed=true;});}
+    for(const [name,point]of [['SpawnMarker',layout.Points[0]],['BaseMarker',layout.Points.at(-1)]]){
+      const object=first(name);object.setPosition(point.X-object.getWidth()/2,point.Y-object.getHeight()/2);
+    }
+    const props=get('Ground_Decoration').slice();
+    props.forEach((object,i)=>{const spec=layout.Decorations[i];if(!spec){object.deleteFromScene();return;}
+      const [kind,x,y,scale]=spec;object.setPosition(x-32,y-32);object.getVariables().get('Kind').setString(kind);object.getVariables().get('LocalScale').setNumber(scale);object.getVariables().get('Blocking').setBoolean(kind!=='Shrub');
+    });
+  }
   const surface=layout.Surface, unit=style.cliffUnit;
   ui.level={width:layout.Width, rows:layout.MainRows, points:layout.Points,
     surface, length:layout.Length, turns:layout.Turns,

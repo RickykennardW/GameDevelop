@@ -4,7 +4,7 @@ const style=runtimeScene.__worldStyle;
 if(runtimeScene.__voidCommon)runtimeScene.__voidCommon.render();
 for(const [name,scale] of [["SpawnMarker",style.spawn],["BaseMarker",style.base],["Ground_Decoration",1.25],["Enemy",style.enemy]]) {
   for(const [index,object] of runtimeScene.getObjects(name).entries()) {
-    const drawScale=name==="Ground_Decoration"?(style.props[object.getVariables().get("Kind").getAsString()] || 1)*(object.getVariables().get("LocalScale").getAsNumber()||1):name==='Enemy'?(runtimeScene.__voidCommon?.configs[object.getVariables().get('EnemyType').getAsString()]?.RenderScale||scale):scale;
+    const drawScale=name==="Ground_Decoration"?(style.props[object.getVariables().get("Kind").getAsString()] || 1)*(object.getVariables().get("LocalScale").getAsNumber()||1):name==='Enemy'?(runtimeScene.__voidCommon?.configs[object.getVariables().get('EnemyType').getAsString()]?.RenderScale||scale)*(style.enemyVisualMultiplier||1):scale;
     object.updatePreRender(runtimeScene);
     const sprite=object.getRendererObject();
     if(!sprite||!sprite.texture)continue;

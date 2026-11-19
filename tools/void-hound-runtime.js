@@ -49,7 +49,7 @@ if(!hound){
    const frame=mode==='Death'||mode==='Hit'?Math.min(3,Math.floor(t/period*4)):Math.floor((t%period)/period*4);
    hound.setAnimation(e,'Hound'+mode+'_'+direction);e.updatePreRender(scene);const rig=hound.rig(e),root=e.getRendererObject(),texture=hound.texture(direction,row,frame),meta=config.Views[direction];
    rig.body.texture=texture;rig.body.anchor.set(...meta.Anchors[row*config.Columns+frame]);rig.frame=frame;rig.mode=mode;rig.direction=direction;
-   root.texture=PIXI.Texture.EMPTY;root.anchor.set(0);root.position.set(e.getCenterXInScene(),e.getCenterYInScene());root.scale.set(1);root.rotation=0;
+   root.texture=PIXI.Texture.EMPTY;root.anchor.set(0);root.position.set(e.getCenterXInScene(),e.getCenterYInScene());root.scale.set(scene.__worldStyle.enemyVisualMultiplier||1);root.rotation=0;
    const scale=config.RenderSize/meta.CellWidth;rig.body.scale.set(scale);rig.body.alpha=state.dying?Math.max(0,1-state.deathAge/config.DeathDuration):1;
    const recoil=state.hit>0?Math.sin((config.HitDuration-state.hit)/config.HitDuration*Math.PI)*2:0,d={Right:[-1,0],Left:[1,0],Down:[0,-1],Up:[0,1]}[direction];
    rig.body.position.set(d[0]*recoil,d[1]*recoil+(mode==='Idle'?Math.sin(state.age*3+state.phase)*.35:0));

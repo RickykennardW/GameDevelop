@@ -153,6 +153,8 @@ def main():
     labyrinth = runpy.run_path(str(ROOT/'tools/validate-labyrinth.py')) if any(v['name']=='LabyrinthMap' for v in scene['variables']) else None
     first_level = read(ROOT/'tools/campaign-config.json')['Levels'][0]
     progression = runpy.run_path(str(ROOT/'tools/validate-stage-progression.py')) if first_level.get('EnemyRewards') else None
+    chapters=runpy.run_path(str(ROOT/'tools/validate-chapter-maps.py')) if any(v['name']=='ChapterMaps' for v in scene['variables']) else None
+    if chapters:chapters['main']()
     registered = {asset["resourceName"] for asset in assets.values() if asset["importStatus"]!="ReadyToImport"}
     resources = project["resources"]["resources"]
     for file in registered:
@@ -160,6 +162,7 @@ def main():
     project["resources"]["resources"] = [r for r in resources if r["name"] not in registered]
     if labyrinth:
         project['resources']['resources'] = [r for r in project['resources']['resources'] if r['name']!=labyrinth['RESOURCE']]
+    if chapters:project['resources']['resources']=[r for r in project['resources']['resources'] if not r['name'].startswith('assets/map/chapters/')]
     ok(project==old("Tower Defense.json"), "Project differences limited to new Fusion resources")
     scope = runpy.run_path(str(ROOT/'tools/nebula-bloom-scope.py'))
     original_scene = old('layouts/game-scene.json')
@@ -168,7 +171,7 @@ def main():
         ok(filter_instances(scene['instances'])==filter_instances(original_scene['instances']), 'Original non-map scene instances preserved')
         scene['instances']=original_scene['instances']
         scene['objects']=labyrinth['without_map_animations'](scene['objects'])
-        scene['variables']=[v for v in scene['variables'] if v['name']!='LabyrinthMap']
+        scene['variables']=[v for v in scene['variables'] if v['name'] not in {'LabyrinthMap','ChapterMaps'}]
     gameplay = all(t['gameplayStatus']=='Playable' for t in towers.values())
     if gameplay:
         def unpack(value):
@@ -227,10 +230,12 @@ def main():
     ok(scene==original_scene, "Unrelated Game Scene events, instances and settings match the original")
     for file in ("layouts/levels.json","layouts/main-menu.json","eventsFunctionsExtensions/health.json"):
         current, original = read(ROOT/file), old(file)
+        if chapters and file=='layouts/levels.json':chapters['restore_levels_metadata'](current,original)
         if progression and file=='layouts/levels.json': progression['restore_first_level'](current, original)
         ok(current==original, "Preserved "+file)
     changed = subprocess.check_output(["git","diff",baseline,"--name-only","--","assets"], cwd=ROOT, text=True).splitlines()
-    ok(all(name.startswith("assets/towers/fusion/") or labyrinth and name==labyrinth['ART'] for name in changed), "Original asset bytes are preserved")
+    chapter_backgrounds={f'assets/ui/campaign/chapter_{n}.svg' for n in range(1,6)} if chapters else set()
+    ok(all(name.startswith("assets/towers/fusion/") or labyrinth and name==labyrinth['ART'] or name in chapter_backgrounds for name in changed), "Original asset bytes are preserved outside approved chapter artwork")
     ok(not any((ROOT/entry["path"]).exists() for entry in read(ROOT/"validation/fusion-rebuild-cleanup.json")["deleted"]),
        "Rejected files remain removed")
 

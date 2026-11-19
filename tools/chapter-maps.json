@@ -1,0 +1,523 @@
+{
+  "Version": 1,
+  "Scale": {
+    "PathWidth": 60,
+    "PavingCell": 24,
+    "EnemyVisualMultiplier": 0.9,
+    "TowerVisualMultiplier": 1,
+    "CollisionMultiplier": 1
+  },
+  "Surface": {
+    "left": 72,
+    "top": 64,
+    "right": 1776,
+    "bottom": 1072
+  },
+  "Maps": [
+    {
+      "Id": "emberfall",
+      "Chapter": 1,
+      "Name": "The Emberfall Expanse",
+      "ShortName": "Emberfall",
+      "Description": "Celestial basalt terraces above geothermal channels. Learn cross-lane defense in generous clearings.",
+      "Challenge": "Wide central terraces and a clear final return. Early damage, then splash against mixed escorts.",
+      "Palette": {
+        "Ground": "#302028",
+        "Stone": "#40303a",
+        "Accent": "#e58d62",
+        "Road": "#e7cec0",
+        "Edge": "#b79068",
+        "Prop": "255;204;188",
+        "Cliff": 13078471
+      },
+      "Corners": [
+        [
+          132,
+          220
+        ],
+        [
+          270,
+          220
+        ],
+        [
+          270,
+          108
+        ],
+        [
+          1640,
+          108
+        ],
+        [
+          1640,
+          320
+        ],
+        [
+          260,
+          320
+        ],
+        [
+          260,
+          532
+        ],
+        [
+          1580,
+          532
+        ],
+        [
+          1580,
+          692
+        ],
+        [
+          260,
+          692
+        ],
+        [
+          260,
+          852
+        ],
+        [
+          1640,
+          852
+        ],
+        [
+          1640,
+          1012
+        ],
+        [
+          132,
+          1012
+        ]
+      ],
+      "Rows": [
+        108,
+        320,
+        532,
+        692,
+        852,
+        1012
+      ],
+      "PropCount": 16,
+      "RuinWeight": 1
+    },
+    {
+      "Id": "nebula",
+      "Chapter": 2,
+      "Name": "The Nebula Frontier",
+      "ShortName": "Nebula",
+      "Description": "Violet nebula shelves, floating crystals and a displaced eastern return. Cover the outer approach and inner lanes.",
+      "Challenge": "An eastern hairpin separates the approach from the return. Distribute fire rather than relying on one bend.",
+      "Palette": {
+        "Ground": "#211e39",
+        "Stone": "#302a48",
+        "Accent": "#9b8bdf",
+        "Road": "#e0d5ed",
+        "Edge": "#ae9bd2",
+        "Prop": "223;210;255",
+        "Cliff": 16777215
+      },
+      "Corners": [
+        [
+          132,
+          220
+        ],
+        [
+          420,
+          220
+        ],
+        [
+          420,
+          110
+        ],
+        [
+          1660,
+          110
+        ],
+        [
+          1660,
+          340
+        ],
+        [
+          250,
+          340
+        ],
+        [
+          250,
+          570
+        ],
+        [
+          1460,
+          570
+        ],
+        [
+          1460,
+          460
+        ],
+        [
+          1670,
+          460
+        ],
+        [
+          1670,
+          730
+        ],
+        [
+          250,
+          730
+        ],
+        [
+          250,
+          870
+        ],
+        [
+          1640,
+          870
+        ],
+        [
+          1640,
+          1012
+        ],
+        [
+          132,
+          1012
+        ]
+      ],
+      "Rows": [
+        110,
+        340,
+        570,
+        730,
+        870,
+        1012
+      ],
+      "PropCount": 7,
+      "RuinWeight": 1
+    },
+    {
+      "Id": "reliquary",
+      "Chapter": 3,
+      "Name": "The Frozen Reliquary",
+      "ShortName": "Reliquary",
+      "Description": "Cryogenic moon terraces, frost crystals and sealed alien vaults. Balance broad ice fields against hooked corridors.",
+      "Challenge": "Staggered hooks form separate firing pockets. Place splash where escorts converge and retain Finish coverage.",
+      "Palette": {
+        "Ground": "#192e40",
+        "Stone": "#253f50",
+        "Accent": "#8ecedb",
+        "Road": "#d5e7ed",
+        "Edge": "#88b3c6",
+        "Prop": "185;236;255",
+        "Cliff": 11986175
+      },
+      "Corners": [
+        [
+          132,
+          220
+        ],
+        [
+          300,
+          220
+        ],
+        [
+          300,
+          110
+        ],
+        [
+          1640,
+          110
+        ],
+        [
+          1640,
+          430
+        ],
+        [
+          1390,
+          430
+        ],
+        [
+          1390,
+          330
+        ],
+        [
+          540,
+          330
+        ],
+        [
+          540,
+          550
+        ],
+        [
+          1660,
+          550
+        ],
+        [
+          1660,
+          800
+        ],
+        [
+          1440,
+          800
+        ],
+        [
+          1440,
+          690
+        ],
+        [
+          300,
+          690
+        ],
+        [
+          300,
+          900
+        ],
+        [
+          1628,
+          900
+        ],
+        [
+          1628,
+          1012
+        ],
+        [
+          132,
+          1012
+        ]
+      ],
+      "Rows": [
+        110,
+        330,
+        550,
+        690,
+        800,
+        900,
+        1012
+      ],
+      "PropCount": 22,
+      "RuinWeight": 2
+    },
+    {
+      "Id": "astral",
+      "Chapter": 4,
+      "Name": "The Astral Ruins",
+      "ShortName": "Astral Ruins",
+      "Description": "Golden orbital sanctums, ancient pylons and temple courtyards. Develop several strongholds around offset avenues.",
+      "Challenge": "Offset temple avenues leave fewer universal firing positions. Commit upgrades across several courtyards.",
+      "Palette": {
+        "Ground": "#292638",
+        "Stone": "#3c3545",
+        "Accent": "#d2b478",
+        "Road": "#e7dfc5",
+        "Edge": "#c9a464",
+        "Prop": "255;234;185",
+        "Cliff": 15852238
+      },
+      "Corners": [
+        [
+          132,
+          220
+        ],
+        [
+          540,
+          220
+        ],
+        [
+          540,
+          110
+        ],
+        [
+          1640,
+          110
+        ],
+        [
+          1640,
+          350
+        ],
+        [
+          280,
+          350
+        ],
+        [
+          280,
+          570
+        ],
+        [
+          1450,
+          570
+        ],
+        [
+          1450,
+          470
+        ],
+        [
+          1660,
+          470
+        ],
+        [
+          1660,
+          750
+        ],
+        [
+          530,
+          750
+        ],
+        [
+          530,
+          650
+        ],
+        [
+          280,
+          650
+        ],
+        [
+          280,
+          880
+        ],
+        [
+          1630,
+          880
+        ],
+        [
+          1630,
+          1012
+        ],
+        [
+          132,
+          1012
+        ]
+      ],
+      "Rows": [
+        110,
+        350,
+        570,
+        750,
+        880,
+        1012
+      ],
+      "PropCount": 10,
+      "RuinWeight": 4
+    },
+    {
+      "Id": "belt",
+      "Chapter": 5,
+      "Name": "The Shattered Belt",
+      "ShortName": "Shattered Belt",
+      "Description": "Fractured asteroid terraces, mining beacons and orbital debris. Hold dispersed defenses along broken switchbacks.",
+      "Challenge": "Uneven switchbacks and obstructed inner pockets demand distributed defense, Fusion planning and reserve Gold.",
+      "Palette": {
+        "Ground": "#202733",
+        "Stone": "#353b48",
+        "Accent": "#bd9e73",
+        "Road": "#d3d7dc",
+        "Edge": "#a39179",
+        "Prop": "222;224;235",
+        "Cliff": 14210783
+      },
+      "Corners": [
+        [
+          132,
+          220
+        ],
+        [
+          340,
+          220
+        ],
+        [
+          340,
+          110
+        ],
+        [
+          1620,
+          110
+        ],
+        [
+          1620,
+          330
+        ],
+        [
+          280,
+          330
+        ],
+        [
+          280,
+          550
+        ],
+        [
+          1380,
+          550
+        ],
+        [
+          1380,
+          440
+        ],
+        [
+          1650,
+          440
+        ],
+        [
+          1650,
+          770
+        ],
+        [
+          710,
+          770
+        ],
+        [
+          710,
+          660
+        ],
+        [
+          280,
+          660
+        ],
+        [
+          280,
+          890
+        ],
+        [
+          1620,
+          890
+        ],
+        [
+          1620,
+          1012
+        ],
+        [
+          132,
+          1012
+        ]
+      ],
+      "Rows": [
+        110,
+        330,
+        550,
+        770,
+        890,
+        1012
+      ],
+      "PropCount": 26,
+      "RuinWeight": 1
+    }
+  ],
+  "FutureChapters": [
+    {
+      "Id": 6,
+      "Name": "The Void Dominion",
+      "Status": "PLANNED",
+      "Theme": "Dark matter, corrupted celestial structures, unstable portals",
+      "MapId": "void-dominion"
+    },
+    {
+      "Id": 7,
+      "Name": "The Astral Deep",
+      "Status": "PLANNED",
+      "Theme": "Cosmic oceans, bioluminescence, submerged alien technology",
+      "MapId": "astral-deep"
+    },
+    {
+      "Id": 8,
+      "Name": "The Celestial Core",
+      "Status": "PLANNED",
+      "Theme": "Stellar energy and monumental celestial architecture",
+      "MapId": "celestial-core"
+    }
+  ]
+}
