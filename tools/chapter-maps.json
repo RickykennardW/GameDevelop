@@ -2,7 +2,7 @@
   "Version": 1,
   "Scale": {
     "PathWidth": 60,
-    "PavingCell": 24,
+    "PavingCell": 16,
     "EnemyVisualMultiplier": 0.9,
     "TowerVisualMultiplier": 1,
     "CollisionMultiplier": 1

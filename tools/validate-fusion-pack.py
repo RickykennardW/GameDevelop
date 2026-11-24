@@ -166,6 +166,7 @@ def main():
     ok(project==old("Tower Defense.json"), "Project differences limited to new Fusion resources")
     scope = runpy.run_path(str(ROOT/'tools/nebula-bloom-scope.py'))
     original_scene = old('layouts/game-scene.json')
+    if chapters:chapters['restore_pause_additions'](scene)
     if labyrinth:
         filter_instances=labyrinth['without_map_instances']
         ok(filter_instances(scene['instances'])==filter_instances(original_scene['instances']), 'Original non-map scene instances preserved')
@@ -211,8 +212,10 @@ def main():
                            'developer-cheats-runtime.js','nova-wave-manager.js','nova-death-runtime.js'}
         if labyrinth: changed_sources.update(labyrinth['MAP_SOURCES'])
         if progression: changed_sources.update(progression['STAGE_SOURCES'])
+        if chapters:changed_sources.update(chapters['ENVIRONMENT']['PAUSE_SOURCES'])
         added_events = []
         for root, children, name in read(ROOT/'tools/source-mapping.json'):
+            if chapters and name in chapters['ADDED_SOURCES']:continue
             event = scene['events'][root]
             for index in children: event=event['events'][index]
             ok(event['inlineCode']==(ROOT/'tools'/name).read_text(encoding='utf-8-sig').splitlines(),'Embedded source matches: '+name)
@@ -234,7 +237,7 @@ def main():
         if progression and file=='layouts/levels.json': progression['restore_first_level'](current, original)
         ok(current==original, "Preserved "+file)
     changed = subprocess.check_output(["git","diff",baseline,"--name-only","--","assets"], cwd=ROOT, text=True).splitlines()
-    chapter_backgrounds={f'assets/ui/campaign/chapter_{n}.svg' for n in range(1,6)} if chapters else set()
+    chapter_backgrounds=chapters['ENVIRONMENT']['approved_asset_paths']() if chapters else set()
     ok(all(name.startswith("assets/towers/fusion/") or labyrinth and name==labyrinth['ART'] or name in chapter_backgrounds for name in changed), "Original asset bytes are preserved outside approved chapter artwork")
     ok(not any((ROOT/entry["path"]).exists() for entry in read(ROOT/"validation/fusion-rebuild-cleanup.json")["deleted"]),
        "Rejected files remain removed")

@@ -1,0 +1,118 @@
+{
+  "passed": true,
+  "baseline": "543283d71aebce79592db0bd415a4d52972271a4",
+  "nativeGDevelop": "5.6.287-0",
+  "sceneDiagnostics": 0,
+  "scenes": 3,
+  "assets": 295,
+  "assetBytes": 19771647,
+  "geometryAndPlacementExactlyMatchBefore": true,
+  "reports": {
+    "environment-final-geometry": {
+      "consoleErrors": 0,
+      "checks": 50,
+      "passed": true
+    },
+    "environment-movement": {
+      "consoleErrors": 0,
+      "checks": 97,
+      "passed": true
+    },
+    "environment-first-contact-area": {
+      "consoleErrors": 0,
+      "checks": 143,
+      "passed": true
+    },
+    "environment-first-contact-speed": {
+      "consoleErrors": 0,
+      "checks": 143,
+      "passed": true
+    },
+    "environment-balance-mixed": {
+      "consoleErrors": 0,
+      "checks": 763,
+      "passed": true
+    },
+    "environment-balance-cannon": {
+      "consoleErrors": 0,
+      "checks": 793,
+      "passed": true
+    },
+    "environment-campaign": {
+      "consoleErrors": 0,
+      "checks": 122,
+      "passed": true
+    },
+    "environment-bosses": {
+      "consoleErrors": 0,
+      "checks": 74,
+      "passed": true
+    },
+    "environment-campaign-fusion": {
+      "consoleErrors": 0,
+      "checks": 20,
+      "passed": true
+    },
+    "environment-fusion-matrix": {
+      "consoleErrors": 0,
+      "checks": 236,
+      "passed": true
+    },
+    "environment-fusion-combat": {
+      "consoleErrors": 0,
+      "checks": 161,
+      "passed": true
+    },
+    "environment-game-resize": {
+      "consoleErrors": 0,
+      "checks": 0,
+      "passed": true
+    },
+    "environment-levels-resize": {
+      "consoleErrors": 0,
+      "checks": 0,
+      "passed": true
+    },
+    "environment-sonar": {
+      "consoleErrors": 0,
+      "checks": 476,
+      "passed": true
+    },
+    "environment-discovery": {
+      "consoleErrors": 0,
+      "checks": 18,
+      "passed": true
+    },
+    "environment-pause-1280": {
+      "consoleErrors": 0,
+      "checks": 53,
+      "passed": true
+    },
+    "environment-pause-640": {
+      "consoleErrors": 0,
+      "checks": 53,
+      "passed": true
+    },
+    "environment-scale-12": {
+      "consoleErrors": 0,
+      "checks": 0,
+      "passed": true
+    },
+    "environment-scale-16": {
+      "consoleErrors": 0,
+      "checks": 0,
+      "passed": true
+    },
+    "environment-scale-24": {
+      "consoleErrors": 0,
+      "checks": 0,
+      "passed": true
+    }
+  },
+  "knownFolderCleanlinessFailure": "Pre-existing Tower Defense.json.autosave; untouched",
+  "projectDigests": {
+    "Tower Defense.json": "c22965d88a895d1d24273ec9435558dd3f655e7bd1b9d5b442ee8191997b1643",
+    "layouts\\game-scene.json": "93584ab6802585ef00679385f9ac97551df6c6f5365ad8e28e6bafc62008d092"
+  },
+  "backupsCreated": false
+}

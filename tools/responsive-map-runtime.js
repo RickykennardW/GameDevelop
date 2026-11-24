@@ -22,6 +22,7 @@ const mode = () => variables.get("WaveMode").getAsString();
 const autoMode = () => mode() === "Auto" || mode() === "AutoFast";
 const fastMode = () => mode() === "ManualFast" || mode() === "AutoFast";
 const syncWaveControl = () => {
+  if(scene.__pauseUI?.frameBlocked)return;
   const valid = ["Waiting","Manual","ManualFast","Auto","AutoFast"];
   if (!valid.includes(mode())) variables.get("WaveMode").setString(boolean("WaveActive") ? "Manual" : "Waiting");
   const manager = scene.__waveManager;

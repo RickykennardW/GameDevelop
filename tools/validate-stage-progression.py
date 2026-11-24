@@ -136,7 +136,7 @@ def main():
         if chapters and file=='Tower Defense.json':current['resources']['resources']=[r for r in current['resources']['resources'] if not r['name'].startswith('assets/map/chapters/')]
         assert current == previous(file), file
     changed=subprocess.check_output(['git','diff',BASELINE,'--name-only','--','assets'],cwd=ROOT,text=True).splitlines()
-    assert set(changed)<=({f'assets/ui/campaign/chapter_{n}.svg' for n in range(1,6)} if chapters else set())
+    assert set(changed)<=(chapters['ENVIRONMENT']['approved_asset_paths']() if chapters else set())
 
     level, old_level = config['Levels'][0], old_config['Levels'][0]
     rewards = level['EnemyRewards']

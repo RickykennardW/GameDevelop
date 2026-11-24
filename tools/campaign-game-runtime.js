@@ -1,3 +1,4 @@
+if(runtimeScene.__pauseUI?.frameBlocked)return; // Pause preserves the current owner and input state.
 // Initialized only for a mission launched by Levels. Direct gameplay preview
 // retains the existing 45-wave sandbox and its authored starting values.
 const scene=runtimeScene,game=scene.getGame(),C=game.__campaign,sv=scene.getVariables();

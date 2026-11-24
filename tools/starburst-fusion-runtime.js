@@ -1,3 +1,4 @@
+if(runtimeScene.__pauseUI?.frameBlocked)return; // Pause preserves the current owner and input state.
 // Tactical placement is shared by every registered recipe.
 const scene=runtimeScene,sv=scene.getVariables(),game=scene.getGame(),get=n=>scene.getObjects(n),p=scene.__freePlacement,star=scene.__starCannon,ev=scene.__fusionEvolution;
 if(!p||!star||!ev)return;
@@ -206,7 +207,7 @@ const input=game.getInputManager(),down=input.isMouseButtonPressed(0);
 if(f.active){
  if(f.error){const tm=scene.getTimeManager();f.errorSeconds-=tm.getElapsedTime()/Math.max(.001,tm.getTimeScale())/1000;if(f.errorSeconds<=0)f.error='';}
  if(!f.alive(f.a,f.aId)||!f.eligible(f.a)||(f.b&&(!f.alive(f.b,f.bId)||!f.pair(f.a,f.b)))||sv.get('GameOver').getAsBoolean())f.cancel();
- else if(gdjs.evtTools.input.wasKeyJustPressed(scene,'Escape'))f.cancel();
+ else if(!scene.__pauseUI&&gdjs.evtTools.input.wasKeyJustPressed(scene,'Escape'))f.cancel();
  else{
   f.render();const x=gdjs.evtTools.input.getCursorX(scene,'FusionUI',0),y=gdjs.evtTools.input.getCursorY(scene,'FusionUI',0),r=f.cancelRect,cancel=!!r&&x>=r.x&&x<r.x+r.w&&y>=r.y&&y<r.y+r.h;
   if(down&&!f.wasDown)f.pressed=cancel?'cancel':f.stage;

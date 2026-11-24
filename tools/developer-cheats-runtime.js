@@ -1,3 +1,4 @@
+if(runtimeScene.__pauseUI?.frameBlocked)return; // Pause preserves the current owner and input state.
 // A development-only economy/upgrade UI. Native prices, recipes and validation own all transactions.
 const scene=runtimeScene,sv=scene.getVariables(),game=scene.getGame();
 if(!scene.__devCheats&&sv.get('DEV_CHEATS_ENABLED').getAsBoolean()&&game.isPreview?.()===true){

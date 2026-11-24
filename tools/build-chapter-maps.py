@@ -1,5 +1,6 @@
 """Compile five chapter maps from one scale/geometry source. Direct edits only."""
 import copy
+import base64
 import json
 import math
 import random
@@ -30,6 +31,9 @@ def write(path, data):
 
 def ground_art(meta):
     """Periodic 128px terrain. Edge-crossing details are explicitly wrapped."""
+    if meta.get('Environment'):
+        data=base64.b64encode((ROOT/meta['Environment']['Ground']['base']).read_bytes()).decode()
+        return '<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128"><image href="data:image/png;base64,'+data+'" width="128" height="128"/></svg>\n'
     p=meta['Palette'];rng=random.Random(700+meta['Chapter'])
     shapes=[f'<rect width="128" height="128" fill="{p["Ground"]}"/>']
     for _ in range(26):
@@ -47,6 +51,12 @@ def ground_art(meta):
 def road_art(meta, points, surface, width, cell):
     p=meta['Palette'];l,t,r,b=(surface[k] for k in ('left','top','right','bottom'))
     path='M'+' L'.join(f'{x:.4f} {y:.4f}' for x,y in points)
+    if meta.get('Environment'):
+        data=base64.b64encode((ROOT/meta['Environment']['RoadMaterial']).read_bytes()).decode();unit=cell*4
+        svg=f'<svg xmlns="http://www.w3.org/2000/svg" width="{r-l}" height="{b-t}" viewBox="{l} {t} {r-l} {b-t}"><defs><pattern id="material" width="{unit}" height="{unit}" patternUnits="userSpaceOnUse"><image href="data:image/png;base64,{data}" width="{unit}" height="{unit}"/></pattern></defs>'
+        for size,color in [(width,'#0b0e13'),(width-2,p['Edge']),(width-6,'#a5a6a0'),(width-9,'url(#material)')]:
+            svg+=f'<path d="{path}" fill="none" stroke="{color}" stroke-width="{size}" stroke-linecap="round" stroke-linejoin="round"/>'
+        return svg+'</svg>\n'
     # Square paving cells replace the prior 11.52 x 5.76 brick grid.
     svg=f'''<svg xmlns="http://www.w3.org/2000/svg" width="{r-l}" height="{b-t}" viewBox="{l} {t} {r-l} {b-t}">
 <defs><pattern id="pave" width="{cell}" height="{cell}" patternUnits="userSpaceOnUse"><path d="M0 0H{cell}V{cell}" fill="none" stroke="#635775" stroke-width=".65" opacity=".38"/><path d="M2 2H{cell-2}" stroke="#fff9ee" stroke-width=".8" opacity=".4"/><circle cx="{cell/2}" cy="{cell/2}" r="1" fill="{p['Accent']}" opacity=".25"/></pattern>
@@ -93,6 +103,9 @@ def prop_art(meta,kind):
 
 
 def chapter_backdrop(meta):
+    if meta.get('Environment'):
+        data=base64.b64encode((ROOT/meta['Environment']['Backdrop']).read_bytes()).decode()
+        return '<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720"><image href="data:image/png;base64,'+data+'" width="1280" height="720" preserveAspectRatio="xMidYMid slice"/><rect width="1280" height="720" fill="#050b14" opacity=".48"/></svg>\n'
     p=meta['Palette'];rng=random.Random(940+meta['Chapter']);a=p['Accent'];id=meta['Id']
     stars=''.join(f'<circle cx="{rng.randrange(1280)}" cy="{rng.randrange(720)}" r="{rng.choice([.6,1,1.3])}" fill="{a}" opacity="{rng.uniform(.15,.5):.2f}"/>' for _ in range(150))
     defs=f'<defs><linearGradient id="space" x2="1" y2="1"><stop stop-color="#070c1c"/><stop offset="1" stop-color="{p["Ground"]}"/></linearGradient><radialGradient id="planet" cx=".32" cy=".22"><stop stop-color="{a}"/><stop offset=".5" stop-color="{p["Stone"]}"/><stop offset="1" stop-color="#0a1020"/></radialGradient><radialGradient id="haze"><stop stop-color="{a}" stop-opacity=".15"/><stop offset="1" stop-color="{a}" stop-opacity="0"/></radialGradient></defs>'
@@ -135,6 +148,7 @@ def props(meta, points, surface, width):
 
 def compile_maps():
     cfg=read('tools/chapter-maps.json');surface=cfg['Surface'];width=cfg['Scale']['PathWidth']
+    library=read('tools/environment-library.json') if (ROOT/'tools/environment-library.json').exists() else None
     maps=[]
     for source in cfg['Maps']:
         m=copy.deepcopy(source);corners=m['Corners'];segments=list(zip(corners,corners[1:]))
@@ -149,6 +163,7 @@ def compile_maps():
                 assert math.hypot(dx,dy)>width+8,(m['Id'],a,b,c,d)
         points=sample(corners,36)
         m.update(Width=width,Surface=surface,MainRows=m.pop('Rows'),Points=[{'X':x,'Y':y} for x,y in points],Length=round(sum(math.dist(a,b) for a,b in zip(points,points[1:])),4),Turns=len(corners)-2,Decorations=props(m,points,surface,width),Animation='Chapter_'+m['Id'],Ground=f'assets/map/chapters/{m["Id"]}_ground.svg',Road=f'assets/map/chapters/{m["Id"]}_road.svg',PropAnimations={k:'Chapter_'+m['Id']+'_'+k for k in ['Crystal','Rock','Ruin','Shrub']} if m['Id']!='nebula' else {})
+        if library:m['Environment']=library['Chapters'][m['Id']]
         maps.append(m)
     return cfg, maps
 
@@ -160,6 +175,8 @@ def build():
     road=next(o for o in scene['objects'] if o['name']=='Monster_Path');template=copy.deepcopy(road['animations'][0])
     road['animations']=[a for a in road['animations'] if not a['name'].startswith('Chapter_')]
     decor=next(o for o in scene['objects'] if o['name']=='Ground_Decoration');decor['animations']=[a for a in decor['animations'] if not a['name'].startswith('Chapter_')]
+    for name in ['VoidBackdrop','IslandCliffFrame']:
+        obj=next(o for o in scene['objects'] if o['name']==name);obj['animations']=[a for a in obj['animations'] if not a['name'].startswith('Chapter_Env_')]
     directory=ROOT/'assets/map/chapters';directory.mkdir(parents=True,exist_ok=True)
     for m in maps:
         (ROOT/f'assets/ui/campaign/chapter_{m["Chapter"]}.svg').write_text(chapter_backdrop(m),encoding='utf-8')
@@ -171,6 +188,14 @@ def build():
             path=f'assets/map/chapters/{m["Id"]}_{kind.lower()}.svg';art=prop_art(m,kind);ET.fromstring(art);(ROOT/path).write_text(art,encoding='utf-8')
             if not any(r['name']==path for r in project['resources']['resources']):project['resources']['resources'].append({'name':path,'file':path,'kind':'image','metadata':'','smoothed':True,'userAdded':True})
             animation=copy.deepcopy(template);animation['name']=name;animation['directions']=animation['directions'][:1];sprite=animation['directions'][0]['sprites'][0];sprite.update(image=path,hasCustomCollisionMask=False,customCollisionMask=[]);animation['directions'][0]['sprites']=[sprite];decor['animations'].append(animation)
+        if m.get('Environment'):
+            env=m['Environment']
+            for asset in env['Assets']:
+                path=asset['Resource']
+                if not any(r['name']==path for r in project['resources']['resources']):project['resources']['resources'].append({'name':path,'file':path,'kind':'image','metadata':'','smoothed':True,'userAdded':True})
+                name='VoidBackdrop' if path==env['Backdrop'] else 'IslandCliffFrame' if path==env['Frame'] else 'Ground_Decoration'
+                obj=next(o for o in scene['objects'] if o['name']==name)
+                animation=copy.deepcopy(template);animation['name']=asset['Animation'];animation['directions']=animation['directions'][:1];sprite=animation['directions'][0]['sprites'][0];sprite.update(image=path,hasCustomCollisionMask=False,customCollisionMask=[]);animation['directions'][0]['sprites']=[sprite];obj['animations'].append(animation)
         chapter=campaign['Chapters'][m['Chapter']-1];chapter.update(Name=m['Name'],ShortName=m['ShortName'],Description=m['Description'],MapId=m['Id'],Status='IMPLEMENTED')
     campaign.update(ChapterCapacity=8,ReleasedChapters=5,FutureChapters=cfg['FutureChapters'])
     levels['variables']=[var('CampaignConfig',campaign)]

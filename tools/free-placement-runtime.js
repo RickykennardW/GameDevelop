@@ -1,3 +1,4 @@
+if(runtimeScene.__pauseUI?.frameBlocked)return; // Pause preserves the current owner and input state.
 // Shared validator for free world-space placement. Rendering tiles never snap towers.
 const scene=runtimeScene,sv=scene.getVariables(),get=n=>scene.getObjects(n);
 let p=scene.__freePlacement;

@@ -10,9 +10,11 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
+ENVIRONMENT=runpy.run_path(str(ROOT/'tools/validate-environment.py'))
 BASELINE = '32e360d39c536d6f802703df736a10731caf1e08'
 MAP_OBJECTS = {'Monster_Path','Ground_Decoration','SpawnMarker','BaseMarker'}
 MAP_SOURCES = {'responsive-map-runtime.js','island-map-runtime.js','free-placement-runtime.js','labyrinth-route-runtime.js','island-render-runtime.js','nova-wisp-runtime.js','void-hound-runtime.js','void-golem-runtime.js'}
+MAP_SOURCES.update(ENVIRONMENT['PAUSE_SOURCES'])
 RESOURCE = 'assets/celestial_void/celestial_labyrinth.svg'
 ART = 'assets/map/monster_path/celestial_labyrinth.svg'
 
@@ -30,6 +32,8 @@ def without_map_animations(objects):
     for obj in result:
         if obj['name'] in {'Monster_Path','Ground_Decoration'}:
             obj['animations']=[a for a in obj['animations'] if a['name']!='Labyrinth' and not a['name'].startswith('Chapter_')]
+        elif obj['name'] in {'VoidBackdrop','IslandCliffFrame'}:
+            obj['animations']=[a for a in obj['animations'] if not a['name'].startswith('Chapter_Env_')]
     return result
 
 
@@ -68,6 +72,7 @@ def main():
     scene['objects']=without_map_animations(scene['objects'])
     scene['variables']=[v for v in scene['variables'] if v['name'] not in {'LabyrinthMap','ChapterMaps'}]
     for root,children,name in read('tools/source-mapping.json'):
+        if name in ENVIRONMENT['ADDED_SOURCES']:continue
         event=scene['events'][root]
         original=old_scene['events'][root]
         for index in children:
@@ -76,6 +81,7 @@ def main():
         assert event['inlineCode']==(ROOT/'tools'/name).read_text(encoding='utf-8-sig').splitlines(),name
         if name in MAP_SOURCES or progression and name in progression['STAGE_SOURCES']:
             event['inlineCode']=original['inlineCode']
+    ENVIRONMENT['restore_pause_additions'](scene)
     if progression: progression['restore_clear_guards'](scene,old_scene)
     assert scene==old_scene,'Scene changes beyond the map scope'
     project=read('Tower Defense.json')
@@ -90,7 +96,7 @@ def main():
         if progression and file=='layouts/levels.json':progression['restore_first_level'](current,baseline)
         assert current==baseline,file
     changed_assets=subprocess.check_output(['git','diff',BASELINE,'--name-only','--','assets'],cwd=ROOT,text=True).splitlines()
-    assert set(changed_assets)<={ART,*[f'assets/ui/campaign/chapter_{n}.svg' for n in range(1,6)]}, 'Existing art/audio modified'
+    assert set(changed_assets)<={ART,*ENVIRONMENT['approved_asset_paths']()}, 'Existing art/audio modified'
     report={'passed':True,'width':layout['Width'],'length':layout['Length'],'originalLength':7128,'turns':layout['Turns'],
             'waypoints':len(points),'decorations':len(config['Decorations']),'nonMapSceneDataMatchBaseline':True,'baseline':BASELINE}
     (ROOT/'validation/labyrinth-static.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf8')

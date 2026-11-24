@@ -7,10 +7,15 @@ import runpy
 import subprocess
 import xml.etree.ElementTree as ET
 from pathlib import Path
+from PIL import Image
 
 ROOT=Path(__file__).resolve().parents[1]
 BASELINE='e59ded3'
 SOURCES={'responsive-map-runtime.js','island-map-runtime.js','island-render-runtime.js','nova-wisp-runtime.js','void-hound-runtime.js','void-golem-runtime.js'}
+ENVIRONMENT=runpy.run_path(str(Path(__file__).resolve().parent/'validate-environment.py'))
+SOURCES.update(ENVIRONMENT['PAUSE_SOURCES'])
+ADDED_SOURCES=ENVIRONMENT['ADDED_SOURCES']
+restore_pause_additions=ENVIRONMENT['restore_pause_additions']
 
 
 def read(path):
@@ -32,6 +37,8 @@ def strip_animations(objects):
     for o in result:
         if o['name'] in {'Monster_Path','Ground_Decoration'}:
             o['animations']=[a for a in o['animations'] if not a['name'].startswith('Chapter_')]
+        elif o['name'] in {'VoidBackdrop','IslandCliffFrame'}:
+            o['animations']=[a for a in o['animations'] if not a['name'].startswith('Chapter_Env_')]
     return result
 
 
@@ -44,6 +51,7 @@ def restore_levels_metadata(scene,baseline):
 
 
 def restore_scene_additions(scene,baseline):
+    restore_pause_additions(scene)
     scene['objects']=strip_animations(scene['objects'])
     scene['variables']=[v for v in scene['variables'] if v['name']!='ChapterMaps']
     for root,children,name in read('tools/source-mapping.json'):
@@ -54,6 +62,7 @@ def restore_scene_additions(scene,baseline):
 
 
 def main():
+    ENVIRONMENT['main']()
     checks=[]
     def ok(test,label):
         if not test:raise AssertionError(label)
@@ -65,8 +74,9 @@ def main():
     ok(cfg['Levels']==previous['Levels'],'All 25 mission waves, starting Gold, rewards, Lives, prices and HP/speed overrides preserved')
     ok([c['Boss'] for c in cfg['Chapters']]==[c['Boss'] for c in previous['Chapters']],'All five existing boss stats and abilities preserved')
     ok(cfg['ChapterCapacity']==8 and cfg['ReleasedChapters']==5 and len(cfg['FutureChapters'])==3 and all(c['Status']=='PLANNED' for c in cfg['FutureChapters']),'Five implemented chapters and three explicit future definitions')
-    normalized=copy.deepcopy(scene);normalized['objects']=strip_animations(normalized['objects']);normalized['variables']=[v for v in normalized['variables'] if v['name']!='ChapterMaps']
+    normalized=copy.deepcopy(scene);restore_pause_additions(normalized);normalized['objects']=strip_animations(normalized['objects']);normalized['variables']=[v for v in normalized['variables'] if v['name']!='ChapterMaps']
     for root,children,name in read('tools/source-mapping.json'):
+        if name in ADDED_SOURCES:continue
         node,original=normalized['events'][root],prior['events'][root]
         for child in children:node,original=node['events'][child],original['events'][child]
         ok(node['inlineCode']==(ROOT/'tools'/name).read_text(encoding='utf-8-sig').splitlines(),'Embedded source matches '+name)
@@ -82,15 +92,19 @@ def main():
     expected_events[2]['inlineCode']=current_source.splitlines()
     ok(levels['events']==expected_events,'Levels retains all three event blocks and unchanged service events')
     restore_levels_metadata(levels,prior_levels);ok(levels==prior_levels,'Levels changes limited to chapter metadata and updated tutorial title')
-    for name in ['layouts/main-menu.json','eventsFunctionsExtensions/health.json','tools/source-mapping.json','tools/labyrinth-layout.json']:
+    ok([e for e in read('tools/source-mapping.json') if e[2] not in ADDED_SOURCES]==old('tools/source-mapping.json'),'Existing source mappings preserved; two additions audited separately')
+    for name in ['layouts/main-menu.json','eventsFunctionsExtensions/health.json','tools/labyrinth-layout.json']:
         ok(read(name)==old(name),'Unrelated native data unchanged '+name)
     added={m[k] for m in maps for k in ['Road','Ground']}|{f'assets/map/chapters/{m["Id"]}_{kind.lower()}.svg' for m in maps for kind in m['PropAnimations']}
+    added|={a['Resource'] for m in maps for a in m.get('Environment',{}).get('Assets',[])}
     resources=project['resources']['resources'];normalized_project=copy.deepcopy(project);normalized_project['resources']['resources']=[r for r in resources if r['name'] not in added]
     ok(normalized_project==old('Tower Defense.json'),'Project root only adds registered final map resources')
     ok({r['file'] for r in resources if r['name'] in added}==added,'Every new resource has its exact relative file path')
-    ok({p.relative_to(ROOT).as_posix() for p in (ROOT/'assets/map/chapters').glob('*')}==added,'All generated final chapter assets are registered')
+    ok({p.relative_to(ROOT).as_posix() for p in (ROOT/'assets/map/chapters').rglob('*') if p.is_file()}==added,'All generated final chapter assets are registered')
     for path in added:
-        ET.parse(ROOT/path);ok((ROOT/path).stat().st_size>100,'Valid nonempty vector asset '+path)
+        if path.endswith('.svg'):ET.parse(ROOT/path)
+        else:Image.open(ROOT/path).verify()
+        ok((ROOT/path).stat().st_size>100,'Valid nonempty environment asset '+path)
     old_width=value(next(v for v in prior['variables'] if v['name']=='LabyrinthMap'))['Width']
     rows=[]
     for m in maps:

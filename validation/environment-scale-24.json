@@ -1,0 +1,33 @@
+{
+  "result": {
+    "passed": true,
+    "visualOnly": true,
+    "candidateCell": 24,
+    "cellPixels": 12.897435897435898,
+    "texturePeriod": 96,
+    "zoom": 0.5373931623931624,
+    "pathWidth": 60,
+    "pathCells": 2.5,
+    "starFootprintDiameter": 92,
+    "starFootprintCells": 3.8333333333333335,
+    "bloomFootprintDiameter": 136,
+    "enemyNativeDimensions": [
+      {
+        "type": "Basic",
+        "w": 48,
+        "h": 48
+      },
+      {
+        "type": "Basic",
+        "w": 48,
+        "h": 48
+      }
+    ],
+    "enemyRenderMultiplier": 0.9,
+    "gridChanged": false,
+    "towerWidth": 64,
+    "towerRenderScale": 2.5
+  },
+  "progress": [],
+  "consoleErrors": []
+}

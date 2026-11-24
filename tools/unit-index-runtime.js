@@ -58,7 +58,7 @@ if(!down&&index.wasDown&&index.pressed===hover){
  else if(categories.includes(hover)&&index.category!==hover){index.category=hover;index.renderKey=null;index.wasDown=down;index.pressed='';return;}
  else if(entries.some(e=>e.id===hover)){index.select(hover);index.wasDown=down;index.pressed='';return;}
 }
-if(gdjs.evtTools.input.wasKeyJustPressed(scene,'Escape')){sv.get('IndexOpen').setBoolean(false);open=false;}
+if((!scene.__pauseUI||scene.__pauseUI.escapeOwner==='index')&&gdjs.evtTools.input.wasKeyJustPressed(scene,'Escape')){sv.get('IndexOpen').setBoolean(false);open=false;}
 if(!down)index.dragging=null;
 index.scroll=Math.max(0,Math.min(index.maxScroll||0,index.scroll));
 const key=JSON.stringify([index.category,index.selected[index.category],index.scroll,index.collectionScroll,width,height,hover,open,discovery.revision,archive.revision]);

@@ -132,6 +132,25 @@ async def main():
                 await asyncio.sleep(.1)
             await js('globalThis.FUSION_PERSISTENCE_EXPECTATION='+json.dumps(result))
             result['pageReload']=await js((ROOT/'tools/fusion-persistence-qa.js').read_text(encoding='utf-8'))
+        if '--pause-native-input' in sys.argv:
+            # Real browser key events need the running application's frame loop.
+            # A paused harness can clear its key edge before a later CDP step.
+            await js('testGame.pause(false)')
+            async def native_step():
+                await asyncio.sleep(.1)
+                return await js('(()=>{const s=testGame.getSceneStack().getCurrentScene();return{active:s.__pauseUI.active,visible:s.__pauseUI.root.visible&&s.getLayer("GameOverUI").isVisible(),speed:s.getTimeManager().getTimeScale()};})()')
+            await call('Input.dispatchKeyEvent',dict(type='keyDown',key='Escape',code='Escape',windowsVirtualKeyCode=27))
+            state=await native_step()
+            if state['active'] or state['speed']!=1:raise RuntimeError('Native Escape did not resume: '+str(state)+' / '+str(await js('({key:testGame.getInputManager().isKeyPressed(27),focus:document.activeElement?.tagName,typing:testGame.getSceneStack().getCurrentScene().getVariables().get("DevGoldInputFocused").getAsBoolean()})')))
+            for _ in range(4):
+                await call('Input.dispatchKeyEvent',dict(type='keyDown',key='Escape',code='Escape',windowsVirtualKeyCode=27,autoRepeat=True))
+                if (await native_step())['active']:raise RuntimeError('Native held Escape opened duplicate pause')
+            await call('Input.dispatchKeyEvent',dict(type='keyUp',key='Escape',code='Escape',windowsVirtualKeyCode=27));await native_step()
+            await call('Input.dispatchKeyEvent',dict(type='keyDown',key='Escape',code='Escape',windowsVirtualKeyCode=27))
+            state=await native_step()
+            if not state['active'] or not state['visible'] or state['speed']!=0:raise RuntimeError('Native Escape did not open visible pause')
+            await call('Input.dispatchKeyEvent',dict(type='keyUp',key='Escape',code='Escape',windowsVirtualKeyCode=27));await native_step()
+            result['nativeEscape']={'browserKeyEvents':True,'heldRepeatIgnored':True,'resumedAtOne':True,'reopenedVisibleMenu':True}
         screenshot_data=None
         screenshot=next((a for a in sys.argv[3:] if not a.startswith('--')),None)
         pixel_sha=next((a.split('=',1)[1] for a in sys.argv[3:] if a.startswith('--pixel-sha=')),None)

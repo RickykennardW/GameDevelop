@@ -1,0 +1,3155 @@
+{
+  "Version": 1,
+  "Generator": "built-in image generation; sheet separation and seam correction",
+  "SourceHashes": {
+    "exec-51528bee-fbf3-4d75-a10f-ddc5fa57c0d2.png": "f46818932ce6856a96d0a477c9ed9bfb28818ecca628914b7be8053f5a982516",
+    "exec-28c75bba-70dc-4a33-b9e9-6a0286d65638.png": "79a779a7c8c7530e6b1f3b0f7e5bdd814f1fe95217fbdc2694c6b3ed5eee1a45",
+    "exec-dc2e9eb6-ccb5-4a2a-92b7-8b9e2f834416.png": "4b9cdbdd7a58ae7dc439d5bed8597232ed57cab1520f573324a5cb8e7e8fa3dd",
+    "exec-85b0a633-9656-401b-8023-d70a5aae1b92.png": "6974f820ca87d3a3587e051f2ccb15c61bc688dee74a4858a01ce5b3028a1bf8",
+    "exec-7997fa87-4688-4c8f-8f42-3c3865876acf.png": "7b10b20685ea1d5b13018b05c50edb2b4eb02514462750b5a4c44ce4644c4e48",
+    "exec-f3d32fcf-1e59-4928-959d-f79f508df99d.png": "34ccfff95db05d28eced3b15fb2aeb64bed63cb04317c3d6a83f2f65f5803166",
+    "exec-a2035ea5-1c5d-40c5-8903-208898701aff.png": "4cf449165b780232cb2f9a72aa93d45d597dfc5747ee6c356cd59afc7783b965"
+  },
+  "Chapters": {
+    "emberfall": {
+      "Assets": [
+        {
+          "Name": "basalt_slab",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/emberfall/Rocks/basalt_slab.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_emberfall_basalt_slab",
+          "OpaqueRadius": 96.64142856064674
+        },
+        {
+          "Name": "obsidian_peak",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/emberfall/Rocks/obsidian_peak.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_emberfall_obsidian_peak",
+          "OpaqueRadius": 111.04127658827184
+        },
+        {
+          "Name": "split_boulder",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/emberfall/Rocks/split_boulder.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_emberfall_split_boulder",
+          "OpaqueRadius": 102.34440691936945
+        },
+        {
+          "Name": "basalt_cluster",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/emberfall/Rocks/basalt_cluster.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_emberfall_basalt_cluster",
+          "OpaqueRadius": 102.31948963187563
+        },
+        {
+          "Name": "basalt_columns",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/emberfall/Rocks/basalt_columns.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_emberfall_basalt_columns",
+          "OpaqueRadius": 102.65783625729296
+        },
+        {
+          "Name": "magma_rock",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/emberfall/Rocks/magma_rock.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_emberfall_magma_rock",
+          "OpaqueRadius": 104.57680049601859
+        },
+        {
+          "Name": "magma_crystals",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/emberfall/Rocks/magma_crystals.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_emberfall_magma_crystals",
+          "OpaqueRadius": 111.04127658827184
+        },
+        {
+          "Name": "volcanic_boulder",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/emberfall/Rocks/volcanic_boulder.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_emberfall_volcanic_boulder",
+          "OpaqueRadius": 98.83491106000976
+        },
+        {
+          "Name": "carved_basalt",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/emberfall/Rocks/carved_basalt.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_emberfall_carved_basalt",
+          "OpaqueRadius": 115.70136322841516
+        },
+        {
+          "Name": "lava_chimney",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/emberfall/Rocks/lava_chimney.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_emberfall_lava_chimney",
+          "OpaqueRadius": 114.8007092176286
+        },
+        {
+          "Name": "cooled_ridge",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/emberfall/Rocks/cooled_ridge.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_emberfall_cooled_ridge",
+          "OpaqueRadius": 113.01801655587259
+        },
+        {
+          "Name": "gold_ore",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/emberfall/Rocks/gold_ore.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_emberfall_gold_ore",
+          "OpaqueRadius": 105.24727599312246
+        },
+        {
+          "Name": "geothermal_reactor",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/emberfall/Structures/geothermal_reactor.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_emberfall_geothermal_reactor",
+          "OpaqueRadius": 107.54619841567009
+        },
+        {
+          "Name": "mining_drill",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/emberfall/Structures/mining_drill.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_emberfall_mining_drill",
+          "OpaqueRadius": 117.93532679903913
+        },
+        {
+          "Name": "broken_pillar",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/emberfall/Structures/broken_pillar.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_emberfall_broken_pillar",
+          "OpaqueRadius": 109.16809226630845
+        },
+        {
+          "Name": "geothermal_shrine",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/emberfall/Structures/geothermal_shrine.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_emberfall_geothermal_shrine",
+          "OpaqueRadius": 109.78218776773832
+        },
+        {
+          "Name": "magma_turbine",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/emberfall/Structures/magma_turbine.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_emberfall_magma_turbine",
+          "OpaqueRadius": 113.01801655587259
+        },
+        {
+          "Name": "energy_obelisk",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/emberfall/Structures/energy_obelisk.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_emberfall_energy_obelisk",
+          "OpaqueRadius": 106.5609869884557
+        },
+        {
+          "Name": "ruined_arch",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/emberfall/Structures/ruined_arch.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_emberfall_ruined_arch",
+          "OpaqueRadius": 120.40608092492548
+        },
+        {
+          "Name": "excavator_relic",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/emberfall/Structures/excavator_relic.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_emberfall_excavator_relic",
+          "OpaqueRadius": 110.04628637764465
+        },
+        {
+          "Name": "basalt_island",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/emberfall/FloatingIslands/basalt_island.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_emberfall_basalt_island"
+        },
+        {
+          "Name": "fractured_island",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/emberfall/FloatingIslands/fractured_island.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_emberfall_fractured_island"
+        },
+        {
+          "Name": "distant_island",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/emberfall/FloatingIslands/distant_island.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_emberfall_distant_island"
+        },
+        {
+          "Name": "spire_island",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/emberfall/FloatingIslands/spire_island.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_emberfall_spire_island"
+        },
+        {
+          "Name": "broken_molten_island",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/emberfall/FloatingIslands/broken_molten_island.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_emberfall_broken_molten_island"
+        },
+        {
+          "Name": "ember_plant",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/emberfall/Decorations/ember_plant.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_emberfall_ember_plant"
+        },
+        {
+          "Name": "ash_vent",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/emberfall/Decorations/ash_vent.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_emberfall_ash_vent"
+        },
+        {
+          "Name": "lava_pool",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/emberfall/Decorations/lava_pool.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_emberfall_lava_pool"
+        },
+        {
+          "Name": "magma_fissure",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/emberfall/Decorations/magma_fissure.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_emberfall_magma_fissure"
+        },
+        {
+          "Name": "gold_crystals",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/emberfall/Decorations/gold_crystals.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_emberfall_gold_crystals"
+        },
+        {
+          "Name": "ash_mound",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/emberfall/Decorations/ash_mound.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_emberfall_ash_mound"
+        },
+        {
+          "Name": "volcanic_flowers",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/emberfall/Decorations/volcanic_flowers.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_emberfall_volcanic_flowers"
+        },
+        {
+          "Name": "ground_rune",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/emberfall/Decorations/ground_rune.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_emberfall_ground_rune"
+        },
+        {
+          "Name": "ember_motes",
+          "Category": "Effects",
+          "Resource": "assets/map/chapters/emberfall/Effects/ember_motes.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "restrained static atmospheric cutout",
+          "Animation": "Chapter_Env_emberfall_ember_motes"
+        },
+        {
+          "Name": "smoke_wisp",
+          "Category": "Effects",
+          "Resource": "assets/map/chapters/emberfall/Effects/smoke_wisp.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "restrained static atmospheric cutout",
+          "Animation": "Chapter_Env_emberfall_smoke_wisp"
+        },
+        {
+          "Name": "ash_plume",
+          "Category": "Effects",
+          "Resource": "assets/map/chapters/emberfall/Effects/ash_plume.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "restrained static atmospheric cutout",
+          "Animation": "Chapter_Env_emberfall_ash_plume"
+        },
+        {
+          "Name": "base",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/emberfall/Ground/base.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain base",
+          "Animation": "Chapter_Env_emberfall_base"
+        },
+        {
+          "Name": "variation",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/emberfall/Ground/variation.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain variation",
+          "Animation": "Chapter_Env_emberfall_variation"
+        },
+        {
+          "Name": "edge",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/emberfall/Ground/edge.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain edge",
+          "Animation": "Chapter_Env_emberfall_edge"
+        },
+        {
+          "Name": "outer_corner",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/emberfall/Ground/outer_corner.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain outer_corner",
+          "Animation": "Chapter_Env_emberfall_outer_corner"
+        },
+        {
+          "Name": "inner_corner",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/emberfall/Ground/inner_corner.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain inner_corner",
+          "Animation": "Chapter_Env_emberfall_inner_corner"
+        },
+        {
+          "Name": "obstacle_adjacent",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/emberfall/Ground/obstacle_adjacent.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain obstacle_adjacent",
+          "Animation": "Chapter_Env_emberfall_obstacle_adjacent"
+        },
+        {
+          "Name": "decorative",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/emberfall/Ground/decorative.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain decorative",
+          "Animation": "Chapter_Env_emberfall_decorative"
+        },
+        {
+          "Name": "special",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/emberfall/Ground/special.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain special",
+          "Animation": "Chapter_Env_emberfall_special"
+        },
+        {
+          "Name": "transition",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/emberfall/Ground/transition.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain transition",
+          "Animation": "Chapter_Env_emberfall_transition"
+        },
+        {
+          "Name": "ash_or_dust",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/emberfall/Ground/ash_or_dust.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain ash_or_dust",
+          "Animation": "Chapter_Env_emberfall_ash_or_dust"
+        },
+        {
+          "Name": "material_inlay",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/emberfall/Ground/material_inlay.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain material_inlay",
+          "Animation": "Chapter_Env_emberfall_material_inlay"
+        },
+        {
+          "Name": "fractured",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/emberfall/Ground/fractured.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain fractured",
+          "Animation": "Chapter_Env_emberfall_fractured"
+        },
+        {
+          "Name": "path_straight",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/emberfall/Path/path_straight.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_emberfall_path_straight"
+        },
+        {
+          "Name": "path_curve",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/emberfall/Path/path_curve.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_emberfall_path_curve"
+        },
+        {
+          "Name": "path_corner",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/emberfall/Path/path_corner.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_emberfall_path_corner"
+        },
+        {
+          "Name": "path_intersection",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/emberfall/Path/path_intersection.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_emberfall_path_intersection"
+        },
+        {
+          "Name": "path_transition",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/emberfall/Path/path_transition.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_emberfall_path_transition"
+        },
+        {
+          "Name": "path_spawn",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/emberfall/Path/path_spawn.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_emberfall_path_spawn"
+        },
+        {
+          "Name": "path_finish",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/emberfall/Path/path_finish.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_emberfall_path_finish"
+        },
+        {
+          "Name": "path_endcap",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/emberfall/Path/path_endcap.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_emberfall_path_endcap"
+        },
+        {
+          "Name": "path_material",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/emberfall/Path/path_material.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "seamless shared route material",
+          "Animation": "Chapter_Env_emberfall_path_material"
+        },
+        {
+          "Name": "planetary_horizon",
+          "Category": "Background",
+          "Resource": "assets/map/chapters/emberfall/Background/planetary_horizon.png",
+          "Width": 1254,
+          "Height": 251,
+          "Purpose": "distant atmosphere; never a flattened gameplay map",
+          "Animation": "Chapter_Env_emberfall_planetary_horizon"
+        },
+        {
+          "Name": "cliff_frame",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/emberfall/Ground/cliff_frame.svg",
+          "Width": 1448,
+          "Height": 1086,
+          "Purpose": "native cropped perimeter; original collision envelope",
+          "Animation": "Chapter_Env_emberfall_cliff_frame"
+        }
+      ],
+      "Ground": {
+        "base": "assets/map/chapters/emberfall/Ground/base.png",
+        "variation": "assets/map/chapters/emberfall/Ground/variation.png",
+        "edge": "assets/map/chapters/emberfall/Ground/edge.png",
+        "outer_corner": "assets/map/chapters/emberfall/Ground/outer_corner.png",
+        "inner_corner": "assets/map/chapters/emberfall/Ground/inner_corner.png",
+        "obstacle_adjacent": "assets/map/chapters/emberfall/Ground/obstacle_adjacent.png",
+        "decorative": "assets/map/chapters/emberfall/Ground/decorative.png",
+        "special": "assets/map/chapters/emberfall/Ground/special.png",
+        "transition": "assets/map/chapters/emberfall/Ground/transition.png",
+        "ash_or_dust": "assets/map/chapters/emberfall/Ground/ash_or_dust.png",
+        "material_inlay": "assets/map/chapters/emberfall/Ground/material_inlay.png",
+        "fractured": "assets/map/chapters/emberfall/Ground/fractured.png"
+      },
+      "Paths": {
+        "straight": "assets/map/chapters/emberfall/Path/path_straight.png",
+        "curve": "assets/map/chapters/emberfall/Path/path_curve.png",
+        "corner": "assets/map/chapters/emberfall/Path/path_corner.png",
+        "intersection": "assets/map/chapters/emberfall/Path/path_intersection.png",
+        "transition": "assets/map/chapters/emberfall/Path/path_transition.png",
+        "spawn": "assets/map/chapters/emberfall/Path/path_spawn.png",
+        "finish": "assets/map/chapters/emberfall/Path/path_finish.png",
+        "endcap": "assets/map/chapters/emberfall/Path/path_endcap.png"
+      },
+      "RoadMaterial": "assets/map/chapters/emberfall/Path/path_material.png",
+      "Backdrop": "assets/map/chapters/emberfall/Background/planetary_horizon.png",
+      "Frame": "assets/map/chapters/emberfall/Ground/cliff_frame.svg",
+      "Rocks": [
+        "assets/map/chapters/emberfall/Rocks/basalt_slab.png",
+        "assets/map/chapters/emberfall/Rocks/obsidian_peak.png",
+        "assets/map/chapters/emberfall/Rocks/split_boulder.png",
+        "assets/map/chapters/emberfall/Rocks/basalt_cluster.png",
+        "assets/map/chapters/emberfall/Rocks/basalt_columns.png",
+        "assets/map/chapters/emberfall/Rocks/magma_rock.png",
+        "assets/map/chapters/emberfall/Rocks/magma_crystals.png",
+        "assets/map/chapters/emberfall/Rocks/volcanic_boulder.png",
+        "assets/map/chapters/emberfall/Rocks/carved_basalt.png",
+        "assets/map/chapters/emberfall/Rocks/lava_chimney.png",
+        "assets/map/chapters/emberfall/Rocks/cooled_ridge.png",
+        "assets/map/chapters/emberfall/Rocks/gold_ore.png"
+      ],
+      "Structures": [
+        "assets/map/chapters/emberfall/Structures/geothermal_reactor.png",
+        "assets/map/chapters/emberfall/Structures/mining_drill.png",
+        "assets/map/chapters/emberfall/Structures/broken_pillar.png",
+        "assets/map/chapters/emberfall/Structures/geothermal_shrine.png",
+        "assets/map/chapters/emberfall/Structures/magma_turbine.png",
+        "assets/map/chapters/emberfall/Structures/energy_obelisk.png",
+        "assets/map/chapters/emberfall/Structures/ruined_arch.png",
+        "assets/map/chapters/emberfall/Structures/excavator_relic.png"
+      ],
+      "Islands": [
+        "assets/map/chapters/emberfall/FloatingIslands/basalt_island.png",
+        "assets/map/chapters/emberfall/FloatingIslands/fractured_island.png",
+        "assets/map/chapters/emberfall/FloatingIslands/distant_island.png",
+        "assets/map/chapters/emberfall/FloatingIslands/spire_island.png",
+        "assets/map/chapters/emberfall/FloatingIslands/broken_molten_island.png"
+      ],
+      "Decorations": [
+        "assets/map/chapters/emberfall/Decorations/ember_plant.png",
+        "assets/map/chapters/emberfall/Decorations/ash_vent.png",
+        "assets/map/chapters/emberfall/Decorations/lava_pool.png",
+        "assets/map/chapters/emberfall/Decorations/magma_fissure.png",
+        "assets/map/chapters/emberfall/Decorations/gold_crystals.png",
+        "assets/map/chapters/emberfall/Decorations/ash_mound.png",
+        "assets/map/chapters/emberfall/Decorations/volcanic_flowers.png",
+        "assets/map/chapters/emberfall/Decorations/ground_rune.png"
+      ],
+      "Effects": [
+        "assets/map/chapters/emberfall/Effects/ember_motes.png",
+        "assets/map/chapters/emberfall/Effects/smoke_wisp.png",
+        "assets/map/chapters/emberfall/Effects/ash_plume.png"
+      ]
+    },
+    "nebula": {
+      "Assets": [
+        {
+          "Name": "moonstone_slab",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/nebula/Rocks/moonstone_slab.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_nebula_moonstone_slab",
+          "OpaqueRadius": 100.73196037757987
+        },
+        {
+          "Name": "spiral_crystal",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/nebula/Rocks/spiral_crystal.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_nebula_spiral_crystal",
+          "OpaqueRadius": 103.86756107809786
+        },
+        {
+          "Name": "star_geode",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/nebula/Rocks/star_geode.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_nebula_star_geode",
+          "OpaqueRadius": 104.2154587134451
+        },
+        {
+          "Name": "celestial_pebbles",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/nebula/Rocks/celestial_pebbles.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_nebula_celestial_pebbles",
+          "OpaqueRadius": 109.81465577554843
+        },
+        {
+          "Name": "crystal_fan",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/nebula/Rocks/crystal_fan.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_nebula_crystal_fan",
+          "OpaqueRadius": 110.4665847162157
+        },
+        {
+          "Name": "hollow_starstone",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/nebula/Rocks/hollow_starstone.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_nebula_hollow_starstone",
+          "OpaqueRadius": 110.85311203635843
+        },
+        {
+          "Name": "prism_cluster",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/nebula/Rocks/prism_cluster.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_nebula_prism_cluster",
+          "OpaqueRadius": 108.82696288858914
+        },
+        {
+          "Name": "star_ore",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/nebula/Rocks/star_ore.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_nebula_star_ore",
+          "OpaqueRadius": 101.29753269845128
+        },
+        {
+          "Name": "orbit_fossil",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/nebula/Rocks/orbit_fossil.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_nebula_orbit_fossil",
+          "OpaqueRadius": 109.70329614269008
+        },
+        {
+          "Name": "energy_geode",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/nebula/Rocks/energy_geode.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_nebula_energy_geode",
+          "OpaqueRadius": 106.23531071570709
+        },
+        {
+          "Name": "rock_helix",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/nebula/Rocks/rock_helix.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_nebula_rock_helix",
+          "OpaqueRadius": 102.43903623591775
+        },
+        {
+          "Name": "meteor_cluster",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/nebula/Rocks/meteor_cluster.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_nebula_meteor_cluster",
+          "OpaqueRadius": 125.3288287465668
+        },
+        {
+          "Name": "star_observatory",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/nebula/Structures/star_observatory.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_nebula_star_observatory",
+          "OpaqueRadius": 120.00423721205946
+        },
+        {
+          "Name": "celestial_portal",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/nebula/Structures/celestial_portal.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_nebula_celestial_portal",
+          "OpaqueRadius": 119.83462988442744
+        },
+        {
+          "Name": "nebula_generator",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/nebula/Structures/nebula_generator.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_nebula_nebula_generator",
+          "OpaqueRadius": 113.66467659918243
+        },
+        {
+          "Name": "alien_monument",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/nebula/Structures/alien_monument.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_nebula_alien_monument",
+          "OpaqueRadius": 102.0199980003999
+        },
+        {
+          "Name": "star_chart",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/nebula/Structures/star_chart.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_nebula_star_chart",
+          "OpaqueRadius": 134.0075755401939
+        },
+        {
+          "Name": "orbital_lens",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/nebula/Structures/orbital_lens.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_nebula_orbital_lens",
+          "OpaqueRadius": 107.20931517693668
+        },
+        {
+          "Name": "gravity_anchor",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/nebula/Structures/gravity_anchor.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_nebula_gravity_anchor",
+          "OpaqueRadius": 107.11898020814318
+        },
+        {
+          "Name": "broken_astrolabe",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/nebula/Structures/broken_astrolabe.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_nebula_broken_astrolabe",
+          "OpaqueRadius": 119.47765745025733
+        },
+        {
+          "Name": "nebula_island",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/nebula/FloatingIslands/nebula_island.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_nebula_nebula_island"
+        },
+        {
+          "Name": "crescent_island",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/nebula/FloatingIslands/crescent_island.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_nebula_crescent_island"
+        },
+        {
+          "Name": "star_island",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/nebula/FloatingIslands/star_island.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_nebula_star_island"
+        },
+        {
+          "Name": "ring_island",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/nebula/FloatingIslands/ring_island.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_nebula_ring_island"
+        },
+        {
+          "Name": "shattered_island",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/nebula/FloatingIslands/shattered_island.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_nebula_shattered_island"
+        },
+        {
+          "Name": "luminous_fern",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/nebula/Decorations/luminous_fern.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_nebula_luminous_fern"
+        },
+        {
+          "Name": "star_beacon",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/nebula/Decorations/star_beacon.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_nebula_star_beacon"
+        },
+        {
+          "Name": "nebula_pool",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/nebula/Decorations/nebula_pool.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_nebula_nebula_pool"
+        },
+        {
+          "Name": "energy_fissure",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/nebula/Decorations/energy_fissure.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_nebula_energy_fissure"
+        },
+        {
+          "Name": "tiny_crystal",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/nebula/Decorations/tiny_crystal.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_nebula_tiny_crystal"
+        },
+        {
+          "Name": "star_flower",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/nebula/Decorations/star_flower.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_nebula_star_flower"
+        },
+        {
+          "Name": "floating_lights",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/nebula/Decorations/floating_lights.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_nebula_floating_lights"
+        },
+        {
+          "Name": "celestial_seal",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/nebula/Decorations/celestial_seal.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_nebula_celestial_seal"
+        },
+        {
+          "Name": "star_motes",
+          "Category": "Effects",
+          "Resource": "assets/map/chapters/nebula/Effects/star_motes.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "restrained static atmospheric cutout",
+          "Animation": "Chapter_Env_nebula_star_motes"
+        },
+        {
+          "Name": "cyan_wisp",
+          "Category": "Effects",
+          "Resource": "assets/map/chapters/nebula/Effects/cyan_wisp.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "restrained static atmospheric cutout",
+          "Animation": "Chapter_Env_nebula_cyan_wisp"
+        },
+        {
+          "Name": "dust_swirl",
+          "Category": "Effects",
+          "Resource": "assets/map/chapters/nebula/Effects/dust_swirl.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "restrained static atmospheric cutout",
+          "Animation": "Chapter_Env_nebula_dust_swirl"
+        },
+        {
+          "Name": "base",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/nebula/Ground/base.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain base",
+          "Animation": "Chapter_Env_nebula_base"
+        },
+        {
+          "Name": "variation",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/nebula/Ground/variation.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain variation",
+          "Animation": "Chapter_Env_nebula_variation"
+        },
+        {
+          "Name": "edge",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/nebula/Ground/edge.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain edge",
+          "Animation": "Chapter_Env_nebula_edge"
+        },
+        {
+          "Name": "outer_corner",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/nebula/Ground/outer_corner.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain outer_corner",
+          "Animation": "Chapter_Env_nebula_outer_corner"
+        },
+        {
+          "Name": "inner_corner",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/nebula/Ground/inner_corner.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain inner_corner",
+          "Animation": "Chapter_Env_nebula_inner_corner"
+        },
+        {
+          "Name": "obstacle_adjacent",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/nebula/Ground/obstacle_adjacent.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain obstacle_adjacent",
+          "Animation": "Chapter_Env_nebula_obstacle_adjacent"
+        },
+        {
+          "Name": "decorative",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/nebula/Ground/decorative.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain decorative",
+          "Animation": "Chapter_Env_nebula_decorative"
+        },
+        {
+          "Name": "special",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/nebula/Ground/special.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain special",
+          "Animation": "Chapter_Env_nebula_special"
+        },
+        {
+          "Name": "transition",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/nebula/Ground/transition.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain transition",
+          "Animation": "Chapter_Env_nebula_transition"
+        },
+        {
+          "Name": "ash_or_dust",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/nebula/Ground/ash_or_dust.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain ash_or_dust",
+          "Animation": "Chapter_Env_nebula_ash_or_dust"
+        },
+        {
+          "Name": "material_inlay",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/nebula/Ground/material_inlay.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain material_inlay",
+          "Animation": "Chapter_Env_nebula_material_inlay"
+        },
+        {
+          "Name": "fractured",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/nebula/Ground/fractured.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain fractured",
+          "Animation": "Chapter_Env_nebula_fractured"
+        },
+        {
+          "Name": "path_straight",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/nebula/Path/path_straight.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_nebula_path_straight"
+        },
+        {
+          "Name": "path_curve",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/nebula/Path/path_curve.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_nebula_path_curve"
+        },
+        {
+          "Name": "path_corner",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/nebula/Path/path_corner.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_nebula_path_corner"
+        },
+        {
+          "Name": "path_intersection",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/nebula/Path/path_intersection.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_nebula_path_intersection"
+        },
+        {
+          "Name": "path_transition",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/nebula/Path/path_transition.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_nebula_path_transition"
+        },
+        {
+          "Name": "path_spawn",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/nebula/Path/path_spawn.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_nebula_path_spawn"
+        },
+        {
+          "Name": "path_finish",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/nebula/Path/path_finish.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_nebula_path_finish"
+        },
+        {
+          "Name": "path_endcap",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/nebula/Path/path_endcap.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_nebula_path_endcap"
+        },
+        {
+          "Name": "path_material",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/nebula/Path/path_material.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "seamless shared route material",
+          "Animation": "Chapter_Env_nebula_path_material"
+        },
+        {
+          "Name": "planetary_horizon",
+          "Category": "Background",
+          "Resource": "assets/map/chapters/nebula/Background/planetary_horizon.png",
+          "Width": 1254,
+          "Height": 251,
+          "Purpose": "distant atmosphere; never a flattened gameplay map",
+          "Animation": "Chapter_Env_nebula_planetary_horizon"
+        },
+        {
+          "Name": "cliff_frame",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/nebula/Ground/cliff_frame.svg",
+          "Width": 1448,
+          "Height": 1086,
+          "Purpose": "native cropped perimeter; original collision envelope",
+          "Animation": "Chapter_Env_nebula_cliff_frame"
+        }
+      ],
+      "Ground": {
+        "base": "assets/map/chapters/nebula/Ground/base.png",
+        "variation": "assets/map/chapters/nebula/Ground/variation.png",
+        "edge": "assets/map/chapters/nebula/Ground/edge.png",
+        "outer_corner": "assets/map/chapters/nebula/Ground/outer_corner.png",
+        "inner_corner": "assets/map/chapters/nebula/Ground/inner_corner.png",
+        "obstacle_adjacent": "assets/map/chapters/nebula/Ground/obstacle_adjacent.png",
+        "decorative": "assets/map/chapters/nebula/Ground/decorative.png",
+        "special": "assets/map/chapters/nebula/Ground/special.png",
+        "transition": "assets/map/chapters/nebula/Ground/transition.png",
+        "ash_or_dust": "assets/map/chapters/nebula/Ground/ash_or_dust.png",
+        "material_inlay": "assets/map/chapters/nebula/Ground/material_inlay.png",
+        "fractured": "assets/map/chapters/nebula/Ground/fractured.png"
+      },
+      "Paths": {
+        "straight": "assets/map/chapters/nebula/Path/path_straight.png",
+        "curve": "assets/map/chapters/nebula/Path/path_curve.png",
+        "corner": "assets/map/chapters/nebula/Path/path_corner.png",
+        "intersection": "assets/map/chapters/nebula/Path/path_intersection.png",
+        "transition": "assets/map/chapters/nebula/Path/path_transition.png",
+        "spawn": "assets/map/chapters/nebula/Path/path_spawn.png",
+        "finish": "assets/map/chapters/nebula/Path/path_finish.png",
+        "endcap": "assets/map/chapters/nebula/Path/path_endcap.png"
+      },
+      "RoadMaterial": "assets/map/chapters/nebula/Path/path_material.png",
+      "Backdrop": "assets/map/chapters/nebula/Background/planetary_horizon.png",
+      "Frame": "assets/map/chapters/nebula/Ground/cliff_frame.svg",
+      "Rocks": [
+        "assets/map/chapters/nebula/Rocks/moonstone_slab.png",
+        "assets/map/chapters/nebula/Rocks/spiral_crystal.png",
+        "assets/map/chapters/nebula/Rocks/star_geode.png",
+        "assets/map/chapters/nebula/Rocks/celestial_pebbles.png",
+        "assets/map/chapters/nebula/Rocks/crystal_fan.png",
+        "assets/map/chapters/nebula/Rocks/hollow_starstone.png",
+        "assets/map/chapters/nebula/Rocks/prism_cluster.png",
+        "assets/map/chapters/nebula/Rocks/star_ore.png",
+        "assets/map/chapters/nebula/Rocks/orbit_fossil.png",
+        "assets/map/chapters/nebula/Rocks/energy_geode.png",
+        "assets/map/chapters/nebula/Rocks/rock_helix.png",
+        "assets/map/chapters/nebula/Rocks/meteor_cluster.png"
+      ],
+      "Structures": [
+        "assets/map/chapters/nebula/Structures/star_observatory.png",
+        "assets/map/chapters/nebula/Structures/celestial_portal.png",
+        "assets/map/chapters/nebula/Structures/nebula_generator.png",
+        "assets/map/chapters/nebula/Structures/alien_monument.png",
+        "assets/map/chapters/nebula/Structures/star_chart.png",
+        "assets/map/chapters/nebula/Structures/orbital_lens.png",
+        "assets/map/chapters/nebula/Structures/gravity_anchor.png",
+        "assets/map/chapters/nebula/Structures/broken_astrolabe.png"
+      ],
+      "Islands": [
+        "assets/map/chapters/nebula/FloatingIslands/nebula_island.png",
+        "assets/map/chapters/nebula/FloatingIslands/crescent_island.png",
+        "assets/map/chapters/nebula/FloatingIslands/star_island.png",
+        "assets/map/chapters/nebula/FloatingIslands/ring_island.png",
+        "assets/map/chapters/nebula/FloatingIslands/shattered_island.png"
+      ],
+      "Decorations": [
+        "assets/map/chapters/nebula/Decorations/luminous_fern.png",
+        "assets/map/chapters/nebula/Decorations/star_beacon.png",
+        "assets/map/chapters/nebula/Decorations/nebula_pool.png",
+        "assets/map/chapters/nebula/Decorations/energy_fissure.png",
+        "assets/map/chapters/nebula/Decorations/tiny_crystal.png",
+        "assets/map/chapters/nebula/Decorations/star_flower.png",
+        "assets/map/chapters/nebula/Decorations/floating_lights.png",
+        "assets/map/chapters/nebula/Decorations/celestial_seal.png"
+      ],
+      "Effects": [
+        "assets/map/chapters/nebula/Effects/star_motes.png",
+        "assets/map/chapters/nebula/Effects/cyan_wisp.png",
+        "assets/map/chapters/nebula/Effects/dust_swirl.png"
+      ]
+    },
+    "reliquary": {
+      "Assets": [
+        {
+          "Name": "snow_slab",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/reliquary/Rocks/snow_slab.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_reliquary_snow_slab",
+          "OpaqueRadius": 106.62313319720452
+        },
+        {
+          "Name": "glacier_spire",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/reliquary/Rocks/glacier_spire.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_reliquary_glacier_spire",
+          "OpaqueRadius": 125.06502346320826
+        },
+        {
+          "Name": "split_ice",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/reliquary/Rocks/split_ice.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_reliquary_split_ice",
+          "OpaqueRadius": 105.07764064044152
+        },
+        {
+          "Name": "snow_cluster",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/reliquary/Rocks/snow_cluster.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_reliquary_snow_cluster",
+          "OpaqueRadius": 111.20164833920778
+        },
+        {
+          "Name": "ice_shelf",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/reliquary/Rocks/ice_shelf.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_reliquary_ice_shelf",
+          "OpaqueRadius": 115.6001760562016
+        },
+        {
+          "Name": "dark_ice",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/reliquary/Rocks/dark_ice.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_reliquary_dark_ice",
+          "OpaqueRadius": 102.34440691936945
+        },
+        {
+          "Name": "frost_crystals",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/reliquary/Rocks/frost_crystals.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_reliquary_frost_crystals",
+          "OpaqueRadius": 114.80514172678478
+        },
+        {
+          "Name": "glacial_boulder",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/reliquary/Rocks/glacial_boulder.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_reliquary_glacial_boulder",
+          "OpaqueRadius": 113.40017953306898
+        },
+        {
+          "Name": "frozen_stele",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/reliquary/Rocks/frozen_stele.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_reliquary_frozen_stele",
+          "OpaqueRadius": 127.09996003196804
+        },
+        {
+          "Name": "ice_chimney",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/reliquary/Rocks/ice_chimney.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_reliquary_ice_chimney",
+          "OpaqueRadius": 131.9576854210631
+        },
+        {
+          "Name": "glacier_ridge",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/reliquary/Rocks/glacier_ridge.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_reliquary_glacier_ridge",
+          "OpaqueRadius": 116.06138698087096
+        },
+        {
+          "Name": "silver_ore",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/reliquary/Rocks/silver_ore.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_reliquary_silver_ore",
+          "OpaqueRadius": 101.12618221237011
+        },
+        {
+          "Name": "frozen_temple",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/reliquary/Structures/frozen_temple.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_reliquary_frozen_temple",
+          "OpaqueRadius": 121.6202324023825
+        },
+        {
+          "Name": "ice_observatory",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/reliquary/Structures/ice_observatory.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_reliquary_ice_observatory",
+          "OpaqueRadius": 120.1397477566293
+        },
+        {
+          "Name": "cryogenic_machine",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/reliquary/Structures/cryogenic_machine.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_reliquary_cryogenic_machine",
+          "OpaqueRadius": 119.38824472663352
+        },
+        {
+          "Name": "frozen_monument",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/reliquary/Structures/frozen_monument.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_reliquary_frozen_monument",
+          "OpaqueRadius": 131.20139318134306
+        },
+        {
+          "Name": "frost_pylon",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/reliquary/Structures/frost_pylon.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_reliquary_frost_pylon",
+          "OpaqueRadius": 119.51595636338071
+        },
+        {
+          "Name": "reliquary_chamber",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/reliquary/Structures/reliquary_chamber.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_reliquary_reliquary_chamber",
+          "OpaqueRadius": 117.41230437002807
+        },
+        {
+          "Name": "frozen_gateway",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/reliquary/Structures/frozen_gateway.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_reliquary_frozen_gateway",
+          "OpaqueRadius": 128.03570922560004
+        },
+        {
+          "Name": "cryo_antenna",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/reliquary/Structures/cryo_antenna.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_reliquary_cryo_antenna",
+          "OpaqueRadius": 122.60265337047937
+        },
+        {
+          "Name": "glacier_island",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/reliquary/FloatingIslands/glacier_island.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_reliquary_glacier_island"
+        },
+        {
+          "Name": "snow_island",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/reliquary/FloatingIslands/snow_island.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_reliquary_snow_island"
+        },
+        {
+          "Name": "distant_ice_island",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/reliquary/FloatingIslands/distant_ice_island.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_reliquary_distant_ice_island"
+        },
+        {
+          "Name": "ice_spire_island",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/reliquary/FloatingIslands/ice_spire_island.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_reliquary_ice_spire_island"
+        },
+        {
+          "Name": "broken_glacier_island",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/reliquary/FloatingIslands/broken_glacier_island.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_reliquary_broken_glacier_island"
+        },
+        {
+          "Name": "frozen_plant",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/reliquary/Decorations/frozen_plant.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_reliquary_frozen_plant"
+        },
+        {
+          "Name": "frost_vent",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/reliquary/Decorations/frost_vent.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_reliquary_frost_vent"
+        },
+        {
+          "Name": "frozen_pool",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/reliquary/Decorations/frozen_pool.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_reliquary_frozen_pool"
+        },
+        {
+          "Name": "frosted_crack",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/reliquary/Decorations/frosted_crack.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_reliquary_frosted_crack"
+        },
+        {
+          "Name": "tiny_crystal",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/reliquary/Decorations/tiny_crystal.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_reliquary_tiny_crystal"
+        },
+        {
+          "Name": "snow_mound",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/reliquary/Decorations/snow_mound.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_reliquary_snow_mound"
+        },
+        {
+          "Name": "frost_flowers",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/reliquary/Decorations/frost_flowers.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_reliquary_frost_flowers"
+        },
+        {
+          "Name": "frozen_seal",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/reliquary/Decorations/frozen_seal.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_reliquary_frozen_seal"
+        },
+        {
+          "Name": "snow_motes",
+          "Category": "Effects",
+          "Resource": "assets/map/chapters/reliquary/Effects/snow_motes.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "restrained static atmospheric cutout",
+          "Animation": "Chapter_Env_reliquary_snow_motes"
+        },
+        {
+          "Name": "cold_mist",
+          "Category": "Effects",
+          "Resource": "assets/map/chapters/reliquary/Effects/cold_mist.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "restrained static atmospheric cutout",
+          "Animation": "Chapter_Env_reliquary_cold_mist"
+        },
+        {
+          "Name": "ice_dust",
+          "Category": "Effects",
+          "Resource": "assets/map/chapters/reliquary/Effects/ice_dust.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "restrained static atmospheric cutout",
+          "Animation": "Chapter_Env_reliquary_ice_dust"
+        },
+        {
+          "Name": "base",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/reliquary/Ground/base.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain base",
+          "Animation": "Chapter_Env_reliquary_base"
+        },
+        {
+          "Name": "variation",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/reliquary/Ground/variation.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain variation",
+          "Animation": "Chapter_Env_reliquary_variation"
+        },
+        {
+          "Name": "edge",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/reliquary/Ground/edge.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain edge",
+          "Animation": "Chapter_Env_reliquary_edge"
+        },
+        {
+          "Name": "outer_corner",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/reliquary/Ground/outer_corner.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain outer_corner",
+          "Animation": "Chapter_Env_reliquary_outer_corner"
+        },
+        {
+          "Name": "inner_corner",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/reliquary/Ground/inner_corner.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain inner_corner",
+          "Animation": "Chapter_Env_reliquary_inner_corner"
+        },
+        {
+          "Name": "obstacle_adjacent",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/reliquary/Ground/obstacle_adjacent.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain obstacle_adjacent",
+          "Animation": "Chapter_Env_reliquary_obstacle_adjacent"
+        },
+        {
+          "Name": "decorative",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/reliquary/Ground/decorative.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain decorative",
+          "Animation": "Chapter_Env_reliquary_decorative"
+        },
+        {
+          "Name": "special",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/reliquary/Ground/special.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain special",
+          "Animation": "Chapter_Env_reliquary_special"
+        },
+        {
+          "Name": "transition",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/reliquary/Ground/transition.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain transition",
+          "Animation": "Chapter_Env_reliquary_transition"
+        },
+        {
+          "Name": "ash_or_dust",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/reliquary/Ground/ash_or_dust.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain ash_or_dust",
+          "Animation": "Chapter_Env_reliquary_ash_or_dust"
+        },
+        {
+          "Name": "material_inlay",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/reliquary/Ground/material_inlay.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain material_inlay",
+          "Animation": "Chapter_Env_reliquary_material_inlay"
+        },
+        {
+          "Name": "fractured",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/reliquary/Ground/fractured.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain fractured",
+          "Animation": "Chapter_Env_reliquary_fractured"
+        },
+        {
+          "Name": "path_straight",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/reliquary/Path/path_straight.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_reliquary_path_straight"
+        },
+        {
+          "Name": "path_curve",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/reliquary/Path/path_curve.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_reliquary_path_curve"
+        },
+        {
+          "Name": "path_corner",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/reliquary/Path/path_corner.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_reliquary_path_corner"
+        },
+        {
+          "Name": "path_intersection",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/reliquary/Path/path_intersection.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_reliquary_path_intersection"
+        },
+        {
+          "Name": "path_transition",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/reliquary/Path/path_transition.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_reliquary_path_transition"
+        },
+        {
+          "Name": "path_spawn",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/reliquary/Path/path_spawn.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_reliquary_path_spawn"
+        },
+        {
+          "Name": "path_finish",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/reliquary/Path/path_finish.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_reliquary_path_finish"
+        },
+        {
+          "Name": "path_endcap",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/reliquary/Path/path_endcap.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_reliquary_path_endcap"
+        },
+        {
+          "Name": "path_material",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/reliquary/Path/path_material.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "seamless shared route material",
+          "Animation": "Chapter_Env_reliquary_path_material"
+        },
+        {
+          "Name": "planetary_horizon",
+          "Category": "Background",
+          "Resource": "assets/map/chapters/reliquary/Background/planetary_horizon.png",
+          "Width": 1254,
+          "Height": 250,
+          "Purpose": "distant atmosphere; never a flattened gameplay map",
+          "Animation": "Chapter_Env_reliquary_planetary_horizon"
+        },
+        {
+          "Name": "cliff_frame",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/reliquary/Ground/cliff_frame.svg",
+          "Width": 1448,
+          "Height": 1086,
+          "Purpose": "native cropped perimeter; original collision envelope",
+          "Animation": "Chapter_Env_reliquary_cliff_frame"
+        }
+      ],
+      "Ground": {
+        "base": "assets/map/chapters/reliquary/Ground/base.png",
+        "variation": "assets/map/chapters/reliquary/Ground/variation.png",
+        "edge": "assets/map/chapters/reliquary/Ground/edge.png",
+        "outer_corner": "assets/map/chapters/reliquary/Ground/outer_corner.png",
+        "inner_corner": "assets/map/chapters/reliquary/Ground/inner_corner.png",
+        "obstacle_adjacent": "assets/map/chapters/reliquary/Ground/obstacle_adjacent.png",
+        "decorative": "assets/map/chapters/reliquary/Ground/decorative.png",
+        "special": "assets/map/chapters/reliquary/Ground/special.png",
+        "transition": "assets/map/chapters/reliquary/Ground/transition.png",
+        "ash_or_dust": "assets/map/chapters/reliquary/Ground/ash_or_dust.png",
+        "material_inlay": "assets/map/chapters/reliquary/Ground/material_inlay.png",
+        "fractured": "assets/map/chapters/reliquary/Ground/fractured.png"
+      },
+      "Paths": {
+        "straight": "assets/map/chapters/reliquary/Path/path_straight.png",
+        "curve": "assets/map/chapters/reliquary/Path/path_curve.png",
+        "corner": "assets/map/chapters/reliquary/Path/path_corner.png",
+        "intersection": "assets/map/chapters/reliquary/Path/path_intersection.png",
+        "transition": "assets/map/chapters/reliquary/Path/path_transition.png",
+        "spawn": "assets/map/chapters/reliquary/Path/path_spawn.png",
+        "finish": "assets/map/chapters/reliquary/Path/path_finish.png",
+        "endcap": "assets/map/chapters/reliquary/Path/path_endcap.png"
+      },
+      "RoadMaterial": "assets/map/chapters/reliquary/Path/path_material.png",
+      "Backdrop": "assets/map/chapters/reliquary/Background/planetary_horizon.png",
+      "Frame": "assets/map/chapters/reliquary/Ground/cliff_frame.svg",
+      "Rocks": [
+        "assets/map/chapters/reliquary/Rocks/snow_slab.png",
+        "assets/map/chapters/reliquary/Rocks/glacier_spire.png",
+        "assets/map/chapters/reliquary/Rocks/split_ice.png",
+        "assets/map/chapters/reliquary/Rocks/snow_cluster.png",
+        "assets/map/chapters/reliquary/Rocks/ice_shelf.png",
+        "assets/map/chapters/reliquary/Rocks/dark_ice.png",
+        "assets/map/chapters/reliquary/Rocks/frost_crystals.png",
+        "assets/map/chapters/reliquary/Rocks/glacial_boulder.png",
+        "assets/map/chapters/reliquary/Rocks/frozen_stele.png",
+        "assets/map/chapters/reliquary/Rocks/ice_chimney.png",
+        "assets/map/chapters/reliquary/Rocks/glacier_ridge.png",
+        "assets/map/chapters/reliquary/Rocks/silver_ore.png"
+      ],
+      "Structures": [
+        "assets/map/chapters/reliquary/Structures/frozen_temple.png",
+        "assets/map/chapters/reliquary/Structures/ice_observatory.png",
+        "assets/map/chapters/reliquary/Structures/cryogenic_machine.png",
+        "assets/map/chapters/reliquary/Structures/frozen_monument.png",
+        "assets/map/chapters/reliquary/Structures/frost_pylon.png",
+        "assets/map/chapters/reliquary/Structures/reliquary_chamber.png",
+        "assets/map/chapters/reliquary/Structures/frozen_gateway.png",
+        "assets/map/chapters/reliquary/Structures/cryo_antenna.png"
+      ],
+      "Islands": [
+        "assets/map/chapters/reliquary/FloatingIslands/glacier_island.png",
+        "assets/map/chapters/reliquary/FloatingIslands/snow_island.png",
+        "assets/map/chapters/reliquary/FloatingIslands/distant_ice_island.png",
+        "assets/map/chapters/reliquary/FloatingIslands/ice_spire_island.png",
+        "assets/map/chapters/reliquary/FloatingIslands/broken_glacier_island.png"
+      ],
+      "Decorations": [
+        "assets/map/chapters/reliquary/Decorations/frozen_plant.png",
+        "assets/map/chapters/reliquary/Decorations/frost_vent.png",
+        "assets/map/chapters/reliquary/Decorations/frozen_pool.png",
+        "assets/map/chapters/reliquary/Decorations/frosted_crack.png",
+        "assets/map/chapters/reliquary/Decorations/tiny_crystal.png",
+        "assets/map/chapters/reliquary/Decorations/snow_mound.png",
+        "assets/map/chapters/reliquary/Decorations/frost_flowers.png",
+        "assets/map/chapters/reliquary/Decorations/frozen_seal.png"
+      ],
+      "Effects": [
+        "assets/map/chapters/reliquary/Effects/snow_motes.png",
+        "assets/map/chapters/reliquary/Effects/cold_mist.png",
+        "assets/map/chapters/reliquary/Effects/ice_dust.png"
+      ]
+    },
+    "astral": {
+      "Assets": [
+        {
+          "Name": "carved_slab",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/astral/Rocks/carved_slab.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_astral_carved_slab",
+          "OpaqueRadius": 114.32987136109433
+        },
+        {
+          "Name": "pillar_shaft",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/astral/Rocks/pillar_shaft.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_astral_pillar_shaft",
+          "OpaqueRadius": 116.69088891450794
+        },
+        {
+          "Name": "sandstone_boulder",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/astral/Rocks/sandstone_boulder.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_astral_sandstone_boulder",
+          "OpaqueRadius": 112.11357772772621
+        },
+        {
+          "Name": "stone_fragments",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/astral/Rocks/stone_fragments.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_astral_stone_fragments",
+          "OpaqueRadius": 97.26804291051643
+        },
+        {
+          "Name": "fluted_columns",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/astral/Rocks/fluted_columns.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_astral_fluted_columns",
+          "OpaqueRadius": 110.2266141020775
+        },
+        {
+          "Name": "carved_block",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/astral/Rocks/carved_block.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_astral_carved_block",
+          "OpaqueRadius": 110.6876257906115
+        },
+        {
+          "Name": "energy_crystal",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/astral/Rocks/energy_crystal.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_astral_energy_crystal",
+          "OpaqueRadius": 115.6001760562016
+        },
+        {
+          "Name": "statue_head",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/astral/Rocks/statue_head.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_astral_statue_head",
+          "OpaqueRadius": 123.01652779682617
+        },
+        {
+          "Name": "celestial_stele",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/astral/Rocks/celestial_stele.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_astral_celestial_stele",
+          "OpaqueRadius": 118.67476162392619
+        },
+        {
+          "Name": "broken_capital",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/astral/Rocks/broken_capital.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_astral_broken_capital",
+          "OpaqueRadius": 114.29425630903836
+        },
+        {
+          "Name": "arch_fragment",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/astral/Rocks/arch_fragment.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_astral_arch_fragment",
+          "OpaqueRadius": 126.80785231707178
+        },
+        {
+          "Name": "bronze_relic",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/astral/Rocks/bronze_relic.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_astral_bronze_relic",
+          "OpaqueRadius": 109.78682665335315
+        },
+        {
+          "Name": "celestial_temple",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/astral/Structures/celestial_temple.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_astral_celestial_temple",
+          "OpaqueRadius": 113.83022847155415
+        },
+        {
+          "Name": "solar_observatory",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/astral/Structures/solar_observatory.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_astral_solar_observatory",
+          "OpaqueRadius": 118.27553482998907
+        },
+        {
+          "Name": "broken_monument",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/astral/Structures/broken_monument.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_astral_broken_monument",
+          "OpaqueRadius": 119.41379816699569
+        },
+        {
+          "Name": "alien_gateway",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/astral/Structures/alien_gateway.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_astral_alien_gateway",
+          "OpaqueRadius": 123.79490958164057
+        },
+        {
+          "Name": "energy_machine",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/astral/Structures/energy_machine.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_astral_energy_machine",
+          "OpaqueRadius": 112.67971810589327
+        },
+        {
+          "Name": "celestial_altar",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/astral/Structures/celestial_altar.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_astral_celestial_altar",
+          "OpaqueRadius": 113.89280584559492
+        },
+        {
+          "Name": "armillary_sanctuary",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/astral/Structures/armillary_sanctuary.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_astral_armillary_sanctuary",
+          "OpaqueRadius": 115.22985472038724
+        },
+        {
+          "Name": "ruined_colonnade",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/astral/Structures/ruined_colonnade.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_astral_ruined_colonnade",
+          "OpaqueRadius": 121.97082978791136
+        },
+        {
+          "Name": "temple_island",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/astral/FloatingIslands/temple_island.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_astral_temple_island"
+        },
+        {
+          "Name": "celestial_platform",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/astral/FloatingIslands/celestial_platform.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_astral_celestial_platform"
+        },
+        {
+          "Name": "distant_stone_island",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/astral/FloatingIslands/distant_stone_island.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_astral_distant_stone_island"
+        },
+        {
+          "Name": "architectural_island",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/astral/FloatingIslands/architectural_island.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_astral_architectural_island"
+        },
+        {
+          "Name": "broken_ancient_island",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/astral/FloatingIslands/broken_ancient_island.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_astral_broken_ancient_island"
+        },
+        {
+          "Name": "golden_plant",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/astral/Decorations/golden_plant.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_astral_golden_plant"
+        },
+        {
+          "Name": "incense_vent",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/astral/Decorations/incense_vent.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_astral_incense_vent"
+        },
+        {
+          "Name": "energy_pool",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/astral/Decorations/energy_pool.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_astral_energy_pool"
+        },
+        {
+          "Name": "ground_channel",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/astral/Decorations/ground_channel.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_astral_ground_channel"
+        },
+        {
+          "Name": "tiny_crystal",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/astral/Decorations/tiny_crystal.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_astral_tiny_crystal"
+        },
+        {
+          "Name": "sandstone_rubble",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/astral/Decorations/sandstone_rubble.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_astral_sandstone_rubble"
+        },
+        {
+          "Name": "alien_statue",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/astral/Decorations/alien_statue.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_astral_alien_statue"
+        },
+        {
+          "Name": "celestial_seal",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/astral/Decorations/celestial_seal.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_astral_celestial_seal"
+        },
+        {
+          "Name": "gold_motes",
+          "Category": "Effects",
+          "Resource": "assets/map/chapters/astral/Effects/gold_motes.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "restrained static atmospheric cutout",
+          "Animation": "Chapter_Env_astral_gold_motes"
+        },
+        {
+          "Name": "energy_wisp",
+          "Category": "Effects",
+          "Resource": "assets/map/chapters/astral/Effects/energy_wisp.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "restrained static atmospheric cutout",
+          "Animation": "Chapter_Env_astral_energy_wisp"
+        },
+        {
+          "Name": "sand_plume",
+          "Category": "Effects",
+          "Resource": "assets/map/chapters/astral/Effects/sand_plume.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "restrained static atmospheric cutout",
+          "Animation": "Chapter_Env_astral_sand_plume"
+        },
+        {
+          "Name": "base",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/astral/Ground/base.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain base",
+          "Animation": "Chapter_Env_astral_base"
+        },
+        {
+          "Name": "variation",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/astral/Ground/variation.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain variation",
+          "Animation": "Chapter_Env_astral_variation"
+        },
+        {
+          "Name": "edge",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/astral/Ground/edge.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain edge",
+          "Animation": "Chapter_Env_astral_edge"
+        },
+        {
+          "Name": "outer_corner",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/astral/Ground/outer_corner.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain outer_corner",
+          "Animation": "Chapter_Env_astral_outer_corner"
+        },
+        {
+          "Name": "inner_corner",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/astral/Ground/inner_corner.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain inner_corner",
+          "Animation": "Chapter_Env_astral_inner_corner"
+        },
+        {
+          "Name": "obstacle_adjacent",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/astral/Ground/obstacle_adjacent.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain obstacle_adjacent",
+          "Animation": "Chapter_Env_astral_obstacle_adjacent"
+        },
+        {
+          "Name": "decorative",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/astral/Ground/decorative.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain decorative",
+          "Animation": "Chapter_Env_astral_decorative"
+        },
+        {
+          "Name": "special",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/astral/Ground/special.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain special",
+          "Animation": "Chapter_Env_astral_special"
+        },
+        {
+          "Name": "transition",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/astral/Ground/transition.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain transition",
+          "Animation": "Chapter_Env_astral_transition"
+        },
+        {
+          "Name": "ash_or_dust",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/astral/Ground/ash_or_dust.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain ash_or_dust",
+          "Animation": "Chapter_Env_astral_ash_or_dust"
+        },
+        {
+          "Name": "material_inlay",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/astral/Ground/material_inlay.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain material_inlay",
+          "Animation": "Chapter_Env_astral_material_inlay"
+        },
+        {
+          "Name": "fractured",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/astral/Ground/fractured.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain fractured",
+          "Animation": "Chapter_Env_astral_fractured"
+        },
+        {
+          "Name": "path_straight",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/astral/Path/path_straight.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_astral_path_straight"
+        },
+        {
+          "Name": "path_curve",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/astral/Path/path_curve.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_astral_path_curve"
+        },
+        {
+          "Name": "path_corner",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/astral/Path/path_corner.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_astral_path_corner"
+        },
+        {
+          "Name": "path_intersection",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/astral/Path/path_intersection.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_astral_path_intersection"
+        },
+        {
+          "Name": "path_transition",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/astral/Path/path_transition.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_astral_path_transition"
+        },
+        {
+          "Name": "path_spawn",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/astral/Path/path_spawn.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_astral_path_spawn"
+        },
+        {
+          "Name": "path_finish",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/astral/Path/path_finish.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_astral_path_finish"
+        },
+        {
+          "Name": "path_endcap",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/astral/Path/path_endcap.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_astral_path_endcap"
+        },
+        {
+          "Name": "path_material",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/astral/Path/path_material.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "seamless shared route material",
+          "Animation": "Chapter_Env_astral_path_material"
+        },
+        {
+          "Name": "planetary_horizon",
+          "Category": "Background",
+          "Resource": "assets/map/chapters/astral/Background/planetary_horizon.png",
+          "Width": 1254,
+          "Height": 251,
+          "Purpose": "distant atmosphere; never a flattened gameplay map",
+          "Animation": "Chapter_Env_astral_planetary_horizon"
+        },
+        {
+          "Name": "cliff_frame",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/astral/Ground/cliff_frame.svg",
+          "Width": 1448,
+          "Height": 1086,
+          "Purpose": "native cropped perimeter; original collision envelope",
+          "Animation": "Chapter_Env_astral_cliff_frame"
+        }
+      ],
+      "Ground": {
+        "base": "assets/map/chapters/astral/Ground/base.png",
+        "variation": "assets/map/chapters/astral/Ground/variation.png",
+        "edge": "assets/map/chapters/astral/Ground/edge.png",
+        "outer_corner": "assets/map/chapters/astral/Ground/outer_corner.png",
+        "inner_corner": "assets/map/chapters/astral/Ground/inner_corner.png",
+        "obstacle_adjacent": "assets/map/chapters/astral/Ground/obstacle_adjacent.png",
+        "decorative": "assets/map/chapters/astral/Ground/decorative.png",
+        "special": "assets/map/chapters/astral/Ground/special.png",
+        "transition": "assets/map/chapters/astral/Ground/transition.png",
+        "ash_or_dust": "assets/map/chapters/astral/Ground/ash_or_dust.png",
+        "material_inlay": "assets/map/chapters/astral/Ground/material_inlay.png",
+        "fractured": "assets/map/chapters/astral/Ground/fractured.png"
+      },
+      "Paths": {
+        "straight": "assets/map/chapters/astral/Path/path_straight.png",
+        "curve": "assets/map/chapters/astral/Path/path_curve.png",
+        "corner": "assets/map/chapters/astral/Path/path_corner.png",
+        "intersection": "assets/map/chapters/astral/Path/path_intersection.png",
+        "transition": "assets/map/chapters/astral/Path/path_transition.png",
+        "spawn": "assets/map/chapters/astral/Path/path_spawn.png",
+        "finish": "assets/map/chapters/astral/Path/path_finish.png",
+        "endcap": "assets/map/chapters/astral/Path/path_endcap.png"
+      },
+      "RoadMaterial": "assets/map/chapters/astral/Path/path_material.png",
+      "Backdrop": "assets/map/chapters/astral/Background/planetary_horizon.png",
+      "Frame": "assets/map/chapters/astral/Ground/cliff_frame.svg",
+      "Rocks": [
+        "assets/map/chapters/astral/Rocks/carved_slab.png",
+        "assets/map/chapters/astral/Rocks/pillar_shaft.png",
+        "assets/map/chapters/astral/Rocks/sandstone_boulder.png",
+        "assets/map/chapters/astral/Rocks/stone_fragments.png",
+        "assets/map/chapters/astral/Rocks/fluted_columns.png",
+        "assets/map/chapters/astral/Rocks/carved_block.png",
+        "assets/map/chapters/astral/Rocks/energy_crystal.png",
+        "assets/map/chapters/astral/Rocks/statue_head.png",
+        "assets/map/chapters/astral/Rocks/celestial_stele.png",
+        "assets/map/chapters/astral/Rocks/broken_capital.png",
+        "assets/map/chapters/astral/Rocks/arch_fragment.png",
+        "assets/map/chapters/astral/Rocks/bronze_relic.png"
+      ],
+      "Structures": [
+        "assets/map/chapters/astral/Structures/celestial_temple.png",
+        "assets/map/chapters/astral/Structures/solar_observatory.png",
+        "assets/map/chapters/astral/Structures/broken_monument.png",
+        "assets/map/chapters/astral/Structures/alien_gateway.png",
+        "assets/map/chapters/astral/Structures/energy_machine.png",
+        "assets/map/chapters/astral/Structures/celestial_altar.png",
+        "assets/map/chapters/astral/Structures/armillary_sanctuary.png",
+        "assets/map/chapters/astral/Structures/ruined_colonnade.png"
+      ],
+      "Islands": [
+        "assets/map/chapters/astral/FloatingIslands/temple_island.png",
+        "assets/map/chapters/astral/FloatingIslands/celestial_platform.png",
+        "assets/map/chapters/astral/FloatingIslands/distant_stone_island.png",
+        "assets/map/chapters/astral/FloatingIslands/architectural_island.png",
+        "assets/map/chapters/astral/FloatingIslands/broken_ancient_island.png"
+      ],
+      "Decorations": [
+        "assets/map/chapters/astral/Decorations/golden_plant.png",
+        "assets/map/chapters/astral/Decorations/incense_vent.png",
+        "assets/map/chapters/astral/Decorations/energy_pool.png",
+        "assets/map/chapters/astral/Decorations/ground_channel.png",
+        "assets/map/chapters/astral/Decorations/tiny_crystal.png",
+        "assets/map/chapters/astral/Decorations/sandstone_rubble.png",
+        "assets/map/chapters/astral/Decorations/alien_statue.png",
+        "assets/map/chapters/astral/Decorations/celestial_seal.png"
+      ],
+      "Effects": [
+        "assets/map/chapters/astral/Effects/gold_motes.png",
+        "assets/map/chapters/astral/Effects/energy_wisp.png",
+        "assets/map/chapters/astral/Effects/sand_plume.png"
+      ]
+    },
+    "belt": {
+      "Assets": [
+        {
+          "Name": "meteor_slab",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/belt/Rocks/meteor_slab.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_belt_meteor_slab",
+          "OpaqueRadius": 108.25441167311595
+        },
+        {
+          "Name": "nickel_spire",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/belt/Rocks/nickel_spire.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_belt_nickel_spire",
+          "OpaqueRadius": 112.78808600206071
+        },
+        {
+          "Name": "split_asteroid",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/belt/Rocks/split_asteroid.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_belt_split_asteroid",
+          "OpaqueRadius": 105.4456378974
+        },
+        {
+          "Name": "meteor_cluster",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/belt/Rocks/meteor_cluster.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_belt_meteor_cluster",
+          "OpaqueRadius": 118.93160394008115
+        },
+        {
+          "Name": "iron_columns",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/belt/Rocks/iron_columns.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_belt_iron_columns",
+          "OpaqueRadius": 108.88779163215975
+        },
+        {
+          "Name": "copper_asteroid",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/belt/Rocks/copper_asteroid.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_belt_copper_asteroid",
+          "OpaqueRadius": 104.39628899525607
+        },
+        {
+          "Name": "mineral_crystal",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/belt/Rocks/mineral_crystal.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_belt_mineral_crystal",
+          "OpaqueRadius": 106.84750831564858
+        },
+        {
+          "Name": "meteor_boulder",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/belt/Rocks/meteor_boulder.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_belt_meteor_boulder",
+          "OpaqueRadius": 105.32473082471591
+        },
+        {
+          "Name": "alien_bulkhead",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/belt/Rocks/alien_bulkhead.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_belt_alien_bulkhead",
+          "OpaqueRadius": 115.56936206565572
+        },
+        {
+          "Name": "hollow_asteroid",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/belt/Rocks/hollow_asteroid.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_belt_hollow_asteroid",
+          "OpaqueRadius": 102.90094152187085
+        },
+        {
+          "Name": "metallic_ridge",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/belt/Rocks/metallic_ridge.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_belt_metallic_ridge",
+          "OpaqueRadius": 125.84264209067892
+        },
+        {
+          "Name": "ore_node",
+          "Category": "Rocks",
+          "Resource": "assets/map/chapters/belt/Rocks/ore_node.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_belt_ore_node",
+          "OpaqueRadius": 102.65783625729296
+        },
+        {
+          "Name": "mining_station",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/belt/Structures/mining_station.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_belt_mining_station",
+          "OpaqueRadius": 113.28791488746656
+        },
+        {
+          "Name": "drill_rig",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/belt/Structures/drill_rig.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_belt_drill_rig",
+          "OpaqueRadius": 125.43419299367578
+        },
+        {
+          "Name": "mining_tower",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/belt/Structures/mining_tower.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_belt_mining_tower",
+          "OpaqueRadius": 121.01680553602503
+        },
+        {
+          "Name": "alien_factory",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/belt/Structures/alien_factory.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_belt_alien_factory",
+          "OpaqueRadius": 115.17243480636087
+        },
+        {
+          "Name": "space_antenna",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/belt/Structures/space_antenna.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_belt_space_antenna",
+          "OpaqueRadius": 117.6027681329474
+        },
+        {
+          "Name": "energy_capacitor",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/belt/Structures/energy_capacitor.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_belt_energy_capacitor",
+          "OpaqueRadius": 113.77208953938367
+        },
+        {
+          "Name": "salvage_crane",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/belt/Structures/salvage_crane.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_belt_salvage_crane",
+          "OpaqueRadius": 121.20151005754919
+        },
+        {
+          "Name": "breached_habitat",
+          "Category": "Structures",
+          "Resource": "assets/map/chapters/belt/Structures/breached_habitat.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "blocking prop art",
+          "Animation": "Chapter_Env_belt_breached_habitat",
+          "OpaqueRadius": 117.6027681329474
+        },
+        {
+          "Name": "metal_asteroid",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/belt/FloatingIslands/metal_asteroid.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_belt_metal_asteroid"
+        },
+        {
+          "Name": "industrial_platform",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/belt/FloatingIslands/industrial_platform.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_belt_industrial_platform"
+        },
+        {
+          "Name": "distant_meteor",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/belt/FloatingIslands/distant_meteor.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_belt_distant_meteor"
+        },
+        {
+          "Name": "industrial_asteroid",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/belt/FloatingIslands/industrial_asteroid.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_belt_industrial_asteroid"
+        },
+        {
+          "Name": "planetary_chunk",
+          "Category": "FloatingIslands",
+          "Resource": "assets/map/chapters/belt/FloatingIslands/planetary_chunk.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "distant nonblocking island",
+          "Animation": "Chapter_Env_belt_planetary_chunk"
+        },
+        {
+          "Name": "copper_plant",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/belt/Decorations/copper_plant.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_belt_copper_plant"
+        },
+        {
+          "Name": "steam_vent",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/belt/Decorations/steam_vent.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_belt_steam_vent"
+        },
+        {
+          "Name": "cooling_pool",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/belt/Decorations/cooling_pool.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_belt_cooling_pool"
+        },
+        {
+          "Name": "cable_channel",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/belt/Decorations/cable_channel.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_belt_cable_channel"
+        },
+        {
+          "Name": "tiny_mineral",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/belt/Decorations/tiny_mineral.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_belt_tiny_mineral"
+        },
+        {
+          "Name": "scrap_heap",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/belt/Decorations/scrap_heap.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_belt_scrap_heap"
+        },
+        {
+          "Name": "amber_lamp",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/belt/Decorations/amber_lamp.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_belt_amber_lamp"
+        },
+        {
+          "Name": "maintenance_hatch",
+          "Category": "Decorations",
+          "Resource": "assets/map/chapters/belt/Decorations/maintenance_hatch.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "nonblocking ground detail",
+          "Animation": "Chapter_Env_belt_maintenance_hatch"
+        },
+        {
+          "Name": "debris_specks",
+          "Category": "Effects",
+          "Resource": "assets/map/chapters/belt/Effects/debris_specks.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "restrained static atmospheric cutout",
+          "Animation": "Chapter_Env_belt_debris_specks"
+        },
+        {
+          "Name": "steam_wisp",
+          "Category": "Effects",
+          "Resource": "assets/map/chapters/belt/Effects/steam_wisp.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "restrained static atmospheric cutout",
+          "Animation": "Chapter_Env_belt_steam_wisp"
+        },
+        {
+          "Name": "spark_plume",
+          "Category": "Effects",
+          "Resource": "assets/map/chapters/belt/Effects/spark_plume.png",
+          "Width": 256,
+          "Height": 256,
+          "Purpose": "restrained static atmospheric cutout",
+          "Animation": "Chapter_Env_belt_spark_plume"
+        },
+        {
+          "Name": "base",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/belt/Ground/base.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain base",
+          "Animation": "Chapter_Env_belt_base"
+        },
+        {
+          "Name": "variation",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/belt/Ground/variation.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain variation",
+          "Animation": "Chapter_Env_belt_variation"
+        },
+        {
+          "Name": "edge",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/belt/Ground/edge.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain edge",
+          "Animation": "Chapter_Env_belt_edge"
+        },
+        {
+          "Name": "outer_corner",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/belt/Ground/outer_corner.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain outer_corner",
+          "Animation": "Chapter_Env_belt_outer_corner"
+        },
+        {
+          "Name": "inner_corner",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/belt/Ground/inner_corner.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain inner_corner",
+          "Animation": "Chapter_Env_belt_inner_corner"
+        },
+        {
+          "Name": "obstacle_adjacent",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/belt/Ground/obstacle_adjacent.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain obstacle_adjacent",
+          "Animation": "Chapter_Env_belt_obstacle_adjacent"
+        },
+        {
+          "Name": "decorative",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/belt/Ground/decorative.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain decorative",
+          "Animation": "Chapter_Env_belt_decorative"
+        },
+        {
+          "Name": "special",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/belt/Ground/special.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain special",
+          "Animation": "Chapter_Env_belt_special"
+        },
+        {
+          "Name": "transition",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/belt/Ground/transition.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain transition",
+          "Animation": "Chapter_Env_belt_transition"
+        },
+        {
+          "Name": "ash_or_dust",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/belt/Ground/ash_or_dust.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain ash_or_dust",
+          "Animation": "Chapter_Env_belt_ash_or_dust"
+        },
+        {
+          "Name": "material_inlay",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/belt/Ground/material_inlay.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain material_inlay",
+          "Animation": "Chapter_Env_belt_material_inlay"
+        },
+        {
+          "Name": "fractured",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/belt/Ground/fractured.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "modular terrain fractured",
+          "Animation": "Chapter_Env_belt_fractured"
+        },
+        {
+          "Name": "path_straight",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/belt/Path/path_straight.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_belt_path_straight"
+        },
+        {
+          "Name": "path_curve",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/belt/Path/path_curve.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_belt_path_curve"
+        },
+        {
+          "Name": "path_corner",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/belt/Path/path_corner.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_belt_path_corner"
+        },
+        {
+          "Name": "path_intersection",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/belt/Path/path_intersection.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_belt_path_intersection"
+        },
+        {
+          "Name": "path_transition",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/belt/Path/path_transition.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_belt_path_transition"
+        },
+        {
+          "Name": "path_spawn",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/belt/Path/path_spawn.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_belt_path_spawn"
+        },
+        {
+          "Name": "path_finish",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/belt/Path/path_finish.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_belt_path_finish"
+        },
+        {
+          "Name": "path_endcap",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/belt/Path/path_endcap.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "60-unit route module; visual only",
+          "Animation": "Chapter_Env_belt_path_endcap"
+        },
+        {
+          "Name": "path_material",
+          "Category": "Path",
+          "Resource": "assets/map/chapters/belt/Path/path_material.png",
+          "Width": 128,
+          "Height": 128,
+          "Purpose": "seamless shared route material",
+          "Animation": "Chapter_Env_belt_path_material"
+        },
+        {
+          "Name": "planetary_horizon",
+          "Category": "Background",
+          "Resource": "assets/map/chapters/belt/Background/planetary_horizon.png",
+          "Width": 1254,
+          "Height": 251,
+          "Purpose": "distant atmosphere; never a flattened gameplay map",
+          "Animation": "Chapter_Env_belt_planetary_horizon"
+        },
+        {
+          "Name": "cliff_frame",
+          "Category": "Ground",
+          "Resource": "assets/map/chapters/belt/Ground/cliff_frame.svg",
+          "Width": 1448,
+          "Height": 1086,
+          "Purpose": "native cropped perimeter; original collision envelope",
+          "Animation": "Chapter_Env_belt_cliff_frame"
+        }
+      ],
+      "Ground": {
+        "base": "assets/map/chapters/belt/Ground/base.png",
+        "variation": "assets/map/chapters/belt/Ground/variation.png",
+        "edge": "assets/map/chapters/belt/Ground/edge.png",
+        "outer_corner": "assets/map/chapters/belt/Ground/outer_corner.png",
+        "inner_corner": "assets/map/chapters/belt/Ground/inner_corner.png",
+        "obstacle_adjacent": "assets/map/chapters/belt/Ground/obstacle_adjacent.png",
+        "decorative": "assets/map/chapters/belt/Ground/decorative.png",
+        "special": "assets/map/chapters/belt/Ground/special.png",
+        "transition": "assets/map/chapters/belt/Ground/transition.png",
+        "ash_or_dust": "assets/map/chapters/belt/Ground/ash_or_dust.png",
+        "material_inlay": "assets/map/chapters/belt/Ground/material_inlay.png",
+        "fractured": "assets/map/chapters/belt/Ground/fractured.png"
+      },
+      "Paths": {
+        "straight": "assets/map/chapters/belt/Path/path_straight.png",
+        "curve": "assets/map/chapters/belt/Path/path_curve.png",
+        "corner": "assets/map/chapters/belt/Path/path_corner.png",
+        "intersection": "assets/map/chapters/belt/Path/path_intersection.png",
+        "transition": "assets/map/chapters/belt/Path/path_transition.png",
+        "spawn": "assets/map/chapters/belt/Path/path_spawn.png",
+        "finish": "assets/map/chapters/belt/Path/path_finish.png",
+        "endcap": "assets/map/chapters/belt/Path/path_endcap.png"
+      },
+      "RoadMaterial": "assets/map/chapters/belt/Path/path_material.png",
+      "Backdrop": "assets/map/chapters/belt/Background/planetary_horizon.png",
+      "Frame": "assets/map/chapters/belt/Ground/cliff_frame.svg",
+      "Rocks": [
+        "assets/map/chapters/belt/Rocks/meteor_slab.png",
+        "assets/map/chapters/belt/Rocks/nickel_spire.png",
+        "assets/map/chapters/belt/Rocks/split_asteroid.png",
+        "assets/map/chapters/belt/Rocks/meteor_cluster.png",
+        "assets/map/chapters/belt/Rocks/iron_columns.png",
+        "assets/map/chapters/belt/Rocks/copper_asteroid.png",
+        "assets/map/chapters/belt/Rocks/mineral_crystal.png",
+        "assets/map/chapters/belt/Rocks/meteor_boulder.png",
+        "assets/map/chapters/belt/Rocks/alien_bulkhead.png",
+        "assets/map/chapters/belt/Rocks/hollow_asteroid.png",
+        "assets/map/chapters/belt/Rocks/metallic_ridge.png",
+        "assets/map/chapters/belt/Rocks/ore_node.png"
+      ],
+      "Structures": [
+        "assets/map/chapters/belt/Structures/mining_station.png",
+        "assets/map/chapters/belt/Structures/drill_rig.png",
+        "assets/map/chapters/belt/Structures/mining_tower.png",
+        "assets/map/chapters/belt/Structures/alien_factory.png",
+        "assets/map/chapters/belt/Structures/space_antenna.png",
+        "assets/map/chapters/belt/Structures/energy_capacitor.png",
+        "assets/map/chapters/belt/Structures/salvage_crane.png",
+        "assets/map/chapters/belt/Structures/breached_habitat.png"
+      ],
+      "Islands": [
+        "assets/map/chapters/belt/FloatingIslands/metal_asteroid.png",
+        "assets/map/chapters/belt/FloatingIslands/industrial_platform.png",
+        "assets/map/chapters/belt/FloatingIslands/distant_meteor.png",
+        "assets/map/chapters/belt/FloatingIslands/industrial_asteroid.png",
+        "assets/map/chapters/belt/FloatingIslands/planetary_chunk.png"
+      ],
+      "Decorations": [
+        "assets/map/chapters/belt/Decorations/copper_plant.png",
+        "assets/map/chapters/belt/Decorations/steam_vent.png",
+        "assets/map/chapters/belt/Decorations/cooling_pool.png",
+        "assets/map/chapters/belt/Decorations/cable_channel.png",
+        "assets/map/chapters/belt/Decorations/tiny_mineral.png",
+        "assets/map/chapters/belt/Decorations/scrap_heap.png",
+        "assets/map/chapters/belt/Decorations/amber_lamp.png",
+        "assets/map/chapters/belt/Decorations/maintenance_hatch.png"
+      ],
+      "Effects": [
+        "assets/map/chapters/belt/Effects/debris_specks.png",
+        "assets/map/chapters/belt/Effects/steam_wisp.png",
+        "assets/map/chapters/belt/Effects/spark_plume.png"
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "result": {
+    "checks": [
+      "Five playable chapters and three unlaunchable expansion definitions",
+      "Native scene transition Game Scene",
+      "Selected chapter owns one native road 3",
+      "Selected seamless terrain is loaded without a fallback texture 3",
+      "Rendering / movement / placement share one 60-unit centerline 3",
+      "Render-only enemy reduction retains both tower footprints 3",
+      "All actual blocking props clear the selected route 3",
+      "Spawn and Finish markers share route endpoints 3",
+      "Fitted world stays inside gameplay viewport 3",
+      "Every normal/Fusion footprint has at least forty legal sample sites 3"
+    ],
+    "results": [
+      {
+        "chapter": 3,
+        "map": "reliquary",
+        "length": 9095.3261,
+        "turns": 16,
+        "width": 60,
+        "props": 16,
+        "sites": {
+          "StarCannonTower": 371,
+          "NebulaBloomTower": 145,
+          "MeteorStormArray": 177,
+          "PlaguebreakerCannon": 201,
+          "SupernovaObliterator": 156,
+          "ToxicConstellation": 208,
+          "VenomCataclysm": 156
+        },
+        "zoom": 0.5373931623931624,
+        "samples": {},
+        "travel": {}
+      }
+    ],
+    "visualOnly": true
+  },
+  "progress": [
+    "BALANCE PROGRESS {\"chapter\":3,\"sites\":{\"StarCannonTower\":371,\"NebulaBloomTower\":145,\"MeteorStormArray\":177,\"PlaguebreakerCannon\":201,\"SupernovaObliterator\":156,\"ToxicConstellation\":208,\"VenomCataclysm\":156}}"
+  ],
+  "consoleErrors": []
+}

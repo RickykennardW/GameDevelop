@@ -1,0 +1,685 @@
+{
+  "result": {
+    "checks": [
+      "Five playable chapters and three unlaunchable expansion definitions",
+      "Native scene transition Game Scene",
+      "Selected chapter owns one native road 1",
+      "Selected seamless terrain is loaded without a fallback texture 1",
+      "Rendering / movement / placement share one 60-unit centerline 1",
+      "Render-only enemy reduction retains both tower footprints 1",
+      "All actual blocking props clear the selected route 1",
+      "Spawn and Finish markers share route endpoints 1",
+      "Fitted world stays inside gameplay viewport 1",
+      "Every normal/Fusion footprint has at least forty legal sample sites 1",
+      "Paid native StarCannonTower placement 1",
+      "Tower spacing and road rejection StarCannonTower 1",
+      "Native sale refunds and frees footprint StarCannonTower 1",
+      "Movement fixture starts before first spawn 1",
+      "Six archetypes animate and traverse every heading to Finish 1",
+      "Stationary Golem casting remains active during travel 1",
+      "Exactly six valid arrivals deduct six Lives 1",
+      "Native scene transition Levels",
+      "Native scene transition Game Scene",
+      "Selected chapter owns one native road 2",
+      "Selected seamless terrain is loaded without a fallback texture 2",
+      "Rendering / movement / placement share one 60-unit centerline 2",
+      "Render-only enemy reduction retains both tower footprints 2",
+      "All actual blocking props clear the selected route 2",
+      "Spawn and Finish markers share route endpoints 2",
+      "Fitted world stays inside gameplay viewport 2",
+      "Every normal/Fusion footprint has at least forty legal sample sites 2",
+      "Paid native StarCannonTower placement 2",
+      "Tower spacing and road rejection StarCannonTower 2",
+      "Native sale refunds and frees footprint StarCannonTower 2",
+      "Paid native NebulaBloomTower placement 2",
+      "Tower spacing and road rejection NebulaBloomTower 2",
+      "Native sale refunds and frees footprint NebulaBloomTower 2",
+      "Movement fixture starts before first spawn 2",
+      "Six archetypes animate and traverse every heading to Finish 2",
+      "Stationary Golem casting remains active during travel 2",
+      "Exactly six valid arrivals deduct six Lives 2",
+      "Native scene transition Levels",
+      "Native scene transition Game Scene",
+      "Selected chapter owns one native road 3",
+      "Selected seamless terrain is loaded without a fallback texture 3",
+      "Rendering / movement / placement share one 60-unit centerline 3",
+      "Render-only enemy reduction retains both tower footprints 3",
+      "All actual blocking props clear the selected route 3",
+      "Spawn and Finish markers share route endpoints 3",
+      "Fitted world stays inside gameplay viewport 3",
+      "Every normal/Fusion footprint has at least forty legal sample sites 3",
+      "Paid native StarCannonTower placement 3",
+      "Tower spacing and road rejection StarCannonTower 3",
+      "Native sale refunds and frees footprint StarCannonTower 3",
+      "Paid native NebulaBloomTower placement 3",
+      "Tower spacing and road rejection NebulaBloomTower 3",
+      "Native sale refunds and frees footprint NebulaBloomTower 3",
+      "Movement fixture starts before first spawn 3",
+      "Six archetypes animate and traverse every heading to Finish 3",
+      "Stationary Golem casting remains active during travel 3",
+      "Exactly six valid arrivals deduct six Lives 3",
+      "Native scene transition Levels",
+      "Native scene transition Game Scene",
+      "Selected chapter owns one native road 4",
+      "Selected seamless terrain is loaded without a fallback texture 4",
+      "Rendering / movement / placement share one 60-unit centerline 4",
+      "Render-only enemy reduction retains both tower footprints 4",
+      "All actual blocking props clear the selected route 4",
+      "Spawn and Finish markers share route endpoints 4",
+      "Fitted world stays inside gameplay viewport 4",
+      "Every normal/Fusion footprint has at least forty legal sample sites 4",
+      "Paid native StarCannonTower placement 4",
+      "Tower spacing and road rejection StarCannonTower 4",
+      "Native sale refunds and frees footprint StarCannonTower 4",
+      "Paid native NebulaBloomTower placement 4",
+      "Tower spacing and road rejection NebulaBloomTower 4",
+      "Native sale refunds and frees footprint NebulaBloomTower 4",
+      "Movement fixture starts before first spawn 4",
+      "Six archetypes animate and traverse every heading to Finish 4",
+      "Stationary Golem casting remains active during travel 4",
+      "Exactly six valid arrivals deduct six Lives 4",
+      "Native scene transition Levels",
+      "Native scene transition Game Scene",
+      "Selected chapter owns one native road 5",
+      "Selected seamless terrain is loaded without a fallback texture 5",
+      "Rendering / movement / placement share one 60-unit centerline 5",
+      "Render-only enemy reduction retains both tower footprints 5",
+      "All actual blocking props clear the selected route 5",
+      "Spawn and Finish markers share route endpoints 5",
+      "Fitted world stays inside gameplay viewport 5",
+      "Every normal/Fusion footprint has at least forty legal sample sites 5",
+      "Paid native StarCannonTower placement 5",
+      "Tower spacing and road rejection StarCannonTower 5",
+      "Native sale refunds and frees footprint StarCannonTower 5",
+      "Paid native NebulaBloomTower placement 5",
+      "Tower spacing and road rejection NebulaBloomTower 5",
+      "Native sale refunds and frees footprint NebulaBloomTower 5",
+      "Movement fixture starts before first spawn 5",
+      "Six archetypes animate and traverse every heading to Finish 5",
+      "Stationary Golem casting remains active during travel 5",
+      "Exactly six valid arrivals deduct six Lives 5"
+    ],
+    "results": [
+      {
+        "chapter": 1,
+        "map": "emberfall",
+        "length": 9245.4946,
+        "turns": 12,
+        "width": 60,
+        "props": 11,
+        "sites": {
+          "StarCannonTower": 465,
+          "NebulaBloomTower": 102,
+          "MeteorStormArray": 109,
+          "PlaguebreakerCannon": 190,
+          "SupernovaObliterator": 106,
+          "ToxicConstellation": 199,
+          "VenomCataclysm": 106
+        },
+        "zoom": 0.8792735042735043,
+        "samples": {},
+        "travel": {
+          "Basic": {
+            "seconds": 196.64000000000834,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          },
+          "VoidBrute": {
+            "seconds": 262.2400000000164,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          },
+          "VoidGolem": {
+            "seconds": 325.6000000000038,
+            "dimensions": [
+              64,
+              64
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 128
+          },
+          "VoidGuard": {
+            "seconds": 224.80000000001274,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          },
+          "VoidHound": {
+            "seconds": 116.55999999999787,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          },
+          "VoidSentinel": {
+            "seconds": 185.12000000000654,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          }
+        },
+        "simulatedSeconds": 207.25000000001288
+      },
+      {
+        "chapter": 2,
+        "map": "nebula",
+        "length": 9690.4103,
+        "turns": 14,
+        "width": 60,
+        "props": 7,
+        "sites": {
+          "StarCannonTower": 301,
+          "NebulaBloomTower": 94,
+          "MeteorStormArray": 105,
+          "PlaguebreakerCannon": 164,
+          "SupernovaObliterator": 98,
+          "ToxicConstellation": 172,
+          "VenomCataclysm": 98
+        },
+        "zoom": 0.8792735042735043,
+        "samples": {},
+        "travel": {
+          "Basic": {
+            "seconds": 204.0000000000095,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          },
+          "VoidBrute": {
+            "seconds": 272.00000000001444,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          },
+          "VoidGolem": {
+            "seconds": 337.28000000000145,
+            "dimensions": [
+              64,
+              64
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 128
+          },
+          "VoidGuard": {
+            "seconds": 233.12000000001404,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          },
+          "VoidHound": {
+            "seconds": 120.87999999999778,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          },
+          "VoidSentinel": {
+            "seconds": 192.00000000000762,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          }
+        },
+        "simulatedSeconds": 214.25000000001447
+      },
+      {
+        "chapter": 3,
+        "map": "reliquary",
+        "length": 9095.3261,
+        "turns": 16,
+        "width": 60,
+        "props": 16,
+        "sites": {
+          "StarCannonTower": 371,
+          "NebulaBloomTower": 145,
+          "MeteorStormArray": 177,
+          "PlaguebreakerCannon": 201,
+          "SupernovaObliterator": 156,
+          "ToxicConstellation": 208,
+          "VenomCataclysm": 156
+        },
+        "zoom": 0.8792735042735043,
+        "samples": {},
+        "travel": {
+          "Basic": {
+            "seconds": 181.84000000000603,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          },
+          "VoidBrute": {
+            "seconds": 242.4800000000155,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          },
+          "VoidGolem": {
+            "seconds": 300.56000000000876,
+            "dimensions": [
+              64,
+              64
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 112
+          },
+          "VoidGuard": {
+            "seconds": 207.8400000000101,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          },
+          "VoidHound": {
+            "seconds": 107.75999999999806,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          },
+          "VoidSentinel": {
+            "seconds": 171.20000000000437,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          }
+        },
+        "simulatedSeconds": 190.7000000000091
+      },
+      {
+        "chapter": 4,
+        "map": "astral",
+        "length": 9639.3261,
+        "turns": 16,
+        "width": 60,
+        "props": 10,
+        "sites": {
+          "StarCannonTower": 355,
+          "NebulaBloomTower": 115,
+          "MeteorStormArray": 135,
+          "PlaguebreakerCannon": 142,
+          "SupernovaObliterator": 122,
+          "ToxicConstellation": 147,
+          "VenomCataclysm": 122
+        },
+        "zoom": 0.8792735042735043,
+        "samples": {},
+        "travel": {
+          "Basic": {
+            "seconds": 185.36000000000658,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          },
+          "VoidBrute": {
+            "seconds": 247.12000000001623,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          },
+          "VoidGolem": {
+            "seconds": 306.08000000000766,
+            "dimensions": [
+              64,
+              64
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 112
+          },
+          "VoidGuard": {
+            "seconds": 211.84000000001072,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          },
+          "VoidHound": {
+            "seconds": 109.83999999999801,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          },
+          "VoidSentinel": {
+            "seconds": 174.40000000000487,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          }
+        },
+        "simulatedSeconds": 193.7000000000098
+      },
+      {
+        "chapter": 5,
+        "map": "belt",
+        "length": 9599.3261,
+        "turns": 16,
+        "width": 60,
+        "props": 15,
+        "sites": {
+          "StarCannonTower": 314,
+          "NebulaBloomTower": 95,
+          "MeteorStormArray": 108,
+          "PlaguebreakerCannon": 133,
+          "SupernovaObliterator": 102,
+          "ToxicConstellation": 138,
+          "VenomCataclysm": 102
+        },
+        "zoom": 0.8792735042735043,
+        "samples": {},
+        "travel": {
+          "Basic": {
+            "seconds": 177.7600000000054,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          },
+          "VoidBrute": {
+            "seconds": 236.96000000001465,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          },
+          "VoidGolem": {
+            "seconds": 293.9200000000101,
+            "dimensions": [
+              64,
+              64
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 112
+          },
+          "VoidGuard": {
+            "seconds": 203.12000000000936,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          },
+          "VoidHound": {
+            "seconds": 105.27999999999811,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          },
+          "VoidSentinel": {
+            "seconds": 167.28000000000375,
+            "dimensions": [
+              48,
+              48
+            ],
+            "headings": [
+              "Right",
+              "Up",
+              "Down",
+              "Left"
+            ],
+            "animationFrames": 4,
+            "castingFrames": 0
+          }
+        },
+        "simulatedSeconds": 185.800000000008
+      }
+    ],
+    "fixture": "Completed-save unlock and six-archetype spawn queue only. Native speeds, movement, cast, placement and sale.",
+    "allMissionsNaturalPlaytest": false
+  },
+  "progress": [
+    "BALANCE PROGRESS {\"chapter\":1,\"sites\":{\"StarCannonTower\":465,\"NebulaBloomTower\":102,\"MeteorStormArray\":109,\"PlaguebreakerCannon\":190,\"SupernovaObliterator\":106,\"ToxicConstellation\":199,\"VenomCataclysm\":106}}",
+    "BALANCE PROGRESS {\"chapter\":1,\"records\":[{\"type\":\"Basic\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":196.64000000000834},{\"type\":\"VoidBrute\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":262.2400000000164},{\"type\":\"VoidGolem\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":325.6000000000038},{\"type\":\"VoidGuard\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":224.80000000001274},{\"type\":\"VoidHound\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":116.55999999999787},{\"type\":\"VoidSentinel\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":185.12000000000654}],\"live\":0}",
+    "BALANCE PROGRESS {\"chapter\":1,\"geometry\":true,\"travel\":true,\"sites\":{\"StarCannonTower\":465,\"NebulaBloomTower\":102,\"MeteorStormArray\":109,\"PlaguebreakerCannon\":190,\"SupernovaObliterator\":106,\"ToxicConstellation\":199,\"VenomCataclysm\":106}}",
+    "BALANCE PROGRESS {\"chapter\":2,\"sites\":{\"StarCannonTower\":301,\"NebulaBloomTower\":94,\"MeteorStormArray\":105,\"PlaguebreakerCannon\":164,\"SupernovaObliterator\":98,\"ToxicConstellation\":172,\"VenomCataclysm\":98}}",
+    "BALANCE PROGRESS {\"chapter\":2,\"records\":[{\"type\":\"Basic\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":204.0000000000095},{\"type\":\"VoidBrute\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":272.00000000001444},{\"type\":\"VoidGolem\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":337.28000000000145},{\"type\":\"VoidGuard\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":233.12000000001404},{\"type\":\"VoidHound\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":120.87999999999778},{\"type\":\"VoidSentinel\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":192.00000000000762}],\"live\":0}",
+    "BALANCE PROGRESS {\"chapter\":2,\"geometry\":true,\"travel\":true,\"sites\":{\"StarCannonTower\":301,\"NebulaBloomTower\":94,\"MeteorStormArray\":105,\"PlaguebreakerCannon\":164,\"SupernovaObliterator\":98,\"ToxicConstellation\":172,\"VenomCataclysm\":98}}",
+    "BALANCE PROGRESS {\"chapter\":3,\"sites\":{\"StarCannonTower\":371,\"NebulaBloomTower\":145,\"MeteorStormArray\":177,\"PlaguebreakerCannon\":201,\"SupernovaObliterator\":156,\"ToxicConstellation\":208,\"VenomCataclysm\":156}}",
+    "BALANCE PROGRESS {\"chapter\":3,\"records\":[{\"type\":\"Basic\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":181.84000000000603},{\"type\":\"VoidBrute\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":242.4800000000155},{\"type\":\"VoidGolem\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":300.56000000000876},{\"type\":\"VoidGuard\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":207.8400000000101},{\"type\":\"VoidHound\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":107.75999999999806},{\"type\":\"VoidSentinel\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":171.20000000000437}],\"live\":0}",
+    "BALANCE PROGRESS {\"chapter\":3,\"geometry\":true,\"travel\":true,\"sites\":{\"StarCannonTower\":371,\"NebulaBloomTower\":145,\"MeteorStormArray\":177,\"PlaguebreakerCannon\":201,\"SupernovaObliterator\":156,\"ToxicConstellation\":208,\"VenomCataclysm\":156}}",
+    "BALANCE PROGRESS {\"chapter\":4,\"sites\":{\"StarCannonTower\":355,\"NebulaBloomTower\":115,\"MeteorStormArray\":135,\"PlaguebreakerCannon\":142,\"SupernovaObliterator\":122,\"ToxicConstellation\":147,\"VenomCataclysm\":122}}",
+    "BALANCE PROGRESS {\"chapter\":4,\"records\":[{\"type\":\"Basic\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":185.36000000000658},{\"type\":\"VoidBrute\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":247.12000000001623},{\"type\":\"VoidGolem\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":306.08000000000766},{\"type\":\"VoidGuard\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":211.84000000001072},{\"type\":\"VoidHound\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":109.83999999999801},{\"type\":\"VoidSentinel\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":174.40000000000487}],\"live\":0}",
+    "BALANCE PROGRESS {\"chapter\":4,\"geometry\":true,\"travel\":true,\"sites\":{\"StarCannonTower\":355,\"NebulaBloomTower\":115,\"MeteorStormArray\":135,\"PlaguebreakerCannon\":142,\"SupernovaObliterator\":122,\"ToxicConstellation\":147,\"VenomCataclysm\":122}}",
+    "BALANCE PROGRESS {\"chapter\":5,\"sites\":{\"StarCannonTower\":314,\"NebulaBloomTower\":95,\"MeteorStormArray\":108,\"PlaguebreakerCannon\":133,\"SupernovaObliterator\":102,\"ToxicConstellation\":138,\"VenomCataclysm\":102}}",
+    "BALANCE PROGRESS {\"chapter\":5,\"records\":[{\"type\":\"Basic\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":177.7600000000054},{\"type\":\"VoidBrute\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":236.96000000001465},{\"type\":\"VoidGolem\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":293.9200000000101},{\"type\":\"VoidGuard\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":203.12000000000936},{\"type\":\"VoidHound\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":105.27999999999811},{\"type\":\"VoidSentinel\",\"finished\":true,\"directions\":[\"Right\",\"Up\",\"Down\",\"Left\"],\"frames\":[0,1,2,3],\"age\":167.28000000000375}],\"live\":0}",
+    "BALANCE PROGRESS {\"chapter\":5,\"geometry\":true,\"travel\":true,\"sites\":{\"StarCannonTower\":314,\"NebulaBloomTower\":95,\"MeteorStormArray\":108,\"PlaguebreakerCannon\":133,\"SupernovaObliterator\":102,\"ToxicConstellation\":138,\"VenomCataclysm\":102}}"
+  ],
+  "consoleErrors": []
+}

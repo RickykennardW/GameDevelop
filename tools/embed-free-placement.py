@@ -6,6 +6,18 @@ path=ROOT/'layouts/game-scene.json'
 source=path.read_text(encoding='utf-8')
 scene=json.loads(source)
 mapping=json.loads((ROOT/'tools/source-mapping.json').read_text(encoding='utf-8'))
+if not any(entry[2]=='pause-menu-runtime.js' for entry in mapping):
+    index=len(scene['events'][0]['events'])
+    scene['events'][0]['events'].append({'type':'BuiltinCommonInstructions::JsCode','parameterObjects':'','useStrict':True,'inlineCode':[]})
+    mapping.append([0,[index],'pause-menu-runtime.js'])
+    (ROOT/'tools/source-mapping.json').write_text(json.dumps(mapping,indent=2)+'\n',encoding='utf-8')
+for name in ['PauseActive','PauseFrameBlocked']:
+    if not any(v['name']==name for v in scene['variables']):scene['variables'].append({'name':name,'type':'boolean','value':False})
+for indexes in [(1,0),(3,0),(5,),(7,),(9,),(10,0),(15,0)]:
+    event=scene
+    for index in indexes:event=event['events'][index]
+    guard={'type':{'value':'BooleanVariable'},'parameters':['PauseFrameBlocked','False','']}
+    if guard not in event['conditions']:event['conditions'].append(guard)
 if not any(entry[2]=='fresh-start-service.js' for entry in mapping):
     # Recover a confirmed reset before any old campaign/discovery owner loads.
     scene['events'][0]['events'].insert(0,{'type':'BuiltinCommonInstructions::JsCode','parameterObjects':'','useStrict':True,'inlineCode':[]})
@@ -27,7 +39,9 @@ while cursor<len(source):
     if key=='events':
         text=json.dumps(scene['events'],ensure_ascii=False,indent=2).replace('\n','\n  ')
         result=source[:cursor]+text+source[cursor+length:]
-        assert json.loads(result)==scene
+        parsed=json.loads(result);parsed['variables']=scene['variables']
+        assert parsed==scene
+        result=json.dumps(parsed,ensure_ascii=False,indent=2)+'\n'
         if result!=source:path.write_text(result,encoding='utf-8')
         break
     cursor+=length

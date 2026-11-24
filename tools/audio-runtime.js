@@ -113,7 +113,7 @@ if(!a){
  a.ensure=(key,name,z)=>{if(!a.objects[key]){const o=scene.createObject(name);o.setLayer('AudioUI');o.setZOrder(z);a.objects[key]=o;}return a.objects[key];};
  a.geometry=()=>{const width=game.getGameResolutionWidth(),height=game.getGameResolutionHeight(),hud=scene.getObjects('HUDPanel')[0];const point=hud?scene.getLayer('UI').convertInverseCoords(hud.getX()+hud.getWidth(),hud.getY()+6,0,[0,0]):[8,16];const x=Math.max(8,Math.min(width-40,point[0]+8)),y=point[1];return{button:{x,y,w:32,h:32},panel:{x:Math.max(8,Math.min(width-316,x)),y:Math.max(8,Math.min(height-292,y+40)),w:308,h:276}};};
  a.pre=()=>{
-  if(a.disposed)return;const dt=scene.getTimeManager().getElapsedTime()/Math.max(.001,scene.getTimeManager().getTimeScale())/1000;a.dt=Math.min(.2,Math.max(0,dt));a.now+=a.dt;
+  if(a.disposed||scene.__pauseUI?.frameBlocked)return;const dt=scene.getTimeManager().getElapsedTime()/Math.max(.001,scene.getTimeManager().getTimeScale())/1000;a.dt=Math.min(.2,Math.max(0,dt));a.now+=a.dt;
   if(sv.get('DefeatActive').getAsBoolean()){
    a.ui.open=false;a.ui.drag='';a.ui.pressed='';a.ui.down=game.getInputManager().isMouseButtonPressed(0);a.ui.pointer=true;
    sv.get('AudioUIConsumesClick').setBoolean(true);sv.get('AudioPanelOpen').setBoolean(false);return;
@@ -128,7 +128,7 @@ if(!a){
     for(const [i,label]of ['Master','Music','SFX','UI'].entries())if(inside({x:p.x+114,y:p.y+51+i*37,w:136,h:26}))key=label;
     if(inside({x:p.x+18,y:p.y+211,w:132,h:28}))key='MuteMusic';if(inside({x:p.x+160,y:p.y+211,w:132,h:28}))key='MuteSFX';
     if(pressed&&!inside(p)&&key!=='Speaker'){a.ui.open=false;a.ui.pressed='';consume=true;}
-    if(gdjs.evtTools.input.wasKeyJustPressed(scene,'Escape')){a.ui.open=false;a.ui.pressed='';consume=true;}
+    if((!scene.__pauseUI||scene.__pauseUI.escapeOwner==='audio')&&gdjs.evtTools.input.wasKeyJustPressed(scene,'Escape')){a.ui.open=false;a.ui.pressed='';consume=true;}
    }
    if(inside(b))consume=true;
    if(pressed&&key){a.ui.pressed=key;if(['Master','Music','SFX','UI'].includes(key))a.ui.drag=key;}
@@ -187,4 +187,4 @@ if(!a){
  // The first frame predates registration; later frames use the pre-event hook.
  a.pre();
 }
-a.after();
+if(!scene.__pauseUI?.frameBlocked)a.after();

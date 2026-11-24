@@ -13,7 +13,7 @@ duplicate source projects. Read the Git baseline in memory and edit directly.
 - Maintain one route for road art, native waypoints, placement and ETA. Do not
   draw a different road over an unchanged collision ribbon.
 - UI design reference remains 1280 × 720; build surface is 1704 × 1008. Paths are 60 world
-  units with square 24-unit paving; enemy render multiplier is 0.9. Tower and
+units with 16-unit visual material detail (64-unit road texture period); enemy render multiplier is 0.9. Tower and
   collision multipliers remain 1. Camera fitting uses the existing cliff bounds
   (1872 × 1155.52 world units including framing margins), independent of route.
 
@@ -30,6 +30,21 @@ Use the installed GDevelop toolchain through `GD_VALIDATION_HOME`, as described
 in the maintained native tools. The exporter creates a compiled preview, never
 a safety copy of the source project. Do not run `build-campaign.py` just to change
 a map: chapter metadata is applied by the chapter builder.
+
+If the validation compiler predates the installed editor/runtime, set
+`GD_VALIDATION_HOME` to the dedicated native validation build directory and run
+`python -B tools/prepare-native-toolchain.py`. This reads the matching compiler
+from the installed application; it does not create a source-project copy.
+The current independent environment audit is `tools/validate-environment.py`.
+It checks all protected gameplay data against Git `543283d`, exact pause guards,
+the 295 registered individual assets, transparency and periodic tile edges.
+Chapter normalization remains independently checked against its earlier baseline.
+
+After environment or pause changes also run `tools/pause-menu-qa.js` through
+`balance-browser.py` with `--levels --mode=visual --pause-native-input` at
+1280x720 and 640x360. This test uses finite Gold fixtures to isolate UI/Fusion;
+it is not evidence of a naturally funded campaign victory. For material scale
+comparisons run `tools/environment-scale-qa.js` with modes 12, 16 and 24.
 
 ```powershell
 python -B tools/build-chapter-maps.py

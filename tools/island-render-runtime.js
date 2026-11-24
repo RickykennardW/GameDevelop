@@ -10,6 +10,13 @@ for(const [name,scale] of [["SpawnMarker",style.spawn],["BaseMarker",style.base]
     if(!sprite||!sprite.texture)continue;
     if(name==="Ground_Decoration"&&!sprite.texture.baseTexture.__islandFiltered){const t=sprite.texture.baseTexture;t.mipmap=PIXI.MIPMAP_MODES.ON;t.scaleMode=PIXI.SCALE_MODES.LINEAR;t.update();t.__islandFiltered=true;}
     sprite.scale.set(object.getWidth()/sprite.texture.width*drawScale,object.getHeight()/sprite.texture.height*drawScale);
+    if(name==='Ground_Decoration'&&runtimeScene.__chapterMap?.config.Environment&&object.getVariables().get('Blocking').getAsBoolean()){
+      // Fit the entire generated silhouette inside the existing logical blocker.
+      // The displayed invalid-placement circle and placement geometry are unchanged.
+      const asset=runtimeScene.__chapterMap.config.Environment.Assets.find(a=>a.Resource===object.getVariables().get('EnvironmentAsset').getAsString());
+      const c=runtimeScene.__freePlacement.blockedCircle(object),factor=(c.r-9)/(asset?.OpaqueRadius||Math.max(sprite.texture.width,sprite.texture.height)/Math.SQRT2);
+      sprite.anchor.set(.5);sprite.position.set(c.x,c.y);sprite.scale.set(factor);
+    }
   }
 }
 const ghost=runtimeScene.getObjects('TilePlacement_Indicator')[0];

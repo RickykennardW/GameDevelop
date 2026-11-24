@@ -98,8 +98,10 @@
     scene.createObject=function(name){return name===output?null:create.call(this,name);};
     const failure=f.confirm(...at);scene.createObject=create;
     ok(!failure&&cash()===gold&&p.towers().includes(A)&&p.towers().includes(B),'Result creation failure rolls back before either source or Gold changes');
-    key(27);
-    ok(!f.active&&f.ghost.isHidden()&&!f.markers.size&&!f.footprints.size&&cash()===gold&&scene.getTimeManager().getTimeScale()===2,'ESC clears every Fusion overlay and restores 2x');
+    key(27);ok(scene.__pauseUI.active&&f.active,'Escape preserves active Fusion under Pause');
+    key(27);ok(!scene.__pauseUI.active&&f.active&&scene.getTimeManager().getTimeScale()===.5,'Resume returns to Tactical Fusion');
+    click(f.cancelRect.x+f.cancelRect.w/2,f.cancelRect.y+f.cancelRect.h/2,'FusionUI');
+    ok(!f.active&&f.ghost.isHidden()&&!f.markers.size&&!f.footprints.size&&cash()===gold&&scene.getTimeManager().getTimeScale()===2,'Explicit Cancel clears every Fusion overlay and restores 2x');
     enter(B);click(...left);click(f.cancelRect.x+f.cancelRect.w/2,f.cancelRect.y+20,'FusionUI');
     ok(!f.active&&p.towers().includes(A)&&p.towers().includes(B),'Native Cancel preserves both source towers');
     enter(A);click(...right);
